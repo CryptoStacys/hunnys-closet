@@ -10,7 +10,7 @@ import cors from 'cors';
 
     const app = express();
     app.use(cors({
-        origin: ['https://closet.hunnys.io', 'http://localhost:3000', 'http://localhost', 'http://localhost:8080', 'https://hunnys.io', 'https://testing.d35i3wnh0wry5j.amplifyapp.com']
+        origin: ['https://closet.hunnys.io', 'https://staging-hunnys-closet-2.vercel.app/', 'http://localhost:3000', 'http://localhost', 'http://localhost:8080', 'https://hunnys.io', 'https://testing.d35i3wnh0wry5j.amplifyapp.com']
     }));
     const port = process.env.PORT || 8080;
 

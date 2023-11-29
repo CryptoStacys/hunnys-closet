@@ -2,9 +2,8 @@ import pandas as pd
 import json
 
 # Load the CSV file
-csv_file_path = 'C:/Users/chris/Hunnys-Development/1115/staging-closet/autoconvert/csv/convertTokensID.csv'
+csv_file_path = 'C:/Users/chris/Hunnys-Development/staging-hunnys-closet-2/autoconvert/csv/convertTokensID.csv'
 df = pd.read_csv(csv_file_path)
-
 # Extracting the tokenId from the URL
 df['tokenId'] = df['tokenId'].apply(lambda x: x.split('/')[-1])
 
@@ -23,7 +22,7 @@ for (name, token_id), group in grouped:
     json_data.append(json_entry)
 
 # Saving the JSON data to a file
-json_output_path = 'C:/Users/chris/Hunnys-Development/1115/staging-closet/autoconvert/json/outputTokensID.json'
+json_output_path = 'C:/Users/chris/Hunnys-Development/staging-hunnys-closet-2/autoconvert/json/outputTokensID.json'
 
 with open(json_output_path, 'w') as file:
     json.dump(json_data, file, indent=4)

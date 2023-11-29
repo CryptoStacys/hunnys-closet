@@ -107,7 +107,7 @@ export default function DollEditorOptions(props: {
       let filteredTraits = traits.filter((trait: Trait) => trait.attribute === attribute);
 
       // List of attributes that should not get an Empty trait when randomizing because it looks weird
-      const noEmpty = ["Mouth", "Skin", "Eyebrows", "Eyes"];
+      const noEmpty = ["Mouth", "Skin", "Eyebrows", "Eyes", "Hair Style"];
       if (noEmpty.includes(attribute)) {
         // console.log("attr test filter", attribute);
         filteredTraits = filteredTraits.filter((trait: Trait) => trait.name !== "Empty");

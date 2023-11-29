@@ -21,4 +21,4 @@ def generate_rgb_json(folder_path, output_json_path):
         json.dump(rgb_values, file, indent=2)
 
 # Example usage
-generate_rgb_json('C:/Users/chris/Hunnys-Development/1115/staging-closet/autoconvert/colors', 'C:/Users/chris/Hunnys-Development/1115/staging-closet/autoconvert/colors.json')
+generate_rgb_json('C:/Users/chris/Hunnys-Development/staging-hunnys-closet-2/autoconvert/colors', 'C:/Users/chris/Hunnys-Development/staging-hunnys-closet-2/autoconvert/colors.json')

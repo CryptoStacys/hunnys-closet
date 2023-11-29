@@ -32,4 +32,4 @@ def csv_to_json(csv_file_path, json_file_path):
         json.dump(json_data, file, indent=4)
 
 # Example usage
-csv_to_json('C:/Users/chris/Hunnys-Development/1115/staging-closet/autoconvert/csv/convertTraits.csv', 'C:/Users/chris/Hunnys-Development/1115/staging-closet/autoconvert/json/outputTraits.json')
+csv_to_json('C:/Users/chris/Hunnys-Development/Hunnys-Development/staging-hunnys-closet-2/autoconvert/csv/convertTraits.csv', 'C:/Users/chris/Hunnys-Development/Hunnys-Development/staging-hunnys-closet-2/autoconvert/json/outputTraits.json')
