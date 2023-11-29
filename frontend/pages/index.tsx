@@ -34,7 +34,7 @@ export default function App() {
       //   isReconnected,
       // });
 
-      fetch(`https://staging-hunnys-closet-2-548f5ed67a1b.herokuapp.com/traits?wallet=${address}`)
+      fetch(`https://staging-hunnys-closet-2-548f5ed67a1b.herokuapp.com/traits`)
         .then((res) => res.json())
         .then((res) => {
           allTraitsSet(res);

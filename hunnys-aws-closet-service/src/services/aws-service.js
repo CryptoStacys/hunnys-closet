@@ -5,8 +5,8 @@ const to = "s3://hunnys/dollys/";
 const fileType = '.png';
 const cred = {
     "Credentials": {
-        "AccessKeyId": "AKIAZRALPQZASTYG4FOW",
-        "SecretAccessKey": "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"
+        "AccessKeyId": "AKIAZRALPQZA7HZNQ7W6",
+        "SecretAccessKey": "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"
     }
 }
 
