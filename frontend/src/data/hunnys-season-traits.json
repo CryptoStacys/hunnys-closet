@@ -1,0 +1,1181 @@
+{
+  "attributes": [
+    {
+      "name": "Background",
+      "traits": [
+        {
+          "name": "Dottie Clouds",
+          "colors": 1,
+          "rarity": "Mythic",
+          "tags": [],
+          "token_id": 24
+        },
+        {
+          "name": "Mayaris Moon",
+          "colors": 1,
+          "rarity": "Rare",
+          "tags": [],
+          "token_id": 43
+        },
+        {
+          "name": "Beautiful Baby Dragon",
+          "colors": 4,
+          "rarity": "Legendary",
+          "tags": [],
+          "token_id": 45
+        },
+        {
+          "name": "Birthday Sprinkles",
+          "colors": 5,
+          "rarity": "Legendary",
+          "tags": [],
+          "token_id": 54
+        },
+        {
+          "name": "Bumble Bees",
+          "colors": 3,
+          "rarity": "Legendary",
+          "tags": [],
+          "token_id": 59
+        },
+        {
+          "name": "Dancing Bubble",
+          "colors": 0,
+          "rarity": "Rare",
+          "tags": [],
+          "token_id": 62
+        },
+        {
+          "name": "Lagoon Monster",
+          "colors": 0,
+          "rarity": "Epic",
+          "tags": [],
+          "token_id": 63
+        },
+        {
+          "name": "30s Forest",
+          "colors": 0,
+          "rarity": "Legendary",
+          "tags": [],
+          "token_id": 64
+        },
+        {
+          "name": "30s Forest Bunny",
+          "colors": 0,
+          "rarity": "Legendary",
+          "tags": [],
+          "token_id": 64
+        },
+        {
+          "name": "Witches Cauldron",
+          "colors": 0,
+          "rarity": "Epic",
+          "tags": [],
+          "token_id": 65
+        },
+        {
+          "name": "Ghostly Bear Buddy",
+          "colors": 1,
+          "rarity": "Mythic",
+          "tags": [],
+          "token_id": 66
+        },
+        {
+          "name": "Rainbow",
+          "colors": 4,
+          "rarity": "Legendary",
+          "tags": [],
+          "token_id": 68
+        },
+        {
+          "name": "Cactus Horizon",
+          "colors": 1,
+          "rarity": "Rare",
+          "tags": [],
+          "token_id": 82
+        },
+        {
+          "name": "Holographic Fish",
+          "colors": 3,
+          "rarity": "Epic",
+          "tags": [],
+          "token_id": 99
+        },
+        {
+          "name": "Grid Alleyway",
+          "colors": 0,
+          "rarity": "Epic",
+          "tags": [],
+          "token_id": 107
+        },
+        {
+          "name": "Candy Clouds",
+          "colors": 2,
+          "rarity": "Epic",
+          "tags": [],
+          "token_id": 115
+        }
+      ]
+    },
+    {
+      "name": "Skin",
+      "traits": [
+        {
+          "name": "Ghostly Gabrielle",
+          "colors": 0,
+          "rarity": "Legendary",
+          "tags": [],
+          "token_id": 3
+        },
+        {
+          "name": "Helenicas Skin",
+          "colors": 0,
+          "rarity": "Epic",
+          "tags": [],
+          "token_id": 25
+        }
+      ]
+    },
+    {
+      "name": "Tattoo",
+      "traits": [
+        {
+          "name": "Dominikas Demon",
+          "colors": 1,
+          "rarity": "Legendary",
+          "tags": [],
+          "token_id": 7
+        },
+        {
+          "name": "Balors Dragon Tattoo",
+          "colors": 3,
+          "rarity": "Mythic",
+          "tags": [],
+          "token_id": 29
+        },
+        {
+          "name": "Egyptian Goddess Symbol",
+          "colors": 1,
+          "rarity": "Uncommon",
+          "tags": [],
+          "token_id": 42
+        },
+        {
+          "name": "Hott Demon Tats",
+          "colors": 1,
+          "rarity": "Epic",
+          "tags": [],
+          "token_id": 89
+        },
+        {
+          "name": "Tribal",
+          "colors": 1,
+          "rarity": "Epic",
+          "tags": [],
+          "token_id": 94
+        },
+        {
+          "name": "Cecilys Fish",
+          "colors": 1,
+          "rarity": "Epic",
+          "tags": [],
+          "token_id": 99
+        }
+      ]
+    },
+    {
+      "name": "Eyebrows",
+      "traits": [
+        {
+          "name": "Dragon Eyebrows",
+          "colors": 0,
+          "rarity": "Epic",
+          "tags": [],
+          "token_id": 78
+        },
+        {
+          "name": "Akiras Brows",
+          "colors": 0,
+          "rarity": "Legendary",
+          "tags": [],
+          "token_id": 102
+        },
+        {
+          "name": "Bixie Brows",
+          "colors": 0,
+          "rarity": "Epic",
+          "tags": [],
+          "token_id": 114
+        }
+      ]
+    },
+    {
+      "name": "Hat",
+      "traits": [
+        {
+          "name": "Sheep Wool Moon Muffs",
+          "colors": 3,
+          "rarity": "Epic",
+          "tags": [],
+          "token_id": 10
+        },
+        {
+          "name": "Mais Maid Hat",
+          "colors": 1,
+          "rarity": "Mythic",
+          "tags": [],
+          "token_id": 18
+        },
+        {
+          "name": "Dead Head",
+          "colors": 1,
+          "rarity": "Legendary",
+          "tags": [],
+          "token_id": 21
+        },
+        {
+          "name": "Rowans Warm Beret",
+          "colors": 2,
+          "rarity": "Legendary",
+          "tags": [],
+          "token_id": 22
+        },
+        {
+          "name": "Helenicas Horns",
+          "colors": 3,
+          "rarity": "Epic",
+          "tags": ["twoParts"],
+          "token_id": 25
+        },
+        {
+          "name": "Victorias Haunted Hat",
+          "colors": 3,
+          "rarity": "Mythic",
+          "tags": [],
+          "token_id": 28
+        },
+        {
+          "name": "Sir Hornsworth",
+          "colors": 3,
+          "rarity": "Epic",
+          "tags": [],
+          "token_id": 44
+        },
+        {
+          "name": "30s Cartoon Kitty",
+          "colors": 0,
+          "rarity": "Common",
+          "tags": [],
+          "token_id": 61
+        },
+        {
+          "name": "Hupe Scout Uniform Beret",
+          "colors": 2,
+          "rarity": "Legendary",
+          "tags": [],
+          "token_id": 68
+        },
+        {
+          "name": "Straw Hat",
+          "colors": 2,
+          "rarity": "Rare",
+          "tags": ["twoParts"],
+          "token_id": 70
+        },
+        {
+          "name": "Cloud Halo",
+          "colors": 1,
+          "rarity": "Epic",
+          "tags": [],
+          "token_id": 78
+        },
+        {
+          "name": "Gel Piggy Gamer Headset",
+          "colors": 3,
+          "rarity": "Common",
+          "tags": [],
+          "token_id": 80
+        },
+        {
+          "name": "Big Cheese Ears",
+          "colors": 3,
+          "rarity": "Common",
+          "tags": ["twoParts"],
+          "token_id": 81
+        },
+        {
+          "name": "Aries Horns",
+          "colors": 2,
+          "rarity": "Rare",
+          "tags": ["twoParts"],
+          "token_id": 93
+        },
+        {
+          "name": "Scorpio Helmet",
+          "colors": 4,
+          "rarity": "Epic",
+          "tags": [],
+          "token_id": 96
+        },
+        {
+          "name": "Baby Bull",
+          "colors": 3,
+          "rarity": "Epic",
+          "tags": [],
+          "token_id": 103
+        }
+      ]
+    },
+    {
+      "name": "Eyes",
+      "traits": [
+        {
+          "name": "Bionic Eye",
+          "colors": 1,
+          "rarity": "Rare",
+          "tags": [],
+          "token_id": 97
+        },
+        {
+          "name": "Potion Eyes",
+          "colors": 3,
+          "rarity": "Epic",
+          "tags": [],
+          "token_id": 116
+        }
+      ]
+    },
+    {
+      "name": "Face Sticker",
+      "traits": [
+        {
+          "name": "Dead Star",
+          "colors": 3,
+          "rarity": "Rare",
+          "tags": [],
+          "token_id": 93
+        },
+        {
+          "name": "Winky Sun",
+          "colors": 2,
+          "rarity": "Epic",
+          "tags": [],
+          "token_id": 94
+        },
+        {
+          "name": "Dead Fish",
+          "colors": 2,
+          "rarity": "Legendary",
+          "tags": [],
+          "token_id": 95
+        }
+      ]
+    },
+    {
+      "name": "Piercing",
+      "traits": [
+        {
+          "name": "Calanthas Nose Chain",
+          "colors": 2,
+          "rarity": "Legendary",
+          "tags": [],
+          "token_id": 100
+        }
+      ]
+    },
+    {
+      "name": "Mouth",
+      "traits": [
+        {
+          "name": "Helenicas Demon Tongue",
+          "colors": 2,
+          "rarity": "Epic",
+          "tags": [],
+          "token_id": 25
+        },
+        {
+          "name": "Storm Smile",
+          "colors": 1,
+          "rarity": "Rare",
+          "tags": [],
+          "token_id": 57
+        },
+        {
+          "name": "Dragon Fangs",
+          "colors": 1,
+          "rarity": "Epic",
+          "tags": [],
+          "token_id": 78
+        },
+        {
+          "name": "Delicious Cheese Pizza",
+          "colors": 3,
+          "rarity": "Common",
+          "tags": [],
+          "token_id": 81
+        },
+        {
+          "name": "Chewing Wheat",
+          "colors": 2,
+          "rarity": "Rare",
+          "tags": [],
+          "token_id": 83
+        },
+        {
+          "name": "Akiras Snarl",
+          "colors": 1,
+          "rarity": "Legendary",
+          "tags": [],
+          "token_id": 102
+        },
+        {
+          "name": "Taurus Lips",
+          "colors": 1,
+          "rarity": "Epic",
+          "tags": [],
+          "token_id": 103
+        },
+        {
+          "name": "Bixie Underbite",
+          "colors": 1,
+          "rarity": "Epic",
+          "tags": [],
+          "token_id": 114
+        }
+      ]
+    },
+    {
+      "name": "Hair Style",
+      "traits": [
+        {
+          "name": "Mummy A-Line",
+          "colors": 1,
+          "rarity": "Legendary",
+          "parts": 1,
+          "tags": [],
+          "token_id": 4
+        },
+        {
+          "name": "Celestes Locks",
+          "colors": 1,
+          "rarity": "Mythic",
+          "parts": 2,
+          "tags": [],
+          "token_id": 14
+        },
+        {
+          "name": "Chloes Ponytail",
+          "colors": 2,
+          "rarity": "Mythic",
+          "parts": 2,
+          "tags": [],
+          "token_id": 23
+        },
+        {
+          "name": "Lous Split",
+          "colors": 2,
+          "rarity": "Epic",
+          "parts": 1,
+          "tags": [],
+          "token_id": 26
+        },
+        {
+          "name": "Cyans Mohawk",
+          "colors": 2,
+          "rarity": "Legendary",
+          "parts": 1,
+          "tags": [],
+          "token_id": 30
+        },
+        {
+          "name": "Bunny Day Mika Hair",
+          "colors": 1,
+          "rarity": "Legendary",
+          "parts": 1,
+          "tags": [],
+          "token_id": 47
+        },
+        {
+          "name": "Warrior Princess Hair",
+          "colors": 1,
+          "rarity": "Uncommon",
+          "parts": 2,
+          "tags": [],
+          "token_id": 48
+        },
+        {
+          "name": "Moon Scout Buns",
+          "colors": 3,
+          "rarity": "Rare",
+          "parts": 2,
+          "tags": [],
+          "token_id": 50
+        },
+        {
+          "name": "Michonne Dreads",
+          "colors": 1,
+          "rarity": "Legendary",
+          "parts": 2,
+          "tags": [],
+          "token_id": 52
+        },
+        {
+          "name": "Birthday Buns",
+          "colors": 2,
+          "rarity": "Legendary",
+          "parts": 1,
+          "tags": [],
+          "token_id": 54
+        },
+        {
+          "name": "Water Hair",
+          "colors": 2,
+          "rarity": "Epic",
+          "parts": 1,
+          "tags": [],
+          "token_id": 58
+        },
+        {
+          "name": "Mary Piggys",
+          "colors": 2,
+          "rarity": "Epic",
+          "parts": 2,
+          "tags": [],
+          "token_id": 76
+        },
+        {
+          "name": "Superstar Hair",
+          "colors": 2,
+          "rarity": "Epic",
+          "parts": 2,
+          "tags": [],
+          "token_id": 85
+        },
+        {
+          "name": "Vanity Curls",
+          "colors": 2,
+          "rarity": "Common",
+          "parts": 2,
+          "tags": [],
+          "token_id": 87
+        },
+        {
+          "name": "Octavia Tentacles",
+          "colors": 3,
+          "rarity": "Rare",
+          "parts": 2,
+          "tags": [],
+          "token_id": 88
+        },
+        {
+          "name": "Yuki Pigtails",
+          "colors": 2,
+          "rarity": "Rare",
+          "parts": 2,
+          "tags": [],
+          "token_id": 106
+        },
+        {
+          "name": "Xap Buns",
+          "colors": 2,
+          "rarity": "Legendary",
+          "parts": 2,
+          "tags": [],
+          "token_id": 109
+        }
+      ]
+    },
+    {
+      "name": "Accessory",
+      "traits": [
+        {
+          "name": "Claras Backpack",
+          "colors": 3,
+          "rarity": "Mythic",
+          "tags": [],
+          "token_id": 12
+        },
+        {
+          "name": "Noelles Backpack",
+          "colors": 4,
+          "rarity": "Mythic",
+          "tags": [],
+          "token_id": 13
+        },
+        {
+          "name": "Aspens Wolf",
+          "colors": 3,
+          "rarity": "Legendary",
+          "tags": [],
+          "token_id": 15
+        },
+        {
+          "name": "Mais Maid Choker",
+          "colors": 2,
+          "rarity": "Mythic",
+          "tags": [],
+          "token_id": 18
+        },
+        {
+          "name": "Pipers Punk Glasses",
+          "colors": 1,
+          "rarity": "Epic",
+          "tags": [],
+          "token_id": 20
+        },
+        {
+          "name": "Helenicas Wings",
+          "colors": 2,
+          "rarity": "Epic",
+          "tags": [],
+          "token_id": 25
+        },
+        {
+          "name": "Helenicas Demon",
+          "colors": 4,
+          "rarity": "Epic",
+          "tags": [],
+          "token_id": 25
+        },
+        {
+          "name": "Dekos KO Necklace",
+          "colors": 2,
+          "rarity": "Legendary",
+          "tags": [],
+          "token_id": 27
+        },
+        {
+          "name": "Cookie Bird",
+          "colors": 4,
+          "rarity": "Uncommon",
+          "tags": [],
+          "token_id": 35
+        },
+        {
+          "name": "Heidis Horsie",
+          "colors": 3,
+          "rarity": "Uncommon",
+          "tags": [],
+          "token_id": 36
+        },
+        {
+          "name": "Skull Necklace",
+          "colors": 3,
+          "rarity": "Uncommon",
+          "tags": [],
+          "token_id": 41
+        },
+        {
+          "name": "Hecates Magic Skulls",
+          "colors": 3,
+          "rarity": "Legendary",
+          "tags": [],
+          "token_id": 46
+        },
+        {
+          "name": "Hecates Demon Snake",
+          "colors": 3,
+          "rarity": "Legendary",
+          "tags": [],
+          "token_id": 46
+        },
+        {
+          "name": "Bunny Day Helper",
+          "colors": 4,
+          "rarity": "Legendary",
+          "tags": [],
+          "token_id": 47
+        },
+        {
+          "name": "Arcane Cave Beast",
+          "colors": 3,
+          "rarity": "Epic",
+          "tags": [],
+          "token_id": 60
+        },
+        {
+          "name": "Moro",
+          "colors": 3,
+          "rarity": "Epic",
+          "tags": ["twoParts"],
+          "token_id": 72
+        },
+        {
+          "name": "Howls Wings",
+          "colors": 2,
+          "rarity": "Legendary",
+          "tags": ["backItem"],
+          "token_id": 73
+        },
+        {
+          "name": "Percys Pack Pack",
+          "colors": 4,
+          "rarity": "Rare",
+          "tags": ["backpack", "twoParts"],
+          "token_id": 75
+        },
+        {
+          "name": "Alices Pup",
+          "colors": 2,
+          "rarity": "Epic",
+          "tags": [],
+          "token_id": 77
+        },
+        {
+          "name": "Baby Hornsworth Backpack",
+          "colors": 3,
+          "rarity": "Epic",
+          "tags": [],
+          "token_id": 84
+        },
+        {
+          "name": "Bad Bunny Earrings",
+          "colors": 1,
+          "rarity": "Epic",
+          "tags": [],
+          "token_id": 85
+        },
+        {
+          "name": "Beat Queen Glasses",
+          "colors": 2,
+          "rarity": "Epic",
+          "tags": [],
+          "token_id": 85
+        },
+        {
+          "name": "Surprised Boo",
+          "colors": 0,
+          "rarity": "Legendary",
+          "tags": [],
+          "token_id": 90
+        },
+        {
+          "name": "Leo Plushie",
+          "colors": 3,
+          "rarity": "Common",
+          "tags": [],
+          "token_id": 92
+        },
+        {
+          "name": "Sirius",
+          "colors": 5,
+          "rarity": "Rare",
+          "tags": [],
+          "token_id": 97
+        },
+        {
+          "name": "Marshmallow Drone",
+          "colors": 4,
+          "rarity": "Epic",
+          "tags": [],
+          "token_id": 98
+        },
+        {
+          "name": "Thog Drone",
+          "colors": 4,
+          "rarity": "Epic",
+          "tags": [],
+          "token_id": 98
+        },
+        {
+          "name": "Glipper Tray",
+          "colors": 4,
+          "rarity": "Legendary",
+          "tags": [],
+          "token_id": 102
+        },
+        {
+          "name": "Akiras Eyeball Necklace",
+          "colors": 4,
+          "rarity": "Legendary",
+          "tags": [],
+          "token_id": 102
+        },
+        {
+          "name": "Constellation Hoops",
+          "colors": 2,
+          "rarity": "Epic",
+          "tags": [],
+          "token_id": 103
+        },
+        {
+          "name": "Milas Pearl Earrings",
+          "colors": 3,
+          "rarity": "Common",
+          "tags": [],
+          "token_id": 110
+        },
+        {
+          "name": "Bubble Bear",
+          "colors": 3,
+          "rarity": "Epic",
+          "tags": [],
+          "token_id": 114
+        },
+        {
+          "name": "Candy Earring",
+          "colors": 3,
+          "rarity": "Epic",
+          "tags": [],
+          "token_id": 115
+        },
+        {
+          "name": "Eyeball Earrings",
+          "colors": 1,
+          "rarity": "Epic",
+          "tags": [],
+          "token_id": 116
+        },
+        {
+          "name": "Nimbus the Sky Puppy",
+          "colors": 4,
+          "rarity": "Mythic",
+          "tags": [],
+          "token_id": 117
+        }
+      ]
+    },
+    {
+      "name": "Outfit",
+      "traits": [
+        {
+          "name": "Brain Tee",
+          "colors": 2,
+          "rarity": "Legendary",
+          "tags": [],
+          "token_id": 1
+        },
+        {
+          "name": "Marielles Bathing Suit",
+          "colors": 2,
+          "rarity": "Legendary",
+          "tags": [],
+          "token_id": 2
+        },
+        {
+          "name": "Hex Jacket",
+          "colors": 3,
+          "rarity": "Legendary",
+          "tags": [],
+          "token_id": 5
+        },
+        {
+          "name": "Svetlanas Sweater",
+          "colors": 4,
+          "rarity": "Rare",
+          "tags": [],
+          "token_id": 16
+        },
+        {
+          "name": "Samanthas Christmas Sweater",
+          "colors": 5,
+          "rarity": "Epic",
+          "tags": [],
+          "token_id": 17
+        },
+        {
+          "name": "Mais Maid Uniform",
+          "colors": 2,
+          "rarity": "Mythic",
+          "tags": [],
+          "token_id": 18
+        },
+        {
+          "name": "Dotties Puff Jacket",
+          "colors": 3,
+          "rarity": "Mythic",
+          "tags": [],
+          "token_id": 24
+        },
+        {
+          "name": "Belatrixs Goth Top",
+          "colors": 4,
+          "rarity": "Epic",
+          "tags": [],
+          "token_id": 31
+        },
+        {
+          "name": "Dorothys Diner Uniform",
+          "colors": 3,
+          "rarity": "Mythic",
+          "tags": [],
+          "token_id": 32
+        },
+        {
+          "name": "Lydias Space Suit",
+          "colors": 2,
+          "rarity": "Legendary",
+          "tags": [],
+          "token_id": 33
+        },
+        {
+          "name": "Tuckers Strawberry Tee",
+          "colors": 4,
+          "rarity": "Rare",
+          "tags": [],
+          "token_id": 37
+        },
+        {
+          "name": "Hecates Corset",
+          "colors": 2,
+          "rarity": "Legendary",
+          "tags": [],
+          "token_id": 46
+        },
+        {
+          "name": "Fighter Dress",
+          "colors": 2,
+          "rarity": "Uncommon",
+          "tags": [],
+          "token_id": 49
+        },
+        {
+          "name": "Slayer Leather Jacket",
+          "colors": 3,
+          "rarity": "Epic",
+          "tags": [],
+          "token_id": 51
+        },
+        {
+          "name": "Matildas Maid Uniform",
+          "colors": 2,
+          "rarity": "Mythic",
+          "tags": [],
+          "token_id": 66
+        },
+        {
+          "name": "Hupe Scout Uniform",
+          "colors": 4,
+          "rarity": "Legendary",
+          "tags": [],
+          "token_id": 68
+        },
+        {
+          "name": "Frilly Tank",
+          "colors": 2,
+          "rarity": "Common",
+          "tags": [],
+          "token_id": 74
+        },
+        {
+          "name": "Dragon Egg Dress",
+          "colors": 4,
+          "rarity": "Epic",
+          "tags": [],
+          "token_id": 78
+        },
+        {
+          "name": "Gamer Queen Jelli Uniform",
+          "colors": 4,
+          "rarity": "Common",
+          "tags": [],
+          "token_id": 80
+        },
+        {
+          "name": "Puffy Top",
+          "colors": 3,
+          "rarity": "Common",
+          "tags": [],
+          "token_id": 86
+        },
+        {
+          "name": "Ribs Leather",
+          "colors": 3,
+          "rarity": "Epic",
+          "tags": [],
+          "token_id": 91
+        },
+        {
+          "name": "Scorpio Armor",
+          "colors": 5,
+          "rarity": "Epic",
+          "tags": [],
+          "token_id": 96
+        },
+        {
+          "name": "Calanthas Cloak",
+          "colors": 5,
+          "rarity": "Legendary",
+          "tags": [],
+          "token_id": 100
+        },
+        {
+          "name": "Shengu Jacket",
+          "colors": 4,
+          "rarity": "Common",
+          "tags": [],
+          "token_id": 105
+        },
+        {
+          "name": "Yuki Racer Suit",
+          "colors": 3,
+          "rarity": "Rare",
+          "tags": [],
+          "token_id": 106
+        },
+        {
+          "name": "Kazuko Jacket",
+          "colors": 4,
+          "rarity": "Legendary",
+          "tags": [],
+          "token_id": 108
+        }
+      ]
+    },
+    {
+      "name": "Bodysuit",
+      "traits": [
+        {
+          "name": "Hornsworth Hoodie",
+          "colors": 4,
+          "rarity": "Epic",
+          "tags": [],
+          "token_id": 84
+        }
+      ]
+    },
+    {
+      "name": "Hand",
+      "traits": [
+        {
+          "name": "Jesabelles Sword",
+          "colors": 4,
+          "rarity": "Legendary",
+          "tags": [],
+          "token_id": 8
+        },
+        {
+          "name": "Crystals Owl",
+          "colors": 4,
+          "rarity": "Epic",
+          "tags": [],
+          "token_id": 9
+        },
+        {
+          "name": "Penelopes Puppy",
+          "colors": 4,
+          "rarity": "Legendary",
+          "tags": [],
+          "token_id": 34
+        },
+        {
+          "name": "Jellyfish Donut",
+          "colors": 5,
+          "rarity": "Epic",
+          "tags": [],
+          "token_id": 38
+        },
+        {
+          "name": "Ginnys Gummy Scepter",
+          "colors": 3,
+          "rarity": "Legendary",
+          "tags": [],
+          "token_id": 39
+        },
+        {
+          "name": "Hubert",
+          "colors": 4,
+          "rarity": "Legendary",
+          "tags": [],
+          "token_id": 40
+        },
+        {
+          "name": "Bunny Day Scepter",
+          "colors": 3,
+          "rarity": "Legendary",
+          "tags": [],
+          "token_id": 47
+        },
+        {
+          "name": "Laras Heckler",
+          "colors": 4,
+          "rarity": "Legendary",
+          "tags": [],
+          "token_id": 53
+        },
+        {
+          "name": "Alien Bug Friend",
+          "colors": 3,
+          "rarity": "Uncommon",
+          "tags": [],
+          "token_id": 55
+        },
+        {
+          "name": "Baby Ember",
+          "colors": 4,
+          "rarity": "Uncommon",
+          "tags": [],
+          "token_id": 56
+        },
+        {
+          "name": "Avas Hammer",
+          "colors": 4,
+          "rarity": "Rare",
+          "tags": [],
+          "token_id": 93
+        },
+        {
+          "name": "Pelages Spear",
+          "colors": 5,
+          "rarity": "Legendary",
+          "tags": [],
+          "token_id": 95
+        },
+        {
+          "name": "Veritys Staff",
+          "colors": 4,
+          "rarity": "Common",
+          "tags": [],
+          "token_id": 101
+        },
+        {
+          "name": "Stardust Milkshake",
+          "colors": 5,
+          "rarity": "Legendary",
+          "tags": [],
+          "token_id": 102
+        },
+        {
+          "name": "BFF Bracelet",
+          "colors": 2,
+          "rarity": "Epic",
+          "tags": [],
+          "token_id": 104
+        },
+        {
+          "name": "Kazukos Ghost",
+          "colors": 4,
+          "rarity": "Legendary",
+          "tags": [],
+          "token_id": 108
+        },
+        {
+          "name": "Hunny Gram",
+          "colors": 4,
+          "rarity": "Legendary",
+          "tags": [],
+          "token_id": 111
+        },
+        {
+          "name": "Bar Tray",
+          "colors": 4,
+          "rarity": "Rare",
+          "tags": [],
+          "token_id": 113
+        }
+      ]
+    },
+    {
+      "name": "Frame",
+      "traits": [
+        {
+          "name": "Candy Cloud Creep",
+          "colors": 3,
+          "rarity": "Epic",
+          "tags": [],
+          "token_id": 115
+        }
+      ]
+    }
+  ]
+}

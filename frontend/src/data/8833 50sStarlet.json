@@ -1,0 +1,77 @@
+{
+  "attributes": {
+    "Background": {
+      "50sFilmGrain": {
+        "name": "50sFilmGrain",
+        "colors": 0,
+        "baseColor": ["white"],
+        "rarity": "immortal"
+      }
+    },
+    "Mouth": {
+      "Pout": {
+        "name": "Pout",
+        "colors": 1,
+        "rarity": "common"
+      }
+    },
+    "Hair Style": {
+      "50sStarletHair": {
+        "name": "50sStarletHair",
+        "colors": 1,
+        "parts": 2,
+        "rarity": "immortal",
+        "tags": []
+      }
+    },
+    "Face Sticker": {
+      "LipBeautyMark": {
+        "name": "LipBeautyMark",
+        "colors": 0,
+        "rarity": "immortal"
+      }
+    },
+    "Eyes": {
+      "MovieStarEyes": {
+        "name": "MovieStarEyes",
+        "colors": 2,
+        "rarity": "immortal"
+      }
+    },
+    "Accessory": {
+      "StarletDiamond": {
+        "name": "StarletDiamond",
+        "colors": 0,
+        "rarity": "immortal",
+        "tags": []
+      },
+      "StarletPearls": {
+        "name": "StarletPearls",
+        "colors": 0,
+        "rarity": "immortal",
+        "tags": []
+      }
+    },
+    "Outfit": {
+      "StarletDress": {
+        "name": "StarletDress",
+        "colors": 1,
+        "rarity": "immortal"
+      }
+    },
+    "Eyebrows": {
+      "Gentle": {
+        "name": "Gentle",
+        "colors": 0,
+        "rarity": "common"
+      }
+    },
+    "Body": {
+      "Base": {
+        "name": "Base",
+        "rarity": "common",
+        "colors": 1
+      }
+    }
+  }
+}

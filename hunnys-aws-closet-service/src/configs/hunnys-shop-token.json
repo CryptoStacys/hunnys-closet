@@ -1,0 +1,10 @@
+[
+    {
+        "tokenId": 1,
+        "name":"Expression Pack 1",
+        "slug": "dollyExpressionPackOne",
+        "attributes":[
+            {"trait_type":"Eyes","value":"Empty"}
+        ]
+    }
+]

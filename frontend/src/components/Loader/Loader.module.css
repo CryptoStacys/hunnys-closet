@@ -1,0 +1,76 @@
+.loader {
+  position: relative;
+}
+
+.loaderItem {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin: 2px;
+  background: #ddd;
+  border-radius: 50%;
+}
+
+.a {
+  animation: a 1s ease-in-out infinite;
+}
+
+.b {
+  animation: a 1s ease-in-out infinite;
+  animation-delay: 0.1s;
+}
+
+.c {
+  animation: a 1s ease-in-out infinite;
+  animation-delay: 0.2s;
+}
+
+.d {
+  animation: a 1s ease-in-out infinite;
+  animation-delay: 0.3s;
+}
+
+@keyframes a {
+  0% {
+    translate: 0px -10px;
+    background: #75f;
+  }
+  50% {
+    translate: 0px 10px;
+    background: #ddd;
+  }
+  100% {
+    translate: 0px -10px;
+    background: #50c;
+  }
+}
+@keyframes b {
+  50% {
+    top: -20px;
+    left: -20px;
+  }
+  100% {
+    top: -20px;
+    left: -20px;
+  }
+}
+@keyframes c {
+  50% {
+    top: -20px;
+    left: 0px;
+  }
+  100% {
+    top: -20px;
+    left: 0px;
+  }
+}
+@keyframes d {
+  50% {
+    top: 20px;
+    left: -20px;
+  }
+  100% {
+    top: 20px;
+    left: -20px;
+  }
+}

@@ -1,0 +1,77 @@
+{
+    "attributes": [
+        {
+            "name": "Background",
+            "traits":[
+                {"name":"Super Bunny Screenshot","colors":5,"rarity":"Relic","tags":[]}
+            ]
+        }, 
+        {
+            "name": "Eyebrows",
+            "traits":[
+                {"name":"Super Bunny Brows","colors":0,"rarity":"Relic","tags":[]}
+            ]
+        }, 
+        {
+            "name": "Hat",
+            "traits":[
+                {"name":"Super Bunny Cap","colors":2,"rarity":"Relic","tags":[]}
+            ]
+        }, 
+        {
+            "name": "Eyes",
+            "traits":[
+                {"name":"Crosseyed","colors":1,"rarity":"Relic","tags":[]}
+            ]
+        }, 
+        {
+            "name": "Face Sticker",
+            "traits":[
+                {"name":"Super Star","colors":1,"rarity":"Relic","tags":[]}
+            ]
+        }, 
+        {
+            "name": "Mouth",
+            "traits":[
+                {"name":"Super Bunny Smile","colors":1,"rarity":"Relic","tags":[]}
+            ]
+        }, 
+        {
+            "name": "Hair Style",
+            "traits":[
+                {"name":"Super Bunny Hair","colors":1,"rarity":"Relic","parts":1,"tags":[]}
+            ]
+        }, 
+        {
+            "name": "Accessory",
+            "traits":[
+                {"name":"Super Bunny Mushroom Earrings","colors":2,"rarity":"Relic","tags":["earrings"]},
+                {"name":"Super Bunny Choker","colors":3,"rarity":"Relic","tags":["onBody"]}
+            ]
+        }, 
+        {
+            "name": "Outfit",
+            "traits":[
+                {"name":"Super Bunny Overalls","colors":3,"rarity":"Relic","tags":[]}
+            ]
+        },
+        {
+            "name": "Dye",
+            "traits":[
+                {"name":"Super Bunny Yellow 1","colors":0,"rarity":"Relic","tags":[]},
+                {"name":"Super Bunny Yellow 2","colors":0,"rarity":"Relic","tags":[]},
+                {"name":"Super Bunny Yellow 3","colors":0,"rarity":"Relic","tags":[]},
+                {"name":"Super Bunny Red 1","colors":0,"rarity":"Relic","tags":[]},
+                {"name":"Super Bunny Red 2","colors":0,"rarity":"Relic","tags":[]},
+                {"name":"Super Bunny Red 3","colors":0,"rarity":"Relic","tags":[]},
+                {"name":"Super Bunny Green 1","colors":0,"rarity":"Relic","tags":[]},
+                {"name":"Super Bunny Green 2","colors":0,"rarity":"Relic","tags":[]},
+                {"name":"Super Bunny Green 3","colors":0,"rarity":"Relic","tags":[]},
+                {"name":"Super Bunny Blue 1","colors":0,"rarity":"Relic","tags":[]},
+                {"name":"Super Bunny Blue 2","colors":0,"rarity":"Relic","tags":[]},
+                {"name":"Super Bunny Blue 3","colors":0,"rarity":"Relic","tags":[]}
+            ]
+        }
+        
+    ] 
+}

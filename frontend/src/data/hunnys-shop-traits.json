@@ -1,0 +1,87 @@
+{
+    "attributes": [
+        {
+            "name": "Background",
+            "traits":[
+                {"name":"W33D Trip","colors":4,"rarity":"Epic","tags":[]}
+            ]
+        },
+        {
+            "name": "Eyebrows",
+            "traits":[
+                {"name":"Grumpy","colors":0,"rarity":"Epic","tags":[]},
+                {"name":"Surprised","colors":0,"rarity":"Epic","tags":[]},
+                {"name":"Upbrows","colors":0,"rarity":"Epic","tags":[]},
+                {"name":"Straight Brows","colors":0,"rarity":"Epic","tags":[]},
+                {"name":"Cringe Brow","colors":0,"rarity":"Epic","tags":[]},
+                {"name":"W33D Brows","colors":1,"rarity":"Epic","tags":[]}
+            ]
+        }, 
+        {
+            "name": "Hat",
+            "traits":[
+                {"name":"Piggy Ears","colors":1,"rarity":"Rare","tags":["twoParts"]},
+                {"name":"Cow Ears","colors":4,"rarity":"Rare","tags":["twoParts"]},
+                {"name":"W33D Shades","colors":2,"rarity":"Epic","tags":[]}
+            ]
+        }, 
+        {
+            "name": "Eyes",
+            "traits":[
+                {"name":"Closed Eyes","colors":0,"rarity":"Epic","tags":[]},
+                {"name":"Shifty Eyes","colors":1,"rarity":"Epic","tags":[]},
+                {"name":"Eye Roll","colors":1,"rarity":"Epic","tags":[]},
+                {"name":"Cringe Eye","colors":1,"rarity":"Epic","tags":[]}
+            ]
+        }, 
+        {
+            "name": "Face Sticker",
+            "traits":[
+                {"name":"W33D Sticker","colors":2,"rarity":"Epic","tags":[]}
+            ]
+        },
+        {
+            "name": "Mouth",
+            "traits":[
+                {"name":"Open Mouth","colors":2,"rarity":"Epic","tags":[]},
+                {"name":"Frown","colors":1,"rarity":"Epic","tags":[]},
+                {"name":"Thin Lips","colors":1,"rarity":"Epic","tags":[]},
+                {"name":"Cringe","colors":1,"rarity":"Epic","tags":[]},
+                {"name":"W33D Hang","colors":2,"rarity":"Epic","tags":[]},
+                {"name":"W33D Straight","colors":2,"rarity":"Epic","tags":[]}
+            ]
+        }, 
+        {
+            "name": "Hair Style",
+            "traits":[
+                {"name":"Piggy Hair","colors":1,"rarity":"Rare","parts":1,"tags":[]},
+                {"name":"Cow Hair with Bangs","colors":1,"rarity":"Rare","parts":2,"tags":[]},
+                {"name":"Modern Bob","colors":1,"rarity":"Common","parts":1,"tags":[]},
+                {"name":"Long Gradient Hair","colors":2,"rarity":"Uncommon","parts":1,"tags":[]},
+                {"name":"W33D Bun","colors":4,"rarity":"Epic","parts":1,"tags":[]}
+            ]
+        }, 
+        {
+            "name": "Accessory",
+            "traits":[
+                {"name":"Piggy Earring","colors":1,"rarity":"Rare","tags":[]},
+                {"name":"Cow Bell","colors":4,"rarity":"Rare","tags":[]},
+                {"name":"W33D Earrings","colors":1,"rarity":"Epic","tags":[]}
+            ]
+        }, 
+        {
+            "name": "Outfit",
+            "traits":[
+                {"name":"Piggy Frilly Top","colors":3,"rarity":"Rare","tags":[]},
+                {"name":"Cowbelle Crop","colors":3,"rarity":"Rare","tags":[]},
+                {"name":"W33DS Tie Dye Tee","colors":4,"rarity":"Epic","tags":[]}
+            ]
+        },
+        {
+            "name": "Hand",
+            "traits":[
+                {"name":"Milk","colors":2,"rarity":"Rare","tags":[]}
+            ]
+        }
+    ] 
+}

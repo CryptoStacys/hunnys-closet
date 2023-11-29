@@ -1,0 +1,2496 @@
+[
+    {
+        "tokenId": 1,
+        "name": "Zuri the Zombie",
+        "attributes": [
+            {
+                "trait_type": "Outfit",
+                "value": "Brain Tee"
+            }
+        ],
+        "metaPath": "https://gateway.ipfs.io/ipfs/Qmf4MHgH5XrG41kyqcyooxBnEMuos9Va3EwiJYRCLAXuBK"
+    },
+    {
+        "tokenId": 2,
+        "name": "Marielle the Mermaid",
+        "attributes": [
+            {
+                "trait_type": "Outfit",
+                "value": "Marielles Bathing Suit"
+            }
+        ],
+        "metaPath": "https://gateway.ipfs.io/ipfs/QmQ1Rvay9GYz3FbYETLLRL79beF2eJ4krp6pjX57X6mX72"
+    },
+    {
+        "tokenId": 3,
+        "name": "Gabriella the Ghost",
+        "attributes": [
+            {
+                "trait_type": "Skin",
+                "value": "Ghostly Gabrielle"
+            }
+        ],
+        "metaPath": "https://gateway.ipfs.io/ipfs/QmeJ5nfRByEpaq8q1qokQcqoggBagG9iw1HLrETpmBWruv"
+    },
+    {
+        "tokenId": 4,
+        "name": "Maahira the Mummy",
+        "attributes": [
+            {
+                "trait_type": "Hair Style",
+                "value": "Mummy A-Line"
+            }
+        ],
+        "metaPath": "https://gateway.ipfs.io/ipfs/QmbNKcQ2n3s4xisuqi1CyPNjWMgyc7bkZGxvFctKCVL3WD"
+    },
+    {
+        "tokenId": 5,
+        "name": "Hex the Vampire Hunter",
+        "attributes": [
+            {
+                "trait_type": "Outfit",
+                "value": "Hex Jacket"
+            }
+        ],
+        "metaPath": "https://gateway.ipfs.io/ipfs/QmXrpfBC9jrgRVNbwYB9sKHkyap3oFanW9rQSzWBsEnd7y"
+    },
+    {
+        "tokenId": 7,
+        "name": "Dominika the Demon",
+        "attributes": [
+            {
+                "trait_type": "Tattoo",
+                "value": "Dominikas Demon"
+            }
+        ],
+        "metaPath": "https://gateway.ipfs.io/ipfs/QmZPaBGpH7LLrbMbkYAAgnx4xC56Epqthj1aXvK64uDp7A"
+    },
+    {
+        "tokenId": 8,
+        "name": "Jesabelle the Royal Queen",
+        "attributes": [
+            {
+                "trait_type": "Hand",
+                "value": "Jesabelles Sword"
+            }
+        ],
+        "metaPath": "https://gateway.ipfs.io/ipfs/QmbRjB3r1AkxjPjGrsSAwDm3qc9Ty9vWHqGLrUrBAygQbj"
+    },
+    {
+        "tokenId": 9,
+        "name": "Crystal the Owl Tamer",
+        "attributes": [
+            {
+                "trait_type": "Hand",
+                "value": "Crystals Owl"
+            }
+        ],
+        "metaPath": "https://gateway.ipfs.io/ipfs/QmUcEiCoHMRBqpH2crCZffUjEMprFWSaWGueYLFkExZerS"
+    },
+    {
+        "tokenId": 10,
+        "name": "Camellia the Owl Tamer",
+        "attributes": [
+            {
+                "trait_type": "Hat",
+                "value": "Sheep Wool Moon Muffs"
+            }
+        ],
+        "metaPath": "https://gateway.ipfs.io/ipfs/QmRWng2QcJ7q2cDBVo9BKmsmbFJMFLA3tjSjSETKTJ5NCv"
+    },
+    {
+        "tokenId": 12,
+        "name": "Clara the Bear Mother",
+        "attributes": [
+            {
+                "trait_type": "Accessory",
+                "value": "Claras Backpack"
+            }
+        ],
+        "metaPath": "https://gateway.ipfs.io/ipfs/QmVhnze9J8gymUV6FuofsrALHrpv2YvQBcdsUN5vQ1JrQ7"
+    },
+    {
+        "tokenId": 13,
+        "name": "Noelle the Fox Keeper",
+        "attributes": [
+            {
+                "trait_type": "Accessory",
+                "value": "Noelles Backpack"
+            }
+        ],
+        "metaPath": "https://gateway.ipfs.io/ipfs/QmQCDPevmJs4bv7cT95Lp8SH8faJNQiB7vCBdEzexVdbgL"
+    },
+    {
+        "tokenId": 14,
+        "name": "Celeste the Bunny Princess",
+        "attributes": [
+            {
+                "trait_type": "Hair Style",
+                "value": "Celestes Locks"
+            }
+        ],
+        "metaPath": "https://gateway.ipfs.io/ipfs/QmfZTg6qVXEkFqAu1nUGFmmy5SR55d8zgayYYezR28iDQu"
+    },
+    {
+        "tokenId": 15,
+        "name": "Aspen the Pack Leader",
+        "attributes": [
+            {
+                "trait_type": "Accessory",
+                "value": "Aspens Wolf"
+            }
+        ],
+        "metaPath": "https://gateway.ipfs.io/ipfs/QmaRS38cJ5BvHtRzpoBMbnTj1fQbbG1xDwWbcQoD8dLCTq"
+    },
+    {
+        "tokenId": 16,
+        "name": "Svetlana the Owl Tamer",
+        "attributes": [
+            {
+                "trait_type": "Outfit",
+                "value": "Svetlanas Sweater"
+            }
+        ],
+        "metaPath": "https://gateway.ipfs.io/ipfs/QmYRhct7HBfF7NyCD6ZWd1BwYKzVUDtzj4oY5bhzx9VANc"
+    },
+    {
+        "tokenId": 17,
+        "name": "Samantha the Holiday Present (2021)",
+        "attributes": [
+            {
+                "trait_type": "Outfit",
+                "value": "Samanthas Christmas Sweater"
+            }
+        ],
+        "metaPath": "https://gateway.ipfs.io/ipfs/QmVaBTi1y8Lm9J7eykw2cMGrt54WXxD57asFKkA4Sb2NqU"
+    },
+    {
+        "tokenId": 18,
+        "name": "Mai the Maid",
+        "attributes": [
+            {
+                "trait_type": "Outfit",
+                "value": "Mais Maid Uniform"
+            },
+            {
+                "trait_type": "Hat",
+                "value": "Mais Maid Hat"
+            },
+            {
+                "trait_type": "Accessory",
+                "value": "Mais Maid Choker"
+            }
+        ],
+        "metaPath": "https://gateway.ipfs.io/ipfs/QmYRuMoRPNHhZ7E1J3nyoHMpDD6V2SbZ47kN8V5KBsrUec"
+    },
+    {
+        "tokenId": 19,
+        "name": "Bella the Bored",
+        "attributes": [
+            {
+                "trait_type": "Outfit",
+                "value": "Bored Christmas Sweater"
+            }
+        ],
+        "metaPath": "https://gateway.ipfs.io/ipfs/QmYsq6h7oMZrGqzLNjwWsVefBSASNwXcdzwNtvRofUAaDH"
+    },
+    {
+        "tokenId": 20,
+        "name": "Piper the Punk",
+        "attributes": [
+            {
+                "trait_type": "Accessory",
+                "value": "Pipers Punk Glasses"
+            }
+        ],
+        "metaPath": "https://gateway.ipfs.io/ipfs/QmdnH4CDyD8wwbRZyzGRDhyRtweNkmeNEr5j8EjqjY5QhC"
+    },
+    {
+        "tokenId": 21,
+        "name": "Deadrie the Dead",
+        "attributes": [
+            {
+                "trait_type": "Hat",
+                "value": "Dead Head"
+            }
+        ],
+        "metaPath": "https://gateway.ipfs.io/ipfs/QmUJdSynszAwuKb9MTanPjyL3PRksEdyHkPi2sANZycaJV"
+    },
+    {
+        "tokenId": 22,
+        "name": "Rowan the Rascal",
+        "attributes": [
+            {
+                "trait_type": "Hat",
+                "value": "Rowans Warm Beret"
+            }
+        ],
+        "metaPath": "https://gateway.ipfs.io/ipfs/QmbeLL8ahrjmEvneAy8ppqhfcNRhCzZa56HmnzRTvHRrhi"
+    },
+    {
+        "tokenId": 23,
+        "name": "Chloe the Cool",
+        "attributes": [
+            {
+                "trait_type": "Hair Style",
+                "value": "Chloes Ponytail"
+            }
+        ],
+        "metaPath": "https://gateway.ipfs.io/ipfs/QmS5brLyLhkperFDeV2FDPb6yay1oKVj2KTfhrSkqgEtgu"
+    },
+    {
+        "tokenId": 24,
+        "name": "Dottie the Doodle",
+        "attributes": [
+            {
+                "trait_type": "Background",
+                "value": "Dottie Clouds"
+            },
+            {
+                "trait_type": "Outfit",
+                "value": "Dotties Puff Jacket"
+            }
+        ],
+        "metaPath": "https://gateway.ipfs.io/ipfs/QmPrTmCGc4UYU9RcXhWQDRQuD6TazEHPXwgwfqdqwUFeo9"
+    },
+    {
+        "tokenId": 25,
+        "name": "Helenica the Vortex Demon",
+        "attributes": [
+            {
+                "trait_type": "Skin",
+                "value": "Helenicas Skin"
+            },
+            {
+                "trait_type": "Accessory",
+                "value": "Helenicas Wings"
+            },
+            {
+                "trait_type": "Hat",
+                "value": "Helenicas Horns"
+            },
+            {
+                "trait_type": "Mouth",
+                "value": "Helenicas Demon Tongue"
+            },
+            {
+                "trait_type": "Accessory",
+                "value": "Helenicas Demon"
+            }
+        ],
+        "metaPath": "https://rarity.mypinata.cloud/ipfs/QmbwagFypjWgZF3Xdx8WbcetVNT7a5muUNN5ZEXvkeWgQC"
+    },
+    {
+        "tokenId": 26,
+        "name": "Lou the Lightning Bolt",
+        "attributes": [
+            {
+                "trait_type": "Hair Style",
+                "value": "Lous Split"
+            }
+        ],
+        "metaPath": "https://gateway.ipfs.io/ipfs/QmUjJNGe9U1zc8e2BJ2rUUMdJDvKKQsaGtvZ4dmfdpx77h"
+    },
+    {
+        "tokenId": 27,
+        "name": "Deko the Demon",
+        "attributes": [
+            {
+                "trait_type": "Accessory",
+                "value": "Dekos KO Necklace"
+            }
+        ],
+        "metaPath": "https://gateway.ipfs.io/ipfs/QmTGVvkcCZEVP9TgUsDDfMBYVFndLxvHYqVkvC4aoMyz1L"
+    },
+    {
+        "tokenId": 28,
+        "name": "Victoria the Vampiric",
+        "attributes": [
+            {
+                "trait_type": "Hat",
+                "value": "Victorias Haunted Hat"
+            }
+        ],
+        "metaPath": "https://gateway.ipfs.io/ipfs/QmQMx9pyF3fRxgrBmcbsyKgTn1ZdtvUeAuDwNGp2Ppmc88"
+    },
+    {
+        "tokenId": 29,
+        "name": "Balor the Bio-Hazard",
+        "attributes": [
+            {
+                "trait_type": "Tattoo",
+                "value": "Balors Dragon Tattoo"
+            }
+        ],
+        "metaPath": "https://dweb.link/ipfs/QmcVQ8r5RXASGH4P4muCTvrAGwTSGx3wigcAggq31moreh"
+    },
+    {
+        "tokenId": 30,
+        "name": "Cyan the Cybernetic",
+        "attributes": [
+            {
+                "trait_type": "Hair Style",
+                "value": "Cyans Mohawk"
+            }
+        ],
+        "metaPath": "https://gateway.ipfs.io/ipfs/QmYm9Zc1D9mGt98PoSxFSchGbBm9cPqayYn7sHxv6VudZh"
+    },
+    {
+        "tokenId": 31,
+        "name": "Belatrix the Batty",
+        "attributes": [
+            {
+                "trait_type": "Outfit",
+                "value": "Belatrixs Goth Top"
+            }
+        ],
+        "metaPath": "https://gateway.ipfs.io/ipfs/QmZra1cRs5XkEXimVAgGNNaQ2V9pxGwpXS9BfuhVmzezEi"
+    },
+    {
+        "tokenId": 32,
+        "name": "Dorothy the Diner-Bot 1.0",
+        "attributes": [
+            {
+                "trait_type": "Outfit",
+                "value": "Dorothys Diner Uniform"
+            }
+        ],
+        "metaPath": "https://dweb.link/ipfs/QmSRMradV8z3msGggWSLb5Y57WyZj8wXk6ztGpaxSYrbdQ"
+    },
+    {
+        "tokenId": 33,
+        "name": "Lydia the Leader",
+        "attributes": [
+            {
+                "trait_type": "Outfit",
+                "value": "Lydias Space Suit"
+            }
+        ],
+        "metaPath": "https://dweb.link/ipfs/QmdHYt82xMbuXvsiTcUHZryHicwKUgv9G4GoXeW6nX2zii"
+    },
+    {
+        "tokenId": 34,
+        "name": "Princess Penelope and Puppy",
+        "attributes": [
+            {
+                "trait_type": "Hand",
+                "value": "Penelopes Puppy"
+            }
+        ],
+        "metaPath": "https://dweb.link/ipfs/QmZCcva6W5p4sXdfUiVqpdR22Qh6wkUyqrfG6jGZGBb9Ck"
+    },
+    {
+        "tokenId": 35,
+        "name": "Charlie and Cookie Bird",
+        "attributes": [
+            {
+                "trait_type": "Accessory",
+                "value": "Cookie Bird"
+            }
+        ],
+        "metaPath": "https://dweb.link/ipfs/QmVQCmxBWnY73gLT8J3JEjfUWv6MQhqPsb4HJ4VhZDqgYk"
+    },
+    {
+        "tokenId": 36,
+        "name": "Heidi and Chocolate Horse",
+        "attributes": [
+            {
+                "trait_type": "Accessory",
+                "value": "Heidis Horsie"
+            }
+        ],
+        "metaPath": "https://dweb.link/ipfs/QmT8TsNPGUECaWtMjdS6hMToRYvnBZ8XQPJgBcK13cs6pm"
+    },
+    {
+        "tokenId": 37,
+        "name": "Tucker and Strawberry Thumper",
+        "attributes": [
+            {
+                "trait_type": "Outfit",
+                "value": "Tuckers Strawberry Tee"
+            }
+        ],
+        "metaPath": "https://dweb.link/ipfs/QmQk2ZDWKLeXAvA24zCvFN2nNmz16bZdaHGxsHkqYSkkMG"
+    },
+    {
+        "tokenId": 38,
+        "name": "Juki and Jellyfish Donut",
+        "attributes": [
+            {
+                "trait_type": "Hand",
+                "value": "Jellyfish Donut"
+            }
+        ],
+        "metaPath": "https://dweb.link/ipfs/QmXm2Bm8f4Gd3TtCAJECKeS1MePmT5KSfTF27BDVYQZjAs"
+    },
+    {
+        "tokenId": 39,
+        "name": "Queen Ginny and Gummy Bear",
+        "attributes": [
+            {
+                "trait_type": "Hand",
+                "value": "Ginnys Gummy Scepter"
+            }
+        ],
+        "metaPath": "https://dweb.link/ipfs/QmeLeCacjrE6YeRiD8GPV7CkxwkkbrHYPqhurHtS7L3YAK"
+    },
+    {
+        "tokenId": 40,
+        "name": "Golden Bunny Queen and Hubert",
+        "attributes": [
+            {
+                "trait_type": "Hand",
+                "value": "Hubert"
+            }
+        ],
+        "metaPath": "https://dweb.link/ipfs/QmcRykGy8sK9WrXTMnV1wJ21Quju1JatNnrMYTGMLesdKm"
+    },
+    {
+        "tokenId": 41,
+        "name": "Kali",
+        "attributes": [
+            {
+                "trait_type": "Accessory",
+                "value": "Skull Necklace"
+            }
+        ],
+        "metaPath": "https://dweb.link/ipfs/QmZZBqCX2e2qiBgfEepjZDtb3Qgpd2BuqhpEqZ5iGRzrDy"
+    },
+    {
+        "tokenId": 42,
+        "name": "Isis",
+        "attributes": [
+            {
+                "trait_type": "Tattoo",
+                "value": "Egyptian Goddess Symbol"
+            }
+        ],
+        "metaPath": "https://dweb.link/ipfs/QmVkf2oSybQ7YHfv9sRKmPTxF31SpjmoKjHJEQRGZd5PEj"
+    },
+    {
+        "tokenId": 43,
+        "name": "Mayari",
+        "attributes": [
+            {
+                "trait_type": "Background",
+                "value": "Mayaris Moon"
+            }
+        ],
+        "metaPath": "https://dweb.link/ipfs/QmfXtevZVdB1aUjYZLMnjvqfZAV6vjaFL9kiXxiDzvJLxm"
+    },
+    {
+        "tokenId": 44,
+        "name": "Naima",
+        "attributes": [
+            {
+                "trait_type": "Hat",
+                "value": "Sir Hornsworth"
+            }
+        ],
+        "metaPath": "https://dweb.link/ipfs/QmXiCwCWV6bq2ywosnx7ZCdV9oZkUGxeKbfppCj44ViRzD"
+    },
+    {
+        "tokenId": 45,
+        "name": "Guan Yin",
+        "attributes": [
+            {
+                "trait_type": "Background",
+                "value": "Beautiful Baby Dragon"
+            }
+        ],
+        "metaPath": "https://dweb.link/ipfs/QmVCLPojUBa2kCvhUvFNWu7m3UcwHr1bWbKmxcChyGty14"
+    },
+    {
+        "tokenId": 46,
+        "name": "Hecate",
+        "attributes": [
+            {
+                "trait_type": "Accessory",
+                "value": "Hecates Magic Skulls"
+            },
+            {
+                "trait_type": "Outfit",
+                "value": "Hecates Corset"
+            },
+            {
+                "trait_type": "Accessory",
+                "value": "Hecates Demon Snake"
+            }
+        ],
+        "metaPath": "https://dweb.link/ipfs/QmXodqYHeLL1328fBurdcoBH28hUxK4RKQRZt9t7P6ocVY"
+    },
+    {
+        "tokenId": 47,
+        "name": "Mika the Bunny Day Queen",
+        "attributes": [
+            {
+                "trait_type": "Hand",
+                "value": "Bunny Day Scepter"
+            },
+            {
+                "trait_type": "Accessory",
+                "value": "Bunny Day Helper"
+            },
+            {
+                "trait_type": "Hair Style",
+                "value": "Bunny Day Mika Hair"
+            }
+        ],
+        "metaPath": "https://dweb.link/ipfs/QmP3PTH6pBwP516qB7fq9ahNvQkmk4tYoyCtpf5jc7yYCh"
+    },
+    {
+        "tokenId": 48,
+        "name": "Xena the Warrior",
+        "attributes": [
+            {
+                "trait_type": "Hair Style",
+                "value": "Warrior Princess Hair"
+            }
+        ],
+        "metaPath": "https://dweb.link/ipfs/Qmd5zQZTquSU2687CACnSyd2YZ164d7b3NowoSp8Bm1P7c"
+    },
+    {
+        "tokenId": 49,
+        "name": "Chun-Li the Fighter",
+        "attributes": [
+            {
+                "trait_type": "Outfit",
+                "value": "Fighter Dress"
+            },
+            {
+                "trait_type": "Accessory",
+                "value": "Chun Stud"
+            },
+            {
+                "trait_type": "Hair Style",
+                "value": "Chun Buns"
+            }
+        ],
+        "metaPath": "https://dweb.link/ipfs/Qmao54ZSh2nDkPx9cRTFQ22Wpm9fqe5NgUz6bjt5QvA9rV"
+    },
+    {
+        "tokenId": 50,
+        "name": "Serena the Moon Guardian",
+        "attributes": [
+            {
+                "trait_type": "Hair Style",
+                "value": "Moon Scout Buns"
+            }
+        ],
+        "metaPath": "https://dweb.link/ipfs/QmRw3gJtsfUAHbsuoCKZ9hk1ViY4t9wKGFsaa5A6hgL7CC"
+    },
+    {
+        "tokenId": 51,
+        "name": "Buffy the Slayer",
+        "attributes": [
+            {
+                "trait_type": "Outfit",
+                "value": "Slayer Leather Jacket"
+            }
+        ],
+        "metaPath": "https://dweb.link/ipfs/QmXGhnGp2sUjusuouoRNfXsrM9QoX4qNB6jYSxEYAKhKqU"
+    },
+    {
+        "tokenId": 52,
+        "name": "Michonne the Tamer",
+        "attributes": [
+            {
+                "trait_type": "Hair Style",
+                "value": "Michonne Dreads"
+            }
+        ],
+        "metaPath": "https://dweb.link/ipfs/QmV992nDajugHuQzZuNR79bo2jJn75anuKc1tw3M9n5Zjn"
+    },
+    {
+        "tokenId": 53,
+        "name": "Lara the Tomb Raider",
+        "attributes": [
+            {
+                "trait_type": "Hand",
+                "value": "Laras Heckler"
+            }
+        ],
+        "metaPath": "https://dweb.link/ipfs/QmZSWdCR5UyY58mVYn73V9atfjuWox1W6UP3qjzZciBSPS"
+    },
+    {
+        "tokenId": 54,
+        "name": "Mika the Birthday Baker",
+        "attributes": [
+            {
+                "trait_type": "Hair Style",
+                "value": "Birthday Buns"
+            },
+            {
+                "trait_type": "Background",
+                "value": "Birthday Sprinkles"
+            }
+        ],
+        "metaPath": "https://dweb.link/ipfs/QmdyybSR8fhgNJwQXG3LgKeHsa7AnAESUXpfrAvP6UgeV7"
+    },
+    {
+        "tokenId": 55,
+        "name": "Floraleen the Elemeind",
+        "attributes": [
+            {
+                "trait_type": "Hand",
+                "value": "Alien Bug Friend"
+            }
+        ],
+        "metaPath": "https://rarity.mypinata.cloud/ipfs/QmXcf7kWBvsqMtktpf3T5W7sE5XY2waG4G29pNFuRaAPJX"
+    },
+    {
+        "tokenId": 56,
+        "name": "Ember the Elemeind",
+        "attributes": [
+            {
+                "trait_type": "Hand",
+                "value": "Baby Ember"
+            }
+        ],
+        "metaPath": "https://rarity.mypinata.cloud/ipfs/QmS7qHYsGGyT6BUgT4yLcKmx3PRDrhoFm2RngCnxxwhQ8f"
+    },
+    {
+        "tokenId": 57,
+        "name": "Gale the Elemeind",
+        "attributes": [
+            {
+                "trait_type": "Mouth",
+                "value": "Storm Smile"
+            }
+        ],
+        "metaPath": "https://rarity.mypinata.cloud/ipfs/Qmd3p4aqQWGcaygNL6EifFrcrwCtStaNrbqsbV89mZGa2G"
+    },
+    {
+        "tokenId": 58,
+        "name": "Vaporah the Elemeind",
+        "attributes": [
+            {
+                "trait_type": "Hair Style",
+                "value": "Water Hair"
+            }
+        ],
+        "metaPath": "https://rarity.mypinata.cloud/ipfs/QmbaRNnH1DZRdC4iazJGpDrrdgjABs4oz27y3zTp2qCtAT"
+    },
+    {
+        "tokenId": 59,
+        "name": "Queen Beetris of Elemeind",
+        "attributes": [
+            {
+                "trait_type": "Background",
+                "value": "Bumble Bees"
+            }
+        ],
+        "metaPath": "https://rarity.mypinata.cloud/ipfs/QmbBtm37Qtj2TZDsmV8pN6bycPMQ34pm6vJSW3Zbc1JTb6"
+    },
+    {
+        "tokenId": 60,
+        "name": "Paragon the Elemeind",
+        "attributes": [
+            {
+                "trait_type": "Accessory",
+                "value": "Arcane Cave Beast"
+            }
+        ],
+        "metaPath": "https://rarity.mypinata.cloud/ipfs/QmW6TxmAAcWmjwempsJZLQxpYDJkPBaPEmYvrqrkuW8dak"
+    },
+    {
+        "tokenId": 61,
+        "name": "Betsy the Baker",
+        "attributes": [
+            {
+                "trait_type": "Hat",
+                "value": "30s Cartoon Kitty"
+            }
+        ],
+        "metaPath": "https://rarity.mypinata.cloud/ipfs/QmUdiSAB4xYeVk5CjhuyLP5MoXiz2kvb6dVjzT433HRbtv"
+    },
+    {
+        "tokenId": 62,
+        "name": "Princess Oriana and the Mizzards",
+        "attributes": [
+            {
+                "trait_type": "Background",
+                "value": "Dancing Bubble"
+            }
+        ],
+        "metaPath": "https://rarity.mypinata.cloud/ipfs/Qmc9p56Md1PHS5yiXJSGFsPwsJd6TbsQ3kVxCaeCkL4dGh"
+    },
+    {
+        "tokenId": 63,
+        "name": "Lucy the Lagoon Gal",
+        "attributes": [
+            {
+                "trait_type": "Background",
+                "value": "Lagoon Monster"
+            }
+        ],
+        "metaPath": "https://rarity.mypinata.cloud/ipfs/QmTWUReiwTGSfWwWkeUTSwTWpHNK1MjjRzpMm61aVCpxKf"
+    },
+    {
+        "tokenId": 64,
+        "name": "Lil' Red and Mr.Wolfie",
+        "attributes": [
+            {
+                "trait_type": "Background",
+                "value": "30s Forest"
+            },
+            {
+                "trait_type": "Background",
+                "value": "30s Forest Bunny"
+            }
+        ],
+        "metaPath": "https://rarity.mypinata.cloud/ipfs/QmPLhLnYSkKaZJeXdxesK3B2ZsBHUkvYnBom6uUTvdnwx2"
+    },
+    {
+        "tokenId": 65,
+        "name": "Wendy the Witch",
+        "attributes": [
+            {
+                "trait_type": "Background",
+                "value": "Witches Cauldron"
+            }
+        ],
+        "metaPath": "https://rarity.mypinata.cloud/ipfs/QmYnPsyfKcpamcjwC9zRoKfHgMEdgkadSLAC1EVDXDyFTH"
+    },
+    {
+        "tokenId": 66,
+        "name": "Matilda the Maid",
+        "attributes": [
+            {
+                "trait_type": "Background",
+                "value": "Ghostly Bear Buddy"
+            },
+            {
+                "trait_type": "Outfit",
+                "value": "Matildas Maid Uniform"
+            }
+        ],
+        "metaPath": "https://rarity.mypinata.cloud/ipfs/QmaGsrcG3drKujrXmVZZRvLh3qUDWmB9NMcZATiBLNkhZ7"
+    },
+    {
+        "tokenId": 68,
+        "name": "Haley the Hupe Scout",
+        "attributes": [
+            {
+                "trait_type": "Outfit",
+                "value": "Hupe Scout Uniform"
+            },
+            {
+                "trait_type": "Hat",
+                "value": "Hupe Scout Uniform Beret"
+            },
+            {
+                "trait_type": "Background",
+                "value": "Hupe Rainbow"
+            }
+        ],
+        "metaPath": "https://rarity.mypinata.cloud/ipfs/QmSNwSghLg3FoTQ338w85j8yXoPoGom1mJHvtBMsH9ja9f"
+    },
+    {
+        "tokenId": 69,
+        "name": "Kiki the Witch",
+        "attributes": [
+            {
+                "trait_type": "Background",
+                "value": "Kikis Sky"
+            }
+        ],
+        "metaPath": "https://rarity.mypinata.cloud/ipfs/QmYH3Qp1nz76ESfH3YPHQScvTwzEQ632sA9awtWg7rz9jt"
+    },
+    {
+        "tokenId": 70,
+        "name": "Mei the Explorer",
+        "attributes": [
+            {
+                "trait_type": "Hat",
+                "value": "Straw Hat"
+            }
+        ],
+        "metaPath": "https://rarity.mypinata.cloud/ipfs/QmUwBYhGwmowQ5ULnTEBfvvwEQ6ts1EnYUW5HFmAsDHuky"
+    },
+    {
+        "tokenId": 71,
+        "name": "Chihiro the Brave - Coming Soon",
+        "attributes": [
+            {
+                "trait_type": "Epic",
+                "value": "5"
+            }
+        ],
+        "metaPath": "https://rarity.mypinata.cloud/ipfs/QmPwXmftGKKaBwqeH6cLFGXghtZ3gkSKzyAyWCbs4UJic5"
+    },
+    {
+        "tokenId": 72,
+        "name": "Princess Mononoke the Fierce",
+        "attributes": [
+            {
+                "trait_type": "Accessory",
+                "value": "Moro"
+            }
+        ],
+        "metaPath": "https://rarity.mypinata.cloud/ipfs/QmebYBxZcgABSJHouE1kEcCHHHP4q8LsVZoT6NNLwLfRum"
+    },
+    {
+        "tokenId": 73,
+        "name": "Howl the Wizard",
+        "attributes": [
+            {
+                "trait_type": "Accessory",
+                "value": "Howls Wings"
+            }
+        ],
+        "metaPath": "https://rarity.mypinata.cloud/ipfs/QmcdfwMQdJp6aTSoDWtaFn9oVbazJfgBFP9h11LsvEezkv"
+    },
+    {
+        "tokenId": 74,
+        "name": "Jam and Jigglypuff",
+        "attributes": [
+            {
+                "trait_type": "Outfit",
+                "value": "Frilly Tank"
+            }
+        ],
+        "metaPath": "https://rarity.mypinata.cloud/ipfs/QmPyqYHDgMM5WmpzhwZiWP9sC63jSfyQq8y9DJuiaPvA9U"
+    },
+    {
+        "tokenId": 75,
+        "name": "Percy and Psyduck",
+        "attributes": [
+            {
+                "trait_type": "Accessory",
+                "value": "Percys Pack Pack"
+            }
+        ],
+        "metaPath": "https://rarity.mypinata.cloud/ipfs/QmQEzmv1DqktR5a6uEiytHo3EdrT22N5dWYf2D23w6jF8p"
+    },
+    {
+        "tokenId": 76,
+        "name": "Mary and Miltank",
+        "attributes": [
+            {
+                "trait_type": "Hair Style",
+                "value": "Mary Piggys"
+            }
+        ],
+        "metaPath": "https://rarity.mypinata.cloud/ipfs/Qmb2N8YqwiJiAJjRwZSJCASJtGzVq2zXusHosrXjzxjVaP"
+    },
+    {
+        "tokenId": 77,
+        "name": "Alice and Arcanine",
+        "attributes": [
+            {
+                "trait_type": "Accessory",
+                "value": "Alices Pup"
+            }
+        ],
+        "metaPath": "https://rarity.mypinata.cloud/ipfs/QmSbqAagMtzQjTpdRw69mzFhEzappXWdwH4dkvw2zNyny5"
+    },
+    {
+        "tokenId": 78,
+        "name": "Duyen and Dratini",
+        "attributes": [
+            {
+                "trait_type": "Outfit",
+                "value": "Dragon Egg Dress"
+            },
+            {
+                "trait_type": "Mouth",
+                "value": "Dragon Fangs"
+            },
+            {
+                "trait_type": "Hat",
+                "value": "Cloud Halo"
+            },
+            {
+                "trait_type": "Eyebrows",
+                "value": "Dragon Eyebrows"
+            }
+        ],
+        "metaPath": "https://ipfs.rarity.garden/ipfs/QmYjiKajV6hKjXDB7HyyRHFTM2yifbroYyEcb5BtDdo4cD"
+    },
+    {
+        "tokenId": 80,
+        "name": "Gamer Queen Jelli",
+        "attributes": [
+            {
+                "trait_type": "Outfit",
+                "value": "Gamer Queen Jelli Uniform"
+            },
+            {
+                "trait_type": "Hat",
+                "value": "Gel Piggy Gamer Headset"
+            }
+        ],
+        "metaPath": "https://rarity.mypinata.cloud/ipfs/QmcK82pRVyJJncudsUqaLBVmd7a9TPKm31sEtcS9kTkws7"
+    },
+    {
+        "tokenId": 81,
+        "name": "Ratty B",
+        "attributes": [
+            {
+                "trait_type": "Mouth",
+                "value": "Delicious Cheese Pizza"
+            },
+            {
+                "trait_type": "Hat",
+                "value": "Big Cheese Ears"
+            }
+        ],
+        "metaPath": "https://rarity.mypinata.cloud/ipfs/QmPH5sC9ue1u1xyAQBJWNShyVLAhrAV6jf63QXXyt5mhTr"
+    },
+    {
+        "tokenId": 82,
+        "name": "Blake the Bunny Wrangler",
+        "attributes": [
+            {
+                "trait_type": "Background",
+                "value": "Cactus Horizon"
+            }
+        ],
+        "metaPath": "https://rarity.mypinata.cloud/ipfs/QmRci7GUkMpD3XDymWDdur685fFdPBD8jwCM9c5EaAaq3Q"
+    },
+    {
+        "tokenId": 83,
+        "name": "Palmer the Potato Farmer",
+        "attributes": [
+            {
+                "trait_type": "Mouth",
+                "value": "Chewing Wheat"
+            }
+        ],
+        "metaPath": "https://ipfs.rarity.garden/ipfs/QmYMNmPU6u5rjTCUcw8LHMmDaBxD3NAdbPiK8Auc3c3Rei"
+    },
+    {
+        "tokenId": 84,
+        "name": "Reese the Researcher",
+        "attributes": [
+            {
+                "trait_type": "Accessory",
+                "value": "Baby Hornsworth Backpack"
+            },
+            {
+                "trait_type": "Bodysuit",
+                "value": "Hornsworth Hoodie"
+            }
+        ],
+        "metaPath": "https://rarity.mypinata.cloud/ipfs/QmYNcn11zAKR5ZGcdN4DokNZrdg6zQnLNNjzp4WiU5RnZr"
+    },
+    {
+        "tokenId": 85,
+        "name": "Brie the Beat Queen",
+        "attributes": [
+            {
+                "trait_type": "Hair Style",
+                "value": "Superstar Hair"
+            },
+            {
+                "trait_type": "Accessory",
+                "value": "Bad Bunny Earrings"
+            },
+            {
+                "trait_type": "Accessory",
+                "value": "Beat Queen Glasses"
+            }
+        ],
+        "metaPath": "https://rarity.mypinata.cloud/ipfs/Qmf8yqR5LT8aNAbRmCgiYMmCQL571Se8se7pRc5eZMGD9g"
+    },
+    {
+        "tokenId": 86,
+        "name": "Waverly the Witch",
+        "attributes": [
+            {
+                "trait_type": "Outfit",
+                "value": "Puffy Top"
+            }
+        ],
+        "metaPath": "https://ipfs.rarity.garden/ipfs/QmRsMvD7dcPK9tFgYnEBT3XaBkagWgqboeJXJ9FbM1wxTV"
+    },
+    {
+        "tokenId": 87,
+        "name": "Vanity the Vampire",
+        "attributes": [
+            {
+                "trait_type": "Hair Style",
+                "value": "Vanity Curls"
+            }
+        ],
+        "metaPath": "https://ipfs.rarity.garden/ipfs/QmNPYcozbjkyJyrvPgnWweyvxHmqt1SzTM2XzQj1DxNXXL"
+    },
+    {
+        "tokenId": 88,
+        "name": "Octavia the Octopus",
+        "attributes": [
+            {
+                "trait_type": "Hair Style",
+                "value": "Octavia Tentacles"
+            }
+        ],
+        "metaPath": "https://ipfs.rarity.garden/ipfs/QmQCts3Kua4nEsMTbQf8hFdw21Y3zBJDx4gWJs13yr3iSR"
+    },
+    {
+        "tokenId": 89,
+        "name": "Deidre the Demon",
+        "attributes": [
+            {
+                "trait_type": "Tattoo",
+                "value": "Hott Demon Tats"
+            }
+        ],
+        "metaPath": "https://ipfs.rarity.garden/ipfs/QmPmw52TSBthjyCioUwyYo1PnqyqycEHHyfvJsYjT3En6o"
+    },
+    {
+        "tokenId": 90,
+        "name": "Gwenyvere the Ghost",
+        "attributes": [
+            {
+                "trait_type": "Accessory",
+                "value": "Surprised Boo"
+            }
+        ],
+        "metaPath": "https://ipfs.rarity.garden/ipfs/QmYwGqbN3ApYzyg5chQuiu13mvSYbvtrKACt5vjxhofsA8"
+    },
+    {
+        "tokenId": 91,
+        "name": "Wendria the Wicked",
+        "attributes": [
+            {
+                "trait_type": "Outfit",
+                "value": "Ribs Leather"
+            }
+        ],
+        "metaPath": "https://ipfs.rarity.garden/ipfs/QmbngGLkwhpu72Q51aHZw59c4kCebBDEeexiXWEheRBhmx"
+    },
+    {
+        "tokenId": 92,
+        "name": "Lalia the Leo",
+        "attributes": [
+            {
+                "trait_type": "Accessory",
+                "value": "Leo Plushie"
+            }
+        ],
+        "metaPath": "https://ipfs.rarity.garden/ipfs/QmR9mjkzFuRrwSuibCR7sf8ymtbJ5Sps5kWVaDksJND9tN"
+    },
+    {
+        "tokenId": 93,
+        "name": "Ava the Aries",
+        "attributes": [
+            {
+                "trait_type": "Face Sticker",
+                "value": "Dead Star"
+            },
+            {
+                "trait_type": "Hat",
+                "value": "Aries Horns"
+            },
+            {
+                "trait_type": "Hand",
+                "value": "Avas Hammer"
+            }
+        ],
+        "metaPath": "https://ipfs.rarity.garden/ipfs/QmRHMPgoAGNMUP7ddpmk5RoxP2YzuUj1x9UJJcm94NiXH6"
+    },
+    {
+        "tokenId": 94,
+        "name": "Gem & Gina the Gemenis",
+        "attributes": [
+            {
+                "trait_type": "Face Sticker",
+                "value": "Winky Sun"
+            },
+            {
+                "trait_type": "Tattoo",
+                "value": "Tribal"
+            }
+        ],
+        "metaPath": "https://ipfs.rarity.garden/ipfs/QmP9hHqJtAfgCZzRUZ88GaNEyEthxaMyt8qCJtkpdHy4VH"
+    },
+    {
+        "tokenId": 95,
+        "name": "Pelage the Pisces",
+        "attributes": [
+            {
+                "trait_type": "Face Sticker",
+                "value": "Dead Fish"
+            },
+            {
+                "trait_type": "Hand",
+                "value": "Pelages Spear"
+            }
+        ],
+        "metaPath": "https://ipfs.rarity.garden/ipfs/QmYLki9Heo3otkxhkZp4zEDe3tBwhowJChJ2rjokepwnSV"
+    },
+    {
+        "tokenId": 96,
+        "name": "Sanda the Scorpio",
+        "attributes": [
+            {
+                "trait_type": "Outfit",
+                "value": "Scorpio Armor"
+            },
+            {
+                "trait_type": "Hat",
+                "value": "Scorpio Helmet"
+            }
+        ],
+        "metaPath": "https://ipfs.rarity.garden/ipfs/QmRDH47C1LhNKa5EvYvUpbtfwMsyK4GNW4LN1Angoove3Q"
+    },
+    {
+        "tokenId": 97,
+        "name": "Sable the Sagitarrius",
+        "attributes": [
+            {
+                "trait_type": "Accessory",
+                "value": "Sirius"
+            },
+            {
+                "trait_type": "Eyes",
+                "value": "Bionic Eye"
+            }
+        ],
+        "metaPath": "https://ipfs.rarity.garden/ipfs/QmQQYNd2X7brYKkZjngQu4ii8G1WDkwcv5UQb1bbR6GuQz"
+    },
+    {
+        "tokenId": 98,
+        "name": "Lexa the Libra",
+        "attributes": [
+            {
+                "trait_type": "Accessory",
+                "value": "Marshmallow Drone"
+            },
+            {
+                "trait_type": "Accessory",
+                "value": "Thog Drone"
+            }
+        ],
+        "metaPath": "https://ipfs.rarity.garden/ipfs/QmRidypMNwKJkxgSTXP43ijTkTumy91CfEB39HahAL49yE"
+    },
+    {
+        "tokenId": 99,
+        "name": "Cecily the Capricorn",
+        "attributes": [
+            {
+                "trait_type": "Background",
+                "value": "Holographic Fish"
+            },
+            {
+                "trait_type": "Tattoo",
+                "value": "Cecilys Fish"
+            }
+        ],
+        "metaPath": "https://ipfs.rarity.garden/ipfs/QmWu7zo8uypndKtgzhZBK3bGjFfU49Le37XuFJCHULtnn5"
+    },
+    {
+        "tokenId": 100,
+        "name": "Calantha the Cancer",
+        "attributes": [
+            {
+                "trait_type": "Piercing",
+                "value": "Calanthas Nose Chain"
+            },
+            {
+                "trait_type": "Outfit",
+                "value": "Calanthas Cloak"
+            }
+        ],
+        "metaPath": "https://ipfs.rarity.garden/ipfs/QmVyBUDPdN7oH8JveRzUUrSKP3E2KnCcJC7J6JL94jeqHq"
+    },
+    {
+        "tokenId": 101,
+        "name": "Verity the Virgo",
+        "attributes": [
+            {
+                "trait_type": "Hand",
+                "value": "Veritys Staff"
+            }
+        ],
+        "metaPath": "https://ipfs.rarity.garden/ipfs/QmSGdcFPNTo2EKinz22jedjjaYr3mNUC5Jp74L5EdUYVxx"
+    },
+    {
+        "tokenId": 102,
+        "name": "Akira the Aquarius",
+        "attributes": [
+            {
+                "trait_type": "Mouth",
+                "value": "Akiras Snarl"
+            },
+            {
+                "trait_type": "Hand",
+                "value": "Stardust Milkshake"
+            },
+            {
+                "trait_type": "Accessory",
+                "value": "Glipper Tray"
+            },
+            {
+                "trait_type": "Eyebrows",
+                "value": "Akiras Brows"
+            },
+            {
+                "trait_type": "Accessory",
+                "value": "Akiras Eyeball Necklace"
+            }
+        ],
+        "metaPath": "https://ipfs.rarity.garden/ipfs/QmaKReQ72cG4oxvgvbSLLu3sHFcdYTQekUCrCyyGU2jVXX"
+    },
+    {
+        "tokenId": 103,
+        "name": "Tahlia the Taurus",
+        "attributes": [
+            {
+                "trait_type": "Hat",
+                "value": "Baby Bull"
+            },
+            {
+                "trait_type": "Accessory",
+                "value": "Constellation Hoops"
+            },
+            {
+                "trait_type": "Mouth",
+                "value": "Taurus Lips"
+            }
+        ],
+        "metaPath": "https://ipfs.rarity.garden/ipfs/QmZDFiWSj8D64GBxm5FB8hQ4KcwypH1wsdyFAQBHSoZA5r"
+    },
+    {
+        "tokenId": 104,
+        "name": "Samantha the Holiday Present (2022)",
+        "attributes": [
+            {
+                "trait_type": "Hand",
+                "value": "BFF Bracelet"
+            }
+        ],
+        "metaPath": "https://ipfs.rarity.garden/ipfs/QmNzf31GQLURNKCCZ3ChUzcTbixN781fQsYy82zYTmPHTr"
+    },
+    {
+        "tokenId": 105,
+        "name": "Satsuki the Shengu",
+        "attributes": [
+            {
+                "trait_type": "Outfit",
+                "value": "Shengu Jacket"
+            }
+        ],
+        "metaPath": "ipfs://bafybeibbjtcouc7c5vpn6knxyvo6ce3omxmpfpjwbfu4zmk5o32nvrnthm/105.json"
+    },
+    {
+        "tokenId": 106,
+        "name": "Yuki the Mecha Racer",
+        "attributes": [
+            {
+                "trait_type": "Outfit",
+                "value": "Yuki Racer Suit"
+            },
+            {
+                "trait_type": "Hair Style",
+                "value": "Yuki Pigtails"
+            }
+        ],
+        "metaPath": "ipfs://bafybeidov5zquyhcw2otpu73yhfb3al56mkirqjigverjetlobns4qy3ie/106.json"
+    },
+    {
+        "tokenId": 107,
+        "name": "Trinity & Entity the Twins",
+        "attributes": [
+            {
+                "trait_type": "Background",
+                "value": "Grid Alleyway"
+            }
+        ],
+        "metaPath": "ipfs://bafybeigay6q4stir7mwc5jds5ozbuvayyo767nraupjhir6azu2cje7pfq/107.json"
+    },
+    {
+        "tokenId": 108,
+        "name": "Kazuko 'The Ghost' Bounty Queen",
+        "attributes": [
+            {
+                "trait_type": "Hand",
+                "value": "Kazukos Ghost"
+            },
+            {
+                "trait_type": "Outfit",
+                "value": "Kazuko Jacket"
+            }
+        ],
+        "metaPath": "ipfs://bafybeigteidihrai35v3vwg7skxifeldpvekv37ywzyas5sbhlqhvbiysy/108.json"
+    },
+    {
+        "tokenId": 109,
+        "name": "Xap the Executive",
+        "attributes": [
+            {
+                "trait_type": "Hair Style",
+                "value": "Xap Buns"
+            }
+        ],
+        "metaPath": "ipfs://bafybeibfwxcq335rnacjbl7j7cwcine3m2uhyxhdvspixalp4mwyulnuiu/109.json"
+    },
+    {
+        "tokenId": 110,
+        "name": "Minty Mila",
+        "attributes": [
+            {
+                "trait_type": "Accessory",
+                "value": "Milas Pearl Earrings"
+            }
+        ],
+        "metaPath": "ipfs://bafybeiftjz6gpwi6o3orhiehvpquoxcks7zsgkgrhsc3preby7etq4acwa/110.json"
+    },
+    {
+        "tokenId": 111,
+        "name": "Hope the HunnyGram Delivery Girl",
+        "attributes": [
+            {
+                "trait_type": "Hand",
+                "value": "Hunny Gram"
+            }
+        ],
+        "metaPath": "ipfs://bafybeigzze7ovyojcqhjf4bulfc2w3i5ybkcqhotodqw5uz2obcjv43puu/111.json"
+    },
+    {
+        "tokenId": 112,
+        "name": "Mika Big Fluffy Ears and the Smelly Nerdy Dragon",
+        "attributes": [
+            {
+                "trait_type": "Accessory",
+                "value": "Smelly Dragon"
+            }
+        ],
+        "metaPath": "ipfs://bafybeieoyby4ycfc6xpaxax5nuwzommod6ffnp5jfwivt6n7pheysvgau4/112.json"
+    },
+    {
+        "tokenId": 113,
+        "name": "Brie the Bubbly Wubbly Bar Maiden",
+        "attributes": [
+            {
+                "trait_type": "Hand",
+                "value": "Bar Tray"
+            }
+        ],
+        "metaPath": "ipfs://bafybeiaoornirxbfkb74gn4qlqstpr6poav4djxi6qu5lusv6aomi7xzpq/113.json"
+    },
+    {
+        "tokenId": 114,
+        "name": "Bixie the Bubble Grove Troll",
+        "attributes": [
+            {
+                "trait_type": "Mouth",
+                "value": "Bixie Underbite"
+            },
+            {
+                "trait_type": "Accessory",
+                "value": "Bubble Bear"
+            },
+            {
+                "trait_type": "Eyebrows",
+                "value": "Bixie Brows"
+            }
+        ],
+        "metaPath": "ipfs://bafybeigpk5kkzyvxhaypd3uekucoxyibq3pyi7ez3kq4n5356i43odfyz4/114.json"
+    },
+    {
+        "tokenId": 115,
+        "name": "Cottynne the Candy Cloud Creep Shepardess",
+        "attributes": [
+            {
+                "trait_type": "Background",
+                "value": "Candy Clouds"
+            },
+            {
+                "trait_type": "Frame",
+                "value": "Candy Cloud Creep"
+            },
+            {
+                "trait_type": "Accessory",
+                "value": "Candy Earring"
+            }
+        ],
+        "metaPath": "ipfs://bafybeifhvvypql3s2gimozkayhodjascjq7yksoq5t763xeymbrqpig4lm/115.json"
+    },
+    {
+        "tokenId": 116,
+        "name": "Pandora the Potion Witch",
+        "attributes": [
+            {
+                "trait_type": "Eyes",
+                "value": "Potion Eyes"
+            },
+            {
+                "trait_type": "Accessory",
+                "value": "Eyeball Earrings"
+            }
+        ],
+        "metaPath": "ipfs://bafybeid5g7foqgy2r2k42uqy35v5khiomeuylszl65tl34tjpu3if63ohy/116.json"
+    },
+    {
+        "tokenId": 117,
+        "name": "Scholar Mika and the Lore Masters",
+        "attributes": [
+            {
+                "trait_type": "Accessory",
+                "value": "Nimbus the Sky Puppy"
+            }
+        ],
+        "metaPath": "ipfs://bafybeiarvzldb57a67hw4js6kye2v6474grr3cekah73uweummt65ypham/117.json"
+    },
+    {
+        "tokenId": 118,
+        "name": "Sally the Sneak",
+        "attributes": [
+            {
+                "trait_type": "Outfit",
+                "value": "Robber Shirt"
+            },
+            {
+                "trait_type": "Face Sticker",
+                "value": "Robber Dirt"
+            }
+        ],
+        "metaPath": "ipfs://bafybeiedl4eyrin7twkztiel3gpjt5tmhudwhr4wxkphywahettqswtb74/118.json"
+    },
+    {
+        "tokenId": 119,
+        "name": "Spectra the Shapeshifter",
+        "attributes": [
+            {
+                "trait_type": "Background",
+                "value": "Red Flames of Spectra"
+            },
+            {
+                "trait_type": "Background",
+                "value": "Blue Flames of Spectra"
+            },
+            {
+                "trait_type": "Background",
+                "value": "Green Flames of Spectra"
+            },
+            {
+                "trait_type": "Background",
+                "value": "Purple Flames of Spectra"
+            }
+        ],
+        "metaPath": "ipfs://bafybeig44kxgvmmbd63ahvcxspzaov2ejar2gumvsi5cajph5ilbs5zzfm/119.json"
+    },
+    {
+        "tokenId": 120,
+        "name": "Skyella the Sky Painter",
+        "attributes": [
+            {
+                "trait_type": "Hair Style",
+                "value": "Skyellas Hair"
+            }
+        ],
+        "metaPath": "ipfs://bafybeigrctbwog77iuts67ft3cyhbixjzfvjqah6aiocbdi5zokdpw3bfu/120.json"
+    },
+    {
+        "tokenId": 121,
+        "name": "Demi the Dreamweaver",
+        "attributes": [
+            {
+                "trait_type": "Hat",
+                "value": "DreamFox Ears"
+            },
+            {
+                "trait_type": "Background",
+                "value": "Dreamland Swirls"
+            },
+            {
+                "trait_type": "Accessory",
+                "value": "Ferrick the Fox"
+            }
+        ],
+        "metaPath": "ipfs://bafybeid2qrfxrg47e66wh7xrbx5ud5e333s5k4x67cd35vjbqvhpwigtqy/121.json"
+    },
+    {
+        "tokenId": 122,
+        "name": "Davina Dreamgiver, The Empress of Dreamland",
+        "attributes": [
+            {
+                "trait_type": "Hair Style",
+                "value": "Empress Ritual"
+            },
+            {
+                "trait_type": "Skin",
+                "value": "Dream Stripes"
+            }
+        ],
+        "metaPath": "ipfs://bafybeiap52aerpzyrqtmd5q5qeh3jlsdnopw3ssxvrqncjayuerjquuwwm/122.json"
+    },
+    {
+        "tokenId": 123,
+        "name": "The Dreamland Sorcerer",
+        "attributes": [
+            {
+                "trait_type": "Background",
+                "value": "Dreamland Danger"
+            },
+            {
+                "trait_type": "Frame",
+                "value": "Dreamland Beasts"
+            },
+            {
+                "trait_type": "Accessory",
+                "value": "Salamek the Raven"
+            }
+        ],
+        "metaPath": "ipfs://bafybeih3v565evdmub7zhmxe54vbe5j7jekwvayxx6oxcwvgvo37d6jpym/123.json"
+    },
+    {
+        "tokenId": 124,
+        "name": "Human Dorothy, Gazoopi and the Trick Pet Lobster",
+        "attributes": [
+            {
+                "trait_type": "Background",
+                "value": "Goop"
+            },
+            {
+                "trait_type": "Tattoo",
+                "value": "0xF"
+            }
+        ],
+        "metaPath": "ipfs://bafybeifkxsl3swg7rp37zeo42zy2uu3jm5h5rydlgv6qbgedjuyitvhsee/124.json"
+    },
+    {
+        "tokenId": 125,
+        "name": "Mika the Bunny Day Baker",
+        "attributes": [
+            {
+                "trait_type": "Outfit",
+                "value": "Bunny Day Apron"
+            }
+        ],
+        "metaPath": "ipfs://bafybeifzm5m7l2a5npivr3rcdr6rwba5zjwqe4cmvfaumlwewhdu2uoble/125.json"
+    },
+    {
+        "tokenId": 126,
+        "name": "Dorothy and Chef Bumpy",
+        "attributes": [
+            {
+                "trait_type": "Background",
+                "value": "Dorothys View"
+            }
+        ],
+        "metaPath": "ipfs://bafybeib4dwoko5zocyxo4xeecv2k2sdy3bdxsiezbw5tjp7l4aqqiaop7i/126.json"
+    },
+    {
+        "tokenId": 127,
+        "name": "Cillia the Cyclops",
+        "attributes": [
+            {
+                "trait_type": "Accessory",
+                "value": "Moon Rocks"
+            },
+            {
+                "trait_type": "Tattoo",
+                "value": "Extra Eye"
+            },
+            {
+                "trait_type": "Hand",
+                "value": "Roctopus Tray"
+            }
+        ],
+        "metaPath": "ipfs://bafybeig3qwnxrcn4nbmjogi7apo7sndv4h6qy44kp2smrhli3qhhtsakse/127.json"
+    },
+    {
+        "tokenId": 128,
+        "name": "Fara the Food Genie",
+        "attributes": [
+            {
+                "trait_type": "Outfit",
+                "value": "Faras Uniform"
+            }
+        ],
+        "metaPath": "ipfs://bafybeiahlmvjs7cst3exo5bsfsac7kwdulv23p4oug6jknrfksg5z56xse/128.json"
+    },
+    {
+        "tokenId": 129,
+        "name": "Beryl and Blaze the BBQ Demons",
+        "attributes": [
+            {
+                "trait_type": "Tattoo",
+                "value": "Space Fruits"
+            },
+            {
+                "trait_type": "Face Sticker",
+                "value": "XO"
+            },
+            {
+                "trait_type": "Accessory",
+                "value": "Blaze"
+            },
+            {
+                "trait_type": "Skin",
+                "value": "Spicy Demon"
+            }
+        ],
+        "metaPath": "ipfs://bafybeide4bdyujve37gc2cfs2w5xjtetgudig5podshuz45jazg23f3e4q/129.json"
+    },
+    {
+        "tokenId": 130,
+        "name": "Saffirah the Spice Merchant",
+        "attributes": [
+            {
+                "trait_type": "Outfit",
+                "value": "Spice Merchant Robe"
+            },
+            {
+                "trait_type": "Skin",
+                "value": "Saffirah Speckles"
+            }
+        ],
+        "metaPath": "ipfs://bafybeiggrhlblay4don4fgdpzikchu7acxnomiyrbl4ftw7refx4b3prcq/130.json"
+    },
+    {
+        "tokenId": 131,
+        "name": "Hiroshi the Hotsprings Guardian",
+        "attributes": [
+            {
+                "trait_type": "Hair Style",
+                "value": "Hot Springs Buns"
+            },
+            {
+                "trait_type": "Accessory",
+                "value": "Rikori"
+            }
+        ],
+        "metaPath": "ipfs://bafybeigpc2423wrwqwsxobv2putrpuvb4vmqbydzn7lvemykckj6szfuxu/131.json"
+    },
+    {
+        "tokenId": 132,
+        "name": "Max the Moonstone Miner",
+        "attributes": [
+            {
+                "trait_type": "Hair Style",
+                "value": "Messy Miner"
+            },
+            {
+                "trait_type": "Hand",
+                "value": "Pickaxe"
+            },
+            {
+                "trait_type": "Hand",
+                "value": "Pickaxe and Moonstone Pal"
+            }
+        ],
+        "metaPath": "ipfs://bafybeih3y52c3nxxwlh7wiweqnw6id2gsrywy4gksxp2fomqduehbdmvt4/132.json"
+    },
+    {
+        "tokenId": 133,
+        "name": "Madeleine Laurent, the Moonstone Collector",
+        "attributes": [
+            {
+                "trait_type": "Mouth",
+                "value": "Kissy"
+            },
+            {
+                "trait_type": "Accessory",
+                "value": "Moonstone Earrings"
+            }
+        ],
+        "metaPath": "ipfs://bafybeihntyomsvqgewmw6tzdxaij37ejcbse6gur2zc65sy2vbzr4dovaa/133.json"
+    },
+    {
+        "tokenId": 134,
+        "name": "Kiera the Keeper of Moonstone Mountain",
+        "attributes": [
+            {
+                "trait_type": "Eyebrows",
+                "value": "Moonstone Brows"
+            },
+            {
+                "trait_type": "Outfit",
+                "value": "Moonstone Guardian Gown"
+            },
+            {
+                "trait_type": "Accessory",
+                "value": "Eternal Stag"
+            }
+            
+        ],
+        "metaPath": "ipfs://bafybeid2a6gpywqeaa5ehtde2pzm3lwgxih5nw7la4l3etf2ladnnzjjha/134.json"
+    },
+    {
+        "tokenId": 135,
+        "name": "Cyanne the Moonstone Candy Confectioner",
+        "attributes": [
+            {
+                "trait_type": "Hand",
+                "value": "Moonstone Icecream"
+            }
+        ],
+        "metaPath": "ipfs://bafybeidh2k4mpgcxgufs5f2dilzrpc5hzrzl4zzymoudecamuchoeg4mfu/135.json"
+    },
+    {
+        "tokenId": 136,
+        "name": "Wylie the Wolfy",
+        "attributes": [
+            {
+                "trait_type": "Hair Style",
+                "value": "Wolfy Shag Hair"
+            },
+            {
+                "trait_type": "Hat",
+                "value": "Wolfy Hat"
+            },
+            {
+                "trait_type": "Mouth",
+                "value": "Wolfy Smile"
+            },
+            {
+                "trait_type": "Outfit",
+                "value": "Wolfys Jacket"
+            },
+            {
+                "trait_type": "Hand",
+                "value": "Shepards Crook"
+            },
+            {
+                "trait_type": "Accessory",
+                "value": "Wolfy"
+            }
+        ],
+        "metaPath": "ipfs://bafybeignbqfhhofak34klhtcx4wl7omcbuigkkpzqag4jpwo265omcc5s4/136.json"
+    },
+    {
+        "tokenId": 137,
+        "name": "Mika and the Birthday Unicorn",
+        "attributes": [
+            {
+                "trait_type": "Accessory",
+                "value": "Happy RainbowCorn"
+            },
+            {
+                "trait_type": "Outfit",
+                "value": "RainbowCorn Top"
+            },
+            {
+                "trait_type": "Hair Style",
+                "value": "RainbowCorn Mane"
+            },
+            {
+                "trait_type": "Accessory",
+                "value": "RainbowCorn Choker"
+            },
+            {
+                "trait_type": "Accessory",
+                "value": "RainbowCorn Earrings"
+            },
+            {
+                "trait_type": "Mouth",
+                "value": "RainbowCorn Smile"
+            },
+            {
+                "trait_type": "Frame",
+                "value": "Birthday Sparkles"
+            }
+        ],
+        "metaPath": "ipfs://bafybeicnodfnszjmmziozlywutnttqttqx42hvr72hr3dueqx52ev5mdii/137.json"
+    },
+    {
+        "tokenId": 138,
+        "name": "Briny the Mallow Beach Bunny",
+        "attributes": [
+            {
+                "trait_type": "Accessory",
+                "value": "Cowrie Shells"
+            },
+            {
+                "trait_type": "Face Sticker",
+                "value": "Briny Bandaid"
+            }
+        ],
+        "metaPath": "ipfs://bafybeiehks3sd6ix5zfzu5f55ygfjbe74tohlojgelovql4wxq2gzqqz6q/138.json"
+    },
+    {
+        "tokenId": 139,
+        "name": "Milky Peep the Mallow Farmer",
+        "attributes": [
+            {
+                "trait_type": "Outfit",
+                "value": "Milky Peeps Sundress"
+            },
+            {
+                "trait_type": "Accessory",
+                "value": "Baby Peep"
+            },
+            {
+                "trait_type": "Face Sticker",
+                "value": "Cheek Dimple"
+            },
+            {
+                "trait_type": "Hat",
+                "value": "Peep Sunhat"
+            },
+            {
+                "trait_type": "Accessory",
+                "value": "Peep Stud"
+            }
+        ],
+        "metaPath": "ipfs://bafybeieogmrktyhmdd7vz6qkw2gjqnu57nwnrrn6zvhogw4ac6pu42h33m/139.json"
+    },
+    {
+        "tokenId": 140,
+        "name": "Marina the Mallow Marine Biologist",
+        "attributes": [
+            {
+                "trait_type": "Outfit",
+                "value": "Mallowology Wetsuit"
+            },
+            {
+                "trait_type": "Tattoo",
+                "value": "Strawberry Mallow"
+            },
+            {
+                "trait_type": "Hand",
+                "value": "Baby Mallow Seal"
+            }
+        ],
+        "metaPath": "ipfs://bafybeia65tprjdeomfa2d5qoztwmtou4cxeelzpate5luekzskwvmvijey/140.json"
+    },
+    {
+        "tokenId": 141,
+        "name": "Ripple The Rainmallow Keeper",
+        "attributes": [
+            {
+                "trait_type": "Mouth",
+                "value": "Mallow"
+            },
+            {
+                "trait_type": "Background",
+                "value": "Rainbow Mallow Beach"
+            },
+            {
+                "trait_type": "Accessory",
+                "value": "RainMallow Earring"
+            },
+            {
+                "trait_type": "Accessory",
+                "value": "Harvey the Mallow Toad"
+            },
+            {
+                "trait_type": "Hand",
+                "value": "Mallow Scepter"
+            },
+            {
+                "trait_type": "Skin",
+                "value": "Ripple Tan"
+            },
+            {
+                "trait_type": "Dye",
+                "value": "Blueberry Mallow"
+            },
+            {
+                "trait_type": "Dye",
+                "value": "BearMallow Blue"
+            },
+            {
+                "trait_type": "Dye",
+                "value": "Ripple Pink"
+            },
+            {
+                "trait_type": "Dye",
+                "value": "Peep Pink"
+            },
+            {
+                "trait_type": "Dye",
+                "value": "Mallow Beach Banana"
+            },
+            {
+                "trait_type": "Dye",
+                "value": "Mallow Sunset Orange"
+            },
+            {
+                "trait_type": "Dye",
+                "value": "Ripples Peach Hair"
+            }
+        ],
+        "metaPath": "ipfs://bafybeiepcpaaejo7krdret4c6rycth7orqpuljdmjc5x2gidwwlogifqoa/141.json"
+    },
+    {
+        "tokenId": 142,
+        "name": "Melusine The Mallow Harvester",
+        "attributes": [
+            {
+                "trait_type": "Face Sticker",
+                "value": "RainMallow Sticker"
+            }
+        ],
+        "metaPath": "ipfs://bafybeifgna4w2crdknj2evrc6jhtvruxebbckh2kjme5bvhwtohq77md7i/142.json"
+    },
+    {
+        "tokenId": 143,
+        "name": "Satsuki the Shengu, July 23",
+        "attributes": [
+            {
+                "trait_type": "Accessory",
+                "value": "Satsukis Shades"
+            },
+            {
+                "trait_type": "Tattoo",
+                "value": "Circuits"
+            }
+        ],
+        "metaPath": "ipfs://bafybeigdid5kog57p43ptjr5jqn2kiks4accurafnxh6q4cfr7e3xspg2u/143.json"
+    },
+    {
+        "tokenId": 144,
+        "name": "Yuki the Mecha Racer, July 23",
+        "attributes": [
+            {
+                "trait_type": "Hand",
+                "value": "Volt Energy Drink"
+            }
+        ],
+        "metaPath": "ipfs://bafybeihydf7muw5gjvlti4at2vtgy4mqzq423wvx27p3nazbxdkavfzbiq/144.json"
+    },
+    {
+        "tokenId": 145,
+        "name": "Trinity & Entity the Twins, July 23",
+        "attributes": [
+            {
+                "trait_type": "Eyebrows",
+                "value": "Borg Fade"
+            }
+        ],
+        "metaPath": "ipfs://bafybeidzyw33njjc5xcyfxakb5ect5v73xn4sd72wumm4x6dfyirkseiri/145.json"
+    },
+    {
+        "tokenId": 146,
+        "name": "Kazuko 'The Ghost' Bounty Queen, July 23",
+        "attributes": [
+            {
+                "trait_type": "Tattoo",
+                "value": "Bounty Queen Oni"
+            }
+        ],
+        "metaPath": "ipfs://bafybeifr3me2cibeniy4dnkvbdbwva7zqfno2llkep5vry67kfhphhkjdq/146.json"
+    },
+    {
+        "tokenId": 147,
+        "name": "Xap the Executive, July 23",
+        "attributes": [
+            {
+                "trait_type": "Outfit",
+                "value": "Executive Dress"
+            }
+        ],
+        "metaPath": "ipfs://bafybeidxf6bt4rhkjx2kb6yxi5jt2nogx7vbtljv64uej7afoz2rqj5usq/147.json"
+    },
+    {
+        "tokenId": 148,
+        "name": "Cowgirl Stacie",
+        "attributes": [
+            {
+                "trait_type": "Hair Style",
+                "value": "Cowgirl Stacies Hair"
+            },
+            {
+                "trait_type": "Eyes",
+                "value": "Stacies Eyes"
+            }
+        ],
+        "metaPath": "ipfs://bafybeiakz6ayqwqbayhatu2m46juryw2xufq6f6nncbor7cf4jxwnbywge/148.json"
+    },
+    {
+        "tokenId": 149,
+        "name": "Ratty B Ratz Doll",
+        "attributes": [
+            {
+                "trait_type": "Hat",
+                "value": "Ratty Fur Bucket Hat"
+            },
+            {
+                "trait_type": "Outfit",
+                "value": "Ratty Fur Jacket"
+            },
+            {
+                "trait_type": "Eyebrows",
+                "value": "Rattyz Brows"
+            },
+            {
+                "trait_type": "Mouth",
+                "value": "Rattyz Lips"
+            },
+            {
+                "trait_type": "Eyes",
+                "value": "Rattyz Eyes"
+            }
+        ],
+        "metaPath": "ipfs://bafybeicm4mbjpnfvazsicucuzzilwlyc5iedw5nkrpczvknv4dubfs7gy4/149.json"
+    },
+    {
+        "tokenId": 150,
+        "name": "Color Harmony High Harper",
+        "attributes": [
+            {
+                "trait_type": "Hair Style",
+                "value": "Harper Curls"
+            },
+            {
+                "trait_type": "Outfit",
+                "value": "Plaid Tank"
+            }
+        ],
+        "metaPath": "ipfs://bafybeibop6bj7sfssavrlqnze77o63gcftdiigcr4s4c7ovqfnfvm27v3i/150.json"
+    },
+    {
+        "tokenId": 151,
+        "name": "Zuri the Monsty High Doll",
+        "attributes": [
+            {
+                "trait_type": "Accessory",
+                "value": "Brain"
+            },
+            {
+                "trait_type": "Skin",
+                "value": "Zuri Zombie Stitch"
+            }
+        ],
+        "metaPath": "ipfs://bafybeidsfneczt4tzclnyvv3b36dq352adiqjmywmtx3bahjsrilevugn4/151.json"
+    },
+    {
+        "tokenId": 152,
+        "name": "Gabriella Dolly Pocket",
+        "attributes": [
+            {
+                "trait_type": "Background",
+                "value": "Gabriellas House"
+            }
+        ],
+        "metaPath": "ipfs://bafybeihrlxw5onzfqx2rc6b3bmzlzygcfhc5sw7jiuk54eh7ho7chkg3s4/152.json"
+    },
+    {
+        "tokenId": 153,
+        "name": "Hottie Dottie 2nd Anniversary Shopping Spree",
+        "attributes": [
+            {
+                "trait_type": "Background",
+                "value": "Queen Mikas Castle"
+            },
+            {
+                "trait_type": "Dye",
+                "value": "Hottie Dottie"
+            },
+            {
+                "trait_type": "Eyes",
+                "value": "Wink"
+            },
+            {
+                "trait_type": "Hair Style",
+                "value": "Hottie Dottie Buns"
+            },
+            {
+                "trait_type": "Hand",
+                "value": "Bunny Kingdom Lore V2 Signed"
+            },
+            {
+                "trait_type": "Hand",
+                "value": "Bunny Kingdom Lore V2"
+            },
+            {
+                "trait_type": "Skin",
+                "value": "Dottie Skin"
+            },
+            {
+                "trait_type": "Undergarment",
+                "value": "Danger Bra"
+            }
+        ],
+        "metaPath": "ipfs://bafybeig4devthdu2ksm3jxl36lrlmv4tsctajsbqsufcdxyax4xr3o7vk4/153.json"
+    },
+    {
+        "tokenId": 154,
+        "name": "Bedtime Bunny Babe Cottynne",
+        "attributes": [
+            {
+                "trait_type": "Accessory",
+                "value": "Huxley Plushie"
+            },
+            {
+                "trait_type": "Dye",
+                "value": "Cottyne Cloud"
+            },
+            {
+                "trait_type": "Hair Style",
+                "value": "Cottynne Locks"
+            },
+            {
+                "trait_type": "Undergarment",
+                "value": "Cloud Bra"
+            }
+        ],
+        "metaPath": "ipfs://bafybeie5turqmyoyve37uykgeumyjimpnhnzjp3ta3tgjr37xyuz2etp34/154.json"
+    },
+    {
+        "tokenId": 155,
+        "name": "Bedtime Bunny Babe Bixie",
+        "attributes": [
+            {
+                "trait_type": "Hair Style",
+                "value": "Bixie Pigtails"
+            },
+            {
+                "trait_type": "Undergarment",
+                "value": "Bubble Bra"
+            }
+        ],
+        "metaPath": "ipfs://bafybeigzobgtd6ggy6yklosaossgkpybkjfvmtwghiqlgq7ks2ub334onm/155.json"
+    },
+    {
+        "tokenId": 156,
+        "name": "Bedtime Bunny Babe Rocksie",
+        "attributes": [
+            {
+                "trait_type": "Accessory",
+                "value": "Sabre Tooth Earring"
+            },
+            {
+                "trait_type": "Accessory",
+                "value": "PebblePuff"
+            },
+            {
+                "trait_type": "Background",
+                "value": "DinoLand"
+            },
+            {
+                "trait_type": "Dye",
+                "value": "Prehistoric Orange"
+            },
+            {
+                "trait_type": "Dye",
+                "value": "Fossilized Sunbeam"
+            },
+            {
+                "trait_type": "Dye",
+                "value": "Dino Scales"
+            },
+            {
+                "trait_type": "Dye",
+                "value": "Mammoth Mist"
+            },
+            {
+                "trait_type": "Frame",
+                "value": "Prehistoric Vines"
+            },
+            {
+                "trait_type": "Hair Style",
+                "value": "Bam Bam Do"
+            },
+            {
+                "trait_type": "Hand",
+                "value": "Baby Bubble Bear"
+            },
+            {
+                "trait_type": "Mouth",
+                "value": "Nummy Bone"
+            },
+            {
+                "trait_type": "Undergarment",
+                "value": "Bam Bam Bra"
+            }
+        ],
+        "metaPath": "ipfs://bafybeigvwx6nkesx3lxsz4livbfcov2kfuuo2jrbcynzeafywm7tpm56gq/156.json"
+    },
+    {
+        "tokenId": 157,
+        "name": "Bedtime Bunny Babe Lyra",
+        "attributes": [
+            {
+                "trait_type": "Accessory",
+                "value": "Friendly Snorball"
+            },
+            {
+                "trait_type": "Piercing",
+                "value": "Bridge"
+            },
+            {
+                "trait_type": "Undergarment",
+                "value": "Metal Space Bustier"
+            }
+        ],
+        "metaPath": "ipfs://bafybeieq3i3dgjwwrt22lgbzbul2veje4zfofg2n45abgf36uu76funt7e/157.json"
+    },
+    {
+        "tokenId": 158,
+        "name": "Bedtime Bunny Babe Pandora",
+        "attributes": [
+            {
+                "trait_type": "Frame",
+                "value": "Starry Mobile"
+            },
+            {
+                "trait_type": "Hat",
+                "value": "Batty Rest Sleep Mask"
+            },
+            {
+                "trait_type": "Undergarment",
+                "value": "Pandoras Corset"
+            }
+        ],
+        "metaPath": "ipfs://bafybeiaxek25wqdcqgeku7xfcca7ckrc7pdd2zitfrvlurvzsjedh66m3u/158.json"
+    },
+    {
+        "tokenId": 159,
+        "name": "Gvesla the Gorgon",
+        "attributes": [
+            {
+                "trait_type": "Dye",
+                "value": "Mossy Stone"
+            },
+            {
+                "trait_type": "Dye",
+                "value": "Slithering Swamp"
+            },
+            {
+                "trait_type": "Dye",
+                "value": "Snake Tongue"
+            },
+            {
+                "trait_type": "Dye",
+                "value": "Minty Scale"
+            },
+            {
+                "trait_type": "Dye",
+                "value": "Gorgon Scale"
+            }
+        ],
+        "metaPath": "ipfs://bafybeiedg6bbt4xg2ml4vyaetzpvq56voeppkdz5pu36seyifv4pduswny/159.json"
+    },
+    {
+        "tokenId": 160,
+        "name": "Wendy the Werewolf",
+        "attributes": [
+            {
+                "trait_type": "Dye",
+                "value": "Blood Moon"
+            },
+            {
+                "trait_type": "Dye",
+                "value": "Full Moon"
+            },
+            {
+                "trait_type": "Dye",
+                "value": "Choco Wolfy Cocoa"
+            },
+            {
+                "trait_type": "Dye",
+                "value": "Wolfy Fur"
+            },
+            {
+                "trait_type": "Dye",
+                "value": "Weremoon"
+            },
+            {
+                "trait_type": "Frame",
+                "value": "Wood Frame"
+            }
+        ],
+        "metaPath": "ipfs://bafybeidwh3cyia4ogx4vhppycxpx5ublywfqsnw7b5zgc62wuk75siz5ry/160.json"
+    },
+    {
+        "tokenId": 161,
+        "name": "Yvette the Yeti",
+        "attributes": [
+            {
+                "trait_type": "Dye",
+                "value": "Powder Yeti"
+            },
+            {
+                "trait_type": "Dye",
+                "value": "Flurry"
+            },
+            {
+                "trait_type": "Dye",
+                "value": "Icicle Pop"
+            },
+            {
+                "trait_type": "Dye",
+                "value": "Snow Berry"
+            },
+            {
+                "trait_type": "Dye",
+                "value": "Ski Suit"
+            },
+            {
+                "trait_type": "Hair Style",
+                "value": "Yeti Bob"
+            },
+            {
+                "trait_type": "Skin",
+                "value": "Yeti Babe"
+            }
+        ],
+        "metaPath": "ipfs://bafybeihj6vpy4npnwtpd4nw3kqmvodevornphrpg3vj3bkd4mh3xzhuh6a/161.json"
+    },
+    {
+        "tokenId": 162,
+        "name": "Gabriella the Ghost",
+        "attributes": [
+            {
+                "trait_type": "Dye",
+                "value": "Spooky Masonry"
+            },
+            {
+                "trait_type": "Dye",
+                "value": "Haunted Hallway"
+            },
+            {
+                "trait_type": "Dye",
+                "value": "Super Haunted"
+            },
+            {
+                "trait_type": "Dye",
+                "value": "Ghost Goo"
+            },
+            {
+                "trait_type": "Dye",
+                "value": "Ghostly Presence"
+            },
+            {
+                "trait_type": "Hair Style",
+                "value": "Gabriella Human Whisps"
+            },
+            {
+                "trait_type": "Hair Style",
+                "value": "Gabriella Ghosty Whisps"
+            }
+        ],
+        "metaPath": "ipfs://bafybeidqf6662jkqqazcmmajabqbyxup3layfqtpltj2s6f4otphdtv76e/162.json"
+    },
+    {
+        "tokenId": 163,
+        "name": "Cynthia the Cyclops",
+        "attributes": [
+            {
+                "trait_type": "Dye",
+                "value": "Graveyard Field"
+            },
+            {
+                "trait_type": "Dye",
+                "value": "Dead Flowers"
+            },
+            {
+                "trait_type": "Dye",
+                "value": "Skull Plum"
+            },
+            {
+                "trait_type": "Dye",
+                "value": "Eyeball Wall"
+            },
+            {
+                "trait_type": "Dye",
+                "value": "Moth Wings"
+            },
+            {
+                "trait_type": "Dye",
+                "value": "Glowing Daisy"
+            },
+            {
+                "trait_type": "Hand",
+                "value": "Sheep Moth Luna"
+            }
+        ],
+        "metaPath": "ipfs://bafybeidbravb3b57qsin6dc4l2buhnd377lsvkl2h4j72r7okrhe33zu24/163.json"
+    },
+    {
+        "tokenId": 164,
+        "name": "Fame Lady Society Jilly",
+        "attributes": [
+            {
+                "trait_type": "Background",
+                "value": "Blue Barbs"
+            },
+            {
+                "trait_type": "Hand",
+                "value": "HerStory Book"
+            }
+        ],
+        "metaPath": "https://ipfs.io/ipfs/bafybeif45hh3kz5lfmnfuwzmisbvigrqhdud2kvq3rs35upkhnk3gc7va4"
+    },
+    {
+        "tokenId": 165,
+        "name": "Fame Lady Society Ms.Jenn",
+        "attributes": [
+            {
+                "trait_type": "Accessory",
+                "value": "Tag Hoop"
+            },
+            {
+                "trait_type": "Background",
+                "value": "Diode Chart"
+            }
+        ],
+        "metaPath": "https://ipfs.io/ipfs/bafybeieo3hmjz5xvfb5fbyfxupjkzmfgrawdpadmplayzoxfc6krmboude"
+    },
+    {
+        "tokenId": 166,
+        "name": "Fame Lady Society Blu",
+        "attributes": [
+            {
+                "trait_type": "Background",
+                "value": "Neon Cacti"
+            },
+            {
+                "trait_type": "Hand",
+                "value": "Microphone"
+            },
+            {
+                "trait_type": "Skin",
+                "value": "Blu Blue"
+            }
+        ],
+        "metaPath": "https://ipfs.io/ipfs/bafybeih5wpc4gvze57r5bpycfp7xl5yqozyshzbghlhve5gqbhrfkwg3cy"
+    },
+    
+    {
+        "tokenId": 167,
+        "name": "Fame Lady Society Nax",
+        "attributes": [
+            {
+                "trait_type": "Accessory",
+                "value": "Squiggle Gem"
+            },
+            {
+                "trait_type": "Background",
+                "value": "Nax Flames"
+            },
+            {
+                "trait_type": "Eyes",
+                "value": "Nax Liner"
+            },
+            {
+                "trait_type": "Skin",
+                "value": "Nax Red"
+            },
+            {
+                "trait_type": "Tattoo",
+                "value": "Cherry Bomb"
+            }
+        ],
+        "metaPath": "https://ipfs.io/ipfs/bafybeiaz774g34zcoyfuzgzpfdiln5tdz4zhanvcpmjaycdoajtvea2jtm"
+    },
+    {
+        "tokenId": 168,
+        "name": "Fame Lady Society Cardi Bee",
+        "attributes": [
+            {
+                "trait_type": "Background",
+                "value": "Black Barbs"
+            },
+            {
+                "trait_type": "Hand",
+                "value": "Fancy Car Key"
+            },
+            {
+                "trait_type": "Piercing",
+                "value": "Septum Ring"
+            },
+            {
+                "trait_type": "Outfit",
+                "value": "Fame Hoodie"
+            }
+        ],
+        "metaPath": "https://ipfs.io/ipfs/bafybeiaeuzaffonjw7rmgde7lxrzxpmrc4koqkenfkop24hludkk6gsw2m"
+    }
+]

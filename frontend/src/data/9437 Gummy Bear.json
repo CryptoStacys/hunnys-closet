@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "Body": {
+      "GummyBase": {
+        "name": "GummyBase",
+        "rarity": "immortal",
+        "colors": 1
+      }
+    },
+    "Hat": {
+      "GummyEars": {
+        "name": "GummyEars",
+        "colors": 1,
+        "rarity": "immortal",
+        "tags": []
+      }
+    },
+    "Hair Style": {
+      "GummyHair": {
+        "name": "GummyHair",
+        "colors": 1,
+        "parts": 1,
+        "rarity": "immortal",
+        "tags": []
+      }
+    },
+    "Outfit": {
+      "GummyHeartTop": {
+        "name": "GummyHeartTop",
+        "colors": 2,
+        "rarity": "immortal"
+      }
+    },
+    "Mouth": {
+      "GummyTongue": {
+        "name": "GummyTongue",
+        "colors": 2,
+        "rarity": "immortal"
+      }
+    },
+    "Eyes": {
+      "NormalEyes": {
+        "name": "NormalEyes",
+        "colors": 1,
+        "rarity": "common"
+      }
+    },
+    "Eyebrows": {
+      "Normal": {
+        "name": "Normal",
+        "colors": 0,
+        "rarity": "common"
+      }
+    },
+    "Background": {
+      "WatermelonCandy": {
+        "name": "WatermelonCandy",
+        "colors": 0,
+        "baseColor": ["red"],
+        "rarity": "immortal"
+      }
+    }
+  }
+}

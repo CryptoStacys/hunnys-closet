@@ -1,0 +1,100 @@
+{
+    "dollysContract" : "0xC8465f21E35AfD1De06A81D932392C47b1BEA42A",
+    "layer_order": [
+        {"name":"Background","layerId":0},
+        {"name":"Skin","layerId":1},
+        {"name":"Eyebrows","layerId":2},
+        {"name":"Hat","layerId":3},
+        {"name":"Eyes","layerId":4},
+        {"name":"Face Sticker","layerId":5},
+        {"name":"Piercing","layerId":6},
+        {"name":"Mouth","layerId":7},
+        {"name":"Hair Style","layerId":8},
+        {"name":"Accessory","layerId":9},
+        {"name":"Outfit","layerId":10},
+
+        {"name":"Hand","layerId":11}, 
+        {"name":"Undergarment","layerId":9.5}, 
+        {"name":"Tattoo","layerId":1.5} 
+    ],
+    "defaultTraitsConfigPath": "hunnys-default-traits.json",
+    "collections" : [
+        {
+            "name": "Hunnys 10k",
+            "originID" : 1,
+            "contract" : "0x5DFEB75aBae11b138A16583E03A2bE17740EADeD",
+            "tokenConfigPath": "hunnys-10k-token.json",
+            "traitsConfigPath": "hunnys-10k-traits.json",
+            "idMapping": false,
+            "hasStaticMetaPath": true,
+            "meta_url" : "https://hunnys.s3.us-east-2.amazonaws.com/data/",
+            "chain": "mainnet"
+        },
+        {
+            "name": "Hunnys OG",
+            "originID" : 2,
+            "contract" : "0x64Bd44Df5590CFE4F0395B05fa0e6F096734bb77",
+            "tokenConfigPath": "hunnys-ogs-token.json",
+            "traitsConfigPath": "hunnys-ogs-traits.json",
+            "idMapping": true,
+            "hasStaticMetaPath": true,
+            "meta_url" : "https://stacys-v2.s3.us-east-2.amazonaws.com/hunnys-ogs/",
+            "chain": "mainnet"
+        },
+        {
+            "name": "Hunnys Seasonal",
+            "originID" : 3,
+            "contract" : "0x43668e306dba9172824524fd2c0c6924e710ea5b",
+            "tokenConfigPath": "hunnys-season-token.json",
+            "traitsConfigPath": "hunnys-season-traits.json",
+            "idMapping": false,
+            "hasStaticMetaPath": false,
+            "meta_url" : "",
+            "chain": "polygon"
+        },
+        {
+            "name": "Hunnys Stacys",
+            "originID" : 5,
+            "contract" : "0x21aC5f6c96cCB174115b18318e3e340237A55606",
+            "tokenConfigPath": "hunnys-stacys-token.json",
+            "traitsConfigPath": "hunnys-stacys-traits.json",
+            "idMapping": true,
+            "hasStaticMetaPath": true,
+            "meta_url" : "https://stacys-v2.s3.us-east-2.amazonaws.com/stacys/",
+            "chain": "mainnet"
+        },
+        {
+            "name": "Hunnys 10k All Holders",
+            "originID" : 6,
+            "contract" : "0x5DFEB75aBae11b138A16583E03A2bE17740EADeD",
+            "tokenConfigPath": "hunnys-10k-all-holders-token.json",
+            "traitsConfigPath": "hunnys-10k-all-holders-traits.json",
+            "idMapping": false,
+            "hasStaticMetaPath": true,
+            "meta_url" : "https://hunnys.s3.us-east-2.amazonaws.com/data/",
+            "chain": "mainnet"
+        },
+        {
+            "name": "Hunnys Closet Shop",
+            "originID" : 7,
+            "contract" : "0x0B54Fbd0139A2da92FF41fd9Ed56ADCf89D87001",
+            "tokenConfigPath": "hunnys-closet-shop-token.json",
+            "traitsConfigPath": "hunnys-closet-shop-traits.json",
+            "idMapping": false,
+            "hasStaticMetaPath": false,
+            "meta_url" : "",
+            "chain": "polygon"
+        },
+        {
+            "name": "Fame Lady Society",
+            "originID" : 8,
+            "contract" : "0x6cf4328f1ea83b5d592474f9fcdc714faafd1574",
+            "tokenConfigPath": "fame-lady-society-token.json",
+            "traitsConfigPath": "fame-lady-society-traits.json",
+            "idMapping": false,
+            "hasStaticMetaPath": true,
+            "meta_url" : "https://ipfs.io/ipfs/bafybeifilzfx3asubemd3sgirkgeaeymu3d3n5qg6ekxakobldmnfkb3zu/",
+            "chain": "mainnet"
+        }
+    ]
+}

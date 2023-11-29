@@ -1,0 +1,434 @@
+{
+    "attributes":[
+        {
+            "name":"Accessory",
+            "traits":[
+                {"name":"Empty","colors":0,"rarity":"common","tags":[]},
+                {"name":"DiamondDropEarrings","colors":1,"rarity":"relic","tags":["earrings"]},
+                {"name":"DiamondDropPendant","colors":1,"rarity":"relic","tags":[]},
+                {"name":"PearlChoker","colors":1,"rarity":"rare","tags":[]},
+                {"name":"MoonPrincessPendant","colors":1,"rarity":"common","tags":[]},
+                {"name":"CrazyBearPendant","colors":2,"rarity":"common","tags":[]},
+                {"name":"WeirdCatPendant","colors":2,"rarity":"common","tags":[]},
+                {"name":"MetalWings","colors":1,"rarity":"legendary","tags":["onBack"]},
+                {"name":"DonutEarrings","colors":2,"rarity":"uncommon","tags":["earrings"]},
+                {"name":"PuffBallEarrings","colors":1,"rarity":"uncommon","tags":["earrings"]},
+                {"name":"AtlasPuppyPlushie","colors":3,"rarity":"rare","tags":["onTop"]},
+                {"name":"BoaBoa","colors":2,"rarity":"legendary","tags":[]},
+                {"name":"BowChoker","colors":2,"rarity":"common","tags":[]},
+                {"name":"BowTieEarrings","colors":1,"rarity":"common","tags":["earrings"]},
+                {"name":"BunnyEarrings","colors":1,"rarity":"common","tags":["earrings"]},
+                {"name":"Choker","colors":1,"rarity":"common","tags":[]},
+                {"name":"ChubbyUnicornBackpack","colors":3,"rarity":"rare","tags":["backpack"]},
+                {"name":"CrazyBearBackpack","colors":2,"rarity":"uncommon","tags":["backpack"]},
+                {"name":"CrazyBearPlushie","colors":2,"rarity":"uncommon","tags":["onTop"]},
+                {"name":"FloatingGhostKitty","colors":0,"rarity":"legendary","tags":["companion"]},
+                {"name":"HeartChoker","colors":2,"rarity":"common","tags":[]},
+                {"name":"HeartHoopEarrings","colors":2,"rarity":"uncommon","tags":["earrings"]},
+                {"name":"HeartStudEarrings","colors":1,"rarity":"common","tags":["earrings"]},
+                {"name":"HoopEarrings","colors":1,"rarity":"common","tags":["earrings"]},
+                {"name":"ImpracticallyLargeDiamondEarrings","colors":1,"rarity":"rare","tags":["earrings"]},
+                {"name":"KittyBell","colors":2,"rarity":"uncommon","tags":[]},
+                {"name":"MiniHildaAndWeirdCat","colors":0,"rarity":"mythic","tags":["onTop"]},
+                {"name":"SaturnEarrings","colors":2,"rarity":"common","tags":["earrings"]},
+                {"name":"SillyFrogBackpack","colors":2,"rarity":"uncommon","tags":["backpack"]},
+                {"name":"SillyFrogEarrings","colors":1,"rarity":"uncommon","tags":["earrings"]},
+                {"name":"SillyFrogPendant","colors":2,"rarity":"common","tags":[]},
+                {"name":"SillyFrogPlushie","colors":2,"rarity":"uncommon","tags":["onTop"]},
+                {"name":"SmallHoopEarrings","colors":1,"rarity":"common","tags":["earrings"]},
+                {"name":"SmallLinkedEarrings","colors":1,"rarity":"uncommon","tags":["earrings"]},
+                {"name":"TwineNecklace","colors":0,"rarity":"common","tags":["onBody"]},
+                {"name":"UnicornPlushie","colors":3,"rarity":"mythic","tags":["onTop"]},
+                {"name":"WeirdCatBackpack","colors":2,"rarity":"uncommon","tags":["backpack"]},
+
+                {"name":"Futuristic Goggles","colors":2,"rarity":"legendary","tags":["glasses"]},
+                {"name":"Tooth Earring","colors":1,"rarity":"legendary","tags":["earrings"]},
+                {"name":"Rune Stone Necklace","colors":4,"rarity":"legendary","tags":[]},
+                {"name":"Xirodium Hoops","colors":1,"rarity":"legendary","tags":["earrings"]},
+                {"name":"The Vision","colors":2,"rarity":"legendary","tags":[""]},
+                {"name":"Xirodium Bangle","colors":1,"rarity":"legendary","tags":["onBody"]},
+                {"name":"Starlet Diamond","colors":0,"rarity":"legendary","tags":["onBody"]},
+                {"name":"Starlet Pearls","colors":0,"rarity":"legendary","tags":[]},
+                {"name":"Lip Beauty Mark","colors":0,"rarity":"legendary","tags":["onBody"]}
+
+            ]
+        },
+
+        {
+            "name":"Background",
+            "traits":[
+                {"name":"Empty","rarity":"common","colors":0,"baseColor":["white"]},
+                {"name":"AI","rarity":"legendary","colors":0,"baseColor":["blue","green"]},
+                {"name":"Mint","rarity":"uncommon","colors":0,"baseColor":["green"]},
+                {"name":"CeruleanBlue","rarity":"uncommon","colors":0,"baseColor":["blue"]},
+                {"name":"HotPink","rarity":"common","colors":0,"baseColor":["pink"]},
+                {"name":"LightPurple","rarity":"common","colors":0,"baseColor":["purple"]},
+                {"name":"LimeGreen","rarity":"common","colors":0,"baseColor":["green"]},
+                {"name":"LimeGreenHalftone","rarity":"epic","colors":0,"baseColor":["green"]},
+                {"name":"Magenta","rarity":"common","colors":0,"baseColor":["pink"]},
+                {"name":"Mermaid","rarity":"rare","colors":0,"baseColor":["green","blue"]},
+                {"name":"Orange","rarity":"common","colors":0,"baseColor":["orange"]},
+                {"name":"Purple","rarity":"common","colors":0,"baseColor":["purple"]},
+                {"name":"Rainbow","rarity":"mythic","colors":0,"baseColor":["pink","yellow","orange","purple","green","white"]},
+                {"name":"Red","rarity":"common","colors":0,"baseColor":["red"]},
+                {"name":"Turquoise","rarity":"uncommon","colors":0,"baseColor":["green","blue"]},
+                {"name":"TurquoiseHalftone","rarity":"rare","colors":0,"baseColor":["blue"]},
+                {"name":"Yellow","rarity":"common","colors":0,"baseColor":["yellow"]},
+
+                {"name":"Stacys Favorite Blue","rarity":"legendary","colors":0,"baseColor":[]},
+                {"name":"Vaporwave Sunset","rarity":"legendary","colors":0,"baseColor":[]},
+                {"name":"Galaxy","rarity":"legendary","colors":0,"baseColor":[]},
+                {"name":"Watermelon Candy","rarity":"legendary","colors":0,"baseColor":[]},
+                {"name":"Guardian Dragon","rarity":"legendary","colors":0,"baseColor":[]},
+                {"name":"Swamp","rarity":"legendary","colors":0,"baseColor":[]},
+                {"name":"XiclonX9BoknyField","rarity":"legendary","colors":0,"baseColor":[]},
+                {"name":"50sFilmGrain","rarity":"legendary","colors":0,"baseColor":[]}
+            ]
+        }, 
+
+        {
+            "name": "Bodysuit",
+            "traits": [
+                {"name":"Empty","colors":0,"rarity":"common","tags":[]}
+            ]
+          },
+        
+          {
+              "name": "Dye",
+              "traits": [
+                  {"name": "Candy Cloud Paint", "colors": 0, "rarity": "Mythic", "tags": []},
+                  {"name": "Cute Crater", "colors": 0, "rarity": "Mythic", "tags": []},
+                  {"name": "Darknova Drip", "colors": 0, "rarity": "Mythic", "tags": []}
+              ]
+          },
+
+          {
+            "name":"Eyebrows",
+            "traits":[
+                {"name":"Empty","colors":0,"rarity":"common"},
+                {"name":"Slit","colors":0,"rarity":"rare"},
+                {"name":"Flat","colors":0,"rarity":"common"},
+                {"name":"Gentle","colors":0,"rarity":"common"},
+                {"name":"Angry","colors":0,"rarity":"uncommon"},
+
+                {"name":"WonderBrows","colors":0,"rarity":"legendary"},
+                {"name":"Angry Voodoo","colors":0,"rarity":"legendary"},
+                {"name":"Thick Gentle","colors":0,"rarity":"legendary"}
+            ]
+        },
+        
+        {
+            "name":"Eyes",
+            "traits":[
+                {"name":"Empty","colors":0,"rarity":"common","tags":[]},
+                {"name":"DiamondEyes","colors":0,"rarity":"relic","tags":[]},
+                {"name":"AIEyes","colors":1,"rarity":"legendary","tags":[]},
+                {"name":"BorgEyes","colors":1,"rarity":"epic","tags":[]},
+                {"name":"RainbowEyes","colors":0,"rarity":"mythic","tags":[]},
+                {"name":"HeartEyes","colors":1,"rarity":"uncommon","tags":[]},
+                {"name":"SnakeEyes","colors":1,"rarity":"rare","tags":[]},
+
+                {"name":"Space Eyes","colors":1,"rarity":"legendary","tags":[]},
+                {"name":"Voodoo Eyes","colors":1,"rarity":"legendary","tags":["effect"]},
+                {"name":"Alien Queen Eyes","colors":2,"rarity":"legendary","tags":[]},
+                {"name":"Movie Star Eyes","colors":2,"rarity":"legendary","tags":[]}
+
+            ]
+        },
+
+        {
+            "name":"Face Sticker",
+            "traits":[
+                {"name":"Empty","colors":0,"rarity":"common"},
+                {"name":"TigerMakeup","colors":0,"rarity":"epic"},
+                {"name":"ClubMakeup","colors":0,"rarity":"rare"},
+                {"name":"Bandaid","colors":2,"rarity":"common"},
+                {"name":"BlushLines","colors":1,"rarity":"uncommon"},
+                {"name":"Bunny","colors":1,"rarity":"common"},
+                {"name":"Cherrys","colors":2,"rarity":"uncommon"},
+                {"name":"CuteOctopus","colors":1,"rarity":"uncommon"},
+                {"name":"CuteSkull","colors":2,"rarity":"common"},
+                {"name":"DeadSmiley","colors":1,"rarity":"common"},
+                {"name":"FangirlFacepaint","colors":1,"rarity":"rare"},
+                {"name":"Flower","colors":1,"rarity":"common"},
+                {"name":"Freckles","colors":0,"rarity":"common"},
+                {"name":"GeishaBlush","colors":1,"rarity":"rare"},
+                {"name":"Heart","colors":1,"rarity":"common"},
+                {"name":"JawlineBeautyMark","colors":0,"rarity":"uncommon"},
+                {"name":"KawaiiCheeks","colors":1,"rarity":"uncommon"},
+                {"name":"KittyWhiskers","colors":1,"rarity":"rare"},
+                {"name":"Lightning","colors":1,"rarity":"uncommon"},
+                {"name":"MoonPrincess","colors":1,"rarity":"epic"},
+                {"name":"NoseBandaid","colors":2,"rarity":"uncommon"},
+                {"name":"Rainbow","colors":3,"rarity":"epic"},
+                {"name":"Shiny","colors":1,"rarity":"legendary"},
+                {"name":"Snake","colors":1,"rarity":"rare"},
+                {"name":"Spade","colors":1,"rarity":"uncommon"},
+                {"name":"Star","colors":1,"rarity":"common"},
+                {"name":"SwirlyCheeks","colors":1,"rarity":"rare"},
+                {"name":"UnderEyeBeautyMark","colors":0,"rarity":"rare"},
+                {"name":"WeirdCat","colors":1,"rarity":"uncommon"},
+                {"name":"Wing","colors":0,"rarity":"mythic"},
+
+                {"name":"Star Freckles","colors":1,"rarity":"legendary"},
+                {"name":"Alien Blush","colors":1,"rarity":"legendary"}
+            ]
+        },
+
+        {
+            "name": "Frame",
+            "traits": [
+                {"name":"Empty","colors":0,"rarity":"common","tags":[]}
+            ]
+          },
+
+          {
+            "name":"Hair Style",
+            "traits":[
+                {"name":"Empty","colors":0,"rarity":"common","parts":0,"tags":[]},
+                {"name":"CurlyLong","colors":1,"rarity":"uncommon","parts":2,"tags":[]},
+                {"name":"AnimeCutie","colors":1,"rarity":"rare","parts":1,"tags":["no"]},
+                {"name":"Formal50s","colors":1,"rarity":"uncommon","parts":1,"tags":[]},
+                {"name":"Suave50s","colors":1,"rarity":"uncommon","parts":2,"tags":["no"]},
+                {"name":"Daisy70s","colors":1,"rarity":"rare","parts":2,"tags":[]},
+                {"name":"BabySailorScout","colors":1,"rarity":"epic","parts":2,"tags":["no"]},
+                {"name":"BunWithFringe","colors":1,"rarity":"common","parts":1,"tags":[]},
+                {"name":"CandyShopPigtails","colors":2,"rarity":"epic","parts":1,"tags":["no"]},
+                {"name":"ChibiBangs","colors":1,"rarity":"uncommon","parts":2,"tags":["noEarring"]},
+                {"name":"CrazyMohawk","colors":1,"rarity":"rare","parts":1,"tags":["no"]},
+                {"name":"CurlyFringe","colors":1,"rarity":"common","parts":1,"tags":["no"]},
+                {"name":"CuteBob","colors":1,"rarity":"common","parts":2,"tags":["noEarring"]},
+                {"name":"CutePixie","colors":1,"rarity":"common","parts":1,"tags":[]},
+                {"name":"DinosaurPrincessHair","colors":2,"rarity":"legendary","parts":2,"tags":[]},
+                {"name":"ElegantCurly","colors":1,"rarity":"epic","parts":2,"tags":["noEarring"]},
+                {"name":"ExplorerBraid","colors":1,"rarity":"uncommon","parts":2,"tags":[]},
+                {"name":"Geisha","colors":2,"rarity":"mythic","parts":1,"tags":["no"]},
+                {"name":"HighPonytail","colors":2,"rarity":"common","parts":2,"tags":["no"]},
+                {"name":"LongWithBangs","colors":1,"rarity":"common","parts":2,"tags":["noEarring"]},
+                {"name":"LongWithLayer","colors":1,"rarity":"common","parts":2,"tags":["noEarring"]},
+                {"name":"MessyBraids","colors":2,"rarity":"uncommon","parts":2,"tags":["noEarring"]},
+                {"name":"NeatBun","colors":1,"rarity":"common","parts":1,"tags":[]},
+                {"name":"PreppyStraight","colors":1,"rarity":"common","parts":2,"tags":[]},
+                {"name":"SharpBob","colors":1,"rarity":"uncommon","parts":2,"tags":["noEarring"]},
+                {"name":"MessyBuzzCut","colors":1,"rarity":"uncommon","parts":1,"tags":[]},
+                {"name":"SpaceBunBob","colors":2,"rarity":"uncommon","parts":2,"tags":["no"]},
+                {"name":"SpaceBuns","colors":1,"rarity":"common","parts":1,"tags":["no"]},
+                {"name":"Synthetic","colors":1,"rarity":"legendary","parts":1,"tags":[]},
+                {"name":"ThatGirlPixie","colors":1,"rarity":"uncommon","parts":1,"tags":[]},
+                {"name":"TriangleHead","colors":1,"rarity":"uncommon","parts":2,"tags":["noEarring"]},
+                {"name":"UnicornMane","colors":2,"rarity":"rare","parts":1,"tags":["no"]},
+                {"name":"UptightPigtails","colors":2,"rarity":"common","parts":2,"tags":[]},
+
+                {"name":"Stacys Hair","colors":1,"rarity":"legendary","parts":2,"tags":[]},
+                {"name":"Vaporwave Ponytail","colors":3,"rarity":"legendary","parts":1,"tags":[]},
+                {"name":"Space Bob","colors":1,"rarity":"legendary","parts":1,"tags":[]},
+                {"name":"Gummy Hair","colors":1,"rarity":"legendary","parts":1,"tags":[]},
+                {"name":"Wind Swept Hair","colors":1,"rarity":"legendary","parts":1,"tags":[]},
+                {"name":"Traditional Braids","colors":3,"rarity":"legendary","parts":2,"tags":[]},
+                {"name":"Xiclonian Queen Hair","colors":2,"rarity":"legendary","parts":2,"tags":[]},
+                {"name":"50s Starlet Hair","colors":1,"rarity":"legendary","parts":2,"tags":[]}
+            ]           
+        },
+
+        {
+            "name":"Hand",
+            "traits":[
+                {"name":"Empty","colors":0,"rarity":"common"},
+
+                {"name":"Voodoo Skull","colors":2,"rarity":"legendary", "tags": ["skin", "effect"]}                
+            ]
+        },
+
+        {
+            "name":"Hat",
+            "traits":[
+                {"name":"Empty","colors":0,"rarity":"common","tags":[]},
+                {"name":"WitchHat","colors":3,"rarity":"rare","tags":[]},
+                {"name":"HappyJohnathanTheFrog","colors":2,"rarity":"epic","tags":[]},
+                {"name":"Crown","colors":2,"rarity":"legendary","tags":[]},
+                {"name":"FatMouseHairClip","colors":1,"rarity":"uncommon","tags":["no"]},
+                {"name":"BabyBunny","colors":1,"rarity":"rare","tags":[]},
+                {"name":"BabyDragon","colors":2,"rarity":"legendary","tags":[]},
+                {"name":"BearEars","colors":1,"rarity":"common","tags":[]},
+                {"name":"BooTheGhostFloop","colors":0,"rarity":"epic","tags":[]},
+                {"name":"BunnyEars","colors":1,"rarity":"rare","tags":[]},
+                {"name":"CowboyHat","colors":2,"rarity":"uncommon","tags":[]},
+                {"name":"CrazyBearBallcap","colors":2,"rarity":"common","tags":[]},
+                {"name":"CuteBird","colors":2,"rarity":"rare","tags":["no"]},
+                {"name":"CuteOctopusHat","colors":2,"rarity":"mythic","tags":[]},
+                {"name":"Daisy","colors":2,"rarity":"common","tags":["no"]},
+                {"name":"DemonHorns","colors":1,"rarity":"rare","tags":["twoParts"]},
+                {"name":"DevilHorns","colors":1,"rarity":"common","tags":["twoParts"]},
+                {"name":"FlowerCrown","colors":2,"rarity":"rare","tags":["no"]},
+                {"name":"GhostCrocFriend","colors":0,"rarity":"epic","tags":[]},
+                {"name":"GhostKittyFriend","colors":0,"rarity":"rare","tags":[]},
+                {"name":"Halo","colors":1,"rarity":"rare","tags":["no"]},
+                {"name":"KittyEars","colors":1,"rarity":"common","tags":[]},
+                {"name":"KittyEarsBallcap","colors":2,"rarity":"common","tags":[]},
+                {"name":"MoonPrincessBallcap","colors":2,"rarity":"common","tags":[]},
+                {"name":"Shades","colors":2,"rarity":"uncommon","tags":["no"]},
+                {"name":"SideBow","colors":1,"rarity":"uncommon","tags":[]},
+                {"name":"SillyFrogBallcap","colors":2,"rarity":"common","tags":[]},
+                {"name":"SunHatWithBow","colors":2,"rarity":"uncommon","tags":[]},
+                {"name":"TennisVisor","colors":1,"rarity":"uncommon","tags":[]},
+                {"name":"TopHat","colors":2,"rarity":"uncommon","tags":[]},
+                {"name":"WeirdCatBallcap","colors":2,"rarity":"common","tags":[]},
+                {"name":"WingedCommsDevice","colors":2,"rarity":"epic","tags":["noEarring"]},
+
+                {"name":"Space Helmet","colors":0,"rarity":"legendary","tags":[]},
+                {"name":"Gummy Ears","colors":1,"rarity":"legendary","tags":[]},
+                {"name":"Bird Skull Headdress","colors":2,"rarity":"legendary","tags":[]}
+
+            ]
+        },
+
+        {
+            "name":"Mouth",
+            "traits":[
+                {"name":"Empty","colors":0,"rarity":"common","tags":[]},
+                {"name":"KindaMad","colors":1,"rarity":"uncommon","tags":[]},
+                {"name":"CuteSmile","colors":1,"rarity":"common","tags":[]},
+                {"name":"GrumpyFrown","colors":1,"rarity":"common","tags":[]},
+                {"name":"AI","colors":1,"rarity":"mythic","tags":[]},
+                {"name":"Bite","colors":1,"rarity":"rare","tags":[]},
+                {"name":"BubbleGum","colors":2,"rarity":"uncommon","tags":[]},
+                {"name":"Cigarette","colors":1,"rarity":"rare","tags":[]},
+                {"name":"Donut","colors":2,"rarity":"epic","tags":[]},
+                {"name":"Fangs","colors":1,"rarity":"uncommon","tags":[]},
+                {"name":"FlatSucker","colors":2,"rarity":"uncommon","tags":[]},
+                {"name":"Pocky","colors":1,"rarity":"rare","tags":[]},
+                {"name":"RoundSucker","colors":2,"rarity":"common","tags":[]},
+                {"name":"SnakeTongue","colors":2,"rarity":"rare","tags":[]},
+                {"name":"Tongue","colors":1,"rarity":"common","tags":[]},
+
+                {"name":"Mom Pout","colors":2,"rarity":"legendary","tags":[]},
+                {"name":"Digital Cigarette","colors":1,"rarity":"legendary","tags":[]},
+                {"name":"Glossy Duo","colors":2,"rarity":"legendary","tags":[]},
+                {"name":"Gummy Tongue","colors":2,"rarity":"legendary","tags":[]},
+                {"name":"Space Gloss","colors":2,"rarity":"legendary","tags":[]}
+            ]
+        },
+
+        {
+            "name":"Outfit",
+            "traits":[
+                {"name":"Empty","colors":0,"rarity":"common"},
+                {"name":"Hoodie","colors":2,"rarity":"common"},
+                {"name":"AIExosuit","colors":1,"rarity":"mythic"},
+                {"name":"AnglerVest","colors":2,"rarity":"rare"},
+                {"name":"BaddieLeatherJacket","colors":2,"rarity":"rare"},
+                {"name":"Blouse","colors":1,"rarity":"common"},
+                {"name":"BunnyQueenDress","colors":3,"rarity":"legendary"},
+                {"name":"BunnyQueenMechaFighterTop","colors":3,"rarity":"epic"},
+                {"name":"BunnyUCheerTop","colors":1,"rarity":"uncommon"},
+                {"name":"CowgirlTop","colors":1,"rarity":"common"},
+                {"name":"CrazyBearTee","colors":2,"rarity":"common"},
+                {"name":"CuteApron","colors":2,"rarity":"rare"},
+                {"name":"DontDoItTrackTop","colors":1,"rarity":"uncommon"},
+                {"name":"DontDoItTracksuit","colors":1,"rarity":"common"},
+                {"name":"FancyHalterDress","colors":1,"rarity":"uncommon"},
+                {"name":"FancySweaterVest","colors":2,"rarity":"rare"},
+                {"name":"FangirlJersey","colors":2,"rarity":"common"},
+                {"name":"FlowerKimono","colors":2,"rarity":"epic"},
+                {"name":"FuturisticDress","colors":1,"rarity":"uncommon"},
+                {"name":"HalterTop","colors":1,"rarity":"common"},
+                {"name":"HeartBra","colors":2,"rarity":"uncommon"},
+                {"name":"HeartCardigan","colors":2,"rarity":"common"},
+                {"name":"HeartCollarShirt","colors":1,"rarity":"uncommon"},
+                {"name":"HoodieWithCropTop","colors":2,"rarity":"common"},
+                {"name":"SpaceTee","colors":2,"rarity":"common"},
+                {"name":"PeterPanCollarTop","colors":2,"rarity":"uncommon"},
+                {"name":"PilotUniform","colors":2,"rarity":"rare"},
+                {"name":"PinstripeMobsterSuit","colors":2,"rarity":"epic"},
+                {"name":"Polo","colors":1,"rarity":"common"},
+                {"name":"SailorScoutTop","colors":1,"rarity":"uncommon"},
+                {"name":"SpaceCommanderUniform","colors":2,"rarity":"rare"},
+                {"name":"StripedBikini","colors":2,"rarity":"uncommon"},
+                {"name":"SweaterHalter","colors":1,"rarity":"uncommon"},
+                {"name":"SweaterVest","colors":2,"rarity":"common"},
+                {"name":"TurtleNeckHalter","colors":1,"rarity":"common"},
+                {"name":"VarsityJacket","colors":2,"rarity":"uncommon"},
+                {"name":"WonderArmor","colors":2,"rarity":"uncommon"},
+
+                {"name":"Mom Tee","colors":2,"rarity":"legendary"},
+                {"name":"Bounty Hunter Armor","colors":3,"rarity":"legendary"},
+                {"name":"Space Suit","colors":3,"rarity":"legendary"},
+                {"name":"Gummy Heart Top","colors":2,"rarity":"legendary"},
+                {"name":"Dragon Princess Kimono","colors":2,"rarity":"legendary"},
+                {"name":"Ritual Garments","colors":6,"rarity":"legendary"},
+                {"name":"Alien Queens Robes","colors":3,"rarity":"legendary"},
+                {"name":"Starlet Dress","colors":1,"rarity":"legendary"}
+            ]
+        },
+        
+        {
+            "name":"Piercing",
+            "traits":[
+                {"name":"Empty","colors":0,"rarity":"common"},
+                {"name":"DimplePiercings","colors":1,"rarity":"rare"},
+                {"name":"LipPiercing","colors":1,"rarity":"uncommon"},
+                {"name":"NoseRing","colors":1,"rarity":"uncommon"},
+                {"name":"NoseStud","colors":1,"rarity":"common"},
+                {"name":"SeptumPiercing","colors":1,"rarity":"epic"}
+            ]
+        },
+
+        {
+            "name":"Skin",
+            "traits":[
+                {"name":"Empty","colors":0,"rarity":"common"},
+                {"name":"Zombie","colors":0,"rarity":"rare"},
+                {"name":"AI","colors":0,"rarity":"mythic"},
+                {"name":"Alien","colors":0,"rarity":"rare"},
+                {"name":"Borg","colors":0,"rarity":"legendary"},
+                {"name":"Buttercream","colors":0,"rarity":"common"},
+                {"name":"Cocoa","colors":0,"rarity":"common"},
+                {"name":"CottonCandy","colors":0,"rarity":"epic"},
+                {"name":"Demon","colors":0,"rarity":"epic"},
+                {"name":"GingerSnaps","colors":0,"rarity":"common"},
+                {"name":"Hazelnut","colors":0,"rarity":"common"},
+                {"name":"Macaroons","colors":0,"rarity":"common"},
+                {"name":"Marshmellows","colors":0,"rarity":"common"},
+                {"name":"Mermaid","colors":0,"rarity":"rare"},
+                {"name":"Mocha","colors":0,"rarity":"common"},
+                {"name":"PeachCobbler","colors":0,"rarity":"common"},
+                {"name":"RaspberryCookies","colors":0,"rarity":"common"},
+                {"name":"Cakebatter","colors":0,"rarity":"common"},
+                {"name":"Smurfette","colors":0,"rarity":"epic"},
+                {"name":"StrawberryFrosting","colors":0,"rarity":"common"},
+                {"name":"StrawberryMilk","colors":0,"rarity":"common"},
+                {"name":"StrawberryWhippedCream","colors":0,"rarity":"common"},
+                {"name":"ToastedMarshmellow","colors":0,"rarity":"common"},
+                {"name":"VanillaBean","colors":0,"rarity":"common"},
+                {"name":"VanillaCheesecake","colors":0,"rarity":"common"},
+
+                {"name":"Camping Tan","colors":0,"rarity":"legendary"},
+                {"name":"Vaporwave","colors":0,"rarity":"legendary", "tags": ["ownBase"]},
+                {"name":"MintAlien","colors":0,"rarity":"legendary"},
+                {"name":"Gummy","colors":0,"rarity":"legendary", "tags": ["ownBase"]},
+                {"name":"VanillaCream","colors":0,"rarity":"legendary", "tags": [""]},
+                {"name":"BakedMarshLentils","colors":0,"rarity":"legendary", "tags": [""]},
+                {"name":"HexyveraPink","colors":0,"rarity":"legendary", "tags": [""]},
+                {"name":"FilmGrainSkin","colors":0,"rarity":"legendary", "tags": [""]}
+            ]
+        },
+        {
+            "name":"Tattoo",
+            "traits":[
+                {"name":"Empty","colors":0,"rarity":"common"},
+
+                {"name":"Dragon Princess Cheeks","colors":1,"rarity":"legendary", "tags": ["bodyPaint", "reverse"]},
+                {"name":"Skull Facepaint","colors":1,"rarity":"legendary", "tags": ["bodyPaint"]}
+            ]
+        },
+
+        {
+            "name": "Undergarment",
+            "traits": [
+                {"name":"Empty","colors":0,"rarity":"common"}
+            ]
+          }
+        
+        
+    ]
+}

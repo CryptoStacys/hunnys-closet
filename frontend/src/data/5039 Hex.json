@@ -1,0 +1,82 @@
+{
+  "attributes": {
+    "Eyes": {
+      "AlienQueenEyes": {
+        "name": "Alien Queen Eyes",
+        "colors": 2,
+        "rarity": "immortal"
+      }
+    },
+    "Background": {
+      "XiclonX9BoknyField": {
+        "name": "XiclonX9BoknyField",
+        "colors": 0,
+        "baseColor": ["pink"],
+        "rarity": "immortal"
+      }
+    },
+    "Hair Style": {
+      "XiclonianQueenHair": {
+        "name": "XiclonianQueenHair",
+        "colors": 2,
+        "parts": 2,
+        "rarity": "immortal"
+      }
+    },
+    "Face Sticker": {
+      "AlienBlush": {
+        "name": "AlienBlush",
+        "colors": 1,
+        "rarity": "immortal"
+      }
+    },
+    "Outfit": {
+      "AlienQueensRobes": {
+        "name": "AlienQueensRobes",
+        "colors": 3,
+        "rarity": "immortal"
+      }
+    },
+    "Mouth": {
+      "SpaceGloss": {
+        "name": "SpaceGloss",
+        "colors": 2,
+        "rarity": "immortal"
+      }
+    },
+    "Body": {
+      "Base": {
+        "name": "Base",
+        "rarity": "common",
+        "colors": 1
+      }
+    },
+    "Eyebrows": {
+      "Normal": {
+        "name": "Normal",
+        "colors": 0,
+        "rarity": "common"
+      }
+    },
+    "Accessory": {
+      "TheVision": {
+        "name": "TheVision",
+        "colors": 2,
+        "rarity": "immortal",
+        "tags": []
+      },
+      "XirodiumBangle": {
+        "name": "XirodiumBangle",
+        "colors": 1,
+        "rarity": "immortal",
+        "tags": []
+      },
+      "XirodiumHoops": {
+        "name": "XirodiumHoops",
+        "colors": 1,
+        "rarity": "immortal",
+        "tags": []
+      }
+    }
+  }
+}

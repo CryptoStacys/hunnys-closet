@@ -1,0 +1,832 @@
+[
+    {
+        "tokenId": 1,
+        "name": "Zuri the Zombie",
+        "attributes":[
+            {"trait_type":"Outfit","value":"Brain Tee"}
+        ]
+    },
+    {
+        "tokenId": 2,
+        "name": "Marielle the Mermaid",
+        "attributes":[
+            {"trait_type":"Outfit","value":"Marielles Bathing Suit"}
+        ]
+    },
+    {
+        "tokenId": 3,
+        "name": "Gabriella the Ghost",
+        "attributes":[
+            {"trait_type":"Skin","value":"Ghostly Gabrielle"}
+        ]
+    },
+    {
+        "tokenId": 4,
+        "name": "Maahira the Mummy",
+        "attributes":[
+            {"trait_type":"Hair Style","value":"Mummy A-Line"}
+        ]
+    },
+    {
+        "tokenId": 5,
+        "name": "Hex the Vampire Hunter",
+        "attributes":[
+            {"trait_type":"Outfit","value":"Hex Jacket"}
+        ]
+    },
+    {
+        "tokenId": 7,
+        "name": "Dominika the Demon",
+        "attributes":[
+            {"trait_type":"Tattoo","value":"Dominikas Demon"}
+        ]
+    },
+    {
+        "tokenId": 8,
+        "name": "Jesabelle the Royal Queen",
+        "attributes":[
+            {"trait_type":"Hand","value":"Jesabelles Sword"}
+        ]
+    },
+    {
+        "tokenId": 9,
+        "name": "Crystal the Owl Tamer",
+        "attributes":[
+            {"trait_type":"Hand","value":"Crystals Owl"}
+        ]
+    },
+    {
+        "tokenId": 10,
+        "name": "Camellia the Owl Tamer",
+        "attributes":[
+            {"trait_type":"Hat","value":"Sheep Wool Moon Muffs"}
+        ]
+    },
+    {
+        "tokenId": 12,
+        "name": "Clara the Bear Mother",
+        "attributes":[
+            {"trait_type":"Accessory","value":"Claras Backpack"}
+        ]
+    },
+    {
+        "tokenId": 13,
+        "name": "Noelle the Fox Keeper",
+        "attributes":[
+            {"trait_type":"Accessory","value":"Noelles Backpack"}
+        ]
+    },
+    {
+        "tokenId": 14,
+        "name": "Celeste the Bunny Princess",
+        "attributes":[
+            {"trait_type":"Hair Style","value":"Celestes Locks"}
+        ]
+    },
+    {
+        "tokenId": 15,
+        "name": "Aspen the Pack Leader",
+        "attributes":[
+            {"trait_type":"Accessory","value":"Aspens Wolf"}
+        ]
+    },
+    {
+        "tokenId": 16,
+        "name": "Svetlana the Owl Tamer",
+        "attributes":[
+            {"trait_type":"Outfit","value":"Svetlanas Sweater"}
+        ]
+    },
+    {
+        "tokenId": 17,
+        "name": "Samantha the Holiday Present (2021)",
+        "attributes":[
+            {"trait_type":"Outfit","value":"Samanthas Christmas Sweater"}
+        ]
+    },
+    {
+        "tokenId": 18,
+        "name": "Mai the Maid",
+        "attributes":[
+            {"trait_type":"Outfit","value":"Mais Maid Uniform"},
+    {"trait_type":"Hat","value":"Mais Maid Hat"},
+    {"trait_type":"Accessory","value":"Mais Maid Choker"}
+        ]
+    },
+    {
+        "tokenId": 20,
+        "name": "Piper the Punk",
+        "attributes":[
+            {"trait_type":"Accessory","value":"Pipers Punk Glasses"}
+        ]
+    },
+    {
+        "tokenId": 21,
+        "name": "Deadrie the Dead",
+        "attributes":[
+            {"trait_type":"Hat","value":"Dead Head"}
+        ]
+    },
+    {
+        "tokenId": 22,
+        "name": "Rowan the Rascal",
+        "attributes":[
+            {"trait_type":"Hat","value":"Rowans Warm Beret"}
+        ]
+    },
+    {
+        "tokenId": 23,
+        "name": "Chloe the Cool",
+        "attributes":[
+            {"trait_type":"Hair Style","value":"Chloes Ponytail"}
+        ]
+    },
+    {
+        "tokenId": 24,
+        "name": "Dottie the Doodle",
+        "attributes":[
+            {"trait_type":"Background","value":"Dottie Clouds"},
+            {"trait_type":"Outfit","value":"Dotties Puff Jacket"}
+        ]
+    },
+    {
+        "tokenId": 25,
+        "name": "Helenica the Vortex Demon",
+        "attributes":[
+            {"trait_type":"Skin","value":"Helenicas Skin"},
+            {"trait_type":"Accessory","value":"Helenicas Wings"},
+            {"trait_type":"Hat","value":"Helenicas Horns"},
+            {"trait_type":"Mouth","value":"Helenicas Demon Tongue"},
+            {"trait_type":"Accessory","value":"Helenicas Demon"}
+        ]
+    },
+    {
+        "tokenId": 26,
+        "name": "Lou the Lightning Bolt",
+        "attributes":[
+            {"trait_type":"Hair Style","value":"Lous Split"}
+        ]
+    },
+    {
+        "tokenId": 27,
+        "name": "Deko the Demon",
+        "attributes":[
+            {"trait_type":"Accessory","value":"Dekos KO Necklace"}
+        ]
+    },
+    {
+        "tokenId": 28,
+        "name": "Victoria the Vampiric",
+        "attributes":[
+            {"trait_type":"Hat","value":"Victorias Haunted Hat"}
+        ]
+    },
+    {
+        "tokenId": 29,
+        "name": "Balor the Bio-Hazard",
+        "attributes":[
+            {"trait_type":"Tattoo","value":"Balors Dragon Tattoo"}
+        ]
+    },
+    {
+        "tokenId": 30,
+        "name": "Cyan the Cybernetic",
+        "attributes":[
+            {"trait_type":"Hair Style","value":"Cyans Mohawk"}
+        ]
+    },
+    {
+        "tokenId": 31,
+        "name": "Belatrix the Batty",
+        "attributes":[
+            {"trait_type":"Outfit","value":"Belatrixs Goth Top"}
+        ]
+    },
+    {
+        "tokenId": 32,
+        "name": "Dorothy the Diner-Bot 1.0",
+        "attributes":[
+            {"trait_type":"Outfit","value":"Dorothys Diner Uniform"}
+        ]
+    },
+    {
+        "tokenId": 33,
+        "name": "Lydia the Leader",
+        "attributes":[
+            {"trait_type":"Outfit","value":"Lydias Space Suit"}
+        ]
+    },
+    {
+        "tokenId": 34,
+        "name": "Princess Penelope and Puppy",
+        "attributes":[
+            {"trait_type":"Hand","value":"Penelopes Puppy"}
+        ]
+    },
+    {
+        "tokenId": 35,
+        "name": "Charlie and Cookie Bird",
+        "attributes":[
+            {"trait_type":"Accessory","value":"Cookie Bird"}
+        ]
+    },
+    {
+        "tokenId": 36,
+        "name": "Heidi and Chocolate Horse",
+        "attributes":[
+            {"trait_type":"Accessory","value":"Heidis Horsie"}
+        ]
+    },
+    {
+        "tokenId": 37,
+        "name": "Tucker and Strawberry Thumper",
+        "attributes":[
+            {"trait_type":"Outfit","value":"Tuckers Strawberry Tee"}
+        ]
+    },
+    {
+        "tokenId": 38,
+        "name": "Juki and Jellyfish Donut",
+        "attributes":[
+            {"trait_type":"Hand","value":"Jellyfish Donut"}
+        ]
+    },
+    {
+        "tokenId": 39,
+        "name": "Queen Ginny and Gummy Bear",
+        "attributes":[
+            {"trait_type":"Hand","value":"Ginnys Gummy Scepter"}
+        ]
+    },
+    {
+        "tokenId": 40,
+        "name": "Golden Bunny Queen and Hubert",
+        "attributes":[
+            {"trait_type":"Hand","value":"Hubert"}
+        ]
+    },
+    {
+        "tokenId": 41,
+        "name": "Kali",
+        "attributes":[
+            {"trait_type":"Accessory","value":"Skull Necklace"}
+        ]
+    },
+    {
+        "tokenId": 42,
+        "name": "Isis",
+        "attributes":[
+            {"trait_type":"Tattoo","value":"Egyptian Goddess Symbol"}
+        ]
+    },
+    {
+        "tokenId": 43,
+        "name": "Mayari",
+        "attributes":[
+            {"trait_type":"Background","value":"Mayaris Moon"}
+        ]
+    },
+    {
+        "tokenId": 44,
+        "name": "Naima",
+        "attributes":[
+            {"trait_type":"Hat","value":"Sir Hornsworth"}
+        ]
+    },
+    {
+        "tokenId": 45,
+        "name": "Guan Yin",
+        "attributes":[
+            {"trait_type":"Background","value":"Beautiful Baby Dragon"}
+        ]
+    },
+    {
+        "tokenId": 46,
+        "name": "Hecate",
+        "attributes":[
+            {"trait_type":"Accessory","value":"Hecates Magic Skulls"},
+            {"trait_type":"Outfit","value":"Hecates Corset"},
+            {"trait_type":"Accessory","value":"Hecates Demon Snake"}
+        ]
+    },
+    {
+        "tokenId": 47,
+        "name": "Mika the Bunny Day Queen",
+        "attributes":[
+            {"trait_type":"Hand","value":"Bunny Day Scepter"},
+            {"trait_type":"Accessory","value":"Bunny Day Helper"},
+            {"trait_type":"Hair Style","value":"Bunny Day Mika Hair"}
+        ]
+    },
+    {
+        "tokenId": 48,
+        "name": "Xena the Warrior",
+        "attributes":[
+            {"trait_type":"Hair Style","value":"Warrior Princess Hair"}
+        ]
+    },
+    {
+        "tokenId": 49,
+        "name": "Chun-Li the Fighter",
+        "attributes":[
+            {"trait_type":"Outfit","value":"Fighter Dress"}
+        ]
+    },
+    {
+        "tokenId": 50,
+        "name": "Serena the Moon Guardian",
+        "attributes":[
+            {"trait_type":"Hair Style","value":"Moon Scout Buns"}
+        ]
+    },
+    {
+        "tokenId": 51,
+        "name": "Buffy the Slayer",
+        "attributes":[
+            {"trait_type":"Outfit","value":"Slayer Leather Jacket"}
+        ]
+    },
+    {
+        "tokenId": 52,
+        "name": "Michonne the Tamer",
+        "attributes":[
+            {"trait_type":"Hair Style","value":"Michonne Dreads"}
+        ]
+    },
+    {
+        "tokenId": 53,
+        "name": "Lara the Tomb Raider",
+        "attributes":[
+            {"trait_type":"Hand","value":"Laras Heckler"}
+        ]
+    },
+    {
+        "tokenId": 54,
+        "name": "Mika the Birthday Baker",
+        "attributes":[
+            {"trait_type":"Hair Style","value":"Birthday Buns"},
+            {"trait_type":"Background","value":"Birthday Sprinkles"}
+        ]
+    },
+    {
+        "tokenId": 55,
+        "name": "Floraleen the Elemeind",
+        "attributes":[
+            {"trait_type":"Hand","value":"Alien Bug Friend"}
+        ]
+    },
+    {
+        "tokenId": 56,
+        "name": "Ember the Elemeind",
+        "attributes":[
+            {"trait_type":"Hand","value":"Baby Ember"}
+        ]
+    },
+    {
+        "tokenId": 57,
+        "name": "Gale the Elemeind",
+        "attributes":[
+            {"trait_type":"Mouth","value":"Storm Smile"}
+        ]
+    },
+    {
+        "tokenId": 58,
+        "name": "Vaporah the Elemeind",
+        "attributes":[
+            {"trait_type":"Hair Style","value":"Water Hair"}
+        ]
+    },
+    {
+        "tokenId": 59,
+        "name": "Queen Beetris of Elemeind",
+        "attributes":[
+            {"trait_type":"Background","value":"Bumble Bees"}
+        ]
+    },
+    {
+        "tokenId": 60,
+        "name": "Paragon the Elemeind",
+        "attributes":[
+            {"trait_type":"Accessory","value":"Arcane Cave Beast"}
+        ]
+    },
+    {
+        "tokenId": 61,
+        "name": "Betsy the Baker",
+        "attributes":[
+            {"trait_type":"Hat","value":"30s Cartoon Kitty"}
+        ]
+    },
+    {
+        "tokenId": 62,
+        "name": "Princess Oriana and the Mizzards",
+        "attributes":[
+            {"trait_type":"Background","value":"Dancing Bubble"}
+        ]
+    },
+    {
+        "tokenId": 63,
+        "name": "Lucy the Lagoon Gal",
+        "attributes":[
+            {"trait_type":"Background","value":"Lagoon Monster"}
+        ]
+    },
+    {
+        "tokenId": 64,
+        "name": "Lil' Red and Mr.Wolfie",
+        "attributes":[
+            {"trait_type":"Background","value":"30s Forest"},
+            {"trait_type":"Background","value":"30s Forest Bunny"}
+        ]
+    },
+    {
+        "tokenId": 65,
+        "name": "Wendy the Witch",
+        "attributes":[
+            {"trait_type":"Background","value":"Witches Cauldron"}
+        ]
+    },
+    {
+        "tokenId": 66,
+        "name": "Matilda the Maid",
+        "attributes":[
+            {"trait_type":"Background","value":"Ghostly Bear Buddy"},
+            {"trait_type":"Outfit","value":"Matildas Maid Uniform"}
+        ]
+    },
+    {
+        "tokenId": 68,
+        "name": "Haley the Hupe Scout",
+        "attributes":[
+            {"trait_type":"Outfit","value":"Hupe Scout Uniform"},
+            {"trait_type":"Hat","value":"Hupe Scout Uniform Beret"},
+            {"trait_type":"Background","value":"Rainbow"}
+        ]
+    },
+    {
+        "tokenId": 69,
+        "name": "Kiki the Witch - Coming Soon",
+        "attributes":[
+            {"trait_type":"Common","value":"3"}
+        ]
+    },
+    {
+        "tokenId": 70,
+        "name": "Mei the Explorer",
+        "attributes":[
+            {"trait_type":"Hat","value":"Straw Hat"}
+        ]
+    },
+    {
+        "tokenId": 71,
+        "name": "Chihiro the Brave - Coming Soon",
+        "attributes":[
+            {"trait_type":"Epic","value":"5"}
+        ]
+    },
+    {
+        "tokenId": 72,
+        "name": "Princess Mononoke the Fierce",
+        "attributes":[
+            {"trait_type":"Accessory","value":"Moro"}
+        ]
+    },
+    {
+        "tokenId": 73,
+        "name": "Howl the Wizard",
+        "attributes":[
+            {"trait_type":"Accessory","value":"Howls Wings"}
+        ]
+    },
+    {
+        "tokenId": 74,
+        "name": "Jam and Jigglypuff",
+        "attributes":[
+            {"trait_type":"Outfit","value":"Frilly Tank"}
+        ]
+    },
+    {
+        "tokenId": 75,
+        "name": "Percy and Psyduck",
+        "attributes":[
+            {"trait_type":"Accessory","value":"Percys Pack Pack"}
+        ]
+    },
+    {
+        "tokenId": 76,
+        "name": "Mary and Miltank",
+        "attributes":[
+            {"trait_type":"Hair Style","value":"Mary Piggys"}
+        ]
+    },
+    {
+        "tokenId": 77,
+        "name": "Alice and Arcanine",
+        "attributes":[
+            {"trait_type":"Accessory","value":"Alices Pup"}
+        ]
+    },
+    {
+        "tokenId": 78,
+        "name": "Duyen and Dratini",
+        "attributes":[
+            {"trait_type":"Outfit","value":"Dragon Egg Dress"},
+            {"trait_type":"Mouth","value":"Dragon Fangs"},
+            {"trait_type":"Hat","value":"Cloud Halo"},
+            {"trait_type":"Eyebrows","value":"Dragon Eyebrows"}
+        ]
+    },
+    {
+        "tokenId": 80,
+        "name": "Gamer Queen Jelli",
+        "attributes":[
+            {"trait_type":"Outfit","value":"Gamer Queen Jelli Uniform"},
+            {"trait_type":"Hat","value":"Gel Piggy Gamer Headset"}
+        ]
+    },
+    {
+        "tokenId": 81,
+        "name": "Ratty B",
+        "attributes":[
+            {"trait_type":"Mouth","value":"Delicious Cheese Pizza"},
+            {"trait_type":"Hat","value":"Big Cheese Ears"}
+        ]
+    },
+    {
+        "tokenId": 82,
+        "name": "Blake the Bunny Wrangler",
+        "attributes":[
+            {"trait_type":"Background","value":"Cactus Horizon"}
+        ]
+    },
+    {
+        "tokenId": 83,
+        "name": "Palmer the Potato Farmer",
+        "attributes":[
+            {"trait_type":"Mouth","value":"Chewing Wheat"}
+        ]
+    },
+    {
+        "tokenId": 84,
+        "name": "Reese the Researcher",
+        "attributes":[
+            {"trait_type":"Accessory","value":"Baby Hornsworth Backpack"},
+            {"trait_type":"Bodysuit","value":"Hornsworth Hoodie"}
+        ]
+    },
+    {
+        "tokenId": 85,
+        "name": "Brie the Beat Queen",
+        "attributes":[
+            {"trait_type":"Hair Style","value":"Superstar Hair"},
+            {"trait_type":"Accessory","value":"Bad Bunny Earrings"},
+            {"trait_type":"Accessory","value":"Beat Queen Glasses"}
+        ]
+    },
+    {
+        "tokenId": 86,
+        "name": "Waverly the Witch",
+        "attributes":[
+            {"trait_type":"Outfit","value":"Puffy Top"}
+        ]
+    },
+    {
+        "tokenId": 87,
+        "name": "Vanity the Vampire",
+        "attributes":[
+            {"trait_type":"Hair Style","value":"Vanity Curls"}
+        ]
+    },
+    {
+        "tokenId": 88,
+        "name": "Octavia the Octopus",
+        "attributes":[
+            {"trait_type":"Hair Style","value":"Octavia Tentacles"}
+        ]
+    },
+    {
+        "tokenId": 89,
+        "name": "Deidre the Demon",
+        "attributes":[
+            {"trait_type":"Tattoo","value":"Hott Demon Tats"}
+        ]
+    },
+    {
+        "tokenId": 90,
+        "name": "Gwenyvere the Ghost",
+        "attributes":[
+            {"trait_type":"Accessory","value":"Surprised Boo"}
+        ]
+    },
+    {
+        "tokenId": 91,
+        "name": "Wendria the Wicked",
+        "attributes":[
+            {"trait_type":"Outfit","value":"Ribs Leather"}
+        ]
+    },
+    {
+        "tokenId": 92,
+        "name": "Lalia the Leo",
+        "attributes":[
+            {"trait_type":"Accessory","value":"Leo Plushie"}
+        ]
+    },
+    {
+        "tokenId": 93,
+        "name": "Ava the Aries",
+        "attributes":[
+            {"trait_type":"Face Sticker","value":"Dead Star"},
+            {"trait_type":"Hat","value":"Aries Horns"},
+            {"trait_type":"Hand","value":"Avas Hammer"}
+        ]
+    },
+    {
+        "tokenId": 94,
+        "name": "Gem & Gina the Gemenis",
+        "attributes":[
+            {"trait_type":"Face Sticker","value":"Winky Sun"},
+            {"trait_type":"Tattoo","value":"Tribal"}
+        ]
+    },
+    {
+        "tokenId": 95,
+        "name": "Pelage the Pisces",
+        "attributes":[
+            {"trait_type":"Face Sticker","value":"Dead Fish"},
+            {"trait_type":"Hand","value":"Pelages Spear"}
+        ]
+    },
+    {
+        "tokenId": 96,
+        "name": "Sanda the Scorpio",
+        "attributes":[
+            {"trait_type":"Outfit","value":"Scorpio Armor"},
+            {"trait_type":"Hat","value":"Scorpio Helmet"}
+        ]
+    },
+    {
+        "tokenId": 97,
+        "name": "Sable the Sagitarrius",
+        "attributes":[
+            {"trait_type":"Accessory","value":"Sirius"},
+            {"trait_type":"Eyes","value":"Bionic Eye"}
+        ]
+    },
+    {
+        "tokenId": 98,
+        "name": "Lexa the Libra",
+        "attributes":[
+            {"trait_type":"Accessory","value":"Marshmallow Drone"},
+            {"trait_type":"Accessory","value":"Thog Drone"}
+        ]
+    },
+    {
+        "tokenId": 99,
+        "name": "Cecily the Capricorn",
+        "attributes":[
+            {"trait_type":"Background","value":"Holographic Fish"},
+            {"trait_type":"Tattoo","value":"Cecilys Fish"}
+        ]
+    },
+    {
+        "tokenId": 100,
+        "name": "Calantha the Cancer",
+        "attributes":[
+            {"trait_type":"Piercing","value":"Calanthas Nose Chain"},
+            {"trait_type":"Outfit","value":"Calanthas Cloak"}
+        ]
+    },
+    {
+        "tokenId": 101,
+        "name": "Verity the Virgo",
+        "attributes":[
+            {"trait_type":"Hand","value":"Veritys Staff"}
+        ]
+    },
+    {
+        "tokenId": 102,
+        "name": "Akira the Aquarius",
+        "attributes":[
+            {"trait_type":"Mouth","value":"Akiras Snarl"},
+            {"trait_type":"Hand","value":"Stardust Milkshake"},
+            {"trait_type":"Accessory","value":"Glipper Tray"},
+            {"trait_type":"Eyebrows","value":"Akiras Brows"},
+            {"trait_type":"Accessory","value":"Akiras Eyeball Necklace"}
+        ]
+    },
+    {
+        "tokenId": 103,
+        "name": "Tahlia the Taurus",
+        "attributes":[
+            {"trait_type":"Hat","value":"Baby Bull"},
+            {"trait_type":"Accessory","value":"Constellation Hoops"},
+            {"trait_type":"Mouth","value":"Taurus Lips"}
+        ]
+    },
+    {
+        "tokenId": 104,
+        "name": "Samantha the Holiday Present (2022)",
+        "attributes":[
+            {"trait_type":"Hand","value":"BFF Bracelet"}
+        ]
+    },
+    {
+        "tokenId": 105,
+        "name": "Satsuki the Shengu",
+        "attributes":[
+            {"trait_type":"Outfit","value":"Shengu Jacket"}
+        ]
+    },
+    {
+        "tokenId": 106,
+        "name": "Yuki the Mecha Racer",
+        "attributes":[
+            {"trait_type":"Outfit","value":"Yuki Racer Suit"},
+            {"trait_type":"Hair Style","value":"Yuki Pigtails"}
+        ]
+    },
+    {
+        "tokenId": 107,
+        "name": "Trinity & Entity the Twins",
+        "attributes":[
+            {"trait_type":"Background","value":"Grid Alleyway"}
+        ]
+    },
+    {
+        "tokenId": 108,
+        "name": "Kazuko 'The Ghost' Bounty Queen",
+        "attributes":[
+            {"trait_type":"Hand","value":"Kazukos Ghost"},
+            {"trait_type":"Outfit","value":"Kazuko Jacket"}
+        ]
+    },
+    {
+        "tokenId": 109,
+        "name": "Xap the Executive",
+        "attributes":[
+            {"trait_type":"Hair Style","value":"Xap Buns"}
+        ]
+    },
+    {
+        "tokenId": 110,
+        "name": "Minty Mila",
+        "attributes":[
+            {"trait_type":"Accessory","value":"Milas Pearl Earrings"}
+        ]
+    },
+    {
+        "tokenId": 111,
+        "name": "Hope the HunnyGram Delivery Girl",
+        "attributes":[
+            {"trait_type":"Hand","value":"Hunny Gram"}
+        ]
+    },
+    {
+        "tokenId": null,
+        "name": "Mika Big Fluffy Ears and the Smelly Nerdy Dragon",
+        "attributes":[
+            {"trait_type":"4","value":"Accessory"}
+        ]
+    },
+    {
+        "tokenId": 113,
+        "name": "Brie the Bubbly Wubbly Bar Maiden",
+        "attributes":[
+            {"trait_type":"Hand","value":"Bar Tray"}
+        ]
+    },
+    {
+        "tokenId": 114,
+        "name": "Bixie the Bubble Grove Troll",
+        "attributes":[
+            {"trait_type":"Mouth","value":"Bixie Underbite"},
+            {"trait_type":"Accessory","value":"Bubble Bear"},
+            {"trait_type":"Eyebrows","value":"Bixie Brows"}
+        ]
+    },
+    {
+        "tokenId": 115,
+        "name": "Cottynne the Candy Cloud Creep Shepardess",
+        "attributes":[
+            {"trait_type":"Background","value":"Candy Clouds"},
+            {"trait_type":"Frame","value":"Candy Cloud Creep"},
+            {"trait_type":"Accessory","value":"Candy Earring"}
+        ]
+    },
+    {
+        "tokenId": 116,
+        "name": "Pandora the Potion Witch",
+        "attributes":[
+            {"trait_type":"Eyes","value":"Potion Eyes"},
+            {"trait_type":"Accessory","value":"Eyeball Earrings"}
+        ]
+    },
+    {
+        "tokenId": 117,
+        "name": "Scholar Mika and the Lore Masters",
+        "attributes":[
+            {"trait_type":"Accessory","value":"Nimbus the Sky Puppy"}
+        ]
+    }
+]

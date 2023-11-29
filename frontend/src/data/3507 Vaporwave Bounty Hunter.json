@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "Eyes": {
+      "NormalEyes": {
+        "name": "NormalEyes",
+        "colors": 1,
+        "rarity": "common"
+      }
+    },
+    "Hair Style": {
+      "VaporwavePonytail": {
+        "name": "VaporwavePonytail",
+        "colors": 3,
+        "parts": 1,
+        "rarity": "immortal",
+        "tags": []
+      }
+    },
+    "Mouth": {
+      "DigitalCigarette": {
+        "name": "DigitalCigarette",
+        "colors": 1,
+        "rarity": "immortal"
+      }
+    },
+    "Outfit": {
+      "BountyHunterArmor": {
+        "name": "BountyHunterArmor",
+        "colors": 3,
+        "rarity": "immortal"
+      }
+    },
+    "Body": {
+      "VaporwaveBase": {
+        "name": "VaporwaveBase",
+        "rarity": "immortal",
+        "colors": 1
+      }
+    },
+    "Eyebrows": {
+      "Normal": {
+        "name": "Normal",
+        "colors": 0,
+        "rarity": "common"
+      }
+    },
+    "Accessory": {
+      "FuturisticGoggles": {
+        "name": "FuturisticGoggles",
+        "colors": 2,
+        "rarity": "immortal",
+        "tags": []
+      }
+    },
+    "Background": {
+      "VaporwaveSunset": {
+        "name": "VaporwaveSunset",
+        "colors": 0,
+        "baseColor": ["purple"],
+        "rarity": "immortal"
+      }
+    }
+  }
+}

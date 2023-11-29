@@ -1,0 +1,86 @@
+{
+    "attributes": [
+        {
+            "name": "Background",
+            "traits":[
+                {"name":"Eyeball Planet","colors":4,"rarity":"Relic","tags":[]}
+            ]
+        }, 
+        {
+            "name": "Skin",
+            "traits":[
+                {"name":"Space Dust Pink","colors":0,"rarity":"Relic","tags":[]},
+                {"name":"Space Dust Blue","colors":0,"rarity":"Relic","tags":[]},
+                {"name":"Space Dust Purple","colors":0,"rarity":"Relic","tags":[]},
+                {"name":"Space Dust Green","colors":0,"rarity":"Relic","tags":[]}
+            ]
+        },
+        {
+            "name": "Eyebrows",
+            "traits":[
+                {"name":"Space Monster Eyebrows","colors":1,"rarity":"Relic","tags":[]}
+            ]
+        }, 
+        {
+            "name": "Hat",
+            "traits":[
+                {"name":"Space Monster Helmet","colors":4,"rarity":"Relic","tags":[]}
+            ]
+        }, 
+        {
+            "name": "Eyes",
+            "traits":[
+                {"name":"Space Monster Eyes","colors":2,"rarity":"Relic","tags":[]}
+            ]
+        },
+        {
+            "name": "Mouth",
+            "traits":[
+                {"name":"Space Monster Lipstick","colors":1,"rarity":"Relic","tags":[]}
+            ]
+        }, 
+        {
+            "name": "Hair Style",
+            "traits":[
+                {"name":"Hunter Pony Tail","colors":1,"rarity":"Relic","parts":2,"tags":[]}
+            ]
+        }, 
+        {
+            "name": "Accessory",
+            "traits":[
+                {"name":"Alien Croc Tube","colors":5,"rarity":"Relic","tags":[]},
+                {"name":"Space Monster Comms","colors":2,"rarity":"Relic","tags":[]}
+            ]
+        }, 
+        {
+            "name": "Outfit",
+            "traits":[
+                {"name":"Space Monster Mech","colors":5,"rarity":"Relic","tags":[]}
+            ]
+        },
+        {
+            "name": "Hand",
+            "traits":[
+                {"name":"Demonic Pistol","colors":5,"rarity":"Relic","tags":[]}
+            ]
+        }, 
+        {
+            "name": "Dye",
+            "traits":[
+                {"name":"Acidic Green 1","colors":0,"rarity":"Relic","tags":[]},
+                {"name":"Acidic Green 2","colors":0,"rarity":"Relic","tags":[]},
+                {"name":"Acidic Green 3","colors":0,"rarity":"Relic","tags":[]},
+                {"name":"Acidic Purple 1","colors":0,"rarity":"Relic","tags":[]},
+                {"name":"Acidic Purple 2","colors":0,"rarity":"Relic","tags":[]},
+                {"name":"Acidic Purple 3","colors":0,"rarity":"Relic","tags":[]},
+                {"name":"Acidic Green 1","colors":0,"rarity":"Relic","tags":[]},
+                {"name":"Acidic Green 2","colors":0,"rarity":"Relic","tags":[]},
+                {"name":"Acidic Green 3","colors":0,"rarity":"Relic","tags":[]},
+                {"name":"Acidic Purple 1","colors":0,"rarity":"Relic","tags":[]},
+                {"name":"Acidic Purple 2","colors":0,"rarity":"Relic","tags":[]},
+                {"name":"Acidic Purple 3","colors":0,"rarity":"Relic","tags":[]}
+            ]
+        }
+        
+    ] 
+}

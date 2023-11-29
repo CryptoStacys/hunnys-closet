@@ -1,0 +1,73 @@
+[
+    {
+        "tokenId": 1,
+        "name":"Expression Pack 1",
+        "slug": "dollyExpressionPackOne",
+        "attributes":[
+            {"trait_type":"Eyes","value":"Closed Eyes"},
+            {"trait_type":"Mouth","value":"Open Mouth"},
+            {"trait_type":"Eyebrows","value":"Grumpy"},
+            {"trait_type":"Eyebrows","value":"Surprised"},
+            {"trait_type":"Mouth","value":"Frown"},
+            {"trait_type":"Mouth","value":"Thin Lips"},
+            {"trait_type":"Mouth","value":"Cringe"},
+            {"trait_type":"Eyes","value":"Shifty Eyes"},
+            {"trait_type":"Eyes","value":"Eye Roll"},
+            {"trait_type":"Eyes","value":"Cringe Eye"},
+            {"trait_type":"Eyebrows","value":"Upbrows"},
+            {"trait_type":"Eyebrows","value":"Straight Brows"},
+            {"trait_type":"Eyebrows","value":"Cringe Brow"}
+        ]
+    },
+    {
+        "tokenId": 2,
+        "name":"Piggy Set",
+        "slug": "dollyPiggySet",
+        "attributes":[
+            {"trait_type":"Outfit","value":"Piggy Frilly Top"},
+            {"trait_type":"Hat","value":"Piggy Ears"},
+            {"trait_type":"Accessory","value":"Piggy Earring"},
+            {"trait_type":"Hair Style","value":"Piggy Hair"}
+        ]
+    },
+    {
+        "tokenId": 3,
+        "name":"Cow Set",
+        "slug": "dollyCowSet",
+        "attributes":[
+            {"trait_type":"Accessory","value":"Cow Bell"},
+            {"trait_type":"Hand","value":"Milk"},
+            {"trait_type":"Hat","value":"Cow Ears"},
+            {"trait_type":"Outfit","value":"Cowbelle Crop"},
+            {"trait_type":"Hair Style","value":"Cow Hair with Bangs"}
+        ]
+    },
+    {
+        "tokenId": 4,
+        "name":"Modern Bob",
+        "slug": "dollysModernBob",
+        "attributes":[{"trait_type":"Hair Style","value":"Modern Bob"}]
+    },
+    {
+        "tokenId": 5,
+        "name":"Long Gradient Hair",
+        "slug": "dollysLongGradientHair",
+        "attributes":[{"trait_type":"Hair Style","value":"Long Gradient Hair"}]
+    },
+    {
+        "tokenId": 6,
+        "name":"W33D Set",
+        "slug": "dollysBlazeSet",
+        "attributes":[
+            {"trait_type":"Mounth","value":"W33D Hang"},
+            {"trait_type":"Mouth","value":"W33D Straight"},
+            {"trait_type":"Accessory","value":"W33D Earrings"},
+            {"trait_type":"Hat","value":"W33D Shades"},
+            {"trait_type":"Outfit","value":"W33DS Tie Dye Tee"},
+            {"trait_type":"Hair Style","value":"W33D Bun"},
+            {"trait_type":"Face Sticker","value":"W33D Sticker"},
+            {"trait_type":"Eyebrows","value":"W33D Brows"},
+            {"trait_type":"Background","value":"W33D Trip"}
+        ]
+    }
+]

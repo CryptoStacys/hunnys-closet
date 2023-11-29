@@ -1,0 +1,71 @@
+{
+  "attributes": {
+    "Body": {
+      "Base": {
+        "name": "Base",
+        "rarity": "common",
+        "colors": 1
+      }
+    },
+    "Background": {
+      "Galaxy": {
+        "name": "Galaxy",
+        "color": 0,
+        "rarity": "immortal",
+        "baseColor": ["purple"]
+      }
+    },
+    "Mouth": {
+      "GlossyDuo": {
+        "name": "GlossyDuo",
+        "colors": 2,
+        "rarity": "immortal"
+      }
+    },
+    "Hair Style": {
+      "SpaceBob": {
+        "name": "SpaceBob",
+        "colors": 1,
+        "parts": 1,
+        "rarity": "immortal",
+        "tags": []
+      }
+    },
+    "Eyes": {
+      "SpaceEyes": {
+        "name": "SpaceEyes",
+        "colors": 2,
+        "rarity": "immortal"
+      }
+    },
+    "Hat": {
+      "SpaceHelmet": {
+        "name": "SpaceHelmet",
+        "colors": 0,
+        "rarity": "immortal",
+        "tags": []
+      }
+    },
+    "Outfit": {
+      "SpaceSuit": {
+        "name": "SpaceSuit",
+        "colors": 3,
+        "rarity": "immortal"
+      }
+    },
+    "Face Sticker": {
+      "StarFreckles": {
+        "name": "StarFreckles",
+        "colors": 1,
+        "rarity": "immortal"
+      }
+    },
+    "Eyebrows": {
+      "WonderBrows": {
+        "name": "WonderBrows",
+        "colors": 0,
+        "rarity": "immortal"
+      }
+    }
+  }
+}

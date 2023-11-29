@@ -1,0 +1,63 @@
+{
+  "attributes": {
+    "Mouth": {
+      "Pout": {
+        "name": "Pout",
+        "colors": 1,
+        "rarity": "common"
+      }
+    },
+    "Outfit": {
+      "DragonPrincessKimono": {
+        "name": "DragonPrincessKimono",
+        "colors": 2,
+        "rarity": "immortal"
+      }
+    },
+    "Background": {
+      "GuardianDragon": {
+        "name": "GuardianDragon",
+        "colors": 0,
+        "baseColor": ["red"],
+        "rarity": "immortal"
+      }
+    },
+    "Hair Style": {
+      "WindSweptHair": {
+        "name": "WindSweptHair",
+        "colors": 1,
+        "parts": 1,
+        "rarity": "immortal",
+        "tags": []
+      }
+    },
+    "Eyes": {
+      "HoodedEyes": {
+        "name": "HoodedEyes",
+        "colors": 1,
+        "rarity": "immortal"
+      }
+    },
+    "Eyebrows": {
+      "Normal": {
+        "name": "Normal",
+        "colors": 0,
+        "rarity": "common"
+      }
+    },
+    "Body": {
+      "Base": {
+        "name": "Base",
+        "rarity": "common",
+        "colors": 1
+      }
+    },
+    "Face Sticker": {
+      "DragonPrincessCheeks": {
+        "name": "DragonPrincessCheeks",
+        "colors": 2,
+        "rarity": "immortal"
+      }
+    }
+  }
+}

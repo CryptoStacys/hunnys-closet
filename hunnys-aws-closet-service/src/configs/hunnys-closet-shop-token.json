@@ -1,0 +1,1143 @@
+[
+    {
+        "tokenId": 0,
+        "name": "GM Mug",
+        "attributes": [
+            {
+                "trait_type": "Hand",
+                "value": "GM Mug"
+            }
+        ],
+        "metaPath": "https://ipfs.io/ipfs/QmTQry2DD3uUj7wdJkrANBXCAbuePGgY1Bu8aEzkVUbhVc/0"
+    },
+    {
+        "tokenId": 1,
+        "name": "Bored Set",
+        "attributes": [
+            {
+                "trait_type": "Hair Style",
+                "value": "Messy Bored Hair"
+            },
+            {
+                "trait_type": "Mouth",
+                "value": "Bored Grin"
+            },
+            {
+                "trait_type": "Hat",
+                "value": "Bored Fur Hat"
+            },
+            {
+                "trait_type": "Eyes",
+                "value": "Bored Eyes"
+            },
+            {
+                "trait_type": "Outfit",
+                "value": "Bored Hawaiian Shirt"
+            },
+            {
+                "trait_type": "Skin",
+                "value": "Bored Pink Fur"
+            },
+            {
+                "trait_type": "Dye",
+                "value": "Bored Pink 1"
+            },
+            {
+                "trait_type": "Dye",
+                "value": "Bored Pink 2"
+            },
+            {
+                "trait_type": "Dye",
+                "value": "Bored Pink 3"
+            },
+            {
+                "trait_type": "Dye",
+                "value": "Bored Pink 4"
+            }
+        ],
+        "metaPath": "https://ipfs.io/ipfs/QmdgYQGGD9xMea9pW1kP41oU7UVRSrCsmuGM7xTT2Av2Du/0"
+    },
+    {
+        "tokenId": 2,
+        "name": "Cow Set",
+        "attributes": [
+            {
+                "trait_type": "Hair Style",
+                "value": "Cow Hair with Bangs"
+            },
+            {
+                "trait_type": "Hand",
+                "value": "Milk"
+            },
+            {
+                "trait_type": "Hat",
+                "value": "Cow Ears"
+            },
+            {
+                "trait_type": "Accessory",
+                "value": "Cow Bell"
+            },
+            {
+                "trait_type": "Outfit",
+                "value": "Cowbelle Crop"
+            }
+        ],
+        "metaPath": "https://ipfs.io/ipfs/QmXvzXaz4DkLBAxS5AZim1wGyuim1uhuHecYNw1CxV65iq/0"
+    },
+    {
+        "tokenId": 3,
+        "name": "Piggy Set",
+        "attributes": [
+            {
+                "trait_type": "Hair Style",
+                "value": "Piggy Hair"
+            },
+            {
+                "trait_type": "Outfit",
+                "value": "Piggy Frilly Top"
+            },
+            {
+                "trait_type": "Hat",
+                "value": "Piggy Ears"
+            },
+            {
+                "trait_type": "Accessory",
+                "value": "Piggy Earring"
+            }
+        ],
+        "metaPath": "https://ipfs.io/ipfs/QmUzwA2B4AKhepxq7MuKnfZajp7nFarWSdRvzHL9ZmH1tP/0"
+    },
+    {
+        "tokenId": 4,
+        "name": "W33D Set",
+        "attributes": [
+            {
+                "trait_type": "Background",
+                "value": "W33D Trip"
+            },
+            {
+                "trait_type": "Mouth",
+                "value": "W33D Hang"
+            },
+            {
+                "trait_type": "Mouth",
+                "value": "W33D Straight"
+            },
+            {
+                "trait_type": "Accessory",
+                "value": "W33D Earrings"
+            },
+            {
+                "trait_type": "Hair Style",
+                "value": "W33D Bun"
+            },
+            {
+                "trait_type": "Outfit",
+                "value": "W33DS Tie Dye Tee"
+            },
+            {
+                "trait_type": "Hat",
+                "value": "W33D Shades"
+            },
+            {
+                "trait_type": "Face Sticker",
+                "value": "W33D Sticker"
+            },
+            {
+                "trait_type": "Eyebrows",
+                "value": "W33D Brows"
+            }
+        ],
+        "metaPath": "https://ipfs.io/ipfs/QmYeicXJd2jCyiionyvYKoefv2thU38bBYjeMbEDwTeNgK/0"
+    },
+    {
+        "tokenId": 5,
+        "name": "Expression Pack 1",
+        "attributes": [
+            {
+                "trait_type": "Eyes",
+                "value": "Closed Eyes"
+            },
+            {
+                "trait_type": "Eyes",
+                "value": "Shifty Eyes"
+            },
+            {
+                "trait_type": "Eyes",
+                "value": "Eye Roll"
+            },
+            {
+                "trait_type": "Eyes",
+                "value": "Cringe Eye"
+            },
+            {
+                "trait_type": "Eyebrows",
+                "value": "Grumpy"
+            },
+            {
+                "trait_type": "Eyebrows",
+                "value": "Surprised"
+            },
+            {
+                "trait_type": "Eyebrows",
+                "value": "Upbrows"
+            },
+            {
+                "trait_type": "Eyebrows",
+                "value": "Straight Brows"
+            },
+            {
+                "trait_type": "Eyebrows",
+                "value": "Cringe Brow"
+            },
+            {
+                "trait_type": "Mouth",
+                "value": "Open Mouth"
+            },
+            {
+                "trait_type": "Mouth",
+                "value": "Frown"
+            },
+            {
+                "trait_type": "Mouth",
+                "value": "Thin Lips"
+            },
+            {
+                "trait_type": "Mouth",
+                "value": "Cringe"
+            }
+        ],
+        "metaPath": "https://ipfs.io/ipfs/QmekXjCP3Hw4E3Y7RKH6gm1yTsRhGC3jLkofmRCfG3ERM7/0"
+    },
+    {
+        "tokenId": 6,
+        "name": "Long Gradient Hair",
+        "attributes": [
+            {
+                "trait_type": "Hair Style",
+                "value": "Long Gradient Hair"
+            }
+        ],
+        "metaPath": "https://ipfs.io/ipfs/QmPS8hd1abuedKtdebMH1XKexVbfa2uhU6cSTKThKYMK6S/0"
+    },
+    {
+        "tokenId": 7,
+        "name": "Modern Bob",
+        "attributes": [
+            {
+                "trait_type": "Hair Style",
+                "value": "Modern Bob"
+            }
+        ],
+        "metaPath": "https://ipfs.io/ipfs/QmZShDbz8723LL1ECvPwumW5ZE5wumjARTkhUqASAriyVG/0"
+    },
+    {
+        "tokenId": 8,
+        "name": "Natural Hair Dyes",
+        "attributes": [
+            {
+                "trait_type":"Dye",
+                "value":"Auburn 1"
+            },
+            {
+                "trait_type":"Dye",
+                "value":"Auburn 2"
+            },
+            {
+                "trait_type":"Dye",
+                "value":"Auburn 3"
+            },
+            {
+                "trait_type":"Dye",
+                "value":"Auburn 4"
+            },
+            {
+                "trait_type": "Dye",
+                "value": "Brown 1"
+            },
+            {
+                "trait_type": "Dye",
+                "value": "Brown 2"
+            },
+            {
+                "trait_type": "Dye",
+                "value": "Brown 3"
+            },
+            {
+                "trait_type": "Dye",
+                "value": "Brown 4"
+            },
+            {
+                "trait_type": "Dye",
+                "value": "Brown 5"
+            },
+            {
+                "trait_type": "Dye",
+                "value": "Blonde 1"
+            },
+            {
+                "trait_type": "Dye",
+                "value": "Blonde 2"
+            },
+            {
+                "trait_type": "Dye",
+                "value": "Blonde 3"
+            },
+            {
+                "trait_type": "Dye",
+                "value": "Orangeish 1"
+            },
+            {
+                "trait_type": "Dye",
+                "value": "Orangeish 2"
+            },
+            {
+                "trait_type": "Dye",
+                "value": "Orangeish 3"
+            },
+            {
+                "trait_type": "Dye",
+                "value": "Orangeish 4"
+            }
+        ],
+        "metaPath": "https://ipfs.io/ipfs/QmYdyH1AQ8JyYYSLrTL7xuv8odMNCh45fS4dii2UBWPef3/0"
+    },
+    {
+        "tokenId": 9,
+        "name":"Reaper Demon Hood",
+        "attributes":[
+            {
+                "trait_type":"Bodysuit",
+                "value":"Reaper Demon Hood"
+            }
+        ],
+        "metaPath": "https://ipfs.io/ipfs/QmZ2HdDEuxdk4fiYPTWWrxXL1tE6rxyyGmBsvuSMwrSJtY/0"
+    },
+    {
+        "tokenId": 10,
+        "name":"Skuzzy Sparkle Skin & Dye Set",
+        "attributes":[
+            {
+                "trait_type":"Skin",
+                "value":"Blushy Babe"
+            },
+            {
+                "trait_type":"Skin",
+                "value":"Candy Cloud Sparkles"
+            },
+            {
+                "trait_type":"Skin",
+                "value":"Crater Cutie"
+            },
+            {
+                "trait_type":"Skin",
+                "value":"Darknova Demon"
+            },
+            {
+                "trait_type":"Skin",
+                "value":"Skuzzy Sprinkle Cake"
+            },
+            {
+                "trait_type":"Skin",
+                "value":"Velvety Night Nibbler"
+            },
+            {
+                "trait_type":"Skin",
+                "value":"Blushy Bombshell"
+            },
+            {
+                "trait_type":"Dye",
+                "value":"Candy Cloud Paint"
+            },
+            {
+                "trait_type":"Dye",
+                "value":"Cute Crater"
+            },
+            {
+                "trait_type":"Dye",
+                "value":"Darknova Drip"
+            }
+        ],
+        "metaPath": "https://ipfs.io/ipfs/Qmeed2NTERdp88RetoxZo6841DDHng5UzUqKpVfj8yDY9Z/0"
+    },
+    {
+        "tokenId": 11,
+        "name":"Burger Queen Set",
+        "attributes":[
+            {
+                "trait_type":"Hair Style",
+                "value":"BQ Server Pony"
+            },
+            {
+                "trait_type":"Hand",
+                "value":"BQ Soda"
+            },
+            {
+                "trait_type":"Hand",
+                "value":"BQ Large Fries"
+                },
+            {
+                "trait_type":"Hand",
+                "value":"BQ Carrot Patty Burger"
+            },
+            {
+                "trait_type":"Hat",
+                "value":"BQ Visor"
+            },
+            {
+                "trait_type":"Outfit",
+                "value":"BQ Apron"
+            }
+        ],
+        "metaPath": "https://ipfs.io/ipfs/Qmavrx6by71wXRZCG2igKvHJbrBU5czhya1EbtC8PNSYVd/0"
+    },
+    {
+        "tokenId": 12,
+        "name":"Ghosty Studs",
+        "attributes":[
+            {
+                "trait_type":"Accessory",
+                "value":"Ghosty Studs"
+            }
+        ],
+        "metaPath": "https://ipfs.io/ipfs/QmQjzbEQTRugsP5wKKhpiRrvoTVRAVASqyR2YxExL6fZoU/0"
+    },
+    {
+        "tokenId": 13,
+        "name":"Pumpkin Studs",
+        "attributes":[
+            {
+                "trait_type":"Accessory",
+                "value":"Pumpkin Studs"
+            }
+        ],
+        "metaPath": "https://ipfs.io/ipfs/QmZq3bj6VaLtEJ4ngxsbS7EiwDY3pBC5hxZissvoPzD8xV/0"
+    },
+    {
+        "tokenId": 14,
+        "name":"Web",
+        "attributes":[
+            {
+                "trait_type":"Face Sticker",
+                "value":"Web"
+            }
+        ],
+        "metaPath": "https://ipfs.io/ipfs/Qmejq9X9aZsKk36hATiVtC9JrzP2SjRRwza1G3dCV5kq3N/0"
+    },
+    {
+        "tokenId": 15,
+        "name":"Batty",
+        "attributes":[
+            {
+                "trait_type":"Face Sticker",
+                "value":"Batty"
+            }
+        ],
+        "metaPath": "https://ipfs.io/ipfs/Qme53n6aVPf57Sn8PLdxtdLuyFKsKakekC3jUcL16L8v2t/0"
+    },
+    {
+        "tokenId": 16,
+        "name":"Ghosty",
+        "attributes":[
+            {
+                "trait_type":"Face Sticker",
+                "value":"Ghosty"
+            }
+        ],
+        "metaPath": "https://ipfs.io/ipfs/QmdgZQNXRt1nRj9DSMxWo1WHHuccA5DpkDppJbqD31df3D/0"
+    },
+    {
+        "tokenId": 17,
+        "name":"Pumpkin",
+        "attributes":[
+            {
+                "trait_type":"Face Sticker",
+                "value":"Pumpkin"
+            }
+        ],
+        "metaPath": "https://ipfs.io/ipfs/QmT5NhfphbHhuxiiH4EPSJGtwe1vTinMDxY2Xo2qZ5B54e/0"
+    },
+    {
+        "tokenId": 18,
+        "name":"FrankenStitch",
+        "attributes":[
+            {
+                "trait_type":"Face Sticker",
+                "value":"FrankenStitch"
+            }
+        ],
+        "metaPath": "https://ipfs.io/ipfs/QmfNPyqSPLCYtwxNMfLaAcmesrjrZPaGsFT171tw5FnMTV/0"
+    },
+    {
+        "tokenId": 19,
+        "name":"Pumpkin Spice Latte",
+        "attributes":[
+            {
+                "trait_type":"Hand",
+                "value":"Pumpkin Spice Latte"
+            }
+        ],
+        "metaPath": "https://ipfs.io/ipfs/QmTKEGSVqx9nWu3ADw1qiqb3staVm2EidsXTcUesZwCEy5/0"
+    },
+    {
+        "tokenId": 20,
+        "name":"Lunar Fall Sweater",
+        "attributes":[
+            {
+                "trait_type":"Outfit",
+                "value":"Lunar Fall Sweater"
+            }
+        ],
+        "metaPath": "https://ipfs.io/ipfs/QmdeZbBgibzes3imD7mBbjS7SKhM9wa2pN6KJSq4mpXGH5/0"
+    },
+    {
+        "tokenId": 21,
+        "name":"Fancy Fall Harvest Sweater",
+        "attributes":[
+            {
+                "trait_type":"Outfit",
+                "value":"Fancy Fall Harvest Sweater"
+            }
+        ],
+        "metaPath": "https://ipfs.io/ipfs/QmRTqK8wV5VUXxbUJiKhXTvUSd4u5jCXY8suLDxQHBNiyU/0"
+    },
+    {
+        "tokenId": 22,
+        "name":"Cozy Scarf",
+        "attributes":[
+            {
+                "trait_type":"Accessory",
+                "value":"Cozy Scarf"
+            }
+        ],
+        "metaPath": "https://ipfs.io/ipfs/QmYJYgyTisiifFneaVYoVircQa1brqh5XvNnngDdosDjTe/0"
+    },
+    {
+        "tokenId": 23,
+        "name":"Scary Trees",
+        "attributes":[
+            {
+                "trait_type":"Frame",
+                "value":"Scary Trees"
+            }
+        ],
+        "metaPath": "https://ipfs.io/ipfs/QmVNiKyJCwa3L5a37zm5cvrHr5MMBKq1AjfkqNJ7TwiCPH/0"
+    },
+    {
+        "tokenId": 24,
+        "name":"Fall Pumpkins",
+        "attributes":[
+            {
+                "trait_type":"Frame",
+                "value":"Fall Pumpkins"
+            }
+        ],
+        "metaPath": "https://ipfs.io/ipfs/QmSeWb9HApZKLyukTyZVvDrbgeEemKjUhuaY2FP41w8QUj/0"
+    },
+    {
+        "tokenId": 25,
+        "name":"Boo Mug",
+        "attributes":[
+            {
+                "trait_type":"Hand",
+                "value":"Boo Mug"
+            }
+        ],
+        "metaPath": "https://ipfs.io/ipfs/QmaYQo7aLAmCokSrRYgk9pogM61caK9b5eBqaMkdUSiYBY/0"
+    },
+    {
+        "tokenId": 26,
+        "name":"Witch Cauldron Mug",
+        "attributes":[
+            {
+                "trait_type":"Hand",
+                "value":"Witch Cauldron Mug"
+            }
+        ],
+        "metaPath": "https://ipfs.io/ipfs/QmZqBdRM9dLp8fWFJSDE96JiPEnqXvZig1pMaboPnSygus/0"
+    },
+    {
+        "tokenId": 27,
+        "name":"Baby Pumpkin",
+        "attributes":[
+            {
+                "trait_type":"Hat",
+                "value":"Baby Pumpkin"
+            }
+        ],
+        "metaPath": "https://ipfs.io/ipfs/QmcSscSjBrGWF2MW4p6D5NX38GTDZvFPmXtxfzrFL1Vozv/0"
+    },
+    {
+        "tokenId": 28,
+        "name":"Squirrel Friend Sweater Vest",
+        "attributes":[
+            {
+                "trait_type":"Outfit",
+                "value":"Squirrel Friend Sweater Vest"
+            }
+        ],
+        "metaPath": "https://ipfs.io/ipfs/QmSZ3EgReMAWAMXb2dGd1ukjnebsqC3cg1Y9UGi5o6YU6P/0"
+    },
+    {
+        "tokenId": 29,
+        "name":"Chiddar",
+        "attributes":[
+            {
+                "trait_type":"Accessory",
+                "value":"Chiddar"
+            }
+        ],
+        "metaPath": "https://ipfs.io/ipfs/QmWiV242gdpdW1297ezxng5vNPFte3gewgh3XczSpDGpie/0"
+    },
+    {
+        "tokenId": 30,
+        "name":"Jack o Bear Pail",
+        "attributes":[
+            {
+                "trait_type":"Hand",
+                "value":"Jack o Bear Pail"
+            }
+        ],
+        "metaPath": "https://ipfs.io/ipfs/QmdGTCJ7zQtZRXAkFLU3YZTDLtE6xkfnHVTxdF5FGWLa1P/0"
+    },
+    {
+        "tokenId": 31,
+        "name":"Gorgon Skin",
+        "attributes":[
+            {
+                "trait_type":"Skin",
+                "value":"Gorgon Skin"
+            }
+        ],
+        "metaPath": "https://ipfs.io/ipfs/QmTc5aXjfZmY1PdAniebhcgYYBqKo3gX8umVBTCAEhnCB9/0"
+    },
+    {
+        "tokenId": 32,
+        "name":"Witchy",
+        "attributes":[
+            {
+                "trait_type":"Tattoo",
+                "value":"Witchy"
+            }
+        ],
+        "metaPath": "https://ipfs.io/ipfs/QmREKqh5APUKUDaXBgdmcW8WrA5PVfAk7NACPhRNbAi6D4/0"
+    },
+    {
+        "tokenId": 33,
+        "name":"Plaid Fall Jacket",
+        "attributes":[
+            {
+                "trait_type":"Outfit",
+                "value":"Plaid Fall Jacket"
+            }
+        ],
+        "metaPath": "https://ipfs.io/ipfs/QmZ7os55gb7gHK1T3BK4PRn8hJS7CrWYA5X6w5AAu3PYEf/0"
+    },
+    {
+        "tokenId": 34,
+        "name":"Cinnamon Roll Head",
+        "attributes":[
+            {
+                "trait_type":"Tattoo",
+                "value":"Cinnamon Roll Head"
+            }
+        ],
+        "metaPath": "https://ipfs.io/ipfs/QmNaEeJtF3pY1yyKAPq8FKX2Q6TcBdWNg6YWecGKF3Cjjq/0"
+    },
+    {
+        "tokenId": 35,
+        "name":"Ghost Trick or Treater",
+        "attributes":[
+            {
+                "trait_type":"Accessory",
+                "value":"Ghost Trick or Treater"
+            }
+        ],
+        "metaPath": "https://ipfs.io/ipfs/Qmb3SSrdmLr8rip6WTmzw4NR1AXBnvgLFUZnvNcTamtHBU/0"
+    },
+    {
+        "tokenId": 36,
+        "name":"Spooky Makeup",
+        "attributes":[
+            {
+                "trait_type":"Face Sticker",
+                "value":"Spooky Makeup"
+            }
+        ],
+        "metaPath": "https://ipfs.io/ipfs/Qmch6nScTYqvwRghwGgNgy8BHXL3fLZcjZvNVmFoAfj8oz/0"
+    },
+    {
+        "tokenId": 37,
+        "name":"Spectral Skin",
+        "attributes":[
+            {
+                "trait_type":"Skin",
+                "value":"Spectral Skin"
+            }
+        ],
+        "metaPath": "https://ipfs.io/ipfs/QmVLShkgqZrMRNE4eX6wUqmvWGsL1GaJPqkr2X1kJNxEGw/0"
+    },
+    {
+        "tokenId": 38,
+        "name":"Cute Nurse",
+        "attributes":[
+            {
+                "trait_type":"Bodysuit",
+                "value":"Cute Nurse"
+            }
+        ],
+        "metaPath": "https://ipfs.io/ipfs/QmWrL4BPADJsPS2xRZjcED5bYKYRxmNMuYTusHdp4ASA1J/0"
+    },
+    {
+        "tokenId": 39,
+        "name":"Lil Red Wolfy",
+        "attributes":[
+            {
+                "trait_type":"Bodysuit",
+                "value":"Lil Red Wolfy"
+            }
+        ],
+        "metaPath": "https://ipfs.io/ipfs/QmSDV7vm4CZi42bxSKmA6tNrFVCpaqFGbNWLNLDR2gNEa2/0"
+    },
+    {
+        "tokenId": 40,
+        "name":"Pirate Babe",
+        "attributes":[
+            {
+                "trait_type":"Bodysuit",
+                "value":"Pirate Babe"
+            }
+        ],
+        "metaPath": "https://ipfs.io/ipfs/QmR2QBR5s1DY3pBqUVRxi6Cnix4u2wc3vBwcBduStiUj8s/0"
+    },
+    {
+        "tokenId": 41,
+        "name":"Bunny Fighter Costume",
+        "attributes":[
+            {
+                "trait_type":"Bodysuit",
+                "value":"Bunny Fighter Costume"
+            }
+        ],
+        "metaPath": "https://ipfs.io/ipfs/QmSCLLgXjJRN9rvzbbEtfQr8akYXVGSgVmLfv2LCsTcHLL/0"
+    },
+    {
+        "tokenId": 42,
+        "name":"Medusa Hair",
+        "attributes":[
+            {
+                "trait_type":"Hair Style",
+                "value":"Medusa Hair"
+            }
+        ],
+        "metaPath": "https://ipfs.io/ipfs/QmUhr7e9JHbX7apMnyFTtmToau9AzKTTPJ8G1LGBr72ruR/0"
+    },
+    {
+        "tokenId": 43,
+        "name":"Full Hunnyween 2023 Set",
+        "attributes":[
+            {
+                "trait_type":"Accessory",
+                "value":"Ghosty Studs"
+            },
+            {
+                "trait_type":"Accessory",
+                "value":"Pumpkin Studs"
+            },
+            {
+                "trait_type":"Face Sticker",
+                "value":"Web"
+            },
+            {
+                "trait_type":"Face Sticker",
+                "value":"Batty"
+            },
+            {
+                "trait_type":"Face Sticker",
+                "value":"Ghosty"
+            },
+            {
+                "trait_type":"Face Sticker",
+                "value":"Pumpkin"
+            },
+            {
+                "trait_type":"Face Sticker",
+                "value":"FrankenStitch"
+            },
+            {
+                "trait_type":"Hand",
+                "value":"Pumpkin Spice Latte"
+            },
+            {
+                "trait_type":"Outfit",
+                "value":"Lunar Fall Sweater"
+            },
+            {
+                "trait_type":"Outfit",
+                "value":"Fancy Fall Harvest Sweater"
+            },
+            {
+                "trait_type":"Accessory",
+                "value":"Cozy Scarf"
+            },
+            {
+                "trait_type":"Frame",
+                "value":"Scary Trees"
+            },
+            {
+                "trait_type":"Frame",
+                "value":"Fall Pumpkins"
+            },
+            {
+                "trait_type":"Hand",
+                "value":"Boo Mug"
+            },
+            {
+                "trait_type":"Hand",
+                "value":"Witch Cauldron Mug"
+            },
+            {
+                "trait_type":"Hat",
+                "value":"Baby Pumpkin"
+            },
+            {
+                "trait_type":"Outfit",
+                "value":"Squirrel Friend Sweater Vest"
+            },
+            {
+                "trait_type":"Accessory",
+                "value":"Chiddar"
+            },
+            {
+                "trait_type":"Hand",
+                "value":"Jack o Bear Pail"
+            },
+            {
+                "trait_type":"Skin",
+                "value":"Gorgon Skin"
+            },
+            {
+                "trait_type":"Tattoo",
+                "value":"Witchy"
+            },
+            {
+                "trait_type":"Outfit",
+                "value":"Plaid Fall Jacket"
+            },
+            {
+                "trait_type":"Tattoo",
+                "value":"Cinnamon Roll Head"
+            },
+            {
+                "trait_type":"Accessory",
+                "value":"Ghost Trick or Treater"
+            },
+            {
+                "trait_type":"Face Sticker",
+                "value":"Spooky Makeup"
+            },
+            {
+                "trait_type":"Skin",
+                "value":"Spectral Skin"
+            },
+            {
+                "trait_type":"Bodysuit",
+                "value":"Cute Nurse"
+            },
+            {
+                "trait_type":"Bodysuit",
+                "value":"Lil Red Wolfy"
+            },
+            {
+                "trait_type":"Bodysuit",
+                "value":"Pirate Babe"
+            },
+            {
+                "trait_type":"Bodysuit",
+                "value":"Bunny Fighter Costume"
+            },
+            {
+                "trait_type":"Hair Style",
+                "value":"Medusa Hair"
+            }
+        ],
+        "metaPath": "https://ipfs.io/ipfs/QmXiKogvJaC4iELacctBu3cwtZP2kPKxitZdWzPuU7546x/0"
+    },
+    {
+        "tokenId": 44,
+        "name":"Borg Babe Set",
+        "attributes":[
+            {
+                "trait_type":"Accessory",
+                "value":"Ocular Implant"
+            },
+            {
+                "trait_type":"Hair Style",
+                "value":"7s Style"
+            },
+            {
+                "trait_type":"Outfit",
+                "value":"Borg Metallic Suit"
+            }
+        ],
+        "metaPath": "https://ipfs.io/ipfs/QmPkYZSFXtdy4tqgL3R8dF1CAMsY1eGXCCVFYpoq9EgcPs/0"
+    },
+    {
+        "tokenId": 45,
+        "name":"Greyscale Dye Set",
+        "attributes":[
+            {
+                "trait_type":"Dye",
+                "value":"Grey1"
+            },
+            {
+                "trait_type":"Dye",
+                "value":"Grey2"
+            },
+            {
+                "trait_type":"Dye",
+                "value":"Grey3"
+            },
+            {
+                "trait_type":"Dye",
+                "value":"Grey4"
+            },
+            {
+                "trait_type":"Dye",
+                "value":"Grey5"
+            },
+            {
+                "trait_type":"Dye",
+                "value":"White"
+            }
+        ],
+        "metaPath": "https://ipfs.io/ipfs/Qmc9oJNn2kKU8UJL19gwcYp7mr2cpKfhLRTzcVbQFBEEQB/0"
+    },
+    {
+        "tokenId": 46,
+        "name":"That Yellow Cartoon Pack",
+        "attributes":[
+            {
+                "trait_type":"Dye",
+                "value":"Beer"
+            },
+            {
+                "trait_type":"Dye",
+                "value":"Cartoon Blue 1"
+            },
+            {
+                "trait_type":"Dye",
+                "value":"Cartoon Blue 2"
+            },
+            {
+                "trait_type":"Dye",
+                "value":"Drunkard Brown"
+            },
+            {
+                "trait_type":"Dye",
+                "value":"Drunkard Orange"
+            },
+            {
+                "trait_type":"Skin",
+                "value":"That Yellow Cartoon Skin"
+            },
+            {
+                "trait_type":"Eyebrows",
+                "value":"Heavy Brow"
+            },
+            {
+                "trait_type":"Eyes",
+                "value":"Drunkard Gaze"
+            },
+            {
+                "trait_type":"Hair Style",
+                "value":"Drunkard Hair"
+            },
+            {
+                "trait_type":"Hand",
+                "value":"Beer"
+            },
+            {
+                "trait_type":"Mouth",
+                "value":"Drunkard Buckteeth"
+            },
+            {
+                "trait_type":"Outfit",
+                "value":"Drunkard Shirt"
+            }
+        ],
+        "metaPath": "https://ipfs.io/ipfs/QmQVwHHyRSdz1hwLdLWBpaujRqAwFqxchNZq6oXRHCi63t/0"
+    },
+    {
+        "tokenId": 47,
+        "name":"Fame Lady Society Pack",
+        "attributes":[
+            {
+                "trait_type": "Accessory",
+                "value": "FLS Round Glasses"
+            },
+            {
+                "trait_type": "Accessory",
+                "value": "FLS Sunglasses"
+            },
+            {
+                "trait_type": "Accessory",
+                "value": "FLS Not Gucci Glasses"
+            },
+            {
+                "trait_type": "Accessory",
+                "value": "FLS Round Frame"
+            },
+            {
+                "trait_type": "Dye",
+                "value": "FLS Periwinkle"
+            },
+            {
+                "trait_type": "Dye",
+                "value": "FLS Forest"
+            },
+            {
+                "trait_type": "Dye",
+                "value": "FLS Grey"
+            },
+            {
+                "trait_type": "Dye",
+                "value": "FLS Pink"
+            },
+            {
+                "trait_type": "Dye",
+                "value": "FLS Light Brown"
+            },
+            {
+                "trait_type": "Dye",
+                "value": "FLS Dark Brown"
+            },
+            {
+                "trait_type": "Dye",
+                "value": "FLS Plum"
+            },
+            {
+                "trait_type": "Dye",
+                "value": "FLS Neon Purple"
+            },
+            {
+                "trait_type": "Dye",
+                "value": "FLS Neon Green"
+            },
+            {
+                "trait_type": "Eyes",
+                "value": "FLS Laser"
+            },
+            {
+                "trait_type": "Face Sticker",
+                "value": "FLS Freckles"
+            },
+            {
+                "trait_type": "Face Sticker",
+                "value": "FLS Ok Hand"
+            },
+            {
+                "trait_type": "Frame",
+                "value": "FLS Logo"
+            },
+            {
+                "trait_type": "Frame",
+                "value": "Flaunt Friday Banner"
+            },
+            {
+                "trait_type": "Frame",
+                "value": "FLAUNTFLAUNTFLAUNT"
+            },
+            {
+                "trait_type": "Frame",
+                "value": "Flaunt Star"
+            },
+            {
+                "trait_type": "Frame",
+                "value": "Flaunt Large"
+            },
+            {
+                "trait_type": "Frame",
+                "value": "FLS Logo Round"
+            },
+            {
+                "trait_type": "Hair Style",
+                "value": "FLS Voluminous"
+            },
+            {
+                "trait_type": "Hair Style",
+                "value": "FLS Straight"
+            },
+            {
+                "trait_type": "Hair Style",
+                "value": "FLS Pomp"
+            },
+            {
+                "trait_type": "Hair Style",
+                "value": "FLS Office"
+            },
+            {
+                "trait_type": "Hair Style",
+                "value": "FLS Italy"
+            },
+            {
+                "trait_type": "Hat",
+                "value": "FLS Balaclava"
+            },
+            {
+                "trait_type": "Hat",
+                "value": "FLS Snapback Cap"
+            },
+            {
+                "trait_type": "Mouth",
+                "value": "FLS Tongue"
+            },
+            {
+                "trait_type": "Mouth",
+                "value": "FLS Molly"
+            },
+            {
+                "trait_type": "Skin",
+                "value": "FLS Beige"
+            },
+            {
+                "trait_type": "Tattoo",
+                "value": "FLS Barb Wire"
+            },
+            {
+                "trait_type": "Face Sticker",
+                "value": "FLS Diode"
+            },
+            {
+                "trait_type": "Face Sticker",
+                "value": "FLS Cactus Tattoo"
+            },
+            {
+                "trait_type": "Face Sticker",
+                "value": "FLS Morgenshtern"
+            },
+            {
+                "trait_type": "Tattoo",
+                "value": "FLS Rose Tattoo"
+            },
+            {
+                "trait_type": "Face Sticker",
+                "value": "FLS Knife Eye"
+            },
+            {
+                "trait_type": "Face Sticker",
+                "value": "FLS Michelangelo"
+            },
+            {
+                "trait_type": "Tattoo",
+                "value": "FLS No Brain"
+            },
+            {
+                "trait_type": "Tattoo",
+                "value": "FLS Dead Love"
+            }            
+        ],
+        "metaPath": "https://ipfs.io/ipfs/QmcMADUXuBVY6A5D9vXvCZif2fmkXA42AAbgH3QYaqdCiJ/0"
+    }
+]
+

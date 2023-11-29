@@ -1,0 +1,49 @@
+{
+  "attributes": {
+    "Body": {
+      "Base": {
+        "name": "Base",
+        "rarity": "common",
+        "colors": 1
+      }
+    },
+    "Eyebrows": {
+      "Normal": {
+        "name": "Normal",
+        "colors": 0,
+        "rarity": "common"
+      }
+    },
+    "Background": {
+      "StacysFavoriteBlue": {
+        "name": "StacysFavoriteBlue",
+        "color": 0,
+        "rarity": "immortal",
+        "baseColor": ["blue"]
+      }
+    },
+    "Hair Style": {
+      "StacysHair": {
+        "name": "StacysHair",
+        "colors": 1,
+        "parts": 2,
+        "rarity": "immortal",
+        "tags": []
+      }
+    },
+    "Mouth": {
+      "MomPout": {
+        "name": "MomPout",
+        "colors": 2,
+        "rarity": "immortal"
+      }
+    },
+    "Outfit": {
+      "MomTee": {
+        "name": "MomTee",
+        "colors": 2,
+        "rarity": "immortal"
+      }
+    }
+  }
+}

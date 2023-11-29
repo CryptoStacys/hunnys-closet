@@ -1,0 +1,1668 @@
+[{
+    "name":"Stacy #1: Stacy",
+    "tokenId":"49949388378051653683986555167011770124866897184891886820722263435934240342017",
+    "attributes":[
+        {"trait_type":"Series","value":"Origins"},
+        {"trait_type":"Type","value":"Sweet"},
+        {"trait_type":"Hair Color","value":"Blonde"},
+        {"trait_type":"Species","value":"Human"},
+        {"trait_type":"Rarity","value":"Special"},
+        {"trait_type":"Original Mint Date","value":"March 25, 2021"}
+    ]
+}, {
+    "name":"Stacy #20: Vinny",
+    "tokenId":"49949388378051653683986555167011770124866897184891886820722263437033751969793",
+    "attributes":[
+        {"trait_type":"Hair Color","value":"Black"},
+        {"trait_type":"Rarity","value":"Uncommon"},
+        {"trait_type":"Species","value":"Vampire"},
+        {"trait_type":"Type","value":"Regal"},
+        {"trait_type":"Series","value":"Vampys"},
+        {"trait_type":"Generation","value":"1"},
+        {"trait_type":"Original Mint Date","value":"March 25, 2021"}
+    ]
+}, {
+    "name":"Stacy #2: Sammy ",
+    "tokenId":"49949388378051653683986555167011770124866897184891886820722263438133263597569",
+    "attributes":[
+        {"trait_type":"Hair Color","value":"Red"},
+        {"trait_type":"Type","value":"Sassy"},
+        {"trait_type":"Series","value":"Origins"},
+        {"trait_type":"Species","value":"Human"},
+        {"trait_type":"Rarity","value":"Special"},
+        {"trait_type":"Generation","value":"1"},
+        {"trait_type":"Original Mint Date","value":"March 27, 2021"}
+    ]
+}, {
+    "name":"Stacy #3: Jessica",
+    "tokenId":"49949388378051653683986555167011770124866897184891886820722263439232775225345",
+    "attributes":[
+        {"trait_type":"Rarity","value":"Common"},
+        {"trait_type":"Type","value":"Smart"},
+        {"trait_type":"Hair Color","value":"Brown"},
+        {"trait_type":"Series","value":"Origins"},
+        {"trait_type":"Species","value":"Human"},
+        {"trait_type":"Original Mint Date","value":"March 27, 2021"}
+    ]
+}, {
+    "name":"Stacy #4: Rita ",
+    "tokenId":"49949388378051653683986555167011770124866897184891886820722263440332286853121",
+    "attributes":[
+        {"trait_type":"Type","value":"Professional"},
+        {"trait_type":"Rarity","value":"Common"},
+        {"trait_type":"Hair Color","value":"Black"},
+        {"trait_type":"Series","value":"Origins"},
+        {"trait_type":"Species","value":"Human"},
+        {"trait_type":"Original Mint Date","value":"March 27, 2021"}
+    ]
+}, {
+    "name":"Stacy #8: Jaela",
+    "tokenId":"49949388378051653683986555167011770124866897184891886820722263441431798480897",
+    "attributes":[
+        {"trait_type":"Rarity","value":"Rare"},
+        {"trait_type":"Type","value":"Cute"},
+        {"trait_type":"Hair Color","value":"Black"},
+        {"trait_type":"Series","value":"Origins"},
+        {"trait_type":"Species","value":"Human"},
+        {"trait_type":"Original Mint Date","value":"March 27, 2021"}
+    ]
+}, {
+    "name":"Stacy #23: Xenthia",
+    "tokenId":"49949388378051653683986555167011770124866897184891886820722263442531310108673",
+    "attributes":[
+        {"trait_type":"Rarity","value":"Rare"},
+        {"trait_type":"Series","value":"Vampys"},
+        {"trait_type":"Species","value":"Vampire"},
+        {"trait_type":"Hair Color","value":"Ombre"},
+        {"trait_type":"Type","value":"Edgy"},
+        {"trait_type":"Generation","value":"1"},
+        {"trait_type":"Original Mint Date","value":"March 27, 2021"}
+    ]
+}, {
+    "name":"Stacy #35: Princess Alythea",
+    "tokenId":"49949388378051653683986555167011770124866897184891886820722263443630821736449",
+    "attributes":[
+        {"trait_type":"Type","value":"Regal"},
+        {"trait_type":"Rarity","value":"Legendary"},
+        {"trait_type":"Hair Color","value":"Brown"},
+        {"trait_type":"Series","value":"Dinoland"},
+        {"trait_type":"Species","value":"Human"},
+        {"trait_type":"Generation","value":"1"},
+        {"trait_type":"Original Mint Date","value":"March 27, 2021"}
+    ]
+}, {
+    "name":"Stacy #9: Akiho",
+    "tokenId":"49949388378051653683986555167011770124866897184891886820722263444730333364225",
+    "attributes":[
+        {"trait_type":"Rarity","value":"Rare"},
+        {"trait_type":"Hair Color","value":"Brown"},
+        {"trait_type":"Series","value":"Origins"},
+        {"trait_type":"Type","value":"Sweet"},
+        {"trait_type":"Species","value":"Human"},
+        {"trait_type":"Generation","value":"1"},
+        {"trait_type":"Original Mint Date","value":"March 27, 2021"}
+    ]
+}, {
+    "name":"Stacy #21: Morfera",
+    "tokenId":"49949388378051653683986555167011770124866897184891886820722263445829844992001",
+    "attributes":[
+        {"trait_type":"Series","value":"Vampys"},
+        {"trait_type":"Species","value":"Vampire"},
+        {"trait_type":"Hair Color","value":"Lavendar "},
+        {"trait_type":"Rarity","value":"Uncommon"},
+        {"trait_type":"Type","value":"Edgy"},
+        {"trait_type":"Generation","value":"1"},
+        {"trait_type":"Original Mint Date","value":"March 27, 2021"}
+    ]
+}, {
+    "name":"Stacy #5: Shia",
+    "tokenId":"49949388378051653683986555167011770124866897184891886820722263446929356619777",
+    "attributes":[
+        {"trait_type":"Hair Color","value":"Orange"},
+        {"trait_type":"Type","value":"Cool"},
+        {"trait_type":"Rarity","value":"Uncommon"},
+        {"trait_type":"Series","value":"Origins"},
+        {"trait_type":"Species","value":"Human"},
+        {"trait_type":"Original Mint Date","value":"March 27, 2021"}
+    ]
+}, {
+    "name":"Stacy #6: Mary Lou",
+    "tokenId":"49949388378051653683986555167011770124866897184891886820722263448028868247553",
+    "attributes":[
+        {"trait_type":"Type","value":"Cute"},
+        {"trait_type":"Hair Color","value":"Pink"},
+        {"trait_type":"Rarity","value":"Uncommon"},
+        {"trait_type":"Series","value":"Origins"},
+        {"trait_type":"Species","value":"Human"},
+        {"trait_type":"Generation","value":"1"},
+        {"trait_type":"Original Mint Date","value":"March 27, 2021"}
+    ]
+}, {
+    "name":"Stacy #7: Mary Anne",
+    "tokenId":"49949388378051653683986555167011770124866897184891886820722263449128379875329",
+    "attributes":[
+        {"trait_type":"Type","value":"Cool"},
+        {"trait_type":"Hair Color","value":"Blonde"},
+        {"trait_type":"Rarity","value":"Uncommon"},
+        {"trait_type":"Series","value":"Origins"},
+        {"trait_type":"Species","value":"Human"},
+        {"trait_type":"Original Mint Date","value":"March 27, 2021"}
+    ]
+}, {
+    "name":"Stacy #10: Dog Park Stacy",
+    "tokenId":"49949388378051653683986555167011770124866897184891886820722263450227891503105",
+    "attributes":[
+        {"trait_type":"Rarity","value":"Legendary"},
+        {"trait_type":"Series","value":"Origins"},
+        {"trait_type":"Type","value":"Sweet"},
+        {"trait_type":"Hair Color","value":"Blonde"},
+        {"trait_type":"Species","value":"Human"},
+        {"trait_type":"Original Mint Date","value":"March 28, 2021"}
+    ]
+}, {
+    "name":"Stacy #11: Iggy",
+    "tokenId":"49949388378051653683986555167011770124866897184891886820722263451327403130881",
+    "attributes":[
+        {"trait_type":"Type","value":"Cute"},
+        {"trait_type":"Series","value":"Easter 2021"},
+        {"trait_type":"Hair Color","value":"Blue"},
+        {"trait_type":"Rarity","value":"Uncommon"},
+        {"trait_type":"Species","value":"Human"},
+        {"trait_type":"Original Mint Date","value":"March 29, 2021"}
+    ]
+}, {
+    "name":"Stacy #12: Ziggy",
+    "tokenId":"49949388378051653683986555167011770124866897184891886820722263452426914758657",
+    "attributes":[
+        {"trait_type":"Hair Color","value":"Orange"},
+        {"trait_type":"Series","value":"Easter 2021"},
+        {"trait_type":"Rarity","value":"Uncommon"},
+        {"trait_type":"Type","value":"Sweet"},
+        {"trait_type":"Species","value":"Human"},
+        {"trait_type":"Original Mint Date","value":"March 29, 2021"}
+    ]
+}, {
+    "name":"Stacy #13: Miggy",
+    "tokenId":"49949388378051653683986555167011770124866897184891886820722263453526426386433",
+    "attributes":[
+        {"trait_type":"Type","value":"Bubbly"},
+        {"trait_type":"Hair Color","value":"Green"},
+        {"trait_type":"Series","value":"Easter 2021"},
+        {"trait_type":"Rarity","value":"Uncommon"},
+        {"trait_type":"Species","value":"Human"},
+        {"trait_type":"Original Mint Date","value":"March 29, 2021"}
+    ]
+}, {
+    "name":"Stacy #14: Chicki",
+    "tokenId":"49949388378051653683986555167011770124866897184891886820722263454625938014209",
+    "attributes":[
+        {"trait_type":"Rarity","value":"Rare"},
+        {"trait_type":"Type","value":"Cool"},
+        {"trait_type":"Hair Color","value":"Pink"},
+        {"trait_type":"Series","value":"Easter 2021"},
+        {"trait_type":"Species","value":"Human"},
+        {"trait_type":"Original Mint Date","value":"March 29, 2021"}
+    ]
+}, {
+    "name":"Stacy #15: Bunny Queen Mika",
+    "tokenId":"49949388378051653683986555167011770124866897184891886820722263455725449641985",
+    "attributes":[
+        {"trait_type":"Type","value":"Regal"},
+        {"trait_type":"Rarity","value":"Legendary"},
+        {"trait_type":"Hair Color","value":"White"},
+        {"trait_type":"Species","value":"Bunny Girl"},
+        {"trait_type":"Series","value":"Easter 2021"},
+        {"trait_type":"Original Mint Date","value":"March 29, 2021"}
+    ]
+}, {
+    "name":"Stacy #16: Lillith ",
+    "tokenId":"49949388378051653683986555167011770124866897184891886820722263456824961269761",
+    "attributes":[
+        {"trait_type":"Species","value":"Vampire"},
+        {"trait_type":"Series","value":"Vampys"},
+        {"trait_type":"Type","value":"Cool"},
+        {"trait_type":"Rarity","value":"Common"},
+        {"trait_type":"Hair Color","value":"Black"},
+        {"trait_type":"Generation","value":"1"},
+        {"trait_type":"Original Mint Date","value":"March 30, 2021"}
+    ]
+}, {
+    "name":"Stacy #17: Danika ",
+    "tokenId":"49949388378051653683986555167011770124866897184891886820722263457924472897537",
+    "attributes":[
+        {"trait_type":"Type","value":"Classy"},
+        {"trait_type":"Series","value":"Vampys"},
+        {"trait_type":"Species","value":"Vampire"},
+        {"trait_type":"Rarity","value":"Common"},
+        {"trait_type":"Hair Color","value":"Purple"},
+        {"trait_type":"Generation","value":"1"},
+        {"trait_type":"Original Mint Date","value":"March 30, 2021"}
+    ]
+}, {
+    "name":"Stacy #18: Ophelia",
+    "tokenId":"49949388378051653683986555167011770124866897184891886820722263459023984525313",
+    "attributes":[
+        {"trait_type":"Type","value":"Sporty"},
+        {"trait_type":"Hair Color","value":"Grey"},
+        {"trait_type":"Series","value":"Vampys"},
+        {"trait_type":"Species","value":"Vampire"},
+        {"trait_type":"Rarity","value":"Common"},
+        {"trait_type":"Generation","value":"1"},
+        {"trait_type":"Original Mint Date","value":"March 30, 2021"}
+    ]
+}, {
+    "name":"Stacy #22: Yassica",
+    "tokenId":"49949388378051653683986555167011770124866897184891886820722263460123496153089",
+    "attributes":[
+        {"trait_type":"Series","value":"Vampys"},
+        {"trait_type":"Species","value":"Vampire"},
+        {"trait_type":"Hair Color","value":"Ombre"},
+        {"trait_type":"Type","value":"Formal"},
+        {"trait_type":"Rarity","value":"Uncommon"},
+        {"trait_type":"Generation","value":"1"},
+        {"trait_type":"Original Mint Date","value":"March 30, 2021"}
+    ]
+}, {
+    "name":"Stacy #24: Odette",
+    "tokenId":"49949388378051653683986555167011770124866897184891886820722263461223007780865",
+    "attributes":[
+        {"trait_type":"Series","value":"Vampys"},
+        {"trait_type":"Species","value":"Vampire"},
+        {"trait_type":"Hair Color","value":"Black"},
+        {"trait_type":"Type","value":"Edgy"},
+        {"trait_type":"Rarity","value":"Rare"},
+        {"trait_type":"Generation","value":"1"},
+        {"trait_type":"Original Mint Date","value":"March 31, 2021"}
+    ]
+}, {
+    "name":"Stacy #19: Axity ",
+    "tokenId":"49949388378051653683986555167011770124866897184891886820722263462322519408641",
+    "attributes":[
+        {"trait_type":"Series","value":"Vampys"},
+        {"trait_type":"Type","value":"Cool"},
+        {"trait_type":"Species","value":"Vampire"},
+        {"trait_type":"Generation","value":"1"},
+        {"trait_type":"Hair Color","value":"Turquoise"},
+        {"trait_type":"Rarity","value":"Common"},
+        {"trait_type":"Original Mint Date","value":"March 31, 2021"}
+    ]
+}, {
+    "name":"Stacy #25: Zephira, The Count's Assistant",
+    "tokenId":"49949388378051653683986555167011770124866897184891886820722263463422031036417",
+    "attributes":[
+        {"trait_type":"Series","value":"Vampys"},
+        {"trait_type":"Species","value":"Vampire"},
+        {"trait_type":"Generation","value":"1"},
+        {"trait_type":"Type","value":"Regal"},
+        {"trait_type":"Hair Color","value":"White"},
+        {"trait_type":"Rarity","value":"Legendary"},
+        {"trait_type":"Original Mint Date","value":"March 31, 2021"}
+    ]
+}, {
+    "name":"Stacy #26: Hawnuh ",
+    "tokenId":"49949388378051653683986555167011770124866897184891886820722263464521542664193",
+    "attributes":[
+        {"trait_type":"Generation","value":"1"},
+        {"trait_type":"Series","value":"Dinoland"},
+        {"trait_type":"Rarity","value":"Common"},
+        {"trait_type":"Hair Color","value":"Brown"},
+        {"trait_type":"Type","value":"Sweet"},
+        {"trait_type":"Species","value":"Human"},
+        {"trait_type":"Original Mint Date","value":"April 1, 2021"}
+    ]
+}, {
+    "name":"Stacy #27: Kekoa ",
+    "tokenId":"49949388378051653683986555167011770124866897184891886820722263465621054291969",
+    "attributes":[
+        {"trait_type":"Type","value":"Sporty"},
+        {"trait_type":"Generation","value":"1"},
+        {"trait_type":"Series","value":"Dinoland"},
+        {"trait_type":"Rarity","value":"Common"},
+        {"trait_type":"Species","value":"Human"},
+        {"trait_type":"Hair Color","value":"Blonde "},
+        {"trait_type":"Original Mint Date","value":"April 2, 2021"}
+    ]
+}, {
+    "name":"Stacy #28: Kalani",
+    "tokenId":"49949388378051653683986555167011770124866897184891886820722263466720565919745",
+    "attributes":[
+        {"trait_type":"Generation","value":"1"},
+        {"trait_type":"Series","value":"Dinoland"},
+        {"trait_type":"Rarity","value":"Common"},
+        {"trait_type":"Hair Color","value":"Black"},
+        {"trait_type":"Type","value":"Sweet"},
+        {"trait_type":"Species","value":"Human"},
+        {"trait_type":"Original Mint Date","value":"April 3, 2021"}
+    ]
+}, {
+    "name":"Stacy #30: Nala",
+    "tokenId":"49949388378051653683986555167011770124866897184891886820722263468919589175297",
+    "attributes":[
+        {"trait_type":"Generation","value":"1"},
+        {"trait_type":"Type","value":"Kind"},
+        {"trait_type":"Series","value":"Dinoland"},
+        {"trait_type":"Hair Color","value":"Brown"},
+        {"trait_type":"Rarity","value":"Uncommon"},
+        {"trait_type":"Species","value":"Human"},
+        {"trait_type":"Original Mint Date","value":"April 4, 2021"}
+    ]
+}, {
+    "name":"Stacy #31: Kanoa",
+    "tokenId":"49949388378051653683986555167011770124866897184891886820722263470019100803073",
+    "attributes":[
+        {"trait_type":"Hair Color","value":"Grey"},
+        {"trait_type":"Generation","value":"1"},
+        {"trait_type":"Series","value":"Dinoland"},
+        {"trait_type":"Type","value":"Mystical"},
+        {"trait_type":"Rarity","value":"Uncommon"},
+        {"trait_type":"Species","value":"Human"},
+        {"trait_type":"Original Mint Date","value":"April 4, 2021"}
+    ]
+}, {
+    "name":"Stacy #32: Misu",
+    "tokenId":"49949388378051653683986555167011770124866897184891886820722263471118612430849",
+    "attributes":[
+        {"trait_type":"Hair Color","value":"Orange"},
+        {"trait_type":"Generation","value":"1"},
+        {"trait_type":"Series","value":"Dinoland"},
+        {"trait_type":"Type","value":"Athletic"},
+        {"trait_type":"Rarity","value":"Uncommon"},
+        {"trait_type":"Species","value":"Human"},
+        {"trait_type":"Original Mint Date","value":"April 4, 2021"}
+    ]
+}, {
+    "name":"Stacy #29: Takini",
+    "tokenId":"49949388378051653683986555167011770124866897184891886820722263472218124058625",
+    "attributes":[
+        {"trait_type":"Series","value":"Dinoland"},
+        {"trait_type":"Rarity","value":"Common"},
+        {"trait_type":"Hair Color","value":"Red"},
+        {"trait_type":"Type","value":"Sweet"},
+        {"trait_type":"Generation","value":"1"},
+        {"trait_type":"Species","value":"Human"},
+        {"trait_type":"Original Mint Date","value":"April 5, 2021"}
+    ]
+}, {
+    "name":"Stacy #33: Vrash ",
+    "tokenId":"49949388378051653683986555167011770124866897184891886820722263473317635686401",
+    "attributes":[
+        {"trait_type":"Generation","value":"1"},
+        {"trait_type":"Rarity","value":"Rare"},
+        {"trait_type":"Series","value":"Dinoland"},
+        {"trait_type":"Type","value":"Tough"},
+        {"trait_type":"Hair Color","value":"Brown"},
+        {"trait_type":"Species","value":"Human"},
+        {"trait_type":"Original Mint Date","value":"April 5, 2021"}
+    ]
+}, {
+    "name":"Stacy #40: Sailor Moon",
+    "tokenId":"49949388378051653683986555167011770124866897184891886820722263474417147314177",
+    "attributes":[
+        {"trait_type":"Generation","value":"1"},
+        {"trait_type":"Rarity","value":"Legendary"},
+        {"trait_type":"Species","value":"Super Human"},
+        {"trait_type":"Type","value":"Heroic"},
+        {"trait_type":"Hair Color","value":"Blonde"},
+        {"trait_type":"Series","value":"Sailor Stacy"},
+        {"trait_type":"Original Mint Date","value":"April 5, 2021"}
+    ]
+}, {
+    "name":"Stacy #34: Karsh",
+    "tokenId":"49949388378051653683986555167011770124866897184891886820722263475516658941953",
+    "attributes":[
+        {"trait_type":"Generation","value":"1"},
+        {"trait_type":"Rarity","value":"Rare"},
+        {"trait_type":"Series","value":"Dinoland"},
+        {"trait_type":"Type","value":"Tough"},
+        {"trait_type":"Hair Color","value":"Black"},
+        {"trait_type":"Species","value":"Human"},
+        {"trait_type":"Original Mint Date","value":"April 5, 2021"}
+    ]
+}, {
+    "name":"Stacy #38: Sailor Jupiter ",
+    "tokenId":"49949388378051653683986555167011770124866897184891886820722263476616170569729",
+    "attributes":[
+        {"trait_type":"Rarity","value":"Rare"},
+        {"trait_type":"Generation","value":"1"},
+        {"trait_type":"Series","value":"Sailor Stacy"},
+        {"trait_type":"Species","value":"Super Human"},
+        {"trait_type":"Type","value":"Adventerous"},
+        {"trait_type":"Hair Color","value":"Brown"},
+        {"trait_type":"Original Mint Date","value":"April 6, 2021"}
+    ]
+}, {
+    "name":"Stacy #37: Sailor Venus",
+    "tokenId":"49949388378051653683986555167011770124866897184891886820722263477715682197505",
+    "attributes":[
+        {"trait_type":"Generation","value":"1"},
+        {"trait_type":"Rarity","value":"Rare"},
+        {"trait_type":"Series","value":"Sailor Stacy"},
+        {"trait_type":"Species","value":"Super Human"},
+        {"trait_type":"Hair Color","value":"Blonde"},
+        {"trait_type":"Type","value":"Seductive"},
+        {"trait_type":"Original Mint Date","value":"April 6, 2021"}
+    ]
+}, {
+    "name":"Stacy #39: Sailor Mars",
+    "tokenId":"49949388378051653683986555167011770124866897184891886820722263478815193825281",
+    "attributes":[
+        {"trait_type":"Rarity","value":"Rare"},
+        {"trait_type":"Series","value":"Sailor Stacy"},
+        {"trait_type":"Type","value":"Heroic"},
+        {"trait_type":"Species","value":"Super Human"},
+        {"trait_type":"Hair Color","value":"Black"},
+        {"trait_type":"Generation","value":"1"},
+        {"trait_type":"Original Mint Date","value":"April 6, 2021"}
+    ]
+}, {
+    "name":"Stacy #36: Sailor Mercury",
+    "tokenId":"49949388378051653683986555167011770124866897184891886820722263479914705453057",
+    "attributes":[
+        {"trait_type":"Rarity","value":"Rare"},
+        {"trait_type":"Generation","value":"1"},
+        {"trait_type":"Series","value":"Sailor Stacy"},
+        {"trait_type":"Species","value":"Super Human"},
+        {"trait_type":"Type","value":"Smart"},
+        {"trait_type":"Hair Color","value":"Blue"},
+        {"trait_type":"Original Mint Date","value":"April 6, 2021"}
+    ]
+}, {
+    "name":"Stacy # 44: Pikachu",
+    "tokenId":"49949388378051653683986555167011770124866897184891886820722263481014217080833",
+    "attributes":[
+        {"trait_type":"Generation","value":"1"},
+        {"trait_type":"Species","value":"Pokegirl"},
+        {"trait_type":"Type","value":"Electric"},
+        {"trait_type":"Rarity","value":"Common"},
+        {"trait_type":"Hair Color","value":"Blonde"},
+        {"trait_type":"Series","value":"Pokemon"},
+        {"trait_type":"Original Mint Date","value":"April 6, 2021"}
+    ]
+}, {
+    "name":"Stacy #41: Bulbasaur",
+    "tokenId":"49949388378051653683986555167011770124866897184891886820722263482113728708609",
+    "attributes":[
+        {"trait_type":"Generation","value":"1"},
+        {"trait_type":"Hair Color","value":"Green"},
+        {"trait_type":"Species","value":"Pokegirl"},
+        {"trait_type":"Rarity","value":"Common"},
+        {"trait_type":"Series","value":"Pokemon"},
+        {"trait_type":"Type","value":"Grass"},
+        {"trait_type":"Original Mint Date","value":"April 7, 2021"}
+    ]
+}, {
+    "name":"Stacy #42: Charmander",
+    "tokenId":"49949388378051653683986555167011770124866897184891886820722263483213240336385",
+    "attributes":[
+        {"trait_type":"Generation","value":"1"},
+        {"trait_type":"Species","value":"Pokegirl"},
+        {"trait_type":"Hair Color","value":"Ombre"},
+        {"trait_type":"Rarity","value":"Common"},
+        {"trait_type":"Series","value":"Pokemon"},
+        {"trait_type":"Type","value":"Fire"},
+        {"trait_type":"Original Mint Date","value":"April 7, 2021"}
+    ]
+}, {
+    "name":"Stacy #43: Squirtle",
+    "tokenId":"49949388378051653683986555167011770124866897184891886820722263484312751964161",
+    "attributes":[
+        {"trait_type":"Generation","value":"1"},
+        {"trait_type":"Type","value":"Water"},
+        {"trait_type":"Species","value":"Pokegirl"},
+        {"trait_type":"Rarity","value":"Common"},
+        {"trait_type":"Series","value":"Pokemon"},
+        {"trait_type":"Hair Color","value":"Blue"},
+        {"trait_type":"Original Mint Date","value":"April 7, 2021"}
+    ]
+}, {
+    "name":"Stacy #45: Gengar ",
+    "tokenId":"49949388378051653683986555167011770124866897184891886820722263485412263591937",
+    "attributes":[
+        {"trait_type":"Generation","value":"1"},
+        {"trait_type":"Species","value":"Pokegirl"},
+        {"trait_type":"Series","value":"Pokemon"},
+        {"trait_type":"Rarity","value":"Uncommon"},
+        {"trait_type":"Type","value":"Ghost/Poison"},
+        {"trait_type":"Hair Color","value":"Purple"},
+        {"trait_type":"Original Mint Date","value":"April 7, 2021"}
+    ]
+}, {
+    "name":"Stacy #46: Primeape",
+    "tokenId":"49949388378051653683986555167011770124866897184891886820722263486511775219713",
+    "attributes":[
+        {"trait_type":"Generation","value":"1"},
+        {"trait_type":"Species","value":"Pokegirl"},
+        {"trait_type":"Series","value":"Pokemon"},
+        {"trait_type":"Hair Color","value":"Brown"},
+        {"trait_type":"Rarity","value":"Uncommon"},
+        {"trait_type":"Type","value":"Fighting"},
+        {"trait_type":"Original Mint Date","value":"April 8, 2021"}
+    ]
+}, {
+    "name":"Stacy #47: Koffing",
+    "tokenId":"49949388378051653683986555167011770124866897184891886820722263487611286847489",
+    "attributes":[
+        {"trait_type":"Type","value":"Poison"},
+        {"trait_type":"Generation","value":"1"},
+        {"trait_type":"Hair Color","value":"Wheat"},
+        {"trait_type":"Species","value":"Pokegirl"},
+        {"trait_type":"Series","value":"Pokemon"},
+        {"trait_type":"Rarity","value":"Uncommon"},
+        {"trait_type":"Original Mint Date","value":"April 9, 2021"}
+    ]
+}, {
+    "name":"Stacy #49: Jigglypuff",
+    "tokenId":"49949388378051653683986555167011770124866897184891886820722263488710798475265",
+    "attributes":[
+        {"trait_type":"Generation","value":"1"},
+        {"trait_type":"Rarity","value":"Rare"},
+        {"trait_type":"Species","value":"Pokegirl"},
+        {"trait_type":"Series","value":"Pokemon"},
+        {"trait_type":"Hair Color","value":"Pink"},
+        {"trait_type":"Type","value":"Fairy"},
+        {"trait_type":"Original Mint Date","value":"April 10, 2021"}
+    ]
+}, {
+    "name":"Stacy #48: Snorlax ",
+    "tokenId":"49949388378051653683986555167011770124866897184891886820722263489810310103041",
+    "attributes":[
+        {"trait_type":"Generation","value":"1"},
+        {"trait_type":"Rarity","value":"Rare"},
+        {"trait_type":"Species","value":"Pokegirl"},
+        {"trait_type":"Hair Color","value":"Turquoise"},
+        {"trait_type":"Series","value":"Pokemon"},
+        {"trait_type":"Type","value":"Normal"},
+        {"trait_type":"Original Mint Date","value":"April 10, 2021"}
+    ]
+}, {
+    "name":"Stacy #50: Dratini",
+    "tokenId":"49949388378051653683986555167011770124866897184891886820722263490909821730817",
+    "attributes":[
+        {"trait_type":"Generation","value":"1"},
+        {"trait_type":"Species","value":"Pokegirl"},
+        {"trait_type":"Rarity","value":"Legendary"},
+        {"trait_type":"Type","value":"Dragon"},
+        {"trait_type":"Series","value":"Pokemon"},
+        {"trait_type":"Hair Color","value":"Blue"},
+        {"trait_type":"Original Mint Date","value":"April 11, 2021"}
+    ]
+}, {
+    "name":"Stacy #51: Paris, The Queen ",
+    "tokenId":"49949388378051653683986555167011770124866897184891886820722263492009333358593",
+    "attributes":[
+        {"trait_type":"Series","value":"NFT Royalty "},
+        {"trait_type":"Hair Color","value":"Paris Blonde"},
+        {"trait_type":"Generation","value":"1"},
+        {"trait_type":"Type","value":"Leader"},
+        {"trait_type":"Species","value":"Human"},
+        {"trait_type":"Rarity","value":"Special"},
+        {"trait_type":"Original Mint Date","value":"April 14, 2021"}
+    ]
+}, {
+    "name":"Stacy #63: Axaeia E3-X",
+    "tokenId":"49949388378051653683986555167011770124866897184891886820722263493108844986369",
+    "attributes":[
+        {"trait_type":"Rarity","value":"Rare"},
+        {"trait_type":"Series","value":"Mission to Mars"},
+        {"trait_type":"Type","value":"Odd"},
+        {"trait_type":"Species","value":"Xiclon-X9"},
+        {"trait_type":"Hair Color","value":"Teal"},
+        {"trait_type":"Generation","value":"1"},
+        {"trait_type":"Original Mint Date","value":"April 16, 2021"}
+    ]
+}, {
+    "name":"Stacy #60: Sally",
+    "tokenId":"49949388378051653683986555167011770124866897184891886820722263494208356614145",
+    "attributes":[
+        {"trait_type":"Generation","value":"1"},
+        {"trait_type":"Series","value":"Mission to Mars"},
+        {"trait_type":"Type","value":"Brave"},
+        {"trait_type":"Hair Color","value":"Pink"},
+        {"trait_type":"Rarity","value":"Uncommon"},
+        {"trait_type":"Species","value":"Human"},
+        {"trait_type":"Original Mint Date","value":"April 16, 2021"}
+    ]
+}, {
+    "name":"Stacy #61: Judith",
+    "tokenId":"49949388378051653683986555167011770124866897184891886820722263495307868241921",
+    "attributes":[
+        {"trait_type":"Generation","value":"1"},
+        {"trait_type":"Series","value":"Mission to Mars"},
+        {"trait_type":"Species","value":"Human"},
+        {"trait_type":"Rarity","value":"Uncommon"},
+        {"trait_type":"Type","value":"Fun"},
+        {"trait_type":"Hair Color","value":"Purple"},
+        {"trait_type":"Original Mint Date","value":"April 17, 2021"}
+    ]
+}, {
+    "name":"Stacy #52: Hashley ",
+    "tokenId":"49949388378051653683986555167011770124866897184891886820722263496407379869697",
+    "attributes":[
+        {"trait_type":"Generation","value":"1"},
+        {"trait_type":"Series","value":"NFT Royalty"},
+        {"trait_type":"Hair Color","value":"Red"},
+        {"trait_type":"Type","value":"Silly"},
+        {"trait_type":"Species","value":"Human"},
+        {"trait_type":"Rarity","value":"Special"},
+        {"trait_type":"Original Mint Date","value":"April 18, 2021"}
+    ]
+}, {
+    "name":"Stacy #56: Lucy, The Scientist ",
+    "tokenId":"49949388378051653683986555167011770124866897184891886820722263497506891497473",
+    "attributes":[
+        {"trait_type":"Generation","value":"1"},
+        {"trait_type":"Series","value":"Mission to Mars"},
+        {"trait_type":"Hair Color","value":"Blonde"},
+        {"trait_type":"Species","value":"Human"},
+        {"trait_type":"Type","value":"Inquisitive"},
+        {"trait_type":"Rarity","value":"Common"},
+        {"trait_type":"Original Mint Date","value":"April 19, 2021"}
+    ]
+}, {
+    "name":"Stacy #57: Max, The Engineer",
+    "tokenId":"49949388378051653683986555167011770124866897184891886820722263498606403125249",
+    "attributes":[
+        {"trait_type":"Type","value":"Handy"},
+        {"trait_type":"Generation","value":"1"},
+        {"trait_type":"Series","value":"Mission to Mars"},
+        {"trait_type":"Rarity","value":"Common"},
+        {"trait_type":"Hair Color","value":"Blue"},
+        {"trait_type":"Species","value":"Human"},
+        {"trait_type":"Original Mint Date","value":"April 19, 2021"}
+    ]
+}, {
+    "name":"Stacy #58: Ruby, The Comms Specialist",
+    "tokenId":"49949388378051653683986555167011770124866897184891886820722263499705914753025",
+    "attributes":[
+        {"trait_type":"Generation","value":"1"},
+        {"trait_type":"Series","value":"Mission to Mars"},
+        {"trait_type":"Rarity","value":"Common"},
+        {"trait_type":"Species","value":"Human"},
+        {"trait_type":"Type","value":"Organized"},
+        {"trait_type":"Hair Color","value":"Purple"},
+        {"trait_type":"Original Mint Date","value":"April 19, 2021"}
+    ]
+}, {
+    "name":"Stacy #64: Exedia S2-X",
+    "tokenId":"49949388378051653683986555167011770124866897184891886820722263500805426380801",
+    "attributes":[
+        {"trait_type":"Rarity","value":"Rare"},
+        {"trait_type":"Generation","value":"1"},
+        {"trait_type":"Series","value":"Mission to Mars"},
+        {"trait_type":"Species","value":"Xiclon-X9"},
+        {"trait_type":"Type","value":"Giving"},
+        {"trait_type":"Hair Color","value":"Fuscia"},
+        {"trait_type":"Original Mint Date","value":"April 19, 2021"}
+    ]
+}, {
+    "name":"Stacy #62: Kathryn",
+    "tokenId":"49949388378051653683986555167011770124866897184891886820722263501904938008577",
+    "attributes":[
+        {"trait_type":"Generation","value":"1"},
+        {"trait_type":"Series","value":"Mission to Mars"},
+        {"trait_type":"Type","value":"Smart"},
+        {"trait_type":"Hair Color","value":"Cloud Blue"},
+        {"trait_type":"Rarity","value":"Uncommon"},
+        {"trait_type":"Species","value":"Human"},
+        {"trait_type":"Original Mint Date","value":"April 19, 2021"}
+    ]
+}, {
+    "name":"Stacy #59: Vicki, The Investor",
+    "tokenId":"49949388378051653683986555167011770124866897184891886820722263503004449636353",
+    "attributes":[
+        {"trait_type":"Generation","value":"1"},
+        {"trait_type":"Type","value":"Cool"},
+        {"trait_type":"Series","value":"Mission to Mars"},
+        {"trait_type":"Rarity","value":"Common"},
+        {"trait_type":"Hair Color","value":"Blue"},
+        {"trait_type":"Species","value":"Human"},
+        {"trait_type":"Original Mint Date","value":"April 20, 2021"}
+    ]
+}, {
+    "name":"Stacy #65: Hexveyra A1-XI - Xiclonian Queen",
+    "tokenId":"49949388378051653683986555167011770124866897184891886820722263504103961264129",
+    "attributes":[
+        {"trait_type":"Species","value":"Xiclon  X-9"},
+        {"trait_type":"Generation","value":"1"},
+        {"trait_type":"Series","value":"Mission to Mars"},
+        {"trait_type":"Rarity","value":"Legendary"},
+        {"trait_type":"Type","value":"Nobel"},
+        {"trait_type":"Hair Color","value":"Moon-Sea Blue"},
+        {"trait_type":"Original Mint Date","value":"April 21, 2021"}
+    ]
+}, {
+    "name":"Stacy #70: Data",
+    "tokenId":"49949388378051653683986555167011770124866897184891886820722263505203472891905",
+    "attributes":[
+        {"trait_type":"Generation","value":"1"},
+        {"trait_type":"Series","value":"Vaporwave"},
+        {"trait_type":"Species","value":"Post-Human"},
+        {"trait_type":"Type","value":"Techie"},
+        {"trait_type":"Hair Color","value":"Pink"},
+        {"trait_type":"Rarity","value":"Uncommon"},
+        {"trait_type":"Original Mint Date","value":"April 25, 2021"}
+    ]
+}, {
+    "name":"Stacy #71: Takako",
+    "tokenId":"49949388378051653683986555167011770124866897184891886820722263506302984519681",
+    "attributes":[
+        {"trait_type":"Generation","value":"1"},
+        {"trait_type":"Type","value":"Cool"},
+        {"trait_type":"Series","value":"Vaporwave"},
+        {"trait_type":"Species","value":"Post-Human"},
+        {"trait_type":"Hair Color","value":"Black"},
+        {"trait_type":"Rarity","value":"Uncommon"},
+        {"trait_type":"Original Mint Date","value":"April 27, 2021"}
+    ]
+}, {
+    "name":"Stacy #66: Vayder",
+    "tokenId":"49949388378051653683986555167011770124866897184891886820722263507402496147457",
+    "attributes":[
+        {"trait_type":"Type","value":"Gentle"},
+        {"trait_type":"Generation","value":"1"},
+        {"trait_type":"Series","value":"Vaporwave"},
+        {"trait_type":"Species","value":"Post-Human"},
+        {"trait_type":"Hair Color","value":"White"},
+        {"trait_type":"Rarity","value":"Common"},
+        {"trait_type":"Original Mint Date","value":"April 27, 2021"}
+    ]
+}, {
+    "name":"Stacy #53: Soky",
+    "tokenId":"49949388378051653683986555167011770124866897184891886820722263508502007775233",
+    "attributes":[
+        {"trait_type":"Generation","value":"1"},
+        {"trait_type":"Series","value":"NFT Royalty"},
+        {"trait_type":"Species","value":"Human"},
+        {"trait_type":"Rarity","value":"Special"},
+        {"trait_type":"Type","value":"Musical"},
+        {"trait_type":"Hair Color","value":"Bass Clef Black"},
+        {"trait_type":"Original Mint Date","value":"April 28, 2021"}
+    ]
+}, {
+    "name":"Stacy #67: Veronika ",
+    "tokenId":"49949388378051653683986555167011770124866897184891886820722263509601519403009",
+    "attributes":[
+        {"trait_type":"Generation","value":"1"},
+        {"trait_type":"Series","value":"Vaporwave"},
+        {"trait_type":"Species","value":"Post-Human"},
+        {"trait_type":"Type","value":"Posh"},
+        {"trait_type":"Hair Color","value":"Turquoise"},
+        {"trait_type":"Rarity","value":"Common"},
+        {"trait_type":"Original Mint Date","value":"April 29, 2021"}
+    ]
+}, {
+    "name":"Stacy #68: Satsuki",
+    "tokenId":"49949388378051653683986555167011770124866897184891886820722263510701031030785",
+    "attributes":[
+        {"trait_type":"Generation","value":"1"},
+        {"trait_type":"Series","value":"Vaporwave"},
+        {"trait_type":"Species","value":"Post-Human"},
+        {"trait_type":"Hair Color","value":"White"},
+        {"trait_type":"Rarity","value":"Common"},
+        {"trait_type":"Type","value":"Edgy"},
+        {"trait_type":"Original Mint Date","value":"April 30, 2021"}
+    ]
+}, {
+    "name":"Stacy #69: Xap ",
+    "tokenId":"49949388378051653683986555167011770124866897184891886820722263511800542658561",
+    "attributes":[
+        {"trait_type":"Generation","value":"1"},
+        {"trait_type":"Type","value":"Cool"},
+        {"trait_type":"Series","value":"Vaporwave"},
+        {"trait_type":"Species","value":"Post-Human"},
+        {"trait_type":"Rarity","value":"Common"},
+        {"trait_type":"Hair Color","value":"Steel Blue "},
+        {"trait_type":"Original Mint Date","value":"May 1, 2021"}
+    ]
+}, {
+    "name":"Stacy #73: Entity ",
+    "tokenId":"49949388378051653683986555167011770124866897184891886820722263512900054286337",
+    "attributes":[
+        {"trait_type":"Rarity","value":"Rare"},
+        {"trait_type":"Generation","value":"1"},
+        {"trait_type":"Series","value":"Vaporwave"},
+        {"trait_type":"Species","value":"Borg"},
+        {"trait_type":"Hair Color","value":"Polished Black"},
+        {"trait_type":"Type","value":"Fun"},
+        {"trait_type":"Original Mint Date","value":"May 1, 2021"}
+    ]
+}, {
+    "name":"Stacy #72: Yuki ",
+    "tokenId":"49949388378051653683986555167011770124866897184891886820722263513999565914113",
+    "attributes":[
+        {"trait_type":"Generation","value":"1"},
+        {"trait_type":"Series","value":"Vaporwave"},
+        {"trait_type":"Species","value":"Post-Human"},
+        {"trait_type":"Type","value":"Techie"},
+        {"trait_type":"Hair Color","value":"White Bunny"},
+        {"trait_type":"Rarity","value":"Uncommon"},
+        {"trait_type":"Original Mint Date","value":"May 1, 2021"}
+    ]
+}, {
+    "name":"Stacy #74: Trinity ",
+    "tokenId":"49949388378051653683986555167011770124866897184891886820722263515099077541889",
+    "attributes":[
+        {"trait_type":"Rarity","value":"Rare"},
+        {"trait_type":"Generation","value":"1"},
+        {"trait_type":"Hair Color","value":"Neon Pink"},
+        {"trait_type":"Series","value":"Vaporwave"},
+        {"trait_type":"Type","value":"Charming"},
+        {"trait_type":"Species","value":"Borg"},
+        {"trait_type":"Original Mint Date","value":"May 2, 2021"}
+    ]
+}, {
+    "name":"Stacy #75: Kazuko, The Bounty Queen",
+    "tokenId":"49949388378051653683986555167011770124866897184891886820722263516198589169665",
+    "attributes":[
+        {"trait_type":"Generation","value":"1"},
+        {"trait_type":"Series","value":"Vaporwave"},
+        {"trait_type":"Species","value":"Post-Human"},
+        {"trait_type":"Rarity","value":"Legendary"},
+        {"trait_type":"Type","value":"Renegade"},
+        {"trait_type":"Hair Color","value":"Neon Teal "},
+        {"trait_type":"Original Mint Date","value":"May 2, 2021"}
+    ]
+}, {
+    "name":"Stacy #54: The Queen of Hearts",
+    "tokenId":"49949388378051653683986555167011770124866897184891886820722263517298100797441",
+    "attributes":[
+        {"trait_type":"Generation","value":"1"},
+        {"trait_type":"Type","value":"Regal"},
+        {"trait_type":"Hair Color","value":"Golden Blonde"},
+        {"trait_type":"Series","value":"NFT Royalty"},
+        {"trait_type":"Species","value":"Human"},
+        {"trait_type":"Rarity","value":"Special"},
+        {"trait_type":"Original Mint Date","value":"May 4, 2021"}
+    ]
+}, {
+    "name":"Stacy #76: Aloy",
+    "tokenId":"49949388378051653683986555167011770124866897184891886820722263518397612425217",
+    "attributes":[
+        {"trait_type":"Generation","value":"1"},
+        {"trait_type":"Series","value":"Gamer Stacy"},
+        {"trait_type":"Type","value":"Machine Hunter"},
+        {"trait_type":"Rarity","value":"Common"},
+        {"trait_type":"Hair Color","value":"Red"},
+        {"trait_type":"Species","value":"Human"},
+        {"trait_type":"Original Mint Date","value":"May 6, 2021"}
+    ]
+}, {
+    "name":"Stacy #77: Lara Croft ",
+    "tokenId":"49949388378051653683986555167011770124866897184891886820722263519497124052993",
+    "attributes":[
+        {"trait_type":"Generation","value":"1"},
+        {"trait_type":"Series","value":"Gamer Stacy"},
+        {"trait_type":"Type","value":"Tomb Raider"},
+        {"trait_type":"Rarity","value":"Common"},
+        {"trait_type":"Hair Color","value":"Brown"},
+        {"trait_type":"Species","value":"Human"},
+        {"trait_type":"Original Mint Date","value":"May 6, 2021"}
+    ]
+}, {
+    "name":"Stacy #81: Maya",
+    "tokenId":"49949388378051653683986555167011770124866897184891886820722263520596635680769",
+    "attributes":[
+        {"trait_type":"Generation","value":"1"},
+        {"trait_type":"Type","value":"Siren"},
+        {"trait_type":"Series","value":"Gamer Stacy"},
+        {"trait_type":"Hair Color","value":"Blue"},
+        {"trait_type":"Rarity","value":"Uncommon"},
+        {"trait_type":"Species","value":"Human"},
+        {"trait_type":"Original Mint Date","value":"May 7, 2021"}
+    ]
+}, {
+    "name":"Stacy #78: Chun-Li",
+    "tokenId":"49949388378051653683986555167011770124866897184891886820722263521696147308545",
+    "attributes":[
+        {"trait_type":"Generation","value":"1"},
+        {"trait_type":"Series","value":"Gamer Stacy"},
+        {"trait_type":"Type","value":"Kempo Fighter"},
+        {"trait_type":"Rarity","value":"Common"},
+        {"trait_type":"Hair Color","value":"Brown"},
+        {"trait_type":"Species","value":"Human"},
+        {"trait_type":"Original Mint Date","value":"May 8, 2021"}
+    ]
+}, {
+    "name":"Stacy #55: Mizuki, The Last Samurai Guardian ",
+    "tokenId":"49949388378051653683986555167011770124866897184891886820722263522795658936321",
+    "attributes":[
+        {"trait_type":"Generation","value":"1"},
+        {"trait_type":"Type","value":"Heroic"},
+        {"trait_type":"Species","value":"Spirit Guardian"},
+        {"trait_type":"Hair Color","value":"Devil Moon Black"},
+        {"trait_type":"Series","value":"NFT Royalty"},
+        {"trait_type":"Rarity","value":"Special"},
+        {"trait_type":"Original Mint Date","value":"May 8, 2021"}
+    ]
+}, {
+    "name":"Stacy #55V: Mizuki \"Beautiful Moon\" Yamamoto",
+    "tokenId":"49949388378051653683986555167011770124866897184891886820722263523895170564097",
+    "attributes":[
+        {"trait_type":"Generation","value":"1"},
+        {"trait_type":"Species","value":"Post-Human"},
+        {"trait_type":"Special Property","value":"Variant"},
+        {"trait_type":"Type","value":"Troubled"},
+        {"trait_type":"Hair Color","value":"Devil Moon Black"},
+        {"trait_type":"Series","value":"NFT Royalty"},
+        {"trait_type":"Rarity","value":"Special"},
+        {"trait_type":"Original Mint Date","value":"May 8, 2021"}
+    ]
+}, {
+    "name":"Stacy #79: Mercy",
+    "tokenId":"49949388378051653683986555167011770124866897184891886820722263526094193819649",
+    "attributes":[
+        {"trait_type":"Generation","value":"1"},
+        {"trait_type":"Series","value":"Gamer Stacy"},
+        {"trait_type":"Rarity","value":"Common"},
+        {"trait_type":"Species","value":"Human"},
+        {"trait_type":"Type","value":"Support"},
+        {"trait_type":"Hair Color","value":"Angel Blonde"},
+        {"trait_type":"Original Mint Date","value":"May 9, 2021"}
+    ]
+}, {
+    "name":"Stacy #80: Tyrande",
+    "tokenId":"49949388378051653683986555167011770124866897184891886820722263527193705447425",
+    "attributes":[
+        {"trait_type":"Generation","value":"1"},
+        {"trait_type":"Series","value":"Gamer Stacy"},
+        {"trait_type":"Type","value":"Hunter Priest"},
+        {"trait_type":"Hair Color","value":"Dewdrop Teal"},
+        {"trait_type":"Species","value":"Night Elf "},
+        {"trait_type":"Rarity","value":"Uncommon"},
+        {"trait_type":"Original Mint Date","value":"May 11, 2021"}
+    ]
+}, {
+    "name":"Stacy #82: Misty",
+    "tokenId":"49949388378051653683986555167011770124866897184891886820722263528293217075201",
+    "attributes":[
+        {"trait_type":"Generation","value":"1"},
+        {"trait_type":"Series","value":"Gamer Stacy"},
+        {"trait_type":"Type","value":"Trainer"},
+        {"trait_type":"Hair Color","value":"Charmander Orange"},
+        {"trait_type":"Rarity","value":"Uncommon"},
+        {"trait_type":"Species","value":"Human"},
+        {"trait_type":"Original Mint Date","value":"May 15, 2021"}
+    ]
+}, {
+    "name":"Stacy #84: Princess Peach",
+    "tokenId":"49949388378051653683986555167011770124866897184891886820722263529392728702977",
+    "attributes":[
+        {"trait_type":"Generation","value":"1"},
+        {"trait_type":"Rarity","value":"Rare"},
+        {"trait_type":"Type","value":"Regal"},
+        {"trait_type":"Series","value":"Gamer Stacy"},
+        {"trait_type":"Species","value":"Human"},
+        {"trait_type":"Hair Color","value":"Begone Bowser Blonde"},
+        {"trait_type":"Original Mint Date","value":"May 15, 2021"}
+    ]
+}, {
+    "name":"Stacy #83: Princess Zelda",
+    "tokenId":"49949388378051653683986555167011770124866897184891886820722263530492240330753",
+    "attributes":[
+        {"trait_type":"Rarity","value":"Rare"},
+        {"trait_type":"Generation","value":"1"},
+        {"trait_type":"Type","value":"Regal"},
+        {"trait_type":"Series","value":"Gamer Stacy"},
+        {"trait_type":"Hair Color","value":"Between-worlds Brunette"},
+        {"trait_type":"Species","value":"Hylian-Human"},
+        {"trait_type":"Original Mint Date","value":"May 16, 2021"}
+    ]
+}, {
+    "name":"Stacy #85: Gamer Queen Jelli",
+    "tokenId":"49949388378051653683986555167011770124866897184891886820722263531591751958529",
+    "attributes":[
+        {"trait_type":"Generation","value":"1"},
+        {"trait_type":"Series","value":"Gamer Stacy"},
+        {"trait_type":"Rarity","value":"Legendary"},
+        {"trait_type":"Type","value":"Gamer"},
+        {"trait_type":"Hair Color","value":"Jam Jelly Pink"},
+        {"trait_type":"Species","value":"Human"},
+        {"trait_type":"Original Mint Date","value":"May 16, 2021"}
+    ]
+}, {
+    "name":"Stacy #86: Stacy's Mom",
+    "tokenId":"49949388378051653683986555167011770124866897184891886820722263532691263586305",
+    "attributes":[
+        {"trait_type":"Generation","value":"1"},
+        {"trait_type":"Species","value":"Human"},
+        {"trait_type":"Series","value":"Real OGs"},
+        {"trait_type":"Type","value":"Attractive"},
+        {"trait_type":"Hair Color","value":"Dirty Blonde"},
+        {"trait_type":"Rarity","value":"Special"},
+        {"trait_type":"Original Mint Date","value":"May 18, 2021"}
+    ]
+}, {
+    "name":"Stacy #86S: Stacy's Mom",
+    "tokenId":"49949388378051653683986555167011770124866897184891886820722263533790775214081",
+    "attributes":[
+        {"trait_type":"Generation","value":"1"},
+        {"trait_type":"Hair Color","value":"Midnight Black"},
+        {"trait_type":"Special Property","value":"Shiny"},
+        {"trait_type":"Series","value":"Real OGs"},
+        {"trait_type":"Type","value":"Attractive"},
+        {"trait_type":"Species","value":"Human"},
+        {"trait_type":"Rarity","value":"Special"},
+        {"trait_type":"Original Mint Date","value":"May 18, 2021"}
+    ]
+}, {
+    "name":"Stacy #87: Angelica",
+    "tokenId":"49949388378051653683986555167011770124866897184891886820722263534890286841857",
+    "attributes":[
+        {"trait_type":"Generation","value":"1"},
+        {"trait_type":"Series","value":"Real OGs"},
+        {"trait_type":"Rarity","value":"Special"},
+        {"trait_type":"Type","value":"Guardian"},
+        {"trait_type":"Species","value":"Angel"},
+        {"trait_type":"Hair Color","value":"Halo Blonde"},
+        {"trait_type":"Original Mint Date","value":"May 20, 2021"}
+    ]
+}, {
+    "name":"Stacy #87S: Angelica ",
+    "tokenId":"49949388378051653683986555167011770124866897184891886820722263535989798469633",
+    "attributes":[
+        {"trait_type":"Generation","value":"1"},
+        {"trait_type":"Hair Color","value":"Hash Red "},
+        {"trait_type":"Special Property","value":"Shiny"},
+        {"trait_type":"Series","value":"Real OGs"},
+        {"trait_type":"Rarity","value":"Special"},
+        {"trait_type":"Type","value":"Guardian"},
+        {"trait_type":"Species","value":"Angel"},
+        {"trait_type":"Original Mint Date","value":"May 20, 2021"}
+    ]
+}, {
+    "name":"Stacy #88: Hermionie",
+    "tokenId":"49949388378051653683986555167011770124866897184891886820722263537089310097409",
+    "attributes":[
+        {"trait_type":"Generation","value":"1"},
+        {"trait_type":"Type","value":"Smart"},
+        {"trait_type":"Series","value":"Real OGs"},
+        {"trait_type":"Species","value":"Human"},
+        {"trait_type":"Rarity","value":"Special"},
+        {"trait_type":"Hair Color","value":"Gryffindor Brown"},
+        {"trait_type":"Original Mint Date","value":"May 23, 2021"}
+    ]
+}, {
+    "name":"Stacy #88S: Hermionie",
+    "tokenId":"49949388378051653683986555167011770124866897184891886820722263538188821725185",
+    "attributes":[
+        {"trait_type":"Generation","value":"1"},
+        {"trait_type":"Special Property","value":"Shiny"},
+        {"trait_type":"Type","value":"Smart"},
+        {"trait_type":"Series","value":"Real OGs"},
+        {"trait_type":"Hair Color","value":"Magical Magenta"},
+        {"trait_type":"Species","value":"Human"},
+        {"trait_type":"Rarity","value":"Special"},
+        {"trait_type":"Original Mint Date","value":"May 23, 2021"}
+    ]
+}, {
+    "name":"Stacy #89: Alex",
+    "tokenId":"49949388378051653683986555167011770124866897184891886820722263539288333352961",
+    "attributes":[
+        {"trait_type":"Generation","value":"1"},
+        {"trait_type":"Type","value":"Smart"},
+        {"trait_type":"Series","value":"Real OGs"},
+        {"trait_type":"Species","value":"Human"},
+        {"trait_type":"Rarity","value":"Special"},
+        {"trait_type":"Hair Color","value":"Fire-cracker red"},
+        {"trait_type":"Original Mint Date","value":"May 25, 2021"}
+    ]
+}, {
+    "name":"Stacy #89S: Alex",
+    "tokenId":"49949388378051653683986555167011770124866897184891886820722263540387844980737",
+    "attributes":[
+        {"trait_type":"Generation","value":"1"},
+        {"trait_type":"Species","value":"Human"},
+        {"trait_type":"Hair Color","value":"Cloud 9 Pink"},
+        {"trait_type":"Rarity","value":"Special"},
+        {"trait_type":"Special Property","value":"Shiny"},
+        {"trait_type":"Type","value":"Smart"},
+        {"trait_type":"Series","value":"Real OGs"},
+        {"trait_type":"Original Mint Date","value":"May 25, 2021"}
+    ]
+}, {
+    "name":"Stacy #90: Wonder Woman",
+    "tokenId":"49949388378051653683986555167011770124866897184891886820722263541487356608513",
+    "attributes":[
+        {"trait_type":"Generation","value":"1"},
+        {"trait_type":"Hair Color","value":"Brawny Brunette"},
+        {"trait_type":"Species","value":"Demi-Goddess"},
+        {"trait_type":"Type","value":"Heroic"},
+        {"trait_type":"Series","value":"Real OGs"},
+        {"trait_type":"Rarity","value":"Special"},
+        {"trait_type":"Original Mint Date","value":"May 25, 2021"}
+    ]
+}, {
+    "name":"Stacy #90S: Wonder Woman",
+    "tokenId":"49949388378051653683986555167011770124866897184891886820722263542586868236289",
+    "attributes":[
+        {"trait_type":"Generation","value":"1"},
+        {"trait_type":"Hair Color","value":"Dark-moon Lavendar"},
+        {"trait_type":"Species","value":"Demi-Goddess"},
+        {"trait_type":"Type","value":"Heroic"},
+        {"trait_type":"Special Property","value":"Shiny"},
+        {"trait_type":"Series","value":"Real OGs"},
+        {"trait_type":"Rarity","value":"Special"},
+        {"trait_type":"Original Mint Date","value":"May 25, 2021"}
+    ]
+}, {
+    "name":"Stacy #91: Zuri the Zombie",
+    "tokenId":"49949388378051653683986555167011770124866897184891886820722263543686379864065",
+    "attributes":[
+        {"trait_type":"Generation","value":"1"},
+        {"trait_type":"Rarity","value":"Common"},
+        {"trait_type":"Series","value":"Monstys"},
+        {"trait_type":"Type","value":"Undead"},
+        {"trait_type":"Hair Color","value":"Black Bile"},
+        {"trait_type":"Species","value":"Zombie"},
+        {"trait_type":"Original Mint Date","value":"May 27, 2021"}
+    ]
+}, {
+    "name":"Monsty #3: Zuri the Zombie",
+    "tokenId":"49949388378051653683986555167011770124866897184891886820722263544785891491841",
+    "attributes":[
+        {"trait_type":"Rarity","value":"Special"},
+        {"trait_type":"Monsty Type","value":"Zombie"},
+        {"trait_type":"Special Property","value":"Monsty Card"},
+        {"trait_type":"Original Mint Date","value":"May 27, 2021"}
+    ]
+}, {
+    "name":"Stacy #92: Cynthia the Cyclops",
+    "tokenId":"49949388378051653683986555167011770124866897184891886820722263545885403119617",
+    "attributes":[
+        {"trait_type":"Generation","value":"1"},
+        {"trait_type":"Rarity","value":"Common"},
+        {"trait_type":"Type","value":"Strong"},
+        {"trait_type":"Hair Color","value":"Puny-human Purple"},
+        {"trait_type":"Species","value":"Cyclops"},
+        {"trait_type":"Series","value":"Monstys"},
+        {"trait_type":"Original Mint Date","value":"May 29, 2021"}
+    ]
+}, {
+    "name":"Monsty #4: Cynthia the Cyclops",
+    "tokenId":"49949388378051653683986555167011770124866897184891886820722263546984914747393",
+    "attributes":[
+        {"trait_type":"Rarity","value":"Special"},
+        {"trait_type":"Monsty Type","value":"Cyclops"},
+        {"trait_type":"Special Property","value":"Monsty Card"},
+        {"trait_type":"Original Mint Date","value":"May 29, 2021"}
+    ]
+}, {
+    "name":"Stacy #93: Ellia the Elf ",
+    "tokenId":"49949388378051653683986555167011770124866897184891886820722263548084426375169",
+    "attributes":[
+        {"trait_type":"Rarity","value":"Common"},
+        {"trait_type":"Type","value":"Elegant"},
+        {"trait_type":"Generation","value":"1"},
+        {"trait_type":"Hair Color","value":"Blonde"},
+        {"trait_type":"Species","value":"Elf"},
+        {"trait_type":"Series","value":"Monstys"},
+        {"trait_type":"Original Mint Date","value":"June 1, 2021"}
+    ]
+}, {
+    "name":"Monsty #5: Ellia the Elf",
+    "tokenId":"49949388378051653683986555167011770124866897184891886820722263549183938002945",
+    "attributes":[
+        {"trait_type":"Rarity","value":"Special"},
+        {"trait_type":"Monsty Type","value":"Elf"},
+        {"trait_type":"Special Property","value":"Monsty Card"},
+        {"trait_type":"Original Mint Date","value":"June 1, 2021"}
+    ]
+}, {
+    "name":"Stacy #94: Dominika the Demon",
+    "tokenId":"49949388378051653683986555167011770124866897184891886820722263550283449630721",
+    "attributes":[
+        {"trait_type":"Generation","value":"1"},
+        {"trait_type":"Type","value":"Naughty"},
+        {"trait_type":"Species","value":"Demon"},
+        {"trait_type":"Hair Color","value":"Demonic Ash"},
+        {"trait_type":"Rarity","value":"Common"},
+        {"trait_type":"Series","value":"Monstys"},
+        {"trait_type":"Original Mint Date","value":"June 4, 2021"}
+    ]
+}, {
+    "name":"Monsty #6: Dominika the Demon",
+    "tokenId":"49949388378051653683986555167011770124866897184891886820722263551382961258497",
+    "attributes":[
+        {"trait_type":"Rarity","value":"Special"},
+        {"trait_type":"Monsty Type","value":"Demon"},
+        {"trait_type":"Special Property","value":"Monsty Card"},
+        {"trait_type":"Original Mint Date","value":"June 4, 2021"}
+    ]
+}, {
+    "name":"Stacy #98: Wendy the Werewolf",
+    "tokenId":"49949388378051653683986555167011770124866897184891886820722263552482472886273",
+    "attributes":[
+        {"trait_type":"Rarity","value":"Rare"},
+        {"trait_type":"Generation","value":"1"},
+        {"trait_type":"Type","value":"Wild"},
+        {"trait_type":"Hair Color","value":"Forest-floor Brown"},
+        {"trait_type":"Species","value":"Werewolf"},
+        {"trait_type":"Series","value":"Monstys"},
+        {"trait_type":"Original Mint Date","value":"June 5, 2021"}
+    ]
+}, {
+    "name":"Monsty #7: Wendy the Werewolf",
+    "tokenId":"49949388378051653683986555167011770124866897184891886820722263553581984514049",
+    "attributes":[
+        {"trait_type":"Rarity","value":"Special"},
+        {"trait_type":"Monsty Type","value":"Werewolf"},
+        {"trait_type":"Special Property","value":"Monsty Card"},
+        {"trait_type":"Original Mint Date","value":"June 5, 2021"}
+    ]
+}, {
+    "name":"Monsty #8: Yvette the Yeti",
+    "tokenId":"49949388378051653683986555167011770124866897184891886820722263555781007769601",
+    "attributes":[
+        {"trait_type":"Monsty Type","value":"Yeti"},
+        {"trait_type":"Rarity","value":"Special"},
+        {"trait_type":"Special Property","value":"Monsty Card"},
+        {"trait_type":"Original Mint Date","value":"June 10, 2021"}
+    ]
+}, {
+    "name":"Stacy #95: Yvette the Yeti",
+    "tokenId":"49949388378051653683986555167011770124866897184891886820722263556880519397377",
+    "attributes":[
+        {"trait_type":"Generation","value":"1"},
+        {"trait_type":"Type","value":"Playful"},
+        {"trait_type":"Hair Color","value":"Crystal Ice Purple"},
+        {"trait_type":"Species","value":"Yeti"},
+        {"trait_type":"Rarity","value":"Uncommon"},
+        {"trait_type":"Series","value":"Monstys"},
+        {"trait_type":"Original Mint Date","value":"June 10, 2021"}
+    ]
+}, {
+    "name":"Stacy #97: Gabriella the Ghost",
+    "tokenId":"49949388378051653683986555167011770124866897184891886820722263560179054280705",
+    "attributes":[
+        {"trait_type":"Type","value":"Innocent"},
+        {"trait_type":"Species","value":"Ghost"},
+        {"trait_type":"Generation","value":"1"},
+        {"trait_type":"Hair Color","value":"Ghostly White"},
+        {"trait_type":"Rarity","value":"Uncommon"},
+        {"trait_type":"Series","value":"Monstys"},
+        {"trait_type":"Original Mint Date","value":"June 13, 2021"}
+    ]
+}, {
+    "name":"Monsty #9: Gabriella the Ghost",
+    "tokenId":"49949388378051653683986555167011770124866897184891886820722263561278565908481",
+    "attributes":[
+        {"trait_type":"Rarity","value":"Special"},
+        {"trait_type":"Monsty Type","value":"Ghost"},
+        {"trait_type":"Special Property","value":"Monsty Card"},
+        {"trait_type":"Original Mint Date","value":"June 13, 2021"}
+    ]
+}, {
+    "name":"Stacy #96: Gvesla the Gorgon",
+    "tokenId":"49949388378051653683986555167011770124866897184891886820722263563477589164033",
+    "attributes":[
+        {"trait_type":"Series","value":"Monstys"},
+        {"trait_type":"Generation","value":"1"},
+        {"trait_type":"Rarity","value":"Uncommon"},
+        {"trait_type":"Species","value":"Gorgon"},
+        {"trait_type":"Type","value":"Cold"},
+        {"trait_type":"Hair Color","value":"Snakes"},
+        {"trait_type":"Original Mint Date","value":"June 14, 2021"}
+    ]
+}, {
+    "name":"Monsty #10: Gvesla the Gorgon",
+    "tokenId":"49949388378051653683986555167011770124866897184891886820722263564577100791809",
+    "attributes":[
+        {"trait_type":"Rarity","value":"Special"},
+        {"trait_type":"Monsty Type","value":"Gorgon"},
+        {"trait_type":"Special Property","value":"Monsty Card"},
+        {"trait_type":"Original Mint Date","value":"June 14, 2021"}
+    ]
+}, {
+    "name":"Stacy #??: The Lost Queen",
+    "tokenId":"49949388378051653683986555167011770124866897184891886820722263578870751952897",
+    "attributes":[
+        {"trait_type":"Generation","value":"1"},
+        {"trait_type":"Type","value":"Wandering"},
+        {"trait_type":"Species","value":"Time-Walker"},
+        {"trait_type":"Rarity","value":"Mythic"},
+        {"trait_type":"Hair Color","value":"Timeless White"},
+        {"trait_type":"Series","value":"???"},
+        {"trait_type":"Original Mint Date","value":"June 16, 2021"}
+    ]
+}, {
+    "name":"Chainlink Stacy",
+    "tokenId":"49949388378051653683986555167011770124866897184891886820722263587666844975105",
+    "attributes":[
+        {"trait_type":"Generation","value":"1"},
+        {"trait_type":"Hair Color","value":"Pepe Green"},
+        {"trait_type":"Type","value":"Innovative"},
+        {"trait_type":"Series","value":"Giveaway"},
+        {"trait_type":"Species","value":"Human"},
+        {"trait_type":"Rarity","value":"Special"},
+        {"trait_type":"Original Mint Date","value":"June 16, 2021"}
+    ]
+}, {
+    "name":"Stacy #99: Machi the Mermaid",
+    "tokenId":"49949388378051653683986555167011770124866897184891886820722263603060007763969",
+    "attributes":[
+        {"trait_type":"Type","value":"Mischievous"},
+        {"trait_type":"Hair Color","value":"Pearly Pink"},
+        {"trait_type":"Generation","value":"1"},
+        {"trait_type":"Species","value":"Mermaid"},
+        {"trait_type":"Rarity","value":"Rare"},
+        {"trait_type":"Series","value":"Monstys"},
+        {"trait_type":"Original Mint Date","value":"June 18, 2021"}
+    ]
+}, {
+    "name":"Monsty #11: Machi the Mermaid",
+    "tokenId":"49949388378051653683986555167011770124866897184891886820722263605259031019521",
+    "attributes":[
+        {"trait_type":"Rarity","value":"Special"},
+        {"trait_type":"Monsty Type","value":"Mermaid"},
+        {"trait_type":"Special Property","value":"Monsty Card"},
+        {"trait_type":"Original Mint Date","value":"June 18, 2021"}
+    ]
+}, {
+    "name":"Stacy #100: Fairy Queen Stacy",
+    "tokenId":"49949388378051653683986555167011770124866897184891886820722263643741937991681",
+    "attributes":[
+        {"trait_type":"Generation","value":"1"},
+        {"trait_type":"Type","value":"Regal"},
+        {"trait_type":"Rarity","value":"Legendary"},
+        {"trait_type":"Series","value":"Monstys"},
+        {"trait_type":"Hair Color","value":"Royal Blonde"},
+        {"trait_type":"Species","value":"Fairy"},
+        {"trait_type":"Original Mint Date","value":"June 25, 2021"}
+    ]
+}, {
+    "name":"Monsty #12: Machi the Mermaid",
+    "tokenId":"49949388378051653683986555167011770124866897184891886820722263644841449619457",
+    "attributes":[
+        {"trait_type":"Rarity","value":"Special"},
+        {"trait_type":"Monsty Type","value":"Fairy"},
+        {"trait_type":"Special Property","value":"Monsty Card"},
+        {"trait_type":"Original Mint Date","value":"June 25, 2021"}
+    ]
+}, {
+    "name":"Stacy #1V: Queen Stacy",
+    "tokenId":"49949388378051653683986555167011770124866897184891886820722263650339007758337",
+    "attributes":[
+        {"trait_type":"Series","value":"Origins"},
+        {"trait_type":"Type","value":"Sweet"},
+        {"trait_type":"Hair Color","value":"Blonde"},
+        {"trait_type":"Species","value":"Human"},
+        {"trait_type":"Rarity","value":"Special"},
+        {"trait_type":"Original Mint Date","value":"June 26, 2021"}
+    ]
+}, {
+    "name":"Stacy #101: Harley ",
+    "tokenId":"49949388378051653683986555167011770124866897184891886820722263702016054263809",
+    "attributes":[
+        {"trait_type":"Generation","value":"2"},
+        {"trait_type":"Species","value":"Human"},
+        {"trait_type":"Series","value":"50s Vintage"},
+        {"trait_type":"Rarity","value":"Common"},
+        {"trait_type":"Hair Color","value":"Blue"},
+        {"trait_type":"Type","value":"Fun"},
+        {"trait_type":"Original Mint Date","value":"July 23, 2021"}
+    ]
+}, {
+    "name":"Stacy #102: Bonnie",
+    "tokenId":"49949388378051653683986555167011770124866897184891886820722263703115565891585",
+    "attributes":[
+        {"trait_type":"Type","value":"Classy"},
+        {"trait_type":"Generation","value":"2"},
+        {"trait_type":"Series","value":"50s Vintage"},
+        {"trait_type":"Rarity","value":"Common"},
+        {"trait_type":"Species","value":"Human"},
+        {"trait_type":"Hair Color","value":"Purple"},
+        {"trait_type":"Original Mint Date","value":"July 24, 2021"}
+    ]
+}, {
+    "name":"Stacy #103: Marilyn",
+    "tokenId":"49949388378051653683986555167011770124866897184891886820722263705314589147137",
+    "attributes":[
+        {"trait_type":"Hair Color","value":"Blonde"},
+        {"trait_type":"Species","value":"Human"},
+        {"trait_type":"Type","value":"Seductive"},
+        {"trait_type":"Generation","value":"2"},
+        {"trait_type":"Series","value":"50s Vintage"},
+        {"trait_type":"Rarity","value":"Common"},
+        {"trait_type":"Original Mint Date","value":"July 26, 2021"}
+    ]
+}, {
+    "name":"Stacy #104: Manny the Diner Cutie",
+    "tokenId":"49949388378051653683986555167011770124866897184891886820722263707513612402689",
+    "attributes":[
+        {"trait_type":"Generation","value":"2"},
+        {"trait_type":"Series","value":"50s Vintage"},
+        {"trait_type":"Rarity","value":"Common"},
+        {"trait_type":"Hair Color","value":"Black"},
+        {"trait_type":"Type","value":"Helpful"},
+        {"trait_type":"Species","value":"Human"},
+        {"trait_type":"Original Mint Date","value":"July 27, 2021"}
+    ]
+}, {
+    "name":"Stacy #105: Velma",
+    "tokenId":"49949388378051653683986555167011770124866897184891886820722263709712635658241",
+    "attributes":[
+        {"trait_type":"Series","value":"50s Vintage"},
+        {"trait_type":"Generation","value":"2"},
+        {"trait_type":"Rarity","value":"Uncommon"},
+        {"trait_type":"Hair Color","value":"Purple"},
+        {"trait_type":"Species","value":"Human"},
+        {"trait_type":"Type","value":"Seductive"},
+        {"trait_type":"Original Mint Date","value":"July 29, 2021"}
+    ]
+}, {
+    "name":"Stacy #106: Jenny",
+    "tokenId":"49949388378051653683986555167011770124866897184891886820722263710812147286017",
+    "attributes":[
+        {"trait_type":"Type","value":"Cute"},
+        {"trait_type":"Generation","value":"2"},
+        {"trait_type":"Series","value":"50s Vintage"},
+        {"trait_type":"Hair Color","value":"Brown"},
+        {"trait_type":"Rarity","value":"Uncommon"},
+        {"trait_type":"Species","value":"Human"},
+        {"trait_type":"Original Mint Date","value":"July 29, 2021"}
+    ]
+}, {
+    "name":"Stacy #107: Daphne",
+    "tokenId":"49949388378051653683986555167011770124866897184891886820722263713011170541569",
+    "attributes":[
+        {"trait_type":"Generation","value":"2"},
+        {"trait_type":"Series","value":"50s Vintage"},
+        {"trait_type":"Hair Color","value":"Red"},
+        {"trait_type":"Type","value":"Sassy"},
+        {"trait_type":"Rarity","value":"Uncommon"},
+        {"trait_type":"Species","value":"Human"},
+        {"trait_type":"Original Mint Date","value":"August 1, 2021"}
+    ]
+}, {
+    "name":"Stacy #108: Mary",
+    "tokenId":"49949388378051653683986555167011770124866897184891886820722263714110682169345",
+    "attributes":[
+        {"trait_type":"Rarity","value":"Rare"},
+        {"trait_type":"Generation","value":"2"},
+        {"trait_type":"Series","value":"50s Vintage"},
+        {"trait_type":"Hair Color","value":"Brown"},
+        {"trait_type":"Species","value":"Human"},
+        {"trait_type":"Type","value":"Classy"},
+        {"trait_type":"Original Mint Date","value":"August 3, 2021"}
+    ]
+}, {
+    "name":"★Stacy SSS★: Allison and Penny",
+    "tokenId":"49949388378051653683986555167011770124866897184891886820722263715210193797121",
+    "attributes":[
+        {"trait_type":"Type","value":"Cute"},
+        {"trait_type":"Generation","value":"2"},
+        {"trait_type":"Hair Color","value":"Lavender"},
+        {"trait_type":"Rarity","value":"Super"},
+        {"trait_type":"Series","value":"SSS"},
+        {"trait_type":"Species","value":"Human"},
+        {"trait_type":"Original Mint Date","value":"August 4, 2021"}
+    ]
+}, {
+    "name":"Stacy #109: Lucy",
+    "tokenId":"49949388378051653683986555167011770124866897184891886820722263716309705424897",
+    "attributes":[
+        {"trait_type":"Rarity","value":"Rare"},
+        {"trait_type":"Generation","value":"2"},
+        {"trait_type":"Series","value":"50s Vintage"},
+        {"trait_type":"Type","value":"Sweet"},
+        {"trait_type":"Hair Color","value":"Blonde"},
+        {"trait_type":"Species","value":"Human"},
+        {"trait_type":"Original Mint Date","value":"August 5, 2021"}
+    ]
+}, {
+    "name":"Stacy #110: Penelope",
+    "tokenId":"49949388378051653683986555167011770124866897184891886820722263719608240308225",
+    "attributes":[
+        {"trait_type":"Rarity","value":"Legendary"},
+        {"trait_type":"Generation","value":"2"},
+        {"trait_type":"Series","value":"50s Vintage"},
+        {"trait_type":"Hair Color","value":"Brown"},
+        {"trait_type":"Species","value":"Human"},
+        {"trait_type":"Type","value":"Friendly"},
+        {"trait_type":"Original Mint Date","value":"August 8, 2021"}
+    ]
+}, {
+    "name":"Stacy #111: Candy Cane",
+    "tokenId":"49949388378051653683986555167011770124866897184891886820722263720707751936001",
+    "attributes":[
+        {"trait_type":"Hair Color","value":"White and Red"},
+        {"trait_type":"Series","value":"Candyland"},
+        {"trait_type":"Generation","value":"2"},
+        {"trait_type":"Rarity","value":"Common"},
+        {"trait_type":"Type","value":"Sassy"},
+        {"trait_type":"Species","value":"Human"},
+        {"trait_type":"Original Mint Date","value":"August 10, 2021"}
+    ]
+}, {
+    "name":"StacyX: Robbie",
+    "tokenId":"49949388378051653683986555167011770124866897184891886820722263726205310074881",
+    "attributes":[
+        {"trait_type":"Series","value":"X"},
+        {"trait_type":"Species","value":"Robo-Homie"},
+        {"trait_type":"Type","value":"Kinda Evil"},
+        {"trait_type":"Generation","value":"2"},
+        {"trait_type":"Hair Color","value":"Black"},
+        {"trait_type":"Rarity","value":"Special"},
+        {"trait_type":"Original Mint Date","value":"August 19, 2021"}
+    ]
+}, {
+    "name":"Stacy #113: Chocolate Bunny",
+    "tokenId":"49949388378051653683986555167011770124866897184891886820722263732802379841537",
+    "attributes":[
+        {"trait_type":"Series","value":"Candyland"},
+        {"trait_type":"Type","value":"Cute"},
+        {"trait_type":"Generation","value":"2"},
+        {"trait_type":"Rarity","value":"Common"},
+        {"trait_type":"Hair Color","value":"Chocolate"},
+        {"trait_type":"Species","value":"Chocolate"},
+        {"trait_type":"Original Mint Date","value":"September 1, 2021"}
+    ]
+}, {
+    "name":"Stacy #114: Cookie",
+    "tokenId":"49949388378051653683986555167011770124866897184891886820722263750394565885953",
+    "attributes":[
+        {"trait_type":"Series","value":"Candyland"},
+        {"trait_type":"Generation","value":"2"},
+        {"trait_type":"Rarity","value":"Common"},
+        {"trait_type":"Type","value":"Elegant"},
+        {"trait_type":"Species","value":"Human"},
+        {"trait_type":"Hair Color","value":"Cookie"},
+        {"trait_type":"Original Mint Date","value":"October 7, 2021"}
+    ]
+}, {
+    "name":"Stacy #121: Frankie",
+    "tokenId":"49949388378051653683986555167011770124866897184891886820722263752593589141505",
+    "attributes":[
+        {"trait_type":"Hair Color","value":"Gravestone"},
+        {"trait_type":"Generation","value":"2"},
+        {"trait_type":"Series","value":"Halloween 2021"},
+        {"trait_type":"Rarity","value":"Common"},
+        {"trait_type":"Type","value":"Hungry"},
+        {"trait_type":"Species","value":"Zombie"},
+        {"trait_type":"Original Mint Date","value":"October 25, 2021"}
+    ]
+}, {
+    "name":"Stacy #122: Bubble",
+    "tokenId":"49949388378051653683986555167011770124866897184891886820722263753693100769281",
+    "attributes":[
+        {"trait_type":"Species","value":"Lagoon Creature"},
+        {"trait_type":"Generation","value":"2"},
+        {"trait_type":"Series","value":"Halloween 2021"},
+        {"trait_type":"Rarity","value":"Common"},
+        {"trait_type":"Hair Color","value":"Blue"},
+        {"trait_type":"Type","value":"Elegant"},
+        {"trait_type":"Original Mint Date","value":"October 26, 2021"}
+    ]
+}, {
+    "name":"Stacy #123: Ghostlee",
+    "tokenId":"49949388378051653683986555167011770124866897184891886820722263756991635652609",
+    "attributes":[
+        {"trait_type":"Species","value":"Ghost"},
+        {"trait_type":"Hair Color","value":"Translucent "},
+        {"trait_type":"Type","value":"Cute"},
+        {"trait_type":"Generation","value":"2"},
+        {"trait_type":"Series","value":"Halloween 2021"},
+        {"trait_type":"Rarity","value":"Uncommon"},
+        {"trait_type":"Original Mint Date","value":"October 30, 2021"}
+    ]
+}, {
+    "name":"Stacy #124: Nashwa",
+    "tokenId":"49949388378051653683986555167011770124866897184891886820722263758091147280385",
+    "attributes":[
+        {"trait_type":"Rarity","value":"Rare"},
+        {"trait_type":"Generation","value":"2"},
+        {"trait_type":"Series","value":"Halloween 2021"},
+        {"trait_type":"Hair Color","value":"Black"},
+        {"trait_type":"Species","value":"Mummy"},
+        {"trait_type":"Type","value":"Serious"},
+        {"trait_type":"Original Mint Date","value":"November 1, 2021"}
+    ]
+}, {
+    "name":"Stacy #125: Luna",
+    "tokenId":"49949388378051653683986555167011770124866897184891886820722263760290170535937",
+    "attributes":[
+        {"trait_type":"Hair Color","value":" Moon"},
+        {"trait_type":"Species","value":"Witch"},
+        {"trait_type":"Type","value":"Magical"},
+        {"trait_type":"Rarity","value":"Legendary"},
+        {"trait_type":"Generation","value":"2"},
+        {"trait_type":"Series","value":"Halloween 2021"},
+        {"trait_type":"Original Mint Date","value":"November 2, 2021"}
+    ]
+}, {
+    "name":"Stacy #115: Cotton Candy ",
+    "tokenId":"49949388378051653683986555167011770124866897184891886820722263762489193791489",
+    "attributes":[
+        {"trait_type":"Series","value":"Candyland"},
+        {"trait_type":"Hair Color","value":"Cotton Candy "},
+        {"trait_type":"Type","value":"Fluffy"},
+        {"trait_type":"Generation","value":"2"},
+        {"trait_type":"Rarity","value":"Uncommon"},
+        {"trait_type":"Species","value":"Human"},
+        {"trait_type":"Original Mint Date","value":"November 17, 2021"}
+    ]
+}, {
+    "name":"Stacy #116: Milkshake",
+    "tokenId":"49949388378051653683986555167011770124866897184891886820722263763588705419265",
+    "attributes":[
+        {"trait_type":"Type","value":"Cute"},
+        {"trait_type":"Generation","value":"2"},
+        {"trait_type":"Hair Color","value":"Pink"},
+        {"trait_type":"Rarity","value":"Uncommon"},
+        {"trait_type":"Series","value":"CandyLand"},
+        {"trait_type":"Species","value":"Human"},
+        {"trait_type":"Original Mint Date","value":"December 11, 2021"}
+    ]
+}, {
+    "name":"Stacy #117: Lolli",
+    "tokenId":"49949388378051653683986555167011770124866897184891886820722263764688217047041",
+    "attributes":[
+        {"trait_type":"Generation","value":"2"},
+        {"trait_type":"Type","value":"Sassy"},
+        {"trait_type":"Rarity","value":"Uncommon"},
+        {"trait_type":"Hair Color","value":"Blue"},
+        {"trait_type":"Series","value":"CandyLand"},
+        {"trait_type":"Species","value":"Human"},
+        {"trait_type":"Original Mint Date","value":"December 30, 2021"}
+    ]
+}]

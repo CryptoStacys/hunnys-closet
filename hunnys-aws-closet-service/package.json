@@ -1,0 +1,25 @@
+{
+  "name": "hunnys-aws-closet-service",
+  "version": "1.0.0",
+  "description": "changes aws metadata if certain condition is met",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "start": "nodemon ./server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "aws-cli-js": "^2.2.3",
+    "canvas": "^2.11.2",
+    "crypto-js": "^4.2.0",
+    "ethereum-checksum-address": "^0.0.7",
+    "ethers": "^5.5.1",
+    "express": "^4.18.2",
+    "fabric": "^5.2.4",
+    "fs": "0.0.1-security",
+    "node-fetch": "^3.0.0",
+    "nodemon": "^2.0.7",
+    "web3": "^1.9.0"
+  }
+}

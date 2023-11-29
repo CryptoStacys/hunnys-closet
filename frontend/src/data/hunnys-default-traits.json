@@ -1,0 +1,237 @@
+{
+  "attributes": [
+    {
+      "name": "Background",
+      "traits": [
+        { "name": "Empty", "colors": 0, "rarity": "common", "tags": [] },
+        {
+          "name": "Hunnys Yellow Background",
+          "colors": 0,
+          "rarity": "common",
+          "tags": []
+        },
+        {
+          "name": "Hunnys Purple Background",
+          "colors": 0,
+          "rarity": "common",
+          "tags": []
+        }
+      ]
+    },
+    {
+      "name": "Skin",
+      "traits": [
+        { "name": "Empty", "colors": 0, "rarity": "common", "tags": [] },
+        { "name": "Basic Mocha", "colors": 0, "rarity": "Common", "tags": [] },
+        {
+          "name": "Basic Strawberry Whipped Cream",
+          "colors": 0,
+          "rarity": "Common",
+          "tags": []
+        },
+        {
+          "name": "Basic Macaroons",
+          "colors": 0,
+          "rarity": "Common",
+          "tags": []
+        }
+      ]
+    },
+    {
+      "name": "Tattoo",
+      "traits": [
+        { "name": "Empty", "colors": 0, "rarity": "common", "tags": [] }
+      ]
+    },
+    {
+      "name": "Eyebrows",
+      "traits": [
+        { "name": "Empty", "colors": 0, "rarity": "common", "tags": [] },
+        { "name": "Normal", "colors": 0, "rarity": "common", "tags": [] }
+      ]
+    },
+    {
+      "name": "Hat",
+      "traits": [
+        { "name": "Empty", "colors": 0, "rarity": "common", "tags": [] }
+      ]
+    },
+    {
+      "name": "Eyes",
+      "traits": [
+        { "name": "Empty", "colors": 0, "rarity": "common", "tags": [] },
+        { "name": "Almond", "colors": 1, "rarity": "common", "tags": [] },
+        { "name": "HoodedEyes", "colors": 1, "rarity": "common", "tags": [] }
+      ]
+    },
+    {
+      "name": "Face Sticker",
+      "traits": [
+        { "name": "Empty", "colors": 0, "rarity": "common", "tags": [] }
+      ]
+    },
+    {
+      "name": "Piercing",
+      "traits": [
+        { "name": "Empty", "colors": 0, "rarity": "common", "tags": [] }
+      ]
+    },
+    {
+      "name": "Mouth",
+      "traits": [
+        { "name": "Empty", "colors": 0, "rarity": "common", "tags": [] },
+        { "name": "Pout", "colors": 1, "rarity": "common", "tags": [] }
+      ]
+    },
+    {
+      "name": "Hair Style",
+      "traits": [
+        {
+          "name": "Empty",
+          "colors": 0,
+          "rarity": "common",
+          "parts": 1,
+          "tags": []
+        },
+        {
+          "name": "Short Dreads",
+          "colors": 1,
+          "rarity": "Common",
+          "parts": 1,
+          "tags": []
+        },
+        {
+          "name": "Flat Pony",
+          "colors": 2,
+          "rarity": "Common",
+          "parts": 2,
+          "tags": []
+        },
+        {
+          "name": "Bob with Bangs",
+          "colors": 1,
+          "rarity": "Common",
+          "parts": 1,
+          "tags": []
+        }
+      ]
+    },
+    {
+      "name": "Accessory",
+      "traits": [
+        { "name": "Empty", "colors": 0, "rarity": "common", "tags": [] }
+      ]
+    },
+    {
+      "name": "Outfit",
+      "traits": [
+        { "name": "Empty", "colors": 0, "rarity": "common", "tags": [] },
+        { "name": "Basic Tee", "colors": 1, "rarity": "Common", "tags": [] },
+        { "name": "Basic Tube", "colors": 1, "rarity": "Common", "tags": [] },
+        { "name": "Basic Tank", "colors": 1, "rarity": "Common", "tags": [] }
+      ]
+    },
+    {
+      "name": "Bodysuit",
+      "traits": [
+        { "name": "Empty", "colors": 0, "rarity": "common", "tags": [] }
+      ]
+    },
+    {
+      "name": "Hand",
+      "traits": [
+        { "name": "Empty", "colors": 0, "rarity": "common", "tags": [] }
+      ]
+    },
+    {
+      "name": "Undergarment",
+      "traits": [
+        { "name": "Empty", "colors": 0, "rarity": "common", "tags": [] },
+        { "name": "Frilly Bra", "colors": 1, "rarity": "common", "tags": [] }
+      ]
+    },
+    {
+      "name": "Frame",
+      "traits": [
+        { "name": "Empty", "colors": 0, "rarity": "common", "tags": [] }
+      ]
+    },
+    {
+      "name": "Dye",
+      "traits": [
+        {
+          "name": "HunnysPurple1",
+          "colors": 0,
+          "rarity": "Common",
+          "tags": []
+        },
+        {
+          "name": "HunnysPurple2",
+          "colors": 0,
+          "rarity": "Common",
+          "tags": []
+        },
+        {
+          "name": "HunnysPurple3",
+          "colors": 0,
+          "rarity": "Common",
+          "tags": []
+        },
+        {
+          "name": "HunnysPurple4",
+          "colors": 0,
+          "rarity": "Common",
+          "tags": []
+        },
+        {
+          "name": "HunnysPurple5",
+          "colors": 0,
+          "rarity": "Common",
+          "tags": []
+        },
+        {
+          "name": "HunnysPurple6",
+          "colors": 0,
+          "rarity": "Common",
+          "tags": []
+        },
+        {
+          "name": "HunnysYellow1",
+          "colors": 0,
+          "rarity": "Common",
+          "tags": []
+        },
+        {
+          "name": "HunnysYellow2",
+          "colors": 0,
+          "rarity": "Common",
+          "tags": []
+        },
+        {
+          "name": "HunnysYellow3",
+          "colors": 0,
+          "rarity": "Common",
+          "tags": []
+        },
+        {
+          "name": "HunnysYellow4",
+          "colors": 0,
+          "rarity": "Common",
+          "tags": []
+        },
+        {
+          "name": "HunnysYellow5",
+          "colors": 0,
+          "rarity": "Common",
+          "tags": []
+        },
+        {
+          "name": "HunnysYellow6",
+          "colors": 0,
+          "rarity": "Common",
+          "tags": []
+        }
+      ]
+    }
+  ]
+}
