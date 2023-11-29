@@ -14,6 +14,7 @@ import { publicProvider } from 'wagmi/providers/public';
 import { alchemyProvider } from "wagmi/providers/alchemy";
 import { useState, useEffect } from "react";
 import { useRouter } from 'next/router';
+import { Analytics } from '@vercel/analytics/react';
 
 // Declare gtag for TypeScript
 declare global {
@@ -102,6 +103,7 @@ function MyApp({ Component, pageProps }: AppProps) {
       <RainbowKitProvider chains={chains}>
         <App />
         {/* <Component {...pageProps} */}
+        <Analytics />
       </RainbowKitProvider>
     </WagmiConfig>
   );
