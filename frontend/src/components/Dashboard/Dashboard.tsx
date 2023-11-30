@@ -312,9 +312,9 @@ export default function Dashboard({ rewardStatus }: DashboardProps) {
               </div>
               <div className="text-xl" style={{wordWrap: 'break-word',
     whiteSpace: 'break-spaces'}}>
-                You're off to a great start, Bunny! Once you hold at least <span className="text-hunnys-yellow">THREE</span> Hunnys 10k NFTs in your wallet,
+                You&apos;re off to a great start, Bunny! Once you hold at least <span className="text-hunnys-yellow">THREE</span> Hunnys 10k NFTs in your wallet,
         you automatically double your monthly Hunnys Seasons rewards. <br /> <br />
-        That means TWICE as much content for FREE in Hunnys Closet - every single month! Here's how it works...
+        That means TWICE as much content for FREE in Hunnys Closet - every single month! Here&apos;s how it works...
               </div>
             </div>
           </div>
@@ -380,9 +380,9 @@ export default function Dashboard({ rewardStatus }: DashboardProps) {
               </div>
               <div className="text-xl" style={{wordWrap: 'break-word',
     whiteSpace: 'break-spaces'}}>
-                Way to go, Bunny Knight! You're earning double the monthly Hunnys Seasons rewards. <br /><br />
+                Way to go, Bunny Knight! You&apos;re earning double the monthly Hunnys Seasons rewards. <br /><br />
                 Did you know that being a Bunny Knight means you receive <span className="text-hunnys-yellow">TWO</span> free Hunnys Seasons rewards, delivered to you for free, every single month? <br /><br />
-                Once you've collected at least <span className="text-hunnys-yellow">SEVEN</span> Hunnys 10k tokens, we'll be calling you Bunny Duke! <br /><br />
+                Once you&apos;ve collected at least <span className="text-hunnys-yellow">SEVEN</span> Hunnys 10k tokens, we&apos;ll be calling you Bunny Duke! <br /><br />
                 Here are some types of Hunnys you might be interested in to get you there!
               </div>
             </div>
@@ -446,8 +446,8 @@ export default function Dashboard({ rewardStatus }: DashboardProps) {
     whiteSpace: 'break-spaces'}}>
                 It greatly pleases the Queen to have you in her presence, Bunny Duke! <br /><br />
                 Did you know that being a Bunny Duke means you receive <span className="text-hunnys-yellow">THREE</span> free Hunnys Seasons rewards, delivered to you for free, every single month? <br /><br />
-                You're almost at the highest tier of Monthly Rewards; a Royal Bunny. <br /><br />
-                Ready to receive your crown? As soon as you've collected at least 12 Hunnys 10k tokens, check back here - we'll be ready to celebrate your Royal status! <br/> <br/>
+                You&apos;re almost at the highest tier of Monthly Rewards; a Royal Bunny. <br /><br />
+                Ready to receive your crown? As soon as you&apos;ve collected at least 12 Hunnys 10k tokens, check back here - we&apos;ll be ready to celebrate your Royal status! <br/> <br/>
                 Here are some you might like:
               </div>
             </div>
@@ -503,7 +503,7 @@ export default function Dashboard({ rewardStatus }: DashboardProps) {
                 <Image width={600} height={600} src={crown} alt="crown" className=" p-3" />
                 <div className="flex items-flex">
                   <div className="ml-2 text-5xl font-title ">
-                    OMG, YOU'RE A <span className="text-hunnys-yellow">ROYAL BUNNY!</span>
+                    OMG, YOU&apos;RE A <span className="text-hunnys-yellow">ROYAL BUNNY!</span>
                   </div>
                 </div>
               </div>
@@ -511,7 +511,7 @@ export default function Dashboard({ rewardStatus }: DashboardProps) {
     whiteSpace: 'break-spaces'}}>
                 What an honor for us to have such royalty join us in the Hunnys Closet! <br /><br />
                 Did you know that being a Royal Bunny means you receive <span className="text-hunnys-yellow">FOUR</span> free Hunnys Seasons rewards, delivered to you for free, every single month? <br /><br />
-                But don't let us stop you; there are still HUNDREDS of different traits out there to collect. <br /><br />
+                But don&apos;t let us stop you; there are still HUNDREDS of different traits out there to collect. <br /><br />
                 Every Hunny you own unlocks ALL of its traits for unlimited use in Hunnys Closet. <br /><br />
                 Here are some you might like: 
               </div>

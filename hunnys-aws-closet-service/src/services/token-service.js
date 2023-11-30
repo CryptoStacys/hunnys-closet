@@ -25,6 +25,7 @@ const TokenService = {
     },
 
     getCollectionData: async function (collection) {
+        try {
         let result = {};
         let configTokenData = await this.loadConfig(`src/configs/${collection.config.tokenConfigPath}`);
         let configTraitsData = await this.loadConfig(`src/configs/${collection.config.traitsConfigPath}`);
@@ -50,6 +51,9 @@ const TokenService = {
             default:
                 // Handle default case or unknown originID
                 break;
+        }} catch (error) {
+            console.error("Error in getCollectionData:", error);
+            // Handle the error appropriately
         }
 
         return result;

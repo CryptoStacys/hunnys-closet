@@ -82,26 +82,26 @@ export default function Nav({ rewardStatus }: NavProps) {
   }}>
     {rewardStatus === "Bunny" && (
       <>
-        You're off to a great start, Bunny! Once you hold at least 3 Hunnys 10k NFTs in your wallet,
+        You&apos;re off to a great start, Bunny! Once you hold at least 3 Hunnys 10k NFTs in your wallet,
         you automatically double your monthly Hunnys Seasons rewards, which brings twice as much
         content for free to Hunnys Closet each month!
       </>
     )}
     {rewardStatus === "Bunny Knight" && (
       <>
-        Way to go, Bunny Knight! You're earning double the monthly Hunnys Seasons rewards.
-        Keep it up and once you hold 7 Hunnys 10k NFTs, you'll earn even more!
+        Way to go, Bunny Knight! You&apos;re earning double the monthly Hunnys Seasons rewards.
+        Keep it up and once you hold 7 Hunnys 10k NFTs, you&apos;ll earn even more!
       </>
     )}
     {rewardStatus === "Bunny Duke" && (
       <>
-        Impressive, Bunny Duke! You're earning triple the monthly Hunnys Seasons rewards.
-        Just a few more Hunnys 10k NFTs and you'll reach the top tier!
+        Impressive, Bunny Duke! You&apos;re earning triple the monthly Hunnys Seasons rewards.
+        Just a few more Hunnys 10k NFTs and you&apos;ll reach the top tier!
       </>
     )}
     {rewardStatus === "Royal Bunny" && (
       <>
-        Congratulations, you're a Royal Bunny! You are currently in the highest tier of rewards
+        Congratulations, you&apos;re a Royal Bunny! You are currently in the highest tier of rewards
         from holding Hunnys 10k NFTs.
       </>
     )}

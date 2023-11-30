@@ -13,6 +13,7 @@ const ImageWithFallback = (props: any) => {
         <Image
             {...rest}
             src={imgSrc}
+            alt='Base Dolly'
             className='rounded-lg absolute w-full h-full bg-white'
             onError={() => {
                 setImgSrc(fallbackSrc);
