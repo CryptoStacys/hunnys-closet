@@ -4,33 +4,14 @@ import TokenService from './token-service.js';
 
 
 const ChainService = {
-    getCollectionTokens: async function (config, wallet, infuraObj) {
-        let tokens = [];
-        let abi;
-        let infuraUrl = config.chain === "polygon" ? infuraObj.polygon : infuraObj.mainnet;
+    getCollectionTokens: function (config, wallet, infuraObj) {
+        return new Promise(async function (resolve) {
+            let tokens = [];
+            let abi;
+             // Casa Keys
+            let infuraUrl = config.chain === "polygon" ? infuraObj.polygon : infuraObj.mainnet;
+            // let infuraUrl = config.chain === "polygon" ? "https://polygon-mainnet.infura.io/v3/ca9e3d59483343c2b41780ea1c4aaa5f" : "https://mainnet.infura.io/v3/ca9e3d59483343c2b41780ea1c4aaa5f";
 
-        // Refactored logic to handle 'Either/Or' scenario for Origin IDs 7 and 8
-        if (config.originID === 7 || config.originID === 8) {
-            let tokensOrigin7 = [];
-            let tokensOrigin8 = [];
-            
-            // Check for Origin ID 7
-            if (config.originID === 7) {
-                abi = await this.loadAbi(`src/abis/hunnys-closet-shop-abi.json`);
-                tokensOrigin7 = await this.requestSeasonsContract(config.contract, wallet, abi, infuraUrl);
-                tokensOrigin7 = await this.arregateMetaPathToToken(tokensOrigin7, config);
-            }
-
-            // Check for Origin ID 8
-            if (config.originID === 8) {
-                abi = await this.loadAbi(`src/abis/fame-lady-society-abi.json`);
-                tokensOrigin8 = await this.requestContract(config.contract, wallet, abi, infuraUrl, config.originID);
-            }
-
-            // Combine and deduplicate tokens from both origins
-            tokens = [...new Set([...tokensOrigin7, ...tokensOrigin8])];
-        } else {
-            // Existing switch case logic for other Origin IDs
             switch (config.originID) {
                 case 1:
                  //   "name": "Hunnys 10k",
@@ -63,6 +44,17 @@ const ChainService = {
                     abi = await ChainService.loadAbi(`src/abis/hunnys-10k-all-holders-abi.json`);
                     tokens = await ChainService.requestContract(config.contract, wallet, abi, infuraUrl);
                     break;
+                case 7:
+                //  "name": "Hunnys Closet Shop",
+                    abi = await ChainService.loadAbi(`src/abis/hunnys-closet-shop-abi.json`);
+                    tokens = await ChainService.requestSeasonsContract(config.contract, wallet, abi, infuraUrl);
+                    tokens = await ChainService.arregateMetaPathToToken(tokens, config);
+                    break;
+                case 8:
+                //  "name": "Fame Lady Society",
+                    abi = await ChainService.loadAbi(`src/abis/fame-lady-society-abi.json`);
+                    tokens = await ChainService.requestContract(config.contract, wallet, abi, infuraUrl, config.originID);
+                    break;
                 default:
                     break;
             }
@@ -71,7 +63,7 @@ const ChainService = {
                 config,
                 tokens
             });
-        }
+        })
     },
     loadAbi: function (path) {
         return new Promise(function (resolve) {
