@@ -43,7 +43,7 @@ export default function App() {
 
         // CACHEBUST https://hunnys.io/verifyCloset?wallet=${address}&nocache=${new Date().getTime()}`
 
-        fetch(`https://hunnys.io/verifyCloset?wallet=${address}`)
+        fetch(`https://hunnys.io/verifyCloset?wallet=${address}&nocache=${new Date().getTime()}`)
         .then((res) => res.json())
         .then((res) => {
           res.address = address;
