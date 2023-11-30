@@ -42,16 +42,25 @@ export default function App() {
         });
 
         fetch(`https://hunnys.io/verifyCloset?wallet=${address}`)
-        .then((res) => res.json())
-        .then((res) => {
-          res.address = address;
-          console.log("Hunnys WP response:", res);
-          setRewardStatus(res.rewardStatus);
-          res.hideSaveChangesModal = false;
-          connectedSet(true);
-          userSet(res);
-          return res;
-        });
+          .then((res) => res.json())
+          .then((res) => {
+            if (res) { // Check if res is not null
+              res.address = address;
+              console.log("Hunnys WP response:", res);
+              setRewardStatus(res.rewardStatus);
+              res.hideSaveChangesModal = false;
+              connectedSet(true);
+              userSet(res);
+            } else {
+              console.error("Received null response from API");
+              // Handle null response appropriately
+            }
+            return res;
+          })
+          .catch((error) => {
+            console.error("Error fetching data:", error);
+            // Handle fetch error appropriately
+          });
 
     },
     

@@ -5,74 +5,54 @@ const TokenService = {
     loadConfig: function (path) {
         return new Promise(function (resolve) {
             fs.readFile(path, 'utf8', function (err, file) {
-                resolve(JSON.parse(file));
-              });
-        })
+                if (err) {
+                    console.error("Error reading file:", path, err);
+                    resolve({});
+                } else {
+                    resolve(JSON.parse(file));
+                }
+            });
+        });
     },
-    getAllCollectionsData: function (collections) {
-        return new Promise(async function (resolve) {
-            let result = [];
 
-            for (let i = 0; i < collections.length; i++) {
-                let data = await TokenService.getCollectionData(collections[i]);
-                result.push(data);
-            }
-
-            resolve(result);
-        })
-
+    getAllCollectionsData: async function (collections) {
+        let result = [];
+        for (let i = 0; i < collections.length; i++) {
+            let data = await this.getCollectionData(collections[i]);
+            result.push(data);
+        }
+        return result;
     },
-    getCollectionData: function (collection) {
-        return new Promise(async function (resolve) {
-            let result = [];
-            let configTokenData = await TokenService.loadConfig(`src/configs/${collection.config.tokenConfigPath}`);
-            let configTraitsData = await TokenService.loadConfig(`src/configs/${collection.config.traitsConfigPath}`);
-            let collectionConfig = await TokenService.loadConfig(`src/configs/collections-config.json`);
-            let defaultConfigTraitsData = await TokenService.loadConfig(`src/configs/${collectionConfig.defaultTraitsConfigPath}`);
 
-            collection.tokens = await TokenService.arregateTokenData(collection.config, collection.tokens);
+    getCollectionData: async function (collection) {
+        let result = {};
+        let configTokenData = await this.loadConfig(`src/configs/${collection.config.tokenConfigPath}`);
+        let configTraitsData = await this.loadConfig(`src/configs/${collection.config.traitsConfigPath}`);
+        let collectionConfig = await this.loadConfig(`src/configs/collections-config.json`);
+        let defaultConfigTraitsData = await this.loadConfig(`src/configs/${collectionConfig.defaultTraitsConfigPath}`);
 
-            switch (collection.config.originID) {
-                case 1:
-                    //   "name": "Hunnys 10k",
-                    result = TokenService.getSelectiveTraits(collection.config, collection.tokens, configTokenData, configTraitsData, defaultConfigTraitsData);
-                    break;
-                case 2:
-                    //  "name": "Hunnys OG",
-                    result = TokenService.getAllTraits(collection.config, collection.tokens, configTokenData, configTraitsData);
-                    break;
-                case 3:
-                    //    "name": "Hunnys Seasonal",
-                    result = TokenService.getSelectiveTraits(collection.config, collection.tokens, configTokenData, configTraitsData, defaultConfigTraitsData);
-                    break;
-                case 4:
-                    //    "name": "Hunnys Merch Shop (NOT IN USE!)",
-                    let filteredTokens = TokenService.filterShopTokens(collection.tokens, configTokenData);
-                    result = TokenService.getSelectiveTraits(collection.config, filteredTokens, configTokenData, configTraitsData, defaultConfigTraitsData);
-                    break;
-                case 5:
-                    // "name": "Hunnys Stacys",
-                    result = TokenService.getAllTraits(collection.config, collection.tokens, configTokenData, configTraitsData);
-                    break;
-                case 6:
-                    //   "name": "Hunnys 10k All Holders",
-                    result = TokenService.getAllTraits(collection.config, collection.tokens, configTokenData, configTraitsData);
-                    break;
-                case 7:
-                    //  "name": "Hunnys Closet Shop",
-                    result = TokenService.getSelectiveTraits(collection.config, collection.tokens, configTokenData, configTraitsData, defaultConfigTraitsData);
-                    break;
-                case 8:
-                    //   "name": "Fame Lady Society",
-                    result = TokenService.getAllTraits(collection.config, collection.tokens, configTokenData, configTraitsData);
-                    break;
-                default:
-                    break;
-            }
+        collection.tokens = await this.aggregateTokenData(collection.config, collection.tokens);
 
-            resolve(result);
-        })
+        switch (collection.config.originID) {
+            case 1: // "Hunnys 10k"
+            case 3: // "Hunnys Seasonal"
+            case 4: // "Hunnys Merch Shop (NOT IN USE!)"
+            case 7: // "Hunnys Closet Shop"
+                let filteredTokens = (collection.config.originID === 4) ? this.filterShopTokens(collection.tokens, configTokenData) : collection.tokens;
+                result = this.getSelectiveTraits(collection.config, filteredTokens, configTokenData, configTraitsData, defaultConfigTraitsData);
+                break;
+            case 2: // "Hunnys OG"
+            case 5: // "Hunnys Stacys"
+            case 6: // "Hunnys 10k All Holders"
+            case 8: // "Fame Lady Society"
+                result = this.getAllTraits(collection.config, collection.tokens, configTokenData, configTraitsData);
+                break;
+            default:
+                // Handle default case or unknown originID
+                break;
+        }
 
+        return result;
     },
     getSelectiveTraits: function (config, data, configTokenData, configTraitsData, defaultConfigTraitsData) {
         let result = {

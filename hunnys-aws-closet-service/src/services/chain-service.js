@@ -5,11 +5,11 @@ import TokenService from './token-service.js';
 
 const ChainService = {
     getCollectionTokens: function (config, wallet, infuraObj) {
-        return new Promise(async function (resolve) {
-            let tokens = [];
-            let abi;
-             // Casa Keys
-            let infuraUrl = config.chain === "polygon" ? infuraObj.polygon : infuraObj.mainnet;
+        return new Promise(async (resolve, reject) => {
+            try {
+                let tokens = [];
+                let abi;
+                let infuraUrl = config.chain === "polygon" ? infuraObj.polygon : infuraObj.mainnet;
             // let infuraUrl = config.chain === "polygon" ? "https://polygon-mainnet.infura.io/v3/ca9e3d59483343c2b41780ea1c4aaa5f" : "https://mainnet.infura.io/v3/ca9e3d59483343c2b41780ea1c4aaa5f";
 
             switch (config.originID) {
@@ -59,12 +59,17 @@ const ChainService = {
                     break;
             }
 
+            // After processing, resolve the promise with the result
             resolve({
                 config,
                 tokens
             });
-        })
-    },
+        } catch (error) {
+            // If there's an error, reject the promise
+            reject(error);
+        }
+    });
+},
     loadAbi: function (path) {
         return new Promise(function (resolve) {
             fs.readFile(path, 'utf8', function (err, file) {
