@@ -22,19 +22,20 @@ const ContractService = {
     getOwnedTokens: function (wallet, infuraObj) {
         return new Promise(async function (resolve) {
             let collectionConfig = await TokenService.loadConfig(`src/configs/collections-config.json`);
+            console.log("Collection Config:", collectionConfig); // Debugging
             // collection Data
             let allTokens = await ContractService.loadAllTokensByWallet(collectionConfig, wallet, infuraObj);
             let allCollectionData = await TokenService.getAllCollectionsData(allTokens);
-
+    
             // default Data
             let defaultData = await TokenService.getDefaultData(collectionConfig);
             allCollectionData.push(defaultData);
-
+    
             // dolly data
             let dollysData = await ContractService.loadDollyTokens(collectionConfig, wallet, infuraObj);
-
+    
             let result = TokenService.arregateResponse(allCollectionData, dollysData);
-
+    
             resolve(result);
         })
     },

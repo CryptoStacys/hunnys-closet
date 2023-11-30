@@ -31,9 +31,9 @@ const TokenService = {
     },
 
     getCollectionData: async function (collection) {
-        let result = {};  // Initialize result
+        let result = {};
         try {
-            console.log("Collection passed to getCollectionData:", collection);
+            console.log("Collection object passed to getCollectionData:", collection); // Debugging
         let result = {};
         let configTokenData = await this.loadConfig(`src/configs/${collection.config.tokenConfigPath}`);
         let configTraitsData = await this.loadConfig(`src/configs/${collection.config.traitsConfigPath}`);
@@ -62,7 +62,7 @@ const TokenService = {
         }} catch (error) {
             console.error("Error in getCollectionData:", error);
         }
-        return result;  // Moved this inside the method scope
+        return result;
     },
     getSelectiveTraits: function (config, data, configTokenData, configTraitsData, defaultConfigTraitsData) {
         let result = {
@@ -281,29 +281,33 @@ return result;
             result.dollys.push(dollys[m][0]);
         }
     
-        for (let i = 0; i < collectionData.length; i++) {
-    
-            // tokens
+        // Loop through each collectionData item
+    for (let i = 0; i < collectionData.length; i++) {
+        // Check if 'tokens' exists in the current collectionData item
+        if (collectionData[i].tokens) {  
+            // Process tokens
             for (let j = 0; j < collectionData[i].tokens.length; j++) {
                 result.tokens.push(collectionData[i].tokens[j]);
             }
     
-            // traits
+            // Process traits
             for (let k = 0; k < collectionData[i].traits.length; k++) {
                 result.traits.push(collectionData[i].traits[k]);
     
-                if(collectionData[i].traits[k].attribute === 'Skin') {
+                if (collectionData[i].traits[k].attribute === 'Skin') {
                     result.skin_colors.push(collectionData[i].traits[k].name);
                 }
             }
     
-            // colors
+            // Process colors
             for (let o = 0; o < collectionData[i].colors.length; o++) {
                 result.colors.push(collectionData[i].colors[o]);
             }
-        }
+        } // Closing bracket for the if check
+    }
     
-        result.colors = [...new Set(result.colors)];
+    // Further processing and return
+    result.colors = [...new Set(result.colors)];
     
         // Determine Hunnys count
         let hunnysCount = result.tokens.filter(token => token.origin_id === 1).length;

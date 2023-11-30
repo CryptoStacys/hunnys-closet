@@ -123,6 +123,7 @@ const ChainService = {
         let tokens = new Set();
         try {
             const contractConfigs = await TokenService.loadConfig(configDirPath);
+            console.log("Contract Configs:", contractConfigs, "Is Array:", Array.isArray(contractConfigs)); // Debugging
             for (const config of contractConfigs) {
                 const infuraUrl = config.chain === "polygon" ? infuraObj.polygon : infuraObj.mainnet;
                 const abi = await this.loadAbi(`src/abis/${config.abiFile}`);
