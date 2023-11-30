@@ -2,181 +2,147 @@ import Web3 from "web3";
 import fs from "fs";
 import TokenService from './token-service.js';
 
-
 const ChainService = {
-    getCollectionTokens: function (config, wallet, infuraObj) {
-        return new Promise(async (resolve, reject) => {
-            try {
-                let tokens = [];
-                let abi;
-                let infuraUrl = config.chain === "polygon" ? infuraObj.polygon : infuraObj.mainnet;
-            // let infuraUrl = config.chain === "polygon" ? "https://polygon-mainnet.infura.io/v3/ca9e3d59483343c2b41780ea1c4aaa5f" : "https://mainnet.infura.io/v3/ca9e3d59483343c2b41780ea1c4aaa5f";
-
-            switch (config.originID) {
-                case 1:
-                 //   "name": "Hunnys 10k",
-                    abi = await ChainService.loadAbi(`src/abis/hunnys-10k-abi.json`);
-                    tokens = await ChainService.requestContract(config.contract, wallet, abi, infuraUrl);
-                    break;
-                case 2:
-                //  "name": "Hunnys OG",
-                    abi = await ChainService.loadAbi(`src/abis/hunnys-ogs-abi.json`);
-                    tokens = await ChainService.requestContract(config.contract, wallet, abi, infuraUrl);
-                    break;
-                case 3:
-                //    "name": "Hunnys Seasonal",
-                    abi = await ChainService.loadAbi(`src/abis/hunnys-seasons-abi.json`);
-                    tokens = await ChainService.requestSeasonsContract(config.contract, wallet, abi, infuraUrl);
-                    tokens = await ChainService.arregateMetaPathToToken(tokens, config);
-                    break;
-                case 4:
-                //    "name": "Hunnys Merch Shop (NOT IN USE)",
-                    abi = await ChainService.loadAbi(`src/abis/hunnys-shop-abi.json`);
-                    tokens = await ChainService.requestShopContract(config.contract, wallet, abi, infuraUrl);
-                    break;
-                case 5:
-                    // "name": "Hunnys Stacys",
-                    abi = await ChainService.loadAbi(`src/abis/hunnys-stacys-abi.json`);
-                    tokens = await ChainService.requestContract(config.contract, wallet, abi, infuraUrl);
-                    break;
-                case 6:
-                //   "name": "Hunnys 10k All Holders",
-                    abi = await ChainService.loadAbi(`src/abis/hunnys-10k-all-holders-abi.json`);
-                    tokens = await ChainService.requestContract(config.contract, wallet, abi, infuraUrl);
-                    break;
-                case 7:
-                //  "name": "Hunnys Closet Shop",
-                    abi = await ChainService.loadAbi(`src/abis/hunnys-closet-shop-abi.json`);
-                    tokens = await ChainService.requestSeasonsContract(config.contract, wallet, abi, infuraUrl);
-                    tokens = await ChainService.arregateMetaPathToToken(tokens, config);
-                    break;
-                case 8:
-                //  "name": "Fame Lady Society",
-                    abi = await ChainService.loadAbi(`src/abis/fame-lady-society-abi.json`);
-                    tokens = await ChainService.requestContract(config.contract, wallet, abi, infuraUrl, config.originID);
-                    break;
-                default:
-                    break;
-            }
-
-            // After processing, resolve the promise with the result
-            resolve({
-                config,
-                tokens
-            });
-        } catch (error) {
-            // If there's an error, reject the promise
-            reject(error);
-        }
-    });
-},
+    // Load ABI from a file
     loadAbi: function (path) {
-        return new Promise(function (resolve) {
-            fs.readFile(path, 'utf8', function (err, file) {
-                resolve(JSON.parse(file));
-            });
-        })
-    },
-    requestContract: function (contractAddr, wallet, abi, infuraUrl, originID) {
-        return new Promise(async resolve => {
-            let web3 = new Web3(infuraUrl);
-            let contract = new web3.eth.Contract(abi, contractAddr);
-            let tokens;
-    
-            if (originID === 8) { // Assuming 8 is the originID for Fame Lady Society
-                let balance = await contract.methods.balanceOf(wallet).call();
-                tokens = balance > 0 ? [1] : []; // If balance is more than 0, return [1] to indicate ownership, else empty array
-                console.log(`OriginID 8 Token Check - Wallet: ${wallet}, Balance: ${balance}, Tokens: ${tokens}`);
-            } else {
-                tokens = await contract.methods.tokensOfOwner(wallet).call();
-            }
-    
-            resolve(tokens);
-        })
-    },
-        
-    requestSeasonsContract: function (contractAddr, wallet, abi, infuraUrl) {
-        return new Promise(async resolve => {
-            let tempResult = [];
-            let result = [];
-            let walletArray = [];
-            let ids = [];
-
-            let web3 = new Web3(infuraUrl);
-            let contract = new web3.eth.Contract(abi, contractAddr);
-
-            for (let i = 0; i < 200; i++) {
-                walletArray.push(wallet);
-                ids.push(i);
-            }
-
-            let tokens = await contract.methods.balanceOfBatch(walletArray, ids).call();
-
-            for (let i = 0; i < tokens.length; i++) {
-                if (parseInt(tokens[i]) > 0) {
-                    tempResult.push(i);
-                }
-            }
-
-            // let urlPromises = [];
-            // for (let i = 0; i < tempResult.length; i++) {
-            //     urlPromises.push(ChainService.getTokenUrl(contract, tempResult[i]));
-                
-            // }
-
-            // result = await Promise.all(urlPromises);
-
-            resolve(tempResult);
-        })
-    },
-    getTokenUrl: function (contract, id) {
-        return new Promise(async resolve => {
-            let data = await contract.methods.uri(id).call();
-            resolve({
-                id,
-                tokenUrl: data
+        return new Promise((resolve, reject) => {
+            fs.readFile(path, 'utf8', (err, file) => {
+                if (err) reject(err);
+                else resolve(JSON.parse(file));
             });
         });
     },
-    requestShopContract: function (contractAddr, wallet, abi, infuraUrl) {
-        return new Promise(async resolve => {
-            let result = [];
 
-            let web3 = new Web3(infuraUrl);
-            let contract = new web3.eth.Contract(abi, contractAddr);
-
-            let tokens = await contract.methods.tokensOfOwner(wallet).call();
-
-            let urlPromises = [];
-            for (let i = 0; i < tokens.length; i++) {
-                urlPromises.push(ChainService.getTokenUrl(contract, tokens[i]));
-                
+    // Request tokens owned by a wallet for a given contract
+    requestContract: function (contractAddr, wallet, abi, infuraUrl) {
+        return new Promise(async (resolve, reject) => {
+            try {
+                const web3 = new Web3(infuraUrl);
+                const contract = new web3.eth.Contract(abi, contractAddr);
+                const tokens = await contract.methods.tokensOfOwner(wallet).call();
+                resolve(tokens);
+            } catch (error) {
+                reject(error);
             }
-
-            result = await Promise.all(urlPromises);
-
-            resolve(result);
-        })
+        });
     },
-    arregateMetaPathToToken: function(tokens, config){
-        return new Promise(async resolve => {
-            let result = [];
-            let tokenData = await TokenService.loadConfig(`src/configs/${config.tokenConfigPath}`);
 
-            for (let i = 0; i < tokens.length; i++) {
-                let match = tokenData.find((ele) => { return ele.tokenId === tokens[i]});
-                if(match) {
-                    result.push({
-                        id: tokens[i],
-                        tokenUrl: match.metaPath
-                    });
+    // Request tokens for contracts that use balanceOfBatch (e.g., seasons contracts)
+    requestSeasonsContract: function (contractAddr, wallet, abi, infuraUrl) {
+        return new Promise(async (resolve, reject) => {
+            try {
+                let tempResult = [];
+                let walletArray = [];
+                let ids = [];
+
+                const web3 = new Web3(infuraUrl);
+                const contract = new web3.eth.Contract(abi, contractAddr);
+
+                for (let i = 0; i < 200; i++) {
+                    walletArray.push(wallet);
+                    ids.push(i);
                 }
+
+                let tokens = await contract.methods.balanceOfBatch(walletArray, ids).call();
+
+                for (let i = 0; i < tokens.length; i++) {
+                    if (parseInt(tokens[i]) > 0) {
+                        tempResult.push(i);
+                    }
+                }
+
+                resolve(tempResult);
+            } catch (error) {
+                reject(error);
             }
+        });
+    },
 
-            resolve(result);
-        })
+    // Get URL for a specific token
+    getTokenUrl: function (contract, id) {
+        return new Promise(async (resolve, reject) => {
+            try {
+                let data = await contract.methods.uri(id).call();
+                resolve({
+                    id,
+                    tokenUrl: data
+                });
+            } catch (error) {
+                reject(error);
+            }
+        });
+    },
+
+    // Request tokens for shop-like contracts
+    requestShopContract: function (contractAddr, wallet, abi, infuraUrl) {
+        return new Promise(async (resolve, reject) => {
+            try {
+                let result = [];
+
+                const web3 = new Web3(infuraUrl);
+                const contract = new web3.eth.Contract(abi, contractAddr);
+
+                let tokens = await contract.methods.tokensOfOwner(wallet).call();
+
+                let urlPromises = tokens.map(tokenId => this.getTokenUrl(contract, tokenId));
+                result = await Promise.all(urlPromises);
+
+                resolve(result);
+            } catch (error) {
+                reject(error);
+            }
+        });
+    },
+
+    // Aggregate metadata path to tokens
+    arregateMetaPathToToken: function(tokens, config){
+        return new Promise(async (resolve, reject) => {
+            try {
+                let result = [];
+                let tokenData = await TokenService.loadConfig(`src/configs/${config.tokenConfigPath}`);
+
+                for (let i = 0; i < tokens.length; i++) {
+                    let match = tokenData.find((ele) => ele.tokenId === tokens[i]);
+                    if(match) {
+                        result.push({
+                            id: tokens[i],
+                            tokenUrl: match.metaPath
+                        });
+                    }
+                }
+
+                resolve(result);
+            } catch (error) {
+                reject(error);
+            }
+        });
+    },
+
+    // Unified method to get all tokens owned by a wallet from multiple contracts
+    getCollectionTokens: async function (configDirPath, wallet, infuraObj) {
+        let tokens = new Set();
+        try {
+            const contractConfigs = await TokenService.loadConfig(configDirPath);
+            for (const config of contractConfigs) {
+                const infuraUrl = config.chain === "polygon" ? infuraObj.polygon : infuraObj.mainnet;
+                const abi = await this.loadAbi(`src/abis/${config.abiFile}`);
+                let contractTokens = [];
+
+                if (config.type === 'seasons') {
+                    contractTokens = await this.requestSeasonsContract(config.contract, wallet, abi, infuraUrl);
+                } else if (config.type === 'shop') {
+                    contractTokens = await this.requestShopContract(config.contract, wallet, abi, infuraUrl);
+                } else {
+                    contractTokens = await this.requestContract(config.contract, wallet, abi, infuraUrl);
+                }
+
+                contractTokens.forEach(token => tokens.add(token));
+            }
+        } catch (error) {
+            console.error("Error in getCollectionTokens: ", error);
+        }
+        return Array.from(tokens);
     }
-
 };
 
 export default ChainService;
