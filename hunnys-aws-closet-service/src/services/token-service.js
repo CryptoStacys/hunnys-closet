@@ -16,6 +16,7 @@ const TokenService = {
     },
 
     getAllCollectionsData: async function (collections) {
+        console.log("Collections passed to getAllCollectionsData:", collections);
         let result = [];
         for (let i = 0; i < collections.length; i++) {
             let data = await this.getCollectionData(collections[i]);
@@ -26,6 +27,7 @@ const TokenService = {
 
     getCollectionData: async function (collection) {
         try {
+            console.log("Collection passed to getCollectionData:", collection);
         let result = {};
         let configTokenData = await this.loadConfig(`src/configs/${collection.config.tokenConfigPath}`);
         let configTraitsData = await this.loadConfig(`src/configs/${collection.config.traitsConfigPath}`);
@@ -53,7 +55,6 @@ const TokenService = {
                 break;
         }} catch (error) {
             console.error("Error in getCollectionData:", error);
-            // Handle the error appropriately
         }
 
         return result;
