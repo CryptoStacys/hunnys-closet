@@ -99,6 +99,7 @@ const ChainService = {
         return new Promise(async (resolve, reject) => {
             try {
                 let result = [];
+                console.log(`CHAINSERVICE 102 Loading token data from: src/configs/${config.tokenConfigPath}`);
                 let tokenData = await TokenService.loadConfig(`src/configs/${config.tokenConfigPath}`);
 
                 for (let i = 0; i < tokens.length; i++) {

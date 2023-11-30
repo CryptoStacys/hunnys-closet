@@ -7,6 +7,7 @@ import ApiService from "./api-service.js";
 const CheckDollysService = {
     getTokensWithOwner: function (infuraObj) {
         return new Promise(async function (resolve) {
+            console.log("CHECKDOLLYSERVICE10 Loading collection config from: src/configs/collections-config.json");
             let collectionConfig = await TokenService.loadConfig(`src/configs/collections-config.json`);
             let abi = await ChainService.loadAbi(`src/abis/hunnys-dollys-abi.json`);
 

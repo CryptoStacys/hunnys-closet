@@ -35,9 +35,13 @@ const TokenService = {
         try {
             console.log("Collection object passed to getCollectionData:", collection); // Debugging
         let result = {};
+        console.log(`TOKENSERVICE38 Loading config token data from: src/configs/${collection.config.tokenConfigPath}`);
         let configTokenData = await this.loadConfig(`src/configs/${collection.config.tokenConfigPath}`);
+        console.log(`TOKENSERVICE40 Loading config token data from: src/configs/${collection.config.traitsConfigPath}`);
         let configTraitsData = await this.loadConfig(`src/configs/${collection.config.traitsConfigPath}`);
+        console.log(`TOKENSERVICE42 Loading config token data from: src/configs/collections-config.json`);
         let collectionConfig = await this.loadConfig(`src/configs/collections-config.json`);
+        console.log(`TOKENSERVICE44 Loading config token data from: src/configs/${collectionConfig.defaultTraitsConfigPath}`);
         let defaultConfigTraitsData = await this.loadConfig(`src/configs/${collectionConfig.defaultTraitsConfigPath}`);
 
         collection.tokens = await this.aggregateTokenData(collection.config, collection.tokens);
@@ -191,6 +195,7 @@ return result;
     },
     getDefaultData: function (collectionConfig) {
         return new Promise(async function (resolve) {
+            console.log(`TOKENSERVICE198 Loading config token data from: src/configs/${collectionConfig.defaultTraitsConfigPath}`);
             let configTraitsData = await TokenService.loadConfig(`src/configs/${collectionConfig.defaultTraitsConfigPath}`);
 
             let result = {
@@ -484,7 +489,9 @@ return result;
     getAllCollectionData: function (collection) {
         return new Promise(async function (resolve) {
             let result = [];
+            console.log(`TOKENSERVICE492 Loading config token data from: src/configs/${collection.tokenConfigPath}`);
             let configTokenData = await TokenService.loadConfig(`src/configs/${collection.tokenConfigPath}`);
+            console.log(`TOKENSERVICE494 Loading config token data from: src/configs/${collection.traitsConfigPath}`);
             let configTraitsData = await TokenService.loadConfig(`src/configs/${collection.traitsConfigPath}`);
 
             switch (collection.originID) {

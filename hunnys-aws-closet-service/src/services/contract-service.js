@@ -6,6 +6,7 @@ import TokenService from './token-service.js';
 const ContractService = {
     getAllTraitData: function () {
         return new Promise(async function (resolve) {
+            console.log("CONTRACTSERVICE9 Loading collection config from: src/configs/collections-config.json");
             let collectionConfig = await TokenService.loadConfig(`src/configs/collections-config.json`);
             // collection Data
             let allCollectionData = await TokenService.getAllData(collectionConfig.collections);
@@ -21,6 +22,7 @@ const ContractService = {
     },
     getOwnedTokens: function (wallet, infuraObj) {
         return new Promise(async function (resolve) {
+            console.log("CONTRACTSERVICE25 Loading collection config from: src/configs/collections-config.json");
             let collectionConfig = await TokenService.loadConfig(`src/configs/collections-config.json`);
             console.log("Collection Config:", collectionConfig); // Debugging
             // collection Data

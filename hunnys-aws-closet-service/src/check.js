@@ -126,8 +126,9 @@ const CheckController = {
                 token_id: tokenId,
                 attributes: []
             };
-
+            console.log("CHECKJS 129 Loading collection config from: src/configs/collections-config.json");
             let collectionConfig = await TokenService.loadConfig(`src/configs/collections-config.json`);
+            console.log("CHECKJS 131 Loading collection config from: src/configs/${collectionConfig.defaultTraitsConfigPath}");
             let defaultTraitsData = await TokenService.loadConfig(`src/configs/${collectionConfig.defaultTraitsConfigPath}`);
             let rightLayerOrder = collectionConfig.layer_order.sort((a,b) => a.layerId - b.layerId);
 
