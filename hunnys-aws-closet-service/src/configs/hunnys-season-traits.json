@@ -35,8 +35,8 @@
         { "name": "Neon Cacti","colors": 0,"rarity": "Epic","tags": [], "token_id": 166},
         { "name": "Blue Barbs","colors": 0,"rarity": "Relic","tags": [], "token_id": 164},
         { "name": "Black Barbs","colors": 0,"rarity": "Common","tags": [], "token_id": 168},
-        { "name": "Diode Chart","colors": 1,"rarity": "Rare","tags": [], "token_id": 165},
-        { "name": "Nax Flames","colors": 1,"rarity": "Legendary","tags": [], "token_id": 167}
+        { "name": "Diode Chart","colors": 2,"rarity": "Rare","tags": [], "token_id": 165},
+        { "name": "Nax Flames","colors": 2,"rarity": "Legendary","tags": [], "token_id": 167}
       ]
     },
     {
@@ -262,8 +262,8 @@
         { "name": "Sabre Tooth Earring", "colors": 2, "rarity": "Epic", "tags": ["earrings"], "token_id": 156 },
         { "name": "PebblePuff", "colors": 3, "rarity": "Epic", "tags": ["companion"], "token_id": 156 },
         { "name": "Friendly Snorball", "colors": 3, "rarity": "Legendary", "tags": ["companion"], "token_id": 157 },
-        { "name": "Tag Hoop","colors": 3,"rarity": "Rare","tags": [], "token_id": 165},
-        { "name": "Squiggle Gem","colors": 2,"rarity": "Legendary","tags": [], "token_id": 167}
+        { "name": "Tag Hoop","colors": 3,"rarity": "Rare","tags": ["earrings"], "token_id": 165},
+        { "name": "Squiggle Gem","colors": 2,"rarity": "Legendary","tags": ["earrings"], "token_id": 167}
       ]
     },
     {
@@ -350,9 +350,9 @@
         { "name": "Bunny Kingdom Lore V2", "colors": 4, "rarity": "Common", "tags": ["skin"], "token_id": 153 },
         { "name": "Baby Bubble Bear", "colors": 2, "rarity": "Rare", "tags": ["skin"], "token_id": 156 },
         { "name": "Sheep Moth Luna", "colors": 4, "rarity": "Legendary", "tags": ["skin"], "token_id": 163 },
-        { "name": "Microphone","colors": 4,"rarity": "Epic","tags": ["skin"], "token_id": 166},
-        { "name": "Fancy Car Key","colors": 4,"rarity": "Relic","tags": [], "token_id": 168},
-        { "name": "HerStory Book","colors": 3,"rarity": "Common","tags": [], "token_id": 164}
+        { "name": "HerStory Book","colors": 3,"rarity": "Common","tags": ["skin"], "token_id": 164},
+        { "name": "Microphone","colors": 3,"rarity": "Epic","tags": ["skin"], "token_id": 166},
+        { "name": "Fancy Car Key","colors": 4,"rarity": "Relic","tags": ["skin"], "token_id": 168}
       ]
     },
     {
