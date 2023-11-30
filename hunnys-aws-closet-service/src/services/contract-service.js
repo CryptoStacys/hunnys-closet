@@ -40,6 +40,9 @@ const ContractService = {
     },
     loadAllTokensByWallet: function (collectionConfig, wallet, infuraObj) {
         return new Promise(async resolve => {
+            console.log("Collection Config:", collectionConfig); // Debugging
+            console.log("Collections Array:", collectionConfig.collections); // Debugging
+    
             let promises = [];
       
             for (let i = 0; i < collectionConfig.collections.length; i++) {

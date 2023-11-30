@@ -4,6 +4,11 @@ import ApiService from './api-service.js';
 const TokenService = {
     loadConfig: function (path) {
         return new Promise(function (resolve) {
+            if (typeof path !== 'string') {
+                console.error("Invalid path type for loadConfig:", typeof path, path);
+                resolve({});
+                return;
+            }
             fs.readFile(path, 'utf8', function (err, file) {
                 if (err) {
                     console.error("Error reading file:", path, err);
@@ -26,6 +31,7 @@ const TokenService = {
     },
 
     getCollectionData: async function (collection) {
+        let result = {};  // Initialize result
         try {
             console.log("Collection passed to getCollectionData:", collection);
         let result = {};
@@ -56,8 +62,7 @@ const TokenService = {
         }} catch (error) {
             console.error("Error in getCollectionData:", error);
         }
-
-        return result;
+        return result;  // Moved this inside the method scope
     },
     getSelectiveTraits: function (config, data, configTokenData, configTraitsData, defaultConfigTraitsData) {
         let result = {
