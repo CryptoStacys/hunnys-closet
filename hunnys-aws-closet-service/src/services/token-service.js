@@ -4,69 +4,75 @@ import ApiService from './api-service.js';
 const TokenService = {
     loadConfig: function (path) {
         return new Promise(function (resolve) {
-            if (typeof path !== 'string') {
-                console.error("Invalid path type for loadConfig:", typeof path, path);
-                resolve({});
-                return;
-            }
             fs.readFile(path, 'utf8', function (err, file) {
-                if (err) {
-                    console.error("Error reading file:", path, err);
-                    resolve({});
-                } else {
-                    resolve(JSON.parse(file));
-                }
-            });
-        });
+                resolve(JSON.parse(file));
+              });
+        })
     },
+    getAllCollectionsData: function (collections) {
+        return new Promise(async function (resolve) {
+            let result = [];
 
-    getAllCollectionsData: async function (collections) {
-        console.log("Collections passed to getAllCollectionsData:", collections);
-        let result = [];
-        for (let i = 0; i < collections.length; i++) {
-            let data = await this.getCollectionData(collections[i]);
-            result.push(data);
-        }
-        return result;
+            for (let i = 0; i < collections.length; i++) {
+                let data = await TokenService.getCollectionData(collections[i]);
+                result.push(data);
+            }
+
+            resolve(result);
+        })
+
     },
+    getCollectionData: function (collection) {
+        return new Promise(async function (resolve) {
+            let result = [];
+            let configTokenData = await TokenService.loadConfig(`src/configs/${collection.config.tokenConfigPath}`);
+            let configTraitsData = await TokenService.loadConfig(`src/configs/${collection.config.traitsConfigPath}`);
+            let collectionConfig = await TokenService.loadConfig(`src/configs/collections-config.json`);
+            let defaultConfigTraitsData = await TokenService.loadConfig(`src/configs/${collectionConfig.defaultTraitsConfigPath}`);
 
-    getCollectionData: async function (collection) {
-        let result = {};
-        try {
-            console.log("Collection object passed to getCollectionData:", collection); // Debugging
-        let result = {};
-        console.log(`TOKENSERVICE38 Loading config token data from: src/configs/${collection.config.tokenConfigPath}`);
-        let configTokenData = await this.loadConfig(`src/configs/${collection.config.tokenConfigPath}`);
-        console.log(`TOKENSERVICE40 Loading config token data from: src/configs/${collection.config.traitsConfigPath}`);
-        let configTraitsData = await this.loadConfig(`src/configs/${collection.config.traitsConfigPath}`);
-        console.log(`TOKENSERVICE42 Loading config token data from: src/configs/collections-config.json`);
-        let collectionConfig = await this.loadConfig(`src/configs/collections-config.json`);
-        console.log(`TOKENSERVICE44 Loading config token data from: src/configs/${collectionConfig.defaultTraitsConfigPath}`);
-        let defaultConfigTraitsData = await this.loadConfig(`src/configs/${collectionConfig.defaultTraitsConfigPath}`);
+            collection.tokens = await TokenService.arregateTokenData(collection.config, collection.tokens);
 
-        collection.tokens = await this.aggregateTokenData(collection.config, collection.tokens);
+            switch (collection.config.originID) {
+                case 1:
+                    //   "name": "Hunnys 10k",
+                    result = TokenService.getSelectiveTraits(collection.config, collection.tokens, configTokenData, configTraitsData, defaultConfigTraitsData);
+                    break;
+                case 2:
+                    //  "name": "Hunnys OG",
+                    result = TokenService.getAllTraits(collection.config, collection.tokens, configTokenData, configTraitsData);
+                    break;
+                case 3:
+                    //    "name": "Hunnys Seasonal",
+                    result = TokenService.getSelectiveTraits(collection.config, collection.tokens, configTokenData, configTraitsData, defaultConfigTraitsData);
+                    break;
+                case 4:
+                    //    "name": "Hunnys Merch Shop (NOT IN USE)",
+                    let filteredTokens = TokenService.filterShopTokens(collection.tokens, configTokenData);
+                    result = TokenService.getSelectiveTraits(collection.config, filteredTokens, configTokenData, configTraitsData, defaultConfigTraitsData);
+                    break;
+                case 5:
+                    // "name": "Hunnys Stacys",
+                    result = TokenService.getAllTraits(collection.config, collection.tokens, configTokenData, configTraitsData);
+                    break;
+                case 6:
+                    //   "name": "Hunnys 10k All Holders",
+                    result = TokenService.getAllTraits(collection.config, collection.tokens, configTokenData, configTraitsData);
+                    break;
+                case 7:
+                    //  "name": "Hunnys Closet Shop",
+                    result = TokenService.getSelectiveTraits(collection.config, collection.tokens, configTokenData, configTraitsData, defaultConfigTraitsData);
+                    break;
+                case 8:
+                    //   "name": "Fame Lady Society",
+                    result = TokenService.getAllTraits(collection.config, collection.tokens, configTokenData, configTraitsData);
+                    break;
+                default:
+                    break;
+            }
 
-        switch (collection.config.originID) {
-            case 1: // "Hunnys 10k"
-            case 3: // "Hunnys Seasonal"
-            case 4: // "Hunnys Merch Shop (NOT IN USE!)"
-            case 7: // "Hunnys Closet Shop"
-                let filteredTokens = (collection.config.originID === 4) ? this.filterShopTokens(collection.tokens, configTokenData) : collection.tokens;
-                result = this.getSelectiveTraits(collection.config, filteredTokens, configTokenData, configTraitsData, defaultConfigTraitsData);
-                break;
-            case 2: // "Hunnys OG"
-            case 5: // "Hunnys Stacys"
-            case 6: // "Hunnys 10k All Holders"
-            case 8: // "Fame Lady Society"
-                result = this.getAllTraits(collection.config, collection.tokens, configTokenData, configTraitsData);
-                break;
-            default:
-                // Handle default case or unknown originID
-                break;
-        }} catch (error) {
-            console.error("Error in getCollectionData:", error);
-        }
-        return result;
+            resolve(result);
+        })
+
     },
     getSelectiveTraits: function (config, data, configTokenData, configTraitsData, defaultConfigTraitsData) {
         let result = {
@@ -195,7 +201,6 @@ return result;
     },
     getDefaultData: function (collectionConfig) {
         return new Promise(async function (resolve) {
-            console.log(`TOKENSERVICE198 Loading config token data from: src/configs/${collectionConfig.defaultTraitsConfigPath}`);
             let configTraitsData = await TokenService.loadConfig(`src/configs/${collectionConfig.defaultTraitsConfigPath}`);
 
             let result = {
@@ -286,33 +291,29 @@ return result;
             result.dollys.push(dollys[m][0]);
         }
     
-        // Loop through each collectionData item
-    for (let i = 0; i < collectionData.length; i++) {
-        // Check if 'tokens' exists in the current collectionData item
-        if (collectionData[i].tokens) {  
-            // Process tokens
+        for (let i = 0; i < collectionData.length; i++) {
+    
+            // tokens
             for (let j = 0; j < collectionData[i].tokens.length; j++) {
                 result.tokens.push(collectionData[i].tokens[j]);
             }
     
-            // Process traits
+            // traits
             for (let k = 0; k < collectionData[i].traits.length; k++) {
                 result.traits.push(collectionData[i].traits[k]);
     
-                if (collectionData[i].traits[k].attribute === 'Skin') {
+                if(collectionData[i].traits[k].attribute === 'Skin') {
                     result.skin_colors.push(collectionData[i].traits[k].name);
                 }
             }
     
-            // Process colors
+            // colors
             for (let o = 0; o < collectionData[i].colors.length; o++) {
                 result.colors.push(collectionData[i].colors[o]);
             }
-        } // Closing bracket for the if check
-    }
+        }
     
-    // Further processing and return
-    result.colors = [...new Set(result.colors)];
+        result.colors = [...new Set(result.colors)];
     
         // Determine Hunnys count
         let hunnysCount = result.tokens.filter(token => token.origin_id === 1).length;
@@ -489,9 +490,7 @@ return result;
     getAllCollectionData: function (collection) {
         return new Promise(async function (resolve) {
             let result = [];
-            console.log(`TOKENSERVICE492 Loading config token data from: src/configs/${collection.tokenConfigPath}`);
             let configTokenData = await TokenService.loadConfig(`src/configs/${collection.tokenConfigPath}`);
-            console.log(`TOKENSERVICE494 Loading config token data from: src/configs/${collection.traitsConfigPath}`);
             let configTraitsData = await TokenService.loadConfig(`src/configs/${collection.traitsConfigPath}`);
 
             switch (collection.originID) {

@@ -6,7 +6,6 @@ import TokenService from './token-service.js';
 const ContractService = {
     getAllTraitData: function () {
         return new Promise(async function (resolve) {
-            console.log("CONTRACTSERVICE9 Loading collection config from: src/configs/collections-config.json");
             let collectionConfig = await TokenService.loadConfig(`src/configs/collections-config.json`);
             // collection Data
             let allCollectionData = await TokenService.getAllData(collectionConfig.collections);
@@ -22,30 +21,25 @@ const ContractService = {
     },
     getOwnedTokens: function (wallet, infuraObj) {
         return new Promise(async function (resolve) {
-            console.log("CONTRACTSERVICE25 Loading collection config from: src/configs/collections-config.json");
             let collectionConfig = await TokenService.loadConfig(`src/configs/collections-config.json`);
-            console.log("Collection Config:", collectionConfig); // Debugging
             // collection Data
             let allTokens = await ContractService.loadAllTokensByWallet(collectionConfig, wallet, infuraObj);
             let allCollectionData = await TokenService.getAllCollectionsData(allTokens);
-    
+
             // default Data
             let defaultData = await TokenService.getDefaultData(collectionConfig);
             allCollectionData.push(defaultData);
-    
+
             // dolly data
             let dollysData = await ContractService.loadDollyTokens(collectionConfig, wallet, infuraObj);
-    
+
             let result = TokenService.arregateResponse(allCollectionData, dollysData);
-    
+
             resolve(result);
         })
     },
     loadAllTokensByWallet: function (collectionConfig, wallet, infuraObj) {
         return new Promise(async resolve => {
-            console.log("Collection Config:", collectionConfig); // Debugging
-            console.log("Collections Array:", collectionConfig.collections); // Debugging
-    
             let promises = [];
       
             for (let i = 0; i < collectionConfig.collections.length; i++) {

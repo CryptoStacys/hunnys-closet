@@ -1,73 +1,74 @@
 {
-  "attributes": [
-    {
-      "name": "Background",
-      "traits": [
-        { "name": "Bunny Queen Blue", "colors": 0, "rarity": "common", "tags": [] }
-      ]
-    },
-    {
-      "name": "Eyebrows",
-      "traits": [
-        { "name": "Mika Brows", "colors": 0, "rarity": "common", "tags": [] }
-      ]
-    },
-    {
-      "name": "Hat",
-      "traits": [
-        { "name": "Mika Crown", "colors": 1, "rarity": "common", "tags": [] },
-        { "name": "Mika Ears with Crown", "colors": 3, "rarity": "common", "tags": ["twoParts"] },
-        { "name": "Mika Ears", "colors": 2, "rarity": "common", "tags": ["twoParts"] }
-      ]
-    },
-    {
-      "name": "Eyes",
-      "traits": [
-        { "name": "Mika Eyes", "colors": 1, "rarity": "common", "tags": [] }
-      ]
-    },
-    {
-      "name": "Face Sticker",
-      "traits": [
-        { "name": "Mika Freckles", "colors": 1, "rarity": "common", "tags": [] }
-      ]
-    },
-    {
-      "name": "Mouth",
-      "traits": [
-        { "name": "Mika Pout", "colors": 1, "rarity": "common", "tags": [] }
-      ]
-    },
-    {
-      "name": "Hair Style",
-      "traits": [
-        { "name": "Mika Hair", "colors": 1, "rarity": "common", "parts": 2, "tags": [] }
-      ]
-    },
-    {
-      "name": "Accessory",
-      "traits": [
-        { "name": "Mika Bunny Choker", "colors": 3, "rarity": "common", "tags": [] }
-      ]
-    },
-    {
-      "name": "Outfit",
-      "traits": [
-        { "name": "Mika Casual Dress", "colors": 3, "rarity": "common", "tags": [] }
-      ]
-    },
-    {
-      "name": "Dye",
-      "traits": [
-        { "name": "Mika Eyes Blue", "colors": 0, "rarity": "common", "tags": [] },
-        { "name": "Cloud Bunny", "colors": 0, "rarity": "common", "tags": [] },
-        { "name": "Royal Carrots", "colors": 0, "rarity": "common", "tags": [] },
-        { "name": "Royal Bunny Blue", "colors": 0, "rarity": "common", "tags": [] },
-        { "name": "Bunny Queen Crown", "colors": 0, "rarity": "common", "tags": [] },
-        { "name": "Sunny Queen", "colors": 0, "rarity": "common", "tags": [] },
-        { "name": "Royal Garden Rose", "colors": 0, "rarity": "common", "tags": [] },
-        { "name": "Bunny Queen Blush", "colors": 0, "rarity": "common", "tags": [] }
-      ]
-    }
-  ]
-}
+    "attributes": [
+      {
+        "name": "Background",
+        "traits": [
+          { "name": "Bunny Queen Blue", "colors": 0, "rarity": "common", "tags": [] }
+        ]
+      },
+      {
+        "name": "Eyebrows",
+        "traits": [
+          { "name": "Mika Brows", "colors": 0, "rarity": "common", "tags": [] }
+        ]
+      },
+      {
+        "name": "Hat",
+        "traits": [
+          { "name": "Mika Crown", "colors": 1, "rarity": "common", "tags": [] },
+          { "name": "Mika Ears with Crown", "colors": 3, "rarity": "common", "tags": ["twoParts"] },
+          { "name": "Mika Ears", "colors": 2, "rarity": "common", "tags": ["twoParts"] }
+        ]
+      },
+      {
+        "name": "Eyes",
+        "traits": [
+          { "name": "Mika Eyes", "colors": 1, "rarity": "common", "tags": [] }
+        ]
+      },
+      {
+        "name": "Face Sticker",
+        "traits": [
+          { "name": "Mika Freckles", "colors": 1, "rarity": "common", "tags": [] }
+        ]
+      },
+      {
+        "name": "Mouth",
+        "traits": [
+          { "name": "Mika Pout", "colors": 1, "rarity": "common", "tags": [] }
+        ]
+      },
+      {
+        "name": "Hair Style",
+        "traits": [
+          { "name": "Mika Hair", "colors": 1, "rarity": "common", "parts": 2, "tags": [] }
+        ]
+      },
+      {
+        "name": "Accessory",
+        "traits": [
+          { "name": "Mika Bunny Choker", "colors": 3, "rarity": "common", "tags": [] }
+        ]
+      },
+      {
+        "name": "Outfit",
+        "traits": [
+          { "name": "Mika Casual Dress", "colors": 3, "rarity": "common", "tags": [] }
+        ]
+      },
+      {
+        "name": "Dye",
+        "traits": [
+          { "name": "Mika Eyes Blue", "colors": 0, "rarity": "common", "tags": [] },
+          { "name": "Cloud Bunny", "colors": 0, "rarity": "common", "tags": [] },
+          { "name": "Royal Carrots", "colors": 0, "rarity": "common", "tags": [] },
+          { "name": "Royal Bunny Blue", "colors": 0, "rarity": "common", "tags": [] },
+          { "name": "Bunny Queen Crown", "colors": 0, "rarity": "common", "tags": [] },
+          { "name": "Sunny Queen", "colors": 0, "rarity": "common", "tags": [] },
+          { "name": "Royal Garden Rose", "colors": 0, "rarity": "common", "tags": [] },
+          { "name": "Bunny Queen Blush", "colors": 0, "rarity": "common", "tags": [] }
+        ]
+      }
+    ]
+  }
+  
