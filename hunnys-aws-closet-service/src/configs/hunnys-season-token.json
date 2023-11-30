@@ -2392,5 +2392,104 @@
             }
         ],
         "metaPath": "ipfs://bafybeidbravb3b57qsin6dc4l2buhnd377lsvkl2h4j72r7okrhe33zu24/163.json"
+    },
+    {
+        "tokenId": 164,
+        "name": "Fame Lady Society Jilly",
+        "attributes": [
+            {
+                "trait_type": "Background",
+                "value": "Blue Barbs"
+            },
+            {
+                "trait_type": "Hand",
+                "value": "HerStory Book"
+            }
+        ],
+        "metaPath": "https://bafkreiggwe5c667tizd4rzyzpepxfywcf7tbnfkveyvuyego7tx547avum.ipfs.w3s.link/"
+    },
+    {
+        "tokenId": 165,
+        "name": "Fame Lady Society Ms.Jenn",
+        "attributes": [
+            {
+                "trait_type": "Accessory",
+                "value": "Tag Hoop"
+            },
+            {
+                "trait_type": "Background",
+                "value": "Diode Chart"
+            }
+        ],
+        "metaPath": "https://bafkreicw7fyyri5bwnsuvwchcfhxscqcjaznx7p7bjyrcl7odet5umgcsu.ipfs.w3s.link/"
+    },
+    {
+        "tokenId": 166,
+        "name": "Fame Lady Society Blu",
+        "attributes": [
+            {
+                "trait_type": "Background",
+                "value": "Neon Cacti"
+            },
+            {
+                "trait_type": "Hand",
+                "value": "Microphone"
+            },
+            {
+                "trait_type": "Skin",
+                "value": "Blu Blue"
+            }
+        ],
+        "metaPath": "https://bafkreihqy7uhrceb6c2oazjks25w53g5k6a7pu5aigoqngsulqin2di4ae.ipfs.w3s.link/"
+    },
+    {
+        "tokenId": 167,
+        "name": "Fame Lady Society Nax",
+        "attributes": [
+            {
+                "trait_type": "Accessory",
+                "value": "Squiggle Gem"
+            },
+            {
+                "trait_type": "Background",
+                "value": "Nax Flames"
+            },
+            {
+                "trait_type": "Eyes",
+                "value": "Nax Liner"
+            },
+            {
+                "trait_type": "Skin",
+                "value": "Nax Red"
+            },
+            {
+                "trait_type": "Tattoo",
+                "value": "Cherry Bomb"
+            }
+        ],
+        "metaPath": "https://bafkreigy7ava64zftlf2sbt3nbdgvciibaulczaea5x43kvb32hbxnrwfa.ipfs.w3s.link/"
+    },
+    {
+        "tokenId": 168,
+        "name": "Fame Lady Society Cardi Bee",
+        "attributes": [
+            {
+                "trait_type": "Background",
+                "value": "Black Barbs"
+            },
+            {
+                "trait_type": "Hand",
+                "value": "Fancy Car Key"
+            },
+            {
+                "trait_type": "Piercing",
+                "value": "Septum Ring"
+            },
+            {
+                "trait_type": "Top",
+                "value": "Fame Hoodie"
+            }
+        ],
+        "metaPath": "https://bafkreibmlb37crctjyruaboqcnga2tlpapqcbsq4ane277ehk2kilex4um.ipfs.dweb.link/"
     }
 ]

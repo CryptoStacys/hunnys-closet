@@ -13,23 +13,28 @@ def csv_to_json(csv_file_path, json_file_path):
 
     # Iterate through each group and format data accordingly
     for attribute_name, group in grouped_data:
-        attribute_data = {
-            "name": attribute_name,
-            "traits": [
-                {
-                    "name": row['Item Name'], 
-                    "colors": row['Colors'],
-                    "rarity": row['Rarity'],
-                    "tags": []
-                }
-                for _, row in group.iterrows()
-            ]
-        }
+        traits = [
+            {
+                "name": row['Item Name'], 
+                "colors": row['Colors'],
+                "rarity": row['Rarity'],
+                "tags": []
+                # Add other fields as necessary
+            }
+            for _, row in group.iterrows()
+        ]
+        # Custom formatting for each trait
+        traits_str = ',\n        '.join(json.dumps(trait, separators=(',', ': ')) for trait in traits)
+        attribute_data = f'    {{"name": "{attribute_name}", "traits": [\n        {traits_str}\n    ]}}'
         json_data['attributes'].append(attribute_data)
+
+    # Custom formatting for the entire JSON data
+    attributes_str = ',\n\n'.join(json_data['attributes'])
+    formatted_json = f'{{\n  "attributes": [\n{attributes_str}\n  ]\n}}'
 
     # Save the formatted JSON to a file
     with open(json_file_path, 'w') as file:
-        json.dump(json_data, file, indent=4)
+        file.write(formatted_json)
 
 # Example usage
-csv_to_json('C:/Users/chris/Hunnys-Development/Hunnys-Development/staging-hunnys-closet-2/autoconvert/csv/convertTraits.csv', 'C:/Users/chris/Hunnys-Development/Hunnys-Development/staging-hunnys-closet-2/autoconvert/json/outputTraits.json')
+csv_to_json('C:/Users/chris/Hunnys-Development/staging-hunnys-closet-2/autoconvert/csv/convertTraits.csv', 'C:/Users/chris/Hunnys-Development/staging-hunnys-closet-2/autoconvert/json/outputTraits.json')

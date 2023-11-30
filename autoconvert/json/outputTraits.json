@@ -1,0 +1,43 @@
+{
+  "attributes": [
+    {"name": "Accessory", "traits": [
+        {"name": "Tag Hoop","colors": 3,"rarity": "Rare","tags": []},
+        {"name": "Squiggle Gem","colors": 2,"rarity": "Legendary","tags": []}
+    ]},
+
+    {"name": "Background", "traits": [
+        {"name": "Neon Cacti","colors": 0,"rarity": "Epic","tags": []},
+        {"name": "Blue Barbs","colors": 0,"rarity": "Relic","tags": []},
+        {"name": "Black Barbs","colors": 0,"rarity": "Common","tags": []},
+        {"name": "Diode Chart","colors": 1,"rarity": "Rare","tags": []},
+        {"name": "Nax Flames","colors": 1,"rarity": "Legendary","tags": []}
+    ]},
+
+    {"name": "Eyes", "traits": [
+        {"name": "Nax Liner","colors": 1,"rarity": "Legendary","tags": []}
+    ]},
+
+    {"name": "Hand", "traits": [
+        {"name": "Microphone","colors": 4,"rarity": "Epic","tags": []},
+        {"name": "Fancy Car Key","colors": 4,"rarity": "Relic","tags": []},
+        {"name": "HerStory Book","colors": 3,"rarity": "Common","tags": []}
+    ]},
+
+    {"name": "Piercing", "traits": [
+        {"name": "Septum Ring","colors": 1,"rarity": "Relic","tags": []}
+    ]},
+
+    {"name": "Skin", "traits": [
+        {"name": "Blu Blue","colors": 0,"rarity": "Epic","tags": []},
+        {"name": "Nax Red","colors": 0,"rarity": "Legendary","tags": []}
+    ]},
+
+    {"name": "Tattoo", "traits": [
+        {"name": "Cherry Bomb","colors": 2,"rarity": "Legendary","tags": []}
+    ]},
+
+    {"name": "Top", "traits": [
+        {"name": "Fame Hoodie","colors": 3,"rarity": "Relic","tags": []}
+    ]}
+  ]
+}

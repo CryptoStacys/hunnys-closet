@@ -31,7 +31,12 @@
         { "name": "Rainbow Mallow Beach", "colors": 3, "rarity": "Legendary", "tags": [], "token_id": 141 },
         { "name": "Gabriellas House", "colors": 0, "rarity": "Legendary", "tags": [], "token_id": 152 },
         { "name": "Queen Mikas Castle", "colors": 1, "rarity": "Common", "tags": [], "token_id": 153 },
-        { "name": "DinoLand", "colors": 2, "rarity": "Epic", "tags": [], "token_id": 156 }
+        { "name": "DinoLand", "colors": 2, "rarity": "Epic", "tags": [], "token_id": 156 },
+        { "name": "Neon Cacti","colors": 0,"rarity": "Epic","tags": [], "token_id": 166},
+        { "name": "Blue Barbs","colors": 0,"rarity": "Relic","tags": [], "token_id": 164},
+        { "name": "Black Barbs","colors": 0,"rarity": "Common","tags": [], "token_id": 168},
+        { "name": "Diode Chart","colors": 1,"rarity": "Rare","tags": [], "token_id": 165},
+        { "name": "Nax Flames","colors": 1,"rarity": "Legendary","tags": [], "token_id": 167}
       ]
     },
     {
@@ -45,7 +50,9 @@
         { "name": "Ripple Tan", "colors": 0, "rarity": "Legendary", "tags": [], "token_id": 141 },
         { "name": "Zuri Zombie Stitch", "colors": 0, "rarity": "Legendary", "tags": [], "token_id": 151 },
         { "name": "Dottie Skin", "colors": 0, "rarity": "Common", "tags": [], "token_id": 153 },
-        { "name": "Yeti Babe", "colors": 0, "rarity": "Epic", "tags": [], "token_id": 161 }
+        { "name": "Yeti Babe", "colors": 0, "rarity": "Epic", "tags": [], "token_id": 161 },
+        { "name": "Blu Blue","colors": 0,"rarity": "Epic","tags": [], "token_id": 166},
+        { "name": "Nax Red","colors": 0,"rarity": "Legendary","tags": [], "token_id": 167}
 
       ]
     },
@@ -63,7 +70,8 @@
         { "name": "Space Fruits", "colors": 3, "rarity": "Epic", "tags": [], "token_id": 129 },
         { "name": "Strawberry Mallow", "colors": 2, "rarity": "Epic", "tags": [], "token_id": 140 },
         { "name": "Circuits", "colors": 1, "rarity": "Common", "tags": [], "token_id": 143 },
-        { "name": "Bounty Queen Oni", "colors": 4, "rarity": "Legendary", "tags": [], "token_id": 146 }
+        { "name": "Bounty Queen Oni", "colors": 4, "rarity": "Legendary", "tags": [], "token_id": 146 },
+        { "name": "Cherry Bomb","colors": 2,"rarity": "Legendary","tags": [], "token_id": 167}
       ]
     },
     {
@@ -110,7 +118,8 @@
         { "name": "Potion Eyes", "colors": 3, "rarity": "Epic", "tags": [], "token_id": 116 },
         { "name": "Stacies Eyes", "colors": 1, "rarity": "Common", "tags": [], "token_id": 148 },
         { "name": "Rattyz Eyes", "colors": 1, "rarity": "Rare", "tags": [], "token_id": 149 },
-        { "name": "Wink", "colors": 1, "rarity": "Common", "tags": [], "token_id": 153 }
+        { "name": "Wink", "colors": 1, "rarity": "Common", "tags": [], "token_id": 153 },
+        { "name": "Nax Liner","colors": 1,"rarity": "Legendary","tags": [], "token_id": 167}
       ]
     },
     {
@@ -130,7 +139,8 @@
       "name": "Piercing",
       "traits": [
         { "name": "Calanthas Nose Chain", "colors": 2, "rarity": "Legendary", "tags": [], "token_id": 100 },
-        { "name": "Bridge", "colors": 1, "rarity": "Legendary", "tags": [], "token_id": 157 }
+        { "name": "Bridge", "colors": 1, "rarity": "Legendary", "tags": [], "token_id": 157 },
+        { "name": "Septum Ring","colors": 1,"rarity": "Relic","tags": [], "token_id": 168}
       ]
     },
     {
@@ -251,7 +261,9 @@
         { "name": "Huxley Plushie", "colors": 4, "rarity": "Common", "tags": ["companion"], "token_id": 154 },
         { "name": "Sabre Tooth Earring", "colors": 2, "rarity": "Epic", "tags": ["earrings"], "token_id": 156 },
         { "name": "PebblePuff", "colors": 3, "rarity": "Epic", "tags": ["companion"], "token_id": 156 },
-        { "name": "Friendly Snorball", "colors": 3, "rarity": "Legendary", "tags": ["companion"], "token_id": 157 }
+        { "name": "Friendly Snorball", "colors": 3, "rarity": "Legendary", "tags": ["companion"], "token_id": 157 },
+        { "name": "Tag Hoop","colors": 3,"rarity": "Rare","tags": [], "token_id": 165},
+        { "name": "Squiggle Gem","colors": 2,"rarity": "Legendary","tags": [], "token_id": 167}
       ]
     },
     {
@@ -295,7 +307,8 @@
         { "name": "Mallowology Wetsuit", "colors": 4, "rarity": "Epic", "tags": [], "token_id": 140 },
         { "name": "Executive Dress", "colors": 3, "rarity": "Relic", "tags": [], "token_id": 147 },
         { "name": "Ratty Fur Jacket", "colors": 3, "rarity": "Rare", "tags": [], "token_id": 149 },
-        { "name": "Plaid Tank", "colors": 3, "rarity": "Epic", "tags": [], "token_id": 150 }
+        { "name": "Plaid Tank", "colors": 3, "rarity": "Epic", "tags": [], "token_id": 150 },
+        { "name": "Fame Hoodie","colors": 3,"rarity": "Relic","tags": [], "token_id": 168}
       ]
     },
     {
@@ -336,7 +349,10 @@
         { "name": "Bunny Kingdom Lore V2 Signed", "colors": 4, "rarity": "Common", "tags": ["skin"], "token_id": 153 },
         { "name": "Bunny Kingdom Lore V2", "colors": 4, "rarity": "Common", "tags": ["skin"], "token_id": 153 },
         { "name": "Baby Bubble Bear", "colors": 2, "rarity": "Rare", "tags": ["skin"], "token_id": 156 },
-        { "name": "Sheep Moth Luna", "colors": 4, "rarity": "Legendary", "tags": ["skin"], "token_id": 163 }
+        { "name": "Sheep Moth Luna", "colors": 4, "rarity": "Legendary", "tags": ["skin"], "token_id": 163 },
+        { "name": "Microphone","colors": 4,"rarity": "Epic","tags": ["skin"], "token_id": 166},
+        { "name": "Fancy Car Key","colors": 4,"rarity": "Relic","tags": [], "token_id": 168},
+        { "name": "HerStory Book","colors": 3,"rarity": "Common","tags": [], "token_id": 164}
       ]
     },
     {

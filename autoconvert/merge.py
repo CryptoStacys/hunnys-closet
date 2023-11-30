@@ -32,7 +32,7 @@ def merge_json(existing_json_path, new_json_path, output_json_path):
 
 # Example usage
 merge_json(
-    'C:/Users/chris/Hunnys-Development/staging-hunnys-closet-2/hunnys-aws-closet-service/src/configs/hunnys-default-traits.json',
-    'C:/Users/chris/Hunnys-Development/staging-hunnys-closet-2/autoconvert/json/output.json',
+    'C:/Users/chris/Hunnys-Development/staging-hunnys-closet-2/hunnys-aws-closet-service/src/configs/hunnys-season-traits.json',
+    'C:/Users/chris/Hunnys-Development/staging-hunnys-closet-2/autoconvert/json/outputTraits.json',
     'C:/Users/chris/Hunnys-Development/staging-hunnys-closet-2/autoconvert/json/merged.json'
 )
