@@ -1,43 +1,44 @@
 {
   "attributes": [
     {"name": "Accessory", "traits": [
-        {"name": "Tag Hoop","colors": 3,"rarity": "Rare","tags": []},
-        {"name": "Squiggle Gem","colors": 2,"rarity": "Legendary","tags": []}
+        {"name": "Bunny Club Bow","colors": 1,"rarity": "Common","tags": [], "token_id": 169}
     ]},
 
     {"name": "Background", "traits": [
-        {"name": "Neon Cacti","colors": 0,"rarity": "Epic","tags": []},
-        {"name": "Blue Barbs","colors": 0,"rarity": "Relic","tags": []},
-        {"name": "Black Barbs","colors": 0,"rarity": "Common","tags": []},
-        {"name": "Diode Chart","colors": 1,"rarity": "Rare","tags": []},
-        {"name": "Nax Flames","colors": 1,"rarity": "Legendary","tags": []}
+        {"name": "Bunny Club Sprinkle","colors": 0,"rarity": "Common","tags": [], "token_id": 169}
+    ]},
+
+    {"name": "Dye", "traits": [
+        {"name": "Bunny Club Navy","colors": 0,"rarity": "Common","tags": [], "token_id": 169},
+        {"name": "Bunny Club Blue","colors": 0,"rarity": "Common","tags": [], "token_id": 169}
+    ]},
+
+    {"name": "Eyebrows", "traits": [
+        {"name": "Bunny Club Brows","colors": 0,"rarity": "Common","tags": [], "token_id": 169}
     ]},
 
     {"name": "Eyes", "traits": [
-        {"name": "Nax Liner","colors": 1,"rarity": "Legendary","tags": []}
+        {"name": "Bunny Club Glare","colors": 1,"rarity": "Common","tags": [], "token_id": 169}
     ]},
 
-    {"name": "Hand", "traits": [
-        {"name": "Microphone","colors": 4,"rarity": "Epic","tags": []},
-        {"name": "Fancy Car Key","colors": 4,"rarity": "Relic","tags": []},
-        {"name": "HerStory Book","colors": 3,"rarity": "Common","tags": []}
+    {"name": "Face Sticker", "traits": [
+        {"name": "Bunny Club Sticker","colors": 3,"rarity": "Common","tags": [], "token_id": 169}
     ]},
 
-    {"name": "Piercing", "traits": [
-        {"name": "Septum Ring","colors": 1,"rarity": "Relic","tags": []}
+    {"name": "Hair Style", "traits": [
+        {"name": "Bunny Club Hair","colors": 1,"parts":2, "rarity": "Common","tags": [], "token_id": 169}
     ]},
 
-    {"name": "Skin", "traits": [
-        {"name": "Blu Blue","colors": 0,"rarity": "Epic","tags": []},
-        {"name": "Nax Red","colors": 0,"rarity": "Legendary","tags": []}
+    {"name": "Hat", "traits": [
+        {"name": "Bunny Club Ears","colors": 4,"rarity": "Common","tags": [], "token_id": 169}
     ]},
 
-    {"name": "Tattoo", "traits": [
-        {"name": "Cherry Bomb","colors": 2,"rarity": "Legendary","tags": []}
+    {"name": "Mouth", "traits": [
+        {"name": "Bunny Club Juicy","colors": 1,"rarity": "Common","tags": [], "token_id": 169}
     ]},
 
-    {"name": "Top", "traits": [
-        {"name": "Fame Hoodie","colors": 3,"rarity": "Relic","tags": []}
+    {"name": "Outfit", "traits": [
+        {"name": "Bunny Club Uniform","colors": 4,"rarity": "Common","tags": [], "token_id": 169}
     ]}
   ]
 }

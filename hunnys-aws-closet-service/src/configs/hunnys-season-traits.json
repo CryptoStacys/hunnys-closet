@@ -36,7 +36,8 @@
         { "name": "Blue Barbs","colors": 0,"rarity": "Relic","tags": [], "token_id": 164},
         { "name": "Black Barbs","colors": 0,"rarity": "Common","tags": [], "token_id": 168},
         { "name": "Diode Chart","colors": 2,"rarity": "Rare","tags": [], "token_id": 165},
-        { "name": "Nax Flames","colors": 2,"rarity": "Legendary","tags": [], "token_id": 167}
+        { "name": "Nax Flames","colors": 2,"rarity": "Legendary","tags": [], "token_id": 167},
+        {"name": "Bunny Club Sprinkle","colors": 0,"rarity": "Common","tags": [], "token_id": 169}
       ]
     },
     {
@@ -82,7 +83,8 @@
         { "name": "Bixie Brows", "colors": 0, "rarity": "Epic", "tags": [], "token_id": 114 },
         { "name": "Moonstone Brows", "colors": 1, "rarity": "Legendary", "tags": [], "token_id": 134 },
         { "name": "Borg Fade", "colors": 1, "rarity": "Epic", "tags": [], "token_id": 145 },
-        { "name": "Rattyz Brows", "colors": 0, "rarity": "Rare", "tags": [], "token_id": 149 }
+        { "name": "Rattyz Brows", "colors": 0, "rarity": "Rare", "tags": [], "token_id": 149 },
+        {"name": "Bunny Club Brows","colors": 0,"rarity": "Common","tags": [], "token_id": 169}
       ]
     },
     {
@@ -108,7 +110,8 @@
         { "name": "Wolfy Hat", "colors": 3, "rarity": "Rare", "tags": [], "token_id": 136 },
         { "name": "Peep Sunhat", "colors": 2, "rarity": "Rare", "tags": ["twoParts"], "token_id": 139 },
         { "name": "Ratty Fur Bucket Hat", "colors": 4, "rarity": "Rare", "tags": ["twoParts"], "token_id": 149 },
-        { "name": "Batty Rest Sleep Mask", "colors": 4, "rarity": "Epic", "tags": [], "token_id": 158 }
+        { "name": "Batty Rest Sleep Mask", "colors": 4, "rarity": "Epic", "tags": [], "token_id": 158 },
+        {"name": "Bunny Club Ears","colors": 4,"rarity": "Common","tags": [], "token_id": 169}
       ]
     },
     {
@@ -119,7 +122,8 @@
         { "name": "Stacies Eyes", "colors": 1, "rarity": "Common", "tags": [], "token_id": 148 },
         { "name": "Rattyz Eyes", "colors": 1, "rarity": "Rare", "tags": [], "token_id": 149 },
         { "name": "Wink", "colors": 1, "rarity": "Common", "tags": [], "token_id": 153 },
-        { "name": "Nax Liner","colors": 1,"rarity": "Legendary","tags": [], "token_id": 167}
+        { "name": "Nax Liner","colors": 1,"rarity": "Legendary","tags": [], "token_id": 167},
+        {"name": "Bunny Club Glare","colors": 1,"rarity": "Common","tags": [], "token_id": 169}
       ]
     },
     {
@@ -132,7 +136,8 @@
         { "name": "XO", "colors": 0, "rarity": "Epic", "tags": [], "token_id": 129 },
         { "name": "Briny Bandaid", "colors": 2, "rarity": "Common", "tags": [], "token_id": 138 },
         { "name": "Cheek Dimple", "colors": 0, "rarity": "Rare", "tags": [], "token_id": 139 },
-        { "name": "RainMallow Sticker", "colors": 4, "rarity": "Relic", "tags": [], "token_id": 142 }
+        { "name": "RainMallow Sticker", "colors": 4, "rarity": "Relic", "tags": [], "token_id": 142 },
+        {"name": "Bunny Club Sticker","colors": 3,"rarity": "Common","tags": [], "token_id": 169}
       ]
     },
     {
@@ -159,7 +164,8 @@
         { "name": "RainbowCorn Smile", "colors": 3, "rarity": "Legendary", "tags": [], "token_id": 137 },
         { "name": "Mallow", "colors": 4, "rarity": "Legendary", "tags": [], "token_id": 141 },
         { "name": "Rattyz Lips", "colors": 1, "rarity": "Rare", "tags": [], "token_id": 149 },
-        { "name": "Nummy Bone", "colors": 2, "rarity": "Epic", "tags": [], "token_id": 156 }
+        { "name": "Nummy Bone", "colors": 2, "rarity": "Epic", "tags": [], "token_id": 156 },
+        {"name": "Bunny Club Juicy","colors": 1,"rarity": "Common","tags": [], "token_id": 169}
       ]
     },
     {
@@ -197,7 +203,8 @@
         { "name": "Bam Bam Do", "colors": 1, "rarity": "Epic", "parts": 2, "tags": [], "token_id": 156 },
         { "name": "Yeti Bob", "colors": 1, "rarity": "Epic", "parts": 2, "tags": [], "token_id": 161 },
         { "name": "Gabriella Human Whisps", "colors": 1, "rarity": "Legendary", "parts": 2, "tags": [], "token_id": 162 },
-        { "name": "Gabriella Ghosty Whisps", "colors": 0, "rarity": "Legendary", "parts": 2, "tags": [], "token_id": 162 }
+        { "name": "Gabriella Ghosty Whisps", "colors": 0, "rarity": "Legendary", "parts": 2, "tags": [], "token_id": 162 },
+        {"name": "Bunny Club Hair","colors": 1,"parts":2, "rarity": "Common","tags": [], "token_id": 169}
       ]
     },
     {
@@ -263,7 +270,8 @@
         { "name": "PebblePuff", "colors": 3, "rarity": "Epic", "tags": ["companion"], "token_id": 156 },
         { "name": "Friendly Snorball", "colors": 3, "rarity": "Legendary", "tags": ["companion"], "token_id": 157 },
         { "name": "Tag Hoop","colors": 3,"rarity": "Rare","tags": ["earrings"], "token_id": 165},
-        { "name": "Squiggle Gem","colors": 2,"rarity": "Legendary","tags": ["earrings"], "token_id": 167}
+        { "name": "Squiggle Gem","colors": 2,"rarity": "Legendary","tags": ["earrings"], "token_id": 167},
+        {"name": "Bunny Club Bow","colors": 1,"rarity": "Common","tags": [], "token_id": 169}
       ]
     },
     {
@@ -308,7 +316,8 @@
         { "name": "Executive Dress", "colors": 3, "rarity": "Relic", "tags": [], "token_id": 147 },
         { "name": "Ratty Fur Jacket", "colors": 3, "rarity": "Rare", "tags": [], "token_id": 149 },
         { "name": "Plaid Tank", "colors": 3, "rarity": "Epic", "tags": [], "token_id": 150 },
-        { "name": "Fame Hoodie","colors": 3,"rarity": "Relic","tags": [], "token_id": 168}
+        { "name": "Fame Hoodie","colors": 3,"rarity": "Relic","tags": [], "token_id": 168},
+        {"name": "Bunny Club Uniform","colors": 4,"rarity": "Common","tags": [], "token_id": 169}
       ]
     },
     {
@@ -407,7 +416,9 @@
         { "name": "Skull Plum", "colors": 0, "rarity": "Legendary", "tags": [], "token_id": 163 },
         { "name": "Eyeball Wall", "colors": 0, "rarity": "Legendary", "tags": [], "token_id": 163 },
         { "name": "Moth Wings", "colors": 0, "rarity": "Legendary", "tags": [], "token_id": 163 },
-        { "name": "Glowing Daisy", "colors": 0, "rarity": "Legendary", "tags": [], "token_id": 163 }
+        { "name": "Glowing Daisy", "colors": 0, "rarity": "Legendary", "tags": [], "token_id": 163 },
+        {"name": "Bunny Club Navy","colors": 0,"rarity": "Common","tags": [], "token_id": 169},
+        {"name": "Bunny Club Blue","colors": 0,"rarity": "Common","tags": [], "token_id": 169}
       ]
     },
     {

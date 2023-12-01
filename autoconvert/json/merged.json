@@ -210,31 +210,43 @@
                     "name": "Neon Cacti",
                     "colors": 0,
                     "rarity": "Epic",
-                    "tags": []
+                    "tags": [],
+                    "token_id": 166
                 },
                 {
                     "name": "Blue Barbs",
                     "colors": 0,
                     "rarity": "Relic",
-                    "tags": []
+                    "tags": [],
+                    "token_id": 164
                 },
                 {
                     "name": "Black Barbs",
                     "colors": 0,
                     "rarity": "Common",
-                    "tags": []
+                    "tags": [],
+                    "token_id": 168
                 },
                 {
                     "name": "Diode Chart",
-                    "colors": 1,
+                    "colors": 2,
                     "rarity": "Rare",
-                    "tags": []
+                    "tags": [],
+                    "token_id": 165
                 },
                 {
                     "name": "Nax Flames",
-                    "colors": 1,
+                    "colors": 2,
                     "rarity": "Legendary",
-                    "tags": []
+                    "tags": [],
+                    "token_id": 167
+                },
+                {
+                    "name": "Bunny Club Sprinkle",
+                    "colors": 0,
+                    "rarity": "Common",
+                    "tags": [],
+                    "token_id": 169
                 }
             ]
         },
@@ -308,13 +320,15 @@
                     "name": "Blu Blue",
                     "colors": 0,
                     "rarity": "Epic",
-                    "tags": []
+                    "tags": [],
+                    "token_id": 166
                 },
                 {
                     "name": "Nax Red",
                     "colors": 0,
                     "rarity": "Legendary",
-                    "tags": []
+                    "tags": [],
+                    "token_id": 167
                 }
             ]
         },
@@ -409,7 +423,8 @@
                     "name": "Cherry Bomb",
                     "colors": 2,
                     "rarity": "Legendary",
-                    "tags": []
+                    "tags": [],
+                    "token_id": 167
                 }
             ]
         },
@@ -457,6 +472,13 @@
                     "rarity": "Rare",
                     "tags": [],
                     "token_id": 149
+                },
+                {
+                    "name": "Bunny Club Brows",
+                    "colors": 0,
+                    "rarity": "Common",
+                    "tags": [],
+                    "token_id": 169
                 }
             ]
         },
@@ -625,6 +647,13 @@
                     "rarity": "Epic",
                     "tags": [],
                     "token_id": 158
+                },
+                {
+                    "name": "Bunny Club Ears",
+                    "colors": 4,
+                    "rarity": "Common",
+                    "tags": [],
+                    "token_id": 169
                 }
             ]
         },
@@ -670,7 +699,15 @@
                     "name": "Nax Liner",
                     "colors": 1,
                     "rarity": "Legendary",
-                    "tags": []
+                    "tags": [],
+                    "token_id": 167
+                },
+                {
+                    "name": "Bunny Club Glare",
+                    "colors": 1,
+                    "rarity": "Common",
+                    "tags": [],
+                    "token_id": 169
                 }
             ]
         },
@@ -732,6 +769,13 @@
                     "rarity": "Relic",
                     "tags": [],
                     "token_id": 142
+                },
+                {
+                    "name": "Bunny Club Sticker",
+                    "colors": 3,
+                    "rarity": "Common",
+                    "tags": [],
+                    "token_id": 169
                 }
             ]
         },
@@ -756,7 +800,8 @@
                     "name": "Septum Ring",
                     "colors": 1,
                     "rarity": "Relic",
-                    "tags": []
+                    "tags": [],
+                    "token_id": 168
                 }
             ]
         },
@@ -860,6 +905,13 @@
                     "rarity": "Epic",
                     "tags": [],
                     "token_id": 156
+                },
+                {
+                    "name": "Bunny Club Juicy",
+                    "colors": 1,
+                    "rarity": "Common",
+                    "tags": [],
+                    "token_id": 169
                 }
             ]
         },
@@ -1133,6 +1185,14 @@
                     "parts": 2,
                     "tags": [],
                     "token_id": 162
+                },
+                {
+                    "name": "Bunny Club Hair",
+                    "colors": 1,
+                    "parts": 2,
+                    "rarity": "Common",
+                    "tags": [],
+                    "token_id": 169
                 }
             ]
         },
@@ -1658,13 +1718,26 @@
                     "name": "Tag Hoop",
                     "colors": 3,
                     "rarity": "Rare",
-                    "tags": []
+                    "tags": [
+                        "earrings"
+                    ],
+                    "token_id": 165
                 },
                 {
                     "name": "Squiggle Gem",
                     "colors": 2,
                     "rarity": "Legendary",
-                    "tags": []
+                    "tags": [
+                        "earrings"
+                    ],
+                    "token_id": 167
+                },
+                {
+                    "name": "Bunny Club Bow",
+                    "colors": 1,
+                    "rarity": "Common",
+                    "tags": [],
+                    "token_id": 169
                 }
             ]
         },
@@ -1943,6 +2016,20 @@
                     "rarity": "Epic",
                     "tags": [],
                     "token_id": 150
+                },
+                {
+                    "name": "Fame Hoodie",
+                    "colors": 3,
+                    "rarity": "Relic",
+                    "tags": [],
+                    "token_id": 168
+                },
+                {
+                    "name": "Bunny Club Uniform",
+                    "colors": 4,
+                    "rarity": "Common",
+                    "tags": [],
+                    "token_id": 169
                 }
             ]
         },
@@ -2224,22 +2311,31 @@
                     "token_id": 163
                 },
                 {
+                    "name": "HerStory Book",
+                    "colors": 3,
+                    "rarity": "Common",
+                    "tags": [
+                        "skin"
+                    ],
+                    "token_id": 164
+                },
+                {
                     "name": "Microphone",
-                    "colors": 4,
+                    "colors": 3,
                     "rarity": "Epic",
-                    "tags": []
+                    "tags": [
+                        "skin"
+                    ],
+                    "token_id": 166
                 },
                 {
                     "name": "Fancy Car Key",
                     "colors": 4,
                     "rarity": "Relic",
-                    "tags": []
-                },
-                {
-                    "name": "HerStory Book",
-                    "colors": 3,
-                    "rarity": "Common",
-                    "tags": []
+                    "tags": [
+                        "skin"
+                    ],
+                    "token_id": 168
                 }
             ]
         },
@@ -2565,6 +2661,20 @@
                     "rarity": "Legendary",
                     "tags": [],
                     "token_id": 163
+                },
+                {
+                    "name": "Bunny Club Navy",
+                    "colors": 0,
+                    "rarity": "Common",
+                    "tags": [],
+                    "token_id": 169
+                },
+                {
+                    "name": "Bunny Club Blue",
+                    "colors": 0,
+                    "rarity": "Common",
+                    "tags": [],
+                    "token_id": 169
                 }
             ]
         },
@@ -2614,17 +2724,6 @@
                     "rarity": "Epic",
                     "tags": [],
                     "token_id": 158
-                }
-            ]
-        },
-        {
-            "name": "Top",
-            "traits": [
-                {
-                    "name": "Fame Hoodie",
-                    "colors": 3,
-                    "rarity": "Relic",
-                    "tags": []
                 }
             ]
         }

@@ -14,6 +14,8 @@ const colorGroups = {
     "Blue7",
     "BearMallow Blue",
     "Blueberry Mallow",
+    "Bunny Club Blue",
+    "Bunny Club Navy",
     "Candy Cloud Paint",
     "Cartoon Blue 1",
     "Cartoon Blue 2",

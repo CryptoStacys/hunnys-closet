@@ -1,0 +1,53 @@
+[
+    {
+        "tokenId": 169,
+        "name": "Bunny Club Marina",
+        "attributes": [
+            {
+                "trait_type": "Eyebrows",
+                "value": "Bunny Club Brows"
+            },
+            {
+                "trait_type": "Background",
+                "value": "Bunny Club Sprinkle"
+            },
+            {
+                "trait_type": "Hair Style",
+                "value": "Bunny Club Hair"
+            },
+            {
+                "trait_type": "Eyes",
+                "value": "Bunny Club Glare"
+            },
+            {
+                "trait_type": "Mouth",
+                "value": "Bunny Club Juicy"
+            },
+            {
+                "trait_type": "Accessory",
+                "value": "Bunny Club Bow"
+            },
+            {
+                "trait_type": "Face Sticker",
+                "value": "Bunny Club Sticker"
+            },
+            {
+                "trait_type": "Hat",
+                "value": "Bunny Club Ears"
+            },
+            {
+                "trait_type": "Outfit",
+                "value": "Bunny Club Uniform"
+            },
+            {
+                "trait_type": "Dye",
+                "value": "Bunny Club Navy"
+            },
+            {
+                "trait_type": "Dye",
+                "value": "Bunny Club Blue"
+            }
+        ],
+        "metaPath": ""
+    }
+]

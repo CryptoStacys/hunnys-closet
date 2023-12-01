@@ -234,6 +234,16 @@ const colorNames = {
     g: 96,
     b: 76
   },
+  "Bunny Club Blue": {
+    "r": 0,
+    "g": 66,
+    "b": 208
+  },
+  "Bunny Club Navy": {
+    "r": 0,
+    "g": 55,
+    "b": 153
+  },
   "Bunny Queen Blush": {
     r: 253,
     g: 204,
