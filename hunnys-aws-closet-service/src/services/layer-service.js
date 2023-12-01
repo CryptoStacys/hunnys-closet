@@ -71,7 +71,7 @@ const LayerService = {
         }
     
         // HAIR (BACK)
-        if ((!bodysuit || bodysuit.name === "Empty") && (!hat || hat.name !== "FLS Balaclava") && hairstyle && hairstyle.parts > 1) {
+        if ((!bodysuit || bodysuit.name === "Empty") && (!hat || hat.name !== "FLS Balaclava" || hat.name !== "FLS Balaclava (Shop)") && hairstyle && hairstyle.parts > 1) {
             layers = LayerService.addLayer(layers, hairstyle, '_Back');
         }
     
@@ -165,7 +165,7 @@ const LayerService = {
         }
     
         // HAIR (FRONT / DEFAULT)
-        if ((!bodysuit || bodysuit.name === "Empty") && (!hat || hat.name !== "FLS Balaclava") && hairstyle) {
+        if ((!bodysuit || bodysuit.name === "Empty") && (!hat || hat.name !== "FLS Balaclava" || hat.name !== "FLS Balaclava (Shop)") && hairstyle) {
             let front = "";
             
             if (hairstyle.parts > 1) {
