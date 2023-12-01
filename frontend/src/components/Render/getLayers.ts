@@ -376,6 +376,18 @@ if (eyes && eyes.name === "FLS Laser") {
     });
 }
 
+// Add FLS Laser C2 layers above all others if the eyes trait is FLS Laser
+if (eyes && eyes.name === "FLS Laser (Shop)") {
+    layers.push({
+        pattern: `Colors/ClothingAndHair/Solid/${eyes.colorsApplied[1]}`,
+        src: `Eyes/${eyes.name}_Left_C2`
+    });
+    layers.push({
+        pattern: `Colors/ClothingAndHair/Solid/${eyes.colorsApplied[1]}`,
+        src: `Eyes/${eyes.name}_Right_C2`
+    });
+}
+
     // add base path and file extensions
     for (const layer of layers) {
         layer.src = `${layersPath}${layer.src}${fileExtension}`;

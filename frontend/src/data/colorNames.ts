@@ -369,7 +369,17 @@ const colorNames = {
     "g": 24,
     "b": 15
   },
+  "FLS Dark Brown (Shop)": {
+    "r": 98,
+    "g": 24,
+    "b": 15
+  },
   "FLS Forest": {
+    "r": 57,
+    "g": 167,
+    "b": 129
+  },
+  "FLS Forest (Shop)": {
     "r": 57,
     "g": 167,
     "b": 129
@@ -379,7 +389,17 @@ const colorNames = {
     "g": 106,
     "b": 106
   },
+  "FLS Grey (Shop)": {
+    "r": 106,
+    "g": 106,
+    "b": 106
+  },
   "FLS Light Brown": {
+    "r": 165,
+    "g": 97,
+    "b": 53
+  },
+  "FLS Light Brown (Shop)": {
     "r": 165,
     "g": 97,
     "b": 53
@@ -389,7 +409,17 @@ const colorNames = {
     "g": 233,
     "b": 14
   },
+  "FLS Neon Green (Shop)": {
+    "r": 97,
+    "g": 233,
+    "b": 14
+  },
   "FLS Neon Purple": {
+    "r": 248,
+    "g": 1,
+    "b": 255
+  },
+  "FLS Neon Purple (Shop)": {
     "r": 248,
     "g": 1,
     "b": 255
@@ -399,12 +429,27 @@ const colorNames = {
     "g": 148,
     "b": 255
   },
+  "FLS Periwinkle (Shop)": {
+    "r": 129,
+    "g": 148,
+    "b": 255
+  },
   "FLS Pink": {
     "r": 255,
     "g": 143,
     "b": 158
   },
+  "FLS Pink (Shop)": {
+    "r": 255,
+    "g": 143,
+    "b": 158
+  },
   "FLS Plum": {
+    "r": 49,
+    "g": 27,
+    "b": 91
+  },
+  "FLS Plum (Shop)": {
     "r": 49,
     "g": 27,
     "b": 91

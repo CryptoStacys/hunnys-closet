@@ -12,10 +12,10 @@
                 {"name":"Chiddar","colors":0,"rarity":"rare","tags":["companion"], "token_id": 29},
                 {"name":"Ghost Trick or Treater","colors":4,"rarity":"epic","tags":["companion"], "token_id": 35},
                 {"name":"Ocular Implant","colors":1,"rarity":"immortal","tags":[], "token_id": 44},
-                {"name":"FLS Not Gucci Glasses","colors":3,"rarity":"common","tags":["glasses"], "token_id": 47},
-                {"name":"FLS Round Frame","colors":3,"rarity":"common","tags":["glasses"], "token_id": 47},
-                {"name":"FLS Round Glasses","colors":1,"rarity":"common","tags":["glasses"], "token_id": 47},
-                {"name":"FLS Sunglasses","colors":2,"rarity":"common","tags":["glasses"], "token_id": 47}
+                {"name":"FLS Not Gucci Glasses (Shop)","colors":3,"rarity":"common","tags":["glasses"], "token_id": 47},
+                {"name":"FLS Round Frame (Shop)","colors":3,"rarity":"common","tags":["glasses"], "token_id": 47},
+                {"name":"FLS Round Glasses (Shop)","colors":1,"rarity":"common","tags":["glasses"], "token_id": 47},
+                {"name":"FLS Sunglasses (Shop)","colors":2,"rarity":"common","tags":["glasses"], "token_id": 47}
             ]
         },
 
@@ -74,15 +74,15 @@
                 {"name":"Cartoon Blue 2", "colors": 0, "rarity": "Epic", "tags": [], "token_id": 46},
                 {"name":"Drunkard Brown", "colors": 0, "rarity": "Epic", "tags": [], "token_id": 46},
                 {"name":"Drunkard Orange", "colors": 0, "rarity": "Epic", "tags": [], "token_id": 46},
-                {"name":"FLS Dark Brown","colors":0,"rarity":"Common","tags":[], "token_id": 47},
-                {"name":"FLS Forest","colors":0,"rarity":"Common","tags":[], "token_id": 47},
-                {"name":"FLS Grey","colors":0,"rarity":"Common","tags":[], "token_id": 47},
-                {"name":"FLS Light Brown","colors":0,"rarity":"Common","tags":[], "token_id": 47},
-                {"name":"FLS Neon Green","colors":0,"rarity":"Common","tags":[], "token_id": 47},
-                {"name":"FLS Neon Purple","colors":0,"rarity":"Common","tags":[], "token_id": 47},
-                {"name":"FLS Periwinkle","colors":0,"rarity":"Common","tags":[], "token_id": 47},
-                {"name":"FLS Pink","colors":0,"rarity":"Common","tags":[], "token_id": 47},
-                {"name":"FLS Plum","colors":0,"rarity":"Common","tags":[], "token_id": 47}
+                {"name":"FLS Dark Brown (Shop)","colors":0,"rarity":"Common","tags":[], "token_id": 47},
+                {"name":"FLS Forest (Shop)","colors":0,"rarity":"Common","tags":[], "token_id": 47},
+                {"name":"FLS Grey (Shop)","colors":0,"rarity":"Common","tags":[], "token_id": 47},
+                {"name":"FLS Light Brown (Shop)","colors":0,"rarity":"Common","tags":[], "token_id": 47},
+                {"name":"FLS Neon Green (Shop)","colors":0,"rarity":"Common","tags":[], "token_id": 47},
+                {"name":"FLS Neon Purple (Shop)","colors":0,"rarity":"Common","tags":[], "token_id": 47},
+                {"name":"FLS Periwinkle (Shop)","colors":0,"rarity":"Common","tags":[], "token_id": 47},
+                {"name":"FLS Pink (Shop)","colors":0,"rarity":"Common","tags":[], "token_id": 47},
+                {"name":"FLS Plum (Shop)","colors":0,"rarity":"Common","tags":[], "token_id": 47}
             ]
         },
 
@@ -108,7 +108,7 @@
                 {"name":"Eye Roll","colors":1,"rarity":"Epic","tags":[], "token_id": 5},
                 {"name":"Cringe Eye","colors":1,"rarity":"Epic","tags":[], "token_id": 5},
                 {"name":"Drunkard Gaze","colors":1,"rarity":"Epic","tags":[], "token_id": 46},
-                {"name":"FLS Laser","colors":2,"rarity":"common","tags":["onTop"], "token_id": 47}
+                {"name":"FLS Laser (Shop)","colors":2,"rarity":"common","tags":["onTop"], "token_id": 47}
             ]
         }, 
 
@@ -122,13 +122,13 @@
                 {"name":"Pumpkin","colors":2,"rarity":"common","tags":[], "token_id": 17},
                 {"name":"FrankenStitch","colors":0,"rarity":"common","tags":[], "token_id": 18},
                 {"name":"Spooky Makeup","colors":1,"rarity":"epic","tags":[], "token_id": 36},
-                {"name":"FLS Freckles","colors":0,"rarity":"common","tags":[], "token_id": 47},
-                {"name":"FLS Ok Hand","colors":0,"rarity":"common","tags":[], "token_id": 47},
-                {"name":"FLS Cactus Tattoo","colors":0,"rarity":"common","tags":[], "token_id": 47},
-                {"name":"FLS Diode","colors":1,"rarity":"common","tags":[], "token_id": 47},
-                {"name":"FLS Knife Eye","colors":0,"rarity":"common","tags":[], "token_id": 47},
-                {"name":"FLS Michelangelo","colors":0,"rarity":"common","tags":[], "token_id": 47},
-                {"name":"FLS Morgenshtern","colors":0,"rarity":"common","tags":[], "token_id": 47}
+                {"name":"FLS Freckles (Shop)","colors":0,"rarity":"common","tags":[], "token_id": 47},
+                {"name":"FLS Ok Hand (Shop)","colors":0,"rarity":"common","tags":[], "token_id": 47},
+                {"name":"FLS Cactus Tattoo (Shop)","colors":0,"rarity":"common","tags":[], "token_id": 47},
+                {"name":"FLS Diode (Shop)","colors":1,"rarity":"common","tags":[], "token_id": 47},
+                {"name":"FLS Knife Eye (Shop)","colors":0,"rarity":"common","tags":[], "token_id": 47},
+                {"name":"FLS Michelangelo (Shop)","colors":0,"rarity":"common","tags":[], "token_id": 47},
+                {"name":"FLS Morgenshtern (Shop)","colors":0,"rarity":"common","tags":[], "token_id": 47}
             ]
         },
 
@@ -137,12 +137,12 @@
             "traits": [
                 { "name": "Scary Trees", "colors": 2, "rarity": "uncommon", "tags": ["onBack"], "token_id": 23 },
                 { "name": "Fall Pumpkins", "colors": 2, "rarity": "uncommon", "tags": ["onBack"], "token_id": 24 },
-                {"name":"Flaunt Friday Banner","colors":2,"rarity":"Common","tags":[], "token_id": 47},
-                {"name":"Flaunt Large","colors":1,"rarity":"Common","tags":[], "token_id": 47},
-                {"name":"Flaunt Star","colors":2,"rarity":"Common","tags":[], "token_id": 47},
-                {"name":"FLAUNTFLAUNTFLAUNT","colors":2,"rarity":"Common","tags":[], "token_id": 47},
-                {"name":"FLS Logo Round","colors":1,"rarity":"Common","tags":[], "token_id": 47},
-                {"name":"FLS Logo","colors":0,"rarity":"Common","tags":[], "token_id": 47}
+                {"name":"Flaunt Friday Banner (Shop)","colors":2,"rarity":"Common","tags":[], "token_id": 47},
+                {"name":"Flaunt Large (Shop)","colors":1,"rarity":"Common","tags":[], "token_id": 47},
+                {"name":"Flaunt Star (Shop)","colors":2,"rarity":"Common","tags":[], "token_id": 47},
+                {"name":"FLAUNTFLAUNTFLAUNT (Shop)","colors":2,"rarity":"Common","tags":[], "token_id": 47},
+                {"name":"FLS Logo Round (Shop)","colors":1,"rarity":"Common","tags":[], "token_id": 47},
+                {"name":"FLS Logo (Shop)","colors":0,"rarity":"Common","tags":[], "token_id": 47}
             ]
         },
 
@@ -159,11 +159,11 @@
                 {"name":"Medusa Hair","colors":3,"rarity":"mythic","parts":1,"tags":[], "token_id": 42},
                 {"name":"7s Style","colors":1,"rarity":"immortal","parts":1,"tags":[], "token_id": 44},
                 {"name":"Drunkard Hair","colors":1,"rarity":"Epic","parts":2,"tags":[], "token_id": 46},
-                {"name":"FLS Italy","colors":1,"rarity":"common","parts":1,"tags":[], "token_id": 47},
-                {"name":"FLS Office","colors":1,"rarity":"common","parts":1,"tags":[], "token_id": 47},
-                {"name":"FLS Pomp","colors":1,"rarity":"common","parts":1,"tags":[], "token_id": 47},
-                {"name":"FLS Straight","colors":1,"rarity":"common","parts":2,"tags":[], "token_id": 47},
-                {"name":"FLS Voluminous","colors":1,"rarity":"common","parts":2,"tags":[], "token_id": 47}
+                {"name":"FLS Italy (Shop)","colors":1,"rarity":"common","parts":1,"tags":[], "token_id": 47},
+                {"name":"FLS Office (Shop)","colors":1,"rarity":"common","parts":1,"tags":[], "token_id": 47},
+                {"name":"FLS Pomp (Shop)","colors":1,"rarity":"common","parts":1,"tags":[], "token_id": 47},
+                {"name":"FLS Straight (Shop)","colors":1,"rarity":"common","parts":2,"tags":[], "token_id": 47},
+                {"name":"FLS Voluminous (Shop)","colors":1,"rarity":"common","parts":2,"tags":[], "token_id": 47}
             ]
         }, 
 
@@ -193,8 +193,8 @@
                 {"name":"W33D Shades","colors":2,"rarity":"Epic","tags":[], "token_id": 4},
                 {"name":"BQ Visor","colors":3,"rarity":"common","tags":[], "token_id": 11},
                 {"name":"Baby Pumpkin","colors":3,"rarity":"uncommon","tags":[], "token_id": 27},
-                {"name":"FLS Balaclava","colors":1,"rarity":"common","tags":[], "token_id": 47},
-                {"name":"FLS Snapback Cap","colors":1,"rarity":"common","tags":[], "token_id": 47}
+                {"name":"FLS Balaclava (Shop)","colors":1,"rarity":"common","tags":[], "token_id": 47},
+                {"name":"FLS Snapback Cap (Shop)","colors":1,"rarity":"common","tags":[], "token_id": 47}
             ]
         }, 
         
@@ -210,8 +210,8 @@
                 {"name":"W33D Hang","colors":3,"rarity":"Epic","tags":[], "token_id": 4},
                 {"name":"W33D Straight","colors":3,"rarity":"Epic","tags":[], "token_id": 4},
                 {"name":"Drunkard Buckteeth","colors":1,"rarity":"Epic","tags":[], "token_id": 46},
-                {"name":"FLS Molly","colors":3,"rarity":"common","tags":[], "token_id": 47},
-                {"name":"FLS Tongue","colors":2,"rarity":"common","tags":[], "token_id": 47}
+                {"name":"FLS Molly (Shop)","colors":3,"rarity":"common","tags":[], "token_id": 47},
+                {"name":"FLS Tongue (Shop)","colors":2,"rarity":"common","tags":[], "token_id": 47}
             ]
         }, 
          
@@ -254,7 +254,7 @@
                 {"name":"Gorgon Skin","colors":0,"rarity":"rare", "tags": [], "token_id": 31},
                 {"name":"Spectral Skin","colors":0,"rarity":"epic", "tags": [], "token_id": 37},
                 {"name":"That Yellow Cartoon Skin","colors":0,"rarity":"epic", "tags": [], "token_id": 46},
-                {"name":"FLS Beige","colors":0,"rarity":"Common","tags":[], "token_id": 47}
+                {"name":"FLS Beige (Shop)","colors":0,"rarity":"Common","tags":[], "token_id": 47}
                 
             ]
         },
@@ -264,10 +264,10 @@
             "traits": [
                 {"name":"Witchy","colors":1,"rarity":"rare", "tags": [], "token_id": 32},
                 {"name":"Cinnamon Roll Head","colors":3,"rarity":"rare", "tags": [], "token_id": 34},
-                {"name":"FLS Barb Wire","colors":0,"rarity":"common","tags":[], "token_id": 47},
-                {"name":"FLS Dead Love","colors":1,"rarity":"common","tags":[], "token_id": 47},
-                {"name":"FLS No Brain","colors":0,"rarity":"common","tags":[], "token_id": 47},
-                {"name":"FLS Rose Tattoo","colors":2,"rarity":"common","tags":[], "token_id": 47}
+                {"name":"FLS Barb Wire (Shop)","colors":0,"rarity":"common","tags":[], "token_id": 47},
+                {"name":"FLS Dead Love (Shop)","colors":1,"rarity":"common","tags":[], "token_id": 47},
+                {"name":"FLS No Brain (Shop)","colors":0,"rarity":"common","tags":[], "token_id": 47},
+                {"name":"FLS Rose Tattoo (Shop)","colors":2,"rarity":"common","tags":[], "token_id": 47}
                 
             ]
         },
