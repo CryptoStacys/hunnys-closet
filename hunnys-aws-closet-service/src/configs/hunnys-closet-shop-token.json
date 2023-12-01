@@ -967,6 +967,177 @@
             }
         ],
         "metaPath": "https://ipfs.io/ipfs/QmQVwHHyRSdz1hwLdLWBpaujRqAwFqxchNZq6oXRHCi63t/0"
+    },
+    {
+        "tokenId": 47,
+        "name":"Fame Lady Society Pack",
+        "attributes":[
+            {
+                "trait_type": "Accessory",
+                "value": "FLS Round Glasses"
+            },
+            {
+                "trait_type": "Accessory",
+                "value": "FLS Sunglasses"
+            },
+            {
+                "trait_type": "Accessory",
+                "value": "FLS Not Gucci Glasses"
+            },
+            {
+                "trait_type": "Accessory",
+                "value": "FLS Round Frame"
+            },
+            {
+                "trait_type": "Dye",
+                "value": "FLS Periwinkle"
+            },
+            {
+                "trait_type": "Dye",
+                "value": "FLS Forest"
+            },
+            {
+                "trait_type": "Dye",
+                "value": "FLS Grey"
+            },
+            {
+                "trait_type": "Dye",
+                "value": "FLS Pink"
+            },
+            {
+                "trait_type": "Dye",
+                "value": "FLS Light Brown"
+            },
+            {
+                "trait_type": "Dye",
+                "value": "FLS Dark Brown"
+            },
+            {
+                "trait_type": "Dye",
+                "value": "FLS Plum"
+            },
+            {
+                "trait_type": "Dye",
+                "value": "FLS Neon Purple"
+            },
+            {
+                "trait_type": "Dye",
+                "value": "FLS Neon Green"
+            },
+            {
+                "trait_type": "Eyes",
+                "value": "FLS Laser"
+            },
+            {
+                "trait_type": "Face Sticker",
+                "value": "FLS Freckles"
+            },
+            {
+                "trait_type": "Face Sticker",
+                "value": "FLS Ok Hand"
+            },
+            {
+                "trait_type": "Frame",
+                "value": "FLS Logo"
+            },
+            {
+                "trait_type": "Frame",
+                "value": "Flaunt Friday Banner"
+            },
+            {
+                "trait_type": "Frame",
+                "value": "FLAUNTFLAUNTFLAUNT"
+            },
+            {
+                "trait_type": "Frame",
+                "value": "Flaunt Star"
+            },
+            {
+                "trait_type": "Frame",
+                "value": "Flaunt Large"
+            },
+            {
+                "trait_type": "Frame",
+                "value": "FLS Logo Round"
+            },
+            {
+                "trait_type": "Hair Style",
+                "value": "FLS Voluminous"
+            },
+            {
+                "trait_type": "Hair Style",
+                "value": "FLS Straight"
+            },
+            {
+                "trait_type": "Hair Style",
+                "value": "FLS Pomp"
+            },
+            {
+                "trait_type": "Hair Style",
+                "value": "FLS Office"
+            },
+            {
+                "trait_type": "Hair Style",
+                "value": "FLS Italy"
+            },
+            {
+                "trait_type": "Hat",
+                "value": "FLS Balaclava"
+            },
+            {
+                "trait_type": "Hat",
+                "value": "FLS Snapback Cap"
+            },
+            {
+                "trait_type": "Mouth",
+                "value": "FLS Tongue"
+            },
+            {
+                "trait_type": "Mouth",
+                "value": "FLS Molly"
+            },
+            {
+                "trait_type": "Skin",
+                "value": "FLS Beige"
+            },
+            {
+                "trait_type": "Tattoo",
+                "value": "FLS Barb Wire"
+            },
+            {
+                "trait_type": "Face Sticker",
+                "value": "FLS Diode"
+            },
+            {
+                "trait_type": "Face Sticker",
+                "value": "FLS Cactus Tattoo"
+            },
+            {
+                "trait_type": "Face Sticker",
+                "value": "FLS Morgenshtern"
+            },
+            {
+                "trait_type": "Tattoo",
+                "value": "FLS Rose Tattoo"
+            },
+            {
+                "trait_type": "Face Sticker",
+                "value": "FLS Knife Eye"
+            },
+            {
+                "trait_type": "Face Sticker",
+                "value": "FLS Michelangelo"
+            },
+            {
+                "trait_type": "Tattoo",
+                "value": "FLS No Brain"
+            },
+            {
+                "trait_type": "Tattoo",
+                "value": "FLS Dead Love"
+            }            
+        ],
+        "metaPath": "https://ipfs.io/ipfs/QmcMADUXuBVY6A5D9vXvCZif2fmkXA42AAbgH3QYaqdCiJ/0"
     }
 ]
 
