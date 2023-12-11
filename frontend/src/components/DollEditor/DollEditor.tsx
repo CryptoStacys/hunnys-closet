@@ -95,7 +95,7 @@ export default function DollEditor(props: { id: number; selectDoll: Function }) 
     // console.log(formData);
 
     
-    fetch(`https://merch-api.mokka-webdesign.com/updateClone`, {
+    fetch(`https://hunnys.io/updateClone`, {
             method: "post",
             body: formData,
         })
@@ -199,7 +199,7 @@ export default function DollEditor(props: { id: number; selectDoll: Function }) 
     return new Promise(async (resolve) => {
       fetch(
         // `${serverPath}/dolly/${id}`
-        `https://merch-api.mokka-webdesign.com/auth?wallet=${wallet}`
+        `https://hunnys.io/auth?wallet=${wallet}&nocache=${new Date().getTime()}`
       )
         .then((response) => response.json())
         .then((res) => {
@@ -217,7 +217,7 @@ export default function DollEditor(props: { id: number; selectDoll: Function }) 
     return new Promise(async (resolve) => {
       fetch(
         // `${serverPath}/dolly/${id}`
-        `https://merch-api.mokka-webdesign.com/getCloneData?tokenIds[]=${id}`
+        `https://hunnys.io/getCloneData?tokenIds[]=${id}&nocache=${new Date().getTime()}`
       )
         .then((response) => response.json())
         .then((res) => {

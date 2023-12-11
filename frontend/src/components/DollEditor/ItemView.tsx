@@ -309,7 +309,7 @@ export default function ItemView(props: { selectedTrait: Trait; selectedTraitSet
         break;
       //Hunnys Closet Shop
       case 7:
-        result = `https://buy.hunnys.io/polygon/asset/0x0b54fbd0139a2da92ff41fd9ed56adcf89d87001:${trait.token_id || ''}`;
+        result = `https://buy.hunnys.io/polygon/asset/0x5F0fEFD26189F651143D209cf5B357B6677DFA81:${trait.token_id || ''}`;
         break;
       //Fame Lady Society
       case 8:
