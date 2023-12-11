@@ -50,7 +50,7 @@ const FileService = {
             let result = {
                 name: 'Hunnys Dollys #' + cloneData.token_id,
                 description: 'Hunnys Dollys',
-                image: 'https://hunnys.s3.us-east-2.amazonaws.com/dollys/' + cloneData.token_id + '.png',
+                image: 'https://publicrattyb.s3.us-east-2.amazonaws.com/' + cloneData.token_id + '.png',
                 attributes: attributes
             }
 

@@ -1,12 +1,12 @@
 import awsCli from 'aws-cli-js';
 
 const from = "data/";
-const to = "s3://hunnys/dollys/";
+const to = "s3://publicrattyb/";
 const fileType = '.png';
 const cred = {
     "Credentials": {
-        "AccessKeyId": "AKIAZRALPQZASTYG4FOW",
-        "SecretAccessKey": "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"
+        "AccessKeyId": "AKIAWFXRVD22UZP2QNE5",
+        "SecretAccessKey": "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"
     }
 }
 
