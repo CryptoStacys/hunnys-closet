@@ -20,7 +20,7 @@ type Token = {
 };
 
 async function fetchMetadata(id: number) {
-    let res = await fetch(`https://hunnys.s3.us-east-2.amazonaws.com/data/${id}`);
+    let res = await fetch(`https://publicrattyb.s3.us-east-2.amazonaws.com/data/${id}`);
     let meta = await res.json();
     return meta.attributes;
 }
@@ -269,7 +269,7 @@ export async function getLayers(token: any): Promise<Layer[]> {
     }
 
     // HAIR (FRONT / DEFAULT)
-    if ((!bodysuit || bodysuit.name === "Empty") && (!hat || hat.name !== "FLS Balaclava (Shop)") && hairstyle) {
+    if ((!bodysuit || bodysuit.name === "Empty") && (!hat || hat.name !== "FLS Balaclava" || hat.name !== "FLS Balaclava (Shop)") && hairstyle) {
         let front = "";
         
         if (hairstyle.parts > 1) {

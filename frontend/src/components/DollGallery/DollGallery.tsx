@@ -71,7 +71,7 @@ function DollGallery({ selectDoll }: any) {
                                 <ImageWithFallback
                                     // key={doll.token_id}
                                     layout="fill"
-                                    src={`https://hunnys.s3.us-east-2.amazonaws.com/dollys/${doll.token_id}.png`}
+                                    src={`https://publicrattyb.s3.us-east-2.amazonaws.com/${doll.token_id}.png`}
                                     fallbackSrc={`/assets/img/empty.png`}
                                 />
 

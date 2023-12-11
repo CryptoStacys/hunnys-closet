@@ -16,7 +16,7 @@ const nextConfig = {
     remotePatterns: [
       {
         protocol: 'https',
-        hostname: 'hunnys.s3.us-east-2.amazonaws.com',
+        hostname: 'publicrattyb.s3.us-east-2.amazonaws.com',
       },
     ],
   },

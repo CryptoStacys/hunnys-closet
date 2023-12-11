@@ -199,7 +199,7 @@ export default function DollEditor(props: { id: number; selectDoll: Function }) 
     return new Promise(async (resolve) => {
       fetch(
         // `${serverPath}/dolly/${id}`
-        `https://hunnys.io/auth?wallet=${wallet}&nocache=${new Date().getTime()}`
+        `https://hunnys.io/auth?wallet=${wallet}`
       )
         .then((response) => response.json())
         .then((res) => {
@@ -217,7 +217,7 @@ export default function DollEditor(props: { id: number; selectDoll: Function }) 
     return new Promise(async (resolve) => {
       fetch(
         // `${serverPath}/dolly/${id}`
-        `https://hunnys.io/getCloneData?tokenIds[]=${id}&nocache=${new Date().getTime()}`
+        `https://hunnys.io/getCloneData?tokenIds[]=${id}`
       )
         .then((response) => response.json())
         .then((res) => {
