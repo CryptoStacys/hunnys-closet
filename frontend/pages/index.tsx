@@ -34,7 +34,7 @@ export default function App() {
       //   isReconnected,
       // });
 
-      fetch(`https://staging-hunnys-closet-2-548f5ed67a1b.herokuapp.com/traits`)
+      fetch(`http://localhost:8080/wordpress/wp-json/hunnys-closet/v1/traits?wallet=${address}`)
         .then((res) => res.json())
         .then((res) => {
           allTraitsSet(res);
@@ -43,7 +43,7 @@ export default function App() {
 
         // CACHEBUST https://hunnys.io/verifyCloset?wallet=${address}&nocache=${new Date().getTime()}`
 
-        fetch(`http://localhost:8080/wordpress/wp-content/plugins/the-hunnys-closet-api/the-hunnys-closet-api.php/verifyCloset?wallet=${address}`)
+        fetch(`http://localhost:8080/wordpress/wp-json/hunnys-closet/v1/verifyCloset?wallet=${address}`)
         .then((res) => res.json())
         .then((res) => {
           res.address = address;

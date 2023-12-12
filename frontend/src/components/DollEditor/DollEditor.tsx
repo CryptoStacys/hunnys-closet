@@ -95,7 +95,7 @@ export default function DollEditor(props: { id: number; selectDoll: Function }) 
     // console.log(formData);
 
     
-    fetch(`http://localhost:8080/wordpress/updateClone`, {
+    fetch(`http://localhost:8080/wordpress/wp-json/hunnys-closet/v1/updateClone`, {
             method: "post",
             body: formData,
         })
@@ -199,7 +199,7 @@ export default function DollEditor(props: { id: number; selectDoll: Function }) 
     return new Promise(async (resolve) => {
       fetch(
         // `${serverPath}/dolly/${id}`
-        `http://localhost:8080/wordpress/auth?wallet=${wallet}`
+        `http://localhost:8080/wordpress/wp-json/hunnys-closet/v1/auth?wallet=${wallet}`
       )
         .then((response) => response.json())
         .then((res) => {
@@ -217,7 +217,7 @@ export default function DollEditor(props: { id: number; selectDoll: Function }) 
     return new Promise(async (resolve) => {
       fetch(
         // `${serverPath}/dolly/${id}`
-        `http://localhost:8080/wordpress/getCloneData?tokenIds[]=${id}`
+        `http://localhost:8080/wordpress/wp-json/hunnys-closet/v1/getCloneData?tokenIds[]=${id}`
       )
         .then((response) => response.json())
         .then((res) => {
