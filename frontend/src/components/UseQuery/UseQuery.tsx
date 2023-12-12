@@ -6,7 +6,7 @@ export default function Example() {
     queryKey: ["user"],
     queryFn: () =>
       fetch(
-        "https://hunnys.io/verifyCloset?wallet=0xa7758394D8f7fD23b0d9F13E02427B514687394B"
+        "http://localhost:8080/wordpress/verifyCloset?wallet=0xa7758394D8f7fD23b0d9F13E02427B514687394B"
       ).then((res) => res.json()),
   });
 
