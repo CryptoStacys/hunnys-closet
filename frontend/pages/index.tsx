@@ -34,7 +34,7 @@ export default function App() {
       //   isReconnected,
       // });
 
-      fetch(`http://localhost:8080/wordpress/wp-json/hunnys-closet/v1/traits?wallet=${address}`)
+      fetch(`http://pleasing-turkey-pleasing.ngrok-free.app/wordpress/wp-json/hunnys-closet/v1/traits?wallet=${address}`)
         .then((res) => res.json())
         .then((res) => {
           allTraitsSet(res);
@@ -43,7 +43,7 @@ export default function App() {
 
         // CACHEBUST https://hunnys.io/verifyCloset?wallet=${address}&nocache=${new Date().getTime()}`
 
-        fetch(`http://localhost:8080/wordpress/wp-json/hunnys-closet/v1/verifyCloset?wallet=${address}`)
+        fetch(`http://pleasing-turkey-pleasing.ngrok-free.app/wordpress/wp-json/hunnys-closet/v1/verifyCloset?wallet=${address}`)
         .then((res) => res.json())
         .then((res) => {
           res.address = address;
