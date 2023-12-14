@@ -295,10 +295,6 @@ export default function ItemView(props: { selectedTrait: Trait; selectedTraitSet
       case 3:
         result = `https://buy.hunnys.io/polygon/asset/0x43668e306dba9172824524fd2c0c6924e710ea5b:${trait.token_id || ''}`;
         break;
-      //shop.hunnys.net
-      case 4:
-        result = `https://buy.hunnys.io/`;
-        break;
       //Stacys
       case 5:
         result = `https://buy.hunnys.io/ethereum/collection/0x21ac5f6c96ccb174115b18318e3e340237a55606`;

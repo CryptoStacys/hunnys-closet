@@ -45,11 +45,6 @@ const TokenService = {
                     //    "name": "Hunnys Seasonal",
                     result = TokenService.getSelectiveTraits(collection.config, collection.tokens, configTokenData, configTraitsData, defaultConfigTraitsData);
                     break;
-                case 4:
-                    //    "name": "Hunnys Merch Shop (NOT IN USE)",
-                    let filteredTokens = TokenService.filterShopTokens(collection.tokens, configTokenData);
-                    result = TokenService.getSelectiveTraits(collection.config, filteredTokens, configTokenData, configTraitsData, defaultConfigTraitsData);
-                    break;
                 case 5:
                     // "name": "Hunnys Stacys",
                     result = TokenService.getAllTraits(collection.config, collection.tokens, configTokenData, configTraitsData);
@@ -237,20 +232,6 @@ return result;
 
             resolve(result);
         })
-    },
-    filterShopTokens: function (tokens, configTokenData) {
-        let result = [];
-
-        for (let i = 0; i < tokens.length; i++) {
-            let slug = tokens[i].tokenUrl.match(/\/hunnys-merch.s3.amazonaws.com\/(.*?)\//);
-            let tokenMatch = configTokenData.find((ele) => { return ele.slug === slug[1] });
-
-            if(tokenMatch) {
-                result.push(tokens[i]);
-            }
-        }
-
-        return result;
     },
     mapTokenIds: function (tokens, config) {
         return new Promise(async function (resolve) {
@@ -465,18 +446,6 @@ return result;
         })
     },
 
-
-
-
-
-
-
-
-
-
-
-
-
     /// get all trait functions
     getAllData: function (collections) {
         return new Promise(async function (resolve) {
@@ -526,10 +495,6 @@ return result;
                     //    "name": "Hunnys Seasonal",
                     result = TokenService.getTraits(collection, configTraitsData);
                     break;
-                case 4:
-                    //    "name": "Hunnys Merch Shop (NOT IN USE)",
-                    result = TokenService.getTraits(collection, configTraitsData);
-                    break;
                 case 5:
                     // "name": "Hunnys Stacys",
                     result = TokenService.getTraits(collection, configTraitsData);
@@ -544,6 +509,10 @@ return result;
                     break;
                 case 8:
                     //  "name": "Fame Lady Society",
+                    result = TokenService.getTraits(collection, configTraitsData);
+                    break;
+                case 9:
+                    //  "name": "New Hunnys Closet Shop",
                     result = TokenService.getTraits(collection, configTraitsData);
                     break;
                 default:

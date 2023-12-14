@@ -29,11 +29,6 @@ const ChainService = {
                     tokens = await ChainService.requestSeasonsContract(config.contract, wallet, abi, infuraUrl);
                     tokens = await ChainService.arregateMetaPathToToken(tokens, config);
                     break;
-                case 4:
-                //    "name": "Hunnys Merch Shop (NOT IN USE)",
-                    abi = await ChainService.loadAbi(`src/abis/hunnys-shop-abi.json`);
-                    tokens = await ChainService.requestShopContract(config.contract, wallet, abi, infuraUrl);
-                    break;
                 case 5:
                     // "name": "Hunnys Stacys",
                     abi = await ChainService.loadAbi(`src/abis/hunnys-stacys-abi.json`);
@@ -137,26 +132,6 @@ const ChainService = {
                 tokenUrl: data
             });
         });
-    },
-    requestShopContract: function (contractAddr, wallet, abi, infuraUrl) {
-        return new Promise(async resolve => {
-            let result = [];
-
-            let web3 = new Web3(infuraUrl);
-            let contract = new web3.eth.Contract(abi, contractAddr);
-
-            let tokens = await contract.methods.tokensOfOwner(wallet).call();
-
-            let urlPromises = [];
-            for (let i = 0; i < tokens.length; i++) {
-                urlPromises.push(ChainService.getTokenUrl(contract, tokens[i]));
-                
-            }
-
-            result = await Promise.all(urlPromises);
-
-            resolve(result);
-        })
     },
     arregateMetaPathToToken: function(tokens, config){
         return new Promise(async resolve => {

@@ -7,8 +7,7 @@
                 "trait_type": "Hand",
                 "value": "GM Mug"
             }
-        ],
-        "metaPath": "https://hunnysclosetshop.s3.us-east-2.amazonaws.com/images/goodies/0.json"
+        ]
     },
     {
         "tokenId": 1,
@@ -54,8 +53,7 @@
                 "trait_type": "Dye",
                 "value": "Bored Pink 4"
             }
-        ],
-        "metaPath": "https://hunnysclosetshop.s3.us-east-2.amazonaws.com/images/goodies/1.json"
+        ]
     },
     {
         "tokenId": 2,
@@ -81,8 +79,7 @@
                 "trait_type": "Outfit",
                 "value": "Cowbelle Crop"
             }
-        ],
-        "metaPath": "https://hunnysclosetshop.s3.us-east-2.amazonaws.com/images/goodies/2.json"
+        ]
     },
     {
         "tokenId": 3,
@@ -104,8 +101,7 @@
                 "trait_type": "Accessory",
                 "value": "Piggy Earring"
             }
-        ],
-        "metaPath": "https://hunnysclosetshop.s3.us-east-2.amazonaws.com/images/goodies/3.json"
+        ]
     },
     {
         "tokenId": 4,
@@ -147,8 +143,7 @@
                 "trait_type": "Eyebrows",
                 "value": "W33D Brows"
             }
-        ],
-        "metaPath": "https://hunnysclosetshop.s3.us-east-2.amazonaws.com/images/goodies/4.json"
+        ]
     },
     {
         "tokenId": 5,
@@ -206,8 +201,7 @@
                 "trait_type": "Mouth",
                 "value": "Cringe"
             }
-        ],
-        "metaPath": "https://hunnysclosetshop.s3.us-east-2.amazonaws.com/images/goodies/5.json"
+        ]
     },
     {
         "tokenId": 6,
@@ -217,8 +211,7 @@
                 "trait_type": "Hair Style",
                 "value": "Long Gradient Hair"
             }
-        ],
-        "metaPath": "https://hunnysclosetshop.s3.us-east-2.amazonaws.com/images/goodies/6.json"
+        ]
     },
     {
         "tokenId": 7,
@@ -228,8 +221,7 @@
                 "trait_type": "Hair Style",
                 "value": "Modern Bob"
             }
-        ],
-        "metaPath": "https://hunnysclosetshop.s3.us-east-2.amazonaws.com/images/goodies/7.json"
+        ]
     },
     {
         "tokenId": 8,
@@ -299,8 +291,7 @@
                 "trait_type": "Dye",
                 "value": "Orangeish 4"
             }
-        ],
-        "metaPath": "https://hunnysclosetshop.s3.us-east-2.amazonaws.com/images/goodies/8.json"
+        ]
     },
     {
         "tokenId": 9,
@@ -310,8 +301,7 @@
                 "trait_type":"Bodysuit",
                 "value":"Reaper Demon Hood"
             }
-        ],
-        "metaPath": "https://hunnysclosetshop.s3.us-east-2.amazonaws.com/images/goodies/9.json"
+        ]
     },
     {
         "tokenId": 10,
@@ -357,8 +347,7 @@
                 "trait_type":"Dye",
                 "value":"Darknova Drip"
             }
-        ],
-        "metaPath": "https://hunnysclosetshop.s3.us-east-2.amazonaws.com/images/goodies/10.json"
+        ]
     },
     {
         "tokenId": 11,
@@ -388,8 +377,7 @@
                 "trait_type":"Outfit",
                 "value":"BQ Apron"
             }
-        ],
-        "metaPath": "https://hunnysclosetshop.s3.us-east-2.amazonaws.com/images/goodies/11.json"
+        ]
     },
     {
         "tokenId": 12,
@@ -399,8 +387,7 @@
                 "trait_type":"Accessory",
                 "value":"Ghosty Studs"
             }
-        ],
-        "metaPath": "https://hunnysclosetshop.s3.us-east-2.amazonaws.com/images/goodies/12.json"
+        ]
     },
     {
         "tokenId": 13,
@@ -410,8 +397,7 @@
                 "trait_type":"Accessory",
                 "value":"Pumpkin Studs"
             }
-        ],
-        "metaPath": "https://hunnysclosetshop.s3.us-east-2.amazonaws.com/images/goodies/13.json"
+        ]
     },
     {
         "tokenId": 14,
@@ -421,8 +407,7 @@
                 "trait_type":"Face Sticker",
                 "value":"Web"
             }
-        ],
-        "metaPath": "https://hunnysclosetshop.s3.us-east-2.amazonaws.com/images/goodies/14.json"
+        ]
     },
     {
         "tokenId": 15,
@@ -432,8 +417,7 @@
                 "trait_type":"Face Sticker",
                 "value":"Batty"
             }
-        ],
-        "metaPath": "https://hunnysclosetshop.s3.us-east-2.amazonaws.com/images/goodies/15.json"
+        ]
     },
     {
         "tokenId": 16,
@@ -443,8 +427,7 @@
                 "trait_type":"Face Sticker",
                 "value":"Ghosty"
             }
-        ],
-        "metaPath": "https://hunnysclosetshop.s3.us-east-2.amazonaws.com/images/goodies/16.json"
+        ]
     },
     {
         "tokenId": 17,
@@ -454,8 +437,7 @@
                 "trait_type":"Face Sticker",
                 "value":"Pumpkin"
             }
-        ],
-        "metaPath": "https://hunnysclosetshop.s3.us-east-2.amazonaws.com/images/goodies/17.json"
+        ]
     },
     {
         "tokenId": 18,
@@ -465,8 +447,7 @@
                 "trait_type":"Face Sticker",
                 "value":"FrankenStitch"
             }
-        ],
-        "metaPath": "https://hunnysclosetshop.s3.us-east-2.amazonaws.com/images/goodies/18.json"
+        ]
     },
     {
         "tokenId": 19,
@@ -476,8 +457,7 @@
                 "trait_type":"Hand",
                 "value":"Pumpkin Spice Latte"
             }
-        ],
-        "metaPath": "https://hunnysclosetshop.s3.us-east-2.amazonaws.com/images/goodies/19.json"
+        ]
     },
     {
         "tokenId": 20,
@@ -487,8 +467,7 @@
                 "trait_type":"Outfit",
                 "value":"Lunar Fall Sweater"
             }
-        ],
-        "metaPath": "https://hunnysclosetshop.s3.us-east-2.amazonaws.com/images/goodies/20.json"
+        ]
     },
     {
         "tokenId": 21,
@@ -498,8 +477,7 @@
                 "trait_type":"Outfit",
                 "value":"Fancy Fall Harvest Sweater"
             }
-        ],
-        "metaPath": "https://hunnysclosetshop.s3.us-east-2.amazonaws.com/images/goodies/21.json"
+        ]
     },
     {
         "tokenId": 22,
@@ -509,8 +487,7 @@
                 "trait_type":"Accessory",
                 "value":"Cozy Scarf"
             }
-        ],
-        "metaPath": "https://hunnysclosetshop.s3.us-east-2.amazonaws.com/images/goodies/22.json"
+        ]
     },
     {
         "tokenId": 23,
@@ -520,8 +497,7 @@
                 "trait_type":"Frame",
                 "value":"Scary Trees"
             }
-        ],
-        "metaPath": "https://hunnysclosetshop.s3.us-east-2.amazonaws.com/images/goodies/23.json"
+        ]
     },
     {
         "tokenId": 24,
@@ -531,8 +507,7 @@
                 "trait_type":"Frame",
                 "value":"Fall Pumpkins"
             }
-        ],
-        "metaPath": "https://hunnysclosetshop.s3.us-east-2.amazonaws.com/images/goodies/24.json"
+        ]
     },
     {
         "tokenId": 25,
@@ -542,8 +517,7 @@
                 "trait_type":"Hand",
                 "value":"Boo Mug"
             }
-        ],
-        "metaPath": "https://hunnysclosetshop.s3.us-east-2.amazonaws.com/images/goodies/25.json"
+        ]
     },
     {
         "tokenId": 26,
@@ -553,8 +527,7 @@
                 "trait_type":"Hand",
                 "value":"Witch Cauldron Mug"
             }
-        ],
-        "metaPath": "https://hunnysclosetshop.s3.us-east-2.amazonaws.com/images/goodies/26.json"
+        ]
     },
     {
         "tokenId": 27,
@@ -564,8 +537,7 @@
                 "trait_type":"Hat",
                 "value":"Baby Pumpkin"
             }
-        ],
-        "metaPath": "https://hunnysclosetshop.s3.us-east-2.amazonaws.com/images/goodies/27.json"
+        ]
     },
     {
         "tokenId": 28,
@@ -575,8 +547,7 @@
                 "trait_type":"Outfit",
                 "value":"Squirrel Friend Sweater Vest"
             }
-        ],
-        "metaPath": "https://hunnysclosetshop.s3.us-east-2.amazonaws.com/images/goodies/28.json"
+        ]
     },
     {
         "tokenId": 29,
@@ -586,8 +557,7 @@
                 "trait_type":"Accessory",
                 "value":"Chiddar"
             }
-        ],
-        "metaPath": "https://hunnysclosetshop.s3.us-east-2.amazonaws.com/images/goodies/29.json"
+        ]
     },
     {
         "tokenId": 30,
@@ -597,8 +567,7 @@
                 "trait_type":"Hand",
                 "value":"Jack o Bear Pail"
             }
-        ],
-        "metaPath": "https://hunnysclosetshop.s3.us-east-2.amazonaws.com/images/goodies/30.json"
+        ]
     },
     {
         "tokenId": 31,
@@ -608,8 +577,7 @@
                 "trait_type":"Skin",
                 "value":"Gorgon Skin"
             }
-        ],
-        "metaPath": "https://hunnysclosetshop.s3.us-east-2.amazonaws.com/images/goodies/31.json"
+        ]
     },
     {
         "tokenId": 32,
@@ -619,8 +587,7 @@
                 "trait_type":"Tattoo",
                 "value":"Witchy"
             }
-        ],
-        "metaPath": "https://hunnysclosetshop.s3.us-east-2.amazonaws.com/images/goodies/32.json"
+        ]
     },
     {
         "tokenId": 33,
@@ -630,8 +597,7 @@
                 "trait_type":"Outfit",
                 "value":"Plaid Fall Jacket"
             }
-        ],
-        "metaPath": "https://hunnysclosetshop.s3.us-east-2.amazonaws.com/images/goodies/33.json"
+        ]
     },
     {
         "tokenId": 34,
@@ -641,8 +607,7 @@
                 "trait_type":"Tattoo",
                 "value":"Cinnamon Roll Head"
             }
-        ],
-        "metaPath": "https://hunnysclosetshop.s3.us-east-2.amazonaws.com/images/goodies/34.json"
+        ]
     },
     {
         "tokenId": 35,
@@ -652,8 +617,7 @@
                 "trait_type":"Accessory",
                 "value":"Ghost Trick or Treater"
             }
-        ],
-        "metaPath": "https://hunnysclosetshop.s3.us-east-2.amazonaws.com/images/goodies/35.json"
+        ]
     },
     {
         "tokenId": 36,
@@ -663,8 +627,7 @@
                 "trait_type":"Face Sticker",
                 "value":"Spooky Makeup"
             }
-        ],
-        "metaPath": "https://hunnysclosetshop.s3.us-east-2.amazonaws.com/images/goodies/36.json"
+        ]
     },
     {
         "tokenId": 37,
@@ -674,8 +637,7 @@
                 "trait_type":"Skin",
                 "value":"Spectral Skin"
             }
-        ],
-        "metaPath": "https://hunnysclosetshop.s3.us-east-2.amazonaws.com/images/goodies/37.json"
+        ]
     },
     {
         "tokenId": 38,
@@ -685,8 +647,7 @@
                 "trait_type":"Bodysuit",
                 "value":"Cute Nurse"
             }
-        ],
-        "metaPath": "https://hunnysclosetshop.s3.us-east-2.amazonaws.com/images/goodies/38.json"
+        ]
     },
     {
         "tokenId": 39,
@@ -696,8 +657,7 @@
                 "trait_type":"Bodysuit",
                 "value":"Lil Red Wolfy"
             }
-        ],
-        "metaPath": "https://hunnysclosetshop.s3.us-east-2.amazonaws.com/images/goodies/39.json"
+        ]
     },
     {
         "tokenId": 40,
@@ -707,8 +667,7 @@
                 "trait_type":"Bodysuit",
                 "value":"Pirate Babe"
             }
-        ],
-        "metaPath": "https://hunnysclosetshop.s3.us-east-2.amazonaws.com/images/goodies/40.json"
+        ]
     },
     {
         "tokenId": 41,
@@ -718,8 +677,7 @@
                 "trait_type":"Bodysuit",
                 "value":"Bunny Fighter Costume"
             }
-        ],
-        "metaPath": "https://hunnysclosetshop.s3.us-east-2.amazonaws.com/images/goodies/41.json"
+        ]
     },
     {
         "tokenId": 42,
@@ -729,8 +687,7 @@
                 "trait_type":"Hair Style",
                 "value":"Medusa Hair"
             }
-        ],
-        "metaPath": "https://hunnysclosetshop.s3.us-east-2.amazonaws.com/images/goodies/42.json"
+        ]
     },
     {
         "tokenId": 43,
@@ -860,8 +817,7 @@
                 "trait_type":"Hair Style",
                 "value":"Medusa Hair"
             }
-        ],
-        "metaPath": "https://hunnysclosetshop.s3.us-east-2.amazonaws.com/images/goodies/43.json"
+        ]
     },
     {
         "tokenId": 44,
@@ -879,8 +835,7 @@
                 "trait_type":"Outfit",
                 "value":"Borg Metallic Suit"
             }
-        ],
-        "metaPath": "https://hunnysclosetshop.s3.us-east-2.amazonaws.com/images/goodies/44.json"
+        ]
     },
     {
         "tokenId": 45,
@@ -910,8 +865,7 @@
                 "trait_type":"Dye",
                 "value":"White"
             }
-        ],
-        "metaPath": "https://hunnysclosetshop.s3.us-east-2.amazonaws.com/images/goodies/45.json"
+        ]
     },
     {
         "tokenId": 46,
@@ -965,8 +919,7 @@
                 "trait_type":"Outfit",
                 "value":"Drunkard Shirt"
             }
-        ],
-        "metaPath": "https://hunnysclosetshop.s3.us-east-2.amazonaws.com/images/goodies/46.json"
+        ]
     },
     {
         "tokenId": 47,
@@ -1136,8 +1089,7 @@
                 "trait_type": "Tattoo",
                 "value": "FLS Dead Love (Shop)"
             }            
-        ],
-        "metaPath": "https://hunnysclosetshop.s3.us-east-2.amazonaws.com/images/goodies/47.json"
+        ]
     },
     {
         "tokenId": 48,
@@ -1191,8 +1143,7 @@
                 "trait_type": "Frame",
                 "value": "Fuzzle Toe"
             }
-        ],
-        "metaPath": "https://hunnysclosetshop.s3.us-east-2.amazonaws.com/images/goodies/48.json"
+        ]
     },
     {
         "tokenId": 49,
@@ -1202,8 +1153,7 @@
                 "trait_type": "Hand",
                 "value": "Reindeer Mug"
             }
-        ],
-        "metaPath": "https://hunnysclosetshop.s3.us-east-2.amazonaws.com/images/goodies/49.json"
+        ]
     },
     {
         "tokenId": 50,
@@ -1213,8 +1163,7 @@
                 "trait_type": "Hand",
                 "value": "XL Hot Cocoa"
             }
-        ],
-        "metaPath": "https://hunnysclosetshop.s3.us-east-2.amazonaws.com/images/goodies/50.json"
+        ]
     },
     {
         "tokenId": 51,
@@ -1224,8 +1173,7 @@
                 "trait_type": "Hand",
                 "value": "Christmas Tree Mug"
             }
-        ],
-        "metaPath": "https://hunnysclosetshop.s3.us-east-2.amazonaws.com/images/goodies/51.json"
-    }
+        ]
+        }
 ]
 

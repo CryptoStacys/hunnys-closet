@@ -82,7 +82,7 @@
             "traitsConfigPath": "hunnys-closet-shop-traits.json",
             "idMapping": false,
             "hasStaticMetaPath": false,
-            "meta_url" : "",
+            "meta_url" : "https://hunnysclosetshop.s3.us-east-2.amazonaws.com/images/goodies/",
             "chain": "polygon"
         },
         {
