@@ -1,5 +1,5 @@
 // libaries
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 
 // store
@@ -44,6 +44,12 @@ export default function ItemView(props: { selectedTrait: Trait; selectedTraitSet
     },
   };
 
+  
+
+  const [currentPage, setCurrentPage] = useState(1);
+  const [sortedItems, setSortedItems] = useState<any[]>([]);
+  const ITEMS_PER_PAGE = 12;  // Display 12 Dollys per page, adjust as needed
+
   // state to check which color is being edited
   const [selectedColor, selectedColorSet] = useState(-1);
 
@@ -53,6 +59,37 @@ export default function ItemView(props: { selectedTrait: Trait; selectedTraitSet
 
   // Select which filter to use for colors
   const [colorFilter, setColorFilter] = useState("All");
+
+
+  useEffect(() => {
+    
+    let data = allTraits!.traits;
+
+    // Filter only selected attribute
+    data = data.filter((trait: Trait) => trait.attribute === props.selectedTrait!.attribute);
+
+    // Filter out duplicates
+    let uniqueTraits = new Set();
+    data = data.filter((obj: Trait) => {
+      if (!uniqueTraits.has(obj.name)) {
+        uniqueTraits.add(obj.name);
+        return true;
+      }
+      return false;
+    });
+
+    data = data.sort((a: Trait, b: Trait) => {
+      if (a.name == "Empty" && b.name !== "Empty") return -1;
+      return 1;
+    })
+    // Always show owned Traits after Empty
+    let sortedData = data.sort((a: Trait, b: Trait) => {
+      if (checkForOwnedTrait(a) && !checkForOwnedTrait(b)) return -1;
+      return 1;
+    });
+
+    setSortedItems(sortedData);
+  }, []);
 
   function closeDyeSelection() {
     selectedColorSet(-1);
@@ -112,6 +149,8 @@ export default function ItemView(props: { selectedTrait: Trait; selectedTraitSet
     return newColor;
   }
 
+  
+
   // Show colors of current selected trait
   function getColors() {
     if (props.selectedTrait.colorsApplied === undefined || props.selectedTrait.colorsApplied.length === 0) {
@@ -145,27 +184,44 @@ export default function ItemView(props: { selectedTrait: Trait; selectedTraitSet
   }
 
   // Get all traits to choose from
-  function getAllTraits() {
-    // Get all traits owned by user
-    // let data = user!.collections.collections[0].tokenData.traitData;
-    let data = allTraits!.traits;
+  // function getAllTraits() {
+  //   // Get all traits owned by user
+  //   // let data = user!.collections.collections[0].tokenData.traitData;
+  //   let data = allTraits!.traits;
 
-    // Filter only selected attribute
-    data = data.filter((trait: Trait) => trait.attribute === props.selectedTrait!.attribute);
+  //   // Filter only selected attribute
+  //   data = data.filter((trait: Trait) => trait.attribute === props.selectedTrait!.attribute);
 
-    // Filter out duplicates
-    let uniqueTraits = new Set();
-    data = data.filter((obj: Trait) => {
-      if (!uniqueTraits.has(obj.name)) {
-        uniqueTraits.add(obj.name);
-        return true;
-      }
-      return false;
-    });
+  //   // Filter out duplicates
+  //   let uniqueTraits = new Set();
+  //   data = data.filter((obj: Trait) => {
+  //     if (!uniqueTraits.has(obj.name)) {
+  //       uniqueTraits.add(obj.name);
+  //       return true;
+  //     }
+  //     return false;
+  //   });
 
-    // Sorting
-    return data;
-  }
+  //   data = data.sort((a: Trait, b: Trait) => {
+  //     if (a.name == "Empty" && b.name !== "Empty") return -1;
+  //     return 1;
+  //   })
+  //   // Always show owned Traits after Empty
+  //   let sortedData = data.sort((a: Trait, b: Trait) => {
+  //     if (checkForOwnedTrait(a) && !checkForOwnedTrait(b)) return -1;
+  //     return 1;
+  //   });
+
+
+  //   // setCurrentPage(1);
+
+  //   // const startIndex = (currentPage - 1) * DOLLYS_PER_PAGE;
+  //   // const endIndex = 0 + DOLLYS_PER_PAGE;
+  //   // const currentDollys = sortedData.slice(startIndex, endIndex);
+
+  //   // Sorting
+  //   return sortedData;
+  // }
 
   // update token with the new trait
   function setTraits(trait: Trait) {
@@ -251,13 +307,17 @@ export default function ItemView(props: { selectedTrait: Trait; selectedTraitSet
       case 6:
         result = `https://buy.hunnys.io/ethereum/collection/0x5dfeb75abae11b138a16583e03a2be17740eaded`;
         break;
-      //Hunnys Closet Shop
+      //Old Hunnys Closet Shop
       case 7:
-        result = `https://buy.hunnys.io/polygon/asset/0x11bc733e719198e2b3746f6841d2818ca87af6da:${trait.token_id || ''}`;
+        result = `https://buy.hunnys.io/polygon/asset/0x0b54fbd0139a2da92ff41fd9ed56adcf89d87001:${trait.token_id || ''}`;
         break;
       //Fame Lady Society
       case 8:
         result = `https://opensea.io/collection/fameladysociety`
+        break;
+      //Old Hunnys Closet Shop
+      case 9:
+        result = `https://buy.hunnys.io/polygon/asset/0x11bc733e719198e2b3746f6841d2818ca87af6da:${trait.token_id || ''}`;
         break;
       default:
         result = `#`;
@@ -329,6 +389,10 @@ export default function ItemView(props: { selectedTrait: Trait; selectedTraitSet
     return result;
   }
 
+  const startIndex = (currentPage - 1) * ITEMS_PER_PAGE;
+    const endIndex = startIndex + ITEMS_PER_PAGE;
+    const currentItems = sortedItems.slice(startIndex, endIndex);
+
   return (
     <>
       <ItemViewSettings selectedTrait={props.selectedTrait} getTraits={getTraits} setTraits={setTraits} back={back} />
@@ -383,19 +447,24 @@ export default function ItemView(props: { selectedTrait: Trait; selectedTraitSet
                 </div>
               </div>
               {/* ORIGIN */}
-              <div className="flex justify-between">
-                <div>Unlock Requirement</div>
-                <a
-                  className=" text-white bg-[#aaa] grid grid-cols-[24px_1fr] rounded-full px-3"
-                  target={getOriginUrl(props.selectedTrait) === '#' ? '_self' : '_blank'}
-                  rel={getOriginUrl(props.selectedTrait) === '#' ? '' : 'noreferrer'}
-                  href={getOriginUrl(props.selectedTrait)}
-                >
-                  <Icon type="link" className="h-6 w-6 pt-[3px] pb-[1px] fill-white" />
-                  {(props.selectedTrait.hasOwnProperty("token_id") && props.selectedTrait.token_id !== 'none' ) && <div>Token #{props.selectedTrait.token_id}</div>}
-                </a>
+{
+  props.selectedTrait.name !== "Empty" && getOriginUrl(props.selectedTrait) !== '#' && (
+    <div className="flex flex-row mt-5 gap-12 items-center justify-between">
+      <div>Unlock Requirement</div>
+      <a
+        className="bg-hunnys-black text-white text-center m-auto w-2/4 px-2 py-1 inline-block font-title shadow-md rounded-full text-lg hover:shadow-lg transition-all"
+        target={getOriginUrl(props.selectedTrait) === '#' ? '_self' : '_blank'}
+        rel={getOriginUrl(props.selectedTrait) === '#' ? '' : 'noreferrer'}
+        href={getOriginUrl(props.selectedTrait)}
+      >
+        {props.selectedTrait.origin_id >= 1 && props.selectedTrait.origin_id <= 9 && <div>VIEW</div>}
+      </a>
+    </div>
+  )
+}
 
-              </div>
+
+
 
               {/* INFO */}
               {props.selectedTrait.attribute === "Bodysuit" && (
@@ -537,19 +606,21 @@ export default function ItemView(props: { selectedTrait: Trait; selectedTraitSet
         {/* OTHER ITEMS */}
         <div className="mb-12">
           <div className="font-bold pl-1 mt-8 text-[#444]">Items</div>
-          <div className="grid grid-cols-4 w-full gap-y-3 gap-x-2 pb-6 max-h-[300px] overflow-scroll">
+          <div className="grid grid-cols-4 w-full gap-y-3 gap-x-2 pb-6">
             {/* {getTraits() */}
-            {getAllTraits()
+            {
+            //getAllTraits()
               // Always have "Empty" as the first trait in the list
-              .sort((a: Trait, b: Trait) => {
-                if (a.name == "Empty" && b.name !== "Empty") return -1;
-                return 1;
-              })
-              // Always show owned Traits after Empty
-              .sort((a: Trait, b: Trait) => {
-                if (checkForOwnedTrait(a) && !checkForOwnedTrait(b)) return -1;
-                return 1;
-              })
+              // .sort((a: Trait, b: Trait) => {
+              //   if (a.name == "Empty" && b.name !== "Empty") return -1;
+              //   return 1;
+              // })
+              // // Always show owned Traits after Empty
+              // .sort((a: Trait, b: Trait) => {
+              //   if (checkForOwnedTrait(a) && !checkForOwnedTrait(b)) return -1;
+              //   return 1;
+              // })
+              currentItems
               .map((trait: Trait, index: number) => (
                 <motion.button
                   initial="hidden"
@@ -571,19 +642,22 @@ export default function ItemView(props: { selectedTrait: Trait; selectedTraitSet
                     }}
                   ></div>
 
-                    <Image width={600} height={600}
+                    <Image width={600} height={600} priority={true}
                       className="w-full shadow-lg aspect-square flex-center"
                       src={`/${thumbnailPath}/${trait.attribute}/${trait.name}.jpg`}
                       alt={trait.name}
                     />
-                    <div style={{backgroundColor: '#a264f4'}} className={`shadow-lg rounded-b-lg text-white w-full flex h-auto justify-center items-center font-bold`}>{trait.name}</div>
+                    <div style={{backgroundColor: '#a264f4'}} className={`shadow-lg rounded-b-lg text-white w-full h-auto justify-center items-center font-bold break-words py-2 px-2`}>{trait.name}</div>
 
                 </motion.button>
               ))}
-          </div>
+            </div>
+            <div className="pagination-controls flex">
+                <button className={`bg-hunnys-blue paginate text-hunnys-yellow w-full font-title shadow-md rounded-full px-3 py-1 text-4xl hover:shadow-lg hover:scale-[1.02] transition-all ${currentPage === 1 ? 'opacity-40 cursor-not-allowed' : ''}`} disabled={currentPage === 1} onClick={() => setCurrentPage(currentPage - 1)}>Previous</button>
+                <button className={`bg-hunnys-yellow paginate text-hunnys-blue w-full font-title shadow-md rounded-full px-3 py-1 text-4xl hover:shadow-lg hover:scale-[1.02] transition-all ${currentItems.length < ITEMS_PER_PAGE ? 'opacity-40 cursor-not-allowed' : ''}`} disabled={currentItems.length < ITEMS_PER_PAGE} onClick={() => setCurrentPage(currentPage + 1)}>Next</button>
+            </div>
         </div>
       </div>
     </>
   );
 }
-

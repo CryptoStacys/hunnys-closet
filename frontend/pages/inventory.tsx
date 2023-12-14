@@ -122,13 +122,17 @@ export default function Items() {
       case 6:
         result = `https://buy.hunnys.io/ethereum/collection/0x5dfeb75abae11b138a16583e03a2be17740eaded`;
         break;
-      //Hunnys Closet Shop
+      //Old Hunnys Closet Shop
       case 7:
-        result = `https://buy.hunnys.io/polygon/asset/0x11bc733e719198e2b3746f6841d2818ca87af6da:${trait.token_id || ''}`;
+        result = `https://buy.hunnys.io/polygon/asset/0x0b54fbd0139a2da92ff41fd9ed56adcf89d87001:${trait.token_id || ''}`;
         break;
       //Fame Lady Society
       case 8:
         result = `https://opensea.io/collection/fameladysociety`
+        break;
+      // New Hunnys Closet Shop
+      case 9:
+        result = `https://buy.hunnys.io/polygon/asset/0x11bc733e719198e2b3746f6841d2818ca87af6da:${trait.token_id || ''}`;
         break;
       default:
         result = `#`;
@@ -192,7 +196,7 @@ export default function Items() {
 
                     {/* ORIGIN */}
                     {
-                      selectedTrait.name !== "Empty" && selectedTrait.origin_id >= 1 && selectedTrait.origin_id <= 8 && (
+                      selectedTrait.name !== "Empty" && selectedTrait.origin_id >= 1 && selectedTrait.origin_id <= 20 && (
                         <div className="flex py-2">
                           <div>Unlock Requirement</div>
                           <a

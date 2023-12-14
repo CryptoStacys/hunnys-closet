@@ -55,6 +55,12 @@ const ChainService = {
                     abi = await ChainService.loadAbi(`src/abis/fame-lady-society-abi.json`);
                     tokens = await ChainService.requestContract(config.contract, wallet, abi, infuraUrl, config.originID);
                     break;
+                case 9:
+                //  "name": "Hunnys Closet Shop",
+                    abi = await ChainService.loadAbi(`src/abis/new-hunnys-closet-shop-abi.json`);
+                    tokens = await ChainService.requestSeasonsContract(config.contract, wallet, abi, infuraUrl);
+                    tokens = await ChainService.arregateMetaPathToToken(tokens, config);
+                    break;
                 default:
                     break;
             }
@@ -78,10 +84,9 @@ const ChainService = {
             let contract = new web3.eth.Contract(abi, contractAddr);
             let tokens;
     
-            if (originID === 8) { // Assuming 8 is the originID for Fame Lady Society
+            if (originID === 8) { // 8 is the originID for Fame Lady Society
                 let balance = await contract.methods.balanceOf(wallet).call();
-                tokens = balance > 0 ? [1] : []; // If balance is more than 0, return [1] to indicate ownership, else empty array
-                console.log(`OriginID 8 Token Check - Wallet: ${wallet}, Balance: ${balance}, Tokens: ${tokens}`);
+                tokens = balance > 0 ? [1] : [];
             } else {
                 tokens = await contract.methods.tokensOfOwner(wallet).call();
             }
