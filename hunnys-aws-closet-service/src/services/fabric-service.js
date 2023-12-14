@@ -9,8 +9,8 @@ const FabricService = {
     createImage: function (loadedImages) {
         return new Promise(async resolve => {
             let canvas = new fabric.Canvas("canvas");
-            canvas.setWidth(3000);
-            canvas.setHeight(3000);
+            canvas.setWidth(600);
+            canvas.setHeight(600);
 
             for (let i = 0; i < loadedImages.length; i++) {
                 canvas = await FabricService.addImageToCanvas(loadedImages[i], canvas);
