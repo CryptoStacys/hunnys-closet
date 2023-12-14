@@ -1,0 +1,1742 @@
+{
+  "asset_name": "Hunny",
+  "description": "Hunnys is a collection of 10.000 randomly generated",
+  "img": "https://hunnys.s3.us-east-2.amazonaws.com/img/",
+  "baseURI": "https://hunnys.s3.us-east-2.amazonaws.com/metadata/",
+  "file_type": ".png",
+  "collection_name": "Hunnys",
+  "collection_size": "10000",
+  "rarity_table": {
+    "common": 40,
+    "uncommon": 30,
+    "rare": 20,
+    "epic": 10,
+    "legendary": 1,
+    "mythic": 0.5,
+    "relic": 0,
+    "immortal": 0
+  },
+  "attributes": {
+    "Background": {
+      "Empty": {
+        "name": "Empty",
+        "rarity": "common",
+        "colors": 0,
+        "baseColor": ["white"]
+      },
+      "WatermelonCandy": {
+        "name": "WatermelonCandy",
+        "colors": 0,
+        "baseColor": ["red"],
+        "rarity": "immortal"
+      },
+      "50sFilmGrain": {
+        "name": "50sFilmGrain",
+        "colors": 0,
+        "baseColor": ["white"],
+        "rarity": "immortal"
+      },
+      "GuardianDragon": {
+        "name": "GuardianDragon",
+        "colors": 0,
+        "baseColor": ["red"],
+        "rarity": "immortal"
+      },
+      "XiclonX9BoknyField": {
+        "name": "XiclonX9BoknyField",
+        "colors": 0,
+        "baseColor": ["pink"],
+        "rarity": "immortal"
+      },
+      "VaporwaveSunset": {
+        "name": "VaporwaveSunset",
+        "colors": 0,
+        "baseColor": ["purple"],
+        "rarity": "immortal"
+      },
+      "Swamp": {
+        "name": "Swamp",
+        "color": 0,
+        "rarity": "immortal",
+        "baseColor": ["green"]
+      },
+      "Galaxy": {
+        "name": "Galaxy",
+        "color": 0,
+        "rarity": "immortal",
+        "baseColor": ["purple"]
+      },
+      "StacysFavoriteBlue": {
+        "name": "StacysFavoriteBlue",
+        "rarity": "immortal",
+        "color": 0,
+        "baseColor": ["blue"]
+      },
+      "AI": {
+        "name": "AI",
+        "rarity": "legendary",
+        "colors": 0,
+        "baseColor": ["blue", "green"]
+      },
+      "Mint": {
+        "name": "Mint",
+        "rarity": "uncommon",
+        "colors": 0,
+        "baseColor": ["green"]
+      },
+      "CeruleanBlue": {
+        "name": "CeruleanBlue",
+        "rarity": "uncommon",
+        "colors": 0,
+        "baseColor": ["blue"]
+      },
+      "HotPink": {
+        "name": "HotPink",
+        "rarity": "common",
+        "colors": 0,
+        "baseColor": ["pink"]
+      },
+      "LightPurple": {
+        "name": "LightPurple",
+        "rarity": "common",
+        "colors": 0,
+        "baseColor": ["purple"]
+      },
+      "LimeGreen": {
+        "name": "LimeGreen",
+        "rarity": "common",
+        "colors": 0,
+        "baseColor": ["green"]
+      },
+      "LimeGreenHalftone": {
+        "name": "LimeGreenHalftone",
+        "rarity": "epic",
+        "colors": 0,
+        "baseColor": ["green"]
+      },
+      "Magenta": {
+        "name": "Magenta",
+        "rarity": "common",
+        "colors": 0,
+        "baseColor": ["pink"]
+      },
+      "Mermaid": {
+        "name": "Mermaid",
+        "rarity": "rare",
+        "colors": 0,
+        "baseColor": ["green", "blue"]
+      },
+      "Orange": {
+        "name": "Orange",
+        "rarity": "common",
+        "colors": 0,
+        "baseColor": ["orange"]
+      },
+      "Purple": {
+        "name": "Purple",
+        "rarity": "common",
+        "colors": 0,
+        "baseColor": ["purple"]
+      },
+      "Rainbow": {
+        "name": "Rainbow",
+        "rarity": "mythic",
+        "colors": 0,
+        "baseColor": ["pink", "yellow", "orange", "purple", "green", "white"]
+      },
+      "Red": {
+        "name": "Red",
+        "rarity": "common",
+        "colors": 0,
+        "baseColor": ["red"]
+      },
+      "Turquoise": {
+        "name": "Turquoise",
+        "rarity": "uncommon",
+        "colors": 0,
+        "baseColor": ["green", "blue"]
+      },
+      "TurquoiseHalftone": {
+        "name": "TurquoiseHalftone",
+        "rarity": "rare",
+        "colors": 0,
+        "baseColor": ["blue"]
+      },
+      "Yellow": {
+        "name": "Yellow",
+        "rarity": "common",
+        "colors": 0,
+        "baseColor": ["yellow"]
+      }
+    },
+    "Skin": {
+      "Empty": {
+        "name": "Empty",
+        "colors": 0
+      },
+      "Zombie": {
+        "name": "Zombie",
+        "colors": 0,
+        "rarity": "rare"
+      },
+      "AI": {
+        "name": "AI",
+        "colors": 0,
+        "rarity": "mythic"
+      },
+      "Alien": {
+        "name": "Alien",
+        "colors": 0,
+        "rarity": "rare"
+      },
+      "Borg": {
+        "name": "Borg",
+        "colors": 0,
+        "rarity": "legendary"
+      },
+      "Buttercream": {
+        "name": "Buttercream",
+        "colors": 0,
+        "rarity": "common"
+      },
+      "Cocoa": {
+        "name": "Cocoa",
+        "colors": 0,
+        "rarity": "common"
+      },
+      "CottonCandy": {
+        "name": "CottonCandy",
+        "colors": 0,
+        "rarity": "epic"
+      },
+      "Demon": {
+        "name": "Demon",
+        "colors": 0,
+        "rarity": "epic"
+      },
+      "GingerSnaps": {
+        "name": "GingerSnaps",
+        "colors": 0,
+        "rarity": "common"
+      },
+      "Hazelnut": {
+        "name": "Hazelnut",
+        "colors": 0,
+        "rarity": "common"
+      },
+      "Macaroons": {
+        "name": "Macaroons",
+        "colors": 0,
+        "rarity": "common"
+      },
+      "Marshmellows": {
+        "name": "Marshmellows",
+        "colors": 0,
+        "rarity": "common"
+      },
+      "Mermaid": {
+        "name": "Mermaid",
+        "colors": 0,
+        "rarity": "rare"
+      },
+      "Mocha": {
+        "name": "Mocha",
+        "colors": 0,
+        "rarity": "common"
+      },
+      "PeachCobbler": {
+        "name": "PeachCobbler",
+        "colors": 0,
+        "rarity": "common"
+      },
+      "RaspberryCookies": {
+        "name": "RaspberryCookies",
+        "colors": 0,
+        "rarity": "common"
+      },
+      "Cakebatter": {
+        "name": "Cakebatter",
+        "colors": 0,
+        "rarity": "common"
+      },
+      "Smurfette": {
+        "name": "Smurfette",
+        "colors": 0,
+        "rarity": "epic"
+      },
+      "StrawberryFrosting": {
+        "name": "StrawberryFrosting",
+        "colors": 0,
+        "rarity": "common"
+      },
+      "StrawberryMilk": {
+        "name": "StrawberryMilk",
+        "colors": 0,
+        "rarity": "common"
+      },
+      "StrawberryWhippedCream": {
+        "name": "StrawberryWhippedCream",
+        "colors": 0,
+        "rarity": "common"
+      },
+      "ToastedMarshmellow": {
+        "name": "ToastedMarshmellow",
+        "colors": 0,
+        "rarity": "common"
+      },
+      "VanillaBean": {
+        "name": "VanillaBean",
+        "colors": 0,
+        "rarity": "common"
+      },
+      "VanillaCheesecake": {
+        "name": "VanillaCheesecake",
+        "colors": 0,
+        "rarity": "common"
+      }
+    },
+    "Eyebrows": {
+      "Empty": {
+        "name": "Empty",
+        "colors": 0,
+        "rarity": "common"
+      },
+      "AngryVoodoo": {
+        "name": "AngryVoodoo",
+        "colors": 0,
+        "rarity": "immortal"
+      },
+      "WonderBrows": {
+        "name": "WonderBrows",
+        "colors": 0,
+        "rarity": "immortal"
+      },
+      "Slit": {
+        "name": "Slit",
+        "colors": 0,
+        "rarity": "rare"
+      },
+      "Normal": {
+        "name": "Normal",
+        "colors": 0,
+        "rarity": "common"
+      },
+      "Flat": {
+        "name": "Flat",
+        "colors": 0,
+        "rarity": "common"
+      },
+      "Gentle": {
+        "name": "Gentle",
+        "colors": 0,
+        "rarity": "common"
+      },
+      "Angry": {
+        "name": "Angry",
+        "colors": 0,
+        "rarity": "uncommon"
+      }
+    },
+    "Hat": {
+      "Empty": {
+        "name": "Empty",
+        "colors": 0,
+        "rarity": "common",
+        "tags": []
+      },
+      "GummyEars": {
+        "name": "GummyEars",
+        "colors": 1,
+        "rarity": "immortal",
+        "tags": []
+      },
+      "BirdSkullHeaddress": {
+        "name": "BirdSkullHeaddress",
+        "colors": 2,
+        "rarity": "immortal",
+        "tags": []
+      },
+      "SpaceHelmet": {
+        "name": "SpaceHelmet",
+        "colors": 0,
+        "rarity": "immortal",
+        "tags": []
+      },
+      "WitchHat": {
+        "name": "WitchHat",
+        "colors": 3,
+        "rarity": "rare",
+        "tags": []
+      },
+      "HappyJohnathanTheFrog": {
+        "name": "HappyJohnathanTheFrog",
+        "colors": 2,
+        "rarity": "epic",
+        "tags": []
+      },
+      "Crown": {
+        "name": "Crown",
+        "colors": 2,
+        "rarity": "legendary",
+        "tags": []
+      },
+      "FatMouseHairClip": {
+        "name": "FatMouseHairClip",
+        "colors": 1,
+        "rarity": "uncommon",
+        "tags": ["no"]
+      },
+      "BabyBunny": {
+        "name": "BabyBunny",
+        "colors": 1,
+        "rarity": "rare",
+        "tags": []
+      },
+      "BabyDragon": {
+        "name": "BabyDragon",
+        "colors": 2,
+        "rarity": "legendary",
+        "tags": []
+      },
+      "BearEars": {
+        "name": "BearEars",
+        "colors": 1,
+        "rarity": "common",
+        "tags": []
+      },
+      "BooTheGhostFloop": {
+        "name": "BooTheGhostFloop",
+        "colors": 0,
+        "rarity": "epic",
+        "tags": []
+      },
+      "BunnyEars": {
+        "name": "BunnyEars",
+        "colors": 1,
+        "rarity": "rare",
+        "tags": []
+      },
+      "CowboyHat": {
+        "name": "CowboyHat",
+        "colors": 2,
+        "rarity": "uncommon",
+        "tags": []
+      },
+      "CrazyBearBallcap": {
+        "name": "CrazyBearBallcap",
+        "colors": 2,
+        "rarity": "common",
+        "tags": []
+      },
+      "CuteBird": {
+        "name": "CuteBird",
+        "colors": 2,
+        "rarity": "rare",
+        "tags": ["no"]
+      },
+      "CuteOctopusHat": {
+        "name": "CuteOctopusHat",
+        "colors": 2,
+        "rarity": "mythic",
+        "tags": []
+      },
+      "Daisy": {
+        "name": "Daisy",
+        "colors": 2,
+        "rarity": "common",
+        "tags": ["no"]
+      },
+      "DemonHorns": {
+        "name": "DemonHorns",
+        "colors": 1,
+        "rarity": "rare",
+        "parts": 2
+      },
+      "DevilHorns": {
+        "name": "DevilHorns",
+        "colors": 1,
+        "rarity": "common",
+        "parts": 2
+      },
+      "FlowerCrown": {
+        "name": "FlowerCrown",
+        "colors": 2,
+        "rarity": "rare",
+        "tags": ["no"]
+      },
+      "GhostCrocFriend": {
+        "name": "GhostCrocFriend",
+        "colors": 0,
+        "rarity": "epic",
+        "tags": []
+      },
+      "GhostKittyFriend": {
+        "name": "GhostKittyFriend",
+        "colors": 0,
+        "rarity": "rare",
+        "tags": []
+      },
+      "Halo": {
+        "name": "Halo",
+        "colors": 1,
+        "rarity": "rare",
+        "tags": ["no"]
+      },
+      "KittyEars": {
+        "name": "KittyEars",
+        "colors": 1,
+        "rarity": "common",
+        "tags": []
+      },
+      "KittyEarsBallcap": {
+        "name": "KittyEarsBallcap",
+        "colors": 2,
+        "rarity": "common",
+        "tags": []
+      },
+      "MoonPrincessBallcap": {
+        "name": "MoonPrincessBallcap",
+        "colors": 2,
+        "rarity": "common",
+        "tags": []
+      },
+      "Shades": {
+        "name": "Shades",
+        "colors": 2,
+        "rarity": "uncommon",
+        "tags": ["no"]
+      },
+      "SideBow": {
+        "name": "SideBow",
+        "colors": 1,
+        "rarity": "uncommon",
+        "tags": []
+      },
+      "SillyFrogBallcap": {
+        "name": "SillyFrogBallcap",
+        "colors": 2,
+        "rarity": "common",
+        "tags": []
+      },
+      "SunHatWithBow": {
+        "name": "SunHatWithBow",
+        "colors": 2,
+        "rarity": "uncommon",
+        "tags": []
+      },
+      "TennisVisor": {
+        "name": "TennisVisor",
+        "colors": 1,
+        "rarity": "uncommon",
+        "tags": []
+      },
+      "TopHat": {
+        "name": "TopHat",
+        "colors": 2,
+        "rarity": "uncommon",
+        "tags": []
+      },
+      "WeirdCatBallcap": {
+        "name": "WeirdCatBallcap",
+        "colors": 2,
+        "rarity": "common",
+        "tags": []
+      },
+      "WingedCommsDevice": {
+        "name": "WingedCommsDevice",
+        "colors": 2,
+        "rarity": "epic",
+        "tags": ["noEarring"]
+      }
+    },
+    "Eyes": {
+      "Empty": {
+        "name": "Empty",
+        "colors": 0,
+        "rarity": "common"
+      },
+      "MovieStarEyes": {
+        "name": "MovieStarEyes",
+        "colors": 2,
+        "rarity": "immortal"
+      },
+      "HoodedEyes": {
+        "name": "HoodedEyes",
+        "colors": 1,
+        "rarity": "immortal"
+      },
+      "AlienQueenEyes": {
+        "name": "AlienQueenEyes",
+        "colors": 2,
+        "rarity": "immortal"
+      },
+      "VoodooEyes": {
+        "name": "VoodooEyes",
+        "colors": 2,
+        "rarity": "immortal"
+      },
+      "SpaceEyes": {
+        "name": "SpaceEyes",
+        "colors": 2,
+        "rarity": "immortal"
+      },
+      "DiamondEyes": {
+        "name": "DiamondEyes",
+        "colors": 0,
+        "rarity": "relic"
+      },
+      "AIEyes": {
+        "name": "AIEyes",
+        "colors": 1,
+        "rarity": "legendary"
+      },
+      "BorgEyes": {
+        "name": "BorgEyes",
+        "colors": 1,
+        "rarity": "epic"
+      },
+      "RainbowEyes": {
+        "name": "RainbowEyes",
+        "colors": 0,
+        "rarity": "mythic"
+      },
+      "HeartEyes": {
+        "name": "HeartEyes",
+        "colors": 1,
+        "rarity": "uncommon"
+      },
+      "NormalEyes": {
+        "name": "NormalEyes",
+        "colors": 1,
+        "rarity": "common"
+      },
+      "SnakeEyes": {
+        "name": "SnakeEyes",
+        "colors": 2,
+        "rarity": "rare"
+      }
+    },
+    "Face Sticker": {
+      "Empty": {
+        "name": "Empty",
+        "colors": 0,
+        "rarity": "common"
+      },
+      "LipBeautyMark": {
+        "name": "LipBeautyMark",
+        "colors": 0,
+        "rarity": "immortal"
+      },
+      "DragonPrincessCheeks": {
+        "name": "DragonPrincessCheeks",
+        "colors": 2,
+        "rarity": "immortal"
+      },
+      "AlienBlush": {
+        "name": "AlienBlush",
+        "colors": 1,
+        "rarity": "immortal"
+      },
+      "SkullFacepaint": {
+        "name": "SkullFacepaint",
+        "colors": 1,
+        "rarity": "immortal"
+      },
+      "StarFreckles": {
+        "name": "StarFreckles",
+        "colors": 1,
+        "rarity": "immortal"
+      },
+      "TigerMakeup": {
+        "name": "TigerMakeup",
+        "colors": 0,
+        "rarity": "epic"
+      },
+      "ClubMakeup": {
+        "name": "ClubMakeup",
+        "colors": 0,
+        "rarity": "rare"
+      },
+      "Bandaid": {
+        "name": "Bandaid",
+        "colors": 2,
+        "rarity": "common"
+      },
+      "BlushLines": {
+        "name": "BlushLines",
+        "colors": 1,
+        "rarity": "uncommon"
+      },
+      "Bunny": {
+        "name": "Bunny",
+        "colors": 1,
+        "rarity": "common"
+      },
+      "Cherrys": {
+        "name": "Cherrys",
+        "colors": 2,
+        "rarity": "uncommon"
+      },
+      "CuteOctopus": {
+        "name": "CuteOctopus",
+        "colors": 1,
+        "rarity": "uncommon"
+      },
+      "CuteSkull": {
+        "name": "CuteSkull",
+        "colors": 2,
+        "rarity": "common"
+      },
+      "DeadSmiley": {
+        "name": "DeadSmiley",
+        "colors": 1,
+        "rarity": "common"
+      },
+      "FangirlFacepaint": {
+        "name": "FangirlFacepaint",
+        "colors": 1,
+        "rarity": "rare"
+      },
+      "Flower": {
+        "name": "Flower",
+        "colors": 1,
+        "rarity": "common"
+      },
+      "Freckles": {
+        "name": "Freckles",
+        "colors": 0,
+        "rarity": "common"
+      },
+      "GeishaBlush": {
+        "name": "GeishaBlush",
+        "colors": 0,
+        "rarity": "rare"
+      },
+      "Heart": {
+        "name": "Heart",
+        "colors": 1,
+        "rarity": "common"
+      },
+      "JawlineBeautyMark": {
+        "name": "JawlineBeautyMark",
+        "colors": 0,
+        "rarity": "uncommon"
+      },
+      "KawaiiCheeks": {
+        "name": "KawaiiCheeks",
+        "colors": 1,
+        "rarity": "uncommon"
+      },
+      "KittyWhiskers": {
+        "name": "KittyWhiskers",
+        "colors": 1,
+        "rarity": "rare"
+      },
+      "Lightning": {
+        "name": "Lightning",
+        "colors": 1,
+        "rarity": "uncommon"
+      },
+      "MoonPrincess": {
+        "name": "MoonPrincess",
+        "colors": 1,
+        "rarity": "epic"
+      },
+      "NoseBandaid": {
+        "name": "NoseBandaid",
+        "colors": 2,
+        "rarity": "uncommon"
+      },
+      "Rainbow": {
+        "name": "Rainbow",
+        "colors": 3,
+        "rarity": "epic"
+      },
+      "Shiny": {
+        "name": "Shiny",
+        "colors": 1,
+        "rarity": "legendary"
+      },
+      "Snake": {
+        "name": "Snake",
+        "colors": 1,
+        "rarity": "rare"
+      },
+      "Spade": {
+        "name": "Spade",
+        "colors": 1,
+        "rarity": "uncommon"
+      },
+      "Star": {
+        "name": "Star",
+        "colors": 1,
+        "rarity": "common"
+      },
+      "SwirlyCheeks": {
+        "name": "SwirlyCheeks",
+        "colors": 1,
+        "rarity": "rare"
+      },
+      "UnderEyeBeautyMark": {
+        "name": "UnderEyeBeautyMark",
+        "colors": 0,
+        "rarity": "rare"
+      },
+      "WeirdCat": {
+        "name": "WeirdCat",
+        "colors": 1,
+        "rarity": "uncommon"
+      },
+      "Wing": {
+        "name": "Wing",
+        "colors": 0,
+        "rarity": "mythic"
+      }
+    },
+    "Piercing": {
+      "Empty": {
+        "name": "Empty",
+        "colors": 0,
+        "rarity": "common"
+      },
+      "DimplePiercings": {
+        "name": "DimplePiercings",
+        "colors": 1,
+        "rarity": "rare"
+      },
+      "LipPiercing": {
+        "name": "LipPiercing",
+        "colors": 1,
+        "rarity": "uncommon"
+      },
+      "NoseRing": {
+        "name": "NoseRing",
+        "colors": 1,
+        "rarity": "uncommon"
+      },
+      "NoseStud": {
+        "name": "NoseStud",
+        "colors": 1,
+        "rarity": "common"
+      },
+      "SeptumPiercing": {
+        "name": "SeptumPiercing",
+        "colors": 1,
+        "rarity": "epic"
+      }
+    },
+    "Mouth": {
+      "Empty": {
+        "name": "Empty",
+        "colors": 0,
+        "rarity": "common"
+      },
+      "GummyTongue": {
+        "name": "GummyTongue",
+        "colors": 2,
+        "rarity": "immortal"
+      },
+      "SpaceGloss": {
+        "name": "SpaceGloss",
+        "colors": 2,
+        "rarity": "immortal"
+      },
+      "DigitalCigarette": {
+        "name": "DigitalCigarette",
+        "colors": 1,
+        "rarity": "immortal"
+      },
+      "GlossyDuo": {
+        "name": "GlossyDuo",
+        "colors": 2,
+        "rarity": "immortal"
+      },
+      "MomPout": {
+        "name": "MomPout",
+        "colors": 2,
+        "rarity": "immortal"
+      },
+      "KindaMad": {
+        "name": "KindaMad",
+        "colors": 1,
+        "rarity": "uncommon"
+      },
+      "CuteSmile": {
+        "name": "CuteSmile",
+        "colors": 1,
+        "rarity": "common"
+      },
+      "GrumpyFrown": {
+        "name": "GrumpyFrown",
+        "colors": 1,
+        "rarity": "common"
+      },
+      "AI": {
+        "name": "AI",
+        "colors": 1,
+        "rarity": "mythic"
+      },
+      "Bite": {
+        "name": "Bite",
+        "colors": 1,
+        "rarity": "rare"
+      },
+      "BubbleGum": {
+        "name": "BubbleGum",
+        "colors": 2,
+        "rarity": "uncommon"
+      },
+      "Cigarette": {
+        "name": "Cigarette",
+        "colors": 1,
+        "rarity": "rare"
+      },
+      "Donut": {
+        "name": "Donut",
+        "colors": 2,
+        "rarity": "epic"
+      },
+      "Fangs": {
+        "name": "Fangs",
+        "colors": 1,
+        "rarity": "uncommon"
+      },
+      "FlatSucker": {
+        "name": "FlatSucker",
+        "colors": 2,
+        "rarity": "uncommon"
+      },
+      "Pocky": {
+        "name": "Pocky",
+        "colors": 1,
+        "rarity": "rare"
+      },
+      "Pout": {
+        "name": "Pout",
+        "colors": 1,
+        "rarity": "common"
+      },
+      "RoundSucker": {
+        "name": "RoundSucker",
+        "colors": 2,
+        "rarity": "common"
+      },
+      "SnakeTongue": {
+        "name": "SnakeTongue",
+        "colors": 2,
+        "rarity": "rare"
+      },
+      "Tongue": {
+        "name": "Tongue",
+        "colors": 1,
+        "rarity": "common"
+      }
+    },
+    "Hair Style": {
+      "Empty": {
+        "name": "Empty",
+        "colors": 0,
+        "parts": 1,
+        "rarity": "common",
+        "tags": []
+      },
+      "GummyHair": {
+        "name": "GummyHair",
+        "colors": 1,
+        "parts": 1,
+        "rarity": "immortal",
+        "tags": []
+      },
+      "50sStarletHair": {
+        "name": "50sStarletHair",
+        "colors": 1,
+        "parts": 2,
+        "rarity": "immortal",
+        "tags": []
+      },
+      "WindSweptHair": {
+        "name": "WindSweptHair",
+        "colors": 1,
+        "parts": 1,
+        "rarity": "immortal",
+        "tags": []
+      },
+      "XiclonianQueenHair": {
+        "name": "XiclonianQueenHair",
+        "colors": 2,
+        "parts": 2,
+        "rarity": "immortal",
+        "tags": []
+      },
+      "VaporwavePonytail": {
+        "name": "VaporwavePonytail",
+        "colors": 3,
+        "parts": 1,
+        "rarity": "immortal",
+        "tags": []
+      },
+      "TraditionalBraids": {
+        "name": "TraditionalBraids",
+        "colors": 3,
+        "parts": 2,
+        "rarity": "immortal",
+        "tags": []
+      },
+      "SpaceBob": {
+        "name": "SpaceBob",
+        "colors": 1,
+        "parts": 1,
+        "rarity": "immortal",
+        "tags": []
+      },
+      "StacysHair": {
+        "name": "StacysHair",
+        "colors": 1,
+        "parts": 2,
+        "rarity": "immortal",
+        "tags": []
+      },
+      "CurlyLong": {
+        "name": "CurlyLong",
+        "colors": 1,
+        "rarity": "uncommon",
+        "parts": 2,
+        "tags": []
+      },
+      "AnimeCutie": {
+        "name": "AnimeCutie",
+        "colors": 1,
+        "rarity": "rare",
+        "parts": 1,
+        "tags": ["no"]
+      },
+      "Formal50s": {
+        "name": "Formal50s",
+        "colors": 1,
+        "rarity": "uncommon",
+        "parts": 1,
+        "tags": []
+      },
+      "Suave50s": {
+        "name": "Suave50s",
+        "colors": 1,
+        "rarity": "uncommon",
+        "parts": 2,
+        "tags": ["no"]
+      },
+      "Daisy70s": {
+        "name": "Daisy70s",
+        "colors": 1,
+        "rarity": "rare",
+        "parts": 2,
+        "tags": []
+      },
+      "BabySailorScout": {
+        "name": "BabySailorScout",
+        "colors": 1,
+        "rarity": "epic",
+        "parts": 2,
+        "tags": ["no"]
+      },
+      "BunWithFringe": {
+        "name": "BunWithFringe",
+        "colors": 1,
+        "rarity": "common",
+        "parts": 1,
+        "tags": []
+      },
+      "CandyShopPigtails": {
+        "name": "CandyShopPigtails",
+        "colors": 2,
+        "rarity": "epic",
+        "parts": 1,
+        "tags": ["no"]
+      },
+      "ChibiBangs": {
+        "name": "ChibiBangs",
+        "colors": 1,
+        "rarity": "uncommon",
+        "parts": 2,
+        "tags": ["noEarring"]
+      },
+      "CrazyMohawk": {
+        "name": "CrazyMohawk",
+        "colors": 1,
+        "rarity": "rare",
+        "parts": 1,
+        "tags": ["no"]
+      },
+      "CurlyFringe": {
+        "name": "CurlyFringe",
+        "colors": 1,
+        "rarity": "common",
+        "parts": 1,
+        "tags": ["no"]
+      },
+      "CuteBob": {
+        "name": "CuteBob",
+        "colors": 1,
+        "rarity": "common",
+        "parts": 2,
+        "tags": ["noEarring"]
+      },
+      "CutePixie": {
+        "name": "CutePixie",
+        "colors": 1,
+        "rarity": "common",
+        "parts": 1,
+        "tags": []
+      },
+      "DinosaurPrincessHair": {
+        "name": "DinosaurPrincessHair",
+        "colors": 2,
+        "rarity": "legendary",
+        "parts": 2,
+        "tags": []
+      },
+      "ElegantCurly": {
+        "name": "ElegantCurly",
+        "colors": 1,
+        "rarity": "epic",
+        "parts": 2,
+        "tags": ["noEarring"]
+      },
+      "ExplorerBraid": {
+        "name": "ExplorerBraid",
+        "colors": 1,
+        "rarity": "uncommon",
+        "parts": 2,
+        "tags": []
+      },
+      "Geisha": {
+        "name": "Geisha",
+        "colors": 2,
+        "rarity": "mythic",
+        "parts": 1,
+        "tags": ["no"]
+      },
+      "HighPonytail": {
+        "name": "HighPonytail",
+        "colors": 2,
+        "rarity": "common",
+        "parts": 2,
+        "tags": ["no"]
+      },
+      "LongWithBangs": {
+        "name": "LongWithBangs",
+        "colors": 1,
+        "rarity": "common",
+        "parts": 2,
+        "tags": ["noEarring"]
+      },
+      "LongWithLayer": {
+        "name": "LongWithLayer",
+        "colors": 1,
+        "rarity": "common",
+        "parts": 2,
+        "tags": ["noEarring"]
+      },
+      "MessyBraids": {
+        "name": "MessyBraids",
+        "colors": 2,
+        "rarity": "uncommon",
+        "parts": 2,
+        "tags": ["noEarring"]
+      },
+      "NeatBun": {
+        "name": "NeatBun",
+        "colors": 1,
+        "rarity": "common",
+        "parts": 1,
+        "tags": []
+      },
+      "PreppyStraight": {
+        "name": "PreppyStraight",
+        "colors": 1,
+        "rarity": "common",
+        "parts": 2,
+        "tags": []
+      },
+      "SharpBob": {
+        "name": "SharpBob",
+        "colors": 1,
+        "rarity": "uncommon",
+        "parts": 2,
+        "tags": ["noEarring"]
+      },
+      "MessyBuzzCut": {
+        "name": "MessyBuzzCut",
+        "colors": 1,
+        "rarity": "uncommon",
+        "parts": 1,
+        "tags": []
+      },
+      "SpaceBunBob": {
+        "name": "SpaceBunBob",
+        "colors": 2,
+        "rarity": "uncommon",
+        "parts": 2,
+        "tags": ["no"]
+      },
+      "SpaceBuns": {
+        "name": "SpaceBuns",
+        "colors": 1,
+        "rarity": "common",
+        "parts": 1,
+        "tags": ["no"]
+      },
+      "Synthetic": {
+        "name": "Synthetic",
+        "colors": 1,
+        "rarity": "legendary",
+        "parts": 1,
+        "tags": []
+      },
+      "ThatGirlPixie": {
+        "name": "ThatGirlPixie",
+        "colors": 1,
+        "rarity": "uncommon",
+        "parts": 1,
+        "tags": []
+      },
+      "TriangleHead": {
+        "name": "TriangleHead",
+        "colors": 1,
+        "rarity": "uncommon",
+        "parts": 2,
+        "tags": ["noEarring"]
+      },
+      "UnicornMane": {
+        "name": "UnicornMane",
+        "colors": 2,
+        "rarity": "rare",
+        "parts": 1,
+        "tags": ["no"]
+      },
+      "UptightPigtails": {
+        "name": "UptightPigtails",
+        "colors": 2,
+        "rarity": "common",
+        "parts": 2,
+        "tags": []
+      }
+    },
+    "Accessory": {
+      "Empty": {
+        "name": "Empty",
+        "colors": 0,
+        "rarity": "common",
+        "tags": []
+      },
+      "StarletDiamond": {
+        "name": "StarletDiamond",
+        "colors": 0,
+        "rarity": "immortal",
+        "tags": []
+      },
+      "StarletPearls": {
+        "name": "StarletPearls",
+        "colors": 0,
+        "rarity": "immortal",
+        "tags": []
+      },
+      "TheVision": {
+        "name": "TheVision",
+        "colors": 2,
+        "rarity": "immortal",
+        "tags": []
+      },
+      "XirodiumBangle": {
+        "name": "XirodiumBangle",
+        "colors": 1,
+        "rarity": "immortal",
+        "tags": []
+      },
+      "XirodiumHoops": {
+        "name": "XirodiumHoops",
+        "colors": 1,
+        "rarity": "immortal",
+        "tags": []
+      },
+      "FuturisticGoggles": {
+        "name": "FuturisticGoggles",
+        "colors": 2,
+        "rarity": "immortal",
+        "tags": []
+      },
+      "RuneStoneNecklace": {
+        "name": "RuneStoneNecklace",
+        "colors": 4,
+        "rarity": "immortal",
+        "tags": []
+      },
+      "ToothEarring": {
+        "name": "ToothEarring",
+        "colors": 1,
+        "rarity": "immortal",
+        "tags": []
+      },
+      "DiamondDropEarrings": {
+        "name": "DiamondDropEarrings",
+        "colors": 1,
+        "rarity": "relic",
+        "tags": ["earring"]
+      },
+      "DiamondDropPendant": {
+        "name": "DiamondDropPendant",
+        "colors": 1,
+        "rarity": "relic",
+        "tags": []
+      },
+      "PearlChoker": {
+        "name": "PearlChoker",
+        "colors": 1,
+        "rarity": "rare",
+        "tags": []
+      },
+      "MoonPrincessPendant": {
+        "name": "MoonPrincessPendant",
+        "colors": 1,
+        "rarity": "common",
+        "tags": []
+      },
+      "CrazyBearPendant": {
+        "name": "CrazyBearPendant",
+        "colors": 2,
+        "rarity": "common",
+        "tags": []
+      },
+      "WeirdCatPendant": {
+        "name": "WeirdCatPendant",
+        "colors": 2,
+        "rarity": "common",
+        "tags": []
+      },
+      "MetalWings": {
+        "name": "MetalWings",
+        "colors": 1,
+        "rarity": "legendary",
+        "tags": ["onBack"]
+      },
+      "DonutEarrings": {
+        "name": "DonutEarrings",
+        "colors": 2,
+        "rarity": "uncommon",
+        "tags": ["onTop", "earring"]
+      },
+      "PuffBallEarrings": {
+        "name": "PuffBallEarrings",
+        "colors": 1,
+        "rarity": "uncommon",
+        "tags": ["onTop", "earring"]
+      },
+      "AtlasPuppyPlushie": {
+        "name": "AtlasPuppyPlushie",
+        "colors": 3,
+        "rarity": "rare",
+        "tags": ["onTop"]
+      },
+      "BoaBoa": {
+        "name": "BoaBoa",
+        "colors": 2,
+        "rarity": "legendary",
+        "tags": []
+      },
+      "BowChoker": {
+        "name": "BowChoker",
+        "colors": 2,
+        "rarity": "common",
+        "tags": []
+      },
+      "BowTieEarrings": {
+        "name": "BowTieEarrings",
+        "colors": 1,
+        "rarity": "common",
+        "tags": ["onTop", "earring"]
+      },
+      "BunnyEarrings": {
+        "name": "BunnyEarrings",
+        "colors": 1,
+        "rarity": "common",
+        "tags": ["onTop", "earring"]
+      },
+      "Choker": {
+        "name": "Choker",
+        "colors": 1,
+        "rarity": "common",
+        "tags": []
+      },
+      "ChubbyUnicornBackpack": {
+        "name": "ChubbyUnicornBackpack",
+        "colors": 3,
+        "rarity": "rare",
+        "tags": ["backpack"]
+      },
+      "CrazyBearBackpack": {
+        "name": "CrazyBearBackpack",
+        "colors": 2,
+        "rarity": "uncommon",
+        "tags": ["backpack"]
+      },
+      "CrazyBearPlushie": {
+        "name": "CrazyBearPlushie",
+        "colors": 2,
+        "rarity": "uncommon",
+        "tags": ["onTop"]
+      },
+      "FloatingGhostKitty": {
+        "name": "FloatingGhostKitty",
+        "colors": 0,
+        "rarity": "legendary",
+        "tags": []
+      },
+      "HeartChoker": {
+        "name": "HeartChoker",
+        "colors": 2,
+        "rarity": "common",
+        "tags": []
+      },
+      "HeartHoopEarrings": {
+        "name": "HeartHoopEarrings",
+        "colors": 2,
+        "rarity": "uncommon",
+        "tags": ["onTop", "earring"]
+      },
+      "HeartStudEarrings": {
+        "name": "HeartStudEarrings",
+        "colors": 1,
+        "rarity": "common",
+        "tags": ["onTop", "earring"]
+      },
+      "HoopEarrings": {
+        "name": "HoopEarrings",
+        "colors": 1,
+        "rarity": "common",
+        "tags": ["onTop", "earring"]
+      },
+      "ImpracticallyLargeDiamondEarrings": {
+        "name": "ImpracticallyLargeDiamondEarrings",
+        "colors": 1,
+        "rarity": "rare",
+        "tags": ["onTop", "earring"]
+      },
+      "KittyBell": {
+        "name": "KittyBell",
+        "colors": 2,
+        "rarity": "uncommon",
+        "tags": []
+      },
+      "MiniHildaAndWeirdCat": {
+        "name": "MiniHildaAndWeirdCat",
+        "colors": 0,
+        "rarity": "mythic",
+        "tags": ["onTop"]
+      },
+      "SaturnEarrings": {
+        "name": "SaturnEarrings",
+        "colors": 2,
+        "rarity": "common",
+        "tags": ["onTop", "earring"]
+      },
+      "SillyFrogBackpack": {
+        "name": "SillyFrogBackpack",
+        "colors": 2,
+        "rarity": "uncommon",
+        "tags": ["backpack"]
+      },
+      "SillyFrogEarrings": {
+        "name": "SillyFrogEarrings",
+        "colors": 1,
+        "rarity": "uncommon",
+        "tags": ["onTop", "earring"]
+      },
+      "SillyFrogPendant": {
+        "name": "SillyFrogPendant",
+        "colors": 2,
+        "rarity": "common",
+        "tags": []
+      },
+      "SillyFrogPlushie": {
+        "name": "SillyFrogPlushie",
+        "colors": 2,
+        "rarity": "uncommon",
+        "tags": ["onTop"]
+      },
+      "SmallHoopEarrings": {
+        "name": "SmallHoopEarrings",
+        "colors": 1,
+        "rarity": "common",
+        "tags": ["onTop", "earring"]
+      },
+      "SmallLinkedEarrings": {
+        "name": "SmallLinkedEarrings",
+        "colors": 1,
+        "rarity": "uncommon",
+        "tags": ["onTop", "earring"]
+      },
+      "TwineNecklace": {
+        "name": "TwineNecklace",
+        "colors": 0,
+        "rarity": "common",
+        "tags": []
+      },
+      "UnicornPlushie": {
+        "name": "UnicornPlushie",
+        "colors": 3,
+        "rarity": "mythic",
+        "tags": ["onTop"]
+      },
+      "WeirdCatBackpack": {
+        "name": "WeirdCatBackpack",
+        "colors": 2,
+        "rarity": "uncommon",
+        "tags": ["backpack"]
+      }
+    },
+    "Outfit": {
+      "Empty": {
+        "name": "Empty",
+        "colors": 0
+      },
+      "GummyHeartTop": {
+        "name": "GummyHeartTop",
+        "colors": 2,
+        "rarity": "immortal"
+      },
+      "StarletDress": {
+        "name": "StarletDress",
+        "colors": 1,
+        "rarity": "immortal"
+      },
+      "DragonPrincessKimono": {
+        "name": "DragonPrincessKimono",
+        "colors": 2,
+        "rarity": "immortal"
+      },
+      "AlienQueensRobes": {
+        "name": "AlienQueensRobes",
+        "colors": 3,
+        "rarity": "immortal"
+      },
+      "BountyHunterArmor": {
+        "name": "BountyHunterArmor",
+        "colors": 3,
+        "rarity": "immortal"
+      },
+      "RitualGarments": {
+        "name": "RitualGarments",
+        "colors": 6,
+        "rarity": "immortal"
+      },
+      "SpaceSuit": {
+        "name": "SpaceSuit",
+        "colors": 3,
+        "rarity": "immortal"
+      },
+      "MomTee": {
+        "name": "MomTee",
+        "colors": 2,
+        "rarity": "immortal"
+      },
+      "Hoodie": {
+        "name": "Hoodie",
+        "colors": 1,
+        "rarity": "common"
+      },
+      "AIExosuit": {
+        "name": "AIExosuit",
+        "colors": 1,
+        "rarity": "mythic"
+      },
+      "AnglerVest": {
+        "name": "AnglerVest",
+        "colors": 2,
+        "rarity": "rare"
+      },
+      "BaddieLeatherJacket": {
+        "name": "BaddieLeatherJacket",
+        "colors": 2,
+        "rarity": "rare"
+      },
+      "Blouse": {
+        "name": "Blouse",
+        "colors": 1,
+        "rarity": "common"
+      },
+      "BunnyQueenDress": {
+        "name": "BunnyQueenDress",
+        "colors": 3,
+        "rarity": "legendary"
+      },
+      "BunnyQueenMechaFighterTop": {
+        "name": "BunnyQueenMechaFighterTop",
+        "colors": 3,
+        "rarity": "epic"
+      },
+      "BunnyUCheerTop": {
+        "name": "BunnyUCheerTop",
+        "colors": 1,
+        "rarity": "uncommon"
+      },
+      "CowgirlTop": {
+        "name": "CowgirlTop",
+        "colors": 1,
+        "rarity": "common"
+      },
+      "CrazyBearTee": {
+        "name": "CrazyBearTee",
+        "colors": 2,
+        "rarity": "common"
+      },
+      "CuteApron": {
+        "name": "CuteApron",
+        "colors": 2,
+        "rarity": "rare"
+      },
+      "DontDoItTrackTop": {
+        "name": "DontDoItTrackTop",
+        "colors": 1,
+        "rarity": "uncommon"
+      },
+      "DontDoItTracksuit": {
+        "name": "DontDoItTracksuit",
+        "colors": 1,
+        "rarity": "common"
+      },
+      "FancyHalterDress": {
+        "name": "FancyHalterDress",
+        "colors": 1,
+        "rarity": "uncommon"
+      },
+      "FancySweaterVest": {
+        "name": "FancySweaterVest",
+        "colors": 2,
+        "rarity": "rare"
+      },
+      "FangirlJersey": {
+        "name": "FangirlJersey",
+        "colors": 2,
+        "rarity": "common"
+      },
+      "FlowerKimono": {
+        "name": "FlowerKimono",
+        "colors": 2,
+        "rarity": "epic"
+      },
+      "FuturisticDress": {
+        "name": "FuturisticDress",
+        "colors": 1,
+        "rarity": "uncommon"
+      },
+      "HalterTop": {
+        "name": "HalterTop",
+        "colors": 1,
+        "rarity": "common"
+      },
+      "HeartBra": {
+        "name": "HeartBra",
+        "colors": 2,
+        "rarity": "uncommon"
+      },
+      "HeartCardigan": {
+        "name": "HeartCardigan",
+        "colors": 2,
+        "rarity": "common"
+      },
+      "HeartCollarShirt": {
+        "name": "HeartCollarShirt",
+        "colors": 1,
+        "rarity": "uncommon"
+      },
+      "HoodieWithCropTop": {
+        "name": "HoodieWithCropTop",
+        "colors": 2,
+        "rarity": "common"
+      },
+      "SpaceTee": {
+        "name": "SpaceTee",
+        "colors": 2,
+        "rarity": "common"
+      },
+      "PeterPanCollarTop": {
+        "name": "PeterPanCollarTop",
+        "colors": 2,
+        "rarity": "uncommon"
+      },
+      "PilotUniform": {
+        "name": "PilotUniform",
+        "colors": 2,
+        "rarity": "rare"
+      },
+      "PinstripeMobsterSuit": {
+        "name": "PinstripeMobsterSuit",
+        "colors": 2,
+        "rarity": "epic"
+      },
+      "Polo": {
+        "name": "Polo",
+        "colors": 1,
+        "rarity": "common"
+      },
+      "SailorScoutTop": {
+        "name": "SailorScoutTop",
+        "colors": 1,
+        "rarity": "uncommon"
+      },
+      "SpaceCommanderUniform": {
+        "name": "SpaceCommanderUniform",
+        "colors": 2,
+        "rarity": "rare"
+      },
+      "StripedBikini": {
+        "name": "StripedBikini",
+        "colors": 2,
+        "rarity": "uncommon"
+      },
+      "SweaterHalter": {
+        "name": "SweaterHalter",
+        "colors": 1,
+        "rarity": "uncommon"
+      },
+      "SweaterVest": {
+        "name": "SweaterVest",
+        "colors": 2,
+        "rarity": "common"
+      },
+      "TurtleNeckHalter": {
+        "name": "TurtleNeckHalter",
+        "colors": 1,
+        "rarity": "common"
+      },
+      "VarsityJacket": {
+        "name": "VarsityJacket",
+        "colors": 2,
+        "rarity": "uncommon"
+      },
+      "WonderArmor": {
+        "name": "WonderArmor",
+        "colors": 2,
+        "rarity": "uncommon"
+      }
+    },
+    "Hand": {
+      "VoodooSkull": {
+        "name": "VoodooSkull",
+        "colors": 3,
+        "rarity": "immortal"
+      }
+    },
+    "Body": {
+      "VaporwaveBase": {
+        "name": "VaporwaveBase",
+        "rarity": "immortal",
+        "colors": 1
+      },
+      "GummyBase": {
+        "name": "GummyBase",
+        "rarity": "immortal",
+        "colors": 1
+      }
+    }
+  }
+}

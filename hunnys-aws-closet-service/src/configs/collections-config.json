@@ -77,7 +77,7 @@
         {
             "name": "Hunnys Closet Shop",
             "originID" : 7,
-            "contract" : "0x5F0fEFD26189F651143D209cf5B357B6677DFA81",
+            "contract" : "0x11bc733e719198e2b3746f6841d2818ca87af6da",
             "tokenConfigPath": "hunnys-closet-shop-token.json",
             "traitsConfigPath": "hunnys-closet-shop-traits.json",
             "idMapping": false,

@@ -5,7 +5,7 @@ import json
 csv_file_path = 'C:/Users/chris/Hunnys-Development/staging-hunnys-closet-2/autoconvert/csv/convertTokensID.csv'
 df = pd.read_csv(csv_file_path)
 # Extracting the tokenId from the URL
-df['tokenId'] = df['tokenId'].apply(lambda x: x.split('/')[-1])
+df['tokenId'] = df['tokenId'].apply(lambda x: x.split(':')[-1])
 
 # Grouping the data by name and tokenId, and creating the JSON structure
 grouped = df.groupby(['name', 'tokenId'])

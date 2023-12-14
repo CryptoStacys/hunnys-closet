@@ -138,7 +138,7 @@ export default function Nav({ rewardStatus }: NavProps) {
                 </Link>
               ))}
               <a
-                  href="https://buy.hunnys.io/polygon/collection/0x5F0fEFD26189F651143D209cf5B357B6677DFA81"
+                  href="https://buy.hunnys.io/polygon/collection/0x11bc733e719198e2b3746f6841d2818ca87af6da"
                   target="_blank"
                   className="link-btn navLinks text-hunnys-yellow font-title uppercase hover:bg-hunnys-light-purple transition inline-block text-2xl font-semibold font-content mx-[5px] sm:px-3 px-0 py-[6px] rounded-xl"
                 >Shop

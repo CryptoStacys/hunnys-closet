@@ -1,44 +1,27 @@
 {
   "attributes": [
-    {"name": "Accessory", "traits": [
-        {"name": "Bunny Club Bow","colors": 1,"rarity": "Common","tags": [], "token_id": 169}
-    ]},
-
     {"name": "Background", "traits": [
-        {"name": "Bunny Club Sprinkle","colors": 0,"rarity": "Common","tags": [], "token_id": 169}
+        {"name": "Skuzzys Sekret Space Zone 1","colors": 0,"rarity": "Mythic","tags": []},
+        {"name": "Skuzzys Sekret Space Zone 2","colors": 0,"rarity": "Mythic","tags": []},
+        {"name": "Skuzzys Sekret Space Zone 3","colors": 0,"rarity": "Mythic","tags": []},
+        {"name": "Skuzzys Sekret Space Zone 4","colors": 0,"rarity": "Mythic","tags": []},
+        {"name": "Skuzzy Sticker Maddness","colors": 1,"rarity": "Mythic","tags": []},
+        {"name": "90s Laser","colors": 2,"rarity": "Mythic","tags": []},
+        {"name": "Twinkle Vines","colors": 1,"rarity": "Mythic","tags": []},
+        {"name": "Twinkling Vines Night","colors": 0,"rarity": "Mythic","tags": []},
+        {"name": "Evergreen Scene","colors": 4,"rarity": "Mythic","tags": []}
     ]},
 
-    {"name": "Dye", "traits": [
-        {"name": "Bunny Club Navy","colors": 0,"rarity": "Common","tags": [], "token_id": 169},
-        {"name": "Bunny Club Blue","colors": 0,"rarity": "Common","tags": [], "token_id": 169}
+    {"name": "Frame", "traits": [
+        {"name": "Soft Snow","colors": 0,"rarity": "Mythic","tags": []},
+        {"name": "Love Bunnys","colors": 5,"rarity": "Mythic","tags": []},
+        {"name": "Fuzzle Toe","colors": 3,"rarity": "Mythic","tags": []}
     ]},
 
-    {"name": "Eyebrows", "traits": [
-        {"name": "Bunny Club Brows","colors": 0,"rarity": "Common","tags": [], "token_id": 169}
-    ]},
-
-    {"name": "Eyes", "traits": [
-        {"name": "Bunny Club Glare","colors": 1,"rarity": "Common","tags": [], "token_id": 169}
-    ]},
-
-    {"name": "Face Sticker", "traits": [
-        {"name": "Bunny Club Sticker","colors": 3,"rarity": "Common","tags": [], "token_id": 169}
-    ]},
-
-    {"name": "Hair Style", "traits": [
-        {"name": "Bunny Club Hair","colors": 1,"parts":2, "rarity": "Common","tags": [], "token_id": 169}
-    ]},
-
-    {"name": "Hat", "traits": [
-        {"name": "Bunny Club Ears","colors": 4,"rarity": "Common","tags": [], "token_id": 169}
-    ]},
-
-    {"name": "Mouth", "traits": [
-        {"name": "Bunny Club Juicy","colors": 1,"rarity": "Common","tags": [], "token_id": 169}
-    ]},
-
-    {"name": "Outfit", "traits": [
-        {"name": "Bunny Club Uniform","colors": 4,"rarity": "Common","tags": [], "token_id": 169}
+    {"name": "Hand", "traits": [
+        {"name": "Reindeer Mug","colors": 4,"rarity": "Legendary","tags": []},
+        {"name": "XL Hot Cocoa","colors": 4,"rarity": "Rare","tags": []},
+        {"name": "Christmas Tree Mug","colors": 5,"rarity": "Uncommon","tags": []}
     ]}
   ]
 }

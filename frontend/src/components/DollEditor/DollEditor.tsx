@@ -2,10 +2,7 @@ import { useState, useEffect, useRef } from "react";
 // import { ethers } from "ethers";
 import { useAtom } from "jotai";
 import { userAtom, modalAtom, savedAtom } from "../../data/store";
-
 import { useSignMessage } from 'wagmi';
-
-
 import ApplyButton from "./ApplyButton";
 import SecondaryButton from "./SecondaryButton";
 import BackButton from "./BackButton";
