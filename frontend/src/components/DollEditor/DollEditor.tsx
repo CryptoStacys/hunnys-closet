@@ -40,6 +40,21 @@ function formatToken(input: Trait[]) {
   return input;
 }
 
+// Helper function for comparing tokens
+function areTokensEqual(token1: any[], token2: any[]) {
+  if (token1.length !== token2.length) {
+    return false;
+  }
+
+  const stringifyTrait = (trait: any) => JSON.stringify({ ...trait, token_id: undefined });
+
+  const token1Strings = token1.map(stringifyTrait);
+  const token2Strings = token2.map(stringifyTrait);
+
+  return token1Strings.every(t1 => token2Strings.includes(t1)) &&
+         token2Strings.every(t2 => token1Strings.includes(t2));
+}
+
 export default function DollEditor(props: { id: number; selectDoll: Function }) {
   const [user, userSet] = useAtom(userAtom);
   const [saved, setSaved] = useAtom(savedAtom); // tracks if user saved dolly changes
@@ -53,23 +68,43 @@ export default function DollEditor(props: { id: number; selectDoll: Function }) 
 
 
   useEffect(() => {
+    console.log("Initial token state:", JSON.stringify(token));
     load();
   }, []);
-
-  // runs everytime the dolly changes
-  // Set to saved to false if loaded token doesn't match the current token
+  
+  function logDifferences(currentToken: Trait[], savedToken: Trait[]) {
+    const stringifyTrait = (trait: Trait) => JSON.stringify({ ...trait, token_id: undefined });
+  
+    currentToken.forEach(currentTrait => {
+      const currentTraitString = stringifyTrait(currentTrait);
+      if (!savedToken.some(savedTrait => stringifyTrait(savedTrait) === currentTraitString)) {
+        console.log("Unsaved change detected in trait:", currentTrait);
+      }
+    });
+  
+    savedToken.forEach(savedTrait => {
+      const savedTraitString = stringifyTrait(savedTrait);
+      if (!currentToken.some(currentTrait => stringifyTrait(currentTrait) === savedTraitString)) {
+    //    console.log("Missing saved trait in current token:", savedTrait);
+      }
+    });
+  }
+  
   useEffect(() => {
-    if (JSON.stringify(token) === localStorage.getItem(localStorageToken)) {
-      setSaved(true);
-    } else {
-      setSaved(false);
+    const savedTokenString = localStorage.getItem(localStorageToken);
+    if (savedTokenString) {
+      const savedToken = JSON.parse(savedTokenString);
+      const isSaved = areTokensEqual(token, savedToken);
+      setSaved(isSaved);
+      if (!isSaved) {
+        logDifferences(token, savedToken);
+      }
     }
-    // scroll up after item selection
-    document.documentElement.scrollTop = 0; // For modern browsers
-    document.body.scrollTop = 0; // For older browsers
   }, [token, setSaved]);
+  
 
   async function save() {
+    console.log("Token state before save:", JSON.stringify(token));
     setErrorMessage("");
     let formData = new FormData();
     setIsSaving(true);
@@ -112,6 +147,7 @@ export default function DollEditor(props: { id: number; selectDoll: Function }) 
                 setErrorMessage("Oh no, something went wrong! Please try saving once again.");
                 console.log(err.message);
             });
+      console.log("Token state after save:", JSON.stringify(token));
     }
 
   function updateUserToken(token: any, id: any) {
@@ -146,6 +182,7 @@ export default function DollEditor(props: { id: number; selectDoll: Function }) 
   }
 
   function unselectDolly() {
+    console.log("Attempting to unselect Dolly, saved state:", saved);
     if (!saved) {
       modalSet({
         active: true,
@@ -153,8 +190,8 @@ export default function DollEditor(props: { id: number; selectDoll: Function }) 
         body: (
           <>
             <div className="mb-3 px-2">
-              You haven&apos;t saved the current setup of your Dolly yet,
-              <br /> do you still want to proceed?
+              You haven&apos;t saved the current setup of your Dolly yet, bb!
+              <br /> Do you still want to proceed?
             </div>
             <div className="grid grid-cols-2">
               <SecondaryButton onClick={() => modalSet({ active: false, title: "", body: <></> })}>

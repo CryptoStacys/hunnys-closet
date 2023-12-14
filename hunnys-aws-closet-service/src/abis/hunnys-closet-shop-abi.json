@@ -1,22 +1,11 @@
 [
+  { "inputs": [], "stateMutability": "nonpayable", "type": "constructor" },
   {
-    "anonymous": false,
     "inputs": [
-      {
-        "indexed": false,
-        "internalType": "address",
-        "name": "previousAdmin",
-        "type": "address"
-      },
-      {
-        "indexed": false,
-        "internalType": "address",
-        "name": "newAdmin",
-        "type": "address"
-      }
+      { "internalType": "address", "name": "operator", "type": "address" }
     ],
-    "name": "AdminChanged",
-    "type": "event"
+    "name": "OperatorNotAllowed",
+    "type": "error"
   },
   {
     "anonymous": false,
@@ -49,11 +38,36 @@
       {
         "indexed": true,
         "internalType": "address",
-        "name": "beacon",
+        "name": "newRoyaltyRecipient",
         "type": "address"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "newRoyaltyBps",
+        "type": "uint256"
       }
     ],
-    "name": "BeaconUpgraded",
+    "name": "DefaultRoyalty",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "platformFeeRecipient",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "flatFee",
+        "type": "uint256"
+      }
+    ],
+    "name": "FlatPlatformFeeUpdated",
     "type": "event"
   },
   {
@@ -73,9 +87,22 @@
     "anonymous": false,
     "inputs": [
       {
+        "indexed": false,
+        "internalType": "bool",
+        "name": "restriction",
+        "type": "bool"
+      }
+    ],
+    "name": "OperatorRestriction",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
         "indexed": true,
         "internalType": "address",
-        "name": "previousOwner",
+        "name": "prevOwner",
         "type": "address"
       },
       {
@@ -85,7 +112,52 @@
         "type": "address"
       }
     ],
-    "name": "OwnershipTransferred",
+    "name": "OwnerUpdated",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "platformFeeRecipient",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "platformFeeBps",
+        "type": "uint256"
+      }
+    ],
+    "name": "PlatformFeeInfoUpdated",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "enum IPlatformFee.PlatformFeeType",
+        "name": "feeType",
+        "type": "uint8"
+      }
+    ],
+    "name": "PlatformFeeTypeUpdated",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "recipient",
+        "type": "address"
+      }
+    ],
+    "name": "PrimarySaleRecipientUpdated",
     "type": "event"
   },
   {
@@ -161,6 +233,131 @@
       }
     ],
     "name": "RoleRevoked",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "uint256",
+        "name": "tokenId",
+        "type": "uint256"
+      },
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "royaltyRecipient",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "royaltyBps",
+        "type": "uint256"
+      }
+    ],
+    "name": "RoyaltyForToken",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "mintedTo",
+        "type": "address"
+      },
+      {
+        "indexed": true,
+        "internalType": "uint256",
+        "name": "tokenIdMinted",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "string",
+        "name": "uri",
+        "type": "string"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "quantityMinted",
+        "type": "uint256"
+      }
+    ],
+    "name": "TokensMinted",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "signer",
+        "type": "address"
+      },
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "mintedTo",
+        "type": "address"
+      },
+      {
+        "indexed": true,
+        "internalType": "uint256",
+        "name": "tokenIdMinted",
+        "type": "uint256"
+      },
+      {
+        "components": [
+          { "internalType": "address", "name": "to", "type": "address" },
+          {
+            "internalType": "address",
+            "name": "royaltyRecipient",
+            "type": "address"
+          },
+          {
+            "internalType": "uint256",
+            "name": "royaltyBps",
+            "type": "uint256"
+          },
+          {
+            "internalType": "address",
+            "name": "primarySaleRecipient",
+            "type": "address"
+          },
+          { "internalType": "uint256", "name": "tokenId", "type": "uint256" },
+          { "internalType": "string", "name": "uri", "type": "string" },
+          { "internalType": "uint256", "name": "quantity", "type": "uint256" },
+          {
+            "internalType": "uint256",
+            "name": "pricePerToken",
+            "type": "uint256"
+          },
+          { "internalType": "address", "name": "currency", "type": "address" },
+          {
+            "internalType": "uint128",
+            "name": "validityStartTimestamp",
+            "type": "uint128"
+          },
+          {
+            "internalType": "uint128",
+            "name": "validityEndTimestamp",
+            "type": "uint128"
+          },
+          { "internalType": "bytes32", "name": "uid", "type": "bytes32" }
+        ],
+        "indexed": false,
+        "internalType": "struct ITokenERC1155.MintRequest",
+        "name": "mintRequest",
+        "type": "tuple"
+      }
+    ],
+    "name": "TokensMintedWithSignature",
     "type": "event"
   },
   {
@@ -257,41 +454,8 @@
     "type": "event"
   },
   {
-    "anonymous": false,
-    "inputs": [
-      {
-        "indexed": false,
-        "internalType": "string",
-        "name": "newuri",
-        "type": "string"
-      }
-    ],
-    "name": "URIUpdated",
-    "type": "event"
-  },
-  {
-    "anonymous": false,
-    "inputs": [
-      {
-        "indexed": true,
-        "internalType": "address",
-        "name": "implementation",
-        "type": "address"
-      }
-    ],
-    "name": "Upgraded",
-    "type": "event"
-  },
-  {
     "inputs": [],
     "name": "DEFAULT_ADMIN_ROLE",
-    "outputs": [{ "internalType": "bytes32", "name": "", "type": "bytes32" }],
-    "stateMutability": "view",
-    "type": "function"
-  },
-  {
-    "inputs": [],
-    "name": "MINTER_ROLE",
     "outputs": [{ "internalType": "bytes32", "name": "", "type": "bytes32" }],
     "stateMutability": "view",
     "type": "function"
@@ -319,9 +483,88 @@
     "type": "function"
   },
   {
+    "inputs": [
+      { "internalType": "address", "name": "account", "type": "address" },
+      { "internalType": "uint256", "name": "id", "type": "uint256" },
+      { "internalType": "uint256", "name": "value", "type": "uint256" }
+    ],
+    "name": "burn",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      { "internalType": "address", "name": "account", "type": "address" },
+      { "internalType": "uint256[]", "name": "ids", "type": "uint256[]" },
+      { "internalType": "uint256[]", "name": "values", "type": "uint256[]" }
+    ],
+    "name": "burnBatch",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "contractType",
+    "outputs": [{ "internalType": "bytes32", "name": "", "type": "bytes32" }],
+    "stateMutability": "pure",
+    "type": "function"
+  },
+  {
     "inputs": [],
     "name": "contractURI",
     "outputs": [{ "internalType": "string", "name": "", "type": "string" }],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "contractVersion",
+    "outputs": [{ "internalType": "uint8", "name": "", "type": "uint8" }],
+    "stateMutability": "pure",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "getDefaultRoyaltyInfo",
+    "outputs": [
+      { "internalType": "address", "name": "", "type": "address" },
+      { "internalType": "uint16", "name": "", "type": "uint16" }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "getFlatPlatformFeeInfo",
+    "outputs": [
+      { "internalType": "address", "name": "", "type": "address" },
+      { "internalType": "uint256", "name": "", "type": "uint256" }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "getPlatformFeeInfo",
+    "outputs": [
+      { "internalType": "address", "name": "", "type": "address" },
+      { "internalType": "uint16", "name": "", "type": "uint16" }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "getPlatformFeeType",
+    "outputs": [
+      {
+        "internalType": "enum IPlatformFee.PlatformFeeType",
+        "name": "",
+        "type": "uint8"
+      }
+    ],
     "stateMutability": "view",
     "type": "function"
   },
@@ -331,6 +574,37 @@
     ],
     "name": "getRoleAdmin",
     "outputs": [{ "internalType": "bytes32", "name": "", "type": "bytes32" }],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      { "internalType": "bytes32", "name": "role", "type": "bytes32" },
+      { "internalType": "uint256", "name": "index", "type": "uint256" }
+    ],
+    "name": "getRoleMember",
+    "outputs": [{ "internalType": "address", "name": "", "type": "address" }],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      { "internalType": "bytes32", "name": "role", "type": "bytes32" }
+    ],
+    "name": "getRoleMemberCount",
+    "outputs": [{ "internalType": "uint256", "name": "", "type": "uint256" }],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      { "internalType": "uint256", "name": "_tokenId", "type": "uint256" }
+    ],
+    "name": "getRoyaltyInfoForToken",
+    "outputs": [
+      { "internalType": "address", "name": "", "type": "address" },
+      { "internalType": "uint16", "name": "", "type": "uint16" }
+    ],
     "stateMutability": "view",
     "type": "function"
   },
@@ -355,7 +629,38 @@
     "type": "function"
   },
   {
-    "inputs": [{ "internalType": "string", "name": "uri_", "type": "string" }],
+    "inputs": [
+      { "internalType": "address", "name": "_defaultAdmin", "type": "address" },
+      { "internalType": "string", "name": "_name", "type": "string" },
+      { "internalType": "string", "name": "_symbol", "type": "string" },
+      { "internalType": "string", "name": "_contractURI", "type": "string" },
+      {
+        "internalType": "address[]",
+        "name": "_trustedForwarders",
+        "type": "address[]"
+      },
+      {
+        "internalType": "address",
+        "name": "_primarySaleRecipient",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "_royaltyRecipient",
+        "type": "address"
+      },
+      { "internalType": "uint128", "name": "_royaltyBps", "type": "uint128" },
+      {
+        "internalType": "uint128",
+        "name": "_platformFeeBps",
+        "type": "uint128"
+      },
+      {
+        "internalType": "address",
+        "name": "_platformFeeRecipient",
+        "type": "address"
+      }
+    ],
     "name": "initialize",
     "outputs": [],
     "stateMutability": "nonpayable",
@@ -373,13 +678,85 @@
   },
   {
     "inputs": [
-      { "internalType": "address", "name": "to", "type": "address" },
-      { "internalType": "uint256", "name": "id", "type": "uint256" },
-      { "internalType": "uint256", "name": "amount", "type": "uint256" },
-      { "internalType": "bytes", "name": "data", "type": "bytes" }
+      { "internalType": "address", "name": "forwarder", "type": "address" }
     ],
-    "name": "mint",
+    "name": "isTrustedForwarder",
+    "outputs": [{ "internalType": "bool", "name": "", "type": "bool" }],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      { "internalType": "address", "name": "_to", "type": "address" },
+      { "internalType": "uint256", "name": "_tokenId", "type": "uint256" },
+      { "internalType": "string", "name": "_uri", "type": "string" },
+      { "internalType": "uint256", "name": "_amount", "type": "uint256" }
+    ],
+    "name": "mintTo",
     "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "components": [
+          { "internalType": "address", "name": "to", "type": "address" },
+          {
+            "internalType": "address",
+            "name": "royaltyRecipient",
+            "type": "address"
+          },
+          {
+            "internalType": "uint256",
+            "name": "royaltyBps",
+            "type": "uint256"
+          },
+          {
+            "internalType": "address",
+            "name": "primarySaleRecipient",
+            "type": "address"
+          },
+          { "internalType": "uint256", "name": "tokenId", "type": "uint256" },
+          { "internalType": "string", "name": "uri", "type": "string" },
+          { "internalType": "uint256", "name": "quantity", "type": "uint256" },
+          {
+            "internalType": "uint256",
+            "name": "pricePerToken",
+            "type": "uint256"
+          },
+          { "internalType": "address", "name": "currency", "type": "address" },
+          {
+            "internalType": "uint128",
+            "name": "validityStartTimestamp",
+            "type": "uint128"
+          },
+          {
+            "internalType": "uint128",
+            "name": "validityEndTimestamp",
+            "type": "uint128"
+          },
+          { "internalType": "bytes32", "name": "uid", "type": "bytes32" }
+        ],
+        "internalType": "struct ITokenERC1155.MintRequest",
+        "name": "_req",
+        "type": "tuple"
+      },
+      { "internalType": "bytes", "name": "_signature", "type": "bytes" }
+    ],
+    "name": "mintWithSignature",
+    "outputs": [],
+    "stateMutability": "payable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      { "internalType": "bytes[]", "name": "data", "type": "bytes[]" }
+    ],
+    "name": "multicall",
+    "outputs": [
+      { "internalType": "bytes[]", "name": "results", "type": "bytes[]" }
+    ],
     "stateMutability": "nonpayable",
     "type": "function"
   },
@@ -392,6 +769,20 @@
   },
   {
     "inputs": [],
+    "name": "nextTokenIdToMint",
+    "outputs": [{ "internalType": "uint256", "name": "", "type": "uint256" }],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "operatorRestriction",
+    "outputs": [{ "internalType": "bool", "name": "", "type": "bool" }],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
     "name": "owner",
     "outputs": [{ "internalType": "address", "name": "", "type": "address" }],
     "stateMutability": "view",
@@ -399,16 +790,16 @@
   },
   {
     "inputs": [],
-    "name": "proxiableUUID",
-    "outputs": [{ "internalType": "bytes32", "name": "", "type": "bytes32" }],
+    "name": "platformFeeRecipient",
+    "outputs": [{ "internalType": "address", "name": "", "type": "address" }],
     "stateMutability": "view",
     "type": "function"
   },
   {
     "inputs": [],
-    "name": "renounceOwnership",
-    "outputs": [],
-    "stateMutability": "nonpayable",
+    "name": "primarySaleRecipient",
+    "outputs": [{ "internalType": "address", "name": "", "type": "address" }],
+    "stateMutability": "view",
     "type": "function"
   },
   {
@@ -429,6 +820,19 @@
     "name": "revokeRole",
     "outputs": [],
     "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      { "internalType": "uint256", "name": "tokenId", "type": "uint256" },
+      { "internalType": "uint256", "name": "salePrice", "type": "uint256" }
+    ],
+    "name": "royaltyInfo",
+    "outputs": [
+      { "internalType": "address", "name": "receiver", "type": "address" },
+      { "internalType": "uint256", "name": "royaltyAmount", "type": "uint256" }
+    ],
+    "stateMutability": "view",
     "type": "function"
   },
   {
@@ -458,6 +862,13 @@
     "type": "function"
   },
   {
+    "inputs": [{ "internalType": "uint256", "name": "", "type": "uint256" }],
+    "name": "saleRecipientForToken",
+    "outputs": [{ "internalType": "address", "name": "", "type": "address" }],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
     "inputs": [
       { "internalType": "address", "name": "operator", "type": "address" },
       { "internalType": "bool", "name": "approved", "type": "bool" }
@@ -468,9 +879,7 @@
     "type": "function"
   },
   {
-    "inputs": [
-      { "internalType": "string", "name": "newContractURI", "type": "string" }
-    ],
+    "inputs": [{ "internalType": "string", "name": "_uri", "type": "string" }],
     "name": "setContractURI",
     "outputs": [],
     "stateMutability": "nonpayable",
@@ -478,27 +887,106 @@
   },
   {
     "inputs": [
-      { "internalType": "string", "name": "newName", "type": "string" }
+      {
+        "internalType": "address",
+        "name": "_royaltyRecipient",
+        "type": "address"
+      },
+      { "internalType": "uint256", "name": "_royaltyBps", "type": "uint256" }
     ],
-    "name": "setName",
+    "name": "setDefaultRoyaltyInfo",
     "outputs": [],
     "stateMutability": "nonpayable",
     "type": "function"
   },
   {
     "inputs": [
-      { "internalType": "string", "name": "newSymbol", "type": "string" }
+      {
+        "internalType": "address",
+        "name": "_platformFeeRecipient",
+        "type": "address"
+      },
+      { "internalType": "uint256", "name": "_flatFee", "type": "uint256" }
     ],
-    "name": "setSymbol",
+    "name": "setFlatPlatformFeeInfo",
     "outputs": [],
     "stateMutability": "nonpayable",
     "type": "function"
   },
   {
     "inputs": [
-      { "internalType": "string", "name": "newuri", "type": "string" }
+      { "internalType": "bool", "name": "_restriction", "type": "bool" }
     ],
-    "name": "setURI",
+    "name": "setOperatorRestriction",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      { "internalType": "address", "name": "_newOwner", "type": "address" }
+    ],
+    "name": "setOwner",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_platformFeeRecipient",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_platformFeeBps",
+        "type": "uint256"
+      }
+    ],
+    "name": "setPlatformFeeInfo",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "enum IPlatformFee.PlatformFeeType",
+        "name": "_feeType",
+        "type": "uint8"
+      }
+    ],
+    "name": "setPlatformFeeType",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      { "internalType": "address", "name": "_saleRecipient", "type": "address" }
+    ],
+    "name": "setPrimarySaleRecipient",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      { "internalType": "uint256", "name": "_tokenId", "type": "uint256" },
+      { "internalType": "address", "name": "_recipient", "type": "address" },
+      { "internalType": "uint256", "name": "_bps", "type": "uint256" }
+    ],
+    "name": "setRoyaltyInfoForToken",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      { "internalType": "address", "name": "_subscription", "type": "address" }
+    ],
+    "name": "subscribeToRegistry",
     "outputs": [],
     "stateMutability": "nonpayable",
     "type": "function"
@@ -520,45 +1008,73 @@
     "type": "function"
   },
   {
-    "inputs": [
-      { "internalType": "address", "name": "newOwner", "type": "address" }
-    ],
-    "name": "transferOwnership",
-    "outputs": [],
-    "stateMutability": "nonpayable",
-    "type": "function"
-  },
-  {
-    "inputs": [
-      {
-        "internalType": "address",
-        "name": "newImplementation",
-        "type": "address"
-      }
-    ],
-    "name": "upgradeTo",
-    "outputs": [],
-    "stateMutability": "nonpayable",
-    "type": "function"
-  },
-  {
-    "inputs": [
-      {
-        "internalType": "address",
-        "name": "newImplementation",
-        "type": "address"
-      },
-      { "internalType": "bytes", "name": "data", "type": "bytes" }
-    ],
-    "name": "upgradeToAndCall",
-    "outputs": [],
-    "stateMutability": "payable",
-    "type": "function"
-  },
-  {
     "inputs": [{ "internalType": "uint256", "name": "", "type": "uint256" }],
+    "name": "totalSupply",
+    "outputs": [{ "internalType": "uint256", "name": "", "type": "uint256" }],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      { "internalType": "uint256", "name": "_tokenId", "type": "uint256" }
+    ],
     "name": "uri",
     "outputs": [{ "internalType": "string", "name": "", "type": "string" }],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "components": [
+          { "internalType": "address", "name": "to", "type": "address" },
+          {
+            "internalType": "address",
+            "name": "royaltyRecipient",
+            "type": "address"
+          },
+          {
+            "internalType": "uint256",
+            "name": "royaltyBps",
+            "type": "uint256"
+          },
+          {
+            "internalType": "address",
+            "name": "primarySaleRecipient",
+            "type": "address"
+          },
+          { "internalType": "uint256", "name": "tokenId", "type": "uint256" },
+          { "internalType": "string", "name": "uri", "type": "string" },
+          { "internalType": "uint256", "name": "quantity", "type": "uint256" },
+          {
+            "internalType": "uint256",
+            "name": "pricePerToken",
+            "type": "uint256"
+          },
+          { "internalType": "address", "name": "currency", "type": "address" },
+          {
+            "internalType": "uint128",
+            "name": "validityStartTimestamp",
+            "type": "uint128"
+          },
+          {
+            "internalType": "uint128",
+            "name": "validityEndTimestamp",
+            "type": "uint128"
+          },
+          { "internalType": "bytes32", "name": "uid", "type": "bytes32" }
+        ],
+        "internalType": "struct ITokenERC1155.MintRequest",
+        "name": "_req",
+        "type": "tuple"
+      },
+      { "internalType": "bytes", "name": "_signature", "type": "bytes" }
+    ],
+    "name": "verify",
+    "outputs": [
+      { "internalType": "bool", "name": "", "type": "bool" },
+      { "internalType": "address", "name": "", "type": "address" }
+    ],
     "stateMutability": "view",
     "type": "function"
   }

@@ -32,6 +32,7 @@ export default function Link({ className, to, children }: { className?: string; 
 
   // Display unsavedChanges modal before changing page
   function savedCheck() {
+    console.log("Checking saved state before navigation:", saved);
     if (!saved) {
       modalSet({
         active: true,
