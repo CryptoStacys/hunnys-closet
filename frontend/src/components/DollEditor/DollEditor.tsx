@@ -111,19 +111,8 @@ export default function DollEditor(props: { id: number; selectDoll: Function }) 
 
     formData.append("wallet", user!.address);
     formData.append("signature", signature);
-    // console.log(user!.address);
-
     formData.append("token_id", props.id.toString());
-    // console.log(props.id.toString());
-
-    formData.append(
-      "data",
-      JSON.stringify({
-        token: token,
-        name: name, // TODO naming the token
-      })
-    );
-    // console.log(formData);
+    formData.append("data", JSON.stringify({ token: token, name: name }));
 
     
     fetch(`https://pleasing-turkey-pleasing.ngrok-free.app/wordpress/wp-json/hunnys-closet/v1/updateClone`, {
@@ -132,29 +121,28 @@ export default function DollEditor(props: { id: number; selectDoll: Function }) 
         })
         .then(response => response.json().then(data => {
           if (!response.ok) {
-              // Parse and format error message
               const formattedMessage = data.message
-                .replace(/<trait>/g, '<span class="text-red-500 font-luckiest">')
-                .replace(/<\/trait>/g, '</span>')
-                .replace(/<attribute>/g, '<span class="text-red-500 font-luckiest">')
-                .replace(/<\/attribute>/g, '</span>');
+                  .replace(/<trait>/g, '<span class="text-red-500 font-luckiest">')
+                  .replace(/<\/trait>/g, '</span>')
+                  .replace(/<attribute>/g, '<span class="text-red-500 font-luckiest">')
+                  .replace(/<\/attribute>/g, '</span>');
               throw new Error(formattedMessage || 'An unexpected error occurred, please visit discord.gg/hunnys for help!');
           }
           return data;
       }))      
       .then(data => {
-          setIsSaving(false);
-          if (data.status === 200) {
+        setIsSaving(false);
+        if (data.status === 200) {
             updateUserToken(token, props.id);
             setUnsavedChanges(false);
-          }
-      })
-      .catch(error => {
+            setSaved(true); // Update the saved state to true upon successful save
+        }
+    })
+    .catch(error => {
         setIsSaving(false);
         setErrorMessage(error.message);
         console.log('Error:', error.message);
-    });   
-      
+    });
       
       console.log("Token state after save:", JSON.stringify(token));
     }
