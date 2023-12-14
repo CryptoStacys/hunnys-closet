@@ -1,5 +1,5 @@
 {
-  "name": "hunnys-aws-closet-service",
+  "name": "backend",
   "version": "1.0.0",
   "description": "changes aws metadata if certain condition is met",
   "main": "server.js",

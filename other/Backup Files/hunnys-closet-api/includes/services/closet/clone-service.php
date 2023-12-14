@@ -30,7 +30,7 @@ class CloneService {
 
     static function update_aws($tokenId) {
         $url = "https://staging-hunnys-closet-2-548f5ed67a1b.herokuapp.com/update?ids[]=" . $tokenId;
-        // $url = "http://217.160.247.57/hunnys-aws-closet-service/update?ids[]=" . $tokenId;
+        // $url = "http://217.160.247.57/backend/update?ids[]=" . $tokenId;
 
         $opts = array(
             'http'=>array(

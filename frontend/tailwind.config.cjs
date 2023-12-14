@@ -24,6 +24,10 @@ module.exports = {
         "hunnys-green": "#0f9310",
         "hunnys-black": "#111",
       },
+      fontFamily: {
+        'luckiest': ['Luckiest Guy'],
+        'dmsans': ['DM Sans']
+      },
       screens: {
         'xl': '1300px',
         'lg': '950px',

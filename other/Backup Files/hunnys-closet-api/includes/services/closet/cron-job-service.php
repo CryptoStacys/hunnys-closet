@@ -13,7 +13,7 @@ class CronJobService {
 
     static function trigger_dollys_check_cron_job() {
         // $url = "https://staging-hunnys-closet-2-548f5ed67a1b.herokuapp.com/check";
-        $url = "http://217.160.247.57/hunnys-aws-closet-service/check";
+        $url = "http://217.160.247.57/backend/check";
 
         $opts = array(
             'http'=>array(

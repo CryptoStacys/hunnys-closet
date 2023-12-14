@@ -105,7 +105,6 @@ export default function DollEditor(props: { id: number; selectDoll: Function }) 
 
   async function save() {
     console.log("Token state before save:", JSON.stringify(token));
-    setErrorMessage("");
     let formData = new FormData();
     setIsSaving(true);
     let signature: any = await getSignature(user!.address);
@@ -131,22 +130,32 @@ export default function DollEditor(props: { id: number; selectDoll: Function }) 
             method: "post",
             body: formData,
         })
-            .then(response => response.json())
-            .then(data => {
-                setIsSaving(false);
-                if (data.status === 200) {
-                    setSaved(true);
-                    updateUserToken(token, props.id);
-                    setUnsavedChanges(false);
-                } else {
-                    setErrorMessage("Oh no, something went wrong! Please try saving once again.");
-                }
-            })
-            .catch(err => {
-                setIsSaving(false);
-                setErrorMessage("Oh no, something went wrong! Please try saving once again.");
-                console.log(err.message);
-            });
+        .then(response => response.json().then(data => {
+          if (!response.ok) {
+              // Parse and format error message
+              const formattedMessage = data.message
+                .replace(/<trait>/g, '<span class="text-red-500 font-luckiest">')
+                .replace(/<\/trait>/g, '</span>')
+                .replace(/<attribute>/g, '<span class="text-red-500 font-luckiest">')
+                .replace(/<\/attribute>/g, '</span>');
+              throw new Error(formattedMessage || 'An unexpected error occurred, please visit discord.gg/hunnys for help!');
+          }
+          return data;
+      }))      
+      .then(data => {
+          setIsSaving(false);
+          if (data.status === 200) {
+            updateUserToken(token, props.id);
+            setUnsavedChanges(false);
+          }
+      })
+      .catch(error => {
+        setIsSaving(false);
+        setErrorMessage(error.message);
+        console.log('Error:', error.message);
+    });   
+      
+      
       console.log("Token state after save:", JSON.stringify(token));
     }
 
@@ -286,7 +295,9 @@ export default function DollEditor(props: { id: number; selectDoll: Function }) 
       <div className="flex justify-between gap-2 bg-white px-3 py-2 shadow-md mb-6 rounded-lg mobile-line-height">
         <BackButton onClick={unselectDolly} text="Change Dolly" />
         <div className="flex">
-        {errorMessage && <p className="text-red-500">{errorMessage}</p>}
+        {errorMessage && (
+  <p className="font-dmsans font-thin self-center" dangerouslySetInnerHTML={{ __html: errorMessage }}></p>
+)}
           <SecondaryButton onClick={load}>
             <Icon type="reset" className="w-[17px] h-[16px] pr-[1px] mr-[4px] fill-[#888]" />
             Reset All Changes
