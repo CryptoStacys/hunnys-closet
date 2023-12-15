@@ -115,7 +115,7 @@ export default function DollEditor(props: { id: number; selectDoll: Function }) 
     formData.append("data", JSON.stringify({ token: token, name: name }));
 
     
-    fetch(`https://pleasing-turkey-pleasing.ngrok-free.app/wordpress/wp-json/hunnys-closet/v1/updateClone`, {
+    fetch(`https://closetapi.hunnysnft.com/wordpress/wp-json/hunnys-closet/v1/updateClone`, {
             method: "post",
             body: formData,
         })
@@ -230,7 +230,7 @@ export default function DollEditor(props: { id: number; selectDoll: Function }) 
     return new Promise(async (resolve) => {
       fetch(
         // `${serverPath}/dolly/${id}`
-        `https://pleasing-turkey-pleasing.ngrok-free.app/wordpress/wp-json/hunnys-closet/v1/auth?wallet=${wallet}`
+        `https://closetapi.hunnysnft.com/wordpress/wp-json/hunnys-closet/v1/auth?wallet=${wallet}`
       )
         .then((response) => response.json())
         .then((res) => {
@@ -248,7 +248,7 @@ export default function DollEditor(props: { id: number; selectDoll: Function }) 
     return new Promise(async (resolve) => {
       fetch(
         // `${serverPath}/dolly/${id}`
-        `https://pleasing-turkey-pleasing.ngrok-free.app/wordpress/wp-json/hunnys-closet/v1/getCloneData?tokenIds[]=${id}`
+        `https://closetapi.hunnysnft.com/wordpress/wp-json/hunnys-closet/v1/getCloneData?tokenIds[]=${id}`
       )
         .then((response) => response.json())
         .then((res) => {

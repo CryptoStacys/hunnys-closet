@@ -3,7 +3,7 @@ import fetch from 'node-fetch';
 const ApiService = {
     getDataById: function (tokenId) {
         return new Promise(function (resolve) {
-            fetch(`https://pleasing-turkey-pleasing.ngrok-free.app/wordpress/wp-json/hunnys-closet/v1/getCloneData?tokenIds[]=${tokenId}`, { method: 'GET' })
+            fetch(`https://closetapi.hunnysnft.com/wordpress/wp-json/hunnys-closet/v1/getCloneData?tokenIds[]=${tokenId}`, { method: 'GET' })
                 .then(response => resolve(response.json()))
                 .catch(err => console.error(err));
             // let testData = '{"token_id":12,"data":[{"tokenId":"141","name":"LimeGreen","attribute":"Background","rarity":"common","baseColor":["green"],"colorsAmount":0,"colorsApplied":[],"tags":[],"parts":[]},{"tokenId":"141","name":"Alien","attribute":"Skin","rarity":"rare","baseColor":[],"colorsAmount":0,"colorsApplied":[],"tags":[],"parts":[]},{"tokenId":"141","name":"Gentle","attribute":"Eyebrows","rarity":"common","baseColor":[],"colorsAmount":0,"colorsApplied":[],"tags":[],"parts":[]},{"tokenId":"6002","name":"BabyBunny","attribute":"Hat","rarity":"rare","baseColor":[],"colorsAmount":1,"colorsApplied":["RedOrange3"],"tags":[],"parts":[]},{"tokenId":"141","name":"DiamondEyes","attribute":"Eyes","rarity":"relic","baseColor":[],"colorsAmount":0,"colorsApplied":[],"tags":[],"parts":[]},{"tokenId":"141","name":"ClubMakeup","attribute":"Face Sticker","rarity":"rare","baseColor":[],"colorsAmount":0,"colorsApplied":[],"tags":[],"parts":[]},{"tokenId":"141","name":"Empty","attribute":"Piercing","rarity":"common","baseColor":[],"colorsAmount":0,"colorsApplied":[],"tags":[],"parts":[]},{"tokenId":"141","name":"Tongue","attribute":"Mouth","rarity":"common","baseColor":[],"colorsAmount":1,"colorsApplied":["White"],"tags":[],"parts":[]},{"tokenId":"141","name":"SharpBob","attribute":"Hair Style","rarity":"uncommon","baseColor":[],"colorsAmount":1,"colorsApplied":["White"],"tags":["noEarring"],"parts":2},{"tokenId":"141","name":"DiamondDropPendant","attribute":"Accessory","rarity":"relic","baseColor":[],"colorsAmount":1,"colorsApplied":["Grey4"],"tags":[],"parts":[]},{"tokenId":"141","name":"CuteApron","attribute":"Outfit","rarity":"rare","baseColor":[],"colorsAmount":2,"colorsApplied":["Grey1","Grey4"],"tags":[],"parts":[]}]}';
@@ -64,7 +64,7 @@ const ApiService = {
     },
     getImageData: function (path) {
         return new Promise(function (resolve) {
-            fetch(`https://pleasing-turkey-pleasing.ngrok-free.app/wordpress/wp-json/hunnys-closet/v1/getImage?path=${path}`, { method: 'GET' })
+            fetch(`https://closetapi.hunnysnft.com/wordpress/wp-json/hunnys-closet/v1/getImage?path=${path}`, { method: 'GET' })
                 .then(response => resolve(response.json()))
                 .catch(err => console.error(err));
         })
@@ -97,7 +97,7 @@ const ApiService = {
                 name: '', // TODO naming the token
             }));
 
-            fetch(`https://pleasing-turkey-pleasing.ngrok-free.app/wordpress/wp-json/hunnys-closet/v1/saveToken`, {
+            fetch(`https://closetapi.hunnysnft.com/wordpress/wp-json/hunnys-closet/v1/saveToken`, {
                 method: "post",
                 body: formData,
               })

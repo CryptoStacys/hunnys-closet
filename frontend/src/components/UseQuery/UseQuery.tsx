@@ -6,7 +6,7 @@ export default function Example() {
     queryKey: ["user"],
     queryFn: () =>
       fetch(
-        "https://pleasing-turkey-pleasing.ngrok-free.app/wordpress/verifyCloset?wallet=0xa7758394D8f7fD23b0d9F13E02427B514687394B"
+        "https://closetapi.hunnysnft.com/wordpress/verifyCloset?wallet=0xa7758394D8f7fD23b0d9F13E02427B514687394B"
       ).then((res) => res.json()),
   });
 
