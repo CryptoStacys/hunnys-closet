@@ -115,7 +115,13 @@ const TokenService = {
                         
                         if(defaultTraitMatch) continue;
 
-                        let traitMatch = layerTraits.traits.find((ele) => { return ele.name === tokenMatch.attributes[k].value });
+                        try {
+                            let traitMatch = layerTraits.traits.find((ele) => { return ele.name === tokenMatch.attributes[k].value });
+            
+                            if (!traitMatch) {
+                                console.warn(`No trait match found for attribute: ${tokenMatch.attributes[k].value} in OriginID: ${config.originID}`);
+                                continue;  // Skip to next iteration
+                            }
 
                         if (!traitMatch) {
                             console.warn(`No trait match found for attribute: ${tokenMatch.attributes[k].value}`);
@@ -141,10 +147,16 @@ const TokenService = {
                                 
                             }
                         }
+                    } catch (error) {
+                        console.error(`Error processing trait for token ID ${tokenId}: ${error}`);
                     }
                 }
+                
             }
+            
         }
+        
+    }
 
 return result;
 },
