@@ -251,19 +251,19 @@ return result;
             
             for (let i = 0; i < tokens.length; i++) {
                 let dataReq;
-
+    
                 if(config.hasStaticMetaPath) {
-                   dataReq = ApiService.getMetaData(`${config.meta_url}${tokens[i].id}`, tokens[i].id); 
+                    dataReq = ApiService.getMetaData(`${config.meta_url}${tokens[i].id}`, tokens[i].id); 
                 } else {
                     let formattedUrl = TokenService.formatDynamicMetaUrl(tokens[i].tokenUrl);
-                    dataReq = ApiService.getMetaDataAsText(`${formattedUrl}`, tokens[i].id);
+                    dataReq = ApiService.getMetaDataAsText(formattedUrl, tokens[i].id);
                 }
                 promises.push(dataReq);
             }
-
+    
             let data = await Promise.all(promises);
             data = TokenService.filterMappedMeta(config, data);
-
+    
             for (let l = 0; l < tokens.length; l++) {
                 const match = data.find((ele) => { return ele.id === tokens[l].id });
                 
@@ -273,6 +273,7 @@ return result;
             resolve(tokens);
         })
     },
+    
     arregateResponse: function (collectionData, dollys) {
         let result = {
             dollys: [],
