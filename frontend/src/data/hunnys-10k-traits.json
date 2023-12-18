@@ -199,7 +199,7 @@
                 {"name":"CutePixie","colors":1,"rarity":"common","parts":1,"tags":[]},
                 {"name":"DinosaurPrincessHair","colors":2,"rarity":"legendary","parts":2,"tags":[]},
                 {"name":"ElegantCurly","colors":1,"rarity":"epic","parts":2,"tags":["noEarring"]},
-                {"name":"ExplorerBraid","colors":1,"rarity":"uncommon","parts":2,"tags":[]},
+                {"name":"ExplorerBraid","colors":2,"rarity":"uncommon","parts":2,"tags":[]},
                 {"name":"Geisha","colors":2,"rarity":"mythic","parts":1,"tags":["no"]},
                 {"name":"HighPonytail","colors":2,"rarity":"common","parts":2,"tags":["no"]},
                 {"name":"LongWithBangs","colors":1,"rarity":"common","parts":2,"tags":["noEarring"]},

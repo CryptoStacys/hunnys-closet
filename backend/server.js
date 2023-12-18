@@ -16,9 +16,6 @@ import cors from 'cors';
 
     // Middleware for logging various headers and request details
     app.use((req, res, next) => {
-        console.log(`User-Agent: ${req.headers['user-agent']}`);
-        console.log(`Referrer: ${req.headers.referer}`);
-        console.log(`Cookies: ${req.headers.cookie}`);
         
         const requestSize = JSON.stringify(req.headers).length + (req.body ? JSON.stringify(req.body).length : 0);
         console.log(`Request Size: ${requestSize} bytes`);
