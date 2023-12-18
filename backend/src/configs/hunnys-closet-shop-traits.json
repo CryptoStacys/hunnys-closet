@@ -22,16 +22,7 @@
         {
             "name": "Background",
             "traits":[
-                {"name":"W33D Trip","colors":4,"rarity":"Epic","tags":[], "token_id": 4},
-                {"name": "Skuzzys Sekret Space Zone 1","colors": 0,"rarity": "Mythic","tags": [], "token_id": 48},
-                {"name": "Skuzzys Sekret Space Zone 2","colors": 0,"rarity": "Mythic","tags": [], "token_id": 48},
-                {"name": "Skuzzys Sekret Space Zone 3","colors": 0,"rarity": "Mythic","tags": [], "token_id": 48},
-                {"name": "Skuzzys Sekret Space Zone 4","colors": 0,"rarity": "Mythic","tags": [], "token_id": 48},
-                {"name": "Skuzzy Sticker Maddness","colors": 1,"rarity": "Mythic","tags": [], "token_id": 48},
-                {"name": "90s Laser","colors": 3,"rarity": "Mythic","tags": [], "token_id": 48},
-                {"name": "Twinkle Vines","colors": 1,"rarity": "Mythic","tags": [], "token_id": 48},
-                {"name": "Twinkling Vines Night","colors": 0,"rarity": "Mythic","tags": [], "token_id": 48},
-                {"name": "Evergreen Scene","colors": 4,"rarity": "Mythic","tags": [], "token_id": 48}
+                {"name":"W33D Trip","colors":4,"rarity":"Epic","tags":[], "token_id": 4}
             ]
         },
 
@@ -151,10 +142,7 @@
                 {"name":"Flaunt Star (Shop)","colors":2,"rarity":"Common","tags":[], "token_id": 47},
                 {"name":"FLAUNTFLAUNTFLAUNT (Shop)","colors":2,"rarity":"Common","tags":[], "token_id": 47},
                 {"name":"FLS Logo Round (Shop)","colors":1,"rarity":"Common","tags":[], "token_id": 47},
-                {"name":"FLS Logo (Shop)","colors":0,"rarity":"Common","tags":[], "token_id": 47},
-                {"name": "Soft Snow","colors": 0,"rarity": "Mythic","tags": [], "token_id": 48},
-                {"name": "Love Bunnys","colors": 5,"rarity": "Mythic","tags": [], "token_id": 48},
-                {"name": "Fuzzle Toe","colors": 3,"rarity": "Mythic","tags": [], "token_id": 48}
+                {"name":"FLS Logo (Shop)","colors":0,"rarity":"Common","tags":[], "token_id": 47}
             ]
         },
 

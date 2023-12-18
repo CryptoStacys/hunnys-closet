@@ -585,7 +585,7 @@ export default function Dashboard({ rewardStatus }: DashboardProps) {
                 text: "Buy single items or packs in the shop. Use them to customize, gift or trade.",
                 link: "STORE",
                 icon: <ShopIcon />,
-                url: "https://buy.hunnys.io/polygon/collection/0x0b54fbd0139a2da92ff41fd9ed56adcf89d87001",
+                url: "https://buy.hunnys.io/polygon/collection/0x11bc733e719198e2b3746f6841d2818ca87af6da",
               },
               {
                 title: "SUBMIT",
