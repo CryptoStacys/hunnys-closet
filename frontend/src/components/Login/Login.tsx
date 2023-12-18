@@ -45,8 +45,9 @@ export default function Login() {
           </div>
         ) : (
           <div className=" absolute mx-auto uppercase text-[#777] text-4xl font-bold font-title tracking-wider px-14 py-3 rounded-md hover:cursor-pointer">
-            <div className="text-black text-4xl"></div>
+            <div className="text-white">LOADING</div>
             
+            <Loader />
             
           </div>
         )}
