@@ -20,7 +20,7 @@ type Token = {
 };
 
 async function fetchMetadata(id: number) {
-    let res = await fetch(`https://publicrattyb.s3.us-east-2.amazonaws.com/data/${id}`);
+    let res = await fetch(`https://hunnyscloset.s3.us-east-2.amazonaws.com/data/${id}`);
     let meta = await res.json();
     return meta.attributes;
 }

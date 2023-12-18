@@ -1,7 +1,7 @@
 import awsCli from 'aws-cli-js';
 
 const from = "data/";
-const to = "s3://publicrattyb/";
+const to = "s3://hunnyscloset/dollys/";
 const fileType = '.png';
 const cred = {
     "Credentials": {

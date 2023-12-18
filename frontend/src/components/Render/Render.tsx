@@ -239,7 +239,7 @@ export default function Render(props: { token: Token | any; download?: boolean; 
   
 
   async function downloadHD() {
-    let dataUri: any = await urlContentToDataUri(`https://publicrattyb.s3.us-east-2.amazonaws.com/${props.dollyId}.png`) ;
+    let dataUri: any = await urlContentToDataUri(`https://hunnyscloset.s3.us-east-2.amazonaws.com/dollys/${props.dollyId}.png`) ;
     const link = document.createElement("a");
     link.href = dataUri; // TODO: Add AWS LINK TO DOLLY HERE
     link.download =`Dolly#${props.dollyId}.png`; // Specify the filename for the downloaded image
