@@ -34,16 +34,16 @@ export default function App() {
       //   isReconnected,
       // });
 
-      fetch(`https://hunnys.io/wp-json/hunnys-closet/v1/traits?wallet=${address}`)
+      fetch(`https://closetapi.hunnysnft.com/wordpress/wp-json/hunnys-closet/v1/traits?wallet=${address}`)
         .then((res) => res.json())
         .then((res) => {
           allTraitsSet(res);
           return res;
         });
 
-        // CACHEBUST https://hunnys.io/verifyCloset?wallet=${address}&nocache=${new Date().getTime()}`
+        // CACHEBUST https://closetapi.hunnysnft.com/wordpress/wp-json/hunnys-closet/v1/verifyCloset?wallet=${address}&nocache=${new Date().getTime()}`
 
-        fetch(`https://hunnys.io/wp-json/hunnys-closet/v1/verifyCloset?wallet=${address}`)
+        fetch(`https://closetapi.hunnysnft.com/wordpress/wp-json/hunnys-closet/v1/verifyCloset?wallet=${address}`)
         .then((res) => res.json())
         .then((res) => {
           res.address = address;
