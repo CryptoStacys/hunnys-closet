@@ -126,12 +126,9 @@ export default function Dashboard({ rewardStatus }: DashboardProps) {
       <a rel="noreferrer" target="_blank" href="https://buy.hunnys.io/polygon/collection/0x11bc733e719198e2b3746f6841d2818ca87af6da">
       <div className="grid sm:grid-cols-[0fr_2fr] dashboardHero aspect-w-16 aspect-h-9 grid-cols-[1fr] gap-2 mt-2 mb-2" style={{gridAutoRows: '1fr'}}>
       
-          
-          
           <div className="relative text-white py-8 rounded-2xl mb-2 overflow-hidden">
             <div className="mx-auto px-8 max-w-[360px] rounded-xl">
             
-              
             </div>
             <div className="absolute bottom-8 w-full z-50 px-8">
               <div className="max-w-[300px] mx-auto flex justify-center items-center">
