@@ -72,8 +72,8 @@
             "name": "Hand",
             "traits":[
                 {"name": "Reindeer Mug","colors": 4,"rarity": "Legendary","tags": ["skin"], "token_id": 49},
-                {"name": "XL Hot Cocoa","colors": 4,"rarity": "Rare","tags": ["skin"], "token_id": 50},
-                {"name": "Christmas Tree Mug","colors": 5,"rarity": "Uncommon","tags": ["skin"], "token_id": 51}
+                {"name": "XL Hot Cocoa","colors": 4,"rarity": "Rare","tags": ["skin"], "token_id": 49},
+                {"name": "Christmas Tree Mug","colors": 5,"rarity": "Uncommon","tags": ["skin"], "token_id": 49}
             ]
         },
 
