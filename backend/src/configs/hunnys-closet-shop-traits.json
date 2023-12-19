@@ -179,10 +179,7 @@
                 {"name":"Boo Mug","colors":3,"rarity":"uncommon", "tags": ["skin"], "token_id": 25},
                 {"name":"Witch Cauldron Mug","colors":3,"rarity":"uncommon", "tags": ["skin"], "token_id": 26},
                 {"name":"Jack o Bear Pail","colors":4,"rarity":"rare", "tags": ["skin"], "token_id": 30},
-                {"name":"Beer","colors":2,"rarity":"epic", "tags": ["skin"], "token_id": 46},
-                {"name": "Reindeer Mug","colors": 4,"rarity": "Legendary","tags": ["skin"], "token_id": 49},
-                {"name": "XL Hot Cocoa","colors": 4,"rarity": "Rare","tags": ["skin"], "token_id": 50},
-                {"name": "Christmas Tree Mug","colors": 5,"rarity": "Uncommon","tags": ["skin"], "token_id": 51}
+                {"name":"Beer","colors":2,"rarity":"epic", "tags": ["skin"], "token_id": 46}
             ]
         },
 
