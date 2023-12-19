@@ -1443,7 +1443,7 @@ const colorNames = {
     "r": 255,
     "g": 218,
     "b": 0
-  },
+  }
 };
 
 export default colorNames;

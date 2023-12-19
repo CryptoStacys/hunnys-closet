@@ -24,6 +24,8 @@ export default function App() {
   const [connected, connectedSet] = useAtom(connectedAtom);
   const [rewardStatus, setRewardStatus] = useState("");
 
+  // const paths = ['/', '/inventory', '/dollys', '/help'];
+
   const account = useAccount({
     onConnect({ address, connector, isReconnected }) {
       // console.log("Connected. wagmi object", {
@@ -32,7 +34,26 @@ export default function App() {
       //   isReconnected,
       // });
 
-      
+      fetch(`https://closetapi.hunnysnft.com/wordpress/wp-json/hunnys-closet/v1/traits?wallet=${address}`)
+        .then((res) => res.json())
+        .then((res) => {
+          allTraitsSet(res);
+          return res;
+        });
+
+        // CACHEBUST https://closetapi.hunnysnft.com/wordpress/wp-json/hunnys-closet/v1/verifyCloset?wallet=${address}&nocache=${new Date().getTime()}`
+
+        fetch(`https://closetapi.hunnysnft.com/wordpress/wp-json/hunnys-closet/v1/verifyCloset?wallet=${address}`)
+        .then((res) => res.json())
+        .then((res) => {
+          res.address = address;
+          console.log("Hunnys WP response:", res);
+          setRewardStatus(res.rewardStatus);
+          res.hideSaveChangesModal = false;
+          connectedSet(true);
+          userSet(res);
+          return res;
+        });
 
     },
     

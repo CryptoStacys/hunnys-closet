@@ -123,21 +123,19 @@ export default function Dashboard({ rewardStatus }: DashboardProps) {
     <div className="flex justify-center items-center w-max-full px-6 mx-auto">
       <div className="relative max-w-[1250px] w-full mx-auto">
       {/* <div className="relative max-w-[1160px] w-full mx-auto"> */}   
+      <a rel="noreferrer" target="_blank" href="https://buy.hunnys.io/polygon/asset/0x11bc733e719198e2b3746f6841d2818ca87af6da:48?tab=info">
       <div className="grid sm:grid-cols-[0fr_2fr] dashboardHero aspect-w-16 aspect-h-9 grid-cols-[1fr] gap-2 mt-2 mb-2" style={{gridAutoRows: '1fr'}}>
       
-          
-          
           <div className="relative text-white py-8 rounded-2xl mb-2 overflow-hidden">
             <div className="mx-auto px-8 max-w-[360px] rounded-xl">
             
-              
             </div>
             <div className="absolute bottom-8 w-full z-50 px-8">
               <div className="max-w-[300px] mx-auto flex justify-center items-center">
               </div>
             </div>
           </div>
-        </div>
+        </div></a>
         <div className="grid grid-cols-[1fr] sm:grid-cols-[2fr_1fr] bg-hunnys-blue rounded-2xl relative mb-2">
           <div className="grid grid-cols-[1fr] sm:grid-cols-2 py-8 px-5 mb-12" style={{ zIndex: 1}}>
             <div className="px-5">
@@ -585,7 +583,7 @@ export default function Dashboard({ rewardStatus }: DashboardProps) {
                 text: "Buy single items or packs in the shop. Use them to customize, gift or trade.",
                 link: "STORE",
                 icon: <ShopIcon />,
-                url: "https://buy.hunnys.io/polygon/collection/0x0b54fbd0139a2da92ff41fd9ed56adcf89d87001",
+                url: "https://buy.hunnys.io/polygon/collection/0x11bc733e719198e2b3746f6841d2818ca87af6da",
               },
               {
                 title: "SUBMIT",

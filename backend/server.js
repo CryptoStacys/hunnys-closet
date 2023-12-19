@@ -10,7 +10,7 @@ import cors from 'cors';
 
     const app = express();
     app.use(cors({
-        origin: ['https://closet.hunnys.io', 'https://pleasing-turkey-pleasing.ngrok-free.app', 'https://closetapi.hunnysnft.com', 'http://localhost:8080/wordpress/wp-json/hunnys-closet/v1/', 'https://staging-hunnys-closet-2.vercel.app', 'http://localhost:3000', 'http://localhost', 'http://localhost:8080', 'http://localhost:8080/wordpress', 'https://hunnys.io', 'https://testing.d35i3wnh0wry5j.amplifyapp.com']
+        origin: ['https://closet.hunnys.io', 'https://hunnys.io/wp-json/hunnys-closet/v1', 'https://closetapi.hunnysnft.com/wordpress/wp-json/hunnys-closet/v1/', 'https://pleasing-turkey-pleasing.ngrok-free.app', 'https://closetapi.hunnysnft.com', 'http://localhost:8080/wordpress/wp-json/hunnys-closet/v1/', 'https://staging-hunnys-closet-2.vercel.app', 'http://localhost:3000', 'http://localhost', 'http://localhost:8080', 'http://localhost:8080/wordpress', 'https://hunnys.io', 'https://testing.d35i3wnh0wry5j.amplifyapp.com']
     }));
     const port = process.env.PORT || 8080;
 
@@ -18,7 +18,6 @@ import cors from 'cors';
     app.use((req, res, next) => {
         
         const requestSize = JSON.stringify(req.headers).length + (req.body ? JSON.stringify(req.body).length : 0);
-        console.log(`Request Size: ${requestSize} bytes`);
 
         next();
     });

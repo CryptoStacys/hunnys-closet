@@ -20,7 +20,7 @@ type Token = {
 };
 
 async function fetchMetadata(id: number) {
-    let res = await fetch(`https://publicrattyb.s3.us-east-2.amazonaws.com/data/${id}`);
+    let res = await fetch(`https://hunnyscloset.s3.us-east-2.amazonaws.com/data/${id}`);
     let meta = await res.json();
     return meta.attributes;
 }
@@ -325,6 +325,18 @@ export async function getLayers(token: any): Promise<Layer[]> {
         layers = addLayer(layers, accessory);
     }
 
+        // UNDERGARMENT
+        if ((!outfit || outfit.name === "Empty") && (!bodysuit || bodysuit.name === "Empty")) {
+            if (!undergarment || undergarment.name === "Empty") {
+                undergarment.name = "Frilly Bra";
+                undergarment.colors = 1;
+                undergarment.origin_id = 0;
+                undergarment.colorsApplied = ["HunnysPurple1"];
+            }
+    
+            layers = addLayer(layers, undergarment);
+        }
+
     // HAND
     if (hand && !hand.tags.includes("onBack")) {
         if (hand.tags.includes("skin")) {
@@ -352,17 +364,7 @@ export async function getLayers(token: any): Promise<Layer[]> {
         layers = addLayer(layers, frame);
     }
 
-    // UNDERGARMENT
-    if ((!outfit || outfit.name === "Empty") && (!bodysuit || bodysuit.name === "Empty")) {
-        if (!undergarment || undergarment.name === "Empty") {
-            undergarment.name = "Frilly Bra";
-            undergarment.colors = 1;
-            undergarment.origin_id = 0;
-            undergarment.colorsApplied = ["HunnysPurple1"];
-        }
 
-        layers = addLayer(layers, undergarment);
-    }
 
     // Add FLS Laser C2 layers above all others if the eyes trait is FLS Laser
 if (eyes && eyes.name === "FLS Laser") {
