@@ -1,5 +1,5 @@
-const landing = "/assets/img/landing.png";
-// import landing from "./../../assets/img/landing.png";
+const loading = "/assets/img/loading.png";
+// import loading from "./../../assets/img/loading.png";
 import { useConnectModal, RainbowKitProvider } from "@rainbow-me/rainbowkit";
 import { configureChains } from 'wagmi';
 import { mainnet } from 'wagmi/chains';
@@ -34,7 +34,7 @@ export default function Login() {
     <div className="flex justify-center items-center w-max-full px-6 mx-auto">
       <div className="relative bg-[#fff] shadow-lg rounded-3xl overflow-hidden max-w-[1250px] w-full h-[80vh] mx-auto flex items-center justify-center">
       {/* <div className="relative bg-[#fff] shadow-lg rounded-3xl overflow-hidden max-w-[1160px] w-full h-[80vh] mx-auto flex items-center justify-center"> */}
-        <Image width={3000} height={2659} src={landing} alt="login-bg" className="w-full h-auto" />
+        <Image width={3000} height={2659} src={loading} alt="login-bg" className="w-full h-auto" />
         
         {mounted && openConnectModal ? (
           <div
