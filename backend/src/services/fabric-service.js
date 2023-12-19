@@ -86,17 +86,12 @@ const FabricService = {
             // Or, if using crypto-js or another library:
             // const hash = sha256(path).toString();
 
-            console.log(`Attempting to load image with hash: ${hash}...`);
-
             // Increment our counter each time this path's hash is attempted
             if (!loadCounter[hash]) {
                 loadCounter[hash] = 1;
             } else {
                 loadCounter[hash]++;
             }
-
-            // Log the count for this hash
-            console.log(`Image with hash ${hash} has been loaded ${loadCounter[hash]} times.`);
 
             new fabric.Image.fromURL(path, function (oImg) {
                 if (oImg.getElement() == null) {

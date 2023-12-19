@@ -18,7 +18,6 @@ import cors from 'cors';
     app.use((req, res, next) => {
         
         const requestSize = JSON.stringify(req.headers).length + (req.body ? JSON.stringify(req.body).length : 0);
-        console.log(`Request Size: ${requestSize} bytes`);
 
         next();
     });
