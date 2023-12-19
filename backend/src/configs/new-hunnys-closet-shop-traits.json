@@ -17,9 +17,7 @@
                 {"name": "90s Laser","colors": 3,"rarity": "Mythic","tags": [], "token_id": 48},
                 {"name": "Twinkle Vines","colors": 1,"rarity": "Mythic","tags": [], "token_id": 48},
                 {"name": "Twinkling Vines Night","colors": 0,"rarity": "Mythic","tags": [], "token_id": 48},
-                {"name": "Evergreen Scene","colors": 4,"rarity": "Mythic","tags": [], "token_id": 48},
-                {"name": "Stabby Skuzzcicles 1","colors": 0,"rarity": "Mythic","tags": [], "token_id": 48},
-                {"name": "Stabby Skuzzcicles 2","colors": 4,"rarity": "Mythic","tags": [], "token_id": 48}
+                {"name": "Evergreen Scene","colors": 4,"rarity": "Mythic","tags": [], "token_id": 48}
             ]
         },
 
@@ -58,7 +56,9 @@
             "traits": [
                 {"name": "Soft Snow","colors": 0,"rarity": "Mythic","tags": [], "token_id": 48},
                 {"name": "Love Bunnys","colors": 5,"rarity": "Mythic","tags": [], "token_id": 48},
-                {"name": "Fuzzle Toe","colors": 3,"rarity": "Mythic","tags": [], "token_id": 48}
+                {"name": "Fuzzle Toe","colors": 3,"rarity": "Mythic","tags": [], "token_id": 48},
+                {"name": "Stabby Skuzzcicles 1","colors": 0,"rarity": "Mythic","tags": [], "token_id": 48},
+                {"name": "Stabby Skuzzcicles 2","colors": 4,"rarity": "Mythic","tags": [], "token_id": 48}
             ]
         },
 
