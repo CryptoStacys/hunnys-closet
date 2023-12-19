@@ -48,6 +48,14 @@
                 "value": "Evergreen Scene"
             },
             {
+                "trait_type": "Background",
+                "value": "Stabby Skuzzcicles 1"
+            },
+            {
+                "trait_type": "Background",
+                "value": "Stabby Skuzzcicles 2"
+            },
+            {
                 "trait_type": "Frame",
                 "value": "Fuzzle Toe"
             }
@@ -61,31 +69,17 @@
             {
                 "trait_type": "Hand",
                 "value": "Reindeer Mug"
-            }
-        ],
-        "metaPath": "https://hunnysclosetshop.s3.us-east-2.amazonaws.com/images/goodies/49.json"
-    },
-    {
-        "tokenId": 50,
-        "name": "XL Hot Cocoa",
-        "attributes": [
+            },
             {
                 "trait_type": "Hand",
                 "value": "XL Hot Cocoa"
-            }
-        ],
-        "metaPath": "https://hunnysclosetshop.s3.us-east-2.amazonaws.com/images/goodies/50.json"
-    },
-    {
-        "tokenId": 51,
-        "name": "Christmas Tree Mug",
-        "attributes": [
+            },
             {
                 "trait_type": "Hand",
                 "value": "Christmas Tree Mug"
             }
         ],
-        "metaPath": "https://hunnysclosetshop.s3.us-east-2.amazonaws.com/images/goodies/51.json"
+        "metaPath": "https://hunnysclosetshop.s3.us-east-2.amazonaws.com/images/goodies/49.json"
     }
 ]
 
