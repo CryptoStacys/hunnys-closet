@@ -214,6 +214,76 @@ async function processHairStyle(files, baseName, subfolder, baseImage) {
     }
 }
 
+async function processHat(files, baseName, subfolder, baseImage) {
+    // Group files by their hair style name
+    const hatGroups = files.reduce((acc, { file }) => {
+        const match = file.match(/^([a-zA-Z0-9\s-]+(?:\(.*\))?)[_]/);
+        if (match) {
+            const styleName = match[1]; // Capture the base style name before the first underscore
+            acc[styleName] = acc[styleName] || [];
+            acc[styleName].push(file);
+        }
+        return acc;
+    }, {});
+
+    // Define a function to apply the color based on the layer name
+    const applyColorToLayer = async (image, fileName) => {
+        const colorIndexMatch = fileName.match(/_C(\d)/);
+        if (colorIndexMatch) {
+            const colorIndex = parseInt(colorIndexMatch[1], 10) - 1;
+            if (colorIndex >= 0 && colorIndex < layerColors.length) {
+                const color = layerColors[colorIndex];
+                image.color([{ apply: 'mix', params: [color, 100] }]);
+            }
+        }
+        return image;
+    };
+
+    // Process each hair style group
+    for (const styleName in hatGroups) {
+        let compositeImage = baseImage.clone(); // Start with a clone of the base image
+        const styleFiles = hatGroups[styleName];
+
+        // Sort files to ensure correct layering order
+        const sortedFiles = styleFiles.sort((a, b) => {
+            if (a.includes('_Back') && !b.includes('_Back')) return -1;
+            if (b.includes('_Back') && !a.includes('_Back')) return 1;
+            if (a.includes('_Front') && !b.includes('_Front')) return 1;
+            if (b.includes('_Front') && !a.includes('_Front')) return -1;
+            return a.localeCompare(b); // Preserve original order for other files
+        });
+
+        // Composite all layers for the hair style
+        for (const file of sortedFiles) {
+            try {
+                const imagePath = path.join(inputFolder, subfolder, file);
+                let image = await Jimp.read(imagePath);
+                image = await applyColorToLayer(image, file); // Apply color before compositing
+                compositeImage.composite(image, 0, 0, {
+                    mode: Jimp.BLEND_SOURCE_OVER,
+                    opacitySource: 1,
+                    opacityDest: 1
+                });
+            } catch (error) {
+                console.error(`Error processing hat file ${file}:`, error);
+            }
+        }
+
+        // Resize the final composite image to 300x300
+        const resizedCompositeImage = compositeImage.resize(300, 300);
+
+        // Save the resized composite image to the compositeImages folder
+        const compositeImagePath = path.join(outputFolderComposite, subfolder, `${styleName}.png`);
+        ensureOutputDirectoryExists(path.dirname(compositeImagePath));
+        await resizedCompositeImage.writeAsync(compositeImagePath);
+
+        // Save the same resized image as a JPEG to the 300x300_jpg folder
+        const jpgOutputPath = path.join(outputFolderJpg, subfolder, `${styleName}.jpg`);
+        ensureOutputDirectoryExists(path.dirname(jpgOutputPath));
+        await resizedCompositeImage.quality(80).writeAsync(jpgOutputPath); // Save with quality setting for JPG
+    }
+}
+
 async function processSkinColorsOld() {
     const skinColorPath = path.join(inputFolder, 'Colors/SkinColors/Old');
     const files = fs.readdirSync(skinColorPath);
@@ -331,6 +401,8 @@ async function processImages(files) {
                 compositeImage = await processEyes(files, baseName, subfolder, baseMergedBWImage);
             } else if (subfolder === "Hair Style") {
                 compositeImage = await processHairStyle(files, baseName, subfolder, baseMergedBWImage);
+            } else if (subfolder === "Hat") {
+                compositeImage = await processHat(files, baseName, subfolder, baseMergedBWImage);
             } else if (subfolder === "Colors/SkinColors/Old" && rules.mergeOnBaseWithColor) {
                 compositeImage = await processSkinColorsOld(files, baseName, subfolder);
             } else {
@@ -486,10 +558,10 @@ function init() {
     ensureOutputDirectoryExists(outputFolder800);
     ensureOutputDirectoryExists(outputFolder600);
     processImages(files);
- //   processSolidColors(files);
+    processSolidColors(files);
     resizeImages(files, 800, outputFolder800);
     resizeImages(files, 600, outputFolder600);
-  //  processSolidColors();
+    processSolidColors();
     processSkinColorsOld();
 }
 

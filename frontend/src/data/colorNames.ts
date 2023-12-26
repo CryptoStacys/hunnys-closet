@@ -284,10 +284,25 @@ const colorNames = {
     "g": 25,
     "b": 8
   },
+  "Christmas Thistle": {
+    "r": 41,
+    "g": 95,
+    "b": 65
+  },
+  "Christmas Wine": {
+    "r": 98,
+    "g": 30,
+    "b": 30
+  },
   "Cloud Bunny": {
     "r": 212,
     "g": 226,
     "b": 252
+  },
+  "Cookie Crumbs": {
+    "r": 178,
+    "g": 129,
+    "b": 55
   },
   "Cottyne Cloud": {
     "r": 206,
@@ -338,6 +353,11 @@ const colorNames = {
     "r": 0,
     "g": 0,
     "b": 0
+  },
+  "Evergreen Pine": {
+    "r": 51,
+    "g": 77,
+    "b": 62
   },
   "Eyeball Wall": {
     "r": 128,
@@ -684,6 +704,11 @@ const colorNames = {
     "g": 0,
     "b": 215
   },
+  "Jinglebells": {
+    "r": 223,
+    "g": 150,
+    "b": 42
+  },
   "Lavender1": {
     "r": 187,
     "g": 156,
@@ -808,6 +833,11 @@ const colorNames = {
     "r": 146,
     "g": 205,
     "b": 151
+  },
+  "Mistletoe": {
+    "r": 143,
+    "g": 35,
+    "b": 35
   },
   "Mom Blonde": {
     "r": 252,

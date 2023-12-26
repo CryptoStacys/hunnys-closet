@@ -80,6 +80,44 @@
             }
         ],
         "metaPath": "https://hunnysclosetshop.s3.us-east-2.amazonaws.com/images/goodies/49.json"
+    },
+    {
+        "tokenId": 50,
+        "name": "Winter Fit",
+        "attributes": [
+            {
+                "trait_type": "Hat",
+                "value": "Winter Cap"
+            },
+            {
+                "trait_type": "Outfit",
+                "value": "Winter Vest"
+            }
+        ],
+        "metaPath": "https://hunnysclosetshop.s3.us-east-2.amazonaws.com/images/goodies/50.json"
+    },
+    {
+        "tokenId": 51,
+        "name": "Winter Solstice Pack",
+        "attributes": [
+            {
+                "trait_type": "Accessory",
+                "value": "Winter Solstice Dangle Earring"
+            },
+            {
+                "trait_type": "Hat",
+                "value": "Winter Solstice Crown"
+            },
+            {
+                "trait_type": "Hair Style",
+                "value": "Winter Solstice Curls"
+            },
+            {
+                "trait_type": "Face Sticker",
+                "value": "Winter Solstice Eyeshadow"
+            }
+        ],
+        "metaPath": "https://hunnysclosetshop.s3.us-east-2.amazonaws.com/images/goodies/51.json"
     }
 ]
 

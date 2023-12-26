@@ -1,27 +1,24 @@
 {
   "attributes": [
-    {"name": "Background", "traits": [
-        {"name": "Skuzzys Sekret Space Zone 1","colors": 0,"rarity": "Mythic","tags": []},
-        {"name": "Skuzzys Sekret Space Zone 2","colors": 0,"rarity": "Mythic","tags": []},
-        {"name": "Skuzzys Sekret Space Zone 3","colors": 0,"rarity": "Mythic","tags": []},
-        {"name": "Skuzzys Sekret Space Zone 4","colors": 0,"rarity": "Mythic","tags": []},
-        {"name": "Skuzzy Sticker Maddness","colors": 1,"rarity": "Mythic","tags": []},
-        {"name": "90s Laser","colors": 2,"rarity": "Mythic","tags": []},
-        {"name": "Twinkle Vines","colors": 1,"rarity": "Mythic","tags": []},
-        {"name": "Twinkling Vines Night","colors": 0,"rarity": "Mythic","tags": []},
-        {"name": "Evergreen Scene","colors": 4,"rarity": "Mythic","tags": []}
+    {"name": "Accessory", "traits": [
+        {"name": "Winter Solstice Dangle Earring","colors": 4,"rarity": "Legendary","tags": ["earrings"],"token_id": 51}
     ]},
 
-    {"name": "Frame", "traits": [
-        {"name": "Soft Snow","colors": 0,"rarity": "Mythic","tags": []},
-        {"name": "Love Bunnys","colors": 5,"rarity": "Mythic","tags": []},
-        {"name": "Fuzzle Toe","colors": 3,"rarity": "Mythic","tags": []}
+    {"name": "Face Sticker", "traits": [
+        {"name": "Winter Solstice Eyeshadow","colors": 0,"rarity": "Legendary","tags": [],"token_id": 51}
     ]},
 
-    {"name": "Hand", "traits": [
-        {"name": "Reindeer Mug","colors": 4,"rarity": "Legendary","tags": []},
-        {"name": "XL Hot Cocoa","colors": 4,"rarity": "Rare","tags": []},
-        {"name": "Christmas Tree Mug","colors": 5,"rarity": "Uncommon","tags": []}
+    {"name": "Hair Style", "traits": [
+        {"name": "Winter Solstice Curls","colors": 2,"rarity": "Legendary", "parts": 2, "tags": [],"token_id": 51}
+    ]},
+
+    {"name": "Hat", "traits": [
+        {"name": "Winter Cap","colors": 1,"rarity": "Rare","tags": [],"token_id": 50},
+        {"name": "Winter Solstice Crown","colors": 5,"rarity": "Legendary","tags": [],"token_id": 51}
+    ]},
+
+    {"name": "Outfit", "traits": [
+        {"name": "Winter Vest","colors": 4,"rarity": "Rare","tags": [],"token_id": 50}
     ]}
   ]
 }
