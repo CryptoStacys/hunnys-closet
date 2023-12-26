@@ -6,6 +6,7 @@ import { useAtom } from "jotai";
 import { userAtom } from "../../data/store";
 import Help from "../Help/Help";
 import Image from "next/image";
+import { customImageLoader } from '../../utils/imageLoader';
 
 import ImageWithFallback from './ImageWithFallback';
 
@@ -70,6 +71,7 @@ function DollGallery({ selectDoll }: any) {
 
                                 <ImageWithFallback
                                     // key={doll.token_id}
+                                    loader={customImageLoader}
                                     layout="fill"
                                     src={`https://hunnyscloset.s3.us-east-2.amazonaws.com/dollys/${doll.token_id}.png`}
                                     fallbackSrc={`/assets/img/placeholder.png`}
