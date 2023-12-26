@@ -15,6 +15,12 @@
           "colors": 0,
           "rarity": "common",
           "tags": []
+        },
+        {
+          "name": "Hunnys Dolly Box Inside",
+          "colors": 0,
+          "rarity": "common",
+          "tags": []
         }
       ]
     },
@@ -180,7 +186,13 @@
         { "name": "Empty", "colors": 0, "rarity": "common", "tags": [] },
         { "name": "GM Banner", "colors": 2, "rarity": "common", "tags": [] },
         { "name": "GM Speech Bubble", "colors": 2, "rarity": "common", "tags": [] },
-        { "name": "GM Text", "colors": 1, "rarity": "common", "tags": [] }
+        { "name": "GM Text", "colors": 1, "rarity": "common", "tags": [] },
+        {
+          "name": "Hunnys Dolly Box Outside",
+          "colors": 0,
+          "rarity": "common",
+          "tags": []
+        }
       ]
     },
     {

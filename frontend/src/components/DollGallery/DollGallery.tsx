@@ -61,8 +61,8 @@ function DollGallery({ selectDoll }: any) {
                             onClick={() => selectDoll(doll.token_id)}
                             className="relative aspect-square bg-white flex justify-center hover:cursor-pointer border-[0px] transition-custom border-[#fff] rounded-2xl"
                         >
-                            <div className="w-full h-full">
-                                <p className="z-40 select-none absolute top-7 bg-white rounded-r-md pr-4 pl-3 py-1 tracking-wide shadow-md font-bold">
+                            <div className="w-full h-full hover:shadow-lg hover:scale-[1.02] transition-all">
+                                <p className="z-40 select-none relative inline float-right top-7 bg-white rounded-l-md pr-4 pl-3 py-1 tracking-wide shadow-md font-bold">
                                     {doll.token_id}
                                 </p>
                     
@@ -72,7 +72,7 @@ function DollGallery({ selectDoll }: any) {
                                     // key={doll.token_id}
                                     layout="fill"
                                     src={`https://hunnyscloset.s3.us-east-2.amazonaws.com/dollys/${doll.token_id}.png`}
-                                    fallbackSrc={`/assets/img/empty.png`}
+                                    fallbackSrc={`/assets/img/placeholder.png`}
                                 />
 
                             </div>
