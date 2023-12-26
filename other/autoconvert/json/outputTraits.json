@@ -1,24 +1,19 @@
 {
   "attributes": [
     {"name": "Accessory", "traits": [
-        {"name": "Winter Solstice Dangle Earring","colors": 4,"rarity": "Legendary","tags": ["earrings"],"token_id": 51}
+        {"name": "Fancy Christmas Tree Earrings","colors": 2,"rarity": "Common","tags": ["earrings"],"token_id": 175}
     ]},
 
-    {"name": "Face Sticker", "traits": [
-        {"name": "Winter Solstice Eyeshadow","colors": 0,"rarity": "Legendary","tags": [],"token_id": 51}
-    ]},
-
-    {"name": "Hair Style", "traits": [
-        {"name": "Winter Solstice Curls","colors": 2,"rarity": "Legendary", "parts": 2, "tags": [],"token_id": 51}
+    {"name": "Dye", "traits": [
+        {"name": "Evergreen Pine","colors": 0,"rarity": "Common","tags": [],"token_id": 175},
+        {"name": "Christmas Thistle","colors": 0,"rarity": "Common","tags": [],"token_id": 175},
+        {"name": "Jinglebells","colors": 0,"rarity": "Common","tags": [],"token_id": 175},
+        {"name": "Cookie Crumbs","colors": 0,"rarity": "Common","tags": [],"token_id": 175},
+        {"name": "Christmas Wine","colors": 0,"rarity": "Common","tags": [],"token_id": 175}
     ]},
 
     {"name": "Hat", "traits": [
-        {"name": "Winter Cap","colors": 1,"rarity": "Rare","tags": [],"token_id": 50},
-        {"name": "Winter Solstice Crown","colors": 5,"rarity": "Legendary","tags": [],"token_id": 51}
-    ]},
-
-    {"name": "Outfit", "traits": [
-        {"name": "Winter Vest","colors": 4,"rarity": "Rare","tags": [],"token_id": 50}
+        {"name": "Winter Antlers","colors": 1,"rarity": "Common","tags": ["twoParts"],"token_id": 175}
     ]}
   ]
 }

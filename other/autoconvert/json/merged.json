@@ -1,197 +1,94 @@
 {
     "attributes": [
         {
-            "name": "Accessory",
-            "traits": [
-                {
-                    "name": "Winter Solstice Dangle Earring",
-                    "colors": 4,
-                    "rarity": "Legendary",
-                    "tags": [
-                        "earrings"
-                    ],
-                    "token_id": 51
-                }
-            ]
-        },
-        {
             "name": "Background",
             "traits": [
                 {
-                    "name": "Skuzzys Sekret Space Zone 1",
+                    "name": "Empty",
                     "colors": 0,
-                    "rarity": "Mythic",
-                    "tags": [],
-                    "token_id": 48
+                    "rarity": "common",
+                    "tags": []
                 },
                 {
-                    "name": "Skuzzys Sekret Space Zone 2",
+                    "name": "Hunnys Yellow Background",
                     "colors": 0,
-                    "rarity": "Mythic",
-                    "tags": [],
-                    "token_id": 48
+                    "rarity": "common",
+                    "tags": []
                 },
                 {
-                    "name": "Skuzzys Sekret Space Zone 3",
+                    "name": "Hunnys Purple Background",
                     "colors": 0,
-                    "rarity": "Mythic",
-                    "tags": [],
-                    "token_id": 48
+                    "rarity": "common",
+                    "tags": []
                 },
                 {
-                    "name": "Skuzzys Sekret Space Zone 4",
+                    "name": "Hunnys Dolly Box Inside",
                     "colors": 0,
-                    "rarity": "Mythic",
-                    "tags": [],
-                    "token_id": 48
-                },
-                {
-                    "name": "Skuzzy Sticker Maddness",
-                    "colors": 1,
-                    "rarity": "Mythic",
-                    "tags": [],
-                    "token_id": 48
-                },
-                {
-                    "name": "90s Laser",
-                    "colors": 3,
-                    "rarity": "Mythic",
-                    "tags": [],
-                    "token_id": 48
-                },
-                {
-                    "name": "Twinkle Vines",
-                    "colors": 1,
-                    "rarity": "Mythic",
-                    "tags": [],
-                    "token_id": 48
-                },
-                {
-                    "name": "Twinkling Vines Night",
-                    "colors": 0,
-                    "rarity": "Mythic",
-                    "tags": [],
-                    "token_id": 48
-                },
-                {
-                    "name": "Evergreen Scene",
-                    "colors": 4,
-                    "rarity": "Mythic",
-                    "tags": [],
-                    "token_id": 48
+                    "rarity": "common",
+                    "tags": []
                 }
             ]
         },
         {
-            "name": "Bodysuit",
-            "traits": []
+            "name": "Skin",
+            "traits": [
+                {
+                    "name": "Empty",
+                    "colors": 0,
+                    "rarity": "common",
+                    "tags": []
+                },
+                {
+                    "name": "Basic Mocha",
+                    "colors": 0,
+                    "rarity": "Common",
+                    "tags": []
+                },
+                {
+                    "name": "Basic Strawberry Whipped Cream",
+                    "colors": 0,
+                    "rarity": "Common",
+                    "tags": []
+                },
+                {
+                    "name": "Basic Macaroons",
+                    "colors": 0,
+                    "rarity": "Common",
+                    "tags": []
+                },
+                {
+                    "name": "That Yellow Cartoon Skin",
+                    "colors": 0,
+                    "rarity": "Common",
+                    "tags": []
+                }
+            ]
         },
         {
-            "name": "Dye",
-            "traits": []
+            "name": "Tattoo",
+            "traits": [
+                {
+                    "name": "Empty",
+                    "colors": 0,
+                    "rarity": "common",
+                    "tags": []
+                }
+            ]
         },
         {
             "name": "Eyebrows",
-            "traits": []
-        },
-        {
-            "name": "Eyes",
-            "traits": []
-        },
-        {
-            "name": "Face Sticker",
             "traits": [
                 {
-                    "name": "Winter Solstice Eyeshadow",
+                    "name": "Empty",
                     "colors": 0,
-                    "rarity": "Legendary",
-                    "tags": [],
-                    "token_id": 51
-                }
-            ]
-        },
-        {
-            "name": "Frame",
-            "traits": [
+                    "rarity": "common",
+                    "tags": []
+                },
                 {
-                    "name": "Soft Snow",
+                    "name": "Common",
                     "colors": 0,
-                    "rarity": "Mythic",
-                    "tags": [],
-                    "token_id": 48
-                },
-                {
-                    "name": "Love Bunnys",
-                    "colors": 5,
-                    "rarity": "Mythic",
-                    "tags": [],
-                    "token_id": 48
-                },
-                {
-                    "name": "Fuzzle Toe",
-                    "colors": 3,
-                    "rarity": "Mythic",
-                    "tags": [],
-                    "token_id": 48
-                },
-                {
-                    "name": "Stabby Skuzzcicles 1",
-                    "colors": 0,
-                    "rarity": "Mythic",
-                    "tags": [],
-                    "token_id": 48
-                },
-                {
-                    "name": "Stabby Skuzzcicles 2",
-                    "colors": 4,
-                    "rarity": "Mythic",
-                    "tags": [],
-                    "token_id": 48
-                }
-            ]
-        },
-        {
-            "name": "Hair Style",
-            "traits": [
-                {
-                    "name": "Winter Solstice Curls",
-                    "colors": 2,
-                    "rarity": "Legendary",
-                    "parts": 2,
-                    "tags": [],
-                    "token_id": 51
-                }
-            ]
-        },
-        {
-            "name": "Hand",
-            "traits": [
-                {
-                    "name": "Reindeer Mug",
-                    "colors": 4,
-                    "rarity": "Legendary",
-                    "tags": [
-                        "skin"
-                    ],
-                    "token_id": 49
-                },
-                {
-                    "name": "XL Hot Cocoa",
-                    "colors": 4,
-                    "rarity": "Rare",
-                    "tags": [
-                        "skin"
-                    ],
-                    "token_id": 49
-                },
-                {
-                    "name": "Christmas Tree Mug",
-                    "colors": 5,
-                    "rarity": "Uncommon",
-                    "tags": [
-                        "skin"
-                    ],
-                    "token_id": 49
+                    "rarity": "common",
+                    "tags": []
                 }
             ]
         },
@@ -199,34 +96,71 @@
             "name": "Hat",
             "traits": [
                 {
-                    "name": "Winter Cap",
-                    "colors": 1,
-                    "rarity": "Rare",
-                    "tags": [],
-                    "token_id": 50
+                    "name": "Empty",
+                    "colors": 0,
+                    "rarity": "common",
+                    "tags": []
                 },
                 {
-                    "name": "Winter Solstice Crown",
-                    "colors": 5,
-                    "rarity": "Legendary",
-                    "tags": [],
-                    "token_id": 51
+                    "name": "Cheese Pizza Crown",
+                    "colors": 2,
+                    "rarity": "common",
+                    "tags": []
+                },
+                {
+                    "name": "Flicks Steampunk Tophat",
+                    "colors": 4,
+                    "rarity": "common",
+                    "tags": []
+                },
+                {
+                    "name": "Lazy Straw Hat",
+                    "colors": 2,
+                    "rarity": "common",
+                    "tags": []
+                },
+                {
+                    "name": "Winter Antlers",
+                    "colors": 1,
+                    "rarity": "Common",
+                    "tags": [
+                        "twoParts"
+                    ],
+                    "token_id": 175
                 }
             ]
         },
         {
-            "name": "Mouth",
-            "traits": []
-        },
-        {
-            "name": "Outfit",
+            "name": "Eyes",
             "traits": [
                 {
-                    "name": "Winter Vest",
-                    "colors": 4,
-                    "rarity": "Rare",
-                    "tags": [],
-                    "token_id": 50
+                    "name": "Empty",
+                    "colors": 0,
+                    "rarity": "common",
+                    "tags": []
+                },
+                {
+                    "name": "Almond",
+                    "colors": 1,
+                    "rarity": "common",
+                    "tags": []
+                },
+                {
+                    "name": "Hooded Eyes",
+                    "colors": 1,
+                    "rarity": "common",
+                    "tags": []
+                }
+            ]
+        },
+        {
+            "name": "Face Sticker",
+            "traits": [
+                {
+                    "name": "Empty",
+                    "colors": 0,
+                    "rarity": "common",
+                    "tags": []
                 }
             ]
         },
@@ -242,12 +176,208 @@
             ]
         },
         {
-            "name": "Skin",
-            "traits": []
+            "name": "Mouth",
+            "traits": [
+                {
+                    "name": "Empty",
+                    "colors": 0,
+                    "rarity": "common",
+                    "tags": []
+                },
+                {
+                    "name": "Pout",
+                    "colors": 1,
+                    "rarity": "common",
+                    "tags": []
+                },
+                {
+                    "name": "Ramen Slurp",
+                    "colors": 2,
+                    "rarity": "common",
+                    "tags": []
+                }
+            ]
         },
         {
-            "name": "Tattoo",
-            "traits": []
+            "name": "Hair Style",
+            "traits": [
+                {
+                    "name": "Empty",
+                    "colors": 0,
+                    "rarity": "common",
+                    "parts": 1,
+                    "tags": []
+                },
+                {
+                    "name": "Short Dreads",
+                    "colors": 1,
+                    "rarity": "Common",
+                    "parts": 1,
+                    "tags": []
+                },
+                {
+                    "name": "Flat Pony",
+                    "colors": 2,
+                    "rarity": "Common",
+                    "parts": 2,
+                    "tags": []
+                },
+                {
+                    "name": "Bob with Bangs",
+                    "colors": 1,
+                    "rarity": "Common",
+                    "parts": 2,
+                    "tags": []
+                }
+            ]
+        },
+        {
+            "name": "Accessory",
+            "traits": [
+                {
+                    "name": "Empty",
+                    "colors": 0,
+                    "rarity": "common",
+                    "tags": []
+                },
+                {
+                    "name": "Coco the Smugblush",
+                    "colors": 3,
+                    "rarity": "common",
+                    "tags": [
+                        "companion"
+                    ]
+                },
+                {
+                    "name": "Cupcake Backpack",
+                    "colors": 5,
+                    "rarity": "common",
+                    "tags": [
+                        "backpack",
+                        "ownStripes"
+                    ]
+                },
+                {
+                    "name": "Power of Jadestone",
+                    "colors": 2,
+                    "rarity": "common",
+                    "tags": []
+                },
+                {
+                    "name": "Sparkly Wings",
+                    "colors": 4,
+                    "rarity": "common",
+                    "tags": [
+                        "onBack"
+                    ]
+                },
+                {
+                    "name": "Fancy Christmas Tree Earrings",
+                    "colors": 2,
+                    "rarity": "Common",
+                    "tags": [
+                        "earrings"
+                    ],
+                    "token_id": 175
+                }
+            ]
+        },
+        {
+            "name": "Outfit",
+            "traits": [
+                {
+                    "name": "Empty",
+                    "colors": 0,
+                    "rarity": "common",
+                    "tags": []
+                },
+                {
+                    "name": "Basic Tee",
+                    "colors": 1,
+                    "rarity": "Common",
+                    "tags": []
+                },
+                {
+                    "name": "Basic Tube",
+                    "colors": 1,
+                    "rarity": "Common",
+                    "tags": []
+                },
+                {
+                    "name": "Basic Tank",
+                    "colors": 1,
+                    "rarity": "Common",
+                    "tags": []
+                },
+                {
+                    "name": "Cupcake Crop Hoodie",
+                    "colors": 5,
+                    "rarity": "Common",
+                    "tags": []
+                },
+                {
+                    "name": "Dubious Robotics Jacket",
+                    "colors": 4,
+                    "rarity": "Common",
+                    "tags": []
+                },
+                {
+                    "name": "Flicks Steampunk Corset",
+                    "colors": 3,
+                    "rarity": "Common",
+                    "tags": []
+                },
+                {
+                    "name": "NginZ Racer Crop",
+                    "colors": 1,
+                    "rarity": "Common",
+                    "tags": []
+                },
+                {
+                    "name": "Lazy Crop",
+                    "colors": 2,
+                    "rarity": "Common",
+                    "tags": []
+                }
+            ]
+        },
+        {
+            "name": "Bodysuit",
+            "traits": [
+                {
+                    "name": "Empty",
+                    "colors": 0,
+                    "rarity": "common",
+                    "tags": []
+                }
+            ]
+        },
+        {
+            "name": "Hand",
+            "traits": [
+                {
+                    "name": "Empty",
+                    "colors": 0,
+                    "rarity": "common",
+                    "tags": []
+                },
+                {
+                    "name": "Ramen Chopsticks",
+                    "colors": 3,
+                    "rarity": "common",
+                    "tags": [
+                        "skin"
+                    ]
+                },
+                {
+                    "name": "Silas",
+                    "colors": 5,
+                    "rarity": "common",
+                    "tags": [
+                        "skin"
+                    ]
+                }
+            ]
         },
         {
             "name": "Undergarment",
@@ -257,6 +387,183 @@
                     "colors": 0,
                     "rarity": "common",
                     "tags": []
+                },
+                {
+                    "name": "Frilly Bra",
+                    "colors": 1,
+                    "rarity": "common",
+                    "tags": []
+                },
+                {
+                    "name": "Cow Print Strapless Bra",
+                    "colors": 3,
+                    "rarity": "common",
+                    "tags": []
+                },
+                {
+                    "name": "Dont Do It Track Bra",
+                    "colors": 3,
+                    "rarity": "common",
+                    "tags": []
+                },
+                {
+                    "name": "Ribbon Bow Bra",
+                    "colors": 3,
+                    "rarity": "common",
+                    "tags": []
+                }
+            ]
+        },
+        {
+            "name": "Frame",
+            "traits": [
+                {
+                    "name": "Empty",
+                    "colors": 0,
+                    "rarity": "common",
+                    "tags": []
+                },
+                {
+                    "name": "GM Banner",
+                    "colors": 2,
+                    "rarity": "common",
+                    "tags": []
+                },
+                {
+                    "name": "GM Speech Bubble",
+                    "colors": 2,
+                    "rarity": "common",
+                    "tags": []
+                },
+                {
+                    "name": "GM Text",
+                    "colors": 1,
+                    "rarity": "common",
+                    "tags": []
+                },
+                {
+                    "name": "Hunnys Dolly Box Outside",
+                    "colors": 0,
+                    "rarity": "common",
+                    "tags": []
+                }
+            ]
+        },
+        {
+            "name": "Dye",
+            "traits": [
+                {
+                    "name": "HunnysPurple1",
+                    "colors": 0,
+                    "rarity": "Common",
+                    "tags": []
+                },
+                {
+                    "name": "HunnysPurple2",
+                    "colors": 0,
+                    "rarity": "Common",
+                    "tags": []
+                },
+                {
+                    "name": "HunnysPurple3",
+                    "colors": 0,
+                    "rarity": "Common",
+                    "tags": []
+                },
+                {
+                    "name": "HunnysPurple4",
+                    "colors": 0,
+                    "rarity": "Common",
+                    "tags": []
+                },
+                {
+                    "name": "HunnysPurple5",
+                    "colors": 0,
+                    "rarity": "Common",
+                    "tags": []
+                },
+                {
+                    "name": "HunnysPurple6",
+                    "colors": 0,
+                    "rarity": "Common",
+                    "tags": []
+                },
+                {
+                    "name": "HunnysYellow1",
+                    "colors": 0,
+                    "rarity": "Common",
+                    "tags": []
+                },
+                {
+                    "name": "HunnysYellow2",
+                    "colors": 0,
+                    "rarity": "Common",
+                    "tags": []
+                },
+                {
+                    "name": "HunnysYellow3",
+                    "colors": 0,
+                    "rarity": "Common",
+                    "tags": []
+                },
+                {
+                    "name": "HunnysYellow4",
+                    "colors": 0,
+                    "rarity": "Common",
+                    "tags": []
+                },
+                {
+                    "name": "HunnysYellow5",
+                    "colors": 0,
+                    "rarity": "Common",
+                    "tags": []
+                },
+                {
+                    "name": "HunnysYellow6",
+                    "colors": 0,
+                    "rarity": "Common",
+                    "tags": []
+                },
+                {
+                    "name": "Miss Jade",
+                    "colors": 0,
+                    "rarity": "Common",
+                    "tags": []
+                },
+                {
+                    "name": "Evergreen Pine",
+                    "colors": 0,
+                    "rarity": "Common",
+                    "tags": [],
+                    "token_id": 175
+                },
+                {
+                    "name": "Christmas Thistle",
+                    "colors": 0,
+                    "rarity": "Common",
+                    "tags": [],
+                    "token_id": 175
+                },
+                {
+                    "name": "Jinglebells",
+                    "colors": 0,
+                    "rarity": "Common",
+                    "tags": [],
+                    "token_id": 175
+                },
+                {
+                    "name": "Cookie Crumbs",
+                    "colors": 0,
+                    "rarity": "Common",
+                    "tags": [],
+                    "token_id": 175
+                },
+                {
+                    "name": "Christmas Wine",
+                    "colors": 0,
+                    "rarity": "Common",
+                    "tags": [],
+                    "token_id": 175
                 }
             ]
         }
