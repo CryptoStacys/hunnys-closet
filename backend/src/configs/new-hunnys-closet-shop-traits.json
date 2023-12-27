@@ -2,128 +2,263 @@
     "attributes": [
         {
             "name": "Accessory",
-            "traits":[
+            "traits": [
+                {
+                    "name": "Winter Solstice Dangle Earring",
+                    "colors": 3,
+                    "rarity": "Legendary",
+                    "tags": [
+                        "earrings"
+                    ],
+                    "token_id": 51
+                }
             ]
         },
-
         {
             "name": "Background",
-            "traits":[
-                {"name": "Skuzzys Sekret Space Zone 1","colors": 0,"rarity": "Mythic","tags": [], "token_id": 48},
-                {"name": "Skuzzys Sekret Space Zone 2","colors": 0,"rarity": "Mythic","tags": [], "token_id": 48},
-                {"name": "Skuzzys Sekret Space Zone 3","colors": 0,"rarity": "Mythic","tags": [], "token_id": 48},
-                {"name": "Skuzzys Sekret Space Zone 4","colors": 0,"rarity": "Mythic","tags": [], "token_id": 48},
-                {"name": "Skuzzy Sticker Maddness","colors": 1,"rarity": "Mythic","tags": [], "token_id": 48},
-                {"name": "90s Laser","colors": 3,"rarity": "Mythic","tags": [], "token_id": 48},
-                {"name": "Twinkle Vines","colors": 1,"rarity": "Mythic","tags": [], "token_id": 48},
-                {"name": "Twinkling Vines Night","colors": 0,"rarity": "Mythic","tags": [], "token_id": 48},
-                {"name": "Evergreen Scene","colors": 4,"rarity": "Mythic","tags": [], "token_id": 48}
+            "traits": [
+                {
+                    "name": "Skuzzys Sekret Space Zone 1",
+                    "colors": 0,
+                    "rarity": "Mythic",
+                    "tags": [],
+                    "token_id": 48
+                },
+                {
+                    "name": "Skuzzys Sekret Space Zone 2",
+                    "colors": 0,
+                    "rarity": "Mythic",
+                    "tags": [],
+                    "token_id": 48
+                },
+                {
+                    "name": "Skuzzys Sekret Space Zone 3",
+                    "colors": 0,
+                    "rarity": "Mythic",
+                    "tags": [],
+                    "token_id": 48
+                },
+                {
+                    "name": "Skuzzys Sekret Space Zone 4",
+                    "colors": 0,
+                    "rarity": "Mythic",
+                    "tags": [],
+                    "token_id": 48
+                },
+                {
+                    "name": "Skuzzy Sticker Maddness",
+                    "colors": 1,
+                    "rarity": "Mythic",
+                    "tags": [],
+                    "token_id": 48
+                },
+                {
+                    "name": "90s Laser",
+                    "colors": 3,
+                    "rarity": "Mythic",
+                    "tags": [],
+                    "token_id": 48
+                },
+                {
+                    "name": "Twinkle Vines",
+                    "colors": 1,
+                    "rarity": "Mythic",
+                    "tags": [],
+                    "token_id": 48
+                },
+                {
+                    "name": "Twinkling Vines Night",
+                    "colors": 0,
+                    "rarity": "Mythic",
+                    "tags": [],
+                    "token_id": 48
+                },
+                {
+                    "name": "Evergreen Scene",
+                    "colors": 4,
+                    "rarity": "Mythic",
+                    "tags": [],
+                    "token_id": 48
+                }
             ]
         },
-
         {
             "name": "Bodysuit",
-            "traits": [
-            ]
+            "traits": []
         },
-
         {
             "name": "Dye",
-            "traits": [
-            ]
+            "traits": []
         },
-
         {
             "name": "Eyebrows",
-            "traits":[
-            ]
-        }, 
-
+            "traits": []
+        },
         {
             "name": "Eyes",
-            "traits":[
-            ]
-        }, 
-
+            "traits": []
+        },
         {
             "name": "Face Sticker",
-            "traits":[
+            "traits": [
+                {
+                    "name": "Winter Solstice Eyeshadow",
+                    "colors": 0,
+                    "rarity": "Legendary",
+                    "tags": [],
+                    "token_id": 51
+                }
             ]
         },
-
         {
             "name": "Frame",
             "traits": [
-                {"name": "Soft Snow","colors": 0,"rarity": "Mythic","tags": [], "token_id": 48},
-                {"name": "Love Bunnys","colors": 5,"rarity": "Mythic","tags": [], "token_id": 48},
-                {"name": "Fuzzle Toe","colors": 3,"rarity": "Mythic","tags": [], "token_id": 48},
-                {"name": "Stabby Skuzzcicles 1","colors": 0,"rarity": "Mythic","tags": [], "token_id": 48},
-                {"name": "Stabby Skuzzcicles 2","colors": 4,"rarity": "Mythic","tags": [], "token_id": 48}
+                {
+                    "name": "Soft Snow",
+                    "colors": 0,
+                    "rarity": "Mythic",
+                    "tags": [],
+                    "token_id": 48
+                },
+                {
+                    "name": "Love Bunnys",
+                    "colors": 5,
+                    "rarity": "Mythic",
+                    "tags": [],
+                    "token_id": 48
+                },
+                {
+                    "name": "Fuzzle Toe",
+                    "colors": 3,
+                    "rarity": "Mythic",
+                    "tags": [],
+                    "token_id": 48
+                },
+                {
+                    "name": "Stabby Skuzzcicles 1",
+                    "colors": 0,
+                    "rarity": "Mythic",
+                    "tags": [],
+                    "token_id": 48
+                },
+                {
+                    "name": "Stabby Skuzzcicles 2",
+                    "colors": 4,
+                    "rarity": "Mythic",
+                    "tags": [],
+                    "token_id": 48
+                }
             ]
         },
-
         {
             "name": "Hair Style",
-            "traits":[
+            "traits": [
+                {
+                    "name": "Winter Solstice Curls",
+                    "colors": 2,
+                    "rarity": "Legendary",
+                    "parts": 2,
+                    "tags": [],
+                    "token_id": 51
+                }
             ]
-        }, 
-
+        },
         {
             "name": "Hand",
-            "traits":[
-                {"name": "Reindeer Mug","colors": 4,"rarity": "Legendary","tags": ["skin"], "token_id": 49},
-                {"name": "XL Hot Cocoa","colors": 4,"rarity": "Rare","tags": ["skin"], "token_id": 49},
-                {"name": "Christmas Tree Mug","colors": 5,"rarity": "Uncommon","tags": ["skin"], "token_id": 49}
+            "traits": [
+                {
+                    "name": "Reindeer Mug",
+                    "colors": 4,
+                    "rarity": "Legendary",
+                    "tags": [
+                        "skin"
+                    ],
+                    "token_id": 49
+                },
+                {
+                    "name": "XL Hot Cocoa",
+                    "colors": 4,
+                    "rarity": "Rare",
+                    "tags": [
+                        "skin"
+                    ],
+                    "token_id": 49
+                },
+                {
+                    "name": "Christmas Tree Mug",
+                    "colors": 5,
+                    "rarity": "Uncommon",
+                    "tags": [
+                        "skin"
+                    ],
+                    "token_id": 49
+                }
             ]
         },
-
         {
             "name": "Hat",
-            "traits":[
-            ]
-        }, 
-        
-        
-        {
-            "name": "Mouth",
-            "traits":[
-            ]
-        }, 
-         
-        {
-            "name": "Outfit",
-            "traits":[
-                
+            "traits": [
+                {
+                    "name": "Winter Cap",
+                    "colors": 1,
+                    "rarity": "Rare",
+                    "tags": [],
+                    "token_id": 50
+                },
+                {
+                    "name": "Winter Solstice Crown",
+                    "colors": 5,
+                    "rarity": "Legendary",
+                    "tags": [],
+                    "token_id": 51
+                }
             ]
         },
-        
+        {
+            "name": "Mouth",
+            "traits": []
+        },
+        {
+            "name": "Outfit",
+            "traits": [
+                {
+                    "name": "Winter Vest",
+                    "colors": 4,
+                    "rarity": "Rare",
+                    "tags": [],
+                    "token_id": 50
+                }
+            ]
+        },
         {
             "name": "Piercing",
             "traits": [
-                { "name": "Empty", "colors": 0, "rarity": "common", "tags": []}
+                {
+                    "name": "Empty",
+                    "colors": 0,
+                    "rarity": "common",
+                    "tags": []
+                }
             ]
         },
-        
         {
             "name": "Skin",
-            "traits": [
-                
-            ]
+            "traits": []
         },
-
         {
             "name": "Tattoo",
-            "traits": [
-                
-            ]
+            "traits": []
         },
-
         {
             "name": "Undergarment",
             "traits": [
-                { "name": "Empty", "colors": 0, "rarity": "common", "tags": []}
+                {
+                    "name": "Empty",
+                    "colors": 0,
+                    "rarity": "common",
+                    "tags": []
+                }
             ]
         }
-        
-    ] 
+    ]
 }

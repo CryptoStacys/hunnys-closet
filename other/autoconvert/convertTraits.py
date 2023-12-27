@@ -18,7 +18,8 @@ def csv_to_json(csv_file_path, json_file_path):
                 "name": row['Item Name'], 
                 "colors": row['Colors'],
                 "rarity": row['Rarity'],
-                "tags": []
+                "tags": [],
+                "token_id": row['token_id']
                 # Add other fields as necessary
             }
             for _, row in group.iterrows()
@@ -37,4 +38,4 @@ def csv_to_json(csv_file_path, json_file_path):
         file.write(formatted_json)
 
 # Example usage
-csv_to_json('C:/Users/chris/Hunnys-Development/staging-hunnys-closet-2/autoconvert/csv/convertTraits.csv', 'C:/Users/chris/Hunnys-Development/staging-hunnys-closet-2/autoconvert/json/outputTraits.json')
+csv_to_json('C:/Users/chris/Hunnys-Development/staging-hunnys-closet-2/other/autoconvert/csv/convertTraits.csv', 'C:/Users/chris/Hunnys-Development/staging-hunnys-closet-2/other/autoconvert/json/outputTraits.json')

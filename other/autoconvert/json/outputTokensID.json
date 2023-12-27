@@ -1,90 +1,40 @@
 [
     {
-        "tokenId": 51,
-        "name": "Christmas Tree Mug",
-        "attributes": [
-            {
-                "trait_type": "Hand",
-                "value": "Christmas Tree Mug"
-            }
-        ],
-        "metaPath": ""
-    },
-    {
-        "tokenId": 49,
-        "name": "Reindeer Mug",
-        "attributes": [
-            {
-                "trait_type": "Hand",
-                "value": "Reindeer Mug"
-            }
-        ],
-        "metaPath": ""
-    },
-    {
-        "tokenId": 48,
-        "name": "Skuzzy's Sparktacular Backgrounds",
-        "attributes": [
-            {
-                "trait_type": "Frame",
-                "value": "Soft Snow"
-            },
-            {
-                "trait_type": "Background",
-                "value": "Skuzzys Sekret Space Zone 1"
-            },
-            {
-                "trait_type": "Background",
-                "value": "Skuzzys Sekret Space Zone 2"
-            },
-            {
-                "trait_type": "Background",
-                "value": "Skuzzys Sekret Space Zone 3"
-            },
-            {
-                "trait_type": "Background",
-                "value": "Skuzzys Sekret Space Zone 4"
-            },
-            {
-                "trait_type": "Background",
-                "value": "Skuzzy Sticker Maddness"
-            },
-            {
-                "trait_type": "Background",
-                "value": "90s Laser"
-            },
-            {
-                "trait_type": "Background",
-                "value": "Twinkle Vines"
-            },
-            {
-                "trait_type": "Background",
-                "value": "Twinkling Vines Night"
-            },
-            {
-                "trait_type": "Frame",
-                "value": "Love Bunnys"
-            },
-            {
-                "trait_type": "Background",
-                "value": "Evergreen Scene"
-            },
-            {
-                "trait_type": "Frame",
-                "value": "Fuzzle Toe"
-            }
-        ],
-        "metaPath": ""
-    },
-    {
         "tokenId": 50,
-        "name": "XL Hot Cocoa",
+        "name": "Winter Fit",
         "attributes": [
             {
-                "trait_type": "Hand",
-                "value": "XL Hot Cocoa"
+                "trait_type": "Hat",
+                "value": "Winter Cap"
+            },
+            {
+                "trait_type": "Outfit",
+                "value": "Winter Vest"
             }
         ],
-        "metaPath": ""
+        "metaPath": "https://hunnysclosetshop.s3.us-east-2.amazonaws.com/images/goodies/50.json"
+    },
+    {
+        "tokenId": 51,
+        "name": "Winter Solstice Pack",
+        "attributes": [
+            {
+                "trait_type": "Accessory",
+                "value": "Winter Solstice Dangle Earring"
+            },
+            {
+                "trait_type": "Hat",
+                "value": "Winter Solstice Crown"
+            },
+            {
+                "trait_type": "Hair Style",
+                "value": "Winter Solstice Curls"
+            },
+            {
+                "trait_type": "Face Sticker",
+                "value": "Winter Solstice Eyeshadow"
+            }
+        ],
+        "metaPath": "https://hunnysclosetshop.s3.us-east-2.amazonaws.com/images/goodies/51.json"
     }
 ]

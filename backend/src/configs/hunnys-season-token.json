@@ -2542,5 +2542,40 @@
             }
         ],
         "metaPath": "https://bafkreierkbtdvvhtbhr2myxrwztlt7q3flls6xwzngv5kgjqyulepyg2x4.ipfs.w3s.link/"
+    },
+    {
+        "tokenId": 175,
+        "name": "Samantha the Holiday Present (2023 Version)",
+        "attributes": [
+            {
+                "trait_type": "Accessory",
+                "value": "Fancy Christmas Tree Earrings"
+            },
+            {
+                "trait_type": "Hat",
+                "value": "Winter Antlers"
+            },
+            {
+                "trait_type": "Dye",
+                "value": "Evergreen Pine"
+            },
+            {
+                "trait_type": "Dye",
+                "value": "Christmas Thistle"
+            },
+            {
+                "trait_type": "Dye",
+                "value": "Jinglebells"
+            },
+            {
+                "trait_type": "Dye",
+                "value": "Cookie Crumbs"
+            },
+            {
+                "trait_type": "Dye",
+                "value": "Christmas Wine"
+            }
+        ],
+        "metaPath": "https://bafkreierkbtdvvhtbhr2myxrwztlt7q3flls6xwzngv5kgjqyulepyg2x4.ipfs.w3s.link/"
     }
 ]
