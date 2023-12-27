@@ -2719,6 +2719,13 @@
                   "token_id": 175
               },
               {
+                "name": "Mistletoe",
+                "colors": 0,
+                "rarity": "Common",
+                "tags": [],
+                "token_id": 175
+            },
+              {
                   "name": "Christmas Wine",
                   "colors": 0,
                   "rarity": "Common",
