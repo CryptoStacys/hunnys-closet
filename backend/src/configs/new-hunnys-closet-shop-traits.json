@@ -4,6 +4,15 @@
             "name": "Accessory",
             "traits": [
                 {
+                    "name": "Ocular Implant",
+                    "colors": 1,
+                    "rarity": "Immortal",
+                    "tags": [
+                        
+                    ],
+                    "token_id": 44
+                },
+                {
                     "name": "Winter Solstice Dangle Earring",
                     "colors": 3,
                     "rarity": "Legendary",
@@ -154,6 +163,14 @@
             "name": "Hair Style",
             "traits": [
                 {
+                    "name": "7s Style",
+                    "colors": 1,
+                    "rarity": "Legendary",
+                    "parts": 1,
+                    "tags": [],
+                    "token_id": 44
+                },
+                {
                     "name": "Winter Solstice Curls",
                     "colors": 2,
                     "rarity": "Legendary",
@@ -221,6 +238,13 @@
         {
             "name": "Outfit",
             "traits": [
+                {
+                    "name": "Borg Metallic Suit",
+                    "colors": 3,
+                    "rarity": "Immortal",
+                    "tags": [],
+                    "token_id": 44
+                },
                 {
                     "name": "Winter Vest",
                     "colors": 4,

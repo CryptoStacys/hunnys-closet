@@ -1,5 +1,24 @@
 [
     {
+        "tokenId": 44,
+        "name": "Borg Babe Set",
+        "attributes": [
+            {
+                "trait_type": "Accessory",
+                "value": "Ocular Implant"
+            },
+            {
+                "trait_type": "Outfit",
+                "value": "Borg Metallic Suit"
+            },
+            {
+                "trait_type": "Hair Style",
+                "value": "7s Style"
+            }
+        ],
+        "metaPath": "https://hunnysclosetshop.s3.us-east-2.amazonaws.com/images/goodies/44.json"
+    },
+    {
         "tokenId": 48,
         "name": "Skuzzys Sparktacular Backgrounds",
         "attributes": [
