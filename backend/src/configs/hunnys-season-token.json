@@ -2544,6 +2544,109 @@
         "metaPath": "https://bafkreierkbtdvvhtbhr2myxrwztlt7q3flls6xwzngv5kgjqyulepyg2x4.ipfs.w3s.link/"
     },
     {
+        "tokenId": 170,
+        "name": "Jökla Jólakötturinn",
+        "attributes": [
+            {
+                "trait_type": "Background",
+                "value": "Jólakötturinn Night"
+            },
+            {
+                "trait_type": "Hat",
+                "value": "Jólakötturinn Ears"
+            },
+            {
+                "trait_type": "Accessory",
+                "value": "Kitty Bell Earrings"
+            }
+        ],
+        "metaPath": "https://bafkreifwihx345fy22zm7dmjvmceanptjhvhlkjvii4gmtw5t6c5j3gozm.ipfs.w3s.link/"
+    },
+    {
+        "tokenId": 171,
+        "name": "Bettina La Befana",
+        "attributes": [
+            {
+                "trait_type": "Hat",
+                "value": "La Befna Hat"
+            }
+        ],
+        "metaPath": "https://bafkreidepv7vcceylqvg4txhn4oh77c4dzgfxu42666zbim3pn5jhfklki.ipfs.w3s.link/"
+    },
+    {
+        "tokenId": 172,
+        "name": "Otome Yuki-onna",
+        "attributes": [
+            {
+                "trait_type": "Accessory",
+                "value": "Ghostly Squirrel"
+            },
+            {
+                "trait_type": "Frame",
+                "value": "Snowy Fog"
+            },
+            {
+                "trait_type": "Skin",
+                "value": "Yuki-onna Ghostly Skin"
+            }
+        ],
+        "metaPath": "https://bafkreia3rarzip2muj7hrliflolgbxhbyjpjtbifyncr7clzk6qz7bvrym.ipfs.dweb.link/"
+    },
+    {
+        "tokenId": 173,
+        "name": "Mairwen Mari Lwyd",
+        "attributes": [
+            {
+                "trait_type": "Hand",
+                "value": "Mari Lwyd"
+            },
+            {
+                "trait_type": "Dye",
+                "value": "Spooky Bone"
+            },
+            {
+                "trait_type": "Dye",
+                "value": "Horse Bone"
+            },
+            {
+                "trait_type": "Dye",
+                "value": "Bone Shadow"
+            },
+            {
+                "trait_type": "Dye",
+                "value": "Wintersday Green"
+            },
+            {
+                "trait_type": "Dye",
+                "value": "Lonely Forest Purple"
+            },
+            {
+                "trait_type": "Hat",
+                "value": "Mari Lwyd Horse Hat"
+            }
+        ],
+        "metaPath": "https://bafkreidv6b5e5jjpqfyd5q4cb6hmqo5tta2wdbqnxtwicyuuca56xa5iwa.ipfs.dweb.link/"
+    },
+    {
+        "tokenId": 174,
+        "name": "Katja Krampus",
+        "attributes": [
+            {
+                "trait_type": "Hat",
+                "value": "Krampus Horns"
+            },
+            {
+                "trait_type": "Outfit",
+                "value": "Krampus Coat"
+            },
+            {
+                "trait_type": "Background",
+                "value": "Krampus Night"
+            }
+        ],
+        "metaPath": "https://bafkreicji6vkinqmswsiuwqlgjm6qwfulghqa7fovhbqghsmpxw4ljl5q4.ipfs.w3s.link/"
+    },
+    {
         "tokenId": 175,
         "name": "Samantha the Holiday Present (2023 Version)",
         "attributes": [
@@ -2576,6 +2679,6 @@
                 "value": "Christmas Wine"
             }
         ],
-        "metaPath": "https://bafkreierkbtdvvhtbhr2myxrwztlt7q3flls6xwzngv5kgjqyulepyg2x4.ipfs.w3s.link/"
+        "metaPath": "https://bafkreiavwdxrud5aexhak4gp4hlyoeql6mrndyvbszpefly5wiqd3gkq7i.ipfs.dweb.link/"
     }
 ]

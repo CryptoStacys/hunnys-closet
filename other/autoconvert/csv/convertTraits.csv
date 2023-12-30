@@ -1,8 +1,18 @@
-Item Name,Attribute Name,Colors,Rarity,token_id
-Fancy Christmas Tree Earrings,Accessory,2,Common,175
-Winter Antlers,Hat,1,Common,175
-Evergreen Pine,Dye,0,Common,175
-Christmas Thistle,Dye,0,Common,175
-Jinglebells,Dye,0,Common,175
-Cookie Crumbs,Dye,0,Common,175
-Christmas Wine,Dye,0,Common,175
+Item Name,Attribute Name,Colors,Rarity,Tags,token_id
+Jólakötturinn Night,Background,3,Common,,170
+Jólakötturinn Ears,Hat,2,Common,twoParts,170
+Kitty Bell Earrings,Accessory,1,Common,Earrings,170
+La Befna Hat,Hat,5,Rare,twoParts,171
+Ghostly Squirrel,Accessory,0,Epic,companion,172
+Snowy Fog,Frame,0,Epic,,172
+Yuki-onna Ghostly Skin,Skin,0,Epic,Skin,172
+Mari Lwyd,Hand,5,Legendary,,173
+Spooky Bone,Dye,0,Legendary,,173
+Horse Bone,Dye,0,Legendary,,173
+Bone Shadow,Dye,0,Legendary,,173
+Wintersday Green,Dye,0,Legendary,,173
+Lonely Forest Purple,Dye,0,Legendary,,173
+Mari Lwyd Horse Hat,Hat,5,Legendary,,173
+Krampus Horns,Hat,2,Relic,twoParts,174
+Krampus Coat,Outfit,3,Relic,,174
+Krampus Night,Background,0,Relic,,174

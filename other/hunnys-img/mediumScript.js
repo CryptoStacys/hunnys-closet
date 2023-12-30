@@ -239,7 +239,7 @@ async function processHat(files, baseName, subfolder, baseImage) {
         return image;
     };
 
-    // Process each hair style group
+    // Process each hat group
     for (const styleName in hatGroups) {
         let compositeImage = baseImage.clone(); // Start with a clone of the base image
         const styleFiles = hatGroups[styleName];

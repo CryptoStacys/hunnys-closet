@@ -189,6 +189,11 @@ const colorNames = {
     "g": 142,
     "b": 225
   },
+  "Bone Shadow": {
+    "r": 157,
+    "g": 157,
+    "b": 153
+  },
   "Bored Pink 1": {
     "r": 255,
     "g": 187,
@@ -529,7 +534,7 @@ const colorNames = {
     "g": 207,
     "b": 255
   },
-  "Gorgon scale": {
+  "Gorgon Scale": {
     "r": 181,
     "g": 245,
     "b": 16
@@ -593,6 +598,11 @@ const colorNames = {
     "r": 255,
     "g": 81,
     "b": 180
+  },
+  "Horse Bone": {
+    "r": 190,
+    "g": 186,
+    "b": 170
   },
   "HotPink1": {
     "r": 255,
@@ -769,6 +779,11 @@ const colorNames = {
     "g": 255,
     "b": 0
   },
+  "Lonely Forest Purple": {
+    "r": 161,
+    "g": 138,
+    "b": 168
+  },
   "MagicalPurple5": {
     "r": 183,
     "g": 33,
@@ -824,7 +839,7 @@ const colorNames = {
     "g": 255,
     "b": 229
   },
-  "Minty scale": {
+  "Minty Scale": {
     "r": 36,
     "g": 165,
     "b": 128
@@ -1289,6 +1304,11 @@ const colorNames = {
     "g": 169,
     "b": 255
   },
+  "Spooky Bone": {
+    "r": 248,
+    "g": 246,
+    "b": 237
+  },
   "Spooky Masonry": {
     "r": 97,
     "g": 117,
@@ -1433,6 +1453,11 @@ const colorNames = {
     "r": 255,
     "g": 255,
     "b": 255
+  },
+  "Wintersday Green": {
+    "r": 183,
+    "g": 227,
+    "b": 216
   },
   "Wolfy Fur": {
     "r": 141,

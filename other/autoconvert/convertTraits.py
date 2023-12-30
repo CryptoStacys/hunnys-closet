@@ -18,7 +18,7 @@ def csv_to_json(csv_file_path, json_file_path):
                 "name": row['Item Name'], 
                 "colors": row['Colors'],
                 "rarity": row['Rarity'],
-                "tags": [],
+                "tags": row['Tags'],
                 "token_id": row['token_id']
                 # Add other fields as necessary
             }
