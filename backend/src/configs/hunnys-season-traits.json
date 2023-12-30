@@ -2431,7 +2431,7 @@
                     "name": "Mari Lwyd",
                     "colors": 5,
                     "rarity": "Legendary",
-                    "tags": [],
+                    "tags": ["skin"],
                     "token_id": 173
                 }
             ]
