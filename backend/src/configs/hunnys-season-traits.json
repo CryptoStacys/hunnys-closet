@@ -348,7 +348,7 @@
                     "name": "Yuki-onna Ghostly Skin",
                     "colors": 0,
                     "rarity": "Epic",
-                    "tags": "Skin",
+                    "tags": ["Skin"],
                     "token_id": 172
                 }
             ]
@@ -680,14 +680,14 @@
                     "name": "Jólakötturinn Ears",
                     "colors": 2,
                     "rarity": "Common",
-                    "tags": "twoParts",
+                    "tags": ["twoParts"],
                     "token_id": 170
                 },
                 {
                     "name": "La Befna Hat",
                     "colors": 5,
                     "rarity": "Rare",
-                    "tags": "twoParts",
+                    "tags": ["twoParts"],
                     "token_id": 171
                 },
                 {
@@ -701,7 +701,7 @@
                     "name": "Krampus Horns",
                     "colors": 2,
                     "rarity": "Relic",
-                    "tags": "twoParts",
+                    "tags": ["twoParts"],
                     "token_id": 174
                 },
                 {
@@ -1801,14 +1801,16 @@
                     "name": "Kitty Bell Earrings",
                     "colors": 1,
                     "rarity": "Common",
-                    "tags": "Earrings",
+                    "tags": [
+                        "earrings"
+                    ],
                     "token_id": 170
                 },
                 {
                     "name": "Ghostly Squirrel",
                     "colors": 0,
                     "rarity": "Epic",
-                    "tags": "companion",
+                    "tags": ["companion"],
                     "token_id": 172
                 },
                 {
