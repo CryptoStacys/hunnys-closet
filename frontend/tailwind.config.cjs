@@ -31,6 +31,8 @@ module.exports = {
       screens: {
         'xl': '1300px',
         'lg': '950px',
+        'md': '768px',
+        'sm': '640px'
       }
     },
   },
