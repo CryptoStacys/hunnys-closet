@@ -106,12 +106,10 @@ a {
 }
 
 .dashboardHero {
-  background-image: url("https://cdn.discordapp.com/attachments/900232920046927922/1186761213221290105/get_yourself_4.png?ex=65946c82&is=6581f782&hm=2110f2b96109e2567960e5a85306bf6d93be41fcffc7a2d915987d8ea31eaeae&");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  max-height: 75vh;
-  min-height: 600px;
+  aspect-ratio: 16/9;
   width:100%;
   border-radius: 20px;
   display: flex;
@@ -119,19 +117,6 @@ a {
   overflow: hidden;
 }
 
-.latestSeasons {
-  background-image: url("https://cdn.discordapp.com/attachments/900232920046927922/1177675989413793883/802A2A1E-CA6B-4813-8DBA-EB7E2932C21C.png?ex=65735f3c&is=6560ea3c&hm=7bb91f064e23c3bf2b9d4d519013d9429c88b81a61468f7b5529fc8ee60eca44&");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  max-height: 75vh;
-  min-height: 600px;
-  width:100%;
-  border-radius: 20px;
-  display: flex;
-  flex-direction: row;
-  overflow: hidden;
-}
 
 .shadow-lg {
   min-height: 30px;
@@ -197,7 +182,7 @@ a {
 @media (max-width: 1100px) {
   .dashboardHero {
     min-height: 0vh;
-    aspect-ratio: 16/9;
+    
   }
 }
 
@@ -212,7 +197,9 @@ a {
 
 @media (max-width: 768px) {
 
-  
+  .dashboardHero {
+    min-width: 300px;
+  }
   
   .mobile-hide {
     display: none;
