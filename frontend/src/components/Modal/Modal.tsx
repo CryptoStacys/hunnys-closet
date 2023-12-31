@@ -29,7 +29,7 @@ export default function Modal (props: any) {
             transition={{ duration: 0.3, delay: 0.1, ease: "easeInOut" }}
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -20 }}
-            className="relative z-[20] border bg-white rounded-lg mx-6 min-w-[300px] max-w-[550px]"
+            className="relative z-[20] border bg-white rounded-lg mx-6 min-w-[300px] overflow-scroll max-h-[900px] max-w-[1450px]"
           >
             <div className="w-full border-b grid grid-cols-[1fr_36px]">
               <div className="pl-4 py-2">{modal.title}</div>

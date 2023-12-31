@@ -1,4 +1,4 @@
-import { useState, useEffect, useRef } from "react";
+import { useState, useEffect, useRef, SetStateAction } from "react";
 // import { ethers } from "ethers";
 import { useAtom } from "jotai";
 import { userAtom, modalAtom, savedAtom } from "../../data/store";
@@ -7,6 +7,7 @@ import ApplyButton from "./ApplyButton";
 import SecondaryButton from "./SecondaryButton";
 import BackButton from "./BackButton";
 import Render from "../Render/Render";
+import Link from "next/link"
 import GridView from "./GridView";
 import ListView from "./ListView";
 import CardView from "./CardView";
@@ -65,13 +66,42 @@ export default function DollEditor(props: { id: number; selectDoll: Function }) 
   const [selectedTrait, selectedTraitSet] = useState<Trait>();
   const [modal, modalSet] = useAtom(modalAtom);
   const [errorMessage, setErrorMessage] = useState("");
-
+  const [successMessage, setSuccessMessage] = useState("");
+  const [dollyImageDataURL, setDollyImageDataURL] = useState("");
+  const [selectedHeadline, setSelectedHeadline] = useState("");
+  
+  function getRandomHeadline() {
+    const headlines = [
+      "Omg, you look incredible!", "Hupe hupe hooray, you slay all day!", "Wow nice dolly, looks rare", 
+      "Hellloooo, cupcake!", "Felt cute, never deleting later", "Gurrrlllll", "Good golly, miss dolly!", 
+      "Wow, can you say #colorharmony?", "And just when I thought you couldn't get any cuter", 
+      "Umm, I'm obsessed", "Omg can I get a selfie with u?"
+    ];
+    const randomIndex = Math.floor(Math.random() * headlines.length);
+    return headlines[randomIndex];
+  }
+  
+function setRandomHeadline() {
+  const headline = getRandomHeadline();
+  setSelectedHeadline(headline); // Store the selected headline in state
+  return headline;
+}
 
   useEffect(() => {
     console.log("Initial token state:", JSON.stringify(token));
     load();
   }, []);
-  
+
+
+    // Function to generate tweet URL
+    function generateTweetUrl(headline: any) {
+      const tweetText = encodeURIComponent(`Just gave my Dolly from @HunnysNFT a makeover, and Bunny Queen Mika said '${headline}'! Unleash your creativity with me at https://closet.hunnys.io`);
+      return `https://twitter.com/intent/tweet?text=${tweetText}`;
+    }
+
+
+
+
   function logDifferences(currentToken: Trait[], savedToken: Trait[]) {
     const stringifyTrait = (trait: Trait) => JSON.stringify({ ...trait, token_id: undefined });
   
@@ -89,6 +119,16 @@ export default function DollEditor(props: { id: number; selectDoll: Function }) 
       }
     });
   }
+
+  function downloadDollyImage(dataURL: string) {
+    const link = document.createElement("a");
+    link.href = dataURL;
+    link.download = "Dolly.png"; // or any other filename you want
+    document.body.appendChild(link); // Need to append for Firefox
+    link.click();
+    document.body.removeChild(link); // Clean up
+  }
+  
   
   useEffect(() => {
     const savedTokenString = localStorage.getItem(localStorageToken);
@@ -104,6 +144,10 @@ export default function DollEditor(props: { id: number; selectDoll: Function }) 
   
 
   async function save() {
+    setIsSaving(true);
+    const newHeadline = getRandomHeadline();
+    setSelectedHeadline(newHeadline);
+    setSuccessMessage(""); // Reset success message
     console.log("Token state before save:", JSON.stringify(token));
     let formData = new FormData();
     setIsSaving(true);
@@ -115,37 +159,71 @@ export default function DollEditor(props: { id: number; selectDoll: Function }) 
     formData.append("data", JSON.stringify({ token: token, name: name }));
 
     
-    fetch(`https://closetapi.hunnysnft.com/wordpress/wp-json/hunnys-closet/v1/updateClone`, {
-            method: "post",
-            body: formData,
-        })
-        .then(response => response.json().then(data => {
-          if (!response.ok) {
-              const formattedMessage = data.message
-                  .replace(/<trait>/g, '<span class="text-red-500 font-luckiest">')
-                  .replace(/<\/trait>/g, '</span>')
-                  .replace(/<attribute>/g, '<span class="text-red-500 font-luckiest">')
-                  .replace(/<\/attribute>/g, '</span>');
-              throw new Error(formattedMessage || 'An unexpected error occurred, please visit discord.gg/hunnys for help!');
-          }
-          return data;
-      }))      
-      .then(data => {
-        setIsSaving(false);
-        if (data.status === 200) {
-            updateUserToken(token, props.id);
-            setUnsavedChanges(false);
-            setSaved(true); // Update the saved state to true upon successful save
-        }
-    })
-    .catch(error => {
-        setIsSaving(false);
-        setErrorMessage(error.message);
-        console.log('Error:', error.message);
-    });
-      
-      console.log("Token state after save:", JSON.stringify(token));
+    try {
+      const response = await fetch(`https://closetapi.hunnysnft.com/wordpress/wp-json/hunnys-closet/v1/updateClone`, {
+        method: "post",
+        body: formData,
+      });
+      const data = await response.json();
+      if (!response.ok) {
+        throw new Error('Error saving Dolly');
+      }
+
+      updateUserToken(token, props.id);
+      setSaved(true); // Set saved to true after successful save
+      setIsSaving(false); // Reset isSaving to false
+
+      modalSet({
+        active: true,
+        title: "",
+        body: (
+          <div className="text-center p-6">
+            <h2 className="text-3xl font-luckiest mb-4 text-[#333]">{newHeadline}</h2>
+            {dollyImageDataURL && (
+              <>
+                <img src={dollyImageDataURL} alt="Your Dolly" className="mx-auto modalDolly" />
+                <br></br>
+                <p className="mb-2">You can come back and give your Dolly a new look any time - for free!</p>
+                <button onClick={() => downloadDollyImage(dollyImageDataURL)} className="bg-hunnys-blue mb-4 text-hunnys-yellow w-full font-luckiest shadow-md rounded-full mt-6 px-3 py-1 xl:text-2xl text-md hover:shadow-lg hover:scale-[1.02] transition-all ">
+                  Download
+                </button>
+                <br></br>
+              </>
+            )}
+            <div className="flex flex-col justify-center">
+              <button className="bg-black font-luckiest text-white xl:text-2xl text-md font-bold py-2 px-4 rounded-full hover:shadow-lg hover:scale-[1.02] transition-all" onClick={() => shareOnTwitter(newHeadline)}>
+                POST YOUR DOLLY
+              </button>
+              <br></br>
+              <button className="bg-[#5D6FEB] font-luckiest text-white xl:text-2xl text-md font-bold py-2 px-4 rounded-full hover:shadow-lg hover:scale-[1.02] transition-all" onClick={() => shareOnDiscord(newHeadline)}>
+                SHARE ON DISCORD
+              </button>
+              <br></br>
+              <button onClick={() => modalSet({ active: false, title: "", body: <></> })} className="bg-hunnys-blue hover:bg-hunnys-blue-700 font-luckiest text-white xl:text-2xl text-md font-bold py-2 px-4 rounded-full hover:shadow-lg hover:scale-[1.02] transition-all">
+                DISMISS
+              </button>
+            </div>
+          </div>
+        )
+      });
+    } catch (error) {
+      setIsSaving(false);
+      setErrorMessage('An error occurred while saving.');
+      console.error('Save Error:', error);
     }
+  }
+
+  function shareOnTwitter(headline: string) {
+    const tweetText = encodeURIComponent(`Just gave my Dolly from @HunnysNFT a makeover, and Bunny Queen Mika said '${headline}'! Unleash your creativity with me at https://closet.hunnys.io`);
+    const tweetUrl = `https://twitter.com/intent/tweet?text=${tweetText}`;
+    window.open(tweetUrl, '_blank');
+  }
+
+  function shareOnDiscord(headline: string) {
+    const discordUrl = `https://discord.gg/hunnys`;
+    window.open(discordUrl, '_blank');
+  }
+
 
   function updateUserToken(token: any, id: any) {
     for (let i = 0; i < (user?.dollys || []).length; i++) {
@@ -261,15 +339,13 @@ export default function DollEditor(props: { id: number; selectDoll: Function }) 
   }
 
   function setSavingText() {
-    
-      let text = "Save Dolly";
-      if(isSaving) {
-        text = "Saving..";
-      } else if ( saved) {
-        text = "Saved!"
-      }
-
-      return text;
+    if(isSaving) {
+      return "Saving..";
+    } else if (saved) {
+      return "Saved!";
+    } else {
+      return "Save Dolly";
+    }
   }
   
 
@@ -281,18 +357,21 @@ export default function DollEditor(props: { id: number; selectDoll: Function }) 
 
       {/* BUTTONS */}
       <div className="flex justify-between gap-2 bg-white px-3 py-2 shadow-md mb-6 rounded-lg mobile-line-height">
-        <BackButton onClick={unselectDolly} text="Change Dolly" />
-        <div className="flex">
+      <BackButton onClick={unselectDolly} text="Change Dolly" />
+      <div className="flex">
         {errorMessage && (
-  <p className="font-dmsans font-thin self-center" dangerouslySetInnerHTML={{ __html: errorMessage }}></p>
-)}
-          <SecondaryButton onClick={load}>
+          <p className="font-dmsans font-thin self-center" dangerouslySetInnerHTML={{ __html: errorMessage }}></p>
+        )}
+        {successMessage && (
+          <p className="font-dmsans font-thin self-center text-green-500">{successMessage}</p>
+        )}
+        <SecondaryButton onClick={load}>
             <Icon type="reset" className="w-[17px] h-[16px] pr-[1px] mr-[4px] fill-[#888]" />
             Reset All Changes
-          </SecondaryButton>
-          <ApplyButton disableBtn={saved || isSaving} onClick={save} text={setSavingText()} />
-        </div>
+            </SecondaryButton>
+        <ApplyButton disableBtn={saved || isSaving} onClick={save} text={setSavingText()} />
       </div>
+    </div>
 
       {/* Doll gallery */}
       <div className="grid grid-cols-1 md:grid-cols-[2fr_3fr] lg:grid-cols-2 gap-6">
@@ -302,7 +381,8 @@ export default function DollEditor(props: { id: number; selectDoll: Function }) 
         <p className="z-40 select-none absolute top-7 bg-white rounded-r-md pr-4 pl-3 py-1 tracking-wide shadow-md font-bold">
             Preview
           </p> */}
-          <Render token={token} download dollyId={props.id} />
+          <Render token={token} download dollyId={props.id} onImageLoad={(dataURL: SetStateAction<string>) => setDollyImageDataURL(dataURL)} />
+
           {/* asd */}
           <div className="bg-white rounded-lg p-4 shadow-lg mt-[65px]">
             <h1 className="font-bold text-xl text-[#666]">Dolly #{props.id}</h1>
