@@ -7,7 +7,9 @@ import SecondaryButton from "../DollEditor/SecondaryButton";
 
 // import fs from 'fs';
 
-export default function Render(props: { token: Token | any; download?: boolean; dollyId?: any; }) {
+export default function Render(props: {
+  onImageLoad: any; token: Token | any; download?: boolean; dollyId?: any; 
+}) {
   const [done, doneSet] = useState(false);
 
   // loading animation
@@ -222,6 +224,14 @@ export default function Render(props: { token: Token | any; download?: boolean; 
     link.download = "Dolly.png"; // Specify the filename for the downloaded image
     link.click(); // Trigger the download
   }
+
+  useEffect(() => {
+    // Call the callback function when the image is rendered
+    if (done) {
+      const dataURL = canvasRef.current.toDataURL("image/png");
+      props.onImageLoad?.(dataURL);
+    }
+  }, [done, props]);
 
   function urlContentToDataUri(url: any) {
     return  fetch(url)

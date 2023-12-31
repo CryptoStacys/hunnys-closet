@@ -117,6 +117,10 @@ a {
   overflow: hidden;
 }
 
+.modalDolly {
+  width: 50%;
+}
+
 
 .shadow-lg {
   min-height: 30px;
