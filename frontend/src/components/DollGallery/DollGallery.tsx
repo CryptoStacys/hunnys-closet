@@ -24,6 +24,7 @@ function DollGallery({ selectDoll }: any) {
     const startIndex = (currentPage - 1) * DOLLYS_PER_PAGE;
     const endIndex = startIndex + DOLLYS_PER_PAGE;
     const currentDollys = sortedDollys.slice(startIndex, endIndex);
+    const pageTotal = Math.ceil(sortedDollys.length / 12);
 
     const variants = {
         visible: { opacity: 1, transition: { when: "beforeChildren", staggerChildren: 0.08 } },
@@ -81,9 +82,12 @@ function DollGallery({ selectDoll }: any) {
                         </motion.div>
                     ))}
                 </motion.div>
-                <div className="pagination-controls">
-                    <button className={`bg-hunnys-blue paginate text-hunnys-yellow w-full font-title shadow-md rounded-full px-8 py-1 text-4xl hover:shadow-lg hover:scale-[1.02] transition-all ${currentPage === 1 ? 'opacity-40 cursor-not-allowed' : ''}`} disabled={currentPage === 1} onClick={() => setCurrentPage(currentPage - 1)}>Previous</button>
-                    <button className={`bg-hunnys-yellow paginate text-hunnys-blue w-full font-title shadow-md rounded-full px-8 py-1 text-4xl hover:shadow-lg hover:scale-[1.02] transition-all ${currentDollys.length < DOLLYS_PER_PAGE ? 'opacity-40 cursor-not-allowed' : ''}`} disabled={currentDollys.length < DOLLYS_PER_PAGE} onClick={() => setCurrentPage(currentPage + 1)}>Next</button>
+                <div className="pagination-controls flex justify-between xs:mt-8 md:mt-4">
+            <button className={`bg-hunnys-blue paginate text-hunnys-yellow w-full  font-title shadow-md rounded-full text-4xl hover:shadow-lg hover:scale-[1.02] transition-all ${currentPage === 1 ? 'opacity-40 cursor-not-allowed justify-between' : ''}`} disabled={currentPage === 1} onClick={() => setCurrentPage(currentPage - 1)}>PREV</button>
+            <button className={`bg-black paginate text-white font-title shadow-md rounded-full text-2xl px-6 hover:shadow-lg hover:scale-[1.02] paginateNum transition-all ${currentPage === 1 ? 'hidden' : ''}`}  onClick={() => setCurrentPage(1)}>1</button>
+            <button className={`bg-black paginate text-white font-title shadow-md rounded-full text-2xl px-6 hover:shadow-lg hover:scale-[1.02] transition-all opacity-40 cursor-not-allowed`} disabled>{currentPage}</button>
+            <button className={`bg-black paginate text-white font-title shadow-md rounded-full text-2xl px-6 hover:shadow-lg hover:scale-[1.02] paginateNum  transition-all  ${currentPage === pageTotal ? 'hidden' : ''} ${currentDollys.length < DOLLYS_PER_PAGE ? 'opacity-40 cursor-not-allowed' : ''}`} disabled={currentDollys.length < DOLLYS_PER_PAGE} onClick={() => setCurrentPage(pageTotal)}>{pageTotal}</button>
+            <button className={`bg-hunnys-yellow paginate text-hunnys-blue w-full  font-title shadow-md rounded-full  text-4xl hover:shadow-lg hover:scale-[1.02] transition-all ${currentDollys.length < DOLLYS_PER_PAGE ? 'opacity-40 cursor-not-allowed justify-between' : ''}`} disabled={currentDollys.length < DOLLYS_PER_PAGE} onClick={() => setCurrentPage(currentPage + 1)}>NEXT</button>
                 </div>
             </div>
         </div>
