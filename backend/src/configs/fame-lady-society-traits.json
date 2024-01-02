@@ -190,11 +190,11 @@
       {
           "name": "Hair Style",
           "traits": [
-            {"name":"FLS Italy","colors":1,"rarity":"common","parts":1,"tags":[]},
-            {"name":"FLS Office","colors":1,"rarity":"common","parts":1,"tags":[]},
-            {"name":"FLS Pomp","colors":1,"rarity":"common","parts":1,"tags":[]},
-            {"name":"FLS Straight","colors":1,"rarity":"common","parts":2,"tags":[]},
-            {"name":"FLS Voluminous","colors":1,"rarity":"common","parts":2,"tags":[]}
+            {"name":"FLS Italy","colors":1,"rarity":"Common","parts":1,"tags":[]},
+            {"name":"FLS Office","colors":1,"rarity":"Common","parts":1,"tags":[]},
+            {"name":"FLS Pomp","colors":1,"rarity":"Common","parts":1,"tags":[]},
+            {"name":"FLS Straight","colors":1,"rarity":"Common","parts":2,"tags":[]},
+            {"name":"FLS Voluminous","colors":1,"rarity":"Common","parts":2,"tags":[]}
           ]
       },
       {

@@ -2865,7 +2865,7 @@
                 {
                     "name": "Danger Bra",
                     "colors": 2,
-                    "rarity": "common",
+                    "rarity": "Common",
                     "tags": [
                         "onTop"
                     ],
@@ -2874,7 +2874,7 @@
                 {
                     "name": "Cloud Bra",
                     "colors": 3,
-                    "rarity": "common",
+                    "rarity": "Common",
                     "tags": [],
                     "token_id": 154
                 },

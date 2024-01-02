@@ -31,7 +31,7 @@
                 {
                     "name": "Ghosty Studs",
                     "colors": 1,
-                    "rarity": "common",
+                    "rarity": "Common",
                     "tags": [
                         "earrings"
                     ],
@@ -40,7 +40,7 @@
                 {
                     "name": "Pumpkin Studs",
                     "colors": 2,
-                    "rarity": "common",
+                    "rarity": "Common",
                     "tags": [
                         "earrings"
                     ],
@@ -49,14 +49,14 @@
                 {
                     "name": "Cozy Scarf",
                     "colors": 1,
-                    "rarity": "uncommon",
+                    "rarity": "Uncommon",
                     "tags": [],
                     "token_id": 22
                 },
                 {
                     "name": "Chiddar",
                     "colors": 0,
-                    "rarity": "rare",
+                    "rarity": "Rare",
                     "tags": [
                         "companion"
                     ],
@@ -65,7 +65,7 @@
                 {
                     "name": "Ghost Trick or Treater",
                     "colors": 4,
-                    "rarity": "epic",
+                    "rarity": "Epic",
                     "tags": [
                         "companion"
                     ],
@@ -74,14 +74,14 @@
                 {
                     "name": "Ocular Implant",
                     "colors": 1,
-                    "rarity": "immortal",
+                    "rarity": "Immortal",
                     "tags": [],
                     "token_id": 44
                 },
                 {
                     "name": "FLS Not Gucci Glasses (Shop)",
                     "colors": 3,
-                    "rarity": "common",
+                    "rarity": "Common",
                     "tags": [
                         "glasses"
                     ],
@@ -90,7 +90,7 @@
                 {
                     "name": "FLS Round Frame (Shop)",
                     "colors": 3,
-                    "rarity": "common",
+                    "rarity": "Common",
                     "tags": [
                         "glasses"
                     ],
@@ -99,7 +99,7 @@
                 {
                     "name": "FLS Round Glasses (Shop)",
                     "colors": 1,
-                    "rarity": "common",
+                    "rarity": "Common",
                     "tags": [
                         "glasses"
                     ],
@@ -108,7 +108,7 @@
                 {
                     "name": "FLS Sunglasses (Shop)",
                     "colors": 2,
-                    "rarity": "common",
+                    "rarity": "Common",
                     "tags": [
                         "glasses"
                     ],
@@ -213,28 +213,28 @@
                 {
                     "name": "Cute Nurse",
                     "colors": 4,
-                    "rarity": "legendary",
+                    "rarity": "Legendary",
                     "tags": [],
                     "token_id": 38
                 },
                 {
                     "name": "Lil Red Wolfy",
                     "colors": 5,
-                    "rarity": "legendary",
+                    "rarity": "Legendary",
                     "tags": [],
                     "token_id": 39
                 },
                 {
                     "name": "Pirate Babe",
                     "colors": 5,
-                    "rarity": "legendary",
+                    "rarity": "Legendary",
                     "tags": [],
                     "token_id": 40
                 },
                 {
                     "name": "Bunny Fighter Costume",
                     "colors": 5,
-                    "rarity": "legendary",
+                    "rarity": "Legendary",
                     "tags": [],
                     "token_id": 41
                 }
@@ -648,7 +648,7 @@
                 {
                     "name": "FLS Laser (Shop)",
                     "colors": 2,
-                    "rarity": "common",
+                    "rarity": "Common",
                     "tags": [
                         "onTop"
                     ],
@@ -669,91 +669,91 @@
                 {
                     "name": "Web",
                     "colors": 1,
-                    "rarity": "common",
+                    "rarity": "Common",
                     "tags": [],
                     "token_id": 14
                 },
                 {
                     "name": "Batty",
                     "colors": 1,
-                    "rarity": "common",
+                    "rarity": "Common",
                     "tags": [],
                     "token_id": 15
                 },
                 {
                     "name": "Ghosty",
                     "colors": 1,
-                    "rarity": "common",
+                    "rarity": "Common",
                     "tags": [],
                     "token_id": 16
                 },
                 {
                     "name": "Pumpkin",
                     "colors": 2,
-                    "rarity": "common",
+                    "rarity": "Common",
                     "tags": [],
                     "token_id": 17
                 },
                 {
                     "name": "FrankenStitch",
                     "colors": 0,
-                    "rarity": "common",
+                    "rarity": "Common",
                     "tags": [],
                     "token_id": 18
                 },
                 {
                     "name": "Spooky Makeup",
                     "colors": 1,
-                    "rarity": "epic",
+                    "rarity": "Epic",
                     "tags": [],
                     "token_id": 36
                 },
                 {
                     "name": "FLS Freckles (Shop)",
                     "colors": 0,
-                    "rarity": "common",
+                    "rarity": "Common",
                     "tags": [],
                     "token_id": 47
                 },
                 {
                     "name": "FLS Ok Hand (Shop)",
                     "colors": 0,
-                    "rarity": "common",
+                    "rarity": "Common",
                     "tags": [],
                     "token_id": 47
                 },
                 {
                     "name": "FLS Cactus Tattoo (Shop)",
                     "colors": 0,
-                    "rarity": "common",
+                    "rarity": "Common",
                     "tags": [],
                     "token_id": 47
                 },
                 {
                     "name": "FLS Diode (Shop)",
                     "colors": 1,
-                    "rarity": "common",
+                    "rarity": "Common",
                     "tags": [],
                     "token_id": 47
                 },
                 {
                     "name": "FLS Knife Eye (Shop)",
                     "colors": 0,
-                    "rarity": "common",
+                    "rarity": "Common",
                     "tags": [],
                     "token_id": 47
                 },
                 {
                     "name": "FLS Michelangelo (Shop)",
                     "colors": 0,
-                    "rarity": "common",
+                    "rarity": "Common",
                     "tags": [],
                     "token_id": 47
                 },
                 {
                     "name": "FLS Morgenshtern (Shop)",
                     "colors": 0,
-                    "rarity": "common",
+                    "rarity": "Common",
                     "tags": [],
                     "token_id": 47
                 },
@@ -772,7 +772,7 @@
                 {
                     "name": "Scary Trees",
                     "colors": 2,
-                    "rarity": "uncommon",
+                    "rarity": "Uncommon",
                     "tags": [
                         "onBack"
                     ],
@@ -781,7 +781,7 @@
                 {
                     "name": "Fall Pumpkins",
                     "colors": 2,
-                    "rarity": "uncommon",
+                    "rarity": "Uncommon",
                     "tags": [
                         "onBack"
                     ],
@@ -920,7 +920,7 @@
                 {
                     "name": "BQ Server Pony",
                     "colors": 2,
-                    "rarity": "common",
+                    "rarity": "Common",
                     "parts": 2,
                     "tags": [],
                     "token_id": 11
@@ -928,7 +928,7 @@
                 {
                     "name": "Medusa Hair",
                     "colors": 3,
-                    "rarity": "mythic",
+                    "rarity": "Mythic",
                     "parts": 1,
                     "tags": [],
                     "token_id": 42
@@ -936,7 +936,7 @@
                 {
                     "name": "7s Style",
                     "colors": 1,
-                    "rarity": "immortal",
+                    "rarity": "Immortal",
                     "parts": 1,
                     "tags": [],
                     "token_id": 44
@@ -952,7 +952,7 @@
                 {
                     "name": "FLS Italy (Shop)",
                     "colors": 1,
-                    "rarity": "common",
+                    "rarity": "Common",
                     "parts": 1,
                     "tags": [],
                     "token_id": 47
@@ -960,7 +960,7 @@
                 {
                     "name": "FLS Office (Shop)",
                     "colors": 1,
-                    "rarity": "common",
+                    "rarity": "Common",
                     "parts": 1,
                     "tags": [],
                     "token_id": 47
@@ -968,7 +968,7 @@
                 {
                     "name": "FLS Pomp (Shop)",
                     "colors": 1,
-                    "rarity": "common",
+                    "rarity": "Common",
                     "parts": 1,
                     "tags": [],
                     "token_id": 47
@@ -976,7 +976,7 @@
                 {
                     "name": "FLS Straight (Shop)",
                     "colors": 1,
-                    "rarity": "common",
+                    "rarity": "Common",
                     "parts": 2,
                     "tags": [],
                     "token_id": 47
@@ -984,7 +984,7 @@
                 {
                     "name": "FLS Voluminous (Shop)",
                     "colors": 1,
-                    "rarity": "common",
+                    "rarity": "Common",
                     "parts": 2,
                     "tags": [],
                     "token_id": 47
@@ -1023,7 +1023,7 @@
                 {
                     "name": "BQ Soda",
                     "colors": 4,
-                    "rarity": "common",
+                    "rarity": "Common",
                     "tags": [
                         "skin"
                     ],
@@ -1032,7 +1032,7 @@
                 {
                     "name": "BQ Large Fries",
                     "colors": 4,
-                    "rarity": "common",
+                    "rarity": "Common",
                     "tags": [
                         "skin"
                     ],
@@ -1041,7 +1041,7 @@
                 {
                     "name": "BQ Carrot Patty Burger",
                     "colors": 5,
-                    "rarity": "common",
+                    "rarity": "Common",
                     "tags": [
                         "skin"
                     ],
@@ -1050,7 +1050,7 @@
                 {
                     "name": "Pumpkin Spice Latte",
                     "colors": 4,
-                    "rarity": "common",
+                    "rarity": "Common",
                     "tags": [
                         "skin"
                     ],
@@ -1059,7 +1059,7 @@
                 {
                     "name": "Boo Mug",
                     "colors": 3,
-                    "rarity": "uncommon",
+                    "rarity": "Uncommon",
                     "tags": [
                         "skin"
                     ],
@@ -1068,7 +1068,7 @@
                 {
                     "name": "Witch Cauldron Mug",
                     "colors": 3,
-                    "rarity": "uncommon",
+                    "rarity": "Uncommon",
                     "tags": [
                         "skin"
                     ],
@@ -1077,7 +1077,7 @@
                 {
                     "name": "Jack o Bear Pail",
                     "colors": 4,
-                    "rarity": "rare",
+                    "rarity": "Rare",
                     "tags": [
                         "skin"
                     ],
@@ -1086,7 +1086,7 @@
                 {
                     "name": "Beer",
                     "colors": 2,
-                    "rarity": "epic",
+                    "rarity": "Epic",
                     "tags": [
                         "skin"
                     ],
@@ -1161,28 +1161,28 @@
                 {
                     "name": "BQ Visor",
                     "colors": 3,
-                    "rarity": "common",
+                    "rarity": "Common",
                     "tags": [],
                     "token_id": 11
                 },
                 {
                     "name": "Baby Pumpkin",
                     "colors": 3,
-                    "rarity": "uncommon",
+                    "rarity": "Uncommon",
                     "tags": [],
                     "token_id": 27
                 },
                 {
                     "name": "FLS Balaclava (Shop)",
                     "colors": 1,
-                    "rarity": "common",
+                    "rarity": "Common",
                     "tags": [],
                     "token_id": 47
                 },
                 {
                     "name": "FLS Snapback Cap (Shop)",
                     "colors": 1,
-                    "rarity": "common",
+                    "rarity": "Common",
                     "tags": [],
                     "token_id": 47
                 },
@@ -1264,14 +1264,14 @@
                 {
                     "name": "FLS Molly (Shop)",
                     "colors": 3,
-                    "rarity": "common",
+                    "rarity": "Common",
                     "tags": [],
                     "token_id": 47
                 },
                 {
                     "name": "FLS Tongue (Shop)",
                     "colors": 2,
-                    "rarity": "common",
+                    "rarity": "Common",
                     "tags": [],
                     "token_id": 47
                 }
@@ -1311,42 +1311,42 @@
                 {
                     "name": "BQ Apron",
                     "colors": 4,
-                    "rarity": "common",
+                    "rarity": "Common",
                     "tags": [],
                     "token_id": 11
                 },
                 {
                     "name": "Lunar Fall Sweater",
                     "colors": 3,
-                    "rarity": "common",
+                    "rarity": "Common",
                     "tags": [],
                     "token_id": 20
                 },
                 {
                     "name": "Fancy Fall Harvest Sweater",
                     "colors": 4,
-                    "rarity": "common",
+                    "rarity": "Common",
                     "tags": [],
                     "token_id": 21
                 },
                 {
                     "name": "Squirrel Friend Sweater Vest",
                     "colors": 3,
-                    "rarity": "uncommon",
+                    "rarity": "Uncommon",
                     "tags": [],
                     "token_id": 28
                 },
                 {
                     "name": "Plaid Fall Jacket",
                     "colors": 4,
-                    "rarity": "rare",
+                    "rarity": "Rare",
                     "tags": [],
                     "token_id": 33
                 },
                 {
                     "name": "Borg Metallic Suit",
                     "colors": 2,
-                    "rarity": "immortal",
+                    "rarity": "Immortal",
                     "tags": [],
                     "token_id": 44
                 },
@@ -1372,7 +1372,7 @@
                 {
                     "name": "Empty",
                     "colors": 0,
-                    "rarity": "common",
+                    "rarity": "Common",
                     "tags": []
                 }
             ]
@@ -1439,21 +1439,21 @@
                 {
                     "name": "Gorgon Skin",
                     "colors": 0,
-                    "rarity": "rare",
+                    "rarity": "Rare",
                     "tags": [],
                     "token_id": 31
                 },
                 {
                     "name": "Spectral Skin",
                     "colors": 0,
-                    "rarity": "epic",
+                    "rarity": "Epic",
                     "tags": [],
                     "token_id": 37
                 },
                 {
                     "name": "That Yellow Cartoon Skin",
                     "colors": 0,
-                    "rarity": "epic",
+                    "rarity": "Epic",
                     "tags": [],
                     "token_id": 46
                 },
@@ -1472,42 +1472,42 @@
                 {
                     "name": "Witchy",
                     "colors": 1,
-                    "rarity": "rare",
+                    "rarity": "Rare",
                     "tags": [],
                     "token_id": 32
                 },
                 {
                     "name": "Cinnamon Roll Head",
                     "colors": 3,
-                    "rarity": "rare",
+                    "rarity": "Rare",
                     "tags": [],
                     "token_id": 34
                 },
                 {
                     "name": "FLS Barb Wire (Shop)",
                     "colors": 0,
-                    "rarity": "common",
+                    "rarity": "Common",
                     "tags": [],
                     "token_id": 47
                 },
                 {
                     "name": "FLS Dead Love (Shop)",
                     "colors": 1,
-                    "rarity": "common",
+                    "rarity": "Common",
                     "tags": [],
                     "token_id": 47
                 },
                 {
                     "name": "FLS No Brain (Shop)",
                     "colors": 0,
-                    "rarity": "common",
+                    "rarity": "Common",
                     "tags": [],
                     "token_id": 47
                 },
                 {
                     "name": "FLS Rose Tattoo (Shop)",
                     "colors": 2,
-                    "rarity": "common",
+                    "rarity": "Common",
                     "tags": [],
                     "token_id": 47
                 }
@@ -1519,7 +1519,7 @@
                 {
                     "name": "Empty",
                     "colors": 0,
-                    "rarity": "common",
+                    "rarity": "Common",
                     "tags": []
                 }
             ]

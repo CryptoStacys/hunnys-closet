@@ -18,8 +18,6 @@ class MyDocument extends Document {
   }}
 />
 
-          <title>Hunnys Closet</title>
-
           {/* Basic meta tags */}
           <meta name="title" content="Hunnys Closet" />
           <meta name="description" content="Unleash Your Creativity with Hunnys Closet, the ultimate Digital Dress-up Doll Experience" />

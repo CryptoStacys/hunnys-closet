@@ -3,23 +3,23 @@
     {
       "name": "Background",
       "traits": [
-        { "name": "Empty", "colors": 0, "rarity": "common", "tags": [] },
+        { "name": "Empty", "colors": 0, "rarity": "Common", "tags": [] },
         {
           "name": "Hunnys Yellow Background",
           "colors": 0,
-          "rarity": "common",
+          "rarity": "Common",
           "tags": []
         },
         {
           "name": "Hunnys Purple Background",
           "colors": 0,
-          "rarity": "common",
+          "rarity": "Common",
           "tags": []
         },
         {
           "name": "Hunnys Dolly Box Inside",
           "colors": 0,
-          "rarity": "common",
+          "rarity": "Common",
           "tags": []
         }
       ]
@@ -27,7 +27,7 @@
     {
       "name": "Skin",
       "traits": [
-        { "name": "Empty", "colors": 0, "rarity": "common", "tags": [] },
+        { "name": "Empty", "colors": 0, "rarity": "Common", "tags": [] },
         { "name": "Basic Mocha", "colors": 0, "rarity": "Common", "tags": [] },
         {
           "name": "Basic Strawberry Whipped Cream",
@@ -52,51 +52,51 @@
     {
       "name": "Tattoo",
       "traits": [
-        { "name": "Empty", "colors": 0, "rarity": "common", "tags": [] }
+        { "name": "Empty", "colors": 0, "rarity": "Common", "tags": [] }
       ]
     },
     {
       "name": "Eyebrows",
       "traits": [
-        { "name": "Empty", "colors": 0, "rarity": "common", "tags": [] },
-        { "name": "Common", "colors": 0, "rarity": "common", "tags": [] }
+        { "name": "Empty", "colors": 0, "rarity": "Common", "tags": [] },
+        { "name": "Common", "colors": 0, "rarity": "Common", "tags": [] }
       ]
     },
     {
       "name": "Hat",
       "traits": [
-        { "name": "Empty", "colors": 0, "rarity": "common", "tags": [] },
-        { "name": "Cheese Pizza Crown", "colors": 2, "rarity": "common", "tags": [] },
-        { "name": "Flicks Steampunk Tophat", "colors": 4, "rarity": "common", "tags": [] },
-        { "name": "Lazy Straw Hat", "colors": 2, "rarity": "common", "tags": [] }
+        { "name": "Empty", "colors": 0, "rarity": "Common", "tags": [] },
+        { "name": "Cheese Pizza Crown", "colors": 2, "rarity": "Common", "tags": [] },
+        { "name": "Flicks Steampunk Tophat", "colors": 4, "rarity": "Common", "tags": [] },
+        { "name": "Lazy Straw Hat", "colors": 2, "rarity": "Common", "tags": [] }
       ]
     },
     {
       "name": "Eyes",
       "traits": [
-        { "name": "Empty", "colors": 0, "rarity": "common", "tags": [] },
-        { "name": "Almond", "colors": 1, "rarity": "common", "tags": [] },
-        { "name": "Hooded Eyes", "colors": 1, "rarity": "common", "tags": [] }
+        { "name": "Empty", "colors": 0, "rarity": "Common", "tags": [] },
+        { "name": "Almond", "colors": 1, "rarity": "Common", "tags": [] },
+        { "name": "Hooded Eyes", "colors": 1, "rarity": "Common", "tags": [] }
       ]
     },
     {
       "name": "Face Sticker",
       "traits": [
-        { "name": "Empty", "colors": 0, "rarity": "common", "tags": [] }
+        { "name": "Empty", "colors": 0, "rarity": "Common", "tags": [] }
       ]
     },
     {
       "name": "Piercing",
       "traits": [
-        { "name": "Empty", "colors": 0, "rarity": "common", "tags": [] }
+        { "name": "Empty", "colors": 0, "rarity": "Common", "tags": [] }
       ]
     },
     {
       "name": "Mouth",
       "traits": [
-        { "name": "Empty", "colors": 0, "rarity": "common", "tags": [] },
-        { "name": "Pout", "colors": 1, "rarity": "common", "tags": [] },
-        { "name": "Ramen Slurp", "colors": 2, "rarity": "common", "tags": [] }
+        { "name": "Empty", "colors": 0, "rarity": "Common", "tags": [] },
+        { "name": "Pout", "colors": 1, "rarity": "Common", "tags": [] },
+        { "name": "Ramen Slurp", "colors": 2, "rarity": "Common", "tags": [] }
       ]
     },
     {
@@ -105,7 +105,7 @@
         {
           "name": "Empty",
           "colors": 0,
-          "rarity": "common",
+          "rarity": "Common",
           "parts": 1,
           "tags": []
         },
@@ -135,17 +135,17 @@
     {
       "name": "Accessory",
       "traits": [
-        { "name": "Empty", "colors": 0, "rarity": "common", "tags": [] },
-        { "name": "Coco the Smugblush", "colors": 3, "rarity": "common", "tags": ["companion"] },
-        { "name": "Cupcake Backpack", "colors": 5, "rarity": "common", "tags": ["backpack", "ownStripes"] },
-        { "name": "Power of Jadestone", "colors": 2, "rarity": "common", "tags": [] },
-        { "name": "Sparkly Wings", "colors": 4, "rarity": "common", "tags": ["onBack"] }
+        { "name": "Empty", "colors": 0, "rarity": "Common", "tags": [] },
+        { "name": "Coco the Smugblush", "colors": 3, "rarity": "Common", "tags": ["companion"] },
+        { "name": "Cupcake Backpack", "colors": 5, "rarity": "Common", "tags": ["backpack", "ownStripes"] },
+        { "name": "Power of Jadestone", "colors": 2, "rarity": "Common", "tags": [] },
+        { "name": "Sparkly Wings", "colors": 4, "rarity": "Common", "tags": ["onBack"] }
       ]
     },
     {
       "name": "Outfit",
       "traits": [
-        { "name": "Empty", "colors": 0, "rarity": "common", "tags": [] },
+        { "name": "Empty", "colors": 0, "rarity": "Common", "tags": [] },
         { "name": "Basic Tee", "colors": 1, "rarity": "Common", "tags": [] },
         { "name": "Basic Tube", "colors": 1, "rarity": "Common", "tags": [] },
         { "name": "Basic Tank", "colors": 1, "rarity": "Common", "tags": [] },
@@ -159,38 +159,38 @@
     {
       "name": "Bodysuit",
       "traits": [
-        { "name": "Empty", "colors": 0, "rarity": "common", "tags": [] }
+        { "name": "Empty", "colors": 0, "rarity": "Common", "tags": [] }
       ]
     },
     {
       "name": "Hand",
       "traits": [
-        { "name": "Empty", "colors": 0, "rarity": "common", "tags": [] },
-        { "name": "Ramen Chopsticks", "colors": 3, "rarity": "common", "tags": ["skin"] },
-        { "name": "Silas", "colors": 5, "rarity": "common", "tags": ["skin"] }
+        { "name": "Empty", "colors": 0, "rarity": "Common", "tags": [] },
+        { "name": "Ramen Chopsticks", "colors": 3, "rarity": "Common", "tags": ["skin"] },
+        { "name": "Silas", "colors": 5, "rarity": "Common", "tags": ["skin"] }
       ]
     },
     {
       "name": "Undergarment",
       "traits": [
-        { "name": "Empty", "colors": 0, "rarity": "common", "tags": [] },
-        { "name": "Frilly Bra", "colors": 1, "rarity": "common", "tags": [] },
-        { "name": "Cow Print Strapless Bra", "colors": 3, "rarity": "common", "tags": [] },
-        { "name": "Dont Do It Track Bra", "colors": 3, "rarity": "common", "tags": [] },
-        { "name": "Ribbon Bow Bra", "colors": 3, "rarity": "common", "tags": [] }
+        { "name": "Empty", "colors": 0, "rarity": "Common", "tags": [] },
+        { "name": "Frilly Bra", "colors": 1, "rarity": "Common", "tags": [] },
+        { "name": "Cow Print Strapless Bra", "colors": 3, "rarity": "Common", "tags": [] },
+        { "name": "Dont Do It Track Bra", "colors": 3, "rarity": "Common", "tags": [] },
+        { "name": "Ribbon Bow Bra", "colors": 3, "rarity": "Common", "tags": [] }
       ]
     },
     {
       "name": "Frame",
       "traits": [
-        { "name": "Empty", "colors": 0, "rarity": "common", "tags": [] },
-        { "name": "GM Banner", "colors": 2, "rarity": "common", "tags": [] },
-        { "name": "GM Speech Bubble", "colors": 2, "rarity": "common", "tags": [] },
-        { "name": "GM Text", "colors": 1, "rarity": "common", "tags": [] },
+        { "name": "Empty", "colors": 0, "rarity": "Common", "tags": [] },
+        { "name": "GM Banner", "colors": 2, "rarity": "Common", "tags": [] },
+        { "name": "GM Speech Bubble", "colors": 2, "rarity": "Common", "tags": [] },
+        { "name": "GM Text", "colors": 1, "rarity": "Common", "tags": [] },
         {
           "name": "Hunnys Dolly Box Outside",
           "colors": 0,
-          "rarity": "common",
+          "rarity": "Common",
           "tags": []
         }
       ]
