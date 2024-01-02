@@ -1,10 +1,13 @@
 import { attributes, thumbnailPath } from "../../data/config";
 import { Trait } from "../../data/global";
 import Image from "next/image";
+import { useEffect, useState } from 'react';
 
 export default function GridView(props: {
+  traitCounts: any;
   token: any;
   selectedTraitSet: React.Dispatch<React.SetStateAction<Trait | undefined>>;
+  allTraits: any; // Ensure this is the correct type for your data structure
 }) {
   function getToken() {
     // Make sure it's always the same order
@@ -16,6 +19,35 @@ export default function GridView(props: {
       }
     });
   }
+  
+  const [traitCounts, setTraitCounts] = useState<Record<string, number>>({});
+  useEffect(() => {
+    // Call calculateTraitCounts whenever allTraits changes
+    setTraitCounts(calculateTraitCounts());
+  }, [props.allTraits]);
+  const calculateTraitCounts = (): Record<string, number> => {
+    const counts: Record<string, number> = {};
+  
+    console.log(props.allTraits);
+  
+    // Check if props.allTraits is an array and has elements
+    if (Array.isArray(props.allTraits) && props.allTraits.length > 0) {
+      props.allTraits.forEach((trait: { attribute: string; }) => {
+        counts[trait.attribute] = (counts[trait.attribute] || 0) + 1;
+      });
+    } else {
+      // Handle the case where props.allTraits is not an array or is empty
+      console.log("props.allTraits is not an array or is empty:", props.allTraits);
+    }
+  
+    return counts;
+  };
+  
+  
+  
+  console.log("props.traitCounts:", props.traitCounts);
+  
+  
 
   function setSelectImage(trait: any) {
     let result = `${thumbnailPath}/${trait.attribute}/${trait.name}.jpg`;
@@ -42,6 +74,8 @@ export default function GridView(props: {
             />
             <div className="font-bold text-white pl-2 text-sm py-1 rounded-b-lg">
               {trait.attribute}
+              {/* Displaying the badge with the count 
+              <span className="badge">{props.traitCounts[trait.attribute] || 0}</span>*/}
               {/* <br />
               {trait.name} */}
             </div>

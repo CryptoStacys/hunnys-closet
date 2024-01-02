@@ -13,7 +13,6 @@ module.exports = {
         "hunnys-mythic": "#7B2BFF",
         "hunnys-immortal": "#FF2626",
         "hunnys-relic": "#774A2D",
-
         "hunnys-light-blue": "#4b57ff",
         "hunnys-light-purple": "#9e63ff",
         "hunnys-yellow": "#ffd54b",

@@ -27,35 +27,93 @@ import { localStorageKey } from "../../data/config";
 import Image from "next/image";
 
 export default function ItemView(props: { selectedTrait: Trait; selectedTraitSet: any; tokenSet: any }) {
-  // animation variants
-  const variants = {
-    visible: {
-      opacity: 1,
-      transition: {
-        when: "beforeChildren",
-        staggerChildren: 0.08,
+    // animation variants
+    const variants = {
+      visible: {
+        opacity: 1,
+        transition: {
+          when: "beforeChildren",
+          staggerChildren: 0.08,
+        },
       },
-    },
-    hidden: {
-      opacity: 0,
-      transition: {
-        when: "afterChildren",
+      hidden: {
+        opacity: 0,
+        transition: {
+          when: "afterChildren",
+        },
       },
-    },
-  };
-
-  
-
+    };
   const [currentPage, setCurrentPage] = useState(1);
-  const [sortedItems, setSortedItems] = useState<any[]>([]);
-  const ITEMS_PER_PAGE = 12;  // Display 12 Dollys per page, adjust as needed
+  const [sortedItems, setSortedItems] = useState<Trait[]>([]);
+  const [searchTerm, setSearchTerm] = useState('');
+  const ITEMS_PER_PAGE = 12;
+  const [sortOrder, setSortOrder] = useState('A-Z');
+  const rarityOrder = ['Common', 'common', 'Uncommon', 'uncommon', 'Rare', 'rare', 'Epic', 'epic', 'Relic', 'relic', 'Legendary', 'legendary', 'Mythic', 'mythic', 'Immortal', 'immortal'];
+  const [sortType, setSortType] = useState('default');
+  const [user] = useAtom(userAtom);
+  const [allTraits] = useAtom(allTraitsAtom);
+
+  useEffect(() => {
+    let sortedData = allTraits.traits.filter(trait =>
+      trait.attribute === props.selectedTrait!.attribute &&
+      trait.name.toLowerCase().includes(searchTerm.toLowerCase()) // Search filter
+    );
+  
+    // Remove duplicates
+    sortedData = sortedData.filter((trait, index, self) =>
+      index === self.findIndex(t => t.name === trait.name)
+    );
+  
+    // Extract and temporarily remove 'Empty' trait
+    const emptyTraitIndex = sortedData.findIndex(t => t.name === 'Empty');
+    let emptyTrait;
+    if (emptyTraitIndex > -1) {
+      emptyTrait = sortedData.splice(emptyTraitIndex, 1)[0];
+    }
+  
+    // Custom comparator function for sorting
+    const sortByOwnedAndName = (a: Trait, b: Trait): number => {
+      // Handle 'Empty' trait
+      if (a.name === "Empty") return -1;
+      if (b.name === "Empty") return 1;
+  
+      // Sort by owned status
+      const aOwned = checkForOwnedTrait(a);
+      const bOwned = checkForOwnedTrait(b);
+      if (aOwned !== bOwned) {
+        return sortType === 'NotOwned' ? aOwned - bOwned : bOwned - aOwned;
+      }
+  
+      // Additional sorting based on sortType
+      switch (sortType) {
+        case 'A-Z':
+          return (a.name ?? '').localeCompare(b.name ?? '');
+        case 'Z-A':
+          return (b.name ?? '').localeCompare(a.name ?? '');
+        case 'Rare to Common':
+          return rarityOrder.indexOf(b.rarity ?? '') - rarityOrder.indexOf(a.rarity ?? '');
+        case 'Common to Rare':
+          return rarityOrder.indexOf(a.rarity ?? '') - rarityOrder.indexOf(b.rarity ?? '');
+        default:
+          return 0;
+      }
+    };
+  
+    // Apply sorting
+    sortedData.sort(sortByOwnedAndName);
+  
+    // Re-add 'Empty' trait at the start if it was removed
+    if (emptyTrait) {
+      sortedData.unshift(emptyTrait);
+    }
+  
+    setSortedItems(sortedData);
+  }, [searchTerm, sortType, allTraits.traits, props.selectedTrait, user]);
 
   // state to check which color is being edited
   const [selectedColor, selectedColorSet] = useState(-1);
 
-  // User object with all ownership data
-  const [user] = useAtom(userAtom);
-  const [allTraits] = useAtom(allTraitsAtom);
+
 
   // Select which filter to use for colors
   const [colorFilter, setColorFilter] = useState("All");
@@ -182,46 +240,6 @@ export default function ItemView(props: { selectedTrait: Trait; selectedTraitSet
     // Sorting
     return data;
   }
-
-  // Get all traits to choose from
-  // function getAllTraits() {
-  //   // Get all traits owned by user
-  //   // let data = user!.collections.collections[0].tokenData.traitData;
-  //   let data = allTraits!.traits;
-
-  //   // Filter only selected attribute
-  //   data = data.filter((trait: Trait) => trait.attribute === props.selectedTrait!.attribute);
-
-  //   // Filter out duplicates
-  //   let uniqueTraits = new Set();
-  //   data = data.filter((obj: Trait) => {
-  //     if (!uniqueTraits.has(obj.name)) {
-  //       uniqueTraits.add(obj.name);
-  //       return true;
-  //     }
-  //     return false;
-  //   });
-
-  //   data = data.sort((a: Trait, b: Trait) => {
-  //     if (a.name == "Empty" && b.name !== "Empty") return -1;
-  //     return 1;
-  //   })
-  //   // Always show owned Traits after Empty
-  //   let sortedData = data.sort((a: Trait, b: Trait) => {
-  //     if (checkForOwnedTrait(a) && !checkForOwnedTrait(b)) return -1;
-  //     return 1;
-  //   });
-
-
-  //   // setCurrentPage(1);
-
-  //   // const startIndex = (currentPage - 1) * DOLLYS_PER_PAGE;
-  //   // const endIndex = 0 + DOLLYS_PER_PAGE;
-  //   // const currentDollys = sortedData.slice(startIndex, endIndex);
-
-  //   // Sorting
-  //   return sortedData;
-  // }
 
   // update token with the new trait
   function setTraits(trait: Trait) {
@@ -373,7 +391,7 @@ export default function ItemView(props: { selectedTrait: Trait; selectedTraitSet
     return prev;
   }
 
-  function checkForOwnedTrait(trait: Trait) {
+  function checkForOwnedTrait(trait: Trait): number {
     let result = false;
 
     let userTraits = getTraits();
@@ -382,12 +400,14 @@ export default function ItemView(props: { selectedTrait: Trait; selectedTraitSet
       result = true;
     }
 
-    return result;
+    return result ? 1 : 0;;
   }
 
   const startIndex = (currentPage - 1) * ITEMS_PER_PAGE;
     const endIndex = startIndex + ITEMS_PER_PAGE;
     const currentItems = sortedItems.slice(startIndex, endIndex);
+    const pageTotal = Math.ceil(sortedItems.length / 12);
+    
 
   return (
     <>
@@ -599,23 +619,43 @@ export default function ItemView(props: { selectedTrait: Trait; selectedTraitSet
             </motion.div>
           )}
         </AnimatePresence>
-        {/* OTHER ITEMS */}
+        {/* OTHER ITEMS */}            
         <div className="mb-12">
-          <div className="font-bold pl-1 mt-8 text-[#444]">Items</div>
-          <div className="grid grid-cols-4 w-full gap-y-3 gap-x-2 pb-6">
-            {/* {getTraits() */}
+        <div className="font-bold font-luckiest flex pl-1 mt-8 text-[#444] flex flex-row">
+        <select className={`bg-white sortDropdown shadow-lg rounded-b-lg`} onChange={(e) => setSortType(e.target.value)}>
+              <option value="default">Default Sort</option>
+              <option value="Rare to Common">Rare to Common</option>
+              <option value="Common to Rare">Common to Rare</option>
+              <option value="A-Z">A-Z</option>
+              <option value="Z-A">Z-A</option>
+            {/* <option value="Newest">Sort by Newest</option> */}
+              <option value="Owned">Sort by Owned</option>
+              <option value="NotOwned">Sort by Not Owned</option>
+            </select>
+            <div className="search-bar">
+              <input
+                type="text"
+                placeholder="Search traits..."
+                value={searchTerm}
+                onChange={(e) => setSearchTerm(e.target.value)}
+                className="search-input ml-8 float-end bg-white searchBar indent-2 border-black"
+              />
+              {searchTerm && (
+                <button
+                
+                  onClick={() => setSearchTerm('')}
+                  className="clear-search clearSearch right-6 top-0.5 relative"
+                  aria-label="Clear search"
+                ><img src='/assets/clearSearchButton.png' alt='clearSearch' className="w-4">
+                 </img>
+                </button>
+              )}
+            </div>
+          </div>
+          
+
+          <div className="grid grid-cols-4 w-full gap-y-3 gap-x-2 pb-6 break-words">
             {
-            //getAllTraits()
-              // Always have "Empty" as the first trait in the list
-              // .sort((a: Trait, b: Trait) => {
-              //   if (a.name == "Empty" && b.name !== "Empty") return -1;
-              //   return 1;
-              // })
-              // // Always show owned Traits after Empty
-              // .sort((a: Trait, b: Trait) => {
-              //   if (checkForOwnedTrait(a) && !checkForOwnedTrait(b)) return -1;
-              //   return 1;
-              // })
               currentItems
               .map((trait: Trait, index: number) => (
                 <motion.button
@@ -629,10 +669,10 @@ export default function ItemView(props: { selectedTrait: Trait; selectedTraitSet
                     transition: { delay: 0, duration: 0.2 },
                   }}
                   onClick={() => setTraits(trait)}
-                  className={`relative ${!checkForOwnedTrait(trait)? ' low-brightness' : ''}`}
+                  className={`relative ${!checkForOwnedTrait(trait) ? 'low-brightness' : ''} grid-item`}
                 >
                   <div
-                    className="absolute right-2 top-2 rounded-full h-[16px] w-[16px] border-[3px] border-white"
+                    className="absolute right-2 top-4 rounded-full h-[16px] w-[16px] border-[3px] border-white"
                     style={{
                       background: hunnysColors[trait.rarity!.toLocaleLowerCase()],
                     }}
@@ -643,15 +683,18 @@ export default function ItemView(props: { selectedTrait: Trait; selectedTraitSet
                       src={`/${thumbnailPath}/${trait.attribute}/${trait.name}.jpg`}
                       alt={trait.name}
                     />
-                    <div style={{backgroundColor: '#a264f4'}} className={`shadow-lg rounded-b-lg text-white w-full h-auto justify-center items-center font-bold break-words py-2 px-2`}>{trait.name}</div>
+                    <div style={{backgroundColor: '#a264f4'}} className={`shadow-lg rounded-b-lg text-white w-full h-auto justify-center items-center font-bold  py-2 px-2`}>{trait.name}</div>
 
                 </motion.button>
               ))}
             </div>
-            <div className="pagination-controls flex">
-                <button className={`bg-hunnys-blue paginate text-hunnys-yellow w-full font-title shadow-md rounded-full px-3 py-1 text-4xl hover:shadow-lg hover:scale-[1.02] transition-all ${currentPage === 1 ? 'opacity-40 cursor-not-allowed' : ''}`} disabled={currentPage === 1} onClick={() => setCurrentPage(currentPage - 1)}>Previous</button>
-                <button className={`bg-hunnys-yellow paginate text-hunnys-blue w-full font-title shadow-md rounded-full px-3 py-1 text-4xl hover:shadow-lg hover:scale-[1.02] transition-all ${currentItems.length < ITEMS_PER_PAGE ? 'opacity-40 cursor-not-allowed' : ''}`} disabled={currentItems.length < ITEMS_PER_PAGE} onClick={() => setCurrentPage(currentPage + 1)}>Next</button>
-            </div>
+            <div className="pagination-controls flex md:m-auto justify-between">
+            <button className={`bg-hunnys-blue paginate text-hunnys-yellow w-full max-w-[180px] font-title shadow-md rounded-full text-4xl hover:shadow-lg hover:scale-[1.02] transition-all ${currentPage === 1 ? 'opacity-40 cursor-not-allowed justify-between' : ''}`} disabled={currentPage === 1} onClick={() => setCurrentPage(currentPage - 1)}>PREV</button>
+            <button className={`bg-black paginate text-white font-title shadow-md rounded-full text-2xl px-6 hover:shadow-lg hover:scale-[1.02] paginateNum transition-all ${currentPage === 1 ? 'hidden' : ''}`}  onClick={() => setCurrentPage(1)}>1</button>
+            <button className={`bg-black paginate text-white font-title shadow-md rounded-full text-2xl px-6 hover:shadow-lg hover:scale-[1.02] transition-all opacity-40 cursor-not-allowed`} disabled>{currentPage}</button>
+            <button className={`bg-black paginate text-white font-title shadow-md rounded-full text-2xl px-6 hover:shadow-lg hover:scale-[1.02] paginateNum  transition-all  ${currentPage === pageTotal ? 'hidden' : ''} ${currentItems.length < ITEMS_PER_PAGE ? 'opacity-40 cursor-not-allowed' : ''}`} disabled={currentItems.length < ITEMS_PER_PAGE} onClick={() => setCurrentPage(pageTotal)}>{pageTotal}</button>
+            <button className={`bg-hunnys-yellow paginate text-hunnys-blue w-full max-w-[180px] font-title shadow-md rounded-full  text-4xl hover:shadow-lg hover:scale-[1.02] transition-all ${currentItems.length < ITEMS_PER_PAGE ? 'opacity-40 cursor-not-allowed justify-between' : ''}`} disabled={currentItems.length < ITEMS_PER_PAGE} onClick={() => setCurrentPage(currentPage + 1)}>NEXT</button>
+                </div>
         </div>
       </div>
     </>

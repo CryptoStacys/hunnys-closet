@@ -117,6 +117,17 @@ a {
   overflow: hidden;
 }
 
+.sortDropdown {
+  background-color: lightblue;
+  border: 2px solid black;
+}
+
+.searchBar {
+  border: 2px solid black;
+  border-radius: 8px;
+  outline: none;
+}
+
 .modalDolly {
   width: 50%;
 }
@@ -148,6 +159,23 @@ a {
   }
 }
 
+/* CSS */
+.badge {
+  /* Example styling, adjust as needed */
+  display: inline-block;
+  background-color: red; /* for visibility */
+  color: white;
+  padding: 0.25em 0.4em;
+  font-size: 0.75em;
+  font-weight: bold;
+  line-height: 1;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: baseline;
+  border-radius: 0.25rem;
+}
+
+
 .link-btn {
   transition: all 1.5s cubic-bezier(0.075, 0.82, 0.165, 1), color 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
@@ -174,9 +202,15 @@ a {
   filter: brightness(60%);
 }
 
+.grid-item {
+  height: 200px;
+}
+
 .paginate {
-  margin-right: 40px;
-  margin-top: 40px;
+  margin-right: 10px;
+  margin-left: 10px;
+  margin-top: 20px;
+  text-align: center;
 }
 
 .mobile-hide {
@@ -187,6 +221,9 @@ a {
   .dashboardHero {
     min-height: 0vh;
     
+  }
+  .grid-item {
+    height: 170px;
   }
 }
 
@@ -201,6 +238,16 @@ a {
 
 @media (max-width: 768px) {
 
+  .paginate {
+    margin:auto;
+    max-width: 30%;
+    font-size: x-large;
+  }
+
+  .paginateNum {
+    display: none;
+  }
+
   .dashboardHero {
     min-width: 300px;
   }
@@ -208,6 +255,8 @@ a {
   .mobile-hide {
     display: none;
   }
+
+
 
   .mobie-hunnys-wrapper {
     position: absolute !important;
@@ -246,11 +295,24 @@ a {
   .emoji-display {
     font-size: 1.5rem;
   }
+
+  .grid-item {
+    height: 150px;
+  }
   
 }
 
 @media (max-width: 420px) {
   .fill-hunnys-yellow {
+    display: none;
+  }
+  .grid-item {
+    height: 135px;
+  }
+  .searchBar {
+    max-width: 140px;
+  }
+  .clearSearch {
     display: none;
   }
 }

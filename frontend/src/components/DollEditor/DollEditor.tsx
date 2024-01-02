@@ -14,6 +14,7 @@ import CardView from "./CardView";
 import ItemView from "./ItemView";
 import DollEditorOptions from "./DollEditorOptions";
 import Icon from "../Icon/Icon";
+import { allTraitsAtom } from "../../data/store";
 
 import { attributes, localStorageToken } from "../../data/config";
 import { Trait } from "../../data/global";
@@ -57,6 +58,7 @@ function areTokensEqual(token1: any[], token2: any[]) {
 }
 
 export default function DollEditor(props: { id: number; selectDoll: Function }) {
+  const [allTraits] = useAtom(allTraitsAtom);
   const [user, userSet] = useAtom(userAtom);
   const [saved, setSaved] = useAtom(savedAtom); // tracks if user saved dolly changes
   const [view, viewSet] = useState("grid");
@@ -347,7 +349,30 @@ function setRandomHeadline() {
       return "Save Dolly";
     }
   }
+
+  const calculateTraitCounts = (): Record<string, number> => {
+    const counts: Record<string, number> = {};
+
+    console.log(allTraits);
   
+    // Check if allTraits is an array and has elements
+    if (Array.isArray(allTraits) && allTraits.length > 0) {
+      allTraits.forEach((trait: { attribute: string; }) => {
+        counts[trait.attribute] = (counts[trait.attribute] || 0) + 1;
+      });
+    } else {
+      // Handle the case where allTraits is not an array or is empty
+      console.log("allTraits is not an array or is empty:", allTraits);
+    }
+  
+    return counts;
+  };
+  
+  
+  
+  
+  
+  const traitCounts = calculateTraitCounts();
 
   return (
     <div className="min-h-screen max-w-[1250px] mx-6">
@@ -377,25 +402,11 @@ function setRandomHeadline() {
       <div className="grid grid-cols-1 md:grid-cols-[2fr_3fr] lg:grid-cols-2 gap-6">
         {/* DOLL IMG */}
         <div className="relative aspect-square">
-        {/* 'Preview' flag on Dolly image
-        <p className="z-40 select-none absolute top-7 bg-white rounded-r-md pr-4 pl-3 py-1 tracking-wide shadow-md font-bold">
-            Preview
-          </p> */}
           <Render token={token} download dollyId={props.id} onImageLoad={(dataURL: SetStateAction<string>) => setDollyImageDataURL(dataURL)} />
 
-          {/* asd */}
           <div className="bg-white rounded-lg p-4 shadow-lg mt-[65px]">
             <h1 className="font-bold text-xl text-[#666]">Dolly #{props.id}</h1>
-            {/* <h1 className="border-b border-[#ddd] mb-2 font-bold text-xl text-[#666]">Dolly #{props.id}</h1> */}
 
-            {/* <a
-              className="font-bold text-blue-700 underline"
-              target="_blank"
-              rel="noreferrer"
-              href={`https://testnets.opensea.io/assets/goerli/0xfbc56b6a79e76ceca94f405a9d1c24c8b9eb4f42/${props.id}`}
-            >
-              OpenSea
-            </a> */}
           </div>
         </div>
 
@@ -411,7 +422,8 @@ function setRandomHeadline() {
               <DollEditorOptions token={token} tokenSet={tokenSet} view={view} viewSet={viewSet} />
               {view === "list" && <ListView token={token} selectedTraitSet={selectedTraitSet} />}
               {view === "card" && <CardView token={token} selectedTraitSet={selectedTraitSet} />}
-              {view === "grid" && <GridView token={token} selectedTraitSet={selectedTraitSet} />}
+              {view === "grid" && <GridView token={token} selectedTraitSet={selectedTraitSet} allTraits={allTraits.traits} traitCounts={traitCounts} />}
+
             </>
           )}
         </div>
