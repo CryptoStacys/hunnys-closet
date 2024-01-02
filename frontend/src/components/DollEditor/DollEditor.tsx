@@ -142,6 +142,8 @@ function setRandomHeadline() {
         logDifferences(token, savedToken);
       }
     }
+    document.documentElement.scrollTop = 0; // For modern browsers
+    document.body.scrollTop = 0; // For older browsers
   }, [token, setSaved]);
   
 
