@@ -1,275 +1,96 @@
 {
-  "attributes": [
+    "attributes": [
       {
-          "name": "Accessory",
-          "traits": [
-              {
-                  "name": "FLS Round Glasses",
-                  "colors": 1,
-                  "rarity": "Common",
-                  "tags": ["glasses"]
-              },
-              {
-                  "name": "FLS Sunglasses",
-                  "colors": 2,
-                  "rarity": "Common",
-                  "tags": ["glasses"]
-              },
-              {
-                  "name": "FLS Not Gucci Glasses",
-                  "colors": 3,
-                  "rarity": "Common",
-                  "tags": ["glasses"]
-              },
-              {
-                  "name": "FLS Round Frame",
-                  "colors": 3,
-                  "rarity": "Common",
-                  "tags": ["glasses"]
-              }
-          ]
+        "name": "Accessory",
+        "traits": [
+          {"name":"FLS Round Glasses","colors":1,"rarity":"Common","tags":["glasses"]},
+          {"name":"FLS Sunglasses","colors":2,"rarity":"Common","tags":["glasses"]},
+          {"name":"FLS Not Gucci Glasses","colors":3,"rarity":"Common","tags":["glasses"]},
+          {"name":"FLS Round Frame","colors":3,"rarity":"Common","tags":["glasses"]}
+        ]
       },
       {
-          "name": "Dye",
-          "traits": [
-              {
-                  "name": "FLS Periwinkle",
-                  "colors": 0,
-                  "rarity": "Common",
-                  "tags": []
-              },
-              {
-                  "name": "FLS Forest",
-                  "colors": 0,
-                  "rarity": "Common",
-                  "tags": []
-              },
-              {
-                  "name": "FLS Grey",
-                  "colors": 0,
-                  "rarity": "Common",
-                  "tags": []
-              },
-              {
-                  "name": "FLS Pink",
-                  "colors": 0,
-                  "rarity": "Common",
-                  "tags": []
-              },
-              {
-                  "name": "FLS Light Brown",
-                  "colors": 0,
-                  "rarity": "Common",
-                  "tags": []
-              },
-              {
-                  "name": "FLS Dark Brown",
-                  "colors": 0,
-                  "rarity": "Common",
-                  "tags": []
-              },
-              {
-                  "name": "FLS Plum",
-                  "colors": 0,
-                  "rarity": "Common",
-                  "tags": []
-              },
-              {
-                  "name": "FLS Neon Purple",
-                  "colors": 0,
-                  "rarity": "Common",
-                  "tags": []
-              },
-              {
-                  "name": "FLS Neon Green",
-                  "colors": 0,
-                  "rarity": "Common",
-                  "tags": []
-              }
-          ]
+        "name": "Dye",
+        "traits": [
+          {"name":"FLS Periwinkle","colors":0,"rarity":"Common","tags":[]},
+          {"name":"FLS Forest","colors":0,"rarity":"Common","tags":[]},
+          {"name":"FLS Grey","colors":0,"rarity":"Common","tags":[]},
+          {"name":"FLS Pink","colors":0,"rarity":"Common","tags":[]},
+          {"name":"FLS Light Brown","colors":0,"rarity":"Common","tags":[]},
+          {"name":"FLS Dark Brown","colors":0,"rarity":"Common","tags":[]},
+          {"name":"FLS Plum","colors":0,"rarity":"Common","tags":[]},
+          {"name":"FLS Neon Purple","colors":0,"rarity":"Common","tags":[]},
+          {"name":"FLS Neon Green","colors":0,"rarity":"Common","tags":[]}
+        ]
       },
       {
-          "name": "Eyes",
-          "traits": [
-              {
-                  "name": "FLS Laser",
-                  "colors": 2,
-                  "rarity": "Common",
-                  "tags": []
-              }
-          ]
+        "name": "Eyes",
+        "traits": [
+          {"name":"FLS Laser","colors":2,"rarity":"Common","tags":[]}
+        ]
       },
       {
-          "name": "Face Sticker",
-          "traits": [
-              {
-                  "name": "FLS Freckles",
-                  "colors": 0,
-                  "rarity": "Common",
-                  "tags": []
-              },
-              {
-                  "name": "FLS Ok Hand",
-                  "colors": 0,
-                  "rarity": "Common",
-                  "tags": []
-              },
-              {
-                  "name": "FLS Diode",
-                  "colors": 1,
-                  "rarity": "Common",
-                  "tags": []
-              },
-              {
-                  "name": "FLS Cactus Tattoo",
-                  "colors": 0,
-                  "rarity": "Common",
-                  "tags": []
-              },
-              {
-                  "name": "FLS Morgenshtern",
-                  "colors": 0,
-                  "rarity": "Common",
-                  "tags": []
-              },
-              {
-                  "name": "FLS Knife Eye",
-                  "colors": 0,
-                  "rarity": "Common",
-                  "tags": []
-              },
-              {
-                  "name": "FLS Michelangelo",
-                  "colors": 0,
-                  "rarity": "Common",
-                  "tags": []
-              }
-          ]
+        "name": "Face Sticker",
+        "traits": [
+          {"name":"FLS Freckles","colors":0,"rarity":"Common","tags":[]},
+          {"name":"FLS Ok Hand","colors":0,"rarity":"Common","tags":[]},
+          {"name":"FLS Diode","colors":1,"rarity":"Common","tags":[]},
+          {"name":"FLS Cactus Tattoo","colors":0,"rarity":"Common","tags":[]},
+          {"name":"FLS Morgenshtern","colors":0,"rarity":"Common","tags":[]},
+          {"name":"FLS Knife Eye","colors":0,"rarity":"Common","tags":[]},
+          {"name":"FLS Michelangelo","colors":0,"rarity":"Common","tags":[]}
+        ]
       },
       {
-          "name": "Frame",
-          "traits": [
-              {
-                  "name": "FLS Logo",
-                  "colors": 0,
-                  "rarity": "Common",
-                  "tags": []
-              },
-              {
-                  "name": "Flaunt Friday Banner",
-                  "colors": 2,
-                  "rarity": "Common",
-                  "tags": []
-              },
-              {
-                  "name": "FLAUNTFLAUNTFLAUNT",
-                  "colors": 2,
-                  "rarity": "Common",
-                  "tags": []
-              },
-              {
-                  "name": "Flaunt Star",
-                  "colors": 2,
-                  "rarity": "Common",
-                  "tags": []
-              },
-              {
-                  "name": "Flaunt Large",
-                  "colors": 1,
-                  "rarity": "Common",
-                  "tags": []
-              },
-              {
-                  "name": "FLS Logo Round",
-                  "colors": 1,
-                  "rarity": "Common",
-                  "tags": []
-              }
-          ]
+        "name": "Frame",
+        "traits": [
+          {"name":"FLS Logo","colors":0,"rarity":"Common","tags":[]},
+          {"name":"Flaunt Friday Banner","colors":2,"rarity":"Common","tags":[]},
+          {"name":"FLAUNTFLAUNTFLAUNT","colors":2,"rarity":"Common","tags":[]},
+          {"name":"Flaunt Star","colors":2,"rarity":"Common","tags":[]},
+          {"name":"Flaunt Large","colors":1,"rarity":"Common","tags":[]},
+          {"name":"FLS Logo Round","colors":1,"rarity":"Common","tags":[]}
+        ]
       },
       {
-          "name": "Hair Style",
-          "traits": [
-            {"name":"FLS Italy","colors":1,"rarity":"Common","parts":1,"tags":[]},
-            {"name":"FLS Office","colors":1,"rarity":"Common","parts":1,"tags":[]},
-            {"name":"FLS Pomp","colors":1,"rarity":"Common","parts":1,"tags":[]},
-            {"name":"FLS Straight","colors":1,"rarity":"Common","parts":2,"tags":[]},
-            {"name":"FLS Voluminous","colors":1,"rarity":"Common","parts":2,"tags":[]}
-          ]
+        "name": "Hair Style",
+        "traits": [
+          {"name":"FLS Italy","colors":1,"rarity":"common","parts":1,"tags":[]},
+          {"name":"FLS Office","colors":1,"rarity":"common","parts":1,"tags":[]},
+          {"name":"FLS Pomp","colors":1,"rarity":"common","parts":1,"tags":[]},
+          {"name":"FLS Straight","colors":1,"rarity":"common","parts":2,"tags":[]},
+          {"name":"FLS Voluminous","colors":1,"rarity":"common","parts":2,"tags":[]}
+        ]
       },
       {
-          "name": "Hat",
-          "traits": [
-              {
-                  "name": "FLS Balaclava",
-                  "colors": 1,
-                  "rarity": "Common",
-                  "tags": []
-              },
-              {
-                  "name": "FLS Snapback Cap",
-                  "colors": 1,
-                  "rarity": "Common",
-                  "tags": []
-              }
-          ]
+        "name": "Hat",
+        "traits": [
+          {"name":"FLS Balaclava","colors":1,"rarity":"Common","tags":[]},
+          {"name":"FLS Snapback Cap","colors":1,"rarity":"Common","tags":[]}
+        ]
       },
       {
-          "name": "Mouth",
-          "traits": [
-              {
-                  "name": "FLS Tongue",
-                  "colors": 2,
-                  "rarity": "Common",
-                  "tags": []
-              },
-              {
-                  "name": "FLS Molly",
-                  "colors": 3,
-                  "rarity": "Common",
-                  "tags": []
-              }
-          ]
+        "name": "Mouth",
+        "traits": [
+          {"name":"FLS Tongue","colors":2,"rarity":"Common","tags":[]},
+          {"name":"FLS Molly","colors":3,"rarity":"Common","tags":[]}
+        ]
       },
       {
-          "name": "Skin",
-          "traits": [
-              {
-                  "name": "FLS Beige",
-                  "colors": 0,
-                  "rarity": "Common",
-                  "tags": []
-              }
-          ]
+        "name": "Skin",
+        "traits": [
+          {"name":"FLS Beige","colors":0,"rarity":"Common","tags":[]}
+        ]
       },
       {
-          "name": "Tattoo",
-          "traits": [
-              {
-                  "name": "FLS Barb Wire",
-                  "colors": 0,
-                  "rarity": "Common",
-                  "tags": []
-              },
-              {
-                  "name": "FLS Rose Tattoo",
-                  "colors": 2,
-                  "rarity": "Common",
-                  "tags": []
-              },
-              {
-                  "name": "FLS No Brain",
-                  "colors": 0,
-                  "rarity": "Common",
-                  "tags": []
-              },
-              {
-                  "name": "FLS Dead Love",
-                  "colors": 1,
-                  "rarity": "Common",
-                  "tags": []
-              }
-          ]
+        "name": "Tattoo",
+        "traits": [
+          {"name":"FLS Barb Wire","colors":0,"rarity":"Common","tags":[]},
+          {"name":"FLS Rose Tattoo","colors":2,"rarity":"Common","tags":[]},
+          {"name":"FLS No Brain","colors":0,"rarity":"Common","tags":[]},
+          {"name":"FLS Dead Love","colors":1,"rarity":"Common","tags":[]}
+        ]
       }
-  ]
-}
+    ]
+  }
+  

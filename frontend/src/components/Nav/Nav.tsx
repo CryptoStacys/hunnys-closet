@@ -71,62 +71,7 @@ export default function Nav({ rewardStatus }: NavProps) {
               <div data-tooltip-id="rewardsTooltip" data-tooltip-place="bottom">
               <span className={`emoji-display ${shouldWiggle ? "wiggle" : ""}`}>
                 {getEmojiForStatus(rewardStatus)}
-              </span>
-              <Tooltip id="rewardsTooltip">
-              <div style={{
-    display: 'flex', 
-    flexDirection: 'column',
-    width: '350px',  // Adjust this width to your needs
-    wordWrap: 'break-word',
-    whiteSpace: 'normal'
-  }}>
-    {rewardStatus === "Bunny" && (
-      <>
-        You&apos;re off to a great start, Bunny! Once you hold at least 3 Hunnys 10k NFTs in your wallet,
-        you automatically double your monthly Hunnys Seasons rewards, which brings twice as much
-        content for free to Hunnys Closet each month!
-      </>
-    )}
-    {rewardStatus === "Bunny Knight" && (
-      <>
-        Way to go, Bunny Knight! You&apos;re earning double the monthly Hunnys Seasons rewards.
-        Keep it up and once you hold 7 Hunnys 10k NFTs, you&apos;ll earn even more!
-      </>
-    )}
-    {rewardStatus === "Bunny Duke" && (
-      <>
-        Impressive, Bunny Duke! You&apos;re earning triple the monthly Hunnys Seasons rewards.
-        Just a few more Hunnys 10k NFTs and you&apos;ll reach the top tier!
-      </>
-    )}
-    {rewardStatus === "Royal Bunny" && (
-      <>
-        Congratulations, you&apos;re a Royal Bunny! You are currently in the highest tier of rewards
-        from holding Hunnys 10k NFTs.
-      </>
-    )}
-    {rewardStatus === "None" && (
-      <>
-        Welcome to Hunnys Closet!
-      </>
-    )}
-    <br />
-    <br />
-    This status informs you of how many monthly rewards (Hunnys Seasons NFTs)
-    you will receive automatically to this address, so long as you continue to hold
-    them through the end of each month!
-    <br />
-    <br />
-    Bunny = 1+ Hunnys = 1 Monthly Reward
-    <br />
-    Bunny Knight = 3+ Hunnys = 2 Monthly Rewards
-    <br />
-    Bunny Duke = 7+ Hunnys = 3 Monthly Rewards
-    <br />
-    Royal Bunny = 12+ Hunnys = 4 Monthly Rewards
-  </div>
-</Tooltip>
-                
+              </span>                
                 </div>
               {["dollys", "inventory"].map((item, index) => (
                 <Link

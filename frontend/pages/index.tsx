@@ -80,7 +80,7 @@ export default function App() {
         ) : (
           <> 
           <Route path="/">
-            <Dashboard rewardStatus={rewardStatus} />
+            <Dashboard />
           </Route>
           <Route path="/dollys">
             <Dollys />

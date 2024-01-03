@@ -48,7 +48,7 @@ type DashboardProps = {
   rewardStatus: string;
 };
 
-function getButtonMessage(rewardStatus: string) {
+{/* function getButtonMessage(rewardStatus: string) {
   switch (rewardStatus) {
       case "Bunny":
           return "JOURNEY TOWARDS BUNNY KNIGHT!";
@@ -61,7 +61,7 @@ function getButtonMessage(rewardStatus: string) {
       default:
           return "BECOME A MEMBER";
   }
-}
+}*/}
 
 
 function Button({ children, colors }: any) {
@@ -118,7 +118,7 @@ function HeartIcon() {
   // do
 }
 
-export default function Dashboard({ rewardStatus }: DashboardProps) {
+export default function Dashboard() {
   return (
     <div className="flex justify-center items-center w-max-full px-6 mx-auto">
       <div className="relative max-w-[1250px]  mx-auto">
@@ -135,18 +135,11 @@ export default function Dashboard({ rewardStatus }: DashboardProps) {
         <div className="grid grid-cols-[1fr] sm:grid-cols-[2fr_1fr] bg-hunnys-blue rounded-2xl relative mb-2">
           <div className="grid grid-cols-[1fr] sm:grid-cols-2 py-8 px-5 mb-12" style={{ zIndex: 1}}>
             <div className="px-5">
-            {rewardStatus === "None" ? ( <>
+            
             <h1 className="sm:text-5xl text-2xl font-title text-white mb-4" style={{ whiteSpace: 'nowrap' }}>
     WELCOME, <span className="text-hunnys-yellow">CUPCAKE!</span>
 </h1>
-
-</>) : ( <>
-<h1 className="sm:text-5xl text-2xl font-title text-white mb-4" style={{ whiteSpace: 'nowrap' }}>
-    WELCOME, <span className="text-hunnys-yellow">{rewardStatus}!</span>
-</h1></>)}
             </div>
-
-
               <div>
                 {/* Empty div */}
               </div>
@@ -190,376 +183,7 @@ export default function Dashboard({ rewardStatus }: DashboardProps) {
             </Link>
           </div>
 
-          
         </div>
-
-        {/* <div className="grid grid-cols-[2fr_3fr] gap-2">
-          <div className="relative text-white py-2 bg-hunnys-green shadow-md text-center rounded-2xl mb-2 overflow-hidden h-[350px]">
-            <span className="relative z-50 pl-3 font-bold font-title text-2xl ">December theme</span>
-            <div className="absolute bottom-4 w-full z-50 px-8">
-              <div className="max-w-[300px] mx-auto flex justify-center items-center">
-                <Button>Shop the drop</Button>
-              </div>
-            </div>
-            <Image className="absolute bottom-0 z-10" src="https://hunnys.io/wp-content/uploads/2022/11/6.png" alt="" />
-          </div>
-          <div className="relative text-white py-2 bg-hunnys-light-blue shadow-md text-center rounded-2xl mb-2 overflow-hidden h-[350px]">
-            <div className="absolute bottom-4 w-full z-50 px-8 ">
-              <div className="max-w-[300px] mx-auto flex justify-center items-center">
-                <Button>Shop now</Button>
-              </div>
-            </div>
-            <img
-              className="absolute bottom-0 h-full z-10"
-              src="https://hunnys.io/wp-content/uploads/2022/11/6.png"
-              alt=""
-            />
-          </div>
-        </div> */}
-
-        <div className="grid gap-2 rounded-3xl bg-hunnys-blue shadow-md">
-        {rewardStatus === "None" ? (
-          // This is your original content for the "None" status
-        <>
-          <div className="relative text-white overflow-hidden font-bold">
-            <div className="grid sm:grid-cols-[2fr_3fr] grid-cols-[1fr] px-12 py-12 gap-12">
-              <div className="grid grid-cols-[60px_1fr]">
-                <Image width={600} height={600} src={crown} alt="crown" className=" p-3" />
-                <div className="flex items-center">
-                  <div className="ml-2 text-4xl font-title ">
-                    BECOME A <span className="text-hunnys-yellow">MEMBER</span>
-                  </div>
-                </div>
-              </div>
-              <div className="text-xl" style={{wordWrap: 'break-word',
-    whiteSpace: 'break-spaces'}}>
-                Buy a Hunnys 10k to automatically recieve monthly art airdrops. <br />
-                Each airdrop unlocks exclusive closet items!
-              </div>
-            </div>
-          </div>
-          <div className="grid sm:grid-cols-[3fr_1fr_3fr_1fr_3fr] grid-cols-[1fr] pb-12">
-            <div className="flex justify-center items-center">
-              <div className="">
-                <div className="text-center mt-3 font-title text-3xl text-white mb-4">
-                  OWN A 10K <br />
-                  <br />
-                </div>
-                <div className="relative rounded-full mx-auto overflow-hidden">
-                  <Image width={600} height={600} src={one} className="w-full h-full" alt="" />
-                </div>
-              </div>
-              <div></div>
-            </div>
-            <div className="flex justify-center items-center">
-              <Image width={600} height={600} className="max-w-[40px] mt-[80px] rotate-180" src={arrow} alt="" />
-            </div>
-
-            <div className="flex justify-center items-center">
-              <div className="">
-                <div className="text-center mt-3 font-title text-3xl text-white mb-4">
-                  GET MONTHLY <br />
-                  THEMED AIRDROPS
-                </div>
-                <div className="relative rounded-full mx-auto overflow-hidden">
-                  <Image width={600} height={600} src={two} className="w-full h-full" alt="" />
-                </div>
-              </div>
-            </div>
-            <div className="flex justify-center items-center">
-              <Image width={600} height={600} className="max-w-[40px] mt-[80px] rotate-180" src={arrow} alt="" />
-            </div>
-
-            <div className="flex justify-center items-center">
-              <div className="">
-                <div className="text-center mt-3 font-title text-3xl text-white mb-4">
-                  UNLOCK EXCLUSIVE <br />
-                  CLOSET ITEMS
-                </div>
-                <div className="relative rounded-full mx-auto overflow-hidden">
-                  <Image width={600} height={600} src={three} className="w-full h-full" alt="" />
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="mb-12 mx-auto max-w-[85%] w-full">
-            <a href="https://buy.hunnys.io/ethereum/collection/0x5dfeb75abae11b138a16583e03a2be17740eaded" target="_blank">
-              <Button>BECOME A MEMBER</Button>
-            </a>
-          </div>
-          </>
-        ) : (
-          // This is the new content for users with a reward status
-          <>
-          {rewardStatus === "Bunny" && (
-              // Placeholder content for "Bunny"
-              <>
-                  <div className="relative text-white overflow-hidden font-bold">
-            <div className="grid sm:grid-cols-[2fr_3fr] grid-cols-[1fr] px-12 py-12 gap-12">
-              <div className="grid grid-cols-[60px_1fr]">
-                <Image width={600} height={600} src={crown} alt="crown" className=" p-3" />
-                <div className="flex items-center">
-                  <div className="ml-2 text-5xl font-title ">
-                    OH HEYYY, <span className="text-hunnys-yellow">BUNNY!</span>
-                  </div>
-                </div>
-              </div>
-              <div className="text-xl" style={{wordWrap: 'break-word',
-    whiteSpace: 'break-spaces'}}>
-                You&apos;re off to a great start, Bunny! Once you hold at least <span className="text-hunnys-yellow">THREE</span> Hunnys 10k NFTs in your wallet,
-        you automatically double your monthly Hunnys Seasons rewards. <br /> <br />
-        That means TWICE as much content for FREE in Hunnys Closet - every single month! Here&apos;s how it works...
-              </div>
-            </div>
-          </div>
-          <div className="grid sm:grid-cols-[3fr_1fr_3fr_1fr_3fr] grid-cols-[1fr] pb-12">
-            <div className="flex justify-center items-center">
-              <div className="">
-                <div className="text-center mt-3 font-title text-3xl text-white mb-4">
-                  OWN A 10K <br />
-                  <br />
-                </div>
-                <div className="relative rounded-full mx-auto overflow-hidden">
-                  <Image width={600} height={600} src={one} className="w-full h-full" alt="" />
-                </div>
-              </div>
-              <div></div>
-            </div>
-            <div className="flex justify-center items-center">
-              <Image width={600} height={600} className="max-w-[40px] mt-[80px] rotate-180" src={arrow} alt="" />
-            </div>
-
-            <div className="flex justify-center items-center">
-              <div className="">
-                <div className="text-center mt-3 font-title text-3xl text-white mb-4">
-                  GET MONTHLY <br />
-                  THEMED AIRDROPS
-                </div>
-                <div className="relative rounded-full mx-auto overflow-hidden">
-                  <Image width={600} height={600} src={two} className="w-full h-full" alt="" />
-                </div>
-              </div>
-            </div>
-            <div className="flex justify-center items-center">
-              <Image width={600} height={600} className="max-w-[40px] mt-[80px] rotate-180" src={arrow} alt="" />
-            </div>
-
-            <div className="flex justify-center items-center">
-              <div className="">
-                <div className="text-center mt-3 font-title text-3xl text-white mb-4">
-                  UNLOCK EXCLUSIVE <br />
-                  CLOSET ITEMS
-                </div>
-                <div className="relative rounded-full mx-auto overflow-hidden">
-                  <Image width={600} height={600} src={three} className="w-full h-full" alt="" />
-                </div>
-              </div>
-            </div>
-          </div>
-              </>
-          )}
-
-          {rewardStatus === "Bunny Knight" && (
-              // Placeholder content for "Bunny Knight"
-              <>
-                  <div className="relative text-white overflow-hidden font-bold">
-            <div className="grid sm:grid-cols-[2fr_3fr] grid-cols-[1fr] px-12 py-12 gap-12">
-              <div className="grid grid-cols-[60px_1fr]">
-                <Image width={600} height={600} src={crown} alt="crown" className=" p-3" />
-                <div className="flex items-flex">
-                  <div className="ml-2 text-5xl font-title ">
-                    CHEERS, <span className="text-hunnys-yellow">BUNNY KNIGHT!</span>
-                  </div>
-                </div>
-              </div>
-              <div className="text-xl" style={{wordWrap: 'break-word',
-    whiteSpace: 'break-spaces'}}>
-                Way to go, Bunny Knight! You&apos;re earning double the monthly Hunnys Seasons rewards. <br /><br />
-                Did you know that being a Bunny Knight means you receive <span className="text-hunnys-yellow">TWO</span> free Hunnys Seasons rewards, delivered to you for free, every single month? <br /><br />
-                Once you&apos;ve collected at least <span className="text-hunnys-yellow">SEVEN</span> Hunnys 10k tokens, we&apos;ll be calling you Bunny Duke! <br /><br />
-                Here are some types of Hunnys you might be interested in to get you there!
-              </div>
-            </div>
-          </div>
-          <div className="grid sm:grid-cols-[3fr_1fr_3fr_1fr_3fr] grid-cols-[1fr] pb-12 px-8">
-            <div className="flex justify-center items-center">
-              <div className="">
-                <div className="text-center mt-3 font-title text-3xl text-white mb-4">
-                  Alien Hunnys
-                </div>
-                <div className="relative rounded-full mx-auto overflow-hidden">
-                  <Image width={600} height={600} src={bkAlien} className="w-full h-full" alt="" />
-                </div>
-              </div>
-              <div></div>
-            </div>
-            <div className="flex justify-center items-center">
-            </div>
-
-            <div className="flex justify-center items-center">
-              <div className="">
-                <div className="text-center mt-3 font-title text-3xl text-white mb-4">
-                  BubbleGum Babes
-                </div>
-                <div className="relative rounded-full mx-auto overflow-hidden">
-                  <Image width={600} height={600} src={bkBubblegum} className="w-full h-full" alt="" />
-                </div>
-              </div>
-            </div>
-            <div className="flex justify-center items-center">
-            </div>
-
-            <div className="flex justify-center items-center">
-              <div className="">
-                <div className="text-center mt-3 font-title text-3xl text-white mb-4">
-                  Flower Crowns
-                </div>
-                <div className="relative rounded-full mx-auto overflow-hidden">
-                  <Image width={600} height={600} src={bkFlowerCrown} className="w-full h-full" alt="" />
-                </div>
-              </div>
-            </div>
-          </div>
-              </>
-          )}
-
-          {rewardStatus === "Bunny Duke" && (
-              // Placeholder content for "Bunny Duke"
-              <>
-                  <div className="relative text-white overflow-hidden font-bold">
-            <div className="grid sm:grid-cols-[2fr_3fr] grid-cols-[1fr] px-12 py-12 gap-12">
-              <div className="grid grid-cols-[60px_1fr]">
-                <Image width={600} height={600} src={crown} alt="crown" className=" p-3" />
-                <div className="flex items-flex">
-                  <div className="ml-2 text-5xl font-title ">
-                    GREETINGS, <span className="text-hunnys-yellow">BUNNY DUKE!</span>
-                  </div>
-                </div>
-              </div>
-              <div className="text-xl" style={{wordWrap: 'break-word',
-    whiteSpace: 'break-spaces'}}>
-                It greatly pleases the Queen to have you in her presence, Bunny Duke! <br /><br />
-                Did you know that being a Bunny Duke means you receive <span className="text-hunnys-yellow">THREE</span> free Hunnys Seasons rewards, delivered to you for free, every single month? <br /><br />
-                You&apos;re almost at the highest tier of Monthly Rewards; a Royal Bunny. <br /><br />
-                Ready to receive your crown? As soon as you&apos;ve collected at least 12 Hunnys 10k tokens, check back here - we&apos;ll be ready to celebrate your Royal status! <br/> <br/>
-                Here are some you might like:
-              </div>
-            </div>
-          </div>
-          <div className="grid sm:grid-cols-[3fr_1fr_3fr_1fr_3fr] grid-cols-[1fr] pb-12 px-8">
-            <div className="flex justify-center items-center">
-              <div className="">
-                <div className="text-center mt-3 font-title text-3xl text-white mb-4">
-                  Cheer Squad
-                </div>
-                <div className="relative rounded-full mx-auto overflow-hidden">
-                  <Image width={600} height={600} src={rbCheer} className="w-full h-full" alt="" />
-                </div>
-              </div>
-              <div></div>
-            </div>
-            <div className="flex justify-center items-center">
-            </div>
-
-            <div className="flex justify-center items-center">
-              <div className="">
-                <div className="text-center mt-3 font-title text-3xl text-white mb-4">
-                  Pretty in Pink
-                </div>
-                <div className="relative rounded-full mx-auto overflow-hidden">
-                  <Image width={600} height={600} src={bdPink} className="w-full h-full" alt="" />
-                </div>
-              </div>
-            </div>
-            <div className="flex justify-center items-center">
-            </div>
-
-            <div className="flex justify-center items-center">
-              <div className="">
-                <div className="text-center mt-3 font-title text-3xl text-white mb-4">
-                  Sailor Scouts
-                </div>
-                <div className="relative rounded-full mx-auto overflow-hidden">
-                  <Image width={600} height={600} src={bdSailor} className="w-full h-full" alt="" />
-                </div>
-              </div>
-            </div>
-          </div>
-              </>
-          )}
-
-          {rewardStatus === "Royal Bunny" && (
-              // Placeholder content for "Royal Bunny"
-              <>
-                  <div className="relative text-white overflow-hidden font-bold">
-            <div className="grid sm:grid-cols-[2fr_3fr] grid-cols-[1fr] px-12 py-12 gap-12">
-              <div className="grid grid-cols-[60px_1fr]">
-                <Image width={600} height={600} src={crown} alt="crown" className=" p-3" />
-                <div className="flex items-flex">
-                  <div className="ml-2 text-5xl font-title ">
-                    OMG, YOU&apos;RE A <span className="text-hunnys-yellow">ROYAL BUNNY!</span>
-                  </div>
-                </div>
-              </div>
-              <div className="text-xl" style={{wordWrap: 'break-word',
-    whiteSpace: 'break-spaces'}}>
-                What an honor for us to have such royalty join us in the Hunnys Closet! <br /><br />
-                Did you know that being a Royal Bunny means you receive <span className="text-hunnys-yellow">FOUR</span> free Hunnys Seasons rewards, delivered to you for free, every single month? <br /><br />
-                But don&apos;t let us stop you; there are still HUNDREDS of different traits out there to collect. <br /><br />
-                Every Hunny you own unlocks ALL of its traits for unlimited use in Hunnys Closet. <br /><br />
-                Here are some you might like: 
-              </div>
-            </div>
-          </div>
-          <div className="grid sm:grid-cols-[3fr_1fr_3fr_1fr_3fr] grid-cols-[1fr] pb-12 px-8">
-            <div className="flex justify-center items-center">
-              <div className="">
-                <div className="text-center mt-3 font-title text-3xl text-white mb-4">
-                  Cheer Squad
-                </div>
-                <div className="relative rounded-full mx-auto overflow-hidden">
-                  <Image width={600} height={600} src={rbCheer} className="w-full h-full" alt="" />
-                </div>
-              </div>
-              <div></div>
-            </div>
-            <div className="flex justify-center items-center">
-            </div>
-
-            <div className="flex justify-center items-center">
-              <div className="">
-                <div className="text-center mt-3 font-title text-3xl text-white mb-4">
-                  Bikini Babes
-                </div>
-                <div className="relative rounded-full mx-auto overflow-hidden">
-                  <Image width={600} height={600} src={rbBikini} className="w-full h-full" alt="" />
-                </div>
-              </div>
-            </div>
-            <div className="flex justify-center items-center">
-            </div>
-
-            <div className="flex justify-center items-center">
-              <div className="">
-                <div className="text-center mt-3 font-title text-3xl text-white mb-4">
-                  Horny Hunnys
-                </div>
-                <div className="relative rounded-full mx-auto overflow-hidden">
-                  <Image width={600} height={600} src={rbHorny} className="w-full h-full" alt="" />
-                </div>
-              </div>
-            </div>
-          </div>
-              </>
-          )}
-        <div className="mb-12 mx-auto max-w-[85%] w-full">
-                <a href="https://buy.hunnys.io/ethereum/collection/0x5dfeb75abae11b138a16583e03a2be17740eaded" target="_blank">
-                    <Button>{getButtonMessage(rewardStatus)}</Button>
-                </a>
-            </div>
-        </>
-    )}
-</div>
         <div style={{ backgroundColor: '#700CF5'}} className="grid gap-2 rounded-3xl shadow-md mt-2 px-12 py-12">
           <div className="text-white font-title text-[3rem] text-center mb-6">
             <span className="text-hunnys-yellow">MORE </span>
