@@ -810,11 +810,11 @@
     },
     {
         "tokenId": 71,
-        "name": "Chihiro the Brave - Coming Soon",
+        "name": "Chihiro the Brave",
         "attributes": [
             {
-                "trait_type": "Epic",
-                "value": "5"
+                "trait_type": "Background",
+                "value": "Haku"
             }
         ],
         "metaPath": "https://rarity.mypinata.cloud/ipfs/QmPwXmftGKKaBwqeH6cLFGXghtZ3gkSKzyAyWCbs4UJic5"
