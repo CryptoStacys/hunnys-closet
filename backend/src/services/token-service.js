@@ -61,10 +61,6 @@ const TokenService = {
                     //   "name": "Fame Lady Society",
                     result = TokenService.getAllTraits(collection.config, collection.tokens, configTokenData, configTraitsData);
                     break;
-                case 9:
-                //  "name": "New Hunnys Closet Shop",
-                result = TokenService.getSelectiveTraits(collection.config, collection.tokens, configTokenData, configTraitsData, defaultConfigTraitsData);
-                break;
                 default:
                     break;
             }
@@ -521,10 +517,6 @@ return result;
                     break;
                 case 8:
                     //  "name": "Fame Lady Society",
-                    result = TokenService.getTraits(collection, configTraitsData);
-                    break;
-                case 9:
-                    //  "name": "New Hunnys Closet Shop",
                     result = TokenService.getTraits(collection, configTraitsData);
                     break;
                 default:

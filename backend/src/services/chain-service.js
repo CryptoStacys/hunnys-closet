@@ -50,12 +50,6 @@ const ChainService = {
                     abi = await ChainService.loadAbi(`src/abis/fame-lady-society-abi.json`);
                     tokens = await ChainService.requestContract(config.contract, wallet, abi, infuraUrl, config.originID);
                     break;
-                case 9:
-                //  "name": "Hunnys Closet Shop",
-                    abi = await ChainService.loadAbi(`src/abis/new-hunnys-closet-shop-abi.json`);
-                    tokens = await ChainService.requestSeasonsContract(config.contract, wallet, abi, infuraUrl);
-                    tokens = await ChainService.arregateMetaPathToToken(tokens, config);
-                    break;
                 default:
                     break;
             }
