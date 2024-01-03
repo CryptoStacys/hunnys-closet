@@ -75,17 +75,6 @@
             "chain": "mainnet"
         },
         {
-            "name": "Hunnys Closet Shop",
-            "originID" : 7,
-            "contract" : "0x0b54fbd0139a2da92ff41fd9ed56adcf89d87001",
-            "tokenConfigPath": "hunnys-closet-shop-token.json",
-            "traitsConfigPath": "hunnys-closet-shop-traits.json",
-            "idMapping": false,
-            "hasStaticMetaPath": false,
-            "meta_url" : "",
-            "chain": "polygon"
-        },
-        {
             "name": "Fame Lady Society",
             "originID" : 8,
             "contract" : "0x6cf4328f1ea83b5d592474f9fcdc714faafd1574",
@@ -95,6 +84,17 @@
             "hasStaticMetaPath": true,
             "meta_url" : "https://ipfs.io/ipfs/bafybeifilzfx3asubemd3sgirkgeaeymu3d3n5qg6ekxakobldmnfkb3zu/",
             "chain": "mainnet"
+        },
+        {
+            "name": "New Hunnys Closet Shop",
+            "originID" : 9,
+            "contract" : "0x11bc733e719198e2b3746f6841d2818ca87af6da",
+            "tokenConfigPath": "new-hunnys-closet-shop-token.json",
+            "traitsConfigPath": "new-hunnys-closet-shop-traits.json",
+            "idMapping": false,
+            "hasStaticMetaPath": false,
+            "meta_url" : "",
+            "chain": "polygon"
         }
     ]
 }
