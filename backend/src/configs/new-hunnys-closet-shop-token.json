@@ -7,8 +7,9 @@
                 "trait_type": "Hand",
                 "value": "GM Mug"
             }
-        ]
-        },
+        ],
+      "metaPath": "https://hunnysclosetshop.s3.us-east-2.amazonaws.com/images/goodies/0"  
+    },
     {
         "tokenId": 1,
         "name": "Bored Set",
@@ -53,8 +54,9 @@
                 "trait_type": "Dye",
                 "value": "Bored Pink 4"
             }
-        ]
-        },
+        ],
+      "metaPath": "https://hunnysclosetshop.s3.us-east-2.amazonaws.com/images/goodies/1"  
+    },
     {
         "tokenId": 2,
         "name": "Cow Set",
@@ -79,8 +81,9 @@
                 "trait_type": "Outfit",
                 "value": "Cowbelle Crop"
             }
-        ]
-        },
+        ],
+      "metaPath": "https://hunnysclosetshop.s3.us-east-2.amazonaws.com/images/goodies/2"  
+    },
     {
         "tokenId": 3,
         "name": "Piggy Set",
@@ -101,8 +104,9 @@
                 "trait_type": "Accessory",
                 "value": "Piggy Earring"
             }
-        ]
-        },
+        ],
+      "metaPath": "https://hunnysclosetshop.s3.us-east-2.amazonaws.com/images/goodies/3"  
+    },
     {
         "tokenId": 4,
         "name": "W33D Set",
@@ -143,8 +147,9 @@
                 "trait_type": "Eyebrows",
                 "value": "W33D Brows"
             }
-        ]
-        },
+        ],
+      "metaPath": "https://hunnysclosetshop.s3.us-east-2.amazonaws.com/images/goodies/4"  
+    },
     {
         "tokenId": 5,
         "name": "Expression Pack 1",
@@ -201,8 +206,9 @@
                 "trait_type": "Mouth",
                 "value": "Cringe"
             }
-        ]
-        },
+        ],
+      "metaPath": "https://hunnysclosetshop.s3.us-east-2.amazonaws.com/images/goodies/5"  
+    },
     {
         "tokenId": 6,
         "name": "Long Gradient Hair",
@@ -211,8 +217,9 @@
                 "trait_type": "Hair Style",
                 "value": "Long Gradient Hair"
             }
-        ]
-        },
+        ],
+      "metaPath": "https://hunnysclosetshop.s3.us-east-2.amazonaws.com/images/goodies/6"  
+    },
     {
         "tokenId": 7,
         "name": "Modern Bob",
@@ -221,8 +228,9 @@
                 "trait_type": "Hair Style",
                 "value": "Modern Bob"
             }
-        ]
-        },
+        ],
+      "metaPath": "https://hunnysclosetshop.s3.us-east-2.amazonaws.com/images/goodies/7"  
+    },
     {
         "tokenId": 8,
         "name": "Natural Hair Dyes",
@@ -291,8 +299,9 @@
                 "trait_type": "Dye",
                 "value": "Orangeish 4"
             }
-        ]
-        },
+        ],
+      "metaPath": "https://hunnysclosetshop.s3.us-east-2.amazonaws.com/images/goodies/8"  
+    },
     {
         "tokenId": 9,
         "name":"Reaper Demon Hood",
@@ -301,8 +310,9 @@
                 "trait_type":"Bodysuit",
                 "value":"Reaper Demon Hood"
             }
-        ]
-        },
+        ],
+      "metaPath": "https://hunnysclosetshop.s3.us-east-2.amazonaws.com/images/goodies/9"  
+    },
     {
         "tokenId": 10,
         "name":"Skuzzy Sparkle Skin & Dye Set",
@@ -347,8 +357,9 @@
                 "trait_type":"Dye",
                 "value":"Darknova Drip"
             }
-        ]
-        },
+        ],
+      "metaPath": "https://hunnysclosetshop.s3.us-east-2.amazonaws.com/images/goodies/10"  
+    },
     {
         "tokenId": 11,
         "name":"Burger Queen Set",
@@ -377,8 +388,9 @@
                 "trait_type":"Outfit",
                 "value":"BQ Apron"
             }
-        ]
-        },
+        ],
+      "metaPath": "https://hunnysclosetshop.s3.us-east-2.amazonaws.com/images/goodies/11"  
+    },
     {
         "tokenId": 12,
         "name":"Ghosty Studs",
@@ -387,8 +399,9 @@
                 "trait_type":"Accessory",
                 "value":"Ghosty Studs"
             }
-        ]
-        },
+        ],
+      "metaPath": "https://hunnysclosetshop.s3.us-east-2.amazonaws.com/images/goodies/12"  
+    },
     {
         "tokenId": 13,
         "name":"Pumpkin Studs",
@@ -397,8 +410,9 @@
                 "trait_type":"Accessory",
                 "value":"Pumpkin Studs"
             }
-        ]
-        },
+        ],
+      "metaPath": "https://hunnysclosetshop.s3.us-east-2.amazonaws.com/images/goodies/13"  
+    },
     {
         "tokenId": 14,
         "name":"Web",
@@ -407,8 +421,9 @@
                 "trait_type":"Face Sticker",
                 "value":"Web"
             }
-        ]
-        },
+        ],
+      "metaPath": "https://hunnysclosetshop.s3.us-east-2.amazonaws.com/images/goodies/14"  
+    },
     {
         "tokenId": 15,
         "name":"Batty",
@@ -417,8 +432,9 @@
                 "trait_type":"Face Sticker",
                 "value":"Batty"
             }
-        ]
-        },
+        ],
+      "metaPath": "https://hunnysclosetshop.s3.us-east-2.amazonaws.com/images/goodies/15"  
+    },
     {
         "tokenId": 16,
         "name":"Ghosty",
@@ -427,8 +443,9 @@
                 "trait_type":"Face Sticker",
                 "value":"Ghosty"
             }
-        ]
-        },
+        ],
+      "metaPath": "https://hunnysclosetshop.s3.us-east-2.amazonaws.com/images/goodies/16"  
+    },
     {
         "tokenId": 17,
         "name":"Pumpkin",
@@ -437,8 +454,9 @@
                 "trait_type":"Face Sticker",
                 "value":"Pumpkin"
             }
-        ]
-        },
+        ],
+      "metaPath": "https://hunnysclosetshop.s3.us-east-2.amazonaws.com/images/goodies/17"  
+    },
     {
         "tokenId": 18,
         "name":"FrankenStitch",
@@ -447,8 +465,9 @@
                 "trait_type":"Face Sticker",
                 "value":"FrankenStitch"
             }
-        ]
-        },
+        ],
+      "metaPath": "https://hunnysclosetshop.s3.us-east-2.amazonaws.com/images/goodies/18"  
+    },
     {
         "tokenId": 19,
         "name":"Pumpkin Spice Latte",
@@ -457,8 +476,9 @@
                 "trait_type":"Hand",
                 "value":"Pumpkin Spice Latte"
             }
-        ]
-        },
+        ],
+      "metaPath": "https://hunnysclosetshop.s3.us-east-2.amazonaws.com/images/goodies/19"  
+    },
     {
         "tokenId": 20,
         "name":"Lunar Fall Sweater",
@@ -467,8 +487,9 @@
                 "trait_type":"Outfit",
                 "value":"Lunar Fall Sweater"
             }
-        ]
-        },
+        ],
+      "metaPath": "https://hunnysclosetshop.s3.us-east-2.amazonaws.com/images/goodies/20"  
+    },
     {
         "tokenId": 21,
         "name":"Fancy Fall Harvest Sweater",
@@ -477,8 +498,9 @@
                 "trait_type":"Outfit",
                 "value":"Fancy Fall Harvest Sweater"
             }
-        ]
-        },
+        ],
+      "metaPath": "https://hunnysclosetshop.s3.us-east-2.amazonaws.com/images/goodies/21"  
+    },
     {
         "tokenId": 22,
         "name":"Cozy Scarf",
@@ -487,8 +509,9 @@
                 "trait_type":"Accessory",
                 "value":"Cozy Scarf"
             }
-        ]
-        },
+        ],
+      "metaPath": "https://hunnysclosetshop.s3.us-east-2.amazonaws.com/images/goodies/22"  
+    },
     {
         "tokenId": 23,
         "name":"Scary Trees",
@@ -497,8 +520,9 @@
                 "trait_type":"Frame",
                 "value":"Scary Trees"
             }
-        ]
-        },
+        ],
+      "metaPath": "https://hunnysclosetshop.s3.us-east-2.amazonaws.com/images/goodies/23"  
+    },
     {
         "tokenId": 24,
         "name":"Fall Pumpkins",
@@ -507,8 +531,9 @@
                 "trait_type":"Frame",
                 "value":"Fall Pumpkins"
             }
-        ]
-        },
+        ],
+      "metaPath": "https://hunnysclosetshop.s3.us-east-2.amazonaws.com/images/goodies/24"  
+    },
     {
         "tokenId": 25,
         "name":"Boo Mug",
@@ -517,8 +542,9 @@
                 "trait_type":"Hand",
                 "value":"Boo Mug"
             }
-        ]
-        },
+        ],
+      "metaPath": "https://hunnysclosetshop.s3.us-east-2.amazonaws.com/images/goodies/25"  
+    },
     {
         "tokenId": 26,
         "name":"Witch Cauldron Mug",
@@ -527,8 +553,9 @@
                 "trait_type":"Hand",
                 "value":"Witch Cauldron Mug"
             }
-        ]
-        },
+        ],
+      "metaPath": "https://hunnysclosetshop.s3.us-east-2.amazonaws.com/images/goodies/26"  
+    },
     {
         "tokenId": 27,
         "name":"Baby Pumpkin",
@@ -537,8 +564,9 @@
                 "trait_type":"Hat",
                 "value":"Baby Pumpkin"
             }
-        ]
-        },
+        ],
+      "metaPath": "https://hunnysclosetshop.s3.us-east-2.amazonaws.com/images/goodies/27"  
+    },
     {
         "tokenId": 28,
         "name":"Squirrel Friend Sweater Vest",
@@ -547,8 +575,9 @@
                 "trait_type":"Outfit",
                 "value":"Squirrel Friend Sweater Vest"
             }
-        ]
-        },
+        ],
+      "metaPath": "https://hunnysclosetshop.s3.us-east-2.amazonaws.com/images/goodies/28"  
+    },
     {
         "tokenId": 29,
         "name":"Chiddar",
@@ -557,8 +586,9 @@
                 "trait_type":"Accessory",
                 "value":"Chiddar"
             }
-        ]
-        },
+        ],
+      "metaPath": "https://hunnysclosetshop.s3.us-east-2.amazonaws.com/images/goodies/29"  
+    },
     {
         "tokenId": 30,
         "name":"Jack o Bear Pail",
@@ -567,8 +597,9 @@
                 "trait_type":"Hand",
                 "value":"Jack o Bear Pail"
             }
-        ]
-        },
+        ],
+      "metaPath": "https://hunnysclosetshop.s3.us-east-2.amazonaws.com/images/goodies/30"  
+    },
     {
         "tokenId": 31,
         "name":"Gorgon Skin",
@@ -577,8 +608,9 @@
                 "trait_type":"Skin",
                 "value":"Gorgon Skin"
             }
-        ]
-        },
+        ],
+      "metaPath": "https://hunnysclosetshop.s3.us-east-2.amazonaws.com/images/goodies/31"  
+    },
     {
         "tokenId": 32,
         "name":"Witchy",
@@ -587,8 +619,9 @@
                 "trait_type":"Tattoo",
                 "value":"Witchy"
             }
-        ]
-        },
+        ],
+      "metaPath": "https://hunnysclosetshop.s3.us-east-2.amazonaws.com/images/goodies/32"  
+    },
     {
         "tokenId": 33,
         "name":"Plaid Fall Jacket",
@@ -597,8 +630,9 @@
                 "trait_type":"Outfit",
                 "value":"Plaid Fall Jacket"
             }
-        ]
-        },
+        ],
+      "metaPath": "https://hunnysclosetshop.s3.us-east-2.amazonaws.com/images/goodies/33"  
+    },
     {
         "tokenId": 34,
         "name":"Cinnamon Roll Head",
@@ -607,8 +641,9 @@
                 "trait_type":"Tattoo",
                 "value":"Cinnamon Roll Head"
             }
-        ]
-        },
+        ],
+      "metaPath": "https://hunnysclosetshop.s3.us-east-2.amazonaws.com/images/goodies/34"  
+    },
     {
         "tokenId": 35,
         "name":"Ghost Trick or Treater",
@@ -617,8 +652,9 @@
                 "trait_type":"Accessory",
                 "value":"Ghost Trick or Treater"
             }
-        ]
-        },
+        ],
+      "metaPath": "https://hunnysclosetshop.s3.us-east-2.amazonaws.com/images/goodies/35"  
+    },
     {
         "tokenId": 36,
         "name":"Spooky Makeup",
@@ -627,8 +663,9 @@
                 "trait_type":"Face Sticker",
                 "value":"Spooky Makeup"
             }
-        ]
-        },
+        ],
+      "metaPath": "https://hunnysclosetshop.s3.us-east-2.amazonaws.com/images/goodies/36"  
+    },
     {
         "tokenId": 37,
         "name":"Spectral Skin",
@@ -637,8 +674,9 @@
                 "trait_type":"Skin",
                 "value":"Spectral Skin"
             }
-        ]
-        },
+        ],
+      "metaPath": "https://hunnysclosetshop.s3.us-east-2.amazonaws.com/images/goodies/37"  
+    },
     {
         "tokenId": 38,
         "name":"Cute Nurse",
@@ -647,8 +685,9 @@
                 "trait_type":"Bodysuit",
                 "value":"Cute Nurse"
             }
-        ]
-        },
+        ],
+      "metaPath": "https://hunnysclosetshop.s3.us-east-2.amazonaws.com/images/goodies/38"  
+    },
     {
         "tokenId": 39,
         "name":"Lil Red Wolfy",
@@ -657,8 +696,9 @@
                 "trait_type":"Bodysuit",
                 "value":"Lil Red Wolfy"
             }
-        ]
-        },
+        ],
+      "metaPath": "https://hunnysclosetshop.s3.us-east-2.amazonaws.com/images/goodies/39"  
+    },
     {
         "tokenId": 40,
         "name":"Pirate Babe",
@@ -667,8 +707,9 @@
                 "trait_type":"Bodysuit",
                 "value":"Pirate Babe"
             }
-        ]
-        },
+        ],
+      "metaPath": "https://hunnysclosetshop.s3.us-east-2.amazonaws.com/images/goodies/40"  
+    },
     {
         "tokenId": 41,
         "name":"Bunny Fighter Costume",
@@ -677,8 +718,9 @@
                 "trait_type":"Bodysuit",
                 "value":"Bunny Fighter Costume"
             }
-        ]
-        },
+        ],
+      "metaPath": "https://hunnysclosetshop.s3.us-east-2.amazonaws.com/images/goodies/41"  
+    },
     {
         "tokenId": 42,
         "name":"Medusa Hair",
@@ -687,8 +729,9 @@
                 "trait_type":"Hair Style",
                 "value":"Medusa Hair"
             }
-        ]
-        },
+        ],
+      "metaPath": "https://hunnysclosetshop.s3.us-east-2.amazonaws.com/images/goodies/42"  
+    },
     {
         "tokenId": 43,
         "name":"Full Hunnyween 2023 Set",
@@ -817,8 +860,9 @@
                 "trait_type":"Hair Style",
                 "value":"Medusa Hair"
             }
-        ]
-        },
+        ],
+      "metaPath": "https://hunnysclosetshop.s3.us-east-2.amazonaws.com/images/goodies/43"  
+    },
     {
         "tokenId": 44,
         "name":"Borg Babe Set",
@@ -835,8 +879,9 @@
                 "trait_type":"Outfit",
                 "value":"Borg Metallic Suit"
             }
-        ]
-        },
+        ],
+      "metaPath": "https://hunnysclosetshop.s3.us-east-2.amazonaws.com/images/goodies/44"  
+    },
     {
         "tokenId": 45,
         "name":"Greyscale Dye Set",
@@ -865,8 +910,9 @@
                 "trait_type":"Dye",
                 "value":"White"
             }
-        ]
-        },
+        ],
+      "metaPath": "https://hunnysclosetshop.s3.us-east-2.amazonaws.com/images/goodies/45"  
+    },
     {
         "tokenId": 46,
         "name":"That Yellow Cartoon Pack",
@@ -919,8 +965,9 @@
                 "trait_type":"Outfit",
                 "value":"Drunkard Shirt"
             }
-        ]
-        },
+        ],
+      "metaPath": "https://hunnysclosetshop.s3.us-east-2.amazonaws.com/images/goodies/46"  
+    },
     {
         "tokenId": 47,
         "name":"Fame Lady Society Pack",
@@ -1089,8 +1136,9 @@
                 "trait_type": "Tattoo",
                 "value": "FLS Dead Love (Shop)"
             }            
-        ]
-        },
+        ],
+      "metaPath": "https://hunnysclosetshop.s3.us-east-2.amazonaws.com/images/goodies/47"  
+    },
     {
         "tokenId": 48,
         "name": "Skuzzys Sparktacular Backgrounds",
@@ -1151,7 +1199,8 @@
                 "trait_type": "Frame",
                 "value": "Fuzzle Toe"
             }
-        ]
+        ],
+        "metaPath": "https://hunnysclosetshop.s3.us-east-2.amazonaws.com/images/goodies/48"
     },
     {
         "tokenId": 49,
@@ -1169,7 +1218,8 @@
                 "trait_type": "Hand",
                 "value": "Christmas Tree Mug"
             }
-        ]
+        ],
+        "metaPath": "https://hunnysclosetshop.s3.us-east-2.amazonaws.com/images/goodies/49"
     },
     {
         "tokenId": 50,
@@ -1183,7 +1233,8 @@
                 "trait_type": "Outfit",
                 "value": "Winter Vest"
             }
-        ]
+        ],
+        "metaPath": "https://hunnysclosetshop.s3.us-east-2.amazonaws.com/images/goodies/50"
     },
     {
         "tokenId": 51,
@@ -1205,7 +1256,8 @@
                 "trait_type": "Face Sticker",
                 "value": "Winter Solstice Eyeshadow"
             }
-        ]
+        ],
+        "metaPath": "https://hunnysclosetshop.s3.us-east-2.amazonaws.com/images/goodies/51"
     }
 ]
 
