@@ -178,8 +178,8 @@
       {
         "name": "Hand",
         "traits": [
-          {"name":"Milk","colors":2,"rarity":"Rare","tags":["skin"],"token_id":2},
           {"name":"GM Mug","colors":2,"rarity":"Common","tags":["skin"],"token_id":0},
+          {"name":"Milk","colors":2,"rarity":"Rare","tags":["skin"],"token_id":2},
           {"name":"BQ Soda","colors":4,"rarity":"Common","tags":["skin"],"token_id":11},
           {"name":"BQ Large Fries","colors":4,"rarity":"Common","tags":["skin"],"token_id":11},
           {"name":"BQ Carrot Patty Burger","colors":5,"rarity":"Common","tags":["skin"],"token_id":11},
