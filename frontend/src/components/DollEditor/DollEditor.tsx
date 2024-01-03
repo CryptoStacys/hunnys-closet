@@ -212,7 +212,7 @@ function setRandomHeadline() {
       });
     } catch (error) {
       setIsSaving(false);
-      setErrorMessage('An error occurred while saving.');
+      setErrorMessage('An error occurred while saving, please wait a minute & try again.');
       console.error('Save Error:', error);
     }
   }
