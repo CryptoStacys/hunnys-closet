@@ -16,6 +16,7 @@
         {"name":"Ghostly Bear Buddy","colors":1,"rarity":"Mythic","tags":[],"token_id":66},
         {"name":"Hupe Rainbow","colors":4,"rarity":"Legendary","tags":[],"token_id":68},
         {"name":"Kikis Sky","colors":3,"rarity":"Common","tags":[],"token_id":69},
+        {"name":"Haku","colors":5,"rarity":"Epic","tags":["effect"],"token_id":69},
         {"name":"Cactus Horizon","colors":1,"rarity":"Rare","tags":[],"token_id":82},
         {"name":"Holographic Fish","colors":3,"rarity":"Epic","tags":[],"token_id":99},
         {"name":"Grid Alleyway","colors":0,"rarity":"Epic","tags":[],"token_id":107},

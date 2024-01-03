@@ -78,14 +78,22 @@ const ApiService = {
         })
     },
     getMetaDataAsText: function (path, tokenId) {
-        return new Promise(function (resolve) {
-            // fetch(path, { signal: AbortSignal.timeout(2000) })
-            fetch(path)
-                .then(response => response.text())
-                .then(text => resolve({id: tokenId, data: text}))
-                .catch(err => console.error(err));
+        return new Promise(function (resolve, reject) {
+          fetch(path)
+            .then(response => response.text())
+            .then(text => {
+              // Replace unescaped newlines with properly escaped ones
+              const correctedText = text.replace(/\n/g, "\\n");
+              try {
+                const json = JSON.parse(correctedText);
+                resolve({ id: tokenId, data: json });
+              } catch (error) {
+                reject(`Error parsing JSON for token ID ${tokenId}: ${error}`);
+              }
+            })
+            .catch(err => reject(`Error fetching metadata for token ID ${tokenId}: ${err}`));
         })
-    },
+      },
     saveChangedToken: function (newToken) {
         return new Promise(function (resolve) {
             let formData = new URLSearchParams();
