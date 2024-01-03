@@ -80,11 +80,16 @@ const ApiService = {
     getMetaDataAsText: function (path, tokenId) {
         return new Promise(function (resolve, reject) {
           fetch(path)
-            .then(response => response.text())
+            .then(response => {
+              if (!response.ok) {
+                throw new Error(`HTTP error! status: ${response.status}`);
+              }
+              return response.text();
+            })
             .then(text => {
-              // Replace unescaped newlines with properly escaped ones
-              const correctedText = text.replace(/\n/g, "\\n");
               try {
+                // Replace unescaped newlines with properly escaped ones
+                const correctedText = text.replace(/\n/g, "\\n");
                 const json = JSON.parse(correctedText);
                 resolve({ id: tokenId, data: json });
               } catch (error) {
