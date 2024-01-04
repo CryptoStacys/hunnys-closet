@@ -405,18 +405,35 @@ return result;
         })
     },
     
-    formatDynamicMetaUrl: function(path) {
+    formatDynamicMetaUrl: function(path, tokenId) {
+        // Log the input path and tokenId for debugging purposes
+        console.log(`formatDynamicMetaUrl called with path: ${path}, tokenId: ${tokenId}`);
+    
         if (!path) {
+            // Warn and return the fallback URL with the appended tokenId if the path is undefined
             console.warn('Path is undefined in formatDynamicMetaUrl');
-            return ''; // Return an empty string or some default value if path is undefined
+            const fallbackUrl = `https://ipfs.io/ipfs/bafybeifilzfx3asubemd3sgirkgeaeymu3d3n5qg6ekxakobldmnfkb3zu/${tokenId}`;
+            console.log(`Returning fallback URL: ${fallbackUrl}`);
+            return fallbackUrl;
         }
     
         let formattedUrl = path;
+    
+        // Log the initial state of the formatted URL
+        console.log(`Initial formatted URL: ${formattedUrl}`);
+    
         if (path.includes('ipfs://')) {
             formattedUrl = path.replace("ipfs://", "https://gateway.pinata.cloud/ipfs/");
+            // Log after formatting IPFS URL
+            console.log(`Formatted IPFS URL: ${formattedUrl}`);
         } else if (path.includes('/ipfs/')) {
             formattedUrl = path.split("/ipfs/").pop();
             formattedUrl = "https://gateway.pinata.cloud/ipfs/" + formattedUrl;
+            // Log after formatting alternate IPFS URL
+            console.log(`Formatted alternate IPFS URL: ${formattedUrl}`);
+        } else {
+            // Log if the path does not match expected IPFS formats
+            console.log(`Path does not contain IPFS identifiers, returning original path: ${formattedUrl}`);
         }
     
         return formattedUrl;
