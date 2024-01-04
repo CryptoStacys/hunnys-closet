@@ -93,7 +93,7 @@
             "traitsConfigPath": "fame-lady-society-traits.json",
             "idMapping": false,
             "hasStaticMetaPath": true,
-            "meta_url" : "https://gateway.pinata.cloud/ipfs/bafybeifilzfx3asubemd3sgirkgeaeymu3d3n5qg6ekxakobldmnfkb3zu/",
+            "meta_url" : "https://hunnys.s3.us-east-2.amazonaws.com/data/",
             "chain": "mainnet"
         },
         {

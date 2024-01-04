@@ -59,7 +59,7 @@ const TokenService = {
                     break;
                 case 8:
                     //   "name": "Fame Lady Society",
-                    result = TokenService.getAllTraits(collection.config, collection.tokens, configTokenData, configTraitsData, defaultConfigTraitsData);
+                    result = TokenService.getAllTraits(collection.config, collection.tokens, configTokenData, configTraitsData);
                     break;
                 case 9:
                 //  "name": "New Hunnys Closet Shop",
@@ -386,7 +386,6 @@ return result;
             let promises = [];
 
             for (let i = 0; i < tokens.length; i++) {
-                console.log("Current token URL:", tokens[i].tokenUrl);
                 let formattedUrl = TokenService.formatDynamicMetaUrl(tokens[i].tokenUrl);
                 let dataReq = ApiService.getMetaDataAsText(`${formattedUrl}`, tokens[i].id);
                 promises.push(dataReq);
@@ -404,24 +403,17 @@ return result;
             resolve(tokens);
         })
     },
-    
     formatDynamicMetaUrl: function(path) {
-        if (!path) {
-            console.warn('Path is undefined in formatDynamicMetaUrl');
-            return ''; // Return an empty string or some default value if path is undefined
-        }
-    
         let formattedUrl = path;
-        if (path.includes('ipfs://')) {
-            formattedUrl = path.replace("ipfs://", "https://gateway.pinata.cloud/ipfs/");
-        } else if (path.includes('/ipfs/')) {
+        if(path.includes('ipfs://')) {
+            formattedUrl = path.replace("ipfs://", "https://rarity.mypinata.cloud/ipfs/");
+        } else if(path.includes('/ipfs/')) {
             formattedUrl = path.split("/ipfs/").pop();
-            formattedUrl = "https://gateway.pinata.cloud/ipfs/" + formattedUrl;
+            formattedUrl = "https://rarity.mypinata.cloud/ipfs/" + formattedUrl;
         }
-    
+
         return formattedUrl;
     },
-    
     filterImageData: function(tokens) {
         for (let i = 0; i < tokens.length; i++) {
             let url = tokens[i].data;
