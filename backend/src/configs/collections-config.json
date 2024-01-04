@@ -92,8 +92,8 @@
             "tokenConfigPath": "fame-lady-society-token.json",
             "traitsConfigPath": "fame-lady-society-traits.json",
             "idMapping": false,
-            "hasStaticMetaPath": false,
-            "meta_url" : "",
+            "hasStaticMetaPath": true,
+            "meta_url" : "https://gateway.pinata.cloud/ipfs/bafybeifilzfx3asubemd3sgirkgeaeymu3d3n5qg6ekxakobldmnfkb3zu/",
             "chain": "mainnet"
         },
         {
