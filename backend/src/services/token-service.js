@@ -404,16 +404,22 @@ return result;
         })
     },
     formatDynamicMetaUrl: function(path) {
+        if (!path) {
+            console.warn('Path is undefined in formatDynamicMetaUrl');
+            return ''; // Return an empty string or some default value if path is undefined
+        }
+    
         let formattedUrl = path;
-        if(path.includes('ipfs://')) {
+        if (path.includes('ipfs://')) {
             formattedUrl = path.replace("ipfs://", "https://gateway.pinata.cloud/ipfs/");
-        } else if(path.includes('/ipfs/')) {
+        } else if (path.includes('/ipfs/')) {
             formattedUrl = path.split("/ipfs/").pop();
             formattedUrl = "https://gateway.pinata.cloud/ipfs/" + formattedUrl;
         }
-
+    
         return formattedUrl;
     },
+    
     filterImageData: function(tokens) {
         for (let i = 0; i < tokens.length; i++) {
             let url = tokens[i].data;
