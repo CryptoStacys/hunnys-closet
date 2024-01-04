@@ -95,7 +95,6 @@ const TokenService = {
                     token_id: tokenMatch.tokenId,
                     origin_id: config.originID,
                     origin_name: config.name,
-                    img_url: data[i].img_url,
                     attributes: tokenMatch.attributes
                 });
 
@@ -178,7 +177,6 @@ return result;
                         token_id: tokenMatch.tokenId,
                         origin_id: config.originID,
                         origin_name: config.name,
-                        img_url: data[i].img_url,
                         attributes: tokenMatch.attributes
                     });
                 }
@@ -359,50 +357,6 @@ return result;
 
             return result;
     },
-    getStaticImageUrl: function (tokens, config) {
-        return new Promise(async function (resolve) {
-            let result = [];
-            let promises = [];
-
-            for (let i = 0; i < tokens.length; i++) {
-                let tokenCopy = !config.hasStaticMetaPath ? tokens[i] : { id: tokens[i] };
-                result.push(tokenCopy);
-                promises.push(ApiService.getMetaData(`${config.meta_url}${tokenCopy.id}`, tokenCopy.id));
-            }
-            
-            result = await Promise.all(promises);
-
-            for (let l = 0; l < result.length; l++) {
-                const match = result.find((ele) => { return ele.id === result[l].id });
-                result[l].img_url = match.data.image;
-            }
-
-            resolve(result);
-        })
-            
-    },
-    getDynamicImageUrl: function (tokens) {
-        return new Promise(async function (resolve) {
-            let promises = [];
-
-            for (let i = 0; i < tokens.length; i++) {
-                let formattedUrl = TokenService.formatDynamicMetaUrl(tokens[i].tokenUrl);
-                let dataReq = ApiService.getMetaDataAsText(`${formattedUrl}`, tokens[i].id);
-                promises.push(dataReq);
-            }
-
-            let data = await Promise.all(promises);
-            data = TokenService.filterImageData(data)
-
-            for (let l = 0; l < tokens.length; l++) {
-                const match = data.find((ele) => { return ele.id === tokens[l].id });
-                tokens[l].img_url = match.data;
-                
-            }
-
-            resolve(tokens);
-        })
-    },
     formatDynamicMetaUrl: function(path) {
         let formattedUrl = path;
         if(path.includes('ipfs://')) {
@@ -413,18 +367,6 @@ return result;
         }
 
         return formattedUrl;
-    },
-    filterImageData: function(tokens) {
-        for (let i = 0; i < tokens.length; i++) {
-            let url = tokens[i].data;
-            if(tokens[i].data.includes('"image"')){
-                url = tokens[i].data.split('"image":"').pop().split('",')[0]; 
-            }
-
-            tokens[i].data = url;
-        }
-
-        return tokens;
     },
     filterMappedMeta: function(config, tokens) {
         for (let i = 0; i < tokens.length; i++) {
@@ -443,12 +385,6 @@ return result;
     arregateTokenData: function(config, tokens) {
         return new Promise(async function (resolve) {
             let result = [];
-
-            if(config.hasStaticMetaPath) {
-                result = await TokenService.getStaticImageUrl(tokens, config)
-            } else {
-                result = await TokenService.getDynamicImageUrl(tokens)
-            }
 
             if(config.idMapping) {
                 result = await TokenService.mapTokenIds(result, config);

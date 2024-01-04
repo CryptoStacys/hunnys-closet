@@ -35,7 +35,6 @@ export default function Tokens() {
                       <div className="absolute top-[14px] left-0 bg-[#fff] leading-4 py-[5px] pl-3 pr-3 shadow-md rounded-r-2xl flex-center">
                         {token.token_id}
                       </div>
-                      <Image src={token.img_url} alt={`Hunnys ${token.token_id}`} />
                       <div className="w-full text-center py-[4px] ml-1 inline-block">{`Hunnys ${token.token_id}`}</div>
                     </div>
                   );
