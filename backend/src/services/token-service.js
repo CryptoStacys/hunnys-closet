@@ -407,6 +407,9 @@ return result;
         let formattedUrl = path;
         if(path.includes('ipfs://')) {
             formattedUrl = path.replace("ipfs://", "https://gateway.pinata.cloud/ipfs/");
+        } else if(path.includes('/ipfs/')) {
+            formattedUrl = path.split("/ipfs/").pop();
+            formattedUrl = "https://gateway.pinata.cloud/ipfs/" + formattedUrl;
         }
 
         return formattedUrl;
@@ -440,18 +443,17 @@ return result;
     arregateTokenData: function(config, tokens) {
         return new Promise(async function (resolve) {
             let result = [];
-    
-            // If you need to process image URLs in the future, you can uncomment the following lines
-            // if(config.hasStaticMetaPath) {
-            //     result = await TokenService.getStaticImageUrl(tokens, config)
-            // } else {
-            //     result = await TokenService.getDynamicImageUrl(tokens)
-            // }
-    
-            if(config.idMapping) {
-                result = await TokenService.mapTokenIds(tokens, config);
+
+            if(config.hasStaticMetaPath) {
+                result = await TokenService.getStaticImageUrl(tokens, config)
+            } else {
+                result = await TokenService.getDynamicImageUrl(tokens)
             }
-    
+
+            if(config.idMapping) {
+                result = await TokenService.mapTokenIds(result, config);
+            }
+
             resolve(result);
         })
     },
