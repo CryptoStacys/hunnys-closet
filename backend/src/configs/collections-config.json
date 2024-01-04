@@ -92,8 +92,8 @@
             "tokenConfigPath": "fame-lady-society-token.json",
             "traitsConfigPath": "fame-lady-society-traits.json",
             "idMapping": false,
-            "hasStaticMetaPath": true,
-            "meta_url" : "https://ipfs.io/ipfs/bafybeifilzfx3asubemd3sgirkgeaeymu3d3n5qg6ekxakobldmnfkb3zu/",
+            "hasStaticMetaPath": false,
+            "meta_url" : "",
             "chain": "mainnet"
         },
         {

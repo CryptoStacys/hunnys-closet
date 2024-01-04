@@ -406,10 +406,10 @@ return result;
     formatDynamicMetaUrl: function(path) {
         let formattedUrl = path;
         if(path.includes('ipfs://')) {
-            formattedUrl = path.replace("ipfs://", "https://rarity.mypinata.cloud/ipfs/");
+            formattedUrl = path.replace("ipfs://", "https://gateway.pinata.cloud/ipfs/");
         } else if(path.includes('/ipfs/')) {
             formattedUrl = path.split("/ipfs/").pop();
-            formattedUrl = "https://rarity.mypinata.cloud/ipfs/" + formattedUrl;
+            formattedUrl = "https://gateway.pinata.cloud/ipfs/" + formattedUrl;
         }
 
         return formattedUrl;
