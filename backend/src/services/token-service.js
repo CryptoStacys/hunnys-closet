@@ -406,38 +406,37 @@ return result;
     },
     
     formatDynamicMetaUrl: function(path, tokenId) {
-        // Log the input path and tokenId for debugging purposes
         console.log(`formatDynamicMetaUrl called with path: ${path}, tokenId: ${tokenId}`);
     
-        if (!path) {
-            // Warn and return the fallback URL with the appended tokenId if the path is undefined
-            console.warn('Path is undefined in formatDynamicMetaUrl');
-            const fallbackUrl = `https://ipfs.io/ipfs/bafybeifilzfx3asubemd3sgirkgeaeymu3d3n5qg6ekxakobldmnfkb3zu/${tokenId}`;
+        // Handling undefined path and tokenId
+        if (!path || typeof tokenId === 'undefined') {
+            console.warn('Either path or tokenId is undefined in formatDynamicMetaUrl');
+    
+            // Use a default tokenId if undefined
+            const defaultTokenId = tokenId || '1';
+            const fallbackUrl = `https://ipfs.io/ipfs/bafybeifilzfx3asubemd3sgirkgeaeymu3d3n5qg6ekxakobldmnfkb3zu/${defaultTokenId}`;
             console.log(`Returning fallback URL: ${fallbackUrl}`);
             return fallbackUrl;
         }
     
+        // Regular path formatting logic
         let formattedUrl = path;
-    
-        // Log the initial state of the formatted URL
         console.log(`Initial formatted URL: ${formattedUrl}`);
     
         if (path.includes('ipfs://')) {
             formattedUrl = path.replace("ipfs://", "https://gateway.pinata.cloud/ipfs/");
-            // Log after formatting IPFS URL
             console.log(`Formatted IPFS URL: ${formattedUrl}`);
         } else if (path.includes('/ipfs/')) {
             formattedUrl = path.split("/ipfs/").pop();
             formattedUrl = "https://gateway.pinata.cloud/ipfs/" + formattedUrl;
-            // Log after formatting alternate IPFS URL
             console.log(`Formatted alternate IPFS URL: ${formattedUrl}`);
         } else {
-            // Log if the path does not match expected IPFS formats
-            console.log(`Path does not contain IPFS identifiers, returning original path: ${formattedUrl}`);
+            console.log(`Path does not contain IPFS identifiers, using original path: ${formattedUrl}`);
         }
     
         return formattedUrl;
     },
+    
     
     filterImageData: function(tokens) {
         for (let i = 0; i < tokens.length; i++) {
