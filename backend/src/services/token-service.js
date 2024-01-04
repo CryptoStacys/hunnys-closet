@@ -59,7 +59,7 @@ const TokenService = {
                     break;
                 case 8:
                     //   "name": "Fame Lady Society",
-                    result = TokenService.getAllTraits(collection.config, collection.tokens, configTokenData, configTraitsData);
+                    result = TokenService.getAllTraits(collection.config, collection.tokens, configTokenData, configTraitsData, defaultConfigTraitsData);
                     break;
                 case 9:
                 //  "name": "New Hunnys Closet Shop",
