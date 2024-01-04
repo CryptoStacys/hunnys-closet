@@ -386,6 +386,7 @@ return result;
             let promises = [];
 
             for (let i = 0; i < tokens.length; i++) {
+                console.log("Current token URL:", tokens[i].tokenUrl);
                 let formattedUrl = TokenService.formatDynamicMetaUrl(tokens[i].tokenUrl);
                 let dataReq = ApiService.getMetaDataAsText(`${formattedUrl}`, tokens[i].id);
                 promises.push(dataReq);
@@ -403,6 +404,7 @@ return result;
             resolve(tokens);
         })
     },
+    
     formatDynamicMetaUrl: function(path) {
         if (!path) {
             console.warn('Path is undefined in formatDynamicMetaUrl');
