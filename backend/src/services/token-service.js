@@ -384,29 +384,25 @@ return result;
     getDynamicImageUrl: function (tokens) {
         return new Promise(async function (resolve) {
             let promises = [];
-    
+
             for (let i = 0; i < tokens.length; i++) {
                 let formattedUrl = TokenService.formatDynamicMetaUrl(tokens[i].tokenUrl);
-                let dataReq = ApiService.getMetaDataAsText(`${formattedUrl}`, tokens[i].id)
-                    .catch(err => {
-                        console.error(`Error fetching dynamic image URL for token ID ${tokens[i].id}: ${err}`);
-                        return { id: tokens[i].id, data: '' }; // Handle error by returning a default value
-                    });
+                let dataReq = ApiService.getMetaDataAsText(`${formattedUrl}`, tokens[i].id);
                 promises.push(dataReq);
             }
-    
+
             let data = await Promise.all(promises);
-            data = TokenService.filterImageData(data);
-    
+            data = TokenService.filterImageData(data)
+
             for (let l = 0; l < tokens.length; l++) {
                 const match = data.find((ele) => { return ele.id === tokens[l].id });
                 tokens[l].img_url = match.data;
+                
             }
-    
+
             resolve(tokens);
-        });
+        })
     },
-    
     formatDynamicMetaUrl: function(path) {
         let formattedUrl = path;
         if(path.includes('ipfs://')) {
