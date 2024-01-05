@@ -92,8 +92,8 @@
             "tokenConfigPath": "fame-lady-society-token.json",
             "traitsConfigPath": "fame-lady-society-traits.json",
             "idMapping": false,
-            "hasStaticMetaPath": false,
-            "meta_url" : "",
+            "hasStaticMetaPath": true,
+            "meta_url" : "https://hunnys.s3.us-east-2.amazonaws.com/data/",
             "chain": "mainnet"
         },
         {
