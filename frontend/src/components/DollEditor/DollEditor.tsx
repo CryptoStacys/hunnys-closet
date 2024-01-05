@@ -77,7 +77,20 @@ export default function DollEditor(props: { id: number; selectDoll: Function }) 
       "Omg, you look incredible!", "Hupe hupe hooray, you slay all day!", "Wow nice dolly, looks rare", 
       "Hellloooo, cupcake!", "Felt cute, never deleting later", "Gurrrlllll", "Good golly, miss dolly!", 
       "Wow, can you say #colorharmony?", "And just when I thought you couldn't get any cuter", 
-      "Umm, I'm obsessed", "Omg can I get a selfie with u?"
+      "Umm, I'm obsessed", "Omg can I get a selfie with u?", "Oh Hunny you’re such a cute bunny!",
+      "You’re absolutely aDOLLable", "OMG did you wake up like this?", "By Royal Decree, you’re fashion icon ready!",
+      "With looks like this, you’re out for the kill.", "You’re ready for your close up!", "Looking like a 1/1 Dolly",
+      "You look unstoppable, sweetie!", "If looks could kill, I wouldn’t be saying anything right now.",
+      "What’s your skincare routine? BC you’re absolutely glowing!",
+      "You look so good, Dorothy might bring you a free cup of joe!", "This Dolly is GM post worthy",
+      "OMG, cupcake those traits look legendary!", "You make me feel like Royalty at its best!",
+      "The best part of Bunny Kingdom is you!", "You’ve got great taste, like a cupcake!",
+      "OMG gurl, watch out for the paparazzi", "You look super sweet, sugar!", "You’re looking like a 10k cutie!",
+      "Those colors are always in season!", "You look like a real bunny guardian!", "This lewk is SO Bunny Club",
+      "Hupe-tastic style, cupcake!", "The red carpet awaits you!", "Lights, camera, DOLLYS!",
+      "Those colors with that hair, iconic!", "That background, it really brings out your eyes.",
+      "Bunny Club Baddie, right here!", "Makes me want to right click and save!",
+      "Where’s the party because I’m coming with you?", "Hupe, there it is!"
     ];
     const randomIndex = Math.floor(Math.random() * headlines.length);
     return headlines[randomIndex];
