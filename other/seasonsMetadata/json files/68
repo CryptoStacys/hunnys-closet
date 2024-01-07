@@ -1,0 +1,27 @@
+{
+  "name": "Haley the Hupe Scout",
+  "description": "Haley is the first Official Hupe Scout. \n\n\"On my Scout’s honor, I promise\nTo live life HUPEfully\nTo promote kindness and love\nTo help those in need\nTo be honest and fair\nTo be friendly and caring\nAnd to try my best\nTo be the best Hupe Scout I can be.\"\n",
+  "image": "https://hunnysseasons.s3.us-east-2.amazonaws.com/68.png",
+  "animation_url": "",
+  "audio_url": "",
+  "interactive_url": "",
+  "external_link": "h",
+  "attributes": [
+    {
+      "trait_type": "Month",
+      "value": "July"
+    },
+    {
+      "trait_type": "Rarity",
+      "value": "Special"
+    },
+    {
+      "trait_type": "Season",
+      "value": "Hupe Scouts"
+    },
+    {
+      "trait_type": "Year",
+      "value": "2022"
+    }
+  ]
+}

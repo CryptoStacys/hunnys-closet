@@ -1,0 +1,31 @@
+{
+  "name": "Ripple The Rainmallow Keeper",
+  "description": "Ripple and her mallow-pal Weasley wander the beaches making sure everyone is happy and smiling and enjoying the magical place. Ripple is the magical girl responsible for the appearance of the rainbow beams that appear all over the beaches. If Ripple isn't too busy when you meet, she might even give you a special mallow treat!",
+  "image": "https://hunnysseasons.s3.us-east-2.amazonaws.com/141.png",
+  "animation_url": "",
+  "audio_url": "",
+  "interactive_url": "",
+  "external_link": "",
+  "attributes": [
+    {
+      "trait_type": "Month",
+      "value": "June"
+    },
+    {
+      "trait_type": "Generation",
+      "value": "2"
+    },
+    {
+      "trait_type": "Rarity",
+      "value": "Royal Bunny"
+    },
+    {
+      "trait_type": "Season",
+      "value": "Rainbow Mallow Beaches"
+    },
+    {
+      "trait_type": "Year",
+      "value": "2023"
+    }
+  ]
+}

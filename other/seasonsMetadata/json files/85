@@ -1,0 +1,27 @@
+{
+  "name": "Brie the Beat Queen",
+  "description": "I can play every song on God mode - it's one above expert but you need a dev hack to get it.  ",
+  "image": "https://hunnysseasons.s3.us-east-2.amazonaws.com/85.png",
+  "animation_url": "",
+  "audio_url": "",
+  "interactive_url": "",
+  "external_link": "",
+  "attributes": [
+    {
+      "trait_type": "Season",
+      "value": "Hunnyversary"
+    },
+    {
+      "trait_type": "Month",
+      "value": "September"
+    },
+    {
+      "trait_type": "Rarity",
+      "value": "Relic"
+    },
+    {
+      "trait_type": "Year",
+      "value": "2022"
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "name": "Chloe the Cool",
+  "description": "This is going to be the COOLEST holiday ever!",
+  "image": "https://hunnysseasons.s3.us-east-2.amazonaws.com/23.png",
+  "animation_url": "",
+  "audio_url": "",
+  "interactive_url": "",
+  "external_link": "www.hunnys.io",
+  "attributes": [
+    {
+      "trait_type": "Month",
+      "value": "December"
+    },
+    {
+      "trait_type": "Rarity",
+      "value": "Bunny Duke"
+    },
+    {
+      "trait_type": "Season",
+      "value": "NFT Holiday Sweaters"
+    },
+    {
+      "trait_type": "Year",
+      "value": "2021"
+    }
+  ]
+}

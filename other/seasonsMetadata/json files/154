@@ -1,0 +1,31 @@
+{
+"name": "Bedtime Bunny Babe Cottynne",
+"description": "Cottynne, the Bedtime Bunny Babe, drifts in a realm of dreams, her hair a swirl of pastel strands, a symphony of clouds and moonlight. She hugs her candy cloud creep plushie, whispers of sweet mischief in the air, and her cloud bra is like a soft whisper of the skies above, enveloping her in gentle fluffiness. Every strand of cloud seems to dance, whispering tales of sweet, cotton-candy dreams and whispering winds.",
+"image": "https://hunnysseasons.s3.us-east-2.amazonaws.com/154.png",
+"animation_url": "",
+"audio_url": "",
+"interactive_url": "",
+"external_link": "",
+"attributes": [
+{
+    "trait_type": "Month",
+    "value": "September"
+}, 
+{
+    "trait_type": "Generation",
+    "value": 2
+}, 
+{
+    "trait_type": "Rarity",
+    "value": "Bunny"
+}, 
+{
+    "trait_type": "Season",
+    "value": "Bedtime Bunny Babes"
+}, 
+{
+    "trait_type": "Year",
+    "value": 2023
+}
+]
+}

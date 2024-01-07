@@ -1,0 +1,27 @@
+{
+  "name": "Lara the Tomb Raider",
+  "description": "You Don't Know How Far I've Come.",
+  "image": "https://hunnysseasons.s3.us-east-2.amazonaws.com/53.png",
+  "animation_url": "",
+  "audio_url": "",
+  "interactive_url": "",
+  "external_link": "hunnys.io",
+  "attributes": [
+    {
+      "trait_type": "Season",
+      "value": "Badass Heroines"
+    },
+    {
+      "trait_type": "Rarity",
+      "value": "Relic"
+    },
+    {
+      "trait_type": "Year",
+      "value": "2022"
+    },
+    {
+      "trait_type": "Month",
+      "value": "April"
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "name": "Bella the Bored",
+  "description": "*YAWN* This is boring.",
+  "image": "https://hunnysseasons.s3.us-east-2.amazonaws.com/19.png",
+  "animation_url": "",
+  "audio_url": "",
+  "interactive_url": "",
+  "external_link": "www.hunnys.io",
+  "attributes": [
+    {
+      "trait_type": "Month",
+      "value": "December"
+    },
+    {
+      "trait_type": "Rarity",
+      "value": "Bunny"
+    },
+    {
+      "trait_type": "Season",
+      "value": "NFT Holiday Sweaters"
+    },
+    {
+      "trait_type": "Year",
+      "value": "2021"
+    }
+  ]
+}

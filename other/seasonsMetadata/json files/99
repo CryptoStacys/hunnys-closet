@@ -1,0 +1,31 @@
+{
+  "name": "Cecily the Capricorn",
+  "description": "Dec 22, 2022 - Today is an excellent day for you, Capricorn. You will be a welcome addition to any crowd. Your delightful nature is at its most active. You have the unique capability to be aggressive about getting what you want without disturbing the flow of the energy around you. People respect and honor your sensitive, nurturing qualities. This will win the game for you.",
+  "image": "https://hunnysseasons.s3.us-east-2.amazonaws.com/99.png",
+  "animation_url": "",
+  "audio_url": "",
+  "interactive_url": "",
+  "external_link": "",
+  "attributes": [
+    {
+      "trait_type": "Generation",
+      "value": "2"
+    },
+    {
+      "trait_type": "Month",
+      "value": "December"
+    },
+    {
+      "trait_type": "Rarity",
+      "value": "Bunny Duke"
+    },
+    {
+      "trait_type": "Season",
+      "value": "Zodiacs"
+    },
+    {
+      "trait_type": "Year",
+      "value": "2022"
+    }
+  ]
+}

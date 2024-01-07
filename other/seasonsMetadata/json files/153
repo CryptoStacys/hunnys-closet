@@ -1,0 +1,31 @@
+{
+"name": "Hottie Dottie 2nd Anniversary Shopping Spree",
+"description": "Hottie Dottie, with her radiant rainbow hair and spike bra, embarks on a 2nd-anniversary shopping spree in the Bunny Kingdom, every step a dance of vibrant dreams and royal allure. Her heart glasses and book are whispers of love and knowledge, and Bunny Queen Mika's castle in the background is a symbol of royal splendor and majestic dreams. Every moment is a celebration, a symphony of colorful joys and royal whimsy.",
+"image": "https://hunnysseasons.s3.us-east-2.amazonaws.com/153.png",
+"animation_url": "",
+"audio_url": "",
+"interactive_url": "",
+"external_link": "",
+"attributes": [
+{
+    "trait_type": "Month",
+    "value": "September"
+}, 
+{
+    "trait_type": "Generation",
+    "value": 2
+}, 
+{
+    "trait_type": "Rarity",
+    "value": "Special"
+}, 
+{
+    "trait_type": "Season",
+    "value": "Special"
+}, 
+{
+    "trait_type": "Year",
+    "value": 2023
+}
+]
+}

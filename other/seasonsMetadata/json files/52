@@ -1,0 +1,27 @@
+{
+  "name": "Michonne the Tamer",
+  "description": "Sometimes the most injured are the most forgiving",
+  "image": "https://hunnysseasons.s3.us-east-2.amazonaws.com/52.png",
+  "animation_url": "",
+  "audio_url": "",
+  "interactive_url": "",
+  "external_link": "hunnys.io",
+  "attributes": [
+    {
+      "trait_type": "Season",
+      "value": "Badass Heroines"
+    },
+    {
+      "trait_type": "Rarity",
+      "value": "Royal Bunny"
+    },
+    {
+      "trait_type": "Year",
+      "value": "2022"
+    },
+    {
+      "trait_type": "Month",
+      "value": "April"
+    }
+  ]
+}

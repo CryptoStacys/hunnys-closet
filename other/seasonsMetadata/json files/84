@@ -1,0 +1,27 @@
+{
+  "name": "Reese the Researcher",
+  "description": "Research Log day 342: I FOUND IT! I ventured deeper into the toxic swamps today than I ever have. In a mossy clearing deep in the trees, I saw a set of green, glowing orbs out of the corner of my eye. After approaching (with extreme caution) I uncovered the long-awaited mutants that only fables spoke about. One, in particular, took a liking to me. As I tried to leave he followed me! I have decided will take him back to live with me at the lab for further observation - I name him.. Sir Hornsworth!",
+  "image": "https://hunnysseasons.s3.us-east-2.amazonaws.com/84.png",
+  "animation_url": "",
+  "audio_url": "",
+  "interactive_url": "",
+  "external_link": "",
+  "attributes": [
+    {
+      "trait_type": "Season",
+      "value": "Hunnyversary"
+    },
+    {
+      "trait_type": "Month",
+      "value": "September"
+    },
+    {
+      "trait_type": "Year",
+      "value": "2022"
+    },
+    {
+      "trait_type": "Rarity",
+      "value": "Royal Bunny"
+    }
+  ]
+}

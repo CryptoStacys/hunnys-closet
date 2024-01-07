@@ -1,0 +1,27 @@
+{
+  "name": "Paragon the Elemeind",
+  "description": "Based on a design from the collection Stray Aliens: #32 - Paragon Elemeind\nhttps://opensea.io/assets/ethereum/0x495f947276749ce646f68ac8c248420045cb7b5e/57124830429581407560204282384407541915263222877884187177766534259998078271489\n\n\"This Stray Alien was located in the Elemeind dimension while our crew was scanning for lifeforms. Paragon is a distant cousin to the Elemeind Sisters.\n\nParagon has lived a life of seclusion under the intense pressure of being an Elemeind family member. She is ready to come to Earthereum after learning that all other lifeforms have fled her planet. This Stray is a gemstone hybrid who is very independent. She is an embodiment of perfection as an adopted stray. Paragon hardly e\"ats, requires no attention, which is extremely rare; and she is as tame as they come.\n\n",
+  "image": "https://hunnysseasons.s3.us-east-2.amazonaws.com/60.png",
+  "animation_url": "",
+  "audio_url": "",
+  "interactive_url": "",
+  "external_link": "",
+  "attributes": [
+    {
+      "trait_type": "Year",
+      "value": "2022"
+    },
+    {
+      "trait_type": "Season",
+      "value": "Elemental Aliens"
+    },
+    {
+      "trait_type": "Rarity",
+      "value": "Relic"
+    },
+    {
+      "trait_type": "Month",
+      "value": "May"
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "name": "Guan Yin, Goddess of Mercy",
+  "description": "Guan Yin is the Buddhist bodhisattva associated with compassion.",
+  "image": "https://hunnysseasons.s3.us-east-2.amazonaws.com/45.png",
+  "animation_url": "",
+  "audio_url": "",
+  "interactive_url": "",
+  "external_link": "hunnys.io",
+  "attributes": [
+    {
+      "trait_type": "Month",
+      "value": "March"
+    },
+    {
+      "trait_type": "Year",
+      "value": "2022"
+    },
+    {
+      "trait_type": "Season",
+      "value": "Ancient Goddesses"
+    },
+    {
+      "trait_type": "Rarity",
+      "value": "Royal Bunny"
+    }
+  ]
+}

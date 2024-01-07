@@ -1,0 +1,31 @@
+{
+  "name": "Mika the Bunny Day Baker",
+  "description": "Mika is so excited to celebrate Bunny Day with all her favorite bunnies! Shes making her best food this year, including moonbeam cheese, troll-toe cookies, fairy plum fruit and strawberry cotton-candy pie!",
+  "image": "https://hunnysseasons.s3.us-east-2.amazonaws.com/125.png",
+  "animation_url": "",
+  "audio_url": "",
+  "interactive_url": "",
+  "external_link": "",
+  "attributes": [
+    {
+      "trait_type": "Month",
+      "value": "April"
+    },
+    {
+      "trait_type": "Generation",
+      "value": "2"
+    },
+    {
+      "trait_type": "Rarity",
+      "value": "Special"
+    },
+    {
+      "trait_type": "Season",
+      "value": "Special"
+    },
+    {
+      "trait_type": "Year",
+      "value": "2023"
+    }
+  ]
+}

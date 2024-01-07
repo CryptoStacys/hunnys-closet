@@ -1,0 +1,27 @@
+{
+  "name": "Ember the Elemeind",
+  "description": "Based on a design from the collection Stray Aliens #6 - Ember Elemeind\nhttps://opensea.io/assets/ethereum/0x495f947276749ce646f68ac8c248420045cb7b5e/57124830429581407560204282384407541915263222877884187177766534217117124788225\n\n\"Ember is the 2nd of the Elemeind sisters to be located by our team. We were investigating seismic activity near the Elemeind's home planet & a distant fireball led us to her right away. She said that she will be willing to live among & help the humans for a chance to cool things down with her sister.\n\nEmber is a fiery spirit with an appetite for all sorts of fun! Ember has rare features not yet seen in a Stray Alien. We have been warned that Ember has a hot streak of erupting when she's angry. During the screening process, we did not observe anything from Ember that set off alarms. She should be fully compatible with laid-back humans, despite what her sister Floraleen has said about her.\"",
+  "image": "https://hunnysseasons.s3.us-east-2.amazonaws.com/56.png",
+  "animation_url": "",
+  "audio_url": "",
+  "interactive_url": "",
+  "external_link": "hunnys.io",
+  "attributes": [
+    {
+      "trait_type": "Month",
+      "value": "May"
+    },
+    {
+      "trait_type": "Rarity",
+      "value": "Bunny"
+    },
+    {
+      "trait_type": "Season",
+      "value": "Elemental Aliens"
+    },
+    {
+      "trait_type": "Year",
+      "value": "2022"
+    }
+  ]
+}

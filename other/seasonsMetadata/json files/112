@@ -1,0 +1,31 @@
+{
+  "name": "Mika, Big Fluffy Ears and the Smelly Nerdy Dragon",
+  "description": "Bop along to the beat with Mika, the music-loving dragon and their friend Big Fluffy Ears in this whimsical adventure that's sure to bring a smile to your face! Based on the Bunny Kingdom Lore Big Fluffy Ears and the Smelly Nerdy Dragon written by UNNORM4L STUDIO",
+  "image": "https://hunnysseasons.s3.us-east-2.amazonaws.com/112.png",
+  "animation_url": "",
+  "audio_url": "",
+  "interactive_url": "",
+  "external_link": "",
+  "attributes": [
+    {
+      "trait_type": "Month",
+      "value": "February"
+    },
+    {
+      "trait_type": "Generation",
+      "value": "2"
+    },
+    {
+      "trait_type": "Rarity",
+      "value": "Bunny"
+    },
+    {
+      "trait_type": "Season",
+      "value": "Bunny Kingdom Lore"
+    },
+    {
+      "trait_type": "Year",
+      "value": "2023"
+    }
+  ]
+}

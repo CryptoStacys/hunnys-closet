@@ -1,0 +1,31 @@
+{
+    "name": "Cynthia the Cyclops",
+    "description": "Throwback to Stacys 2021 Monsty Cards! Monstys are cute little monsters captured in digital trading cards!",
+    "image": "https://hunnysseasons.s3.us-east-2.amazonaws.com/163.png",
+    "animation_url": "",
+    "audio_url": "",
+    "interactive_url": "",
+    "external_link": "",
+    "attributes": [
+        {
+            "trait_type": "Month",
+            "value": "October"
+        },
+        {
+            "trait_type": "Generation",
+            "value": 2
+        },
+        {
+            "trait_type": "Rarity",
+            "value": "Relic"
+        },
+        {
+            "trait_type": "Season",
+            "value": "Retro Monstys"
+        },
+        {
+            "trait_type": "Year",
+            "value": 2023
+        }
+    ]
+}

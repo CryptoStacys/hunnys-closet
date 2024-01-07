@@ -1,0 +1,27 @@
+{
+  "name": "Princess Penelope and Puppy",
+  "description": "Puppies can't eat candy.",
+  "image": "https://hunnysseasons.s3.us-east-2.amazonaws.com/34.png",
+  "animation_url": "",
+  "audio_url": "",
+  "interactive_url": "",
+  "external_link": "hunnys.io",
+  "attributes": [
+    {
+      "trait_type": "Month",
+      "value": "February"
+    },
+    {
+      "trait_type": "Rarity",
+      "value": "Relic"
+    },
+    {
+      "trait_type": "Season",
+      "value": "Valentines Candy"
+    },
+    {
+      "trait_type": "Year",
+      "value": "2022"
+    }
+  ]
+}

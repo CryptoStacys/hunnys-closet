@@ -1,0 +1,31 @@
+{
+"name": "Kiera the Keeper of Moonstone Mountain",
+"description": "Kiera, the Keeper of Moonstone Mountain, stands as the eternal guardian, entrusted with the sacred duty of protecting the realm she has known since its inception. Once an ordinary individual, Kiera was profoundly affected by the moonstone's ancient power, becoming the vessel of its ethereal essence. As the sole witness who remembers the mountain's pre-impact majesty, she carries within her the memories of a time long forgotten. Bound to Moonstone Mountain, Kiera's role transcends time itself, ensuring the preservation of its mystical aura and guiding others to embrace the profound magic that lies within its hallowed grounds.",
+"image": "https://hunnysseasons.s3.us-east-2.amazonaws.com/134.png",
+"animation_url": "",
+"audio_url": "",
+"interactive_url": "",
+"external_link": "",
+"attributes": [
+{
+"trait_type": "Month",
+"value": "May"
+},
+{
+"trait_type": "Generation",
+"value": "2"
+},
+{
+"trait_type": "Rarity",
+"value": "Royal Bunny"
+},
+{
+"trait_type": "Season",
+"value": "Moonstone Mountain"
+},
+{
+"trait_type": "Year",
+"value": "2023"
+}
+]
+}

@@ -1,0 +1,27 @@
+{
+  "name": "Helenica the Vortex Demon",
+  "description": "Brightly colored stardust appears before your eyes and swirls around in a deep vortex you can't seem to peer all the way through. Lights sparkle and dance around the votex beckoning you to come inside...",
+  "image": "https://hunnysseasons.s3.us-east-2.amazonaws.com/25.png",
+  "animation_url": "",
+  "audio_url": "",
+  "interactive_url": "",
+  "external_link": "hunnys.io",
+  "attributes": [
+    {
+      "trait_type": "Month",
+      "value": "July"
+    },
+    {
+      "trait_type": "Rarity",
+      "value": "Vortex"
+    },
+    {
+      "trait_type": "Season",
+      "value": "Vortex Demons"
+    },
+    {
+      "trait_type": "Year",
+      "value": "2022"
+    }
+  ]
+}

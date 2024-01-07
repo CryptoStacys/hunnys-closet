@@ -1,0 +1,31 @@
+{
+  "name": "Saffirah the Spice Merchant",
+  "description": "Meet Safifah, the wise alien who supplies all the rare and exotic spices for Dorothy\\'s Diner! Safifah comes from a long line of spice extractors, and her unique biology enables her to detect and extract spices from plants and places that others cannot. Though she may seem a bit cold at first, Safifah is always trustworthy and has a bustling business at the intergalactic market. She takes great pride in providing the highest quality spices to the diner, and her discerning palate ensures that only the best make it onto the menu. Whether you\\'re looking for a bold new flavor, a subtle hint of spice, or just something to make you sneeze, Safifah has got you covered. So next time you\\'re at Dorothy\\'s Diner, make sure to ask for a dish with Safifah\\'s signature spices and experience a whole new world of flavor!",
+  "image": "https://hunnysseasons.s3.us-east-2.amazonaws.com/130.png",
+  "animation_url": "",
+  "audio_url": "",
+  "interactive_url": "",
+  "external_link": "",
+  "attributes": [
+    {
+      "trait_type": "Month",
+      "value": "April"
+    },
+    {
+      "trait_type": "Generation",
+      "value": "2"
+    },
+    {
+      "trait_type": "Rarity",
+      "value": "Relic"
+    },
+    {
+      "trait_type": "Season",
+      "value": "Dorothy's Diner"
+    },
+    {
+      "trait_type": "Year",
+      "value": "2023"
+    }
+  ]
+}

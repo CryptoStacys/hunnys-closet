@@ -1,0 +1,31 @@
+{
+    "name": "Samantha the Holiday Present",
+    "description": "2023 holiday present to the NFT community! ",
+    "image": "https://hunnysseasons.s3.us-east-2.amazonaws.com/175.png",
+    "animation_url": "",
+    "audio_url": "",
+    "interactive_url": "",
+    "external_link": "",
+    "attributes": [
+        {
+            "trait_type": "Month",
+            "value": "December"
+        },
+        {
+            "trait_type": "Generation",
+            "value": 2
+        },
+        {
+            "trait_type": "Rarity",
+            "value": "Special"
+        },
+        {
+            "trait_type": "Season",
+            "value": "Special"
+        },
+        {
+            "trait_type": "Year",
+            "value": 2023
+        }
+    ]
+}

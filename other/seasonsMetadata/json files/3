@@ -1,0 +1,27 @@
+{
+  "name": "Gabriella the Ghost",
+  "description": "Being haunted has never been this charming!",
+  "image": "https://hunnysseasons.s3.us-east-2.amazonaws.com/3.png",
+  "animation_url": "",
+  "audio_url": "",
+  "interactive_url": "",
+  "external_link": "www.hunnys.io",
+  "attributes": [
+    {
+      "trait_type": "Year",
+      "value": "2021"
+    },
+    {
+      "trait_type": "Season",
+      "value": "Halloween"
+    },
+    {
+      "trait_type": "Rarity",
+      "value": "Bunny"
+    },
+    {
+      "trait_type": "Month",
+      "value": "October"
+    }
+  ]
+}

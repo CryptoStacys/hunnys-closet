@@ -1,0 +1,27 @@
+{
+  "name": "Lydia the Leader",
+  "description": "Lydia is a bad-ass CEO! As a former software developer, she was inspired by books of entrepreneurs who were changing the world with their vision. She followed their path into her own entrepreneurial ventures. In 2021, she built an empire that was the first ever to utilize blockchain and crypto to benefit workers in the adult industry through NFTs. W-O-W.  ",
+  "image": "https://hunnysseasons.s3.us-east-2.amazonaws.com/33.png",
+  "animation_url": "",
+  "audio_url": "",
+  "interactive_url": "",
+  "external_link": "hunnys.io",
+  "attributes": [
+    {
+      "trait_type": "Month",
+      "value": "February"
+    },
+    {
+      "trait_type": "Rarity",
+      "value": "Special"
+    },
+    {
+      "trait_type": "Season",
+      "value": "Special"
+    },
+    {
+      "trait_type": "Year",
+      "value": "2022"
+    }
+  ]
+}

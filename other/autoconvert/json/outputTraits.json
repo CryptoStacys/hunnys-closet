@@ -1,44 +1,44 @@
 {
   "attributes": [
-    {"name": "Accessory", "traits": [
-        {"name": "Kitty Bell Earrings","colors": 1,"rarity": "Common","tags": "Earrings","token_id": 170},
-        {"name": "Ghostly Squirrel","colors": 0,"rarity": "Epic","tags": "companion","token_id": 172}
-    ]},
-
     {"name": "Background", "traits": [
-        {"name": "Jólakötturinn Night","colors": 3,"rarity": "Common","tags": [],"token_id": 170},
-        {"name": "Krampus Night","colors": 0,"rarity": "Relic","tags": [],"token_id": 174}
+        {"name": "Pastel Yellow","colors": 0,"rarity": "Common","tags": [],"token_id": 55},
+        {"name": "Pastel Blue","colors": 0,"rarity": "Common","tags": [],"token_id": 55},
+        {"name": "Pastel Pink","colors": 0,"rarity": "Common","tags": [],"token_id": 55},
+        {"name": "Pastel Green","colors": 0,"rarity": "Common","tags": [],"token_id": 55},
+        {"name": "Pastel Lilac","colors": 0,"rarity": "Common","tags": [],"token_id": 55},
+        {"name": "Pastel Purple","colors": 0,"rarity": "Common","tags": [],"token_id": 55}
     ]},
 
-    {"name": "Dye", "traits": [
-        {"name": "Spooky Bone","colors": 0,"rarity": "Legendary","tags": [],"token_id": 173},
-        {"name": "Horse Bone","colors": 0,"rarity": "Legendary","tags": [],"token_id": 173},
-        {"name": "Bone Shadow","colors": 0,"rarity": "Legendary","tags": [],"token_id": 173},
-        {"name": "Wintersday Green","colors": 0,"rarity": "Legendary","tags": [],"token_id": 173},
-        {"name": "Lonely Forest Purple","colors": 0,"rarity": "Legendary","tags": [],"token_id": 173}
+    {"name": "Face Sticker", "traits": [
+        {"name": "Dirty Face","colors": 1,"rarity": "Legendary","tags": [],"token_id": 56}
     ]},
 
     {"name": "Frame", "traits": [
-        {"name": "Snowy Fog","colors": 0,"rarity": "Epic","tags": [],"token_id": 172}
+        {"name": "Fluffy Clouds","colors": 3,"rarity": "Mythic","tags": [],"token_id": 52},
+        {"name": "Plain Pastel Arch","colors": 1,"rarity": "Common","tags": [],"token_id": 55},
+        {"name": "Plain Pastel Flower","colors": 1,"rarity": "Common","tags": [],"token_id": 55},
+        {"name": "Plain Pastel Window","colors": 1,"rarity": "Common","tags": [],"token_id": 55}
+    ]},
+
+    {"name": "Hair Style", "traits": [
+        {"name": "Trash Hair","colors": 1,"rarity": "Legendary","tags": ["twoParts"],"token_id": 56}
     ]},
 
     {"name": "Hand", "traits": [
-        {"name": "Mari Lwyd","colors": 5,"rarity": "Legendary","tags": [],"token_id": 173}
+        {"name": "Rancher Handbag","colors": 4,"rarity": "Rare","tags": ["skin"],"token_id": 53},
+        {"name": "Sailor Babe Tote","colors": 3,"rarity": "Uncommon","tags": ["skin"],"token_id": 54}
     ]},
 
     {"name": "Hat", "traits": [
-        {"name": "Jólakötturinn Ears","colors": 2,"rarity": "Common","tags": "twoParts","token_id": 170},
-        {"name": "La Befna Hat","colors": 5,"rarity": "Rare","tags": "twoParts","token_id": 171},
-        {"name": "Mari Lwyd Horse Hat","colors": 5,"rarity": "Legendary","tags": [],"token_id": 173},
-        {"name": "Krampus Horns","colors": 2,"rarity": "Relic","tags": "twoParts","token_id": 174}
+        {"name": "Ba[]a Peel","colors": 3,"rarity": "Legendary","tags": [],"token_id": 56}
     ]},
 
     {"name": "Outfit", "traits": [
-        {"name": "Krampus Coat","colors": 3,"rarity": "Relic","tags": [],"token_id": 174}
+        {"name": "Garbage Bag Dress","colors": 1,"rarity": "Legendary","tags": [],"token_id": 56}
     ]},
 
-    {"name": "Skin", "traits": [
-        {"name": "Yuki-onna Ghostly Skin","colors": 0,"rarity": "Epic","tags": "Skin","token_id": 172}
+    {"name": "Tattoo", "traits": [
+        {"name": "Trashy","colors": 0,"rarity": "Legendary","tags": [],"token_id": 56}
     ]}
   ]
 }

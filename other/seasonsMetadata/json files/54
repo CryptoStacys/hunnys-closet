@@ -1,0 +1,27 @@
+{
+  "name": "Mika the Birthday Baker",
+  "description": "Mika wants to make sure every single one of her Bunnys has a very special birthday! Happy Birthday, Cupcake! ",
+  "image": "https://hunnysseasons.s3.us-east-2.amazonaws.com/54.png",
+  "animation_url": "",
+  "audio_url": "",
+  "interactive_url": "",
+  "external_link": "hunnys.io",
+  "attributes": [
+    {
+      "trait_type": "Month",
+      "value": "May"
+    },
+    {
+      "trait_type": "Rarity",
+      "value": "Special"
+    },
+    {
+      "trait_type": "Season",
+      "value": "Birthday"
+    },
+    {
+      "trait_type": "Year",
+      "value": "2022"
+    }
+  ]
+}

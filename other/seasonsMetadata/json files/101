@@ -1,0 +1,31 @@
+{
+  "name": "Verity the Virgo",
+  "description": "Dec 22, 2022 - You will find strength in your inner reserves today, Virgo. Don't hesitate to let your deepest thoughts shine through. Keep your antenna up. You will find that there's an electricity in the air that keeps people's emotions at peak level. Follow your instincts and keep in mind that this is probably your best defense against the challenges of the day. Rational thinking is overrated.",
+  "image": "https://hunnysseasons.s3.us-east-2.amazonaws.com/101.png",
+  "animation_url": "",
+  "audio_url": "",
+  "interactive_url": "",
+  "external_link": "",
+  "attributes": [
+    {
+      "trait_type": "Generation",
+      "value": "2"
+    },
+    {
+      "trait_type": "Month",
+      "value": "December"
+    },
+    {
+      "trait_type": "Rarity",
+      "value": "Bunny"
+    },
+    {
+      "trait_type": "Season",
+      "value": "Zodiacs"
+    },
+    {
+      "trait_type": "Year",
+      "value": "2022"
+    }
+  ]
+}

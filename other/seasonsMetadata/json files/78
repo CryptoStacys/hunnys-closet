@@ -1,0 +1,27 @@
+{
+  "name": "Duyen and Dratini",
+  "description": "Let's soar above the skies!",
+  "image": "https://hunnysseasons.s3.us-east-2.amazonaws.com/78.png",
+  "animation_url": "",
+  "audio_url": "",
+  "interactive_url": "",
+  "external_link": "",
+  "attributes": [
+    {
+      "trait_type": "Year",
+      "value": "2022"
+    },
+    {
+      "trait_type": "Month",
+      "value": "August"
+    },
+    {
+      "trait_type": "Season",
+      "value": "PokeTrainers"
+    },
+    {
+      "trait_type": "Rarity",
+      "value": "Royal Bunny"
+    }
+  ]
+}

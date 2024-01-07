@@ -1,0 +1,27 @@
+{
+  "name": "Wendy the Witch",
+  "description": "Bubble bubble toil and troub... AHHH WHAT ARE THESE THINGS???",
+  "image": "https://hunnysseasons.s3.us-east-2.amazonaws.com/65.png",
+  "animation_url": "",
+  "audio_url": "",
+  "interactive_url": "",
+  "external_link": "hunnys.io",
+  "attributes": [
+    {
+      "trait_type": "Season",
+      "value": "30s Cartoon"
+    },
+    {
+      "trait_type": "Rarity",
+      "value": "Relic"
+    },
+    {
+      "trait_type": "Month",
+      "value": "June"
+    },
+    {
+      "trait_type": "Year",
+      "value": "2022"
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "name": "Beryl and Blaze the BBQ Demons",
+  "description": "Meet Beryl and Blaze, the BBQ Demons who work at Dorothy\\'s Diner and are experts at grilling up delicious veggies of all kinds! Beryl is a woman demon who works alongside her trusty pet dragon demon, Blaze. Together, they make the most mouth-watering dishes that will have you coming back for more. They have a special way of infusing each vegetable with a smoky, savory flavor that will leave your taste buds dancing. Beryl and Blaze take their work very seriously, and their BBQ station is always immaculate, with all the tools they need to create their delectable dishes. So if you\\'re a fan of BBQ, be sure to swing by Dorothy\\'s Diner and say hi to Beryl and Blaze - you won\\'t be disappointed!",
+  "image": "https://hunnysseasons.s3.us-east-2.amazonaws.com/129.png",
+  "animation_url": "",
+  "audio_url": "",
+  "interactive_url": "",
+  "external_link": "",
+  "attributes": [
+    {
+      "trait_type": "Month",
+      "value": "April"
+    },
+    {
+      "trait_type": "Generation",
+      "value": "2"
+    },
+    {
+      "trait_type": "Rarity",
+      "value": "Royal Bunny"
+    },
+    {
+      "trait_type": "Season",
+      "value": "Dorothy's Diner"
+    },
+    {
+      "trait_type": "Year",
+      "value": "2023"
+    }
+  ]
+}

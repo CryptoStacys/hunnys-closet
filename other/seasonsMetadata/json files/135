@@ -1,0 +1,31 @@
+{
+"name": "Cyanne the Moonstone Candy Confectioner",
+"description": "Cyanne, the Moonstone Candy Confectioner, is a master of the sweet arts, infusing her creations with a touch of enchantment. With a nimble touch and a vibrant imagination, Cyanne delicately crafts confections that radiate with the ethereal glow of moonstones. Her inventive recipes blend the magical allure of moonstone essence with delightful flavors and textures, captivating all who indulge in her delectable treats. With each sugary masterpiece, Cyanne weaves a spell of delight, transporting those who taste her creations into a realm of pure, sugary enchantment.",
+"image": "https://hunnysseasons.s3.us-east-2.amazonaws.com/135.png",
+"animation_url": "",
+"audio_url": "",
+"interactive_url": "",
+"external_link": "",
+"attributes": [
+{
+"trait_type": "Month",
+"value": "May"
+},
+{
+"trait_type": "Generation",
+"value": "2"
+},
+{
+"trait_type": "Rarity",
+"value": "Relic"
+},
+{
+"trait_type": "Season",
+"value": "Moonstone Mountain"
+},
+{
+"trait_type": "Year",
+"value": "2023"
+}
+]
+}

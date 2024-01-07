@@ -1,0 +1,23 @@
+{
+  "name": "Isis, Goddess of the Afterlife",
+  "description": "Isis was a major goddess in ancient Egypt. She was believed to help the dead enter the afterlife.",
+  "image": "https://hunnysseasons.s3.us-east-2.amazonaws.com/42.png",
+  "animation_url": "",
+  "audio_url": "",
+  "interactive_url": "",
+  "external_link": "hunnys.io",
+  "attributes": [
+    {
+      "trait_type": "Month",
+      "value": "March"
+    },
+    {
+      "trait_type": "Year",
+      "value": "2022"
+    },
+    {
+      "trait_type": "Rarity",
+      "value": "Bunny"
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "name": "Naima, Goddess of the River",
+  "description": "In Greek mythology, the naiads are a female spirit, or nymph, presiding over fountains, wells, springs, streams, brooks and other bodies of fresh water.\n\nFeaturing the first-ever appearance of Sir Hornsworth",
+  "image": "https://hunnysseasons.s3.us-east-2.amazonaws.com/44.png",
+  "animation_url": "",
+  "audio_url": "",
+  "interactive_url": "",
+  "external_link": "hunnys.io",
+  "attributes": [
+    {
+      "trait_type": "Month",
+      "value": "March"
+    },
+    {
+      "trait_type": "Year",
+      "value": "2022"
+    },
+    {
+      "trait_type": "Rarity",
+      "value": "Bunny Duke"
+    },
+    {
+      "trait_type": "Season",
+      "value": "Ancient Goddesses"
+    }
+  ]
+}

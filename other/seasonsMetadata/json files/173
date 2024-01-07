@@ -1,0 +1,31 @@
+{
+    "name": "Mairwen Mari Lwyd",
+    "description": "Mairwen, draped in a regal cloak and adorned with a mystical horse skull headpiece, captures the essence of the Mari Lwyd. She holds the attention with her hypnotic gaze, surrounded by symbols and artifacts that sing of ancient Welsh midwinter customs.",
+    "image": "https://hunnysseasons.s3.us-east-2.amazonaws.com/173.png",
+    "animation_url": "",
+    "audio_url": "",
+    "interactive_url": "",
+    "external_link": "",
+    "attributes": [
+        {
+            "trait_type": "Month",
+            "value": "December"
+        },
+        {
+            "trait_type": "Generation",
+            "value": 2
+        },
+        {
+            "trait_type": "Rarity",
+            "value": "Royal Bunny"
+        },
+        {
+            "trait_type": "Season",
+            "value": "Winter Folklore"
+        },
+        {
+            "trait_type": "Year",
+            "value": 2023
+        }
+    ]
+}
