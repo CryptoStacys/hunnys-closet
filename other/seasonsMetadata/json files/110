@@ -1,0 +1,31 @@
+{
+  "name": "Minty Mila",
+  "description": "Buckle up, buttercups! Mila is sending big hugs and all the love for being part of the Hunny Hive and for minting on Mint Day. You are the real MVPs for always having our back. We couldn't have sped up this fast without all your support and love. Vroom vroom, let's drive into another amazing year taking over the Metaverse!",
+  "image": "https://hunnysseasons.s3.us-east-2.amazonaws.com/110.png",
+  "animation_url": "",
+  "audio_url": "",
+  "interactive_url": "",
+  "external_link": "",
+  "attributes": [
+    {
+      "trait_type": "Month",
+      "value": "February"
+    },
+    {
+      "trait_type": "Generation",
+      "value": "2"
+    },
+    {
+      "trait_type": "Rarity",
+      "value": "Special"
+    },
+    {
+      "trait_type": "Season",
+      "value": "Gifts"
+    },
+    {
+      "trait_type": "Year",
+      "value": "2023"
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "name": "Queen Beetris of Elemeind",
+  "description": "Based on a design from the collection #13 - Queen Beetriss\nhttps://opensea.io/assets/ethereum/0x495f947276749ce646f68ac8c248420045cb7b5e/57124830429581407560204282384407541915263222877884187177766534227012729438209\n\n\"Queen Beetriss located our crew after hearing that we are assisting the Elemeind sisters with relocation. The Queen fled the Eleimeind's home planet days before the sisters lost their battle to save it. She has been looking for her best friend Floraleen ever since. The two need each other to survive! The Queen has agreed to join our program as a Stray Alien.\n\nQueen Beetriss is followed everywhere by a loyal flock of bees. She can command them to mass pollinate & do all sorts of good for any planet she is on. The Queen wields a honeycomb scepter as she leads her army. This busy bee enjoys staying active & interacting with other lifeforms.\"",
+  "image": "https://hunnysseasons.s3.us-east-2.amazonaws.com/59.png",
+  "animation_url": "",
+  "audio_url": "",
+  "interactive_url": "",
+  "external_link": "hunnys.io",
+  "attributes": [
+    {
+      "trait_type": "Month",
+      "value": "May"
+    },
+    {
+      "trait_type": "Year",
+      "value": "2022"
+    },
+    {
+      "trait_type": "Rarity",
+      "value": "Royal Bunny"
+    },
+    {
+      "trait_type": "Season",
+      "value": "Elemental Aliens"
+    }
+  ]
+}

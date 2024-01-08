@@ -1,0 +1,31 @@
+{
+  "name": "Sally the Sneak",
+  "description": "Sally is a master at her craft, stealing from scammers, hackers, and rugged individuals, and giving back to those who were taken advantage of. With her raccoon pal by her side, they make the perfect team, always ready for their next heist! Special gift to Hunnys holders who were scammed, hacked or rugged.",
+  "image": "https://hunnysseasons.s3.us-east-2.amazonaws.com/118.png",
+  "animation_url": "",
+  "audio_url": "",
+  "interactive_url": "",
+  "external_link": "",
+  "attributes": [
+    {
+      "trait_type": "Month",
+      "value": "March"
+    },
+    {
+      "trait_type": "Generation",
+      "value": "2"
+    },
+    {
+      "trait_type": "Rarity",
+      "value": "Special"
+    },
+    {
+      "trait_type": "Season",
+      "value": "Special"
+    },
+    {
+      "trait_type": "Year",
+      "value": "2023"
+    }
+  ]
+}

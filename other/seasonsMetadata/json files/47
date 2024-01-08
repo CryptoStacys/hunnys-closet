@@ -1,0 +1,27 @@
+{
+  "name": "Mika the Bunny Day Queen",
+  "description": "Bunny Day 2022 was such a lovely sight to see! All Mika's friends helped her decorate the garden with poems, flowers, and origami Bunnys. The whole kingdom participated in a giant coloring contest and everyone was a winner! This year's cutest duckling award goes to: Reginald the Duck! ",
+  "image": "https://hunnysseasons.s3.us-east-2.amazonaws.com/47.png",
+  "animation_url": "",
+  "audio_url": "",
+  "interactive_url": "",
+  "external_link": "hunnys.io",
+  "attributes": [
+    {
+      "trait_type": "Month",
+      "value": "April"
+    },
+    {
+      "trait_type": "Rarity",
+      "value": "Special"
+    },
+    {
+      "trait_type": "Season",
+      "value": "Special"
+    },
+    {
+      "trait_type": "Year",
+      "value": "2022"
+    }
+  ]
+}

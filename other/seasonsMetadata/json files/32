@@ -1,0 +1,27 @@
+{
+  "name": "Dorothy the Diner-Bot 1.0",
+  "description": "How ya want yer coffee, sugar? ",
+  "image": "https://hunnysseasons.s3.us-east-2.amazonaws.com/32.png",
+  "animation_url": "",
+  "audio_url": "",
+  "interactive_url": "",
+  "external_link": "hunnys.io",
+  "attributes": [
+    {
+      "trait_type": "Month",
+      "value": "February"
+    },
+    {
+      "trait_type": "Rarity",
+      "value": "Special"
+    },
+    {
+      "trait_type": "Season",
+      "value": "Gifts"
+    },
+    {
+      "trait_type": "Year",
+      "value": "2022"
+    }
+  ]
+}

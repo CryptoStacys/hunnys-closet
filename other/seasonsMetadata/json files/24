@@ -1,0 +1,27 @@
+{
+  "name": "Dottie the Doodle",
+  "description": "I'm upgrading Christmas colors to include the whole rainbow!",
+  "image": "https://hunnysseasons.s3.us-east-2.amazonaws.com/24.png",
+  "animation_url": "",
+  "audio_url": "",
+  "interactive_url": "",
+  "external_link": "",
+  "attributes": [
+    {
+      "trait_type": "Month",
+      "value": "December"
+    },
+    {
+      "trait_type": "Rarity",
+      "value": "Royal Bunny"
+    },
+    {
+      "trait_type": "Season",
+      "value": "NFT Holiday Sweaters"
+    },
+    {
+      "trait_type": "Year",
+      "value": "2021"
+    }
+  ]
+}

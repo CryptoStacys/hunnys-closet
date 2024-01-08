@@ -1,0 +1,31 @@
+{
+  "name": "Melusine The Mallow Harvester",
+  "description": "Melusine is a skilled mallow harvester from a long line of mallow harvesters. She is one of only a few special bunnies who can safely harvest the magical rainbow mallows for baking and cooking! Luckily Melusine is a kind and gracious demon who loves to share and distributes the mallows she harvests to everyone who wants to share their special taste!",
+  "image": "https://hunnysseasons.s3.us-east-2.amazonaws.com/142.png",
+  "animation_url": "",
+  "audio_url": "",
+  "interactive_url": "",
+  "external_link": "",
+  "attributes": [
+    {
+      "trait_type": "Month",
+      "value": "June"
+    },
+    {
+      "trait_type": "Generation",
+      "value": "2"
+    },
+    {
+      "trait_type": "Rarity",
+      "value": "Relic"
+    },
+    {
+      "trait_type": "Season",
+      "value": "Rainbow Mallow Beaches"
+    },
+    {
+      "trait_type": "Year",
+      "value": "2023"
+    }
+  ]
+}

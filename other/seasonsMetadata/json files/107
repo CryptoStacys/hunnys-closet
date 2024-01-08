@@ -1,0 +1,31 @@
+{
+  "name": "Trinity & Entity the Twins",
+  "description": "Trinity and Entity are everyone's favorite elite Borg twins and private security mercenaries on Vega Prime. These advanced cybernetic babes are known for their unparalleled strength and advanced technology, including the latest TrackMaster3000 software upgrade!.",
+  "image": "https://hunnysseasons.s3.us-east-2.amazonaws.com/107.png",
+  "animation_url": "",
+  "audio_url": "",
+  "interactive_url": "",
+  "external_link": "",
+  "attributes": [
+    {
+      "trait_type": "Month",
+      "value": "January"
+    },
+    {
+      "trait_type": "Generation",
+      "value": "2"
+    },
+    {
+      "trait_type": "Rarity",
+      "value": "Bunny Duke"
+    },
+    {
+      "trait_type": "Season",
+      "value": "SynthWave"
+    },
+    {
+      "trait_type": "Year",
+      "value": "2023"
+    }
+  ]
+}

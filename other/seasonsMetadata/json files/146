@@ -1,0 +1,31 @@
+{
+  "name": "Kazuko 'The Ghost' Bounty Queen",
+  "description": "Meet Kazuko, the notorious 'Bounty Queen' of Vega Prime. With her razor-sharp instincts and unmatched combat skills, Kazuko is feared and respected by hunters and criminals alike. Armed with her Ghost Protocol plasma gun and Otherside presence sensor system, she's always one step ahead of her prey. But what truly sets Kazuko apart is her Plasma Capture device, allowing her to bring in even the most elusive targets unharmed (even if they're.. well... ghosts). Whether it's a high-stakes case or a personal vendetta, Kazuko always gets her mark. Hire her for your bounty hunting needs on Vega Prime today.",
+  "image": "https://hunnysseasons.s3.us-east-2.amazonaws.com/146.png",
+  "animation_url": "",
+  "audio_url": "",
+  "interactive_url": "",
+  "external_link": "",
+  "attributes": [
+    {
+      "trait_type": "Month",
+      "value": "July"
+    },
+    {
+      "trait_type": "Generation",
+      "value": "2"
+    },
+    {
+      "trait_type": "Rarity",
+      "value": "Royal Bunny"
+    },
+    {
+      "trait_type": "Season",
+      "value": "SynthWave"
+    },
+    {
+      "trait_type": "Year",
+      "value": "2023"
+    }
+  ]
+}

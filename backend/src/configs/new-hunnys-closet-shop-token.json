@@ -1258,6 +1258,109 @@
             }
         ],
         "metaPath": "https://hunnysclosetshop.s3.us-east-2.amazonaws.com/images/goodies/51"
+    },
+    {
+        "tokenId": 52,
+        "name": "Fluffy Clouds Frame",
+        "attributes": [
+            {
+                "trait_type": "Frame",
+                "value": "Fluffy Clouds"
+            }
+        ],
+        "metaPath": "https://hunnysclosetshop.s3.us-east-2.amazonaws.com/images/goodies/52"
+    },
+    {
+        "tokenId": 53,
+        "name": "Rancher Handbag",
+        "attributes": [
+            {
+                "trait_type": "Hand",
+                "value": "Rancher Handbag"
+            }
+        ],
+        "metaPath": "https://hunnysclosetshop.s3.us-east-2.amazonaws.com/images/goodies/53"
+    },
+    {
+        "tokenId": 54,
+        "name": "Sailor Babe Tote",
+        "attributes": [
+            {
+                "trait_type": "Hand",
+                "value": "Sailor Babe Tote"
+            }
+        ],
+        "metaPath": "https://hunnysclosetshop.s3.us-east-2.amazonaws.com/images/goodies/54"
+    },
+    {
+        "tokenId": 55,
+        "name": "Plain Pastel Backgrounds Set",
+        "attributes": [
+            {
+                "trait_type": "Background",
+                "value": "Pastel Yellow"
+            },
+            {
+                "trait_type": "Background",
+                "value": "Pastel Blue"
+            },
+            {
+                "trait_type": "Background",
+                "value": "Pastel Pink"
+            },
+            {
+                "trait_type": "Background",
+                "value": "Pastel Green"
+            },
+            {
+                "trait_type": "Background",
+                "value": "Pastel Lilac"
+            },
+            {
+                "trait_type": "Background",
+                "value": "Pastel Purple"
+            },
+            {
+                "trait_type": "Frame",
+                "value": "Plain Pastel Arch"
+            },
+            {
+                "trait_type": "Frame",
+                "value": "Plain Pastel Flower"
+            },
+            {
+                "trait_type": "Frame",
+                "value": "Plain Pastel Window"
+            }
+        ],
+        "metaPath": "https://hunnysclosetshop.s3.us-east-2.amazonaws.com/images/goodies/55"
+    },
+    {
+        "tokenId": 56,
+        "name": "Trashy Set",
+        "attributes": [
+            {
+                "trait_type": "Outfit",
+                "value": "Garbage Bag Dress"
+            },
+            {
+                "trait_type": "Hat",
+                "value": "Banana Peel"
+            },
+            {
+                "trait_type": "Hair Style",
+                "value": "Trash Hair"
+            },
+            {
+                "trait_type": "Tattoo",
+                "value": "Trashy"
+            },
+            {
+                "trait_type": "Face Sticker",
+                "value": "Dirty Face"
+            }
+        ],
+        "metaPath": "https://hunnysclosetshop.s3.us-east-2.amazonaws.com/images/goodies/56"
     }
 ]
 

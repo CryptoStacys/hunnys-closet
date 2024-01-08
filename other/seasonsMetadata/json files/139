@@ -1,0 +1,31 @@
+{
+  "name": "Milky Peep the Mallow Farmer",
+  "description": "Milky Peep is the beloved Mallow Farmer who lives just on the edge of the beach. She spends her days taking care of all the beautiful mallow peeps and watering her garden with rainbow water to make all her vegetables extra special.",
+  "image": "https://hunnysseasons.s3.us-east-2.amazonaws.com/139.png",
+  "animation_url": "",
+  "audio_url": "",
+  "interactive_url": "",
+  "external_link": "",
+  "attributes": [
+    {
+      "trait_type": "Month",
+      "value": "June"
+    },
+    {
+      "trait_type": "Generation",
+      "value": "2"
+    },
+    {
+      "trait_type": "Rarity",
+      "value": "Bunny Knight"
+    },
+    {
+      "trait_type": "Season",
+      "value": "Rainbow Mallow Beaches"
+    },
+    {
+      "trait_type": "Year",
+      "value": "2023"
+    }
+  ]
+}

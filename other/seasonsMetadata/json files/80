@@ -1,0 +1,27 @@
+{
+  "name": "Gamer Queen Jelli",
+  "description": "Pew pew! Die evil slime king! You can't defeat me NYAAHHAHHAHHA",
+  "image": "https://hunnysseasons.s3.us-east-2.amazonaws.com/80.png",
+  "animation_url": "",
+  "audio_url": "",
+  "interactive_url": "",
+  "external_link": "",
+  "attributes": [
+    {
+      "trait_type": "Month",
+      "value": "September"
+    },
+    {
+      "trait_type": "Year",
+      "value": "2022"
+    },
+    {
+      "trait_type": "Season",
+      "value": "Special"
+    },
+    {
+      "trait_type": "Rarity",
+      "value": "Special"
+    }
+  ]
+}

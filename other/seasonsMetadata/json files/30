@@ -1,0 +1,27 @@
+{
+  "name": "Cyan the Cybernetic",
+  "description": "If you think my piercings are cool, you should see what my optic interface can do. ",
+  "image": "https://hunnysseasons.s3.us-east-2.amazonaws.com/30.png",
+  "animation_url": "",
+  "audio_url": "",
+  "interactive_url": "",
+  "external_link": "hunnys.io",
+  "attributes": [
+    {
+      "trait_type": "Month",
+      "value": "January"
+    },
+    {
+      "trait_type": "Rarity",
+      "value": "Relic"
+    },
+    {
+      "trait_type": "Season",
+      "value": "Goth & Punk"
+    },
+    {
+      "trait_type": "Year",
+      "value": "2022"
+    }
+  ]
+}

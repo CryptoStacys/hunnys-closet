@@ -1,0 +1,27 @@
+{
+  "name": "Chun-Li the Fighter",
+  "description": "You ready for this?",
+  "image": "https://hunnysseasons.s3.us-east-2.amazonaws.com/49.png",
+  "animation_url": "",
+  "audio_url": "",
+  "interactive_url": "",
+  "external_link": "hunnys.io",
+  "attributes": [
+    {
+      "trait_type": "Season",
+      "value": "Badass Heroines"
+    },
+    {
+      "trait_type": "Rarity",
+      "value": "Bunny"
+    },
+    {
+      "trait_type": "Month",
+      "value": "April"
+    },
+    {
+      "trait_type": "Year",
+      "value": "2022"
+    }
+  ]
+}

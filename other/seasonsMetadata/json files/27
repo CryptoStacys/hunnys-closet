@@ -1,0 +1,27 @@
+{
+  "name": "Deko the Demon",
+  "description": "What are you doing here?",
+  "image": "https://hunnysseasons.s3.us-east-2.amazonaws.com/27.png",
+  "animation_url": "",
+  "audio_url": "",
+  "interactive_url": "",
+  "external_link": "hunnys.io",
+  "attributes": [
+    {
+      "trait_type": "Month",
+      "value": "January"
+    },
+    {
+      "trait_type": "Rarity",
+      "value": "Bunny Knight"
+    },
+    {
+      "trait_type": "Season",
+      "value": "Goth & Punk"
+    },
+    {
+      "trait_type": "Year",
+      "value": "2022"
+    }
+  ]
+}

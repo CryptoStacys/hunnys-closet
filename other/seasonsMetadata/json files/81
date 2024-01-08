@@ -1,0 +1,27 @@
+{
+  "name": "Ratty B, Lady of the Kingdom",
+  "description": "Ratty B is the beloved community manager of the Bunny Kingdom! She loves foxes, Dua Lipa, Pizza, Drumming and the band Phish.",
+  "image": "https://hunnysseasons.s3.us-east-2.amazonaws.com/81.png",
+  "animation_url": "",
+  "audio_url": "",
+  "interactive_url": "",
+  "external_link": "",
+  "attributes": [
+    {
+      "trait_type": "Year",
+      "value": "2022"
+    },
+    {
+      "trait_type": "Month",
+      "value": "September"
+    },
+    {
+      "trait_type": "Season",
+      "value": "Hunnyversary"
+    },
+    {
+      "trait_type": "Rarity",
+      "value": "Bunny"
+    }
+  ]
+}

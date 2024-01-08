@@ -1,0 +1,31 @@
+{
+  "name": "Skyella the Sky Painter",
+  "description": "Skyella the Sky Painter is a mischievous celestial artist with a playful and whimsical spirit. With her incredible power, she can create breathtaking displays of colors and shapes in the sky, transforming it into a canvas of wonder and magic. She loves to shape the clouds into animals, shapes, and figures, creating a sky filled with fluffy and adorable creatures. Her work is responsible for the ever-changing constellations and the vibrant colors that fill the sky of Dreamland, where she is a beloved and revered figure, known for bringing joy and laughter to all who gaze upon her creations.",
+  "image": "https://hunnysseasons.s3.us-east-2.amazonaws.com/120.png",
+  "animation_url": "",
+  "audio_url": "",
+  "interactive_url": "",
+  "external_link": "",
+  "attributes": [
+    {
+      "trait_type": "Month",
+      "value": "March"
+    },
+    {
+      "trait_type": "Generation",
+      "value": "2"
+    },
+    {
+      "trait_type": "Rarity",
+      "value": "Bunny"
+    },
+    {
+  	"trait_type": "Season",
+      "value": "Dreamland"
+    },
+    {
+      "trait_type": "Year",
+      "value": "2023"
+    }
+  ]
+}

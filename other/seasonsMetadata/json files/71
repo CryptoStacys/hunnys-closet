@@ -1,0 +1,27 @@
+{
+  "name": "Chihiro the Brave",
+  "description": "Once You've Met Someone You Never Really Forget Them. It Just Takes A While For Your Memories To Return.",
+  "image": "https://hunnysseasons.s3.us-east-2.amazonaws.com/71.png",
+  "animation_url": "",
+  "audio_url": "",
+  "interactive_url": "",
+  "external_link": "",
+  "attributes": [
+    {
+      "trait_type": "Month",
+      "value": "July"
+    },
+    {
+      "trait_type": "Year",
+      "value": "2022"
+    },
+    {
+      "trait_type": "Rarity",
+      "value": "Bunny Duke"
+    },
+    {
+      "trait_type": "Season",
+      "value": "Miyazaki"
+    }
+  ]
+}

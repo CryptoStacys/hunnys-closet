@@ -1,0 +1,27 @@
+{
+  "name": "Golden Bunny Queen and Hubert",
+  "description": "Thank you for participating in the 2022 Golden Ticket Extravaganza! The Bunny Queen loves you all very much.\n\n...Do you have any gold carrots for Hubert?\n",
+  "image": "https://hunnysseasons.s3.us-east-2.amazonaws.com/40.png",
+  "animation_url": "",
+  "audio_url": "",
+  "interactive_url": "",
+  "external_link": "hunnys.io",
+  "attributes": [
+    {
+      "trait_type": "Month",
+      "value": "March"
+    },
+    {
+      "trait_type": "Rarity",
+      "value": "Special"
+    },
+    {
+      "trait_type": "Season",
+      "value": "Special"
+    },
+    {
+      "trait_type": "Year",
+      "value": "2022"
+    }
+  ]
+}

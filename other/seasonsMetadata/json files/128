@@ -1,0 +1,31 @@
+{
+  "name": "Fara the Food Genie",
+  "description": "Meet Fara, the Food Genie who works at the diner and makes every customer\\'s meal extra special by granting them one food-related wish! Whether you want pony-shaped potatoes to prance around the diner or a Milky Way milkshake that sparkles your pants off, she\\'s got you covered. Though she lives in a tiny toaster, Fara absolutely loves it, and she\\'s decorated it in the best retro style! She\\'s always eager to please her customers and ensure they have the most magical dining experience. So make sure to make a wish with Fara during your next visit to the diner and get ready for a meal like no other!",
+  "image": "https://hunnysseasons.s3.us-east-2.amazonaws.com/128.png",
+  "animation_url": "",
+  "audio_url": "",
+  "interactive_url": "",
+  "external_link": "",
+  "attributes": [
+    {
+      "trait_type": "Month",
+      "value": "April"
+    },
+    {
+      "trait_type": "Generation",
+      "value": "2"
+    },
+    {
+      "trait_type": "Rarity",
+      "value": "Bunny Duke"
+    },
+    {
+      "trait_type": "Season",
+      "value": "Dorothy's Diner"
+    },
+    {
+      "trait_type": "Year",
+      "value": "2023"
+    }
+  ]
+}

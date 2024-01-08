@@ -1,0 +1,27 @@
+{
+  "name": "Palmer the Potato Farmer",
+  "description": "This year's crop is sure to yield some talented marketers.",
+  "image": "https://hunnysseasons.s3.us-east-2.amazonaws.com/83.png",
+  "animation_url": "",
+  "audio_url": "",
+  "interactive_url": "",
+  "external_link": "",
+  "attributes": [
+    {
+      "trait_type": "Season",
+      "value": "Hunnyversary"
+    },
+    {
+      "trait_type": "Month",
+      "value": "September"
+    },
+    {
+      "trait_type": "Year",
+      "value": "2022"
+    },
+    {
+      "trait_type": "Rarity",
+      "value": "Bunny Duke"
+    }
+  ]
+}

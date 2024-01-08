@@ -1,0 +1,31 @@
+{
+  "name": "Zuri the Monsty High Doll",
+  "description": "Embrace your inner beast with Zuri, the Monsty High Doll, flaunting her monstrous charm and high school chic.",
+  "image": "https://hunnysseasons.s3.us-east-2.amazonaws.com/151.png",
+  "animation_url": "",
+  "audio_url": "",
+  "interactive_url": "",
+  "external_link": "",
+  "attributes": [
+    {
+      "trait_type": "Month",
+      "value": "July"
+    },
+    {
+      "trait_type": "Generation",
+      "value": "2"
+    },
+    {
+      "trait_type": "Rarity",
+      "value": "Royal Bunny"
+    },
+    {
+      "trait_type": "Season",
+      "value": "Dollys"
+    },
+    {
+      "trait_type": "Year",
+      "value": "2023"
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "name": "Princess Mononoke the Fierce",
+  "description": "Life is suffering. It is hard. The world is cursed. But still, you find reasons to keep living.",
+  "image": "https://hunnysseasons.s3.us-east-2.amazonaws.com/72.png",
+  "animation_url": "",
+  "audio_url": "",
+  "interactive_url": "",
+  "external_link": "hunnys.io",
+  "attributes": [
+    {
+      "trait_type": "Month",
+      "value": "July"
+    },
+    {
+      "trait_type": "Year",
+      "value": "2022"
+    },
+    {
+      "trait_type": "Season",
+      "value": "Miyazaki"
+    },
+    {
+      "trait_type": "Rarity",
+      "value": "Royal Bunny"
+    }
+  ]
+}

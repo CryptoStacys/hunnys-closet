@@ -1,0 +1,27 @@
+{
+  "name": "Rowan the Rascal",
+  "description": "I'm ready to cause some mischief!",
+  "image": "https://hunnysseasons.s3.us-east-2.amazonaws.com/22.png",
+  "animation_url": "",
+  "audio_url": "",
+  "interactive_url": "",
+  "external_link": "www.hunnys.io",
+  "attributes": [
+    {
+      "trait_type": "Month",
+      "value": "December"
+    },
+    {
+      "trait_type": "Rarity",
+      "value": "Bunny Knight"
+    },
+    {
+      "trait_type": "Season",
+      "value": "NFT Holiday Sweaters"
+    },
+    {
+      "trait_type": "Year",
+      "value": "2021"
+    }
+  ]
+}

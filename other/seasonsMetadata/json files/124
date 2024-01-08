@@ -1,0 +1,31 @@
+{
+  "name": "Human Dorothy, Gazoopi and the Trick Pet Lobster",
+  "description": "This April Fool\\'s Day, embark on a whimsical journey with Dorothy, as she\\'s unexpectedly whisked away to an alternate dimension! Experience her confusion and disgust as she transforms into a human and grapples with her new form. Join her on an outlandish quest to make Gazoopi sushi alongside Mika, all while trying to find her way back home. Will Dorothy return to her true robotic self and her beloved diner, or will she be forever trapped in a world of cured meats, peculiar creatures, and mysterious tattoos?",
+  "image": "https://hunnysseasons.s3.us-east-2.amazonaws.com/124.png",
+  "animation_url": "",
+  "audio_url": "",
+  "interactive_url": "",
+  "external_link": "",
+  "attributes": [
+    {
+      "trait_type": "Month",
+      "value": "April"
+    },
+    {
+      "trait_type": "Generation",
+      "value": "2"
+    },
+    {
+      "trait_type": "Rarity",
+      "value": "Special"
+    },
+    {
+      "trait_type": "Season",
+      "value": "Special"
+    },
+    {
+      "trait_type": "Year",
+      "value": "2023"
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "name": "Jesabelle the Royal Queen",
+  "description": "That's a big sword.",
+  "image": "https://hunnysseasons.s3.us-east-2.amazonaws.com/8.png",
+  "animation_url": "",
+  "audio_url": "",
+  "interactive_url": "",
+  "external_link": "www.hunnys.io",
+  "attributes": [
+    {
+      "trait_type": "Year",
+      "value": "2021"
+    },
+    {
+      "trait_type": "Season",
+      "value": "Halloween"
+    },
+    {
+      "trait_type": "Rarity",
+      "value": "Bunny Knight"
+    },
+    {
+      "trait_type": "Month",
+      "value": "October"
+    }
+  ]
+}

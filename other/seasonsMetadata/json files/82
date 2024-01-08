@@ -1,0 +1,27 @@
+{
+  "name": "Blake the Bunny Wrangler",
+  "description": "These naughty bunnies won't get away with their antics on my watch!",
+  "image": "https://hunnysseasons.s3.us-east-2.amazonaws.com/82.png",
+  "animation_url": "",
+  "audio_url": "",
+  "interactive_url": "",
+  "external_link": "",
+  "attributes": [
+    {
+      "trait_type": "Month",
+      "value": "September"
+    },
+    {
+      "trait_type": "Year",
+      "value": "2022"
+    },
+    {
+      "trait_type": "Season",
+      "value": "Hunnyversary"
+    },
+    {
+      "trait_type": "Rarity",
+      "value": "Bunny Knight"
+    }
+  ]
+}

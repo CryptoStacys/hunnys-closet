@@ -1,0 +1,27 @@
+{
+  "name": "Crystal the Owl Tamer",
+  "description": "The snow never bothered me anyway!",
+  "image": "https://hunnysseasons.s3.us-east-2.amazonaws.com/9.png",
+  "animation_url": "",
+  "audio_url": "",
+  "interactive_url": "",
+  "external_link": "https://hunnys.io",
+  "attributes": [
+    {
+      "trait_type": "Month",
+      "value": "November"
+    },
+    {
+      "trait_type": "Rarity",
+      "value": "Bunny"
+    },
+    {
+      "trait_type": "Season",
+      "value": "Snow Queen"
+    },
+    {
+      "trait_type": "Year",
+      "value": "2021"
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "name": "Spectra the Shapeshifter",
+  "description": "Spectra the shapeshifter is a playful and mischievous creature, capable of transforming her appearance into any shape she desires. She enjoys using her shape-shifting abilities to play pranks on travelers and inhabitants, often causing confusion and bewilderment. Despite her playful nature, Spectra has a kind-hearted member of the Dreamland and takes pleasure in helping those in need, making her a beloved and valuable member of any community lucky enough to call her friend.",
+  "image": "https://hunnysseasons.s3.us-east-2.amazonaws.com/119.png",
+  "animation_url": "",
+  "audio_url": "",
+  "interactive_url": "",
+  "external_link": "",
+  "attributes": [
+    {
+      "trait_type": "Month",
+      "value": "March"
+    },
+    {
+      "trait_type": "Generation",
+      "value": "2"
+    },
+    {
+      "trait_type": "Rarity",
+      "value": "Knight"
+    },
+    {
+      "trait_type": "Season",
+      "value": "Dreamland"
+    },
+    {
+      "trait_type": "Year",
+      "value": "2023"
+    }
+  ]
+}

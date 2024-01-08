@@ -1,0 +1,31 @@
+{
+"name": "Bedtime Bunny Babe Rocksie",
+"description": "Rocksie, the cave girl bunny with bones adorning her hair, whispers tales of ancient times and adventurous spirits. Her companion, Pebblepuff the dino, is a relic of a world long forgotten, whispering stories of fiery volcanoes and timeless bonds. Her dino blankie is a canvas of ancient tales, every thread whispering secrets of prehistoric wonders and warm, fiery dreams.",
+"image": "https://hunnysseasons.s3.us-east-2.amazonaws.com/156.png",
+"animation_url": "",
+"audio_url": "",
+"interactive_url": "",
+"external_link": "",
+"attributes": [
+{
+    "trait_type": "Month",
+    "value": "September"
+}, 
+{
+    "trait_type": "Generation",
+    "value": 2
+}, 
+{
+    "trait_type": "Rarity",
+    "value": "Bunny Duke"
+}, 
+{
+    "trait_type": "Season",
+    "value": "Bedtime Bunny Babes"
+}, 
+{
+    "trait_type": "Year",
+    "value": 2023
+}
+]
+}

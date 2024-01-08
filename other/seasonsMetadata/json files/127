@@ -1,0 +1,31 @@
+{
+  "name": "Cillia the Cyclops",
+  "description": "Meet Cillia, the adorable alien babe living in a world far away! She loves to rock her favorite pair of shades on her head, even though she only has one eye. Her sparkling space locks are out-of-this-world cute, and she's always grooving to the beat of her favorite tunes. Cillia also loves creating chunky jewelry from space bits that are super shiny! Though she//'s not had any takers yet, she//'s always looking for someone who loves her space creations as much as she does. Despite sometimes getting orders wrong, she//'s like a mind-reader when it comes to knowing what her customers really want. And shh...don//'t tell anyone, but she has a secret soft spot for feeding the space creatures that live by the dumpster!",
+  "image": "https://hunnysseasons.s3.us-east-2.amazonaws.com/127.png",
+  "animation_url": "",
+  "audio_url": "",
+  "interactive_url": "",
+  "external_link": "",
+  "attributes": [
+    {
+      "trait_type": "Month",
+      "value": "April"
+    },
+    {
+      "trait_type": "Generation",
+      "value": "2"
+    },
+    {
+      "trait_type": "Rarity",
+      "value": "Bunny Knight"
+    },
+    {
+      "trait_type": "Season",
+      "value": "Dorothy//'s Diner"
+    },
+    {
+      "trait_type": "Year",
+      "value": "2023"
+    }
+  ]
+}

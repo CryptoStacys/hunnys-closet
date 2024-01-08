@@ -1,0 +1,31 @@
+{
+  "name": "Lexa the Libra",
+  "description": "Dec 22, 2022 - You may feel a bit sluggish today, Libra. Your warrior spirit would rather stay home on the couch than get up and fight. This is fine. You may simply need a break from your quest for world domination. Remember that a good leader also takes the time to sit back and reflect on recent events in order to make better plans for the future.",
+  "image": "https://hunnysseasons.s3.us-east-2.amazonaws.com/98.png",
+  "animation_url": "",
+  "audio_url": "",
+  "interactive_url": "",
+  "external_link": "",
+  "attributes": [
+    {
+      "trait_type": "Generation",
+      "value": "2"
+    },
+    {
+      "trait_type": "Month",
+      "value": "December"
+    },
+    {
+      "trait_type": "Rarity",
+      "value": "Bunny Duke"
+    },
+    {
+      "trait_type": "Season",
+      "value": "Zodiacs"
+    },
+    {
+      "trait_type": "Year",
+      "value": "2022"
+    }
+  ]
+}

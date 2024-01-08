@@ -1,0 +1,27 @@
+{
+  "name": "Charlie and Cookie Bird",
+  "description": "Don't get crumbs on me!",
+  "image": "https://hunnysseasons.s3.us-east-2.amazonaws.com/35.png",
+  "animation_url": "",
+  "audio_url": "",
+  "interactive_url": "",
+  "external_link": "hunnys.io",
+  "attributes": [
+    {
+      "trait_type": "Month",
+      "value": "February"
+    },
+    {
+      "trait_type": "Season",
+      "value": "Valentines Candy"
+    },
+    {
+      "trait_type": "Year",
+      "value": "2022"
+    },
+    {
+      "trait_type": "Rarity",
+      "value": "Bunny"
+    }
+  ]
+}

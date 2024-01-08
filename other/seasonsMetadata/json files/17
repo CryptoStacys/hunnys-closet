@@ -1,0 +1,27 @@
+{
+  "name": "Samantha the Holiday Present",
+  "description": "A special holiday present for everyone! ",
+  "image": "https://hunnysseasons.s3.us-east-2.amazonaws.com/17.png",
+  "animation_url": "",
+  "audio_url": "",
+  "interactive_url": "",
+  "external_link": "",
+  "attributes": [
+    {
+      "trait_type": "Month",
+      "value": "December"
+    },
+    {
+      "trait_type": "Rarity",
+      "value": "Special"
+    },
+    {
+      "trait_type": "Year",
+      "value": "2021"
+    },
+    {
+      "trait_type": "Season",
+      "value": "Gifts"
+    }
+  ]
+}

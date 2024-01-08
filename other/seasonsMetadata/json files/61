@@ -1,0 +1,27 @@
+{
+  "name": "Betsy the Baker",
+  "description": "Hey Suga, do you want some apple pie?",
+  "image": "https://hunnysseasons.s3.us-east-2.amazonaws.com/61.png",
+  "animation_url": "",
+  "audio_url": "",
+  "interactive_url": "",
+  "external_link": "hunnys.io",
+  "attributes": [
+    {
+      "trait_type": "Month",
+      "value": "June"
+    },
+    {
+      "trait_type": "Rarity",
+      "value": "Bunny"
+    },
+    {
+      "trait_type": "Season",
+      "value": "30s Cartoon"
+    },
+    {
+      "trait_type": "Year",
+      "value": "2022"
+    }
+  ]
+}
