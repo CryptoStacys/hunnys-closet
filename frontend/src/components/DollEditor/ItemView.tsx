@@ -52,6 +52,11 @@ export default function ItemView(props: { selectedTrait: Trait; selectedTraitSet
   const [sortType, setSortType] = useState('default');
   const [user] = useAtom(userAtom);
   const [allTraits] = useAtom(allTraitsAtom);
+  const SPECIAL_WALLET_ADDRESSES = [
+  '0xB179Ec3179f20452710dc544FCd1486b8e7be4C0', // Hypebunny.eth
+  '0x18875D28714cf2f434909a42585BaF5d42a93c68',  // Rat dev wallet
+  '0x55Abdc04655d590a48BCd1B996115448b71b7a84' // Stacys
+  ];
 
   useEffect(() => {
     let sortedData = allTraits.traits.filter(trait =>
@@ -187,6 +192,13 @@ export default function ItemView(props: { selectedTrait: Trait; selectedTraitSet
   }
 
   function getColorsAvailable() {
+    // Check if the user's wallet address is one of the special addresses
+    if (SPECIAL_WALLET_ADDRESSES.includes(user?.address ?? '')) {
+      // If a special wallet, return all colors
+      return Object.keys(colorNames);
+    }
+  
+    // Existing logic for getting available colors
     let colorsAvailable: string[] = Object.values(user!.colors);
     const groups: any = colorGroups;
     if (colorFilter !== "All") {
@@ -194,6 +206,7 @@ export default function ItemView(props: { selectedTrait: Trait; selectedTraitSet
     }
     return colorsAvailable;
   }
+  
 
   // convert hunnys color name to rgb values
   function colorNameToRGB(name: string): string {
@@ -392,15 +405,22 @@ export default function ItemView(props: { selectedTrait: Trait; selectedTraitSet
   }
 
   function checkForOwnedTrait(trait: Trait): number {
+    // Check if the user's wallet address is one of the special addresses
+    if (SPECIAL_WALLET_ADDRESSES.includes(user?.address ?? '')) {
+      return 1; // Treat all traits as owned for these special wallets
+    }
+  
+    // Existing logic to check if a trait is owned
     let result = false;
-
     let userTraits = getTraits();
-    let traitMatch = userTraits.findIndex((ele) => { return (ele.name === trait.name) && (ele.attribute === trait.attribute)})
-    if(traitMatch !== -1 || trait.name === 'Empty') {
+    let traitMatch = userTraits.findIndex((ele) => { 
+      return (ele.name === trait.name) && (ele.attribute === trait.attribute)
+    });
+    if (traitMatch !== -1 || trait.name === 'Empty') {
       result = true;
     }
-
-    return result ? 1 : 0;;
+  
+    return result ? 1 : 0;
   }
 
   const startIndex = (currentPage - 1) * ITEMS_PER_PAGE;

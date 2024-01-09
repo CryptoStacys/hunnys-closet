@@ -2,6 +2,8 @@ import ChainService from './chain-service.js';
 import CloneService from './clone-service.js';
 import TokenService from './token-service.js';
 
+const SPECIAL_WALLET_ADDRESS = '0xa7758394D8f7fD23b0d9F13E02427B514687394B';
+
 
 const ContractService = {
     getAllTraitData: function () {
