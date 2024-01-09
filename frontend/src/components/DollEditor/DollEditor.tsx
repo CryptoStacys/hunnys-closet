@@ -17,7 +17,7 @@ import Icon from "../Icon/Icon";
 import { allTraitsAtom } from "../../data/store";
 
 import { attributes, localStorageToken } from "../../data/config";
-import { Trait } from "../../data/global";
+import { Attribute, Trait } from "../../data/global";
 
 // if token is missing attributes, just add empty trait there
 function formatToken(input: Trait[]) {
@@ -63,7 +63,7 @@ export default function DollEditor(props: { id: number; selectDoll: Function }) 
   const [saved, setSaved] = useAtom(savedAtom); // tracks if user saved dolly changes
   const [view, viewSet] = useState("grid");
   const [unsavedChanges, setUnsavedChanges] = useState(false);
-  const [token, tokenSet] = useState<Trait[]>([]);
+  const [token, tokenSet] = useState<Attribute[]>([]);
   const [isSaving, setIsSaving] = useState(false);
   const [selectedTrait, selectedTraitSet] = useState<Trait>();
   const [modal, modalSet] = useAtom(modalAtom);
@@ -71,6 +71,7 @@ export default function DollEditor(props: { id: number; selectDoll: Function }) 
   const [successMessage, setSuccessMessage] = useState("");
   const [dollyImageDataURL, setDollyImageDataURL] = useState("");
   const [selectedHeadline, setSelectedHeadline] = useState("");
+  
   
   function getRandomHeadline() {
     const headlines = [
@@ -152,6 +153,7 @@ function setRandomHeadline() {
       const isSaved = areTokensEqual(token, savedToken);
       setSaved(isSaved);
       if (!isSaved) {
+        //@ts-ignore
         logDifferences(token, savedToken);
       }
     }
@@ -434,7 +436,16 @@ function setRandomHeadline() {
           {/* DISPLAY ALL ITEM SLOTS */}
           {!selectedTrait && (
             <>
-              <DollEditorOptions token={token} tokenSet={tokenSet} view={view} viewSet={viewSet} />
+              <DollEditorOptions 
+                token={token} 
+                tokenSet={tokenSet} 
+                view={view} 
+                viewSet={viewSet} 
+                selectedDollyId={props.id}
+                //@ts-ignore
+                currentTraits={token} 
+                onAttributesUpdated={(updatedAttributes) => tokenSet(updatedAttributes)}
+              />
               {view === "list" && <ListView token={token} selectedTraitSet={selectedTraitSet} />}
               {view === "card" && <CardView token={token} selectedTraitSet={selectedTraitSet} />}
               {view === "grid" && <GridView token={token} selectedTraitSet={selectedTraitSet} allTraits={allTraits.traits} traitCounts={traitCounts} />}
