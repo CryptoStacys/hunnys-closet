@@ -1,0 +1,14 @@
+{
+  "name": "Winter Solstice Pack",
+  "description": "It's Solstice Time.\n\n\n\nOwning this Winter Solstice Pack brings you the following four stylish Hunnys Closet Items, just in time for Winter Solstice festivals:\n\nHat: Winter Solstice Crown\n\nAccessory: Winter Solstice Dangle Earring\n\n\n\nHair Style: Winter Solstice Curls\n\n\n\nFace Sticker: Winter Solstice Eyeshadow\n\n\n\nAll pieces purchased within this Hunnys Closet Shop collection will immediately unlock the specified item(s) for use in the [Hunnys Closet](https://closet.hunnys.io).\n\n\n\nAs long as you currently hold this token in the same wallet that you are connected with when using the [Hunnys Closet](https://closet.hunnys.io), it will automatically be available for use - enjoy!\n\n",
+  "image": "https://hunnysclosetshop.s3.us-east-2.amazonaws.com/images/goodies/51.png",
+  "external_url": "",
+  "background_color": "",
+  "attributes": [
+    { "trait_type": "Type", "value": "Set" },
+    { "trait_type": "Special", "value": "Winter 2023" }
+  ],
+  "supply": "200",
+  "customImage": "",
+  "customAnimationUrl": ""
+}

@@ -1,0 +1,11 @@
+{
+  "name": "Cow Set",
+  "description": "Ever wanted to dress up like a Moo-vie star?\n\nEmbrace your inner Cowgirl with this adorable Cow Set! And, if you REALLY want to be friends with Palmer the Potato Farmer, you can check out the Piggy Set, too, available in the Hunnys Closet shop.\n\nOwning this unlocks the following set of Hunnys Closet items:\nAccessory: Cow Bell\nHand: Milk\nHat: Cow Ears\nOutfit: Cowbelle Crop\nHair Style: Cow Hair with Bangs\n\nAll pieces purchased within this Hunnys Closet Shop collection will immediately unlock the specified item(s) for use in the Hunnys Closet: https://closet.hunnys.io \n\nAs long as you currently hold this token in the same wallet that you are connected with when using the Hunnys Closet, it will automatically be available for use - enjoy!",
+  "image": "https://hunnysclosetshop.s3.us-east-2.amazonaws.com/images/goodies/2.png",
+  "external_url": "",
+  "background_color": "",
+  "attributes": [{ "trait_type": "Type", "value": "Set" }],
+  "supply": "500",
+  "customImage": "",
+  "customAnimationUrl": ""
+}

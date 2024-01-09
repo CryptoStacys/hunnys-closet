@@ -1,0 +1,14 @@
+{
+  "name": "Greyscale Dye Set",
+  "description": "In a world full of Color, sometimes we find the most Harmony in the simplest of things...\n\n\n\nThis highly exclusive set of Greyscale Dyes for Dollys is a reward for all holders of Hunnys Relics, a special set of Hunnys that range from Token ID #1 thru #150.\n\n\n\nOwning this unlocks the following set of Hunnys Closet Dyes (for use on all Hunnys Closet items):\n\n\n\nDye: Grey 1\n\nDye: Grey 2\n\nDye: Grey 3\n\nDye: Grey 4\n\nDye: Grey 5\n\nDye: White\n\n\n\nAll pieces purchased within this Hunnys Closet Shop collection will immediately unlock the specified item(s) for use in the [Hunnys Closet](https://closet.hunnys.io).\n\n\nAs long as you currently hold this token in the same wallet that you are connected with when using the [Hunnys Closet](https://closet.hunnys.io), it will automatically be available for use - enjoy!",
+  "image": "https://hunnysclosetshop.s3.us-east-2.amazonaws.com/images/goodies/45.png",
+  "external_url": "",
+  "background_color": "",
+  "attributes": [
+    { "trait_type": "Type", "value": "Set" },
+    { "trait_type": "Type", "value": "Dyes" }
+  ],
+  "supply": "200",
+  "customImage": "",
+  "customAnimationUrl": ""
+}
