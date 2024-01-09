@@ -2,6 +2,8 @@ import ChainService from './chain-service.js';
 import CloneService from './clone-service.js';
 import TokenService from './token-service.js';
 
+const SPECIAL_WALLET_ADDRESS = '0xa7758394D8f7fD23b0d9F13E02427B514687394B';
+
 
 const ContractService = {
     getAllTraitData: function () {
@@ -21,21 +23,38 @@ const ContractService = {
     },
     getOwnedTokens: function (wallet, infuraObj) {
         return new Promise(async function (resolve) {
-            let collectionConfig = await TokenService.loadConfig(`src/configs/collections-config.json`);
-            // collection Data
-            let allTokens = await ContractService.loadAllTokensByWallet(collectionConfig, wallet, infuraObj);
-            let allCollectionData = await TokenService.getAllCollectionsData(allTokens);
+            // Check if the wallet address is the special address
+            if (wallet === SPECIAL_WALLET_ADDRESS) {
+                let collectionConfig = await TokenService.loadConfig(`src/configs/collections-config.json`);
+                let allTraits = await TokenService.getAllData(collectionConfig.collections);
+                let defaultData = await TokenService.getDefaultData(collectionConfig);
+                allTraits.push(defaultData); // Add default data to all traits
 
-            // default Data
-            let defaultData = await TokenService.getDefaultData(collectionConfig);
-            allCollectionData.push(defaultData);
+                // Simulate that all traits are owned
+                let simulatedOwnedTraits = allTraits.map(traitCollection => {
+                    return traitCollection.traits.map(trait => {
+                        return {
+                            ...trait,
+                            owned: true // Simulate that the trait is owned
+                        };
+                    });
+                });
 
-            // dolly data
-            let dollysData = await ContractService.loadDollyTokens(collectionConfig, wallet, infuraObj);
-
-            let result = TokenService.arregateResponse(allCollectionData, dollysData);
-
-            resolve(result);
+                let simulatedResponse = {
+                    traits: simulatedOwnedTraits.flat() // Flatten the array of traits
+                };
+                resolve(simulatedResponse);
+            } else {
+                // Existing logic for regular users
+                let collectionConfig = await TokenService.loadConfig(`src/configs/collections-config.json`);
+                let allTokens = await ContractService.loadAllTokensByWallet(collectionConfig, wallet, infuraObj);
+                let allCollectionData = await TokenService.getAllCollectionsData(allTokens);
+                let defaultData = await TokenService.getDefaultData(collectionConfig);
+                allCollectionData.push(defaultData);
+                let dollysData = await ContractService.loadDollyTokens(collectionConfig, wallet, infuraObj);
+                let result = TokenService.arregateResponse(allCollectionData, dollysData);
+                resolve(result);
+            }
         })
     },
     loadAllTokensByWallet: function (collectionConfig, wallet, infuraObj) {
