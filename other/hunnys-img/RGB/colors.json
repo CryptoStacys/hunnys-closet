@@ -1,1 +1,72 @@
-{}
+{
+  "Harmony Blue": {
+    "r": 17,
+    "g": 161,
+    "b": 241
+  },
+  "Harmony Dark Blue": {
+    "r": 4,
+    "g": 121,
+    "b": 187
+  },
+  "Harmony Dark Green": {
+    "r": 9,
+    "g": 114,
+    "b": 19
+  },
+  "Harmony Dark Indigo": {
+    "r": 2,
+    "g": 49,
+    "b": 96
+  },
+  "Harmony Dark Orange": {
+    "r": 173,
+    "g": 87,
+    "b": 1
+  },
+  "Harmony Dark Red": {
+    "r": 155,
+    "g": 3,
+    "b": 3
+  },
+  "Harmony Dark Violet": {
+    "r": 108,
+    "g": 0,
+    "b": 95
+  },
+  "Harmony Dark Yellow": {
+    "r": 189,
+    "g": 153,
+    "b": 0
+  },
+  "Harmony Green": {
+    "r": 32,
+    "g": 159,
+    "b": 45
+  },
+  "Harmony Indigo": {
+    "r": 0,
+    "g": 70,
+    "b": 139
+  },
+  "Harmony Orange": {
+    "r": 237,
+    "g": 126,
+    "b": 14
+  },
+  "Harmony Red": {
+    "r": 230,
+    "g": 12,
+    "b": 12
+  },
+  "Harmony Violet": {
+    "r": 177,
+    "g": 24,
+    "b": 159
+  },
+  "Harmony Yellow": {
+    "r": 255,
+    "g": 210,
+    "b": 21
+  }
+}

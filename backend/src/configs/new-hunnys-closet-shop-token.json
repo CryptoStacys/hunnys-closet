@@ -1361,6 +1361,71 @@
             }
         ],
         "metaPath": "https://hunnysclosetshop.s3.us-east-2.amazonaws.com/images/goodies/56"
-    }
+    },
+    [
+        {
+            "tokenId": 57,
+            "name": "Color Harmony Dye Set",
+            "attributes": [
+                {
+                    "trait_type": "Dye",
+                    "value": "Harmony Blue"
+                },
+                {
+                    "trait_type": "Dye",
+                    "value": "Harmony Dark Blue"
+                },
+                {
+                    "trait_type": "Dye",
+                    "value": "Harmony Dark Green"
+                },
+                {
+                    "trait_type": "Dye",
+                    "value": "Harmony Dark Indigo"
+                },
+                {
+                    "trait_type": "Dye",
+                    "value": "Harmony Dark Orange"
+                },
+                {
+                    "trait_type": "Dye",
+                    "value": "Harmony Dark Red"
+                },
+                {
+                    "trait_type": "Dye",
+                    "value": "Harmony Dark Violet"
+                },
+                {
+                    "trait_type": "Dye",
+                    "value": "Harmony Dark Yellow"
+                },
+                {
+                    "trait_type": "Dye",
+                    "value": "Harmony Green"
+                },
+                {
+                    "trait_type": "Dye",
+                    "value": "Harmony Indigo"
+                },
+                {
+                    "trait_type": "Dye",
+                    "value": "Harmony Orange"
+                },
+                {
+                    "trait_type": "Dye",
+                    "value": "Harmony Red"
+                },
+                {
+                    "trait_type": "Dye",
+                    "value": "Harmony Violet"
+                },
+                {
+                    "trait_type": "Dye",
+                    "value": "Harmony Yellow"
+                }
+            ],
+            "metaPath": "https://hunnysclosetshop.s3.us-east-2.amazonaws.com/images/goodies/57"
+        }
+    ]
 ]
 

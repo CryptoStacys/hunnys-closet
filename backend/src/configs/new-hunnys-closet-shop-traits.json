@@ -95,7 +95,21 @@
           {"name":"FLS Neon Purple (Shop)","colors":0,"rarity":"Common","tags":[],"token_id":47},
           {"name":"FLS Periwinkle (Shop)","colors":0,"rarity":"Common","tags":[],"token_id":47},
           {"name":"FLS Pink (Shop)","colors":0,"rarity":"Common","tags":[],"token_id":47},
-          {"name":"FLS Plum (Shop)","colors":0,"rarity":"Common","tags":[],"token_id":47}
+          {"name":"FLS Plum (Shop)","colors":0,"rarity":"Common","tags":[],"token_id":47},
+          {"name": "Harmony Blue","colors": 3,"rarity": 0,"tags": [],"token_id": 57},
+          {"name": "Harmony Dark Blue","colors": 4,"rarity": 0,"tags": [],"token_id": 57},
+          {"name": "Harmony Dark Green","colors": 3,"rarity": 0,"tags": [],"token_id": 57},
+          {"name": "Harmony Dark Indigo","colors": 0,"rarity": 0,"tags": [],"token_id": 57},
+          {"name": "Harmony Dark Orange","colors": 0,"rarity": 0,"tags": [],"token_id": 57},
+          {"name": "Harmony Dark Red","colors": 0,"rarity": 0,"tags": [],"token_id": 57},
+          {"name": "Harmony Dark Violet","colors": 0,"rarity": 0,"tags": [],"token_id": 57},
+          {"name": "Harmony Dark Yellow","colors": 0,"rarity": 0,"tags": [],"token_id": 57},
+          {"name": "Harmony Green","colors": 0,"rarity": 0,"tags": [],"token_id": 57},
+          {"name": "Harmony Indigo","colors": 1,"rarity": 0,"tags": [],"token_id": 57},
+          {"name": "Harmony Orange","colors": 1,"rarity": 0,"tags": [],"token_id": 57},
+          {"name": "Harmony Red","colors": 1,"rarity": 0,"tags": [],"token_id": 57},
+          {"name": "Harmony Violet","colors": 1,"rarity": 0,"tags": [],"token_id": 57},
+          {"name": "Harmony Yellow","colors": 3,"rarity": 0,"tags": [],"token_id": 57}
         ]
       },
       {
