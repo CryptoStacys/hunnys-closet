@@ -1,44 +1,20 @@
 {
   "attributes": [
-    {"name": "Background", "traits": [
-        {"name": "Pastel Yellow","colors": 0,"rarity": "Common","tags": [],"token_id": 55},
-        {"name": "Pastel Blue","colors": 0,"rarity": "Common","tags": [],"token_id": 55},
-        {"name": "Pastel Pink","colors": 0,"rarity": "Common","tags": [],"token_id": 55},
-        {"name": "Pastel Green","colors": 0,"rarity": "Common","tags": [],"token_id": 55},
-        {"name": "Pastel Lilac","colors": 0,"rarity": "Common","tags": [],"token_id": 55},
-        {"name": "Pastel Purple","colors": 0,"rarity": "Common","tags": [],"token_id": 55}
-    ]},
-
-    {"name": "Face Sticker", "traits": [
-        {"name": "Dirty Face","colors": 1,"rarity": "Legendary","tags": [],"token_id": 56}
-    ]},
-
-    {"name": "Frame", "traits": [
-        {"name": "Fluffy Clouds","colors": 3,"rarity": "Mythic","tags": [],"token_id": 52},
-        {"name": "Plain Pastel Arch","colors": 1,"rarity": "Common","tags": [],"token_id": 55},
-        {"name": "Plain Pastel Flower","colors": 1,"rarity": "Common","tags": [],"token_id": 55},
-        {"name": "Plain Pastel Window","colors": 1,"rarity": "Common","tags": [],"token_id": 55}
-    ]},
-
-    {"name": "Hair Style", "traits": [
-        {"name": "Trash Hair","colors": 1,"rarity": "Legendary","tags": ["twoParts"],"token_id": 56}
-    ]},
-
-    {"name": "Hand", "traits": [
-        {"name": "Rancher Handbag","colors": 4,"rarity": "Rare","tags": ["skin"],"token_id": 53},
-        {"name": "Sailor Babe Tote","colors": 3,"rarity": "Uncommon","tags": ["skin"],"token_id": 54}
-    ]},
-
-    {"name": "Hat", "traits": [
-        {"name": "Ba[]a Peel","colors": 3,"rarity": "Legendary","tags": [],"token_id": 56}
-    ]},
-
-    {"name": "Outfit", "traits": [
-        {"name": "Garbage Bag Dress","colors": 1,"rarity": "Legendary","tags": [],"token_id": 56}
-    ]},
-
-    {"name": "Tattoo", "traits": [
-        {"name": "Trashy","colors": 0,"rarity": "Legendary","tags": [],"token_id": 56}
+    {"name": "Dye", "traits": [
+        {"name": "Harmony Blue","colors": 3,"rarity": 0,"tags": [],"token_id": 57},
+        {"name": "Harmony Dark Blue","colors": 4,"rarity": 0,"tags": [],"token_id": 57},
+        {"name": "Harmony Dark Green","colors": 3,"rarity": 0,"tags": [],"token_id": 57},
+        {"name": "Harmony Dark Indigo","colors": 0,"rarity": 0,"tags": [],"token_id": 57},
+        {"name": "Harmony Dark Orange","colors": 0,"rarity": 0,"tags": [],"token_id": 57},
+        {"name": "Harmony Dark Red","colors": 0,"rarity": 0,"tags": [],"token_id": 57},
+        {"name": "Harmony Dark Violet","colors": 0,"rarity": 0,"tags": [],"token_id": 57},
+        {"name": "Harmony Dark Yellow","colors": 0,"rarity": 0,"tags": [],"token_id": 57},
+        {"name": "Harmony Green","colors": 0,"rarity": 0,"tags": [],"token_id": 57},
+        {"name": "Harmony Indigo","colors": 1,"rarity": 0,"tags": [],"token_id": 57},
+        {"name": "Harmony Orange","colors": 1,"rarity": 0,"tags": [],"token_id": 57},
+        {"name": "Harmony Red","colors": 1,"rarity": 0,"tags": [],"token_id": 57},
+        {"name": "Harmony Violet","colors": 1,"rarity": 0,"tags": [],"token_id": 57},
+        {"name": "Harmony Yellow","colors": 3,"rarity": 0,"tags": [],"token_id": 57}
     ]}
   ]
 }
