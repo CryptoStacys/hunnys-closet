@@ -1,0 +1,14 @@
+{
+  "name": "Color Harmony Dye Set",
+  "description": "Let\u2019s make it rainbow! For Color Harmony purists, we are giving you the full Hunnys rainbow full of dyes. In fact, we will even give you two kinds: the Classic, and the Dark Side. For whether you are feeling naughty or nice with your harmonious color palette. Owning this set will help you reach color nirvana as it unlocks the 14 following Dyes for Hunnys Closet:\n\nDye: Harmony Dark Red\n\nDye: Harmony Red\n\nDye: Harmony Dark Orange\n\nDye: Harmony Orange\n\nDye: Harmony Dark Yellow\n\nDye: Harmony Yellow\n\nDye: Harmony Dark Green\n\nDye: Harmony Green\n\nDye: Harmony Dark Blue\n\nDye: Harmony Blue\n\nDye: Harmony Dark Indigo\n\nDye: Harmony Indigo\n\nDye: Harmony Dark Violet\n\nDye: Harmony Violet\n\n\n\nAll pieces purchased within this Hunnys Closet Shop collection will immediately unlock the specified item(s) for use in the [Hunnys Closet](https://closet.hunnys.io).\n\n\n\nAs long as you currently hold this token in the same wallet that you are connected with when using the [Hunnys Closet](https://closet.hunnys.io), it will automatically be available for use - enjoy!\n\n",
+  "image": "https://hunnysclosetshop.s3.us-east-2.amazonaws.com/images/goodies/57.gif",
+  "external_url": "",
+  "background_color": "",
+  "attributes": [
+    { "trait_type": "Type", "value": "Set" },
+    { "trait_type": "Type", "value": "Dyes" }
+  ],
+  "supply": "1500",
+  "customImage": "",
+  "customAnimationUrl": ""
+}

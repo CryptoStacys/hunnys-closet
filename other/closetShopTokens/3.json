@@ -1,0 +1,11 @@
+{
+  "name": "Piggy Set",
+  "description": "Pretty in pink? Pigs seem to think so!\n\nEnjoy this unique, adorable set of Piggy items for your Dolly. And, if you REALLY want to be friends with Palmer the Potato Farmer, you can check out the Cow Set, too, available in the Hunnys Closet shop.\n\nOwning this unlocks the following set of Hunnys Closet items:\nOutfit: Piggy Frilly Top\nHat: Piggy Ears\nAccessory: Piggy Earring\nHair Style: Piggy Hair\n\nAll pieces purchased within this Hunnys Closet Shop collection will immediately unlock the specified item(s) for use in the Hunnys Closet: https://closet.hunnys.io \n\nAs long as you currently hold this token in the same wallet that you are connected with when using the Hunnys Closet, it will automatically be available for use - enjoy!",
+  "image": "https://hunnysclosetshop.s3.us-east-2.amazonaws.com/images/goodies/3.png",
+  "external_url": "",
+  "background_color": "",
+  "attributes": [{ "trait_type": "Type", "value": "Set" }],
+  "supply": "500",
+  "customImage": "",
+  "customAnimationUrl": ""
+}

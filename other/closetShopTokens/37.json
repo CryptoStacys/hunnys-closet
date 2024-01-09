@@ -1,0 +1,14 @@
+{
+  "name": "Spectral Skin",
+  "description": "Happy Hunnyween! You can now dress up your Dolly with the Spectral Skin in the Hunnys Closet - https://closet.hunnys.io. More Hunnyween Goody Bags can be picked up and opened at the Hunnyween website - https://hunnyween.hunnys.io",
+  "image": "https://hunnysclosetshop.s3.us-east-2.amazonaws.com/images/goodies/37.png",
+  "external_url": "",
+  "background_color": "",
+  "attributes": [
+    { "trait_type": "Type", "value": "Single Item" },
+    { "trait_type": "Special", "value": "Hunnyween 2023" }
+  ],
+  "supply": "300",
+  "customImage": "",
+  "customAnimationUrl": ""
+}

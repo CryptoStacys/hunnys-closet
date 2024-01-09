@@ -1,0 +1,14 @@
+{
+  "name": "That Yellow Cartoon Pack",
+  "description": "Hi, everybody! From the town of [[REDACTED]], we bring you the [[REDACTED]] Hunnys Closet Pack, better known as... That Yellow Cartoon Pack! (That name again is That Yellow Cartoon Pack!)\n\n\n\nMissing out on this stylized, hilarious, cartoonish Pack of loveable outfits, hairstyles, dyes, and more, will leave you saying D'oh!\n\n\n\n\nOwning this unlocks the following set of 12 Hunnys Closet Items & Dyes (for use on all Hunnys Closet items):\n\nDye: Beer\n\nDye: Cartoon Blue 1\n\nDye: Cartoon Blue 2\n\nDye: Drunkard Brown\n\nDye: Drunkard Orange\n\nSkin: That Yellow Cartoon Skin\n\nEyebrows: Heavy Brow\n\nEyes: Drunkard Gaze\n\nHair Style: Drunkard Hair\n\nHand: Beer\n\nMouth: Drunkard Buckteeth\n\nOutfit: Drunkard Shirt\n\n\n\n\nAll pieces purchased within this Hunnys Closet Shop collection will immediately unlock the specified item(s) for use in the [Hunnys Closet](https://closet.hunnys.io).\n\n\n\nAs long as you currently hold this token in the same wallet that you are connected with when using the [Hunnys Closet](https://closet.hunnys.io), it will automatically be available for use - enjoy!\n\n",
+  "image": "https://hunnysclosetshop.s3.us-east-2.amazonaws.com/images/goodies/46.png",
+  "external_url": "",
+  "background_color": "",
+  "attributes": [
+    { "trait_type": "Type", "value": "Set" },
+    { "trait_type": "Type", "value": "Dyes" }
+  ],
+  "supply": "200",
+  "customImage": "",
+  "customAnimationUrl": ""
+}
