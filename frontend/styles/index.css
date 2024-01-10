@@ -161,17 +161,16 @@ a {
 
 /* CSS */
 .badge {
-  /* Example styling, adjust as needed */
   display: inline-block;
-  background-color: red; /* for visibility */
-  color: white;
+  background-color: #ffd54b; /* for visibility */
+  color: black;
   padding: 0.25em 0.4em;
-  font-size: 0.75em;
+  font-family: 'DM Sans';
+  font-size: 1.15em;
   font-weight: bold;
   line-height: 1;
   text-align: center;
   white-space: nowrap;
-  vertical-align: baseline;
   border-radius: 0.25rem;
 }
 
@@ -227,12 +226,25 @@ a {
   }
 }
 
+@media (max-width: 1000px) {
+  /* CSS */
+  .attributeName {
+    font-size: .775rem;
+  }
+.badge {
+  font-size: .9em;
+}
+}
+
 @media (max-width: 900px){
   .navLinks {
     font-size: large;
   }
   .emoji-display {
     font-size: 1.7rem;
+  }
+  .badge {
+    margin-left: 4px;
   }
 }
 
@@ -278,6 +290,12 @@ a {
   
 }
 
+@media (max-width:767px) {
+  .attributeName {
+    font-size: .875rem;
+  }
+}
+
 @media (max-width: 639px) {
 
   .hideplz {
@@ -287,6 +305,14 @@ a {
 }
 
 @media (max-width: 520px) {
+
+  .attributeName {
+    font-size: .725rem;
+  }
+
+  .attributeSvg {
+    display: none;
+  }
 
   .navLinks {
     font-size: medium;
@@ -305,6 +331,13 @@ a {
 @media (max-width: 420px) {
   .fill-hunnys-yellow {
     display: none;
+  }
+  .attributeHeader {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  .badge {
+    margin-left: 4px;
   }
   .grid-item {
     height: 135px;
