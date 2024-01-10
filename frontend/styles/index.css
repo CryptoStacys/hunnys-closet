@@ -162,11 +162,11 @@ a {
 /* CSS */
 .badge {
   display: inline-block;
-  background-color: #ffd54b; /* for visibility */
+  background-color: #fff; /* for visibility */
   color: black;
   padding: 0.25em 0.4em;
   font-family: 'DM Sans';
-  font-size: 1.15em;
+  font-size: 1em;
   font-weight: bold;
   line-height: 1;
   text-align: center;
