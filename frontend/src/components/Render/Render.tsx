@@ -219,14 +219,23 @@ export default function Render(props: {
 
   function download() {
     const canvas = canvasRef.current;
-    canvas.toBlob(function(blob) {
-        if (blob) { // Check if the blob is not null
-            saveAs(blob, "Dolly.png"); // Specify the filename for the downloaded image
-        } else {
-            console.error("Canvas to Blob conversion failed.");
-        }
-    }, "image/png");
-}
+    const dataURL = canvas.toDataURL("image/png");
+  
+    // Create a new window or tab
+    const imageWindow = window.open('', '_blank');
+    
+    // Check if the new window was successfully created
+    if (imageWindow) {
+      // Write HTML content that displays the image
+      imageWindow.document.write(`<html><head><title>Download Dolly</title></head><body><img src="${dataURL}" alt="Dolly Image" style="max-width: 100%; height: auto;"></body></html>`);
+      // Optional: Include instructions for downloading
+      imageWindow.document.title = "Right-click or long-press to save the image";
+    } else {
+      // Handle cases where the new window could not be opened
+      alert('Unable to open the image in a new tab. Please check your popup settings.');
+    }
+  }
+  
 
 
   useEffect(() => {
