@@ -136,16 +136,32 @@ function setRandomHeadline() {
   }
 
   function downloadDollyImage(dataURL: string) {
-    fetch(dataURL)
-      .then(response => response.blob())
-      .then(blob => {
-        saveAs(blob, "Dolly.png"); // Specify the filename for the downloaded image
-      })
-      .catch(error => {
-        console.error("Error downloading image:", error);
-        // Handle error (e.g., display error message to the user)
-      });
+    // Create a new Blob object from the data URL
+    const fetchBlob = async () => {
+      const response = await fetch(dataURL);
+      return await response.blob();
+    };
+  
+    fetchBlob().then(blob => {
+      // Create a URL for the blob
+      const blobUrl = URL.createObjectURL(blob);
+      // Display a modal or notification to the user with the blobUrl as the download link
+      // Example: showModal("Click here to download", blobUrl);
+      // Or you can create a temporary link and simulate a click
+      const tempLink = document.createElement('a');
+      tempLink.href = blobUrl;
+      tempLink.download = "Dolly.png";
+      tempLink.style.display = 'none';
+      document.body.appendChild(tempLink);
+      tempLink.click();
+      document.body.removeChild(tempLink);
+    })
+    .catch(error => {
+      console.error("Error downloading image:", error);
+      // Handle error
+    });
   }
+  
 
   
   
