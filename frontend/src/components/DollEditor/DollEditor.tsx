@@ -7,7 +7,6 @@ import ApplyButton from "./ApplyButton";
 import SecondaryButton from "./SecondaryButton";
 import BackButton from "./BackButton";
 import Render from "../Render/Render";
-import Link from "next/link"
 import GridView from "./GridView";
 import ListView from "./ListView";
 import CardView from "./CardView";
@@ -15,7 +14,7 @@ import ItemView from "./ItemView";
 import DollEditorOptions from "./DollEditorOptions";
 import Icon from "../Icon/Icon";
 import { allTraitsAtom } from "../../data/store";
-
+import { saveAs } from 'file-saver';
 import { attributes, localStorageToken } from "../../data/config";
 import { Attribute, Trait } from "../../data/global";
 
@@ -137,13 +136,18 @@ function setRandomHeadline() {
   }
 
   function downloadDollyImage(dataURL: string) {
-    const link = document.createElement("a");
-    link.href = dataURL;
-    link.download = "Dolly.png"; // or any other filename you want
-    document.body.appendChild(link); // Need to append for Firefox
-    link.click();
-    document.body.removeChild(link); // Clean up
+    fetch(dataURL)
+      .then(response => response.blob())
+      .then(blob => {
+        saveAs(blob, "Dolly.png"); // Specify the filename for the downloaded image
+      })
+      .catch(error => {
+        console.error("Error downloading image:", error);
+        // Handle error (e.g., display error message to the user)
+      });
   }
+
+  
   
   
   useEffect(() => {
