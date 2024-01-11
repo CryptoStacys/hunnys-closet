@@ -4,6 +4,7 @@ import { Loader } from "../Loader/Loader";
 import { motion } from "framer-motion";
 import { Token, Layer } from "../../data/global";
 import SecondaryButton from "../DollEditor/SecondaryButton";
+import { saveAs } from 'file-saver';
 
 // import fs from 'fs';
 
@@ -217,13 +218,16 @@ export default function Render(props: {
   }
 
   function download() {
-    const canvas: HTMLCanvasElement = canvasRef.current;
-    const dataURL = canvas.toDataURL("image/png"); // Convert canvas content to a data URL
-    const link = document.createElement("a");
-    link.href = dataURL;
-    link.download = "Dolly.png"; // Specify the filename for the downloaded image
-    link.click(); // Trigger the download
-  }
+    const canvas = canvasRef.current;
+    canvas.toBlob(function(blob) {
+        if (blob) { // Check if the blob is not null
+            saveAs(blob, "Dolly.png"); // Specify the filename for the downloaded image
+        } else {
+            console.error("Canvas to Blob conversion failed.");
+        }
+    }, "image/png");
+}
+
 
   useEffect(() => {
     // Call the callback function when the image is rendered
