@@ -4,7 +4,6 @@ import { Loader } from "../Loader/Loader";
 import { motion } from "framer-motion";
 import { Token, Layer } from "../../data/global";
 import SecondaryButton from "../DollEditor/SecondaryButton";
-import { saveAs } from 'file-saver';
 
 // import fs from 'fs';
 
@@ -218,25 +217,13 @@ export default function Render(props: {
   }
 
   function download() {
-    const canvas = canvasRef.current;
-    const dataURL = canvas.toDataURL("image/png");
-  
-    // Create a new window or tab
-    const imageWindow = window.open('', '_blank');
-    
-    // Check if the new window was successfully created
-    if (imageWindow) {
-      // Write HTML content that displays the image
-      imageWindow.document.write(`<html><head><title>Download Dolly</title></head><body><img src="${dataURL}" alt="Dolly Image" style="max-width: 100%; height: auto;"></body></html>`);
-      // Optional: Include instructions for downloading
-      imageWindow.document.title = "Right-click or long-press to save the image";
-    } else {
-      // Handle cases where the new window could not be opened
-      alert('Unable to open the image in a new tab. Please check your popup settings.');
-    }
+    const canvas: HTMLCanvasElement = canvasRef.current;
+    const dataURL = canvas.toDataURL("image/png"); // Convert canvas content to a data URL
+    const link = document.createElement("a");
+    link.href = dataURL;
+    link.download = "Dolly.png"; // Specify the filename for the downloaded image
+    link.click(); // Trigger the download
   }
-  
-
 
   useEffect(() => {
     // Call the callback function when the image is rendered

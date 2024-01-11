@@ -7,6 +7,7 @@ import ApplyButton from "./ApplyButton";
 import SecondaryButton from "./SecondaryButton";
 import BackButton from "./BackButton";
 import Render from "../Render/Render";
+import Link from "next/link"
 import GridView from "./GridView";
 import ListView from "./ListView";
 import CardView from "./CardView";
@@ -14,7 +15,7 @@ import ItemView from "./ItemView";
 import DollEditorOptions from "./DollEditorOptions";
 import Icon from "../Icon/Icon";
 import { allTraitsAtom } from "../../data/store";
-import { saveAs } from 'file-saver';
+
 import { attributes, localStorageToken } from "../../data/config";
 import { Attribute, Trait } from "../../data/global";
 
@@ -136,34 +137,13 @@ function setRandomHeadline() {
   }
 
   function downloadDollyImage(dataURL: string) {
-    // Create a new Blob object from the data URL
-    const fetchBlob = async () => {
-      const response = await fetch(dataURL);
-      return await response.blob();
-    };
-  
-    fetchBlob().then(blob => {
-      // Create a URL for the blob
-      const blobUrl = URL.createObjectURL(blob);
-      // Display a modal or notification to the user with the blobUrl as the download link
-      // Example: showModal("Click here to download", blobUrl);
-      // Or you can create a temporary link and simulate a click
-      const tempLink = document.createElement('a');
-      tempLink.href = blobUrl;
-      tempLink.download = "Dolly.png";
-      tempLink.style.display = 'none';
-      document.body.appendChild(tempLink);
-      tempLink.click();
-      document.body.removeChild(tempLink);
-    })
-    .catch(error => {
-      console.error("Error downloading image:", error);
-      // Handle error
-    });
+    const link = document.createElement("a");
+    link.href = dataURL;
+    link.download = "Dolly.png"; // or any other filename you want
+    document.body.appendChild(link); // Need to append for Firefox
+    link.click();
+    document.body.removeChild(link); // Clean up
   }
-  
-
-  
   
   
   useEffect(() => {
