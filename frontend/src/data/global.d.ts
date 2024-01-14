@@ -1,4 +1,7 @@
 export type Trait = {
+  isOwned: boolean;
+  isEligibleForMinting: any;
+  id: number;
   origin_id: number;
   name: string;
   attribute: string;
@@ -7,6 +10,7 @@ export type Trait = {
   colors: any;
   rarity?: string;
   colorsApplied: string[];
+  mintPrice?: ethers.BigNumber | null; // Add this line
 };
 
 export type User = {
@@ -17,6 +21,10 @@ export type User = {
   skin_colors: string[];
   tokens: Token[];
   hideSaveChangesModal: boolean;
+};
+
+type OwnedTraitsResponse = {
+  traits: Trait[];
 };
 
 export type Dolly = {

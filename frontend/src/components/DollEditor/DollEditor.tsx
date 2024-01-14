@@ -29,6 +29,7 @@ function formatToken(input: Trait[]) {
     if (input.filter((x) => x.attribute === attribute).length <= 0) {
       // console.log(attribute, "doesn't exist");
       input.push({
+        isEligibleForMinting: [],
         name: "Empty",
         colorsApplied: [],
         attribute: attribute,

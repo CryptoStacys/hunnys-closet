@@ -1,20 +1,69 @@
 import { useAtom } from "jotai";
 import { userAtom, allTraitsAtom } from "../src/data/store";
 import { attributes, thumbnailPath } from "../src/data/config";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { hunnysColors } from "../src/data/config";
 import Help from "../src/components/Help/Help";
 import Icon from "../src/components/Icon/Icon";
 import Image from "next/image";
 import Link from "next/link";
+import { ethers } from "ethers";
+import salesABI from "../../backend/src/abis/hunnys-closet-sales-abi.json";
+import MintButton from "../../frontend/src/components/Mint/MintButton"
 
+// Inside your Items component
 export default function Items() {
   const [user] = useAtom(userAtom);
   const [categoryFilter, categoryFilterSet] = useState("Background");
   const [rarityFilter, rarityFilterSet] = useState(["common"]);
   const newTrait: any = {};
   const [selectedTrait, selectedTraitSet] = useState(newTrait);
-  const [allTraits] = useAtom(allTraitsAtom);
+  const [allTraits, setAllTraits] = useAtom(allTraitsAtom);
+  const [allAvailableTraits, setAllAvailableTraits] = useState([]); // This state holds all possible traits
+  type EligibleToken = {
+    token_id: string;
+    price: ethers.BigNumber;
+  };
+
+  useEffect(() => {
+    // Fetch all available traits on component mount
+    fetchAllAvailableTraits();
+  }, []);
+  
+  const fetchAllAvailableTraits = async () => {
+  // Fetch all traits logic here
+  // Example: const response = await fetch('https://api/endpoint/for/all/traits');
+  // setAllAvailableTraits(response.data);
+};
+  
+
+  const fetchLatestTraits = async () => {
+    try {
+      const address = user ? user.address : 'default-address';
+      const response = await fetch(`https://closetapi.hunnysnft.com/wordpress/wp-json/hunnys-closet/v1/verifyCloset?wallet=${address}`);
+      const data = await response.json();
+      setAllTraits({ traits: data.traits, colors: data.colors, skin_colors: data.skin_colors });
+    } catch (error) {
+      console.error('Failed to fetch data:', error);
+    }
+  };
+  
+  useEffect(() => {
+    // Fetch data on component mount
+    fetchLatestTraits();
+  }, []); // Empty dependency array to run only on mount
+
+
+  const handleMintSuccess = () => {
+    fetchLatestTraits();
+  };
+  
+  const eligibleTokenIds: EligibleToken[] = [
+    { token_id: '48', price: ethers.utils.parseUnits("0.00001", "ether") },
+    { token_id: '2', price: ethers.utils.parseUnits("0.02", "ether") },
+    // ... add more tokens with their prices
+  ];
+
 
   function getItems() {
     if (!user) return [];
@@ -44,6 +93,23 @@ export default function Items() {
 
     // Filter only selected attribute
     data = data.filter((trait: any) => trait.attribute === categoryFilter);
+
+    data = data.map((obj) => {
+      const isCase9 = obj.origin_id === 9;
+   //   console.log(`Eligible Token IDs:`, eligibleTokenIds);
+      const eligibleToken = eligibleTokenIds.find(eligible => 
+        eligible.token_id === (obj.token_id ? obj.token_id.toString() : undefined)
+      );
+// console.log(`Checking Token ID: ${obj.token_id}, Found: ${!!eligibleToken}`);
+  //    console.log(`Token ID: ${obj.token_id}, Origin ID: ${obj.origin_id}, isCase9: ${isCase9}, isEligibleToken: ${!!eligibleToken}`); // Detailed Debugging
+      return {
+        ...obj,
+        isEligibleForMinting: isCase9 && !!eligibleToken,
+        mintPrice: eligibleToken ? eligibleToken.price : null,
+      };
+    });
+    
+    
 
     // Filter out duplicates
     let uniqueTraits = new Set();
@@ -124,7 +190,7 @@ export default function Items() {
         break;
       //Old Hunnys Closet Shop
       case 7:
-        result = `https://buy.hunnys.io/polygon/asset/0x11bc733e719198e2b3746f6841d2818ca87af6da:${trait.token_id || ''}`;
+        result = `https://buy.hunnys.io/polygon/asset/0x11bc733e719198e2b3746f6841d2818ca87af6da:${trait.token_id || ''}?old`;
         break;
       //Fame Lady Society
       case 8:
@@ -225,25 +291,17 @@ export default function Items() {
               )}
             </div>
             <div className="grid grid-cols-2 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-5 xl:grid-cols-6 gap-2 w-full">
-              {/* <Help
-            {...{
-              title: "Item inventory",
-              body: "Stuff you can equip goes in here",
-            }}
-            className="absolute top-3 right-3"
-          /> */}
+              
               {getAllItems()
               .sort((a: any, b: any) => {
                 if (checkForOwnedTrait(a) && !checkForOwnedTrait(b)) return -1;
                 return 1;
               })
-              .map((item: any, index: number) => (
+              .map((item, index) => (
                 <Link href="#itemView" onClick={handleScroll} key={index}>
                   <button
-                    onClick={() => {
-                      selectedTraitSet(item);
-                    }}
-                    style={{backgroundColor: '#a264f4'}}
+                    onClick={() => selectedTraitSet(item)}
+                    style={{ backgroundColor: '#a264f4' }}
                     className="transition hover:scale-[1.02] shadow-sm hover:shadow-lg grid grid-cols-1 text-white rounded-lg overflow-hidden"
                   >
                     <img
@@ -253,10 +311,16 @@ export default function Items() {
                     />
                     <div className={`shadow-lg rounded-b-lg text-white w-full h-auto justify-center items-center font-bold break-words py-2 px-2`}>{item.name}</div>
                     {/* <div className={`w-full flex h-full justify-center items-center font-bold`}>{item.name}</div> */}
+                    {item.isEligibleForMinting && (
+                      <MintButton
+                      tokenId={item.token_id}
+                      mintPrice={item.mintPrice}
+                      onMintSuccess={handleMintSuccess}
+                    />
+                    )}
                   </button>
-                
                 </Link>
-              ))}
+            ))}
             </div>
           </div>
         </div>

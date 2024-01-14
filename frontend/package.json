@@ -12,6 +12,7 @@
     "@rainbow-me/rainbowkit": "^1.0.8",
     "@types/fabric": "^4.5.14",
     "@vercel/analytics": "^1.1.1",
+    "ethers": "^5.7.2",
     "fabric": "^5.2.4",
     "file-saver": "^2.0.5",
     "framer-motion": "^7.5.4",
