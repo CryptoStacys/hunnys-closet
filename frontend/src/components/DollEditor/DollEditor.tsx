@@ -36,7 +36,9 @@ function formatToken(input: Trait[]) {
         tags: [],
         colors: [],
         rarity: "common",
-        origin_id: 0
+        origin_id: 0,
+        isOwned: false,
+        id: 0
       });
     }
   });
