@@ -11,10 +11,10 @@ import cors from 'cors';
 
     const app = express();
     app.use(cors({
-        origin: ['https://closet.hunnys.io', 'https://hunnys.io/wp-json/hunnys-closet/v1', 'https://closetapi.hunnysnft.com/wordpress/wp-json/hunnys-closet/v1/', 'https://pleasing-turkey-pleasing.ngrok-free.app', 'https://closetapi.hunnysnft.com', 'http://localhost:8080/wordpress/wp-json/hunnys-closet/v1/', 'https://staging-hunnys-closet-2.vercel.app', 'http://localhost:3000', 'http://localhost', 'http://localhost:8080', 'http://localhost:8080/wordpress', 'https://hunnys.io', 'https://testing.d35i3wnh0wry5j.amplifyapp.com']
+        origin: ['https://closet.hunnys.io', 'https://hunnys.io/wp-json/hunnys-closet/v1', 'https://closetapi.hunnysnft.com/wordpress/wp-json/hunnys-closet/v1/', 'https://pleasing-turkey-pleasing.ngrok-free.app', 'https://closetapi.hunnysnft.com', 'http://localhost:8081/wordpress/wp-json/hunnys-closet/v1/', 'https://staging-hunnys-closet-2.vercel.app', 'http://localhost:3000', 'http://localhost', 'http://localhost:8081', 'http://localhost:8081/wordpress', 'https://hunnys.io', 'https://testing.d35i3wnh0wry5j.amplifyapp.com']
     }));
     app.use(express.json());
-    const port = process.env.PORT || 8080;
+    const port = process.env.PORT || 8081;
 
     // Middleware for logging various headers and request details
     app.use((req, res, next) => {

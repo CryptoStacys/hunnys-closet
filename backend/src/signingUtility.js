@@ -9,10 +9,12 @@ export const signData = (data, privateKey) => {
         ["address", "uint256[]", "uint256[]", "uint256", "uint256"],
         [userAddress, tokenIds, amounts, totalExpectedPrice, nonce]
     );
+    console.log("Message to sign:", message);
 
     // Sign the message
     const wallet = new ethers.Wallet(privateKey);
     const signature = wallet.signMessage(ethers.utils.arrayify(message));
+    console.log("Signature:", signature);
 
     return signature;
 };

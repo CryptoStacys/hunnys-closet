@@ -20,7 +20,7 @@ export const eligibleTokenIds: EligibleToken[] = [
 // Add this function to make a request to your server for signing
 const requestSignature = async (userAddress: string, tokenId: string | number, mintPrice: ethers.BigNumber, nonce: number) => {
   try {
-    const response = await fetch('https://staging-hunnys-closet-2-548f5ed67a1b.herokuapp.com/signature', {
+    const response = await fetch('http://localhost:8081/signature', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({
@@ -32,6 +32,7 @@ const requestSignature = async (userAddress: string, tokenId: string | number, m
       })
     });
     const data = await response.json();
+    console.log("Received signature response:", data);
     return data.signature;
   } catch (error) {
     console.error('Error requesting signature:', error);
@@ -70,11 +71,12 @@ export const mintWithWeth = async (
     // Requesting signature from user's wallet
     const signature = await requestSignature(userAddress, tokenId, mintPrice, nonce);
 
-    console.log("Data to Sign: ", dataToSign);
+    console.log("User Address: ", userAddress);
+    console.log("Token ID: ", tokenId);
+    console.log("Mint Price: ", mintPrice.toString());
     console.log("Nonce: ", nonce);
     console.log("Signature: ", signature);
-
-    // MintRequest object with signature and nonce
+    
     const mintRequest = {
       tokenIds: [tokenId],
       amounts: [1],
@@ -83,6 +85,9 @@ export const mintWithWeth = async (
       nonce: nonce,
       signature: signature
     };
+    
+    console.log("Mint Request: ", mintRequest);
+    console.log("Final Mint Request:", mintRequest);
 
     // Minting process
     const mintTx = await salesContract.mintTokens(nftContractAddress, mintRequest);

@@ -1,5 +1,5 @@
 import express from 'express';
-import { signData } from './signingUtility';
+import { signData } from './signingUtility.js';
 
 const router = express.Router();
 
@@ -11,6 +11,7 @@ router.post('/', async (req, res) => {
         // Perform the signing operation here
         // Make sure signData is a function that exists and returns the signature
         const signature = signData({ userAddress, tokenIds, amounts, totalExpectedPrice, nonce }, privateKey);
+        console.log("Received signing request:", req.body);
 
         res.json({ signature });
     } catch (error) {
