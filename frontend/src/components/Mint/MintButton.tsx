@@ -3,21 +3,29 @@ import React, { useState, useEffect } from 'react';
 import { ethers, BigNumber } from 'ethers';
 import { useAccount } from 'wagmi';
 import salesABI from "../../../../backend/src/abis/hunnys-closet-sales-abi.json";
-import { InjectedConnector } from 'wagmi/connectors/injected'
-
 
 type MintButtonProps = {
-    tokenId: string | undefined;
-    mintPrice: BigNumber;
-    onMintSuccess: () => void;
-  };
-  
-  const MintButton: React.FC<MintButtonProps> = ({ tokenId, mintPrice, onMintSuccess }) => {
-    const [isTransactionPending, setTransactionPending] = useState(false);
-    const [discountRate, setDiscountRate] = useState(0);
-    const { isConnected } = useAccount();
-  
-    const hunnysClosetSalesAddress = "0xedaa37b37146e2e09df90be6b25ab888a513352c";
+  tokenId: string | undefined;
+  mintPrice: BigNumber;
+  onMintSuccess: () => void;
+  updateTraits: (userAddress: string) => void;
+  userAddress: string | undefined;
+  mintAction: () => Promise<void>;
+};
+
+const MintButton: React.FC<MintButtonProps> = ({
+  tokenId,
+  mintPrice,
+  onMintSuccess,
+  updateTraits,
+  userAddress,
+  mintAction
+}) => {
+  const [isTransactionPending, setTransactionPending] = useState(false);
+  const [discountRate, setDiscountRate] = useState(0);
+  const { isConnected } = useAccount();
+
+  const hunnysClosetSalesAddress = "0xc451d87d41390b8a4e398a137209eed4475d4dd5";
 
   useEffect(() => {
     const fetchDiscountRate = async () => {
@@ -36,50 +44,27 @@ type MintButtonProps = {
 
   const handleMint = async () => {
     if (!isConnected) {
-      const connector = new InjectedConnector();
-      try {
-        await connector.getProvider();
-      } catch (error) {
-        console.error("Connection error:", error);
-        return;
-      }
+      console.error("User is not connected to a wallet");
       return;
     }
 
-    if (!tokenId) {
-        console.error("Token ID is undefined");
-        return;
-      }
+    if (!tokenId || !userAddress) {
+      console.error("Token ID or user address is undefined");
+      return;
+    }
 
-    const discountedPrice = mintPrice.mul(100 - discountRate).div(100);
+    setTransactionPending(true);
 
     try {
-      if (!window.ethereum) {
-        throw new Error("Ethereum provider is not available");
-      }
-      const provider = new ethers.providers.Web3Provider(window.ethereum as any); // Type cast to 'any'
-      const signer = provider.getSigner();
-      const salesContract = new ethers.Contract(hunnysClosetSalesAddress, salesABI, signer);
-
-      setTransactionPending(true);
-      const tx = await salesContract.mintTokens(
-        [tokenId],
-        [1],
-        discountedPrice,
-        '0x',
-        { 
-          value: discountedPrice,
-          gasLimit: ethers.utils.hexlify(1000000)
-        }
-      );
-      await tx.wait();
-        alert("Purchase successful!");
-        setTransactionPending(false);
-        onMintSuccess(); // Invoke the callback
+      await mintAction();
+      onMintSuccess();
+      updateTraits(userAddress);
+      alert("Purchase successful!");
     } catch (error) {
-      console.error("Mint failed:", error);
+      console.error("Minting error:", error);
+      alert("Minting failed.");
+    } finally {
       setTransactionPending(false);
-      alert("Mint failed.");
     }
   };
 

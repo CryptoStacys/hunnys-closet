@@ -1,6 +1,7 @@
 export type Trait = {
-  isOwned: boolean;
-  isEligibleForMinting: any;
+  isOwned?: boolean | any;
+  isEligibleForMinting?: boolean | string[]; // Updated to be optional
+  mintPrice?: ethers.BigNumber | null; // Updated to be optional
   id: number;
   origin_id: number;
   name: string;
@@ -10,8 +11,8 @@ export type Trait = {
   colors: any;
   rarity?: string;
   colorsApplied: string[];
-  mintPrice?: ethers.BigNumber | null; // Add this line
 };
+
 
 export type User = {
   address: string;

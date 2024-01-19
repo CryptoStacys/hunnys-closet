@@ -3,66 +3,63 @@ import { userAtom, allTraitsAtom } from "../src/data/store";
 import { attributes, thumbnailPath } from "../src/data/config";
 import { useState, useEffect } from "react";
 import { hunnysColors } from "../src/data/config";
-import Help from "../src/components/Help/Help";
-import Icon from "../src/components/Icon/Icon";
+import { fetchTraits } from '../src/utils/traitUtils'; 
+import { handleWethPayment } from '../src/utils/wethPayment';
+import { eligibleTokenIds, mintWithWeth } from '../src/utils/eligibleTokens';
+import { Trait } from "../src/data/global";
 import Image from "next/image";
 import Link from "next/link";
 import { ethers } from "ethers";
-import salesABI from "../../backend/src/abis/hunnys-closet-sales-abi.json";
 import MintButton from "../../frontend/src/components/Mint/MintButton"
+import useUpdateTraits from '../../frontend/src/hooks/useUpdateTraits';
 
 // Inside your Items component
 export default function Items() {
-  const [user] = useAtom(userAtom);
+  const [user, setUser] = useAtom(userAtom);
   const [categoryFilter, categoryFilterSet] = useState("Background");
   const [rarityFilter, rarityFilterSet] = useState(["common"]);
   const newTrait: any = {};
   const [selectedTrait, selectedTraitSet] = useState(newTrait);
   const [allTraits, setAllTraits] = useAtom(allTraitsAtom);
-  const [allAvailableTraits, setAllAvailableTraits] = useState([]); // This state holds all possible traits
-  type EligibleToken = {
-    token_id: string;
-    price: ethers.BigNumber;
-  };
+  const [allAvailableTraits, setAllAvailableTraits] = useState<Trait[]>([]);
+  const updateTraits = useUpdateTraits(setAllAvailableTraits, setUser);  
+  const provider = new ethers.providers.Web3Provider(window.ethereum as any);
 
-  useEffect(() => {
-    // Fetch all available traits on component mount
-    fetchAllAvailableTraits();
-  }, []);
   
-  const fetchAllAvailableTraits = async () => {
-  // Fetch all traits logic here
-  // Example: const response = await fetch('https://api/endpoint/for/all/traits');
-  // setAllAvailableTraits(response.data);
-};
-  
+// On component mount, fetch all available traits and traits owned by the user (if user exists)
+useEffect(() => {
+  fetchTraits().then(traits => {
+    setAllAvailableTraits(traits);
+    console.log("All available traits set:", traits);
+  });
 
-  const fetchLatestTraits = async () => {
-    try {
-      const address = user ? user.address : 'default-address';
-      const response = await fetch(`https://closetapi.hunnysnft.com/wordpress/wp-json/hunnys-closet/v1/verifyCloset?wallet=${address}`);
-      const data = await response.json();
-      setAllTraits({ traits: data.traits, colors: data.colors, skin_colors: data.skin_colors });
-    } catch (error) {
-      console.error('Failed to fetch data:', error);
+  // Rest of the useEffect...
+}, [user]);
+
+
+// In handleMintSuccess, fetch only the traits owned by the user
+const handleMintSuccess = async () => {
+  if (user) {
+    const ownedTraits = await fetchTraits(user.address);
+
+    // Debugging: Log the ownedTraits structure
+    console.log('ownedTraits:', ownedTraits);
+
+    // Check if ownedTraits is defined and is an array
+    if (!Array.isArray(ownedTraits)) {
+      console.error('No traits data available or data is not an array:', ownedTraits);
+      return; // Exit the function if no valid traits data is available
     }
-  };
-  
-  useEffect(() => {
-    // Fetch data on component mount
-    fetchLatestTraits();
-  }, []); // Empty dependency array to run only on mount
 
+    const updatedTraits = allAvailableTraits.map(trait => {
+      const isOwnedNow = ownedTraits.some(ownedTrait => ownedTrait.id === trait.id);
+      return { ...trait, isOwned: isOwnedNow };
+    });
 
-  const handleMintSuccess = () => {
-    fetchLatestTraits();
-  };
-  
-  const eligibleTokenIds: EligibleToken[] = [
-    { token_id: '48', price: ethers.utils.parseUnits("0.00001", "ether") },
-    { token_id: '2', price: ethers.utils.parseUnits("0.02", "ether") },
-    // ... add more tokens with their prices
-  ];
+    setAllAvailableTraits(updatedTraits);
+    setUser({ ...user, traits: ownedTraits });
+  }
+};
 
 
   function getItems() {
@@ -85,46 +82,39 @@ export default function Items() {
   }
 
   function getAllItems() {
-    // Get all traits owned by user
-    // let data = user!.collections.collections[0].tokenData.traitData;
-    let data = allTraits!.traits;
-
-    // console.log('all traits: ', allTraits);
-
-    // Filter only selected attribute
-    data = data.filter((trait: any) => trait.attribute === categoryFilter);
-
-    data = data.map((obj) => {
-      const isCase9 = obj.origin_id === 9;
-   //   console.log(`Eligible Token IDs:`, eligibleTokenIds);
+    let data = allAvailableTraits;
+  
+    data = data.map((trait) => {
       const eligibleToken = eligibleTokenIds.find(eligible => 
-        eligible.token_id === (obj.token_id ? obj.token_id.toString() : undefined)
+        eligible.token_id === (trait.token_id ? trait.token_id.toString() : undefined) &&
+        eligible.origin_ids.includes(trait.origin_id)
       );
-// console.log(`Checking Token ID: ${obj.token_id}, Found: ${!!eligibleToken}`);
-  //    console.log(`Token ID: ${obj.token_id}, Origin ID: ${obj.origin_id}, isCase9: ${isCase9}, isEligibleToken: ${!!eligibleToken}`); // Detailed Debugging
+  
       return {
-        ...obj,
-        isEligibleForMinting: isCase9 && !!eligibleToken,
+        ...trait,
+        isEligibleForMinting: !!eligibleToken,
         mintPrice: eligibleToken ? eligibleToken.price : null,
       };
     });
-    
-    
-
-    // Filter out duplicates
-    let uniqueTraits = new Set();
-    data = data.filter((obj: any) => {
-      if (!uniqueTraits.has(obj.name)) {
-        uniqueTraits.add(obj.name);
+  
+    // Filter only selected attribute
+    data = data.filter((trait) => trait.attribute === categoryFilter);
+  
+    // Remove duplicates
+    const uniqueTraits = new Set();
+    data = data.filter((trait) => {
+      if (!uniqueTraits.has(trait.name)) {
+        uniqueTraits.add(trait.name);
         return true;
       }
       return false;
     });
-
-    // Sorting
+  
+    // Sorting (if needed, add sorting logic here)
+  
     return data;
   }
-
+  
   function checkForOwnedTrait(trait: any) {
     let result = false;
 
@@ -312,12 +302,23 @@ export default function Items() {
                     <div className={`shadow-lg rounded-b-lg text-white w-full h-auto justify-center items-center font-bold break-words py-2 px-2`}>{item.name}</div>
                     {/* <div className={`w-full flex h-full justify-center items-center font-bold`}>{item.name}</div> */}
                     {item.isEligibleForMinting && (
-                      <MintButton
-                      tokenId={item.token_id}
-                      mintPrice={item.mintPrice}
-                      onMintSuccess={handleMintSuccess}
-                    />
-                    )}
+  <MintButton
+    tokenId={item.token_id}
+    mintPrice={item.mintPrice}
+    onMintSuccess={handleMintSuccess}
+    updateTraits={updateTraits}
+    userAddress={user?.address}
+    mintAction={async () => {
+      if (user?.address && item.token_id) {
+        await mintWithWeth(user.address, item.token_id, item.mintPrice, provider);
+      } else {
+        console.error("User address or token ID is undefined");
+      }
+    }}
+  />
+)}
+
+
                   </button>
                 </Link>
             ))}
