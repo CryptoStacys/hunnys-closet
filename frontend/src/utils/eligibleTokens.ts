@@ -2,7 +2,7 @@
 import { ethers } from "ethers";
 import salesABI from "../../../backend/src/abis/hunnys-closet-sales-abi.json";
 export const WETH_ADDRESS = "0x7ceB23fD6bC0adD59E62ac25578270cFf1b9f619"; // WETH Address on Polygon
-export const WETH_ABI ="../../../backend/src/abis/weth-abi.json";
+import WETH_ABI from "../../../backend/src/abis/weth-abi.json";
 const salesContractAddress = "0xc451d87d41390b8a4e398a137209eed4475d4dd5"; // Update with your sales contract address
 const nftContractAddress = "0x11bc733e719198e2b3746f6841d2818ca87af6da";
 
@@ -20,7 +20,7 @@ export const eligibleTokenIds: EligibleToken[] = [
 // Add this function to make a request to your server for signing
 const requestSignature = async (userAddress: string, tokenId: string | number, mintPrice: ethers.BigNumber, nonce: number) => {
   try {
-    const response = await fetch('https://staging-hunnys-closet-2-548f5ed67a1b.herokuapp.com/signMintRequest', {
+    const response = await fetch('https://staging-hunnys-closet-2-548f5ed67a1b.herokuapp.com/signature', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({

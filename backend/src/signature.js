@@ -1,5 +1,5 @@
 // server-side function (e.g., an Express.js route or serverless function)
-app.post('/signMintRequest', async (req, res) => {
+app.post('/signature', async (req, res) => {
     try {
       const { userAddress, tokenIds, amounts, totalExpectedPrice, nonce } = req.body;
       const privateKey = process.env.PRIVATE_KEY;
