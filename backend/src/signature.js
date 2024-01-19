@@ -10,7 +10,7 @@ router.post('/', async (req, res) => {
 
         // Perform the signing operation here
         // Make sure signData is a function that exists and returns the signature
-        const signature = signData({ userAddress, tokenIds, amounts, totalExpectedPrice, nonce }, privateKey);
+        const signature = await signData({ userAddress, tokenIds, amounts, totalExpectedPrice, nonce }, privateKey);
         console.log("Received signing request:", req.body);
 
         res.json({ signature });

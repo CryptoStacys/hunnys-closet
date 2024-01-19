@@ -20,7 +20,7 @@ export const eligibleTokenIds: EligibleToken[] = [
 // Add this function to make a request to your server for signing
 const requestSignature = async (userAddress: string, tokenId: string | number, mintPrice: ethers.BigNumber, nonce: number) => {
   try {
-    const response = await fetch('http://localhost:8081/signature', {
+    const response = await fetch('https://staging-hunnys-closet-2-548f5ed67a1b.herokuapp.com/signature', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({
