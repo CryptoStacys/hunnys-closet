@@ -145,9 +145,10 @@ async function processEyes(files, baseName, subfolder, baseImage) {
 
 
 async function processHairStyle(files, baseName, subfolder, baseImage) {
+    const hairStyleFiles = files.filter(file => file.subfolder === 'Hair Style');
     // Group files by their hair style name
-    const hairStyleGroups = files.reduce((acc, { file }) => {
-        const match = file.match(/^([a-zA-Z0-9\s-]+(?:\(.*\))?)[_]/);
+    const hairStyleGroups = hairStyleFiles.reduce((acc, { file }) => {
+        const match = file.match(/^([a-zA-Z0-9\s-]+)(?:_Back|_Front)?[_]/);
         if (match) {
             const styleName = match[1]; // Capture the base style name before the first underscore
             acc[styleName] = acc[styleName] || [];
@@ -155,6 +156,7 @@ async function processHairStyle(files, baseName, subfolder, baseImage) {
         }
         return acc;
     }, {});
+    console.log(`Hair Style Groups: ${JSON.stringify(hairStyleGroups, null, 2)}`);
 
     // Define a function to apply the color based on the layer name
     const applyColorToLayer = async (image, fileName) => {
@@ -185,8 +187,14 @@ async function processHairStyle(files, baseName, subfolder, baseImage) {
 
         // Composite all layers for the hair style
         for (const file of sortedFiles) {
+            logToFile(`Processing file: ${file} in ${subfolder}`);
             try {
                 const imagePath = path.join(inputFolder, subfolder, file);
+                // Check if file exists before processing
+                if (!fs.existsSync(imagePath)) {
+                    console.log(`File not found, skipping: ${imagePath}`);
+                    continue;
+                }
                 let image = await Jimp.read(imagePath);
                 image = await applyColorToLayer(image, file); // Apply color before compositing
                 compositeImage.composite(image, 0, 0, {
@@ -215,16 +223,17 @@ async function processHairStyle(files, baseName, subfolder, baseImage) {
 }
 
 async function processHat(files, baseName, subfolder, baseImage) {
-    // Group files by their hair style name
-    const hatGroups = files.reduce((acc, { file }) => {
-        const match = file.match(/^([a-zA-Z0-9\s-]+(?:\(.*\))?)[_]/);
+    const hatFiles = files.filter(file => file.subfolder === 'Hat');
+    const hatGroups = hatFiles.reduce((acc, { file }) => {
+        const match = file.match(/^([a-zA-Z0-9\s-]+)(?:_Back|_Front)?[_]/);
         if (match) {
-            const styleName = match[1]; // Capture the base style name before the first underscore
+            const styleName = match[1]; // Capture the base style name
             acc[styleName] = acc[styleName] || [];
             acc[styleName].push(file);
         }
         return acc;
     }, {});
+    console.log(`Hat Groups: ${JSON.stringify(hatGroups, null, 2)}`);
 
     // Define a function to apply the color based on the layer name
     const applyColorToLayer = async (image, fileName) => {
@@ -255,8 +264,13 @@ async function processHat(files, baseName, subfolder, baseImage) {
 
         // Composite all layers for the hair style
         for (const file of sortedFiles) {
+            logToFile(`Processing file: ${file} in ${subfolder}`);
             try {
                 const imagePath = path.join(inputFolder, subfolder, file);
+                if (!fs.existsSync(imagePath)) {
+                    console.log(`File not found, skipping: ${imagePath}`);
+                    continue;
+                }
                 let image = await Jimp.read(imagePath);
                 image = await applyColorToLayer(image, file); // Apply color before compositing
                 compositeImage.composite(image, 0, 0, {

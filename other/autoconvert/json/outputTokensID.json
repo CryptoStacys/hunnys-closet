@@ -1,63 +1,45 @@
 [
     {
-        "tokenId": 57,
-        "name": "Color Harmony Dye Set",
+        "tokenId": 58,
+        "name": "Cozy Cabin Pack",
         "attributes": [
             {
-                "trait_type": "Dye",
-                "value": "Harmony Blue"
+                "trait_type": "Background",
+                "value": "Cozy Cabin"
             },
             {
-                "trait_type": "Dye",
-                "value": "Harmony Dark Blue"
+                "trait_type": "Outfit",
+                "value": "Flannel Shirt"
             },
             {
-                "trait_type": "Dye",
-                "value": "Harmony Dark Green"
+                "trait_type": "Hair Style",
+                "value": "Cozy Pigtails"
             },
             {
-                "trait_type": "Dye",
-                "value": "Harmony Dark Indigo"
-            },
+                "trait_type": "Hat",
+                "value": "PomPom Toque"
+            }
+        ],
+        "metaPath": ""
+    },
+    {
+        "tokenId": 59,
+        "name": "Unlock for All",
+        "attributes": [
             {
-                "trait_type": "Dye",
-                "value": "Harmony Dark Orange"
-            },
+                "trait_type": "Hand",
+                "value": "Bong"
+            }
+        ],
+        "metaPath": ""
+    },
+    {
+        "tokenId": 60,
+        "name": "Unlock for All",
+        "attributes": [
             {
-                "trait_type": "Dye",
-                "value": "Harmony Dark Red"
-            },
-            {
-                "trait_type": "Dye",
-                "value": "Harmony Dark Violet"
-            },
-            {
-                "trait_type": "Dye",
-                "value": "Harmony Dark Yellow"
-            },
-            {
-                "trait_type": "Dye",
-                "value": "Harmony Green"
-            },
-            {
-                "trait_type": "Dye",
-                "value": "Harmony Indigo"
-            },
-            {
-                "trait_type": "Dye",
-                "value": "Harmony Orange"
-            },
-            {
-                "trait_type": "Dye",
-                "value": "Harmony Red"
-            },
-            {
-                "trait_type": "Dye",
-                "value": "Harmony Violet"
-            },
-            {
-                "trait_type": "Dye",
-                "value": "Harmony Yellow"
+                "trait_type": "Hand",
+                "value": "Pops When Adventure Strikes Staff"
             }
         ],
         "metaPath": ""
