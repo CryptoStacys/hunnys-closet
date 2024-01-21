@@ -358,7 +358,7 @@
           { "internalType": "uint256", "name": "nonce", "type": "uint256" },
           { "internalType": "bytes", "name": "signature", "type": "bytes" }
         ],
-        "internalType": "struct HunnysClosetSalesV3.MintRequest",
+        "internalType": "struct HunnysClosetSalesV4.MintRequest",
         "name": "mintRequest",
         "type": "tuple"
       }
@@ -373,7 +373,7 @@
     "name": "nftContract",
     "outputs": [
       {
-        "internalType": "contract IHunnysClosetShopV3",
+        "internalType": "contract IHunnysClosetShopV4",
         "name": "",
         "type": "address"
       }
@@ -500,6 +500,13 @@
   {
     "inputs": [],
     "name": "withdraw",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "withdrawWETH",
     "outputs": [],
     "stateMutability": "nonpayable",
     "type": "function"
