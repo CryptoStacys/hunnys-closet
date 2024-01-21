@@ -1,45 +1,35 @@
-import { usePrepareContractWrite, useContractWrite, useWaitForTransaction } from "wagmi";
-
+import { useContractWrite, useNetwork, useSwitchNetwork } from "wagmi";
 import closetABI from "./../../data/abi/HunnysCloset.json";
-import { chainID } from "../../data/config";
-import { closetAddress } from "../../data/config";
-import { hunnysColors } from "../../data/config";
+import { chainID, closetAddress, hunnysColors } from "../../data/config";
 import { motion } from "framer-motion";
 import Icon from "../Icon/Icon";
-// import { ethers } from "ethers";
-
 import { modalAtom } from "../../data/store";
 import { useAtom } from "jotai";
 import ApplyButton from "../DollEditor/ApplyButton";
 
-// import doll0 from "./assets/0.avif";
-
 export default function Mint() {
   const [modal, modalSet] = useAtom(modalAtom);
+  const { chain: currentChain } = useNetwork();
+  const { switchNetwork } = useSwitchNetwork();
+  const expectedChainId = 1; // Ethereum Mainnet Chain ID
 
   let writeOpt:any = {
-    address: closetAddress, // dollys goerli Address
+    address: closetAddress as `0x${string}`, // type assertion
     chainId: chainID,
     abi: closetABI,
     args: [1], // mint 1
     functionName: "mintPublic",
-  }
+  };
 
-  // const { config } = usePrepareContractWrite({
-  //   address: closetAddress, // dollys goerli Address
-  //   chainId: chainID,
-  //   abi: closetABI,
-  //   args: [1], // mint 1
-  //   functionName: "mintPublic",
-  //   // overrides: {
-  //   //   from: '0xA0Cf798816D4b9b9866b5330EEa46a18382f251e',
-  //   //   value: ethers.utils.parseEther('0.01'),
-  //   // },
-  // });
+  const { write, data, isLoading, isSuccess } = useContractWrite(writeOpt);
 
-  // const { write } = useContractWrite(config);
-  // const { data, isLoading, isSuccess, write } = useContractWrite(config);
-  const { data, isLoading, isSuccess, write } = useContractWrite(writeOpt);
+  const handleMint = async () => {
+    if (currentChain?.id !== expectedChainId) {
+      switchNetwork && await switchNetwork(expectedChainId);
+    } else {
+      write?.();
+    }
+  };
   // const { data, isLoading, isSuccess, write } = useContractWrite(config);
   // const { isLoading } = useWaitForTransaction({
   //   hash: data?.hash,
@@ -80,7 +70,7 @@ export default function Mint() {
       )}
       <motion.button
         disabled={!write}
-        onClick={() => write?.()}
+        onClick={handleMint}
         whileHover={{
           scale: 1.03,
           transition: { delay: 0, duration: 0.2 },

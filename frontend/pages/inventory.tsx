@@ -22,9 +22,10 @@ export default function Items() {
   const [selectedTrait, selectedTraitSet] = useState(newTrait);
   const [allTraits, setAllTraits] = useAtom(allTraitsAtom);
   const [allAvailableTraits, setAllAvailableTraits] = useState<Trait[]>([]);
-  const updateTraits = useUpdateTraits(setAllAvailableTraits, setUser);  
+  const updateTraits = useUpdateTraits(setAllAvailableTraits, setUser, allAvailableTraits);  
   const provider = new ethers.providers.Web3Provider(window.ethereum as any);
-
+  const bunnyClubMembers = ["0xa7758394D8f7fD23b0d9F13E02427B514687394B", "0xd3500e2F117cE1e46812C870cB343268EC9f005a", "0xAddress3"].map(address => address.toLowerCase()); // Replace with actual addresses and convert to lowercase
+  const bunnyClubDiscount = 10; // 10% discount
   
 // On component mount, fetch all available traits and traits owned by the user (if user exists)
 useEffect(() => {
@@ -42,6 +43,11 @@ const handleMintSuccess = async () => {
   if (user) {
     const ownedTraits = await fetchTraits(user.address);
 
+    if (allAvailableTraits) {
+      updateTraits(user.address, () => allAvailableTraits);
+    } else {
+      console.error('allAvailableTraits is undefined');
+    }
     // Debugging: Log the ownedTraits structure
     console.log('ownedTraits:', ownedTraits);
 
@@ -90,10 +96,21 @@ const handleMintSuccess = async () => {
         eligible.origin_ids.includes(trait.origin_id)
       );
   
+      let price = eligibleToken ? eligibleToken.price : null;
+      let isDiscounted = false;
+  
+      // Check if user is a Bunny Club member and apply discount
+      if (user && bunnyClubMembers.includes(user.address.toLowerCase()) && price) {
+        const discount = price.mul(bunnyClubDiscount).div(100);
+        price = price.sub(discount);
+        isDiscounted = true;
+      }
+  
       return {
         ...trait,
         isEligibleForMinting: !!eligibleToken,
-        mintPrice: eligibleToken ? eligibleToken.price : null,
+        mintPrice: price,
+        isDiscounted
       };
     });
   
@@ -302,21 +319,22 @@ const handleMintSuccess = async () => {
                     <div className={`shadow-lg rounded-b-lg text-white w-full h-auto justify-center items-center font-bold break-words py-2 px-2`}>{item.name}</div>
                     {/* <div className={`w-full flex h-full justify-center items-center font-bold`}>{item.name}</div> */}
                     {item.isEligibleForMinting && (
-  <MintButton
-    tokenId={item.token_id}
-    mintPrice={item.mintPrice}
-    onMintSuccess={handleMintSuccess}
-    updateTraits={updateTraits}
-    userAddress={user?.address}
-    mintAction={async () => {
-      if (user?.address && item.token_id) {
-        await mintWithWeth(user.address, item.token_id, item.mintPrice, provider);
-      } else {
-        console.error("User address or token ID is undefined");
-      }
-    }}
-  />
-)}
+          <MintButton
+            tokenId={item.token_id}
+            mintPrice={item.mintPrice}
+            onMintSuccess={handleMintSuccess}
+            updateTraits={updateTraits}
+            userAddress={user?.address}
+            mintAction={async () => {
+              if (user?.address && item.token_id) {
+                await mintWithWeth(user.address, item.token_id, item.mintPrice, provider);
+              } else {
+                console.error("User address or token ID is undefined");
+              }
+            }}
+            className={item.isDiscounted ? 'discounted-mint-btn' : ''}
+          />
+        )}
 
 
                   </button>

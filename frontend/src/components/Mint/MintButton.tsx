@@ -1,17 +1,20 @@
 // MintButton.tsx
 import React, { useState, useEffect } from 'react';
 import { ethers, BigNumber } from 'ethers';
-import { useAccount } from 'wagmi';
+import { useAccount, useNetwork, useSwitchNetwork } from 'wagmi';
 import salesABI from "../../../../backend/src/abis/hunnys-closet-sales-abi.json";
 
 type MintButtonProps = {
   tokenId: string | undefined;
-  mintPrice: BigNumber;
+  mintPrice?: BigNumber;
+  isEligibleForMinting?: boolean | string[];
   onMintSuccess: () => void;
   updateTraits: (userAddress: string) => void;
   userAddress: string | undefined;
   mintAction: () => Promise<void>;
+  className?: string; // Add this line
 };
+
 
 const MintButton: React.FC<MintButtonProps> = ({
   tokenId,
@@ -19,14 +22,18 @@ const MintButton: React.FC<MintButtonProps> = ({
   onMintSuccess,
   updateTraits,
   userAddress,
-  mintAction
+  mintAction,
+  className // Add this line
 }) => {
   const [isTransactionPending, setTransactionPending] = useState(false);
   const [discountRate, setDiscountRate] = useState(0);
+  const { chain: currentChain } = useNetwork();
+  const { switchNetwork } = useSwitchNetwork();
   const { isConnected } = useAccount();
-
-  const hunnysClosetSalesAddress = "0xc451d87d41390b8a4e398a137209eed4475d4dd5";
-
+  const formattedPrice = mintPrice ? ethers.utils.formatUnits(mintPrice, "ether") : "Unavailable";
+  const dollysAddress = "0xC8465f21E35AfD1De06A81D932392C47b1BEA42A";
+  const hunnysClosetSalesAddress = "0x66923e2842da52b3e419fbbc79f07f1c8b0e908a";
+  const expectedChainId = 137; // Polygon Chain ID
   useEffect(() => {
     const fetchDiscountRate = async () => {
       const provider = new ethers.providers.JsonRpcProvider("https://polygon-mainnet.infura.io/v3/c6a0213e06df4189bbb84a64086a38ae");
@@ -48,8 +55,20 @@ const MintButton: React.FC<MintButtonProps> = ({
       return;
     }
 
+    if (currentChain?.id !== expectedChainId) {
+      // Prompt the user to switch to the correct chain
+      switchNetwork && switchNetwork(expectedChainId);
+      return;
+    }
+
     if (!tokenId || !userAddress) {
       console.error("Token ID or user address is undefined");
+      return;
+    }
+
+    if (!mintPrice) {
+      console.error("Mint price is undefined");
+      alert("Mint price not available.");
       return;
     }
 
@@ -61,22 +80,43 @@ const MintButton: React.FC<MintButtonProps> = ({
       updateTraits(userAddress);
       alert("Purchase successful!");
     } catch (error) {
-      console.error("Minting error:", error);
-      alert("Minting failed.");
+      console.error("Purchase error:", error);
+      alert("Purchase failed.");
     } finally {
       setTransactionPending(false);
     }
   };
 
-  return (
-    <button
-      onClick={handleMint}
-      disabled={isTransactionPending}
-      className={`bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded ${isTransactionPending ? "opacity-50" : ""}`}
-    >
-      {isTransactionPending ? "Processing..." : "Buy"}
-    </button>
-  );
+// Compute the original price if there's a discount
+const originalPrice = discountRate > 0 && mintPrice
+? mintPrice.mul(100).div(100 - discountRate)
+: mintPrice;
+const formattedOriginalPrice = originalPrice
+? ethers.utils.formatUnits(originalPrice, "ether")
+: null;
+
+// Determine the base class for the button
+const baseButtonClass = "mint-btn text-white font-bold py-2 px-4 rounded";
+// Determine additional classes based on state and props
+const additionalClasses = `${className || ''} ${isTransactionPending ? "opacity-50" : ""} ${isTransactionPending ? 'bg-gray-500' : 'bg-blue-500 hover:bg-blue-700'}`;
+
+return (
+<button
+  onClick={handleMint}
+  disabled={isTransactionPending || !mintPrice}
+  className={`${baseButtonClass} ${additionalClasses}`}
+>
+  {isTransactionPending ? "Processing..." : (
+    <>
+      
+      {mintPrice ? `Ξ ${formattedPrice}` : "Price Unavailable"}
+      {className === 'discounted-mint-btn' && (
+        <span className="discount-badge">-10%</span>
+      )}
+    </>
+  )}
+</button>
+);
 };
 
 export default MintButton;

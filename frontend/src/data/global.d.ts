@@ -1,4 +1,5 @@
 export type Trait = {
+  isDiscounted?: boolean | any;
   isOwned?: boolean | any;
   isEligibleForMinting?: boolean | string[]; // Updated to be optional
   mintPrice?: ethers.BigNumber | null; // Updated to be optional

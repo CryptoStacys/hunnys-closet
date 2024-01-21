@@ -122,6 +122,11 @@ a {
   border: 2px solid black;
 }
 
+.mint-btn {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
 .searchBar {
   border: 2px solid black;
   border-radius: 8px;
@@ -162,8 +167,8 @@ a {
 /* CSS */
 .badge {
   display: inline-block;
-  background-color: #fff; /* for visibility */
-  color: black;
+  background-color: #A264F4; /* for visibility */
+  color: white;
   padding: 0.25em 0.4em;
   font-family: 'DM Sans';
   font-size: 1em;
@@ -172,6 +177,24 @@ a {
   text-align: center;
   white-space: nowrap;
   border-radius: 0.25rem;
+}
+
+.discounted-mint-btn {
+  position: relative;
+}
+
+.discount-badge {
+  position: absolute;
+  top: -5px;
+  font-family: "Luckiest Guy";
+  font-weight: 100;
+  letter-spacing: .5px;
+  right: -5px;
+  background-color: #000;
+  color: white;
+  padding: 3px 6px;
+  border-radius: 50%;
+  font-size: 0.8em;
 }
 
 
@@ -202,7 +225,17 @@ a {
 }
 
 .grid-item {
-  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Align children at the top and bottom */
+  height: 220px; /* Set to the desired fixed height */
+}
+
+.grid-item img {
+  /* Ensure the image takes up all available width and height */
+  width: 100%;
+  height: auto; /* Adjust this as necessary */
+  object-fit: cover; /* Adjust as necessary to handle different image ratios */
 }
 
 .paginate {
@@ -218,12 +251,13 @@ a {
 
 @media (max-width: 1100px) {
   .dashboardHero {
-    min-height: 0vh;
-    
+    min-height: 0vh;  
   }
+  
   .grid-item {
-    height: 170px;
+    height: 220px;
   }
+  
 }
 
 @media (max-width: 1000px) {
@@ -252,6 +286,7 @@ a {
 
   .paginate {
     margin:auto;
+    margin-top: 80px;
     max-width: 30%;
     font-size: x-large;
   }
@@ -294,12 +329,18 @@ a {
   .attributeName {
     font-size: .875rem;
   }
+  .grid-item {
+    height: 250px;
+  }
 }
 
 @media (max-width: 639px) {
 
   .hideplz {
     display: none;
+  }
+  .grid-item {
+    height: 210px;
   }
 
 }
@@ -323,7 +364,7 @@ a {
   }
 
   .grid-item {
-    height: 150px;
+    height: 200px;
   }
   
 }
@@ -340,7 +381,7 @@ a {
     margin-left: 4px;
   }
   .grid-item {
-    height: 135px;
+    height: 165px;
   }
   .searchBar {
     max-width: 140px;

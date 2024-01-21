@@ -25,8 +25,8 @@ declare global {
 
 const { chains, publicClient, webSocketPublicClient } = configureChains(
   [
-    mainnet
-    // polygon,
+    mainnet,
+    polygon,
     // goerli
   ],
   [
@@ -100,7 +100,7 @@ function MyApp({ Component, pageProps }: AppProps) {
 
   return (
     <WagmiConfig config={wagmiConfig}>
-      <RainbowKitProvider chains={chains}>
+      <RainbowKitProvider coolMode chains={chains}>
         <App />
         {/* <Component {...pageProps} */}
         <Analytics />

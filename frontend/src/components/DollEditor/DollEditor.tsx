@@ -111,6 +111,11 @@ function setRandomHeadline() {
     load();
   }, []);
 
+  useEffect(() => {
+    console.log("Selected Trait changed in DollEditor:", selectedTrait);
+  }, [selectedTrait]);
+  
+
 
     // Function to generate tweet URL
     function generateTweetUrl(headline: any) {

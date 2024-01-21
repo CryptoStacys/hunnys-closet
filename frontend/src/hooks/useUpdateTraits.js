@@ -1,13 +1,13 @@
 // hooks/useUpdateTraits.js
 import { fetchTraits } from '../utils/traitUtils';
 
-
-const useUpdateTraits = (setAllAvailableTraits, setUser) => {
-  const updateTraits = async (userAddress) => {
+const useUpdateTraits = (setAllAvailableTraits, setUser, allAvailableTraits) => {
+  const updateTraits = async (userAddress, getAllAvailableTraits) => {
     const ownedTraits = await fetchTraits(userAddress);
+    
 
-    if (!Array.isArray(ownedTraits)) {
-      console.error('No traits data available or data is not an array:', ownedTraits);
+    if (!Array.isArray(ownedTraits) || !Array.isArray(allAvailableTraits)) {
+      console.error('Invalid data:', { ownedTraits, allAvailableTraits });
       return;
     }
 
