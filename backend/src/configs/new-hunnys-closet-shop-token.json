@@ -1446,28 +1446,6 @@
             }
         ],
         "metaPath": "https://hunnysclosetshop.s3.us-east-2.amazonaws.com/images/goodies/58"
-    },
-    {
-        "tokenId": 59,
-        "name": "Bong",
-        "attributes": [
-            {
-                "trait_type": "Hand",
-                "value": "Bong"
-            }
-        ],
-        "metaPath": "https://hunnysclosetshop.s3.us-east-2.amazonaws.com/images/goodies/59"
-    },
-    {
-        "tokenId": 60,
-        "name": "Pops When Adventure Strikes Staff",
-        "attributes": [
-            {
-                "trait_type": "Hand",
-                "value": "Pops When Adventure Strikes Staff"
-            }
-        ],
-        "metaPath": "https://hunnysclosetshop.s3.us-east-2.amazonaws.com/images/goodies/60"
     }
 ]
 

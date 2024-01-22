@@ -13,11 +13,32 @@ export type EligibleToken = {
 };
 
 // Define your Bunny Club members list and discount rate
-const bunnyClubMembers = ["0xa7758394D8f7fD23b0d9F13E02427B514687394B", "0xd3500e2F117cE1e46812C870cB343268EC9f005a", "0xAddress3"]; // Replace with actual addresses
+const bunnyClubMembers = ["0xa7758394D8f7fD23b0d9F13E02427B514687394B",
+"0x55Abdc04655d590a48BCd1B996115448b71b7a84",
+"0x4eE115d0708924B4d3a83e45A428B0e3cb4348e9",
+"0x3a9a9b0a3148599dde1660476c6a47b1272247c6",
+"0xe17d0ac3F7C498924d4920bf279C01536686e014",
+"0x48a19c6B158491325E84c8837ED8Ba95A0403C13",
+"0x9d9d3bca9ae1126244786089d81ba9b289970238",
+"0x1975638d2dfdeee04d11adf6350187af9996dc7c",
+"0x6c6cD01ebbd02254C5Db5263797E366511992d29",
+"0x019Db3aA167aF3B91b6D72a05dD8437aaDd5225E",
+"0x473e12B41bC13d3Ac98C4d06cD549Ba8a704dbf1",
+"0xBcDa92fF0D83448ad2B65C7a59D62FE3A18bF95f",
+"0x650d492E2F68A665a5dc029bc3f255FE5ec366Fc",
+"0x0009C319862f623aCa7b210a905121612fBBDf22",
+"0x7B710AD4c01038E62927cEBb2d5df68cF3463413",
+"0xa5cC1E135C92a4DD1b32A328e1343eB4150461B6",
+"0x5Cf422E9Ff1D79c98C479F8d4e8cbdC7B51E1550",
+"0x78ae230336bb65B0023d78156708783402f303c2",
+"0x8b5e18b1A4BfF36085604e94C9bdE2054C62d026",
+"0xFb203c2E544d1D2D889900883b4bD538Bc914357",
+"0x051f1F3920D196cc998D74A56978370b82432D25",
+"0x16272E839A5C29A3Fa90E670Cb599d233b6943aC"]; // Replace with actual addresses
 const bunnyClubDiscount = 10; // 10% discount
 
 export const eligibleTokenIds: EligibleToken[] = [
-  { token_id: '0', price: ethers.utils.parseUnits("0.01", "ether"), origin_ids: [7, 9] },
+  { token_id: '0', price: ethers.utils.parseUnits("0.00", "ether"), origin_ids: [7, 9] },
   { token_id: '2', price: ethers.utils.parseUnits("0.0125", "ether"), origin_ids: [7, 9] },
   { token_id: '3', price: ethers.utils.parseUnits("0.01", "ether"), origin_ids: [7, 9] },
   { token_id: '4', price: ethers.utils.parseUnits("0.028", "ether"), origin_ids: [7, 9] },
@@ -26,7 +47,7 @@ export const eligibleTokenIds: EligibleToken[] = [
   { token_id: '7', price: ethers.utils.parseUnits("0.0012", "ether"), origin_ids: [7, 9] },
   { token_id: '8', price: ethers.utils.parseUnits("0.018", "ether"), origin_ids: [7, 9] },
   { token_id: '9', price: ethers.utils.parseUnits("0.003", "ether"), origin_ids: [7, 9] },
-  { token_id: '10', price: ethers.utils.parseUnits("0.00002", "ether"), origin_ids: [7, 9] },
+  { token_id: '10', price: ethers.utils.parseUnits("0.03", "ether"), origin_ids: [7, 9] },
   { token_id: '11', price: ethers.utils.parseUnits("0.008", "ether"), origin_ids: [7, 9] },
   { token_id: '46', price: ethers.utils.parseUnits("0.05", "ether"), origin_ids: [7, 9] },
   { token_id: '47', price: ethers.utils.parseUnits("0.05", "ether"), origin_ids: [7, 9] },

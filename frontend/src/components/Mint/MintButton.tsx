@@ -98,20 +98,21 @@ const formattedOriginalPrice = originalPrice
 // Determine the base class for the button
 const baseButtonClass = "mint-btn text-white font-bold py-2 px-4 rounded";
 // Determine additional classes based on state and props
-const additionalClasses = `${className || ''} ${isTransactionPending ? "opacity-50" : ""} ${isTransactionPending ? 'bg-gray-500' : 'bg-blue-500 hover:bg-blue-700'}`;
+const additionalClasses = `${className || ''} ${isTransactionPending ? "opacity-50" : ""} ${isTransactionPending ? 'bg-gray-500' : 'bg-[#7B2BFF] hover:bg-[#9e63ff] rounded-full'}`;
 
 return (
 <button
   onClick={handleMint}
   disabled={isTransactionPending || !mintPrice}
   className={`${baseButtonClass} ${additionalClasses}`}
+  
 >
   {isTransactionPending ? "Processing..." : (
     <>
       
       {mintPrice ? `Ξ ${formattedPrice}` : "Price Unavailable"}
       {className === 'discounted-mint-btn' && (
-        <span className="discount-badge">-10%</span>
+        <span className="discount-badge shadow-lg">-10%</span>
       )}
     </>
   )}

@@ -167,7 +167,9 @@
       "traits": [
         { "name": "Empty", "colors": 0, "rarity": "common", "tags": [] },
         { "name": "Ramen Chopsticks", "colors": 3, "rarity": "common", "tags": ["skin"] },
-        { "name": "Silas", "colors": 5, "rarity": "common", "tags": ["skin"] }
+        { "name": "Silas", "colors": 5, "rarity": "common", "tags": ["skin"] },
+        {"name":"Bong","colors":3,"rarity":"Common","tags":["skin"]},
+        {"name":"Pops When Adventure Strikes Staff","colors":5,"rarity":"Common","tags":["skin"]}
       ]
     },
     {

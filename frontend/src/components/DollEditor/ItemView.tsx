@@ -62,7 +62,28 @@ export default function ItemView(props: { selectedTrait: Trait; selectedTraitSet
   '0x55Abdc04655d590a48BCd1B996115448b71b7a84' // Stacys
   ];
 
-  const bunnyClubMembers = ["0xa7758394D8f7fD23b0d9F13E02427B514687394B", "0xd3500e2F117cE1e46812C870cB343268EC9f005a", "0xAddress3"].map(address => address.toLowerCase()); // Replace with actual addresses
+  const bunnyClubMembers = ["0xa7758394D8f7fD23b0d9F13E02427B514687394B",
+  "0x55Abdc04655d590a48BCd1B996115448b71b7a84",
+  "0x4eE115d0708924B4d3a83e45A428B0e3cb4348e9",
+  "0x3a9a9b0a3148599dde1660476c6a47b1272247c6",
+  "0xe17d0ac3F7C498924d4920bf279C01536686e014",
+  "0x48a19c6B158491325E84c8837ED8Ba95A0403C13",
+  "0x9d9d3bca9ae1126244786089d81ba9b289970238",
+  "0x1975638d2dfdeee04d11adf6350187af9996dc7c",
+  "0x6c6cD01ebbd02254C5Db5263797E366511992d29",
+  "0x019Db3aA167aF3B91b6D72a05dD8437aaDd5225E",
+  "0x473e12B41bC13d3Ac98C4d06cD549Ba8a704dbf1",
+  "0xBcDa92fF0D83448ad2B65C7a59D62FE3A18bF95f",
+  "0x650d492E2F68A665a5dc029bc3f255FE5ec366Fc",
+  "0x0009C319862f623aCa7b210a905121612fBBDf22",
+  "0x7B710AD4c01038E62927cEBb2d5df68cF3463413",
+  "0xa5cC1E135C92a4DD1b32A328e1343eB4150461B6",
+  "0x5Cf422E9Ff1D79c98C479F8d4e8cbdC7B51E1550",
+  "0x78ae230336bb65B0023d78156708783402f303c2",
+  "0x8b5e18b1A4BfF36085604e94C9bdE2054C62d026",
+  "0xFb203c2E544d1D2D889900883b4bD538Bc914357",
+  "0x051f1F3920D196cc998D74A56978370b82432D25",
+  "0x16272E839A5C29A3Fa90E670Cb599d233b6943aC"].map(address => address.toLowerCase()); // Replace with actual addresses
   const bunnyClubDiscount = 10; // 10% discount
   
   const [allAvailableTraits, setAllAvailableTraits] = useState<Trait[]>([]); // State for all available traits
@@ -533,9 +554,17 @@ export default function ItemView(props: { selectedTrait: Trait; selectedTraitSet
     }, []); // Empty dependency array to ensure this runs only once on component mount
     
     
-  return (
-    <>
-      <ItemViewSettings selectedTrait={props.selectedTrait} getTraits={getTraits} setTraits={setTraits} back={back} />
+    const isDiscounted = user && bunnyClubMembers.includes(user.address.toLowerCase());
+    const discountedPrice = isDiscounted && props.selectedTrait.mintPrice
+      ? props.selectedTrait.mintPrice.mul(100 - bunnyClubDiscount).div(100)
+      : props.selectedTrait.mintPrice;
+  
+      // Inside your ItemView component, before the return statement
+const isEligibleForPurchase = props.selectedTrait.isEligibleForMinting && props.selectedTrait.mintPrice && !props.selectedTrait.mintPrice.isZero();
+
+return (
+  <>
+     <ItemViewSettings selectedTrait={props.selectedTrait} getTraits={getTraits} setTraits={setTraits} back={back} />
       <div className="mb-3 grid sm:grid-cols-[1fr_1fr] lg:grid-cols-[2fr_3fr] gap-3">
         <div className="relative mobile-hide">
           <Image width={600} height={600}
@@ -604,9 +633,26 @@ export default function ItemView(props: { selectedTrait: Trait; selectedTraitSet
   )
 }
 
-
-
-
+      {isEligibleForPurchase &&(<div className="flex flex-row mt-5 gap-12 items-center justify-between">
+          <div>Buy Now</div>
+          <MintButton
+              tokenId={props.selectedTrait.token_id}
+              mintPrice={discountedPrice}
+              onMintSuccess={() => handleMintSuccess(props.selectedTrait)}
+              updateTraits={updateTraits}
+              userAddress={user?.address}
+              mintAction={async () => {
+                if (user?.address && props.selectedTrait.token_id) {
+                  setCurrentMintedTrait(props.selectedTrait); // Set current minted trait
+                  await mintWithWeth(user.address, props.selectedTrait.token_id, discountedPrice, provider);
+                  handleMintSuccess(props.selectedTrait); // Call handleMintSuccess after successful mint
+                } else {
+                  console.error("User address or token ID is undefined");
+                }
+              }}
+              className={isDiscounted ? 'discounted-mint-btn' : 'test'}
+            />
+        </div>)}
               {/* INFO */}
               {props.selectedTrait.attribute === "Bodysuit" && (
                 <Help
@@ -620,15 +666,19 @@ export default function ItemView(props: { selectedTrait: Trait; selectedTraitSet
               )}
             </div>
           </div>
+                {/* Buy Now Button and Icon Placeholder */}
+    <div className="mt-4 flex justify-between items-center">
+          
+          <div className="w-20 h-20"> {/* Placeholder for 80x80 icon */}</div>
         </div>
-      </div>
-      {/* BACKPACK */}
-      <div>
-        {/* EQUIPPED DYES */}
-        {getColors().length > 0 && (
-          <>
-            <div className="font-bold text-gray-600 mt-6 mb-1">Select your dyes</div>
-            <div className="grid grid-cols-2 sm:grid-cols-4 md:grid-cols-4 gap-3">
+        </div>
+        </div>
+        <div>
+ {/* EQUIPPED DYES */}
+ {getColors().length > 0 && (
+          <><div className="font-bold text-gray-600 mt-6 mb-1">
+            <div className="font-bold text-gray-600 text-xl mt-6 p-4 mb-1">Select your dyes</div>
+            <div className="grid p-8 grid-cols-2 sm:grid-cols-4 md:grid-cols-4 gap-3">
               {getColors().map((color, index) => (
                 <motion.button
                   initial={{ scale: 1, rotate: "0deg" }}
@@ -667,12 +717,12 @@ export default function ItemView(props: { selectedTrait: Trait; selectedTraitSet
                     className="absolute left-0 bottom-0 rounded-b-lg w-full text-sm flex-center pt-2 pb-2 z-20"
                   >
                     {color}
-                  </div>
-                </motion.button>
-              ))}
-            </div>
-          </>
-        )}
+          </div>
+        </motion.button>
+      ))}</div>
+    </div>
+</>
+)}
         {/* SELECTING NEW DYE */}
         <AnimatePresence>
           {selectedColor > -1 && (
@@ -699,51 +749,54 @@ export default function ItemView(props: { selectedTrait: Trait; selectedTraitSet
                 ))}
               </div>
 
-              {/* FILTERED AVAILABLE COLORS  */}
-              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-3 gap-y-3 mb-4 mt-6">
-                {getColorsAvailable()
-                  .sort()
-                  .filter((x) => true)
-                  .map((color: string, index: number) => (
-                    <motion.button
-                      key={index}
-                      initial={{
-                        background: "#fff",
-                        color: "#666",
-                        opacity: 0,
-                        translateY: -6,
-                      }}
-                      animate={{
-                        opacity: 1,
-                        transition: { delay: 0.02 * index },
-                        translateY: 0,
-                      }}
-                      exit={{
-                        opacity: 0,
-                        translateY: -6,
-                      }}
-                      whileHover={{
-                        scale: 1.06,
-                        background: colorNameToRGB(color),
-                        color: "#fff",
-                        transition: { delay: 0, duration: 0.08 },
-                      }}
-                      onClick={() => setColor(selectedColor, color)}
-                      className="select-none shadow-md rounded-full flex text-sm font-bold"
-                    >
-                      <div
-                        className=" h-[36px] aspect-square rounded-full border-[4px] border-white"
-                        style={{
-                          background: colorNameToRGB(color),
-                        }}
-                      ></div>
-                      <div className="ml-[-10px] w-full h-[36px] flex-center">{color}</div>
-                    </motion.button>
-                  ))}
-              </div>
+             {/* FILTERED AVAILABLE COLORS */}
+<div className="grid xs:grid-cols-5 sm:grid-cols-6 xl:grid-cols-8 gap-x-3 gap-y-3 mb-4 mt-6">
+  {getColorsAvailable()
+    .sort()
+    .map((color: string, index: number) => (
+      <div
+        key={index}
+        className="relative group overflow-visible " // Set overflow to visible
+        style={{ width: '60px', height: '60px' }}
+      >
+        <motion.button
+          initial={{
+            border: "4px solid white",
+          }}
+          animate={{
+            opacity: 1,
+            transition: { delay: 0.02 * index },
+          }}
+          whileHover={{
+            scale: 1.1,
+            border: "4px solid black",
+            transition: { delay: 0, duration: 0.08 },
+          }}
+          onClick={() => setColor(selectedColor, color)}
+          className="w-full h-full rounded-lg cursor-pointer dyes" // Keep rounded-lg if you want rounded corners
+          style={{
+            background: colorNameToRGB(color),
+          }}
+        />
+        <div
+          className="opacity-0 group-hover:opacity-100 absolute -top-10 left-1/2 transform -translate-x-1/2 text-center pointer-events-none transition-opacity duration-150 z-10" // Adjusted to float above
+        >
+          <span
+            className="bg-black block text-white py-1 px-3 rounded-md text-xs"
+          >
+            {color}
+          </span>
+        </div>
+      </div>
+    ))}
+</div>
+
             </motion.div>
           )}
         </AnimatePresence>
+        </div>
+      {/* BACKPACK */}
+      
         {/* OTHER ITEMS */}            
         <div className="mb-12">
         <div className="font-bold font-luckiest flex pl-1 mt-8 text-[#444] flex flex-row">
@@ -785,6 +838,7 @@ export default function ItemView(props: { selectedTrait: Trait; selectedTraitSet
 
           <div className="grid grid-cols-4 w-full gap-y-3 gap-x-2 pb-6 break-words ">
   {currentItems.map((trait: Trait) => {
+    
     // Check if user is eligible for a discount
     const isDiscounted = user && bunnyClubMembers.includes(user.address.toLowerCase());
     // Calculate discounted price if eligible
@@ -806,12 +860,20 @@ export default function ItemView(props: { selectedTrait: Trait; selectedTraitSet
                   onClick={() => setTraits(trait)}
                   className={`relative ${!checkForOwnedTrait(trait) ? 'low-brightness' : ''} `}
                 >
-                  <div
-                    className="absolute right-2 top-4 rounded-full h-[16px] w-[16px] border-[3px] border-white"
-                    style={{
-                      background: hunnysColors[trait.rarity!.toLocaleLowerCase()],
-                    }}
-                  ></div>
+                  {trait.isEligibleForMinting ? (
+        // Render image for eligible traits
+        <img 
+          src="https://cdn.discordapp.com/attachments/1032105881447444491/1199073815544737852/Hunnys_Closet_Mockups_1.png?ex=65c13783&is=65aec283&hm=1c1b22ba3c46e7fcfe29b99a97ae67cbc3163de34876f4c9c8bbe9604c1e3029&" // Replace with actual image path
+          alt="Minting Eligible"
+          className="absolute forSale right-2 top-4 shadow-xl"
+        />
+      ) : (
+        // Render rarity dot for other traits
+        <div
+          className="absolute right-2 top-4 rounded-full h-[16px] w-[16px] border-[3px] border-white"
+          style={{ background: hunnysColors[trait.rarity!.toLocaleLowerCase()] }}
+        ></div>
+      )}
 
                     <Image width={600} height={600} priority={true}
                       className="w-full shadow-lg aspect-square flex-center"
@@ -821,7 +883,7 @@ export default function ItemView(props: { selectedTrait: Trait; selectedTraitSet
                     <div style={{backgroundColor: '#a264f4'}} className={`shadow-lg rounded-b-lg text-white w-full h-auto justify-center items-center font-bold  py-2 px-2`}>{trait.name}</div>
 
                 </motion.button>
-                {/* Add the MintButton if the trait is eligible for minting */}
+                {/* Add the MintButton if the trait is eligible for minting 
                 
                 {trait.isEligibleForMinting && (
                   <MintButton
@@ -841,7 +903,7 @@ export default function ItemView(props: { selectedTrait: Trait; selectedTraitSet
                     }}
                     className={isDiscounted ? 'discounted-mint-btn' : 'test'}
                   />
-                )}
+                )}*/}
               </div>
             );
           })}
@@ -854,7 +916,6 @@ export default function ItemView(props: { selectedTrait: Trait; selectedTraitSet
             <button className={`bg-hunnys-yellow paginate text-hunnys-blue w-full max-w-[180px] font-title shadow-md rounded-full  text-4xl hover:shadow-lg hover:scale-[1.02] transition-all ${currentItems.length < ITEMS_PER_PAGE ? 'opacity-40 cursor-not-allowed justify-between' : ''}`} disabled={currentItems.length < ITEMS_PER_PAGE} onClick={() => setCurrentPage(currentPage + 1)}>NEXT</button>
                 </div>
         </div>
-      </div>
     </>
   );
 }

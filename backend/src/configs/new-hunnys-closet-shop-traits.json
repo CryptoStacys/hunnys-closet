@@ -62,9 +62,7 @@
         {"name":"XL Hot Cocoa","colors":4,"rarity":"Rare","tags":["skin"],"token_id":49},
         {"name":"Christmas Tree Mug","colors":5,"rarity":"Uncommon","tags":["skin"],"token_id":49},
         {"name":"Rancher Handbag","colors":4,"rarity":"Rare","tags":["skin"],"token_id":53},
-        {"name":"Sailor Babe Tote","colors":3,"rarity":"Uncommon","tags":["skin"],"token_id":54},
-        {"name":"Bong","colors":3,"rarity":"Common","tags":["skin"],"token_id":59},
-        {"name":"Pops When Adventure Strikes Staff","colors":5,"rarity":"Common","tags":["skin"],"token_id":60}
+        {"name":"Sailor Babe Tote","colors":3,"rarity":"Uncommon","tags":["skin"],"token_id":54}
       ]
     },
     {
