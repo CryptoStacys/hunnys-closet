@@ -1,4 +1,9 @@
 export type Trait = {
+  isDiscounted?: boolean | any;
+  isOwned?: boolean | any;
+  isEligibleForMinting?: boolean | string[]; // Updated to be optional
+  mintPrice?: ethers.BigNumber | null; // Updated to be optional
+  id: number;
   origin_id: number;
   name: string;
   attribute: string;
@@ -9,6 +14,7 @@ export type Trait = {
   colorsApplied: string[];
 };
 
+
 export type User = {
   address: string;
   dollys: Dolly[];
@@ -17,6 +23,10 @@ export type User = {
   skin_colors: string[];
   tokens: Token[];
   hideSaveChangesModal: boolean;
+};
+
+type OwnedTraitsResponse = {
+  traits: Trait[];
 };
 
 export type Dolly = {

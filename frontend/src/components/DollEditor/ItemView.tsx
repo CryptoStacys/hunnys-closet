@@ -23,8 +23,12 @@ import colorNames from "../../data/colorNames";
 import colorGroups from "../../data/colorGroups";
 import { hunnysColors, thumbnailPath } from "../../data/config";
 import { localStorageKey } from "../../data/config";
-
+import { ethers } from 'ethers';
 import Image from "next/image";
+import MintButton from "../Mint/MintButton";
+import useUpdateTraits from "../../hooks/useUpdateTraits";
+import { eligibleTokenIds, mintWithWeth } from "../../utils/eligibleTokens";
+import { fetchTraits } from "../../utils/traitUtils";
 
 export default function ItemView(props: { selectedTrait: Trait; selectedTraitSet: any; tokenSet: any }) {
     // animation variants
@@ -50,7 +54,7 @@ export default function ItemView(props: { selectedTrait: Trait; selectedTraitSet
   const [sortOrder, setSortOrder] = useState('A-Z');
   const rarityOrder = ['Common', 'common', 'Uncommon', 'uncommon', 'Rare', 'rare', 'Epic', 'epic', 'Relic', 'relic', 'Legendary', 'legendary', 'Mythic', 'mythic', 'Immortal', 'immortal'];
   const [sortType, setSortType] = useState('default');
-  const [user] = useAtom(userAtom);
+  const [user, setUser] = useAtom(userAtom);
   const [allTraits] = useAtom(allTraitsAtom);
   const SPECIAL_WALLET_ADDRESSES = [
   '0xB179Ec3179f20452710dc544FCd1486b8e7be4C0', // Hypebunny.eth
@@ -58,62 +62,161 @@ export default function ItemView(props: { selectedTrait: Trait; selectedTraitSet
   '0x55Abdc04655d590a48BCd1B996115448b71b7a84' // Stacys
   ];
 
-  useEffect(() => {
-    let sortedData = allTraits.traits.filter(trait =>
-      trait.attribute === props.selectedTrait!.attribute &&
-      trait.name.toLowerCase().includes(searchTerm.toLowerCase()) // Search filter
-    );
+  const bunnyClubMembers = ["0xa7758394D8f7fD23b0d9F13E02427B514687394B",
+  "0x55Abdc04655d590a48BCd1B996115448b71b7a84",
+  "0x4eE115d0708924B4d3a83e45A428B0e3cb4348e9",
+  "0x3a9a9b0a3148599dde1660476c6a47b1272247c6",
+  "0xe17d0ac3F7C498924d4920bf279C01536686e014",
+  "0x48a19c6B158491325E84c8837ED8Ba95A0403C13",
+  "0x9d9d3bca9ae1126244786089d81ba9b289970238",
+  "0x1975638d2dfdeee04d11adf6350187af9996dc7c",
+  "0x6c6cD01ebbd02254C5Db5263797E366511992d29",
+  "0x019Db3aA167aF3B91b6D72a05dD8437aaDd5225E",
+  "0x473e12B41bC13d3Ac98C4d06cD549Ba8a704dbf1",
+  "0xBcDa92fF0D83448ad2B65C7a59D62FE3A18bF95f",
+  "0x650d492E2F68A665a5dc029bc3f255FE5ec366Fc",
+  "0x0009C319862f623aCa7b210a905121612fBBDf22",
+  "0x7B710AD4c01038E62927cEBb2d5df68cF3463413",
+  "0xa5cC1E135C92a4DD1b32A328e1343eB4150461B6",
+  "0x5Cf422E9Ff1D79c98C479F8d4e8cbdC7B51E1550",
+  "0x78ae230336bb65B0023d78156708783402f303c2",
+  "0x8b5e18b1A4BfF36085604e94C9bdE2054C62d026",
+  "0xFb203c2E544d1D2D889900883b4bD538Bc914357",
+  "0x051f1F3920D196cc998D74A56978370b82432D25",
+  "0x16272E839A5C29A3Fa90E670Cb599d233b6943aC"].map(address => address.toLowerCase()); // Replace with actual addresses
+  const bunnyClubDiscount = 10; // 10% discount
   
-    // Remove duplicates
-    sortedData = sortedData.filter((trait, index, self) =>
-      index === self.findIndex(t => t.name === trait.name)
-    );
+  const [allAvailableTraits, setAllAvailableTraits] = useState<Trait[]>([]); // State for all available traits
+  const updateTraits = useUpdateTraits(setAllAvailableTraits, setUser); // Custom hook usage
+ 
+  const [isEligibleForMinting, setIsEligibleForMinting] = useState(false);
+  const [currentMintedTrait, setCurrentMintedTrait] = useState<Trait | null>(null);
+
+    // Set the current minted trait before calling mintWithWeth
+  const provider = new ethers.providers.Web3Provider(window.ethereum as any);   
   
-    // Extract and temporarily remove 'Empty' trait
-    const emptyTraitIndex = sortedData.findIndex(t => t.name === 'Empty');
-    let emptyTrait;
-    if (emptyTraitIndex > -1) {
-      emptyTrait = sortedData.splice(emptyTraitIndex, 1)[0];
-    }
+    
   
-    // Custom comparator function for sorting
-    const sortByOwnedAndName = (a: Trait, b: Trait): number => {
-      // Handle 'Empty' trait
-      if (a.name === "Empty") return -1;
-      if (b.name === "Empty") return 1;
-  
-      // Sort by owned status
-      const aOwned = checkForOwnedTrait(a);
-      const bOwned = checkForOwnedTrait(b);
-      if (aOwned !== bOwned) {
-        return sortType === 'NotOwned' ? aOwned - bOwned : bOwned - aOwned;
-      }
-  
-      // Additional sorting based on sortType
-      switch (sortType) {
-        case 'A-Z':
-          return (a.name ?? '').localeCompare(b.name ?? '');
-        case 'Z-A':
-          return (b.name ?? '').localeCompare(a.name ?? '');
-        case 'Rare to Common':
-          return rarityOrder.indexOf(b.rarity ?? '') - rarityOrder.indexOf(a.rarity ?? '');
-        case 'Common to Rare':
-          return rarityOrder.indexOf(a.rarity ?? '') - rarityOrder.indexOf(b.rarity ?? '');
-        default:
-          return 0;
+    // Define handleMintSuccess function
+    const handleMintSuccess = async (trait: Trait) => {
+      if (user) {
+        const ownedTraits = await fetchTraits(user.address);
+        console.log('Fetched ownedTraits:', ownedTraits);
+        if (ownedTraits && Array.isArray(ownedTraits)) {
+          const updatedTraits = allAvailableTraits.map(availableTrait => ({
+            ...availableTrait,
+            isOwned: ownedTraits.some(ownedTrait => ownedTrait.id === availableTrait.id)
+          }));
+          setAllAvailableTraits(updatedTraits);
+          setUser({ ...user, traits: ownedTraits });
+        } else {
+          console.error('Error fetching owned traits or the result is not an array:', ownedTraits);
+        }
       }
     };
+    
+    
+    
+    useEffect(() => {
+      if (currentMintedTrait) {
+        updateTraitsAfterMint(); // Call this function when currentMintedTrait is set
+      }
+    }, [currentMintedTrait]);
+    
+    useEffect(() => {
+      console.log("ItemView Mounted. Selected Trait:", props.selectedTrait);
+    }, []);
+    
   
-    // Apply sorting
-    sortedData.sort(sortByOwnedAndName);
+    // Define updateTraitsAfterMint function
+    const updateTraitsAfterMint = async () => {
+      if (!user || !user.address || !currentMintedTrait) {
+        console.error("User, user address, or current minted trait is undefined");
+        return;
+      }
+      const updatedTraits = sortedItems.map(item => {
+        if (item.token_id === currentMintedTrait.token_id) {
+          return { ...item, isOwned: true }; // Update isOwned flag for the minted trait
+        }
+        return item;
+      });
+      setSortedItems(updatedTraits);
+    };
+    
+
+    useEffect(() => {
+      let sortedData = allTraits.traits.filter(trait =>
+        trait.attribute === props.selectedTrait!.attribute &&
+        trait.name.toLowerCase().includes(searchTerm.toLowerCase())
+      );
+    
+      // Remove duplicates
+      sortedData = sortedData.filter((trait, index, self) =>
+        index === self.findIndex(t => t.name === trait.name)
+      );
+    
+      // Extract and temporarily remove 'Empty' trait
+      const emptyTraitIndex = sortedData.findIndex(t => t.name === 'Empty');
+      let emptyTrait;
+      if (emptyTraitIndex > -1) {
+        emptyTrait = sortedData.splice(emptyTraitIndex, 1)[0];
+      }
+    
+      // Apply sorting and check eligibility
+      sortedData = sortedData.map(trait => {
+        const eligibleToken = eligibleTokenIds.find(eligible => 
+          eligible.token_id === String(trait.token_id) &&
+          eligible.origin_ids.includes(trait.origin_id)
+        );
+        const isEligible = Boolean(eligibleToken);
+        
+        return {
+          ...trait,
+          isEligibleForMinting: isEligible,
+          mintPrice: eligibleToken?.price ?? undefined
+        };
+
+      }).sort((a, b) => {
+        // Sort by 'Empty' trait
+        if (a.name === "Empty") return -1;
+        if (b.name === "Empty") return 1;
+    
+        // Sort by owned status
+        const aOwned = checkForOwnedTrait(a);
+        const bOwned = checkForOwnedTrait(b);
+        if (aOwned !== bOwned) {
+          return sortType === 'NotOwned' ? aOwned - bOwned : bOwned - aOwned;
+        }
+    
+        // Additional sorting based on sortType
+        switch (sortType) {
+          case 'A-Z':
+            return (a.name ?? '').localeCompare(b.name ?? '');
+          case 'Z-A':
+            return (b.name ?? '').localeCompare(a.name ?? '');
+          case 'Rare to Common':
+            return rarityOrder.indexOf(b.rarity ?? '') - rarityOrder.indexOf(a.rarity ?? '');
+          case 'Common to Rare':
+            return rarityOrder.indexOf(a.rarity ?? '') - rarityOrder.indexOf(b.rarity ?? '');
+          default:
+            return 0;
+        }
+      });
+    
+      // Re-add 'Empty' trait at the start if it was removed
+      if (emptyTrait) {
+        sortedData.unshift(emptyTrait);
+      }
+
+      if (sortType === 'OnSale') {
+        sortedData = sortedData.filter(trait => trait.isEligibleForMinting);
+      }
+    
+      setSortedItems(sortedData);
+    }, [searchTerm, sortType, allTraits.traits, props.selectedTrait, eligibleTokenIds]);
+    
+
   
-    // Re-add 'Empty' trait at the start if it was removed
-    if (emptyTrait) {
-      sortedData.unshift(emptyTrait);
-    }
-  
-    setSortedItems(sortedData);
-  }, [searchTerm, sortType, allTraits.traits, props.selectedTrait, user]);
 
   // state to check which color is being edited
   const [selectedColor, selectedColorSet] = useState(-1);
@@ -153,6 +256,19 @@ export default function ItemView(props: { selectedTrait: Trait; selectedTraitSet
 
     setSortedItems(sortedData);
   }, []);
+
+  useEffect(() => {
+    const checkEligibility = async () => {
+      const eligibleToken = eligibleTokenIds.find(eligible => eligible.token_id === String(props.selectedTrait.token_id));
+      setIsEligibleForMinting(Boolean(eligibleToken));
+      console.log("Eligibility checked:", Boolean(eligibleToken)); // Add this line
+    };
+  
+    checkEligibility();
+  }, [props.selectedTrait, eligibleTokenIds]);
+  
+
+
 
   function closeDyeSelection() {
     selectedColorSet(-1);
@@ -355,6 +471,7 @@ export default function ItemView(props: { selectedTrait: Trait; selectedTraitSet
     return result;
   }
 
+
   // update token with the new trait
   function checkUndergarment(trait: Trait, prev: Trait[]) {
     // Undergarment check
@@ -428,10 +545,26 @@ export default function ItemView(props: { selectedTrait: Trait; selectedTraitSet
     const currentItems = sortedItems.slice(startIndex, endIndex);
     const pageTotal = Math.ceil(sortedItems.length / 12);
     
+    console.log("ItemView rendering");
+    useEffect(() => {
+      // Automatically set sortType to 'Owned' on component mount
+      setSortType('Owned');
+    
+      // Rest of your existing useEffect logic...
+    }, []); // Empty dependency array to ensure this runs only once on component mount
+    
+    
+    const isDiscounted = user && bunnyClubMembers.includes(user.address.toLowerCase());
+    const discountedPrice = isDiscounted && props.selectedTrait.mintPrice
+      ? props.selectedTrait.mintPrice.mul(100 - bunnyClubDiscount).div(100)
+      : props.selectedTrait.mintPrice;
+  
+      // Inside your ItemView component, before the return statement
+const isEligibleForPurchase = props.selectedTrait.isEligibleForMinting && props.selectedTrait.mintPrice && !props.selectedTrait.mintPrice.isZero();
 
-  return (
-    <>
-      <ItemViewSettings selectedTrait={props.selectedTrait} getTraits={getTraits} setTraits={setTraits} back={back} />
+return (
+  <>
+     <ItemViewSettings selectedTrait={props.selectedTrait} getTraits={getTraits} setTraits={setTraits} back={back} />
       <div className="mb-3 grid sm:grid-cols-[1fr_1fr] lg:grid-cols-[2fr_3fr] gap-3">
         <div className="relative mobile-hide">
           <Image width={600} height={600}
@@ -439,6 +572,7 @@ export default function ItemView(props: { selectedTrait: Trait; selectedTraitSet
             src={`/${thumbnailPath}/${props.selectedTrait.attribute}/${props.selectedTrait.name}.jpg`}
             alt={props.selectedTrait.name}
           />
+          
         </div>
 
         <div className="bg-white rounded-lg shadow-lg">
@@ -499,9 +633,26 @@ export default function ItemView(props: { selectedTrait: Trait; selectedTraitSet
   )
 }
 
-
-
-
+      {isEligibleForPurchase &&(<div className="flex flex-row mt-5 gap-12 items-center justify-between">
+          <div>Buy Now</div>
+          <MintButton
+              tokenId={props.selectedTrait.token_id}
+              mintPrice={discountedPrice}
+              onMintSuccess={() => handleMintSuccess(props.selectedTrait)}
+              updateTraits={updateTraits}
+              userAddress={user?.address}
+              mintAction={async () => {
+                if (user?.address && props.selectedTrait.token_id) {
+                  setCurrentMintedTrait(props.selectedTrait); // Set current minted trait
+                  await mintWithWeth(user.address, props.selectedTrait.token_id, discountedPrice, provider);
+                  handleMintSuccess(props.selectedTrait); // Call handleMintSuccess after successful mint
+                } else {
+                  console.error("User address or token ID is undefined");
+                }
+              }}
+              className={isDiscounted ? 'discounted-mint-btn' : 'test'}
+            />
+        </div>)}
               {/* INFO */}
               {props.selectedTrait.attribute === "Bodysuit" && (
                 <Help
@@ -515,15 +666,19 @@ export default function ItemView(props: { selectedTrait: Trait; selectedTraitSet
               )}
             </div>
           </div>
+                {/* Buy Now Button and Icon Placeholder */}
+    <div className="mt-4 flex justify-between items-center">
+          
+          <div className="w-20 h-20"> {/* Placeholder for 80x80 icon */}</div>
         </div>
-      </div>
-      {/* BACKPACK */}
-      <div>
-        {/* EQUIPPED DYES */}
-        {getColors().length > 0 && (
-          <>
-            <div className="font-bold text-gray-600 mt-6 mb-1">Select your dyes</div>
-            <div className="grid grid-cols-2 sm:grid-cols-4 md:grid-cols-4 gap-3">
+        </div>
+        </div>
+        <div>
+ {/* EQUIPPED DYES */}
+ {getColors().length > 0 && (
+          <><div className="font-bold text-gray-600 mt-6 mb-1">
+            <div className="font-bold text-gray-600 text-xl mt-6 p-4 mb-1">Select your dyes</div>
+            <div className="grid p-8 grid-cols-2 sm:grid-cols-4 md:grid-cols-4 gap-3">
               {getColors().map((color, index) => (
                 <motion.button
                   initial={{ scale: 1, rotate: "0deg" }}
@@ -562,12 +717,12 @@ export default function ItemView(props: { selectedTrait: Trait; selectedTraitSet
                     className="absolute left-0 bottom-0 rounded-b-lg w-full text-sm flex-center pt-2 pb-2 z-20"
                   >
                     {color}
-                  </div>
-                </motion.button>
-              ))}
-            </div>
-          </>
-        )}
+          </div>
+        </motion.button>
+      ))}</div>
+    </div>
+</>
+)}
         {/* SELECTING NEW DYE */}
         <AnimatePresence>
           {selectedColor > -1 && (
@@ -594,56 +749,63 @@ export default function ItemView(props: { selectedTrait: Trait; selectedTraitSet
                 ))}
               </div>
 
-              {/* FILTERED AVAILABLE COLORS  */}
-              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-3 gap-y-3 mb-4 mt-6">
-                {getColorsAvailable()
-                  .sort()
-                  .filter((x) => true)
-                  .map((color: string, index: number) => (
-                    <motion.button
-                      key={index}
-                      initial={{
-                        background: "#fff",
-                        color: "#666",
-                        opacity: 0,
-                        translateY: -6,
-                      }}
-                      animate={{
-                        opacity: 1,
-                        transition: { delay: 0.02 * index },
-                        translateY: 0,
-                      }}
-                      exit={{
-                        opacity: 0,
-                        translateY: -6,
-                      }}
-                      whileHover={{
-                        scale: 1.06,
-                        background: colorNameToRGB(color),
-                        color: "#fff",
-                        transition: { delay: 0, duration: 0.08 },
-                      }}
-                      onClick={() => setColor(selectedColor, color)}
-                      className="select-none shadow-md rounded-full flex text-sm font-bold"
-                    >
-                      <div
-                        className=" h-[36px] aspect-square rounded-full border-[4px] border-white"
-                        style={{
-                          background: colorNameToRGB(color),
-                        }}
-                      ></div>
-                      <div className="ml-[-10px] w-full h-[36px] flex-center">{color}</div>
-                    </motion.button>
-                  ))}
-              </div>
+             {/* FILTERED AVAILABLE COLORS */}
+<div className="grid xs:grid-cols-5 sm:grid-cols-6 xl:grid-cols-8 gap-x-3 gap-y-3 mb-4 mt-6">
+  {getColorsAvailable()
+    .sort()
+    .map((color: string, index: number) => (
+      <div
+        key={index}
+        className="relative group overflow-visible " // Set overflow to visible
+        style={{ width: '60px', height: '60px' }}
+      >
+        <motion.button
+          initial={{
+            border: "4px solid white",
+          }}
+          animate={{
+            opacity: 1,
+            transition: { delay: 0.02 * index },
+          }}
+          whileHover={{
+            scale: 1.1,
+            border: "4px solid black",
+            transition: { delay: 0, duration: 0.08 },
+          }}
+          onClick={() => setColor(selectedColor, color)}
+          className="w-full h-full rounded-lg cursor-pointer dyes" // Keep rounded-lg if you want rounded corners
+          style={{
+            background: colorNameToRGB(color),
+          }}
+        />
+        <div
+          className="opacity-0 group-hover:opacity-100 absolute -top-10 left-1/2 transform -translate-x-1/2 text-center pointer-events-none transition-opacity duration-150 z-10" // Adjusted to float above
+        >
+          <span
+            className="bg-black block text-white py-1 px-3 rounded-md text-xs"
+          >
+            {color}
+          </span>
+        </div>
+      </div>
+    ))}
+</div>
+
             </motion.div>
           )}
         </AnimatePresence>
+        </div>
+      {/* BACKPACK */}
+      
         {/* OTHER ITEMS */}            
         <div className="mb-12">
         <div className="font-bold font-luckiest flex pl-1 mt-8 text-[#444] flex flex-row">
-        <select className={`bg-white sortDropdown shadow-lg rounded-b-lg`} onChange={(e) => setSortType(e.target.value)}>
+        <select className={`bg-white sortDropdown shadow-lg rounded-b-lg uppercase`} onChange={(e) => {
+    setSortType(e.target.value);
+    setCurrentPage(1); // Reset currentPage to 1
+  }}>
               <option value="default">Default Sort</option>
+              <option className="bg-hunnys-yellow" value="OnSale">On Sale</option>
               <option value="Rare to Common">Rare to Common</option>
               <option value="Common to Rare">Common to Rare</option>
               <option value="A-Z">A-Z</option>
@@ -674,29 +836,44 @@ export default function ItemView(props: { selectedTrait: Trait; selectedTraitSet
           </div>
           
 
-          <div className="grid grid-cols-4 w-full gap-y-3 gap-x-2 pb-6 break-words">
-            {
-              currentItems
-              .map((trait: Trait, index: number) => (
+          <div className="grid grid-cols-4 w-full gap-y-3 gap-x-2 pb-6 break-words ">
+  {currentItems.map((trait: Trait) => {
+    
+    // Check if user is eligible for a discount
+    const isDiscounted = user && bunnyClubMembers.includes(user.address.toLowerCase());
+    // Calculate discounted price if eligible
+    const discountedPrice = isDiscounted && trait.mintPrice
+      ? trait.mintPrice.mul(100 - bunnyClubDiscount).div(100)
+      : trait.mintPrice;
+
+    return (
+          <div className="grid-item mt-4" key={trait.name + trait.token_id}>
                 <motion.button
                   initial="hidden"
                   animate="visible"
                   variants={variants}
-                  key={index}
                   whileHover={{
                     scale: 1.02,
                     boxShadow: "0px 10px 15px -3px rgb(0,0,0 / 0.1), 0 4px 6px -4px rgb(0,0,0/0.1)",
                     transition: { delay: 0, duration: 0.2 },
                   }}
                   onClick={() => setTraits(trait)}
-                  className={`relative ${!checkForOwnedTrait(trait) ? 'low-brightness' : ''} grid-item`}
+                  className={`relative ${!checkForOwnedTrait(trait) ? 'low-brightness' : ''} `}
                 >
-                  <div
-                    className="absolute right-2 top-4 rounded-full h-[16px] w-[16px] border-[3px] border-white"
-                    style={{
-                      background: hunnysColors[trait.rarity!.toLocaleLowerCase()],
-                    }}
-                  ></div>
+                  {trait.isEligibleForMinting ? (
+        // Render image for eligible traits
+        <img 
+          src="https://cdn.discordapp.com/attachments/1032105881447444491/1199073815544737852/Hunnys_Closet_Mockups_1.png?ex=65c13783&is=65aec283&hm=1c1b22ba3c46e7fcfe29b99a97ae67cbc3163de34876f4c9c8bbe9604c1e3029&" // Replace with actual image path
+          alt="Minting Eligible"
+          className="absolute forSale right-2 top-4 shadow-xl"
+        />
+      ) : (
+        // Render rarity dot for other traits
+        <div
+          className="absolute right-2 top-4 rounded-full h-[16px] w-[16px] border-[3px] border-white"
+          style={{ background: hunnysColors[trait.rarity!.toLocaleLowerCase()] }}
+        ></div>
+      )}
 
                     <Image width={600} height={600} priority={true}
                       className="w-full shadow-lg aspect-square flex-center"
@@ -706,8 +883,31 @@ export default function ItemView(props: { selectedTrait: Trait; selectedTraitSet
                     <div style={{backgroundColor: '#a264f4'}} className={`shadow-lg rounded-b-lg text-white w-full h-auto justify-center items-center font-bold  py-2 px-2`}>{trait.name}</div>
 
                 </motion.button>
-              ))}
-            </div>
+                {/* Add the MintButton if the trait is eligible for minting 
+                
+                {trait.isEligibleForMinting && (
+                  <MintButton
+                    tokenId={trait.token_id}
+                    mintPrice={discountedPrice}
+                    onMintSuccess={() => handleMintSuccess(trait)}
+                    updateTraits={updateTraits}
+                    userAddress={user?.address}
+                    mintAction={async () => {
+                      if (user?.address && trait.token_id) {
+                        setCurrentMintedTrait(trait); // Set current minted trait
+                        await mintWithWeth(user.address, trait.token_id, discountedPrice, provider);
+                        handleMintSuccess(trait); // Call handleMintSuccess after successful mint
+                      } else {
+                        console.error("User address or token ID is undefined");
+                      }
+                    }}
+                    className={isDiscounted ? 'discounted-mint-btn' : 'test'}
+                  />
+                )}*/}
+              </div>
+            );
+          })}
+        </div>
             <div className="pagination-controls flex md:m-auto justify-between">
             <button className={`bg-hunnys-blue paginate text-hunnys-yellow w-full max-w-[180px] font-title shadow-md rounded-full text-4xl hover:shadow-lg hover:scale-[1.02] transition-all ${currentPage === 1 ? 'opacity-40 cursor-not-allowed justify-between' : ''}`} disabled={currentPage === 1} onClick={() => setCurrentPage(currentPage - 1)}>PREV</button>
             <button className={`bg-black paginate text-white font-title shadow-md rounded-full text-2xl px-6 hover:shadow-lg hover:scale-[1.02] paginateNum transition-all ${currentPage === 1 ? 'hidden' : ''}`}  onClick={() => setCurrentPage(1)}>1</button>
@@ -716,7 +916,6 @@ export default function ItemView(props: { selectedTrait: Trait; selectedTraitSet
             <button className={`bg-hunnys-yellow paginate text-hunnys-blue w-full max-w-[180px] font-title shadow-md rounded-full  text-4xl hover:shadow-lg hover:scale-[1.02] transition-all ${currentItems.length < ITEMS_PER_PAGE ? 'opacity-40 cursor-not-allowed justify-between' : ''}`} disabled={currentItems.length < ITEMS_PER_PAGE} onClick={() => setCurrentPage(currentPage + 1)}>NEXT</button>
                 </div>
         </div>
-      </div>
     </>
   );
 }

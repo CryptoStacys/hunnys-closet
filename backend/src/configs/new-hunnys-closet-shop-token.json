@@ -1424,6 +1424,28 @@
                 }
             ],
             "metaPath": "https://hunnysclosetshop.s3.us-east-2.amazonaws.com/images/goodies/57"
+    },{
+        "tokenId": 58,
+        "name": "Cozy Cabin Pack",
+        "attributes": [
+            {
+                "trait_type": "Background",
+                "value": "Cozy Cabin"
+            },
+            {
+                "trait_type": "Outfit",
+                "value": "Flannel Shirt"
+            },
+            {
+                "trait_type": "Hair Style",
+                "value": "Cozy Pigtails"
+            },
+            {
+                "trait_type": "Hat",
+                "value": "PomPom Toque"
+            }
+        ],
+        "metaPath": "https://hunnysclosetshop.s3.us-east-2.amazonaws.com/images/goodies/58"
     }
 ]
 

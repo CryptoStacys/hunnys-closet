@@ -22,9 +22,9 @@ export default function Nav({ rewardStatus }: NavProps) {
           "Bunny Knight": "⚔️",
           "Bunny Duke": "🏰",
           "Royal Bunny": "👑",
-          "None": "👋",
+          "None": "",
       };
-      return statusMapping[status as RewardStatus] || "👋"; // Default to wave if status is unknown
+      return statusMapping[status as RewardStatus] || ""; // Default to wave if status is unknown
   };
   
   
@@ -94,17 +94,17 @@ export default function Nav({ rewardStatus }: NavProps) {
           {mode === "dev" && (
             <>
               <div className="ml-[3px] hidden md:inline-block">
-                <ConnectButton accountStatus="address" showBalance={false} chainStatus="name" />
+                <ConnectButton accountStatus="address" showBalance={false} />
               </div>
               <div className="ml-[3px] md:hidden inline-block">
-                <ConnectButton accountStatus="address" showBalance={false} chainStatus="name" />
+                <ConnectButton accountStatus="address" showBalance={false} />
               </div>
             </>
           )}
 
           {mode === "prod" && (
             <div className="ml-[3px] md:inline-block">
-              <ConnectButton accountStatus={{smallScreen: 'avatar',largeScreen: 'full',}} showBalance={false} chainStatus="name" />
+              <ConnectButton accountStatus={{smallScreen: 'avatar',largeScreen: 'full',}} showBalance={false} chainStatus="none" />
             </div>
           )}
         </div>

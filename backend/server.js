@@ -2,6 +2,7 @@
 import DollysController from './src/dollys.js';
 import CheckController from './src/check.js';
 import TraitController from './src/traits.js';
+import SignatureService from './src/signature.js';
 import express from 'express';
 import cors from 'cors';
 
@@ -10,9 +11,10 @@ import cors from 'cors';
 
     const app = express();
     app.use(cors({
-        origin: ['https://closet.hunnys.io', 'https://hunnys.io/wp-json/hunnys-closet/v1', 'https://closetapi.hunnysnft.com/wordpress/wp-json/hunnys-closet/v1/', 'https://pleasing-turkey-pleasing.ngrok-free.app', 'https://closetapi.hunnysnft.com', 'http://localhost:8080/wordpress/wp-json/hunnys-closet/v1/', 'https://staging-hunnys-closet-2.vercel.app', 'http://localhost:3000', 'http://localhost', 'http://localhost:8080', 'http://localhost:8080/wordpress', 'https://hunnys.io', 'https://testing.d35i3wnh0wry5j.amplifyapp.com']
+        origin: ['https://closet.hunnys.io', 'https://hunnys.io/wp-json/hunnys-closet/v1', 'https://closetapi.hunnysnft.com/wordpress/wp-json/hunnys-closet/v1/', 'https://pleasing-turkey-pleasing.ngrok-free.app', 'https://closetapi.hunnysnft.com', 'http://localhost:8081/wordpress/wp-json/hunnys-closet/v1/', 'https://staging-hunnys-closet-2.vercel.app', 'http://localhost:3000', 'http://localhost', 'http://localhost:8081', 'http://localhost:8081/wordpress', 'https://hunnys.io', 'https://testing.d35i3wnh0wry5j.amplifyapp.com']
     }));
-    const port = process.env.PORT || 8080;
+    app.use(express.json());
+    const port = process.env.PORT || 8081;
 
     // Middleware for logging various headers and request details
     app.use((req, res, next) => {
@@ -58,6 +60,8 @@ import cors from 'cors';
         let data = await TraitController.getTraits();
         res.send(data);
     })
+
+    app.use('/signature', SignatureService);
 
     app.use((err, req, res, next) => {
         console.error(err.stack);

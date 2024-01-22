@@ -29,13 +29,16 @@ function formatToken(input: Trait[]) {
     if (input.filter((x) => x.attribute === attribute).length <= 0) {
       // console.log(attribute, "doesn't exist");
       input.push({
+        isEligibleForMinting: [],
         name: "Empty",
         colorsApplied: [],
         attribute: attribute,
         tags: [],
         colors: [],
         rarity: "common",
-        origin_id: 0
+        origin_id: 0,
+        isOwned: false,
+        id: 0
       });
     }
   });
@@ -107,6 +110,11 @@ function setRandomHeadline() {
     console.log("Initial token state:", JSON.stringify(token));
     load();
   }, []);
+
+  useEffect(() => {
+    console.log("Selected Trait changed in DollEditor:", selectedTrait);
+  }, [selectedTrait]);
+  
 
 
     // Function to generate tweet URL

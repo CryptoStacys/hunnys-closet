@@ -76,6 +76,11 @@ a {
   animation-name: wiggle;
 }
 
+.forSale {
+  width: 30px !important;
+  height: 30px !important;
+}
+
 .transition-custom {
   transition: all 0.3s cubic-bezier(0, 0.25, 0.34, 0.99);
 }
@@ -122,6 +127,16 @@ a {
   border: 2px solid black;
 }
 
+.mint-btn {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: -webkit-fill-available;
+}
+
+.unlockreq {
+  width: -webkit-fill-available;
+}
+
 .searchBar {
   border: 2px solid black;
   border-radius: 8px;
@@ -162,8 +177,8 @@ a {
 /* CSS */
 .badge {
   display: inline-block;
-  background-color: #fff; /* for visibility */
-  color: black;
+  background-color: #A264F4; /* for visibility */
+  color: white;
   padding: 0.25em 0.4em;
   font-family: 'DM Sans';
   font-size: 1em;
@@ -172,6 +187,28 @@ a {
   text-align: center;
   white-space: nowrap;
   border-radius: 0.25rem;
+}
+
+.discounted-mint-btn {
+  position: relative;
+}
+
+.discount-badge {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  top: -10px;
+  font-family: "Luckiest Guy";
+  font-weight: 100;
+  letter-spacing: .5px;
+  right: 2px;
+  background-color: #000;
+  color: white;
+  padding: 6px;
+  width: 35px;
+  height: 35px;
+  border-radius: 100%;
+  font-size: 0.8em;
 }
 
 
@@ -202,7 +239,17 @@ a {
 }
 
 .grid-item {
-  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Align children at the top and bottom */
+  height: 180px; /* Set to the desired fixed height */
+}
+
+.grid-item img {
+  /* Ensure the image takes up all available width and height */
+  width: 100%;
+  height: auto; /* Adjust this as necessary */
+  object-fit: cover; /* Adjust as necessary to handle different image ratios */
 }
 
 .paginate {
@@ -218,12 +265,13 @@ a {
 
 @media (max-width: 1100px) {
   .dashboardHero {
-    min-height: 0vh;
-    
+    min-height: 0vh;  
   }
+  
   .grid-item {
-    height: 170px;
+    height: 160px;
   }
+  
 }
 
 @media (max-width: 1000px) {
@@ -252,6 +300,7 @@ a {
 
   .paginate {
     margin:auto;
+    margin-top: 80px;
     max-width: 30%;
     font-size: x-large;
   }
@@ -294,12 +343,18 @@ a {
   .attributeName {
     font-size: .875rem;
   }
+  .grid-item {
+    height: 190px;
+  }
 }
 
 @media (max-width: 639px) {
 
   .hideplz {
     display: none;
+  }
+  .grid-item {
+    height: 160px;
   }
 
 }
@@ -310,8 +365,24 @@ a {
     font-size: .725rem;
   }
 
+  .selectedDyes {
+    width: 45px;
+    height: 45px;
+  }
+
+  .dyes {
+    width: 50px;
+    height: 50px;
+    margin: auto;
+  }
+
   .attributeSvg {
     display: none;
+  }
+
+  .forSale {
+    width: 16px !important;
+    height: 16px !important;
   }
 
   .navLinks {
@@ -339,8 +410,9 @@ a {
   .badge {
     margin-left: 4px;
   }
+  
   .grid-item {
-    height: 135px;
+    height: 125px;
   }
   .searchBar {
     max-width: 140px;

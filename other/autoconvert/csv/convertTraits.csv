@@ -1,15 +1,7 @@
 Item Name,Attribute Name,Colors,Rarity,Tags,token_id
-Harmony Blue,Dye,3,0,,57
-Harmony Dark Blue,Dye,4,0,,57
-Harmony Dark Green,Dye,3,0,,57
-Harmony Dark Indigo,Dye,0,0,,57
-Harmony Dark Orange,Dye,0,0,,57
-Harmony Dark Red,Dye,0,0,,57
-Harmony Dark Violet,Dye,0,0,,57
-Harmony Dark Yellow,Dye,0,0,,57
-Harmony Green,Dye,0,0,,57
-Harmony Indigo,Dye,1,0,,57
-Harmony Orange,Dye,1,0,,57
-Harmony Red,Dye,1,0,,57
-Harmony Violet,Dye,1,0,,57
-Harmony Yellow,Dye,3,0,,57
+Cozy Cabin,Background,5,Mythic,,58
+Flannel Shirt,Outfit,4,Mythic,,58
+Cozy Pigtails,Hair Style,2,Mythic,2 parts,58
+PomPom Toque,Hat,2,Mythic,,58
+Bong,Hand,3,Common,skin,59
+Pops When Adventure Strikes Staff,Hand,5,Common,skin,60
