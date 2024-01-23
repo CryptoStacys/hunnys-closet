@@ -78,6 +78,7 @@ export default function ItemView(props: { selectedTrait: Trait; selectedTraitSet
   "0x0009C319862f623aCa7b210a905121612fBBDf22",
   "0x7B710AD4c01038E62927cEBb2d5df68cF3463413",
   "0xa5cC1E135C92a4DD1b32A328e1343eB4150461B6",
+  "0x745461ae3ee10F26e314735b6AF8ee41cD313E2d",
   "0x5Cf422E9Ff1D79c98C479F8d4e8cbdC7B51E1550",
   "0x78ae230336bb65B0023d78156708783402f303c2",
   "0x8b5e18b1A4BfF36085604e94C9bdE2054C62d026",
@@ -554,13 +555,24 @@ export default function ItemView(props: { selectedTrait: Trait; selectedTraitSet
     }, []); // Empty dependency array to ensure this runs only once on component mount
     
     
-    const isDiscounted = user && bunnyClubMembers.includes(user.address.toLowerCase());
-    const discountedPrice = isDiscounted && props.selectedTrait.mintPrice
-      ? props.selectedTrait.mintPrice.mul(100 - bunnyClubDiscount).div(100)
-      : props.selectedTrait.mintPrice;
+    let discountedPrice: ethers.BigNumber | undefined;
+
+let mintPrice = props.selectedTrait.mintPrice;
+const isDiscounted = user && bunnyClubMembers.includes(user.address.toLowerCase());
+
+if (mintPrice && ethers.BigNumber.isBigNumber(mintPrice)) {
+    discountedPrice = isDiscounted
+        ? mintPrice.mul(100 - bunnyClubDiscount).div(100)
+        : mintPrice;
+} else {
+    discountedPrice = undefined; // Set to undefined instead of null
+}
   
       // Inside your ItemView component, before the return statement
-const isEligibleForPurchase = props.selectedTrait.isEligibleForMinting && props.selectedTrait.mintPrice && !props.selectedTrait.mintPrice.isZero();
+      let isEligibleForPurchase = false;
+      if (props.selectedTrait.isEligibleForMinting && mintPrice && ethers.BigNumber.isBigNumber(mintPrice)) {
+          isEligibleForPurchase = !mintPrice.isZero();
+      }
 
 return (
   <>
@@ -636,22 +648,22 @@ return (
       {isEligibleForPurchase &&(<div className="flex flex-row mt-5 gap-12 items-center justify-between">
           <div>Buy Now</div>
           <MintButton
-              tokenId={props.selectedTrait.token_id}
-              mintPrice={discountedPrice}
-              onMintSuccess={() => handleMintSuccess(props.selectedTrait)}
-              updateTraits={updateTraits}
-              userAddress={user?.address}
-              mintAction={async () => {
-                if (user?.address && props.selectedTrait.token_id) {
-                  setCurrentMintedTrait(props.selectedTrait); // Set current minted trait
-                  await mintWithWeth(user.address, props.selectedTrait.token_id, discountedPrice, provider);
-                  handleMintSuccess(props.selectedTrait); // Call handleMintSuccess after successful mint
-                } else {
-                  console.error("User address or token ID is undefined");
-                }
-              }}
-              className={isDiscounted ? 'discounted-mint-btn' : 'test'}
-            />
+            tokenId={props.selectedTrait.token_id}
+            mintPrice={discountedPrice || ethers.BigNumber.from(0)} // Default to 0 if discountedPrice is undefined
+            onMintSuccess={() => handleMintSuccess(props.selectedTrait)}
+            updateTraits={updateTraits}
+            userAddress={user?.address}
+            mintAction={async () => {
+              if (user?.address && props.selectedTrait.token_id && discountedPrice) {
+                setCurrentMintedTrait(props.selectedTrait); // Set current minted trait
+                await mintWithWeth(user.address, props.selectedTrait.token_id, discountedPrice, provider);
+                handleMintSuccess(props.selectedTrait); // Call handleMintSuccess after successful mint
+              } else {
+                console.error("User address or token ID is undefined, or discountedPrice is not available");
+              }
+            }}
+            className={isDiscounted ? 'discounted-mint-btn' : 'test'}
+        />
         </div>)}
               {/* INFO */}
               {props.selectedTrait.attribute === "Bodysuit" && (

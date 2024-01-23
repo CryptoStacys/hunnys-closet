@@ -72,6 +72,9 @@ const MintButton: React.FC<MintButtonProps> = ({
       return;
     }
 
+    // Convert mintPrice to BigNumber if it's not already
+  let safeMintPrice = BigNumber.isBigNumber(mintPrice) ? mintPrice : BigNumber.from(mintPrice);
+
     setTransactionPending(true);
 
     try {

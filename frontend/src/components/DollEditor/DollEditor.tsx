@@ -113,6 +113,10 @@ function setRandomHeadline() {
 
   useEffect(() => {
     console.log("Selected Trait changed in DollEditor:", selectedTrait);
+    if (!selectedTrait) {
+      // handle the case where selectedTrait is undefined
+      // possibly by setting a default state or fetching necessary data
+    }
   }, [selectedTrait]);
   
 
