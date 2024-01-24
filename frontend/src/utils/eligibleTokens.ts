@@ -62,6 +62,7 @@ export const eligibleTokenIds: EligibleToken[] = [
   { token_id: '55', price: ethers.utils.parseUnits("0.01", "ether"), origin_ids: [7, 9] },
   { token_id: '56', price: ethers.utils.parseUnits("0.015", "ether"), origin_ids: [7, 9] },
   { token_id: '57', price: ethers.utils.parseUnits("0.015", "ether"), origin_ids: [7, 9] },
+  { token_id: '58', price: ethers.utils.parseUnits("0.012", "ether"), origin_ids: [7, 9] },
   // ... more tokens
 ];
 
