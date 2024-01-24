@@ -1,5 +1,4 @@
-const loading = "/assets/img/loading.png";
-// import loading from "./../../assets/img/loading.png";
+const loading = "/assets/img/loading.gif";
 import { useConnectModal, RainbowKitProvider } from "@rainbow-me/rainbowkit";
 import { configureChains } from 'wagmi';
 import { mainnet } from 'wagmi/chains';
@@ -32,9 +31,9 @@ export default function Login() {
   return ( 
     <RainbowKitProvider chains={chains} initialChain={mainnet}>
     <div className="flex justify-center items-center w-max-full px-6 mx-auto">
-      <div className="relative bg-[#fff] shadow-lg rounded-3xl overflow-hidden max-w-[1250px] w-full h-[80vh] mx-auto flex items-center justify-center">
+      <div className="relative rounded-3xl overflow-hidden max-w-[1250px] w-full h-[80vh] mx-auto flex items-center justify-center">
       {/* <div className="relative bg-[#fff] shadow-lg rounded-3xl overflow-hidden max-w-[1160px] w-full h-[80vh] mx-auto flex items-center justify-center"> */}
-        <Image width={3000} height={2659} src={loading} alt="login-bg" className="w-full h-auto" />
+        <Image width={3000} height={1688} src={loading} alt="login-bg" className="w-full h-auto rounded-3xl" />
         
         {mounted && openConnectModal ? (
           <div
@@ -44,8 +43,8 @@ export default function Login() {
             Connect
           </div>
         ) : (
-          <div className=" absolute mx-auto uppercase text-[#777] text-4xl font-bold font-title tracking-wider px-14 py-3 rounded-md hover:cursor-pointer">
-            <div className="text-white">LOADING</div>
+          <div className=" absolute grid-cols-1 mt-4 top-14 mx-auto uppercase text-[#777] text-4xl font-bold font-title tracking-wider px-14 py-3 rounded-md hover:cursor-pointer">
+            <div className="text-black">LOADING</div>
             
             <Loader />
             
