@@ -83,6 +83,7 @@ export default function ItemView(props: { selectedTrait: Trait; selectedTraitSet
   "0x78ae230336bb65B0023d78156708783402f303c2",
   "0x8b5e18b1A4BfF36085604e94C9bdE2054C62d026",
   "0xFb203c2E544d1D2D889900883b4bD538Bc914357",
+  "0xb62500D5a8b9629763d39a4D05784D6A47A72Ab1",
   "0x051f1F3920D196cc998D74A56978370b82432D25",
   "0x16272E839A5C29A3Fa90E670Cb599d233b6943aC"].map(address => address.toLowerCase()); // Replace with actual addresses
   const bunnyClubDiscount = 10; // 10% discount
