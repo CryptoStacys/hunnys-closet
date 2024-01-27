@@ -81,6 +81,13 @@ function MyApp({ Component, pageProps }: AppProps) {
       });
     };
 
+    // Service Worker Registration
+    if ('serviceWorker' in navigator && process.env.NODE_ENV === 'production') {
+      navigator.serviceWorker.register('/service-worker.js')
+        .then(reg => console.log('SW registered: ', reg))
+        .catch(err => console.log('SW registration failed: ', err));
+    }
+
     router.events.on('routeChangeComplete', handleRouteChange);
     return () => {
       router.events.off('routeChangeComplete', handleRouteChange);

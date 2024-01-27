@@ -29,11 +29,20 @@ class MyDocument extends Document {
           <meta property="og:image" content="https://hunnys.io/wp-content/uploads/2023/09/Hunnys-Closet-600x400-1.png" />
           <meta property="og:url" content="https://closet.hunnys.io" />
 
+          <meta name="apple-mobile-web-app-capable" content="yes" />
+          <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+          <meta name="apple-mobile-web-app-title" content="Hunnys Closet" />
+          <link rel="apple-touch-icon" sizes="192x192" href="touch-icon-iphone-retina.png"/>
+
+
           {/* Twitter tags */}
           <meta name="twitter:card" content="summary_large_image" />
           <meta name="twitter:title" content="Hunnys Closet" />
           <meta name="twitter:description" content="Unleash Your Creativity with Hunnys Closet, the ultimate Digital Dress-up Doll Experience" />
           <meta name="twitter:image" content="https://hunnys.io/wp-content/uploads/2023/09/Hunnys-Closet-600x400-1.png" />
+
+          {/* Link to the manifest.json */}
+          <link rel="manifest" href="/manifest.json" />
 
           {/* Favicon */}
           <link rel="icon" href="https://hunnys.io/wp-content/uploads/2023/08/HunnysLogo.svg" />
