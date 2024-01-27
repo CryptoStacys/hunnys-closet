@@ -38128,3 +38128,1668 @@ Processing file: Flannel Shirt_L.png in subfolder: Outfit
 Checking existence of PNG: compositeImages\Outfit\Flannel Shirt.png
 Checking existence of JPG: 300x300_jpg\Outfit\Flannel Shirt.jpg
 Skipping existing files: PNG - compositeImages\Outfit\Flannel Shirt.png, JPG - 300x300_jpg\Outfit\Flannel Shirt.jpg
+Script started
+Subfolders found: Accessory, Background, Bodysuit, Colors, Extras, Eyebrows, Eyes, Face Sticker, Finished, Frame, Hair Style, Hand, Hat, Mouth, Outfit, Piercing, Tattoo, Undergarment
+Files found: 165
+Solid colors RGB values saved to colors.json
+Resizing image: scriptImages\Accessory\Batty Bun Heart Shades_C1.png to 800x800
+Resizing image: scriptImages\Accessory\Batty Bun Heart Shades_C1.png to 600x600
+Solid colors RGB values saved to colors.json
+Processing image group: Batty Bun Heart Shades
+Processing file: Batty Bun Heart Shades_C1.png in subfolder: Accessory
+Resized image saved: 600x600_png\Accessory\Batty Bun Heart Shades_C1.png
+Resizing image: scriptImages\Accessory\Batty Bun Heart Shades_C2.png to 600x600
+Resized image saved: 800x800_png\Accessory\Batty Bun Heart Shades_C1.png
+Resizing image: scriptImages\Accessory\Batty Bun Heart Shades_C2.png to 800x800
+Processing file: Batty Bun Heart Shades_C2.png in subfolder: Accessory
+Resized image saved: 600x600_png\Accessory\Batty Bun Heart Shades_C2.png
+Resizing image: scriptImages\Accessory\Batty Bun Heart Shades_L.png to 600x600
+Resized image saved: 800x800_png\Accessory\Batty Bun Heart Shades_C2.png
+Resizing image: scriptImages\Accessory\Batty Bun Heart Shades_L.png to 800x800
+Processing file: Batty Bun Heart Shades_L.png in subfolder: Accessory
+Checking existence of PNG: compositeImages\Accessory\Batty Bun Heart Shades.png
+Checking existence of JPG: 300x300_jpg\Accessory\Batty Bun Heart Shades.jpg
+Files not found, processing: PNG - compositeImages\Accessory\Batty Bun Heart Shades.png, JPG - 300x300_jpg\Accessory\Batty Bun Heart Shades.jpg
+Resized image saved: 800x800_png\Accessory\Batty Bun Heart Shades_L.png
+Resizing image: scriptImages\Accessory\Bunny Ball Earrings_C1.png to 800x800
+Saved: compositeImages\Accessory\Batty Bun Heart Shades.png
+Resized image saved: 600x600_png\Accessory\Batty Bun Heart Shades_L.png
+Resizing image: scriptImages\Accessory\Bunny Ball Earrings_C1.png to 600x600
+Saved: 300x300_jpg\Accessory\Batty Bun Heart Shades.jpg
+Processing image group: Bunny Ball Earrings
+Processing file: Bunny Ball Earrings_C1.png in subfolder: Accessory
+Resized image saved: 600x600_png\Accessory\Bunny Ball Earrings_C1.png
+Resizing image: scriptImages\Accessory\Bunny Ball Earrings_C2.png to 600x600
+Resized image saved: 800x800_png\Accessory\Bunny Ball Earrings_C1.png
+Resizing image: scriptImages\Accessory\Bunny Ball Earrings_C2.png to 800x800
+Processing file: Bunny Ball Earrings_C2.png in subfolder: Accessory
+Resized image saved: 600x600_png\Accessory\Bunny Ball Earrings_C2.png
+Resizing image: scriptImages\Accessory\Bunny Ball Earrings_L.png to 600x600
+Resized image saved: 800x800_png\Accessory\Bunny Ball Earrings_C2.png
+Resizing image: scriptImages\Accessory\Bunny Ball Earrings_L.png to 800x800
+Processing file: Bunny Ball Earrings_L.png in subfolder: Accessory
+Checking existence of PNG: compositeImages\Accessory\Bunny Ball Earrings.png
+Checking existence of JPG: 300x300_jpg\Accessory\Bunny Ball Earrings.jpg
+Files not found, processing: PNG - compositeImages\Accessory\Bunny Ball Earrings.png, JPG - 300x300_jpg\Accessory\Bunny Ball Earrings.jpg
+Saved: compositeImages\Accessory\Bunny Ball Earrings.png
+Saved: 300x300_jpg\Accessory\Bunny Ball Earrings.jpg
+Processing image group: Diner Star Dangleys
+Resized image saved: 600x600_png\Accessory\Bunny Ball Earrings_L.png
+Resizing image: scriptImages\Accessory\Diner Star Dangleys_C1.png to 600x600
+Resized image saved: 800x800_png\Accessory\Bunny Ball Earrings_L.png
+Resizing image: scriptImages\Accessory\Diner Star Dangleys_C1.png to 800x800
+Processing file: Diner Star Dangleys_C1.png in subfolder: Accessory
+Resized image saved: 800x800_png\Accessory\Diner Star Dangleys_C1.png
+Resizing image: scriptImages\Accessory\Diner Star Dangleys_C2.png to 800x800
+Resized image saved: 600x600_png\Accessory\Diner Star Dangleys_C1.png
+Resizing image: scriptImages\Accessory\Diner Star Dangleys_C2.png to 600x600
+Processing file: Diner Star Dangleys_C2.png in subfolder: Accessory
+Resized image saved: 800x800_png\Accessory\Diner Star Dangleys_C2.png
+Resizing image: scriptImages\Accessory\Diner Star Dangleys_C3.png to 800x800
+Processing file: Diner Star Dangleys_C3.png in subfolder: Accessory
+Resized image saved: 600x600_png\Accessory\Diner Star Dangleys_C2.png
+Resizing image: scriptImages\Accessory\Diner Star Dangleys_C3.png to 600x600
+Resized image saved: 800x800_png\Accessory\Diner Star Dangleys_C3.png
+Resizing image: scriptImages\Accessory\Diner Star Dangleys_L.png to 800x800
+Processing file: Diner Star Dangleys_L.png in subfolder: Accessory
+Checking existence of PNG: compositeImages\Accessory\Diner Star Dangleys.png
+Checking existence of JPG: 300x300_jpg\Accessory\Diner Star Dangleys.jpg
+Files not found, processing: PNG - compositeImages\Accessory\Diner Star Dangleys.png, JPG - 300x300_jpg\Accessory\Diner Star Dangleys.jpg
+Resized image saved: 600x600_png\Accessory\Diner Star Dangleys_C3.png
+Resizing image: scriptImages\Accessory\Diner Star Dangleys_L.png to 600x600
+Saved: compositeImages\Accessory\Diner Star Dangleys.png
+Saved: 300x300_jpg\Accessory\Diner Star Dangleys.jpg
+Processing image group: Queen Mika Bling
+Resized image saved: 800x800_png\Accessory\Diner Star Dangleys_L.png
+Resizing image: scriptImages\Accessory\Queen Mika Bling_C1.png to 800x800
+Resized image saved: 600x600_png\Accessory\Diner Star Dangleys_L.png
+Resizing image: scriptImages\Accessory\Queen Mika Bling_C1.png to 600x600
+Processing file: Queen Mika Bling_C1.png in subfolder: Accessory
+Resized image saved: 800x800_png\Accessory\Queen Mika Bling_C1.png
+Resizing image: scriptImages\Accessory\Queen Mika Bling_C2.png to 800x800
+Resized image saved: 600x600_png\Accessory\Queen Mika Bling_C1.png
+Resizing image: scriptImages\Accessory\Queen Mika Bling_C2.png to 600x600
+Processing file: Queen Mika Bling_C2.png in subfolder: Accessory
+Resized image saved: 800x800_png\Accessory\Queen Mika Bling_C2.png
+Resizing image: scriptImages\Accessory\Queen Mika Bling_C3.png to 800x800
+Resized image saved: 600x600_png\Accessory\Queen Mika Bling_C2.png
+Resizing image: scriptImages\Accessory\Queen Mika Bling_C3.png to 600x600
+Processing file: Queen Mika Bling_C3.png in subfolder: Accessory
+Resized image saved: 800x800_png\Accessory\Queen Mika Bling_C3.png
+Resizing image: scriptImages\Accessory\Queen Mika Bling_L.png to 800x800
+Resized image saved: 600x600_png\Accessory\Queen Mika Bling_C3.png
+Resizing image: scriptImages\Accessory\Queen Mika Bling_L.png to 600x600
+Processing file: Queen Mika Bling_L.png in subfolder: Accessory
+Checking existence of PNG: compositeImages\Accessory\Queen Mika Bling.png
+Checking existence of JPG: 300x300_jpg\Accessory\Queen Mika Bling.jpg
+Files not found, processing: PNG - compositeImages\Accessory\Queen Mika Bling.png, JPG - 300x300_jpg\Accessory\Queen Mika Bling.jpg
+Saved: compositeImages\Accessory\Queen Mika Bling.png
+Resized image saved: 800x800_png\Accessory\Queen Mika Bling_L.png
+Resizing image: scriptImages\Background\Bunny Kingdom Castle_C1.png to 800x800
+Saved: 300x300_jpg\Accessory\Queen Mika Bling.jpg
+Processing image group: Bunny Kingdom Castle
+Resized image saved: 600x600_png\Accessory\Queen Mika Bling_L.png
+Resizing image: scriptImages\Background\Bunny Kingdom Castle_C1.png to 600x600
+Processing file: Bunny Kingdom Castle_C1.png in subfolder: Background
+Resized image saved: 600x600_png\Background\Bunny Kingdom Castle_C1.png
+Resizing image: scriptImages\Background\Bunny Kingdom Castle_C2.png to 600x600
+Resized image saved: 800x800_png\Background\Bunny Kingdom Castle_C1.png
+Resizing image: scriptImages\Background\Bunny Kingdom Castle_C2.png to 800x800
+Processing file: Bunny Kingdom Castle_C2.png in subfolder: Background
+Resized image saved: 800x800_png\Background\Bunny Kingdom Castle_C2.png
+Resizing image: scriptImages\Background\Bunny Kingdom Castle_C3.png to 800x800
+Resized image saved: 600x600_png\Background\Bunny Kingdom Castle_C2.png
+Resizing image: scriptImages\Background\Bunny Kingdom Castle_C3.png to 600x600
+Processing file: Bunny Kingdom Castle_C3.png in subfolder: Background
+Resized image saved: 600x600_png\Background\Bunny Kingdom Castle_C3.png
+Resizing image: scriptImages\Background\Bunny Kingdom Castle_C4.png to 600x600
+Resized image saved: 800x800_png\Background\Bunny Kingdom Castle_C3.png
+Resizing image: scriptImages\Background\Bunny Kingdom Castle_C4.png to 800x800
+Processing file: Bunny Kingdom Castle_C4.png in subfolder: Background
+Resized image saved: 600x600_png\Background\Bunny Kingdom Castle_C4.png
+Resizing image: scriptImages\Background\Bunny Kingdom Castle_L.png to 600x600
+Resized image saved: 800x800_png\Background\Bunny Kingdom Castle_C4.png
+Resizing image: scriptImages\Background\Bunny Kingdom Castle_L.png to 800x800
+Processing file: Bunny Kingdom Castle_L.png in subfolder: Background
+Checking existence of PNG: compositeImages\Background\Bunny Kingdom Castle.png
+Checking existence of JPG: 300x300_jpg\Background\Bunny Kingdom Castle.jpg
+Files not found, processing: PNG - compositeImages\Background\Bunny Kingdom Castle.png, JPG - 300x300_jpg\Background\Bunny Kingdom Castle.jpg
+Saved: compositeImages\Background\Bunny Kingdom Castle.png
+Resized image saved: 600x600_png\Background\Bunny Kingdom Castle_L.png
+Resizing image: scriptImages\Background\Outdoor Gym Class_C1.png to 600x600
+Saved: 300x300_jpg\Background\Bunny Kingdom Castle.jpg
+Processing image group: Outdoor Gym Class
+Resized image saved: 800x800_png\Background\Bunny Kingdom Castle_L.png
+Resizing image: scriptImages\Background\Outdoor Gym Class_C1.png to 800x800
+Processing file: Outdoor Gym Class_C1.png in subfolder: Background
+Resized image saved: 800x800_png\Background\Outdoor Gym Class_C1.png
+Resizing image: scriptImages\Background\Outdoor Gym Class_C2.png to 800x800
+Resized image saved: 600x600_png\Background\Outdoor Gym Class_C1.png
+Resizing image: scriptImages\Background\Outdoor Gym Class_C2.png to 600x600
+Processing file: Outdoor Gym Class_C2.png in subfolder: Background
+Resized image saved: 800x800_png\Background\Outdoor Gym Class_C2.png
+Resizing image: scriptImages\Background\Outdoor Gym Class_L.png to 800x800
+Resized image saved: 600x600_png\Background\Outdoor Gym Class_C2.png
+Resizing image: scriptImages\Background\Outdoor Gym Class_L.png to 600x600
+Processing file: Outdoor Gym Class_L.png in subfolder: Background
+Checking existence of PNG: compositeImages\Background\Outdoor Gym Class.png
+Checking existence of JPG: 300x300_jpg\Background\Outdoor Gym Class.jpg
+Files not found, processing: PNG - compositeImages\Background\Outdoor Gym Class.png, JPG - 300x300_jpg\Background\Outdoor Gym Class.jpg
+Saved: compositeImages\Background\Outdoor Gym Class.png
+Saved: 300x300_jpg\Background\Outdoor Gym Class.jpg
+Processing image group: Bunny Ball Facepaint
+Resized image saved: 800x800_png\Background\Outdoor Gym Class_L.png
+Resizing image: scriptImages\Face Sticker\Bunny Ball Facepaint_C1.png to 800x800
+Resized image saved: 600x600_png\Background\Outdoor Gym Class_L.png
+Resizing image: scriptImages\Face Sticker\Bunny Ball Facepaint_C1.png to 600x600
+Processing file: Bunny Ball Facepaint_C1.png in subfolder: Face Sticker
+Resized image saved: 600x600_png\Face Sticker\Bunny Ball Facepaint_C1.png
+Resizing image: scriptImages\Face Sticker\Bunny Ball Facepaint_L.png to 600x600
+Resized image saved: 800x800_png\Face Sticker\Bunny Ball Facepaint_C1.png
+Resizing image: scriptImages\Face Sticker\Bunny Ball Facepaint_L.png to 800x800
+Processing file: Bunny Ball Facepaint_L.png in subfolder: Face Sticker
+Checking existence of PNG: compositeImages\Face Sticker\Bunny Ball Facepaint.png
+Checking existence of JPG: 300x300_jpg\Face Sticker\Bunny Ball Facepaint.jpg
+Files not found, processing: PNG - compositeImages\Face Sticker\Bunny Ball Facepaint.png, JPG - 300x300_jpg\Face Sticker\Bunny Ball Facepaint.jpg
+Saved: compositeImages\Face Sticker\Bunny Ball Facepaint.png
+Resized image saved: 600x600_png\Face Sticker\Bunny Ball Facepaint_L.png
+Resizing image: scriptImages\Frame\Dorothys Starlight Night_C1.png to 600x600
+Resized image saved: 800x800_png\Face Sticker\Bunny Ball Facepaint_L.png
+Resizing image: scriptImages\Frame\Dorothys Starlight Night_C1.png to 800x800
+Saved: 300x300_jpg\Face Sticker\Bunny Ball Facepaint.jpg
+Processing image group: Dorothys Starlight Night
+Processing file: Dorothys Starlight Night_C1.png in subfolder: Frame
+Resized image saved: 800x800_png\Frame\Dorothys Starlight Night_C1.png
+Resizing image: scriptImages\Frame\Dorothys Starlight Night_C2.png to 800x800
+Resized image saved: 600x600_png\Frame\Dorothys Starlight Night_C1.png
+Resizing image: scriptImages\Frame\Dorothys Starlight Night_C2.png to 600x600
+Processing file: Dorothys Starlight Night_C2.png in subfolder: Frame
+Resized image saved: 600x600_png\Frame\Dorothys Starlight Night_C2.png
+Resizing image: scriptImages\Frame\Dorothys Starlight Night_C3.png to 600x600
+Resized image saved: 800x800_png\Frame\Dorothys Starlight Night_C2.png
+Resizing image: scriptImages\Frame\Dorothys Starlight Night_C3.png to 800x800
+Processing file: Dorothys Starlight Night_C3.png in subfolder: Frame
+Resized image saved: 800x800_png\Frame\Dorothys Starlight Night_C3.png
+Resizing image: scriptImages\Frame\Dorothys Starlight Night_C4.png to 800x800
+Resized image saved: 600x600_png\Frame\Dorothys Starlight Night_C3.png
+Resizing image: scriptImages\Frame\Dorothys Starlight Night_C4.png to 600x600
+Processing file: Dorothys Starlight Night_C4.png in subfolder: Frame
+Resized image saved: 600x600_png\Frame\Dorothys Starlight Night_C4.png
+Resizing image: scriptImages\Frame\Dorothys Starlight Night_C5.png to 600x600
+Resized image saved: 800x800_png\Frame\Dorothys Starlight Night_C4.png
+Resizing image: scriptImages\Frame\Dorothys Starlight Night_C5.png to 800x800
+Processing file: Dorothys Starlight Night_C5.png in subfolder: Frame
+Resized image saved: 600x600_png\Frame\Dorothys Starlight Night_C5.png
+Resizing image: scriptImages\Frame\Dorothys Starlight Night_L.png to 600x600
+Processing file: Dorothys Starlight Night_L.png in subfolder: Frame
+Checking existence of PNG: compositeImages\Frame\Dorothys Starlight Night.png
+Checking existence of JPG: 300x300_jpg\Frame\Dorothys Starlight Night.jpg
+Files not found, processing: PNG - compositeImages\Frame\Dorothys Starlight Night.png, JPG - 300x300_jpg\Frame\Dorothys Starlight Night.jpg
+Resized image saved: 800x800_png\Frame\Dorothys Starlight Night_C5.png
+Resizing image: scriptImages\Frame\Dorothys Starlight Night_L.png to 800x800
+Saved: compositeImages\Frame\Dorothys Starlight Night.png
+Saved: 300x300_jpg\Frame\Dorothys Starlight Night.jpg
+Processing image group: Glipper Cookie Munch
+Resized image saved: 800x800_png\Frame\Dorothys Starlight Night_L.png
+Resizing image: scriptImages\Frame\Glipper Cookie Munch_C1.png to 800x800
+Resized image saved: 600x600_png\Frame\Dorothys Starlight Night_L.png
+Resizing image: scriptImages\Frame\Glipper Cookie Munch_C1.png to 600x600
+Processing file: Glipper Cookie Munch_C1.png in subfolder: Frame
+Resized image saved: 600x600_png\Frame\Glipper Cookie Munch_C1.png
+Resizing image: scriptImages\Frame\Glipper Cookie Munch_C2.png to 600x600
+Resized image saved: 800x800_png\Frame\Glipper Cookie Munch_C1.png
+Resizing image: scriptImages\Frame\Glipper Cookie Munch_C2.png to 800x800
+Processing file: Glipper Cookie Munch_C2.png in subfolder: Frame
+Resized image saved: 600x600_png\Frame\Glipper Cookie Munch_C2.png
+Resizing image: scriptImages\Frame\Glipper Cookie Munch_C3.png to 600x600
+Resized image saved: 800x800_png\Frame\Glipper Cookie Munch_C2.png
+Resizing image: scriptImages\Frame\Glipper Cookie Munch_C3.png to 800x800
+Processing file: Glipper Cookie Munch_C3.png in subfolder: Frame
+Resized image saved: 600x600_png\Frame\Glipper Cookie Munch_C3.png
+Resizing image: scriptImages\Frame\Glipper Cookie Munch_L.png to 600x600
+Resized image saved: 800x800_png\Frame\Glipper Cookie Munch_C3.png
+Resizing image: scriptImages\Frame\Glipper Cookie Munch_L.png to 800x800
+Processing file: Glipper Cookie Munch_L.png in subfolder: Frame
+Checking existence of PNG: compositeImages\Frame\Glipper Cookie Munch.png
+Checking existence of JPG: 300x300_jpg\Frame\Glipper Cookie Munch.jpg
+Files not found, processing: PNG - compositeImages\Frame\Glipper Cookie Munch.png, JPG - 300x300_jpg\Frame\Glipper Cookie Munch.jpg
+Saved: compositeImages\Frame\Glipper Cookie Munch.png
+Resized image saved: 800x800_png\Frame\Glipper Cookie Munch_L.png
+Resizing image: scriptImages\Frame\Glowy Glipper Cookie Munch_C1.png to 800x800
+Resized image saved: 600x600_png\Frame\Glipper Cookie Munch_L.png
+Resizing image: scriptImages\Frame\Glowy Glipper Cookie Munch_C1.png to 600x600
+Saved: 300x300_jpg\Frame\Glipper Cookie Munch.jpg
+Processing image group: Glowy Glipper Cookie Munch
+Processing file: Glowy Glipper Cookie Munch_C1.png in subfolder: Frame
+Resized image saved: 800x800_png\Frame\Glowy Glipper Cookie Munch_C1.png
+Resizing image: scriptImages\Frame\Glowy Glipper Cookie Munch_L.png to 800x800
+Resized image saved: 600x600_png\Frame\Glowy Glipper Cookie Munch_C1.png
+Resizing image: scriptImages\Frame\Glowy Glipper Cookie Munch_L.png to 600x600
+Processing file: Glowy Glipper Cookie Munch_L.png in subfolder: Frame
+Checking existence of PNG: compositeImages\Frame\Glowy Glipper Cookie Munch.png
+Checking existence of JPG: 300x300_jpg\Frame\Glowy Glipper Cookie Munch.jpg
+Files not found, processing: PNG - compositeImages\Frame\Glowy Glipper Cookie Munch.png, JPG - 300x300_jpg\Frame\Glowy Glipper Cookie Munch.jpg
+Saved: compositeImages\Frame\Glowy Glipper Cookie Munch.png
+Resized image saved: 800x800_png\Frame\Glowy Glipper Cookie Munch_L.png
+Resizing image: scriptImages\Frame\Huberts Nest_C1.png to 800x800
+Saved: 300x300_jpg\Frame\Glowy Glipper Cookie Munch.jpg
+Processing image group: Huberts Nest
+Resized image saved: 600x600_png\Frame\Glowy Glipper Cookie Munch_L.png
+Resizing image: scriptImages\Frame\Huberts Nest_C1.png to 600x600
+Processing file: Huberts Nest_C1.png in subfolder: Frame
+Resized image saved: 600x600_png\Frame\Huberts Nest_C1.png
+Resizing image: scriptImages\Frame\Huberts Nest_C2.png to 600x600
+Resized image saved: 800x800_png\Frame\Huberts Nest_C1.png
+Resizing image: scriptImages\Frame\Huberts Nest_C2.png to 800x800
+Processing file: Huberts Nest_C2.png in subfolder: Frame
+Resized image saved: 600x600_png\Frame\Huberts Nest_C2.png
+Resizing image: scriptImages\Frame\Huberts Nest_C3.png to 600x600
+Resized image saved: 800x800_png\Frame\Huberts Nest_C2.png
+Resizing image: scriptImages\Frame\Huberts Nest_C3.png to 800x800
+Processing file: Huberts Nest_C3.png in subfolder: Frame
+Resized image saved: 600x600_png\Frame\Huberts Nest_C3.png
+Resizing image: scriptImages\Frame\Huberts Nest_L.png to 600x600
+Resized image saved: 800x800_png\Frame\Huberts Nest_C3.png
+Resizing image: scriptImages\Frame\Huberts Nest_L.png to 800x800
+Processing file: Huberts Nest_L.png in subfolder: Frame
+Checking existence of PNG: compositeImages\Frame\Huberts Nest.png
+Checking existence of JPG: 300x300_jpg\Frame\Huberts Nest.jpg
+Files not found, processing: PNG - compositeImages\Frame\Huberts Nest.png, JPG - 300x300_jpg\Frame\Huberts Nest.jpg
+Saved: compositeImages\Frame\Huberts Nest.png
+Resized image saved: 600x600_png\Frame\Huberts Nest_L.png
+Resizing image: scriptImages\Frame\Skuzzy Berry Bushes_C1.png to 600x600
+Resized image saved: 800x800_png\Frame\Huberts Nest_L.png
+Resizing image: scriptImages\Frame\Skuzzy Berry Bushes_C1.png to 800x800
+Saved: 300x300_jpg\Frame\Huberts Nest.jpg
+Processing image group: Skuzzy Berry Bushes
+Processing file: Skuzzy Berry Bushes_C1.png in subfolder: Frame
+Resized image saved: 800x800_png\Frame\Skuzzy Berry Bushes_C1.png
+Resizing image: scriptImages\Frame\Skuzzy Berry Bushes_C2.png to 800x800
+Resized image saved: 600x600_png\Frame\Skuzzy Berry Bushes_C1.png
+Resizing image: scriptImages\Frame\Skuzzy Berry Bushes_C2.png to 600x600
+Processing file: Skuzzy Berry Bushes_C2.png in subfolder: Frame
+Resized image saved: 800x800_png\Frame\Skuzzy Berry Bushes_C2.png
+Resizing image: scriptImages\Frame\Skuzzy Berry Bushes_L.png to 800x800
+Resized image saved: 600x600_png\Frame\Skuzzy Berry Bushes_C2.png
+Resizing image: scriptImages\Frame\Skuzzy Berry Bushes_L.png to 600x600
+Processing file: Skuzzy Berry Bushes_L.png in subfolder: Frame
+Checking existence of PNG: compositeImages\Frame\Skuzzy Berry Bushes.png
+Checking existence of JPG: 300x300_jpg\Frame\Skuzzy Berry Bushes.jpg
+Files not found, processing: PNG - compositeImages\Frame\Skuzzy Berry Bushes.png, JPG - 300x300_jpg\Frame\Skuzzy Berry Bushes.jpg
+Saved: compositeImages\Frame\Skuzzy Berry Bushes.png
+Resized image saved: 800x800_png\Frame\Skuzzy Berry Bushes_L.png
+Resizing image: scriptImages\Hair Style\Bunny Pin Mika_Back_C1.png to 800x800
+Resized image saved: 600x600_png\Frame\Skuzzy Berry Bushes_L.png
+Resizing image: scriptImages\Hair Style\Bunny Pin Mika_Back_C1.png to 600x600
+Saved: 300x300_jpg\Frame\Skuzzy Berry Bushes.jpg
+Processing image group: Bunny Pin Mika_Back
+Processing file: Bunny Pin Mika_Back_C1.png in subfolder: Hair Style
+Processing file: Bunny Pin Mika_Back_C1.png in Hair Style
+Resized image saved: 800x800_png\Hair Style\Bunny Pin Mika_Back_C1.png
+Resizing image: scriptImages\Hair Style\Bunny Pin Mika_Back_C2.png to 800x800
+Resized image saved: 600x600_png\Hair Style\Bunny Pin Mika_Back_C1.png
+Resizing image: scriptImages\Hair Style\Bunny Pin Mika_Back_C2.png to 600x600
+Processing file: Bunny Pin Mika_Back_C2.png in Hair Style
+Resized image saved: 600x600_png\Hair Style\Bunny Pin Mika_Back_C2.png
+Resizing image: scriptImages\Hair Style\Bunny Pin Mika_Back_C3.png to 600x600
+Processing file: Bunny Pin Mika_Back_C3.png in Hair Style
+Resized image saved: 800x800_png\Hair Style\Bunny Pin Mika_Back_C2.png
+Resizing image: scriptImages\Hair Style\Bunny Pin Mika_Back_C3.png to 800x800
+Processing file: Bunny Pin Mika_Back_L .png in Hair Style
+Resized image saved: 800x800_png\Hair Style\Bunny Pin Mika_Back_C3.png
+Resizing image: scriptImages\Hair Style\Bunny Pin Mika_Back_L .png to 800x800
+Resized image saved: 600x600_png\Hair Style\Bunny Pin Mika_Back_C3.png
+Resizing image: scriptImages\Hair Style\Bunny Pin Mika_Back_L .png to 600x600
+Processing file: Bunny Pin Mika_Back_L.png in Hair Style
+Resized image saved: 800x800_png\Hair Style\Bunny Pin Mika_Back_L .png
+Resizing image: scriptImages\Hair Style\Bunny Pin Mika_Back_L.png to 800x800
+Resized image saved: 600x600_png\Hair Style\Bunny Pin Mika_Back_L .png
+Resizing image: scriptImages\Hair Style\Bunny Pin Mika_Back_L.png to 600x600
+Processing file: Bunny Pin Mika_Front_C1.png in Hair Style
+Resized image saved: 800x800_png\Hair Style\Bunny Pin Mika_Back_L.png
+Resizing image: scriptImages\Hair Style\Bunny Pin Mika_Front_C1.png to 800x800
+Resized image saved: 600x600_png\Hair Style\Bunny Pin Mika_Back_L.png
+Resizing image: scriptImages\Hair Style\Bunny Pin Mika_Front_C1.png to 600x600
+Processing file: Bunny Pin Mika_Front_C2.png in Hair Style
+Resized image saved: 800x800_png\Hair Style\Bunny Pin Mika_Front_C1.png
+Resizing image: scriptImages\Hair Style\Bunny Pin Mika_Front_C2.png to 800x800
+Resized image saved: 600x600_png\Hair Style\Bunny Pin Mika_Front_C1.png
+Resizing image: scriptImages\Hair Style\Bunny Pin Mika_Front_C2.png to 600x600
+Processing file: Bunny Pin Mika_Front_C3.png in Hair Style
+Resized image saved: 800x800_png\Hair Style\Bunny Pin Mika_Front_C2.png
+Resizing image: scriptImages\Hair Style\Bunny Pin Mika_Front_C3.png to 800x800
+Resized image saved: 600x600_png\Hair Style\Bunny Pin Mika_Front_C2.png
+Resizing image: scriptImages\Hair Style\Bunny Pin Mika_Front_C3.png to 600x600
+Processing file: Bunny Pin Mika_Front_L.png in Hair Style
+Resized image saved: 800x800_png\Hair Style\Bunny Pin Mika_Front_C3.png
+Resizing image: scriptImages\Hair Style\Bunny Pin Mika_Front_L.png to 800x800
+Resized image saved: 600x600_png\Hair Style\Bunny Pin Mika_Front_C3.png
+Resizing image: scriptImages\Hair Style\Bunny Pin Mika_Front_L.png to 600x600
+Resized image saved: 800x800_png\Hair Style\Bunny Pin Mika_Front_L.png
+Resizing image: scriptImages\Hair Style\Diner Space Buns_Back_C1.png to 800x800
+Resized image saved: 600x600_png\Hair Style\Bunny Pin Mika_Front_L.png
+Resizing image: scriptImages\Hair Style\Diner Space Buns_Back_C1.png to 600x600
+Processing file: Diner Space Buns_Back_C1.png in Hair Style
+Processing file: Diner Space Buns_Back_L.png in Hair Style
+Resized image saved: 600x600_png\Hair Style\Diner Space Buns_Back_C1.png
+Resizing image: scriptImages\Hair Style\Diner Space Buns_Back_L.png to 600x600
+Resized image saved: 800x800_png\Hair Style\Diner Space Buns_Back_C1.png
+Resizing image: scriptImages\Hair Style\Diner Space Buns_Back_L.png to 800x800
+Processing file: Diner Space Buns_Front_C1.png in Hair Style
+Resized image saved: 800x800_png\Hair Style\Diner Space Buns_Back_L.png
+Resizing image: scriptImages\Hair Style\Diner Space Buns_Front_C1.png to 800x800
+Resized image saved: 600x600_png\Hair Style\Diner Space Buns_Back_L.png
+Resizing image: scriptImages\Hair Style\Diner Space Buns_Front_C1.png to 600x600
+Processing file: Diner Space Buns_Front_L.png in Hair Style
+Resized image saved: 800x800_png\Hair Style\Diner Space Buns_Front_C1.png
+Resizing image: scriptImages\Hair Style\Diner Space Buns_Front_L.png to 800x800
+Resized image saved: 600x600_png\Hair Style\Diner Space Buns_Front_C1.png
+Resizing image: scriptImages\Hair Style\Diner Space Buns_Front_L.png to 600x600
+Resized image saved: 800x800_png\Hair Style\Diner Space Buns_Front_L.png
+Resizing image: scriptImages\Hair Style\Marinas Gym Pony_Back_C1.png to 800x800
+Resized image saved: 600x600_png\Hair Style\Diner Space Buns_Front_L.png
+Resizing image: scriptImages\Hair Style\Marinas Gym Pony_Back_C1.png to 600x600
+Processing file: Marinas Gym Pony_Back_C1.png in Hair Style
+Processing file: Marinas Gym Pony_Back_L.png in Hair Style
+Resized image saved: 600x600_png\Hair Style\Marinas Gym Pony_Back_C1.png
+Resizing image: scriptImages\Hair Style\Marinas Gym Pony_Back_L.png to 600x600
+Resized image saved: 800x800_png\Hair Style\Marinas Gym Pony_Back_C1.png
+Resizing image: scriptImages\Hair Style\Marinas Gym Pony_Back_L.png to 800x800
+Processing file: Marinas Gym Pony_Front_C1.png in Hair Style
+Resized image saved: 800x800_png\Hair Style\Marinas Gym Pony_Back_L.png
+Resizing image: scriptImages\Hair Style\Marinas Gym Pony_Front_C1.png to 800x800
+Resized image saved: 600x600_png\Hair Style\Marinas Gym Pony_Back_L.png
+Resizing image: scriptImages\Hair Style\Marinas Gym Pony_Front_C1.png to 600x600
+Processing file: Marinas Gym Pony_Front_L.png in Hair Style
+Resized image saved: 800x800_png\Hair Style\Marinas Gym Pony_Front_C1.png
+Resizing image: scriptImages\Hair Style\Marinas Gym Pony_Front_L.png to 800x800
+Resized image saved: 600x600_png\Hair Style\Marinas Gym Pony_Front_C1.png
+Resizing image: scriptImages\Hair Style\Marinas Gym Pony_Front_L.png to 600x600
+Resized image saved: 800x800_png\Hair Style\Marinas Gym Pony_Front_L.png
+Resizing image: scriptImages\Hand\Bad Bunny Coin Purse_C1.png to 800x800
+Resized image saved: 600x600_png\Hair Style\Marinas Gym Pony_Front_L.png
+Resizing image: scriptImages\Hand\Bad Bunny Coin Purse_C1.png to 600x600
+Processing file: Bunny Pin Mika_Back_C2.png in subfolder: Hair Style
+Processing file: Bunny Pin Mika_Back_C1.png in Hair Style
+Processing file: Bunny Pin Mika_Back_C2.png in Hair Style
+Resized image saved: 600x600_png\Hand\Bad Bunny Coin Purse_C1.png
+Resizing image: scriptImages\Hand\Bad Bunny Coin Purse_C2.png to 600x600
+Resized image saved: 800x800_png\Hand\Bad Bunny Coin Purse_C1.png
+Resizing image: scriptImages\Hand\Bad Bunny Coin Purse_C2.png to 800x800
+Processing file: Bunny Pin Mika_Back_C3.png in Hair Style
+Processing file: Bunny Pin Mika_Back_L .png in Hair Style
+Resized image saved: 800x800_png\Hand\Bad Bunny Coin Purse_C2.png
+Resizing image: scriptImages\Hand\Bad Bunny Coin Purse_C3.png to 800x800
+Resized image saved: 600x600_png\Hand\Bad Bunny Coin Purse_C2.png
+Resizing image: scriptImages\Hand\Bad Bunny Coin Purse_C3.png to 600x600
+Processing file: Bunny Pin Mika_Back_L.png in Hair Style
+Processing file: Bunny Pin Mika_Front_C1.png in Hair Style
+Resized image saved: 800x800_png\Hand\Bad Bunny Coin Purse_C3.png
+Resizing image: scriptImages\Hand\Bad Bunny Coin Purse_L.png to 800x800
+Resized image saved: 600x600_png\Hand\Bad Bunny Coin Purse_C3.png
+Resizing image: scriptImages\Hand\Bad Bunny Coin Purse_L.png to 600x600
+Processing file: Bunny Pin Mika_Front_C2.png in Hair Style
+Processing file: Bunny Pin Mika_Front_C3.png in Hair Style
+Resized image saved: 800x800_png\Hand\Bad Bunny Coin Purse_L.png
+Resizing image: scriptImages\Hand\Bad Bunny Coin Purse_S.png to 800x800
+Resized image saved: 600x600_png\Hand\Bad Bunny Coin Purse_L.png
+Resizing image: scriptImages\Hand\Bad Bunny Coin Purse_S.png to 600x600
+Processing file: Bunny Pin Mika_Front_L.png in Hair Style
+Resized image saved: 800x800_png\Hand\Bad Bunny Coin Purse_S.png
+Resizing image: scriptImages\Hand\Bunny Ball Bat_C1.png to 800x800
+Resized image saved: 600x600_png\Hand\Bad Bunny Coin Purse_S.png
+Resizing image: scriptImages\Hand\Bunny Ball Bat_C1.png to 600x600
+Processing file: Diner Space Buns_Back_C1.png in Hair Style
+Resized image saved: 800x800_png\Hand\Bunny Ball Bat_C1.png
+Resizing image: scriptImages\Hand\Bunny Ball Bat_C2.png to 800x800
+Resized image saved: 600x600_png\Hand\Bunny Ball Bat_C1.png
+Resizing image: scriptImages\Hand\Bunny Ball Bat_C2.png to 600x600
+Processing file: Diner Space Buns_Back_L.png in Hair Style
+Processing file: Diner Space Buns_Front_C1.png in Hair Style
+Resized image saved: 800x800_png\Hand\Bunny Ball Bat_C2.png
+Resizing image: scriptImages\Hand\Bunny Ball Bat_C3.png to 800x800
+Resized image saved: 600x600_png\Hand\Bunny Ball Bat_C2.png
+Resizing image: scriptImages\Hand\Bunny Ball Bat_C3.png to 600x600
+Processing file: Diner Space Buns_Front_L.png in Hair Style
+Resized image saved: 800x800_png\Hand\Bunny Ball Bat_C3.png
+Resizing image: scriptImages\Hand\Bunny Ball Bat_L.png to 800x800
+Resized image saved: 600x600_png\Hand\Bunny Ball Bat_C3.png
+Resizing image: scriptImages\Hand\Bunny Ball Bat_L.png to 600x600
+Processing file: Marinas Gym Pony_Back_C1.png in Hair Style
+Processing file: Marinas Gym Pony_Back_L.png in Hair Style
+Resized image saved: 800x800_png\Hand\Bunny Ball Bat_L.png
+Resizing image: scriptImages\Hand\Bunny Ball Bat_S.png to 800x800
+Resized image saved: 600x600_png\Hand\Bunny Ball Bat_L.png
+Resizing image: scriptImages\Hand\Bunny Ball Bat_S.png to 600x600
+Processing file: Marinas Gym Pony_Front_C1.png in Hair Style
+Processing file: Marinas Gym Pony_Front_L.png in Hair Style
+Resized image saved: 800x800_png\Hand\Bunny Ball Bat_S.png
+Resizing image: scriptImages\Hand\Bunny Kingdom Tales Vol 1_C1.png to 800x800
+Resized image saved: 600x600_png\Hand\Bunny Ball Bat_S.png
+Resizing image: scriptImages\Hand\Bunny Kingdom Tales Vol 1_C1.png to 600x600
+Resized image saved: 600x600_png\Hand\Bunny Kingdom Tales Vol 1_C1.png
+Resizing image: scriptImages\Hand\Bunny Kingdom Tales Vol 1_C2.png to 600x600
+Resized image saved: 800x800_png\Hand\Bunny Kingdom Tales Vol 1_C1.png
+Resizing image: scriptImages\Hand\Bunny Kingdom Tales Vol 1_C2.png to 800x800
+Processing file: Bunny Pin Mika_Back_C3.png in subfolder: Hair Style
+Processing file: Bunny Pin Mika_Back_C1.png in Hair Style
+Resized image saved: 600x600_png\Hand\Bunny Kingdom Tales Vol 1_C2.png
+Resizing image: scriptImages\Hand\Bunny Kingdom Tales Vol 1_C3.png to 600x600
+Resized image saved: 800x800_png\Hand\Bunny Kingdom Tales Vol 1_C2.png
+Resizing image: scriptImages\Hand\Bunny Kingdom Tales Vol 1_C3.png to 800x800
+Processing file: Bunny Pin Mika_Back_C2.png in Hair Style
+Processing file: Bunny Pin Mika_Back_C3.png in Hair Style
+Resized image saved: 800x800_png\Hand\Bunny Kingdom Tales Vol 1_C3.png
+Resizing image: scriptImages\Hand\Bunny Kingdom Tales Vol 1_C4.png to 800x800
+Resized image saved: 600x600_png\Hand\Bunny Kingdom Tales Vol 1_C3.png
+Resizing image: scriptImages\Hand\Bunny Kingdom Tales Vol 1_C4.png to 600x600
+Processing file: Bunny Pin Mika_Back_L .png in Hair Style
+Processing file: Bunny Pin Mika_Back_L.png in Hair Style
+Resized image saved: 800x800_png\Hand\Bunny Kingdom Tales Vol 1_C4.png
+Resizing image: scriptImages\Hand\Bunny Kingdom Tales Vol 1_L.png to 800x800
+Resized image saved: 600x600_png\Hand\Bunny Kingdom Tales Vol 1_C4.png
+Resizing image: scriptImages\Hand\Bunny Kingdom Tales Vol 1_L.png to 600x600
+Processing file: Bunny Pin Mika_Front_C1.png in Hair Style
+Processing file: Bunny Pin Mika_Front_C2.png in Hair Style
+Resized image saved: 600x600_png\Hand\Bunny Kingdom Tales Vol 1_L.png
+Resizing image: scriptImages\Hand\Bunny Kingdom Tales Vol 1_S.png to 600x600
+Resized image saved: 800x800_png\Hand\Bunny Kingdom Tales Vol 1_L.png
+Resizing image: scriptImages\Hand\Bunny Kingdom Tales Vol 1_S.png to 800x800
+Processing file: Bunny Pin Mika_Front_C3.png in Hair Style
+Resized image saved: 600x600_png\Hand\Bunny Kingdom Tales Vol 1_S.png
+Resizing image: scriptImages\Hand\Cloudy Heart Tote_C1.png to 600x600
+Resized image saved: 800x800_png\Hand\Bunny Kingdom Tales Vol 1_S.png
+Resizing image: scriptImages\Hand\Cloudy Heart Tote_C1.png to 800x800
+Processing file: Bunny Pin Mika_Front_L.png in Hair Style
+Resized image saved: 800x800_png\Hand\Cloudy Heart Tote_C1.png
+Resizing image: scriptImages\Hand\Cloudy Heart Tote_C2.png to 800x800
+Resized image saved: 600x600_png\Hand\Cloudy Heart Tote_C1.png
+Resizing image: scriptImages\Hand\Cloudy Heart Tote_C2.png to 600x600
+Processing file: Diner Space Buns_Back_C1.png in Hair Style
+Processing file: Diner Space Buns_Back_L.png in Hair Style
+Resized image saved: 800x800_png\Hand\Cloudy Heart Tote_C2.png
+Resizing image: scriptImages\Hand\Cloudy Heart Tote_C3.png to 800x800
+Resized image saved: 600x600_png\Hand\Cloudy Heart Tote_C2.png
+Resizing image: scriptImages\Hand\Cloudy Heart Tote_C3.png to 600x600
+Processing file: Diner Space Buns_Front_C1.png in Hair Style
+Processing file: Diner Space Buns_Front_L.png in Hair Style
+Resized image saved: 800x800_png\Hand\Cloudy Heart Tote_C3.png
+Resizing image: scriptImages\Hand\Cloudy Heart Tote_C4.png to 800x800
+Resized image saved: 600x600_png\Hand\Cloudy Heart Tote_C3.png
+Resizing image: scriptImages\Hand\Cloudy Heart Tote_C4.png to 600x600
+Resized image saved: 600x600_png\Hand\Cloudy Heart Tote_C4.png
+Resizing image: scriptImages\Hand\Cloudy Heart Tote_C5.png to 600x600
+Resized image saved: 800x800_png\Hand\Cloudy Heart Tote_C4.png
+Resizing image: scriptImages\Hand\Cloudy Heart Tote_C5.png to 800x800
+Processing file: Marinas Gym Pony_Back_C1.png in Hair Style
+Processing file: Marinas Gym Pony_Back_L.png in Hair Style
+Resized image saved: 800x800_png\Hand\Cloudy Heart Tote_C5.png
+Resizing image: scriptImages\Hand\Cloudy Heart Tote_L.png to 800x800
+Resized image saved: 600x600_png\Hand\Cloudy Heart Tote_C5.png
+Resizing image: scriptImages\Hand\Cloudy Heart Tote_L.png to 600x600
+Processing file: Marinas Gym Pony_Front_C1.png in Hair Style
+Processing file: Marinas Gym Pony_Front_L.png in Hair Style
+Resized image saved: 600x600_png\Hand\Cloudy Heart Tote_L.png
+Resizing image: scriptImages\Hand\Cloudy Heart Tote_S.png to 600x600
+Resized image saved: 800x800_png\Hand\Cloudy Heart Tote_L.png
+Resizing image: scriptImages\Hand\Cloudy Heart Tote_S.png to 800x800
+Resized image saved: 600x600_png\Hand\Cloudy Heart Tote_S.png
+Resizing image: scriptImages\Hand\Cosmic Clutch_C1.png to 600x600
+Resized image saved: 800x800_png\Hand\Cloudy Heart Tote_S.png
+Resizing image: scriptImages\Hand\Cosmic Clutch_C1.png to 800x800
+Processing file: Bunny Pin Mika_Back_L .png in subfolder: Hair Style
+Processing file: Bunny Pin Mika_Back_C1.png in Hair Style
+Processing file: Bunny Pin Mika_Back_C2.png in Hair Style
+Resized image saved: 800x800_png\Hand\Cosmic Clutch_C1.png
+Resizing image: scriptImages\Hand\Cosmic Clutch_C2.png to 800x800
+Resized image saved: 600x600_png\Hand\Cosmic Clutch_C1.png
+Resizing image: scriptImages\Hand\Cosmic Clutch_C2.png to 600x600
+Processing file: Bunny Pin Mika_Back_C3.png in Hair Style
+Processing file: Bunny Pin Mika_Back_L .png in Hair Style
+Resized image saved: 600x600_png\Hand\Cosmic Clutch_C2.png
+Resizing image: scriptImages\Hand\Cosmic Clutch_C3.png to 600x600
+Resized image saved: 800x800_png\Hand\Cosmic Clutch_C2.png
+Resizing image: scriptImages\Hand\Cosmic Clutch_C3.png to 800x800
+Processing file: Bunny Pin Mika_Back_L.png in Hair Style
+Processing file: Bunny Pin Mika_Front_C1.png in Hair Style
+Resized image saved: 800x800_png\Hand\Cosmic Clutch_C3.png
+Resizing image: scriptImages\Hand\Cosmic Clutch_C4.png to 800x800
+Resized image saved: 600x600_png\Hand\Cosmic Clutch_C3.png
+Resizing image: scriptImages\Hand\Cosmic Clutch_C4.png to 600x600
+Processing file: Bunny Pin Mika_Front_C2.png in Hair Style
+Processing file: Bunny Pin Mika_Front_C3.png in Hair Style
+Resized image saved: 600x600_png\Hand\Cosmic Clutch_C4.png
+Resizing image: scriptImages\Hand\Cosmic Clutch_L.png to 600x600
+Resized image saved: 800x800_png\Hand\Cosmic Clutch_C4.png
+Resizing image: scriptImages\Hand\Cosmic Clutch_L.png to 800x800
+Processing file: Bunny Pin Mika_Front_L.png in Hair Style
+Resized image saved: 800x800_png\Hand\Cosmic Clutch_L.png
+Resizing image: scriptImages\Hand\Cosmic Clutch_S.png to 800x800
+Resized image saved: 600x600_png\Hand\Cosmic Clutch_L.png
+Resizing image: scriptImages\Hand\Cosmic Clutch_S.png to 600x600
+Processing file: Diner Space Buns_Back_C1.png in Hair Style
+Processing file: Diner Space Buns_Back_L.png in Hair Style
+Resized image saved: 600x600_png\Hand\Cosmic Clutch_S.png
+Resizing image: scriptImages\Hand\Diner Delicacies_C1.png to 600x600
+Resized image saved: 800x800_png\Hand\Cosmic Clutch_S.png
+Resizing image: scriptImages\Hand\Diner Delicacies_C1.png to 800x800
+Processing file: Diner Space Buns_Front_C1.png in Hair Style
+Resized image saved: 800x800_png\Hand\Diner Delicacies_C1.png
+Resizing image: scriptImages\Hand\Diner Delicacies_C2.png to 800x800
+Processing file: Diner Space Buns_Front_L.png in Hair Style
+Resized image saved: 600x600_png\Hand\Diner Delicacies_C1.png
+Resizing image: scriptImages\Hand\Diner Delicacies_C2.png to 600x600
+Resized image saved: 800x800_png\Hand\Diner Delicacies_C2.png
+Resizing image: scriptImages\Hand\Diner Delicacies_C3.png to 800x800
+Resized image saved: 600x600_png\Hand\Diner Delicacies_C2.png
+Resizing image: scriptImages\Hand\Diner Delicacies_C3.png to 600x600
+Processing file: Marinas Gym Pony_Back_C1.png in Hair Style
+Processing file: Marinas Gym Pony_Back_L.png in Hair Style
+Resized image saved: 800x800_png\Hand\Diner Delicacies_C3.png
+Resizing image: scriptImages\Hand\Diner Delicacies_C4.png to 800x800
+Resized image saved: 600x600_png\Hand\Diner Delicacies_C3.png
+Resizing image: scriptImages\Hand\Diner Delicacies_C4.png to 600x600
+Processing file: Marinas Gym Pony_Front_C1.png in Hair Style
+Processing file: Marinas Gym Pony_Front_L.png in Hair Style
+Resized image saved: 800x800_png\Hand\Diner Delicacies_C4.png
+Resizing image: scriptImages\Hand\Diner Delicacies_C5.png to 800x800
+Resized image saved: 600x600_png\Hand\Diner Delicacies_C4.png
+Resizing image: scriptImages\Hand\Diner Delicacies_C5.png to 600x600
+Resized image saved: 600x600_png\Hand\Diner Delicacies_C5.png
+Resizing image: scriptImages\Hand\Diner Delicacies_L.png to 600x600
+Resized image saved: 800x800_png\Hand\Diner Delicacies_C5.png
+Resizing image: scriptImages\Hand\Diner Delicacies_L.png to 800x800
+Processing file: Bunny Pin Mika_Back_L.png in subfolder: Hair Style
+Processing file: Bunny Pin Mika_Back_C1.png in Hair Style
+Resized image saved: 600x600_png\Hand\Diner Delicacies_L.png
+Resizing image: scriptImages\Hand\Diner Delicacies_S.png to 600x600
+Resized image saved: 800x800_png\Hand\Diner Delicacies_L.png
+Resizing image: scriptImages\Hand\Diner Delicacies_S.png to 800x800
+Processing file: Bunny Pin Mika_Back_C2.png in Hair Style
+Processing file: Bunny Pin Mika_Back_C3.png in Hair Style
+Resized image saved: 600x600_png\Hand\Diner Delicacies_S.png
+Resizing image: scriptImages\Hand\Hover Plate_C1.png to 600x600
+Resized image saved: 800x800_png\Hand\Diner Delicacies_S.png
+Resizing image: scriptImages\Hand\Hover Plate_C1.png to 800x800
+Processing file: Bunny Pin Mika_Back_L .png in Hair Style
+Processing file: Bunny Pin Mika_Back_L.png in Hair Style
+Resized image saved: 800x800_png\Hand\Hover Plate_C1.png
+Resizing image: scriptImages\Hand\Hover Plate_C2.png to 800x800
+Resized image saved: 600x600_png\Hand\Hover Plate_C1.png
+Resizing image: scriptImages\Hand\Hover Plate_C2.png to 600x600
+Processing file: Bunny Pin Mika_Front_C1.png in Hair Style
+Processing file: Bunny Pin Mika_Front_C2.png in Hair Style
+Resized image saved: 800x800_png\Hand\Hover Plate_C2.png
+Resizing image: scriptImages\Hand\Hover Plate_C3.png to 800x800
+Resized image saved: 600x600_png\Hand\Hover Plate_C2.png
+Resizing image: scriptImages\Hand\Hover Plate_C3.png to 600x600
+Processing file: Bunny Pin Mika_Front_C3.png in Hair Style
+Processing file: Bunny Pin Mika_Front_L.png in Hair Style
+Resized image saved: 800x800_png\Hand\Hover Plate_C3.png
+Resizing image: scriptImages\Hand\Hover Plate_C4.png to 800x800
+Resized image saved: 600x600_png\Hand\Hover Plate_C3.png
+Resizing image: scriptImages\Hand\Hover Plate_C4.png to 600x600
+Processing file: Diner Space Buns_Back_C1.png in Hair Style
+Resized image saved: 800x800_png\Hand\Hover Plate_C4.png
+Resizing image: scriptImages\Hand\Hover Plate_L.png to 800x800
+Resized image saved: 600x600_png\Hand\Hover Plate_C4.png
+Resizing image: scriptImages\Hand\Hover Plate_L.png to 600x600
+Processing file: Diner Space Buns_Back_L.png in Hair Style
+Resized image saved: 600x600_png\Hand\Hover Plate_L.png
+Resizing image: scriptImages\Hand\Lunar Glow Compact_C1.png to 600x600
+Resized image saved: 800x800_png\Hand\Hover Plate_L.png
+Resizing image: scriptImages\Hand\Lunar Glow Compact_C1.png to 800x800
+Processing file: Diner Space Buns_Front_C1.png in Hair Style
+Processing file: Diner Space Buns_Front_L.png in Hair Style
+Resized image saved: 600x600_png\Hand\Lunar Glow Compact_C1.png
+Resizing image: scriptImages\Hand\Lunar Glow Compact_C2.png to 600x600
+Resized image saved: 800x800_png\Hand\Lunar Glow Compact_C1.png
+Resizing image: scriptImages\Hand\Lunar Glow Compact_C2.png to 800x800
+Processing file: Marinas Gym Pony_Back_C1.png in Hair Style
+Resized image saved: 600x600_png\Hand\Lunar Glow Compact_C2.png
+Resizing image: scriptImages\Hand\Lunar Glow Compact_C3.png to 600x600
+Resized image saved: 800x800_png\Hand\Lunar Glow Compact_C2.png
+Resizing image: scriptImages\Hand\Lunar Glow Compact_C3.png to 800x800
+Processing file: Marinas Gym Pony_Back_L.png in Hair Style
+Processing file: Marinas Gym Pony_Front_C1.png in Hair Style
+Resized image saved: 600x600_png\Hand\Lunar Glow Compact_C3.png
+Resizing image: scriptImages\Hand\Lunar Glow Compact_C4.png to 600x600
+Resized image saved: 800x800_png\Hand\Lunar Glow Compact_C3.png
+Resizing image: scriptImages\Hand\Lunar Glow Compact_C4.png to 800x800
+Processing file: Marinas Gym Pony_Front_L.png in Hair Style
+Resized image saved: 800x800_png\Hand\Lunar Glow Compact_C4.png
+Resizing image: scriptImages\Hand\Lunar Glow Compact_C5.png to 800x800
+Resized image saved: 600x600_png\Hand\Lunar Glow Compact_C4.png
+Resizing image: scriptImages\Hand\Lunar Glow Compact_C5.png to 600x600
+Checking existence of PNG: compositeImages\Hair Style\Bunny Pin Mika_Back.png
+Checking existence of JPG: 300x300_jpg\Hair Style\Bunny Pin Mika_Back.jpg
+Files not found, processing: PNG - compositeImages\Hair Style\Bunny Pin Mika_Back.png, JPG - 300x300_jpg\Hair Style\Bunny Pin Mika_Back.jpg
+Processing image group: Bunny Pin Mika_Front
+Resized image saved: 600x600_png\Hand\Lunar Glow Compact_C5.png
+Resizing image: scriptImages\Hand\Lunar Glow Compact_L.png to 600x600
+Resized image saved: 800x800_png\Hand\Lunar Glow Compact_C5.png
+Resizing image: scriptImages\Hand\Lunar Glow Compact_L.png to 800x800
+Processing file: Bunny Pin Mika_Front_C1.png in subfolder: Hair Style
+Processing file: Bunny Pin Mika_Back_C1.png in Hair Style
+Processing file: Bunny Pin Mika_Back_C2.png in Hair Style
+Resized image saved: 600x600_png\Hand\Lunar Glow Compact_L.png
+Resizing image: scriptImages\Hand\Lunar Glow Compact_S.png to 600x600
+Resized image saved: 800x800_png\Hand\Lunar Glow Compact_L.png
+Resizing image: scriptImages\Hand\Lunar Glow Compact_S.png to 800x800
+Processing file: Bunny Pin Mika_Back_C3.png in Hair Style
+Resized image saved: 800x800_png\Hand\Lunar Glow Compact_S.png
+Resizing image: scriptImages\Hand\Marfins Gym Class Tank_C1.png to 800x800
+Resized image saved: 600x600_png\Hand\Lunar Glow Compact_S.png
+Resizing image: scriptImages\Hand\Marfins Gym Class Tank_C1.png to 600x600
+Processing file: Bunny Pin Mika_Back_L .png in Hair Style
+Processing file: Bunny Pin Mika_Back_L.png in Hair Style
+Resized image saved: 600x600_png\Hand\Marfins Gym Class Tank_C1.png
+Resizing image: scriptImages\Hand\Marfins Gym Class Tank_C2.png to 600x600
+Resized image saved: 800x800_png\Hand\Marfins Gym Class Tank_C1.png
+Resizing image: scriptImages\Hand\Marfins Gym Class Tank_C2.png to 800x800
+Processing file: Bunny Pin Mika_Front_C1.png in Hair Style
+Processing file: Bunny Pin Mika_Front_C2.png in Hair Style
+Resized image saved: 800x800_png\Hand\Marfins Gym Class Tank_C2.png
+Resizing image: scriptImages\Hand\Marfins Gym Class Tank_C3.png to 800x800
+Resized image saved: 600x600_png\Hand\Marfins Gym Class Tank_C2.png
+Resizing image: scriptImages\Hand\Marfins Gym Class Tank_C3.png to 600x600
+Processing file: Bunny Pin Mika_Front_C3.png in Hair Style
+Processing file: Bunny Pin Mika_Front_L.png in Hair Style
+Resized image saved: 800x800_png\Hand\Marfins Gym Class Tank_C3.png
+Resizing image: scriptImages\Hand\Marfins Gym Class Tank_C4.png to 800x800
+Resized image saved: 600x600_png\Hand\Marfins Gym Class Tank_C3.png
+Resizing image: scriptImages\Hand\Marfins Gym Class Tank_C4.png to 600x600
+Processing file: Diner Space Buns_Back_C1.png in Hair Style
+Resized image saved: 800x800_png\Hand\Marfins Gym Class Tank_C4.png
+Resizing image: scriptImages\Hand\Marfins Gym Class Tank_C5.png to 800x800
+Resized image saved: 600x600_png\Hand\Marfins Gym Class Tank_C4.png
+Resizing image: scriptImages\Hand\Marfins Gym Class Tank_C5.png to 600x600
+Processing file: Diner Space Buns_Back_L.png in Hair Style
+Resized image saved: 600x600_png\Hand\Marfins Gym Class Tank_C5.png
+Resizing image: scriptImages\Hand\Marfins Gym Class Tank_L.png to 600x600
+Resized image saved: 800x800_png\Hand\Marfins Gym Class Tank_C5.png
+Resizing image: scriptImages\Hand\Marfins Gym Class Tank_L.png to 800x800
+Processing file: Diner Space Buns_Front_C1.png in Hair Style
+Processing file: Diner Space Buns_Front_L.png in Hair Style
+Resized image saved: 800x800_png\Hand\Marfins Gym Class Tank_L.png
+Resizing image: scriptImages\Hand\Marfins Gym Class Tank_S.png to 800x800
+Resized image saved: 600x600_png\Hand\Marfins Gym Class Tank_L.png
+Resizing image: scriptImages\Hand\Marfins Gym Class Tank_S.png to 600x600
+Processing file: Marinas Gym Pony_Back_C1.png in Hair Style
+Resized image saved: 800x800_png\Hand\Marfins Gym Class Tank_S.png
+Resizing image: scriptImages\Hand\Savory Solar Slice_C1.png to 800x800
+Resized image saved: 600x600_png\Hand\Marfins Gym Class Tank_S.png
+Resizing image: scriptImages\Hand\Savory Solar Slice_C1.png to 600x600
+Processing file: Marinas Gym Pony_Back_L.png in Hair Style
+Processing file: Marinas Gym Pony_Front_C1.png in Hair Style
+Resized image saved: 800x800_png\Hand\Savory Solar Slice_C1.png
+Resizing image: scriptImages\Hand\Savory Solar Slice_C2.png to 800x800
+Processing file: Marinas Gym Pony_Front_L.png in Hair Style
+Resized image saved: 600x600_png\Hand\Savory Solar Slice_C1.png
+Resizing image: scriptImages\Hand\Savory Solar Slice_C2.png to 600x600
+Resized image saved: 800x800_png\Hand\Savory Solar Slice_C2.png
+Resizing image: scriptImages\Hand\Savory Solar Slice_C3.png to 800x800
+Resized image saved: 600x600_png\Hand\Savory Solar Slice_C2.png
+Resizing image: scriptImages\Hand\Savory Solar Slice_C3.png to 600x600
+Resized image saved: 800x800_png\Hand\Savory Solar Slice_C3.png
+Resizing image: scriptImages\Hand\Savory Solar Slice_C4.png to 800x800
+Resized image saved: 600x600_png\Hand\Savory Solar Slice_C3.png
+Resizing image: scriptImages\Hand\Savory Solar Slice_C4.png to 600x600
+Processing file: Bunny Pin Mika_Front_C2.png in subfolder: Hair Style
+Processing file: Bunny Pin Mika_Back_C1.png in Hair Style
+Processing file: Bunny Pin Mika_Back_C2.png in Hair Style
+Resized image saved: 800x800_png\Hand\Savory Solar Slice_C4.png
+Resizing image: scriptImages\Hand\Savory Solar Slice_C5.png to 800x800
+Resized image saved: 600x600_png\Hand\Savory Solar Slice_C4.png
+Resizing image: scriptImages\Hand\Savory Solar Slice_C5.png to 600x600
+Processing file: Bunny Pin Mika_Back_C3.png in Hair Style
+Processing file: Bunny Pin Mika_Back_L .png in Hair Style
+Resized image saved: 800x800_png\Hand\Savory Solar Slice_C5.png
+Resizing image: scriptImages\Hand\Savory Solar Slice_L.png to 800x800
+Resized image saved: 600x600_png\Hand\Savory Solar Slice_C5.png
+Resizing image: scriptImages\Hand\Savory Solar Slice_L.png to 600x600
+Processing file: Bunny Pin Mika_Back_L.png in Hair Style
+Resized image saved: 800x800_png\Hand\Savory Solar Slice_L.png
+Resizing image: scriptImages\Hand\Savory Solar Slice_S.png to 800x800
+Processing file: Bunny Pin Mika_Front_C1.png in Hair Style
+Resized image saved: 600x600_png\Hand\Savory Solar Slice_L.png
+Resizing image: scriptImages\Hand\Savory Solar Slice_S.png to 600x600
+Processing file: Bunny Pin Mika_Front_C2.png in Hair Style
+Resized image saved: 800x800_png\Hand\Savory Solar Slice_S.png
+Resizing image: scriptImages\Hand\THE Ted Spatula_C1.png to 800x800
+Resized image saved: 600x600_png\Hand\Savory Solar Slice_S.png
+Resizing image: scriptImages\Hand\THE Ted Spatula_C1.png to 600x600
+Processing file: Bunny Pin Mika_Front_C3.png in Hair Style
+Resized image saved: 600x600_png\Hand\THE Ted Spatula_C1.png
+Resizing image: scriptImages\Hand\THE Ted Spatula_C2.png to 600x600
+Resized image saved: 800x800_png\Hand\THE Ted Spatula_C1.png
+Resizing image: scriptImages\Hand\THE Ted Spatula_C2.png to 800x800
+Processing file: Bunny Pin Mika_Front_L.png in Hair Style
+Resized image saved: 600x600_png\Hand\THE Ted Spatula_C2.png
+Resizing image: scriptImages\Hand\THE Ted Spatula_C3.png to 600x600
+Resized image saved: 800x800_png\Hand\THE Ted Spatula_C2.png
+Resizing image: scriptImages\Hand\THE Ted Spatula_C3.png to 800x800
+Processing file: Diner Space Buns_Back_C1.png in Hair Style
+Processing file: Diner Space Buns_Back_L.png in Hair Style
+Resized image saved: 800x800_png\Hand\THE Ted Spatula_C3.png
+Resizing image: scriptImages\Hand\THE Ted Spatula_C4.png to 800x800
+Resized image saved: 600x600_png\Hand\THE Ted Spatula_C3.png
+Resizing image: scriptImages\Hand\THE Ted Spatula_C4.png to 600x600
+Processing file: Diner Space Buns_Front_C1.png in Hair Style
+Processing file: Diner Space Buns_Front_L.png in Hair Style
+Resized image saved: 800x800_png\Hand\THE Ted Spatula_C4.png
+Resizing image: scriptImages\Hand\THE Ted Spatula_L.png to 800x800
+Resized image saved: 600x600_png\Hand\THE Ted Spatula_C4.png
+Resizing image: scriptImages\Hand\THE Ted Spatula_L.png to 600x600
+Processing file: Marinas Gym Pony_Back_C1.png in Hair Style
+Resized image saved: 600x600_png\Hand\THE Ted Spatula_L.png
+Resizing image: scriptImages\Hand\THE Ted Spatula_S.png to 600x600
+Resized image saved: 800x800_png\Hand\THE Ted Spatula_L.png
+Resizing image: scriptImages\Hand\THE Ted Spatula_S.png to 800x800
+Processing file: Marinas Gym Pony_Back_L.png in Hair Style
+Processing file: Marinas Gym Pony_Front_C1.png in Hair Style
+Resized image saved: 600x600_png\Hand\THE Ted Spatula_S.png
+Resizing image: scriptImages\Hand\Vegan Football_C1.png to 600x600
+Resized image saved: 800x800_png\Hand\THE Ted Spatula_S.png
+Resizing image: scriptImages\Hand\Vegan Football_C1.png to 800x800
+Processing file: Marinas Gym Pony_Front_L.png in Hair Style
+Resized image saved: 600x600_png\Hand\Vegan Football_C1.png
+Resizing image: scriptImages\Hand\Vegan Football_C2.png to 600x600
+Resized image saved: 800x800_png\Hand\Vegan Football_C1.png
+Resizing image: scriptImages\Hand\Vegan Football_C2.png to 800x800
+Resized image saved: 600x600_png\Hand\Vegan Football_C2.png
+Resizing image: scriptImages\Hand\Vegan Football_C3.png to 600x600
+Resized image saved: 800x800_png\Hand\Vegan Football_C2.png
+Resizing image: scriptImages\Hand\Vegan Football_C3.png to 800x800
+Processing file: Bunny Pin Mika_Front_C3.png in subfolder: Hair Style
+Processing file: Bunny Pin Mika_Back_C1.png in Hair Style
+Resized image saved: 800x800_png\Hand\Vegan Football_C3.png
+Resizing image: scriptImages\Hand\Vegan Football_L.png to 800x800
+Processing file: Bunny Pin Mika_Back_C2.png in Hair Style
+Resized image saved: 600x600_png\Hand\Vegan Football_C3.png
+Resizing image: scriptImages\Hand\Vegan Football_L.png to 600x600
+Processing file: Bunny Pin Mika_Back_C3.png in Hair Style
+Resized image saved: 800x800_png\Hand\Vegan Football_L.png
+Resizing image: scriptImages\Hand\Vegan Football_S.png to 800x800
+Processing file: Bunny Pin Mika_Back_L .png in Hair Style
+Resized image saved: 600x600_png\Hand\Vegan Football_L.png
+Resizing image: scriptImages\Hand\Vegan Football_S.png to 600x600
+Processing file: Bunny Pin Mika_Back_L.png in Hair Style
+Resized image saved: 800x800_png\Hand\Vegan Football_S.png
+Resizing image: scriptImages\Hat\Bunny Club Gym Hat_C1.png to 800x800
+Resized image saved: 600x600_png\Hand\Vegan Football_S.png
+Resizing image: scriptImages\Hat\Bunny Club Gym Hat_C1.png to 600x600
+Processing file: Bunny Pin Mika_Front_C1.png in Hair Style
+Processing file: Bunny Pin Mika_Front_C2.png in Hair Style
+Resized image saved: 800x800_png\Hat\Bunny Club Gym Hat_C1.png
+Resizing image: scriptImages\Hat\Bunny Club Gym Hat_C2.png to 800x800
+Resized image saved: 600x600_png\Hat\Bunny Club Gym Hat_C1.png
+Resizing image: scriptImages\Hat\Bunny Club Gym Hat_C2.png to 600x600
+Processing file: Bunny Pin Mika_Front_C3.png in Hair Style
+Processing file: Bunny Pin Mika_Front_L.png in Hair Style
+Resized image saved: 800x800_png\Hat\Bunny Club Gym Hat_C2.png
+Resizing image: scriptImages\Hat\Bunny Club Gym Hat_C3.png to 800x800
+Resized image saved: 600x600_png\Hat\Bunny Club Gym Hat_C2.png
+Resizing image: scriptImages\Hat\Bunny Club Gym Hat_C3.png to 600x600
+Resized image saved: 600x600_png\Hat\Bunny Club Gym Hat_C3.png
+Resizing image: scriptImages\Hat\Bunny Club Gym Hat_L.png to 600x600
+Processing file: Diner Space Buns_Back_C1.png in Hair Style
+Resized image saved: 800x800_png\Hat\Bunny Club Gym Hat_C3.png
+Resizing image: scriptImages\Hat\Bunny Club Gym Hat_L.png to 800x800
+Processing file: Diner Space Buns_Back_L.png in Hair Style
+Resized image saved: 600x600_png\Hat\Bunny Club Gym Hat_L.png
+Resizing image: scriptImages\Hat\Droopy Bun Ears_Back_C1.png to 600x600
+Resized image saved: 800x800_png\Hat\Bunny Club Gym Hat_L.png
+Resizing image: scriptImages\Hat\Droopy Bun Ears_Back_C1.png to 800x800
+Processing file: Diner Space Buns_Front_C1.png in Hair Style
+Processing file: Diner Space Buns_Front_L.png in Hair Style
+Resized image saved: 600x600_png\Hat\Droopy Bun Ears_Back_C1.png
+Resizing image: scriptImages\Hat\Droopy Bun Ears_Back_C2.png to 600x600
+Resized image saved: 800x800_png\Hat\Droopy Bun Ears_Back_C1.png
+Resizing image: scriptImages\Hat\Droopy Bun Ears_Back_C2.png to 800x800
+Processing file: Marinas Gym Pony_Back_C1.png in Hair Style
+Resized image saved: 600x600_png\Hat\Droopy Bun Ears_Back_C2.png
+Resizing image: scriptImages\Hat\Droopy Bun Ears_Back_L.png to 600x600
+Resized image saved: 800x800_png\Hat\Droopy Bun Ears_Back_C2.png
+Resizing image: scriptImages\Hat\Droopy Bun Ears_Back_L.png to 800x800
+Processing file: Marinas Gym Pony_Back_L.png in Hair Style
+Resized image saved: 600x600_png\Hat\Droopy Bun Ears_Back_L.png
+Resizing image: scriptImages\Hat\Droopy Bun Ears_Front_C1.png to 600x600
+Processing file: Marinas Gym Pony_Front_C1.png in Hair Style
+Resized image saved: 800x800_png\Hat\Droopy Bun Ears_Back_L.png
+Resizing image: scriptImages\Hat\Droopy Bun Ears_Front_C1.png to 800x800
+Processing file: Marinas Gym Pony_Front_L.png in Hair Style
+Resized image saved: 600x600_png\Hat\Droopy Bun Ears_Front_C1.png
+Resizing image: scriptImages\Hat\Droopy Bun Ears_Front_C2.png to 600x600
+Resized image saved: 800x800_png\Hat\Droopy Bun Ears_Front_C1.png
+Resizing image: scriptImages\Hat\Droopy Bun Ears_Front_C2.png to 800x800
+Resized image saved: 600x600_png\Hat\Droopy Bun Ears_Front_C2.png
+Resizing image: scriptImages\Hat\Droopy Bun Ears_Front_L.png to 600x600
+Resized image saved: 800x800_png\Hat\Droopy Bun Ears_Front_C2.png
+Resizing image: scriptImages\Hat\Droopy Bun Ears_Front_L.png to 800x800
+Processing file: Bunny Pin Mika_Front_L.png in subfolder: Hair Style
+Processing file: Bunny Pin Mika_Back_C1.png in Hair Style
+Processing file: Bunny Pin Mika_Back_C2.png in Hair Style
+Resized image saved: 600x600_png\Hat\Droopy Bun Ears_Front_L.png
+Skipping existing file: 600x600_png\Hat\PomPom Toque_C1.png
+Skipping existing file: 600x600_png\Hat\PomPom Toque_C2.png
+Skipping existing file: 600x600_png\Hat\PomPom Toque_L.png
+Resizing image: scriptImages\Outfit\Bunny Ball Jersey_C1.png to 600x600
+Resized image saved: 800x800_png\Hat\Droopy Bun Ears_Front_L.png
+Skipping existing file: 800x800_png\Hat\PomPom Toque_C1.png
+Skipping existing file: 800x800_png\Hat\PomPom Toque_C2.png
+Skipping existing file: 800x800_png\Hat\PomPom Toque_L.png
+Resizing image: scriptImages\Outfit\Bunny Ball Jersey_C1.png to 800x800
+Processing file: Bunny Pin Mika_Back_C3.png in Hair Style
+Processing file: Bunny Pin Mika_Back_L .png in Hair Style
+Resized image saved: 600x600_png\Outfit\Bunny Ball Jersey_C1.png
+Resizing image: scriptImages\Outfit\Bunny Ball Jersey_C2.png to 600x600
+Resized image saved: 800x800_png\Outfit\Bunny Ball Jersey_C1.png
+Resizing image: scriptImages\Outfit\Bunny Ball Jersey_C2.png to 800x800
+Processing file: Bunny Pin Mika_Back_L.png in Hair Style
+Processing file: Bunny Pin Mika_Front_C1.png in Hair Style
+Resized image saved: 600x600_png\Outfit\Bunny Ball Jersey_C2.png
+Resizing image: scriptImages\Outfit\Bunny Ball Jersey_C3.png to 600x600
+Resized image saved: 800x800_png\Outfit\Bunny Ball Jersey_C2.png
+Resizing image: scriptImages\Outfit\Bunny Ball Jersey_C3.png to 800x800
+Processing file: Bunny Pin Mika_Front_C2.png in Hair Style
+Processing file: Bunny Pin Mika_Front_C3.png in Hair Style
+Resized image saved: 800x800_png\Outfit\Bunny Ball Jersey_C3.png
+Resizing image: scriptImages\Outfit\Bunny Ball Jersey_L.png to 800x800
+Resized image saved: 600x600_png\Outfit\Bunny Ball Jersey_C3.png
+Resizing image: scriptImages\Outfit\Bunny Ball Jersey_L.png to 600x600
+Processing file: Bunny Pin Mika_Front_L.png in Hair Style
+Resized image saved: 800x800_png\Outfit\Bunny Ball Jersey_L.png
+Resizing image: scriptImages\Outfit\Bunny Club Gym Class Polo_C1.png to 800x800
+Resized image saved: 600x600_png\Outfit\Bunny Ball Jersey_L.png
+Resizing image: scriptImages\Outfit\Bunny Club Gym Class Polo_C1.png to 600x600
+Processing file: Diner Space Buns_Back_C1.png in Hair Style
+Processing file: Diner Space Buns_Back_L.png in Hair Style
+Resized image saved: 800x800_png\Outfit\Bunny Club Gym Class Polo_C1.png
+Resizing image: scriptImages\Outfit\Bunny Club Gym Class Polo_C2.png to 800x800
+Resized image saved: 600x600_png\Outfit\Bunny Club Gym Class Polo_C1.png
+Resizing image: scriptImages\Outfit\Bunny Club Gym Class Polo_C2.png to 600x600
+Processing file: Diner Space Buns_Front_C1.png in Hair Style
+Processing file: Diner Space Buns_Front_L.png in Hair Style
+Resized image saved: 600x600_png\Outfit\Bunny Club Gym Class Polo_C2.png
+Resizing image: scriptImages\Outfit\Bunny Club Gym Class Polo_C3.png to 600x600
+Resized image saved: 800x800_png\Outfit\Bunny Club Gym Class Polo_C2.png
+Resizing image: scriptImages\Outfit\Bunny Club Gym Class Polo_C3.png to 800x800
+Resized image saved: 800x800_png\Outfit\Bunny Club Gym Class Polo_C3.png
+Resizing image: scriptImages\Outfit\Bunny Club Gym Class Polo_L.png to 800x800
+Resized image saved: 600x600_png\Outfit\Bunny Club Gym Class Polo_C3.png
+Resizing image: scriptImages\Outfit\Bunny Club Gym Class Polo_L.png to 600x600
+Processing file: Marinas Gym Pony_Back_C1.png in Hair Style
+Processing file: Marinas Gym Pony_Back_L.png in Hair Style
+Resized image saved: 800x800_png\Outfit\Bunny Club Gym Class Polo_L.png
+Resizing image: scriptImages\Outfit\Dorothys Day Off Sweater_C1.png to 800x800
+Resized image saved: 600x600_png\Outfit\Bunny Club Gym Class Polo_L.png
+Resizing image: scriptImages\Outfit\Dorothys Day Off Sweater_C1.png to 600x600
+Processing file: Marinas Gym Pony_Front_C1.png in Hair Style
+Processing file: Marinas Gym Pony_Front_L.png in Hair Style
+Resized image saved: 800x800_png\Outfit\Dorothys Day Off Sweater_C1.png
+Resizing image: scriptImages\Outfit\Dorothys Day Off Sweater_C2.png to 800x800
+Resized image saved: 600x600_png\Outfit\Dorothys Day Off Sweater_C1.png
+Resizing image: scriptImages\Outfit\Dorothys Day Off Sweater_C2.png to 600x600
+Checking existence of PNG: compositeImages\Hair Style\Bunny Pin Mika_Front.png
+Checking existence of JPG: 300x300_jpg\Hair Style\Bunny Pin Mika_Front.jpg
+Files not found, processing: PNG - compositeImages\Hair Style\Bunny Pin Mika_Front.png, JPG - 300x300_jpg\Hair Style\Bunny Pin Mika_Front.jpg
+Processing image group: Diner Space Buns_Back
+Resized image saved: 600x600_png\Outfit\Dorothys Day Off Sweater_C2.png
+Resizing image: scriptImages\Outfit\Dorothys Day Off Sweater_C3.png to 600x600
+Resized image saved: 800x800_png\Outfit\Dorothys Day Off Sweater_C2.png
+Resizing image: scriptImages\Outfit\Dorothys Day Off Sweater_C3.png to 800x800
+Processing file: Diner Space Buns_Back_C1.png in subfolder: Hair Style
+Processing file: Bunny Pin Mika_Back_C1.png in Hair Style
+Resized image saved: 600x600_png\Outfit\Dorothys Day Off Sweater_C3.png
+Resizing image: scriptImages\Outfit\Dorothys Day Off Sweater_L.png to 600x600
+Processing file: Bunny Pin Mika_Back_C2.png in Hair Style
+Resized image saved: 800x800_png\Outfit\Dorothys Day Off Sweater_C3.png
+Resizing image: scriptImages\Outfit\Dorothys Day Off Sweater_L.png to 800x800
+Processing file: Bunny Pin Mika_Back_C3.png in Hair Style
+Resized image saved: 600x600_png\Outfit\Dorothys Day Off Sweater_L.png
+Resizing image: scriptImages\Outfit\Frilly Baby Doll_C1.png to 600x600
+Resized image saved: 800x800_png\Outfit\Dorothys Day Off Sweater_L.png
+Resizing image: scriptImages\Outfit\Frilly Baby Doll_C1.png to 800x800
+Processing file: Bunny Pin Mika_Back_L .png in Hair Style
+Processing file: Bunny Pin Mika_Back_L.png in Hair Style
+Resized image saved: 600x600_png\Outfit\Frilly Baby Doll_C1.png
+Resizing image: scriptImages\Outfit\Frilly Baby Doll_C2.png to 600x600
+Resized image saved: 800x800_png\Outfit\Frilly Baby Doll_C1.png
+Resizing image: scriptImages\Outfit\Frilly Baby Doll_C2.png to 800x800
+Processing file: Bunny Pin Mika_Front_C1.png in Hair Style
+Processing file: Bunny Pin Mika_Front_C2.png in Hair Style
+Resized image saved: 800x800_png\Outfit\Frilly Baby Doll_C2.png
+Resizing image: scriptImages\Outfit\Frilly Baby Doll_L.png to 800x800
+Resized image saved: 600x600_png\Outfit\Frilly Baby Doll_C2.png
+Resizing image: scriptImages\Outfit\Frilly Baby Doll_L.png to 600x600
+Processing file: Bunny Pin Mika_Front_C3.png in Hair Style
+Processing file: Bunny Pin Mika_Front_L.png in Hair Style
+Resized image saved: 800x800_png\Outfit\Frilly Baby Doll_L.png
+Resizing image: scriptImages\Outfit\Modern Mika Dress_C1.png to 800x800
+Resized image saved: 600x600_png\Outfit\Frilly Baby Doll_L.png
+Resizing image: scriptImages\Outfit\Modern Mika Dress_C1.png to 600x600
+Processing file: Diner Space Buns_Back_C1.png in Hair Style
+Resized image saved: 600x600_png\Outfit\Modern Mika Dress_C1.png
+Resizing image: scriptImages\Outfit\Modern Mika Dress_C2.png to 600x600
+Resized image saved: 800x800_png\Outfit\Modern Mika Dress_C1.png
+Resizing image: scriptImages\Outfit\Modern Mika Dress_C2.png to 800x800
+Processing file: Diner Space Buns_Back_L.png in Hair Style
+Processing file: Diner Space Buns_Front_C1.png in Hair Style
+Resized image saved: 800x800_png\Outfit\Modern Mika Dress_C2.png
+Resizing image: scriptImages\Outfit\Modern Mika Dress_C3.png to 800x800
+Resized image saved: 600x600_png\Outfit\Modern Mika Dress_C2.png
+Resizing image: scriptImages\Outfit\Modern Mika Dress_C3.png to 600x600
+Processing file: Diner Space Buns_Front_L.png in Hair Style
+Resized image saved: 800x800_png\Outfit\Modern Mika Dress_C3.png
+Resizing image: scriptImages\Outfit\Modern Mika Dress_L.png to 800x800
+Resized image saved: 600x600_png\Outfit\Modern Mika Dress_C3.png
+Resizing image: scriptImages\Outfit\Modern Mika Dress_L.png to 600x600
+Processing file: Marinas Gym Pony_Back_C1.png in Hair Style
+Resized image saved: 600x600_png\Outfit\Modern Mika Dress_L.png
+Resized image saved: 800x800_png\Outfit\Modern Mika Dress_L.png
+Processing file: Marinas Gym Pony_Back_L.png in Hair Style
+Processing file: Marinas Gym Pony_Front_C1.png in Hair Style
+Processing file: Marinas Gym Pony_Front_L.png in Hair Style
+Processing file: Diner Space Buns_Back_L.png in subfolder: Hair Style
+Processing file: Bunny Pin Mika_Back_C1.png in Hair Style
+Processing file: Bunny Pin Mika_Back_C2.png in Hair Style
+Processing file: Bunny Pin Mika_Back_C3.png in Hair Style
+Processing file: Bunny Pin Mika_Back_L .png in Hair Style
+Processing file: Bunny Pin Mika_Back_L.png in Hair Style
+Processing file: Bunny Pin Mika_Front_C1.png in Hair Style
+Processing file: Bunny Pin Mika_Front_C2.png in Hair Style
+Processing file: Bunny Pin Mika_Front_C3.png in Hair Style
+Processing file: Bunny Pin Mika_Front_L.png in Hair Style
+Processing file: Diner Space Buns_Back_C1.png in Hair Style
+Processing file: Diner Space Buns_Back_L.png in Hair Style
+Processing file: Diner Space Buns_Front_C1.png in Hair Style
+Processing file: Diner Space Buns_Front_L.png in Hair Style
+Processing file: Marinas Gym Pony_Back_C1.png in Hair Style
+Processing file: Marinas Gym Pony_Back_L.png in Hair Style
+Processing file: Marinas Gym Pony_Front_C1.png in Hair Style
+Processing file: Marinas Gym Pony_Front_L.png in Hair Style
+Checking existence of PNG: compositeImages\Hair Style\Diner Space Buns_Back.png
+Checking existence of JPG: 300x300_jpg\Hair Style\Diner Space Buns_Back.jpg
+Files not found, processing: PNG - compositeImages\Hair Style\Diner Space Buns_Back.png, JPG - 300x300_jpg\Hair Style\Diner Space Buns_Back.jpg
+Processing image group: Diner Space Buns_Front
+Processing file: Diner Space Buns_Front_C1.png in subfolder: Hair Style
+Processing file: Bunny Pin Mika_Back_C1.png in Hair Style
+Processing file: Bunny Pin Mika_Back_C2.png in Hair Style
+Processing file: Bunny Pin Mika_Back_C3.png in Hair Style
+Processing file: Bunny Pin Mika_Back_L .png in Hair Style
+Processing file: Bunny Pin Mika_Back_L.png in Hair Style
+Processing file: Bunny Pin Mika_Front_C1.png in Hair Style
+Processing file: Bunny Pin Mika_Front_C2.png in Hair Style
+Processing file: Bunny Pin Mika_Front_C3.png in Hair Style
+Processing file: Bunny Pin Mika_Front_L.png in Hair Style
+Processing file: Diner Space Buns_Back_C1.png in Hair Style
+Processing file: Diner Space Buns_Back_L.png in Hair Style
+Processing file: Diner Space Buns_Front_C1.png in Hair Style
+Processing file: Diner Space Buns_Front_L.png in Hair Style
+Processing file: Marinas Gym Pony_Back_C1.png in Hair Style
+Processing file: Marinas Gym Pony_Back_L.png in Hair Style
+Processing file: Marinas Gym Pony_Front_C1.png in Hair Style
+Processing file: Marinas Gym Pony_Front_L.png in Hair Style
+Processing file: Diner Space Buns_Front_L.png in subfolder: Hair Style
+Processing file: Bunny Pin Mika_Back_C1.png in Hair Style
+Processing file: Bunny Pin Mika_Back_C2.png in Hair Style
+Processing file: Bunny Pin Mika_Back_C3.png in Hair Style
+Processing file: Bunny Pin Mika_Back_L .png in Hair Style
+Processing file: Bunny Pin Mika_Back_L.png in Hair Style
+Processing file: Bunny Pin Mika_Front_C1.png in Hair Style
+Processing file: Bunny Pin Mika_Front_C2.png in Hair Style
+Processing file: Bunny Pin Mika_Front_C3.png in Hair Style
+Processing file: Bunny Pin Mika_Front_L.png in Hair Style
+Processing file: Diner Space Buns_Back_C1.png in Hair Style
+Processing file: Diner Space Buns_Back_L.png in Hair Style
+Processing file: Diner Space Buns_Front_C1.png in Hair Style
+Processing file: Diner Space Buns_Front_L.png in Hair Style
+Processing file: Marinas Gym Pony_Back_C1.png in Hair Style
+Processing file: Marinas Gym Pony_Back_L.png in Hair Style
+Processing file: Marinas Gym Pony_Front_C1.png in Hair Style
+Processing file: Marinas Gym Pony_Front_L.png in Hair Style
+Checking existence of PNG: compositeImages\Hair Style\Diner Space Buns_Front.png
+Checking existence of JPG: 300x300_jpg\Hair Style\Diner Space Buns_Front.jpg
+Files not found, processing: PNG - compositeImages\Hair Style\Diner Space Buns_Front.png, JPG - 300x300_jpg\Hair Style\Diner Space Buns_Front.jpg
+Processing image group: Marinas Gym Pony_Back
+Processing file: Marinas Gym Pony_Back_C1.png in subfolder: Hair Style
+Processing file: Bunny Pin Mika_Back_C1.png in Hair Style
+Processing file: Bunny Pin Mika_Back_C2.png in Hair Style
+Processing file: Bunny Pin Mika_Back_C3.png in Hair Style
+Processing file: Bunny Pin Mika_Back_L .png in Hair Style
+Processing file: Bunny Pin Mika_Back_L.png in Hair Style
+Processing file: Bunny Pin Mika_Front_C1.png in Hair Style
+Processing file: Bunny Pin Mika_Front_C2.png in Hair Style
+Processing file: Bunny Pin Mika_Front_C3.png in Hair Style
+Processing file: Bunny Pin Mika_Front_L.png in Hair Style
+Processing file: Diner Space Buns_Back_C1.png in Hair Style
+Processing file: Diner Space Buns_Back_L.png in Hair Style
+Processing file: Diner Space Buns_Front_C1.png in Hair Style
+Processing file: Diner Space Buns_Front_L.png in Hair Style
+Processing file: Marinas Gym Pony_Back_C1.png in Hair Style
+Processing file: Marinas Gym Pony_Back_L.png in Hair Style
+Processing file: Marinas Gym Pony_Front_C1.png in Hair Style
+Processing file: Marinas Gym Pony_Front_L.png in Hair Style
+Processing file: Marinas Gym Pony_Back_L.png in subfolder: Hair Style
+Processing file: Bunny Pin Mika_Back_C1.png in Hair Style
+Processing file: Bunny Pin Mika_Back_C2.png in Hair Style
+Processing file: Bunny Pin Mika_Back_C3.png in Hair Style
+Processing file: Bunny Pin Mika_Back_L .png in Hair Style
+Processing file: Bunny Pin Mika_Back_L.png in Hair Style
+Processing file: Bunny Pin Mika_Front_C1.png in Hair Style
+Processing file: Bunny Pin Mika_Front_C2.png in Hair Style
+Processing file: Bunny Pin Mika_Front_C3.png in Hair Style
+Processing file: Bunny Pin Mika_Front_L.png in Hair Style
+Processing file: Diner Space Buns_Back_C1.png in Hair Style
+Processing file: Diner Space Buns_Back_L.png in Hair Style
+Processing file: Diner Space Buns_Front_C1.png in Hair Style
+Processing file: Diner Space Buns_Front_L.png in Hair Style
+Processing file: Marinas Gym Pony_Back_C1.png in Hair Style
+Processing file: Marinas Gym Pony_Back_L.png in Hair Style
+Processing file: Marinas Gym Pony_Front_C1.png in Hair Style
+Processing file: Marinas Gym Pony_Front_L.png in Hair Style
+Checking existence of PNG: compositeImages\Hair Style\Marinas Gym Pony_Back.png
+Checking existence of JPG: 300x300_jpg\Hair Style\Marinas Gym Pony_Back.jpg
+Files not found, processing: PNG - compositeImages\Hair Style\Marinas Gym Pony_Back.png, JPG - 300x300_jpg\Hair Style\Marinas Gym Pony_Back.jpg
+Processing image group: Marinas Gym Pony_Front
+Processing file: Marinas Gym Pony_Front_C1.png in subfolder: Hair Style
+Processing file: Bunny Pin Mika_Back_C1.png in Hair Style
+Processing file: Bunny Pin Mika_Back_C2.png in Hair Style
+Processing file: Bunny Pin Mika_Back_C3.png in Hair Style
+Processing file: Bunny Pin Mika_Back_L .png in Hair Style
+Processing file: Bunny Pin Mika_Back_L.png in Hair Style
+Processing file: Bunny Pin Mika_Front_C1.png in Hair Style
+Processing file: Bunny Pin Mika_Front_C2.png in Hair Style
+Processing file: Bunny Pin Mika_Front_C3.png in Hair Style
+Processing file: Bunny Pin Mika_Front_L.png in Hair Style
+Processing file: Diner Space Buns_Back_C1.png in Hair Style
+Processing file: Diner Space Buns_Back_L.png in Hair Style
+Processing file: Diner Space Buns_Front_C1.png in Hair Style
+Processing file: Diner Space Buns_Front_L.png in Hair Style
+Processing file: Marinas Gym Pony_Back_C1.png in Hair Style
+Processing file: Marinas Gym Pony_Back_L.png in Hair Style
+Processing file: Marinas Gym Pony_Front_C1.png in Hair Style
+Processing file: Marinas Gym Pony_Front_L.png in Hair Style
+Processing file: Marinas Gym Pony_Front_L.png in subfolder: Hair Style
+Processing file: Bunny Pin Mika_Back_C1.png in Hair Style
+Processing file: Bunny Pin Mika_Back_C2.png in Hair Style
+Processing file: Bunny Pin Mika_Back_C3.png in Hair Style
+Processing file: Bunny Pin Mika_Back_L .png in Hair Style
+Processing file: Bunny Pin Mika_Back_L.png in Hair Style
+Processing file: Bunny Pin Mika_Front_C1.png in Hair Style
+Processing file: Bunny Pin Mika_Front_C2.png in Hair Style
+Processing file: Bunny Pin Mika_Front_C3.png in Hair Style
+Processing file: Bunny Pin Mika_Front_L.png in Hair Style
+Processing file: Diner Space Buns_Back_C1.png in Hair Style
+Processing file: Diner Space Buns_Back_L.png in Hair Style
+Processing file: Diner Space Buns_Front_C1.png in Hair Style
+Processing file: Diner Space Buns_Front_L.png in Hair Style
+Processing file: Marinas Gym Pony_Back_C1.png in Hair Style
+Processing file: Marinas Gym Pony_Back_L.png in Hair Style
+Processing file: Marinas Gym Pony_Front_C1.png in Hair Style
+Processing file: Marinas Gym Pony_Front_L.png in Hair Style
+Checking existence of PNG: compositeImages\Hair Style\Marinas Gym Pony_Front.png
+Checking existence of JPG: 300x300_jpg\Hair Style\Marinas Gym Pony_Front.jpg
+Files not found, processing: PNG - compositeImages\Hair Style\Marinas Gym Pony_Front.png, JPG - 300x300_jpg\Hair Style\Marinas Gym Pony_Front.jpg
+Processing image group: Bad Bunny Coin Purse
+Processing file: Bad Bunny Coin Purse_C1.png in subfolder: Hand
+Processing file: Bad Bunny Coin Purse_C2.png in subfolder: Hand
+Processing file: Bad Bunny Coin Purse_C3.png in subfolder: Hand
+Processing file: Bad Bunny Coin Purse_L.png in subfolder: Hand
+Processing file: Bad Bunny Coin Purse_S.png in subfolder: Hand
+Checking existence of PNG: compositeImages\Hand\Bad Bunny Coin Purse.png
+Checking existence of JPG: 300x300_jpg\Hand\Bad Bunny Coin Purse.jpg
+Files not found, processing: PNG - compositeImages\Hand\Bad Bunny Coin Purse.png, JPG - 300x300_jpg\Hand\Bad Bunny Coin Purse.jpg
+Saved: compositeImages\Hand\Bad Bunny Coin Purse.png
+Saved: 300x300_jpg\Hand\Bad Bunny Coin Purse.jpg
+Processing image group: Bunny Ball Bat
+Processing file: Bunny Ball Bat_C1.png in subfolder: Hand
+Processing file: Bunny Ball Bat_C2.png in subfolder: Hand
+Processing file: Bunny Ball Bat_C3.png in subfolder: Hand
+Processing file: Bunny Ball Bat_L.png in subfolder: Hand
+Processing file: Bunny Ball Bat_S.png in subfolder: Hand
+Checking existence of PNG: compositeImages\Hand\Bunny Ball Bat.png
+Checking existence of JPG: 300x300_jpg\Hand\Bunny Ball Bat.jpg
+Files not found, processing: PNG - compositeImages\Hand\Bunny Ball Bat.png, JPG - 300x300_jpg\Hand\Bunny Ball Bat.jpg
+Saved: compositeImages\Hand\Bunny Ball Bat.png
+Saved: 300x300_jpg\Hand\Bunny Ball Bat.jpg
+Processing image group: Bunny Kingdom Tales Vol 1
+Processing file: Bunny Kingdom Tales Vol 1_C1.png in subfolder: Hand
+Processing file: Bunny Kingdom Tales Vol 1_C2.png in subfolder: Hand
+Processing file: Bunny Kingdom Tales Vol 1_C3.png in subfolder: Hand
+Processing file: Bunny Kingdom Tales Vol 1_C4.png in subfolder: Hand
+Processing file: Bunny Kingdom Tales Vol 1_L.png in subfolder: Hand
+Processing file: Bunny Kingdom Tales Vol 1_S.png in subfolder: Hand
+Checking existence of PNG: compositeImages\Hand\Bunny Kingdom Tales Vol 1.png
+Checking existence of JPG: 300x300_jpg\Hand\Bunny Kingdom Tales Vol 1.jpg
+Files not found, processing: PNG - compositeImages\Hand\Bunny Kingdom Tales Vol 1.png, JPG - 300x300_jpg\Hand\Bunny Kingdom Tales Vol 1.jpg
+Saved: compositeImages\Hand\Bunny Kingdom Tales Vol 1.png
+Saved: 300x300_jpg\Hand\Bunny Kingdom Tales Vol 1.jpg
+Processing image group: Cloudy Heart Tote
+Processing file: Cloudy Heart Tote_C1.png in subfolder: Hand
+Processing file: Cloudy Heart Tote_C2.png in subfolder: Hand
+Processing file: Cloudy Heart Tote_C3.png in subfolder: Hand
+Processing file: Cloudy Heart Tote_C4.png in subfolder: Hand
+Processing file: Cloudy Heart Tote_C5.png in subfolder: Hand
+Processing file: Cloudy Heart Tote_L.png in subfolder: Hand
+Processing file: Cloudy Heart Tote_S.png in subfolder: Hand
+Checking existence of PNG: compositeImages\Hand\Cloudy Heart Tote.png
+Checking existence of JPG: 300x300_jpg\Hand\Cloudy Heart Tote.jpg
+Files not found, processing: PNG - compositeImages\Hand\Cloudy Heart Tote.png, JPG - 300x300_jpg\Hand\Cloudy Heart Tote.jpg
+Saved: compositeImages\Hand\Cloudy Heart Tote.png
+Saved: 300x300_jpg\Hand\Cloudy Heart Tote.jpg
+Processing image group: Cosmic Clutch
+Processing file: Cosmic Clutch_C1.png in subfolder: Hand
+Processing file: Cosmic Clutch_C2.png in subfolder: Hand
+Processing file: Cosmic Clutch_C3.png in subfolder: Hand
+Processing file: Cosmic Clutch_C4.png in subfolder: Hand
+Processing file: Cosmic Clutch_L.png in subfolder: Hand
+Processing file: Cosmic Clutch_S.png in subfolder: Hand
+Checking existence of PNG: compositeImages\Hand\Cosmic Clutch.png
+Checking existence of JPG: 300x300_jpg\Hand\Cosmic Clutch.jpg
+Files not found, processing: PNG - compositeImages\Hand\Cosmic Clutch.png, JPG - 300x300_jpg\Hand\Cosmic Clutch.jpg
+Saved: compositeImages\Hand\Cosmic Clutch.png
+Saved: 300x300_jpg\Hand\Cosmic Clutch.jpg
+Processing image group: Diner Delicacies
+Processing file: Diner Delicacies_C1.png in subfolder: Hand
+Processing file: Diner Delicacies_C2.png in subfolder: Hand
+Processing file: Diner Delicacies_C3.png in subfolder: Hand
+Processing file: Diner Delicacies_C4.png in subfolder: Hand
+Processing file: Diner Delicacies_C5.png in subfolder: Hand
+Processing file: Diner Delicacies_L.png in subfolder: Hand
+Processing file: Diner Delicacies_S.png in subfolder: Hand
+Checking existence of PNG: compositeImages\Hand\Diner Delicacies.png
+Checking existence of JPG: 300x300_jpg\Hand\Diner Delicacies.jpg
+Files not found, processing: PNG - compositeImages\Hand\Diner Delicacies.png, JPG - 300x300_jpg\Hand\Diner Delicacies.jpg
+Saved: compositeImages\Hand\Diner Delicacies.png
+Saved: 300x300_jpg\Hand\Diner Delicacies.jpg
+Processing image group: Hover Plate
+Processing file: Hover Plate_C1.png in subfolder: Hand
+Processing file: Hover Plate_C2.png in subfolder: Hand
+Processing file: Hover Plate_C3.png in subfolder: Hand
+Processing file: Hover Plate_C4.png in subfolder: Hand
+Processing file: Hover Plate_L.png in subfolder: Hand
+Checking existence of PNG: compositeImages\Hand\Hover Plate.png
+Checking existence of JPG: 300x300_jpg\Hand\Hover Plate.jpg
+Files not found, processing: PNG - compositeImages\Hand\Hover Plate.png, JPG - 300x300_jpg\Hand\Hover Plate.jpg
+Saved: compositeImages\Hand\Hover Plate.png
+Saved: 300x300_jpg\Hand\Hover Plate.jpg
+Processing image group: Lunar Glow Compact
+Processing file: Lunar Glow Compact_C1.png in subfolder: Hand
+Processing file: Lunar Glow Compact_C2.png in subfolder: Hand
+Processing file: Lunar Glow Compact_C3.png in subfolder: Hand
+Processing file: Lunar Glow Compact_C4.png in subfolder: Hand
+Processing file: Lunar Glow Compact_C5.png in subfolder: Hand
+Processing file: Lunar Glow Compact_L.png in subfolder: Hand
+Processing file: Lunar Glow Compact_S.png in subfolder: Hand
+Checking existence of PNG: compositeImages\Hand\Lunar Glow Compact.png
+Checking existence of JPG: 300x300_jpg\Hand\Lunar Glow Compact.jpg
+Files not found, processing: PNG - compositeImages\Hand\Lunar Glow Compact.png, JPG - 300x300_jpg\Hand\Lunar Glow Compact.jpg
+Saved: compositeImages\Hand\Lunar Glow Compact.png
+Saved: 300x300_jpg\Hand\Lunar Glow Compact.jpg
+Processing image group: Marfins Gym Class Tank
+Processing file: Marfins Gym Class Tank_C1.png in subfolder: Hand
+Processing file: Marfins Gym Class Tank_C2.png in subfolder: Hand
+Processing file: Marfins Gym Class Tank_C3.png in subfolder: Hand
+Processing file: Marfins Gym Class Tank_C4.png in subfolder: Hand
+Processing file: Marfins Gym Class Tank_C5.png in subfolder: Hand
+Processing file: Marfins Gym Class Tank_L.png in subfolder: Hand
+Processing file: Marfins Gym Class Tank_S.png in subfolder: Hand
+Checking existence of PNG: compositeImages\Hand\Marfins Gym Class Tank.png
+Checking existence of JPG: 300x300_jpg\Hand\Marfins Gym Class Tank.jpg
+Files not found, processing: PNG - compositeImages\Hand\Marfins Gym Class Tank.png, JPG - 300x300_jpg\Hand\Marfins Gym Class Tank.jpg
+Saved: compositeImages\Hand\Marfins Gym Class Tank.png
+Saved: 300x300_jpg\Hand\Marfins Gym Class Tank.jpg
+Processing image group: Savory Solar Slice
+Processing file: Savory Solar Slice_C1.png in subfolder: Hand
+Processing file: Savory Solar Slice_C2.png in subfolder: Hand
+Processing file: Savory Solar Slice_C3.png in subfolder: Hand
+Processing file: Savory Solar Slice_C4.png in subfolder: Hand
+Processing file: Savory Solar Slice_C5.png in subfolder: Hand
+Processing file: Savory Solar Slice_L.png in subfolder: Hand
+Processing file: Savory Solar Slice_S.png in subfolder: Hand
+Checking existence of PNG: compositeImages\Hand\Savory Solar Slice.png
+Checking existence of JPG: 300x300_jpg\Hand\Savory Solar Slice.jpg
+Files not found, processing: PNG - compositeImages\Hand\Savory Solar Slice.png, JPG - 300x300_jpg\Hand\Savory Solar Slice.jpg
+Saved: compositeImages\Hand\Savory Solar Slice.png
+Saved: 300x300_jpg\Hand\Savory Solar Slice.jpg
+Processing image group: THE Ted Spatula
+Processing file: THE Ted Spatula_C1.png in subfolder: Hand
+Processing file: THE Ted Spatula_C2.png in subfolder: Hand
+Processing file: THE Ted Spatula_C3.png in subfolder: Hand
+Processing file: THE Ted Spatula_C4.png in subfolder: Hand
+Processing file: THE Ted Spatula_L.png in subfolder: Hand
+Processing file: THE Ted Spatula_S.png in subfolder: Hand
+Checking existence of PNG: compositeImages\Hand\THE Ted Spatula.png
+Checking existence of JPG: 300x300_jpg\Hand\THE Ted Spatula.jpg
+Files not found, processing: PNG - compositeImages\Hand\THE Ted Spatula.png, JPG - 300x300_jpg\Hand\THE Ted Spatula.jpg
+Saved: compositeImages\Hand\THE Ted Spatula.png
+Saved: 300x300_jpg\Hand\THE Ted Spatula.jpg
+Processing image group: Vegan Football
+Processing file: Vegan Football_C1.png in subfolder: Hand
+Processing file: Vegan Football_C2.png in subfolder: Hand
+Processing file: Vegan Football_C3.png in subfolder: Hand
+Processing file: Vegan Football_L.png in subfolder: Hand
+Processing file: Vegan Football_S.png in subfolder: Hand
+Checking existence of PNG: compositeImages\Hand\Vegan Football.png
+Checking existence of JPG: 300x300_jpg\Hand\Vegan Football.jpg
+Files not found, processing: PNG - compositeImages\Hand\Vegan Football.png, JPG - 300x300_jpg\Hand\Vegan Football.jpg
+Saved: compositeImages\Hand\Vegan Football.png
+Saved: 300x300_jpg\Hand\Vegan Football.jpg
+Processing image group: Bunny Club Gym Hat
+Processing file: Bunny Club Gym Hat_C1.png in subfolder: Hat
+Processing file: Bunny Club Gym Hat_C1.png in Hat
+Processing file: Bunny Club Gym Hat_C2.png in Hat
+Processing file: Bunny Club Gym Hat_C3.png in Hat
+Processing file: Bunny Club Gym Hat_L.png in Hat
+Processing file: Droopy Bun Ears_Back_C1.png in Hat
+Processing file: Droopy Bun Ears_Back_C2.png in Hat
+Processing file: Droopy Bun Ears_Back_L.png in Hat
+Processing file: Droopy Bun Ears_Front_C1.png in Hat
+Processing file: Droopy Bun Ears_Front_C2.png in Hat
+Processing file: Droopy Bun Ears_Front_L.png in Hat
+Processing file: PomPom Toque_C1.png in Hat
+Processing file: PomPom Toque_C2.png in Hat
+Processing file: PomPom Toque_L.png in Hat
+Processing file: Bunny Club Gym Hat_C2.png in subfolder: Hat
+Processing file: Bunny Club Gym Hat_C1.png in Hat
+Processing file: Bunny Club Gym Hat_C2.png in Hat
+Processing file: Bunny Club Gym Hat_C3.png in Hat
+Processing file: Bunny Club Gym Hat_L.png in Hat
+Processing file: Droopy Bun Ears_Back_C1.png in Hat
+Processing file: Droopy Bun Ears_Back_C2.png in Hat
+Processing file: Droopy Bun Ears_Back_L.png in Hat
+Processing file: Droopy Bun Ears_Front_C1.png in Hat
+Processing file: Droopy Bun Ears_Front_C2.png in Hat
+Processing file: Droopy Bun Ears_Front_L.png in Hat
+Processing file: PomPom Toque_C1.png in Hat
+Processing file: PomPom Toque_C2.png in Hat
+Processing file: PomPom Toque_L.png in Hat
+Processing file: Bunny Club Gym Hat_C3.png in subfolder: Hat
+Processing file: Bunny Club Gym Hat_C1.png in Hat
+Processing file: Bunny Club Gym Hat_C2.png in Hat
+Processing file: Bunny Club Gym Hat_C3.png in Hat
+Processing file: Bunny Club Gym Hat_L.png in Hat
+Processing file: Droopy Bun Ears_Back_C1.png in Hat
+Processing file: Droopy Bun Ears_Back_C2.png in Hat
+Processing file: Droopy Bun Ears_Back_L.png in Hat
+Processing file: Droopy Bun Ears_Front_C1.png in Hat
+Processing file: Droopy Bun Ears_Front_C2.png in Hat
+Processing file: Droopy Bun Ears_Front_L.png in Hat
+Processing file: PomPom Toque_C1.png in Hat
+Processing file: PomPom Toque_C2.png in Hat
+Processing file: PomPom Toque_L.png in Hat
+Processing file: Bunny Club Gym Hat_L.png in subfolder: Hat
+Processing file: Bunny Club Gym Hat_C1.png in Hat
+Processing file: Bunny Club Gym Hat_C2.png in Hat
+Processing file: Bunny Club Gym Hat_C3.png in Hat
+Processing file: Bunny Club Gym Hat_L.png in Hat
+Processing file: Droopy Bun Ears_Back_C1.png in Hat
+Processing file: Droopy Bun Ears_Back_C2.png in Hat
+Processing file: Droopy Bun Ears_Back_L.png in Hat
+Processing file: Droopy Bun Ears_Front_C1.png in Hat
+Processing file: Droopy Bun Ears_Front_C2.png in Hat
+Processing file: Droopy Bun Ears_Front_L.png in Hat
+Processing file: PomPom Toque_C1.png in Hat
+Processing file: PomPom Toque_C2.png in Hat
+Processing file: PomPom Toque_L.png in Hat
+Checking existence of PNG: compositeImages\Hat\Bunny Club Gym Hat.png
+Checking existence of JPG: 300x300_jpg\Hat\Bunny Club Gym Hat.jpg
+Skipping existing files: PNG - compositeImages\Hat\Bunny Club Gym Hat.png, JPG - 300x300_jpg\Hat\Bunny Club Gym Hat.jpg
+Processing image group: Droopy Bun Ears_Back
+Processing file: Droopy Bun Ears_Back_C1.png in subfolder: Hat
+Processing file: Bunny Club Gym Hat_C1.png in Hat
+Processing file: Bunny Club Gym Hat_C2.png in Hat
+Processing file: Bunny Club Gym Hat_C3.png in Hat
+Processing file: Bunny Club Gym Hat_L.png in Hat
+Processing file: Droopy Bun Ears_Back_C1.png in Hat
+Processing file: Droopy Bun Ears_Back_C2.png in Hat
+Processing file: Droopy Bun Ears_Back_L.png in Hat
+Processing file: Droopy Bun Ears_Front_C1.png in Hat
+Processing file: Droopy Bun Ears_Front_C2.png in Hat
+Processing file: Droopy Bun Ears_Front_L.png in Hat
+Processing file: PomPom Toque_C1.png in Hat
+Processing file: PomPom Toque_C2.png in Hat
+Processing file: PomPom Toque_L.png in Hat
+Processing file: Droopy Bun Ears_Back_C2.png in subfolder: Hat
+Processing file: Bunny Club Gym Hat_C1.png in Hat
+Processing file: Bunny Club Gym Hat_C2.png in Hat
+Processing file: Bunny Club Gym Hat_C3.png in Hat
+Processing file: Bunny Club Gym Hat_L.png in Hat
+Processing file: Droopy Bun Ears_Back_C1.png in Hat
+Processing file: Droopy Bun Ears_Back_C2.png in Hat
+Processing file: Droopy Bun Ears_Back_L.png in Hat
+Processing file: Droopy Bun Ears_Front_C1.png in Hat
+Processing file: Droopy Bun Ears_Front_C2.png in Hat
+Processing file: Droopy Bun Ears_Front_L.png in Hat
+Processing file: PomPom Toque_C1.png in Hat
+Processing file: PomPom Toque_C2.png in Hat
+Processing file: PomPom Toque_L.png in Hat
+Processing file: Droopy Bun Ears_Back_L.png in subfolder: Hat
+Processing file: Bunny Club Gym Hat_C1.png in Hat
+Processing file: Bunny Club Gym Hat_C2.png in Hat
+Processing file: Bunny Club Gym Hat_C3.png in Hat
+Processing file: Bunny Club Gym Hat_L.png in Hat
+Processing file: Droopy Bun Ears_Back_C1.png in Hat
+Processing file: Droopy Bun Ears_Back_C2.png in Hat
+Processing file: Droopy Bun Ears_Back_L.png in Hat
+Processing file: Droopy Bun Ears_Front_C1.png in Hat
+Processing file: Droopy Bun Ears_Front_C2.png in Hat
+Processing file: Droopy Bun Ears_Front_L.png in Hat
+Processing file: PomPom Toque_C1.png in Hat
+Processing file: PomPom Toque_C2.png in Hat
+Processing file: PomPom Toque_L.png in Hat
+Checking existence of PNG: compositeImages\Hat\Droopy Bun Ears_Back.png
+Checking existence of JPG: 300x300_jpg\Hat\Droopy Bun Ears_Back.jpg
+Files not found, processing: PNG - compositeImages\Hat\Droopy Bun Ears_Back.png, JPG - 300x300_jpg\Hat\Droopy Bun Ears_Back.jpg
+Processing image group: Droopy Bun Ears_Front
+Processing file: Droopy Bun Ears_Front_C1.png in subfolder: Hat
+Processing file: Bunny Club Gym Hat_C1.png in Hat
+Processing file: Bunny Club Gym Hat_C2.png in Hat
+Processing file: Bunny Club Gym Hat_C3.png in Hat
+Processing file: Bunny Club Gym Hat_L.png in Hat
+Processing file: Droopy Bun Ears_Back_C1.png in Hat
+Processing file: Droopy Bun Ears_Back_C2.png in Hat
+Processing file: Droopy Bun Ears_Back_L.png in Hat
+Processing file: Droopy Bun Ears_Front_C1.png in Hat
+Processing file: Droopy Bun Ears_Front_C2.png in Hat
+Processing file: Droopy Bun Ears_Front_L.png in Hat
+Processing file: PomPom Toque_C1.png in Hat
+Processing file: PomPom Toque_C2.png in Hat
+Processing file: PomPom Toque_L.png in Hat
+Processing file: Droopy Bun Ears_Front_C2.png in subfolder: Hat
+Processing file: Bunny Club Gym Hat_C1.png in Hat
+Processing file: Bunny Club Gym Hat_C2.png in Hat
+Processing file: Bunny Club Gym Hat_C3.png in Hat
+Processing file: Bunny Club Gym Hat_L.png in Hat
+Processing file: Droopy Bun Ears_Back_C1.png in Hat
+Processing file: Droopy Bun Ears_Back_C2.png in Hat
+Processing file: Droopy Bun Ears_Back_L.png in Hat
+Processing file: Droopy Bun Ears_Front_C1.png in Hat
+Processing file: Droopy Bun Ears_Front_C2.png in Hat
+Processing file: Droopy Bun Ears_Front_L.png in Hat
+Processing file: PomPom Toque_C1.png in Hat
+Processing file: PomPom Toque_C2.png in Hat
+Processing file: PomPom Toque_L.png in Hat
+Processing file: Droopy Bun Ears_Front_L.png in subfolder: Hat
+Processing file: Bunny Club Gym Hat_C1.png in Hat
+Processing file: Bunny Club Gym Hat_C2.png in Hat
+Processing file: Bunny Club Gym Hat_C3.png in Hat
+Processing file: Bunny Club Gym Hat_L.png in Hat
+Processing file: Droopy Bun Ears_Back_C1.png in Hat
+Processing file: Droopy Bun Ears_Back_C2.png in Hat
+Processing file: Droopy Bun Ears_Back_L.png in Hat
+Processing file: Droopy Bun Ears_Front_C1.png in Hat
+Processing file: Droopy Bun Ears_Front_C2.png in Hat
+Processing file: Droopy Bun Ears_Front_L.png in Hat
+Processing file: PomPom Toque_C1.png in Hat
+Processing file: PomPom Toque_C2.png in Hat
+Processing file: PomPom Toque_L.png in Hat
+Checking existence of PNG: compositeImages\Hat\Droopy Bun Ears_Front.png
+Checking existence of JPG: 300x300_jpg\Hat\Droopy Bun Ears_Front.jpg
+Files not found, processing: PNG - compositeImages\Hat\Droopy Bun Ears_Front.png, JPG - 300x300_jpg\Hat\Droopy Bun Ears_Front.jpg
+Processing image group: PomPom Toque
+Processing file: PomPom Toque_C1.png in subfolder: Hat
+Processing file: Bunny Club Gym Hat_C1.png in Hat
+Processing file: Bunny Club Gym Hat_C2.png in Hat
+Processing file: Bunny Club Gym Hat_C3.png in Hat
+Processing file: Bunny Club Gym Hat_L.png in Hat
+Processing file: Droopy Bun Ears_Back_C1.png in Hat
+Processing file: Droopy Bun Ears_Back_C2.png in Hat
+Processing file: Droopy Bun Ears_Back_L.png in Hat
+Processing file: Droopy Bun Ears_Front_C1.png in Hat
+Processing file: Droopy Bun Ears_Front_C2.png in Hat
+Processing file: Droopy Bun Ears_Front_L.png in Hat
+Processing file: PomPom Toque_C1.png in Hat
+Processing file: PomPom Toque_C2.png in Hat
+Processing file: PomPom Toque_L.png in Hat
+Processing file: PomPom Toque_C2.png in subfolder: Hat
+Processing file: Bunny Club Gym Hat_C1.png in Hat
+Processing file: Bunny Club Gym Hat_C2.png in Hat
+Processing file: Bunny Club Gym Hat_C3.png in Hat
+Processing file: Bunny Club Gym Hat_L.png in Hat
+Processing file: Droopy Bun Ears_Back_C1.png in Hat
+Processing file: Droopy Bun Ears_Back_C2.png in Hat
+Processing file: Droopy Bun Ears_Back_L.png in Hat
+Processing file: Droopy Bun Ears_Front_C1.png in Hat
+Processing file: Droopy Bun Ears_Front_C2.png in Hat
+Processing file: Droopy Bun Ears_Front_L.png in Hat
+Processing file: PomPom Toque_C1.png in Hat
+Processing file: PomPom Toque_C2.png in Hat
+Processing file: PomPom Toque_L.png in Hat
+Processing file: PomPom Toque_L.png in subfolder: Hat
+Processing file: Bunny Club Gym Hat_C1.png in Hat
+Processing file: Bunny Club Gym Hat_C2.png in Hat
+Processing file: Bunny Club Gym Hat_C3.png in Hat
+Processing file: Bunny Club Gym Hat_L.png in Hat
+Processing file: Droopy Bun Ears_Back_C1.png in Hat
+Processing file: Droopy Bun Ears_Back_C2.png in Hat
+Processing file: Droopy Bun Ears_Back_L.png in Hat
+Processing file: Droopy Bun Ears_Front_C1.png in Hat
+Processing file: Droopy Bun Ears_Front_C2.png in Hat
+Processing file: Droopy Bun Ears_Front_L.png in Hat
+Processing file: PomPom Toque_C1.png in Hat
+Processing file: PomPom Toque_C2.png in Hat
+Processing file: PomPom Toque_L.png in Hat
+Checking existence of PNG: compositeImages\Hat\PomPom Toque.png
+Checking existence of JPG: 300x300_jpg\Hat\PomPom Toque.jpg
+Skipping existing files: PNG - compositeImages\Hat\PomPom Toque.png, JPG - 300x300_jpg\Hat\PomPom Toque.jpg
+Processing image group: Bunny Ball Jersey
+Processing file: Bunny Ball Jersey_C1.png in subfolder: Outfit
+Processing file: Bunny Ball Jersey_C2.png in subfolder: Outfit
+Processing file: Bunny Ball Jersey_C3.png in subfolder: Outfit
+Processing file: Bunny Ball Jersey_L.png in subfolder: Outfit
+Checking existence of PNG: compositeImages\Outfit\Bunny Ball Jersey.png
+Checking existence of JPG: 300x300_jpg\Outfit\Bunny Ball Jersey.jpg
+Files not found, processing: PNG - compositeImages\Outfit\Bunny Ball Jersey.png, JPG - 300x300_jpg\Outfit\Bunny Ball Jersey.jpg
+Saved: compositeImages\Outfit\Bunny Ball Jersey.png
+Saved: 300x300_jpg\Outfit\Bunny Ball Jersey.jpg
+Processing image group: Bunny Club Gym Class Polo
+Processing file: Bunny Club Gym Class Polo_C1.png in subfolder: Outfit
+Processing file: Bunny Club Gym Class Polo_C2.png in subfolder: Outfit
+Processing file: Bunny Club Gym Class Polo_C3.png in subfolder: Outfit
+Processing file: Bunny Club Gym Class Polo_L.png in subfolder: Outfit
+Checking existence of PNG: compositeImages\Outfit\Bunny Club Gym Class Polo.png
+Checking existence of JPG: 300x300_jpg\Outfit\Bunny Club Gym Class Polo.jpg
+Files not found, processing: PNG - compositeImages\Outfit\Bunny Club Gym Class Polo.png, JPG - 300x300_jpg\Outfit\Bunny Club Gym Class Polo.jpg
+Saved: compositeImages\Outfit\Bunny Club Gym Class Polo.png
+Saved: 300x300_jpg\Outfit\Bunny Club Gym Class Polo.jpg
+Processing image group: Dorothys Day Off Sweater
+Processing file: Dorothys Day Off Sweater_C1.png in subfolder: Outfit
+Processing file: Dorothys Day Off Sweater_C2.png in subfolder: Outfit
+Processing file: Dorothys Day Off Sweater_C3.png in subfolder: Outfit
+Processing file: Dorothys Day Off Sweater_L.png in subfolder: Outfit
+Checking existence of PNG: compositeImages\Outfit\Dorothys Day Off Sweater.png
+Checking existence of JPG: 300x300_jpg\Outfit\Dorothys Day Off Sweater.jpg
+Files not found, processing: PNG - compositeImages\Outfit\Dorothys Day Off Sweater.png, JPG - 300x300_jpg\Outfit\Dorothys Day Off Sweater.jpg
+Saved: compositeImages\Outfit\Dorothys Day Off Sweater.png
+Saved: 300x300_jpg\Outfit\Dorothys Day Off Sweater.jpg
+Processing image group: Frilly Baby Doll
+Processing file: Frilly Baby Doll_C1.png in subfolder: Outfit
+Processing file: Frilly Baby Doll_C2.png in subfolder: Outfit
+Processing file: Frilly Baby Doll_L.png in subfolder: Outfit
+Checking existence of PNG: compositeImages\Outfit\Frilly Baby Doll.png
+Checking existence of JPG: 300x300_jpg\Outfit\Frilly Baby Doll.jpg
+Files not found, processing: PNG - compositeImages\Outfit\Frilly Baby Doll.png, JPG - 300x300_jpg\Outfit\Frilly Baby Doll.jpg
+Saved: compositeImages\Outfit\Frilly Baby Doll.png
+Saved: 300x300_jpg\Outfit\Frilly Baby Doll.jpg
+Processing image group: Modern Mika Dress
+Processing file: Modern Mika Dress_C1.png in subfolder: Outfit
+Processing file: Modern Mika Dress_C2.png in subfolder: Outfit
+Processing file: Modern Mika Dress_C3.png in subfolder: Outfit
+Processing file: Modern Mika Dress_L.png in subfolder: Outfit
+Checking existence of PNG: compositeImages\Outfit\Modern Mika Dress.png
+Checking existence of JPG: 300x300_jpg\Outfit\Modern Mika Dress.jpg
+Files not found, processing: PNG - compositeImages\Outfit\Modern Mika Dress.png, JPG - 300x300_jpg\Outfit\Modern Mika Dress.jpg
+Saved: compositeImages\Outfit\Modern Mika Dress.png
+Saved: 300x300_jpg\Outfit\Modern Mika Dress.jpg
+Script started
+Subfolders found: Accessory, Background, Bodysuit, Colors, Extras, Eyebrows, Eyes, Face Sticker, Finished, Frame, Hair Style, Hand, Hat, Mouth, Outfit, Piercing, Tattoo, Undergarment
+Files found: 34
+Solid colors RGB values saved to colors.json
+Skipping existing file: 800x800_png\Hair Style\Bunny Pin Mika_Back_C1.png
+Skipping existing file: 800x800_png\Hair Style\Bunny Pin Mika_Back_C2.png
+Skipping existing file: 800x800_png\Hair Style\Bunny Pin Mika_Back_C3.png
+Skipping existing file: 800x800_png\Hair Style\Bunny Pin Mika_Back_L .png
+Skipping existing file: 800x800_png\Hair Style\Bunny Pin Mika_Back_L.png
+Skipping existing file: 800x800_png\Hair Style\Bunny Pin Mika_Front_C1.png
+Skipping existing file: 800x800_png\Hair Style\Bunny Pin Mika_Front_C2.png
+Skipping existing file: 800x800_png\Hair Style\Bunny Pin Mika_Front_C3.png
+Skipping existing file: 800x800_png\Hair Style\Bunny Pin Mika_Front_L.png
+Skipping existing file: 800x800_png\Hair Style\Diner Space Buns_Back_C1.png
+Skipping existing file: 800x800_png\Hair Style\Diner Space Buns_Back_L.png
+Skipping existing file: 800x800_png\Hair Style\Diner Space Buns_Front_C1.png
+Skipping existing file: 800x800_png\Hair Style\Diner Space Buns_Front_L.png
+Skipping existing file: 800x800_png\Hair Style\Marinas Gym Pony_Back_C1.png
+Skipping existing file: 800x800_png\Hair Style\Marinas Gym Pony_Back_L.png
+Skipping existing file: 800x800_png\Hair Style\Marinas Gym Pony_Front_C1.png
+Skipping existing file: 800x800_png\Hair Style\Marinas Gym Pony_Front_L.png
+Resizing image: scriptImages\Hand\Bunny Ball_C1.png to 800x800
+Skipping existing file: 600x600_png\Hair Style\Bunny Pin Mika_Back_C1.png
+Skipping existing file: 600x600_png\Hair Style\Bunny Pin Mika_Back_C2.png
+Skipping existing file: 600x600_png\Hair Style\Bunny Pin Mika_Back_C3.png
+Skipping existing file: 600x600_png\Hair Style\Bunny Pin Mika_Back_L .png
+Skipping existing file: 600x600_png\Hair Style\Bunny Pin Mika_Back_L.png
+Skipping existing file: 600x600_png\Hair Style\Bunny Pin Mika_Front_C1.png
+Skipping existing file: 600x600_png\Hair Style\Bunny Pin Mika_Front_C2.png
+Skipping existing file: 600x600_png\Hair Style\Bunny Pin Mika_Front_C3.png
+Skipping existing file: 600x600_png\Hair Style\Bunny Pin Mika_Front_L.png
+Skipping existing file: 600x600_png\Hair Style\Diner Space Buns_Back_C1.png
+Skipping existing file: 600x600_png\Hair Style\Diner Space Buns_Back_L.png
+Skipping existing file: 600x600_png\Hair Style\Diner Space Buns_Front_C1.png
+Skipping existing file: 600x600_png\Hair Style\Diner Space Buns_Front_L.png
+Skipping existing file: 600x600_png\Hair Style\Marinas Gym Pony_Back_C1.png
+Skipping existing file: 600x600_png\Hair Style\Marinas Gym Pony_Back_L.png
+Skipping existing file: 600x600_png\Hair Style\Marinas Gym Pony_Front_C1.png
+Skipping existing file: 600x600_png\Hair Style\Marinas Gym Pony_Front_L.png
+Resizing image: scriptImages\Hand\Bunny Ball_C1.png to 600x600
+Solid colors RGB values saved to colors.json
+Processing image group: Bunny Pin Mika_Back
+Resized image saved: 600x600_png\Hand\Bunny Ball_C1.png
+Resizing image: scriptImages\Hand\Bunny Ball_C2.png to 600x600
+Resized image saved: 800x800_png\Hand\Bunny Ball_C1.png
+Resizing image: scriptImages\Hand\Bunny Ball_C2.png to 800x800
+Processing file: Bunny Pin Mika_Back_C1.png in subfolder: Hair Style
+Processing file: Bunny Pin Mika_Back_C1.png in Hair Style
+Processing file: Bunny Pin Mika_Back_C2.png in Hair Style
+Resized image saved: 800x800_png\Hand\Bunny Ball_C2.png
+Resizing image: scriptImages\Hand\Bunny Ball_L.png to 800x800
+Resized image saved: 600x600_png\Hand\Bunny Ball_C2.png
+Resizing image: scriptImages\Hand\Bunny Ball_L.png to 600x600
+Processing file: Bunny Pin Mika_Back_C3.png in Hair Style
+Resized image saved: 600x600_png\Hand\Bunny Ball_L.png
+Resizing image: scriptImages\Hand\Bunny Ball_S.png to 600x600
+Resized image saved: 800x800_png\Hand\Bunny Ball_L.png
+Resizing image: scriptImages\Hand\Bunny Ball_S.png to 800x800
+Processing file: Bunny Pin Mika_Back_L .png in Hair Style
+Processing file: Bunny Pin Mika_Back_L.png in Hair Style
+Resized image saved: 600x600_png\Hand\Bunny Ball_S.png
+Skipping existing file: 600x600_png\Hat\Bunny Club Gym Hat_C1.png
+Skipping existing file: 600x600_png\Hat\Bunny Club Gym Hat_C2.png
+Skipping existing file: 600x600_png\Hat\Bunny Club Gym Hat_C3.png
+Skipping existing file: 600x600_png\Hat\Bunny Club Gym Hat_L.png
+Skipping existing file: 600x600_png\Hat\Droopy Bun Ears_Back_C1.png
+Skipping existing file: 600x600_png\Hat\Droopy Bun Ears_Back_C2.png
+Skipping existing file: 600x600_png\Hat\Droopy Bun Ears_Back_L.png
+Skipping existing file: 600x600_png\Hat\Droopy Bun Ears_Front_C1.png
+Skipping existing file: 600x600_png\Hat\Droopy Bun Ears_Front_C2.png
+Skipping existing file: 600x600_png\Hat\Droopy Bun Ears_Front_L.png
+Skipping existing file: 600x600_png\Hat\PomPom Toque_C1.png
+Skipping existing file: 600x600_png\Hat\PomPom Toque_C2.png
+Skipping existing file: 600x600_png\Hat\PomPom Toque_L.png
+Resized image saved: 800x800_png\Hand\Bunny Ball_S.png
+Skipping existing file: 800x800_png\Hat\Bunny Club Gym Hat_C1.png
+Skipping existing file: 800x800_png\Hat\Bunny Club Gym Hat_C2.png
+Skipping existing file: 800x800_png\Hat\Bunny Club Gym Hat_C3.png
+Skipping existing file: 800x800_png\Hat\Bunny Club Gym Hat_L.png
+Skipping existing file: 800x800_png\Hat\Droopy Bun Ears_Back_C1.png
+Skipping existing file: 800x800_png\Hat\Droopy Bun Ears_Back_C2.png
+Skipping existing file: 800x800_png\Hat\Droopy Bun Ears_Back_L.png
+Skipping existing file: 800x800_png\Hat\Droopy Bun Ears_Front_C1.png
+Skipping existing file: 800x800_png\Hat\Droopy Bun Ears_Front_C2.png
+Skipping existing file: 800x800_png\Hat\Droopy Bun Ears_Front_L.png
+Skipping existing file: 800x800_png\Hat\PomPom Toque_C1.png
+Skipping existing file: 800x800_png\Hat\PomPom Toque_C2.png
+Skipping existing file: 800x800_png\Hat\PomPom Toque_L.png
+Processing file: Bunny Pin Mika_Front_C1.png in Hair Style
+Processing file: Bunny Pin Mika_Front_C2.png in Hair Style
+Processing file: Bunny Pin Mika_Front_C3.png in Hair Style
+Script started
+Subfolders found: Accessory, Background, Bodysuit, Colors, Extras, Eyebrows, Eyes, Face Sticker, Finished, Frame, Hair Style, Hand, Hat, Mouth, Outfit, Piercing, Tattoo, Undergarment
+Files found: 17
+Solid colors RGB values saved to colors.json
+Skipping existing file: 800x800_png\Hand\Bunny Ball_C1.png
+Skipping existing file: 800x800_png\Hand\Bunny Ball_C2.png
+Skipping existing file: 800x800_png\Hand\Bunny Ball_L.png
+Skipping existing file: 800x800_png\Hand\Bunny Ball_S.png
+Skipping existing file: 800x800_png\Hat\Bunny Club Gym Hat_C1.png
+Skipping existing file: 800x800_png\Hat\Bunny Club Gym Hat_C2.png
+Skipping existing file: 800x800_png\Hat\Bunny Club Gym Hat_C3.png
+Skipping existing file: 800x800_png\Hat\Bunny Club Gym Hat_L.png
+Skipping existing file: 800x800_png\Hat\Droopy Bun Ears_Back_C1.png
+Skipping existing file: 800x800_png\Hat\Droopy Bun Ears_Back_C2.png
+Skipping existing file: 800x800_png\Hat\Droopy Bun Ears_Back_L.png
+Skipping existing file: 800x800_png\Hat\Droopy Bun Ears_Front_C1.png
+Skipping existing file: 800x800_png\Hat\Droopy Bun Ears_Front_C2.png
+Skipping existing file: 800x800_png\Hat\Droopy Bun Ears_Front_L.png
+Skipping existing file: 800x800_png\Hat\PomPom Toque_C1.png
+Skipping existing file: 800x800_png\Hat\PomPom Toque_C2.png
+Skipping existing file: 800x800_png\Hat\PomPom Toque_L.png
+Skipping existing file: 600x600_png\Hand\Bunny Ball_C1.png
+Skipping existing file: 600x600_png\Hand\Bunny Ball_C2.png
+Skipping existing file: 600x600_png\Hand\Bunny Ball_L.png
+Skipping existing file: 600x600_png\Hand\Bunny Ball_S.png
+Skipping existing file: 600x600_png\Hat\Bunny Club Gym Hat_C1.png
+Skipping existing file: 600x600_png\Hat\Bunny Club Gym Hat_C2.png
+Skipping existing file: 600x600_png\Hat\Bunny Club Gym Hat_C3.png
+Skipping existing file: 600x600_png\Hat\Bunny Club Gym Hat_L.png
+Skipping existing file: 600x600_png\Hat\Droopy Bun Ears_Back_C1.png
+Skipping existing file: 600x600_png\Hat\Droopy Bun Ears_Back_C2.png
+Skipping existing file: 600x600_png\Hat\Droopy Bun Ears_Back_L.png
+Skipping existing file: 600x600_png\Hat\Droopy Bun Ears_Front_C1.png
+Skipping existing file: 600x600_png\Hat\Droopy Bun Ears_Front_C2.png
+Skipping existing file: 600x600_png\Hat\Droopy Bun Ears_Front_L.png
+Skipping existing file: 600x600_png\Hat\PomPom Toque_C1.png
+Skipping existing file: 600x600_png\Hat\PomPom Toque_C2.png
+Skipping existing file: 600x600_png\Hat\PomPom Toque_L.png
+Solid colors RGB values saved to colors.json
+Processing image group: Bunny Ball
+Processing file: Bunny Ball_C1.png in subfolder: Hand
+Processing file: Bunny Ball_C2.png in subfolder: Hand
+Processing file: Bunny Ball_L.png in subfolder: Hand
+Processing file: Bunny Ball_S.png in subfolder: Hand
+Checking existence of PNG: compositeImages\Hand\Bunny Ball.png
+Checking existence of JPG: 300x300_jpg\Hand\Bunny Ball.jpg
+Files not found, processing: PNG - compositeImages\Hand\Bunny Ball.png, JPG - 300x300_jpg\Hand\Bunny Ball.jpg
+Saved: compositeImages\Hand\Bunny Ball.png
+Saved: 300x300_jpg\Hand\Bunny Ball.jpg
+Processing image group: Bunny Club Gym Hat
+Processing file: Bunny Club Gym Hat_C1.png in subfolder: Hat
+Processing file: Bunny Club Gym Hat_C1.png in Hat
+Processing file: Bunny Club Gym Hat_C2.png in Hat
+Processing file: Bunny Club Gym Hat_C3.png in Hat
+Processing file: Bunny Club Gym Hat_L.png in Hat
+Processing file: Droopy Bun Ears_Back_C1.png in Hat
+Processing file: Droopy Bun Ears_Back_C2.png in Hat
+Script started
+Subfolders found: Accessory, Background, Bodysuit, Colors, Extras, Eyebrows, Eyes, Face Sticker, Finished, Frame, Hair Style, Hand, Hat, Mouth, Outfit, Piercing, Tattoo, Undergarment
+Files found: 4
+Solid colors RGB values saved to colors.json
+Skipping existing file: 800x800_png\Hand\Bunny Ball_C1.png
+Skipping existing file: 800x800_png\Hand\Bunny Ball_C2.png
+Skipping existing file: 800x800_png\Hand\Bunny Ball_L.png
+Skipping existing file: 800x800_png\Hand\Bunny Ball_S.png
+Skipping existing file: 600x600_png\Hand\Bunny Ball_C1.png
+Skipping existing file: 600x600_png\Hand\Bunny Ball_C2.png
+Skipping existing file: 600x600_png\Hand\Bunny Ball_L.png
+Skipping existing file: 600x600_png\Hand\Bunny Ball_S.png
+Solid colors RGB values saved to colors.json
+Processing image group: Bunny Ball
+Processing file: Bunny Ball_C1.png in subfolder: Hand
+Processing file: Bunny Ball_C2.png in subfolder: Hand
+Processing file: Bunny Ball_L.png in subfolder: Hand
+Processing file: Bunny Ball_S.png in subfolder: Hand
+Checking existence of PNG: compositeImages\Hand\Bunny Ball.png
+Checking existence of JPG: 300x300_jpg\Hand\Bunny Ball.jpg
+Skipping existing files: PNG - compositeImages\Hand\Bunny Ball.png, JPG - 300x300_jpg\Hand\Bunny Ball.jpg

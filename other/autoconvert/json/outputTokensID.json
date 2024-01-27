@@ -1,45 +1,168 @@
 [
     {
-        "tokenId": 58,
-        "name": "Cozy Cabin Pack",
+        "tokenId": 176,
+        "name": "Bunny Queen Mika",
         "attributes": [
             {
-                "trait_type": "Background",
-                "value": "Cozy Cabin"
+                "trait_type": "Hand",
+                "value": "Bad Bunny Coin Purse"
             },
             {
-                "trait_type": "Outfit",
-                "value": "Flannel Shirt"
+                "trait_type": "Accessory",
+                "value": "Batty Bun Heart Shades"
+            },
+            {
+                "trait_type": "Background",
+                "value": "Bunny Kingdom Castle"
+            },
+            {
+                "trait_type": "Hand",
+                "value": "Bunny Kingdom Tales Vol 1"
             },
             {
                 "trait_type": "Hair Style",
-                "value": "Cozy Pigtails"
+                "value": "Bunny Pin Mika"
+            },
+            {
+                "trait_type": "Hand",
+                "value": "Cloudy Heart Tote"
             },
             {
                 "trait_type": "Hat",
-                "value": "PomPom Toque"
+                "value": "Droopy Bun Ears"
+            },
+            {
+                "trait_type": "Outfit",
+                "value": "Frilly Baby Doll"
+            },
+            {
+                "trait_type": "Frame",
+                "value": "Huberts Nest"
+            },
+            {
+                "trait_type": "Outfit",
+                "value": "Modern Mika Dress"
+            },
+            {
+                "trait_type": "Accessory",
+                "value": "Queen Mika Bling"
+            },
+            {
+                "trait_type": "Frame",
+                "value": "Skuzzy Berry Bushes"
             }
         ],
         "metaPath": ""
     },
     {
-        "tokenId": 59,
-        "name": "Unlock for All",
+        "tokenId": 178,
+        "name": "Dorothy Diner Bot",
         "attributes": [
             {
                 "trait_type": "Hand",
-                "value": "Bong"
+                "value": "Cosmic Clutch"
+            },
+            {
+                "trait_type": "Hand",
+                "value": "Diner Delicacies"
+            },
+            {
+                "trait_type": "Hair Style",
+                "value": "Diner Space Buns"
+            },
+            {
+                "trait_type": "Accessory",
+                "value": "Diner Star Dangleys"
+            },
+            {
+                "trait_type": "Outfit",
+                "value": "Dorothys Day Off Sweater"
+            },
+            {
+                "trait_type": "Frame",
+                "value": "Dorothys Starlight Night"
+            },
+            {
+                "trait_type": "Frame",
+                "value": "Glipper Cookie Munch"
+            },
+            {
+                "trait_type": "Hand",
+                "value": "Hover Plate"
+            },
+            {
+                "trait_type": "Hand",
+                "value": "Lunar Glow Compact"
+            },
+            {
+                "trait_type": "Hand",
+                "value": "Savory Solar Slice"
+            },
+            {
+                "trait_type": "Hand",
+                "value": "THE Ted Spatula"
             }
         ],
         "metaPath": ""
     },
     {
-        "tokenId": 60,
-        "name": "Unlock for All",
+        "tokenId": 179,
+        "name": "Dorothy Diner Bot V",
+        "attributes": [
+            {
+                "trait_type": "Frame",
+                "value": "Glowy Glipper Cookie Munch"
+            }
+        ],
+        "metaPath": ""
+    },
+    {
+        "tokenId": 177,
+        "name": "Gym Class Marina",
         "attributes": [
             {
                 "trait_type": "Hand",
-                "value": "Pops When Adventure Strikes Staff"
+                "value": "Bunny Ball"
+            },
+            {
+                "trait_type": "Hand",
+                "value": "Bunny Ball Bat"
+            },
+            {
+                "trait_type": "Accessory",
+                "value": "Bunny Ball Earrings"
+            },
+            {
+                "trait_type": "Face Sticker",
+                "value": "Bunny Ball Facepaint"
+            },
+            {
+                "trait_type": "Outfit",
+                "value": "Bunny Ball Jersey"
+            },
+            {
+                "trait_type": "Outfit",
+                "value": "Bunny Club Gym Class Polo"
+            },
+            {
+                "trait_type": "Hat",
+                "value": "Bunny Club Gym Hat"
+            },
+            {
+                "trait_type": "Hand",
+                "value": "Marfins Gym Class Tank"
+            },
+            {
+                "trait_type": "Hair Style",
+                "value": "Marinas Gym Pony"
+            },
+            {
+                "trait_type": "Background",
+                "value": "Outdoor Gym Class"
+            },
+            {
+                "trait_type": "Hand",
+                "value": "Vegan Football"
             }
         ],
         "metaPath": ""
