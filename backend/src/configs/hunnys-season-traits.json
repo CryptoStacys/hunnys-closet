@@ -69,7 +69,7 @@
         {"name":"Ghostly Squirrel","colors":0,"rarity":"Epic","tags":["companion"],"token_id":172},
         {"name":"Fancy Christmas Tree Earrings","colors":2,"rarity":"Common","tags":["earrings"],"token_id":175},
         {"name":"Batty Bun Heart Shades","colors":2,"rarity":"Mythic","tags":["glasses"],"token_id":176},
-        {"name":"Queen Mika Bling","colors":3,"rarity":"Common","tags":["earrings"],"token_id":176},
+        {"name":"Queen Mika Bling","colors":3,"rarity":"Common","tags":[],"token_id":176},
         {"name":"Bunny Ball Earrings","colors":2,"rarity":"Mythic","tags":["earrings"],"token_id":177},
         {"name":"Diner Star Dangleys","colors":3,"rarity":"Legendary","tags":["earrings"],"token_id":178}
       ]
