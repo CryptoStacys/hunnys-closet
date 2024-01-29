@@ -61,8 +61,8 @@ export default function Login() {
             Connect
           </div>
         ) : (
-          <div className="absolute grid-cols-1 mr-12 bottom-6 mx-auto uppercase text-[#777] text-4xl font-bold font-title tracking-wider px-14 py-3 rounded-md">
-            <div className="text-black">LOADING</div>
+          <div className="absolute grid-cols-1 loginLoading mx-auto uppercase text-[#777] text-4xl font-bold font-title tracking-wider px-14 py-3 rounded-md">
+            <div className="text-black"></div>
             {/* Display the random image */}
             
             <Loader />
