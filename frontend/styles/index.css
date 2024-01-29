@@ -288,6 +288,9 @@ a {
   .attributeName {
     font-size: .775rem;
   }
+  .loginConnect {
+    display: none;
+  }
 .badge {
   font-size: .9em;
 }
