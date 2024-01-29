@@ -228,6 +228,10 @@ a {
   /* transform: scale(1.08) rotate(2deg); */
 }
 
+.loginConnect {
+  bottom: 270px;
+  margin-right: 30px;
+}
 .flex-center {
   display: flex;
   justify-content: center;
@@ -267,6 +271,11 @@ a {
   .dashboardHero {
     min-height: 0vh;  
   }
+
+  .loginConnect {
+    bottom: 290px;
+    margin-right: 30px;
+  }
   
   .grid-item {
     height: 160px;
@@ -293,6 +302,11 @@ a {
   }
   .badge {
     margin-left: 4px;
+  }
+  .loginConnect {
+    font-size: 20px;
+    line-height: 12px;
+    margin-bottom: 20px;
   }
 }
 
@@ -348,7 +362,21 @@ a {
   }
 }
 
+@media (max-width: 700px) {
+  .loginConnect {
+    font-size: 20px;
+    line-height: 12px;
+    margin-bottom: 40px;
+  }
+}
+
 @media (max-width: 639px) {
+
+  .loginConnect {
+    font-size: 14px;
+    line-height: 6px;
+    margin-bottom: 50px;
+  }
 
   .hideplz {
     display: none;
@@ -403,6 +431,14 @@ a {
   .fill-hunnys-yellow {
     display: none;
   }
+  .loginConnect {
+    font-size: 12px;
+    margin-left: 20px;
+    line-height: 4px;
+    width: 20%;
+    margin-bottom: 50px;
+  }
+
   .attributeHeader {
     padding-left: 0px;
     padding-right: 0px;
