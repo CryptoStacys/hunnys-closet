@@ -2742,57 +2742,6 @@
     },
     {
         "tokenId": 177,
-        "name": "Gym Class Marina",
-        "attributes": [
-            {
-                "trait_type": "Hand",
-                "value": "Bunny Ball"
-            },
-            {
-                "trait_type": "Hand",
-                "value": "Bunny Ball Bat"
-            },
-            {
-                "trait_type": "Accessory",
-                "value": "Bunny Ball Earrings"
-            },
-            {
-                "trait_type": "Face Sticker",
-                "value": "Bunny Ball Facepaint"
-            },
-            {
-                "trait_type": "Outfit",
-                "value": "Bunny Ball Jersey"
-            },
-            {
-                "trait_type": "Outfit",
-                "value": "Bunny Club Gym Class Polo"
-            },
-            {
-                "trait_type": "Hat",
-                "value": "Bunny Club Gym Hat"
-            },
-            {
-                "trait_type": "Hand",
-                "value": "Marfins Gym Class Tank"
-            },
-            {
-                "trait_type": "Hair Style",
-                "value": "Marinas Gym Pony"
-            },
-            {
-                "trait_type": "Background",
-                "value": "Outdoor Gym Class"
-            },
-            {
-                "trait_type": "Hand",
-                "value": "Vegan Football"
-            }
-        ],
-        "metaPath": "https://hunnysseasons.s3.us-east-2.amazonaws.com/177"
-    },
-    {
-        "tokenId": 178,
         "name": "Dorothy Diner Bot",
         "attributes": [
             {
@@ -2840,15 +2789,66 @@
                 "value": "THE Ted Spatula"
             }
         ],
-        "metaPath": "https://hunnysseasons.s3.us-east-2.amazonaws.com/178"
+        "metaPath": "https://hunnysseasons.s3.us-east-2.amazonaws.com/177"
     },
     {
-        "tokenId": 179,
+        "tokenId": 178,
         "name": "Dorothy Diner Bot V",
         "attributes": [
             {
                 "trait_type": "Frame",
                 "value": "Glowy Glipper Cookie Munch"
+            }
+        ],
+        "metaPath": "https://hunnysseasons.s3.us-east-2.amazonaws.com/178"
+    },
+    {
+        "tokenId": 179,
+        "name": "Gym Class Marina",
+        "attributes": [
+            {
+                "trait_type": "Hand",
+                "value": "Bunny Ball"
+            },
+            {
+                "trait_type": "Hand",
+                "value": "Bunny Ball Bat"
+            },
+            {
+                "trait_type": "Accessory",
+                "value": "Bunny Ball Earrings"
+            },
+            {
+                "trait_type": "Face Sticker",
+                "value": "Bunny Ball Facepaint"
+            },
+            {
+                "trait_type": "Outfit",
+                "value": "Bunny Ball Jersey"
+            },
+            {
+                "trait_type": "Outfit",
+                "value": "Bunny Club Gym Class Polo"
+            },
+            {
+                "trait_type": "Hat",
+                "value": "Bunny Club Gym Hat"
+            },
+            {
+                "trait_type": "Hand",
+                "value": "Marfins Gym Class Tank"
+            },
+            {
+                "trait_type": "Hair Style",
+                "value": "Marinas Gym Pony"
+            },
+            {
+                "trait_type": "Background",
+                "value": "Outdoor Gym Class"
+            },
+            {
+                "trait_type": "Hand",
+                "value": "Vegan Football"
             }
         ],
         "metaPath": "https://hunnysseasons.s3.us-east-2.amazonaws.com/179"
