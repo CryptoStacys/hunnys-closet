@@ -2796,6 +2796,50 @@
         "name": "Dorothy Diner Bot V",
         "attributes": [
             {
+                "trait_type": "Hand",
+                "value": "Cosmic Clutch"
+            },
+            {
+                "trait_type": "Hand",
+                "value": "Diner Delicacies"
+            },
+            {
+                "trait_type": "Hair Style",
+                "value": "Diner Space Buns"
+            },
+            {
+                "trait_type": "Accessory",
+                "value": "Diner Star Dangleys"
+            },
+            {
+                "trait_type": "Outfit",
+                "value": "Dorothys Day Off Sweater"
+            },
+            {
+                "trait_type": "Frame",
+                "value": "Dorothys Starlight Night"
+            },
+            {
+                "trait_type": "Frame",
+                "value": "Glipper Cookie Munch"
+            },
+            {
+                "trait_type": "Hand",
+                "value": "Hover Plate"
+            },
+            {
+                "trait_type": "Hand",
+                "value": "Lunar Glow Compact"
+            },
+            {
+                "trait_type": "Hand",
+                "value": "Savory Solar Slice"
+            },
+            {
+                "trait_type": "Hand",
+                "value": "THE Ted Spatula"
+            },
+            {
                 "trait_type": "Frame",
                 "value": "Glowy Glipper Cookie Munch"
             }

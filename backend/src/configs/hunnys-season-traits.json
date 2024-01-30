@@ -148,6 +148,8 @@
         {"name":"Skuzzy Berry Bushes","colors":2,"rarity":"Common","tags":[],"token_id":176},
         {"name":"Dorothys Starlight Night","colors":5,"rarity":"Legendary","tags":[],"token_id":177},
         {"name":"Glipper Cookie Munch","colors":3,"rarity":"Legendary","tags":[],"token_id":177},
+        {"name":"Dorothys Starlight Night","colors":5,"rarity":"Legendary","tags":[],"token_id":178},
+        {"name":"Glipper Cookie Munch","colors":3,"rarity":"Legendary","tags":[],"token_id":178},
         {"name":"Glowy Glipper Cookie Munch","colors":1,"rarity":"Relic","tags":[],"token_id":178}
       ]
     },
@@ -190,6 +192,7 @@
         {"name":"Bunny Club Hair","colors":1,"parts":2,"rarity":"Common","tags":[],"token_id":169},
         {"name":"Bunny Pin Mika","colors":3,"rarity":"Common","parts":2,"tags":[],"token_id":176},
         {"name":"Diner Space Buns","colors":1,"rarity":"Legendary","parts":2,"tags":[],"token_id":177},
+        {"name":"Diner Space Buns","colors":1,"rarity":"Legendary","parts":2,"tags":[],"token_id":178},
         {"name":"Marinas Gym Pony","colors":1,"rarity":"Mythic","parts":2,"tags":[],"token_id":178}
       ]
     },
@@ -239,6 +242,12 @@
         {"name":"Lunar Glow Compact","colors":5,"rarity":"Legendary","tags":["skin"],"token_id":177},
         {"name":"Savory Solar Slice","colors":5,"rarity":"Legendary","tags":["skin"],"token_id":177},
         {"name":"THE Ted Spatula","colors":4,"rarity":"Legendary","tags":["skin"],"token_id":177},
+        {"name":"Cosmic Clutch","colors":4,"rarity":"Legendary","tags":["skin"],"token_id":178},
+        {"name":"Diner Delicacies","colors":5,"rarity":"Legendary","tags":["skin"],"token_id":178},
+        {"name":"Hover Plate","colors":4,"rarity":"Legendary","tags":[],"token_id":178},
+        {"name":"Lunar Glow Compact","colors":5,"rarity":"Legendary","tags":["skin"],"token_id":178},
+        {"name":"Savory Solar Slice","colors":5,"rarity":"Legendary","tags":["skin"],"token_id":178},
+        {"name":"THE Ted Spatula","colors":4,"rarity":"Legendary","tags":["skin"],"token_id":178},
         {"name":"Bunny Ball","colors":2,"rarity":"Mythic","tags":["skin"],"token_id":179},
         {"name":"Bunny Ball Bat","colors":3,"rarity":"Mythic","tags":["skin"],"token_id":179},
         {"name":"Marfins Gym Class Tank","colors":5,"rarity":"Mythic","tags":["skin"],"token_id":179},
@@ -327,6 +336,7 @@
         {"name":"Frilly Baby Doll","colors":2,"rarity":"Common","tags":[],"token_id":176},
         {"name":"Modern Mika Dress","colors":3,"rarity":"Common","tags":[],"token_id":176},
         {"name":"Dorothys Day Off Sweater","colors":3,"rarity":"Legendary","tags":[],"token_id":177},
+        {"name":"Dorothys Day Off Sweater","colors":3,"rarity":"Legendary","tags":[],"token_id":178},
         {"name":"Bunny Ball Jersey","colors":3,"rarity":"Mythic","tags":[],"token_id":179},
         {"name":"Bunny Club Gym Class Polo","colors":3,"rarity":"Mythic","tags":[],"token_id":179}
       ]
