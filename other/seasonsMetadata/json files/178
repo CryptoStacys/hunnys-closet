@@ -1,0 +1,31 @@
+{
+    "name": "Dorothy the Diner Bot 2.0 V",
+    "description": "",
+    "image": "https://hunnysseasons.s3.us-east-2.amazonaws.com/178.png",
+    "animation_url": "https://seasons-unboxing.vercel.app/002V",
+    "audio_url": "",
+    "interactive_url": "",
+    "external_link": "",
+    "attributes": [
+        {
+            "trait_type": "Month",
+            "value": "January "
+        },
+        {
+            "trait_type": "Generation",
+            "value": 3
+        },
+        {
+            "trait_type": "Rarity",
+            "value": "Relic"
+        },
+        {
+            "trait_type": "Season",
+            "value": "Dorothys Diner"
+        },
+        {
+            "trait_type": "Year",
+            "value": 2024
+        }
+    ]
+}
