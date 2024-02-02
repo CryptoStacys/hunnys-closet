@@ -127,8 +127,8 @@ export default function Dashboard() {
       <a rel="noreferrer" target="_blank" href="https://hunnys.io/membership-levels/">
       <div className="dashboardHero"> <img src={"https://cdn.discordapp.com/attachments/900232920046927922/1190773619668824094/Closet_Promo_Image_Graphics_Dashboard_3.png?ex=65a3055a&is=6590905a&hm=9e08cde1ae31e9669148a96cc821f37bebd48ebac01b40a37a5c4c8b8f692bc8&"} alt="" /></div>
       </a>
-      <a rel="noreferrer" target="_blank" href="https://buy.hunnys.io/polygon/collection/0x43668e306dba9172824524fd2c0c6924e710ea5b?attributes%5BSeason%5D=Winter+Folklore">
-      <div className="dashboardHero"> <img src={"https://cdn.discordapp.com/attachments/900232920046927922/1190772451160899774/Closet_Promo_Image_Graphics_Dashboard.png?ex=65a30443&is=65908f43&hm=0db2f6a306cc23e6c8de5555a36355831961b5ed6aa607f5215060329d54a549&"} alt="" /></div>
+      <a rel="noreferrer" target="_blank" href="https://opensea.io/collection/hunnys-seasons?search[numericTraits][0][name]=Generation&search[numericTraits][0][ranges][0][min]=3&search[numericTraits][0][ranges][0][max]=3">
+      <div className="dashboardHero"> <img src={"https://cdn.discordapp.com/attachments/1131994451787644958/1202674618905927790/8CFB37BB-7E5E-4867-B8FA-C61CA0A4C60E.png?ex=65ce5105&is=65bbdc05&hm=915dbeeace9976d610881cb7de3004abd967eadf28866f097b2fef8b34782e14&"} alt="" /></div>
       </a></div>
         
       
