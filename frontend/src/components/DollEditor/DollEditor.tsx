@@ -1,6 +1,7 @@
 import { useState, useEffect, useRef, SetStateAction } from "react";
 // import { ethers } from "ethers";
 import { useAtom } from "jotai";
+import Mint from "../DollGallery/Mint";
 import { userAtom, modalAtom, savedAtom } from "../../data/store";
 import { useSignMessage } from 'wagmi';
 import ApplyButton from "./ApplyButton";
@@ -18,6 +19,8 @@ import { allTraitsAtom } from "../../data/store";
 
 import { attributes, localStorageToken } from "../../data/config";
 import { Attribute, Trait } from "../../data/global";
+import { useMintDolly } from "../../utils/mintDolly";
+import { ethers } from "ethers";
 
 // if token is missing attributes, just add empty trait there
 function formatToken(input: Trait[]) {
@@ -60,7 +63,7 @@ function areTokensEqual(token1: any[], token2: any[]) {
          token2Strings.every(t2 => token1Strings.includes(t2));
 }
 
-export default function DollEditor(props: { id: number; selectDoll: Function }) {
+export default function DollEditor(props: { id: number | null; selectDoll: Function; isNew?: boolean; onDollySaved?: Function }) {
   const [allTraits] = useAtom(allTraitsAtom);
   const [user, userSet] = useAtom(userAtom);
   const [saved, setSaved] = useAtom(savedAtom); // tracks if user saved dolly changes
@@ -74,8 +77,204 @@ export default function DollEditor(props: { id: number; selectDoll: Function }) 
   const [successMessage, setSuccessMessage] = useState("");
   const [dollyImageDataURL, setDollyImageDataURL] = useState("");
   const [selectedHeadline, setSelectedHeadline] = useState("");
+  const isNewDolly = props.isNew;
+  const { mintDolly, isLoading, isSuccess, error } = useMintDolly();
+  const [isMinted, setIsMinted] = useState(false);
+  const [showIntroModal, setShowIntroModal] = useState<boolean>(() => {
+    // Retrieve the user's preference from localStorage
+    const hideIntro = localStorage.getItem('hideIntroModal');
+    // If not set or explicitly set to 'false', show the intro modal
+    return hideIntro !== 'true';
+  });
+  
+  useEffect(() => {
+    if (showIntroModal) {
+      modalSet({
+        active: true,
+        title: "The Dressing Room 💛",
+        body: (
+          <div className="text-center p-6">
+            <h3 className="mb-4 font-luckiest text-2xl uppercase">Hey Cupcake! Are you ready to Unleash Your Creativity? 🥰</h3>
+            <img className="introModalMika mobile-hide" alt="Bunny Queen Mika" src="/assets/Hunnys_Dressup_Doll_Logo.gif"></img>
+            <p className="mt-4 font-luckiest text-xl text-left">HOW IT WORKS:</p>
+            <p className="mb-4 text-left">🌈 Here in The Dressing Room, you can give your Dolly endless makeovers, trying on all sorts of stylish outfits and accessories, highlighted by the most harmonious of colors.</p>
+            <p className="mb-4 text-left">✨ Different traits are unlocked based on collectibles you might own from within the Hunnys universe and beyond.</p>
+            <p className="mb-4 text-left">🎀 We have plenty for you to try for free, and even more for sale with the click of a button!</p>
+            <p className="mt-8 font-luckiest text-xl text-left">SAVING:</p>
+            <p className="mb-4 text-left">📸 Click the &lsquo;Download&lsquo; button at any point to take a snapshot of your Dolly to keep forever!</p>
+            <p className="mb-4 text-left">✅ Love the way you look? Click the &lsquo;Save&lsquo; button at the top to the page! Saving your Dolly&lsquo;s debut look as a digital collectible<span className="font-extrabold"> requires a small, one-time fee.</span></p>
+            <p className="mb-4 text-left">💋 But don&lsquo;t fret, sweetie — every saved makeover after that is 100% free, forever and ever.</p>
+            <p className="mb-4 mt-8 text-center">Have fun, Cupcake! And be sure to share with us afterwards and let us see how you look 💛</p>
+            <div className="mt-4">
+              <button 
+                onClick={() => modalSet({ active: false, title: "", body: <></> })}
+                className="bg-hunnys-blue text-hunnys-yellow w-full uppercase font-luckiest shadow-md rounded-full mt-4 px-3 py-1 xl:text-xl text-md hover:shadow-lg hover:scale-[1.02] transition-all"
+              >
+                Got It, Let&lsquo;s Start!
+              </button>
+              <label className="inline-flex items-center mt-3">
+              <input type="checkbox" className="form-checkbox h-5 w-5 text-gray-600" onChange={(e) => {
+                const shouldHide = e.target.checked;
+                localStorage.setItem('hideIntroModal', shouldHide ? 'true' : 'false');
+                setShowIntroModal(!shouldHide);
+              }}/><span className="ml-2 text-gray-700">Got it! Don&lsquo;t show this message again</span>
+            </label>
+            </div>
+          </div>
+        )
+      });
+    }
+  }, [showIntroModal]);
   
   
+
+  useEffect(() => {
+    if (isNewDolly) {
+      // Initialize with default attributes for a new Dolly
+      const defaultAttributes: Attribute[] = attributes.map(attr => ({
+        isEligibleForMinting: [],
+        name: "Empty",
+        colorsApplied: [],
+        attribute: attr,
+        tags: [],
+        colors: [],
+        rarity: "common",
+        origin_id: 0,
+        isOwned: false,
+        id: 0,
+        baseColor: [], // Adjusted as needed
+        token_id: "" // Assign a placeholder value for token_id
+      }));
+      tokenSet(defaultAttributes);
+    } else {
+      load(); // Existing load function call for loading an existing Dolly
+    }
+  }, [isNewDolly]);
+
+  interface User {
+    address: string;
+    signer?: ethers.Signer; // Assuming you're using ethers.js and signer might be optional
+  }
+
+  // Define a new function that handles minting and waits for the new token ID
+async function mintAndFetchTokenId(userAddress: string): Promise<string> {
+  await mintDolly(); // Assume this function triggers the minting transaction
+
+  // Return a new Promise that resolves with a string (the new token ID)
+  return new Promise((resolve, reject) => {
+    setTimeout(async () => {
+      try {
+        const newTokenId = await fetchMostRecentTokenId(userAddress);
+        console.log(`New Dolly minted with token ID: ${newTokenId}`);
+        resolve(newTokenId); // Resolve the promise with the new token ID as a string
+      } catch (error) {
+        console.error("Failed to fetch new token ID after minting:", error);
+        reject(error); // Reject the promise if there's an error
+      }
+    }, 20000); // Adjust the timeout based on your needs
+  });
+}
+
+  
+  
+  async function save() {
+    setIsSaving(true); // Indicate the saving process has started
+  
+    try {
+      let newTokenId: string | null = props.id?.toString() ?? null; // Default to existing ID if available
+  
+      // Mint a new Dolly if it's a new creation and no ID is assigned yet
+      if (isNewDolly && !props.id && user && !isMinted) {
+        newTokenId = await mintAndFetchTokenId(user.address);
+        setIsMinted(true); // Set isMinted to true after successful minting
+      }
+  
+      // Proceed with saving the Dolly details
+      if (user && newTokenId) {
+        const formData = new FormData();
+        formData.append("wallet", user.address);
+        const signature: string = await getSignature(user.address) as string; // Assuring TypeScript that getSignature returns a string
+        formData.append("signature", signature);
+        formData.append("token_id", newTokenId);
+        formData.append("data", JSON.stringify({ token: token, name: 'Your Dolly Name' })); // Ensure you have a name variable or replace with a static name
+  
+        const response = await fetch(`https://closetapi.hunnysnft.com/wordpress/wp-json/hunnys-closet/v1/updateClone`, {
+          method: "POST",
+          body: formData,
+        });
+  
+        if (!response.ok) {
+          throw new Error('Error saving Dolly details');
+        }
+  
+        const data = await response.json();
+        console.log("Save successful", data);
+  
+        setSaved(true); // Update state to reflect the Dolly is now saved
+        setIsSaving(false); // Reset saving indicator
+
+        if (props.onDollySaved) {
+          props.onDollySaved(newTokenId);
+        }
+  
+      // Modal logic for success message
+      const newHeadline = getRandomHeadline();
+      modalSet({
+        active: true,
+        title: "Your Dolly Has Been Saved!",
+        body: (
+          <div className="text-center p-6">
+            <h2 className="text-3xl font-luckiest mb-4 text-[#333] uppercase">{newHeadline}</h2>
+            {dollyImageDataURL && (
+              <>
+                <img src={dollyImageDataURL} alt="Your Dolly" className="mx-auto modalDolly" />
+                <br></br>
+                <p className="mb-2">You can come back and give your Dolly a new look any time - for free!</p>
+                <button onClick={() => downloadDollyImage(dollyImageDataURL)} className="bg-hunnys-blue mb-4 text-hunnys-yellow w-full font-luckiest shadow-md rounded-full mt-6 px-3 py-1 xl:text-2xl text-md hover:shadow-lg hover:scale-[1.02] transition-all ">
+                  Download
+                </button>
+                <br></br>
+              </>
+            )}
+            <div className="flex flex-col justify-center">
+              <button className="bg-black font-luckiest text-white xl:text-2xl text-md font-bold py-2 px-4 rounded-full hover:shadow-lg hover:scale-[1.02] transition-all" onClick={() => shareOnTwitter(newHeadline)}>
+                POST YOUR DOLLY
+              </button>
+              <br></br>
+              <button className="bg-[#5D6FEB] font-luckiest text-white xl:text-2xl text-md font-bold py-2 px-4 rounded-full hover:shadow-lg hover:scale-[1.02] transition-all" onClick={() => shareOnDiscord(newHeadline)}>
+                SHARE ON DISCORD
+              </button>
+              <br></br>
+              <button onClick={() => modalSet({ active: false, title: "", body: <></> })} className="bg-hunnys-blue hover:bg-hunnys-blue-700 font-luckiest text-white xl:text-2xl text-md font-bold py-2 px-4 rounded-full hover:shadow-lg hover:scale-[1.02] transition-all">
+                DISMISS
+              </button>
+            </div>
+          </div>
+        )
+      });
+    } else {
+      throw new Error('User information missing or new token ID not available');
+    }
+  } catch (error) {
+    console.error("Save Error:", error);
+    setIsSaving(false); // Ensure to reset the saving state on error too
+  }
+}
+
+async function fetchMostRecentTokenId(address: string): Promise<string> {
+  const url = `https://closetapi.hunnysnft.com/wordpress/wp-json/hunnys-closet/v1/verifyCloset?wallet=${address}`;
+  try {
+    const response = await fetch(url);
+    const data = await response.json();
+    // Assuming the most recent Dolly is the last one in the array
+    const mostRecentDolly = data.dollys[data.dollys.length - 1];
+    const mostRecentTokenId = mostRecentDolly.token_id;
+    return mostRecentTokenId; // Return the token ID as a string
+  } catch (error) {
+    console.error("Error fetching the most recent token ID:", error);
+    throw error; // Rethrow the error to be caught in the save function
+  }
+}
   function getRandomHeadline() {
     const headlines = [
       "Omg, you look incredible!", "Hupe hupe hooray, you slay all day!", "Wow nice dolly, looks rare", 
@@ -174,76 +373,7 @@ function setRandomHeadline() {
   }, [token, setSaved]);
   
 
-  async function save() {
-    setIsSaving(true);
-    const newHeadline = getRandomHeadline();
-    setSelectedHeadline(newHeadline);
-    setSuccessMessage(""); // Reset success message
-    console.log("Token state before save:", JSON.stringify(token));
-    let formData = new FormData();
-    setIsSaving(true);
-    let signature: any = await getSignature(user!.address);
-
-    formData.append("wallet", user!.address);
-    formData.append("signature", signature);
-    formData.append("token_id", props.id.toString());
-    formData.append("data", JSON.stringify({ token: token, name: name }));
-
-    
-    try {
-      const response = await fetch(`https://closetapi.hunnysnft.com/wordpress/wp-json/hunnys-closet/v1/updateClone`, {
-        method: "post",
-        body: formData,
-      });
-      const data = await response.json();
-      if (!response.ok) {
-        throw new Error('Error saving Dolly');
-      }
-
-      updateUserToken(token, props.id);
-      setSaved(true); // Set saved to true after successful save
-      setIsSaving(false); // Reset isSaving to false
-
-      modalSet({
-        active: true,
-        title: "",
-        body: (
-          <div className="text-center p-6">
-            <h2 className="text-3xl font-luckiest mb-4 text-[#333]">{newHeadline}</h2>
-            {dollyImageDataURL && (
-              <>
-                <img src={dollyImageDataURL} alt="Your Dolly" className="mx-auto modalDolly" />
-                <br></br>
-                <p className="mb-2">You can come back and give your Dolly a new look any time - for free!</p>
-                <button onClick={() => downloadDollyImage(dollyImageDataURL)} className="bg-hunnys-blue mb-4 text-hunnys-yellow w-full font-luckiest shadow-md rounded-full mt-6 px-3 py-1 xl:text-2xl text-md hover:shadow-lg hover:scale-[1.02] transition-all ">
-                  Download
-                </button>
-                <br></br>
-              </>
-            )}
-            <div className="flex flex-col justify-center">
-              <button className="bg-black font-luckiest text-white xl:text-2xl text-md font-bold py-2 px-4 rounded-full hover:shadow-lg hover:scale-[1.02] transition-all" onClick={() => shareOnTwitter(newHeadline)}>
-                POST YOUR DOLLY
-              </button>
-              <br></br>
-              <button className="bg-[#5D6FEB] font-luckiest text-white xl:text-2xl text-md font-bold py-2 px-4 rounded-full hover:shadow-lg hover:scale-[1.02] transition-all" onClick={() => shareOnDiscord(newHeadline)}>
-                SHARE ON DISCORD
-              </button>
-              <br></br>
-              <button onClick={() => modalSet({ active: false, title: "", body: <></> })} className="bg-hunnys-blue hover:bg-hunnys-blue-700 font-luckiest text-white xl:text-2xl text-md font-bold py-2 px-4 rounded-full hover:shadow-lg hover:scale-[1.02] transition-all">
-                DISMISS
-              </button>
-            </div>
-          </div>
-        )
-      });
-    } catch (error) {
-      setIsSaving(false);
-      setErrorMessage('An error occurred while saving, please wait a minute & try again.');
-      console.error('Save Error:', error);
-    }
-  }
-
+  
   function shareOnTwitter(headline: string) {
     const tweetText = encodeURIComponent(`Just gave my Dolly from @HunnysNFT a makeover, and Bunny Queen Mika said '${headline}'! Unleash your creativity with me at https://closet.hunnys.io`);
     const tweetUrl = `https://twitter.com/intent/tweet?text=${tweetText}`;
@@ -267,9 +397,13 @@ function setRandomHeadline() {
   }
 
   async function load() {
+    if (props.id === null) {
+      console.error("Dolly ID is null");
+      return;
+    }
     let newToken: any = await getDollMetadata(props.id);
     let attr = newToken.length > 0 ? newToken[0].attributes : [];
-    newToken = formatToken(attr);
+    newToken = formatToken(attr) as unknown as Attribute[];
 
     tokenSet(newToken);
 
@@ -433,8 +567,8 @@ function setRandomHeadline() {
         <div className="relative aspect-square">
           <Render token={token} download dollyId={props.id} onImageLoad={(dataURL: SetStateAction<string>) => setDollyImageDataURL(dataURL)} />
 
-          <div className="bg-white rounded-lg p-4 shadow-lg mt-[65px]">
-            <h1 className="font-bold text-xl text-[#666]">Dolly #{props.id}</h1>
+           <div className="bg-white rounded-lg p-4 shadow-lg mt-[65px]">
+           <h1 className="font-bold text-xl text-[#666]">Dolly #{props.id}</h1>
 
           </div>
         </div>
@@ -453,7 +587,7 @@ function setRandomHeadline() {
                 tokenSet={tokenSet} 
                 view={view} 
                 viewSet={viewSet} 
-                selectedDollyId={props.id}
+                selectedDollyId={props.id ?? -1}
                 //@ts-ignore
                 currentTraits={token} 
                 onAttributesUpdated={(updatedAttributes) => tokenSet(updatedAttributes)}

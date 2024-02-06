@@ -81,6 +81,12 @@ a {
   height: 30px !important;
 }
 
+.introModalMika {
+  width: 15%;
+  display: flex;
+  margin: auto;
+}
+
 .transition-custom {
   transition: all 0.3s cubic-bezier(0, 0.25, 0.34, 0.99);
 }
