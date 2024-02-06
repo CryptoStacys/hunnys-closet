@@ -87,6 +87,17 @@ a {
   margin: auto;
 }
 
+.quick-links a {
+  margin-right: 15px;
+  text-decoration: none;
+  color: black; /* Change as needed */
+}
+
+.quick-links a.active {
+  color: purple; /* Change as needed */
+  text-decoration: underline;
+}
+
 .transition-custom {
   transition: all 0.3s cubic-bezier(0, 0.25, 0.34, 0.99);
 }
@@ -161,6 +172,11 @@ a {
 
 .text-5xl {
   font-size: 5rem;
+}
+
+.galleryCreate {
+  display:grid;
+  max-width: 1290px;
 }
 
 .synthwave {width: 100%;
