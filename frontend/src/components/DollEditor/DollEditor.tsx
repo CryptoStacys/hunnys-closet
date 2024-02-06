@@ -21,6 +21,7 @@ import { attributes, localStorageToken } from "../../data/config";
 import { Attribute, Trait } from "../../data/global";
 import { useMintDolly } from "../../utils/mintDolly";
 import { ethers } from "ethers";
+import { useNetwork, useSwitchNetwork } from 'wagmi';
 
 // if token is missing attributes, just add empty trait there
 function formatToken(input: Trait[]) {
@@ -80,6 +81,10 @@ export default function DollEditor(props: { id: number | null; selectDoll: Funct
   const isNewDolly = props.isNew;
   const { mintDolly, isLoading, isSuccess, error } = useMintDolly();
   const [isMinted, setIsMinted] = useState(false);
+  const ETHEREUM_MAINNET_CHAIN_ID = 1; // Ethereum Mainnet
+  // Inside your component
+  const { chain } = useNetwork();
+  const { switchNetwork } = useSwitchNetwork();
   const [showIntroModal, setShowIntroModal] = useState<boolean>(() => {
     // Retrieve the user's preference from localStorage
     const hideIntro = localStorage.getItem('hideIntroModal');
@@ -87,7 +92,7 @@ export default function DollEditor(props: { id: number | null; selectDoll: Funct
     return hideIntro !== 'true';
   });
   
-  useEffect(() => {
+  {/* useEffect(() => {
     if (showIntroModal) {
       modalSet({
         active: true,
@@ -124,7 +129,7 @@ export default function DollEditor(props: { id: number | null; selectDoll: Funct
         )
       });
     }
-  }, [showIntroModal]);
+  }, [showIntroModal]); */}
   
   
 
@@ -175,10 +180,24 @@ async function mintAndFetchTokenId(userAddress: string): Promise<string> {
   });
 }
 
-  
+useEffect(() => {
+  const checkAndSwitchNetwork = async () => {
+    if (chain?.id !== ETHEREUM_MAINNET_CHAIN_ID && typeof switchNetwork === 'function') {
+      try {
+        await switchNetwork(ETHEREUM_MAINNET_CHAIN_ID);
+      } catch (error) {
+        console.error('Error switching networks:', error);
+      }
+    }
+  };
+
+  checkAndSwitchNetwork();
+}, [chain, switchNetwork]);
   
   async function save() {
     setIsSaving(true); // Indicate the saving process has started
+
+    
   
     try {
       let newTokenId: string | null = props.id?.toString() ?? null; // Default to existing ID if available
