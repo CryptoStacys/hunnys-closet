@@ -76,10 +76,11 @@ export default function Mint() {
           transition: { delay: 0, duration: 0.2 },
         }}
         whileTap={{ scale: 0.97, transition: { delay: 0, duration: 0.3 } }}
-        className="bg-[#eee] rounded-full pl-3 pr-5 pt-[2px] flex-center mb-3 shadow-md font-bold text-xl hover:shadow-lg transition-all"
+        className="bg-[#eee] hidden rounded-full pl-3 pr-5 pt-[2px] flex-center mb-3 shadow-md font-bold text-xl hover:shadow-lg transition-all"
         style={{
           background: hunnysColors.yellow,
           color: hunnysColors.orange,
+          display: "none"
         }}
       >
         <>

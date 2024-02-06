@@ -32,7 +32,7 @@ export default function Modal (props: any) {
             className="relative z-[20] border bg-white rounded-lg mx-6 min-w-[300px] overflow-scroll max-h-[900px] max-w-[1450px]"
           >
             <div className="w-full border-b grid grid-cols-[1fr_36px]">
-              <div className="pl-4 py-2">{modal.title}</div>
+              <div className="pl-4 py-2 font-luckiest uppercase">{modal.title}</div>
               <button
                 className="flex-center transition h-full fill-[#333] hover:fill-[#fff] top-0 right-0 border-0 border-[#333]"
                 onClick={close}
