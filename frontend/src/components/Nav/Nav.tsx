@@ -3,7 +3,7 @@ import { ConnectButton } from "@rainbow-me/rainbowkit";
 import { useAtom } from "jotai";
 import { Tooltip } from "react-tooltip";
 import React, { useState, useEffect } from "react";
-import { connectedAtom } from "../../data/store";
+import { connectedAtom, dollEditorVisibleAtom } from "../../data/store";
 import { mode } from "../../data/config";
 
 type NavProps = {
@@ -13,7 +13,7 @@ type NavProps = {
 export default function Nav({ rewardStatus }: NavProps) {
   const [connected] = useAtom(connectedAtom);
   const [shouldWiggle, setShouldWiggle] = useState(true);
-
+  const [dollEditorVisible] = useAtom(dollEditorVisibleAtom);
     // This function returns the emoji based on reward status
     const getEmojiForStatus = (status: string): string => {
       type RewardStatus = "Bunny" | "Bunny Knight" | "Bunny Duke" | "Royal Bunny" | "None";
@@ -65,29 +65,27 @@ export default function Nav({ rewardStatus }: NavProps) {
           </h1>
         </Link>
         <div className="flex justify-between items-center rewardStatus">
-          {connected && (
+        {connected && (
             <>
-              {/* {["dollys", "tokens", "inventory"].map((item, index) => ( */}
-              <div data-tooltip-id="rewardsTooltip" data-tooltip-place="bottom">
-              <span className={`emoji-display ${shouldWiggle ? "wiggle" : ""}`}>
-                {getEmojiForStatus(rewardStatus)}
-              </span>                
-                </div>
-              {["dollys", "inventory"].map((item, index) => (
+             {!dollEditorVisible && (
                 <Link
-                  to={"/" + item}
-                  key={index}
+                  to="/dollys"
                   className="link-btn navLinks text-[#fff] font-title uppercase hover:bg-[#ffd54b] transition inline-block text-2xl font-semibold font-content mx-[5px] sm:px-3 px-0 py-[6px] rounded-xl"
                 >
-                  {item}
+                  Dollys
                 </Link>
-              ))}
+              )}
+              <Link
+                to="/inventory"
+                className="link-btn navLinks text-[#fff] font-title uppercase hover:bg-[#ffd54b] transition inline-block text-2xl font-semibold font-content mx-[5px] sm:px-3 px-0 py-[6px] rounded-xl"
+              >
+                Inventory
+              </Link>
               <a
                   href="https://buy.hunnys.io/polygon/collection/0x11bc733e719198e2b3746f6841d2818ca87af6da"
                   target="_blank"
                   className="link-btn navLinks text-hunnys-yellow font-title uppercase hover:bg-hunnys-light-purple transition inline-block text-2xl font-semibold font-content mx-[5px] sm:px-3 px-0 py-[6px] rounded-xl"
-                >Shop
-                </a>
+              >Shop</a>
             </>
           )}
 
