@@ -3,171 +3,122 @@
     {
       "name": "Background",
       "traits": [
-        { "name": "Empty", "colors": 0, "rarity": "common", "tags": [] },
-        {
-          "name": "Hunnys Yellow Background",
-          "colors": 0,
-          "rarity": "common",
-          "tags": []
-        },
-        {
-          "name": "Hunnys Purple Background",
-          "colors": 0,
-          "rarity": "common",
-          "tags": []
-        },
-        {
-          "name": "Hunnys Dolly Box Inside",
-          "colors": 0,
-          "rarity": "common",
-          "tags": []
-        }
+        {"name":"Empty","colors":0,"rarity":"common","tags":[]},
+        {"name":"Hunnys Yellow Background","colors":0,"rarity":"common","tags":[]},
+        {"name":"Hunnys Purple Background","colors":0,"rarity":"common","tags":[]},
+        {"name":"Hunnys Dolly Box Inside","colors":0,"rarity":"common","tags":[]},
+        {"name": "SuperBowl LVIII","colors": 4,"rarity": "Common","tags": []}
       ]
     },
     {
       "name": "Skin",
       "traits": [
-        { "name": "Empty", "colors": 0, "rarity": "common", "tags": [] },
-        { "name": "Basic Mocha", "colors": 0, "rarity": "Common", "tags": [] },
-        {
-          "name": "Basic Strawberry Whipped Cream",
-          "colors": 0,
-          "rarity": "Common",
-          "tags": []
-        },
-        {
-          "name": "Basic Macaroons",
-          "colors": 0,
-          "rarity": "Common",
-          "tags": []
-        },
-        {
-          "name": "That Yellow Cartoon Skin",
-          "colors": 0,
-          "rarity": "Common",
-          "tags": []
-        }
+        {"name":"Empty","colors":0,"rarity":"common","tags":[]},
+        {"name":"Basic Mocha","colors":0,"rarity":"Common","tags":[]},
+        {"name":"Basic Strawberry Whipped Cream","colors":0,"rarity":"Common","tags":[]},
+        {"name":"Basic Macaroons","colors":0,"rarity":"Common","tags":[]},
+        {"name":"That Yellow Cartoon Skin","colors":0,"rarity":"Common","tags":[]}
       ]
     },
     {
       "name": "Tattoo",
       "traits": [
-        { "name": "Empty", "colors": 0, "rarity": "common", "tags": [] }
+        {"name":"Empty","colors":0,"rarity":"common","tags":[]}
       ]
     },
     {
       "name": "Eyebrows",
       "traits": [
-        { "name": "Empty", "colors": 0, "rarity": "common", "tags": [] },
-        { "name": "Common", "colors": 0, "rarity": "common", "tags": [] }
+        {"name":"Empty","colors":0,"rarity":"common","tags":[]},
+        {"name":"Common","colors":0,"rarity":"common","tags":[]}
       ]
     },
     {
       "name": "Hat",
       "traits": [
-        { "name": "Empty", "colors": 0, "rarity": "common", "tags": [] },
-        { "name": "Cheese Pizza Crown", "colors": 2, "rarity": "common", "tags": [] },
-        { "name": "Flicks Steampunk Tophat", "colors": 4, "rarity": "common", "tags": [] },
-        { "name": "Lazy Straw Hat", "colors": 2, "rarity": "common", "tags": [] }
+        {"name":"Empty","colors":0,"rarity":"common","tags":[]},
+        {"name":"Cheese Pizza Crown","colors":2,"rarity":"common","tags":[]},
+        {"name":"Flicks Steampunk Tophat","colors":4,"rarity":"common","tags":[]},
+        {"name":"Lazy Straw Hat","colors":2,"rarity":"common","tags":[]},
+        {"name": "Football Helmet","colors": 3,"rarity": "Common","tags": []}
       ]
     },
     {
       "name": "Eyes",
       "traits": [
-        { "name": "Empty", "colors": 0, "rarity": "common", "tags": [] },
-        { "name": "Almond", "colors": 1, "rarity": "common", "tags": [] },
-        { "name": "Hooded Eyes", "colors": 1, "rarity": "common", "tags": [] }
+        {"name":"Empty","colors":0,"rarity":"common","tags":[]},
+        {"name":"Almond","colors":1,"rarity":"common","tags":[]},
+        {"name":"Hooded Eyes","colors":1,"rarity":"common","tags":[]}
       ]
     },
     {
       "name": "Face Sticker",
       "traits": [
-        { "name": "Empty", "colors": 0, "rarity": "common", "tags": [] }
+        {"name":"Empty","colors":0,"rarity":"common","tags":[]}
       ]
     },
     {
       "name": "Piercing",
       "traits": [
-        { "name": "Empty", "colors": 0, "rarity": "common", "tags": [] }
+        {"name":"Empty","colors":0,"rarity":"common","tags":[]}
       ]
     },
     {
       "name": "Mouth",
       "traits": [
-        { "name": "Empty", "colors": 0, "rarity": "common", "tags": [] },
-        { "name": "Pout", "colors": 1, "rarity": "common", "tags": [] },
-        { "name": "Ramen Slurp", "colors": 2, "rarity": "common", "tags": [] }
+        {"name":"Empty","colors":0,"rarity":"common","tags":[]},
+        {"name":"Pout","colors":1,"rarity":"common","tags":[]},
+        {"name":"Ramen Slurp","colors":2,"rarity":"common","tags":[]}
       ]
     },
     {
       "name": "Hair Style",
       "traits": [
-        {
-          "name": "Empty",
-          "colors": 0,
-          "rarity": "common",
-          "parts": 1,
-          "tags": []
-        },
-        {
-          "name": "Short Dreads",
-          "colors": 1,
-          "rarity": "Common",
-          "parts": 1,
-          "tags": []
-        },
-        {
-          "name": "Flat Pony",
-          "colors": 2,
-          "rarity": "Common",
-          "parts": 2,
-          "tags": []
-        },
-        {
-          "name": "Bob with Bangs",
-          "colors": 1,
-          "rarity": "Common",
-          "parts": 2,
-          "tags": []
-        }
+        {"name":"Empty","colors":0,"rarity":"common","parts":1,"tags":[]},
+        {"name":"Short Dreads","colors":1,"rarity":"Common","parts":1,"tags":[]},
+        {"name":"Flat Pony","colors":2,"rarity":"Common","parts":2,"tags":[]},
+        {"name":"Bob with Bangs","colors":1,"rarity":"Common","parts":2,"tags":[]}
       ]
     },
     {
       "name": "Accessory",
       "traits": [
-        { "name": "Empty", "colors": 0, "rarity": "common", "tags": [] },
-        { "name": "Coco the Smugblush", "colors": 3, "rarity": "common", "tags": ["companion"] },
-        { "name": "Cupcake Backpack", "colors": 5, "rarity": "common", "tags": ["backpack", "ownStripes"] },
-        { "name": "Power of Jadestone", "colors": 2, "rarity": "common", "tags": [] },
-        { "name": "Sparkly Wings", "colors": 4, "rarity": "common", "tags": ["onBack"] }
+        {"name":"Empty","colors":0,"rarity":"common","tags":[]},
+        {"name":"Coco the Smugblush","colors":3,"rarity":"common","tags":["companion"]},
+        {"name":"Cupcake Backpack","colors":5,"rarity":"common","tags":["backpack","ownStripes"]},
+        {"name":"Power of Jadestone","colors":2,"rarity":"common","tags":[]},
+        {"name":"Sparkly Wings","colors":4,"rarity":"common","tags":["onBack"]}
       ]
     },
     {
       "name": "Outfit",
       "traits": [
-        { "name": "Empty", "colors": 0, "rarity": "common", "tags": [] },
-        { "name": "Basic Tee", "colors": 1, "rarity": "Common", "tags": [] },
-        { "name": "Basic Tube", "colors": 1, "rarity": "Common", "tags": [] },
-        { "name": "Basic Tank", "colors": 1, "rarity": "Common", "tags": [] },
-        { "name": "Cupcake Crop Hoodie", "colors": 5, "rarity": "Common", "tags": [] },
-        { "name": "Dubious Robotics Jacket", "colors": 4, "rarity": "Common", "tags": [] },
-        { "name": "Flicks Steampunk Corset", "colors": 3, "rarity": "Common", "tags": [] },
-        { "name": "NginZ Racer Crop", "colors": 1, "rarity": "Common", "tags": [] },
-        { "name": "Lazy Crop", "colors": 2, "rarity": "Common", "tags": [] }
+        {"name":"Empty","colors":0,"rarity":"common","tags":[]},
+        {"name":"Basic Tee","colors":1,"rarity":"Common","tags":[]},
+        {"name":"Basic Tube","colors":1,"rarity":"Common","tags":[]},
+        {"name":"Basic Tank","colors":1,"rarity":"Common","tags":[]},
+        {"name":"Cupcake Crop Hoodie","colors":5,"rarity":"Common","tags":[]},
+        {"name":"Dubious Robotics Jacket","colors":4,"rarity":"Common","tags":[]},
+        {"name":"Flicks Steampunk Corset","colors":3,"rarity":"Common","tags":[]},
+        {"name":"NginZ Racer Crop","colors":1,"rarity":"Common","tags":[]},
+        {"name":"Lazy Crop","colors":2,"rarity":"Common","tags":[]},
+        {"name": "49ers Jersey","colors": 3,"rarity": "Common","tags": []},
+        {"name": "Chiefs Jersey","colors": 4,"rarity": "Common","tags": []},
+        {"name": "Tay-Tay Jersey","colors": 4,"rarity": "Common","tags": []}
       ]
     },
     {
       "name": "Bodysuit",
       "traits": [
-        { "name": "Empty", "colors": 0, "rarity": "common", "tags": [] }
+        {"name":"Empty","colors":0,"rarity":"common","tags":[]}
       ]
     },
     {
       "name": "Hand",
       "traits": [
-        { "name": "Empty", "colors": 0, "rarity": "common", "tags": [] },
-        { "name": "Ramen Chopsticks", "colors": 3, "rarity": "common", "tags": ["skin"] },
-        { "name": "Silas", "colors": 5, "rarity": "common", "tags": ["skin"] },
+        {"name":"Empty","colors":0,"rarity":"common","tags":[]},
+        {"name":"Ramen Chopsticks","colors":3,"rarity":"common","tags":["skin"]},
+        {"name":"Silas","colors":5,"rarity":"common","tags":["skin"]},
         {"name":"Bong","colors":3,"rarity":"Common","tags":["skin"]},
         {"name":"Pops When Adventure Strikes Staff","colors":5,"rarity":"Common","tags":["skin"]}
       ]
@@ -175,109 +126,39 @@
     {
       "name": "Undergarment",
       "traits": [
-        { "name": "Empty", "colors": 0, "rarity": "common", "tags": [] },
-        { "name": "Frilly Bra", "colors": 1, "rarity": "common", "tags": [] },
-        { "name": "Cow Print Strapless Bra", "colors": 3, "rarity": "common", "tags": [] },
-        { "name": "Dont Do It Track Bra", "colors": 3, "rarity": "common", "tags": [] },
-        { "name": "Ribbon Bow Bra", "colors": 3, "rarity": "common", "tags": [] }
+        {"name":"Empty","colors":0,"rarity":"common","tags":[]},
+        {"name":"Frilly Bra","colors":1,"rarity":"common","tags":[]},
+        {"name":"Cow Print Strapless Bra","colors":3,"rarity":"common","tags":[]},
+        {"name":"Dont Do It Track Bra","colors":3,"rarity":"common","tags":[]},
+        {"name":"Ribbon Bow Bra","colors":3,"rarity":"common","tags":[]}
       ]
     },
     {
       "name": "Frame",
       "traits": [
-        { "name": "Empty", "colors": 0, "rarity": "common", "tags": [] },
-        { "name": "GM Banner", "colors": 2, "rarity": "common", "tags": [] },
-        { "name": "GM Speech Bubble", "colors": 2, "rarity": "common", "tags": [] },
-        { "name": "GM Text", "colors": 1, "rarity": "common", "tags": [] },
-        {
-          "name": "Hunnys Dolly Box Outside",
-          "colors": 0,
-          "rarity": "common",
-          "tags": []
-        }
+        {"name":"Empty","colors":0,"rarity":"common","tags":[]},
+        {"name":"GM Banner","colors":2,"rarity":"common","tags":[]},
+        {"name":"GM Speech Bubble","colors":2,"rarity":"common","tags":[]},
+        {"name":"GM Text","colors":1,"rarity":"common","tags":[]},
+        {"name":"Hunnys Dolly Box Outside","colors":0,"rarity":"common","tags":[]}
       ]
     },
     {
       "name": "Dye",
       "traits": [
-        {
-          "name": "HunnysPurple1",
-          "colors": 0,
-          "rarity": "Common",
-          "tags": []
-        },
-        {
-          "name": "HunnysPurple2",
-          "colors": 0,
-          "rarity": "Common",
-          "tags": []
-        },
-        {
-          "name": "HunnysPurple3",
-          "colors": 0,
-          "rarity": "Common",
-          "tags": []
-        },
-        {
-          "name": "HunnysPurple4",
-          "colors": 0,
-          "rarity": "Common",
-          "tags": []
-        },
-        {
-          "name": "HunnysPurple5",
-          "colors": 0,
-          "rarity": "Common",
-          "tags": []
-        },
-        {
-          "name": "HunnysPurple6",
-          "colors": 0,
-          "rarity": "Common",
-          "tags": []
-        },
-        {
-          "name": "HunnysYellow1",
-          "colors": 0,
-          "rarity": "Common",
-          "tags": []
-        },
-        {
-          "name": "HunnysYellow2",
-          "colors": 0,
-          "rarity": "Common",
-          "tags": []
-        },
-        {
-          "name": "HunnysYellow3",
-          "colors": 0,
-          "rarity": "Common",
-          "tags": []
-        },
-        {
-          "name": "HunnysYellow4",
-          "colors": 0,
-          "rarity": "Common",
-          "tags": []
-        },
-        {
-          "name": "HunnysYellow5",
-          "colors": 0,
-          "rarity": "Common",
-          "tags": []
-        },
-        {
-          "name": "HunnysYellow6",
-          "colors": 0,
-          "rarity": "Common",
-          "tags": []
-        },
-        {
-          "name": "Miss Jade",
-          "colors": 0,
-          "rarity": "Common",
-          "tags": []
-        }
+        {"name":"HunnysPurple1","colors":0,"rarity":"Common","tags":[]},
+        {"name":"HunnysPurple2","colors":0,"rarity":"Common","tags":[]},
+        {"name":"HunnysPurple3","colors":0,"rarity":"Common","tags":[]},
+        {"name":"HunnysPurple4","colors":0,"rarity":"Common","tags":[]},
+        {"name":"HunnysPurple5","colors":0,"rarity":"Common","tags":[]},
+        {"name":"HunnysPurple6","colors":0,"rarity":"Common","tags":[]},
+        {"name":"HunnysYellow1","colors":0,"rarity":"Common","tags":[]},
+        {"name":"HunnysYellow2","colors":0,"rarity":"Common","tags":[]},
+        {"name":"HunnysYellow3","colors":0,"rarity":"Common","tags":[]},
+        {"name":"HunnysYellow4","colors":0,"rarity":"Common","tags":[]},
+        {"name":"HunnysYellow5","colors":0,"rarity":"Common","tags":[]},
+        {"name":"HunnysYellow6","colors":0,"rarity":"Common","tags":[]},
+        {"name":"Miss Jade","colors":0,"rarity":"Common","tags":[]}
       ]
     }
   ]

@@ -40133,3 +40133,172 @@ Processing file: Bunny Club Gym Hat_L.png in Hat
 Checking existence of PNG: compositeImages\Hat\Bunny Club Gym Hat.png
 Checking existence of JPG: 300x300_jpg\Hat\Bunny Club Gym Hat.jpg
 Skipping existing files: PNG - compositeImages\Hat\Bunny Club Gym Hat.png, JPG - 300x300_jpg\Hat\Bunny Club Gym Hat.jpg
+Script started
+Subfolders found: Accessory, Background, Bodysuit, Colors, Extras, Eyebrows, Eyes, Face Sticker, Finished, Frame, Hair Style, Hand, Hat, Mouth, Outfit, Piercing, Tattoo, Undergarment
+Files found: 24
+Solid colors RGB values saved to colors.json
+Resizing image: scriptImages\Background\SuperBowl LVIII_C1.png to 800x800
+Resizing image: scriptImages\Background\SuperBowl LVIII_C1.png to 600x600
+Solid colors RGB values saved to colors.json
+Processing image group: SuperBowl LVIII
+Processing file: SuperBowl LVIII_C1.png in subfolder: Background
+Resized image saved: 600x600_png\Background\SuperBowl LVIII_C1.png
+Resizing image: scriptImages\Background\SuperBowl LVIII_C2.png to 600x600
+Resized image saved: 800x800_png\Background\SuperBowl LVIII_C1.png
+Resizing image: scriptImages\Background\SuperBowl LVIII_C2.png to 800x800
+Processing file: SuperBowl LVIII_C2.png in subfolder: Background
+Resized image saved: 600x600_png\Background\SuperBowl LVIII_C2.png
+Resizing image: scriptImages\Background\SuperBowl LVIII_C3.png to 600x600
+Resized image saved: 800x800_png\Background\SuperBowl LVIII_C2.png
+Resizing image: scriptImages\Background\SuperBowl LVIII_C3.png to 800x800
+Processing file: SuperBowl LVIII_C3.png in subfolder: Background
+Resized image saved: 600x600_png\Background\SuperBowl LVIII_C3.png
+Resizing image: scriptImages\Background\SuperBowl LVIII_C4.png to 600x600
+Resized image saved: 800x800_png\Background\SuperBowl LVIII_C3.png
+Resizing image: scriptImages\Background\SuperBowl LVIII_C4.png to 800x800
+Processing file: SuperBowl LVIII_C4.png in subfolder: Background
+Resized image saved: 800x800_png\Background\SuperBowl LVIII_C4.png
+Resizing image: scriptImages\Background\SuperBowl LVIII_C5.png to 800x800
+Resized image saved: 600x600_png\Background\SuperBowl LVIII_C4.png
+Resizing image: scriptImages\Background\SuperBowl LVIII_C5.png to 600x600
+Processing file: SuperBowl LVIII_C5.png in subfolder: Background
+Resized image saved: 800x800_png\Background\SuperBowl LVIII_C5.png
+Resizing image: scriptImages\Background\SuperBowl LVIII_L.png to 800x800
+Resized image saved: 600x600_png\Background\SuperBowl LVIII_C5.png
+Resizing image: scriptImages\Background\SuperBowl LVIII_L.png to 600x600
+Processing file: SuperBowl LVIII_L.png in subfolder: Background
+Checking existence of PNG: compositeImages\Background\SuperBowl LVIII.png
+Checking existence of JPG: 300x300_jpg\Background\SuperBowl LVIII.jpg
+Files not found, processing: PNG - compositeImages\Background\SuperBowl LVIII.png, JPG - 300x300_jpg\Background\SuperBowl LVIII.jpg
+Saved: compositeImages\Background\SuperBowl LVIII.png
+Resized image saved: 800x800_png\Background\SuperBowl LVIII_L.png
+Resizing image: scriptImages\Hat\Football Helmet_C1.png to 800x800
+Resized image saved: 600x600_png\Background\SuperBowl LVIII_L.png
+Resizing image: scriptImages\Hat\Football Helmet_C1.png to 600x600
+Saved: 300x300_jpg\Background\SuperBowl LVIII.jpg
+Processing image group: Football Helmet
+Processing file: Football Helmet_C1.png in subfolder: Hat
+Processing file: Football Helmet_C1.png in Hat
+Resized image saved: 800x800_png\Hat\Football Helmet_C1.png
+Resizing image: scriptImages\Hat\Football Helmet_C2.png to 800x800
+Resized image saved: 600x600_png\Hat\Football Helmet_C1.png
+Resizing image: scriptImages\Hat\Football Helmet_C2.png to 600x600
+Processing file: Football Helmet_C2.png in Hat
+Processing file: Football Helmet_C3.png in Hat
+Resized image saved: 800x800_png\Hat\Football Helmet_C2.png
+Resizing image: scriptImages\Hat\Football Helmet_C3.png to 800x800
+Resized image saved: 600x600_png\Hat\Football Helmet_C2.png
+Resizing image: scriptImages\Hat\Football Helmet_C3.png to 600x600
+Processing file: Football Helmet_L.png in Hat
+Resized image saved: 800x800_png\Hat\Football Helmet_C3.png
+Resizing image: scriptImages\Hat\Football Helmet_L.png to 800x800
+Resized image saved: 600x600_png\Hat\Football Helmet_C3.png
+Resizing image: scriptImages\Hat\Football Helmet_L.png to 600x600
+Resized image saved: 800x800_png\Hat\Football Helmet_L.png
+Resizing image: scriptImages\Outfit\49ers Jersey_C1.png to 800x800
+Resized image saved: 600x600_png\Hat\Football Helmet_L.png
+Resizing image: scriptImages\Outfit\49ers Jersey_C1.png to 600x600
+Processing file: Football Helmet_C2.png in subfolder: Hat
+Processing file: Football Helmet_C1.png in Hat
+Resized image saved: 800x800_png\Outfit\49ers Jersey_C1.png
+Resizing image: scriptImages\Outfit\49ers Jersey_C2.png to 800x800
+Resized image saved: 600x600_png\Outfit\49ers Jersey_C1.png
+Resizing image: scriptImages\Outfit\49ers Jersey_C2.png to 600x600
+Processing file: Football Helmet_C2.png in Hat
+Processing file: Football Helmet_C3.png in Hat
+Resized image saved: 800x800_png\Outfit\49ers Jersey_C2.png
+Resizing image: scriptImages\Outfit\49ers Jersey_C3.png to 800x800
+Resized image saved: 600x600_png\Outfit\49ers Jersey_C2.png
+Resizing image: scriptImages\Outfit\49ers Jersey_C3.png to 600x600
+Processing file: Football Helmet_L.png in Hat
+Resized image saved: 600x600_png\Outfit\49ers Jersey_C3.png
+Resizing image: scriptImages\Outfit\49ers Jersey_L.png to 600x600
+Resized image saved: 800x800_png\Outfit\49ers Jersey_C3.png
+Resizing image: scriptImages\Outfit\49ers Jersey_L.png to 800x800
+Resized image saved: 800x800_png\Outfit\49ers Jersey_L.png
+Resizing image: scriptImages\Outfit\Chiefs Jersey_C1.png to 800x800
+Resized image saved: 600x600_png\Outfit\49ers Jersey_L.png
+Resizing image: scriptImages\Outfit\Chiefs Jersey_C1.png to 600x600
+Processing file: Football Helmet_C3.png in subfolder: Hat
+Processing file: Football Helmet_C1.png in Hat
+Resized image saved: 800x800_png\Outfit\Chiefs Jersey_C1.png
+Resizing image: scriptImages\Outfit\Chiefs Jersey_C2.png to 800x800
+Processing file: Football Helmet_C2.png in Hat
+Resized image saved: 600x600_png\Outfit\Chiefs Jersey_C1.png
+Resizing image: scriptImages\Outfit\Chiefs Jersey_C2.png to 600x600
+Processing file: Football Helmet_C3.png in Hat
+Resized image saved: 800x800_png\Outfit\Chiefs Jersey_C2.png
+Resizing image: scriptImages\Outfit\Chiefs Jersey_C3.png to 800x800
+Resized image saved: 600x600_png\Outfit\Chiefs Jersey_C2.png
+Resizing image: scriptImages\Outfit\Chiefs Jersey_C3.png to 600x600
+Processing file: Football Helmet_L.png in Hat
+Resized image saved: 800x800_png\Outfit\Chiefs Jersey_C3.png
+Resizing image: scriptImages\Outfit\Chiefs Jersey_C4.png to 800x800
+Resized image saved: 600x600_png\Outfit\Chiefs Jersey_C3.png
+Resizing image: scriptImages\Outfit\Chiefs Jersey_C4.png to 600x600
+Processing file: Football Helmet_L.png in subfolder: Hat
+Processing file: Football Helmet_C1.png in Hat
+Resized image saved: 600x600_png\Outfit\Chiefs Jersey_C4.png
+Resizing image: scriptImages\Outfit\Chiefs Jersey_L.png to 600x600
+Resized image saved: 800x800_png\Outfit\Chiefs Jersey_C4.png
+Resizing image: scriptImages\Outfit\Chiefs Jersey_L.png to 800x800
+Processing file: Football Helmet_C2.png in Hat
+Resized image saved: 800x800_png\Outfit\Chiefs Jersey_L.png
+Resizing image: scriptImages\Outfit\Tay Tay Jersey_C1.png to 800x800
+Resized image saved: 600x600_png\Outfit\Chiefs Jersey_L.png
+Resizing image: scriptImages\Outfit\Tay Tay Jersey_C1.png to 600x600
+Processing file: Football Helmet_C3.png in Hat
+Processing file: Football Helmet_L.png in Hat
+Resized image saved: 600x600_png\Outfit\Tay Tay Jersey_C1.png
+Resizing image: scriptImages\Outfit\Tay Tay Jersey_C2.png to 600x600
+Resized image saved: 800x800_png\Outfit\Tay Tay Jersey_C1.png
+Resizing image: scriptImages\Outfit\Tay Tay Jersey_C2.png to 800x800
+Checking existence of PNG: compositeImages\Hat\Football Helmet.png
+Checking existence of JPG: 300x300_jpg\Hat\Football Helmet.jpg
+Skipping existing files: PNG - compositeImages\Hat\Football Helmet.png, JPG - 300x300_jpg\Hat\Football Helmet.jpg
+Processing image group: 49ers Jersey
+Resized image saved: 600x600_png\Outfit\Tay Tay Jersey_C2.png
+Resizing image: scriptImages\Outfit\Tay Tay Jersey_C3.png to 600x600
+Resized image saved: 800x800_png\Outfit\Tay Tay Jersey_C2.png
+Resizing image: scriptImages\Outfit\Tay Tay Jersey_C3.png to 800x800
+Processing file: 49ers Jersey_C1.png in subfolder: Outfit
+Resized image saved: 600x600_png\Outfit\Tay Tay Jersey_C3.png
+Resizing image: scriptImages\Outfit\Tay Tay Jersey_C4.png to 600x600
+Processing file: 49ers Jersey_C2.png in subfolder: Outfit
+Resized image saved: 800x800_png\Outfit\Tay Tay Jersey_C3.png
+Resizing image: scriptImages\Outfit\Tay Tay Jersey_C4.png to 800x800
+Processing file: 49ers Jersey_C3.png in subfolder: Outfit
+Resized image saved: 600x600_png\Outfit\Tay Tay Jersey_C4.png
+Resizing image: scriptImages\Outfit\Tay Tay Jersey_L.png to 600x600
+Resized image saved: 800x800_png\Outfit\Tay Tay Jersey_C4.png
+Resizing image: scriptImages\Outfit\Tay Tay Jersey_L.png to 800x800
+Processing file: 49ers Jersey_L.png in subfolder: Outfit
+Checking existence of PNG: compositeImages\Outfit\49ers Jersey.png
+Checking existence of JPG: 300x300_jpg\Outfit\49ers Jersey.jpg
+Files not found, processing: PNG - compositeImages\Outfit\49ers Jersey.png, JPG - 300x300_jpg\Outfit\49ers Jersey.jpg
+Saved: compositeImages\Outfit\49ers Jersey.png
+Resized image saved: 600x600_png\Outfit\Tay Tay Jersey_L.png
+Resized image saved: 800x800_png\Outfit\Tay Tay Jersey_L.png
+Saved: 300x300_jpg\Outfit\49ers Jersey.jpg
+Processing image group: Chiefs Jersey
+Processing file: Chiefs Jersey_C1.png in subfolder: Outfit
+Processing file: Chiefs Jersey_C2.png in subfolder: Outfit
+Processing file: Chiefs Jersey_C3.png in subfolder: Outfit
+Processing file: Chiefs Jersey_C4.png in subfolder: Outfit
+Processing file: Chiefs Jersey_L.png in subfolder: Outfit
+Checking existence of PNG: compositeImages\Outfit\Chiefs Jersey.png
+Checking existence of JPG: 300x300_jpg\Outfit\Chiefs Jersey.jpg
+Files not found, processing: PNG - compositeImages\Outfit\Chiefs Jersey.png, JPG - 300x300_jpg\Outfit\Chiefs Jersey.jpg
+Saved: compositeImages\Outfit\Chiefs Jersey.png
+Saved: 300x300_jpg\Outfit\Chiefs Jersey.jpg
+Processing image group: Tay Tay Jersey
+Processing file: Tay Tay Jersey_C1.png in subfolder: Outfit
+Processing file: Tay Tay Jersey_C2.png in subfolder: Outfit
+Processing file: Tay Tay Jersey_C3.png in subfolder: Outfit
+Processing file: Tay Tay Jersey_C4.png in subfolder: Outfit
+Processing file: Tay Tay Jersey_L.png in subfolder: Outfit
+Checking existence of PNG: compositeImages\Outfit\Tay Tay Jersey.png
+Checking existence of JPG: 300x300_jpg\Outfit\Tay Tay Jersey.jpg
+Files not found, processing: PNG - compositeImages\Outfit\Tay Tay Jersey.png, JPG - 300x300_jpg\Outfit\Tay Tay Jersey.jpg
+Saved: compositeImages\Outfit\Tay Tay Jersey.png
+Saved: 300x300_jpg\Outfit\Tay Tay Jersey.jpg

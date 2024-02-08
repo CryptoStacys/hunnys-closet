@@ -320,6 +320,11 @@ export async function getLayers(token: any): Promise<Layer[]> {
         layers = addLayer(layers, eyes, '_Right');
     }
 
+    // Special handling for Football Helmet to place it above Eyes and Mouth
+    if (hat && hat.name === "Football Helmet") {
+        layers = addLayer(layers, hat);
+    }
+    
     // ACCESSORY - GLASSES
     if (accessory && accessory.tags.includes('glasses')) {
         layers = addLayer(layers, accessory);
