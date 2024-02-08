@@ -28,7 +28,7 @@ def reformat_json(input_file, output_file):
         file.write('  ]\n}\n')
 
 # Usage
-input_file = 'C:/Users/chris/Hunnys-Development/staging-hunnys-closet-2/backend/src/configs/hunnys-season-traits.json'  # Replace with your input file name
+input_file = 'C:/Users/chris/Hunnys-Development/staging-hunnys-closet-2/backend/src/configs/hunnys-default-traits.json'  # Replace with your input file name
 output_file = 'C:/Users/chris/Hunnys-Development/staging-hunnys-closet-2/other/autoconvert/json/formattedJSON.json'  # Replace with your desired output file name
 
 reformat_json(input_file, output_file)
