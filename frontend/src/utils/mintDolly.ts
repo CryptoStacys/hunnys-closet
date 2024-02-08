@@ -1,28 +1,39 @@
 // src/utils/mintDolly.ts
-import { useContractWrite, useNetwork, useSwitchNetwork } from 'wagmi';
+import { ethers } from 'ethers';
 import closetABI from '../data/abi/HunnysCloset.json';
-import { chainID, closetAddress } from '../data/config';
+import { closetAddress } from '../data/config';
 
-export function useMintDolly() {
-    const { chain: currentChain } = useNetwork();
-    const { switchNetwork } = useSwitchNetwork();
-    const expectedChainId = 1; // Ethereum Mainnet Chain ID
+export async function mintNewDolly() {
+    // Ensure window.ethereum is available
+    if (typeof window.ethereum !== 'undefined') {
+        try {
+            // Request account access if needed
+            await window.ethereum.request({ method: 'eth_requestAccounts' });
 
-    const { write, isLoading, isSuccess, error } = useContractWrite({
-        address: closetAddress as `0x${string}`, // type assertion
-        chainId: chainID,
-        abi: closetABI,
-        args: [1], // mint 1
-        functionName: "mintPublic",
-    });
+            // Create a provider and signer
+            const provider = new ethers.providers.Web3Provider(window.ethereum as any);
+            const signer = provider.getSigner();
 
-    const mintDolly = async () => {
-        if (currentChain?.id !== expectedChainId) {
-            switchNetwork && await switchNetwork(expectedChainId);
-        } else {
-            write?.();
+            // Connect to the contract
+            const contract = new ethers.Contract(closetAddress, closetABI, signer);
+
+            // Execute the mint function
+            console.log("Attempting to write transaction...");
+            const txResponse = await contract.mintPublic(1); // Adjust args as necessary
+            console.log("Transaction response:", txResponse);
+
+            // Wait for the transaction to be mined
+            const receipt = await txResponse.wait();
+            console.log('Transaction confirmed:', receipt);
+
+            // Return the hash of the transaction
+            return { hash: txResponse.hash };
+        } catch (error) {
+            console.error("Transaction failed or was rejected:", error);
+            throw error; // Ensure the error is caught by the caller
         }
-        };
-
-  return { mintDolly, isLoading, isSuccess, error };
+    } else {
+        console.error("Ethereum object doesn't exist!");
+        throw new Error("Ethereum object doesn't exist!");
+    }
 }
