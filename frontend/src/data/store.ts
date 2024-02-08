@@ -4,7 +4,7 @@ import { Trait, User } from "./global";
 
 // Stores most important app data of the current user
 export const userAtom = atom<User | null>(null);
-
+export const dollEditorVisibleAtom = atom(false);
 export const allTraitsAtom = atom<{ traits: Trait[]; colors: string[]; skin_colors: string[] }>({
   traits: [],
   colors: [],

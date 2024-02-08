@@ -17,7 +17,7 @@ export default function DollEditorOptions(props: {
   viewSet: React.Dispatch<React.SetStateAction<string>>;
   tokenSet: Function;
   token: any;
-  selectedDollyId: number;
+  selectedDollyId: string | number | null;
   currentTraits: Trait[];
   onAttributesUpdated: (updatedAttributes: Attribute[]) => void;
 }) {
@@ -269,7 +269,7 @@ function applyColorHarmonization(dollyId: string) {
         <div className="flex-center">
             <div className={`flex-center gap-1`}>
                 {/* Color Harmonize Button */}
-                <SecondaryButton onClick={() => applyColorHarmonization(props.selectedDollyId.toString())} title="Color Harmonize. Updates color scheme for all applied traits.">
+                <SecondaryButton onClick={() => props.selectedDollyId !== null ? applyColorHarmonization(props.selectedDollyId.toString()) : console.error("Invalid ID for Color Harmonize")} title="...">
                     <Icon type="rainbow" className={`w-[20px] h-[20px] ${shouldWiggle ? "wiggle" : ""} ml-[-5px] mr-[5px]`} />
                     <span className="">Color Harmonize</span>
                 </SecondaryButton>
