@@ -9,9 +9,7 @@ import { attributes, localStorageToken } from "../src/data/config";
 import Dashboard from '../src/components/Dashboard/Dashboard';
 import Dollys from "./dollys";
 import Inventory from "./inventory";
-import Achievements from "./achievements";
 import Help from "./help";
-import ProfilePage from "./profile"
 
 import Nav from "../src/components/Nav/Nav";
 import Login from "../src/components/Login/Login";
@@ -119,9 +117,9 @@ export default function App() {
           {/* <Route path="/tokens">
             <Tokens />
           </Route> */}
-         {/* <Route path="/inventory">
+         <Route path="/inventory">
             <Inventory />
-          </Route>*/}
+          </Route>
           <Route path="/help">
             <Help />
           </Route>
