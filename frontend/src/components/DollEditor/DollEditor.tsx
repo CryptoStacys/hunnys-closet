@@ -154,30 +154,95 @@ export default function DollEditor(props: {
   }
 
   useEffect(() => {
-    // If it's a new Dolly, initialize with default attributes directly
     if (isNewDolly) {
       console.log("Initializing new Dolly...");
-      const defaultAttributes = attributes.map((attr) => ({
-        isEligibleForMinting: [],
-        name: "Empty",
-        colorsApplied: [],
-        attribute: attr,
-        tags: [],
-        colors: [],
-        rarity: "common",
-        origin_id: 0,
-        isOwned: false,
-        id: 0,
-        baseColor: [],
-        token_id: "",
-      }));
+  
+      // Define traits to never select and attributes that should not be 'Empty'
+      const noSelect = ["Frame", "Bodysuit", "Hand", "Tattoo", "Hat"];
+      const noEmpty = ["Mouth", "Skin", "Eyebrows", "Eyes", "Hair Style"];
+  
+      // Default brand colors configuration
+      const brandColors = {
+        1: ["HunnysPurple4"],
+        2: ["HunnysPurple4", "HunnysYellow4"],
+        3: ["HunnysPurple4", "HunnysYellow4", "HunnysPurple2"],
+        4: ["HunnysPurple4", "HunnysYellow4", "HunnysPurple2", "HunnysYellow2"],
+        5: ["HunnysPurple4", "HunnysYellow4", "HunnysPurple2", "HunnysYellow2", "HunnysPurple6"],
+      };
+  
+      // Map over each attribute to determine its trait
+      const defaultAttributes: Attribute[] = attributes.map(attr => {
+        // Filter traits from Origin ID 0 for the attribute
+        let defaultTraits = allTraits.traits.filter(trait => trait.origin_id === 0 && trait.attribute === attr);
+  
+        // If the attribute is in the noSelect list, use 'Empty', otherwise select a random trait
+        let randomTrait = noSelect.includes(attr) ? {
+          isEligibleForMinting: [],
+          name: "Empty",
+          colorsApplied: [],
+          baseColor: ["HunnysPurple1"],
+          attribute: attr,
+          tags: [],
+          colors: [],
+          rarity: "common",
+          origin_id: 0,
+          isOwned: false,
+          id: 0,
+          token_id: "",
+        } : defaultTraits.length > 0 ? defaultTraits[Math.floor(Math.random() * defaultTraits.length)] : {
+          isEligibleForMinting: [],
+          name: "Empty",
+          colorsApplied: [],
+          baseColor: ["HunnysPurple1"],
+          attribute: attr,
+          tags: [],
+          colors: [],
+          rarity: "common",
+          origin_id: 0,
+          isOwned: false,
+          id: 0,
+          token_id: "",
+        };
+  
+        // Exclude 'Empty' for specific attributes
+        if (noEmpty.includes(attr) && randomTrait.name === "Empty" && defaultTraits.length > 1) {
+          const nonEmptyTraits = defaultTraits.filter(trait => trait.name !== "Empty");
+          randomTrait = nonEmptyTraits[Math.floor(Math.random() * nonEmptyTraits.length)];
+        }
+  
+        // Determine colors to apply based on the trait's color requirement
+        const colorsToApply = brandColors[randomTrait.colors as keyof typeof brandColors] || [];
+        const baseColor = colorsToApply.length > 0 ? colorsToApply[0] : ["HunnysPurple1"];
+        return { 
+          ...randomTrait, 
+          colorsApplied: colorsToApply, 
+          baseColor: baseColor,
+          token_id: "none",
+          rarity: randomTrait.rarity || "common", 
+      } as Attribute;
+      });
+  
       console.log("Default attributes for new Dolly:", defaultAttributes);
       tokenSet(defaultAttributes);
+      const existingToken = localStorage.getItem(localStorageToken);
+      if (!existingToken) {
+        // Since there's no existing token, save the default attributes to localStorage.
+        // This simulates a change, making the "Save" button enabled.
+        localStorage.setItem(localStorageToken, JSON.stringify(defaultAttributes));
+  
+        // Additionally, set unsavedChanges to true to enable the "Save" button programmatically.
+        setUnsavedChanges(true);
+      }
+      else if (existingToken && props.id && existingToken !== JSON.stringify(defaultAttributes)) {
+        setUnsavedChanges(true);
+      }
     } else {
       console.log("Loading existing Dolly with ID:", props.id);
       load();
     }
-  }, [isNewDolly, props.id]);
+  }, [isNewDolly, props.id, allTraits]);
+   // Ensure allTraits is included in the dependency array if it's fetched or updated externally
+  
 
   interface User {
     address: string;

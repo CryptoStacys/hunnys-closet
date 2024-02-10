@@ -5,7 +5,7 @@ import React, { useState, useEffect } from 'react';
 // import { useState, useEffect } from "react";
 // import { useRouter } from 'next/router'
 import { allTraitsAtom, userAtom, connectedAtom } from "../src/data/store";
-
+import { attributes, localStorageToken } from "../src/data/config";
 import Dashboard from '../src/components/Dashboard/Dashboard';
 import Dollys from "./dollys";
 import Inventory from "./inventory";
@@ -82,6 +82,20 @@ export default function App() {
     },
   });
 
+  useEffect(() => {
+    initializeLocalStorageForNewUsers();
+  }, []); // Empty dependency array ensures this runs once on mount.
+
+  function initializeLocalStorageForNewUsers() {
+    const existingToken = localStorage.getItem(localStorageToken);
+    if (!existingToken) {
+      // Define a default, empty array or an array with default traits.
+      const defaultTraits: never[] = []; // Adjust based on what constitutes an "empty" dolly.
+      localStorage.setItem(localStorageToken, JSON.stringify(defaultTraits));
+      console.log("Initialized local storage with default dolly traits.");
+    }
+  }
+
   return (
     <div className="pb-8" style={{backgroundImage: `url(${sparkleBg.src})` }}>
     {/* <div className="pb-8" style={{backgroundImage: `url(${sparkleBg})`, backgroundSize: '640px' }}> */}
@@ -103,7 +117,7 @@ export default function App() {
           {/* <Route path="/tokens">
             <Tokens />
           </Route> */}
-          <Route path="/inventory">
+         <Route path="/inventory">
             <Inventory />
           </Route>
           <Route path="/help">
