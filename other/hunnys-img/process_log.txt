@@ -40839,3 +40839,791 @@ Saved: compositeImages\Accessory\Hawt Wings.png
 Resized image saved: 800x800_png\Accessory\Hawt Wings_L.png
 Saved: 300x300_jpg\Accessory\Hawt Wings.jpg
 Resized image saved: 600x600_png\Accessory\Hawt Wings_L.png
+Script started
+Subfolders found: Accessory, Background, Bodysuit, Colors, Extras, Eyebrows, Eyes, Face Sticker, Finished, Frame, Hair Style, Hand, Hat, Mouth, Outfit, Piercing, Tattoo, Undergarment
+Files found: 34
+Solid colors RGB values saved to colors.json
+Resizing image: scriptImages\Background\Candy Cloud Castle  Right_C1.png to 800x800
+Resizing image: scriptImages\Background\Candy Cloud Castle  Right_C1.png to 600x600
+Solid colors RGB values saved to colors.json
+Processing image group: Candy Cloud Castle  Right
+Processing file: Candy Cloud Castle  Right_C1.png in subfolder: Background
+Checking existence of PNG: compositeImages\Background\Candy Cloud Castle  Right.png
+Checking existence of JPG: 300x300_jpg\Background\Candy Cloud Castle  Right.jpg
+Files not found, processing: PNG - compositeImages\Background\Candy Cloud Castle  Right.png, JPG - 300x300_jpg\Background\Candy Cloud Castle  Right.jpg
+Resized image saved: 600x600_png\Background\Candy Cloud Castle  Right_C1.png
+Resizing image: scriptImages\Background\Candy Cloud Castle Left_C2.png to 600x600
+Resized image saved: 800x800_png\Background\Candy Cloud Castle  Right_C1.png
+Resizing image: scriptImages\Background\Candy Cloud Castle Left_C2.png to 800x800
+Saved: compositeImages\Background\Candy Cloud Castle  Right.png
+Saved: 300x300_jpg\Background\Candy Cloud Castle  Right.jpg
+Processing image group: Candy Cloud Castle Left
+Resized image saved: 600x600_png\Background\Candy Cloud Castle Left_C2.png
+Resizing image: scriptImages\Background\Candy Cloud Castle Left_C3.png to 600x600
+Resized image saved: 800x800_png\Background\Candy Cloud Castle Left_C2.png
+Resizing image: scriptImages\Background\Candy Cloud Castle Left_C3.png to 800x800
+Processing file: Candy Cloud Castle Left_C2.png in subfolder: Background
+Processing file: Candy Cloud Castle Left_C3.png in subfolder: Background
+Resized image saved: 600x600_png\Background\Candy Cloud Castle Left_C3.png
+Resizing image: scriptImages\Background\Candy Cloud Castle Left_C4.png to 600x600
+Resized image saved: 800x800_png\Background\Candy Cloud Castle Left_C3.png
+Resizing image: scriptImages\Background\Candy Cloud Castle Left_C4.png to 800x800
+Processing file: Candy Cloud Castle Left_C4.png in subfolder: Background
+Resized image saved: 600x600_png\Background\Candy Cloud Castle Left_C4.png
+Resizing image: scriptImages\Background\Candy Cloud Castle Left_C5.png to 600x600
+Resized image saved: 800x800_png\Background\Candy Cloud Castle Left_C4.png
+Resizing image: scriptImages\Background\Candy Cloud Castle Left_C5.png to 800x800
+Processing file: Candy Cloud Castle Left_C5.png in subfolder: Background
+Resized image saved: 600x600_png\Background\Candy Cloud Castle Left_C5.png
+Resizing image: scriptImages\Background\Candy Cloud Castle Left_L.png to 600x600
+Resized image saved: 800x800_png\Background\Candy Cloud Castle Left_C5.png
+Resizing image: scriptImages\Background\Candy Cloud Castle Left_L.png to 800x800
+Processing file: Candy Cloud Castle Left_L.png in subfolder: Background
+Checking existence of PNG: compositeImages\Background\Candy Cloud Castle Left.png
+Checking existence of JPG: 300x300_jpg\Background\Candy Cloud Castle Left.jpg
+Files not found, processing: PNG - compositeImages\Background\Candy Cloud Castle Left.png, JPG - 300x300_jpg\Background\Candy Cloud Castle Left.jpg
+Saved: compositeImages\Background\Candy Cloud Castle Left.png
+Resized image saved: 800x800_png\Background\Candy Cloud Castle Left_L.png
+Resizing image: scriptImages\Background\Candy Cloud Castle Right_C2.png to 800x800
+Resized image saved: 600x600_png\Background\Candy Cloud Castle Left_L.png
+Resizing image: scriptImages\Background\Candy Cloud Castle Right_C2.png to 600x600
+Saved: 300x300_jpg\Background\Candy Cloud Castle Left.jpg
+Processing image group: Candy Cloud Castle Right
+Processing file: Candy Cloud Castle Right_C2.png in subfolder: Background
+Resized image saved: 600x600_png\Background\Candy Cloud Castle Right_C2.png
+Resizing image: scriptImages\Background\Candy Cloud Castle Right_C3.png to 600x600
+Resized image saved: 800x800_png\Background\Candy Cloud Castle Right_C2.png
+Resizing image: scriptImages\Background\Candy Cloud Castle Right_C3.png to 800x800
+Processing file: Candy Cloud Castle Right_C3.png in subfolder: Background
+Resized image saved: 600x600_png\Background\Candy Cloud Castle Right_C3.png
+Resizing image: scriptImages\Background\Candy Cloud Castle Right_C4.png to 600x600
+Resized image saved: 800x800_png\Background\Candy Cloud Castle Right_C3.png
+Resizing image: scriptImages\Background\Candy Cloud Castle Right_C4.png to 800x800
+Processing file: Candy Cloud Castle Right_C4.png in subfolder: Background
+Resized image saved: 600x600_png\Background\Candy Cloud Castle Right_C4.png
+Resizing image: scriptImages\Background\Candy Cloud Castle Right_C5.png to 600x600
+Processing file: Candy Cloud Castle Right_C5.png in subfolder: Background
+Resized image saved: 800x800_png\Background\Candy Cloud Castle Right_C4.png
+Resizing image: scriptImages\Background\Candy Cloud Castle Right_C5.png to 800x800
+Resized image saved: 600x600_png\Background\Candy Cloud Castle Right_C5.png
+Resizing image: scriptImages\Background\Candy Cloud Castle Right_L.png to 600x600
+Resized image saved: 800x800_png\Background\Candy Cloud Castle Right_C5.png
+Resizing image: scriptImages\Background\Candy Cloud Castle Right_L.png to 800x800
+Processing file: Candy Cloud Castle Right_L.png in subfolder: Background
+Checking existence of PNG: compositeImages\Background\Candy Cloud Castle Right.png
+Checking existence of JPG: 300x300_jpg\Background\Candy Cloud Castle Right.jpg
+Files not found, processing: PNG - compositeImages\Background\Candy Cloud Castle Right.png, JPG - 300x300_jpg\Background\Candy Cloud Castle Right.jpg
+Saved: compositeImages\Background\Candy Cloud Castle Right.png
+Saved: 300x300_jpg\Background\Candy Cloud Castle Right.jpg
+Processing image group: Candy Cloud Castle
+Resized image saved: 600x600_png\Background\Candy Cloud Castle Right_L.png
+Resizing image: scriptImages\Background\Candy Cloud Castle_C1.png to 600x600
+Resized image saved: 800x800_png\Background\Candy Cloud Castle Right_L.png
+Resizing image: scriptImages\Background\Candy Cloud Castle_C1.png to 800x800
+Processing file: Candy Cloud Castle_C1.png in subfolder: Background
+Checking existence of PNG: compositeImages\Background\Candy Cloud Castle.png
+Checking existence of JPG: 300x300_jpg\Background\Candy Cloud Castle.jpg
+Files not found, processing: PNG - compositeImages\Background\Candy Cloud Castle.png, JPG - 300x300_jpg\Background\Candy Cloud Castle.jpg
+Resized image saved: 800x800_png\Background\Candy Cloud Castle_C1.png
+Resizing image: scriptImages\Background\Hot Stuff Left_C1.png to 800x800
+Saved: compositeImages\Background\Candy Cloud Castle.png
+Resized image saved: 600x600_png\Background\Candy Cloud Castle_C1.png
+Resizing image: scriptImages\Background\Hot Stuff Left_C1.png to 600x600
+Saved: 300x300_jpg\Background\Candy Cloud Castle.jpg
+Processing image group: Hot Stuff Left
+Processing file: Hot Stuff Left_C1.png in subfolder: Background
+Resized image saved: 800x800_png\Background\Hot Stuff Left_C1.png
+Resizing image: scriptImages\Background\Hot Stuff Left_C2.png to 800x800
+Resized image saved: 600x600_png\Background\Hot Stuff Left_C1.png
+Resizing image: scriptImages\Background\Hot Stuff Left_C2.png to 600x600
+Processing file: Hot Stuff Left_C2.png in subfolder: Background
+Resized image saved: 600x600_png\Background\Hot Stuff Left_C2.png
+Resizing image: scriptImages\Background\Hot Stuff Left_C3.png to 600x600
+Resized image saved: 800x800_png\Background\Hot Stuff Left_C2.png
+Resizing image: scriptImages\Background\Hot Stuff Left_C3.png to 800x800
+Processing file: Hot Stuff Left_C3.png in subfolder: Background
+Resized image saved: 600x600_png\Background\Hot Stuff Left_C3.png
+Resizing image: scriptImages\Background\Hot Stuff Left_C4.png to 600x600
+Processing file: Hot Stuff Left_C4.png in subfolder: Background
+Resized image saved: 800x800_png\Background\Hot Stuff Left_C3.png
+Resizing image: scriptImages\Background\Hot Stuff Left_C4.png to 800x800
+Resized image saved: 600x600_png\Background\Hot Stuff Left_C4.png
+Resizing image: scriptImages\Background\Hot Stuff Left_L.png to 600x600
+Processing file: Hot Stuff Left_L.png in subfolder: Background
+Checking existence of PNG: compositeImages\Background\Hot Stuff Left.png
+Checking existence of JPG: 300x300_jpg\Background\Hot Stuff Left.jpg
+Files not found, processing: PNG - compositeImages\Background\Hot Stuff Left.png, JPG - 300x300_jpg\Background\Hot Stuff Left.jpg
+Resized image saved: 800x800_png\Background\Hot Stuff Left_C4.png
+Resizing image: scriptImages\Background\Hot Stuff Left_L.png to 800x800
+Saved: compositeImages\Background\Hot Stuff Left.png
+Saved: 300x300_jpg\Background\Hot Stuff Left.jpg
+Processing image group: Hot Stuff Right
+Resized image saved: 600x600_png\Background\Hot Stuff Left_L.png
+Resizing image: scriptImages\Background\Hot Stuff Right_C1.png to 600x600
+Resized image saved: 800x800_png\Background\Hot Stuff Left_L.png
+Resizing image: scriptImages\Background\Hot Stuff Right_C1.png to 800x800
+Processing file: Hot Stuff Right_C1.png in subfolder: Background
+Resized image saved: 800x800_png\Background\Hot Stuff Right_C1.png
+Resizing image: scriptImages\Background\Hot Stuff Right_C2.png to 800x800
+Resized image saved: 600x600_png\Background\Hot Stuff Right_C1.png
+Resizing image: scriptImages\Background\Hot Stuff Right_C2.png to 600x600
+Processing file: Hot Stuff Right_C2.png in subfolder: Background
+Resized image saved: 600x600_png\Background\Hot Stuff Right_C2.png
+Resizing image: scriptImages\Background\Hot Stuff Right_C3.png to 600x600
+Resized image saved: 800x800_png\Background\Hot Stuff Right_C2.png
+Resizing image: scriptImages\Background\Hot Stuff Right_C3.png to 800x800
+Processing file: Hot Stuff Right_C3.png in subfolder: Background
+Resized image saved: 600x600_png\Background\Hot Stuff Right_C3.png
+Resizing image: scriptImages\Background\Hot Stuff Right_C4.png to 600x600
+Processing file: Hot Stuff Right_C4.png in subfolder: Background
+Resized image saved: 800x800_png\Background\Hot Stuff Right_C3.png
+Resizing image: scriptImages\Background\Hot Stuff Right_C4.png to 800x800
+Resized image saved: 600x600_png\Background\Hot Stuff Right_C4.png
+Resizing image: scriptImages\Background\Hot Stuff Right_L.png to 600x600
+Processing file: Hot Stuff Right_L.png in subfolder: Background
+Checking existence of PNG: compositeImages\Background\Hot Stuff Right.png
+Checking existence of JPG: 300x300_jpg\Background\Hot Stuff Right.jpg
+Files not found, processing: PNG - compositeImages\Background\Hot Stuff Right.png, JPG - 300x300_jpg\Background\Hot Stuff Right.jpg
+Resized image saved: 800x800_png\Background\Hot Stuff Right_C4.png
+Resizing image: scriptImages\Background\Hot Stuff Right_L.png to 800x800
+Saved: compositeImages\Background\Hot Stuff Right.png
+Resized image saved: 600x600_png\Background\Hot Stuff Right_L.png
+Resizing image: scriptImages\Background\Sprinkle Hearts Scroll Left_C1.png to 600x600
+Saved: 300x300_jpg\Background\Hot Stuff Right.jpg
+Processing image group: Sprinkle Hearts Scroll Left
+Resized image saved: 800x800_png\Background\Hot Stuff Right_L.png
+Resizing image: scriptImages\Background\Sprinkle Hearts Scroll Left_C1.png to 800x800
+Processing file: Sprinkle Hearts Scroll Left_C1.png in subfolder: Background
+Resized image saved: 600x600_png\Background\Sprinkle Hearts Scroll Left_C1.png
+Resizing image: scriptImages\Background\Sprinkle Hearts Scroll Left_C2.png to 600x600
+Resized image saved: 800x800_png\Background\Sprinkle Hearts Scroll Left_C1.png
+Resizing image: scriptImages\Background\Sprinkle Hearts Scroll Left_C2.png to 800x800
+Processing file: Sprinkle Hearts Scroll Left_C2.png in subfolder: Background
+Resized image saved: 600x600_png\Background\Sprinkle Hearts Scroll Left_C2.png
+Resizing image: scriptImages\Background\Sprinkle Hearts Scroll Left_C3.png to 600x600
+Processing file: Sprinkle Hearts Scroll Left_C3.png in subfolder: Background
+Resized image saved: 800x800_png\Background\Sprinkle Hearts Scroll Left_C2.png
+Resizing image: scriptImages\Background\Sprinkle Hearts Scroll Left_C3.png to 800x800
+Resized image saved: 600x600_png\Background\Sprinkle Hearts Scroll Left_C3.png
+Resizing image: scriptImages\Background\Sprinkle Hearts Scroll Left_C4.png to 600x600
+Processing file: Sprinkle Hearts Scroll Left_C4.png in subfolder: Background
+Resized image saved: 800x800_png\Background\Sprinkle Hearts Scroll Left_C3.png
+Resizing image: scriptImages\Background\Sprinkle Hearts Scroll Left_C4.png to 800x800
+Resized image saved: 600x600_png\Background\Sprinkle Hearts Scroll Left_C4.png
+Resizing image: scriptImages\Background\Sprinkle Hearts Scroll Left_C5.png to 600x600
+Resized image saved: 800x800_png\Background\Sprinkle Hearts Scroll Left_C4.png
+Resizing image: scriptImages\Background\Sprinkle Hearts Scroll Left_C5.png to 800x800
+Processing file: Sprinkle Hearts Scroll Left_C5.png in subfolder: Background
+Resized image saved: 600x600_png\Background\Sprinkle Hearts Scroll Left_C5.png
+Resizing image: scriptImages\Background\Sprinkle Hearts Scroll Left_L.png to 600x600
+Processing file: Sprinkle Hearts Scroll Left_L.png in subfolder: Background
+Checking existence of PNG: compositeImages\Background\Sprinkle Hearts Scroll Left.png
+Checking existence of JPG: 300x300_jpg\Background\Sprinkle Hearts Scroll Left.jpg
+Files not found, processing: PNG - compositeImages\Background\Sprinkle Hearts Scroll Left.png, JPG - 300x300_jpg\Background\Sprinkle Hearts Scroll Left.jpg
+Resized image saved: 800x800_png\Background\Sprinkle Hearts Scroll Left_C5.png
+Resizing image: scriptImages\Background\Sprinkle Hearts Scroll Left_L.png to 800x800
+Saved: compositeImages\Background\Sprinkle Hearts Scroll Left.png
+Saved: 300x300_jpg\Background\Sprinkle Hearts Scroll Left.jpg
+Processing image group: Sprinkle Hearts Scroll Right
+Resized image saved: 600x600_png\Background\Sprinkle Hearts Scroll Left_L.png
+Resizing image: scriptImages\Background\Sprinkle Hearts Scroll Right_C1.png to 600x600
+Resized image saved: 800x800_png\Background\Sprinkle Hearts Scroll Left_L.png
+Resizing image: scriptImages\Background\Sprinkle Hearts Scroll Right_C1.png to 800x800
+Processing file: Sprinkle Hearts Scroll Right_C1.png in subfolder: Background
+Resized image saved: 600x600_png\Background\Sprinkle Hearts Scroll Right_C1.png
+Resizing image: scriptImages\Background\Sprinkle Hearts Scroll Right_C2.png to 600x600
+Resized image saved: 800x800_png\Background\Sprinkle Hearts Scroll Right_C1.png
+Resizing image: scriptImages\Background\Sprinkle Hearts Scroll Right_C2.png to 800x800
+Processing file: Sprinkle Hearts Scroll Right_C2.png in subfolder: Background
+Resized image saved: 800x800_png\Background\Sprinkle Hearts Scroll Right_C2.png
+Resizing image: scriptImages\Background\Sprinkle Hearts Scroll Right_C3.png to 800x800
+Resized image saved: 600x600_png\Background\Sprinkle Hearts Scroll Right_C2.png
+Resizing image: scriptImages\Background\Sprinkle Hearts Scroll Right_C3.png to 600x600
+Processing file: Sprinkle Hearts Scroll Right_C3.png in subfolder: Background
+Resized image saved: 800x800_png\Background\Sprinkle Hearts Scroll Right_C3.png
+Resizing image: scriptImages\Background\Sprinkle Hearts Scroll Right_C4.png to 800x800
+Resized image saved: 600x600_png\Background\Sprinkle Hearts Scroll Right_C3.png
+Resizing image: scriptImages\Background\Sprinkle Hearts Scroll Right_C4.png to 600x600
+Processing file: Sprinkle Hearts Scroll Right_C4.png in subfolder: Background
+Resized image saved: 800x800_png\Background\Sprinkle Hearts Scroll Right_C4.png
+Resizing image: scriptImages\Background\Sprinkle Hearts Scroll Right_C5.png to 800x800
+Processing file: Sprinkle Hearts Scroll Right_C5.png in subfolder: Background
+Resized image saved: 600x600_png\Background\Sprinkle Hearts Scroll Right_C4.png
+Resizing image: scriptImages\Background\Sprinkle Hearts Scroll Right_C5.png to 600x600
+Resized image saved: 800x800_png\Background\Sprinkle Hearts Scroll Right_C5.png
+Resizing image: scriptImages\Background\Sprinkle Hearts Scroll Right_L.png to 800x800
+Processing file: Sprinkle Hearts Scroll Right_L.png in subfolder: Background
+Checking existence of PNG: compositeImages\Background\Sprinkle Hearts Scroll Right.png
+Checking existence of JPG: 300x300_jpg\Background\Sprinkle Hearts Scroll Right.jpg
+Files not found, processing: PNG - compositeImages\Background\Sprinkle Hearts Scroll Right.png, JPG - 300x300_jpg\Background\Sprinkle Hearts Scroll Right.jpg
+Resized image saved: 600x600_png\Background\Sprinkle Hearts Scroll Right_C5.png
+Resizing image: scriptImages\Background\Sprinkle Hearts Scroll Right_L.png to 600x600
+Saved: compositeImages\Background\Sprinkle Hearts Scroll Right.png
+Saved: 300x300_jpg\Background\Sprinkle Hearts Scroll Right.jpg
+Resized image saved: 800x800_png\Background\Sprinkle Hearts Scroll Right_L.png
+Resized image saved: 600x600_png\Background\Sprinkle Hearts Scroll Right_L.png
+Script started
+Subfolders found: Accessory, Background, Bodysuit, Colors, Extras, Eyebrows, Eyes, Face Sticker, Finished, Frame, Hair Style, Hand, Hat, Mouth, Outfit, Piercing, Tattoo, Undergarment
+Files found: 34
+Solid colors RGB values saved to colors.json
+Resizing image: scriptImages\Background\Candy Cloud Castle Left_C2.png to 800x800
+Resizing image: scriptImages\Background\Candy Cloud Castle Left_C2.png to 600x600
+Solid colors RGB values saved to colors.json
+Processing image group: Candy Cloud Castle Left
+Resized image saved: 800x800_png\Background\Candy Cloud Castle Left_C2.png
+Resizing image: scriptImages\Background\Candy Cloud Castle Left_C3.png to 800x800
+Resized image saved: 600x600_png\Background\Candy Cloud Castle Left_C2.png
+Resizing image: scriptImages\Background\Candy Cloud Castle Left_C3.png to 600x600
+Processing file: Candy Cloud Castle Left_C2.png in subfolder: Background
+Resized image saved: 800x800_png\Background\Candy Cloud Castle Left_C3.png
+Resizing image: scriptImages\Background\Candy Cloud Castle Left_C4.png to 800x800
+Resized image saved: 600x600_png\Background\Candy Cloud Castle Left_C3.png
+Resizing image: scriptImages\Background\Candy Cloud Castle Left_C4.png to 600x600
+Processing file: Candy Cloud Castle Left_C3.png in subfolder: Background
+Processing file: Candy Cloud Castle Left_C4.png in subfolder: Background
+Resized image saved: 800x800_png\Background\Candy Cloud Castle Left_C4.png
+Resizing image: scriptImages\Background\Candy Cloud Castle Left_C5.png to 800x800
+Resized image saved: 600x600_png\Background\Candy Cloud Castle Left_C4.png
+Resizing image: scriptImages\Background\Candy Cloud Castle Left_C5.png to 600x600
+Processing file: Candy Cloud Castle Left_C5.png in subfolder: Background
+Resized image saved: 800x800_png\Background\Candy Cloud Castle Left_C5.png
+Resizing image: scriptImages\Background\Candy Cloud Castle Left_L.png to 800x800
+Resized image saved: 600x600_png\Background\Candy Cloud Castle Left_C5.png
+Resizing image: scriptImages\Background\Candy Cloud Castle Left_L.png to 600x600
+Processing file: Candy Cloud Castle Left_L.png in subfolder: Background
+Checking existence of PNG: compositeImages\Background\Candy Cloud Castle Left.png
+Checking existence of JPG: 300x300_jpg\Background\Candy Cloud Castle Left.jpg
+Files not found, processing: PNG - compositeImages\Background\Candy Cloud Castle Left.png, JPG - 300x300_jpg\Background\Candy Cloud Castle Left.jpg
+Saved: compositeImages\Background\Candy Cloud Castle Left.png
+Resized image saved: 800x800_png\Background\Candy Cloud Castle Left_L.png
+Resizing image: scriptImages\Background\Candy Cloud Castle Right_C1.png to 800x800
+Resized image saved: 600x600_png\Background\Candy Cloud Castle Left_L.png
+Resizing image: scriptImages\Background\Candy Cloud Castle Right_C1.png to 600x600
+Saved: 300x300_jpg\Background\Candy Cloud Castle Left.jpg
+Processing image group: Candy Cloud Castle Right
+Processing file: Candy Cloud Castle Right_C1.png in subfolder: Background
+Resized image saved: 800x800_png\Background\Candy Cloud Castle Right_C1.png
+Resizing image: scriptImages\Background\Candy Cloud Castle Right_C2.png to 800x800
+Resized image saved: 600x600_png\Background\Candy Cloud Castle Right_C1.png
+Resizing image: scriptImages\Background\Candy Cloud Castle Right_C2.png to 600x600
+Processing file: Candy Cloud Castle Right_C2.png in subfolder: Background
+Resized image saved: 800x800_png\Background\Candy Cloud Castle Right_C2.png
+Resizing image: scriptImages\Background\Candy Cloud Castle Right_C3.png to 800x800
+Resized image saved: 600x600_png\Background\Candy Cloud Castle Right_C2.png
+Resizing image: scriptImages\Background\Candy Cloud Castle Right_C3.png to 600x600
+Processing file: Candy Cloud Castle Right_C3.png in subfolder: Background
+Processing file: Candy Cloud Castle Right_C4.png in subfolder: Background
+Resized image saved: 800x800_png\Background\Candy Cloud Castle Right_C3.png
+Resizing image: scriptImages\Background\Candy Cloud Castle Right_C4.png to 800x800
+Resized image saved: 600x600_png\Background\Candy Cloud Castle Right_C3.png
+Resizing image: scriptImages\Background\Candy Cloud Castle Right_C4.png to 600x600
+Processing file: Candy Cloud Castle Right_C5.png in subfolder: Background
+Resized image saved: 800x800_png\Background\Candy Cloud Castle Right_C4.png
+Resizing image: scriptImages\Background\Candy Cloud Castle Right_C5.png to 800x800
+Resized image saved: 600x600_png\Background\Candy Cloud Castle Right_C4.png
+Resizing image: scriptImages\Background\Candy Cloud Castle Right_C5.png to 600x600
+Resized image saved: 800x800_png\Background\Candy Cloud Castle Right_C5.png
+Resizing image: scriptImages\Background\Candy Cloud Castle Right_L.png to 800x800
+Processing file: Candy Cloud Castle Right_L.png in subfolder: Background
+Checking existence of PNG: compositeImages\Background\Candy Cloud Castle Right.png
+Checking existence of JPG: 300x300_jpg\Background\Candy Cloud Castle Right.jpg
+Files not found, processing: PNG - compositeImages\Background\Candy Cloud Castle Right.png, JPG - 300x300_jpg\Background\Candy Cloud Castle Right.jpg
+Resized image saved: 600x600_png\Background\Candy Cloud Castle Right_C5.png
+Resizing image: scriptImages\Background\Candy Cloud Castle Right_L.png to 600x600
+Saved: compositeImages\Background\Candy Cloud Castle Right.png
+Saved: 300x300_jpg\Background\Candy Cloud Castle Right.jpg
+Processing image group: Candy Cloud Castle
+Resized image saved: 600x600_png\Background\Candy Cloud Castle Right_L.png
+Resizing image: scriptImages\Background\Candy Cloud Castle_C1.png to 600x600
+Resized image saved: 800x800_png\Background\Candy Cloud Castle Right_L.png
+Resizing image: scriptImages\Background\Candy Cloud Castle_C1.png to 800x800
+Processing file: Candy Cloud Castle_C1.png in subfolder: Background
+Checking existence of PNG: compositeImages\Background\Candy Cloud Castle.png
+Checking existence of JPG: 300x300_jpg\Background\Candy Cloud Castle.jpg
+Files not found, processing: PNG - compositeImages\Background\Candy Cloud Castle.png, JPG - 300x300_jpg\Background\Candy Cloud Castle.jpg
+Saved: compositeImages\Background\Candy Cloud Castle.png
+Saved: 300x300_jpg\Background\Candy Cloud Castle.jpg
+Processing image group: Hot Stuff Left
+Resized image saved: 600x600_png\Background\Candy Cloud Castle_C1.png
+Resizing image: scriptImages\Background\Hot Stuff Left_C1.png to 600x600
+Resized image saved: 800x800_png\Background\Candy Cloud Castle_C1.png
+Resizing image: scriptImages\Background\Hot Stuff Left_C1.png to 800x800
+Processing file: Hot Stuff Left_C1.png in subfolder: Background
+Resized image saved: 600x600_png\Background\Hot Stuff Left_C1.png
+Resizing image: scriptImages\Background\Hot Stuff Left_C2.png to 600x600
+Resized image saved: 800x800_png\Background\Hot Stuff Left_C1.png
+Resizing image: scriptImages\Background\Hot Stuff Left_C2.png to 800x800
+Processing file: Hot Stuff Left_C2.png in subfolder: Background
+Processing file: Hot Stuff Left_C3.png in subfolder: Background
+Resized image saved: 800x800_png\Background\Hot Stuff Left_C2.png
+Resizing image: scriptImages\Background\Hot Stuff Left_C3.png to 800x800
+Resized image saved: 600x600_png\Background\Hot Stuff Left_C2.png
+Resizing image: scriptImages\Background\Hot Stuff Left_C3.png to 600x600
+Processing file: Hot Stuff Left_C4.png in subfolder: Background
+Resized image saved: 600x600_png\Background\Hot Stuff Left_C3.png
+Resizing image: scriptImages\Background\Hot Stuff Left_C4.png to 600x600
+Resized image saved: 800x800_png\Background\Hot Stuff Left_C3.png
+Resizing image: scriptImages\Background\Hot Stuff Left_C4.png to 800x800
+Processing file: Hot Stuff Left_L.png in subfolder: Background
+Checking existence of PNG: compositeImages\Background\Hot Stuff Left.png
+Checking existence of JPG: 300x300_jpg\Background\Hot Stuff Left.jpg
+Files not found, processing: PNG - compositeImages\Background\Hot Stuff Left.png, JPG - 300x300_jpg\Background\Hot Stuff Left.jpg
+Saved: compositeImages\Background\Hot Stuff Left.png
+Saved: 300x300_jpg\Background\Hot Stuff Left.jpg
+Processing image group: Hot Stuff Right
+Resized image saved: 600x600_png\Background\Hot Stuff Left_C4.png
+Resizing image: scriptImages\Background\Hot Stuff Left_L.png to 600x600
+Resized image saved: 800x800_png\Background\Hot Stuff Left_C4.png
+Resizing image: scriptImages\Background\Hot Stuff Left_L.png to 800x800
+Processing file: Hot Stuff Right_C1.png in subfolder: Background
+Resized image saved: 600x600_png\Background\Hot Stuff Left_L.png
+Resizing image: scriptImages\Background\Hot Stuff Right_C1.png to 600x600
+Resized image saved: 800x800_png\Background\Hot Stuff Left_L.png
+Resizing image: scriptImages\Background\Hot Stuff Right_C1.png to 800x800
+Processing file: Hot Stuff Right_C2.png in subfolder: Background
+Resized image saved: 600x600_png\Background\Hot Stuff Right_C1.png
+Resizing image: scriptImages\Background\Hot Stuff Right_C2.png to 600x600
+Resized image saved: 800x800_png\Background\Hot Stuff Right_C1.png
+Resizing image: scriptImages\Background\Hot Stuff Right_C2.png to 800x800
+Processing file: Hot Stuff Right_C3.png in subfolder: Background
+Processing file: Hot Stuff Right_C4.png in subfolder: Background
+Resized image saved: 600x600_png\Background\Hot Stuff Right_C2.png
+Resizing image: scriptImages\Background\Hot Stuff Right_C3.png to 600x600
+Processing file: Hot Stuff Right_L.png in subfolder: Background
+Checking existence of PNG: compositeImages\Background\Hot Stuff Right.png
+Checking existence of JPG: 300x300_jpg\Background\Hot Stuff Right.jpg
+Files not found, processing: PNG - compositeImages\Background\Hot Stuff Right.png, JPG - 300x300_jpg\Background\Hot Stuff Right.jpg
+Resized image saved: 800x800_png\Background\Hot Stuff Right_C2.png
+Resizing image: scriptImages\Background\Hot Stuff Right_C3.png to 800x800
+Saved: compositeImages\Background\Hot Stuff Right.png
+Resized image saved: 600x600_png\Background\Hot Stuff Right_C3.png
+Resizing image: scriptImages\Background\Hot Stuff Right_C4.png to 600x600
+Saved: 300x300_jpg\Background\Hot Stuff Right.jpg
+Processing image group: Sprinkle Hearts Scroll Left
+Resized image saved: 800x800_png\Background\Hot Stuff Right_C3.png
+Resizing image: scriptImages\Background\Hot Stuff Right_C4.png to 800x800
+Processing file: Sprinkle Hearts Scroll Left_C1.png in subfolder: Background
+Resized image saved: 600x600_png\Background\Hot Stuff Right_C4.png
+Resizing image: scriptImages\Background\Hot Stuff Right_L.png to 600x600
+Resized image saved: 800x800_png\Background\Hot Stuff Right_C4.png
+Resizing image: scriptImages\Background\Hot Stuff Right_L.png to 800x800
+Processing file: Sprinkle Hearts Scroll Left_C2.png in subfolder: Background
+Processing file: Sprinkle Hearts Scroll Left_C3.png in subfolder: Background
+Resized image saved: 600x600_png\Background\Hot Stuff Right_L.png
+Skipping existing file: 600x600_png\Background\Sprinkle Hearts Scroll Left_C1.png
+Skipping existing file: 600x600_png\Background\Sprinkle Hearts Scroll Left_C2.png
+Skipping existing file: 600x600_png\Background\Sprinkle Hearts Scroll Left_C3.png
+Skipping existing file: 600x600_png\Background\Sprinkle Hearts Scroll Left_C4.png
+Skipping existing file: 600x600_png\Background\Sprinkle Hearts Scroll Left_C5.png
+Skipping existing file: 600x600_png\Background\Sprinkle Hearts Scroll Left_L.png
+Skipping existing file: 600x600_png\Background\Sprinkle Hearts Scroll Right_C1.png
+Skipping existing file: 600x600_png\Background\Sprinkle Hearts Scroll Right_C2.png
+Skipping existing file: 600x600_png\Background\Sprinkle Hearts Scroll Right_C3.png
+Skipping existing file: 600x600_png\Background\Sprinkle Hearts Scroll Right_C4.png
+Skipping existing file: 600x600_png\Background\Sprinkle Hearts Scroll Right_C5.png
+Skipping existing file: 600x600_png\Background\Sprinkle Hearts Scroll Right_L.png
+Resized image saved: 800x800_png\Background\Hot Stuff Right_L.png
+Skipping existing file: 800x800_png\Background\Sprinkle Hearts Scroll Left_C1.png
+Skipping existing file: 800x800_png\Background\Sprinkle Hearts Scroll Left_C2.png
+Skipping existing file: 800x800_png\Background\Sprinkle Hearts Scroll Left_C3.png
+Skipping existing file: 800x800_png\Background\Sprinkle Hearts Scroll Left_C4.png
+Skipping existing file: 800x800_png\Background\Sprinkle Hearts Scroll Left_C5.png
+Skipping existing file: 800x800_png\Background\Sprinkle Hearts Scroll Left_L.png
+Skipping existing file: 800x800_png\Background\Sprinkle Hearts Scroll Right_C1.png
+Skipping existing file: 800x800_png\Background\Sprinkle Hearts Scroll Right_C2.png
+Skipping existing file: 800x800_png\Background\Sprinkle Hearts Scroll Right_C3.png
+Skipping existing file: 800x800_png\Background\Sprinkle Hearts Scroll Right_C4.png
+Skipping existing file: 800x800_png\Background\Sprinkle Hearts Scroll Right_C5.png
+Skipping existing file: 800x800_png\Background\Sprinkle Hearts Scroll Right_L.png
+Processing file: Sprinkle Hearts Scroll Left_C4.png in subfolder: Background
+Processing file: Sprinkle Hearts Scroll Left_C5.png in subfolder: Background
+Processing file: Sprinkle Hearts Scroll Left_L.png in subfolder: Background
+Checking existence of PNG: compositeImages\Background\Sprinkle Hearts Scroll Left.png
+Checking existence of JPG: 300x300_jpg\Background\Sprinkle Hearts Scroll Left.jpg
+Skipping existing files: PNG - compositeImages\Background\Sprinkle Hearts Scroll Left.png, JPG - 300x300_jpg\Background\Sprinkle Hearts Scroll Left.jpg
+Processing image group: Sprinkle Hearts Scroll Right
+Processing file: Sprinkle Hearts Scroll Right_C1.png in subfolder: Background
+Processing file: Sprinkle Hearts Scroll Right_C2.png in subfolder: Background
+Processing file: Sprinkle Hearts Scroll Right_C3.png in subfolder: Background
+Processing file: Sprinkle Hearts Scroll Right_C4.png in subfolder: Background
+Processing file: Sprinkle Hearts Scroll Right_C5.png in subfolder: Background
+Processing file: Sprinkle Hearts Scroll Right_L.png in subfolder: Background
+Checking existence of PNG: compositeImages\Background\Sprinkle Hearts Scroll Right.png
+Checking existence of JPG: 300x300_jpg\Background\Sprinkle Hearts Scroll Right.jpg
+Skipping existing files: PNG - compositeImages\Background\Sprinkle Hearts Scroll Right.png, JPG - 300x300_jpg\Background\Sprinkle Hearts Scroll Right.jpg
+Script started
+Subfolders found: Accessory, Background, Bodysuit, Colors, Extras, Eyebrows, Eyes, Face Sticker, Finished, Frame, Hair Style, Hand, Hat, Mouth, Outfit, Piercing, Tattoo, Undergarment
+Files found: 34
+Solid colors RGB values saved to colors.json
+Resizing image: scriptImages\Background\Candy Cloud Castle Left_C2.png to 800x800
+Resizing image: scriptImages\Background\Candy Cloud Castle Left_C2.png to 600x600
+Solid colors RGB values saved to colors.json
+Processing image group: Candy Cloud Castle Left
+Resized image saved: 600x600_png\Background\Candy Cloud Castle Left_C2.png
+Resizing image: scriptImages\Background\Candy Cloud Castle Left_C3.png to 600x600
+Resized image saved: 800x800_png\Background\Candy Cloud Castle Left_C2.png
+Resizing image: scriptImages\Background\Candy Cloud Castle Left_C3.png to 800x800
+Processing file: Candy Cloud Castle Left_C2.png in subfolder: Background
+Resized image saved: 600x600_png\Background\Candy Cloud Castle Left_C3.png
+Resizing image: scriptImages\Background\Candy Cloud Castle Left_C4.png to 600x600
+Resized image saved: 800x800_png\Background\Candy Cloud Castle Left_C3.png
+Resizing image: scriptImages\Background\Candy Cloud Castle Left_C4.png to 800x800
+Processing file: Candy Cloud Castle Left_C3.png in subfolder: Background
+Processing file: Candy Cloud Castle Left_C4.png in subfolder: Background
+Resized image saved: 600x600_png\Background\Candy Cloud Castle Left_C4.png
+Resizing image: scriptImages\Background\Candy Cloud Castle Left_C5.png to 600x600
+Resized image saved: 800x800_png\Background\Candy Cloud Castle Left_C4.png
+Resizing image: scriptImages\Background\Candy Cloud Castle Left_C5.png to 800x800
+Processing file: Candy Cloud Castle Left_C5.png in subfolder: Background
+Resized image saved: 600x600_png\Background\Candy Cloud Castle Left_C5.png
+Resizing image: scriptImages\Background\Candy Cloud Castle Left_L.png to 600x600
+Resized image saved: 800x800_png\Background\Candy Cloud Castle Left_C5.png
+Resizing image: scriptImages\Background\Candy Cloud Castle Left_L.png to 800x800
+Processing file: Candy Cloud Castle Left_L.png in subfolder: Background
+Checking existence of PNG: compositeImages\Background\Candy Cloud Castle Left.png
+Checking existence of JPG: 300x300_jpg\Background\Candy Cloud Castle Left.jpg
+Files not found, processing: PNG - compositeImages\Background\Candy Cloud Castle Left.png, JPG - 300x300_jpg\Background\Candy Cloud Castle Left.jpg
+Saved: compositeImages\Background\Candy Cloud Castle Left.png
+Saved: 300x300_jpg\Background\Candy Cloud Castle Left.jpg
+Processing image group: Candy Cloud Castle Right
+Resized image saved: 600x600_png\Background\Candy Cloud Castle Left_L.png
+Resizing image: scriptImages\Background\Candy Cloud Castle Right_C1.png to 600x600
+Resized image saved: 800x800_png\Background\Candy Cloud Castle Left_L.png
+Resizing image: scriptImages\Background\Candy Cloud Castle Right_C1.png to 800x800
+Processing file: Candy Cloud Castle Right_C1.png in subfolder: Background
+Processing file: Candy Cloud Castle Right_C2.png in subfolder: Background
+Resized image saved: 600x600_png\Background\Candy Cloud Castle Right_C1.png
+Resizing image: scriptImages\Background\Candy Cloud Castle Right_C2.png to 600x600
+Resized image saved: 800x800_png\Background\Candy Cloud Castle Right_C1.png
+Resizing image: scriptImages\Background\Candy Cloud Castle Right_C2.png to 800x800
+Processing file: Candy Cloud Castle Right_C3.png in subfolder: Background
+Resized image saved: 600x600_png\Background\Candy Cloud Castle Right_C2.png
+Resizing image: scriptImages\Background\Candy Cloud Castle Right_C3.png to 600x600
+Resized image saved: 800x800_png\Background\Candy Cloud Castle Right_C2.png
+Resizing image: scriptImages\Background\Candy Cloud Castle Right_C3.png to 800x800
+Processing file: Candy Cloud Castle Right_C4.png in subfolder: Background
+Processing file: Candy Cloud Castle Right_C5.png in subfolder: Background
+Resized image saved: 600x600_png\Background\Candy Cloud Castle Right_C3.png
+Resizing image: scriptImages\Background\Candy Cloud Castle Right_C4.png to 600x600
+Resized image saved: 800x800_png\Background\Candy Cloud Castle Right_C3.png
+Resizing image: scriptImages\Background\Candy Cloud Castle Right_C4.png to 800x800
+Resized image saved: 600x600_png\Background\Candy Cloud Castle Right_C4.png
+Resizing image: scriptImages\Background\Candy Cloud Castle Right_C5.png to 600x600
+Resized image saved: 800x800_png\Background\Candy Cloud Castle Right_C4.png
+Resizing image: scriptImages\Background\Candy Cloud Castle Right_C5.png to 800x800
+Processing file: Candy Cloud Castle Right_L.png in subfolder: Background
+Checking existence of PNG: compositeImages\Background\Candy Cloud Castle Right.png
+Checking existence of JPG: 300x300_jpg\Background\Candy Cloud Castle Right.jpg
+Files not found, processing: PNG - compositeImages\Background\Candy Cloud Castle Right.png, JPG - 300x300_jpg\Background\Candy Cloud Castle Right.jpg
+Saved: compositeImages\Background\Candy Cloud Castle Right.png
+Resized image saved: 600x600_png\Background\Candy Cloud Castle Right_C5.png
+Resizing image: scriptImages\Background\Candy Cloud Castle Right_L.png to 600x600
+Saved: 300x300_jpg\Background\Candy Cloud Castle Right.jpg
+Processing image group: Candy Cloud Castle
+Resized image saved: 800x800_png\Background\Candy Cloud Castle Right_C5.png
+Resizing image: scriptImages\Background\Candy Cloud Castle Right_L.png to 800x800
+Processing file: Candy Cloud Castle_C1.png in subfolder: Background
+Checking existence of PNG: compositeImages\Background\Candy Cloud Castle.png
+Checking existence of JPG: 300x300_jpg\Background\Candy Cloud Castle.jpg
+Files not found, processing: PNG - compositeImages\Background\Candy Cloud Castle.png, JPG - 300x300_jpg\Background\Candy Cloud Castle.jpg
+Saved: compositeImages\Background\Candy Cloud Castle.png
+Resized image saved: 600x600_png\Background\Candy Cloud Castle Right_L.png
+Resizing image: scriptImages\Background\Candy Cloud Castle_C1.png to 600x600
+Resized image saved: 800x800_png\Background\Candy Cloud Castle Right_L.png
+Resizing image: scriptImages\Background\Candy Cloud Castle_C1.png to 800x800
+Saved: 300x300_jpg\Background\Candy Cloud Castle.jpg
+Processing image group: Hot Stuff Left
+Resized image saved: 600x600_png\Background\Candy Cloud Castle_C1.png
+Resizing image: scriptImages\Background\Hot Stuff Left_C1.png to 600x600
+Processing file: Hot Stuff Left_C1.png in subfolder: Background
+Resized image saved: 800x800_png\Background\Candy Cloud Castle_C1.png
+Resizing image: scriptImages\Background\Hot Stuff Left_C1.png to 800x800
+Resized image saved: 600x600_png\Background\Hot Stuff Left_C1.png
+Resizing image: scriptImages\Background\Hot Stuff Left_C2.png to 600x600
+Processing file: Hot Stuff Left_C2.png in subfolder: Background
+Resized image saved: 800x800_png\Background\Hot Stuff Left_C1.png
+Resizing image: scriptImages\Background\Hot Stuff Left_C2.png to 800x800
+Processing file: Hot Stuff Left_C3.png in subfolder: Background
+Resized image saved: 600x600_png\Background\Hot Stuff Left_C2.png
+Resizing image: scriptImages\Background\Hot Stuff Left_C3.png to 600x600
+Resized image saved: 800x800_png\Background\Hot Stuff Left_C2.png
+Resizing image: scriptImages\Background\Hot Stuff Left_C3.png to 800x800
+Processing file: Hot Stuff Left_C4.png in subfolder: Background
+Processing file: Hot Stuff Left_L.png in subfolder: Background
+Checking existence of PNG: compositeImages\Background\Hot Stuff Left.png
+Checking existence of JPG: 300x300_jpg\Background\Hot Stuff Left.jpg
+Files not found, processing: PNG - compositeImages\Background\Hot Stuff Left.png, JPG - 300x300_jpg\Background\Hot Stuff Left.jpg
+Resized image saved: 600x600_png\Background\Hot Stuff Left_C3.png
+Resizing image: scriptImages\Background\Hot Stuff Left_C4.png to 600x600
+Saved: compositeImages\Background\Hot Stuff Left.png
+Resized image saved: 800x800_png\Background\Hot Stuff Left_C3.png
+Resizing image: scriptImages\Background\Hot Stuff Left_C4.png to 800x800
+Saved: 300x300_jpg\Background\Hot Stuff Left.jpg
+Processing image group: Hot Stuff Right
+Processing file: Hot Stuff Right_C1.png in subfolder: Background
+Resized image saved: 600x600_png\Background\Hot Stuff Left_C4.png
+Resizing image: scriptImages\Background\Hot Stuff Left_L.png to 600x600
+Resized image saved: 800x800_png\Background\Hot Stuff Left_C4.png
+Resizing image: scriptImages\Background\Hot Stuff Left_L.png to 800x800
+Processing file: Hot Stuff Right_C2.png in subfolder: Background
+Resized image saved: 600x600_png\Background\Hot Stuff Left_L.png
+Resizing image: scriptImages\Background\Hot Stuff Right_C1.png to 600x600
+Resized image saved: 800x800_png\Background\Hot Stuff Left_L.png
+Resizing image: scriptImages\Background\Hot Stuff Right_C1.png to 800x800
+Processing file: Hot Stuff Right_C3.png in subfolder: Background
+Processing file: Hot Stuff Right_C4.png in subfolder: Background
+Resized image saved: 600x600_png\Background\Hot Stuff Right_C1.png
+Resizing image: scriptImages\Background\Hot Stuff Right_C2.png to 600x600
+Resized image saved: 800x800_png\Background\Hot Stuff Right_C1.png
+Resizing image: scriptImages\Background\Hot Stuff Right_C2.png to 800x800
+Processing file: Hot Stuff Right_L.png in subfolder: Background
+Checking existence of PNG: compositeImages\Background\Hot Stuff Right.png
+Checking existence of JPG: 300x300_jpg\Background\Hot Stuff Right.jpg
+Files not found, processing: PNG - compositeImages\Background\Hot Stuff Right.png, JPG - 300x300_jpg\Background\Hot Stuff Right.jpg
+Saved: compositeImages\Background\Hot Stuff Right.png
+Resized image saved: 600x600_png\Background\Hot Stuff Right_C2.png
+Resizing image: scriptImages\Background\Hot Stuff Right_C3.png to 600x600
+Resized image saved: 800x800_png\Background\Hot Stuff Right_C2.png
+Resizing image: scriptImages\Background\Hot Stuff Right_C3.png to 800x800
+Saved: 300x300_jpg\Background\Hot Stuff Right.jpg
+Processing image group: Sprinkle Hearts Scroll Left
+Processing file: Sprinkle Hearts Scroll Left_C1.png in subfolder: Background
+Processing file: Sprinkle Hearts Scroll Left_C2.png in subfolder: Background
+Resized image saved: 600x600_png\Background\Hot Stuff Right_C3.png
+Resizing image: scriptImages\Background\Hot Stuff Right_C4.png to 600x600
+Resized image saved: 800x800_png\Background\Hot Stuff Right_C3.png
+Resizing image: scriptImages\Background\Hot Stuff Right_C4.png to 800x800
+Processing file: Sprinkle Hearts Scroll Left_C3.png in subfolder: Background
+Resized image saved: 600x600_png\Background\Hot Stuff Right_C4.png
+Resizing image: scriptImages\Background\Hot Stuff Right_L.png to 600x600
+Resized image saved: 800x800_png\Background\Hot Stuff Right_C4.png
+Resizing image: scriptImages\Background\Hot Stuff Right_L.png to 800x800
+Processing file: Sprinkle Hearts Scroll Left_C4.png in subfolder: Background
+Processing file: Sprinkle Hearts Scroll Left_C5.png in subfolder: Background
+Resized image saved: 600x600_png\Background\Hot Stuff Right_L.png
+Resizing image: scriptImages\Background\Sprinkle Hearts Scroll Left_C1.png to 600x600
+Resized image saved: 800x800_png\Background\Hot Stuff Right_L.png
+Resizing image: scriptImages\Background\Sprinkle Hearts Scroll Left_C1.png to 800x800
+Processing file: Sprinkle Hearts Scroll Left_L.png in subfolder: Background
+Checking existence of PNG: compositeImages\Background\Sprinkle Hearts Scroll Left.png
+Checking existence of JPG: 300x300_jpg\Background\Sprinkle Hearts Scroll Left.jpg
+Files not found, processing: PNG - compositeImages\Background\Sprinkle Hearts Scroll Left.png, JPG - 300x300_jpg\Background\Sprinkle Hearts Scroll Left.jpg
+Saved: compositeImages\Background\Sprinkle Hearts Scroll Left.png
+Resized image saved: 600x600_png\Background\Sprinkle Hearts Scroll Left_C1.png
+Resizing image: scriptImages\Background\Sprinkle Hearts Scroll Left_C2.png to 600x600
+Saved: 300x300_jpg\Background\Sprinkle Hearts Scroll Left.jpg
+Processing image group: Sprinkle Hearts Scroll Right
+Resized image saved: 800x800_png\Background\Sprinkle Hearts Scroll Left_C1.png
+Resizing image: scriptImages\Background\Sprinkle Hearts Scroll Left_C2.png to 800x800
+Processing file: Sprinkle Hearts Scroll Right_C1.png in subfolder: Background
+Resized image saved: 600x600_png\Background\Sprinkle Hearts Scroll Left_C2.png
+Resizing image: scriptImages\Background\Sprinkle Hearts Scroll Left_C3.png to 600x600
+Resized image saved: 800x800_png\Background\Sprinkle Hearts Scroll Left_C2.png
+Resizing image: scriptImages\Background\Sprinkle Hearts Scroll Left_C3.png to 800x800
+Processing file: Sprinkle Hearts Scroll Right_C2.png in subfolder: Background
+Processing file: Sprinkle Hearts Scroll Right_C3.png in subfolder: Background
+Resized image saved: 600x600_png\Background\Sprinkle Hearts Scroll Left_C3.png
+Resizing image: scriptImages\Background\Sprinkle Hearts Scroll Left_C4.png to 600x600
+Resized image saved: 800x800_png\Background\Sprinkle Hearts Scroll Left_C3.png
+Resizing image: scriptImages\Background\Sprinkle Hearts Scroll Left_C4.png to 800x800
+Processing file: Sprinkle Hearts Scroll Right_C4.png in subfolder: Background
+Resized image saved: 600x600_png\Background\Sprinkle Hearts Scroll Left_C4.png
+Resizing image: scriptImages\Background\Sprinkle Hearts Scroll Left_C5.png to 600x600
+Resized image saved: 800x800_png\Background\Sprinkle Hearts Scroll Left_C4.png
+Resizing image: scriptImages\Background\Sprinkle Hearts Scroll Left_C5.png to 800x800
+Processing file: Sprinkle Hearts Scroll Right_C5.png in subfolder: Background
+Processing file: Sprinkle Hearts Scroll Right_L.png in subfolder: Background
+Checking existence of PNG: compositeImages\Background\Sprinkle Hearts Scroll Right.png
+Checking existence of JPG: 300x300_jpg\Background\Sprinkle Hearts Scroll Right.jpg
+Files not found, processing: PNG - compositeImages\Background\Sprinkle Hearts Scroll Right.png, JPG - 300x300_jpg\Background\Sprinkle Hearts Scroll Right.jpg
+Resized image saved: 600x600_png\Background\Sprinkle Hearts Scroll Left_C5.png
+Resizing image: scriptImages\Background\Sprinkle Hearts Scroll Left_L.png to 600x600
+Saved: compositeImages\Background\Sprinkle Hearts Scroll Right.png
+Resized image saved: 800x800_png\Background\Sprinkle Hearts Scroll Left_C5.png
+Resizing image: scriptImages\Background\Sprinkle Hearts Scroll Left_L.png to 800x800
+Saved: 300x300_jpg\Background\Sprinkle Hearts Scroll Right.jpg
+Resized image saved: 600x600_png\Background\Sprinkle Hearts Scroll Left_L.png
+Resizing image: scriptImages\Background\Sprinkle Hearts Scroll Right_C1.png to 600x600
+Resized image saved: 800x800_png\Background\Sprinkle Hearts Scroll Left_L.png
+Resizing image: scriptImages\Background\Sprinkle Hearts Scroll Right_C1.png to 800x800
+Resized image saved: 600x600_png\Background\Sprinkle Hearts Scroll Right_C1.png
+Resizing image: scriptImages\Background\Sprinkle Hearts Scroll Right_C2.png to 600x600
+Resized image saved: 800x800_png\Background\Sprinkle Hearts Scroll Right_C1.png
+Resizing image: scriptImages\Background\Sprinkle Hearts Scroll Right_C2.png to 800x800
+Resized image saved: 600x600_png\Background\Sprinkle Hearts Scroll Right_C2.png
+Resizing image: scriptImages\Background\Sprinkle Hearts Scroll Right_C3.png to 600x600
+Resized image saved: 800x800_png\Background\Sprinkle Hearts Scroll Right_C2.png
+Resizing image: scriptImages\Background\Sprinkle Hearts Scroll Right_C3.png to 800x800
+Resized image saved: 600x600_png\Background\Sprinkle Hearts Scroll Right_C3.png
+Resizing image: scriptImages\Background\Sprinkle Hearts Scroll Right_C4.png to 600x600
+Resized image saved: 800x800_png\Background\Sprinkle Hearts Scroll Right_C3.png
+Resizing image: scriptImages\Background\Sprinkle Hearts Scroll Right_C4.png to 800x800
+Resized image saved: 600x600_png\Background\Sprinkle Hearts Scroll Right_C4.png
+Resizing image: scriptImages\Background\Sprinkle Hearts Scroll Right_C5.png to 600x600
+Resized image saved: 800x800_png\Background\Sprinkle Hearts Scroll Right_C4.png
+Resizing image: scriptImages\Background\Sprinkle Hearts Scroll Right_C5.png to 800x800
+Resized image saved: 600x600_png\Background\Sprinkle Hearts Scroll Right_C5.png
+Resizing image: scriptImages\Background\Sprinkle Hearts Scroll Right_L.png to 600x600
+Resized image saved: 800x800_png\Background\Sprinkle Hearts Scroll Right_C5.png
+Resizing image: scriptImages\Background\Sprinkle Hearts Scroll Right_L.png to 800x800
+Resized image saved: 600x600_png\Background\Sprinkle Hearts Scroll Right_L.png
+Resized image saved: 800x800_png\Background\Sprinkle Hearts Scroll Right_L.png
+Script started
+Subfolders found: Accessory, Background, Bodysuit, Colors, Extras, Eyebrows, Eyes, Face Sticker, Finished, Frame, Hair Style, Hand, Hat, Mouth, Outfit, Piercing, Tattoo, Undergarment
+Files found: 34
+Solid colors RGB values saved to colors.json
+Resizing image: scriptImages\Background\Candy Cloud Castle Left_C1.png to 800x800
+Resizing image: scriptImages\Background\Candy Cloud Castle Left_C1.png to 600x600
+Solid colors RGB values saved to colors.json
+Processing image group: Candy Cloud Castle Left
+Resized image saved: 800x800_png\Background\Candy Cloud Castle Left_C1.png
+Resizing image: scriptImages\Background\Candy Cloud Castle Left_C2.png to 800x800
+Resized image saved: 600x600_png\Background\Candy Cloud Castle Left_C1.png
+Resizing image: scriptImages\Background\Candy Cloud Castle Left_C2.png to 600x600
+Processing file: Candy Cloud Castle Left_C1.png in subfolder: Background
+Processing file: Candy Cloud Castle Left_C2.png in subfolder: Background
+Resized image saved: 800x800_png\Background\Candy Cloud Castle Left_C2.png
+Resizing image: scriptImages\Background\Candy Cloud Castle Left_C3.png to 800x800
+Resized image saved: 600x600_png\Background\Candy Cloud Castle Left_C2.png
+Resizing image: scriptImages\Background\Candy Cloud Castle Left_C3.png to 600x600
+Processing file: Candy Cloud Castle Left_C3.png in subfolder: Background
+Resized image saved: 800x800_png\Background\Candy Cloud Castle Left_C3.png
+Resizing image: scriptImages\Background\Candy Cloud Castle Left_C4.png to 800x800
+Resized image saved: 600x600_png\Background\Candy Cloud Castle Left_C3.png
+Resizing image: scriptImages\Background\Candy Cloud Castle Left_C4.png to 600x600
+Processing file: Candy Cloud Castle Left_C4.png in subfolder: Background
+Processing file: Candy Cloud Castle Left_C5.png in subfolder: Background
+Resized image saved: 800x800_png\Background\Candy Cloud Castle Left_C4.png
+Resizing image: scriptImages\Background\Candy Cloud Castle Left_C5.png to 800x800
+Resized image saved: 600x600_png\Background\Candy Cloud Castle Left_C4.png
+Resizing image: scriptImages\Background\Candy Cloud Castle Left_C5.png to 600x600
+Processing file: Candy Cloud Castle Left_L.png in subfolder: Background
+Checking existence of PNG: compositeImages\Background\Candy Cloud Castle Left.png
+Checking existence of JPG: 300x300_jpg\Background\Candy Cloud Castle Left.jpg
+Files not found, processing: PNG - compositeImages\Background\Candy Cloud Castle Left.png, JPG - 300x300_jpg\Background\Candy Cloud Castle Left.jpg
+Resized image saved: 800x800_png\Background\Candy Cloud Castle Left_C5.png
+Resizing image: scriptImages\Background\Candy Cloud Castle Left_L.png to 800x800
+Saved: compositeImages\Background\Candy Cloud Castle Left.png
+Resized image saved: 600x600_png\Background\Candy Cloud Castle Left_C5.png
+Resizing image: scriptImages\Background\Candy Cloud Castle Left_L.png to 600x600
+Saved: 300x300_jpg\Background\Candy Cloud Castle Left.jpg
+Processing image group: Candy Cloud Castle Right
+Processing file: Candy Cloud Castle Right_C1.png in subfolder: Background
+Resized image saved: 800x800_png\Background\Candy Cloud Castle Left_L.png
+Resizing image: scriptImages\Background\Candy Cloud Castle Right_C1.png to 800x800
+Resized image saved: 600x600_png\Background\Candy Cloud Castle Left_L.png
+Resizing image: scriptImages\Background\Candy Cloud Castle Right_C1.png to 600x600
+Processing file: Candy Cloud Castle Right_C2.png in subfolder: Background
+Resized image saved: 800x800_png\Background\Candy Cloud Castle Right_C1.png
+Resizing image: scriptImages\Background\Candy Cloud Castle Right_C2.png to 800x800
+Processing file: Candy Cloud Castle Right_C3.png in subfolder: Background
+Resized image saved: 600x600_png\Background\Candy Cloud Castle Right_C1.png
+Resizing image: scriptImages\Background\Candy Cloud Castle Right_C2.png to 600x600
+Processing file: Candy Cloud Castle Right_C4.png in subfolder: Background
+Resized image saved: 800x800_png\Background\Candy Cloud Castle Right_C2.png
+Resizing image: scriptImages\Background\Candy Cloud Castle Right_C3.png to 800x800
+Resized image saved: 600x600_png\Background\Candy Cloud Castle Right_C2.png
+Resizing image: scriptImages\Background\Candy Cloud Castle Right_C3.png to 600x600
+Processing file: Candy Cloud Castle Right_C5.png in subfolder: Background
+Resized image saved: 800x800_png\Background\Candy Cloud Castle Right_C3.png
+Resizing image: scriptImages\Background\Candy Cloud Castle Right_C4.png to 800x800
+Resized image saved: 600x600_png\Background\Candy Cloud Castle Right_C3.png
+Resizing image: scriptImages\Background\Candy Cloud Castle Right_C4.png to 600x600
+Processing file: Candy Cloud Castle Right_L.png in subfolder: Background
+Checking existence of PNG: compositeImages\Background\Candy Cloud Castle Right.png
+Checking existence of JPG: 300x300_jpg\Background\Candy Cloud Castle Right.jpg
+Files not found, processing: PNG - compositeImages\Background\Candy Cloud Castle Right.png, JPG - 300x300_jpg\Background\Candy Cloud Castle Right.jpg
+Resized image saved: 800x800_png\Background\Candy Cloud Castle Right_C4.png
+Resizing image: scriptImages\Background\Candy Cloud Castle Right_C5.png to 800x800
+Saved: compositeImages\Background\Candy Cloud Castle Right.png
+Saved: 300x300_jpg\Background\Candy Cloud Castle Right.jpg
+Processing image group: Hot Stuff Left
+Resized image saved: 600x600_png\Background\Candy Cloud Castle Right_C4.png
+Resizing image: scriptImages\Background\Candy Cloud Castle Right_C5.png to 600x600
+Resized image saved: 800x800_png\Background\Candy Cloud Castle Right_C5.png
+Resizing image: scriptImages\Background\Candy Cloud Castle Right_L.png to 800x800
+Processing file: Hot Stuff Left_C1.png in subfolder: Background
+Resized image saved: 600x600_png\Background\Candy Cloud Castle Right_C5.png
+Resizing image: scriptImages\Background\Candy Cloud Castle Right_L.png to 600x600
+Processing file: Hot Stuff Left_C2.png in subfolder: Background
+Resized image saved: 800x800_png\Background\Candy Cloud Castle Right_L.png
+Skipping existing file: 800x800_png\Background\Hot Stuff Left_C1.png
+Skipping existing file: 800x800_png\Background\Hot Stuff Left_C2.png
+Skipping existing file: 800x800_png\Background\Hot Stuff Left_C3.png
+Skipping existing file: 800x800_png\Background\Hot Stuff Left_C4.png
+Skipping existing file: 800x800_png\Background\Hot Stuff Left_L.png
+Skipping existing file: 800x800_png\Background\Hot Stuff Right_C1.png
+Skipping existing file: 800x800_png\Background\Hot Stuff Right_C2.png
+Skipping existing file: 800x800_png\Background\Hot Stuff Right_C3.png
+Skipping existing file: 800x800_png\Background\Hot Stuff Right_C4.png
+Skipping existing file: 800x800_png\Background\Hot Stuff Right_L.png
+Skipping existing file: 800x800_png\Background\Sprinkle Hearts Scroll Left_C1.png
+Skipping existing file: 800x800_png\Background\Sprinkle Hearts Scroll Left_C2.png
+Skipping existing file: 800x800_png\Background\Sprinkle Hearts Scroll Left_C3.png
+Skipping existing file: 800x800_png\Background\Sprinkle Hearts Scroll Left_C4.png
+Skipping existing file: 800x800_png\Background\Sprinkle Hearts Scroll Left_C5.png
+Skipping existing file: 800x800_png\Background\Sprinkle Hearts Scroll Left_L.png
+Skipping existing file: 800x800_png\Background\Sprinkle Hearts Scroll Right_C1.png
+Skipping existing file: 800x800_png\Background\Sprinkle Hearts Scroll Right_C2.png
+Skipping existing file: 800x800_png\Background\Sprinkle Hearts Scroll Right_C3.png
+Skipping existing file: 800x800_png\Background\Sprinkle Hearts Scroll Right_C4.png
+Skipping existing file: 800x800_png\Background\Sprinkle Hearts Scroll Right_C5.png
+Skipping existing file: 800x800_png\Background\Sprinkle Hearts Scroll Right_L.png
+Processing file: Hot Stuff Left_C3.png in subfolder: Background
+Processing file: Hot Stuff Left_C4.png in subfolder: Background
+Resized image saved: 600x600_png\Background\Candy Cloud Castle Right_L.png
+Skipping existing file: 600x600_png\Background\Hot Stuff Left_C1.png
+Skipping existing file: 600x600_png\Background\Hot Stuff Left_C2.png
+Skipping existing file: 600x600_png\Background\Hot Stuff Left_C3.png
+Skipping existing file: 600x600_png\Background\Hot Stuff Left_C4.png
+Skipping existing file: 600x600_png\Background\Hot Stuff Left_L.png
+Skipping existing file: 600x600_png\Background\Hot Stuff Right_C1.png
+Skipping existing file: 600x600_png\Background\Hot Stuff Right_C2.png
+Skipping existing file: 600x600_png\Background\Hot Stuff Right_C3.png
+Skipping existing file: 600x600_png\Background\Hot Stuff Right_C4.png
+Skipping existing file: 600x600_png\Background\Hot Stuff Right_L.png
+Skipping existing file: 600x600_png\Background\Sprinkle Hearts Scroll Left_C1.png
+Skipping existing file: 600x600_png\Background\Sprinkle Hearts Scroll Left_C2.png
+Skipping existing file: 600x600_png\Background\Sprinkle Hearts Scroll Left_C3.png
+Skipping existing file: 600x600_png\Background\Sprinkle Hearts Scroll Left_C4.png
+Skipping existing file: 600x600_png\Background\Sprinkle Hearts Scroll Left_C5.png
+Skipping existing file: 600x600_png\Background\Sprinkle Hearts Scroll Left_L.png
+Skipping existing file: 600x600_png\Background\Sprinkle Hearts Scroll Right_C1.png
+Skipping existing file: 600x600_png\Background\Sprinkle Hearts Scroll Right_C2.png
+Skipping existing file: 600x600_png\Background\Sprinkle Hearts Scroll Right_C3.png
+Skipping existing file: 600x600_png\Background\Sprinkle Hearts Scroll Right_C4.png
+Skipping existing file: 600x600_png\Background\Sprinkle Hearts Scroll Right_C5.png
+Skipping existing file: 600x600_png\Background\Sprinkle Hearts Scroll Right_L.png
+Processing file: Hot Stuff Left_L.png in subfolder: Background
+Checking existence of PNG: compositeImages\Background\Hot Stuff Left.png
+Checking existence of JPG: 300x300_jpg\Background\Hot Stuff Left.jpg
+Skipping existing files: PNG - compositeImages\Background\Hot Stuff Left.png, JPG - 300x300_jpg\Background\Hot Stuff Left.jpg
+Processing image group: Hot Stuff Right
+Processing file: Hot Stuff Right_C1.png in subfolder: Background
+Processing file: Hot Stuff Right_C2.png in subfolder: Background
+Processing file: Hot Stuff Right_C3.png in subfolder: Background
+Processing file: Hot Stuff Right_C4.png in subfolder: Background
+Processing file: Hot Stuff Right_L.png in subfolder: Background
+Checking existence of PNG: compositeImages\Background\Hot Stuff Right.png
+Checking existence of JPG: 300x300_jpg\Background\Hot Stuff Right.jpg
+Skipping existing files: PNG - compositeImages\Background\Hot Stuff Right.png, JPG - 300x300_jpg\Background\Hot Stuff Right.jpg
+Processing image group: Sprinkle Hearts Scroll Left
+Processing file: Sprinkle Hearts Scroll Left_C1.png in subfolder: Background
+Processing file: Sprinkle Hearts Scroll Left_C2.png in subfolder: Background
+Processing file: Sprinkle Hearts Scroll Left_C3.png in subfolder: Background
+Processing file: Sprinkle Hearts Scroll Left_C4.png in subfolder: Background
+Processing file: Sprinkle Hearts Scroll Left_C5.png in subfolder: Background
+Processing file: Sprinkle Hearts Scroll Left_L.png in subfolder: Background
+Checking existence of PNG: compositeImages\Background\Sprinkle Hearts Scroll Left.png
+Checking existence of JPG: 300x300_jpg\Background\Sprinkle Hearts Scroll Left.jpg
+Skipping existing files: PNG - compositeImages\Background\Sprinkle Hearts Scroll Left.png, JPG - 300x300_jpg\Background\Sprinkle Hearts Scroll Left.jpg
+Processing image group: Sprinkle Hearts Scroll Right
+Processing file: Sprinkle Hearts Scroll Right_C1.png in subfolder: Background
+Processing file: Sprinkle Hearts Scroll Right_C2.png in subfolder: Background
+Processing file: Sprinkle Hearts Scroll Right_C3.png in subfolder: Background
+Processing file: Sprinkle Hearts Scroll Right_C4.png in subfolder: Background
+Processing file: Sprinkle Hearts Scroll Right_C5.png in subfolder: Background
+Processing file: Sprinkle Hearts Scroll Right_L.png in subfolder: Background
+Checking existence of PNG: compositeImages\Background\Sprinkle Hearts Scroll Right.png
+Checking existence of JPG: 300x300_jpg\Background\Sprinkle Hearts Scroll Right.jpg
+Skipping existing files: PNG - compositeImages\Background\Sprinkle Hearts Scroll Right.png, JPG - 300x300_jpg\Background\Sprinkle Hearts Scroll Right.jpg

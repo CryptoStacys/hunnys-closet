@@ -1,6 +1,25 @@
 {
   "attributes": [
     {
+      "name": "Background",
+      "traits": [
+        {"name":"Hot Stuff Left","colors":4,"rarity":"Common","tags":[]},
+        {"name":"Hot Stuff Right","colors":4,"rarity":"Common","tags":[]},
+        {"name":"Sprinkle Hearts Scroll Left","colors":5,"rarity":"Common","tags":[]},
+        {"name":"Sprinkle Hearts Scroll Right","colors":5,"rarity":"Common","tags":[]},
+        {"name":"Candy Cloud Castle Left","colors":5,"rarity":"Common","tags":[]},
+        {"name":"Candy Cloud Castle Right","colors":5,"rarity":"Common","tags":[]},
+        {"name":"Broken Heart Left","colors":4,"rarity":"Common","tags":[]},
+        {"name":"Broken Heart Right","colors":4,"rarity":"Common","tags":[]},
+        {"name":"Candy Hearts","colors":4,"rarity":"Common","tags":[]},
+        {"name":"Empty","colors":0,"rarity":"Common","tags":[]},
+        {"name":"Hunnys Yellow Background","colors":0,"rarity":"Common","tags":[]},
+        {"name":"Hunnys Purple Background","colors":0,"rarity":"Common","tags":[]},
+        {"name":"Hunnys Dolly Box Inside","colors":0,"rarity":"Common","tags":[]},
+        {"name":"SuperBowl LVIII","colors":4,"rarity":"Common","tags":[]}
+      ]
+    },
+    {
       "name": "Accessory",
       "traits": [
         {"name":"Anime Heart Shades","colors":2,"rarity":"Common","tags":["glasses"]},
@@ -12,19 +31,6 @@
         {"name":"Cupcake Backpack","colors":5,"rarity":"Common","tags":["backpack","ownStripes"]},
         {"name":"Power of Jadestone","colors":2,"rarity":"Common","tags":[]},
         {"name":"Sparkly Wings","colors":4,"rarity":"Common","tags":["onBack"]}
-      ]
-    },
-    {
-      "name": "Background",
-      "traits": [
-        {"name":"Broken Heart Left","colors":4,"rarity":"Common","tags":[]},
-        {"name":"Broken Heart Right","colors":4,"rarity":"Common","tags":[]},
-        {"name":"Candy Hearts","colors":4,"rarity":"Common","tags":[]},
-        {"name":"Empty","colors":0,"rarity":"Common","tags":[]},
-        {"name":"Hunnys Yellow Background","colors":0,"rarity":"Common","tags":[]},
-        {"name":"Hunnys Purple Background","colors":0,"rarity":"Common","tags":[]},
-        {"name":"Hunnys Dolly Box Inside","colors":0,"rarity":"Common","tags":[]},
-        {"name":"SuperBowl LVIII","colors":4,"rarity":"Common","tags":[]}
       ]
     },
     {
