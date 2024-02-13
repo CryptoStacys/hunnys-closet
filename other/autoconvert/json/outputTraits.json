@@ -1,17 +1,56 @@
 {
   "attributes": [
+    {"name": "Accessory", "traits": [
+        {"name": "Anime Heart Shades","colors": 2,"rarity": "Common","tags": [],"token_id": 62},
+        {"name": "Bubbly Love Wings","colors": 1,"rarity": "Common","tags": ["onBack"],"token_id": 62},
+        {"name": "Ghost Hugicorn","colors": 0,"rarity": "Common","tags": [],"token_id": 62},
+        {"name": "Hawt Wings","colors": 3,"rarity": "Common","tags": [],"token_id": 62}
+    ]},
+
     {"name": "Background", "traits": [
-        {"name": "SuperBowl LVIII","colors": 4,"rarity": "Common","tags": [""],"token_id": 61}
+        {"name": "Broken Heart Left","colors": 4,"rarity": "Common","tags": [],"token_id": 62},
+        {"name": "Broken Heart Right","colors": 4,"rarity": "Common","tags": [],"token_id": 62},
+        {"name": "Candy Hearts","colors": 4,"rarity": "Common","tags": [],"token_id": 62}
+    ]},
+
+    {"name": "Eyebrows", "traits": [
+        {"name": "Lovey Brows","colors": 0,"rarity": "Common","tags": [],"token_id": 62}
+    ]},
+
+    {"name": "Eyes", "traits": [
+        {"name": "Anime Heart Eyes","colors": 1,"rarity": "Common","tags": [],"token_id": 62}
+    ]},
+
+    {"name": "Face Sticker", "traits": [
+        {"name": "Anime Blush","colors": 1,"rarity": "Common","tags": [],"token_id": 62}
+    ]},
+
+    {"name": "Frame", "traits": [
+        {"name": "Soft Sparkle Heart Frame","colors": 4,"rarity": "Common","tags": [],"token_id": 62},
+        {"name": "Thinking of U","colors": 1,"rarity": "Common","tags": [],"token_id": 62}
+    ]},
+
+    {"name": "Hand", "traits": [
+        {"name": "Heart Hands","colors": 1,"rarity": "Common","tags": ["skin"],"token_id": 62},
+        {"name": "Holding Hands","colors": 3,"rarity": "Common","tags": ["skin"],"token_id": 62},
+        {"name": "Macaron My Heart","colors": 3,"rarity": "Common","tags": ["skin"],"token_id": 62}
     ]},
 
     {"name": "Hat", "traits": [
-        {"name": "Football Helmet","colors": 3,"rarity": "Common","tags": [""],"token_id": 61}
+        {"name": "Cuddle Detectors","colors": 3,"rarity": "Common","tags": [],"token_id": 62},
+        {"name": "Cupid Rats Arrow","colors": 3,"rarity": "Common","tags": [],"token_id": 62}
+    ]},
+
+    {"name": "Mouth", "traits": [
+        {"name": "Lovey Lips","colors": 2,"rarity": "Common","tags": [],"token_id": 62}
     ]},
 
     {"name": "Outfit", "traits": [
-        {"name": "49ers Jersey","colors": 3,"rarity": "Common","tags": [""],"token_id": 61},
-        {"name": "Chiefs Jersey","colors": 4,"rarity": "Common","tags": [""],"token_id": 61},
-        {"name": "Tay-Tay Jersey","colors": 4,"rarity": "Common","tags": [""],"token_id": 61}
+        {"name": "Candy Cutie Coveralls","colors": 5,"rarity": "Common","tags": [],"token_id": 62}
+    ]},
+
+    {"name": "Skin", "traits": [
+        {"name": "Cupid Babe","colors": 0,"rarity": "Common","tags": [],"token_id": 62}
     ]}
   ]
 }
