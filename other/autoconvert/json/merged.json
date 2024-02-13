@@ -1,123 +1,84 @@
 {
     "attributes": [
         {
-            "name": "Accessory",
-            "traits": [
-                {
-                    "name": "Anime Heart Shades",
-                    "colors": 2,
-                    "rarity": "Common",
-                    "tags": [],
-                    "token_id": 62
-                },
-                {
-                    "name": "Bubbly Love Wings",
-                    "colors": 1,
-                    "rarity": "Common",
-                    "tags": [
-                        "onBack"
-                    ],
-                    "token_id": 62
-                },
-                {
-                    "name": "Ghost Hugicorn",
-                    "colors": 0,
-                    "rarity": "Common",
-                    "tags": [],
-                    "token_id": 62
-                },
-                {
-                    "name": "Hawt Wings",
-                    "colors": 3,
-                    "rarity": "Common",
-                    "tags": [],
-                    "token_id": 62
-                },
-                {
-                    "name": "Empty",
-                    "colors": 0,
-                    "rarity": "common",
-                    "tags": []
-                },
-                {
-                    "name": "Coco the Smugblush",
-                    "colors": 3,
-                    "rarity": "common",
-                    "tags": [
-                        "companion"
-                    ]
-                },
-                {
-                    "name": "Cupcake Backpack",
-                    "colors": 5,
-                    "rarity": "common",
-                    "tags": [
-                        "backpack",
-                        "ownStripes"
-                    ]
-                },
-                {
-                    "name": "Power of Jadestone",
-                    "colors": 2,
-                    "rarity": "common",
-                    "tags": []
-                },
-                {
-                    "name": "Sparkly Wings",
-                    "colors": 4,
-                    "rarity": "common",
-                    "tags": [
-                        "onBack"
-                    ]
-                }
-            ]
-        },
-        {
             "name": "Background",
             "traits": [
+                {
+                    "name": "Hot Stuff Left",
+                    "colors": 4,
+                    "rarity": "Common",
+                    "tags": []
+                },
+                {
+                    "name": "Hot Stuff Right",
+                    "colors": 4,
+                    "rarity": "Common",
+                    "tags": []
+                },
+                {
+                    "name": "Sprinkle Hearts Scroll Left",
+                    "colors": 5,
+                    "rarity": "Common",
+                    "tags": []
+                },
+                {
+                    "name": "Sprinkle Hearts Scroll Right",
+                    "colors": 5,
+                    "rarity": "Common",
+                    "tags": []
+                },
+                {
+                    "name": "Candy Cloud Castle Left",
+                    "colors": 5,
+                    "rarity": "Common",
+                    "tags": []
+                },
+                {
+                    "name": "Candy Cloud Castle Right",
+                    "colors": 5,
+                    "rarity": "Common",
+                    "tags": []
+                },
                 {
                     "name": "Broken Heart Left",
                     "colors": 4,
                     "rarity": "Common",
-                    "tags": [],
-                    "token_id": 62
+                    "tags": []
                 },
                 {
                     "name": "Broken Heart Right",
                     "colors": 4,
                     "rarity": "Common",
-                    "tags": [],
-                    "token_id": 62
+                    "tags": []
                 },
                 {
                     "name": "Candy Hearts",
                     "colors": 4,
                     "rarity": "Common",
-                    "tags": [],
-                    "token_id": 62
+                    "tags": []
                 },
                 {
                     "name": "Empty",
                     "colors": 0,
-                    "rarity": "common",
+                    "rarity": "Common",
                     "tags": []
                 },
                 {
                     "name": "Hunnys Yellow Background",
                     "colors": 0,
-                    "rarity": "common",
+                    "rarity": "Common",
                     "tags": []
                 },
                 {
                     "name": "Hunnys Purple Background",
                     "colors": 0,
-                    "rarity": "common",
+                    "rarity": "Common",
                     "tags": []
                 },
                 {
                     "name": "Hunnys Dolly Box Inside",
                     "colors": 0,
-                    "rarity": "common",
+                    "rarity": "Common",
                     "tags": []
                 },
                 {
@@ -129,25 +90,98 @@
             ]
         },
         {
+            "name": "Accessory",
+            "traits": [
+                {
+                    "name": "Anime Heart Shades",
+                    "colors": 2,
+                    "rarity": "Common",
+                    "tags": [
+                        "glasses"
+                    ]
+                },
+                {
+                    "name": "Bubbly Love Wings",
+                    "colors": 1,
+                    "rarity": "Common",
+                    "tags": [
+                        "onBack"
+                    ]
+                },
+                {
+                    "name": "Ghost Hugicorn",
+                    "colors": 0,
+                    "rarity": "Common",
+                    "tags": [
+                        "companion"
+                    ]
+                },
+                {
+                    "name": "Hawt Wings",
+                    "colors": 3,
+                    "rarity": "Common",
+                    "tags": [
+                        "onBack"
+                    ]
+                },
+                {
+                    "name": "Empty",
+                    "colors": 0,
+                    "rarity": "Common",
+                    "tags": []
+                },
+                {
+                    "name": "Coco the Smugblush",
+                    "colors": 3,
+                    "rarity": "Common",
+                    "tags": [
+                        "companion"
+                    ]
+                },
+                {
+                    "name": "Cupcake Backpack",
+                    "colors": 5,
+                    "rarity": "Common",
+                    "tags": [
+                        "backpack",
+                        "ownStripes"
+                    ]
+                },
+                {
+                    "name": "Power of Jadestone",
+                    "colors": 2,
+                    "rarity": "Common",
+                    "tags": []
+                },
+                {
+                    "name": "Sparkly Wings",
+                    "colors": 4,
+                    "rarity": "Common",
+                    "tags": [
+                        "onBack"
+                    ]
+                }
+            ]
+        },
+        {
             "name": "Eyebrows",
             "traits": [
                 {
                     "name": "Lovey Brows",
                     "colors": 0,
                     "rarity": "Common",
-                    "tags": [],
-                    "token_id": 62
+                    "tags": []
                 },
                 {
                     "name": "Empty",
                     "colors": 0,
-                    "rarity": "common",
+                    "rarity": "Common",
                     "tags": []
                 },
                 {
                     "name": "Common",
                     "colors": 0,
-                    "rarity": "common",
+                    "rarity": "Common",
                     "tags": []
                 }
             ]
@@ -159,25 +193,24 @@
                     "name": "Anime Heart Eyes",
                     "colors": 1,
                     "rarity": "Common",
-                    "tags": [],
-                    "token_id": 62
+                    "tags": []
                 },
                 {
                     "name": "Empty",
                     "colors": 0,
-                    "rarity": "common",
+                    "rarity": "Common",
                     "tags": []
                 },
                 {
                     "name": "Almond",
                     "colors": 1,
-                    "rarity": "common",
+                    "rarity": "Common",
                     "tags": []
                 },
                 {
                     "name": "Hooded Eyes",
                     "colors": 1,
-                    "rarity": "common",
+                    "rarity": "Common",
                     "tags": []
                 }
             ]
@@ -189,13 +222,12 @@
                     "name": "Anime Blush",
                     "colors": 1,
                     "rarity": "Common",
-                    "tags": [],
-                    "token_id": 62
+                    "tags": []
                 },
                 {
                     "name": "Empty",
                     "colors": 0,
-                    "rarity": "common",
+                    "rarity": "Common",
                     "tags": []
                 }
             ]
@@ -207,44 +239,42 @@
                     "name": "Soft Sparkle Heart Frame",
                     "colors": 4,
                     "rarity": "Common",
-                    "tags": [],
-                    "token_id": 62
+                    "tags": []
                 },
                 {
                     "name": "Thinking of U",
                     "colors": 1,
                     "rarity": "Common",
-                    "tags": [],
-                    "token_id": 62
+                    "tags": []
                 },
                 {
                     "name": "Empty",
                     "colors": 0,
-                    "rarity": "common",
+                    "rarity": "Common",
                     "tags": []
                 },
                 {
                     "name": "GM Banner",
                     "colors": 2,
-                    "rarity": "common",
+                    "rarity": "Common",
                     "tags": []
                 },
                 {
                     "name": "GM Speech Bubble",
                     "colors": 2,
-                    "rarity": "common",
+                    "rarity": "Common",
                     "tags": []
                 },
                 {
                     "name": "GM Text",
                     "colors": 1,
-                    "rarity": "common",
+                    "rarity": "Common",
                     "tags": []
                 },
                 {
                     "name": "Hunnys Dolly Box Outside",
                     "colors": 0,
-                    "rarity": "common",
+                    "rarity": "Common",
                     "tags": []
                 }
             ]
@@ -258,8 +288,7 @@
                     "rarity": "Common",
                     "tags": [
                         "skin"
-                    ],
-                    "token_id": 62
+                    ]
                 },
                 {
                     "name": "Holding Hands",
@@ -267,8 +296,7 @@
                     "rarity": "Common",
                     "tags": [
                         "skin"
-                    ],
-                    "token_id": 62
+                    ]
                 },
                 {
                     "name": "Macaron My Heart",
@@ -276,19 +304,18 @@
                     "rarity": "Common",
                     "tags": [
                         "skin"
-                    ],
-                    "token_id": 62
+                    ]
                 },
                 {
                     "name": "Empty",
                     "colors": 0,
-                    "rarity": "common",
+                    "rarity": "Common",
                     "tags": []
                 },
                 {
                     "name": "Ramen Chopsticks",
                     "colors": 3,
-                    "rarity": "common",
+                    "rarity": "Common",
                     "tags": [
                         "skin"
                     ]
@@ -296,7 +323,7 @@
                 {
                     "name": "Silas",
                     "colors": 5,
-                    "rarity": "common",
+                    "rarity": "Common",
                     "tags": [
                         "skin"
                     ]
@@ -326,38 +353,36 @@
                     "name": "Cuddle Detectors",
                     "colors": 3,
                     "rarity": "Common",
-                    "tags": [],
-                    "token_id": 62
+                    "tags": []
                 },
                 {
                     "name": "Cupid Rats Arrow",
                     "colors": 3,
                     "rarity": "Common",
-                    "tags": [],
-                    "token_id": 62
+                    "tags": []
                 },
                 {
                     "name": "Empty",
                     "colors": 0,
-                    "rarity": "common",
+                    "rarity": "Common",
                     "tags": []
                 },
                 {
                     "name": "Cheese Pizza Crown",
                     "colors": 2,
-                    "rarity": "common",
+                    "rarity": "Common",
                     "tags": []
                 },
                 {
                     "name": "Flicks Steampunk Tophat",
                     "colors": 4,
-                    "rarity": "common",
+                    "rarity": "Common",
                     "tags": []
                 },
                 {
                     "name": "Lazy Straw Hat",
                     "colors": 2,
-                    "rarity": "common",
+                    "rarity": "Common",
                     "tags": []
                 },
                 {
@@ -375,25 +400,24 @@
                     "name": "Lovey Lips",
                     "colors": 2,
                     "rarity": "Common",
-                    "tags": [],
-                    "token_id": 62
+                    "tags": []
                 },
                 {
                     "name": "Empty",
                     "colors": 0,
-                    "rarity": "common",
+                    "rarity": "Common",
                     "tags": []
                 },
                 {
                     "name": "Pout",
                     "colors": 1,
-                    "rarity": "common",
+                    "rarity": "Common",
                     "tags": []
                 },
                 {
                     "name": "Ramen Slurp",
                     "colors": 2,
-                    "rarity": "common",
+                    "rarity": "Common",
                     "tags": []
                 }
             ]
@@ -405,13 +429,12 @@
                     "name": "Candy Cutie Coveralls",
                     "colors": 5,
                     "rarity": "Common",
-                    "tags": [],
-                    "token_id": 62
+                    "tags": []
                 },
                 {
                     "name": "Empty",
                     "colors": 0,
-                    "rarity": "common",
+                    "rarity": "Common",
                     "tags": []
                 },
                 {
@@ -489,13 +512,12 @@
                     "name": "Cupid Babe",
                     "colors": 0,
                     "rarity": "Common",
-                    "tags": [],
-                    "token_id": 62
+                    "tags": []
                 },
                 {
                     "name": "Empty",
                     "colors": 0,
-                    "rarity": "common",
+                    "rarity": "Common",
                     "tags": []
                 },
                 {
@@ -530,7 +552,7 @@
                 {
                     "name": "Empty",
                     "colors": 0,
-                    "rarity": "common",
+                    "rarity": "Common",
                     "tags": []
                 }
             ]
@@ -541,7 +563,7 @@
                 {
                     "name": "Empty",
                     "colors": 0,
-                    "rarity": "common",
+                    "rarity": "Common",
                     "tags": []
                 }
             ]
@@ -552,7 +574,7 @@
                 {
                     "name": "Empty",
                     "colors": 0,
-                    "rarity": "common",
+                    "rarity": "Common",
                     "parts": 1,
                     "tags": []
                 },
@@ -585,7 +607,7 @@
                 {
                     "name": "Empty",
                     "colors": 0,
-                    "rarity": "common",
+                    "rarity": "Common",
                     "tags": []
                 }
             ]
@@ -596,31 +618,31 @@
                 {
                     "name": "Empty",
                     "colors": 0,
-                    "rarity": "common",
+                    "rarity": "Common",
                     "tags": []
                 },
                 {
                     "name": "Frilly Bra",
                     "colors": 1,
-                    "rarity": "common",
+                    "rarity": "Common",
                     "tags": []
                 },
                 {
                     "name": "Cow Print Strapless Bra",
                     "colors": 3,
-                    "rarity": "common",
+                    "rarity": "Common",
                     "tags": []
                 },
                 {
                     "name": "Dont Do It Track Bra",
                     "colors": 3,
-                    "rarity": "common",
+                    "rarity": "Common",
                     "tags": []
                 },
                 {
                     "name": "Ribbon Bow Bra",
                     "colors": 3,
-                    "rarity": "common",
+                    "rarity": "Common",
                     "tags": []
                 }
             ]
