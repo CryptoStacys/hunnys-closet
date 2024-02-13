@@ -3,9 +3,10 @@
     {
       "name": "Accessory",
       "traits": [
-        {"name":"Anime Heart Shades","colors":2,"rarity":"Common","tags":[]},
+        {"name":"Anime Heart Shades","colors":2,"rarity":"Common","tags":["glasses"]},
         {"name":"Bubbly Love Wings","colors":1,"rarity":"Common","tags":["onBack"]},
         {"name":"Ghost Hugicorn","colors":0,"rarity":"Common","tags":["companion"]},
+        {"name":"Hawt Wings","colors":3,"rarity":"Common","tags":["onBack"]},
         {"name":"Empty","colors":0,"rarity":"Common","tags":[]},
         {"name":"Coco the Smugblush","colors":3,"rarity":"Common","tags":["companion"]},
         {"name":"Cupcake Backpack","colors":5,"rarity":"Common","tags":["backpack","ownStripes"]},
