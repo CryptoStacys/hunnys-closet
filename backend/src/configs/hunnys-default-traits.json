@@ -5,8 +5,6 @@
       "traits": [
         {"name":"Hot Stuff Left","colors":4,"rarity":"Common","tags":[]},
         {"name":"Hot Stuff Right","colors":4,"rarity":"Common","tags":[]},
-        {"name":"Sprinkle Hearts Scroll Left","colors":5,"rarity":"Common","tags":[]},
-        {"name":"Sprinkle Hearts Scroll Right","colors":5,"rarity":"Common","tags":[]},
         {"name":"Candy Cloud Castle Left","colors":5,"rarity":"Common","tags":[]},
         {"name":"Candy Cloud Castle Right","colors":5,"rarity":"Common","tags":[]},
         {"name":"Broken Heart Left","colors":4,"rarity":"Common","tags":[]},
@@ -62,6 +60,8 @@
       "traits": [
         {"name":"Soft Sparkle Heart Frame","colors":4,"rarity":"Common","tags":[]},
         {"name":"Thinking of U","colors":1,"rarity":"Common","tags":[]},
+        {"name":"Sprinkle Hearts Scroll Left","colors":5,"rarity":"Common","tags":[]},
+        {"name":"Sprinkle Hearts Scroll Right","colors":5,"rarity":"Common","tags":[]},
         {"name":"Empty","colors":0,"rarity":"Common","tags":[]},
         {"name":"GM Banner","colors":2,"rarity":"Common","tags":[]},
         {"name":"GM Speech Bubble","colors":2,"rarity":"Common","tags":[]},
