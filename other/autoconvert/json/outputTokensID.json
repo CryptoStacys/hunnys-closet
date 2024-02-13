@@ -1,27 +1,87 @@
 [
     {
-        "tokenId": 61,
-        "name": "Super Bowl LVII",
+        "tokenId": 62,
+        "name": "Hunnys Valentines Day 2024",
         "attributes": [
             {
+                "trait_type": "Face Sticker",
+                "value": "Anime Blush"
+            },
+            {
+                "trait_type": "Eyes",
+                "value": "Anime Heart Eyes"
+            },
+            {
+                "trait_type": "Accessory",
+                "value": "Anime Heart Shades"
+            },
+            {
                 "trait_type": "Background",
-                "value": "SuperBowl LVIII"
+                "value": "Broken Heart Left"
+            },
+            {
+                "trait_type": "Background",
+                "value": "Broken Heart Right"
+            },
+            {
+                "trait_type": "Accessory",
+                "value": "Bubbly Love Wings"
             },
             {
                 "trait_type": "Outfit",
-                "value": "49ers Jersey"
+                "value": "Candy Cutie Coveralls"
             },
             {
-                "trait_type": "Outfit",
-                "value": "Chiefs Jersey"
-            },
-            {
-                "trait_type": "Outfit",
-                "value": "Tay-Tay Jersey"
+                "trait_type": "Background",
+                "value": "Candy Hearts"
             },
             {
                 "trait_type": "Hat",
-                "value": "Football Helmet"
+                "value": "Cuddle Detectors"
+            },
+            {
+                "trait_type": "Skin",
+                "value": "Cupid Babe"
+            },
+            {
+                "trait_type": "Hat",
+                "value": "Cupid Rats Arrow"
+            },
+            {
+                "trait_type": "Accessory",
+                "value": "Ghost Hugicorn"
+            },
+            {
+                "trait_type": "Accessory",
+                "value": "Hawt Wings"
+            },
+            {
+                "trait_type": "Hand",
+                "value": "Heart Hands"
+            },
+            {
+                "trait_type": "Hand",
+                "value": "Holding Hands"
+            },
+            {
+                "trait_type": "Eyebrows",
+                "value": "Lovey Brows"
+            },
+            {
+                "trait_type": "Mouth",
+                "value": "Lovey Lips"
+            },
+            {
+                "trait_type": "Hand",
+                "value": "Macaron My Heart"
+            },
+            {
+                "trait_type": "Frame",
+                "value": "Soft Sparkle Heart Frame"
+            },
+            {
+                "trait_type": "Frame",
+                "value": "Thinking of U"
             }
         ],
         "metaPath": ""
