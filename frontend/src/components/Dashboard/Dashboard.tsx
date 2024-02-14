@@ -127,9 +127,9 @@ export default function Dashboard() {
       <a rel="noreferrer" target="_blank" href="https://hunnys.io/membership-levels/">
       <div className="dashboardHero"> <img src={"https://cdn.discordapp.com/attachments/900232920046927922/1190773619668824094/Closet_Promo_Image_Graphics_Dashboard_3.png?ex=65a3055a&is=6590905a&hm=9e08cde1ae31e9669148a96cc821f37bebd48ebac01b40a37a5c4c8b8f692bc8&"} alt="" /></div>
       </a>
-      <a rel="noreferrer" target="_blank" href="https://opensea.io/collection/hunnys-seasons?search[numericTraits][0][name]=Generation&search[numericTraits][0][ranges][0][min]=3&search[numericTraits][0][ranges][0][max]=3">
-      <div className="dashboardHero"> <img src={"https://cdn.discordapp.com/attachments/1131994451787644958/1202674618905927790/8CFB37BB-7E5E-4867-B8FA-C61CA0A4C60E.png?ex=65ce5105&is=65bbdc05&hm=915dbeeace9976d610881cb7de3004abd967eadf28866f097b2fef8b34782e14&"} alt="" /></div>
-      </a></div>
+      <Link to="/dollys">
+      <div className="dashboardHero"> <img src={"https://cdn.discordapp.com/attachments/1131994451787644958/1207081647921565706/84B3C8E6-0576-4FE5-AD32-FAD09EF1810E.png?ex=65de5963&is=65cbe463&hm=059528afa385541a8a591ca7f88a9783a7e37500e498074c46a329fd43c38a57&"} alt="" /></div>
+      </Link></div>
         
       
         <div className="grid grid-cols-[1fr] sm:grid-cols-[2fr_1fr] bg-hunnys-blue rounded-2xl relative mb-2">
