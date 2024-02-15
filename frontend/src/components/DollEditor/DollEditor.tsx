@@ -276,29 +276,12 @@ export default function DollEditor(props: {
 }
 
 
-  useEffect(() => {
-    const checkAndSwitchNetwork = async () => {
-      if (
-        chain?.id !== ETHEREUM_MAINNET_CHAIN_ID &&
-        typeof switchNetwork === "function"
-      ) {
-        try {
-          await switchNetwork(ETHEREUM_MAINNET_CHAIN_ID);
-        } catch (error) {
-          console.error("Error switching networks:", error);
-        }
-      }
-    };
-
-    checkAndSwitchNetwork();
-  }, [chain, switchNetwork]);
-
   async function save() {
     console.log("Save function initiated");
     setIsSaving(true);
     setErrorMessage(""); // Reset any previous error messages
 
-  const timeoutDuration = 5000; // 20 seconds
+  const timeoutDuration = 10000; // 10 seconds
   let timeoutReached = false;
 
     // Start a timeout to reset saving state if it takes too long
@@ -311,14 +294,24 @@ export default function DollEditor(props: {
 
   try {
     let newTokenId = props.id?.toString() ?? null; // Existing token ID or null
-
+    // Check if it's a new Dolly that requires minting and the user is on the wrong network
+    if (isNewDolly && !isMinted && user && chain?.id !== ETHEREUM_MAINNET_CHAIN_ID) {
+      console.log("User is not on Ethereum Mainnet. Attempting to switch...");
+      if (typeof switchNetwork === "function") {
+          await switchNetwork(ETHEREUM_MAINNET_CHAIN_ID);
+          console.log("Network switch successful. Proceeding with minting...");
+      } else {
+          throw new Error("Network switch function not available");
+      }
+    }
     if (isNewDolly && !isMinted && user) {
+
       console.log("Minting new dolly...");
       newTokenId = await mintAndFetchTokenId(user.address);
 
       if (!newTokenId) {
         console.error("Failed to mint new dolly");
-        setErrorMessage("Failed to mint. Please try again.");
+        setErrorMessage("Something went wrong. Please try again.");
         clearTimeout(timeoutId); // Ensure to clear timeout upon early exit
         return; // Early exit from function, as minting failed
       }

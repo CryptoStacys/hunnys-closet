@@ -50,6 +50,7 @@ export default function Items() {
   "0xb62500D5a8b9629763d39a4D05784D6A47A72Ab1",
   "0x247DBa0157DDD215d30d41A70411DbaFbFD6a0F9",
   "0xDbC0019892E644Ad55756Ace79810305E8E4c31d",
+  "0x0DE9a66f0F9b714c5b987BDCb37A5E2EF1bDA67A",
   "0x745461ae3ee10F26e314735b6AF8ee41cD313E2d",
   "0x16272E839A5C29A3Fa90E670Cb599d233b6943aC"].map(address => address.toLowerCase()); // Replace with actual addresses and convert to lowercase
   const bunnyClubDiscount = 10; // 10% discount
