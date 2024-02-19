@@ -110,6 +110,162 @@ a {
     padding: 0px 15px 10px 15px;
 }
 
+.profile-card {
+  background: #FFFFFF; 
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+.profile-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+
+
+.banner {
+  background-image: url("https://cdn.discordapp.com/attachments/1032105881447444491/1208500289485668492/ProfileBanner.png?ex=65e38299&is=65d10d99&hm=d3e2540a0c6811e27b2799929ed0dfa9095f585311d486a9015312224a36f340&") !important;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  font-family: "Luckiest Guy";
+  color: #700cf5;
+}
+
+.progress-bar-container {
+  display: flex;
+  align-items: center;
+  width: 90%;
+}
+
+.level {
+  font-size: 2em;
+  position: relative;
+  left: 25px;
+  background-color: #9E63FF;
+  margin-top: 12px;
+  padding-right: 1em;
+  padding-left: 1em;
+  padding-top: .75em;
+  padding-bottom: .75em;
+  font-family: "Luckiest Guy";
+  color: white;
+  border-radius: 999px;
+}
+
+.date {
+  font-size: 1.5em;
+  background-color: #AA7AFA;
+  padding: 1em;
+  font-family: "Luckiest Guy";
+  color: white;
+  border-radius: 999px;
+}
+
+.progress-bar {
+  display: flex;
+  height: 40px;
+  margin-top: 12px;
+  width: 100%;
+  background-color: #E4E0E0;
+  
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+/* ProgressBar.css */
+@keyframes fillAnimation {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+/* AchievementsView.css */
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-30px);
+  }
+  60% {
+    transform: translateY(-15px);
+  }
+}
+
+.achievement-unlocked {
+  animation: bounce 1s;
+}
+
+/* AchievementsView.css */
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.05);
+    opacity: 0.7;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.achievement-locked {
+  animation: pulse 2s infinite;
+}
+
+.progress-bar-fill {
+  height: 100%;
+  background-color: #FFDE59; /* Yellow color */
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  width: 0%; /* Start width */
+  animation: fillAnimation ease-in-out forwards;
+}
+
+.segment {
+  flex: 1;
+  border-left: 3px solid #ccc;
+  
+  height: 40px; /* Set a fixed height for segments */
+}
+
+.segment.filled {
+  background-color: #FFDE59; /* Yellow color */
+  border-left: 3px solid #FFDE59;
+  animation: fillAnimation 2s ease-in-out forwards;
+}
+
+
+.luckiest {
+  font-family: 'Luckiest Guy', sans-serif;
+  font-weight: 100;
+  letter-spacing: .1px;
+  text-transform: uppercase;
+}
+
+.avatar {
+  overflow: hidden;
+  margin-right: 20px;
+}
+
+.username {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #333333;
+  font-family: 'Luckiest Guy', sans-serif;
+  text-transform: uppercase;
+}
+ 
+
 .hunnys-btn {
   display: flex;
   justify-content: center;

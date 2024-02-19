@@ -15,6 +15,9 @@ import { alchemyProvider } from "wagmi/providers/alchemy";
 import { useState, useEffect } from "react";
 import { useRouter } from 'next/router';
 import { Analytics } from '@vercel/analytics/react';
+// Use the Next.js Link component instead of your custom Link component for navigation
+import Link from 'next/link';
+
 
 // Declare gtag for TypeScript
 declare global {
@@ -49,6 +52,19 @@ const { wallets } = getDefaultWallets({
   chains,
 });
 
+// Coinbase WaaS Token Provider Function
+const provideAuthToken = async () => {
+  try {
+    const response = await fetch("https://wallets.hunnysnft.com/auth", { method: 'POST' });
+    const data = await response.json();
+    return data.token; // Assuming the server responds with a JSON object that has a `token` field
+  } catch (error) {
+    console.error("Failed to fetch auth token:", error);
+    return ""; // Return an empty string or handle the error appropriately
+  }
+};
+
+
 const connectors = connectorsForWallets([
   ...wallets,
   {
@@ -69,6 +85,7 @@ const wagmiConfig = createConfig({
 });
 
 import { usePathname } from 'next/navigation';
+import { assert } from 'console';
 
 function MyApp({ Component, pageProps }: AppProps) {
   const pathname = usePathname();
@@ -88,12 +105,9 @@ function MyApp({ Component, pageProps }: AppProps) {
     };
   }, [router.events]);
 
-  useEffect(() => {
-    checkRoute();
-  }, [checkRoute]);
 
   function checkRoute() {
-    const paths = ['/', '/inventory', '/dollys', '/help'];
+    const paths = ['/', '/inventory', '/dollys', '/help', '/profile'];
     if(!paths.includes(pathname)) {
       router.push('/');
     }
@@ -102,8 +116,9 @@ function MyApp({ Component, pageProps }: AppProps) {
   return (
     <WagmiConfig config={wagmiConfig}>
       <RainbowKitProvider coolMode chains={chains}>
-        <App />
-        {/* <Component {...pageProps} */}
+      
+        <Component />
+        
         <Analytics />
       </RainbowKitProvider>
     </WagmiConfig>

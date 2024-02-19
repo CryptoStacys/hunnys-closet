@@ -1,6 +1,12 @@
-import DollGallery from "../src/components/DollGallery/DollGallery";
-import DollEditor from "../src/components/DollEditor/DollEditor";
+import dynamic from 'next/dynamic';
+const DollGallery = dynamic(() => import("../src/components/DollGallery/DollGallery"), {
+  ssr: false,
+});
+const DollEditor = dynamic(() => import("../src/components/DollEditor/DollEditor"), {
+  ssr: false,
+});
 import { useState } from "react";
+
 
 export default function Dollys() {
   const [selected, setSelected] = useState<number | string>(-1); // Allow string for temporary ID

@@ -15,6 +15,7 @@ module.exports = {
         "hunnys-relic": "#774A2D",
         "hunnys-light-blue": "#4b57ff",
         "hunnys-light-purple": "#9e63ff",
+        "profile-header": "#AA7AFA",
         "hunnys-yellow": "#ffd54b",
         "hunnys-orange": "#a26106",
         "hunnys-blue": "#700cf5",

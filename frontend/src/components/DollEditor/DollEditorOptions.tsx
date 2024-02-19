@@ -269,7 +269,7 @@ function applyColorHarmonization(dollyId: string) {
         <div className="flex-center">
             <div className={`flex-center gap-1`}>
                 {/* Color Harmonize Button */}
-                <SecondaryButton onClick={() => props.selectedDollyId !== null ? applyColorHarmonization(props.selectedDollyId.toString()) : console.error("Invalid ID for Color Harmonize")} title="...">
+                <SecondaryButton onClick={() => props.selectedDollyId !== null ? applyColorHarmonization(props.selectedDollyId.toString()) : console.error("Invalid ID for Color Harmonize")} title="Changes colors only. Not traits.">
                     <Icon type="rainbow" className={`w-[20px] h-[20px] ${shouldWiggle ? "wiggle" : ""} ml-[-5px] mr-[5px]`} />
                     <span className="">Color Harmonize</span>
                 </SecondaryButton>

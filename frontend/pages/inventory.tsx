@@ -23,7 +23,6 @@ export default function Items() {
   const [allTraits, setAllTraits] = useAtom(allTraitsAtom);
   const [allAvailableTraits, setAllAvailableTraits] = useState<Trait[]>([]);
   const updateTraits = useUpdateTraits(setAllAvailableTraits, setUser, allAvailableTraits);  
-  const provider = new ethers.providers.Web3Provider(window.ethereum as any);
   const bunnyClubMembers = ["0xa7758394D8f7fD23b0d9F13E02427B514687394B",
   "0x55Abdc04655d590a48BCd1B996115448b71b7a84",
   "0x4eE115d0708924B4d3a83e45A428B0e3cb4348e9",
@@ -345,23 +344,7 @@ const handleMintSuccess = async () => {
                     />
                     <div className={`shadow-lg rounded-b-lg text-white w-full h-auto justify-center items-center font-bold break-words py-2 px-2`}>{item.name}</div>
                     {/* <div className={`w-full flex h-full justify-center items-center font-bold`}>{item.name}</div> */}
-                    {item.isEligibleForMinting && (
-          <MintButton
-            tokenId={item.token_id}
-            mintPrice={item.mintPrice}
-            onMintSuccess={handleMintSuccess}
-            updateTraits={updateTraits}
-            userAddress={user?.address}
-            mintAction={async () => {
-              if (user?.address && item.token_id) {
-                await mintWithWeth(user.address, item.token_id, item.mintPrice, provider);
-              } else {
-                console.error("User address or token ID is undefined");
-              }
-            }}
-            className={item.isDiscounted ? 'discounted-mint-btn' : ''}
-          />
-        )}
+                    
 
 
                   </button>

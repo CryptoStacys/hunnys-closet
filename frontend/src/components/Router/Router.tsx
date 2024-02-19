@@ -1,29 +1,34 @@
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+
 type Props = {
   path: string;
-  children?: any;
+  children?: React.ReactNode; // It's better to use React.ReactNode for children type
 };
 
 export function Route({ path, children }: Props) {
-  // state to track URL and force component to re-render on change
-  const [currentPath, setCurrentPath] = useState(window.location.pathname);
-
+  // Initialize currentPath state with a default value that works server-side
+  const [currentPath, setCurrentPath] = useState('');
 
   useEffect(() => {
-    // define callback as separate function so it can be removed later with cleanup function
-    const onLocationChange = () => {
-
+    // Ensure this code runs only in the browser where window is defined
+    if (typeof window !== 'undefined') {
+      // Set initial path state based on the browser's window location
       setCurrentPath(window.location.pathname);
-    };
 
-    window.addEventListener("popstate", onLocationChange);
+      // Define callback as a separate function so it can be removed later with cleanup function
+      const onLocationChange = () => {
+        setCurrentPath(window.location.pathname);
+      };
 
-    // clean up event listener
-    return () => {
-      window.removeEventListener("popstate", onLocationChange);
-    };
-  }, []);
+      window.addEventListener("popstate", onLocationChange);
+
+      // Clean up event listener to avoid memory leaks
+      return () => {
+        window.removeEventListener("popstate", onLocationChange);
+      };
+    }
+  }, []); // Empty dependency array ensures this runs once on mount.
 
   return (
     <AnimatePresence mode="wait">

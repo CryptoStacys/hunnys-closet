@@ -23,18 +23,34 @@ export default function App() {
   const [allTrais, allTraitsSet] = useAtom(allTraitsAtom);
   const [connected, connectedSet] = useAtom(connectedAtom);
   const [rewardStatus, setRewardStatus] = useState("");
+  const [dollyCount, setDollyCount] = useState("");
+  
 
   // const paths = ['/', '/inventory', '/dollys', '/help'];
 
   const account = useAccount({
     onConnect({ address, connector, isReconnected }) {
-      // console.log("Connected. wagmi object", {
-      //   address,
-      //   connector,
-      //   isReconnected,
-      // });
 
-      fetch(`https://closetapi.hunnysnft.com/wordpress/wp-json/hunnys-closet/v1/traits?wallet=${address}`)
+      fetch(`https://closetservices.hunnysnft.com/wp-json/hunnys-closet/v1/accounts`, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({
+        action: 'login', // Assuming you want to update last login on every connect
+        wallet: address, // User's wallet address
+      }),
+    })
+    .then(response => response.json())
+    .then(data => {
+      console.log('Success:', data);
+    })
+    .catch((error) => {
+      console.error('Error:', error);
+    });
+
+
+      fetch(`https://closetservices.hunnysnft.com/wp-json/hunnys-closet/v1/traits?wallet=${address}`)
     .then((res) => {
         if (!res.ok) {
             throw new Error(`API call failed with HTTP status ${res.status}`);
@@ -51,7 +67,7 @@ export default function App() {
 
         // CACHEBUST https://closetapi.hunnysnft.com/wordpress/wp-json/hunnys-closet/v1/verifyCloset?wallet=${address}&nocache=${new Date().getTime()}`
 
-        fetch(`https://closetapi.hunnysnft.com/wordpress/wp-json/hunnys-closet/v1/verifyCloset?wallet=${address}`)
+        fetch(`https://closetservices.hunnysnft.com/wp-json/hunnys-closet/v1/verifyCloset?wallet=${address}`)
     .then((res) => {
         if (!res.ok) {
             throw new Error(`API call failed with HTTP status ${res.status}`);
@@ -64,7 +80,7 @@ export default function App() {
           setRewardStatus(res.rewardStatus);
           res.hideSaveChangesModal = false;
           connectedSet(true);
-          userSet(res);
+          userSet({...res, dollyCount: res.dollys.length});
           return res;})
           .catch((error) => {
               console.error("Error verifying closet:", error);

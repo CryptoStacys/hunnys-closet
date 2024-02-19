@@ -1,15 +1,21 @@
-/** @type {import('next').NextConfig} */
-
 const nextConfig = {
   reactStrictMode: false,
-  webpack: config => {
-    config.resolve.fallback = { fs: false, net: false, tls: false };
+  webpack: (config, { isServer }) => {
+    // Add a rule to handle .wav files
+    config.module.rules.push({
+      test: /\.wav$/,
+      use: {
+        loader: 'file-loader',
+        options: {
+          name: '[name].[ext]',
+          publicPath: '/_next/static/sounds/',
+          outputPath: 'static/sounds/',
+        },
+      },
+    });
 
     return config;
   },
-
-  // distDir: 'dist',
-  // output: 'export',
   eslint: {
     ignoreDuringBuilds: false,
   },

@@ -14,8 +14,17 @@ export type Trait = {
   colorsApplied: string[];
 };
 
+export type UUID = string;
+
+export type ApiResponse = {
+  success: boolean;
+  data: User;
+};
+
 
 export type User = {
+  wallet: any;
+  UUID: string;
   address: string;
   dollys: Dolly[];
   colors: string[];
@@ -23,6 +32,12 @@ export type User = {
   skin_colors: string[];
   tokens: Token[];
   hideSaveChangesModal: boolean;
+  profile_name: string;
+  profile_image_url: string;
+  tier: string;
+  wallet_type: string;
+  cupcake_points: number;
+  level: number;
 };
 
 type OwnedTraitsResponse = {

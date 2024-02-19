@@ -3,9 +3,9 @@
 export const fetchTraits = async (userAddress) => {
     let url;
     if (userAddress) {
-      url = `https://closetapi.hunnysnft.com/wordpress/wp-json/hunnys-closet/v1/verifyCloset?wallet=${userAddress}`;
+      url = `https://closetservices.hunnysnft.com/wp-json/hunnys-closet/v1/verifyCloset?wallet=${userAddress}`;
     } else {
-      url = 'https://closetapi.hunnysnft.com/wordpress/wp-json/hunnys-closet/v1/traits'; 
+      url = 'https://closetservices.hunnysnft.com/wp-json/hunnys-closet/v1/traits'; 
     }
   
     try {
