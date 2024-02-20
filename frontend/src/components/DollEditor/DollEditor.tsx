@@ -80,7 +80,7 @@ export default function DollEditor(props: {
   onDollySaved?: (newId: number) => void;
 }) {
   const [allTraits] = useAtom(allTraitsAtom);
-  const [user, userSet] = useAtom(userAtom);
+  const [user, setUser] = useAtom(userAtom);
   const [saved, setSaved] = useAtom(savedAtom); // tracks if user saved dolly changes
   const [view, viewSet] = useState("grid");
   const [unsavedChanges, setUnsavedChanges] = useState(false);
@@ -617,7 +617,7 @@ export default function DollEditor(props: {
     for (let i = 0; i < (user?.dollys || []).length; i++) {
       if (user && user?.dollys[i].token_id === id) {
         user.dollys[i].attributes = token;
-        userSet(user);
+        setUser(user);
         break;
       }
     }

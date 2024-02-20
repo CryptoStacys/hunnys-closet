@@ -5,20 +5,23 @@ interface ButtonProps {
   iconSrc: string;
   text: string;
   onClick: () => void;
+  isActive: boolean;
 }
 
 interface ProfileButtonsProps {
     children?: React.ReactNode; // Now it can accept children props
   }
 
-  const ProfileButton: React.FC<ButtonProps> = ({ iconSrc, text, onClick }) => {
+  const ProfileButton: React.FC<ButtonProps> = ({ iconSrc, text, onClick, isActive }) => {
     return (
-      <button onClick={onClick} className="flex flex-col homerow items-center justify-center space-y-2">
-        <img src={iconSrc} alt="Button Icon" className="rounded-full bg-[#AA7AFA] w-1/2 drop-shadow-2xl" />
-        <span className="text-center text-sm text-black luckiest">{text}</span>
+      <button onClick={onClick} className="flex flex-col items-center justify-center space-y-2">
+        <img src={iconSrc} alt="Button Icon" className={`rounded-full w-1/2 drop-shadow-2xl ${isActive ? 'bg-[#6510F2]' : 'bg-[#AA7AFA]'}`} />
+        <span className="text-center text-sm text-black">{text}</span>
       </button>
     );
-  };const ProfileButtons: React.FC<{setCurrentView: (view: string) => void}> = ({ setCurrentView }) => {
+  };
+
+  const ProfileButtons: React.FC<{setCurrentView: (view: string) => void, currentView: string}> = ({ setCurrentView, currentView }) => {
     // Adjust buttonsData to include a view name instead of link
     const buttonsData = [
       {
@@ -56,9 +59,16 @@ interface ProfileButtonsProps {
     // No need for handleButtonClick, directly use setCurrentView in onClick
     return (
       <>
-        <div className="flex space-x-4">
+        <div className="grid md:grid-cols-6 xs:grid-cols-3 gap-4">
           {buttonsData.map((button, index) => (
-            <ProfileButton key={index} iconSrc={button.iconSrc} text={button.text} onClick={() => setCurrentView(button.view)} link={''} />
+            <ProfileButton
+              key={index}
+              iconSrc={button.iconSrc}
+              text={button.text}
+              onClick={() => setCurrentView(button.view)}
+              link={''}
+              isActive={currentView === button.view} // Pass isActive based on the current view
+            />
           ))}
         </div>
       </>

@@ -21,7 +21,7 @@ export default function DollEditorOptions(props: {
   currentTraits: Trait[];
   onAttributesUpdated: (updatedAttributes: Attribute[]) => void;
 }) {
-  const [user, userSet] = useAtom(userAtom);
+  const [user, setUser] = useAtom(userAtom);
   const [modal, modalSet] = useAtom(modalAtom);
   const [showSaveModalChecked, setShowSaveModalChecked] = useState(user!.hideSaveChangesModal);
   const [shouldWiggle, setShouldWiggle] = useState(true);
@@ -174,7 +174,7 @@ function applyColorHarmonization(dollyId: string) {
   function disableSHowModal() {
     user!.hideSaveChangesModal = !user!.hideSaveChangesModal;
     setShowSaveModalChecked(user!.hideSaveChangesModal);
-    userSet(user);
+    setUser(user);
   }
 
   

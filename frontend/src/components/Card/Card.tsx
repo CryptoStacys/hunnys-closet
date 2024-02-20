@@ -17,6 +17,7 @@ HOW TO REUSE EASILY ON OTHER PAGES:
         leftBlockContent={<div>CONTENT LEFT</div>}
         middleBlockContent={<div>CONTENT MIDDLE</div>}
         rightBlockContent={<div>CONTENT RIGHT</div>}
+        footer={<></>}
       />
 */}
 
@@ -27,9 +28,9 @@ const Card: React.FC<CardProps> = ({ headerTitle, leftBlockContent, middleBlockC
         <h1 className="text-2xl font-bold text-white font-poppins">{headerTitle}</h1>
       </div>
       <div className="profile-container grid grid-cols-3 gap-12 m-auto pl-8 pr-8">
-        <div className="mt-4 flex justify-center">{leftBlockContent}</div>
-        <div className="mt-4 flex justify-center">{middleBlockContent}</div>
-        <div className="mt-4 flex justify-center">{rightBlockContent}</div>
+        <div className="mt-4 flex justify-center flex-col">{leftBlockContent}</div>
+        <div className="mt-4 flex justify-center flex-col">{middleBlockContent}</div>
+        <div className="mt-4 flex justify-center flex-col">{rightBlockContent}</div>
       </div>
       <div className="mt-4 flex flex-col justify-center">{footer}</div>
     </div>

@@ -5,18 +5,7 @@ class MyDocument extends Document {
     return (
       <Html>
         <Head>
-          {/* Google Analytics */}
-          <script async src="https://www.googletagmanager.com/gtag/js?id=G-XBGDC7K6PM"></script>
-          <script
-  dangerouslySetInnerHTML={{
-    __html: `
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'G-XBGDC7K6PM');
-    `,
-  }}
-/>
+
 
           {/* Basic meta tags */}
           <meta name="title" content="Hunnys Closet" />

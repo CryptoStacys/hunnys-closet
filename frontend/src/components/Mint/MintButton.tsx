@@ -1,7 +1,7 @@
 // MintButton.tsx
 import React, { useState, useEffect } from 'react';
 import { ethers, BigNumber } from 'ethers';
-import { useAccount, useNetwork, useSwitchNetwork } from 'wagmi';
+import { useAccount, useNetwork, useSwitchNetwork, useWalletClient } from 'wagmi';
 import salesABI from "../../../../backend/src/abis/hunnys-closet-sales-abi.json";
 
 type MintButtonProps = {
@@ -13,6 +13,8 @@ type MintButtonProps = {
   userAddress: string | undefined;
   mintAction: () => Promise<void>;
   className?: string; // Add this line
+  buttonText?: string;
+  isGasless: boolean;
 };
 
 
@@ -23,7 +25,9 @@ const MintButton: React.FC<MintButtonProps> = ({
   updateTraits,
   userAddress,
   mintAction,
-  className // Add this line
+  className,
+  buttonText,
+  isGasless
 }) => {
   const [isTransactionPending, setTransactionPending] = useState(false);
   const [discountRate, setDiscountRate] = useState(0);
@@ -34,8 +38,10 @@ const MintButton: React.FC<MintButtonProps> = ({
   const dollysAddress = "0xC8465f21E35AfD1De06A81D932392C47b1BEA42A";
   const hunnysClosetSalesAddress = "0x66923e2842da52b3e419fbbc79f07f1c8b0e908a";
   const expectedChainId = 137; // Polygon Chain ID
+  const { data: walletClient } = useWalletClient();
   useEffect(() => {
     const fetchDiscountRate = async () => {
+      
       const provider = new ethers.providers.JsonRpcProvider("https://polygon-mainnet.infura.io/v3/c6a0213e06df4189bbb84a64086a38ae");
       const contract = new ethers.Contract(hunnysClosetSalesAddress, salesABI, provider);
       try {
@@ -48,6 +54,47 @@ const MintButton: React.FC<MintButtonProps> = ({
 
     fetchDiscountRate();
   }, []);
+
+  // In your MintButton component or another appropriate place
+  const handleMintClick = async () => {
+    if (!walletClient) {
+      console.log("Wallet client not available. Is the wallet connected?");
+      return;
+    }
+  const provider = new ethers.providers.JsonRpcProvider("https://polygon-mainnet.infura.io/v3/c6a0213e06df4189bbb84a64086a38ae");
+ 
+  try {
+    const userAddress = await walletClient.getAddresses();
+    console.log("Sending mint request for tokenId:", tokenId, "User Address:", userAddress);
+    const message = `I am minting token #${tokenId} from ${userAddress}`;
+    const signature = await walletClient.signMessage({ message });
+  
+  // Send the signature and mint details to your backend
+  fetch("https://services.hunnysnft.com/gasless", {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify({
+      userAddress,
+      tokenId,
+      signature,
+    }),
+  })
+    .then((response) => response.json())
+    .then(({ txHash }) => {
+      console.log("Transaction hash:", txHash);
+      // Handle success (e.g., show a success message)
+    })
+    .catch((error) => {
+      console.error("Error minting token:", error);
+      // Handle error (e.g., show an error message)
+    });
+  } catch (error) {
+    console.error("Error in handleMintClick:", error);
+  }
+};
+
 
   const handleMint = async () => {
     if (!isConnected) {
@@ -105,21 +152,19 @@ const additionalClasses = `${className || ''} ${isTransactionPending ? "opacity-
 
 return (
 <button
-  onClick={handleMint}
-  disabled={isTransactionPending || !mintPrice}
-  className={`${baseButtonClass} ${additionalClasses}`}
-  
->
-  {isTransactionPending ? "Processing..." : (
-    <>
-      
-      {mintPrice ? `Ξ ${formattedPrice}` : "Price Unavailable"}
-      {className === 'discounted-mint-btn' && (
-        <span className="discount-badge shadow-lg">-10%</span>
+      onClick={handleMintClick}
+      disabled={isTransactionPending || !mintPrice}
+      className={`${baseButtonClass} ${additionalClasses}`}
+    >
+      {isTransactionPending ? "Processing..." : buttonText || (
+        <>
+          {mintPrice ? `Ξ ${formattedPrice}` : "Price Unavailable"}
+          {className === 'discounted-mint-btn' && (
+            <span className="discount-badge shadow-lg">-10%</span>
+          )}
+        </>
       )}
-    </>
-  )}
-</button>
+    </button>
 );
 };
 

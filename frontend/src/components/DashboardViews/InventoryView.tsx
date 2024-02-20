@@ -45,7 +45,10 @@ const InventoryView = () => {
   const indexOfLastItem = currentPage * ITEMS_PER_PAGE;
   const indexOfFirstItem = indexOfLastItem - ITEMS_PER_PAGE;
   const currentItems = displayedNftData.slice(indexOfFirstItem, indexOfLastItem);
-  
+  useEffect(() => {
+    // Log the current state of userAtom when Dashboard mounts or when user data changes
+    console.log('Current user data in Inventory:', user);
+  }, [user]);
 
   useEffect(() => {
     const fetchNftData = async () => {
@@ -114,6 +117,8 @@ const InventoryView = () => {
       );
       setUserTokens(hunnysSeasonalTokens);
     }
+    console.log("userTokens:", userTokens);
+    
   }, [user]);
 
   useEffect(() => {
@@ -218,6 +223,7 @@ const InventoryView = () => {
   useEffect(() => {
     applyFilterSortAndPaginate();
 }, [groupedNftData, searchTerm, sortType, currentPage, userTokens]);
+
 
   const renderNftData = () => {
     // Each entry in displayedNftData is a [tokenId, items] pair

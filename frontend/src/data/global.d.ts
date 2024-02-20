@@ -23,7 +23,9 @@ export type ApiResponse = {
 
 
 export type User = {
+  achievements?: any,
   wallet: any;
+  dollyCount: number;
   UUID: string;
   address: string;
   dollys: Dolly[];
