@@ -11,6 +11,7 @@ import SecondaryButton from "../DollEditor/SecondaryButton";
 import MintButton from '../Mint/MintButton'; // Adjust the path as needed
 import { mintWithWeth } from '../../utils/eligibleTokens'; // Ensure this function suits the free claim
 import { ethers } from "ethers";
+import FreeClaim from "../../components/Mint/FreeClaim"
 
 const ProfileView = () => {
   const [user, setUser] = useAtom(userAtom);
@@ -213,15 +214,11 @@ useEffect(() => {
     leftBlockContent={<div className='bg-[#6510F2] rounded-xl luckiest text-2xl text-white p-4 text-center'>10<br></br><span className="text-xl">CUPCAKE POINTS</span></div>}
     middleBlockContent={<h1 className="luckiest text-2xl text-left">Enjoy your free GM Mug!</h1>}
     rightBlockContent={<Image className="rounded-xl" src={GMMug} alt={"GM Mug"} width={120} height={120}></Image>}
-    footer={<MintButton
-      isGasless={true}
+    footer={<FreeClaim
       tokenId="0"
-      mintPrice={ethers.utils.parseUnits("0", "ether")}
-      isEligibleForMinting={true}
       onMintSuccess={() => console.log("NFT claimed successfully!")}
       updateTraits={(userAddress) => console.log(`Traits updated for ${userAddress}`)}
       userAddress={user?.wallet}
-      mintAction={handleFreeNFTClaim}
       className="bg-hunnys-yellow hover:bg-hunnys-yellow self-center !text-hunnys-blue !w-4/5 luckiest shadow-md rounded-full px-4 py-1 text-2xl hover:shadow-lg hover:scale-[1.02] transition-all "
       buttonText="Claim My Free Mug!"
     />}

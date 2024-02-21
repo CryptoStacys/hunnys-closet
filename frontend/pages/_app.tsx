@@ -93,9 +93,7 @@ function MyApp({ Component, pageProps }: AppProps) {
 
   useEffect(() => {
     const handleRouteChange = (url: string) => {
-      window.gtag('config', 'G-XBGDC7K6PM', {
-        page_path: url,
-      });
+      
     };
 
 

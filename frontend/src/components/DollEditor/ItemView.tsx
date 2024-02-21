@@ -653,7 +653,6 @@ return (
       {isEligibleForPurchase &&(<div className="flex flex-row mt-5 gap-12 items-center justify-between">
           <div>Buy Now</div>
           <MintButton
-            isGasless={false}
             tokenId={props.selectedTrait.token_id}
             mintPrice={discountedPrice || ethers.BigNumber.from(0)} // Default to 0 if discountedPrice is undefined
             onMintSuccess={() => handleMintSuccess(props.selectedTrait)}

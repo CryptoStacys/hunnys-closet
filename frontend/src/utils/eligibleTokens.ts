@@ -24,6 +24,7 @@ const bunnyClubMembers = ["0xa7758394D8f7fD23b0d9F13E02427B514687394B",
 "0x6c6cD01ebbd02254C5Db5263797E366511992d29",
 "0x019Db3aA167aF3B91b6D72a05dD8437aaDd5225E",
 "0x745461ae3ee10F26e314735b6AF8ee41cD313E2d",
+"0x0DE9a66f0F9b714c5b987BDCb37A5E2EF1bDA67A",
 "0x473e12B41bC13d3Ac98C4d06cD549Ba8a704dbf1",
 "0xBcDa92fF0D83448ad2B65C7a59D62FE3A18bF95f",
 "0x650d492E2F68A665a5dc029bc3f255FE5ec366Fc",
@@ -74,7 +75,7 @@ export const eligibleTokenIds: EligibleToken[] = [
 // Add this function to make a request to your server for signing
 const requestSignature = async (userAddress: string, tokenId: string | number, mintPrice: ethers.BigNumber, nonce: number) => {
   try {
-    const response = await fetch('https://services.hunnysnft.com/signature', {
+    const response = await fetch('https://staging-hunnys-closet-2-548f5ed67a1b.herokuapp.com/signature', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({
