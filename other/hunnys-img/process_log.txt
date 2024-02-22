@@ -41704,3 +41704,1571 @@ Resized image saved: 600x600_png\Frame\Sprinkle Hearts Scroll Right_C5.png
 Resizing image: scriptImages\Frame\Sprinkle Hearts Scroll Right_L.png to 600x600
 Resized image saved: 800x800_png\Frame\Sprinkle Hearts Scroll Right_L.png
 Resized image saved: 600x600_png\Frame\Sprinkle Hearts Scroll Right_L.png
+Script started
+Subfolders found: Accessory, Background, Bodysuit, Colors, Extras, Eyebrows, Eyes, Face Sticker, Finished, Frame, Hair Style, Hand, Mouth, Outfit, Piercing, Tattoo, Undergarment
+Files found: 54
+Resizing image: scriptImages\Eyebrows\90s Brows_L.png to 800x800
+Resizing image: scriptImages\Eyebrows\90s Brows_L.png to 600x600
+Processing image group: 90s Brows
+Resized image saved: 800x800_png\Eyebrows\90s Brows_L.png
+Resizing image: scriptImages\Eyebrows\Color Brows_C1.png to 800x800
+Resized image saved: 600x600_png\Eyebrows\90s Brows_L.png
+Resizing image: scriptImages\Eyebrows\Color Brows_C1.png to 600x600
+Processing file: 90s Brows_L.png in subfolder: Eyebrows
+Checking existence of PNG: compositeImages\Eyebrows\90s Brows.png
+Checking existence of JPG: 300x300_jpg\Eyebrows\90s Brows.jpg
+Files not found, processing: PNG - compositeImages\Eyebrows\90s Brows.png, JPG - 300x300_jpg\Eyebrows\90s Brows.jpg
+Saved: compositeImages\Eyebrows\90s Brows.png
+Saved: 300x300_jpg\Eyebrows\90s Brows.jpg
+Processing image group: Color Brows
+Resized image saved: 600x600_png\Eyebrows\Color Brows_C1.png
+Resizing image: scriptImages\Eyebrows\Color Brows_L.png to 600x600
+Resized image saved: 800x800_png\Eyebrows\Color Brows_C1.png
+Resizing image: scriptImages\Eyebrows\Color Brows_L.png to 800x800
+Processed and saved solid color: A Bit Too Classy.png
+Processed and saved solid color: A Bit Too Classy.png
+Processing file: Color Brows_C1.png in subfolder: Eyebrows
+Resized image saved: 600x600_png\Eyebrows\Color Brows_L.png
+Resizing image: scriptImages\Eyebrows\Sharp Thin Brows_L.png to 600x600
+Processing file: Color Brows_L.png in subfolder: Eyebrows
+Checking existence of PNG: compositeImages\Eyebrows\Color Brows.png
+Checking existence of JPG: 300x300_jpg\Eyebrows\Color Brows.jpg
+Files not found, processing: PNG - compositeImages\Eyebrows\Color Brows.png, JPG - 300x300_jpg\Eyebrows\Color Brows.jpg
+Resized image saved: 800x800_png\Eyebrows\Color Brows_L.png
+Resizing image: scriptImages\Eyebrows\Sharp Thin Brows_L.png to 800x800
+Saved: compositeImages\Eyebrows\Color Brows.png
+Processed and saved skin color trait: Alien Moo Cow.png
+Saved: 300x300_jpg\Eyebrows\Color Brows.jpg
+Processing image group: Sharp Thin Brows
+Resized image saved: 600x600_png\Eyebrows\Sharp Thin Brows_L.png
+Resizing image: scriptImages\Eyebrows\Sharper Brows_L.png to 600x600
+Resized image saved: 800x800_png\Eyebrows\Sharp Thin Brows_L.png
+Resizing image: scriptImages\Eyebrows\Sharper Brows_L.png to 800x800
+Processed skin color: Alien Moo Cow.png
+Processing file: Sharp Thin Brows_L.png in subfolder: Eyebrows
+Checking existence of PNG: compositeImages\Eyebrows\Sharp Thin Brows.png
+Checking existence of JPG: 300x300_jpg\Eyebrows\Sharp Thin Brows.jpg
+Files not found, processing: PNG - compositeImages\Eyebrows\Sharp Thin Brows.png, JPG - 300x300_jpg\Eyebrows\Sharp Thin Brows.jpg
+Saved: compositeImages\Eyebrows\Sharp Thin Brows.png
+Saved: 300x300_jpg\Eyebrows\Sharp Thin Brows.jpg
+Processing image group: Sharper Brows
+Resized image saved: 800x800_png\Eyebrows\Sharper Brows_L.png
+Resizing image: scriptImages\Face Sticker\Freckle Face_C1.png to 800x800
+Resized image saved: 600x600_png\Eyebrows\Sharper Brows_L.png
+Resizing image: scriptImages\Face Sticker\Freckle Face_C1.png to 600x600
+Processed and saved solid color: Alien Moo Cow.png
+Processed and saved solid color: Alien Moo Cow.png
+Processing file: Sharper Brows_L.png in subfolder: Eyebrows
+Checking existence of PNG: compositeImages\Eyebrows\Sharper Brows.png
+Checking existence of JPG: 300x300_jpg\Eyebrows\Sharper Brows.jpg
+Files not found, processing: PNG - compositeImages\Eyebrows\Sharper Brows.png, JPG - 300x300_jpg\Eyebrows\Sharper Brows.jpg
+Saved: compositeImages\Eyebrows\Sharper Brows.png
+Resized image saved: 800x800_png\Face Sticker\Freckle Face_C1.png
+Resizing image: scriptImages\Face Sticker\Freckle Face_L.png to 800x800
+Resized image saved: 600x600_png\Face Sticker\Freckle Face_C1.png
+Resizing image: scriptImages\Face Sticker\Freckle Face_L.png to 600x600
+Processed and saved skin color trait: Brown Sugar.png
+Saved: 300x300_jpg\Eyebrows\Sharper Brows.jpg
+Processing image group: Freckle Face
+Processed skin color: Brown Sugar.png
+Processing file: Freckle Face_C1.png in subfolder: Face Sticker
+Resized image saved: 800x800_png\Face Sticker\Freckle Face_L.png
+Resizing image: scriptImages\Hair Style\Afro Babe_C1.png to 800x800
+Resized image saved: 600x600_png\Face Sticker\Freckle Face_L.png
+Resizing image: scriptImages\Hair Style\Afro Babe_C1.png to 600x600
+Processed and saved solid color: Banana Candy.png
+Processing file: Freckle Face_L.png in subfolder: Face Sticker
+Checking existence of PNG: compositeImages\Face Sticker\Freckle Face.png
+Checking existence of JPG: 300x300_jpg\Face Sticker\Freckle Face.jpg
+Files not found, processing: PNG - compositeImages\Face Sticker\Freckle Face.png, JPG - 300x300_jpg\Face Sticker\Freckle Face.jpg
+Processed and saved solid color: Banana Candy.png
+Saved: compositeImages\Face Sticker\Freckle Face.png
+Resized image saved: 800x800_png\Hair Style\Afro Babe_C1.png
+Resizing image: scriptImages\Hair Style\Afro Babe_L.png to 800x800
+Resized image saved: 600x600_png\Hair Style\Afro Babe_C1.png
+Resizing image: scriptImages\Hair Style\Afro Babe_L.png to 600x600
+Saved: 300x300_jpg\Face Sticker\Freckle Face.jpg
+Processing image group: Afro Babe
+Processing file: Afro Babe_C1.png in subfolder: Hair Style
+Processing file: Afro Babe_C1.png in Hair Style
+Resized image saved: 600x600_png\Hair Style\Afro Babe_L.png
+Skipping existing file: 600x600_png\Hair Style\Bob With Bangs_Back_C1.png
+Skipping existing file: 600x600_png\Hair Style\Bob With Bangs_Back_L.png
+Skipping existing file: 600x600_png\Hair Style\Bob With Bangs_Front_C1.png
+Skipping existing file: 600x600_png\Hair Style\Bob With Bangs_Front_L.png
+Resizing image: scriptImages\Hair Style\Outer Space Buns Back_C1.png to 600x600
+Processed and saved skin color trait: Buttery Dish.png
+Resized image saved: 800x800_png\Hair Style\Afro Babe_L.png
+Skipping existing file: 800x800_png\Hair Style\Bob With Bangs_Back_C1.png
+Skipping existing file: 800x800_png\Hair Style\Bob With Bangs_Back_L.png
+Skipping existing file: 800x800_png\Hair Style\Bob With Bangs_Front_C1.png
+Skipping existing file: 800x800_png\Hair Style\Bob With Bangs_Front_L.png
+Resizing image: scriptImages\Hair Style\Outer Space Buns Back_C1.png to 800x800
+Processing file: Afro Babe_L.png in Hair Style
+Processed skin color: Buttery Dish.png
+Resized image saved: 600x600_png\Hair Style\Outer Space Buns Back_C1.png
+Resizing image: scriptImages\Hair Style\Outer Space Buns Back_C2.png to 600x600
+Resized image saved: 800x800_png\Hair Style\Outer Space Buns Back_C1.png
+Resizing image: scriptImages\Hair Style\Outer Space Buns Back_C2.png to 800x800
+Processed and saved solid color: Barb-ish.png
+Processed and saved solid color: Barb-ish.png
+Resized image saved: 600x600_png\Hair Style\Outer Space Buns Back_C2.png
+Resizing image: scriptImages\Hair Style\Outer Space Buns Back_C3.png to 600x600
+Processing file: Bob With Bangs_Back_C1.png in Hair Style
+Resized image saved: 800x800_png\Hair Style\Outer Space Buns Back_C2.png
+Resizing image: scriptImages\Hair Style\Outer Space Buns Back_C3.png to 800x800
+Processing file: Bob With Bangs_Back_L.png in Hair Style
+Processed and saved skin color trait: Camel.png
+Resized image saved: 600x600_png\Hair Style\Outer Space Buns Back_C3.png
+Resizing image: scriptImages\Hair Style\Outer Space Buns Back_L.png to 600x600
+Resized image saved: 800x800_png\Hair Style\Outer Space Buns Back_C3.png
+Resizing image: scriptImages\Hair Style\Outer Space Buns Back_L.png to 800x800
+Processing file: Bob With Bangs_Front_C1.png in Hair Style
+Processed skin color: Camel.png
+Processed and saved solid color: Barely Yellow.png
+Processed and saved solid color: Barely Yellow.png
+Resized image saved: 800x800_png\Hair Style\Outer Space Buns Back_L.png
+Resizing image: scriptImages\Hair Style\Outer Space Buns Front_C1.png to 800x800
+Processing file: Bob With Bangs_Front_L.png in Hair Style
+Resized image saved: 600x600_png\Hair Style\Outer Space Buns Back_L.png
+Resizing image: scriptImages\Hair Style\Outer Space Buns Front_C1.png to 600x600
+Resized image saved: 800x800_png\Hair Style\Outer Space Buns Front_C1.png
+Resizing image: scriptImages\Hair Style\Outer Space Buns Front_C2.png to 800x800
+Resized image saved: 600x600_png\Hair Style\Outer Space Buns Front_C1.png
+Resizing image: scriptImages\Hair Style\Outer Space Buns Front_C2.png to 600x600
+Processing file: Outer Space Buns Back_C1.png in Hair Style
+Processing file: Outer Space Buns Back_C2.png in Hair Style
+Resized image saved: 800x800_png\Hair Style\Outer Space Buns Front_C2.png
+Resizing image: scriptImages\Hair Style\Outer Space Buns Front_C3.png to 800x800
+Processed and saved solid color: Bio Glo up.png
+Processed and saved solid color: Bio Glo up.png
+Resized image saved: 600x600_png\Hair Style\Outer Space Buns Front_C2.png
+Resizing image: scriptImages\Hair Style\Outer Space Buns Front_C3.png to 600x600
+Processing file: Outer Space Buns Back_C3.png in Hair Style
+Processing file: Outer Space Buns Back_L.png in Hair Style
+Processed and saved skin color trait: Cappuccino .png
+Resized image saved: 600x600_png\Hair Style\Outer Space Buns Front_C3.png
+Resizing image: scriptImages\Hair Style\Outer Space Buns Front_L.png to 600x600
+Resized image saved: 800x800_png\Hair Style\Outer Space Buns Front_C3.png
+Resizing image: scriptImages\Hair Style\Outer Space Buns Front_L.png to 800x800
+Processed skin color: Cappuccino .png
+Resized image saved: 600x600_png\Hair Style\Outer Space Buns Front_L.png
+Resizing image: scriptImages\Hair Style\Peak Chic Back_C1.png to 600x600
+Resized image saved: 800x800_png\Hair Style\Outer Space Buns Front_L.png
+Resizing image: scriptImages\Hair Style\Peak Chic Back_C1.png to 800x800
+Processing file: Outer Space Buns Front_C1.png in Hair Style
+Processed and saved solid color: Bling Bling.png
+Processed and saved solid color: Bling Bling.png
+Processing file: Outer Space Buns Front_C2.png in Hair Style
+Resized image saved: 800x800_png\Hair Style\Peak Chic Back_C1.png
+Resizing image: scriptImages\Hair Style\Peak Chic Back_L.png to 800x800
+Resized image saved: 600x600_png\Hair Style\Peak Chic Back_C1.png
+Resizing image: scriptImages\Hair Style\Peak Chic Back_L.png to 600x600
+Processing file: Outer Space Buns Front_C3.png in Hair Style
+Processed and saved skin color trait: Carrot Cake.png
+Resized image saved: 800x800_png\Hair Style\Peak Chic Back_L.png
+Resizing image: scriptImages\Hair Style\Peak Chic Front_C1.png to 800x800
+Resized image saved: 600x600_png\Hair Style\Peak Chic Back_L.png
+Resizing image: scriptImages\Hair Style\Peak Chic Front_C1.png to 600x600
+Processed skin color: Carrot Cake.png
+Processing file: Outer Space Buns Front_L.png in Hair Style
+Processed and saved solid color: Blue Dog.png
+Resized image saved: 800x800_png\Hair Style\Peak Chic Front_C1.png
+Resizing image: scriptImages\Hair Style\Peak Chic Front_L.png to 800x800
+Processed and saved solid color: Blue Dog.png
+Resized image saved: 600x600_png\Hair Style\Peak Chic Front_C1.png
+Resizing image: scriptImages\Hair Style\Peak Chic Front_L.png to 600x600
+Processing file: Peak Chic Back_C1.png in Hair Style
+Resized image saved: 600x600_png\Hair Style\Peak Chic Front_L.png
+Resizing image: scriptImages\Hair Style\Sweet Bun_Back_C1.png to 600x600
+Resized image saved: 800x800_png\Hair Style\Peak Chic Front_L.png
+Resizing image: scriptImages\Hair Style\Sweet Bun_Back_C1.png to 800x800
+Processed and saved skin color trait: Chocolate Oranges.png
+Processing file: Peak Chic Back_L.png in Hair Style
+Processed skin color: Chocolate Oranges.png
+Resized image saved: 600x600_png\Hair Style\Sweet Bun_Back_C1.png
+Resizing image: scriptImages\Hair Style\Sweet Bun_Back_L.png to 600x600
+Resized image saved: 800x800_png\Hair Style\Sweet Bun_Back_C1.png
+Resizing image: scriptImages\Hair Style\Sweet Bun_Back_L.png to 800x800
+Processed and saved solid color: Burnished.png
+Processed and saved solid color: Burnished.png
+Processing file: Peak Chic Front_C1.png in Hair Style
+Resized image saved: 600x600_png\Hair Style\Sweet Bun_Back_L.png
+Resizing image: scriptImages\Hair Style\Sweet Bun_Front_C1.png to 600x600
+Processing file: Peak Chic Front_L.png in Hair Style
+Resized image saved: 800x800_png\Hair Style\Sweet Bun_Back_L.png
+Resizing image: scriptImages\Hair Style\Sweet Bun_Front_C1.png to 800x800
+Resized image saved: 600x600_png\Hair Style\Sweet Bun_Front_C1.png
+Resizing image: scriptImages\Hair Style\Sweet Bun_Front_L.png to 600x600
+Resized image saved: 800x800_png\Hair Style\Sweet Bun_Front_C1.png
+Resizing image: scriptImages\Hair Style\Sweet Bun_Front_L.png to 800x800
+Processing file: Sweet Bun_Back_C1.png in Hair Style
+Processed and saved solid color: Burnt Sienna.png
+Resized image saved: 600x600_png\Hair Style\Sweet Bun_Front_L.png
+Resizing image: scriptImages\Hair Style\The Queen_Back_C1.png to 600x600
+Resized image saved: 800x800_png\Hair Style\Sweet Bun_Front_L.png
+Resizing image: scriptImages\Hair Style\The Queen_Back_C1.png to 800x800
+Processing file: Sweet Bun_Back_L.png in Hair Style
+Processed and saved solid color: Burnt Sienna.png
+Processed and saved skin color trait: Coffee N Cream.png
+Processing file: Sweet Bun_Front_C1.png in Hair Style
+Processed skin color: Coffee N Cream.png
+Resized image saved: 800x800_png\Hair Style\The Queen_Back_C1.png
+Resizing image: scriptImages\Hair Style\The Queen_Back_L.png to 800x800
+Resized image saved: 600x600_png\Hair Style\The Queen_Back_C1.png
+Resizing image: scriptImages\Hair Style\The Queen_Back_L.png to 600x600
+Processing file: Sweet Bun_Front_L.png in Hair Style
+Resized image saved: 800x800_png\Hair Style\The Queen_Back_L.png
+Resizing image: scriptImages\Hair Style\The Queen_Front_C1.png to 800x800
+Resized image saved: 600x600_png\Hair Style\The Queen_Back_L.png
+Resizing image: scriptImages\Hair Style\The Queen_Front_C1.png to 600x600
+Processed and saved solid color: Chalkboard.png
+Processed and saved solid color: Chalkboard.png
+Processing file: The Queen_Back_C1.png in Hair Style
+Resized image saved: 800x800_png\Hair Style\The Queen_Front_C1.png
+Resizing image: scriptImages\Hair Style\The Queen_Front_L.png to 800x800
+Processing file: The Queen_Back_L.png in Hair Style
+Resized image saved: 600x600_png\Hair Style\The Queen_Front_C1.png
+Resizing image: scriptImages\Hair Style\The Queen_Front_L.png to 600x600
+Processed and saved skin color trait: Creamsicle.png
+Processing file: The Queen_Front_C1.png in Hair Style
+Processed skin color: Creamsicle.png
+Resized image saved: 800x800_png\Hair Style\The Queen_Front_L.png
+Resizing image: scriptImages\Hand\Texting U_C1.png to 800x800
+Resized image saved: 600x600_png\Hair Style\The Queen_Front_L.png
+Resizing image: scriptImages\Hand\Texting U_C1.png to 600x600
+Processing file: The Queen_Front_L.png in Hair Style
+Processed and saved solid color: ChocoBun.png
+Resized image saved: 800x800_png\Hand\Texting U_C1.png
+Resizing image: scriptImages\Hand\Texting U_C2.png to 800x800
+Processed and saved solid color: ChocoBun.png
+Resized image saved: 600x600_png\Hand\Texting U_C1.png
+Resizing image: scriptImages\Hand\Texting U_C2.png to 600x600
+Resized image saved: 800x800_png\Hand\Texting U_C2.png
+Resizing image: scriptImages\Hand\Texting U_L.png to 800x800
+Processed and saved skin color trait: Crisp Crackers.png
+Processing file: Afro Babe_L.png in subfolder: Hair Style
+Processing file: Afro Babe_C1.png in Hair Style
+Resized image saved: 600x600_png\Hand\Texting U_C2.png
+Resizing image: scriptImages\Hand\Texting U_L.png to 600x600
+Processing file: Afro Babe_L.png in Hair Style
+Processed skin color: Crisp Crackers.png
+Resized image saved: 800x800_png\Hand\Texting U_L.png
+Resizing image: scriptImages\Hand\Texting U_S.png to 800x800
+Resized image saved: 600x600_png\Hand\Texting U_L.png
+Resizing image: scriptImages\Hand\Texting U_S.png to 600x600
+Processed and saved solid color: Coffee with Cream.png
+Processed and saved solid color: Coffee with Cream.png
+Resized image saved: 800x800_png\Hand\Texting U_S.png
+Resizing image: scriptImages\Mouth\Filler Smile_C1.png to 800x800
+Processing file: Bob With Bangs_Back_C1.png in Hair Style
+Resized image saved: 600x600_png\Hand\Texting U_S.png
+Resizing image: scriptImages\Mouth\Filler Smile_C1.png to 600x600
+Processing file: Bob With Bangs_Back_L.png in Hair Style
+Processed and saved skin color trait: Moo Cow.png
+Resized image saved: 800x800_png\Mouth\Filler Smile_C1.png
+Resizing image: scriptImages\Mouth\Filler Smile_L.png to 800x800
+Processing file: Bob With Bangs_Front_C1.png in Hair Style
+Resized image saved: 600x600_png\Mouth\Filler Smile_C1.png
+Resizing image: scriptImages\Mouth\Filler Smile_L.png to 600x600
+Processed skin color: Moo Cow.png
+Processing file: Bob With Bangs_Front_L.png in Hair Style
+Processed and saved solid color: Cold Berry.png
+Resized image saved: 800x800_png\Mouth\Filler Smile_L.png
+Resizing image: scriptImages\Mouth\Medium Lips_C1.png to 800x800
+Processed and saved solid color: Cold Berry.png
+Resized image saved: 600x600_png\Mouth\Filler Smile_L.png
+Resizing image: scriptImages\Mouth\Medium Lips_C1.png to 600x600
+Resized image saved: 800x800_png\Mouth\Medium Lips_C1.png
+Resizing image: scriptImages\Mouth\Medium Lips_L.png to 800x800
+Processing file: Outer Space Buns Back_C1.png in Hair Style
+Processed and saved skin color trait: Moon Glow.png
+Resized image saved: 600x600_png\Mouth\Medium Lips_C1.png
+Resizing image: scriptImages\Mouth\Medium Lips_L.png to 600x600
+Resized image saved: 800x800_png\Mouth\Medium Lips_L.png
+Resizing image: scriptImages\Outfit\Classic QT_C1.png to 800x800
+Processed skin color: Moon Glow.png
+Processing file: Outer Space Buns Back_C2.png in Hair Style
+Resized image saved: 600x600_png\Mouth\Medium Lips_L.png
+Resizing image: scriptImages\Outfit\Classic QT_C1.png to 600x600
+Processed and saved solid color: Cooked Carrot.png
+Processed and saved solid color: Cooked Carrot.png
+Processing file: Outer Space Buns Back_C3.png in Hair Style
+Resized image saved: 800x800_png\Outfit\Classic QT_C1.png
+Resizing image: scriptImages\Outfit\Classic QT_C2.png to 800x800
+Resized image saved: 600x600_png\Outfit\Classic QT_C1.png
+Resizing image: scriptImages\Outfit\Classic QT_C2.png to 600x600
+Processing file: Outer Space Buns Back_L.png in Hair Style
+Resized image saved: 800x800_png\Outfit\Classic QT_C2.png
+Resizing image: scriptImages\Outfit\Classic QT_L.png to 800x800
+Resized image saved: 600x600_png\Outfit\Classic QT_C2.png
+Resizing image: scriptImages\Outfit\Classic QT_L.png to 600x600
+Processed and saved skin color trait: Neon Green Cheetah.png
+Processing file: Outer Space Buns Front_C1.png in Hair Style
+Processed skin color: Neon Green Cheetah.png
+Processed and saved solid color: Cute Frilly Dress.png
+Resized image saved: 800x800_png\Outfit\Classic QT_L.png
+Resizing image: scriptImages\Outfit\GM Fuzzy Robe_C1.png to 800x800
+Processed and saved solid color: Cute Frilly Dress.png
+Resized image saved: 600x600_png\Outfit\Classic QT_L.png
+Resizing image: scriptImages\Outfit\GM Fuzzy Robe_C1.png to 600x600
+Processing file: Outer Space Buns Front_C2.png in Hair Style
+Processing file: Outer Space Buns Front_C3.png in Hair Style
+Resized image saved: 800x800_png\Outfit\GM Fuzzy Robe_C1.png
+Resizing image: scriptImages\Outfit\GM Fuzzy Robe_C2.png to 800x800
+Resized image saved: 600x600_png\Outfit\GM Fuzzy Robe_C1.png
+Resizing image: scriptImages\Outfit\GM Fuzzy Robe_C2.png to 600x600
+Processing file: Outer Space Buns Front_L.png in Hair Style
+Resized image saved: 800x800_png\Outfit\GM Fuzzy Robe_C2.png
+Resizing image: scriptImages\Outfit\GM Fuzzy Robe_C3.png to 800x800
+Resized image saved: 600x600_png\Outfit\GM Fuzzy Robe_C2.png
+Resizing image: scriptImages\Outfit\GM Fuzzy Robe_C3.png to 600x600
+Processed and saved solid color: Dark Destiny.png
+Processed and saved skin color trait: Neon Green Tiger.png
+Processed and saved solid color: Dark Destiny.png
+Resized image saved: 600x600_png\Outfit\GM Fuzzy Robe_C3.png
+Resizing image: scriptImages\Outfit\GM Fuzzy Robe_L.png to 600x600
+Processing file: Peak Chic Back_C1.png in Hair Style
+Resized image saved: 800x800_png\Outfit\GM Fuzzy Robe_C3.png
+Resizing image: scriptImages\Outfit\GM Fuzzy Robe_L.png to 800x800
+Processed skin color: Neon Green Tiger.png
+Processing file: Peak Chic Back_L.png in Hair Style
+Resized image saved: 600x600_png\Outfit\GM Fuzzy Robe_L.png
+Resizing image: scriptImages\Outfit\Sheerly Stellar_C1.png to 600x600
+Resized image saved: 800x800_png\Outfit\GM Fuzzy Robe_L.png
+Resizing image: scriptImages\Outfit\Sheerly Stellar_C1.png to 800x800
+Resized image saved: 600x600_png\Outfit\Sheerly Stellar_C1.png
+Resizing image: scriptImages\Outfit\Sheerly Stellar_C2.png to 600x600
+Resized image saved: 800x800_png\Outfit\Sheerly Stellar_C1.png
+Resizing image: scriptImages\Outfit\Sheerly Stellar_C2.png to 800x800
+Processing file: Peak Chic Front_C1.png in Hair Style
+Processed and saved solid color: Deer Chew.png
+Processed and saved solid color: Deer Chew.png
+Processing file: Peak Chic Front_L.png in Hair Style
+Processed and saved skin color trait: Neon Pink Tiger.png
+Resized image saved: 600x600_png\Outfit\Sheerly Stellar_C2.png
+Resizing image: scriptImages\Outfit\Sheerly Stellar_L.png to 600x600
+Resized image saved: 800x800_png\Outfit\Sheerly Stellar_C2.png
+Resizing image: scriptImages\Outfit\Sheerly Stellar_L.png to 800x800
+Processed skin color: Neon Pink Tiger.png
+Processing file: Sweet Bun_Back_C1.png in Hair Style
+Resized image saved: 600x600_png\Outfit\Sheerly Stellar_L.png
+Resizing image: scriptImages\Outfit\Velvet Sunset_C1.png to 600x600
+Resized image saved: 800x800_png\Outfit\Sheerly Stellar_L.png
+Resizing image: scriptImages\Outfit\Velvet Sunset_C1.png to 800x800
+Processed and saved solid color: Designer Grape.png
+Processing file: Sweet Bun_Back_L.png in Hair Style
+Processed and saved solid color: Designer Grape.png
+Resized image saved: 600x600_png\Outfit\Velvet Sunset_C1.png
+Resizing image: scriptImages\Outfit\Velvet Sunset_C2.png to 600x600
+Processing file: Sweet Bun_Front_C1.png in Hair Style
+Resized image saved: 800x800_png\Outfit\Velvet Sunset_C1.png
+Resizing image: scriptImages\Outfit\Velvet Sunset_C2.png to 800x800
+Processed and saved skin color trait: Orange Cheetah.png
+Processing file: Sweet Bun_Front_L.png in Hair Style
+Resized image saved: 600x600_png\Outfit\Velvet Sunset_C2.png
+Resizing image: scriptImages\Outfit\Velvet Sunset_L.png to 600x600
+Resized image saved: 800x800_png\Outfit\Velvet Sunset_C2.png
+Resizing image: scriptImages\Outfit\Velvet Sunset_L.png to 800x800
+Processed skin color: Orange Cheetah.png
+Processed and saved solid color: Devious Envy.png
+Processing file: The Queen_Back_C1.png in Hair Style
+Resized image saved: 600x600_png\Outfit\Velvet Sunset_L.png
+Resized image saved: 800x800_png\Outfit\Velvet Sunset_L.png
+Processed and saved solid color: Devious Envy.png
+Processing file: The Queen_Back_L.png in Hair Style
+Processing file: The Queen_Front_C1.png in Hair Style
+Processed and saved skin color trait: Orange Tiger.png
+Processing file: The Queen_Front_L.png in Hair Style
+Processed skin color: Orange Tiger.png
+Processed and saved solid color: Dolphin House.png
+Processed and saved solid color: Dolphin House.png
+Checking existence of PNG: compositeImages\Hair Style\Afro Babe.png
+Checking existence of JPG: 300x300_jpg\Hair Style\Afro Babe.jpg
+Skipping existing files: PNG - compositeImages\Hair Style\Afro Babe.png, JPG - 300x300_jpg\Hair Style\Afro Babe.jpg
+Processing image group: Bob With Bangs_Back
+Processing file: Bob With Bangs_Back_C1.png in subfolder: Hair Style
+Processing file: Afro Babe_C1.png in Hair Style
+Processed and saved skin color trait: Pale Pink Petals.png
+Processing file: Afro Babe_L.png in Hair Style
+Processed skin color: Pale Pink Petals.png
+Processed and saved solid color: Dried Leaf.png
+Processed and saved solid color: Dried Leaf.png
+Processing file: Bob With Bangs_Back_C1.png in Hair Style
+Processing file: Bob With Bangs_Back_L.png in Hair Style
+Processing file: Bob With Bangs_Front_C1.png in Hair Style
+Processed and saved skin color trait: Pink Cheetah.png
+Processed and saved solid color: Drippy Juice.png
+Processing file: Bob With Bangs_Front_L.png in Hair Style
+Processed skin color: Pink Cheetah.png
+Processed and saved solid color: Drippy Juice.png
+Processing file: Outer Space Buns Back_C1.png in Hair Style
+Processing file: Outer Space Buns Back_C2.png in Hair Style
+Processed and saved solid color: Dubious Polo.png
+Processed and saved skin color trait: Rich Velvet.png
+Processing file: Outer Space Buns Back_C3.png in Hair Style
+Processed and saved solid color: Dubious Polo.png
+Processing file: Outer Space Buns Back_L.png in Hair Style
+Processed skin color: Rich Velvet.png
+Processing file: Outer Space Buns Front_C1.png in Hair Style
+Processed and saved solid color: Fresh Sage.png
+Processing file: Outer Space Buns Front_C2.png in Hair Style
+Processed and saved skin color trait: Sandy Wind.png
+Processed and saved solid color: Fresh Sage.png
+Processing file: Outer Space Buns Front_C3.png in Hair Style
+Processed skin color: Sandy Wind.png
+Processing file: Outer Space Buns Front_L.png in Hair Style
+Processed and saved solid color: Good Gator.png
+Processing file: Peak Chic Back_C1.png in Hair Style
+Processed and saved solid color: Good Gator.png
+Processing file: Peak Chic Back_L.png in Hair Style
+Processing file: Peak Chic Front_C1.png in Hair Style
+Processed and saved skin color trait: Splish Splash.png
+Processed and saved solid color: Hyped-up Berry Juice.png
+Processing file: Peak Chic Front_L.png in Hair Style
+Processed skin color: Splish Splash.png
+Processed and saved solid color: Hyped-up Berry Juice.png
+Processing file: Sweet Bun_Back_C1.png in Hair Style
+Processed and saved solid color: In Love.png
+Processing file: Sweet Bun_Back_L.png in Hair Style
+Processed and saved skin color trait: Strawberry Moo Cow.png
+Processing file: Sweet Bun_Front_C1.png in Hair Style
+Processed skin color: Strawberry Moo Cow.png
+Processing file: Sweet Bun_Front_L.png in Hair Style
+Processed and saved solid color: In Love.png
+Processed and saved solid color: Its Autumn.png
+Processing file: The Queen_Back_C1.png in Hair Style
+Processing file: The Queen_Back_L.png in Hair Style
+Processed and saved skin color trait: Sunny Pink.png
+Processed and saved solid color: Its Autumn.png
+Processing file: The Queen_Front_C1.png in Hair Style
+Processed skin color: Sunny Pink.png
+Processing file: The Queen_Front_L.png in Hair Style
+Processed and saved solid color: Juicy Grapefruit.png
+Processing file: Bob With Bangs_Back_L.png in subfolder: Hair Style
+Processing file: Afro Babe_C1.png in Hair Style
+Processed and saved solid color: Juicy Grapefruit.png
+Processed and saved skin color trait: Tanned Goddess.png
+Processing file: Afro Babe_L.png in Hair Style
+Processed and saved solid color: Kelly-er Kelly.png
+Processed skin color: Tanned Goddess.png
+Processing file: Bob With Bangs_Back_C1.png in Hair Style
+Processed and saved solid color: Kelly-er Kelly.png
+Processing file: Bob With Bangs_Back_L.png in Hair Style
+Processing file: Bob With Bangs_Front_C1.png in Hair Style
+Processed and saved skin color trait: The Beigest.png
+Processed and saved solid color: Lemon Head.png
+Processed skin color: The Beigest.png
+Processing file: Bob With Bangs_Front_L.png in Hair Style
+Processing file: Outer Space Buns Back_C1.png in Hair Style
+Processed and saved solid color: Lemon Head.png
+Processing file: Outer Space Buns Back_C2.png in Hair Style
+Processed and saved skin color trait: Vacation Orange.png
+Processing file: Outer Space Buns Back_C3.png in Hair Style
+Processed and saved solid color: Melted Orange Icecream.png
+Processed skin color: Vacation Orange.png
+Processing file: Outer Space Buns Back_L.png in Hair Style
+Processed and saved solid color: Melted Orange Icecream.png
+Processing file: Outer Space Buns Front_C1.png in Hair Style
+Processed and saved skin color trait: Vampire Pink.png
+Processing file: Outer Space Buns Front_C2.png in Hair Style
+Processed skin color: Vampire Pink.png
+Processed and saved solid color: Moo Cow.png
+Processing file: Outer Space Buns Front_C3.png in Hair Style
+Processing file: Outer Space Buns Front_L.png in Hair Style
+Processed and saved solid color: Moo Cow.png
+Processing file: Peak Chic Back_C1.png in Hair Style
+Processed and saved solid color: Morning Tea.png
+Processing file: Peak Chic Back_L.png in Hair Style
+Processed and saved skin color trait: Vitiligo.png
+Processed and saved solid color: Morning Tea.png
+Processing file: Peak Chic Front_C1.png in Hair Style
+Processed skin color: Vitiligo.png
+Processing file: Peak Chic Front_L.png in Hair Style
+Processed and saved solid color: Nebula Sunset.png
+Processing file: Sweet Bun_Back_C1.png in Hair Style
+Processed and saved solid color: Nebula Sunset.png
+Processing file: Sweet Bun_Back_L.png in Hair Style
+Processing file: Sweet Bun_Front_C1.png in Hair Style
+Processed and saved skin color trait: White Cheetah.png
+Processing file: Sweet Bun_Front_L.png in Hair Style
+Processed skin color: White Cheetah.png
+Processing file: The Queen_Back_C1.png in Hair Style
+Processed and saved solid color: Neon Green Cheetah.png
+Processing file: The Queen_Back_L.png in Hair Style
+Processed and saved solid color: Neon Green Cheetah.png
+Processing file: The Queen_Front_C1.png in Hair Style
+Processing file: The Queen_Front_L.png in Hair Style
+Processed and saved skin color trait: White Tiger.png
+Processed skin color: White Tiger.png
+Checking existence of PNG: compositeImages\Hair Style\Bob With Bangs_Back.png
+Checking existence of JPG: 300x300_jpg\Hair Style\Bob With Bangs_Back.jpg
+Files not found, processing: PNG - compositeImages\Hair Style\Bob With Bangs_Back.png, JPG - 300x300_jpg\Hair Style\Bob With Bangs_Back.jpg
+Processing image group: Bob With Bangs_Front
+Processed and saved solid color: Neon Green Tiger.png
+Processed and saved solid color: Neon Green Tiger.png
+Processing file: Bob With Bangs_Front_C1.png in subfolder: Hair Style
+Processing file: Afro Babe_C1.png in Hair Style
+Processing file: Afro Babe_L.png in Hair Style
+Processing file: Bob With Bangs_Back_C1.png in Hair Style
+Processing file: Bob With Bangs_Back_L.png in Hair Style
+Processing file: Bob With Bangs_Front_C1.png in Hair Style
+Processed and saved solid color: Neon Pink Tiger.png
+Processed and saved solid color: Neon Pink Tiger.png
+Processing file: Bob With Bangs_Front_L.png in Hair Style
+Processing file: Outer Space Buns Back_C1.png in Hair Style
+Processing file: Outer Space Buns Back_C2.png in Hair Style
+Processed and saved solid color: Not Black.png
+Processed and saved solid color: Not Black.png
+Processing file: Outer Space Buns Back_C3.png in Hair Style
+Processing file: Outer Space Buns Back_L.png in Hair Style
+Processing file: Outer Space Buns Front_C1.png in Hair Style
+Processing file: Outer Space Buns Front_C2.png in Hair Style
+Processed and saved solid color: Orange Cheetah.png
+Processed and saved solid color: Orange Cheetah.png
+Processing file: Outer Space Buns Front_C3.png in Hair Style
+Processing file: Outer Space Buns Front_L.png in Hair Style
+Processing file: Peak Chic Back_C1.png in Hair Style
+Processing file: Peak Chic Back_L.png in Hair Style
+Processed and saved solid color: Orange Tiger.png
+Processed and saved solid color: Orange Tiger.png
+Processing file: Peak Chic Front_C1.png in Hair Style
+Processing file: Peak Chic Front_L.png in Hair Style
+Processed and saved solid color: Overcast But Nice.png
+Processing file: Sweet Bun_Back_C1.png in Hair Style
+Processed and saved solid color: Overcast But Nice.png
+Processing file: Sweet Bun_Back_L.png in Hair Style
+Processing file: Sweet Bun_Front_C1.png in Hair Style
+Processing file: Sweet Bun_Front_L.png in Hair Style
+Processing file: The Queen_Back_C1.png in Hair Style
+Processed and saved solid color: Pink Cheetah.png
+Processing file: The Queen_Back_L.png in Hair Style
+Processed and saved solid color: Pink Cheetah.png
+Processing file: The Queen_Front_C1.png in Hair Style
+Processing file: The Queen_Front_L.png in Hair Style
+Processed and saved solid color: Pinky Brain.png
+Processed and saved solid color: Pinky Brain.png
+Processing file: Bob With Bangs_Front_L.png in subfolder: Hair Style
+Processing file: Afro Babe_C1.png in Hair Style
+Processing file: Afro Babe_L.png in Hair Style
+Processing file: Bob With Bangs_Back_C1.png in Hair Style
+Processed and saved solid color: Pinky Toe.png
+Processed and saved solid color: Pinky Toe.png
+Processing file: Bob With Bangs_Back_L.png in Hair Style
+Processing file: Bob With Bangs_Front_C1.png in Hair Style
+Processing file: Bob With Bangs_Front_L.png in Hair Style
+Processed and saved solid color: Pumpkin Head.png
+Processed and saved solid color: Pumpkin Head.png
+Processing file: Outer Space Buns Back_C1.png in Hair Style
+Processing file: Outer Space Buns Back_C2.png in Hair Style
+Processing file: Outer Space Buns Back_C3.png in Hair Style
+Processing file: Outer Space Buns Back_L.png in Hair Style
+Processed and saved solid color: Purple Dinosaur.png
+Processed and saved solid color: Purple Dinosaur.png
+Processing file: Outer Space Buns Front_C1.png in Hair Style
+Processing file: Outer Space Buns Front_C2.png in Hair Style
+Processed and saved solid color: Real Gold.png
+Processing file: Outer Space Buns Front_C3.png in Hair Style
+Processed and saved solid color: Real Gold.png
+Processing file: Outer Space Buns Front_L.png in Hair Style
+Processing file: Peak Chic Back_C1.png in Hair Style
+Processed and saved solid color: Royally Blue.png
+Processed and saved solid color: Royally Blue.png
+Processing file: Peak Chic Back_L.png in Hair Style
+Processing file: Peak Chic Front_C1.png in Hair Style
+Processing file: Peak Chic Front_L.png in Hair Style
+Processed and saved solid color: Shiny Emeralds.png
+Processed and saved solid color: Shiny Emeralds.png
+Processing file: Sweet Bun_Back_C1.png in Hair Style
+Processing file: Sweet Bun_Back_L.png in Hair Style
+Processing file: Sweet Bun_Front_C1.png in Hair Style
+Processed and saved solid color: Slurp Juice.png
+Processed and saved solid color: Slurp Juice.png
+Processing file: Sweet Bun_Front_L.png in Hair Style
+Processing file: The Queen_Back_C1.png in Hair Style
+Processing file: The Queen_Back_L.png in Hair Style
+Processed and saved solid color: Space Melon.png
+Processed and saved solid color: Space Melon.png
+Processing file: The Queen_Front_C1.png in Hair Style
+Processing file: The Queen_Front_L.png in Hair Style
+Checking existence of PNG: compositeImages\Hair Style\Bob With Bangs_Front.png
+Checking existence of JPG: 300x300_jpg\Hair Style\Bob With Bangs_Front.jpg
+Files not found, processing: PNG - compositeImages\Hair Style\Bob With Bangs_Front.png, JPG - 300x300_jpg\Hair Style\Bob With Bangs_Front.jpg
+Processing image group: Outer Space Buns Back
+Processed and saved solid color: Strawberry Moo Cow.png
+Processed and saved solid color: Strawberry Moo Cow.png
+Processing file: Outer Space Buns Back_C1.png in subfolder: Hair Style
+Processing file: Afro Babe_C1.png in Hair Style
+Processing file: Afro Babe_L.png in Hair Style
+Processing file: Bob With Bangs_Back_C1.png in Hair Style
+Processed and saved solid color: Thats Gum.png
+Processed and saved solid color: Thats Gum.png
+Processing file: Bob With Bangs_Back_L.png in Hair Style
+Processing file: Bob With Bangs_Front_C1.png in Hair Style
+Processing file: Bob With Bangs_Front_L.png in Hair Style
+Processed and saved solid color: The Classiest Purple.png
+Processed and saved solid color: The Classiest Purple.png
+Processing file: Outer Space Buns Back_C1.png in Hair Style
+Processing file: Outer Space Buns Back_C2.png in Hair Style
+Processing file: Outer Space Buns Back_C3.png in Hair Style
+Processing file: Outer Space Buns Back_L.png in Hair Style
+Processed and saved solid color: Throne Cushion.png
+Processed and saved solid color: Throne Cushion.png
+Processing file: Outer Space Buns Front_C1.png in Hair Style
+Processing file: Outer Space Buns Front_C2.png in Hair Style
+Processing file: Outer Space Buns Front_C3.png in Hair Style
+Processed and saved solid color: Vampire Wine.png
+Processing file: Outer Space Buns Front_L.png in Hair Style
+Processed and saved solid color: Vampire Wine.png
+Processing file: Peak Chic Back_C1.png in Hair Style
+Processing file: Peak Chic Back_L.png in Hair Style
+Processed and saved solid color: Vega Glow.png
+Processed and saved solid color: Vega Glow.png
+Processing file: Peak Chic Front_C1.png in Hair Style
+Processing file: Peak Chic Front_L.png in Hair Style
+Processed and saved solid color: Vibing.png
+Processed and saved solid color: Vibing.png
+Processing file: Sweet Bun_Back_C1.png in Hair Style
+Processing file: Sweet Bun_Back_L.png in Hair Style
+Processing file: Sweet Bun_Front_C1.png in Hair Style
+Processing file: Sweet Bun_Front_L.png in Hair Style
+Processed and saved solid color: Vortron Guts.png
+Processed and saved solid color: Vortron Guts.png
+Processing file: The Queen_Back_C1.png in Hair Style
+Processing file: The Queen_Back_L.png in Hair Style
+Processing file: The Queen_Front_C1.png in Hair Style
+Processed and saved solid color: Warm Night Sky.png
+Processing file: The Queen_Front_L.png in Hair Style
+Processed and saved solid color: Warm Night Sky.png
+Processing file: Outer Space Buns Back_C2.png in subfolder: Hair Style
+Processing file: Afro Babe_C1.png in Hair Style
+Processing file: Afro Babe_L.png in Hair Style
+Processed and saved solid color: White Cheetah.png
+Processed and saved solid color: White Cheetah.png
+Processing file: Bob With Bangs_Back_C1.png in Hair Style
+Processing file: Bob With Bangs_Back_L.png in Hair Style
+Processing file: Bob With Bangs_Front_C1.png in Hair Style
+Processing file: Bob With Bangs_Front_L.png in Hair Style
+Processed and saved solid color: White Tiger.png
+Solid colors RGB values saved to colors.json
+Processed and saved solid color: White Tiger.png
+Solid colors RGB values saved to colors.json
+Processing file: Outer Space Buns Back_C1.png in Hair Style
+Processing file: Outer Space Buns Back_C2.png in Hair Style
+Processing file: Outer Space Buns Back_C3.png in Hair Style
+Processing file: Outer Space Buns Back_L.png in Hair Style
+Processing file: Outer Space Buns Front_C1.png in Hair Style
+Processing file: Outer Space Buns Front_C2.png in Hair Style
+Processing file: Outer Space Buns Front_C3.png in Hair Style
+Processing file: Outer Space Buns Front_L.png in Hair Style
+Processing file: Peak Chic Back_C1.png in Hair Style
+Processing file: Peak Chic Back_L.png in Hair Style
+Processing file: Peak Chic Front_C1.png in Hair Style
+Processing file: Peak Chic Front_L.png in Hair Style
+Processing file: Sweet Bun_Back_C1.png in Hair Style
+Processing file: Sweet Bun_Back_L.png in Hair Style
+Processing file: Sweet Bun_Front_C1.png in Hair Style
+Processing file: Sweet Bun_Front_L.png in Hair Style
+Processing file: The Queen_Back_C1.png in Hair Style
+Processing file: The Queen_Back_L.png in Hair Style
+Processing file: The Queen_Front_C1.png in Hair Style
+Processing file: The Queen_Front_L.png in Hair Style
+Processing file: Outer Space Buns Back_C3.png in subfolder: Hair Style
+Processing file: Afro Babe_C1.png in Hair Style
+Processing file: Afro Babe_L.png in Hair Style
+Processing file: Bob With Bangs_Back_C1.png in Hair Style
+Processing file: Bob With Bangs_Back_L.png in Hair Style
+Processing file: Bob With Bangs_Front_C1.png in Hair Style
+Processing file: Bob With Bangs_Front_L.png in Hair Style
+Processing file: Outer Space Buns Back_C1.png in Hair Style
+Processing file: Outer Space Buns Back_C2.png in Hair Style
+Processing file: Outer Space Buns Back_C3.png in Hair Style
+Processing file: Outer Space Buns Back_L.png in Hair Style
+Processing file: Outer Space Buns Front_C1.png in Hair Style
+Processing file: Outer Space Buns Front_C2.png in Hair Style
+Processing file: Outer Space Buns Front_C3.png in Hair Style
+Processing file: Outer Space Buns Front_L.png in Hair Style
+Processing file: Peak Chic Back_C1.png in Hair Style
+Processing file: Peak Chic Back_L.png in Hair Style
+Processing file: Peak Chic Front_C1.png in Hair Style
+Processing file: Peak Chic Front_L.png in Hair Style
+Processing file: Sweet Bun_Back_C1.png in Hair Style
+Processing file: Sweet Bun_Back_L.png in Hair Style
+Processing file: Sweet Bun_Front_C1.png in Hair Style
+Processing file: Sweet Bun_Front_L.png in Hair Style
+Processing file: The Queen_Back_C1.png in Hair Style
+Processing file: The Queen_Back_L.png in Hair Style
+Processing file: The Queen_Front_C1.png in Hair Style
+Processing file: The Queen_Front_L.png in Hair Style
+Processing file: Outer Space Buns Back_L.png in subfolder: Hair Style
+Processing file: Afro Babe_C1.png in Hair Style
+Processing file: Afro Babe_L.png in Hair Style
+Processing file: Bob With Bangs_Back_C1.png in Hair Style
+Processing file: Bob With Bangs_Back_L.png in Hair Style
+Processing file: Bob With Bangs_Front_C1.png in Hair Style
+Processing file: Bob With Bangs_Front_L.png in Hair Style
+Processing file: Outer Space Buns Back_C1.png in Hair Style
+Processing file: Outer Space Buns Back_C2.png in Hair Style
+Processing file: Outer Space Buns Back_C3.png in Hair Style
+Processing file: Outer Space Buns Back_L.png in Hair Style
+Processing file: Outer Space Buns Front_C1.png in Hair Style
+Processing file: Outer Space Buns Front_C2.png in Hair Style
+Processing file: Outer Space Buns Front_C3.png in Hair Style
+Processing file: Outer Space Buns Front_L.png in Hair Style
+Processing file: Peak Chic Back_C1.png in Hair Style
+Processing file: Peak Chic Back_L.png in Hair Style
+Processing file: Peak Chic Front_C1.png in Hair Style
+Processing file: Peak Chic Front_L.png in Hair Style
+Processing file: Sweet Bun_Back_C1.png in Hair Style
+Processing file: Sweet Bun_Back_L.png in Hair Style
+Processing file: Sweet Bun_Front_C1.png in Hair Style
+Processing file: Sweet Bun_Front_L.png in Hair Style
+Processing file: The Queen_Back_C1.png in Hair Style
+Processing file: The Queen_Back_L.png in Hair Style
+Processing file: The Queen_Front_C1.png in Hair Style
+Processing file: The Queen_Front_L.png in Hair Style
+Checking existence of PNG: compositeImages\Hair Style\Outer Space Buns Back.png
+Checking existence of JPG: 300x300_jpg\Hair Style\Outer Space Buns Back.jpg
+Skipping existing files: PNG - compositeImages\Hair Style\Outer Space Buns Back.png, JPG - 300x300_jpg\Hair Style\Outer Space Buns Back.jpg
+Processing image group: Outer Space Buns Front
+Processing file: Outer Space Buns Front_C1.png in subfolder: Hair Style
+Processing file: Afro Babe_C1.png in Hair Style
+Processing file: Afro Babe_L.png in Hair Style
+Processing file: Bob With Bangs_Back_C1.png in Hair Style
+Processing file: Bob With Bangs_Back_L.png in Hair Style
+Processing file: Bob With Bangs_Front_C1.png in Hair Style
+Processing file: Bob With Bangs_Front_L.png in Hair Style
+Processing file: Outer Space Buns Back_C1.png in Hair Style
+Processing file: Outer Space Buns Back_C2.png in Hair Style
+Processing file: Outer Space Buns Back_C3.png in Hair Style
+Processing file: Outer Space Buns Back_L.png in Hair Style
+Processing file: Outer Space Buns Front_C1.png in Hair Style
+Processing file: Outer Space Buns Front_C2.png in Hair Style
+Processing file: Outer Space Buns Front_C3.png in Hair Style
+Processing file: Outer Space Buns Front_L.png in Hair Style
+Processing file: Peak Chic Back_C1.png in Hair Style
+Processing file: Peak Chic Back_L.png in Hair Style
+Processing file: Peak Chic Front_C1.png in Hair Style
+Processing file: Peak Chic Front_L.png in Hair Style
+Processing file: Sweet Bun_Back_C1.png in Hair Style
+Processing file: Sweet Bun_Back_L.png in Hair Style
+Processing file: Sweet Bun_Front_C1.png in Hair Style
+Processing file: Sweet Bun_Front_L.png in Hair Style
+Processing file: The Queen_Back_C1.png in Hair Style
+Processing file: The Queen_Back_L.png in Hair Style
+Processing file: The Queen_Front_C1.png in Hair Style
+Processing file: The Queen_Front_L.png in Hair Style
+Processing file: Outer Space Buns Front_C2.png in subfolder: Hair Style
+Processing file: Afro Babe_C1.png in Hair Style
+Processing file: Afro Babe_L.png in Hair Style
+Processing file: Bob With Bangs_Back_C1.png in Hair Style
+Processing file: Bob With Bangs_Back_L.png in Hair Style
+Processing file: Bob With Bangs_Front_C1.png in Hair Style
+Processing file: Bob With Bangs_Front_L.png in Hair Style
+Processing file: Outer Space Buns Back_C1.png in Hair Style
+Processing file: Outer Space Buns Back_C2.png in Hair Style
+Processing file: Outer Space Buns Back_C3.png in Hair Style
+Processing file: Outer Space Buns Back_L.png in Hair Style
+Processing file: Outer Space Buns Front_C1.png in Hair Style
+Processing file: Outer Space Buns Front_C2.png in Hair Style
+Processing file: Outer Space Buns Front_C3.png in Hair Style
+Processing file: Outer Space Buns Front_L.png in Hair Style
+Processing file: Peak Chic Back_C1.png in Hair Style
+Processing file: Peak Chic Back_L.png in Hair Style
+Processing file: Peak Chic Front_C1.png in Hair Style
+Processing file: Peak Chic Front_L.png in Hair Style
+Processing file: Sweet Bun_Back_C1.png in Hair Style
+Processing file: Sweet Bun_Back_L.png in Hair Style
+Processing file: Sweet Bun_Front_C1.png in Hair Style
+Processing file: Sweet Bun_Front_L.png in Hair Style
+Processing file: The Queen_Back_C1.png in Hair Style
+Processing file: The Queen_Back_L.png in Hair Style
+Processing file: The Queen_Front_C1.png in Hair Style
+Processing file: The Queen_Front_L.png in Hair Style
+Processing file: Outer Space Buns Front_C3.png in subfolder: Hair Style
+Processing file: Afro Babe_C1.png in Hair Style
+Processing file: Afro Babe_L.png in Hair Style
+Processing file: Bob With Bangs_Back_C1.png in Hair Style
+Processing file: Bob With Bangs_Back_L.png in Hair Style
+Processing file: Bob With Bangs_Front_C1.png in Hair Style
+Processing file: Bob With Bangs_Front_L.png in Hair Style
+Processing file: Outer Space Buns Back_C1.png in Hair Style
+Processing file: Outer Space Buns Back_C2.png in Hair Style
+Processing file: Outer Space Buns Back_C3.png in Hair Style
+Processing file: Outer Space Buns Back_L.png in Hair Style
+Processing file: Outer Space Buns Front_C1.png in Hair Style
+Processing file: Outer Space Buns Front_C2.png in Hair Style
+Processing file: Outer Space Buns Front_C3.png in Hair Style
+Processing file: Outer Space Buns Front_L.png in Hair Style
+Processing file: Peak Chic Back_C1.png in Hair Style
+Processing file: Peak Chic Back_L.png in Hair Style
+Processing file: Peak Chic Front_C1.png in Hair Style
+Processing file: Peak Chic Front_L.png in Hair Style
+Processing file: Sweet Bun_Back_C1.png in Hair Style
+Processing file: Sweet Bun_Back_L.png in Hair Style
+Processing file: Sweet Bun_Front_C1.png in Hair Style
+Processing file: Sweet Bun_Front_L.png in Hair Style
+Processing file: The Queen_Back_C1.png in Hair Style
+Processing file: The Queen_Back_L.png in Hair Style
+Processing file: The Queen_Front_C1.png in Hair Style
+Processing file: The Queen_Front_L.png in Hair Style
+Processing file: Outer Space Buns Front_L.png in subfolder: Hair Style
+Processing file: Afro Babe_C1.png in Hair Style
+Processing file: Afro Babe_L.png in Hair Style
+Processing file: Bob With Bangs_Back_C1.png in Hair Style
+Processing file: Bob With Bangs_Back_L.png in Hair Style
+Processing file: Bob With Bangs_Front_C1.png in Hair Style
+Processing file: Bob With Bangs_Front_L.png in Hair Style
+Processing file: Outer Space Buns Back_C1.png in Hair Style
+Processing file: Outer Space Buns Back_C2.png in Hair Style
+Processing file: Outer Space Buns Back_C3.png in Hair Style
+Processing file: Outer Space Buns Back_L.png in Hair Style
+Processing file: Outer Space Buns Front_C1.png in Hair Style
+Processing file: Outer Space Buns Front_C2.png in Hair Style
+Processing file: Outer Space Buns Front_C3.png in Hair Style
+Processing file: Outer Space Buns Front_L.png in Hair Style
+Processing file: Peak Chic Back_C1.png in Hair Style
+Processing file: Peak Chic Back_L.png in Hair Style
+Processing file: Peak Chic Front_C1.png in Hair Style
+Processing file: Peak Chic Front_L.png in Hair Style
+Processing file: Sweet Bun_Back_C1.png in Hair Style
+Processing file: Sweet Bun_Back_L.png in Hair Style
+Processing file: Sweet Bun_Front_C1.png in Hair Style
+Processing file: Sweet Bun_Front_L.png in Hair Style
+Processing file: The Queen_Back_C1.png in Hair Style
+Processing file: The Queen_Back_L.png in Hair Style
+Processing file: The Queen_Front_C1.png in Hair Style
+Processing file: The Queen_Front_L.png in Hair Style
+Checking existence of PNG: compositeImages\Hair Style\Outer Space Buns Front.png
+Checking existence of JPG: 300x300_jpg\Hair Style\Outer Space Buns Front.jpg
+Skipping existing files: PNG - compositeImages\Hair Style\Outer Space Buns Front.png, JPG - 300x300_jpg\Hair Style\Outer Space Buns Front.jpg
+Processing image group: Peak Chic Back
+Processing file: Peak Chic Back_C1.png in subfolder: Hair Style
+Processing file: Afro Babe_C1.png in Hair Style
+Processing file: Afro Babe_L.png in Hair Style
+Processing file: Bob With Bangs_Back_C1.png in Hair Style
+Processing file: Bob With Bangs_Back_L.png in Hair Style
+Processing file: Bob With Bangs_Front_C1.png in Hair Style
+Processing file: Bob With Bangs_Front_L.png in Hair Style
+Processing file: Outer Space Buns Back_C1.png in Hair Style
+Processing file: Outer Space Buns Back_C2.png in Hair Style
+Processing file: Outer Space Buns Back_C3.png in Hair Style
+Processing file: Outer Space Buns Back_L.png in Hair Style
+Processing file: Outer Space Buns Front_C1.png in Hair Style
+Processing file: Outer Space Buns Front_C2.png in Hair Style
+Processing file: Outer Space Buns Front_C3.png in Hair Style
+Processing file: Outer Space Buns Front_L.png in Hair Style
+Processing file: Peak Chic Back_C1.png in Hair Style
+Processing file: Peak Chic Back_L.png in Hair Style
+Processing file: Peak Chic Front_C1.png in Hair Style
+Processing file: Peak Chic Front_L.png in Hair Style
+Processing file: Sweet Bun_Back_C1.png in Hair Style
+Processing file: Sweet Bun_Back_L.png in Hair Style
+Processing file: Sweet Bun_Front_C1.png in Hair Style
+Processing file: Sweet Bun_Front_L.png in Hair Style
+Processing file: The Queen_Back_C1.png in Hair Style
+Processing file: The Queen_Back_L.png in Hair Style
+Processing file: The Queen_Front_C1.png in Hair Style
+Processing file: The Queen_Front_L.png in Hair Style
+Processing file: Peak Chic Back_L.png in subfolder: Hair Style
+Processing file: Afro Babe_C1.png in Hair Style
+Processing file: Afro Babe_L.png in Hair Style
+Processing file: Bob With Bangs_Back_C1.png in Hair Style
+Processing file: Bob With Bangs_Back_L.png in Hair Style
+Processing file: Bob With Bangs_Front_C1.png in Hair Style
+Processing file: Bob With Bangs_Front_L.png in Hair Style
+Processing file: Outer Space Buns Back_C1.png in Hair Style
+Processing file: Outer Space Buns Back_C2.png in Hair Style
+Processing file: Outer Space Buns Back_C3.png in Hair Style
+Processing file: Outer Space Buns Back_L.png in Hair Style
+Processing file: Outer Space Buns Front_C1.png in Hair Style
+Processing file: Outer Space Buns Front_C2.png in Hair Style
+Processing file: Outer Space Buns Front_C3.png in Hair Style
+Processing file: Outer Space Buns Front_L.png in Hair Style
+Processing file: Peak Chic Back_C1.png in Hair Style
+Processing file: Peak Chic Back_L.png in Hair Style
+Processing file: Peak Chic Front_C1.png in Hair Style
+Processing file: Peak Chic Front_L.png in Hair Style
+Processing file: Sweet Bun_Back_C1.png in Hair Style
+Processing file: Sweet Bun_Back_L.png in Hair Style
+Processing file: Sweet Bun_Front_C1.png in Hair Style
+Processing file: Sweet Bun_Front_L.png in Hair Style
+Processing file: The Queen_Back_C1.png in Hair Style
+Processing file: The Queen_Back_L.png in Hair Style
+Processing file: The Queen_Front_C1.png in Hair Style
+Processing file: The Queen_Front_L.png in Hair Style
+Checking existence of PNG: compositeImages\Hair Style\Peak Chic Back.png
+Checking existence of JPG: 300x300_jpg\Hair Style\Peak Chic Back.jpg
+Skipping existing files: PNG - compositeImages\Hair Style\Peak Chic Back.png, JPG - 300x300_jpg\Hair Style\Peak Chic Back.jpg
+Processing image group: Peak Chic Front
+Processing file: Peak Chic Front_C1.png in subfolder: Hair Style
+Processing file: Afro Babe_C1.png in Hair Style
+Processing file: Afro Babe_L.png in Hair Style
+Processing file: Bob With Bangs_Back_C1.png in Hair Style
+Processing file: Bob With Bangs_Back_L.png in Hair Style
+Processing file: Bob With Bangs_Front_C1.png in Hair Style
+Processing file: Bob With Bangs_Front_L.png in Hair Style
+Processing file: Outer Space Buns Back_C1.png in Hair Style
+Processing file: Outer Space Buns Back_C2.png in Hair Style
+Processing file: Outer Space Buns Back_C3.png in Hair Style
+Processing file: Outer Space Buns Back_L.png in Hair Style
+Processing file: Outer Space Buns Front_C1.png in Hair Style
+Processing file: Outer Space Buns Front_C2.png in Hair Style
+Processing file: Outer Space Buns Front_C3.png in Hair Style
+Processing file: Outer Space Buns Front_L.png in Hair Style
+Processing file: Peak Chic Back_C1.png in Hair Style
+Processing file: Peak Chic Back_L.png in Hair Style
+Processing file: Peak Chic Front_C1.png in Hair Style
+Processing file: Peak Chic Front_L.png in Hair Style
+Processing file: Sweet Bun_Back_C1.png in Hair Style
+Processing file: Sweet Bun_Back_L.png in Hair Style
+Processing file: Sweet Bun_Front_C1.png in Hair Style
+Processing file: Sweet Bun_Front_L.png in Hair Style
+Processing file: The Queen_Back_C1.png in Hair Style
+Processing file: The Queen_Back_L.png in Hair Style
+Processing file: The Queen_Front_C1.png in Hair Style
+Processing file: The Queen_Front_L.png in Hair Style
+Processing file: Peak Chic Front_L.png in subfolder: Hair Style
+Processing file: Afro Babe_C1.png in Hair Style
+Processing file: Afro Babe_L.png in Hair Style
+Processing file: Bob With Bangs_Back_C1.png in Hair Style
+Processing file: Bob With Bangs_Back_L.png in Hair Style
+Processing file: Bob With Bangs_Front_C1.png in Hair Style
+Processing file: Bob With Bangs_Front_L.png in Hair Style
+Processing file: Outer Space Buns Back_C1.png in Hair Style
+Processing file: Outer Space Buns Back_C2.png in Hair Style
+Processing file: Outer Space Buns Back_C3.png in Hair Style
+Processing file: Outer Space Buns Back_L.png in Hair Style
+Processing file: Outer Space Buns Front_C1.png in Hair Style
+Processing file: Outer Space Buns Front_C2.png in Hair Style
+Processing file: Outer Space Buns Front_C3.png in Hair Style
+Processing file: Outer Space Buns Front_L.png in Hair Style
+Processing file: Peak Chic Back_C1.png in Hair Style
+Processing file: Peak Chic Back_L.png in Hair Style
+Processing file: Peak Chic Front_C1.png in Hair Style
+Processing file: Peak Chic Front_L.png in Hair Style
+Processing file: Sweet Bun_Back_C1.png in Hair Style
+Processing file: Sweet Bun_Back_L.png in Hair Style
+Processing file: Sweet Bun_Front_C1.png in Hair Style
+Processing file: Sweet Bun_Front_L.png in Hair Style
+Processing file: The Queen_Back_C1.png in Hair Style
+Processing file: The Queen_Back_L.png in Hair Style
+Processing file: The Queen_Front_C1.png in Hair Style
+Processing file: The Queen_Front_L.png in Hair Style
+Checking existence of PNG: compositeImages\Hair Style\Peak Chic Front.png
+Checking existence of JPG: 300x300_jpg\Hair Style\Peak Chic Front.jpg
+Skipping existing files: PNG - compositeImages\Hair Style\Peak Chic Front.png, JPG - 300x300_jpg\Hair Style\Peak Chic Front.jpg
+Processing image group: Sweet Bun_Back
+Processing file: Sweet Bun_Back_C1.png in subfolder: Hair Style
+Processing file: Afro Babe_C1.png in Hair Style
+Processing file: Afro Babe_L.png in Hair Style
+Processing file: Bob With Bangs_Back_C1.png in Hair Style
+Processing file: Bob With Bangs_Back_L.png in Hair Style
+Processing file: Bob With Bangs_Front_C1.png in Hair Style
+Processing file: Bob With Bangs_Front_L.png in Hair Style
+Processing file: Outer Space Buns Back_C1.png in Hair Style
+Processing file: Outer Space Buns Back_C2.png in Hair Style
+Processing file: Outer Space Buns Back_C3.png in Hair Style
+Processing file: Outer Space Buns Back_L.png in Hair Style
+Processing file: Outer Space Buns Front_C1.png in Hair Style
+Processing file: Outer Space Buns Front_C2.png in Hair Style
+Processing file: Outer Space Buns Front_C3.png in Hair Style
+Processing file: Outer Space Buns Front_L.png in Hair Style
+Processing file: Peak Chic Back_C1.png in Hair Style
+Processing file: Peak Chic Back_L.png in Hair Style
+Processing file: Peak Chic Front_C1.png in Hair Style
+Processing file: Peak Chic Front_L.png in Hair Style
+Processing file: Sweet Bun_Back_C1.png in Hair Style
+Processing file: Sweet Bun_Back_L.png in Hair Style
+Processing file: Sweet Bun_Front_C1.png in Hair Style
+Processing file: Sweet Bun_Front_L.png in Hair Style
+Processing file: The Queen_Back_C1.png in Hair Style
+Processing file: The Queen_Back_L.png in Hair Style
+Processing file: The Queen_Front_C1.png in Hair Style
+Processing file: The Queen_Front_L.png in Hair Style
+Processing file: Sweet Bun_Back_L.png in subfolder: Hair Style
+Processing file: Afro Babe_C1.png in Hair Style
+Processing file: Afro Babe_L.png in Hair Style
+Processing file: Bob With Bangs_Back_C1.png in Hair Style
+Processing file: Bob With Bangs_Back_L.png in Hair Style
+Processing file: Bob With Bangs_Front_C1.png in Hair Style
+Processing file: Bob With Bangs_Front_L.png in Hair Style
+Processing file: Outer Space Buns Back_C1.png in Hair Style
+Processing file: Outer Space Buns Back_C2.png in Hair Style
+Processing file: Outer Space Buns Back_C3.png in Hair Style
+Processing file: Outer Space Buns Back_L.png in Hair Style
+Processing file: Outer Space Buns Front_C1.png in Hair Style
+Processing file: Outer Space Buns Front_C2.png in Hair Style
+Processing file: Outer Space Buns Front_C3.png in Hair Style
+Processing file: Outer Space Buns Front_L.png in Hair Style
+Processing file: Peak Chic Back_C1.png in Hair Style
+Processing file: Peak Chic Back_L.png in Hair Style
+Processing file: Peak Chic Front_C1.png in Hair Style
+Processing file: Peak Chic Front_L.png in Hair Style
+Processing file: Sweet Bun_Back_C1.png in Hair Style
+Processing file: Sweet Bun_Back_L.png in Hair Style
+Processing file: Sweet Bun_Front_C1.png in Hair Style
+Processing file: Sweet Bun_Front_L.png in Hair Style
+Processing file: The Queen_Back_C1.png in Hair Style
+Processing file: The Queen_Back_L.png in Hair Style
+Processing file: The Queen_Front_C1.png in Hair Style
+Processing file: The Queen_Front_L.png in Hair Style
+Checking existence of PNG: compositeImages\Hair Style\Sweet Bun_Back.png
+Checking existence of JPG: 300x300_jpg\Hair Style\Sweet Bun_Back.jpg
+Files not found, processing: PNG - compositeImages\Hair Style\Sweet Bun_Back.png, JPG - 300x300_jpg\Hair Style\Sweet Bun_Back.jpg
+Processing image group: Sweet Bun_Front
+Processing file: Sweet Bun_Front_C1.png in subfolder: Hair Style
+Processing file: Afro Babe_C1.png in Hair Style
+Processing file: Afro Babe_L.png in Hair Style
+Processing file: Bob With Bangs_Back_C1.png in Hair Style
+Processing file: Bob With Bangs_Back_L.png in Hair Style
+Processing file: Bob With Bangs_Front_C1.png in Hair Style
+Processing file: Bob With Bangs_Front_L.png in Hair Style
+Processing file: Outer Space Buns Back_C1.png in Hair Style
+Processing file: Outer Space Buns Back_C2.png in Hair Style
+Processing file: Outer Space Buns Back_C3.png in Hair Style
+Processing file: Outer Space Buns Back_L.png in Hair Style
+Processing file: Outer Space Buns Front_C1.png in Hair Style
+Processing file: Outer Space Buns Front_C2.png in Hair Style
+Processing file: Outer Space Buns Front_C3.png in Hair Style
+Processing file: Outer Space Buns Front_L.png in Hair Style
+Processing file: Peak Chic Back_C1.png in Hair Style
+Processing file: Peak Chic Back_L.png in Hair Style
+Processing file: Peak Chic Front_C1.png in Hair Style
+Processing file: Peak Chic Front_L.png in Hair Style
+Processing file: Sweet Bun_Back_C1.png in Hair Style
+Processing file: Sweet Bun_Back_L.png in Hair Style
+Processing file: Sweet Bun_Front_C1.png in Hair Style
+Processing file: Sweet Bun_Front_L.png in Hair Style
+Processing file: The Queen_Back_C1.png in Hair Style
+Processing file: The Queen_Back_L.png in Hair Style
+Processing file: The Queen_Front_C1.png in Hair Style
+Processing file: The Queen_Front_L.png in Hair Style
+Processing file: Sweet Bun_Front_L.png in subfolder: Hair Style
+Processing file: Afro Babe_C1.png in Hair Style
+Processing file: Afro Babe_L.png in Hair Style
+Processing file: Bob With Bangs_Back_C1.png in Hair Style
+Processing file: Bob With Bangs_Back_L.png in Hair Style
+Processing file: Bob With Bangs_Front_C1.png in Hair Style
+Processing file: Bob With Bangs_Front_L.png in Hair Style
+Processing file: Outer Space Buns Back_C1.png in Hair Style
+Processing file: Outer Space Buns Back_C2.png in Hair Style
+Processing file: Outer Space Buns Back_C3.png in Hair Style
+Processing file: Outer Space Buns Back_L.png in Hair Style
+Processing file: Outer Space Buns Front_C1.png in Hair Style
+Processing file: Outer Space Buns Front_C2.png in Hair Style
+Processing file: Outer Space Buns Front_C3.png in Hair Style
+Processing file: Outer Space Buns Front_L.png in Hair Style
+Processing file: Peak Chic Back_C1.png in Hair Style
+Processing file: Peak Chic Back_L.png in Hair Style
+Processing file: Peak Chic Front_C1.png in Hair Style
+Processing file: Peak Chic Front_L.png in Hair Style
+Processing file: Sweet Bun_Back_C1.png in Hair Style
+Processing file: Sweet Bun_Back_L.png in Hair Style
+Processing file: Sweet Bun_Front_C1.png in Hair Style
+Processing file: Sweet Bun_Front_L.png in Hair Style
+Processing file: The Queen_Back_C1.png in Hair Style
+Processing file: The Queen_Back_L.png in Hair Style
+Processing file: The Queen_Front_C1.png in Hair Style
+Processing file: The Queen_Front_L.png in Hair Style
+Checking existence of PNG: compositeImages\Hair Style\Sweet Bun_Front.png
+Checking existence of JPG: 300x300_jpg\Hair Style\Sweet Bun_Front.jpg
+Files not found, processing: PNG - compositeImages\Hair Style\Sweet Bun_Front.png, JPG - 300x300_jpg\Hair Style\Sweet Bun_Front.jpg
+Processing image group: The Queen_Back
+Processing file: The Queen_Back_C1.png in subfolder: Hair Style
+Processing file: Afro Babe_C1.png in Hair Style
+Processing file: Afro Babe_L.png in Hair Style
+Processing file: Bob With Bangs_Back_C1.png in Hair Style
+Processing file: Bob With Bangs_Back_L.png in Hair Style
+Processing file: Bob With Bangs_Front_C1.png in Hair Style
+Processing file: Bob With Bangs_Front_L.png in Hair Style
+Processing file: Outer Space Buns Back_C1.png in Hair Style
+Processing file: Outer Space Buns Back_C2.png in Hair Style
+Processing file: Outer Space Buns Back_C3.png in Hair Style
+Processing file: Outer Space Buns Back_L.png in Hair Style
+Processing file: Outer Space Buns Front_C1.png in Hair Style
+Processing file: Outer Space Buns Front_C2.png in Hair Style
+Processing file: Outer Space Buns Front_C3.png in Hair Style
+Processing file: Outer Space Buns Front_L.png in Hair Style
+Processing file: Peak Chic Back_C1.png in Hair Style
+Processing file: Peak Chic Back_L.png in Hair Style
+Processing file: Peak Chic Front_C1.png in Hair Style
+Processing file: Peak Chic Front_L.png in Hair Style
+Processing file: Sweet Bun_Back_C1.png in Hair Style
+Processing file: Sweet Bun_Back_L.png in Hair Style
+Processing file: Sweet Bun_Front_C1.png in Hair Style
+Processing file: Sweet Bun_Front_L.png in Hair Style
+Processing file: The Queen_Back_C1.png in Hair Style
+Processing file: The Queen_Back_L.png in Hair Style
+Processing file: The Queen_Front_C1.png in Hair Style
+Processing file: The Queen_Front_L.png in Hair Style
+Processing file: The Queen_Back_L.png in subfolder: Hair Style
+Processing file: Afro Babe_C1.png in Hair Style
+Processing file: Afro Babe_L.png in Hair Style
+Processing file: Bob With Bangs_Back_C1.png in Hair Style
+Processing file: Bob With Bangs_Back_L.png in Hair Style
+Processing file: Bob With Bangs_Front_C1.png in Hair Style
+Processing file: Bob With Bangs_Front_L.png in Hair Style
+Processing file: Outer Space Buns Back_C1.png in Hair Style
+Processing file: Outer Space Buns Back_C2.png in Hair Style
+Processing file: Outer Space Buns Back_C3.png in Hair Style
+Processing file: Outer Space Buns Back_L.png in Hair Style
+Processing file: Outer Space Buns Front_C1.png in Hair Style
+Processing file: Outer Space Buns Front_C2.png in Hair Style
+Processing file: Outer Space Buns Front_C3.png in Hair Style
+Processing file: Outer Space Buns Front_L.png in Hair Style
+Processing file: Peak Chic Back_C1.png in Hair Style
+Processing file: Peak Chic Back_L.png in Hair Style
+Processing file: Peak Chic Front_C1.png in Hair Style
+Processing file: Peak Chic Front_L.png in Hair Style
+Processing file: Sweet Bun_Back_C1.png in Hair Style
+Processing file: Sweet Bun_Back_L.png in Hair Style
+Processing file: Sweet Bun_Front_C1.png in Hair Style
+Processing file: Sweet Bun_Front_L.png in Hair Style
+Processing file: The Queen_Back_C1.png in Hair Style
+Processing file: The Queen_Back_L.png in Hair Style
+Processing file: The Queen_Front_C1.png in Hair Style
+Processing file: The Queen_Front_L.png in Hair Style
+Checking existence of PNG: compositeImages\Hair Style\The Queen_Back.png
+Checking existence of JPG: 300x300_jpg\Hair Style\The Queen_Back.jpg
+Files not found, processing: PNG - compositeImages\Hair Style\The Queen_Back.png, JPG - 300x300_jpg\Hair Style\The Queen_Back.jpg
+Processing image group: The Queen_Front
+Processing file: The Queen_Front_C1.png in subfolder: Hair Style
+Processing file: Afro Babe_C1.png in Hair Style
+Processing file: Afro Babe_L.png in Hair Style
+Processing file: Bob With Bangs_Back_C1.png in Hair Style
+Processing file: Bob With Bangs_Back_L.png in Hair Style
+Processing file: Bob With Bangs_Front_C1.png in Hair Style
+Processing file: Bob With Bangs_Front_L.png in Hair Style
+Processing file: Outer Space Buns Back_C1.png in Hair Style
+Processing file: Outer Space Buns Back_C2.png in Hair Style
+Processing file: Outer Space Buns Back_C3.png in Hair Style
+Processing file: Outer Space Buns Back_L.png in Hair Style
+Processing file: Outer Space Buns Front_C1.png in Hair Style
+Processing file: Outer Space Buns Front_C2.png in Hair Style
+Processing file: Outer Space Buns Front_C3.png in Hair Style
+Processing file: Outer Space Buns Front_L.png in Hair Style
+Processing file: Peak Chic Back_C1.png in Hair Style
+Processing file: Peak Chic Back_L.png in Hair Style
+Processing file: Peak Chic Front_C1.png in Hair Style
+Processing file: Peak Chic Front_L.png in Hair Style
+Processing file: Sweet Bun_Back_C1.png in Hair Style
+Processing file: Sweet Bun_Back_L.png in Hair Style
+Processing file: Sweet Bun_Front_C1.png in Hair Style
+Processing file: Sweet Bun_Front_L.png in Hair Style
+Processing file: The Queen_Back_C1.png in Hair Style
+Processing file: The Queen_Back_L.png in Hair Style
+Processing file: The Queen_Front_C1.png in Hair Style
+Processing file: The Queen_Front_L.png in Hair Style
+Processing file: The Queen_Front_L.png in subfolder: Hair Style
+Processing file: Afro Babe_C1.png in Hair Style
+Processing file: Afro Babe_L.png in Hair Style
+Processing file: Bob With Bangs_Back_C1.png in Hair Style
+Processing file: Bob With Bangs_Back_L.png in Hair Style
+Processing file: Bob With Bangs_Front_C1.png in Hair Style
+Processing file: Bob With Bangs_Front_L.png in Hair Style
+Processing file: Outer Space Buns Back_C1.png in Hair Style
+Processing file: Outer Space Buns Back_C2.png in Hair Style
+Processing file: Outer Space Buns Back_C3.png in Hair Style
+Processing file: Outer Space Buns Back_L.png in Hair Style
+Processing file: Outer Space Buns Front_C1.png in Hair Style
+Processing file: Outer Space Buns Front_C2.png in Hair Style
+Processing file: Outer Space Buns Front_C3.png in Hair Style
+Processing file: Outer Space Buns Front_L.png in Hair Style
+Processing file: Peak Chic Back_C1.png in Hair Style
+Processing file: Peak Chic Back_L.png in Hair Style
+Processing file: Peak Chic Front_C1.png in Hair Style
+Processing file: Peak Chic Front_L.png in Hair Style
+Processing file: Sweet Bun_Back_C1.png in Hair Style
+Processing file: Sweet Bun_Back_L.png in Hair Style
+Processing file: Sweet Bun_Front_C1.png in Hair Style
+Processing file: Sweet Bun_Front_L.png in Hair Style
+Processing file: The Queen_Back_C1.png in Hair Style
+Processing file: The Queen_Back_L.png in Hair Style
+Processing file: The Queen_Front_C1.png in Hair Style
+Processing file: The Queen_Front_L.png in Hair Style
+Checking existence of PNG: compositeImages\Hair Style\The Queen_Front.png
+Checking existence of JPG: 300x300_jpg\Hair Style\The Queen_Front.jpg
+Files not found, processing: PNG - compositeImages\Hair Style\The Queen_Front.png, JPG - 300x300_jpg\Hair Style\The Queen_Front.jpg
+Processing image group: Texting U
+Processing file: Texting U_C1.png in subfolder: Hand
+Processing file: Texting U_C2.png in subfolder: Hand
+Processing file: Texting U_L.png in subfolder: Hand
+Processing file: Texting U_S.png in subfolder: Hand
+Checking existence of PNG: compositeImages\Hand\Texting U.png
+Checking existence of JPG: 300x300_jpg\Hand\Texting U.jpg
+Files not found, processing: PNG - compositeImages\Hand\Texting U.png, JPG - 300x300_jpg\Hand\Texting U.jpg
+Saved: compositeImages\Hand\Texting U.png
+Saved: 300x300_jpg\Hand\Texting U.jpg
+Processing image group: Filler Smile
+Processing file: Filler Smile_C1.png in subfolder: Mouth
+Processing file: Filler Smile_L.png in subfolder: Mouth
+Checking existence of PNG: compositeImages\Mouth\Filler Smile.png
+Checking existence of JPG: 300x300_jpg\Mouth\Filler Smile.jpg
+Files not found, processing: PNG - compositeImages\Mouth\Filler Smile.png, JPG - 300x300_jpg\Mouth\Filler Smile.jpg
+Saved: compositeImages\Mouth\Filler Smile.png
+Saved: 300x300_jpg\Mouth\Filler Smile.jpg
+Processing image group: Medium Lips
+Processing file: Medium Lips_C1.png in subfolder: Mouth
+Processing file: Medium Lips_L.png in subfolder: Mouth
+Checking existence of PNG: compositeImages\Mouth\Medium Lips.png
+Checking existence of JPG: 300x300_jpg\Mouth\Medium Lips.jpg
+Files not found, processing: PNG - compositeImages\Mouth\Medium Lips.png, JPG - 300x300_jpg\Mouth\Medium Lips.jpg
+Saved: compositeImages\Mouth\Medium Lips.png
+Saved: 300x300_jpg\Mouth\Medium Lips.jpg
+Processing image group: Classic QT
+Processing file: Classic QT_C1.png in subfolder: Outfit
+Processing file: Classic QT_C2.png in subfolder: Outfit
+Processing file: Classic QT_L.png in subfolder: Outfit
+Checking existence of PNG: compositeImages\Outfit\Classic QT.png
+Checking existence of JPG: 300x300_jpg\Outfit\Classic QT.jpg
+Files not found, processing: PNG - compositeImages\Outfit\Classic QT.png, JPG - 300x300_jpg\Outfit\Classic QT.jpg
+Saved: compositeImages\Outfit\Classic QT.png
+Saved: 300x300_jpg\Outfit\Classic QT.jpg
+Processing image group: GM Fuzzy Robe
+Processing file: GM Fuzzy Robe_C1.png in subfolder: Outfit
+Processing file: GM Fuzzy Robe_C2.png in subfolder: Outfit
+Processing file: GM Fuzzy Robe_C3.png in subfolder: Outfit
+Processing file: GM Fuzzy Robe_L.png in subfolder: Outfit
+Checking existence of PNG: compositeImages\Outfit\GM Fuzzy Robe.png
+Checking existence of JPG: 300x300_jpg\Outfit\GM Fuzzy Robe.jpg
+Files not found, processing: PNG - compositeImages\Outfit\GM Fuzzy Robe.png, JPG - 300x300_jpg\Outfit\GM Fuzzy Robe.jpg
+Saved: compositeImages\Outfit\GM Fuzzy Robe.png
+Saved: 300x300_jpg\Outfit\GM Fuzzy Robe.jpg
+Processing image group: Sheerly Stellar
+Processing file: Sheerly Stellar_C1.png in subfolder: Outfit
+Processing file: Sheerly Stellar_C2.png in subfolder: Outfit
+Processing file: Sheerly Stellar_L.png in subfolder: Outfit
+Checking existence of PNG: compositeImages\Outfit\Sheerly Stellar.png
+Checking existence of JPG: 300x300_jpg\Outfit\Sheerly Stellar.jpg
+Files not found, processing: PNG - compositeImages\Outfit\Sheerly Stellar.png, JPG - 300x300_jpg\Outfit\Sheerly Stellar.jpg
+Saved: compositeImages\Outfit\Sheerly Stellar.png
+Saved: 300x300_jpg\Outfit\Sheerly Stellar.jpg
+Processing image group: Velvet Sunset
+Processing file: Velvet Sunset_C1.png in subfolder: Outfit
+Processing file: Velvet Sunset_C2.png in subfolder: Outfit
+Processing file: Velvet Sunset_L.png in subfolder: Outfit
+Checking existence of PNG: compositeImages\Outfit\Velvet Sunset.png
+Checking existence of JPG: 300x300_jpg\Outfit\Velvet Sunset.jpg
+Files not found, processing: PNG - compositeImages\Outfit\Velvet Sunset.png, JPG - 300x300_jpg\Outfit\Velvet Sunset.jpg
+Saved: compositeImages\Outfit\Velvet Sunset.png
+Saved: 300x300_jpg\Outfit\Velvet Sunset.jpg
+Script started
+Subfolders found: Accessory, Background, Bodysuit, Colors, Extras, Eyebrows, Eyes, Face Sticker, Finished, Frame, Hair Style, Hand, Mouth, Outfit, Piercing, Tattoo, Undergarment
+Files found: 16
+Solid colors RGB values saved to colors.json
+Resizing image: scriptImages\Hair Style\Bob With Bangs_Back_C1.png to 800x800
+Resizing image: scriptImages\Hair Style\Bob With Bangs_Back_C1.png to 600x600
+Solid colors RGB values saved to colors.json
+Processing image group: Bob With Bangs_Back
+Resized image saved: 800x800_png\Hair Style\Bob With Bangs_Back_C1.png
+Resizing image: scriptImages\Hair Style\Bob With Bangs_Back_L.png to 800x800
+Resized image saved: 600x600_png\Hair Style\Bob With Bangs_Back_C1.png
+Resizing image: scriptImages\Hair Style\Bob With Bangs_Back_L.png to 600x600
+Processing file: Bob With Bangs_Back_C1.png in subfolder: Hair Style
+Processing file: Bob With Bangs_Back_C1.png in Hair Style
+Processing file: Bob With Bangs_Back_L.png in Hair Style
+Resized image saved: 800x800_png\Hair Style\Bob With Bangs_Back_L.png
+Resizing image: scriptImages\Hair Style\Bob With Bangs_Front_C1.png to 800x800
+Resized image saved: 600x600_png\Hair Style\Bob With Bangs_Back_L.png
+Resizing image: scriptImages\Hair Style\Bob With Bangs_Front_C1.png to 600x600
+Processing file: Bob With Bangs_Front_C1.png in Hair Style
+Resized image saved: 600x600_png\Hair Style\Bob With Bangs_Front_C1.png
+Resizing image: scriptImages\Hair Style\Bob With Bangs_Front_L.png to 600x600
+Processing file: Bob With Bangs_Front_L.png in Hair Style
+Resized image saved: 800x800_png\Hair Style\Bob With Bangs_Front_C1.png
+Resizing image: scriptImages\Hair Style\Bob With Bangs_Front_L.png to 800x800
+Resized image saved: 800x800_png\Hair Style\Bob With Bangs_Front_L.png
+Resizing image: scriptImages\Hair Style\Outer Space Buns_Back_C1.png to 800x800
+Resized image saved: 600x600_png\Hair Style\Bob With Bangs_Front_L.png
+Resizing image: scriptImages\Hair Style\Outer Space Buns_Back_C1.png to 600x600
+Processing file: Outer Space Buns_Back_C1.png in Hair Style
+Resized image saved: 800x800_png\Hair Style\Outer Space Buns_Back_C1.png
+Resizing image: scriptImages\Hair Style\Outer Space Buns_Back_C2.png to 800x800
+Processing file: Outer Space Buns_Back_C2.png in Hair Style
+Resized image saved: 600x600_png\Hair Style\Outer Space Buns_Back_C1.png
+Resizing image: scriptImages\Hair Style\Outer Space Buns_Back_C2.png to 600x600
+Processing file: Outer Space Buns_Back_C3.png in Hair Style
+Resized image saved: 800x800_png\Hair Style\Outer Space Buns_Back_C2.png
+Resizing image: scriptImages\Hair Style\Outer Space Buns_Back_C3.png to 800x800
+Resized image saved: 600x600_png\Hair Style\Outer Space Buns_Back_C2.png
+Resizing image: scriptImages\Hair Style\Outer Space Buns_Back_C3.png to 600x600
+Processing file: Outer Space Buns_Back_L.png in Hair Style
+Resized image saved: 800x800_png\Hair Style\Outer Space Buns_Back_C3.png
+Resizing image: scriptImages\Hair Style\Outer Space Buns_Back_L.png to 800x800
+Resized image saved: 600x600_png\Hair Style\Outer Space Buns_Back_C3.png
+Resizing image: scriptImages\Hair Style\Outer Space Buns_Back_L.png to 600x600
+Processing file: Outer Space Buns_Front_C1.png in Hair Style
+Resized image saved: 800x800_png\Hair Style\Outer Space Buns_Back_L.png
+Resizing image: scriptImages\Hair Style\Outer Space Buns_Front_C1.png to 800x800
+Processing file: Outer Space Buns_Front_C2.png in Hair Style
+Resized image saved: 600x600_png\Hair Style\Outer Space Buns_Back_L.png
+Resizing image: scriptImages\Hair Style\Outer Space Buns_Front_C1.png to 600x600
+Resized image saved: 800x800_png\Hair Style\Outer Space Buns_Front_C1.png
+Resizing image: scriptImages\Hair Style\Outer Space Buns_Front_C2.png to 800x800
+Processing file: Outer Space Buns_Front_C3.png in Hair Style
+Resized image saved: 600x600_png\Hair Style\Outer Space Buns_Front_C1.png
+Resizing image: scriptImages\Hair Style\Outer Space Buns_Front_C2.png to 600x600
+Resized image saved: 800x800_png\Hair Style\Outer Space Buns_Front_C2.png
+Resizing image: scriptImages\Hair Style\Outer Space Buns_Front_C3.png to 800x800
+Resized image saved: 600x600_png\Hair Style\Outer Space Buns_Front_C2.png
+Resizing image: scriptImages\Hair Style\Outer Space Buns_Front_C3.png to 600x600
+Processing file: Outer Space Buns_Front_L.png in Hair Style
+Resized image saved: 800x800_png\Hair Style\Outer Space Buns_Front_C3.png
+Resizing image: scriptImages\Hair Style\Outer Space Buns_Front_L.png to 800x800
+Resized image saved: 600x600_png\Hair Style\Outer Space Buns_Front_C3.png
+Resizing image: scriptImages\Hair Style\Outer Space Buns_Front_L.png to 600x600
+Processing file: Peak Chic_Back_C1.png in Hair Style
+Resized image saved: 800x800_png\Hair Style\Outer Space Buns_Front_L.png
+Resizing image: scriptImages\Hair Style\Peak Chic_Back_C1.png to 800x800
+Resized image saved: 600x600_png\Hair Style\Outer Space Buns_Front_L.png
+Resizing image: scriptImages\Hair Style\Peak Chic_Back_C1.png to 600x600
+Processing file: Peak Chic_Back_L.png in Hair Style
+Resized image saved: 800x800_png\Hair Style\Peak Chic_Back_C1.png
+Resizing image: scriptImages\Hair Style\Peak Chic_Back_L.png to 800x800
+Processing file: Peak Chic_Front_C1.png in Hair Style
+Resized image saved: 600x600_png\Hair Style\Peak Chic_Back_C1.png
+Resizing image: scriptImages\Hair Style\Peak Chic_Back_L.png to 600x600
+Resized image saved: 800x800_png\Hair Style\Peak Chic_Back_L.png
+Resizing image: scriptImages\Hair Style\Peak Chic_Front_C1.png to 800x800
+Resized image saved: 600x600_png\Hair Style\Peak Chic_Back_L.png
+Resizing image: scriptImages\Hair Style\Peak Chic_Front_C1.png to 600x600
+Processing file: Peak Chic_Front_L.png in Hair Style
+Resized image saved: 800x800_png\Hair Style\Peak Chic_Front_C1.png
+Resizing image: scriptImages\Hair Style\Peak Chic_Front_L.png to 800x800
+Resized image saved: 600x600_png\Hair Style\Peak Chic_Front_C1.png
+Resizing image: scriptImages\Hair Style\Peak Chic_Front_L.png to 600x600
+Resized image saved: 800x800_png\Hair Style\Peak Chic_Front_L.png
+Resized image saved: 600x600_png\Hair Style\Peak Chic_Front_L.png
+Processing file: Bob With Bangs_Back_L.png in subfolder: Hair Style
+Processing file: Bob With Bangs_Back_C1.png in Hair Style
+Processing file: Bob With Bangs_Back_L.png in Hair Style
+Processing file: Bob With Bangs_Front_C1.png in Hair Style
+Processing file: Bob With Bangs_Front_L.png in Hair Style
+Processing file: Outer Space Buns_Back_C1.png in Hair Style
+Processing file: Outer Space Buns_Back_C2.png in Hair Style
+Processing file: Outer Space Buns_Back_C3.png in Hair Style
+Processing file: Outer Space Buns_Back_L.png in Hair Style
+Processing file: Outer Space Buns_Front_C1.png in Hair Style
+Processing file: Outer Space Buns_Front_C2.png in Hair Style
+Processing file: Outer Space Buns_Front_C3.png in Hair Style
+Processing file: Outer Space Buns_Front_L.png in Hair Style
+Processing file: Peak Chic_Back_C1.png in Hair Style
+Processing file: Peak Chic_Back_L.png in Hair Style
+Processing file: Peak Chic_Front_C1.png in Hair Style
+Processing file: Peak Chic_Front_L.png in Hair Style
+Checking existence of PNG: compositeImages\Hair Style\Bob With Bangs_Back.png
+Checking existence of JPG: 300x300_jpg\Hair Style\Bob With Bangs_Back.jpg
+Files not found, processing: PNG - compositeImages\Hair Style\Bob With Bangs_Back.png, JPG - 300x300_jpg\Hair Style\Bob With Bangs_Back.jpg
+Processing image group: Bob With Bangs_Front
+Processing file: Bob With Bangs_Front_C1.png in subfolder: Hair Style
+Processing file: Bob With Bangs_Back_C1.png in Hair Style
+Processing file: Bob With Bangs_Back_L.png in Hair Style
+Processing file: Bob With Bangs_Front_C1.png in Hair Style
+Processing file: Bob With Bangs_Front_L.png in Hair Style
+Processing file: Outer Space Buns_Back_C1.png in Hair Style
+Processing file: Outer Space Buns_Back_C2.png in Hair Style
+Processing file: Outer Space Buns_Back_C3.png in Hair Style
+Processing file: Outer Space Buns_Back_L.png in Hair Style
+Processing file: Outer Space Buns_Front_C1.png in Hair Style
+Processing file: Outer Space Buns_Front_C2.png in Hair Style
+Processing file: Outer Space Buns_Front_C3.png in Hair Style
+Processing file: Outer Space Buns_Front_L.png in Hair Style
+Processing file: Peak Chic_Back_C1.png in Hair Style
+Processing file: Peak Chic_Back_L.png in Hair Style
+Processing file: Peak Chic_Front_C1.png in Hair Style
+Processing file: Peak Chic_Front_L.png in Hair Style
+Processing file: Bob With Bangs_Front_L.png in subfolder: Hair Style
+Processing file: Bob With Bangs_Back_C1.png in Hair Style
+Processing file: Bob With Bangs_Back_L.png in Hair Style
+Processing file: Bob With Bangs_Front_C1.png in Hair Style
+Processing file: Bob With Bangs_Front_L.png in Hair Style
+Processing file: Outer Space Buns_Back_C1.png in Hair Style
+Processing file: Outer Space Buns_Back_C2.png in Hair Style
+Processing file: Outer Space Buns_Back_C3.png in Hair Style
+Processing file: Outer Space Buns_Back_L.png in Hair Style
+Processing file: Outer Space Buns_Front_C1.png in Hair Style
+Processing file: Outer Space Buns_Front_C2.png in Hair Style
+Processing file: Outer Space Buns_Front_C3.png in Hair Style
+Processing file: Outer Space Buns_Front_L.png in Hair Style
+Processing file: Peak Chic_Back_C1.png in Hair Style
+Processing file: Peak Chic_Back_L.png in Hair Style
+Processing file: Peak Chic_Front_C1.png in Hair Style
+Processing file: Peak Chic_Front_L.png in Hair Style
+Checking existence of PNG: compositeImages\Hair Style\Bob With Bangs_Front.png
+Checking existence of JPG: 300x300_jpg\Hair Style\Bob With Bangs_Front.jpg
+Files not found, processing: PNG - compositeImages\Hair Style\Bob With Bangs_Front.png, JPG - 300x300_jpg\Hair Style\Bob With Bangs_Front.jpg
+Processing image group: Outer Space Buns_Back
+Processing file: Outer Space Buns_Back_C1.png in subfolder: Hair Style
+Processing file: Bob With Bangs_Back_C1.png in Hair Style
+Processing file: Bob With Bangs_Back_L.png in Hair Style
+Processing file: Bob With Bangs_Front_C1.png in Hair Style
+Processing file: Bob With Bangs_Front_L.png in Hair Style
+Processing file: Outer Space Buns_Back_C1.png in Hair Style
+Processing file: Outer Space Buns_Back_C2.png in Hair Style
+Processing file: Outer Space Buns_Back_C3.png in Hair Style
+Processing file: Outer Space Buns_Back_L.png in Hair Style
+Processing file: Outer Space Buns_Front_C1.png in Hair Style
+Processing file: Outer Space Buns_Front_C2.png in Hair Style
+Processing file: Outer Space Buns_Front_C3.png in Hair Style
+Processing file: Outer Space Buns_Front_L.png in Hair Style
+Processing file: Peak Chic_Back_C1.png in Hair Style
+Processing file: Peak Chic_Back_L.png in Hair Style
+Processing file: Peak Chic_Front_C1.png in Hair Style
+Processing file: Peak Chic_Front_L.png in Hair Style
+Processing file: Outer Space Buns_Back_C2.png in subfolder: Hair Style
+Processing file: Bob With Bangs_Back_C1.png in Hair Style
+Processing file: Bob With Bangs_Back_L.png in Hair Style
+Processing file: Bob With Bangs_Front_C1.png in Hair Style
+Processing file: Bob With Bangs_Front_L.png in Hair Style
+Processing file: Outer Space Buns_Back_C1.png in Hair Style
+Processing file: Outer Space Buns_Back_C2.png in Hair Style
+Processing file: Outer Space Buns_Back_C3.png in Hair Style
+Processing file: Outer Space Buns_Back_L.png in Hair Style
+Processing file: Outer Space Buns_Front_C1.png in Hair Style
+Processing file: Outer Space Buns_Front_C2.png in Hair Style
+Processing file: Outer Space Buns_Front_C3.png in Hair Style
+Processing file: Outer Space Buns_Front_L.png in Hair Style
+Processing file: Peak Chic_Back_C1.png in Hair Style
+Processing file: Peak Chic_Back_L.png in Hair Style
+Processing file: Peak Chic_Front_C1.png in Hair Style
+Processing file: Peak Chic_Front_L.png in Hair Style
+Processing file: Outer Space Buns_Back_C3.png in subfolder: Hair Style
+Processing file: Bob With Bangs_Back_C1.png in Hair Style
+Processing file: Bob With Bangs_Back_L.png in Hair Style
+Processing file: Bob With Bangs_Front_C1.png in Hair Style
+Processing file: Bob With Bangs_Front_L.png in Hair Style
+Processing file: Outer Space Buns_Back_C1.png in Hair Style
+Processing file: Outer Space Buns_Back_C2.png in Hair Style
+Processing file: Outer Space Buns_Back_C3.png in Hair Style
+Processing file: Outer Space Buns_Back_L.png in Hair Style
+Processing file: Outer Space Buns_Front_C1.png in Hair Style
+Processing file: Outer Space Buns_Front_C2.png in Hair Style
+Processing file: Outer Space Buns_Front_C3.png in Hair Style
+Processing file: Outer Space Buns_Front_L.png in Hair Style
+Processing file: Peak Chic_Back_C1.png in Hair Style
+Processing file: Peak Chic_Back_L.png in Hair Style
+Processing file: Peak Chic_Front_C1.png in Hair Style
+Processing file: Peak Chic_Front_L.png in Hair Style
+Processing file: Outer Space Buns_Back_L.png in subfolder: Hair Style
+Processing file: Bob With Bangs_Back_C1.png in Hair Style
+Processing file: Bob With Bangs_Back_L.png in Hair Style
+Processing file: Bob With Bangs_Front_C1.png in Hair Style
+Processing file: Bob With Bangs_Front_L.png in Hair Style
+Processing file: Outer Space Buns_Back_C1.png in Hair Style
+Processing file: Outer Space Buns_Back_C2.png in Hair Style
+Processing file: Outer Space Buns_Back_C3.png in Hair Style
+Processing file: Outer Space Buns_Back_L.png in Hair Style
+Processing file: Outer Space Buns_Front_C1.png in Hair Style
+Processing file: Outer Space Buns_Front_C2.png in Hair Style
+Processing file: Outer Space Buns_Front_C3.png in Hair Style
+Processing file: Outer Space Buns_Front_L.png in Hair Style
+Processing file: Peak Chic_Back_C1.png in Hair Style
+Processing file: Peak Chic_Back_L.png in Hair Style
+Processing file: Peak Chic_Front_C1.png in Hair Style
+Processing file: Peak Chic_Front_L.png in Hair Style
+Checking existence of PNG: compositeImages\Hair Style\Outer Space Buns_Back.png
+Checking existence of JPG: 300x300_jpg\Hair Style\Outer Space Buns_Back.jpg
+Files not found, processing: PNG - compositeImages\Hair Style\Outer Space Buns_Back.png, JPG - 300x300_jpg\Hair Style\Outer Space Buns_Back.jpg
+Processing image group: Outer Space Buns_Front
+Processing file: Outer Space Buns_Front_C1.png in subfolder: Hair Style
+Processing file: Bob With Bangs_Back_C1.png in Hair Style
+Processing file: Bob With Bangs_Back_L.png in Hair Style
+Processing file: Bob With Bangs_Front_C1.png in Hair Style
+Processing file: Bob With Bangs_Front_L.png in Hair Style
+Processing file: Outer Space Buns_Back_C1.png in Hair Style
+Processing file: Outer Space Buns_Back_C2.png in Hair Style
+Processing file: Outer Space Buns_Back_C3.png in Hair Style
+Processing file: Outer Space Buns_Back_L.png in Hair Style
+Processing file: Outer Space Buns_Front_C1.png in Hair Style
+Processing file: Outer Space Buns_Front_C2.png in Hair Style
+Processing file: Outer Space Buns_Front_C3.png in Hair Style
+Processing file: Outer Space Buns_Front_L.png in Hair Style
+Processing file: Peak Chic_Back_C1.png in Hair Style
+Processing file: Peak Chic_Back_L.png in Hair Style
+Processing file: Peak Chic_Front_C1.png in Hair Style
+Processing file: Peak Chic_Front_L.png in Hair Style
+Processing file: Outer Space Buns_Front_C2.png in subfolder: Hair Style
+Processing file: Bob With Bangs_Back_C1.png in Hair Style
+Processing file: Bob With Bangs_Back_L.png in Hair Style
+Processing file: Bob With Bangs_Front_C1.png in Hair Style
+Processing file: Bob With Bangs_Front_L.png in Hair Style
+Processing file: Outer Space Buns_Back_C1.png in Hair Style
+Processing file: Outer Space Buns_Back_C2.png in Hair Style
+Processing file: Outer Space Buns_Back_C3.png in Hair Style
+Processing file: Outer Space Buns_Back_L.png in Hair Style
+Processing file: Outer Space Buns_Front_C1.png in Hair Style
+Processing file: Outer Space Buns_Front_C2.png in Hair Style
+Processing file: Outer Space Buns_Front_C3.png in Hair Style
+Processing file: Outer Space Buns_Front_L.png in Hair Style
+Processing file: Peak Chic_Back_C1.png in Hair Style
+Processing file: Peak Chic_Back_L.png in Hair Style
+Processing file: Peak Chic_Front_C1.png in Hair Style
+Processing file: Peak Chic_Front_L.png in Hair Style
+Processing file: Outer Space Buns_Front_C3.png in subfolder: Hair Style
+Processing file: Bob With Bangs_Back_C1.png in Hair Style
+Processing file: Bob With Bangs_Back_L.png in Hair Style
+Processing file: Bob With Bangs_Front_C1.png in Hair Style
+Processing file: Bob With Bangs_Front_L.png in Hair Style
+Processing file: Outer Space Buns_Back_C1.png in Hair Style
+Processing file: Outer Space Buns_Back_C2.png in Hair Style
+Processing file: Outer Space Buns_Back_C3.png in Hair Style
+Processing file: Outer Space Buns_Back_L.png in Hair Style
+Processing file: Outer Space Buns_Front_C1.png in Hair Style
+Processing file: Outer Space Buns_Front_C2.png in Hair Style
+Processing file: Outer Space Buns_Front_C3.png in Hair Style
+Processing file: Outer Space Buns_Front_L.png in Hair Style
+Processing file: Peak Chic_Back_C1.png in Hair Style
+Processing file: Peak Chic_Back_L.png in Hair Style
+Processing file: Peak Chic_Front_C1.png in Hair Style
+Processing file: Peak Chic_Front_L.png in Hair Style
+Processing file: Outer Space Buns_Front_L.png in subfolder: Hair Style
+Processing file: Bob With Bangs_Back_C1.png in Hair Style
+Processing file: Bob With Bangs_Back_L.png in Hair Style
+Processing file: Bob With Bangs_Front_C1.png in Hair Style
+Processing file: Bob With Bangs_Front_L.png in Hair Style
+Processing file: Outer Space Buns_Back_C1.png in Hair Style
+Processing file: Outer Space Buns_Back_C2.png in Hair Style
+Processing file: Outer Space Buns_Back_C3.png in Hair Style
+Processing file: Outer Space Buns_Back_L.png in Hair Style
+Processing file: Outer Space Buns_Front_C1.png in Hair Style
+Processing file: Outer Space Buns_Front_C2.png in Hair Style
+Processing file: Outer Space Buns_Front_C3.png in Hair Style
+Processing file: Outer Space Buns_Front_L.png in Hair Style
+Processing file: Peak Chic_Back_C1.png in Hair Style
+Processing file: Peak Chic_Back_L.png in Hair Style
+Processing file: Peak Chic_Front_C1.png in Hair Style
+Processing file: Peak Chic_Front_L.png in Hair Style
+Checking existence of PNG: compositeImages\Hair Style\Outer Space Buns_Front.png
+Checking existence of JPG: 300x300_jpg\Hair Style\Outer Space Buns_Front.jpg
+Files not found, processing: PNG - compositeImages\Hair Style\Outer Space Buns_Front.png, JPG - 300x300_jpg\Hair Style\Outer Space Buns_Front.jpg
+Processing image group: Peak Chic_Back
+Processing file: Peak Chic_Back_C1.png in subfolder: Hair Style
+Processing file: Bob With Bangs_Back_C1.png in Hair Style
+Processing file: Bob With Bangs_Back_L.png in Hair Style
+Processing file: Bob With Bangs_Front_C1.png in Hair Style
+Processing file: Bob With Bangs_Front_L.png in Hair Style
+Processing file: Outer Space Buns_Back_C1.png in Hair Style
+Processing file: Outer Space Buns_Back_C2.png in Hair Style
+Processing file: Outer Space Buns_Back_C3.png in Hair Style
+Processing file: Outer Space Buns_Back_L.png in Hair Style
+Processing file: Outer Space Buns_Front_C1.png in Hair Style
+Processing file: Outer Space Buns_Front_C2.png in Hair Style
+Processing file: Outer Space Buns_Front_C3.png in Hair Style
+Processing file: Outer Space Buns_Front_L.png in Hair Style
+Processing file: Peak Chic_Back_C1.png in Hair Style
+Processing file: Peak Chic_Back_L.png in Hair Style
+Processing file: Peak Chic_Front_C1.png in Hair Style
+Processing file: Peak Chic_Front_L.png in Hair Style
+Processing file: Peak Chic_Back_L.png in subfolder: Hair Style
+Processing file: Bob With Bangs_Back_C1.png in Hair Style
+Processing file: Bob With Bangs_Back_L.png in Hair Style
+Processing file: Bob With Bangs_Front_C1.png in Hair Style
+Processing file: Bob With Bangs_Front_L.png in Hair Style
+Processing file: Outer Space Buns_Back_C1.png in Hair Style
+Processing file: Outer Space Buns_Back_C2.png in Hair Style
+Processing file: Outer Space Buns_Back_C3.png in Hair Style
+Processing file: Outer Space Buns_Back_L.png in Hair Style
+Processing file: Outer Space Buns_Front_C1.png in Hair Style
+Processing file: Outer Space Buns_Front_C2.png in Hair Style
+Processing file: Outer Space Buns_Front_C3.png in Hair Style

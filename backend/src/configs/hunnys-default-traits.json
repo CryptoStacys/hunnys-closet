@@ -1,80 +1,112 @@
 {
   "attributes": [
     {
-      "name": "Background",
+      "name": "Dye",
       "traits": [
-        {"name":"Hot Stuff Left","colors":4,"rarity":"Common","tags":[]},
-        {"name":"Hot Stuff Right","colors":4,"rarity":"Common","tags":[]},
-        {"name":"Candy Cloud Castle Left","colors":5,"rarity":"Common","tags":[]},
-        {"name":"Candy Cloud Castle Right","colors":5,"rarity":"Common","tags":[]},
-        {"name":"Broken Heart Left","colors":4,"rarity":"Common","tags":[]},
-        {"name":"Broken Heart Right","colors":4,"rarity":"Common","tags":[]},
-        {"name":"Candy Hearts","colors":4,"rarity":"Common","tags":[]},
-        {"name":"Empty","colors":0,"rarity":"Common","tags":[]},
-        {"name":"Hunnys Yellow Background","colors":0,"rarity":"Common","tags":[]},
-        {"name":"Hunnys Purple Background","colors":0,"rarity":"Common","tags":[]},
-        {"name":"Hunnys Dolly Box Inside","colors":0,"rarity":"Common","tags":[]},
-        {"name":"SuperBowl LVIII","colors":4,"rarity":"Common","tags":[]}
-      ]
-    },
-    {
-      "name": "Accessory",
-      "traits": [
-        {"name":"Anime Heart Shades","colors":2,"rarity":"Common","tags":["glasses"]},
-        {"name":"Bubbly Love Wings","colors":1,"rarity":"Common","tags":["onBack"]},
-        {"name":"Ghost Hugicorn","colors":0,"rarity":"Common","tags":["companion"]},
-        {"name":"Hawt Wings","colors":3,"rarity":"Common","tags":["onBack"]},
-        {"name":"Empty","colors":0,"rarity":"Common","tags":[]},
-        {"name":"Coco the Smugblush","colors":3,"rarity":"Common","tags":["companion"]},
-        {"name":"Cupcake Backpack","colors":5,"rarity":"Common","tags":["backpack","ownStripes"]},
-        {"name":"Power of Jadestone","colors":2,"rarity":"Common","tags":[]},
-        {"name":"Sparkly Wings","colors":4,"rarity":"Common","tags":["onBack"]}
+        {"name":"Not Black","colors":0,"rarity":"Common","tags":[]},
+        {"name":"Chalkboard","colors":0,"rarity":"Common","tags":[]},
+        {"name":"Dark Destiny","colors":0,"rarity":"Common","tags":[]},
+        {"name":"Vampire Wine","colors":0,"rarity":"Common","tags":[]},
+        {"name":"In Love","colors":0,"rarity":"Common","tags":[]},
+        {"name":"Pinky Toe","colors":0,"rarity":"Common","tags":[]},
+        {"name":"Juicy Grapefruit","colors":0,"rarity":"Common","tags":[]},
+        {"name":"Its Autumn","colors":0,"rarity":"Common","tags":[]},
+        {"name":"Burnt Sienna","colors":0,"rarity":"Common","tags":[]},
+        {"name":"Melted Orange Icecream","colors":0,"rarity":"Common","tags":[]},
+        {"name":"Coffee with Cream","colors":0,"rarity":"Common","tags":[]},
+        {"name":"Nebula Sunset","colors":0,"rarity":"Common","tags":[]},
+        {"name":"Real Gold","colors":0,"rarity":"Common","tags":[]},
+        {"name":"Bling Bling","colors":0,"rarity":"Common","tags":[]},
+        {"name":"Banana Candy","colors":0,"rarity":"Common","tags":[]},
+        {"name":"Barely Yellow","colors":0,"rarity":"Common","tags":[]},
+        {"name":"Lemon Head","colors":0,"rarity":"Common","tags":[]},
+        {"name":"Good Gator","colors":0,"rarity":"Common","tags":[]},
+        {"name":"Bio Glo-up","colors":0,"rarity":"Common","tags":[]},
+        {"name":"Fresh Sage","colors":0,"rarity":"Common","tags":[]},
+        {"name":"Slurp Juice","colors":0,"rarity":"Common","tags":[]},
+        {"name":"Kelly-er Kelly","colors":0,"rarity":"Common","tags":[]},
+        {"name":"Deer Chew","colors":0,"rarity":"Common","tags":[]},
+        {"name":"Shiny Emeralds","colors":0,"rarity":"Common","tags":[]},
+        {"name":"Morning Tea","colors":0,"rarity":"Common","tags":[]},
+        {"name":"Thats Gum","colors":0,"rarity":"Common","tags":[]},
+        {"name":"Dolphin House","colors":0,"rarity":"Common","tags":[]},
+        {"name":"Dubious Polo","colors":0,"rarity":"Common","tags":[]},
+        {"name":"Overcast But Nice","colors":0,"rarity":"Common","tags":[]},
+        {"name":"Hyped-up Berry Juice","colors":0,"rarity":"Common","tags":[]},
+        {"name":"Warm Night Sky","colors":0,"rarity":"Common","tags":[]},
+        {"name":"Royally Blue","colors":0,"rarity":"Common","tags":[]},
+        {"name":"Blue Dog","colors":0,"rarity":"Common","tags":[]},
+        {"name":"Designer Grape","colors":0,"rarity":"Common","tags":[]},
+        {"name":"Purple Dinosaur","colors":0,"rarity":"Common","tags":[]},
+        {"name":"The Classiest Purple","colors":0,"rarity":"Common","tags":[]},
+        {"name":"Vibing","colors":0,"rarity":"Common","tags":[]},
+        {"name":"Throne Cushion","colors":0,"rarity":"Common","tags":[]},
+        {"name":"Space Melon","colors":0,"rarity":"Common","tags":[]},
+        {"name":"Drippy Juice","colors":0,"rarity":"Common","tags":[]},
+        {"name":"Vortron Guts","colors":0,"rarity":"Common","tags":[]},
+        {"name":"Cute Frilly Dress","colors":0,"rarity":"Common","tags":[]},
+        {"name":"Vega Glow","colors":0,"rarity":"Common","tags":[]},
+        {"name":"A Bit Too Classy","colors":0,"rarity":"Common","tags":[]},
+        {"name":"Cold Berry","colors":0,"rarity":"Common","tags":[]},
+        {"name":"Barb-ish","colors":0,"rarity":"Common","tags":[]},
+        {"name":"Pinky Brain","colors":0,"rarity":"Common","tags":[]},
+        {"name":"Burnished","colors":0,"rarity":"Common","tags":[]},
+        {"name":"Dried Leaf","colors":0,"rarity":"Common","tags":[]},
+        {"name":"Devious Envy","colors":0,"rarity":"Common","tags":[]},
+        {"name":"ChocoBun","colors":0,"rarity":"Common","tags":[]},
+        {"name":"Pumpkin Head","colors":0,"rarity":"Common","tags":[]},
+        {"name":"Cooked Carrot","colors":0,"rarity":"Common","tags":[]},
+        {"name":"HunnysPurple1","colors":0,"rarity":"Common","tags":[]},
+        {"name":"HunnysPurple2","colors":0,"rarity":"Common","tags":[]},
+        {"name":"HunnysPurple3","colors":0,"rarity":"Common","tags":[]},
+        {"name":"HunnysPurple4","colors":0,"rarity":"Common","tags":[]},
+        {"name":"HunnysPurple5","colors":0,"rarity":"Common","tags":[]},
+        {"name":"HunnysPurple6","colors":0,"rarity":"Common","tags":[]},
+        {"name":"HunnysYellow1","colors":0,"rarity":"Common","tags":[]},
+        {"name":"HunnysYellow2","colors":0,"rarity":"Common","tags":[]},
+        {"name":"HunnysYellow3","colors":0,"rarity":"Common","tags":[]},
+        {"name":"HunnysYellow4","colors":0,"rarity":"Common","tags":[]},
+        {"name":"HunnysYellow5","colors":0,"rarity":"Common","tags":[]},
+        {"name":"HunnysYellow6","colors":0,"rarity":"Common","tags":[]},
+        {"name":"Miss Jade","colors":0,"rarity":"Common","tags":[]}
       ]
     },
     {
       "name": "Eyebrows",
       "traits": [
-        {"name":"Lovey Brows","colors":0,"rarity":"Common","tags":[]},
+        {"name":"Sharper Brows","colors":0,"rarity":"Common","tags":[]},
+        {"name":"Color Brows","colors":1,"rarity":"Common","tags":[]},
+        {"name":"90s Brows","colors":0,"rarity":"Common","tags":[]},
+        {"name":"Sharp Thin Brows","colors":0,"rarity":"Common","tags":[]},
         {"name":"Empty","colors":0,"rarity":"Common","tags":[]},
         {"name":"Common","colors":0,"rarity":"Common","tags":[]}
       ]
     },
     {
-      "name": "Eyes",
-      "traits": [
-        {"name":"Anime Heart Eyes","colors":1,"rarity":"Common","tags":[]},
-        {"name":"Empty","colors":0,"rarity":"Common","tags":[]},
-        {"name":"Almond","colors":1,"rarity":"Common","tags":[]},
-        {"name":"Hooded Eyes","colors":1,"rarity":"Common","tags":[]}
-      ]
-    },
-    {
       "name": "Face Sticker",
       "traits": [
-        {"name":"Anime Blush","colors":1,"rarity":"Common","tags":[]},
+        {"name":"Freckle Face","colors":1,"rarity":"Common","tags":[]},
         {"name":"Empty","colors":0,"rarity":"Common","tags":[]}
       ]
     },
     {
-      "name": "Frame",
+      "name": "Hair Style",
       "traits": [
-        {"name":"Soft Sparkle Heart Frame","colors":4,"rarity":"Common","tags":[]},
-        {"name":"Thinking of U","colors":1,"rarity":"Common","tags":[]},
-        {"name":"Sprinkle Hearts Scroll Left","colors":5,"rarity":"Common","tags":[]},
-        {"name":"Sprinkle Hearts Scroll Right","colors":5,"rarity":"Common","tags":[]},
-        {"name":"Empty","colors":0,"rarity":"Common","tags":[]},
-        {"name":"GM Banner","colors":2,"rarity":"Common","tags":[]},
-        {"name":"GM Speech Bubble","colors":2,"rarity":"Common","tags":[]},
-        {"name":"GM Text","colors":1,"rarity":"Common","tags":[]},
-        {"name":"Hunnys Dolly Box Outside","colors":0,"rarity":"Common","tags":[]}
+        {"name":"Peak Chic","colors":1,"rarity":"Common","parts":2,"tags":[]},
+        {"name":"Outer Space Buns","colors":3,"rarity":"Common","parts":2,"tags":[]},
+        {"name":"Sweet Bun","colors":1,"rarity":"Common","parts":2,"tags":[]},
+        {"name":"Afro Babe","colors":1,"rarity":"Common","parts":1,"tags":[]},
+        {"name":"The Queen","colors":1,"rarity":"Common","parts":1,"tags":[]},
+        {"name":"Empty","colors":0,"rarity":"Common","parts":1,"tags":[]},
+        {"name":"Short Dreads","colors":1,"rarity":"Common","parts":1,"tags":[]},
+        {"name":"Flat Pony","colors":2,"rarity":"Common","parts":2,"tags":[]},
+        {"name":"Bob with Bangs","colors":1,"rarity":"Common","parts":2,"tags":[]}
       ]
     },
     {
       "name": "Hand",
       "traits": [
-        {"name":"Heart Hands","colors":1,"rarity":"Common","tags":["skin"]},
-        {"name":"Holding Hands","colors":3,"rarity":"Common","tags":["skin"]},
-        {"name":"Macaron My Heart","colors":3,"rarity":"Common","tags":["skin"]},
+        {"name":"Texting U","colors":2,"rarity":"Common","tags":"skin"},
         {"name":"Empty","colors":0,"rarity":"Common","tags":[]},
         {"name":"Ramen Chopsticks","colors":3,"rarity":"Common","tags":["skin"]},
         {"name":"Silas","colors":5,"rarity":"Common","tags":["skin"]},
@@ -83,21 +115,10 @@
       ]
     },
     {
-      "name": "Hat",
-      "traits": [
-        {"name":"Cuddle Detectors","colors":3,"rarity":"Common","tags":[]},
-        {"name":"Cupid Rats Arrow","colors":3,"rarity":"Common","tags":[]},
-        {"name":"Empty","colors":0,"rarity":"Common","tags":[]},
-        {"name":"Cheese Pizza Crown","colors":2,"rarity":"Common","tags":[]},
-        {"name":"Flicks Steampunk Tophat","colors":4,"rarity":"Common","tags":[]},
-        {"name":"Lazy Straw Hat","colors":2,"rarity":"Common","tags":[]},
-        {"name":"Football Helmet","colors":3,"rarity":"Common","tags":[]}
-      ]
-    },
-    {
       "name": "Mouth",
       "traits": [
-        {"name":"Lovey Lips","colors":2,"rarity":"Common","tags":[]},
+        {"name":"Medium Lips","colors":1,"rarity":"Common","tags":[]},
+        {"name":"Filler Smile","colors":1,"rarity":"Common","tags":[]},
         {"name":"Empty","colors":0,"rarity":"Common","tags":[]},
         {"name":"Pout","colors":1,"rarity":"Common","tags":[]},
         {"name":"Ramen Slurp","colors":2,"rarity":"Common","tags":[]}
@@ -106,7 +127,10 @@
     {
       "name": "Outfit",
       "traits": [
-        {"name":"Candy Cutie Coveralls","colors":5,"rarity":"Common","tags":[]},
+        {"name":"Velvet Sunset","colors":2,"rarity":"Common","tags":[]},
+        {"name":"Classic QT","colors":2,"rarity":"Common","tags":[]},
+        {"name":"GM Fuzzy Robe","colors":3,"rarity":"Common","tags":[]},
+        {"name":"Sheerly Stellar","colors":2,"rarity":"Common","tags":[]},
         {"name":"Empty","colors":0,"rarity":"Common","tags":[]},
         {"name":"Basic Tee","colors":1,"rarity":"Common","tags":[]},
         {"name":"Basic Tube","colors":1,"rarity":"Common","tags":[]},
@@ -115,21 +139,83 @@
         {"name":"Dubious Robotics Jacket","colors":4,"rarity":"Common","tags":[]},
         {"name":"Flicks Steampunk Corset","colors":3,"rarity":"Common","tags":[]},
         {"name":"NginZ Racer Crop","colors":1,"rarity":"Common","tags":[]},
-        {"name":"Lazy Crop","colors":2,"rarity":"Common","tags":[]},
-        {"name":"49ers Jersey","colors":3,"rarity":"Common","tags":[]},
-        {"name":"Chiefs Jersey","colors":4,"rarity":"Common","tags":[]},
-        {"name":"Tay-Tay Jersey","colors":4,"rarity":"Common","tags":[]}
+        {"name":"Lazy Crop","colors":2,"rarity":"Common","tags":[]}
       ]
     },
     {
       "name": "Skin",
       "traits": [
-        {"name":"Cupid Babe","colors":0,"rarity":"Common","tags":[]},
+        {"name":"Creamsicle","colors":0,"rarity":"Common","tags":[]},
+        {"name":"Vitiligo","colors":0,"rarity":"Common","tags":[]},
+        {"name":"Cappuccino","colors":0,"rarity":"Common","tags":[]},
+        {"name":"Splish Splash","colors":0,"rarity":"Common","tags":[]},
+        {"name":"Coffee N Cream","colors":0,"rarity":"Common","tags":[]},
+        {"name":"Tanned Goddess","colors":0,"rarity":"Common","tags":[]},
+        {"name":"Pale Pink Petals","colors":0,"rarity":"Common","tags":[]},
+        {"name":"Camel","colors":0,"rarity":"Common","tags":[]},
+        {"name":"Sandy Wind","colors":0,"rarity":"Common","tags":[]},
+        {"name":"Crisp Crackers","colors":0,"rarity":"Common","tags":[]},
+        {"name":"Moon Glow","colors":0,"rarity":"Common","tags":[]},
+        {"name":"Buttery Dish","colors":0,"rarity":"Common","tags":[]},
+        {"name":"Brown Sugar","colors":0,"rarity":"Common","tags":[]},
+        {"name":"Chocolate Oranges","colors":0,"rarity":"Common","tags":[]},
+        {"name":"Sunny Pink","colors":0,"rarity":"Common","tags":[]},
+        {"name":"Rich Velvet","colors":0,"rarity":"Common","tags":[]},
+        {"name":"Vampire Pink","colors":0,"rarity":"Common","tags":[]},
+        {"name":"Vacation Orange","colors":0,"rarity":"Common","tags":[]},
+        {"name":"The Beigest","colors":0,"rarity":"Common","tags":[]},
+        {"name":"Carrot Cake","colors":0,"rarity":"Common","tags":[]},
         {"name":"Empty","colors":0,"rarity":"Common","tags":[]},
         {"name":"Basic Mocha","colors":0,"rarity":"Common","tags":[]},
         {"name":"Basic Strawberry Whipped Cream","colors":0,"rarity":"Common","tags":[]},
         {"name":"Basic Macaroons","colors":0,"rarity":"Common","tags":[]},
         {"name":"That Yellow Cartoon Skin","colors":0,"rarity":"Common","tags":[]}
+      ]
+    },
+    {
+      "name": "Background",
+      "traits": [
+        {"name":"Empty","colors":0,"rarity":"Common","tags":[]},
+        {"name":"Hunnys Yellow Background","colors":0,"rarity":"Common","tags":[]},
+        {"name":"Hunnys Purple Background","colors":0,"rarity":"Common","tags":[]},
+        {"name":"Hunnys Dolly Box Inside","colors":0,"rarity":"Common","tags":[]}
+      ]
+    },
+    {
+      "name": "Accessory",
+      "traits": [
+        {"name":"Empty","colors":0,"rarity":"Common","tags":[]},
+        {"name":"Coco the Smugblush","colors":3,"rarity":"Common","tags":["companion"]},
+        {"name":"Cupcake Backpack","colors":5,"rarity":"Common","tags":["backpack","ownStripes"]},
+        {"name":"Power of Jadestone","colors":2,"rarity":"Common","tags":[]},
+        {"name":"Sparkly Wings","colors":4,"rarity":"Common","tags":["onBack"]}
+      ]
+    },
+    {
+      "name": "Eyes",
+      "traits": [
+        {"name":"Empty","colors":0,"rarity":"Common","tags":[]},
+        {"name":"Almond","colors":1,"rarity":"Common","tags":[]},
+        {"name":"Hooded Eyes","colors":1,"rarity":"Common","tags":[]}
+      ]
+    },
+    {
+      "name": "Frame",
+      "traits": [
+        {"name":"Empty","colors":0,"rarity":"Common","tags":[]},
+        {"name":"GM Banner","colors":2,"rarity":"Common","tags":[]},
+        {"name":"GM Speech Bubble","colors":2,"rarity":"Common","tags":[]},
+        {"name":"GM Text","colors":1,"rarity":"Common","tags":[]},
+        {"name":"Hunnys Dolly Box Outside","colors":0,"rarity":"Common","tags":[]}
+      ]
+    },
+    {
+      "name": "Hat",
+      "traits": [
+        {"name":"Empty","colors":0,"rarity":"Common","tags":[]},
+        {"name":"Cheese Pizza Crown","colors":2,"rarity":"Common","tags":[]},
+        {"name":"Flicks Steampunk Tophat","colors":4,"rarity":"Common","tags":[]},
+        {"name":"Lazy Straw Hat","colors":2,"rarity":"Common","tags":[]}
       ]
     },
     {
@@ -142,15 +228,6 @@
       "name": "Piercing",
       "traits": [
         {"name":"Empty","colors":0,"rarity":"Common","tags":[]}
-      ]
-    },
-    {
-      "name": "Hair Style",
-      "traits": [
-        {"name":"Empty","colors":0,"rarity":"Common","parts":1,"tags":[]},
-        {"name":"Short Dreads","colors":1,"rarity":"Common","parts":1,"tags":[]},
-        {"name":"Flat Pony","colors":2,"rarity":"Common","parts":2,"tags":[]},
-        {"name":"Bob with Bangs","colors":1,"rarity":"Common","parts":2,"tags":[]}
       ]
     },
     {
@@ -167,24 +244,6 @@
         {"name":"Cow Print Strapless Bra","colors":3,"rarity":"Common","tags":[]},
         {"name":"Dont Do It Track Bra","colors":3,"rarity":"Common","tags":[]},
         {"name":"Ribbon Bow Bra","colors":3,"rarity":"Common","tags":[]}
-      ]
-    },
-    {
-      "name": "Dye",
-      "traits": [
-        {"name":"HunnysPurple1","colors":0,"rarity":"Common","tags":[]},
-        {"name":"HunnysPurple2","colors":0,"rarity":"Common","tags":[]},
-        {"name":"HunnysPurple3","colors":0,"rarity":"Common","tags":[]},
-        {"name":"HunnysPurple4","colors":0,"rarity":"Common","tags":[]},
-        {"name":"HunnysPurple5","colors":0,"rarity":"Common","tags":[]},
-        {"name":"HunnysPurple6","colors":0,"rarity":"Common","tags":[]},
-        {"name":"HunnysYellow1","colors":0,"rarity":"Common","tags":[]},
-        {"name":"HunnysYellow2","colors":0,"rarity":"Common","tags":[]},
-        {"name":"HunnysYellow3","colors":0,"rarity":"Common","tags":[]},
-        {"name":"HunnysYellow4","colors":0,"rarity":"Common","tags":[]},
-        {"name":"HunnysYellow5","colors":0,"rarity":"Common","tags":[]},
-        {"name":"HunnysYellow6","colors":0,"rarity":"Common","tags":[]},
-        {"name":"Miss Jade","colors":0,"rarity":"Common","tags":[]}
       ]
     }
   ]

@@ -1,87 +1,95 @@
 [
     {
-        "tokenId": 62,
-        "name": "Hunnys Valentines Day 2024",
+        "tokenId": 63,
+        "name": "Silly Animals Pack 1",
         "attributes": [
             {
-                "trait_type": "Face Sticker",
-                "value": "Anime Blush"
+                "trait_type": "Dye",
+                "value": "Orange Tiger"
             },
             {
-                "trait_type": "Eyes",
-                "value": "Anime Heart Eyes"
+                "trait_type": "Dye",
+                "value": "Neon Green Tiger"
             },
             {
-                "trait_type": "Accessory",
-                "value": "Anime Heart Shades"
+                "trait_type": "Dye",
+                "value": "White Tiger"
             },
             {
-                "trait_type": "Background",
-                "value": "Broken Heart Left"
+                "trait_type": "Dye",
+                "value": "Neon Pink Tiger"
             },
             {
-                "trait_type": "Background",
-                "value": "Broken Heart Right"
+                "trait_type": "Dye",
+                "value": "Orange Cheetah"
             },
             {
-                "trait_type": "Accessory",
-                "value": "Bubbly Love Wings"
+                "trait_type": "Dye",
+                "value": "White Cheetah"
             },
             {
-                "trait_type": "Outfit",
-                "value": "Candy Cutie Coveralls"
+                "trait_type": "Dye",
+                "value": "Pink Cheetah"
             },
             {
-                "trait_type": "Background",
-                "value": "Candy Hearts"
+                "trait_type": "Dye",
+                "value": "Neon Green Cheetah"
             },
             {
-                "trait_type": "Hat",
-                "value": "Cuddle Detectors"
+                "trait_type": "Dye",
+                "value": "Moo Cow"
+            },
+            {
+                "trait_type": "Dye",
+                "value": "Strawberry Moo Cow"
+            },
+            {
+                "trait_type": "Dye",
+                "value": "Alien Moo Cow"
             },
             {
                 "trait_type": "Skin",
-                "value": "Cupid Babe"
+                "value": "Orange Tiger"
             },
             {
-                "trait_type": "Hat",
-                "value": "Cupid Rats Arrow"
+                "trait_type": "Skin",
+                "value": "Neon Green Tiger"
             },
             {
-                "trait_type": "Accessory",
-                "value": "Ghost Hugicorn"
+                "trait_type": "Skin",
+                "value": "White Tiger"
             },
             {
-                "trait_type": "Accessory",
-                "value": "Hawt Wings"
+                "trait_type": "Skin",
+                "value": "Neon Pink Tiger"
             },
             {
-                "trait_type": "Hand",
-                "value": "Heart Hands"
+                "trait_type": "Skin",
+                "value": "Orange Cheetah"
             },
             {
-                "trait_type": "Hand",
-                "value": "Holding Hands"
+                "trait_type": "Skin",
+                "value": "White Cheetah"
             },
             {
-                "trait_type": "Eyebrows",
-                "value": "Lovey Brows"
+                "trait_type": "Skin",
+                "value": "Pink Cheetah"
             },
             {
-                "trait_type": "Mouth",
-                "value": "Lovey Lips"
+                "trait_type": "Skin",
+                "value": "Neon Green Cheetah"
             },
             {
-                "trait_type": "Hand",
-                "value": "Macaron My Heart"
+                "trait_type": "Skin",
+                "value": "Moo Cow"
             },
             {
-                "trait_type": "Frame",
-                "value": "Soft Sparkle Heart Frame"
+                "trait_type": "Skin",
+                "value": "Strawberry Moo Cow"
             },
             {
-                "trait_type": "Frame",
-                "value": "Thinking of U"
+                "trait_type": "Skin",
+                "value": "Alien Moo Cow"
             }
         ],
         "metaPath": ""
