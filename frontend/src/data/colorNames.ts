@@ -144,7 +144,7 @@ const colorNames = {
     "g": 164,
     "r": 239
 },
-"Bio Glo up": {
+"Bio Glo-up": {
     "b": 34,
     "g": 145,
     "r": 122

@@ -104,7 +104,7 @@ const colorGroups = {
     "Acidic Green 2",
     "Acidic Green 3",
     "Alien Moo Cow",
-    "Bio Glo up",
+    "Bio Glo-up",
     "Candy Cloud Paint",
     "Christmas Thistle",
     "Cottyne Cloud",
