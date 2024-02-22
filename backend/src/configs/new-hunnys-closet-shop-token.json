@@ -1500,6 +1500,14 @@
             "value": "Broken Heart Right"
         },
         {
+            "trait_type": "Background",
+            "value": "Candy Cloud Castle Left"
+        },
+        {
+            "trait_type": "Background",
+            "value": "Candy Cloud Castle Right"
+        },
+        {
             "trait_type": "Accessory",
             "value": "Bubbly Love Wings"
         },
@@ -1510,6 +1518,14 @@
         {
             "trait_type": "Background",
             "value": "Candy Hearts"
+        },
+        {
+            "trait_type": "Background",
+            "value": "Hot Stuff Left"
+        },
+        {
+            "trait_type": "Background",
+            "value": "Hot Stuff Right"
         },
         {
             "trait_type": "Hat",
@@ -1554,6 +1570,14 @@
         {
             "trait_type": "Frame",
             "value": "Soft Sparkle Heart Frame"
+        },
+        {
+            "trait_type": "Frame",
+            "value": "Sprinkle Hearts Scroll Left"
+        },
+        {
+            "trait_type": "Frame",
+            "value": "Sprinkle Hearts Scroll Right"
         },
         {
             "trait_type": "Frame",

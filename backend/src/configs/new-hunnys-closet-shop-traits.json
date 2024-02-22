@@ -28,6 +28,7 @@
       "traits": [
         {"name":"Candy Hearts","colors":4,"rarity":"Common","tags":[],"token_id":62},
         {"name":"Broken Heart Left","colors":4,"rarity":"Common","tags":[],"token_id":62},
+        {"name":"Broken Heart Right","colors":4,"rarity":"Common","tags":[],"token_id":62},
         {"name":"Hot Stuff Left","colors":4,"rarity":"Common","tags":[],"token_id":62},
         {"name":"Hot Stuff Right","colors":4,"rarity":"Common","tags":[],"token_id":62},
         {"name":"Candy Cloud Castle Left","colors":5,"rarity":"Common","tags":[],"token_id":62},
