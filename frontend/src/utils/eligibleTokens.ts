@@ -69,7 +69,7 @@ export const eligibleTokenIds: EligibleToken[] = [
   { token_id: '56', price: ethers.utils.parseUnits("0.015", "ether"), origin_ids: [7, 9] },
   { token_id: '57', price: ethers.utils.parseUnits("0.015", "ether"), origin_ids: [7, 9] },
   { token_id: '58', price: ethers.utils.parseUnits("0.012", "ether"), origin_ids: [7, 9] },
-  // ... more tokens
+  { token_id: '63', price: ethers.utils.parseUnits("0.0017", "ether"), origin_ids: [7, 9] },
 ];
 
 // Add this function to make a request to your server for signing
