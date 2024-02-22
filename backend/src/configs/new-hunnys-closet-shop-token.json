@@ -1424,7 +1424,8 @@
         }
     ],
     "metaPath": "https://hunnysclosetshop.s3.us-east-2.amazonaws.com/images/goodies/57"
-},{
+},
+{
 "tokenId": 58,
 "name": "Cozy Cabin Pack",
 "attributes": [
@@ -1444,7 +1445,7 @@
         "trait_type": "Hat",
         "value": "PomPom Toque"
     }
-],
+    ],
 "metaPath": "https://hunnysclosetshop.s3.us-east-2.amazonaws.com/images/goodies/58"
 },
 {
@@ -1561,8 +1562,7 @@
     ],
     "metaPath": "https://hunnysclosetshop.s3.us-east-2.amazonaws.com/images/goodies/62"
 },
-    [
-        {
+{
             "tokenId": 63,
             "name": "Silly Animals Pack 1",
             "attributes": [
@@ -1654,10 +1654,9 @@
                     "trait_type": "Skin",
                     "value": "Alien Moo Cow"
                 }
-            ],
-            "metaPath": "https://hunnysclosetshop.s3.us-east-2.amazonaws.com/images/goodies/63"
-        }
-    ]
+    ],
+    "metaPath": "https://hunnysclosetshop.s3.us-east-2.amazonaws.com/images/goodies/63"
+}
 ]
 
 
