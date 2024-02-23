@@ -3,10 +3,10 @@
     {
       "name": "Accessory",
       "traits": [
-        {"name":"Anime Heart Shades","colors":2,"rarity":"Common","tags":[],"token_id":62},
-        {"name":"Bubbly Love Wings","colors":1,"rarity":"Common","tags":[],"token_id":62},
+        {"name":"Anime Heart Shades","colors":2,"rarity":"Common","tags":["glasses"],"token_id":62},
+        {"name":"Bubbly Love Wings","colors":1,"rarity":"Common","tags":["onBack"],"token_id":62},
         {"name":"Ghost Hugicorn","colors":0,"rarity":"Common","tags":[],"token_id":62},
-        {"name":"Hawt Wings","colors":3,"rarity":"Common","tags":[],"token_id":62},
+        {"name":"Hawt Wings","colors":3,"rarity":"Common","tags":["onBack"],"token_id":62},
         {"name":"Piggy Earring","colors":1,"rarity":"Rare","tags":["earrings"],"token_id":3},
         {"name":"Cow Bell","colors":4,"rarity":"Rare","tags":[],"token_id":2},
         {"name":"W33D Earrings","colors":1,"rarity":"Epic","tags":["earrings"],"token_id":4},
