@@ -224,7 +224,7 @@
     {
       "name": "Mouth",
       "traits": [
-        {"name":"Mayor Kissy","colors":1.0,"rarity":"Epic","tags":[],"token_id":181},
+        {"name":"Mayor Kissy","colors":2,"rarity":"Epic","tags":[],"token_id":181},
         {"name":"Helenicas Demon Tongue","colors":2,"rarity":"Epic","tags":[],"token_id":25},
         {"name":"Storm Smile","colors":1,"rarity":"Rare","tags":[],"token_id":57},
         {"name":"Dragon Fangs","colors":1,"rarity":"Epic","tags":[],"token_id":78},
