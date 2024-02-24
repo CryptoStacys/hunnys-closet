@@ -125,10 +125,10 @@ export default function Dashboard() {
       {/* <div className="relative max-w-[1160px] w-full mx-auto"> */}   
       <div className="grid lg:grid-cols-2 grid-cols-1  gap-2 mt-2 mb-2">
       <a rel="noreferrer" target="_blank" href="https://hunnys.io/membership-levels/">
-      <div className="dashboardHero"> <img src={"https://cdn.discordapp.com/attachments/900232920046927922/1190773619668824094/Closet_Promo_Image_Graphics_Dashboard_3.png?ex=65a3055a&is=6590905a&hm=9e08cde1ae31e9669148a96cc821f37bebd48ebac01b40a37a5c4c8b8f692bc8&"} alt="" /></div>
+      <div className="dashboardHero"> <img src={"https://hunnys.io/wp-content/uploads/2024/02/Closet_Promo_Image_Graphics_Dashboard_3-1.png"} alt="" /></div>
       </a>
       <Link to="/dollys">
-      <div className="dashboardHero"> <img src={"https://cdn.discordapp.com/attachments/1131994451787644958/1207081647921565706/84B3C8E6-0576-4FE5-AD32-FAD09EF1810E.png?ex=65de5963&is=65cbe463&hm=059528afa385541a8a591ca7f88a9783a7e37500e498074c46a329fd43c38a57&"} alt="" /></div>
+      <div className="dashboardHero"> <img src={"https://hunnys.io/wp-content/uploads/2024/02/Untitled-design-57.png"} alt="" /></div>
       </Link></div>
         
       
