@@ -100,7 +100,7 @@ export const mintWithWeth = async (
   userAddress: string,
   tokenId: string | number,
   mintPrice: ethers.BigNumber,
-  provider: ethers.providers.Web3Provider
+  provider: ethers.providers.JsonRpcProvider
 ) => {
   try {
     const signer = provider.getSigner();

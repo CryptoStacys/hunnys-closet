@@ -11,7 +11,7 @@ import cors from 'cors';
 
     const app = express();
     app.use(cors({
-        origin: ['https://closet.hunnys.io', 'https://hunnys.io/wp-json/hunnys-closet/v1', 'https://closetapi.hunnysnft.com/wordpress/wp-json/hunnys-closet/v1/', 'https://pleasing-turkey-pleasing.ngrok-free.app', 'https://closetapi.hunnysnft.com', 'http://localhost:8081/wordpress/wp-json/hunnys-closet/v1/', 'https://staging-hunnys-closet-2.vercel.app', 'http://localhost:3000', 'http://localhost', 'http://localhost:8081', 'http://localhost:8081/wordpress', 'https://hunnys.io', 'https://testing.d35i3wnh0wry5j.amplifyapp.com']
+        origin: ['https://closet.hunnys.io', 'https://hunnys.io/wp-json/hunnys-closet/v1', 'https://closetapi.hunnysnft.com/wordpress/wp-json/hunnys-closet/v1/', 'https://pleasing-turkey-pleasing.ngrok-free.app', 'https://closetapi.hunnysnft.com', 'http://localhost:8081/wordpress/wp-json/hunnys-closet/v1/', 'https://staging-hunnys-closet-2.vercel.app', 'http://localhost:3000', 'http://localhost', 'http://localhost:8081', 'http://localhost:8081/wordpress', 'https://hunnys.io', 'https://testing.d35i3wnh0wry5j.amplifyapp.com', 'https://closetservices.hunnysnft.com/wp-json/hunnys-closet/v1', 'https://closetservices.hunnysnft.com']
     }));
     app.use(express.json());
     const port = process.env.PORT || 8081;

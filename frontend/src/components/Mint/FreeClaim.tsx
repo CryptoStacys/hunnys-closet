@@ -36,36 +36,48 @@ const FreeClaim: React.FC<FreeClaimProps> = ({
       alert("Please connect your wallet and ensure all required fields are filled.");
       return;
     }
-
+  
     if (chain?.id !== 137) { // Ensure we're on Polygon
       alert("Please switch to the Polygon network.");
       return;
     }
-
-    setTransactionPending(true);
-
-    try {
-        const contract = new ethers.Contract(nftContractAddress, newHunnysClosetShopABI, ethers.getDefaultProvider());
-        const txData = contract.interface.encodeFunctionData("mint", [userAddress, tokenId, 1, "0x"]);
   
-        const tx = await relayer.sendTransaction({
+    setTransactionPending(true);
+  
+    try {
+      const contract = new ethers.Contract(nftContractAddress, newHunnysClosetShopABI, ethers.getDefaultProvider());
+      const txData = contract.interface.encodeFunctionData("mint", [userAddress, tokenId, 1, "0x"]);
+  
+      // Replace this URL with your Autotask's webhook URL
+      const webhookUrl = process.env.NEXT_PUBLIC_WEBHOOK_URL as string;
+  
+      const response = await fetch(webhookUrl, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
           to: nftContractAddress,
           data: txData,
-          gasLimit: "100000", // Set an appropriate gas limit
-          speed: "fast"
-        });
+          gasLimit: "100000", // Adjust as needed
+          speed: "fast",
+          // Include any other necessary parameters
+        }),
+      });
   
-        console.log("Transaction sent:", tx.hash);
-        alert("Mint successful! Transaction hash: " + tx.hash);
-        onMintSuccess();
-        updateTraits(userAddress);
-      } catch (error) {
-        console.error("Error during free claim:", error);
-        alert("Failed to claim the NFT. Please try again.");
-      } finally {
-        setTransactionPending(false);
-      }
-    };
+      const txRes = await response.json();
+  
+      console.log("Transaction sent:", txRes.hash);
+      alert("Mint successful! Transaction hash: " + txRes.hash);
+      onMintSuccess();
+      updateTraits(userAddress);
+    } catch (error) {
+      console.error("Error during free claim:", error);
+      alert("Failed to claim the NFT. Please try again.");
+    } finally {
+      setTransactionPending(false);
+    }
+  };
   
 
   return (

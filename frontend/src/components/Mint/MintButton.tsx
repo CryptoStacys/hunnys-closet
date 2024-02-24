@@ -37,7 +37,7 @@ const MintButton: React.FC<MintButtonProps> = ({
   const expectedChainId = 137; // Polygon Chain ID
   useEffect(() => {
     const fetchDiscountRate = async () => {
-      const provider = new ethers.providers.JsonRpcProvider("https://polygon-mainnet.infura.io/v3/c6a0213e06df4189bbb84a64086a38ae");
+      const provider = new ethers.providers.JsonRpcProvider("https://polygon-mainnet.infura.io/v3/5239f83d36634330bd900f94158cf76e");
       const contract = new ethers.Contract(hunnysClosetSalesAddress, salesABI, provider);
       try {
         const rate = await contract.discountRate();

@@ -5,6 +5,7 @@ import { getDefaultWallets, RainbowKitProvider, connectorsForWallets } from '@ra
 import type { AppProps } from 'next/app';
 import App from "./index";
 import { configureChains, createConfig, WagmiConfig } from 'wagmi';
+import { WalletProvider } from "@coinbase/waas-sdk-web-react";
 import {
   goerli,
   mainnet,
@@ -15,6 +16,7 @@ import { alchemyProvider } from "wagmi/providers/alchemy";
 import { useState, useEffect } from "react";
 import { useRouter } from 'next/router';
 import { Analytics } from '@vercel/analytics/react';
+import useWalletSession from '../src/hooks/useWalletSession';
 // Use the Next.js Link component instead of your custom Link component for navigation
 import Link from 'next/link';
 
@@ -52,19 +54,6 @@ const { wallets } = getDefaultWallets({
   chains,
 });
 
-// Coinbase WaaS Token Provider Function
-const provideAuthToken = async () => {
-  try {
-    const response = await fetch("https://wallets.hunnysnft.com/auth", { method: 'POST' });
-    const data = await response.json();
-    return data.token; // Assuming the server responds with a JSON object that has a `token` field
-  } catch (error) {
-    console.error("Failed to fetch auth token:", error);
-    return ""; // Return an empty string or handle the error appropriately
-  }
-};
-
-
 const connectors = connectorsForWallets([
   ...wallets,
   {
@@ -90,7 +79,9 @@ import { assert } from 'console';
 function MyApp({ Component, pageProps }: AppProps) {
   const pathname = usePathname();
   const router = useRouter();
-
+  const [waas, setWaas] = useState(null);
+  const { isLoading } = useWalletSession();
+const [isWaasInitialized, setIsWaasInitialized] = useState(false);
   useEffect(() => {
     const handleRouteChange = (url: string) => {
       
@@ -114,9 +105,9 @@ function MyApp({ Component, pageProps }: AppProps) {
   return (
     <WagmiConfig config={wagmiConfig}>
       <RainbowKitProvider coolMode chains={chains}>
-      
+      <WalletProvider enableHostedBackups collectAndReportMetrics prod={false}>
         <Component />
-        
+        </WalletProvider>
         <Analytics />
       </RainbowKitProvider>
     </WagmiConfig>

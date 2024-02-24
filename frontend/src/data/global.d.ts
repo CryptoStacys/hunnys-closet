@@ -38,6 +38,7 @@ export type User = {
   profile_image_url: string;
   tier: string;
   wallet_type: string;
+  token: string;
   cupcake_points: number;
   level: number;
 };
