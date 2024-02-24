@@ -281,7 +281,7 @@
         {"name":"Diode Chart","colors":2,"rarity":"Rare","tags":[],"token_id":165},
         {"name":"Nax Flames","colors":2,"rarity":"Legendary","tags":[],"token_id":167},
         {"name":"Bunny Club Sprinkles","colors":0,"rarity":"Common","tags":[],"token_id":169},
-        {"name":"Jólakötturinn Night Night","colors":3,"rarity":"Common","tags":[],"token_id":170},
+        {"name":"Jólakötturinn Night","colors":3,"rarity":"Common","tags":[],"token_id":170},
         {"name":"Krampus Night","colors":0,"rarity":"Relic","tags":[],"token_id":174},
         {"name":"Bunny Kingdom Castle","colors":4,"rarity":"Common","tags":[],"token_id":176},
         {"name":"Outdoor Gym Class","colors":2,"rarity":"Mythic","tags":[],"token_id":179}
@@ -327,7 +327,7 @@
         {"name":"Ratty Fur Bucket Hat","colors":4,"rarity":"Rare","tags":["twoParts"],"token_id":149},
         {"name":"Batty Rest Sleep Mask","colors":4,"rarity":"Epic","tags":[],"token_id":158},
         {"name":"Bunny Club Ears","colors":4,"rarity":"Common","tags":[],"token_id":169},
-        {"name":"Jólakötturinn Night Ears","colors":2,"rarity":"Common","tags":["twoParts"],"token_id":170},
+        {"name":"Jólakötturinn Ears","colors":2,"rarity":"Common","tags":["twoParts"],"token_id":170},
         {"name":"La Befna Hat","colors":5,"rarity":"Rare","tags":["twoParts"],"token_id":171},
         {"name":"Mari Lwyd Horse Hat","colors":5,"rarity":"Legendary","tags":[],"token_id":173},
         {"name":"Krampus Horns","colors":2,"rarity":"Relic","tags":["twoParts"],"token_id":174},
