@@ -1,61 +1,37 @@
 {
   "attributes": [
     {"name": "Accessory", "traits": [
-        {"name": "Anime Heart Shades","colors": 2,"rarity": "Common","tags": [],"token_id": 62},
-        {"name": "Bubbly Love Wings","colors": 1,"rarity": "Common","tags": [],"token_id": 62},
-        {"name": "Ghost Hugicorn","colors": 0,"rarity": "Common","tags": [],"token_id": 62},
-        {"name": "Hawt Wings","colors": 3,"rarity": "Common","tags": [],"token_id": 62}
-    ]},
-
-    {"name": "Background", "traits": [
-        {"name": "Candy Hearts","colors": 4,"rarity": "Common","tags": [],"token_id": 62},
-        {"name": "Broken Heart Left","colors": 4,"rarity": "Common","tags": [],"token_id": 62},
-        {"name": "Hot Stuff Left","colors": 4,"rarity": "Common","tags": [],"token_id": 62},
-        {"name": "Hot Stuff Right","colors": 4,"rarity": "Common","tags": [],"token_id": 62},
-        {"name": "Candy Cloud Castle Left","colors": 5,"rarity": "Common","tags": [],"token_id": 62},
-        {"name": "Candy Cloud Castle Right","colors": 5,"rarity": "Common","tags": [],"token_id": 62}
+        {"name": "Kissy Town Prince","colors": 5.0,"rarity": "Common","tags": ["companion"],"token_id": 180},
+        {"name": "Flutter Bomber","colors": 5.0,"rarity": "Epic","tags": [],"token_id": 181},
+        {"name": "Flutter Bomber Wings","colors": 2.0,"rarity": "Epic","tags": ["onBack"],"token_id": 181},
+        {"name": "Glowy Flutter Bomber","colors": 1.0,"rarity": "Epic","tags": [],"token_id": 182}
     ]},
 
     {"name": "Eyebrows", "traits": [
-        {"name": "Lovey Brows","colors": 0,"rarity": "Common","tags": [],"token_id": 62}
-    ]},
-
-    {"name": "Eyes", "traits": [
-        {"name": "Anime Heart Eyes","colors": 1,"rarity": "Common","tags": [],"token_id": 62}
-    ]},
-
-    {"name": "Face Sticker", "traits": [
-        {"name": "Anime Blush","colors": 1,"rarity": "Common","tags": [],"token_id": 62}
+        {"name": "Virginia Wolfy Straight","colors": 0.0,"rarity": "Common","tags": [],"token_id": 180}
     ]},
 
     {"name": "Frame", "traits": [
-        {"name": "Thinking of U","colors": 1,"rarity": "Common","tags": [],"token_id": 62},
-        {"name": "Soft Sparkle Heart Frame","colors": 4,"rarity": "Common","tags": [],"token_id": 62},
-        {"name": "Sprinkle Hearts Scroll Left","colors": 5,"rarity": "Common","tags": [],"token_id": 62},
-        {"name": "Sprinkle Hearts Scroll Right","colors": 5,"rarity": "Common","tags": [],"token_id": 62}
+        {"name": "Pretty Psychic Sting Lights","colors": 5.0,"rarity": "Legendary","tags": [],"token_id": 183},
+        {"name": "Flag Banner","colors": [],"rarity": "Common","tags": [],"token_id": 180},
+        {"name": "Hunnygram Delivery Critters","colors": 5.0,"rarity": "Epic","tags": [],"token_id": 181}
+    ]},
+
+    {"name": "Hair Style", "traits": [
+        {"name": "Virginia Wolf","colors": 2.0,"rarity": "Common","tags": [],"token_id": 180}
     ]},
 
     {"name": "Hand", "traits": [
-        {"name": "Heart Hands","colors": 1,"rarity": "Common","tags": ["skin"],"token_id": 62},
-        {"name": "Holding Hands","colors": 3,"rarity": "Common","tags": ["skin"],"token_id": 62},
-        {"name": "Macaron My Heart","colors": 3,"rarity": "Common","tags": ["skin"],"token_id": 62}
-    ]},
-
-    {"name": "Hat", "traits": [
-        {"name": "Cuddle Detectors","colors": 3,"rarity": "Common","tags": [],"token_id": 62},
-        {"name": "Cupid Rats Arrow","colors": 3,"rarity": "Common","tags": [],"token_id": 62}
+        {"name": "Crystal Love Ball","colors": 5.0,"rarity": "Legendary","tags": ["skin"],"token_id": 183},
+        {"name": "Box Of Chocolates","colors": [],"rarity": "Common","tags": ["skin"],"token_id": 180},
+        {"name": "ChompZilla Boquet","colors": 5.0,"rarity": "Common","tags": ["skin"],"token_id": 180},
+        {"name": "I Heart U","colors": [],"rarity": "Common","tags": ["skin"],"token_id": 180},
+        {"name": "Kissy Town Singing Ring","colors": [],"rarity": "Common","tags": ["skin"],"token_id": 180},
+        {"name": "Pick Your Card","colors": [],"rarity": "Common","tags": ["skin"],"token_id": 180}
     ]},
 
     {"name": "Mouth", "traits": [
-        {"name": "Lovey Lips","colors": 2,"rarity": "Common","tags": [],"token_id": 62}
-    ]},
-
-    {"name": "Outfit", "traits": [
-        {"name": "Candy Cutie Coveralls","colors": 5,"rarity": "Common","tags": [],"token_id": 62}
-    ]},
-
-    {"name": "Skin", "traits": [
-        {"name": "Cupid Babe","colors": 0,"rarity": "Common","tags": [],"token_id": 62}
+        {"name": "Mayor Kissy","colors": 1.0,"rarity": "Epic","tags": [],"token_id": 181}
     ]}
   ]
 }

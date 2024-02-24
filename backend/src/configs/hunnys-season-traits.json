@@ -3,6 +3,10 @@
     {
       "name": "Accessory",
       "traits": [
+        {"name":"Kissy Town Prince","colors":5.0,"rarity":"Common","tags":["companion"],"token_id":180},
+        {"name":"Flutter Bomber","colors":5.0,"rarity":"Epic","tags":[],"token_id":181},
+        {"name":"Flutter Bomber Wings","colors":2.0,"rarity":"Epic","tags":["onBack"],"token_id":181},
+        {"name":"Glowy Flutter Bomber","colors":1.0,"rarity":"Epic","tags":[],"token_id":182},
         {"name":"Claras Backpack","colors":3,"rarity":"Mythic","tags":["backpack","ownStripes"],"token_id":12},
         {"name":"Noelles Backpack","colors":4,"rarity":"Mythic","tags":["backpack","ownStripes"],"token_id":13},
         {"name":"Aspens Wolf","colors":3,"rarity":"Legendary","tags":["companion"],"token_id":15},
@@ -75,68 +79,24 @@
       ]
     },
     {
-      "name": "Background",
+      "name": "Eyebrows",
       "traits": [
-        {"name":"Dottie Clouds","colors":1,"rarity":"Mythic","tags":[],"token_id":24},
-        {"name":"Mayaris Moon","colors":1,"rarity":"Rare","tags":[],"token_id":43},
-        {"name":"Beautiful Baby Dragon","colors":4,"rarity":"Legendary","tags":[],"token_id":45},
-        {"name":"Birthday Sprinkles","colors":5,"rarity":"Legendary","tags":[],"token_id":54},
-        {"name":"Bumble Bees","colors":3,"rarity":"Legendary","tags":[],"token_id":59},
-        {"name":"Dancing Bubble","colors":0,"rarity":"Rare","tags":[],"token_id":62},
-        {"name":"Lagoon Monster","colors":0,"rarity":"Epic","tags":[],"token_id":63},
-        {"name":"30s Forest","colors":0,"rarity":"Legendary","tags":[],"token_id":64},
-        {"name":"30s Forest Bunny","colors":0,"rarity":"Legendary","tags":[],"token_id":64},
-        {"name":"Witches Cauldron","colors":0,"rarity":"Epic","tags":[],"token_id":65},
-        {"name":"Ghostly Bear Buddy","colors":1,"rarity":"Mythic","tags":[],"token_id":66},
-        {"name":"Hupe Rainbow","colors":4,"rarity":"Legendary","tags":[],"token_id":68},
-        {"name":"Kikis Sky","colors":3,"rarity":"Common","tags":[],"token_id":69},
-        {"name":"Haku","colors":5,"rarity":"Epic","tags":["effect"],"token_id":69},
-        {"name":"Cactus Horizon","colors":1,"rarity":"Rare","tags":[],"token_id":82},
-        {"name":"Holographic Fish","colors":3,"rarity":"Epic","tags":[],"token_id":99},
-        {"name":"Grid Alleyway","colors":0,"rarity":"Epic","tags":[],"token_id":107},
-        {"name":"Candy Clouds","colors":2,"rarity":"Epic","tags":[],"token_id":115},
-        {"name":"Red Flames of Spectra","colors":0,"rarity":"Common","tags":[],"token_id":119},
-        {"name":"Blue Flames of Spectra","colors":0,"rarity":"Common","tags":[],"token_id":119},
-        {"name":"Green Flames of Spectra","colors":0,"rarity":"Common","tags":[],"token_id":119},
-        {"name":"Purple Flames of Spectra","colors":0,"rarity":"Common","tags":[],"token_id":119},
-        {"name":"Dreamland Swirls","colors":3,"rarity":"Epic","tags":[],"token_id":121},
-        {"name":"Dreamland Danger","colors":0,"rarity":"Relic","tags":[],"token_id":123},
-        {"name":"Goop","colors":3,"rarity":"Mythic","tags":[],"token_id":124},
-        {"name":"Dorothys View","colors":3,"rarity":"Common","tags":[],"token_id":126},
-        {"name":"Rainbow Mallow Beach","colors":3,"rarity":"Legendary","tags":[],"token_id":141},
-        {"name":"Gabriellas House","colors":0,"rarity":"Legendary","tags":[],"token_id":152},
-        {"name":"Queen Mikas Castle","colors":1,"rarity":"Common","tags":[],"token_id":153},
-        {"name":"DinoLand","colors":2,"rarity":"Epic","tags":[],"token_id":156},
-        {"name":"Neon Cacti","colors":0,"rarity":"Epic","tags":[],"token_id":166},
-        {"name":"Blue Barbs","colors":0,"rarity":"Relic","tags":[],"token_id":164},
-        {"name":"Black Barbs","colors":0,"rarity":"Common","tags":[],"token_id":168},
-        {"name":"Diode Chart","colors":2,"rarity":"Rare","tags":[],"token_id":165},
-        {"name":"Nax Flames","colors":2,"rarity":"Legendary","tags":[],"token_id":167},
-        {"name":"Bunny Club Sprinkles","colors":0,"rarity":"Common","tags":[],"token_id":169},
-        {"name":"Jólakötturinn Night","colors":3,"rarity":"Common","tags":[],"token_id":170},
-        {"name":"Krampus Night","colors":0,"rarity":"Relic","tags":[],"token_id":174},
-        {"name":"Bunny Kingdom Castle","colors":4,"rarity":"Common","tags":[],"token_id":176},
-        {"name":"Outdoor Gym Class","colors":2,"rarity":"Mythic","tags":[],"token_id":179}
-      ]
-    },
-    {
-      "name": "Face Sticker",
-      "traits": [
-        {"name":"Dead Star","colors":3,"rarity":"Rare","tags":[],"token_id":93},
-        {"name":"Winky Sun","colors":2,"rarity":"Epic","tags":[],"token_id":94},
-        {"name":"Dead Fish","colors":2,"rarity":"Legendary","tags":[],"token_id":95},
-        {"name":"Robber Dirt","colors":0,"rarity":"Legendary","tags":[],"token_id":118},
-        {"name":"XO","colors":0,"rarity":"Epic","tags":[],"token_id":129},
-        {"name":"Briny Bandaid","colors":2,"rarity":"Common","tags":[],"token_id":138},
-        {"name":"Cheek Dimple","colors":0,"rarity":"Rare","tags":[],"token_id":139},
-        {"name":"RainMallow Sticker","colors":4,"rarity":"Relic","tags":[],"token_id":142},
-        {"name":"Bunny Club Sticker","colors":3,"rarity":"Common","tags":[],"token_id":169},
-        {"name":"Bunny Ball Facepaint","colors":1,"rarity":"Mythic","tags":[],"token_id":179}
+        {"name":"Virginia Wolfy Straight","colors":0.0,"rarity":"Common","tags":[],"token_id":180},
+        {"name":"Dragon Eyebrows","colors":0,"rarity":"Epic","tags":[],"token_id":78},
+        {"name":"Akiras Brows","colors":0,"rarity":"Legendary","tags":[],"token_id":102},
+        {"name":"Bixie Brows","colors":0,"rarity":"Epic","tags":[],"token_id":114},
+        {"name":"Moonstone Brows","colors":1,"rarity":"Legendary","tags":[],"token_id":134},
+        {"name":"Borg Fade","colors":1,"rarity":"Epic","tags":[],"token_id":145},
+        {"name":"Rattyz Brows","colors":0,"rarity":"Rare","tags":[],"token_id":149},
+        {"name":"Bunny Club Brows","colors":0,"rarity":"Common","tags":[],"token_id":169}
       ]
     },
     {
       "name": "Frame",
       "traits": [
+        {"name":"Pretty Psychic Sting Lights","colors":5.0,"rarity":"Legendary","tags":[],"token_id":183},
+        {"name":"Flag Banner","colors":[],"rarity":"Common","tags":[],"token_id":180},
+        {"name":"Hunnygram Delivery Critters","colors":5.0,"rarity":"Epic","tags":[],"token_id":181},
         {"name":"Candy Cloud Creep","colors":3,"rarity":"Epic","tags":[],"token_id":115},
         {"name":"Dreamland Beasts","colors":4,"rarity":"Relic","tags":[],"token_id":123},
         {"name":"Birthday Sparkles","colors":3,"rarity":"Legendary","tags":[],"token_id":137},
@@ -156,6 +116,7 @@
     {
       "name": "Hair Style",
       "traits": [
+        {"name":"Virginia Wolf","colors":2.0,"rarity":"Common","tags":[],"token_id":180},
         {"name":"Mummy A-Line","colors":1,"rarity":"Legendary","parts":1,"tags":[],"token_id":4},
         {"name":"Celestes Locks","colors":1,"rarity":"Mythic","parts":2,"tags":[],"token_id":14},
         {"name":"Chloes Ponytail","colors":2,"rarity":"Mythic","parts":2,"tags":[],"token_id":23},
@@ -199,6 +160,12 @@
     {
       "name": "Hand",
       "traits": [
+        {"name":"Crystal Love Ball","colors":5.0,"rarity":"Legendary","tags":["skin"],"token_id":183},
+        {"name":"Box Of Chocolates","colors":[],"rarity":"Common","tags":["skin"],"token_id":180},
+        {"name":"ChompZilla Boquet","colors":5.0,"rarity":"Common","tags":["skin"],"token_id":180},
+        {"name":"I Heart U","colors":[],"rarity":"Common","tags":["skin"],"token_id":180},
+        {"name":"Kissy Town Singing Ring","colors":[],"rarity":"Common","tags":["skin"],"token_id":180},
+        {"name":"Pick Your Card","colors":[],"rarity":"Common","tags":["skin"],"token_id":180},
         {"name":"Jesabelles Sword","colors":4,"rarity":"Legendary","tags":[],"token_id":8},
         {"name":"Crystals Owl","colors":4,"rarity":"Epic","tags":[],"token_id":9},
         {"name":"Penelopes Puppy","colors":4,"rarity":"Legendary","tags":["skin"],"token_id":34},
@@ -255,6 +222,87 @@
       ]
     },
     {
+      "name": "Mouth",
+      "traits": [
+        {"name":"Mayor Kissy","colors":1.0,"rarity":"Epic","tags":[],"token_id":181},
+        {"name":"Helenicas Demon Tongue","colors":2,"rarity":"Epic","tags":[],"token_id":25},
+        {"name":"Storm Smile","colors":1,"rarity":"Rare","tags":[],"token_id":57},
+        {"name":"Dragon Fangs","colors":1,"rarity":"Epic","tags":[],"token_id":78},
+        {"name":"Delicious Cheese Pizza","colors":3,"rarity":"Common","tags":[],"token_id":81},
+        {"name":"Chewing Wheat","colors":2,"rarity":"Rare","tags":[],"token_id":83},
+        {"name":"Akiras Snarl","colors":1,"rarity":"Legendary","tags":[],"token_id":102},
+        {"name":"Taurus Lips","colors":1,"rarity":"Epic","tags":[],"token_id":103},
+        {"name":"Bixie Underbite","colors":1,"rarity":"Epic","tags":[],"token_id":114},
+        {"name":"Kissy","colors":1,"rarity":"Epic","tags":[],"token_id":133},
+        {"name":"Wolfy Smile","colors":1,"rarity":"Rare","tags":[],"token_id":136},
+        {"name":"RainbowCorn Smile","colors":3,"rarity":"Legendary","tags":[],"token_id":137},
+        {"name":"Mallow","colors":4,"rarity":"Legendary","tags":[],"token_id":141},
+        {"name":"Rattyz Lips","colors":1,"rarity":"Rare","tags":[],"token_id":149},
+        {"name":"Nummy Bone","colors":2,"rarity":"Epic","tags":[],"token_id":156},
+        {"name":"Bunny Club Juicy","colors":1,"rarity":"Common","tags":[],"token_id":169}
+      ]
+    },
+    {
+      "name": "Background",
+      "traits": [
+        {"name":"Dottie Clouds","colors":1,"rarity":"Mythic","tags":[],"token_id":24},
+        {"name":"Mayaris Moon","colors":1,"rarity":"Rare","tags":[],"token_id":43},
+        {"name":"Beautiful Baby Dragon","colors":4,"rarity":"Legendary","tags":[],"token_id":45},
+        {"name":"Birthday Sprinkles","colors":5,"rarity":"Legendary","tags":[],"token_id":54},
+        {"name":"Bumble Bees","colors":3,"rarity":"Legendary","tags":[],"token_id":59},
+        {"name":"Dancing Bubble","colors":0,"rarity":"Rare","tags":[],"token_id":62},
+        {"name":"Lagoon Monster","colors":0,"rarity":"Epic","tags":[],"token_id":63},
+        {"name":"30s Forest","colors":0,"rarity":"Legendary","tags":[],"token_id":64},
+        {"name":"30s Forest Bunny","colors":0,"rarity":"Legendary","tags":[],"token_id":64},
+        {"name":"Witches Cauldron","colors":0,"rarity":"Epic","tags":[],"token_id":65},
+        {"name":"Ghostly Bear Buddy","colors":1,"rarity":"Mythic","tags":[],"token_id":66},
+        {"name":"Hupe Rainbow","colors":4,"rarity":"Legendary","tags":[],"token_id":68},
+        {"name":"Kikis Sky","colors":3,"rarity":"Common","tags":[],"token_id":69},
+        {"name":"Haku","colors":5,"rarity":"Epic","tags":["effect"],"token_id":69},
+        {"name":"Cactus Horizon","colors":1,"rarity":"Rare","tags":[],"token_id":82},
+        {"name":"Holographic Fish","colors":3,"rarity":"Epic","tags":[],"token_id":99},
+        {"name":"Grid Alleyway","colors":0,"rarity":"Epic","tags":[],"token_id":107},
+        {"name":"Candy Clouds","colors":2,"rarity":"Epic","tags":[],"token_id":115},
+        {"name":"Red Flames of Spectra","colors":0,"rarity":"Common","tags":[],"token_id":119},
+        {"name":"Blue Flames of Spectra","colors":0,"rarity":"Common","tags":[],"token_id":119},
+        {"name":"Green Flames of Spectra","colors":0,"rarity":"Common","tags":[],"token_id":119},
+        {"name":"Purple Flames of Spectra","colors":0,"rarity":"Common","tags":[],"token_id":119},
+        {"name":"Dreamland Swirls","colors":3,"rarity":"Epic","tags":[],"token_id":121},
+        {"name":"Dreamland Danger","colors":0,"rarity":"Relic","tags":[],"token_id":123},
+        {"name":"Goop","colors":3,"rarity":"Mythic","tags":[],"token_id":124},
+        {"name":"Dorothys View","colors":3,"rarity":"Common","tags":[],"token_id":126},
+        {"name":"Rainbow Mallow Beach","colors":3,"rarity":"Legendary","tags":[],"token_id":141},
+        {"name":"Gabriellas House","colors":0,"rarity":"Legendary","tags":[],"token_id":152},
+        {"name":"Queen Mikas Castle","colors":1,"rarity":"Common","tags":[],"token_id":153},
+        {"name":"DinoLand","colors":2,"rarity":"Epic","tags":[],"token_id":156},
+        {"name":"Neon Cacti","colors":0,"rarity":"Epic","tags":[],"token_id":166},
+        {"name":"Blue Barbs","colors":0,"rarity":"Relic","tags":[],"token_id":164},
+        {"name":"Black Barbs","colors":0,"rarity":"Common","tags":[],"token_id":168},
+        {"name":"Diode Chart","colors":2,"rarity":"Rare","tags":[],"token_id":165},
+        {"name":"Nax Flames","colors":2,"rarity":"Legendary","tags":[],"token_id":167},
+        {"name":"Bunny Club Sprinkles","colors":0,"rarity":"Common","tags":[],"token_id":169},
+        {"name":"Jólakötturinn Night Night","colors":3,"rarity":"Common","tags":[],"token_id":170},
+        {"name":"Krampus Night","colors":0,"rarity":"Relic","tags":[],"token_id":174},
+        {"name":"Bunny Kingdom Castle","colors":4,"rarity":"Common","tags":[],"token_id":176},
+        {"name":"Outdoor Gym Class","colors":2,"rarity":"Mythic","tags":[],"token_id":179}
+      ]
+    },
+    {
+      "name": "Face Sticker",
+      "traits": [
+        {"name":"Dead Star","colors":3,"rarity":"Rare","tags":[],"token_id":93},
+        {"name":"Winky Sun","colors":2,"rarity":"Epic","tags":[],"token_id":94},
+        {"name":"Dead Fish","colors":2,"rarity":"Legendary","tags":[],"token_id":95},
+        {"name":"Robber Dirt","colors":0,"rarity":"Legendary","tags":[],"token_id":118},
+        {"name":"XO","colors":0,"rarity":"Epic","tags":[],"token_id":129},
+        {"name":"Briny Bandaid","colors":2,"rarity":"Common","tags":[],"token_id":138},
+        {"name":"Cheek Dimple","colors":0,"rarity":"Rare","tags":[],"token_id":139},
+        {"name":"RainMallow Sticker","colors":4,"rarity":"Relic","tags":[],"token_id":142},
+        {"name":"Bunny Club Sticker","colors":3,"rarity":"Common","tags":[],"token_id":169},
+        {"name":"Bunny Ball Facepaint","colors":1,"rarity":"Mythic","tags":[],"token_id":179}
+      ]
+    },
+    {
       "name": "Hat",
       "traits": [
         {"name":"Sheep Wool Moon Muffs","colors":3,"rarity":"Epic","tags":[],"token_id":10},
@@ -279,7 +327,7 @@
         {"name":"Ratty Fur Bucket Hat","colors":4,"rarity":"Rare","tags":["twoParts"],"token_id":149},
         {"name":"Batty Rest Sleep Mask","colors":4,"rarity":"Epic","tags":[],"token_id":158},
         {"name":"Bunny Club Ears","colors":4,"rarity":"Common","tags":[],"token_id":169},
-        {"name":"Jólakötturinn Ears","colors":2,"rarity":"Common","tags":["twoParts"],"token_id":170},
+        {"name":"Jólakötturinn Night Ears","colors":2,"rarity":"Common","tags":["twoParts"],"token_id":170},
         {"name":"La Befna Hat","colors":5,"rarity":"Rare","tags":["twoParts"],"token_id":171},
         {"name":"Mari Lwyd Horse Hat","colors":5,"rarity":"Legendary","tags":[],"token_id":173},
         {"name":"Krampus Horns","colors":2,"rarity":"Relic","tags":["twoParts"],"token_id":174},
@@ -377,18 +425,6 @@
       ]
     },
     {
-      "name": "Eyebrows",
-      "traits": [
-        {"name":"Dragon Eyebrows","colors":0,"rarity":"Epic","tags":[],"token_id":78},
-        {"name":"Akiras Brows","colors":0,"rarity":"Legendary","tags":[],"token_id":102},
-        {"name":"Bixie Brows","colors":0,"rarity":"Epic","tags":[],"token_id":114},
-        {"name":"Moonstone Brows","colors":1,"rarity":"Legendary","tags":[],"token_id":134},
-        {"name":"Borg Fade","colors":1,"rarity":"Epic","tags":[],"token_id":145},
-        {"name":"Rattyz Brows","colors":0,"rarity":"Rare","tags":[],"token_id":149},
-        {"name":"Bunny Club Brows","colors":0,"rarity":"Common","tags":[],"token_id":169}
-      ]
-    },
-    {
       "name": "Eyes",
       "traits": [
         {"name":"Bionic Eye","colors":1,"rarity":"Rare","tags":[],"token_id":97},
@@ -406,26 +442,6 @@
         {"name":"Calanthas Nose Chain","colors":2,"rarity":"Legendary","tags":[],"token_id":100},
         {"name":"Bridge","colors":1,"rarity":"Legendary","tags":[],"token_id":157},
         {"name":"Septum Ring","colors":1,"rarity":"Relic","tags":[],"token_id":168}
-      ]
-    },
-    {
-      "name": "Mouth",
-      "traits": [
-        {"name":"Helenicas Demon Tongue","colors":2,"rarity":"Epic","tags":[],"token_id":25},
-        {"name":"Storm Smile","colors":1,"rarity":"Rare","tags":[],"token_id":57},
-        {"name":"Dragon Fangs","colors":1,"rarity":"Epic","tags":[],"token_id":78},
-        {"name":"Delicious Cheese Pizza","colors":3,"rarity":"Common","tags":[],"token_id":81},
-        {"name":"Chewing Wheat","colors":2,"rarity":"Rare","tags":[],"token_id":83},
-        {"name":"Akiras Snarl","colors":1,"rarity":"Legendary","tags":[],"token_id":102},
-        {"name":"Taurus Lips","colors":1,"rarity":"Epic","tags":[],"token_id":103},
-        {"name":"Bixie Underbite","colors":1,"rarity":"Epic","tags":[],"token_id":114},
-        {"name":"Kissy","colors":1,"rarity":"Epic","tags":[],"token_id":133},
-        {"name":"Wolfy Smile","colors":1,"rarity":"Rare","tags":[],"token_id":136},
-        {"name":"RainbowCorn Smile","colors":3,"rarity":"Legendary","tags":[],"token_id":137},
-        {"name":"Mallow","colors":4,"rarity":"Legendary","tags":[],"token_id":141},
-        {"name":"Rattyz Lips","colors":1,"rarity":"Rare","tags":[],"token_id":149},
-        {"name":"Nummy Bone","colors":2,"rarity":"Epic","tags":[],"token_id":156},
-        {"name":"Bunny Club Juicy","colors":1,"rarity":"Common","tags":[],"token_id":169}
       ]
     },
     {
