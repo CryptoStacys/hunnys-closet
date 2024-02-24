@@ -881,7 +881,7 @@ return (
                   {trait.isEligibleForMinting ? (
         // Render image for eligible traits
         <img 
-          src="https://cdn.discordapp.com/attachments/1032105881447444491/1199073815544737852/Hunnys_Closet_Mockups_1.png?ex=65c13783&is=65aec283&hm=1c1b22ba3c46e7fcfe29b99a97ae67cbc3163de34876f4c9c8bbe9604c1e3029&" // Replace with actual image path
+          src="https://hunnys.io/wp-content/uploads/2024/02/Copy-of-Hunnys-Closet-Mockups-Website-1.png" // Replace with actual image path
           alt="Minting Eligible"
           className="absolute forSale right-2 top-4 shadow-xl"
         />
