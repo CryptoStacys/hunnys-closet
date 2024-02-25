@@ -3,10 +3,10 @@
     {
       "name": "Accessory",
       "traits": [
-        {"name":"Kissy Town Prince","colors":5.0,"rarity":"Common","tags":["companion"],"token_id":180},
-        {"name":"Flutter Bomber","colors":5.0,"rarity":"Epic","tags":[],"token_id":181},
-        {"name":"Flutter Bomber Wings","colors":2.0,"rarity":"Epic","tags":["onBack"],"token_id":181},
-        {"name":"Glowy Flutter Bomber","colors":1.0,"rarity":"Epic","tags":[],"token_id":182},
+        {"name":"Kissy Town Prince","colors":5,"rarity":"Common","tags":["companion"],"token_id":180},
+        {"name":"Flutter Bomber","colors":5,"rarity":"Epic","tags":[],"token_id":181},
+        {"name":"Flutter Bomber Wings","colors":2,"rarity":"Epic","tags":["onBack"],"token_id":181},
+        {"name":"Glowy Flutter Bomber","colors":1,"rarity":"Epic","tags":[],"token_id":182},
         {"name":"Claras Backpack","colors":3,"rarity":"Mythic","tags":["backpack","ownStripes"],"token_id":12},
         {"name":"Noelles Backpack","colors":4,"rarity":"Mythic","tags":["backpack","ownStripes"],"token_id":13},
         {"name":"Aspens Wolf","colors":3,"rarity":"Legendary","tags":["companion"],"token_id":15},
@@ -81,7 +81,7 @@
     {
       "name": "Eyebrows",
       "traits": [
-        {"name":"Virginia Wolfy Straight","colors":0.0,"rarity":"Common","tags":[],"token_id":180},
+        {"name":"Virginia Wolfy Straight","colors":0,"rarity":"Common","tags":[],"token_id":180},
         {"name":"Dragon Eyebrows","colors":0,"rarity":"Epic","tags":[],"token_id":78},
         {"name":"Akiras Brows","colors":0,"rarity":"Legendary","tags":[],"token_id":102},
         {"name":"Bixie Brows","colors":0,"rarity":"Epic","tags":[],"token_id":114},
@@ -94,9 +94,9 @@
     {
       "name": "Frame",
       "traits": [
-        {"name":"Pretty Psychic Sting Lights","colors":5.0,"rarity":"Legendary","tags":[],"token_id":183},
-        {"name":"Flag Banner","colors":[],"rarity":"Common","tags":[],"token_id":180},
-        {"name":"Hunnygram Delivery Critters","colors":5.0,"rarity":"Epic","tags":[],"token_id":181},
+        {"name":"Pretty Psychic Sting Lights","colors":5,"rarity":"Legendary","tags":[],"token_id":183},
+        {"name":"Flag Banner","colors":2,"rarity":"Common","tags":[],"token_id":180},
+        {"name":"Hunnygram Delivery Critters","colors":5,"rarity":"Epic","tags":[],"token_id":181},
         {"name":"Candy Cloud Creep","colors":3,"rarity":"Epic","tags":[],"token_id":115},
         {"name":"Dreamland Beasts","colors":4,"rarity":"Relic","tags":[],"token_id":123},
         {"name":"Birthday Sparkles","colors":3,"rarity":"Legendary","tags":[],"token_id":137},
@@ -116,7 +116,7 @@
     {
       "name": "Hair Style",
       "traits": [
-        {"name":"Virginia Wolf","colors":2.0,"rarity":"Common","tags":[],"token_id":180},
+        {"name":"Virginia Wolf","colors":2,"rarity":"Common","tags":[],"token_id":180},
         {"name":"Mummy A-Line","colors":1,"rarity":"Legendary","parts":1,"tags":[],"token_id":4},
         {"name":"Celestes Locks","colors":1,"rarity":"Mythic","parts":2,"tags":[],"token_id":14},
         {"name":"Chloes Ponytail","colors":2,"rarity":"Mythic","parts":2,"tags":[],"token_id":23},
@@ -160,12 +160,12 @@
     {
       "name": "Hand",
       "traits": [
-        {"name":"Crystal Love Ball","colors":5.0,"rarity":"Legendary","tags":["skin"],"token_id":183},
-        {"name":"Box Of Chocolates","colors":[],"rarity":"Common","tags":["skin"],"token_id":180},
-        {"name":"ChompZilla Boquet","colors":5.0,"rarity":"Common","tags":["skin"],"token_id":180},
-        {"name":"I Heart U","colors":[],"rarity":"Common","tags":["skin"],"token_id":180},
-        {"name":"Kissy Town Singing Ring","colors":[],"rarity":"Common","tags":["skin"],"token_id":180},
-        {"name":"Pick Your Card","colors":[],"rarity":"Common","tags":["skin"],"token_id":180},
+        {"name":"Crystal Love Ball","colors":5,"rarity":"Legendary","tags":["skin"],"token_id":183},
+        {"name":"Box Of Chocolates","colors":4,"rarity":"Common","tags":["skin"],"token_id":180},
+        {"name":"ChompZilla Boquet","colors":5,"rarity":"Common","tags":["skin"],"token_id":180},
+        {"name":"I Heart U","colors":3,"rarity":"Common","tags":["skin"],"token_id":180},
+        {"name":"Kissy Town Singing Ring","colors":3,"rarity":"Common","tags":["skin"],"token_id":180},
+        {"name":"Pick Your Card","colors":3,"rarity":"Common","tags":["skin"],"token_id":180},
         {"name":"Jesabelles Sword","colors":4,"rarity":"Legendary","tags":[],"token_id":8},
         {"name":"Crystals Owl","colors":4,"rarity":"Epic","tags":[],"token_id":9},
         {"name":"Penelopes Puppy","colors":4,"rarity":"Legendary","tags":["skin"],"token_id":34},
