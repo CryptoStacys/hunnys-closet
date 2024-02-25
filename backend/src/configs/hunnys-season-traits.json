@@ -4,9 +4,9 @@
       "name": "Accessory",
       "traits": [
         {"name":"Kissy Town Prince","colors":5,"rarity":"Common","tags":["companion"],"token_id":180},
-        {"name":"Flutter Bomber","colors":5,"rarity":"Epic","tags":[],"token_id":181},
+        {"name":"Flutter Bomber","colors":5,"rarity":"Epic","tags":["companion"],"token_id":181},
         {"name":"Flutter Bomber Wings","colors":2,"rarity":"Epic","tags":["onBack"],"token_id":181},
-        {"name":"Glowy Flutter Bomber","colors":1,"rarity":"Epic","tags":[],"token_id":182},
+        {"name":"Glowy Flutter Bomber","colors":1,"rarity":"Epic","tags":["companion"],"token_id":182},
         {"name":"Claras Backpack","colors":3,"rarity":"Mythic","tags":["backpack","ownStripes"],"token_id":12},
         {"name":"Noelles Backpack","colors":4,"rarity":"Mythic","tags":["backpack","ownStripes"],"token_id":13},
         {"name":"Aspens Wolf","colors":3,"rarity":"Legendary","tags":["companion"],"token_id":15},
