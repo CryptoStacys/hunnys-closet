@@ -1680,7 +1680,88 @@
                 }
     ],
     "metaPath": "https://hunnysclosetshop.s3.us-east-2.amazonaws.com/images/goodies/63"
-}
+},
+{
+    "tokenId": 64,
+    "name": "Bunny Club Connection",
+    "attributes": [
+        {
+            "trait_type": "Background",
+            "value": "Bunny Club Connection"
+        }
+    ],
+    "metaPath": "https://hunnysclosetshop.s3.us-east-2.amazonaws.com/images/goodies/64"
+},
+{
+    "tokenId": 65,
+    "name": "LomBUNdi Trophy 2024",
+    "attributes": [
+        {
+            "trait_type": "Hand",
+            "value": "LomBUNdi Trophy 2024"
+        }
+    ],
+    "metaPath": "https://hunnysclosetshop.s3.us-east-2.amazonaws.com/images/goodies/65"
+},
+    {
+        "tokenId": 66,
+        "name": "Inkfinite Friends Tats Pack",
+        "attributes": [
+            {
+                "trait_type": "Tattoo",
+                "value": "Big Spoon"
+            },
+            {
+                "trait_type": "Tattoo",
+                "value": "Bunny Butt"
+            },
+            {
+                "trait_type": "Tattoo",
+                "value": "Floop Love"
+            },
+            {
+                "trait_type": "Tattoo",
+                "value": "Ghost Bunny Love"
+            },
+            {
+                "trait_type": "Tattoo",
+                "value": "Ghost Croc Love"
+            },
+            {
+                "trait_type": "Tattoo",
+                "value": "Ghost Kitty Love"
+            },
+            {
+                "trait_type": "Tattoo",
+                "value": "Horny Hornsworth"
+            },
+            {
+                "trait_type": "Tattoo",
+                "value": "Lil Spoon"
+            },
+            {
+                "trait_type": "Tattoo",
+                "value": "Moony BB"
+            },
+            {
+                "trait_type": "Tattoo",
+                "value": "Space Party"
+            },
+            {
+                "trait_type": "Tattoo",
+                "value": "Starry BB"
+            },
+            {
+                "trait_type": "Tattoo",
+                "value": "Sunny BB"
+            },
+            {
+                "trait_type": "Tattoo",
+                "value": "Taffy Rainbow"
+            }
+        ],
+        "metaPath": "https://hunnysclosetshop.s3.us-east-2.amazonaws.com/images/goodies/66"
+    }
 ]
 
 
