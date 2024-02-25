@@ -43272,3 +43272,781 @@ Processing file: Outer Space Buns_Back_L.png in Hair Style
 Processing file: Outer Space Buns_Front_C1.png in Hair Style
 Processing file: Outer Space Buns_Front_C2.png in Hair Style
 Processing file: Outer Space Buns_Front_C3.png in Hair Style
+Script started
+Subfolders found: Accessory, Background, Bodysuit, Colors, Extras, Eyebrows, Eyes, Face Sticker, Finished, Frame, Hair Style, Hand, Mouth, Outfit, Piercing, Tattoo, Undergarment
+Files found: 116
+Solid colors RGB values saved to colors.json
+Resizing image: scriptImages\Accessory\Flutter Bomber Wings_C1.png to 800x800
+Resizing image: scriptImages\Accessory\Flutter Bomber Wings_C1.png to 600x600
+Solid colors RGB values saved to colors.json
+Processing image group: Flutter Bomber Wings
+Processing file: Flutter Bomber Wings_C1.png in subfolder: Accessory
+Resized image saved: 600x600_png\Accessory\Flutter Bomber Wings_C1.png
+Resizing image: scriptImages\Accessory\Flutter Bomber Wings_C2.png to 600x600
+Resized image saved: 800x800_png\Accessory\Flutter Bomber Wings_C1.png
+Resizing image: scriptImages\Accessory\Flutter Bomber Wings_C2.png to 800x800
+Processing file: Flutter Bomber Wings_C2.png in subfolder: Accessory
+Resized image saved: 600x600_png\Accessory\Flutter Bomber Wings_C2.png
+Resizing image: scriptImages\Accessory\Flutter Bomber Wings_L.png to 600x600
+Resized image saved: 800x800_png\Accessory\Flutter Bomber Wings_C2.png
+Resizing image: scriptImages\Accessory\Flutter Bomber Wings_L.png to 800x800
+Processing file: Flutter Bomber Wings_L.png in subfolder: Accessory
+Checking existence of PNG: compositeImages\Accessory\Flutter Bomber Wings.png
+Checking existence of JPG: 300x300_jpg\Accessory\Flutter Bomber Wings.jpg
+Files not found, processing: PNG - compositeImages\Accessory\Flutter Bomber Wings.png, JPG - 300x300_jpg\Accessory\Flutter Bomber Wings.jpg
+Saved: compositeImages\Accessory\Flutter Bomber Wings.png
+Resized image saved: 600x600_png\Accessory\Flutter Bomber Wings_L.png
+Resizing image: scriptImages\Accessory\Flutter Bomber_C1.png to 600x600
+Resized image saved: 800x800_png\Accessory\Flutter Bomber Wings_L.png
+Resizing image: scriptImages\Accessory\Flutter Bomber_C1.png to 800x800
+Saved: 300x300_jpg\Accessory\Flutter Bomber Wings.jpg
+Processing image group: Flutter Bomber
+Processing file: Flutter Bomber_C1.png in subfolder: Accessory
+Resized image saved: 600x600_png\Accessory\Flutter Bomber_C1.png
+Resizing image: scriptImages\Accessory\Flutter Bomber_C2.png to 600x600
+Resized image saved: 800x800_png\Accessory\Flutter Bomber_C1.png
+Resizing image: scriptImages\Accessory\Flutter Bomber_C2.png to 800x800
+Processing file: Flutter Bomber_C2.png in subfolder: Accessory
+Resized image saved: 600x600_png\Accessory\Flutter Bomber_C2.png
+Resizing image: scriptImages\Accessory\Flutter Bomber_C3.png to 600x600
+Resized image saved: 800x800_png\Accessory\Flutter Bomber_C2.png
+Resizing image: scriptImages\Accessory\Flutter Bomber_C3.png to 800x800
+Processing file: Flutter Bomber_C3.png in subfolder: Accessory
+Resized image saved: 800x800_png\Accessory\Flutter Bomber_C3.png
+Resizing image: scriptImages\Accessory\Flutter Bomber_C4.png to 800x800
+Resized image saved: 600x600_png\Accessory\Flutter Bomber_C3.png
+Resizing image: scriptImages\Accessory\Flutter Bomber_C4.png to 600x600
+Processing file: Flutter Bomber_C4.png in subfolder: Accessory
+Resized image saved: 800x800_png\Accessory\Flutter Bomber_C4.png
+Resizing image: scriptImages\Accessory\Flutter Bomber_C5.png to 800x800
+Resized image saved: 600x600_png\Accessory\Flutter Bomber_C4.png
+Resizing image: scriptImages\Accessory\Flutter Bomber_C5.png to 600x600
+Processing file: Flutter Bomber_C5.png in subfolder: Accessory
+Resized image saved: 800x800_png\Accessory\Flutter Bomber_C5.png
+Resizing image: scriptImages\Accessory\Flutter Bomber_L.png to 800x800
+Resized image saved: 600x600_png\Accessory\Flutter Bomber_C5.png
+Resizing image: scriptImages\Accessory\Flutter Bomber_L.png to 600x600
+Processing file: Flutter Bomber_L.png in subfolder: Accessory
+Checking existence of PNG: compositeImages\Accessory\Flutter Bomber.png
+Checking existence of JPG: 300x300_jpg\Accessory\Flutter Bomber.jpg
+Files not found, processing: PNG - compositeImages\Accessory\Flutter Bomber.png, JPG - 300x300_jpg\Accessory\Flutter Bomber.jpg
+Saved: compositeImages\Accessory\Flutter Bomber.png
+Saved: 300x300_jpg\Accessory\Flutter Bomber.jpg
+Processing image group: Glowy Flutter Bomber
+Resized image saved: 800x800_png\Accessory\Flutter Bomber_L.png
+Resizing image: scriptImages\Accessory\Glowy Flutter Bomber_C1.png to 800x800
+Resized image saved: 600x600_png\Accessory\Flutter Bomber_L.png
+Resizing image: scriptImages\Accessory\Glowy Flutter Bomber_C1.png to 600x600
+Processing file: Glowy Flutter Bomber_C1.png in subfolder: Accessory
+Resized image saved: 600x600_png\Accessory\Glowy Flutter Bomber_C1.png
+Resizing image: scriptImages\Accessory\Glowy Flutter Bomber_L.png to 600x600
+Resized image saved: 800x800_png\Accessory\Glowy Flutter Bomber_C1.png
+Resizing image: scriptImages\Accessory\Glowy Flutter Bomber_L.png to 800x800
+Processing file: Glowy Flutter Bomber_L.png in subfolder: Accessory
+Checking existence of PNG: compositeImages\Accessory\Glowy Flutter Bomber.png
+Checking existence of JPG: 300x300_jpg\Accessory\Glowy Flutter Bomber.jpg
+Files not found, processing: PNG - compositeImages\Accessory\Glowy Flutter Bomber.png, JPG - 300x300_jpg\Accessory\Glowy Flutter Bomber.jpg
+Saved: compositeImages\Accessory\Glowy Flutter Bomber.png
+Resized image saved: 600x600_png\Accessory\Glowy Flutter Bomber_L.png
+Resizing image: scriptImages\Accessory\Kissy Town Prince_C1.png to 600x600
+Saved: 300x300_jpg\Accessory\Glowy Flutter Bomber.jpg
+Processing image group: Kissy Town Prince
+Resized image saved: 800x800_png\Accessory\Glowy Flutter Bomber_L.png
+Resizing image: scriptImages\Accessory\Kissy Town Prince_C1.png to 800x800
+Processing file: Kissy Town Prince_C1.png in subfolder: Accessory
+Resized image saved: 800x800_png\Accessory\Kissy Town Prince_C1.png
+Resizing image: scriptImages\Accessory\Kissy Town Prince_C2.png to 800x800
+Resized image saved: 600x600_png\Accessory\Kissy Town Prince_C1.png
+Resizing image: scriptImages\Accessory\Kissy Town Prince_C2.png to 600x600
+Processing file: Kissy Town Prince_C2.png in subfolder: Accessory
+Resized image saved: 800x800_png\Accessory\Kissy Town Prince_C2.png
+Resizing image: scriptImages\Accessory\Kissy Town Prince_C3.png to 800x800
+Processing file: Kissy Town Prince_C3.png in subfolder: Accessory
+Resized image saved: 600x600_png\Accessory\Kissy Town Prince_C2.png
+Resizing image: scriptImages\Accessory\Kissy Town Prince_C3.png to 600x600
+Resized image saved: 800x800_png\Accessory\Kissy Town Prince_C3.png
+Resizing image: scriptImages\Accessory\Kissy Town Prince_C4.png to 800x800
+Resized image saved: 600x600_png\Accessory\Kissy Town Prince_C3.png
+Resizing image: scriptImages\Accessory\Kissy Town Prince_C4.png to 600x600
+Processing file: Kissy Town Prince_C4.png in subfolder: Accessory
+Resized image saved: 800x800_png\Accessory\Kissy Town Prince_C4.png
+Resizing image: scriptImages\Accessory\Kissy Town Prince_C5.png to 800x800
+Resized image saved: 600x600_png\Accessory\Kissy Town Prince_C4.png
+Resizing image: scriptImages\Accessory\Kissy Town Prince_C5.png to 600x600
+Processing file: Kissy Town Prince_C5.png in subfolder: Accessory
+Resized image saved: 800x800_png\Accessory\Kissy Town Prince_C5.png
+Resizing image: scriptImages\Accessory\Kissy Town Prince_L.png to 800x800
+Resized image saved: 600x600_png\Accessory\Kissy Town Prince_C5.png
+Resizing image: scriptImages\Accessory\Kissy Town Prince_L.png to 600x600
+Processing file: Kissy Town Prince_L.png in subfolder: Accessory
+Checking existence of PNG: compositeImages\Accessory\Kissy Town Prince.png
+Checking existence of JPG: 300x300_jpg\Accessory\Kissy Town Prince.jpg
+Files not found, processing: PNG - compositeImages\Accessory\Kissy Town Prince.png, JPG - 300x300_jpg\Accessory\Kissy Town Prince.jpg
+Saved: compositeImages\Accessory\Kissy Town Prince.png
+Resized image saved: 800x800_png\Accessory\Kissy Town Prince_L.png
+Resizing image: scriptImages\Background\Bunny Club Connection_C1.png to 800x800
+Saved: 300x300_jpg\Accessory\Kissy Town Prince.jpg
+Processing image group: Bunny Club Connection
+Resized image saved: 600x600_png\Accessory\Kissy Town Prince_L.png
+Resizing image: scriptImages\Background\Bunny Club Connection_C1.png to 600x600
+Processing file: Bunny Club Connection_C1.png in subfolder: Background
+Resized image saved: 600x600_png\Background\Bunny Club Connection_C1.png
+Resizing image: scriptImages\Background\Bunny Club Connection_L.png to 600x600
+Resized image saved: 800x800_png\Background\Bunny Club Connection_C1.png
+Resizing image: scriptImages\Background\Bunny Club Connection_L.png to 800x800
+Processing file: Bunny Club Connection_L.png in subfolder: Background
+Checking existence of PNG: compositeImages\Background\Bunny Club Connection.png
+Checking existence of JPG: 300x300_jpg\Background\Bunny Club Connection.jpg
+Files not found, processing: PNG - compositeImages\Background\Bunny Club Connection.png, JPG - 300x300_jpg\Background\Bunny Club Connection.jpg
+Resized image saved: 800x800_png\Background\Bunny Club Connection_L.png
+Resizing image: scriptImages\Eyebrows\Virginia Wolfy Straight_L.png to 800x800
+Resized image saved: 600x600_png\Background\Bunny Club Connection_L.png
+Resizing image: scriptImages\Eyebrows\Virginia Wolfy Straight_L.png to 600x600
+Saved: compositeImages\Background\Bunny Club Connection.png
+Saved: 300x300_jpg\Background\Bunny Club Connection.jpg
+Processing image group: Virginia Wolfy Straight
+Resized image saved: 800x800_png\Eyebrows\Virginia Wolfy Straight_L.png
+Resizing image: scriptImages\Frame\Flag Banner_C1.png to 800x800
+Processing file: Virginia Wolfy Straight_L.png in subfolder: Eyebrows
+Checking existence of PNG: compositeImages\Eyebrows\Virginia Wolfy Straight.png
+Checking existence of JPG: 300x300_jpg\Eyebrows\Virginia Wolfy Straight.jpg
+Files not found, processing: PNG - compositeImages\Eyebrows\Virginia Wolfy Straight.png, JPG - 300x300_jpg\Eyebrows\Virginia Wolfy Straight.jpg
+Resized image saved: 600x600_png\Eyebrows\Virginia Wolfy Straight_L.png
+Resizing image: scriptImages\Frame\Flag Banner_C1.png to 600x600
+Saved: compositeImages\Eyebrows\Virginia Wolfy Straight.png
+Saved: 300x300_jpg\Eyebrows\Virginia Wolfy Straight.jpg
+Processing image group: Flag Banner
+Resized image saved: 800x800_png\Frame\Flag Banner_C1.png
+Resizing image: scriptImages\Frame\Flag Banner_C2.png to 800x800
+Resized image saved: 600x600_png\Frame\Flag Banner_C1.png
+Resizing image: scriptImages\Frame\Flag Banner_C2.png to 600x600
+Processing file: Flag Banner_C1.png in subfolder: Frame
+Resized image saved: 600x600_png\Frame\Flag Banner_C2.png
+Resizing image: scriptImages\Frame\Flag Banner_L.png to 600x600
+Processing file: Flag Banner_C2.png in subfolder: Frame
+Resized image saved: 800x800_png\Frame\Flag Banner_C2.png
+Resizing image: scriptImages\Frame\Flag Banner_L.png to 800x800
+Processing file: Flag Banner_L.png in subfolder: Frame
+Checking existence of PNG: compositeImages\Frame\Flag Banner.png
+Checking existence of JPG: 300x300_jpg\Frame\Flag Banner.jpg
+Files not found, processing: PNG - compositeImages\Frame\Flag Banner.png, JPG - 300x300_jpg\Frame\Flag Banner.jpg
+Saved: compositeImages\Frame\Flag Banner.png
+Resized image saved: 600x600_png\Frame\Flag Banner_L.png
+Resizing image: scriptImages\Frame\Hunnygram Delivery Critters_C1.png to 600x600
+Resized image saved: 800x800_png\Frame\Flag Banner_L.png
+Resizing image: scriptImages\Frame\Hunnygram Delivery Critters_C1.png to 800x800
+Saved: 300x300_jpg\Frame\Flag Banner.jpg
+Processing image group: Hunnygram Delivery Critters
+Processing file: Hunnygram Delivery Critters_C1.png in subfolder: Frame
+Resized image saved: 600x600_png\Frame\Hunnygram Delivery Critters_C1.png
+Resizing image: scriptImages\Frame\Hunnygram Delivery Critters_C2.png to 600x600
+Resized image saved: 800x800_png\Frame\Hunnygram Delivery Critters_C1.png
+Resizing image: scriptImages\Frame\Hunnygram Delivery Critters_C2.png to 800x800
+Processing file: Hunnygram Delivery Critters_C2.png in subfolder: Frame
+Resized image saved: 600x600_png\Frame\Hunnygram Delivery Critters_C2.png
+Resizing image: scriptImages\Frame\Hunnygram Delivery Critters_C3.png to 600x600
+Processing file: Hunnygram Delivery Critters_C3.png in subfolder: Frame
+Resized image saved: 800x800_png\Frame\Hunnygram Delivery Critters_C2.png
+Resizing image: scriptImages\Frame\Hunnygram Delivery Critters_C3.png to 800x800
+Resized image saved: 600x600_png\Frame\Hunnygram Delivery Critters_C3.png
+Resizing image: scriptImages\Frame\Hunnygram Delivery Critters_C4.png to 600x600
+Resized image saved: 800x800_png\Frame\Hunnygram Delivery Critters_C3.png
+Resizing image: scriptImages\Frame\Hunnygram Delivery Critters_C4.png to 800x800
+Processing file: Hunnygram Delivery Critters_C4.png in subfolder: Frame
+Resized image saved: 600x600_png\Frame\Hunnygram Delivery Critters_C4.png
+Resizing image: scriptImages\Frame\Hunnygram Delivery Critters_C5.png to 600x600
+Resized image saved: 800x800_png\Frame\Hunnygram Delivery Critters_C4.png
+Resizing image: scriptImages\Frame\Hunnygram Delivery Critters_C5.png to 800x800
+Processing file: Hunnygram Delivery Critters_C5.png in subfolder: Frame
+Resized image saved: 600x600_png\Frame\Hunnygram Delivery Critters_C5.png
+Resizing image: scriptImages\Frame\Hunnygram Delivery Critters_L.png to 600x600
+Resized image saved: 800x800_png\Frame\Hunnygram Delivery Critters_C5.png
+Resizing image: scriptImages\Frame\Hunnygram Delivery Critters_L.png to 800x800
+Processing file: Hunnygram Delivery Critters_L.png in subfolder: Frame
+Checking existence of PNG: compositeImages\Frame\Hunnygram Delivery Critters.png
+Checking existence of JPG: 300x300_jpg\Frame\Hunnygram Delivery Critters.jpg
+Files not found, processing: PNG - compositeImages\Frame\Hunnygram Delivery Critters.png, JPG - 300x300_jpg\Frame\Hunnygram Delivery Critters.jpg
+Saved: compositeImages\Frame\Hunnygram Delivery Critters.png
+Resized image saved: 600x600_png\Frame\Hunnygram Delivery Critters_L.png
+Resizing image: scriptImages\Frame\Pretty Psychic Sting Lights_C1.png to 600x600
+Resized image saved: 800x800_png\Frame\Hunnygram Delivery Critters_L.png
+Resizing image: scriptImages\Frame\Pretty Psychic Sting Lights_C1.png to 800x800
+Saved: 300x300_jpg\Frame\Hunnygram Delivery Critters.jpg
+Processing image group: Pretty Psychic Sting Lights
+Processing file: Pretty Psychic Sting Lights_C1.png in subfolder: Frame
+Resized image saved: 600x600_png\Frame\Pretty Psychic Sting Lights_C1.png
+Resizing image: scriptImages\Frame\Pretty Psychic Sting Lights_C2.png to 600x600
+Resized image saved: 800x800_png\Frame\Pretty Psychic Sting Lights_C1.png
+Resizing image: scriptImages\Frame\Pretty Psychic Sting Lights_C2.png to 800x800
+Processing file: Pretty Psychic Sting Lights_C2.png in subfolder: Frame
+Resized image saved: 600x600_png\Frame\Pretty Psychic Sting Lights_C2.png
+Resizing image: scriptImages\Frame\Pretty Psychic Sting Lights_C3.png to 600x600
+Resized image saved: 800x800_png\Frame\Pretty Psychic Sting Lights_C2.png
+Resizing image: scriptImages\Frame\Pretty Psychic Sting Lights_C3.png to 800x800
+Processing file: Pretty Psychic Sting Lights_C3.png in subfolder: Frame
+Resized image saved: 800x800_png\Frame\Pretty Psychic Sting Lights_C3.png
+Resizing image: scriptImages\Frame\Pretty Psychic Sting Lights_C4.png to 800x800
+Resized image saved: 600x600_png\Frame\Pretty Psychic Sting Lights_C3.png
+Resizing image: scriptImages\Frame\Pretty Psychic Sting Lights_C4.png to 600x600
+Processing file: Pretty Psychic Sting Lights_C4.png in subfolder: Frame
+Resized image saved: 800x800_png\Frame\Pretty Psychic Sting Lights_C4.png
+Resizing image: scriptImages\Frame\Pretty Psychic Sting Lights_C5.png to 800x800
+Resized image saved: 600x600_png\Frame\Pretty Psychic Sting Lights_C4.png
+Resizing image: scriptImages\Frame\Pretty Psychic Sting Lights_C5.png to 600x600
+Processing file: Pretty Psychic Sting Lights_C5.png in subfolder: Frame
+Resized image saved: 800x800_png\Frame\Pretty Psychic Sting Lights_C5.png
+Resizing image: scriptImages\Frame\Pretty Psychic Sting Lights_L.png to 800x800
+Resized image saved: 600x600_png\Frame\Pretty Psychic Sting Lights_C5.png
+Resizing image: scriptImages\Frame\Pretty Psychic Sting Lights_L.png to 600x600
+Processing file: Pretty Psychic Sting Lights_L.png in subfolder: Frame
+Checking existence of PNG: compositeImages\Frame\Pretty Psychic Sting Lights.png
+Checking existence of JPG: 300x300_jpg\Frame\Pretty Psychic Sting Lights.jpg
+Files not found, processing: PNG - compositeImages\Frame\Pretty Psychic Sting Lights.png, JPG - 300x300_jpg\Frame\Pretty Psychic Sting Lights.jpg
+Saved: compositeImages\Frame\Pretty Psychic Sting Lights.png
+Resized image saved: 800x800_png\Frame\Pretty Psychic Sting Lights_L.png
+Resizing image: scriptImages\Hair Style\Virginia Wolf_C1.png to 800x800
+Saved: 300x300_jpg\Frame\Pretty Psychic Sting Lights.jpg
+Processing image group: Virginia Wolf
+Resized image saved: 600x600_png\Frame\Pretty Psychic Sting Lights_L.png
+Resizing image: scriptImages\Hair Style\Virginia Wolf_C1.png to 600x600
+Processing file: Virginia Wolf_C1.png in subfolder: Hair Style
+Processing file: Virginia Wolf_C1.png in Hair Style
+Resized image saved: 800x800_png\Hair Style\Virginia Wolf_C1.png
+Resizing image: scriptImages\Hair Style\Virginia Wolf_C2.png to 800x800
+Processing file: Virginia Wolf_C2.png in Hair Style
+Resized image saved: 600x600_png\Hair Style\Virginia Wolf_C1.png
+Resizing image: scriptImages\Hair Style\Virginia Wolf_C2.png to 600x600
+Processing file: Virginia Wolf_L.png in Hair Style
+Resized image saved: 800x800_png\Hair Style\Virginia Wolf_C2.png
+Resizing image: scriptImages\Hair Style\Virginia Wolf_L.png to 800x800
+Resized image saved: 600x600_png\Hair Style\Virginia Wolf_C2.png
+Resizing image: scriptImages\Hair Style\Virginia Wolf_L.png to 600x600
+Resized image saved: 800x800_png\Hair Style\Virginia Wolf_L.png
+Resizing image: scriptImages\Hand\Box Of Chocolates_C1.png to 800x800
+Resized image saved: 600x600_png\Hair Style\Virginia Wolf_L.png
+Resizing image: scriptImages\Hand\Box Of Chocolates_C1.png to 600x600
+Processing file: Virginia Wolf_C2.png in subfolder: Hair Style
+Processing file: Virginia Wolf_C1.png in Hair Style
+Resized image saved: 800x800_png\Hand\Box Of Chocolates_C1.png
+Resizing image: scriptImages\Hand\Box Of Chocolates_C2.png to 800x800
+Processing file: Virginia Wolf_C2.png in Hair Style
+Resized image saved: 600x600_png\Hand\Box Of Chocolates_C1.png
+Resizing image: scriptImages\Hand\Box Of Chocolates_C2.png to 600x600
+Resized image saved: 800x800_png\Hand\Box Of Chocolates_C2.png
+Resizing image: scriptImages\Hand\Box Of Chocolates_C3.png to 800x800
+Processing file: Virginia Wolf_L.png in Hair Style
+Resized image saved: 600x600_png\Hand\Box Of Chocolates_C2.png
+Resizing image: scriptImages\Hand\Box Of Chocolates_C3.png to 600x600
+Resized image saved: 800x800_png\Hand\Box Of Chocolates_C3.png
+Resizing image: scriptImages\Hand\Box Of Chocolates_C4.png to 800x800
+Resized image saved: 600x600_png\Hand\Box Of Chocolates_C3.png
+Resizing image: scriptImages\Hand\Box Of Chocolates_C4.png to 600x600
+Processing file: Virginia Wolf_L.png in subfolder: Hair Style
+Processing file: Virginia Wolf_C1.png in Hair Style
+Resized image saved: 800x800_png\Hand\Box Of Chocolates_C4.png
+Resizing image: scriptImages\Hand\Box Of Chocolates_L.png to 800x800
+Processing file: Virginia Wolf_C2.png in Hair Style
+Resized image saved: 600x600_png\Hand\Box Of Chocolates_C4.png
+Resizing image: scriptImages\Hand\Box Of Chocolates_L.png to 600x600
+Processing file: Virginia Wolf_L.png in Hair Style
+Resized image saved: 800x800_png\Hand\Box Of Chocolates_L.png
+Resizing image: scriptImages\Hand\Box Of Chocolates_S.png to 800x800
+Resized image saved: 600x600_png\Hand\Box Of Chocolates_L.png
+Resizing image: scriptImages\Hand\Box Of Chocolates_S.png to 600x600
+Resized image saved: 800x800_png\Hand\Box Of Chocolates_S.png
+Resizing image: scriptImages\Hand\ChompZilla Boquet_C1.png to 800x800
+Checking existence of PNG: compositeImages\Hair Style\Virginia Wolf.png
+Checking existence of JPG: 300x300_jpg\Hair Style\Virginia Wolf.jpg
+Skipping existing files: PNG - compositeImages\Hair Style\Virginia Wolf.png, JPG - 300x300_jpg\Hair Style\Virginia Wolf.jpg
+Processing image group: Box Of Chocolates
+Resized image saved: 600x600_png\Hand\Box Of Chocolates_S.png
+Resizing image: scriptImages\Hand\ChompZilla Boquet_C1.png to 600x600
+Processing file: Box Of Chocolates_C1.png in subfolder: Hand
+Resized image saved: 800x800_png\Hand\ChompZilla Boquet_C1.png
+Resizing image: scriptImages\Hand\ChompZilla Boquet_C2.png to 800x800
+Processing file: Box Of Chocolates_C2.png in subfolder: Hand
+Resized image saved: 600x600_png\Hand\ChompZilla Boquet_C1.png
+Resizing image: scriptImages\Hand\ChompZilla Boquet_C2.png to 600x600
+Processing file: Box Of Chocolates_C3.png in subfolder: Hand
+Resized image saved: 800x800_png\Hand\ChompZilla Boquet_C2.png
+Resizing image: scriptImages\Hand\ChompZilla Boquet_C3.png to 800x800
+Processing file: Box Of Chocolates_C4.png in subfolder: Hand
+Resized image saved: 600x600_png\Hand\ChompZilla Boquet_C2.png
+Resizing image: scriptImages\Hand\ChompZilla Boquet_C3.png to 600x600
+Processing file: Box Of Chocolates_L.png in subfolder: Hand
+Resized image saved: 800x800_png\Hand\ChompZilla Boquet_C3.png
+Resizing image: scriptImages\Hand\ChompZilla Boquet_C4.png to 800x800
+Processing file: Box Of Chocolates_S.png in subfolder: Hand
+Checking existence of PNG: compositeImages\Hand\Box Of Chocolates.png
+Checking existence of JPG: 300x300_jpg\Hand\Box Of Chocolates.jpg
+Files not found, processing: PNG - compositeImages\Hand\Box Of Chocolates.png, JPG - 300x300_jpg\Hand\Box Of Chocolates.jpg
+Resized image saved: 600x600_png\Hand\ChompZilla Boquet_C3.png
+Resizing image: scriptImages\Hand\ChompZilla Boquet_C4.png to 600x600
+Saved: compositeImages\Hand\Box Of Chocolates.png
+Resized image saved: 800x800_png\Hand\ChompZilla Boquet_C4.png
+Resizing image: scriptImages\Hand\ChompZilla Boquet_C5.png to 800x800
+Saved: 300x300_jpg\Hand\Box Of Chocolates.jpg
+Processing image group: ChompZilla Boquet
+Processing file: ChompZilla Boquet_C1.png in subfolder: Hand
+Resized image saved: 600x600_png\Hand\ChompZilla Boquet_C4.png
+Resizing image: scriptImages\Hand\ChompZilla Boquet_C5.png to 600x600
+Resized image saved: 800x800_png\Hand\ChompZilla Boquet_C5.png
+Resizing image: scriptImages\Hand\ChompZilla Boquet_L.png to 800x800
+Processing file: ChompZilla Boquet_C2.png in subfolder: Hand
+Processing file: ChompZilla Boquet_C3.png in subfolder: Hand
+Resized image saved: 600x600_png\Hand\ChompZilla Boquet_C5.png
+Resizing image: scriptImages\Hand\ChompZilla Boquet_L.png to 600x600
+Resized image saved: 800x800_png\Hand\ChompZilla Boquet_L.png
+Resizing image: scriptImages\Hand\ChompZilla Boquet_S.png to 800x800
+Processing file: ChompZilla Boquet_C4.png in subfolder: Hand
+Resized image saved: 600x600_png\Hand\ChompZilla Boquet_L.png
+Resizing image: scriptImages\Hand\ChompZilla Boquet_S.png to 600x600
+Processing file: ChompZilla Boquet_C5.png in subfolder: Hand
+Resized image saved: 800x800_png\Hand\ChompZilla Boquet_S.png
+Resizing image: scriptImages\Hand\Crystal Love Ball_C1.png to 800x800
+Processing file: ChompZilla Boquet_L.png in subfolder: Hand
+Resized image saved: 600x600_png\Hand\ChompZilla Boquet_S.png
+Resizing image: scriptImages\Hand\Crystal Love Ball_C1.png to 600x600
+Processing file: ChompZilla Boquet_S.png in subfolder: Hand
+Checking existence of PNG: compositeImages\Hand\ChompZilla Boquet.png
+Checking existence of JPG: 300x300_jpg\Hand\ChompZilla Boquet.jpg
+Files not found, processing: PNG - compositeImages\Hand\ChompZilla Boquet.png, JPG - 300x300_jpg\Hand\ChompZilla Boquet.jpg
+Resized image saved: 800x800_png\Hand\Crystal Love Ball_C1.png
+Resizing image: scriptImages\Hand\Crystal Love Ball_C2.png to 800x800
+Saved: compositeImages\Hand\ChompZilla Boquet.png
+Resized image saved: 600x600_png\Hand\Crystal Love Ball_C1.png
+Resizing image: scriptImages\Hand\Crystal Love Ball_C2.png to 600x600
+Saved: 300x300_jpg\Hand\ChompZilla Boquet.jpg
+Processing image group: Crystal Love Ball
+Resized image saved: 800x800_png\Hand\Crystal Love Ball_C2.png
+Resizing image: scriptImages\Hand\Crystal Love Ball_C3.png to 800x800
+Processing file: Crystal Love Ball_C1.png in subfolder: Hand
+Resized image saved: 600x600_png\Hand\Crystal Love Ball_C2.png
+Resizing image: scriptImages\Hand\Crystal Love Ball_C3.png to 600x600
+Processing file: Crystal Love Ball_C2.png in subfolder: Hand
+Resized image saved: 800x800_png\Hand\Crystal Love Ball_C3.png
+Resizing image: scriptImages\Hand\Crystal Love Ball_C4.png to 800x800
+Processing file: Crystal Love Ball_C3.png in subfolder: Hand
+Resized image saved: 600x600_png\Hand\Crystal Love Ball_C3.png
+Resizing image: scriptImages\Hand\Crystal Love Ball_C4.png to 600x600
+Processing file: Crystal Love Ball_C4.png in subfolder: Hand
+Resized image saved: 800x800_png\Hand\Crystal Love Ball_C4.png
+Resizing image: scriptImages\Hand\Crystal Love Ball_C5.png to 800x800
+Resized image saved: 600x600_png\Hand\Crystal Love Ball_C4.png
+Resizing image: scriptImages\Hand\Crystal Love Ball_C5.png to 600x600
+Processing file: Crystal Love Ball_C5.png in subfolder: Hand
+Resized image saved: 800x800_png\Hand\Crystal Love Ball_C5.png
+Resizing image: scriptImages\Hand\Crystal Love Ball_L.png to 800x800
+Processing file: Crystal Love Ball_L.png in subfolder: Hand
+Resized image saved: 600x600_png\Hand\Crystal Love Ball_C5.png
+Resizing image: scriptImages\Hand\Crystal Love Ball_L.png to 600x600
+Resized image saved: 800x800_png\Hand\Crystal Love Ball_L.png
+Resizing image: scriptImages\Hand\Crystal Love Ball_S.png to 800x800
+Processing file: Crystal Love Ball_S.png in subfolder: Hand
+Checking existence of PNG: compositeImages\Hand\Crystal Love Ball.png
+Checking existence of JPG: 300x300_jpg\Hand\Crystal Love Ball.jpg
+Files not found, processing: PNG - compositeImages\Hand\Crystal Love Ball.png, JPG - 300x300_jpg\Hand\Crystal Love Ball.jpg
+Saved: compositeImages\Hand\Crystal Love Ball.png
+Resized image saved: 600x600_png\Hand\Crystal Love Ball_L.png
+Resizing image: scriptImages\Hand\Crystal Love Ball_S.png to 600x600
+Saved: 300x300_jpg\Hand\Crystal Love Ball.jpg
+Processing image group: I Heart U
+Resized image saved: 800x800_png\Hand\Crystal Love Ball_S.png
+Resizing image: scriptImages\Hand\I Heart U_C1.png to 800x800
+Resized image saved: 600x600_png\Hand\Crystal Love Ball_S.png
+Resizing image: scriptImages\Hand\I Heart U_C1.png to 600x600
+Processing file: I Heart U_C1.png in subfolder: Hand
+Resized image saved: 800x800_png\Hand\I Heart U_C1.png
+Resizing image: scriptImages\Hand\I Heart U_C2.png to 800x800
+Processing file: I Heart U_C2.png in subfolder: Hand
+Resized image saved: 600x600_png\Hand\I Heart U_C1.png
+Resizing image: scriptImages\Hand\I Heart U_C2.png to 600x600
+Processing file: I Heart U_C3.png in subfolder: Hand
+Resized image saved: 800x800_png\Hand\I Heart U_C2.png
+Resizing image: scriptImages\Hand\I Heart U_C3.png to 800x800
+Resized image saved: 600x600_png\Hand\I Heart U_C2.png
+Resizing image: scriptImages\Hand\I Heart U_C3.png to 600x600
+Resized image saved: 800x800_png\Hand\I Heart U_C3.png
+Resizing image: scriptImages\Hand\I Heart U_L.png to 800x800
+Resized image saved: 600x600_png\Hand\I Heart U_C3.png
+Resizing image: scriptImages\Hand\I Heart U_L.png to 600x600
+Processing file: I Heart U_L.png in subfolder: Hand
+Resized image saved: 800x800_png\Hand\I Heart U_L.png
+Resizing image: scriptImages\Hand\I Heart U_S.png to 800x800
+Processing file: I Heart U_S.png in subfolder: Hand
+Checking existence of PNG: compositeImages\Hand\I Heart U.png
+Checking existence of JPG: 300x300_jpg\Hand\I Heart U.jpg
+Files not found, processing: PNG - compositeImages\Hand\I Heart U.png, JPG - 300x300_jpg\Hand\I Heart U.jpg
+Resized image saved: 600x600_png\Hand\I Heart U_L.png
+Resizing image: scriptImages\Hand\I Heart U_S.png to 600x600
+Saved: compositeImages\Hand\I Heart U.png
+Saved: 300x300_jpg\Hand\I Heart U.jpg
+Processing image group: Kissy Town Singing Ring
+Resized image saved: 800x800_png\Hand\I Heart U_S.png
+Resizing image: scriptImages\Hand\Kissy Town Singing Ring_C1.png to 800x800
+Processing file: Kissy Town Singing Ring_C1.png in subfolder: Hand
+Resized image saved: 600x600_png\Hand\I Heart U_S.png
+Resizing image: scriptImages\Hand\Kissy Town Singing Ring_C1.png to 600x600
+Resized image saved: 800x800_png\Hand\Kissy Town Singing Ring_C1.png
+Resizing image: scriptImages\Hand\Kissy Town Singing Ring_C2.png to 800x800
+Processing file: Kissy Town Singing Ring_C2.png in subfolder: Hand
+Resized image saved: 600x600_png\Hand\Kissy Town Singing Ring_C1.png
+Resizing image: scriptImages\Hand\Kissy Town Singing Ring_C2.png to 600x600
+Resized image saved: 800x800_png\Hand\Kissy Town Singing Ring_C2.png
+Resizing image: scriptImages\Hand\Kissy Town Singing Ring_C3.png to 800x800
+Processing file: Kissy Town Singing Ring_C3.png in subfolder: Hand
+Resized image saved: 600x600_png\Hand\Kissy Town Singing Ring_C2.png
+Resizing image: scriptImages\Hand\Kissy Town Singing Ring_C3.png to 600x600
+Resized image saved: 800x800_png\Hand\Kissy Town Singing Ring_C3.png
+Resizing image: scriptImages\Hand\Kissy Town Singing Ring_L.png to 800x800
+Processing file: Kissy Town Singing Ring_L.png in subfolder: Hand
+Resized image saved: 600x600_png\Hand\Kissy Town Singing Ring_C3.png
+Resizing image: scriptImages\Hand\Kissy Town Singing Ring_L.png to 600x600
+Resized image saved: 800x800_png\Hand\Kissy Town Singing Ring_L.png
+Resizing image: scriptImages\Hand\Kissy Town Singing Ring_S.png to 800x800
+Processing file: Kissy Town Singing Ring_S.png in subfolder: Hand
+Checking existence of PNG: compositeImages\Hand\Kissy Town Singing Ring.png
+Checking existence of JPG: 300x300_jpg\Hand\Kissy Town Singing Ring.jpg
+Files not found, processing: PNG - compositeImages\Hand\Kissy Town Singing Ring.png, JPG - 300x300_jpg\Hand\Kissy Town Singing Ring.jpg
+Saved: compositeImages\Hand\Kissy Town Singing Ring.png
+Resized image saved: 600x600_png\Hand\Kissy Town Singing Ring_L.png
+Resizing image: scriptImages\Hand\Kissy Town Singing Ring_S.png to 600x600
+Saved: 300x300_jpg\Hand\Kissy Town Singing Ring.jpg
+Processing image group: LomBUNdi Trophy 2024
+Resized image saved: 800x800_png\Hand\Kissy Town Singing Ring_S.png
+Resizing image: scriptImages\Hand\LomBUNdi Trophy 2024_C1.png to 800x800
+Processing file: LomBUNdi Trophy 2024_C1.png in subfolder: Hand
+Resized image saved: 600x600_png\Hand\Kissy Town Singing Ring_S.png
+Resizing image: scriptImages\Hand\LomBUNdi Trophy 2024_C1.png to 600x600
+Resized image saved: 800x800_png\Hand\LomBUNdi Trophy 2024_C1.png
+Resizing image: scriptImages\Hand\LomBUNdi Trophy 2024_C2.png to 800x800
+Processing file: LomBUNdi Trophy 2024_C2.png in subfolder: Hand
+Resized image saved: 600x600_png\Hand\LomBUNdi Trophy 2024_C1.png
+Resizing image: scriptImages\Hand\LomBUNdi Trophy 2024_C2.png to 600x600
+Resized image saved: 800x800_png\Hand\LomBUNdi Trophy 2024_C2.png
+Resizing image: scriptImages\Hand\LomBUNdi Trophy 2024_C3.png to 800x800
+Processing file: LomBUNdi Trophy 2024_C3.png in subfolder: Hand
+Resized image saved: 600x600_png\Hand\LomBUNdi Trophy 2024_C2.png
+Resizing image: scriptImages\Hand\LomBUNdi Trophy 2024_C3.png to 600x600
+Processing file: LomBUNdi Trophy 2024_L.png in subfolder: Hand
+Resized image saved: 800x800_png\Hand\LomBUNdi Trophy 2024_C3.png
+Resizing image: scriptImages\Hand\LomBUNdi Trophy 2024_L.png to 800x800
+Resized image saved: 600x600_png\Hand\LomBUNdi Trophy 2024_C3.png
+Resizing image: scriptImages\Hand\LomBUNdi Trophy 2024_L.png to 600x600
+Resized image saved: 800x800_png\Hand\LomBUNdi Trophy 2024_L.png
+Resizing image: scriptImages\Hand\LomBUNdi Trophy 2024_S.png to 800x800
+Processing file: LomBUNdi Trophy 2024_S.png in subfolder: Hand
+Checking existence of PNG: compositeImages\Hand\LomBUNdi Trophy 2024.png
+Checking existence of JPG: 300x300_jpg\Hand\LomBUNdi Trophy 2024.jpg
+Files not found, processing: PNG - compositeImages\Hand\LomBUNdi Trophy 2024.png, JPG - 300x300_jpg\Hand\LomBUNdi Trophy 2024.jpg
+Saved: compositeImages\Hand\LomBUNdi Trophy 2024.png
+Resized image saved: 800x800_png\Hand\LomBUNdi Trophy 2024_S.png
+Resizing image: scriptImages\Hand\Pick Your Card_C1.png to 800x800
+Saved: 300x300_jpg\Hand\LomBUNdi Trophy 2024.jpg
+Processing image group: Pick Your Card
+Resized image saved: 600x600_png\Hand\LomBUNdi Trophy 2024_L.png
+Resizing image: scriptImages\Hand\LomBUNdi Trophy 2024_S.png to 600x600
+Processing file: Pick Your Card_C1.png in subfolder: Hand
+Resized image saved: 600x600_png\Hand\LomBUNdi Trophy 2024_S.png
+Resizing image: scriptImages\Hand\Pick Your Card_C1.png to 600x600
+Resized image saved: 800x800_png\Hand\Pick Your Card_C1.png
+Resizing image: scriptImages\Hand\Pick Your Card_C2.png to 800x800
+Processing file: Pick Your Card_C2.png in subfolder: Hand
+Resized image saved: 600x600_png\Hand\Pick Your Card_C1.png
+Resizing image: scriptImages\Hand\Pick Your Card_C2.png to 600x600
+Resized image saved: 800x800_png\Hand\Pick Your Card_C2.png
+Resizing image: scriptImages\Hand\Pick Your Card_C3.png to 800x800
+Processing file: Pick Your Card_C3.png in subfolder: Hand
+Resized image saved: 600x600_png\Hand\Pick Your Card_C2.png
+Resizing image: scriptImages\Hand\Pick Your Card_C3.png to 600x600
+Resized image saved: 800x800_png\Hand\Pick Your Card_C3.png
+Resizing image: scriptImages\Hand\Pick Your Card_L.png to 800x800
+Processing file: Pick Your Card_L.png in subfolder: Hand
+Resized image saved: 600x600_png\Hand\Pick Your Card_C3.png
+Resizing image: scriptImages\Hand\Pick Your Card_L.png to 600x600
+Resized image saved: 800x800_png\Hand\Pick Your Card_L.png
+Resizing image: scriptImages\Hand\Pick Your Card_S.png to 800x800
+Processing file: Pick Your Card_S.png in subfolder: Hand
+Checking existence of PNG: compositeImages\Hand\Pick Your Card.png
+Checking existence of JPG: 300x300_jpg\Hand\Pick Your Card.jpg
+Files not found, processing: PNG - compositeImages\Hand\Pick Your Card.png, JPG - 300x300_jpg\Hand\Pick Your Card.jpg
+Saved: compositeImages\Hand\Pick Your Card.png
+Resized image saved: 600x600_png\Hand\Pick Your Card_L.png
+Resizing image: scriptImages\Hand\Pick Your Card_S.png to 600x600
+Saved: 300x300_jpg\Hand\Pick Your Card.jpg
+Processing image group: Mayor Kissy
+Resized image saved: 800x800_png\Hand\Pick Your Card_S.png
+Resizing image: scriptImages\Mouth\Mayor Kissy_C1.png to 800x800
+Processing file: Mayor Kissy_C1.png in subfolder: Mouth
+Resized image saved: 600x600_png\Hand\Pick Your Card_S.png
+Resizing image: scriptImages\Mouth\Mayor Kissy_C1.png to 600x600
+Resized image saved: 800x800_png\Mouth\Mayor Kissy_C1.png
+Resizing image: scriptImages\Mouth\Mayor Kissy_C2.png to 800x800
+Processing file: Mayor Kissy_C2.png in subfolder: Mouth
+Resized image saved: 600x600_png\Mouth\Mayor Kissy_C1.png
+Resizing image: scriptImages\Mouth\Mayor Kissy_C2.png to 600x600
+Resized image saved: 800x800_png\Mouth\Mayor Kissy_C2.png
+Resizing image: scriptImages\Mouth\Mayor Kissy_L.png to 800x800
+Processing file: Mayor Kissy_L.png in subfolder: Mouth
+Checking existence of PNG: compositeImages\Mouth\Mayor Kissy.png
+Checking existence of JPG: 300x300_jpg\Mouth\Mayor Kissy.jpg
+Files not found, processing: PNG - compositeImages\Mouth\Mayor Kissy.png, JPG - 300x300_jpg\Mouth\Mayor Kissy.jpg
+Saved: compositeImages\Mouth\Mayor Kissy.png
+Resized image saved: 600x600_png\Mouth\Mayor Kissy_C2.png
+Resizing image: scriptImages\Mouth\Mayor Kissy_L.png to 600x600
+Resized image saved: 800x800_png\Mouth\Mayor Kissy_L.png
+Resizing image: scriptImages\Tattoo\Big Spoon_C1.png to 800x800
+Saved: 300x300_jpg\Mouth\Mayor Kissy.jpg
+Processing image group: Big Spoon
+Processing file: Big Spoon_C1.png in subfolder: Tattoo
+Resized image saved: 600x600_png\Mouth\Mayor Kissy_L.png
+Resizing image: scriptImages\Tattoo\Big Spoon_C1.png to 600x600
+Resized image saved: 800x800_png\Tattoo\Big Spoon_C1.png
+Resizing image: scriptImages\Tattoo\Big Spoon_C2.png to 800x800
+Processing file: Big Spoon_C2.png in subfolder: Tattoo
+Resized image saved: 600x600_png\Tattoo\Big Spoon_C1.png
+Resizing image: scriptImages\Tattoo\Big Spoon_C2.png to 600x600
+Resized image saved: 800x800_png\Tattoo\Big Spoon_C2.png
+Resizing image: scriptImages\Tattoo\Big Spoon_L.png to 800x800
+Processing file: Big Spoon_L.png in subfolder: Tattoo
+Checking existence of PNG: compositeImages\Tattoo\Big Spoon.png
+Checking existence of JPG: 300x300_jpg\Tattoo\Big Spoon.jpg
+Files not found, processing: PNG - compositeImages\Tattoo\Big Spoon.png, JPG - 300x300_jpg\Tattoo\Big Spoon.jpg
+Saved: compositeImages\Tattoo\Big Spoon.png
+Resized image saved: 600x600_png\Tattoo\Big Spoon_C2.png
+Resizing image: scriptImages\Tattoo\Big Spoon_L.png to 600x600
+Saved: 300x300_jpg\Tattoo\Big Spoon.jpg
+Processing image group: Bunny Butt
+Resized image saved: 800x800_png\Tattoo\Big Spoon_L.png
+Resizing image: scriptImages\Tattoo\Bunny Butt_C1.png to 800x800
+Processing file: Bunny Butt_C1.png in subfolder: Tattoo
+Resized image saved: 600x600_png\Tattoo\Big Spoon_L.png
+Resizing image: scriptImages\Tattoo\Bunny Butt_C1.png to 600x600
+Resized image saved: 800x800_png\Tattoo\Bunny Butt_C1.png
+Resizing image: scriptImages\Tattoo\Bunny Butt_C2.png to 800x800
+Processing file: Bunny Butt_C2.png in subfolder: Tattoo
+Resized image saved: 600x600_png\Tattoo\Bunny Butt_C1.png
+Resizing image: scriptImages\Tattoo\Bunny Butt_C2.png to 600x600
+Resized image saved: 800x800_png\Tattoo\Bunny Butt_C2.png
+Resizing image: scriptImages\Tattoo\Bunny Butt_L.png to 800x800
+Processing file: Bunny Butt_L.png in subfolder: Tattoo
+Checking existence of PNG: compositeImages\Tattoo\Bunny Butt.png
+Checking existence of JPG: 300x300_jpg\Tattoo\Bunny Butt.jpg
+Files not found, processing: PNG - compositeImages\Tattoo\Bunny Butt.png, JPG - 300x300_jpg\Tattoo\Bunny Butt.jpg
+Saved: compositeImages\Tattoo\Bunny Butt.png
+Resized image saved: 600x600_png\Tattoo\Bunny Butt_C2.png
+Resizing image: scriptImages\Tattoo\Bunny Butt_L.png to 600x600
+Resized image saved: 800x800_png\Tattoo\Bunny Butt_L.png
+Resizing image: scriptImages\Tattoo\Floop Love_C1.png to 800x800
+Saved: 300x300_jpg\Tattoo\Bunny Butt.jpg
+Processing image group: Floop Love
+Processing file: Floop Love_C1.png in subfolder: Tattoo
+Resized image saved: 600x600_png\Tattoo\Bunny Butt_L.png
+Resizing image: scriptImages\Tattoo\Floop Love_C1.png to 600x600
+Resized image saved: 800x800_png\Tattoo\Floop Love_C1.png
+Resizing image: scriptImages\Tattoo\Floop Love_L.png to 800x800
+Processing file: Floop Love_L.png in subfolder: Tattoo
+Checking existence of PNG: compositeImages\Tattoo\Floop Love.png
+Checking existence of JPG: 300x300_jpg\Tattoo\Floop Love.jpg
+Files not found, processing: PNG - compositeImages\Tattoo\Floop Love.png, JPG - 300x300_jpg\Tattoo\Floop Love.jpg
+Saved: compositeImages\Tattoo\Floop Love.png
+Resized image saved: 600x600_png\Tattoo\Floop Love_C1.png
+Resizing image: scriptImages\Tattoo\Floop Love_L.png to 600x600
+Saved: 300x300_jpg\Tattoo\Floop Love.jpg
+Processing image group: Ghost Bunny Love
+Resized image saved: 800x800_png\Tattoo\Floop Love_L.png
+Resizing image: scriptImages\Tattoo\Ghost Bunny Love_C1.png to 800x800
+Processing file: Ghost Bunny Love_C1.png in subfolder: Tattoo
+Resized image saved: 800x800_png\Tattoo\Ghost Bunny Love_C1.png
+Resizing image: scriptImages\Tattoo\Ghost Bunny Love_L.png to 800x800
+Resized image saved: 600x600_png\Tattoo\Floop Love_L.png
+Resizing image: scriptImages\Tattoo\Ghost Bunny Love_C1.png to 600x600
+Processing file: Ghost Bunny Love_L.png in subfolder: Tattoo
+Checking existence of PNG: compositeImages\Tattoo\Ghost Bunny Love.png
+Checking existence of JPG: 300x300_jpg\Tattoo\Ghost Bunny Love.jpg
+Files not found, processing: PNG - compositeImages\Tattoo\Ghost Bunny Love.png, JPG - 300x300_jpg\Tattoo\Ghost Bunny Love.jpg
+Resized image saved: 600x600_png\Tattoo\Ghost Bunny Love_C1.png
+Resizing image: scriptImages\Tattoo\Ghost Bunny Love_L.png to 600x600
+Saved: compositeImages\Tattoo\Ghost Bunny Love.png
+Resized image saved: 800x800_png\Tattoo\Ghost Bunny Love_L.png
+Resizing image: scriptImages\Tattoo\Ghost Croc Love_C1.png to 800x800
+Saved: 300x300_jpg\Tattoo\Ghost Bunny Love.jpg
+Processing image group: Ghost Croc Love
+Processing file: Ghost Croc Love_C1.png in subfolder: Tattoo
+Resized image saved: 600x600_png\Tattoo\Ghost Bunny Love_L.png
+Resizing image: scriptImages\Tattoo\Ghost Croc Love_C1.png to 600x600
+Resized image saved: 800x800_png\Tattoo\Ghost Croc Love_C1.png
+Resizing image: scriptImages\Tattoo\Ghost Croc Love_L.png to 800x800
+Processing file: Ghost Croc Love_L.png in subfolder: Tattoo
+Checking existence of PNG: compositeImages\Tattoo\Ghost Croc Love.png
+Checking existence of JPG: 300x300_jpg\Tattoo\Ghost Croc Love.jpg
+Files not found, processing: PNG - compositeImages\Tattoo\Ghost Croc Love.png, JPG - 300x300_jpg\Tattoo\Ghost Croc Love.jpg
+Resized image saved: 600x600_png\Tattoo\Ghost Croc Love_C1.png
+Resizing image: scriptImages\Tattoo\Ghost Croc Love_L.png to 600x600
+Resized image saved: 800x800_png\Tattoo\Ghost Croc Love_L.png
+Resizing image: scriptImages\Tattoo\Ghost Kitty Love_C1.png to 800x800
+Saved: compositeImages\Tattoo\Ghost Croc Love.png
+Saved: 300x300_jpg\Tattoo\Ghost Croc Love.jpg
+Processing image group: Ghost Kitty Love
+Resized image saved: 600x600_png\Tattoo\Ghost Croc Love_L.png
+Resizing image: scriptImages\Tattoo\Ghost Kitty Love_C1.png to 600x600
+Processing file: Ghost Kitty Love_C1.png in subfolder: Tattoo
+Resized image saved: 800x800_png\Tattoo\Ghost Kitty Love_C1.png
+Resizing image: scriptImages\Tattoo\Ghost Kitty Love_L.png to 800x800
+Processing file: Ghost Kitty Love_L.png in subfolder: Tattoo
+Checking existence of PNG: compositeImages\Tattoo\Ghost Kitty Love.png
+Checking existence of JPG: 300x300_jpg\Tattoo\Ghost Kitty Love.jpg
+Files not found, processing: PNG - compositeImages\Tattoo\Ghost Kitty Love.png, JPG - 300x300_jpg\Tattoo\Ghost Kitty Love.jpg
+Resized image saved: 600x600_png\Tattoo\Ghost Kitty Love_C1.png
+Resizing image: scriptImages\Tattoo\Ghost Kitty Love_L.png to 600x600
+Saved: compositeImages\Tattoo\Ghost Kitty Love.png
+Resized image saved: 800x800_png\Tattoo\Ghost Kitty Love_L.png
+Resizing image: scriptImages\Tattoo\Horny Hornsworth_C1.png to 800x800
+Saved: 300x300_jpg\Tattoo\Ghost Kitty Love.jpg
+Processing image group: Horny Hornsworth
+Processing file: Horny Hornsworth_C1.png in subfolder: Tattoo
+Resized image saved: 600x600_png\Tattoo\Ghost Kitty Love_L.png
+Resizing image: scriptImages\Tattoo\Horny Hornsworth_C1.png to 600x600
+Processing file: Horny Hornsworth_C2.png in subfolder: Tattoo
+Resized image saved: 800x800_png\Tattoo\Horny Hornsworth_C1.png
+Resizing image: scriptImages\Tattoo\Horny Hornsworth_C2.png to 800x800
+Resized image saved: 600x600_png\Tattoo\Horny Hornsworth_C1.png
+Resizing image: scriptImages\Tattoo\Horny Hornsworth_C2.png to 600x600
+Processing file: Horny Hornsworth_L.png in subfolder: Tattoo
+Checking existence of PNG: compositeImages\Tattoo\Horny Hornsworth.png
+Checking existence of JPG: 300x300_jpg\Tattoo\Horny Hornsworth.jpg
+Files not found, processing: PNG - compositeImages\Tattoo\Horny Hornsworth.png, JPG - 300x300_jpg\Tattoo\Horny Hornsworth.jpg
+Saved: compositeImages\Tattoo\Horny Hornsworth.png
+Resized image saved: 800x800_png\Tattoo\Horny Hornsworth_C2.png
+Resizing image: scriptImages\Tattoo\Horny Hornsworth_L.png to 800x800
+Saved: 300x300_jpg\Tattoo\Horny Hornsworth.jpg
+Processing image group: Lil Spoon
+Resized image saved: 600x600_png\Tattoo\Horny Hornsworth_C2.png
+Resizing image: scriptImages\Tattoo\Horny Hornsworth_L.png to 600x600
+Processing file: Lil Spoon_C1.png in subfolder: Tattoo
+Resized image saved: 800x800_png\Tattoo\Horny Hornsworth_L.png
+Resizing image: scriptImages\Tattoo\Lil Spoon_C1.png to 800x800
+Resized image saved: 600x600_png\Tattoo\Horny Hornsworth_L.png
+Resizing image: scriptImages\Tattoo\Lil Spoon_C1.png to 600x600
+Processing file: Lil Spoon_C2.png in subfolder: Tattoo
+Resized image saved: 800x800_png\Tattoo\Lil Spoon_C1.png
+Resizing image: scriptImages\Tattoo\Lil Spoon_C2.png to 800x800
+Resized image saved: 600x600_png\Tattoo\Lil Spoon_C1.png
+Resizing image: scriptImages\Tattoo\Lil Spoon_C2.png to 600x600
+Processing file: Lil Spoon_L.png in subfolder: Tattoo
+Checking existence of PNG: compositeImages\Tattoo\Lil Spoon.png
+Checking existence of JPG: 300x300_jpg\Tattoo\Lil Spoon.jpg
+Files not found, processing: PNG - compositeImages\Tattoo\Lil Spoon.png, JPG - 300x300_jpg\Tattoo\Lil Spoon.jpg
+Saved: compositeImages\Tattoo\Lil Spoon.png
+Saved: 300x300_jpg\Tattoo\Lil Spoon.jpg
+Processing image group: Moony BB
+Resized image saved: 800x800_png\Tattoo\Lil Spoon_C2.png
+Resizing image: scriptImages\Tattoo\Lil Spoon_L.png to 800x800
+Resized image saved: 600x600_png\Tattoo\Lil Spoon_C2.png
+Resizing image: scriptImages\Tattoo\Lil Spoon_L.png to 600x600
+Processing file: Moony BB_C1.png in subfolder: Tattoo
+Resized image saved: 800x800_png\Tattoo\Lil Spoon_L.png
+Resizing image: scriptImages\Tattoo\Moony BB_C1.png to 800x800
+Resized image saved: 600x600_png\Tattoo\Lil Spoon_L.png
+Resizing image: scriptImages\Tattoo\Moony BB_C1.png to 600x600
+Resized image saved: 800x800_png\Tattoo\Moony BB_C1.png
+Resizing image: scriptImages\Tattoo\Moony BB_L.png to 800x800
+Processing file: Moony BB_L.png in subfolder: Tattoo
+Checking existence of PNG: compositeImages\Tattoo\Moony BB.png
+Checking existence of JPG: 300x300_jpg\Tattoo\Moony BB.jpg
+Files not found, processing: PNG - compositeImages\Tattoo\Moony BB.png, JPG - 300x300_jpg\Tattoo\Moony BB.jpg
+Resized image saved: 600x600_png\Tattoo\Moony BB_C1.png
+Resizing image: scriptImages\Tattoo\Moony BB_L.png to 600x600
+Saved: compositeImages\Tattoo\Moony BB.png
+Saved: 300x300_jpg\Tattoo\Moony BB.jpg
+Processing image group: Space Party
+Resized image saved: 800x800_png\Tattoo\Moony BB_L.png
+Resizing image: scriptImages\Tattoo\Space Party_C1.png to 800x800
+Resized image saved: 600x600_png\Tattoo\Moony BB_L.png
+Resizing image: scriptImages\Tattoo\Space Party_C1.png to 600x600
+Processing file: Space Party_C1.png in subfolder: Tattoo
+Resized image saved: 600x600_png\Tattoo\Space Party_C1.png
+Resizing image: scriptImages\Tattoo\Space Party_C2.png to 600x600
+Resized image saved: 800x800_png\Tattoo\Space Party_C1.png
+Resizing image: scriptImages\Tattoo\Space Party_C2.png to 800x800
+Processing file: Space Party_C2.png in subfolder: Tattoo
+Resized image saved: 600x600_png\Tattoo\Space Party_C2.png
+Resizing image: scriptImages\Tattoo\Space Party_C3.png to 600x600
+Processing file: Space Party_C3.png in subfolder: Tattoo
+Resized image saved: 800x800_png\Tattoo\Space Party_C2.png
+Resizing image: scriptImages\Tattoo\Space Party_C3.png to 800x800
+Resized image saved: 600x600_png\Tattoo\Space Party_C3.png
+Resizing image: scriptImages\Tattoo\Space Party_L.png to 600x600
+Resized image saved: 800x800_png\Tattoo\Space Party_C3.png
+Resizing image: scriptImages\Tattoo\Space Party_L.png to 800x800
+Processing file: Space Party_L.png in subfolder: Tattoo
+Checking existence of PNG: compositeImages\Tattoo\Space Party.png
+Checking existence of JPG: 300x300_jpg\Tattoo\Space Party.jpg
+Files not found, processing: PNG - compositeImages\Tattoo\Space Party.png, JPG - 300x300_jpg\Tattoo\Space Party.jpg
+Saved: compositeImages\Tattoo\Space Party.png
+Saved: 300x300_jpg\Tattoo\Space Party.jpg
+Processing image group: Starry BB
+Resized image saved: 600x600_png\Tattoo\Space Party_L.png
+Resizing image: scriptImages\Tattoo\Starry BB_C1.png to 600x600
+Resized image saved: 800x800_png\Tattoo\Space Party_L.png
+Resizing image: scriptImages\Tattoo\Starry BB_C1.png to 800x800
+Processing file: Starry BB_C1.png in subfolder: Tattoo
+Resized image saved: 800x800_png\Tattoo\Starry BB_C1.png
+Resizing image: scriptImages\Tattoo\Starry BB_L.png to 800x800
+Resized image saved: 600x600_png\Tattoo\Starry BB_C1.png
+Resizing image: scriptImages\Tattoo\Starry BB_L.png to 600x600
+Processing file: Starry BB_L.png in subfolder: Tattoo
+Checking existence of PNG: compositeImages\Tattoo\Starry BB.png
+Checking existence of JPG: 300x300_jpg\Tattoo\Starry BB.jpg
+Files not found, processing: PNG - compositeImages\Tattoo\Starry BB.png, JPG - 300x300_jpg\Tattoo\Starry BB.jpg
+Saved: compositeImages\Tattoo\Starry BB.png
+Resized image saved: 800x800_png\Tattoo\Starry BB_L.png
+Resizing image: scriptImages\Tattoo\Sunny BB_C1.png to 800x800
+Resized image saved: 600x600_png\Tattoo\Starry BB_L.png
+Resizing image: scriptImages\Tattoo\Sunny BB_C1.png to 600x600
+Saved: 300x300_jpg\Tattoo\Starry BB.jpg
+Processing image group: Sunny BB
+Processing file: Sunny BB_C1.png in subfolder: Tattoo
+Resized image saved: 600x600_png\Tattoo\Sunny BB_C1.png
+Resizing image: scriptImages\Tattoo\Sunny BB_C2.png to 600x600
+Resized image saved: 800x800_png\Tattoo\Sunny BB_C1.png
+Resizing image: scriptImages\Tattoo\Sunny BB_C2.png to 800x800
+Processing file: Sunny BB_C2.png in subfolder: Tattoo
+Processing file: Sunny BB_L.png in subfolder: Tattoo
+Checking existence of PNG: compositeImages\Tattoo\Sunny BB.png
+Checking existence of JPG: 300x300_jpg\Tattoo\Sunny BB.jpg
+Files not found, processing: PNG - compositeImages\Tattoo\Sunny BB.png, JPG - 300x300_jpg\Tattoo\Sunny BB.jpg
+Resized image saved: 600x600_png\Tattoo\Sunny BB_C2.png
+Resizing image: scriptImages\Tattoo\Sunny BB_L.png to 600x600
+Resized image saved: 800x800_png\Tattoo\Sunny BB_C2.png
+Resizing image: scriptImages\Tattoo\Sunny BB_L.png to 800x800
+Saved: compositeImages\Tattoo\Sunny BB.png
+Saved: 300x300_jpg\Tattoo\Sunny BB.jpg
+Processing image group: Taffy Rainbow
+Resized image saved: 600x600_png\Tattoo\Sunny BB_L.png
+Resizing image: scriptImages\Tattoo\Taffy Rainbow_C1.png to 600x600
+Resized image saved: 800x800_png\Tattoo\Sunny BB_L.png
+Resizing image: scriptImages\Tattoo\Taffy Rainbow_C1.png to 800x800
+Processing file: Taffy Rainbow_C1.png in subfolder: Tattoo
+Resized image saved: 800x800_png\Tattoo\Taffy Rainbow_C1.png
+Resizing image: scriptImages\Tattoo\Taffy Rainbow_C2.png to 800x800
+Resized image saved: 600x600_png\Tattoo\Taffy Rainbow_C1.png
+Resizing image: scriptImages\Tattoo\Taffy Rainbow_C2.png to 600x600
+Processing file: Taffy Rainbow_C2.png in subfolder: Tattoo
+Resized image saved: 800x800_png\Tattoo\Taffy Rainbow_C2.png
+Resizing image: scriptImages\Tattoo\Taffy Rainbow_C3.png to 800x800
+Resized image saved: 600x600_png\Tattoo\Taffy Rainbow_C2.png
+Resizing image: scriptImages\Tattoo\Taffy Rainbow_C3.png to 600x600
+Processing file: Taffy Rainbow_C3.png in subfolder: Tattoo
+Resized image saved: 800x800_png\Tattoo\Taffy Rainbow_C3.png
+Resizing image: scriptImages\Tattoo\Taffy Rainbow_L.png to 800x800
+Processing file: Taffy Rainbow_L.png in subfolder: Tattoo
+Checking existence of PNG: compositeImages\Tattoo\Taffy Rainbow.png
+Checking existence of JPG: 300x300_jpg\Tattoo\Taffy Rainbow.jpg
+Files not found, processing: PNG - compositeImages\Tattoo\Taffy Rainbow.png, JPG - 300x300_jpg\Tattoo\Taffy Rainbow.jpg
+Resized image saved: 600x600_png\Tattoo\Taffy Rainbow_C3.png
+Resizing image: scriptImages\Tattoo\Taffy Rainbow_L.png to 600x600
+Saved: compositeImages\Tattoo\Taffy Rainbow.png
+Saved: 300x300_jpg\Tattoo\Taffy Rainbow.jpg
+Resized image saved: 800x800_png\Tattoo\Taffy Rainbow_L.png
+Resized image saved: 600x600_png\Tattoo\Taffy Rainbow_L.png

@@ -26,6 +26,7 @@
     {
       "name": "Background",
       "traits": [
+        {"name": "Bunny Club Connection","colors": 1.0,"rarity": "Mythic","tags": [],"token_id": 64},
         {"name":"Candy Hearts","colors":4,"rarity":"Common","tags":[],"token_id":62},
         {"name":"Broken Heart Left","colors":4,"rarity":"Common","tags":[],"token_id":62},
         {"name":"Broken Heart Right","colors":4,"rarity":"Common","tags":[],"token_id":62},
@@ -130,6 +131,7 @@
     {
       "name": "Hand",
       "traits": [
+        {"name": "LomBUNdi Trophy 2024","colors": 3.0,"rarity": "Mythic","tags": ["skin"],"token_id": 65},
         {"name":"Heart Hands","colors":1,"rarity":"Common","tags":["skin"],"token_id":62},
         {"name":"Holding Hands","colors":3,"rarity":"Common","tags":["skin"],"token_id":62},
         {"name":"Macaron My Heart","colors":3,"rarity":"Common","tags":["skin"],"token_id":62},
@@ -353,6 +355,19 @@
     {
       "name": "Tattoo",
       "traits": [
+        {"name": "Big Spoon","colors": 2.0,"rarity": "Rare","tags": [],"token_id": 66},
+        {"name": "Bunny Butt","colors": 2.0,"rarity": "Rare","tags": [],"token_id": 66},
+        {"name": "Floop Love","colors": 1.0,"rarity": "Rare","tags": [],"token_id": 66},
+        {"name": "Ghost Bunny Love","colors": 1.0,"rarity": "Rare","tags": [],"token_id": 66},
+        {"name": "Ghost Croc Love","colors": 1.0,"rarity": "Rare","tags": [],"token_id": 66},
+        {"name": "Ghost Kitty Love","colors": 1.0,"rarity": "Rare","tags": [],"token_id": 66},
+        {"name": "Horny Hornsworth","colors": 2.0,"rarity": "Rare","tags": [],"token_id": 66},
+        {"name": "Lil Spoon","colors": 2.0,"rarity": "Rare","tags": [],"token_id": 66},
+        {"name": "Moony BB","colors": 1.0,"rarity": "Rare","tags": [],"token_id": 66},
+        {"name": "Space Party","colors": 3.0,"rarity": "Rare","tags": [],"token_id": 66},
+        {"name": "Starry BB","colors": 1.0,"rarity": "Rare","tags": [],"token_id": 66},
+        {"name": "Sunny BB","colors": 2.0,"rarity": "Rare","tags": [],"token_id": 66},
+        {"name": "Taffy Rainbow","colors": 3.0,"rarity": "Rare","tags": [],"token_id": 66},
         {"name":"Witchy","colors":1,"rarity":"rare","tags":[],"token_id":32},
         {"name":"Cinnamon Roll Head","colors":3,"rarity":"rare","tags":[],"token_id":34},
         {"name":"FLS Barb Wire (Shop)","colors":0,"rarity":"common","tags":[],"token_id":47},
