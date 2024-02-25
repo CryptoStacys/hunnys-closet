@@ -27,10 +27,10 @@ const Card: React.FC<CardProps> = ({ headerTitle, leftBlockContent, middleBlockC
       <div className="profile-header justify-center bg-profile-header p-4 rounded-t-lg">
         <h1 className="text-2xl font-bold text-white font-poppins">{headerTitle}</h1>
       </div>
-      <div className="profile-container grid grid-cols-3 gap-12 m-auto pl-8 pr-8">
+      <div className="profile-container grid grid-cols-3 gap-12 m-auto pl-20 pr-20">
         <div className="mt-4 flex justify-center flex-col">{leftBlockContent}</div>
         <div className="mt-4 flex justify-center flex-col">{middleBlockContent}</div>
-        <div className="mt-4 flex justify-center flex-col">{rightBlockContent}</div>
+        <div className="mt-4 flex  flex-col">{rightBlockContent}</div>
       </div>
       <div className="mt-4 flex flex-col justify-center">{footer}</div>
     </div>

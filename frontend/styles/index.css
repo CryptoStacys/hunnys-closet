@@ -123,21 +123,52 @@ a {
   margin-bottom: 20px;
 }
 
-
+.event-header {
+  display: flex;
+  align-items: center;
+}
 
 .banner {
-  background-image: url("https://cdn.discordapp.com/attachments/1032105881447444491/1208500289485668492/ProfileBanner.png?ex=65e38299&is=65d10d99&hm=d3e2540a0c6811e27b2799929ed0dfa9095f585311d486a9015312224a36f340&") !important;
-  background-size: cover;
-  height: 100%;
-  width: 100%;
-  font-family: "Luckiest Guy";
-  color: #700cf5;
+  position: relative;
+  background-color: #C9A9FF; /* Your chosen color */
+  padding: 8px 20px 16px 20px;
+  color: #6510F2; /* Text color */
+  font-size: 18px; /* Size of your text */
+  text-align: center;
+  max-width: 300px; /* Adjust the width as needed */
+  height: 40px;
+}
+
+
+.banner::before {
+  content: '';
+  position: absolute;
+  left: 0px;
+  top: 0;
+  border-bottom: 20px solid #C9A9FF;
+  border-top: 20px solid #C9A9FF;
+  border-left: 10px solid #FFFFFF;
+  width: 0;
+  height: 0;
+}
+
+.banner::after {
+  content: '';
+  position: absolute;
+  right: 0px;
+  bottom: 0;
+  border-bottom: 20px solid #C9A9FF;
+  border-top: 20px solid #C9A9FF;
+  border-right: 10px solid white;
+  width: 0;
+  height: 0;
 }
 
 .progress-bar-container {
   display: flex;
   align-items: center;
   width: 90%;
+  margin: auto;
 }
 
 .level {
@@ -145,34 +176,39 @@ a {
   position: relative;
   left: 25px;
   background-color: #9E63FF;
-  margin-top: 12px;
+  margin-top: 10px;
   padding-right: 1em;
   padding-left: 1em;
-  padding-top: .75em;
-  padding-bottom: .75em;
+  padding-top: 1em;
+  padding-bottom: 1em;
   font-family: "Luckiest Guy";
   color: white;
   border-radius: 999px;
+  z-index: 20;
 }
 
 .date {
-  font-size: 1.5em;
-  background-color: #AA7AFA;
+  font-size: 2em;
+  background-color: #6510F2;
+  width: 4em;
+  height: 4em;
   padding: 1em;
+  top: 80px;
+  right: 30px;
+  position: relative;
+  vertical-align: middle;
   font-family: "Luckiest Guy";
   color: white;
   border-radius: 999px;
 }
 
 .progress-bar {
-  display: flex;
-  height: 40px;
-  margin-top: 12px;
+  position: relative;
   width: 100%;
-  background-color: #E4E0E0;
-  
-  border-top-right-radius: 20px;
-  border-bottom-right-radius: 20px;
+  height: 40px; /* Match your segment height */
+  background-color: #E0E0E0; /* Light grey background for unfilled segments */
+  border-radius: 20px;
+  overflow: hidden; /* Keep everything within the rounded corners */
 }
 
 /* ProgressBar.css */
@@ -225,25 +261,56 @@ a {
 .progress-bar-fill {
   height: 100%;
   background-color: #FFDE59; /* Yellow color */
+  position: absolute;
+  top: 0;
+  left: 0;
   border-top-right-radius: 20px;
   border-bottom-right-radius: 20px;
-  width: 0%; /* Start width */
-  animation: fillAnimation ease-in-out forwards;
+  z-index: 5;
+  transition: width 3s ease-in-out; /* Smooth transition for width changes */
+}
+
+.progress-bar-segments {
+  display: flex;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 2; /* Ensure segments are above the filled portion */
 }
 
 .segment {
   flex: 1;
-  border-left: 3px solid #ccc;
-  
-  height: 40px; /* Set a fixed height for segments */
+  border-left: 2px solid #EEE; /* Adjust based on your background color for visibility */
+  background-color: transparent; /* Ensure the filled background can show through */
+  height: 100%; /* Ensure it fills the parent */
+  z-index: 2;
 }
 
 .segment.filled {
-  background-color: #FFDE59; /* Yellow color */
+  background-color: transparent; /* Yellow color */
   border-left: 3px solid #FFDE59;
   animation: fillAnimation 2s ease-in-out forwards;
 }
 
+.progress-bar-fill.animate {
+  animation: fillAnimation 3s ease-in-out forwards;
+}
+
+.progress-bar-fill.to-end {
+  animation: fillToEnd 3s ease-in-out forwards;
+}
+
+.progress-bar-fill.reset {
+  animation: none;
+  width: 0%; /* Instantly reset to 0% width */
+}
+
+@keyframes fillToEnd {
+  from { width: 0%; }
+  to { width: 100%; }
+}
 
 .luckiest {
   font-family: 'Luckiest Guy', sans-serif;
@@ -258,11 +325,12 @@ a {
 }
 
 .username {
-  font-size: 1.5em;
+  font-size: 3em;
   font-weight: bold;
   color: #333333;
   font-family: 'Luckiest Guy', sans-serif;
   text-transform: uppercase;
+  text-align: left;
 }
  
 
@@ -295,10 +363,54 @@ a {
   overflow: hidden;
 }
 
-.sortDropdown {
-  background-color: lightblue;
-  border: 2px solid black;
+.searchBar {
+  border-radius: 5px;
+  outline: none;
+  color: black !important;
+  background-color: #FFF;
+  text-align: left;
+  font-weight: 500;
+  padding: 6px;
 }
+
+.searchBar::placeholder {
+  color: black;
+}
+
+.sortDropdown {
+  background-color: #FFF;
+  border-radius: 5px;
+  color: black;
+  text-align: center;
+  font-weight: 500;
+  outline: none;
+}
+
+.sortDropdown option {
+  background-color: #EDEDED;
+  text-align: left;
+}
+
+
+
+
+.tooltip-container {
+  position: relative;
+  display: inline-block;
+  
+}
+
+.custom-tooltip {
+  position: absolute;
+  width: 200px;
+  max-width: 90vw; /* Prevents the tooltip from being wider than the viewport */
+  bottom: 50%;
+  left: 20;
+  transform: translateX(70%);
+  overflow-x: hidden;
+  z-index: 1;
+}
+
 
 .mint-btn {
   margin-top: 10px;
@@ -310,11 +422,8 @@ a {
   width: -webkit-fill-available;
 }
 
-.searchBar {
-  border: 2px solid black;
-  border-radius: 8px;
-  outline: none;
-}
+
+
 
 .modalDolly {
   width: 50%;

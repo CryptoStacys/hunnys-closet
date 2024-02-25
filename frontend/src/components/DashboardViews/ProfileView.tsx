@@ -12,6 +12,8 @@ import MintButton from '../Mint/MintButton'; // Adjust the path as needed
 import { mintWithWeth } from '../../utils/eligibleTokens'; // Ensure this function suits the free claim
 import { ethers } from "ethers";
 import FreeClaim from "../../components/Mint/FreeClaim"
+import Tooltip from '../Tooltip/Tooltip';
+import ProgressBar from '../Achievements/ProgressBar';
 
 const ProfileView = () => {
   const [user, setUser] = useAtom(userAtom);
@@ -23,6 +25,7 @@ const ProfileView = () => {
   const DollyPreviewProfilePage = "/assets/DollyPreviewProfilePage.gif";
   const [saveError, setSaveError] = useState('');
   const provider = new ethers.providers.Web3Provider(window.ethereum as any);
+  const [showTooltip, setShowTooltip] = useState(false);
 
   const handleFreeNFTClaim = async () => {
     // Assuming mintWithWeth is adapted for free claims
@@ -137,14 +140,14 @@ useEffect(() => {
         headerTitle="Profile"
         leftBlockContent={
         <div className="profile-image avatar flex flex-col">
-          <Image loader={customImageLoader} src={user?.profile_image_url || '/assets/img/choosePFP.png'} alt="Profile Avatar" width={300} height={300} className="rounded-xl" />
+          <Image onClick={() => setIsEditingName(true)} loader={customImageLoader} src={user?.profile_image_url || '/assets/img/choosePFP.png'} alt="Profile Avatar" width={300} height={300} className="rounded-xl cursor-pointer hover:opacity-60 transition ease-in-out delay-75" />
             
           {/* Success message */}
           {saveSuccess && <div>Profile updated successfully!</div>}
           {saveError && <div className="error">{saveError}</div>}
           {!isEditingName ? (
             
-        <><SecondaryButton onClick={() => setIsEditingName(true)}>Edit Profile</SecondaryButton></>
+        <><Image onClick={() => setIsEditingName(true)} loader={customImageLoader} src='/assets/img/editProfile.png' alt="Profile Avatar" width={151} height={35} className="rounded-xl cursor-pointer mt-4 self-center hover:opacity-60 transition ease-in-out delay-75" /></>
         ) : (
         <>
             <input
@@ -163,30 +166,52 @@ useEffect(() => {
             type="file"
             onChange={(e) => setSelectedFile(e.target.files?.[0] || null)}
             />
-            <button className="bg-hunnys-yellow text-hunnys-blue w-full font-title shadow-md rounded-full px-8 py-1 text-2xl hover:shadow-lg hover:scale-[1.02] transition-all" onClick={handleSaveProfile}>Save</button>
-            <SecondaryButton onClick={() => setIsEditingName(false)}>Cancel</SecondaryButton>
+            <button className="bg-hunnys-yellow  text-hunnys-blue w-full font-title shadow-md rounded-full px-8 py-1 text-2xl hover:shadow-lg hover:scale-[1.02] transition-all" onClick={handleSaveProfile}>Save</button>
+            <div className="mt-8 m-auto"><SecondaryButton onClick={() => setIsEditingName(false)}>Cancel</SecondaryButton></div>
         </>
         )}
         </div>}
         middleBlockContent={
-          <div className="profile-name text-2xl">
-            <h1 className="font-bold text-purple-700 username m-auto text-center justify-between mt-4">
-            <div className="text-2xl text-center z-50 bg-[#700cf5] rounded-full text-white luckiest">{user?.tier || "King Cupcake"}</div>
-              WELCOME BACK, {user?.profile_name || "Cupcake"}!{" "}
-            </h1>
-            <p className="text-[14px] leading-normal font-poppins">It is so nice to see you! I can&apos;t wait to see what you create today. Don&apos;t forget to check out the recent news and events above for the latest happenings in the Bunny Kingdom!</p>
-            
-
-            {/* Input field for editing name */}
-            
-          </div>}
-        rightBlockContent={<div><Image
-          src={"/icons/BunnyClubBadge.svg"}
-          alt={"Bunny Club Status"}
-          width={120}
-          height={120}
-        ></Image></div>}
-        footer={<></>}        
+          <div className="flex flex-col justify-between h-full">
+            <div className="text-center">
+              <div className="text-2xl luckiest banner">
+                {user?.tier || "King Cupcake"}
+              </div>
+            </div>
+            <div className="flex flex-col justify-center items-left">
+              <h1 className="font-bold text-purple-700 username bottom-4 relative">
+                {user?.profile_name || "Cupcake"}
+              </h1>
+            </div>
+            <div className="text-left">
+              <p className="text-[14px] leading-normal">
+                It is so nice to see you! I can&apos;t wait to see what you create today. Don&apos;t forget to check out the recent news and events above for the latest happenings in the Bunny Kingdom!
+              </p>
+            </div>
+          </div>
+        }
+        rightBlockContent={<div className="self-end">
+          <Tooltip
+            imageUrl="/assets/img/bunnyClubTooltipShadow.png" // The image you want to display in the tooltip
+            imageAlt="Bunny Club Description" // Alt text for the tooltip image
+            linkUrl="https://hunnys.io/bunnyclub"
+            className=""
+          >
+          <div className="self-end">
+          
+            <div>
+              <Image
+                src={"/icons/BunnyClubBadge.svg"}
+                alt={"Bunny Club Status"}
+                width={120}
+                height={120}
+              />
+            </div>
+        </div>
+          </Tooltip></div>
+}
+        footer={<>
+        <ProgressBar level={user?.level} cupcakePoints={user?.cupcake_points} /></>}        
       />
         <div className="grid xs:grid-cols-1 lg:grid-cols-2 max-w-5xl m-auto gap-8">
   <Card

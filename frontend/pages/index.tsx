@@ -86,7 +86,7 @@ export default function App() {
   }, [isConnected]);
 
   return (
-    <div className="pb-8" style={{ backgroundImage: `url(${sparkleBg.src})` }}>
+    <div className="pb-8 bg-[#EDEDED]">
       <Nav />
       <Modal />
       <div className="relative mt-[70px] z-30">

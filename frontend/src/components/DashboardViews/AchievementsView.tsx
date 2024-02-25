@@ -65,10 +65,14 @@ const AchievementsView = () => {
 
   return (
     <div>
-      <div className="pb-4 max-w-5xl mx-auto my-8 ">
-            <h1 className="luckiest m-auto">Cupcake Points: {user?.cupcake_points}</h1>
-            <ProgressBar level={user?.level} cupcakePoints={user?.cupcake_points} />
-          </div>
+      <Card
+        headerTitle="Progress"
+        leftBlockContent={""}
+        middleBlockContent={""}
+        rightBlockContent={""}
+        footer={<><h1 className="luckiest w-[84%] self-center text-2xl justify-center relative bottom-4">Cupcake Points: {user?.cupcake_points}</h1><ProgressBar level={user?.level} cupcakePoints={user?.cupcake_points} /></>}
+      />
+      
       <Card
         headerTitle="Achievements"
         leftBlockContent={<div className='bg-[#6510F2] rounded-xl luckiest text-white text-4xl p-8'>10</div>}

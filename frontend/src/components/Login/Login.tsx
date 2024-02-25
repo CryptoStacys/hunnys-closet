@@ -51,7 +51,7 @@ export default function Login() {
       <div className="flex justify-center items-center w-max-full px-6 mx-auto">
       <div className="relative rounded-3xl overflow-hidden max-w-[1250px] w-full h-[80vh] mx-auto flex items-center justify-center">
       {/* <div className="relative bg-[#fff] shadow-lg rounded-3xl overflow-hidden max-w-[1160px] w-full h-[80vh] mx-auto flex items-center justify-center"> */}
-      <Image className="rounded-3xl" src={loadingImage} alt="Loading" width={3000} height={1688} />
+      <Image className="rounded-3xl" src={loadingImage} alt="Loading" width={3000} height={1688} unoptimized />
         
         {mounted && openConnectModal ? (
           <div

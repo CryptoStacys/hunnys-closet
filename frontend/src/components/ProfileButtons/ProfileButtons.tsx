@@ -15,7 +15,7 @@ interface ProfileButtonsProps {
   const ProfileButton: React.FC<ButtonProps> = ({ iconSrc, text, onClick, isActive }) => {
     return (
       <button onClick={onClick} className="flex flex-col items-center justify-center space-y-2">
-        <img src={iconSrc} alt="Button Icon" className={`rounded-full w-1/2 drop-shadow-2xl ${isActive ? 'bg-[#6510F2]' : 'bg-[#AA7AFA]'}`} />
+        <img src={iconSrc} alt="Button Icon" className={`rounded-full w-1/2 drop-shadow-2xl hover:bg-[#7b2df8] transition ease-in-out delay-75 ${isActive ? 'bg-[#6510F2]' : 'bg-[#AA7AFA]'}`} />
         <span className="text-center text-sm text-black">{text}</span>
       </button>
     );
