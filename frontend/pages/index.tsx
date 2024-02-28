@@ -2,7 +2,7 @@ import { Route } from '../src/components/Router/Router';
 import { useAccount } from "wagmi";
 import { useAtom } from "jotai";
 import React, { useState, useEffect } from 'react';
-import { allTraitsAtom, userAtom, connectedAtom } from "../src/data/store";
+import { allTraitsAtom, userAtom, connectedAtom, totalTraitsAtom } from "../src/data/store";
 import { attributes, localStorageToken } from "../src/data/config";
 import Dashboard from '../src/components/Dashboard/Dashboard';
 import Dollys from "./dollys";
@@ -16,6 +16,7 @@ import sparkleBg from "./../src/assets/img/sparkle_bg.png";
 export default function App() {
   const [user, setUser] = useAtom(userAtom);
   const [allTraits, setAllTraits] = useAtom(allTraitsAtom);
+  const [totalTraits, setTotalTraits] = useAtom(allTraitsAtom);
   const [connected, setConnected] = useAtom(connectedAtom);
   const [dollyCount, setDollyCount] = useState("");
   
@@ -35,6 +36,7 @@ export default function App() {
         if (!closetResponse.ok) throw new Error('Failed to fetch closet data.');
         const closetData = await closetResponse.json();
         console.log("Closet Data from Index:", closetData);
+        setTotalTraits(closetData)
 
         // Update Last Login Time
         fetch(`https://closetservices.hunnysnft.com/wp-json/hunnys-closet/v1/accounts`, {

@@ -10,7 +10,9 @@ export const allTraitsAtom = atom<{ traits: Trait[]; colors: string[]; skin_colo
   colors: [],
   skin_colors: [],
 });
-
+export const totalTraitsAtom = atom<{ traits: Trait[] }>({
+  traits: []
+});
 // Tracks the connection state
 export const connectedAtom = atom(false);
 

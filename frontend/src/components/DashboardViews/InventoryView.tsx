@@ -1,9 +1,10 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 import { useAtom } from "jotai";
-import { userAtom } from "../../data/store";
+import { userAtom, allTraitsAtom, totalTraitsAtom } from "../../data/store";
 import { Token } from "../../data/global";
 import Card from '../Card/Card';
+import Event from '../Card/Events';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Pagination, Navigation, Lazy } from 'swiper/modules';
 // Import Swiper styles
@@ -14,16 +15,46 @@ import SwiperCore from 'swiper';
 SwiperCore.use([Navigation]);
 
 interface InventoryStats {
-  hunnysSeasonal: {
-    owned: number;
+  [key: string]: {
     total: number;
+    owned: number;
   };
-};
+}
+
+interface InventoryItem {
+  origin_name: string;
+  owned: number;
+  total: number;
+}
+
+// Define a type for the accumulator with a string index signature
+interface CategorizedTokens {
+  [key: string]: Token[];
+}
+
+interface NftItem {
+  // Define the structure of your NFT items here
+  // For example:
+  [key: string]: any; // Adjust this to match the actual structure
+}
+
+interface GroupedByOriginName {
+  [originName: string]: NftItem[];
+}
+
+interface GroupedByTokenId {
+  [tokenId: string]: NftItem[];
+}
 
 const InventoryView = () => {
   const [user] = useAtom(userAtom);
+  const [allTraits] = useAtom(allTraitsAtom);
+  const [totalTraits] = useAtom(totalTraitsAtom);
+  const [closetData] = useAtom(allTraitsAtom);
   const [nftData, setNftData] = useState<Array<any>>([]);
   const [userTokens, setUserTokens] = useState<Token[]>([]);
+  const groupedByOriginName: GroupedByOriginName = {};
+  const groupedByTokenId: GroupedByTokenId = {};
   const [groupedNftData, setGroupedNftData] = useState<{
     [key: string]: any[];
   }>({});
@@ -32,10 +63,6 @@ const InventoryView = () => {
   const [sortedNftData, setSortedNftData] = useState<any[]>([]);
   const [sortType, setSortType] = useState("default");
   const [selectedImage, setSelectedImage] = useState(null);
-  const [inventoryStats, setInventoryStats] = useState({
-    hunnysSeasonal: { total: 0, owned: 0 },
-    // Initialize other collections similarly
-  });
   const ITEMS_PER_PAGE = 9;
   const rarityOrder = [
     "Common",
@@ -62,30 +89,78 @@ const InventoryView = () => {
   const startIndex = (currentPage - 1) * ITEMS_PER_PAGE;
   const endIndex = startIndex + ITEMS_PER_PAGE;
   const [pageTotal, setPageTotal] = useState(Math.ceil(nftData.length / ITEMS_PER_PAGE));
+  const [inventoryStats, setInventoryStats] = useState<{ [key: string]: { total: number; owned: number } }>({});
   const indexOfLastItem = currentPage * ITEMS_PER_PAGE;
   const indexOfFirstItem = indexOfLastItem - ITEMS_PER_PAGE;
+  
   const currentItems = displayedNftData.slice(indexOfFirstItem, indexOfLastItem);
   useEffect(() => {
     // Log the current state of userAtom when Dashboard mounts or when user data changes
-    console.log('Current user data in Inventory:', user);
+    console.log('userAtInventory:', inventoryStats);
   }, [user]);
 
   
 
   useEffect(() => {
-    const fetchNftData = async () => {
+    const fetchAndGroupData = async () => {
       try {
         const url =
-          "https://sheets.googleapis.com/v4/spreadsheets/1JXPvvxTPbxPARLpbV0e2U5TdFvdik1duQkLWWLZJ42Y/values/A2:I370?key=AIzaSyAjknT53sMDEOdJ3YtCmjgP3VeSTvSGB3U";
-        const response = await axios.get(url);
-        setNftData(response.data.values);
-      } catch (error) {
-        console.error("Error fetching data:", error);
-      }
-    };
-
-    fetchNftData();
+          "https://sheets.googleapis.com/v4/spreadsheets/1JXPvvxTPbxPARLpbV0e2U5TdFvdik1duQkLWWLZJ42Y/values/A2:J1236?key=AIzaSyAjknT53sMDEOdJ3YtCmjgP3VeSTvSGB3U";
+          const response = await axios.get(url);
+          const fetchedNftData = response.data.values;
+          
+          // Group data by originName and tokenId in one pass
+          const groupedByOriginName: { [key: string]: any[] } = {};
+          const groupedByTokenId: { [key: string]: any[] } = {};
+          
+          fetchedNftData.forEach((item: any[]) => {
+            const originName = item[9]; // Assuming 10th column is originName
+            const tokenId = item[0];
+            
+            // Group by originName
+            if (!groupedByOriginName[originName]) groupedByOriginName[originName] = [];
+            groupedByOriginName[originName].push(item);
+            
+            // Group by tokenId for another purpose (if needed)
+            if (!groupedByTokenId[tokenId]) groupedByTokenId[tokenId] = [];
+            groupedByTokenId[tokenId].push(item);
+          });
+    
+          setNftData(fetchedNftData);
+          setGroupedNftData(groupedByOriginName);
+          // setGroupedByTokenId(groupedByTokenId); // If you need this for other purposes
+        } catch (error) {
+          console.error("Error fetching data:", error);
+        }
+      };
+    fetchAndGroupData();
   }, []);
+  
+  useEffect(() => {
+    if (user && user.tokens) {
+      const categorizedTokens = user.tokens.reduce<CategorizedTokens>((acc, token) => {
+        const originName = token.origin_name || 'Unknown';
+        if (!acc[originName]) acc[originName] = [];
+        acc[originName].push(token);
+        return acc;
+      }, {});
+      
+      // Calculating inventory stats part remains the same
+      const newInventoryStats = Object.keys(categorizedTokens).reduce<{ [key: string]: { total: number; owned: number } }>((acc, category) => {
+        const tokens = categorizedTokens[category];
+        const owned = tokens.length;
+        const total = tokens.length; // Adjust according to your logic
+        
+        acc[category] = { total, owned };
+        return acc;
+      }, {});
+  
+      setInventoryStats(newInventoryStats);
+    }
+  }, [user]);
+  
+  
+  
 
   useEffect(() => {
     if (nftData.length > 0) {
@@ -102,35 +177,38 @@ const InventoryView = () => {
     }
   }, [nftData, user, searchTerm, sortType, currentPage]);
 
-  const handleSortChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
-    setSortType(e.target.value);
-    setCurrentPage(1); // Reset to first page on sort change
-  };
+  
 
-  useEffect(() => {
-    // Combine filtering and sorting into one step
-    let filteredData = Object.entries(groupedNftData);
+  // Handle sorting, filtering, and pagination
+useEffect(() => {
+  // Make sure to adapt this logic to match how you've structured your data.
+  let processedData = Object.entries(groupedNftData);
 
-    // Filtering by search term
-    if (searchTerm) {
-      filteredData = filteredData.filter(([_, items]) =>
-        items.some((item) =>
-          item[2].toLowerCase().includes(searchTerm.toLowerCase())
-        )
-      );
-    }
-
-    // Example sorting (alphabetically by NFT name)
-    filteredData.sort((a, b) => a[1][0][2].localeCompare(b[1][0][2]));
-
-    // Pagination
-    const paginatedData = filteredData.slice(
-      (currentPage - 1) * ITEMS_PER_PAGE,
-      currentPage * ITEMS_PER_PAGE
+  // Implement filtering by searchTerm
+  if (searchTerm) {
+    processedData = processedData.filter(([_, items]) =>
+      items.some(item => item.some((field: { toString: () => string; }) => field.toString().toLowerCase().includes(searchTerm.toLowerCase())))
     );
+  }
 
-    setSortedAndFilteredNftData(paginatedData);
-  }, [groupedNftData, searchTerm, currentPage]);
+  // Implement sorting (adapt this based on your actual sorting logic)
+  processedData.sort((a, b) => a[1][0][2].localeCompare(b[1][0][2]));
+
+  // Implement pagination
+  const paginatedData = processedData.slice(
+    (currentPage - 1) * ITEMS_PER_PAGE,
+    currentPage * ITEMS_PER_PAGE
+  );
+
+  // Assuming you'll use this state to render the filtered, sorted, and paginated data
+  setSortedAndFilteredNftData(paginatedData.map(entry => entry[1]).flat());
+}, [groupedNftData, searchTerm, sortType, currentPage, ITEMS_PER_PAGE]);
+
+
+const handleSortChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
+  setSortType(e.target.value);
+  setCurrentPage(1); // Reset to first page on sort change
+};
 
   const openLightbox = (imageSrc: React.SetStateAction<null>) => {
     setSelectedImage(imageSrc);
@@ -142,31 +220,32 @@ const InventoryView = () => {
 
   useEffect(() => {
     if (user && user.tokens) {
-      const hunnysSeasonalTokens = user.tokens.filter(
-        (token) => token.origin_name === "Hunnys Seasonal"
-      );
-      setUserTokens(hunnysSeasonalTokens);
+      // First, categorize tokens by origin_name
+      const categorizedTokens = user.tokens.reduce<Record<string, Token[]>>((acc, token) => {
+        const originName = token.origin_name || 'Unknown'; // Ensure this matches your data structure
+        if (!acc[originName]) {
+          acc[originName] = [];
+        }
+        acc[originName].push(token);
+        return acc;
+      }, {});
+  
+      // Then, calculate inventory stats for each category
+      const inventoryStats = Object.keys(categorizedTokens).reduce<Record<string, { total: number; owned: number }>>((acc, category) => {
+        const tokens = categorizedTokens[category];
+        const owned = tokens.filter(token => token.isOwned).length;
+        acc[category] = {
+          total: tokens.length,
+          owned: owned,
+        };
+        return acc;
+      }, {});
+  
+      setInventoryStats(inventoryStats);
     }
-    console.log("userTokens:", userTokens);
-    
   }, [user]);
   
-  useEffect(() => {
-    // Assuming groupedNftData and userTokens are already populated
 
-    // Calculate totals for Hunnys Seasonal
-    const hunnysSeasonalTotal = Object.entries(groupedNftData).length;
-    const hunnysSeasonalOwned = Object.entries(groupedNftData).filter(([tokenId]) =>
-      isTokenOwned(tokenId)
-    ).length;
-
-    // Update state with new stats
-    setInventoryStats(prevStats => ({
-      ...prevStats,
-      hunnysSeasonal: { total: hunnysSeasonalTotal, owned: hunnysSeasonalOwned },
-      // Update other collections similarly
-    }));
-  }, [groupedNftData, userTokens]);
 
   useEffect(() => {
     // Filter and sort based on search term
@@ -190,47 +269,53 @@ const InventoryView = () => {
     setSortedNftData(sortedData);
   }, [groupedNftData, searchTerm]);
 
-  const handlePageChange = (pageNumber: number) => {
-    setCurrentPage(pageNumber);
+  const getStatsByOriginName = (inventoryStats: InventoryStats, originName: string) => {
+    const stats = inventoryStats[originName];
+    return stats ? { owned: stats.owned, total: stats.total } : { owned: 0, total: 0 }; // Return existing stats or default to zero
   };
 
   const InventoryStatsGrid = ({ inventoryStats }: { inventoryStats: InventoryStats }) => {
+    const hunnysSeasonalStats = getStatsByOriginName(inventoryStats, "Hunnys Seasonal");
+    const hunnys10kStats = getStatsByOriginName(inventoryStats, "Hunnys 10k");
+    const hunnysOGStats = getStatsByOriginName(inventoryStats, "Hunnys OG");
+    const hunnysStacysStats = getStatsByOriginName(inventoryStats, "Hunnys Stacys");
+    const totalTraitsStats = getStatsByOriginName(inventoryStats, "Hunnys Stacys" && "Hunnys Seasonal" && "Hunnys 10k" && "Hunnys OG" && "Default");
     return (
       <div className="inventory-grid-container bg-white text-white p-4">
-        <div className="grid grid-rows-2 grid-cols-4 gap-4">
-          <div className="stat-card luckiest text-2xl text-center flex flex-col justify-center p-4 bg-[#EDEDED] rounded-lg shadow-md">
-            <p className="stat-title text-center text-black">Rank</p>
-            <p className="stat-value text-3xl text-[#AA7AFA]">COMING SOON</p>
+        <div className="grid grid-rows-2 grid-cols-3 gap-4">
+          <div className="stat-card luckiest">
+            <p className="stat-title">Rank</p>
+            <p className="stat-value">COMING SOON</p>
           </div>
-          <div className="stat-card luckiest text-2xl text-center flex flex-col justify-center p-4 bg-[#EDEDED] rounded-lg shadow-md">
-            <p className="stat-title text-center text-black">Level</p>
-            <p className="stat-value text-3xl text-[#AA7AFA]">12</p>
+          <div className="stat-card luckiest">
+            <p className="stat-title">Level</p>
+            <p className="stat-value">{user?.level}</p>
           </div>
-          <div className="stat-card luckiest text-2xl text-center flex flex-col justify-center p-4 bg-[#EDEDED] rounded-lg shadow-md">
-            <p className="stat-title text-center text-black">Achievement Points</p>
-            <p className="stat-value text-3xl text-[#AA7AFA]">22839</p>
+          <div className="stat-card luckiest">
+            <p className="stat-title">Cupcake Points</p>
+            <p className="stat-value">{user?.cupcake_points}</p>
           </div>
-          <div className="stat-card luckiest text-2xl text-center flex flex-col justify-center p-4 bg-[#EDEDED] rounded-lg shadow-md">
-            <p className="stat-title text-center text-black">Hunnys Seasons</p>
-            <p className="stat-value text-3xl text-[#AA7AFA]">{inventoryStats.hunnysSeasonal.owned}/{inventoryStats.hunnysSeasonal.total}</p>
+          <div className="stat-card luckiest">
+            <p className="stat-title">Hunnys Seasons</p>
+            <p className="stat-value">{hunnysSeasonalStats.total}/183</p>
           </div>
-          <div className="stat-card luckiest text-2xl text-center flex flex-col justify-center p-4 bg-[#EDEDED] rounded-lg shadow-md">
-            <p className="stat-title text-center text-black">Traits</p>
-            <p className="stat-value text-3xl text-[#AA7AFA]">1212/1402</p>
+          <div className="stat-card luckiest">
+            <p className="stat-title">Owned Traits</p>
+            <p className="stat-value">{user?.traits.length}/{closetData.traits.length}</p>
           </div>
-          <div className="stat-card luckiest text-2xl text-center flex flex-col justify-center p-4 bg-[#EDEDED] rounded-lg shadow-md">
-            <p className="stat-title text-center text-black">Hunnys 10k</p>
-            <p className="stat-value text-3xl text-[#AA7AFA]">10</p>
+          <div className="stat-card luckiest">
+            <p className="stat-title">Hunnys 10k</p>
+            <p className="stat-value">{hunnys10kStats.total}</p>
           </div>
-          <div className="stat-card luckiest text-2xl text-center flex flex-col justify-center p-4 bg-[#EDEDED] rounded-lg shadow-md">
-            <p className="stat-title text-center text-black">Hunnys OGs</p>
-            <p className="stat-value text-3xl text-[#AA7AFA]">2</p>
+        {/*  <div className="stat-card luckiest">
+            <p className="stat-title">Hunnys OGs</p>
+            <p className="stat-value">{hunnysOGStats.total}</p>
           </div>
-          <div className="stat-card luckiest text-2xl text-center flex flex-col justify-center p-4 bg-[#EDEDED] rounded-lg shadow-md">
-            <p className="stat-title text-center text-black">Stacys</p>
-            <p className="stat-value text-3xl text-[#AA7AFA]">2</p>
+          <div className="stat-card luckiest">
+            <p className="stat-title">Stacys</p>
+            <p className="stat-value">{hunnysStacysStats.total}</p>
           </div>
-          {/* Add more stat cards as needed */}
+           Add more stat cards as needed */}
         </div>
       </div>
     );
@@ -250,13 +335,11 @@ const InventoryView = () => {
         )
     );
 
-
-      
     // Make sure isTokenOwned function returns a boolean
-    const isTokenOwned = (tokenId: string): boolean => {
-      return userTokens.some((token) => token.token_id?.toString() === tokenId);
+    const isTokenOwned = (tokenId: string, originName: string | Token[] | undefined) => {
+      return user?.tokens.some(token => token.token_id?.toString() === tokenId && token.origin_name === originName);
     };
-
+    
     // Sort based on sortType
     // Assuming sorting by the name of the first item in each group
     switch (sortType) {
@@ -270,24 +353,21 @@ const InventoryView = () => {
           b[1][0][3].localeCompare(a[1][0][3])
         );
         break;
-      case "Owned":
-        // Convert boolean to number explicitly for sorting
-        filteredAndGroupedData.sort(
-          (a, b) => (isTokenOwned(b[0]) ? 1 : 0) - (isTokenOwned(a[0]) ? 1 : 0)
-        );
-        break;
-      case "NotOwned":
-        // Convert boolean to number explicitly for sorting
-        filteredAndGroupedData.sort(
-          (a, b) => (isTokenOwned(a[0]) ? 1 : 0) - (isTokenOwned(b[0]) ? 1 : 0)
-        );
-        break;
-    }
-
-
-
-  // Adjust the setDisplayedNftData call to use paginated data
-  
+        case "Owned":
+          filteredAndGroupedData.sort((a, b) => {
+            const aOwned = isTokenOwned(a[0], a[1][0][9]) ? 1 : 0; // Assuming the origin name is at index 9
+            const bOwned = isTokenOwned(b[0], b[1][0][9]) ? 1 : 0;
+            return bOwned - aOwned;
+          });
+          break;
+        case "NotOwned":
+          filteredAndGroupedData.sort((a, b) => {
+            const aOwned = isTokenOwned(a[0], a[1][0][9]) ? 1 : 0;
+            const bOwned = isTokenOwned(b[0], b[1][0][9]) ? 1 : 0;
+            return aOwned - bOwned;
+          });
+          break;
+      }
 
    // Update pageTotal state
   const filteredPageTotal = Math.ceil(filteredAndGroupedData.length / ITEMS_PER_PAGE);
@@ -306,16 +386,26 @@ const InventoryView = () => {
   setDisplayedNftData(paginatedGroups);
 };
 
-  const isTokenOwned = (tokenId: string) =>
-    userTokens.some((token) => token.token_id?.toString() === tokenId);
+const isTokenOwned = (tokenId: string, originName: string | Token[] | undefined) => {
+  return user?.tokens.some(token => token.token_id?.toString() === tokenId && token.origin_name === originName);
+};
+
   useEffect(() => {
     applyFilterSortAndPaginate();
 }, [groupedNftData, searchTerm, sortType, currentPage, userTokens]);
 
 
+const handleCollectClick = async (nft: { origin_name: string; }) => {
+  if (nft.origin_name === 'Default') {
+    // Default tokens are automatically owned, no action required
+    console.log('Token is automatically owned.');
+  }
+}
+
 const renderNftData = () => {
   return displayedNftData.map(([tokenId, items], index) => {
-    const isOwned = isTokenOwned(tokenId);
+    const originName = items[0][9]; // Example: adjust based on your actual data structure
+    const isOwned = isTokenOwned(tokenId, originName);
     const [firstItem] = items;
     const nftImage = firstItem[1];
     const nftName = firstItem[3];
@@ -323,11 +413,11 @@ const renderNftData = () => {
     return (
       <div
         key={index}
-        className="border p-4 rounded-xl bg-white max-w-[250px] max-h-[460px] hover:shadow-lg transform transition duration-500 hover:scale-105 m-4 overflow-hidden"
+        className="border p-4 rounded-xl bg-white max-w-[250px] max-h-[500px] hover:shadow-lg transform transition duration-500 hover:scale-105 m-4 overflow-hidden"
       >
         <img src={nftImage} alt={`NFT ${tokenId}`} className="w-64 h-64 m-auto rounded-xl" />
         <div className="pt-4">
-          <h1 className="text-sm font-bold mb-2">{nftName} - #{tokenId}</h1>
+          <h1 className="text-sm font-bold mb-2">{nftName}</h1>
           {/* Carousel for items */}
           <Swiper
             navigation={true}
@@ -369,18 +459,14 @@ const renderNftData = () => {
 
   return (
     <div className="inventory-view p-4 max-w-5xl mx-auto my-8">
-      <Card
+      <Event
         headerTitle="Inventory"
-        leftBlockContent={""}
-        middleBlockContent={""}
-        rightBlockContent={""
-      }
-        footer={<>
+        event={<>
         <InventoryStatsGrid inventoryStats={inventoryStats} />
 </>}        
       />
       <div className="bg-[#EDEDED]">
-<div className="align-center m-auto flex flex-row pl-1 font-poppins">
+<div className="align-center m-auto flex flex-row pl-1 font-poppins mt-16">
   <h1 className="font-bold text-2xl flex-grow-[0.7]">Search Inventory</h1>
   <div className="flex items-center">
     <select

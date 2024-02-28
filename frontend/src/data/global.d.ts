@@ -76,6 +76,7 @@ export type Color = {
 
 export type Token = {
   trait_type: string;
+  isOwned?: boolean | any;
   name: string;
   colors?: Color[];
   layers?: number;

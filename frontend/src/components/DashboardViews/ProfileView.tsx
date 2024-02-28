@@ -21,8 +21,8 @@ const ProfileView = () => {
   const [isEditingName, setIsEditingName] = useState(false);
   const [saveSuccess, setSaveSuccess] = useState(false);
   const banner = "/assets/img/ProfileBanner.png";
-  const GMMug = "/assets/GMMug.png";
-  const DollyPreviewProfilePage = "/assets/DollyPreviewProfilePage.gif";
+  const GMMug = "/assets/img/GMMug.png";
+  const DollyPreviewProfilePage = "/assets/img/DollyPreviewProfilePage.gif";
   const [saveError, setSaveError] = useState('');
   const provider = new ethers.providers.Web3Provider(window.ethereum as any);
   const [showTooltip, setShowTooltip] = useState(false);
