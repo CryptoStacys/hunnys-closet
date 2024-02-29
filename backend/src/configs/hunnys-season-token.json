@@ -2970,6 +2970,22 @@
             {
                 "trait_type": "Accessory",
                 "value": "Glowy Flutter Bomber"
+            },
+            {
+                "trait_type": "Accessory",
+                "value": "Flutter Bomber"
+            },
+            {
+                "trait_type": "Accessory",
+                "value": "Flutter Bomber Wings"
+            },
+            {
+                "trait_type": "Frame",
+                "value": "Hunnygram Delivery Critters"
+            },
+            {
+                "trait_type": "Mouth",
+                "value": "Mayor Kissy"
             }
         ],
         "metaPath": "https://hunnysseasons.s3.us-east-2.amazonaws.com/182"
