@@ -103,6 +103,9 @@ function MyApp({ Component, pageProps }: AppProps) {
     };
   }, [router.events]);
 
+  useEffect(() => {
+    checkRoute();
+  }, [checkRoute]);
 
   function checkRoute() {
     const paths = ['/', '/inventory', '/dollys', '/help', '/profile'];

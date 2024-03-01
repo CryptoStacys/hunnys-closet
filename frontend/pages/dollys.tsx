@@ -1,20 +1,21 @@
-const DollGallery = dynamic(() => import("../src/components/DollGallery/DollGallery"), {
-  ssr: false,
-});
-const DollEditor = dynamic(() => import("../src/components/DollEditor/DollEditor"), {
-  ssr: false,
-});
+import DollGallery from "../src/components/DollGallery/DollGallery";
+import DollEditor from "../src/components/DollEditor/DollEditor";
 import { useState } from "react";
+import { connectedAtom, userAtom } from "../src/data/store";
+import { useAtom } from "jotai";
 import dynamic from 'next/dynamic';
 
 export default function Dollys() {
   const [selected, setSelected] = useState<number | string>(-1); // Allow string for temporary ID
-
+  const [user, setUser] = useAtom(userAtom);
+  const [connected] = useAtom(connectedAtom);
   const handleCreateNewDolly = () => {
     const tempId = `temp-${new Date().getTime()}`; // Generate a unique temporary ID
     setSelected(tempId);
   };
-
+{connected 
+  console.log("User Address on /dollys", user?.wallet)
+}
   const handleDollySaved = (newId: number) => {
     setSelected(newId); // Update with permanent ID once minted
   };

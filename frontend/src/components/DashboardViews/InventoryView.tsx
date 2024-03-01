@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 import { useAtom } from "jotai";
-import { userAtom, allTraitsAtom, totalTraitsAtom } from "../../data/store";
-import { Token } from "../../data/global";
+import { userAtom, allTraitsAtom, userTraitsAtom } from "../../data/store";
+import { Token, UserOwnedTraits } from "../../data/global";
 import Card from '../Card/Card';
 import Event from '../Card/Events';
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -49,12 +49,12 @@ interface GroupedByTokenId {
 const InventoryView = () => {
   const [user] = useAtom(userAtom);
   const [allTraits] = useAtom(allTraitsAtom);
-  const [totalTraits] = useAtom(totalTraitsAtom);
   const [closetData] = useAtom(allTraitsAtom);
   const [nftData, setNftData] = useState<Array<any>>([]);
   const [userTokens, setUserTokens] = useState<Token[]>([]);
   const groupedByOriginName: GroupedByOriginName = {};
   const groupedByTokenId: GroupedByTokenId = {};
+  const [userOwnedTraits, setUserOwnedTraits] = useState<UserOwnedTraits>({});
   const [groupedNftData, setGroupedNftData] = useState<{
     [key: string]: any[];
   }>({});
@@ -105,7 +105,7 @@ const InventoryView = () => {
     const fetchAndGroupData = async () => {
       try {
         const url =
-          "https://sheets.googleapis.com/v4/spreadsheets/1JXPvvxTPbxPARLpbV0e2U5TdFvdik1duQkLWWLZJ42Y/values/A2:J1236?key=AIzaSyAjknT53sMDEOdJ3YtCmjgP3VeSTvSGB3U";
+          "https://sheets.googleapis.com/v4/spreadsheets/1JXPvvxTPbxPARLpbV0e2U5TdFvdik1duQkLWWLZJ42Y/values/A2:K1400?key=AIzaSyAjknT53sMDEOdJ3YtCmjgP3VeSTvSGB3U";
           const response = await axios.get(url);
           const fetchedNftData = response.data.values;
           
@@ -125,7 +125,9 @@ const InventoryView = () => {
             if (!groupedByTokenId[tokenId]) groupedByTokenId[tokenId] = [];
             groupedByTokenId[tokenId].push(item);
           });
-    
+          console.log("Fetched NFT Data:", fetchedNftData);
+          console.log("Grouped by Origin Name:", groupedByOriginName);
+          
           setNftData(fetchedNftData);
           setGroupedNftData(groupedByOriginName);
           // setGroupedByTokenId(groupedByTokenId); // If you need this for other purposes
@@ -160,6 +162,19 @@ const InventoryView = () => {
   }, [user]);
   
   
+  useEffect(() => {
+    if (user && user.traits) {
+      const ownedTraits = user.traits.reduce<UserOwnedTraits>((acc, trait) => {
+        const key = `${trait.name}_${trait.origin_name}`; // Unique key combining name and origin
+
+        acc[key] = true; // Mark as owned
+        return acc;
+      }, {});
+      setUserOwnedTraits(ownedTraits); // Update state with transformed traits
+      console.log("User-Owned Traits Mapping:", ownedTraits);
+    }
+
+  }, [user]);
   
 
   useEffect(() => {
@@ -301,7 +316,7 @@ const handleSortChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
           </div>
           <div className="stat-card luckiest">
             <p className="stat-title">Owned Traits</p>
-            <p className="stat-value">{user?.traits.length}/{closetData.traits.length}</p>
+            <p className="stat-value">{user?.traits.length}/{allTraits.traits.length}</p>
           </div>
           <div className="stat-card luckiest">
             <p className="stat-title">Hunnys 10k</p>
@@ -336,8 +351,11 @@ const handleSortChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
     );
 
     // Make sure isTokenOwned function returns a boolean
-    const isTokenOwned = (tokenId: string, originName: string | Token[] | undefined) => {
-      return user?.tokens.some(token => token.token_id?.toString() === tokenId && token.origin_name === originName);
+    const isTokenOwned = (nftTrait: string, originName: string | Token[] | undefined) => {
+      const key = `${nftTrait}_${originName}`;
+      const owned = userOwnedTraits[key] === true;
+      console.log(`Checking ownership for ${key}: ${owned}`);
+      return owned; // Check if the trait is marked as owned
     };
     
     // Sort based on sortType
@@ -354,19 +372,20 @@ const handleSortChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
         );
         break;
         case "Owned":
-          filteredAndGroupedData.sort((a, b) => {
-            const aOwned = isTokenOwned(a[0], a[1][0][9]) ? 1 : 0; // Assuming the origin name is at index 9
-            const bOwned = isTokenOwned(b[0], b[1][0][9]) ? 1 : 0;
-            return bOwned - aOwned;
-          });
-          break;
-        case "NotOwned":
-          filteredAndGroupedData.sort((a, b) => {
-            const aOwned = isTokenOwned(a[0], a[1][0][9]) ? 1 : 0;
-            const bOwned = isTokenOwned(b[0], b[1][0][9]) ? 1 : 0;
-            return aOwned - bOwned;
-          });
-          break;
+  filteredAndGroupedData.sort((a, b) => {
+    const aOwned = isTokenOwned(a[1][0][2], a[1][0][9]) ? -1 : 1; // Assuming the trait name is at index 2 and origin name is at index 9
+    const bOwned = isTokenOwned(b[1][0][2], b[1][0][9]) ? -1 : 1;
+    return aOwned - bOwned;
+  });
+  break;
+case "NotOwned":
+  filteredAndGroupedData.sort((a, b) => {
+    const aOwned = isTokenOwned(a[1][0][2], a[1][0][9]) ? 1 : -1;
+    const bOwned = isTokenOwned(b[1][0][2], b[1][0][9]) ? 1 : -1;
+    return aOwned - bOwned;
+  });
+  break;
+
       }
 
    // Update pageTotal state
@@ -386,12 +405,16 @@ const handleSortChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
   setDisplayedNftData(paginatedGroups);
 };
 
-const isTokenOwned = (tokenId: string, originName: string | Token[] | undefined) => {
-  return user?.tokens.some(token => token.token_id?.toString() === tokenId && token.origin_name === originName);
-};
+const isTokenOwned = (nftTrait: string, originName: string | Token[] | undefined) => {
+  const key = `${nftTrait}_${originName}`;
+  const owned = userOwnedTraits[key] === true;
+  console.log(`Checking ownership for ${key}: ${owned}`);
+  return owned; // Check if the trait is marked as owned
 
+};
   useEffect(() => {
     applyFilterSortAndPaginate();
+    console.log("Displayed NFT Data after sort/filter/paginate:", displayedNftData);
 }, [groupedNftData, searchTerm, sortType, currentPage, userTokens]);
 
 
@@ -404,16 +427,18 @@ const handleCollectClick = async (nft: { origin_name: string; }) => {
 
 const renderNftData = () => {
   return displayedNftData.map(([tokenId, items], index) => {
+    // Extracting the button URL from the item data
+    const buttonURL = items[0][10]; // Assuming button URL is in the 11th column (index 10)
     const originName = items[0][9]; // Example: adjust based on your actual data structure
-    const isOwned = isTokenOwned(tokenId, originName);
     const [firstItem] = items;
     const nftImage = firstItem[1];
     const nftName = firstItem[3];
-
+    const nftTrait = firstItem[2];
+    const isOwned = isTokenOwned(nftTrait, originName); // Assuming origin name is at index 9
     return (
       <div
         key={index}
-        className="border p-4 rounded-xl bg-white max-w-[250px] max-h-[500px] hover:shadow-lg transform transition duration-500 hover:scale-105 m-4 overflow-hidden"
+        className="border p-4 rounded-xl bg-white max-w-[250px] max-h-[600px] hover:shadow-lg transform transition duration-500 hover:scale-105 m-4 overflow-hidden"
       >
         <img src={nftImage} alt={`NFT ${tokenId}`} className="w-64 h-64 m-auto rounded-xl" />
         <div className="pt-4">
@@ -427,35 +452,36 @@ const renderNftData = () => {
             onSlideChange={() => console.log('slide change')}
             onSwiper={(swiper) => console.log(swiper)}
           >
-             {items.map((item: any[], idx: React.Key | null | undefined) => (
+            {items.map((item: any[], idx: React.Key | null | undefined) => (
               <SwiperSlide key={idx} onClick={() => openLightbox(item[8])}>
-              <div className="text-center cursor-pointer">
-                <img className="w-full h-auto max-h-24 mx-auto border-[#C6C6C6] border-2 rounded-xl" src={item[8]} alt={`Trait ${item[1]}`} />
-                <p className="text-xs mt-1">{item[5]}: {item[2]}</p>
-              </div>
-            </SwiperSlide>
+                <div className="text-center cursor-pointer">
+                  <img className="w-full h-auto max-h-24 mx-auto border-[#C6C6C6] border-2 rounded-xl" src={item[8]} alt={`Trait ${item[1]}`} />
+                  <p className="text-xs mt-1">{item[5]}: {item[2]}</p>
+                </div>
+              </SwiperSlide>
             ))}
           </Swiper>
         </div>
-        <div>
-          {isOwned ? (
-            <p className="mt-4 text-center text-green-700 font-bold">Owned</p>
-          ) : (
-            <a
-              href={`https://buy.hunnys.io/polygon/asset/0x43668e306dba9172824524fd2c0c6924e710ea5b:${tokenId}`}
-              target="_blank"
-              rel="noreferrer"
-              className="block mt-4 bg-[#6510F2] luckiest text-3xl text-white font-bold px-4 py-2 rounded-full text-center hover:bg-opacity-80"
-            >
-              Collect
-            </a>
-          )}
-          
-        </div>
+        {/* Conditionally render the Collect button */}
+        {buttonURL !== 'NA' && (
+          <a
+            href={buttonURL}
+            target="_blank"
+            rel="noreferrer"
+            className="block mt-4 bg-[#6510F2] luckiest text-3xl text-white font-bold px-4 py-2 rounded-full text-center hover:bg-opacity-80"
+          >
+            VIEW
+          </a>
+        )}
+        {/* Optionally handle the case where the item is owned differently */}
+        {isOwned && (
+          <p className="mt-4 text-center text-green-700 font-bold">Owned</p>
+        )}
       </div>
     );
   });
 };
+
 
   return (
     <div className="inventory-view p-4 max-w-5xl mx-auto my-8">

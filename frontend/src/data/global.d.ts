@@ -5,6 +5,7 @@ export type Trait = {
   mintPrice?: ethers.BigNumber | null; // Updated to be optional
   id: number;
   origin_id: number;
+  origin_name?: string;
   name: string;
   attribute: string;
   tags?: string[];
@@ -72,6 +73,10 @@ export type Color = {
   r: number;
   g: number;
   b: number;
+};
+
+type UserOwnedTraits = {
+  [key: string]: boolean;
 };
 
 export type Token = {

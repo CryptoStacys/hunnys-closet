@@ -2,7 +2,7 @@ import { Route } from '../src/components/Router/Router';
 import { useAccount } from "wagmi";
 import { useAtom } from "jotai";
 import React, { useState, useEffect } from 'react';
-import { allTraitsAtom, userAtom, connectedAtom, totalTraitsAtom } from "../src/data/store";
+import { allTraitsAtom, userAtom, connectedAtom, userTraitsAtom } from "../src/data/store";
 import { attributes, localStorageToken } from "../src/data/config";
 import Dashboard from '../src/components/Dashboard/Dashboard';
 import Dollys from "./dollys";
@@ -12,14 +12,15 @@ import Nav from "../src/components/Nav/Nav";
 import Login from "../src/components/Login/Login";
 import Modal from "../src/components/Modal/Modal";
 import sparkleBg from "./../src/assets/img/sparkle_bg.png";
+import { useRouter } from 'next/router';
 
 export default function App() {
   const [user, setUser] = useAtom(userAtom);
   const [allTraits, setAllTraits] = useAtom(allTraitsAtom);
-  const [totalTraits, setTotalTraits] = useAtom(allTraitsAtom);
+  const [userTraits, setUserTraits] = useAtom(userTraitsAtom);
   const [connected, setConnected] = useAtom(connectedAtom);
   const [dollyCount, setDollyCount] = useState("");
-  
+  const router = useRouter();
 
   const { isConnected, address } = useAccount({
     onConnect: async ({ address }) => {
@@ -36,7 +37,7 @@ export default function App() {
         if (!closetResponse.ok) throw new Error('Failed to fetch closet data.');
         const closetData = await closetResponse.json();
         console.log("Closet Data from Index:", closetData);
-        setTotalTraits(closetData)
+        setUserTraits(closetData)
 
         // Update Last Login Time
         fetch(`https://closetservices.hunnysnft.com/wp-json/hunnys-closet/v1/accounts`, {
@@ -61,12 +62,14 @@ export default function App() {
         if (!profileResponse.ok) throw new Error('Failed to fetch user profile.');
         const { data: profileData } = await profileResponse.json();
         console.log("Profile Data from Index:", profileData);
+        
         // Combine data and update user atom
         setUser({
           ...profileData,
           ...closetData,
-          traits: traitsData.traits, // Assuming traits is the key you want from traitsData
+          traits: closetData.traits, // Assuming traits is the key you want from traitsData
           dollyCount: closetData.dollys?.length || 0,
+          address: address
         });
 
         setConnected(true);
@@ -76,35 +79,55 @@ export default function App() {
       }
     },
     onDisconnect: () => {
-      setUser(null);
-      setConnected(false);
+      setUser(null); // Reset user state
+      setConnected(false); // Indicate that the user is no longer connected
+      // Redirect to home page
+      router.push("/");
     },
   });
+
+  useEffect(() => {
+    initializeLocalStorageForNewUsers();
+  }, []); // Empty dependency array ensures this runs once on mount.
+
+  function initializeLocalStorageForNewUsers() {
+    const existingToken = localStorage.getItem(localStorageToken);
+    if (!existingToken) {
+      // Define a default, empty array or an array with default traits.
+      const defaultTraits: never[] = []; // Adjust based on what constitutes an "empty" dolly.
+      localStorage.setItem(localStorageToken, JSON.stringify(defaultTraits));
+      console.log("Initialized local storage with default dolly traits.");
+    }
+  }
 
   useEffect(() => {
     if (!isConnected) {
       // Redirect or handle the user not being connected
     }
-  }, [isConnected]);
+  }, [isConnected, router]);
 
   return (
     <div className="pb-8 bg-[#EDEDED]">
-      <Nav />
+      <Nav rewardStatus={''} />
       <Modal />
       <div className="relative mt-[70px] z-30">
         {!connected ? (
           <Login />
         ) : (
-          <>
-            <Route path="/">
-              <Dashboard />
-            </Route>
-            <Route path="/dollys">
-              <Dollys />
-            </Route>
-            <Route path="/help">
-              <Help />
-            </Route>
+          <> 
+          <Route path="/">
+            <Dashboard />
+          </Route>
+          <Route path="/dollys">
+            <Dollys />
+          </Route>
+          {/* <Route path="/tokens">
+            <Tokens />
+          </Route> */}
+          <Route path="/help">
+            <Help />
+          </Route>
+            
           </>
         )}
       </div>

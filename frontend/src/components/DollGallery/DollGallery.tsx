@@ -16,7 +16,7 @@ function DollGallery({ selectDoll }: any) {
     const DOLLYS_PER_PAGE = 12;  // Display 12 Dollys per page, adjust as needed
     const [sortedDollys, setSortedDollys] = useState<any[]>([]);
 
-
+    console.log("From DollGallery.tsx, it is...", user?.address)
     useEffect(() => {
         setSortedDollys([...user!.dollys].sort((a: any, b: any) => a.token_id - b.token_id));
     }, [user!.dollys]);

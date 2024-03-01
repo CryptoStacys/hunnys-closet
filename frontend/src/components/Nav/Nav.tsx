@@ -6,10 +6,34 @@ import React, { useState, useEffect } from "react";
 import { connectedAtom, dollEditorVisibleAtom } from "../../data/store";
 import { mode } from "../../data/config";
 
-export default function Nav() {
+type NavProps = {
+  rewardStatus: string;
+};
+
+export default function Nav({ rewardStatus }: NavProps) {
   const [connected] = useAtom(connectedAtom);
   const [shouldWiggle, setShouldWiggle] = useState(true);
   const [dollEditorVisible] = useAtom(dollEditorVisibleAtom);
+    // This function returns the emoji based on reward status
+    const getEmojiForStatus = (status: string): string => {
+      type RewardStatus = "Bunny" | "Bunny Knight" | "Bunny Duke" | "Royal Bunny" | "None";
+      const statusMapping: Record<RewardStatus, string> = {
+          "Bunny": "🐰",
+          "Bunny Knight": "⚔️",
+          "Bunny Duke": "🏰",
+          "Royal Bunny": "👑",
+          "None": "",
+      };
+      return statusMapping[status as RewardStatus] || ""; // Default to wave if status is unknown
+  };
+  
+  
+    // To stop the wiggle effect after 3 seconds
+    useEffect(() => {
+      setTimeout(() => {
+        setShouldWiggle(false);
+      }, 15000);
+    }, []);
 
   return (
     <nav className="top-2 fixed flex-center z-50 w-full box-border">

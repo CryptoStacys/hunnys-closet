@@ -1,1579 +1,1899 @@
 const colorNames = {
-  "Acidic Green 1": {
-    "r": 164,
-    "g": 255,
-    "b": 161
-  },
-  "Acidic Green 2": {
-    "r": 105,
-    "g": 245,
-    "b": 101
-  },
-  "Acidic Green 3": {
-    "r": 49,
-    "g": 204,
-    "b": 45
-  },
-  "Acidic Purple 1": {
-    "r": 233,
-    "g": 139,
-    "b": 255
-  },
-  "Acidic Purple 2": {
-    "r": 187,
-    "g": 92,
-    "b": 244
-  },
-  "Acidic Purple 3": {
-    "r": 159,
-    "g": 45,
-    "b": 228
-  },
-  "Aqua1": {
-    "r": 62,
-    "g": 255,
-    "b": 255
-  },
-  "Aqua2": {
-    "r": 0,
-    "g": 245,
-    "b": 255
-  },
-  "Aqua3": {
-    "r": 0,
-    "g": 196,
-    "b": 212
-  },
-  "Aqua4": {
-    "r": 0,
-    "g": 174,
-    "b": 191
-  },
-  "Aqua5": {
-    "r": 0,
-    "g": 134,
-    "b": 152
-  },
-  "Auburn 1": {
-    "r": 75,
-    "g": 20,
-    "b": 14
-  },
-  "Auburn 2": {
-    "r": 98,
-    "g": 18,
-    "b": 9
-  },
-  "Auburn 3": {
-    "r": 129,
-    "g": 34,
-    "b": 23
-  },
-  "Auburn 4": {
-    "r": 186,
-    "g": 58,
-    "b": 43
-  },
-  "Baby Carrot": {
-    "r": 252,
-    "g": 164,
-    "b": 122
-  },
-  "BabyPink1": {
-    "r": 255,
-    "g": 103,
-    "b": 243
-  },
-  "BabyPink2": {
-    "r": 255,
-    "g": 66,
-    "b": 224
-  },
-  "BabyPink3": {
-    "r": 255,
-    "g": 43,
-    "b": 187
-  },
-  "BabyPink4": {
-    "r": 255,
-    "g": 16,
-    "b": 189
-  },
-  "BabyPink5": {
-    "r": 221,
-    "g": 10,
-    "b": 162
-  },
-  "BakedMarshLentils": {
-    "r": 192,
-    "g": 132,
-    "b": 133
-  },
-  "BearMallow Blue": {
-    "r": 92,
-    "g": 185,
-    "b": 255
-  },
-  "Beer": {
-    "r": 239,
-    "g": 164,
-    "b": 18
-  },
-  "Blonde 1": {
-    "r": 202,
-    "g": 160,
-    "b": 64
-  },
-  "Blonde 2": {
-    "r": 226,
-    "g": 199,
-    "b": 105
-  },
-  "Blonde 3": {
-    "r": 231,
-    "g": 215,
-    "b": 163
-  },
-  "Blood Moon": {
-    "r": 211,
-    "g": 0,
-    "b": 7
-  },
-  "BloodRed0": {
-    "r": 209,
-    "g": 0,
-    "b": 10
-  },
-  "BloodRed1": {
-    "r": 248,
-    "g": 0,
-    "b": 28
-  },
-  "Blue1": {
-    "r": 98,
-    "g": 212,
-    "b": 255
-  },
-  "Blue2": {
-    "r": 84,
-    "g": 192,
-    "b": 255
-  },
-  "Blue3": {
-    "r": 36,
-    "g": 157,
-    "b": 255
-  },
-  "Blue4": {
-    "r": 0,
-    "g": 144,
-    "b": 255
-  },
-  "Blue5": {
-    "r": 0,
-    "g": 117,
-    "b": 218
-  },
-  "Blue6": {
-    "r": 0,
-    "g": 83,
-    "b": 173
-  },
-  "Blue7": {
-    "r": 0,
-    "g": 54,
-    "b": 136
-  },
-  "Blueberry Mallow": {
-    "r": 34,
-    "g": 142,
-    "b": 225
-  },
-  "Bone Shadow": {
-    "r": 157,
-    "g": 157,
-    "b": 153
-  },
-  "Bored Pink 1": {
-    "r": 255,
-    "g": 187,
-    "b": 193
-  },
-  "Bored Pink 2": {
-    "r": 246,
-    "g": 151,
-    "b": 159
-  },
-  "Bored Pink 3": {
-    "r": 213,
-    "g": 105,
-    "b": 114
-  },
-  "Bored Pink 4": {
-    "r": 179,
-    "g": 73,
-    "b": 82
-  },
-  "Brown 1": {
-    "r": 22,
-    "g": 16,
-    "b": 16
-  },
-  "Brown 2": {
-    "r": 34,
-    "g": 29,
-    "b": 29
-  },
-  "Brown 3": {
-    "r": 80,
-    "g": 71,
-    "b": 71
-  },
-  "Brown 4": {
-    "r": 72,
-    "g": 48,
-    "b": 33
-  },
-  "Brown 5": {
-    "r": 132,
-    "g": 96,
-    "b": 76
-  },
-  "Bunny Club Blue": {
-    "r": 0,
-    "g": 66,
-    "b": 208
-  },
-  "Bunny Club Navy": {
-    "r": 0,
-    "g": 55,
-    "b": 153
-  },
-  "Bunny Queen Blush": {
-    "r": 253,
-    "g": 204,
-    "b": 222
-  },
-  "Bunny Queen Crown": {
-    "r": 255,
-    "g": 218,
-    "b": 93
-  },
-  "CampingTan": {
-    "r": 255,
-    "g": 175,
-    "b": 145
-  },
-  "Candy Cloud Paint": {
-    "r": 226,
-    "g": 210,
-    "b": 219
-  },
-  "Carrots": {
-    "r": 234,
-    "g": 135,
-    "b": 88
-  },
-  "Cartoon Blue 1": {
-    "r": 0,
-    "g": 122,
-    "b": 183
-  },
-  "Cartoon Blue 2": {
-    "r": 57,
-    "g": 150,
-    "b": 207
-  },
-  "Choco Wolfy Cocoa": {
-    "r": 64,
-    "g": 25,
-    "b": 8
-  },
-  "Christmas Thistle": {
-    "r": 41,
-    "g": 95,
-    "b": 65
-  },
-  "Christmas Wine": {
-    "r": 98,
-    "g": 30,
-    "b": 30
-  },
-  "Cloud Bunny": {
-    "r": 212,
-    "g": 226,
-    "b": 252
-  },
-  "Cookie Crumbs": {
-    "r": 178,
-    "g": 129,
-    "b": 55
-  },
-  "Cottyne Cloud": {
-    "r": 206,
-    "g": 223,
-    "b": 215
-  },
-  "Cute Crater": {
-    "r": 217,
-    "g": 219,
-    "b": 220
-  },
-  "Darknova Drip": {
-    "r": 53,
-    "g": 61,
-    "b": 70
-  },
-  "Dead Flowers": {
-    "r": 88,
-    "g": 70,
-    "b": 103
-  },
-  "Dino Scales": {
-    "r": 6,
-    "g": 135,
-    "b": 58
-  },
-  "Drunkard Brown": {
-    "r": 134,
-    "g": 80,
-    "b": 44
-  },
-  "Drunkard Orange": {
-    "r": 251,
-    "g": 152,
-    "b": 110
-  },
-  "DryBones1": {
-    "r": 255,
-    "g": 253,
-    "b": 236
-  },
-  "Empty": {
-    "r": 0,
-    "g": 0,
-    "b": 0
-  },
-  "Empty_L": {
-    "r": 0,
-    "g": 0,
-    "b": 0
-  },
-  "Evergreen Pine": {
-    "r": 51,
-    "g": 77,
-    "b": 62
-  },
-  "Eyeball Wall": {
-    "r": 128,
-    "g": 72,
-    "b": 178
-  },
-  "FilmGrain1": {
-    "r": 159,
-    "g": 159,
-    "b": 159
-  },
-  "FilmGrain2": {
-    "r": 135,
-    "g": 135,
-    "b": 135
-  },
-  "FilmGrain5": {
-    "r": 64,
-    "g": 64,
-    "b": 64
-  },
-  "FilmGrainSkin": {
-    "r": 245,
-    "g": 245,
-    "b": 245
-  },
-  "FLS Dark Brown (Shop)": {
-    "r": 98,
-    "g": 24,
-    "b": 15
-  },
-  "FLS Dark Brown": {
-    "r": 98,
-    "g": 24,
-    "b": 15
-  },
-  "FLS Forest (Shop)": {
-    "r": 57,
-    "g": 167,
-    "b": 129
-  },
-  "FLS Forest": {
-    "r": 57,
-    "g": 167,
-    "b": 129
-  },
-  "FLS Grey (Shop)": {
-    "r": 106,
-    "g": 106,
-    "b": 106
-  },
-  "FLS Grey": {
-    "r": 106,
-    "g": 106,
-    "b": 106
-  },
-  "FLS Light Brown (Shop)": {
-    "r": 165,
-    "g": 97,
-    "b": 53
-  },
-  "FLS Light Brown": {
-    "r": 165,
-    "g": 97,
-    "b": 53
-  },
-  "FLS Neon Green (Shop)": {
-    "r": 97,
-    "g": 233,
-    "b": 14
-  },
-  "FLS Neon Green": {
-    "r": 97,
-    "g": 233,
-    "b": 14
-  },
-  "FLS Neon Purple (Shop)": {
-    "r": 248,
-    "g": 1,
-    "b": 255
-  },
-  "FLS Neon Purple": {
-    "r": 248,
-    "g": 1,
-    "b": 255
-  },
-  "FLS Periwinkle (Shop)": {
-    "r": 129,
-    "g": 148,
-    "b": 255
-  },
-  "FLS Periwinkle": {
-    "r": 129,
-    "g": 148,
-    "b": 255
-  },
-  "FLS Pink (Shop)": {
-    "r": 255,
-    "g": 143,
-    "b": 158
-  },
-  "FLS Pink": {
-    "r": 255,
-    "g": 143,
-    "b": 158
-  },
-  "FLS Plum (Shop)": {
-    "r": 49,
-    "g": 27,
-    "b": 91
-  },
-  "FLS Plum": {
-    "r": 49,
-    "g": 27,
-    "b": 91
-  },
-  "Flurry": {
-    "r": 220,
-    "g": 255,
-    "b": 255
-  },
-  "ForestGreen1": {
-    "r": 81,
-    "g": 222,
-    "b": 177
-  },
-  "ForestGreen2": {
-    "r": 3,
-    "g": 175,
-    "b": 130
-  },
-  "ForestGreen3": {
-    "r": 0,
-    "g": 139,
-    "b": 101
-  },
-  "ForestGreen4": {
-    "r": 0,
-    "g": 120,
-    "b": 86
-  },
-  "Fossilized Sunbeam": {
-    "r": 255,
-    "g": 175,
-    "b": 63
-  },
-  "Full Moon": {
-    "r": 255,
-    "g": 101,
-    "b": 35
-  },
-  "GalaxyGradient0": {
-    "r": 255,
-    "g": 139,
-    "b": 145
-  },
-  "Ghost Goo": {
-    "r": 134,
-    "g": 224,
-    "b": 204
-  },
-  "Ghostly Presence": {
-    "r": 196,
-    "g": 255,
-    "b": 242
-  },
-  "Glowing Daisy": {
-    "r": 240,
-    "g": 207,
-    "b": 255
-  },
-  "Gorgon Scale": {
-    "r": 181,
-    "g": 245,
-    "b": 16
-  },
-  "Graveyard Field": {
-    "r": 72,
-    "g": 61,
-    "b": 81
-  },
-  "Green1": {
-    "r": 51,
-    "g": 255,
-    "b": 116
-  },
-  "Green2": {
-    "r": 36,
-    "g": 233,
-    "b": 98
-  },
-  "Green3": {
-    "r": 23,
-    "g": 203,
-    "b": 80
-  },
-  "Grey1": {
-    "r": 224,
-    "g": 224,
-    "b": 224
-  },
-  "Grey2": {
-    "r": 194,
-    "g": 194,
-    "b": 194
-  },
-  "Grey3": {
-    "r": 143,
-    "g": 143,
-    "b": 143
-  },
-  "Grey4": {
-    "r": 88,
-    "g": 88,
-    "b": 88
-  },
-  "Grey5": {
-    "r": 41,
-    "g": 41,
-    "b": 41
-  },
-  "GummyGreen1": {
-    "r": 86,
-    "g": 255,
-    "b": 6
-  },
-  "Harmony Blue": {
-    "r": 17,
-    "g": 161,
-    "b": 241
-  },
-  "Harmony Dark Blue": {
-    "r": 4,
-    "g": 121,
-    "b": 187
-  },
-  "Harmony Dark Green": {
-    "r": 9,
-    "g": 114,
-    "b": 19
-  },
-  "Harmony Dark Indigo": {
-    "r": 2,
-    "g": 49,
-    "b": 96
-  },
-  "Harmony Dark Orange": {
-    "r": 173,
-    "g": 87,
-    "b": 1
-  },
-  "Harmony Dark Red": {
-    "r": 155,
-    "g": 3,
-    "b": 3
-  },
-  "Harmony Dark Violet": {
-    "r": 108,
-    "g": 0,
-    "b": 95
-  },
-  "Harmony Dark Yellow": {
-    "r": 189,
-    "g": 153,
-    "b": 0
-  },
-  "Harmony Green": {
-    "r": 32,
-    "g": 159,
-    "b": 45
-  },
-  "Harmony Indigo": {
-    "r": 0,
-    "g": 70,
-    "b": 139
-  },
-  "Harmony Orange": {
-    "r": 237,
-    "g": 126,
-    "b": 14
-  },
-  "Harmony Red": {
-    "r": 230,
-    "g": 12,
-    "b": 12
-  },
-  "Harmony Violet": {
-    "r": 177,
-    "g": 24,
-    "b": 159
-  },
-  "Harmony Yellow": {
-    "r": 255,
-    "g": 210,
-    "b": 21
-  },
-  "Haunted Hallway": {
-    "r": 58,
-    "g": 89,
-    "b": 82
-  },
-  "HexyveraPink": {
-    "r": 255,
-    "g": 81,
-    "b": 180
-  },
-  "Horse Bone": {
-    "r": 190,
-    "g": 186,
-    "b": 170
-  },
-  "HotPink1": {
-    "r": 255,
-    "g": 138,
-    "b": 183
-  },
-  "HotPink2": {
-    "r": 255,
-    "g": 114,
-    "b": 187
-  },
-  "HotPink3": {
-    "r": 255,
-    "g": 84,
-    "b": 167
-  },
-  "HotPink4": {
-    "r": 255,
-    "g": 55,
-    "b": 141
-  },
-  "HotPink5": {
-    "r": 238,
-    "g": 37,
-    "b": 115
-  },
-  "HotPink6": {
-    "r": 236,
-    "g": 6,
-    "b": 90
-  },
-  "Hottie Dottie": {
-    "r": 195,
-    "g": 207,
-    "b": 192
-  },
-  "HunnysPurple1": {
-    "r": 185,
-    "g": 158,
-    "b": 252
-  },
-  "HunnysPurple2": {
-    "r": 152,
-    "g": 115,
-    "b": 243
-  },
-  "HunnysPurple3": {
-    "r": 128,
-    "g": 85,
-    "b": 234
-  },
-  "HunnysPurple4": {
-    "r": 103,
-    "g": 55,
-    "b": 222
-  },
-  "HunnysPurple5": {
-    "r": 83,
-    "g": 32,
-    "b": 208
-  },
-  "HunnysPurple6": {
-    "r": 93,
-    "g": 44,
-    "b": 208
-  },
-  "HunnysYellow1": {
-    "r": 255,
-    "g": 248,
-    "b": 202
-  },
-  "HunnysYellow2": {
-    "r": 255,
-    "g": 243,
-    "b": 162
-  },
-  "HunnysYellow3": {
-    "r": 255,
-    "g": 237,
-    "b": 114
-  },
-  "HunnysYellow4": {
-    "r": 255,
-    "g": 230,
-    "b": 63
-  },
-  "HunnysYellow5": {
-    "r": 254,
-    "g": 221,
-    "b": 0
-  },
-  "HunnysYellow6": {
-    "r": 233,
-    "g": 203,
-    "b": 0
-  },
-  "Icicle Pop": {
-    "r": 59,
-    "g": 206,
-    "b": 254
-  },
-  "IromiX9Purple4": {
-    "r": 241,
-    "g": 86,
-    "b": 255
-  },
-  "IromiX9Purple6": {
-    "r": 184,
-    "g": 0,
-    "b": 215
-  },
-  "Jinglebells": {
-    "r": 223,
-    "g": 150,
-    "b": 42
-  },
-  "Lavender1": {
-    "r": 187,
-    "g": 156,
-    "b": 255
-  },
-  "Lavender2": {
-    "r": 171,
-    "g": 132,
-    "b": 255
-  },
-  "Lavender3": {
-    "r": 137,
-    "g": 83,
-    "b": 255
-  },
-  "Lavender4": {
-    "r": 119,
-    "g": 63,
-    "b": 241
-  },
-  "Lavender5": {
-    "r": 119,
-    "g": 63,
-    "b": 241
-  },
-  "Lavender6": {
-    "r": 102,
-    "g": 49,
-    "b": 218
-  },
-  "Lavender7": {
-    "r": 86,
-    "g": 33,
-    "b": 202
-  },
-  "LimeGreen1": {
-    "r": 208,
-    "g": 255,
-    "b": 150
-  },
-  "LimeGreen2": {
-    "r": 181,
-    "g": 253,
-    "b": 93
-  },
-  "LimeGreen3": {
-    "r": 163,
-    "g": 255,
-    "b": 53
-  },
-  "LimeGreen4": {
-    "r": 141,
-    "g": 233,
-    "b": 32
-  },
-  "LimeGreen5": {
-    "r": 78,
-    "g": 255,
-    "b": 0
-  },
-  "Lonely Forest Purple": {
-    "r": 161,
-    "g": 138,
-    "b": 168
-  },
-  "MagicalPurple5": {
-    "r": 183,
-    "g": 33,
-    "b": 202
-  },
-  "MagicalPurple6": {
-    "r": 162,
-    "g": 9,
-    "b": 178
-  },
-  "Mallow Beach Banana": {
-    "r": 255,
-    "g": 222,
-    "b": 134
-  },
-  "Mallow Sunset Orange": {
-    "r": 254,
-    "g": 208,
-    "b": 114
-  },
-  "Mammoth Mist": {
-    "r": 98,
-    "g": 211,
-    "b": 255
-  },
-  "Mika Eyes Blue": {
-    "r": 45,
-    "g": 89,
-    "b": 211
-  },
-  "Mint1": {
-    "r": 164,
-    "g": 255,
-    "b": 212
-  },
-  "Mint2": {
-    "r": 130,
-    "g": 255,
-    "b": 193
-  },
-  "Mint3": {
-    "r": 78,
-    "g": 255,
-    "b": 163
-  },
-  "Mint4": {
-    "r": 36,
-    "g": 244,
-    "b": 141
-  },
-  "Mint5": {
-    "r": 0,
-    "g": 234,
-    "b": 120
-  },
-  "MintAlien": {
-    "r": 189,
-    "g": 255,
-    "b": 229
-  },
-  "Minty Scale": {
-    "r": 36,
-    "g": 165,
-    "b": 128
-  },
-  "Miss Jade": {
-    "r": 146,
-    "g": 205,
-    "b": 151
-  },
-  "Mistletoe": {
-    "r": 143,
-    "g": 35,
-    "b": 35
-  },
-  "Mom Blonde": {
-    "r": 252,
-    "g": 193,
-    "b": 84
-  },
-  "MomBlonde0": {
-    "r": 252,
-    "g": 193,
-    "b": 84
-  },
-  "Moms Creamscicle 2": {
-    "r": 255,
-    "g": 190,
-    "b": 121
-  },
-  "Moms Creamscicle 3": {
-    "r": 255,
-    "g": 147,
-    "b": 0
-  },
-  "MomsCreamscicle2": {
-    "r": 255,
-    "g": 190,
-    "b": 121
-  },
-  "MomsCreamscicle3": {
-    "r": 255,
-    "g": 147,
-    "b": 0
-  },
-  "MoonSeaBlue3": {
-    "r": 151,
-    "g": 200,
-    "b": 255
-  },
-  "MoonSeaBlue4": {
-    "r": 0,
-    "g": 136,
-    "b": 255
-  },
-  "MoonSeaBlue5": {
-    "r": 0,
-    "g": 82,
-    "b": 223
-  },
-  "Mossy Stone": {
-    "r": 54,
-    "g": 63,
-    "b": 68
-  },
-  "Moth Wings": {
-    "r": 190,
-    "g": 138,
-    "b": 233
-  },
-  "NeonBlue4": {
-    "r": 0,
-    "g": 255,
-    "b": 255
-  },
-  "NeonPink4": {
-    "r": 255,
-    "g": 65,
-    "b": 255
-  },
-  "NeonPink5": {
-    "r": 255,
-    "g": 54,
-    "b": 209
-  },
-  "NeonPurple3": {
-    "r": 255,
-    "g": 119,
-    "b": 255
-  },
-  "NeonPurple4": {
-    "r": 255,
-    "g": 0,
-    "b": 255
-  },
-  "OnyxGradient1": {
-    "r": 52,
-    "g": 52,
-    "b": 52
-  },
-  "Orange1": {
-    "r": 255,
-    "g": 145,
-    "b": 30
-  },
-  "Orange2": {
-    "r": 255,
-    "g": 121,
-    "b": 17
-  },
-  "Orange3": {
-    "r": 251,
-    "g": 107,
-    "b": 1
-  },
-  "Orange4": {
-    "r": 255,
-    "g": 74,
-    "b": 0
-  },
-  "Orangeish 1": {
-    "r": 210,
-    "g": 100,
-    "b": 17
-  },
-  "Orangeish 2": {
-    "r": 255,
-    "g": 140,
-    "b": 52
-  },
-  "Orangeish 3": {
-    "r": 255,
-    "g": 175,
-    "b": 114
-  },
-  "Orangeish 4": {
-    "r": 255,
-    "g": 210,
-    "b": 176
-  },
-  "OrangeYellow0": {
-    "r": 255,
-    "g": 222,
-    "b": 116
-  },
-  "OrangeYellow1": {
-    "r": 255,
-    "g": 210,
-    "b": 60
-  },
-  "OrangeYellow2": {
-    "r": 255,
-    "g": 202,
-    "b": 36
-  },
-  "OrangeYellow3": {
-    "r": 255,
-    "g": 191,
-    "b": 0
-  },
-  "OrangeYellow4": {
-    "r": 255,
-    "g": 171,
-    "b": 0
-  },
-  "Peep Pink": {
-    "r": 253,
-    "g": 163,
-    "b": 209
-  },
-  "Periwinkle1": {
-    "r": 181,
-    "g": 205,
-    "b": 255
-  },
-  "Periwinkle2": {
-    "r": 129,
-    "g": 176,
-    "b": 255
-  },
-  "Periwinkle3": {
-    "r": 111,
-    "g": 151,
-    "b": 255
-  },
-  "Periwinkle4": {
-    "r": 83,
-    "g": 122,
-    "b": 246
-  },
-  "Periwinkle5": {
-    "r": 57,
-    "g": 99,
-    "b": 228
-  },
-  "Periwinkle6": {
-    "r": 50,
-    "g": 95,
-    "b": 214
-  },
-  "Periwinkle7": {
-    "r": 27,
-    "g": 69,
-    "b": 178
-  },
-  "PlanetaryTurquoise3": {
-    "r": 0,
-    "g": 255,
-    "b": 255
-  },
-  "Powder Yeti": {
-    "r": 192,
-    "g": 239,
-    "b": 255
-  },
-  "Prehistoric Orange": {
-    "r": 226,
-    "g": 116,
-    "b": 62
-  },
-  "Purple1": {
-    "r": 246,
-    "g": 210,
-    "b": 255
-  },
-  "Purple2": {
-    "r": 242,
-    "g": 189,
-    "b": 255
-  },
-  "Purple3": {
-    "r": 233,
-    "g": 141,
-    "b": 255
-  },
-  "Purple4": {
-    "r": 223,
-    "g": 97,
-    "b": 255
-  },
-  "Purple5": {
-    "r": 196,
-    "g": 90,
-    "b": 220
-  },
-  "Purple6": {
-    "r": 181,
-    "g": 49,
-    "b": 211
-  },
-  "Purple7": {
-    "r": 165,
-    "g": 34,
-    "b": 194
-  },
-  "Purple8": {
-    "r": 152,
-    "g": 25,
-    "b": 181
-  },
-  "Red1": {
-    "r": 254,
-    "g": 46,
-    "b": 46
-  },
-  "Red2": {
-    "r": 254,
+  "A Bit Too Classy": {
+    "b": 66,
     "g": 28,
-    "b": 28
-  },
-  "Red3": {
-    "r": 254,
-    "g": 0,
-    "b": 0
-  },
-  "Red4": {
-    "r": 224,
-    "g": 0,
-    "b": 0
-  },
-  "Red5": {
-    "r": 202,
-    "g": 0,
-    "b": 0
-  },
-  "RedOrange1": {
-    "r": 255,
-    "g": 99,
-    "b": 68
-  },
-  "RedOrange2": {
-    "r": 255,
-    "g": 83,
-    "b": 63
-  },
-  "RedOrange3": {
-    "r": 255,
-    "g": 70,
-    "b": 55
-  },
-  "RedOrange4": {
-    "r": 255,
-    "g": 48,
-    "b": 25
-  },
-  "RedOrange5": {
-    "r": 250,
-    "g": 38,
-    "b": 25
-  },
-  "RedPink1": {
-    "r": 255,
-    "g": 58,
-    "b": 105
-  },
-  "RedPink2": {
-    "r": 255,
-    "g": 23,
-    "b": 79
-  },
-  "RedPink3": {
-    "r": 237,
-    "g": 10,
-    "b": 66
-  },
-  "RedPink4": {
-    "r": 226,
-    "g": 0,
-    "b": 55
-  },
-  "RedPink5": {
-    "r": 191,
-    "g": 0,
-    "b": 46
-  },
-  "RedPink6": {
-    "r": 165,
-    "g": 2,
-    "b": 40
-  },
-  "Ripple Pink": {
-    "r": 221,
-    "g": 102,
-    "b": 160
-  },
-  "Ripples Peach Hair": {
-    "r": 255,
-    "g": 173,
-    "b": 105
-  },
-  "Royal Bunny Blue": {
-    "r": 56,
-    "g": 106,
-    "b": 247
-  },
-  "Royal Carrots": {
-    "r": 234,
-    "g": 135,
-    "b": 88
-  },
-  "Royal Garden Rose": {
-    "r": 255,
-    "g": 178,
-    "b": 207
-  },
-  "RunestoneGrey5": {
-    "r": 104,
-    "g": 104,
-    "b": 101
-  },
-  "RuneStoneGrey6": {
-    "r": 49,
-    "g": 49,
-    "b": 49
-  },
-  "Seafoam1": {
-    "r": 148,
+    "r": 94
+},
+"Acidic Green 1": {
+    "b": 161,
     "g": 255,
-    "b": 245
-  },
-  "Seafoam2": {
-    "r": 102,
-    "g": 255,
-    "b": 228
-  },
-  "Seafoam3": {
-    "r": 60,
-    "g": 239,
-    "b": 207
-  },
-  "Seafoam4": {
-    "r": 0,
-    "g": 236,
-    "b": 197
-  },
-  "Seafoam5": {
-    "r": 0,
-    "g": 215,
-    "b": 165
-  },
-  "Seafoam6": {
-    "r": 0,
-    "g": 194,
-    "b": 146
-  },
-  "Seafoam7": {
-    "r": 0,
-    "g": 177,
-    "b": 127
-  },
-  "Seafoam8": {
-    "r": 0,
-    "g": 134,
-    "b": 94
-  },
-  "ShootingStarYellow0": {
-    "r": 253,
-    "g": 252,
-    "b": 186
-  },
-  "ShootingStarYellow3": {
-    "r": 255,
+    "r": 164
+},
+"Acidic Green 2": {
+    "b": 101,
     "g": 245,
-    "b": 70
-  },
-  "Ski Suit": {
-    "r": 236,
-    "g": 181,
-    "b": 255
-  },
-  "Skull Plum": {
-    "r": 83,
-    "g": 19,
-    "b": 144
-  },
-  "Slithering Swamp": {
-    "r": 89,
-    "g": 127,
-    "b": 24
-  },
-  "Snake Tongue": {
-    "r": 240,
-    "g": 80,
-    "b": 131
-  },
-  "Snow Berry": {
-    "r": 160,
-    "g": 90,
-    "b": 223
-  },
-  "SnowWhite0": {
-    "r": 255,
+    "r": 105
+},
+"Acidic Green 3": {
+    "b": 45,
+    "g": 204,
+    "r": 49
+},
+"Acidic Purple 1": {
+    "b": 255,
+    "g": 139,
+    "r": 233
+},
+"Acidic Purple 2": {
+    "b": 244,
+    "g": 92,
+    "r": 187
+},
+"Acidic Purple 3": {
+    "b": 228,
+    "g": 45,
+    "r": 159
+},
+"Alien Moo Cow": {
+    "b": 41,
+    "g": 110,
+    "r": 8
+},
+"Aqua1": {
+    "b": 255,
     "g": 255,
-    "b": 255
-  },
-  "SnowWhite1": {
-    "r": 255,
-    "g": 255,
-    "b": 255
-  },
-  "SpacePink0": {
-    "r": 255,
-    "g": 169,
-    "b": 255
-  },
-  "Spooky Bone": {
-    "r": 248,
-    "g": 246,
-    "b": 237
-  },
-  "Spooky Masonry": {
-    "r": 97,
-    "g": 117,
-    "b": 112
-  },
-  "Stacys Eyes": {
-    "r": 0,
-    "g": 123,
-    "b": 236
-  },
-  "StacysEyes": {
-    "r": 0,
-    "g": 123,
-    "b": 236
-  },
-  "SteelBlue5": {
-    "r": 92,
-    "g": 159,
-    "b": 255
-  },
-  "StoneGrey1": {
-    "r": 183,
-    "g": 183,
-    "b": 183
-  },
-  "StoneGrey2": {
-    "r": 174,
+    "r": 62
+},
+"Aqua2": {
+    "b": 255,
+    "g": 245,
+    "r": 0
+},
+"Aqua3": {
+    "b": 212,
+    "g": 196,
+    "r": 0
+},
+"Aqua4": {
+    "b": 191,
     "g": 174,
-    "b": 174
-  },
-  "StoneGrey6": {
-    "r": 54,
-    "g": 54,
-    "b": 54
-  },
-  "Sunny Queen": {
-    "r": 246,
-    "g": 202,
-    "b": 53
-  },
-  "Super Bunny Blue 1": {
-    "r": 73,
-    "g": 184,
-    "b": 228
-  },
-  "Super Bunny Blue 2": {
-    "r": 0,
-    "g": 155,
-    "b": 217
-  },
-  "Super Bunny Blue 3": {
-    "r": 0,
-    "g": 122,
-    "b": 172
-  },
-  "Super Bunny Green 1": {
-    "r": 103,
-    "g": 190,
-    "b": 91
-  },
-  "Super Bunny Green 2": {
-    "r": 68,
-    "g": 175,
-    "b": 53
-  },
-  "Super Bunny Green 3": {
-    "r": 48,
-    "g": 146,
-    "b": 34
-  },
-  "Super Bunny Red 1": {
-    "r": 233,
-    "g": 65,
-    "b": 49
-  },
-  "Super Bunny Red 2": {
-    "r": 230,
-    "g": 35,
-    "b": 16
-  },
-  "Super Bunny Red 3": {
-    "r": 193,
-    "g": 23,
-    "b": 7
-  },
-  "Super Bunny Yellow 1": {
-    "r": 253,
-    "g": 221,
-    "b": 76
-  },
-  "Super Bunny Yellow 2": {
-    "r": 252,
-    "g": 207,
-    "b": 0
-  },
-  "Super Bunny Yellow 3": {
-    "r": 208,
-    "g": 169,
-    "b": 0
-  },
-  "Super Haunted": {
-    "r": 84,
-    "g": 254,
-    "b": 208
-  },
-  "SwampJuice0": {
-    "r": 127,
-    "g": 250,
-    "b": 96
-  },
-  "VanillaCream": {
-    "r": 255,
-    "g": 240,
-    "b": 224
-  },
-  "VaporwavePink5": {
-    "r": 236,
+    "r": 0
+},
+"Aqua5": {
+    "b": 152,
+    "g": 134,
+    "r": 0
+},
+"Auburn 1": {
+    "b": 14,
+    "g": 20,
+    "r": 75
+},
+"Auburn 2": {
+    "b": 9,
+    "g": 18,
+    "r": 98
+},
+"Auburn 3": {
+    "b": 23,
+    "g": 34,
+    "r": 129
+},
+"Auburn 4": {
+    "b": 43,
+    "g": 58,
+    "r": 186
+},
+"Baby Carrot": {
+    "b": 122,
+    "g": 164,
+    "r": 252
+},
+"BabyPink1": {
+    "b": 243,
+    "g": 103,
+    "r": 255
+},
+"BabyPink2": {
+    "b": 224,
     "g": 66,
-    "b": 174
-  },
-  "VaporwavePurple4": {
-    "r": 130,
-    "g": 90,
-    "b": 255
-  },
-  "VaporwavePurple5": {
-    "r": 108,
-    "g": 66,
-    "b": 255
-  },
-  "VoodooGreen5": {
-    "r": 66,
-    "g": 246,
-    "b": 72
-  },
-  "Weremoon": {
-    "r": 253,
-    "g": 156,
-    "b": 93
-  },
-  "White": {
-    "r": 255,
-    "g": 255,
-    "b": 255
-  },
-  "Wintersday Green": {
-    "r": 183,
+    "r": 255
+},
+"BabyPink3": {
+    "b": 187,
+    "g": 43,
+    "r": 255
+},
+"BabyPink4": {
+    "b": 189,
+    "g": 16,
+    "r": 255
+},
+"BabyPink5": {
+    "b": 162,
+    "g": 10,
+    "r": 221
+},
+"BakedMarshLentils": {
+    "b": 133,
+    "g": 132,
+    "r": 192
+},
+"Banana Candy": {
+    "b": 87,
+    "g": 178,
+    "r": 232
+},
+"Barb-ish": {
+    "b": 161,
+    "g": 89,
+    "r": 215
+},
+"Barely Yellow": {
+    "b": 164,
     "g": 227,
-    "b": 216
-  },
-  "Wolfy Fur": {
-    "r": 141,
-    "g": 88,
-    "b": 70
-  },
-  "XiclonHemispherePink1": {
-    "r": 255,
+    "r": 239
+},
+"BearMallow Blue": {
+    "b": 255,
+    "g": 185,
+    "r": 92
+},
+"Beer": {
+    "b": 18,
+    "g": 164,
+    "r": 239
+},
+"Bio Glo-up": {
+    "b": 34,
+    "g": 145,
+    "r": 122
+},
+"Bling Bling": {
+    "b": 41,
+    "g": 169,
+    "r": 244
+},
+"Blonde 1": {
+    "b": 64,
+    "g": 160,
+    "r": 202
+},
+"Blonde 2": {
+    "b": 105,
+    "g": 199,
+    "r": 226
+},
+"Blonde 3": {
+    "b": 163,
+    "g": 215,
+    "r": 231
+},
+"Blood Moon": {
+    "b": 7,
     "g": 0,
-    "b": 131
-  },
-  "XirodiumGold5": {
-    "r": 253,
-    "g": 255,
-    "b": 77
-  },
-  "XirodiumGold7": {
-    "r": 234,
-    "g": 239,
-    "b": 0
-  },
-  "Yellow1": {
-    "r": 255,
-    "g": 238,
-    "b": 102
-  },
-  "Yellow2": {
-    "r": 255,
-    "g": 234,
-    "b": 64
-  },
-  "Yellow3": {
-    "r": 255,
-    "g": 229,
-    "b": 24
-  },
-  "Yellow4": {
-    "r": 255,
+    "r": 211
+},
+"BloodRed0": {
+    "b": 10,
+    "g": 0,
+    "r": 209
+},
+"BloodRed1": {
+    "b": 28,
+    "g": 0,
+    "r": 248
+},
+"Blue Dog": {
+    "b": 191,
+    "g": 91,
+    "r": 57
+},
+"Blue1": {
+    "b": 255,
+    "g": 212,
+    "r": 98
+},
+"Blue2": {
+    "b": 255,
+    "g": 192,
+    "r": 84
+},
+"Blue3": {
+    "b": 255,
+    "g": 157,
+    "r": 36
+},
+"Blue4": {
+    "b": 255,
+    "g": 144,
+    "r": 0
+},
+"Blue5": {
+    "b": 218,
+    "g": 117,
+    "r": 0
+},
+"Blue6": {
+    "b": 173,
+    "g": 83,
+    "r": 0
+},
+"Blue7": {
+    "b": 136,
+    "g": 54,
+    "r": 0
+},
+"Blueberry Mallow": {
+    "b": 225,
+    "g": 142,
+    "r": 34
+},
+"Bone Shadow": {
+    "b": 153,
+    "g": 157,
+    "r": 157
+},
+"Bored Pink 1": {
+    "b": 193,
+    "g": 187,
+    "r": 255
+},
+"Bored Pink 2": {
+    "b": 159,
+    "g": 151,
+    "r": 246
+},
+"Bored Pink 3": {
+    "b": 114,
+    "g": 105,
+    "r": 213
+},
+"Bored Pink 4": {
+    "b": 82,
+    "g": 73,
+    "r": 179
+},
+"Brown 1": {
+    "b": 16,
+    "g": 16,
+    "r": 22
+},
+"Brown 2": {
+    "b": 29,
+    "g": 29,
+    "r": 34
+},
+"Brown 3": {
+    "b": 71,
+    "g": 71,
+    "r": 80
+},
+"Brown 4": {
+    "b": 33,
+    "g": 48,
+    "r": 72
+},
+"Brown 5": {
+    "b": 76,
+    "g": 96,
+    "r": 132
+},
+"Bunny Club Blue": {
+    "b": 208,
+    "g": 66,
+    "r": 0
+},
+"Bunny Club Navy": {
+    "b": 153,
+    "g": 55,
+    "r": 0
+},
+"Bunny Queen Blush": {
+    "b": 222,
+    "g": 204,
+    "r": 253
+},
+"Bunny Queen Crown": {
+    "b": 93,
     "g": 218,
-    "b": 0
-  }
+    "r": 255
+},
+"Burnished": {
+    "b": 80,
+    "g": 98,
+    "r": 174
+},
+"Burnt Sienna": {
+    "b": 41,
+    "g": 73,
+    "r": 177
+},
+"CampingTan": {
+    "b": 145,
+    "g": 175,
+    "r": 255
+},
+"Candy Cloud Paint": {
+    "b": 219,
+    "g": 210,
+    "r": 226
+},
+"Carrots": {
+    "b": 88,
+    "g": 135,
+    "r": 234
+},
+"Cartoon Blue 1": {
+    "b": 183,
+    "g": 122,
+    "r": 0
+},
+"Cartoon Blue 2": {
+    "b": 207,
+    "g": 150,
+    "r": 57
+},
+"Chalkboard": {
+    "b": 74,
+    "g": 69,
+    "r": 70
+},
+"Choco Wolfy Cocoa": {
+    "b": 8,
+    "g": 25,
+    "r": 64
+},
+"ChocoBun": {
+    "b": 51,
+    "g": 58,
+    "r": 86
+},
+"Christmas Thistle": {
+    "b": 65,
+    "g": 95,
+    "r": 41
+},
+"Christmas Wine": {
+    "b": 30,
+    "g": 30,
+    "r": 98
+},
+"Cloud Bunny": {
+    "b": 252,
+    "g": 226,
+    "r": 212
+},
+"Coffee with Cream": {
+    "b": 151,
+    "g": 182,
+    "r": 228
+},
+"Cold Berry": {
+    "b": 107,
+    "g": 62,
+    "r": 140
+},
+"Cooked Carrot": {
+    "b": 52,
+    "g": 84,
+    "r": 164
+},
+"Cookie Crumbs": {
+    "b": 55,
+    "g": 129,
+    "r": 178
+},
+"Cottyne Cloud": {
+    "b": 215,
+    "g": 223,
+    "r": 206
+},
+"Cute Crater": {
+    "b": 220,
+    "g": 219,
+    "r": 217
+},
+"Cute Frilly Dress": {
+    "b": 228,
+    "g": 145,
+    "r": 217
+},
+"Dark Destiny": {
+    "b": 47,
+    "g": 43,
+    "r": 44
+},
+"Darknova Drip": {
+    "b": 70,
+    "g": 61,
+    "r": 53
+},
+"Dead Flowers": {
+    "b": 103,
+    "g": 70,
+    "r": 88
+},
+"Deer Chew": {
+    "b": 59,
+    "g": 98,
+    "r": 11
+},
+"Designer Grape": {
+    "b": 63,
+    "g": 22,
+    "r": 32
+},
+"Devious Envy": {
+    "b": 46,
+    "g": 46,
+    "r": 39
+},
+"Dino Scales": {
+    "b": 58,
+    "g": 135,
+    "r": 6
+},
+"Dolphin House": {
+    "b": 105,
+    "g": 77,
+    "r": 14
+},
+"Dried Leaf": {
+    "b": 64,
+    "g": 66,
+    "r": 44
+},
+"Drippy Juice": {
+    "b": 106,
+    "g": 50,
+    "r": 98
+},
+"Drunkard Brown": {
+    "b": 44,
+    "g": 80,
+    "r": 134
+},
+"Drunkard Orange": {
+    "b": 110,
+    "g": 152,
+    "r": 251
+},
+"DryBones1": {
+    "b": 236,
+    "g": 253,
+    "r": 255
+},
+"Dubious Polo": {
+    "b": 145,
+    "g": 109,
+    "r": 30
+},
+"Empty": {
+    "b": 0,
+    "g": 0,
+    "r": 0
+},
+"Empty_L": {
+    "b": 0,
+    "g": 0,
+    "r": 0
+},
+"Evergreen Pine": {
+    "b": 62,
+    "g": 77,
+    "r": 51
+},
+"Eyeball Wall": {
+    "b": 178,
+    "g": 72,
+    "r": 128
+},
+"FilmGrain1": {
+    "b": 159,
+    "g": 159,
+    "r": 159
+},
+"FilmGrain2": {
+    "b": 135,
+    "g": 135,
+    "r": 135
+},
+"FilmGrain5": {
+    "b": 64,
+    "g": 64,
+    "r": 64
+},
+"FilmGrainSkin": {
+    "b": 245,
+    "g": 245,
+    "r": 245
+},
+"FLS Dark Brown": {
+    "b": 15,
+    "g": 24,
+    "r": 98
+},
+"FLS Dark Brown (Shop)": {
+    "b": 15,
+    "g": 24,
+    "r": 98
+},
+"FLS Forest": {
+    "b": 129,
+    "g": 167,
+    "r": 57
+},
+"FLS Forest (Shop)": {
+    "b": 129,
+    "g": 167,
+    "r": 57
+},
+"FLS Grey": {
+    "b": 106,
+    "g": 106,
+    "r": 106
+},
+"FLS Grey (Shop)": {
+    "b": 106,
+    "g": 106,
+    "r": 106
+},
+"FLS Light Brown": {
+    "b": 53,
+    "g": 97,
+    "r": 165
+},
+"FLS Light Brown (Shop)": {
+    "b": 53,
+    "g": 97,
+    "r": 165
+},
+"FLS Neon Green": {
+    "b": 14,
+    "g": 233,
+    "r": 97
+},
+"FLS Neon Green (Shop)": {
+    "b": 14,
+    "g": 233,
+    "r": 97
+},
+"FLS Neon Purple": {
+    "b": 255,
+    "g": 1,
+    "r": 248
+},
+"FLS Neon Purple (Shop)": {
+    "b": 255,
+    "g": 1,
+    "r": 248
+},
+"FLS Periwinkle": {
+    "b": 255,
+    "g": 148,
+    "r": 129
+},
+"FLS Periwinkle (Shop)": {
+    "b": 255,
+    "g": 148,
+    "r": 129
+},
+"FLS Pink": {
+    "b": 158,
+    "g": 143,
+    "r": 255
+},
+"FLS Pink (Shop)": {
+    "b": 158,
+    "g": 143,
+    "r": 255
+},
+"FLS Plum": {
+    "b": 91,
+    "g": 27,
+    "r": 49
+},
+"FLS Plum (Shop)": {
+    "b": 91,
+    "g": 27,
+    "r": 49
+},
+"Flurry": {
+    "b": 255,
+    "g": 255,
+    "r": 220
+},
+"ForestGreen1": {
+    "b": 177,
+    "g": 222,
+    "r": 81
+},
+"ForestGreen2": {
+    "b": 130,
+    "g": 175,
+    "r": 3
+},
+"ForestGreen3": {
+    "b": 101,
+    "g": 139,
+    "r": 0
+},
+"ForestGreen4": {
+    "b": 86,
+    "g": 120,
+    "r": 0
+},
+"Fossilized Sunbeam": {
+    "b": 63,
+    "g": 175,
+    "r": 255
+},
+"Fresh Sage": {
+    "b": 124,
+    "g": 206,
+    "r": 189
+},
+"Full Moon": {
+    "b": 35,
+    "g": 101,
+    "r": 255
+},
+"GalaxyGradient0": {
+    "b": 145,
+    "g": 139,
+    "r": 255
+},
+"Ghost Goo": {
+    "b": 204,
+    "g": 224,
+    "r": 134
+},
+"Ghostly Presence": {
+    "b": 242,
+    "g": 255,
+    "r": 196
+},
+"Glowing Daisy": {
+    "b": 255,
+    "g": 207,
+    "r": 240
+},
+"Good Gator": {
+    "b": 10,
+    "g": 104,
+    "r": 84
+},
+"Gorgon Scale": {
+    "b": 16,
+    "g": 245,
+    "r": 181
+},
+"Graveyard Field": {
+    "b": 81,
+    "g": 61,
+    "r": 72
+},
+"Green1": {
+    "b": 116,
+    "g": 255,
+    "r": 51
+},
+"Green2": {
+    "b": 98,
+    "g": 233,
+    "r": 36
+},
+"Green3": {
+    "b": 80,
+    "g": 203,
+    "r": 23
+},
+"Grey1": {
+    "b": 224,
+    "g": 224,
+    "r": 224
+},
+"Grey2": {
+    "b": 194,
+    "g": 194,
+    "r": 194
+},
+"Grey3": {
+    "b": 143,
+    "g": 143,
+    "r": 143
+},
+"Grey4": {
+    "b": 88,
+    "g": 88,
+    "r": 88
+},
+"Grey5": {
+    "b": 41,
+    "g": 41,
+    "r": 41
+},
+"GummyGreen1": {
+    "b": 6,
+    "g": 255,
+    "r": 86
+},
+"Harmony Blue": {
+    "b": 241,
+    "g": 161,
+    "r": 17
+},
+"Harmony Dark Blue": {
+    "b": 187,
+    "g": 121,
+    "r": 4
+},
+"Harmony Dark Green": {
+    "b": 19,
+    "g": 114,
+    "r": 9
+},
+"Harmony Dark Indigo": {
+    "b": 96,
+    "g": 49,
+    "r": 2
+},
+"Harmony Dark Orange": {
+    "b": 1,
+    "g": 87,
+    "r": 173
+},
+"Harmony Dark Red": {
+    "b": 3,
+    "g": 3,
+    "r": 155
+},
+"Harmony Dark Violet": {
+    "b": 95,
+    "g": 0,
+    "r": 108
+},
+"Harmony Dark Yellow": {
+    "b": 0,
+    "g": 153,
+    "r": 189
+},
+"Harmony Green": {
+    "b": 45,
+    "g": 159,
+    "r": 32
+},
+"Harmony Indigo": {
+    "b": 139,
+    "g": 70,
+    "r": 0
+},
+"Harmony Orange": {
+    "b": 14,
+    "g": 126,
+    "r": 237
+},
+"Harmony Red": {
+    "b": 12,
+    "g": 12,
+    "r": 230
+},
+"Harmony Violet": {
+    "b": 159,
+    "g": 24,
+    "r": 177
+},
+"Harmony Yellow": {
+    "b": 21,
+    "g": 210,
+    "r": 255
+},
+"Haunted Hallway": {
+    "b": 82,
+    "g": 89,
+    "r": 58
+},
+"HexyveraPink": {
+    "b": 180,
+    "g": 81,
+    "r": 255
+},
+"Horse Bone": {
+    "b": 170,
+    "g": 186,
+    "r": 190
+},
+"HotPink1": {
+    "b": 183,
+    "g": 138,
+    "r": 255
+},
+"HotPink2": {
+    "b": 187,
+    "g": 114,
+    "r": 255
+},
+"HotPink3": {
+    "b": 167,
+    "g": 84,
+    "r": 255
+},
+"HotPink4": {
+    "b": 141,
+    "g": 55,
+    "r": 255
+},
+"HotPink5": {
+    "b": 115,
+    "g": 37,
+    "r": 238
+},
+"HotPink6": {
+    "b": 90,
+    "g": 6,
+    "r": 236
+},
+"Hottie Dottie": {
+    "b": 192,
+    "g": 207,
+    "r": 195
+},
+"HunnysPurple1": {
+    "b": 252,
+    "g": 158,
+    "r": 185
+},
+"HunnysPurple2": {
+    "b": 243,
+    "g": 115,
+    "r": 152
+},
+"HunnysPurple3": {
+    "b": 234,
+    "g": 85,
+    "r": 128
+},
+"HunnysPurple4": {
+    "b": 222,
+    "g": 55,
+    "r": 103
+},
+"HunnysPurple5": {
+    "b": 208,
+    "g": 32,
+    "r": 83
+},
+"HunnysPurple6": {
+    "b": 208,
+    "g": 44,
+    "r": 93
+},
+"HunnysYellow1": {
+    "b": 202,
+    "g": 248,
+    "r": 255
+},
+"HunnysYellow2": {
+    "b": 162,
+    "g": 243,
+    "r": 255
+},
+"HunnysYellow3": {
+    "b": 114,
+    "g": 237,
+    "r": 255
+},
+"HunnysYellow4": {
+    "b": 63,
+    "g": 230,
+    "r": 255
+},
+"HunnysYellow5": {
+    "b": 0,
+    "g": 221,
+    "r": 254
+},
+"HunnysYellow6": {
+    "b": 0,
+    "g": 203,
+    "r": 233
+},
+"Hyped-up Berry Juice": {
+    "b": 191,
+    "g": 149,
+    "r": 57
+},
+"Icicle Pop": {
+    "b": 254,
+    "g": 206,
+    "r": 59
+},
+"In Love": {
+    "b": 61,
+    "g": 61,
+    "r": 175
+},
+"IromiX9Purple4": {
+    "b": 255,
+    "g": 86,
+    "r": 241
+},
+"IromiX9Purple6": {
+    "b": 215,
+    "g": 0,
+    "r": 184
+},
+"Its Autumn": {
+    "b": 18,
+    "g": 44,
+    "r": 130
+},
+"Jinglebells": {
+    "b": 42,
+    "g": 150,
+    "r": 223
+},
+"Juicy Grapefruit": {
+    "b": 87,
+    "g": 87,
+    "r": 232
+},
+"Kelly-er Kelly": {
+    "b": 57,
+    "g": 191,
+    "r": 64
+},
+"Lavender1": {
+    "b": 255,
+    "g": 156,
+    "r": 187
+},
+"Lavender2": {
+    "b": 255,
+    "g": 132,
+    "r": 171
+},
+"Lavender3": {
+    "b": 255,
+    "g": 83,
+    "r": 137
+},
+"Lavender4": {
+    "b": 241,
+    "g": 63,
+    "r": 119
+},
+"Lavender5": {
+    "b": 241,
+    "g": 63,
+    "r": 119
+},
+"Lavender6": {
+    "b": 218,
+    "g": 49,
+    "r": 102
+},
+"Lavender7": {
+    "b": 202,
+    "g": 33,
+    "r": 86
+},
+"Lemon Head": {
+    "b": 87,
+    "g": 210,
+    "r": 232
+},
+"LimeGreen1": {
+    "b": 150,
+    "g": 255,
+    "r": 208
+},
+"LimeGreen2": {
+    "b": 93,
+    "g": 253,
+    "r": 181
+},
+"LimeGreen3": {
+    "b": 53,
+    "g": 255,
+    "r": 163
+},
+"LimeGreen4": {
+    "b": 32,
+    "g": 233,
+    "r": 141
+},
+"LimeGreen5": {
+    "b": 0,
+    "g": 255,
+    "r": 78
+},
+"Lonely Forest Purple": {
+    "b": 168,
+    "g": 138,
+    "r": 161
+},
+"MagicalPurple5": {
+    "b": 202,
+    "g": 33,
+    "r": 183
+},
+"MagicalPurple6": {
+    "b": 178,
+    "g": 9,
+    "r": 162
+},
+"Mallow Beach Banana": {
+    "b": 134,
+    "g": 222,
+    "r": 255
+},
+"Mallow Sunset Orange": {
+    "b": 114,
+    "g": 208,
+    "r": 254
+},
+"Mammoth Mist": {
+    "b": 255,
+    "g": 211,
+    "r": 98
+},
+"Melted Orange Icecream": {
+    "b": 87,
+    "g": 121,
+    "r": 232
+},
+"Mika Eyes Blue": {
+    "b": 211,
+    "g": 89,
+    "r": 45
+},
+"Mint1": {
+    "b": 212,
+    "g": 255,
+    "r": 164
+},
+"Mint2": {
+    "b": 193,
+    "g": 255,
+    "r": 130
+},
+"Mint3": {
+    "b": 163,
+    "g": 255,
+    "r": 78
+},
+"Mint4": {
+    "b": 141,
+    "g": 244,
+    "r": 36
+},
+"Mint5": {
+    "b": 120,
+    "g": 234,
+    "r": 0
+},
+"MintAlien": {
+    "b": 229,
+    "g": 255,
+    "r": 189
+},
+"Minty Scale": {
+    "b": 128,
+    "g": 165,
+    "r": 36
+},
+"Miss Jade": {
+    "b": 151,
+    "g": 205,
+    "r": 146
+},
+"Mistletoe": {
+    "b": 35,
+    "g": 35,
+    "r": 143
+},
+"Mom Blonde": {
+    "b": 84,
+    "g": 193,
+    "r": 252
+},
+"MomBlonde0": {
+    "b": 84,
+    "g": 193,
+    "r": 252
+},
+"Moms Creamscicle 2": {
+    "b": 121,
+    "g": 190,
+    "r": 255
+},
+"Moms Creamscicle 3": {
+    "b": 0,
+    "g": 147,
+    "r": 255
+},
+"MomsCreamscicle2": {
+    "b": 121,
+    "g": 190,
+    "r": 255
+},
+"MomsCreamscicle3": {
+    "b": 0,
+    "g": 147,
+    "r": 255
+},
+"Moo Cow": {
+    "b": 123,
+    "g": 123,
+    "r": 123
+},
+"MoonSeaBlue3": {
+    "b": 255,
+    "g": 200,
+    "r": 151
+},
+"MoonSeaBlue4": {
+    "b": 255,
+    "g": 136,
+    "r": 0
+},
+"MoonSeaBlue5": {
+    "b": 223,
+    "g": 82,
+    "r": 0
+},
+"Morning Tea": {
+    "b": 172,
+    "g": 198,
+    "r": 140
+},
+"Mossy Stone": {
+    "b": 68,
+    "g": 63,
+    "r": 54
+},
+"Moth Wings": {
+    "b": 233,
+    "g": 138,
+    "r": 190
+},
+"Nebula Sunset": {
+    "b": 87,
+    "g": 145,
+    "r": 232
+},
+"Neon Green Cheetah": {
+    "b": 1,
+    "g": 150,
+    "r": 102
+},
+"Neon Green Tiger": {
+    "b": 43,
+    "g": 117,
+    "r": 9
+},
+"Neon Pink Tiger": {
+    "b": 86,
+    "g": 43,
+    "r": 131
+},
+"NeonBlue4": {
+    "b": 255,
+    "g": 255,
+    "r": 0
+},
+"NeonPink4": {
+    "b": 255,
+    "g": 65,
+    "r": 255
+},
+"NeonPink5": {
+    "b": 209,
+    "g": 54,
+    "r": 255
+},
+"NeonPurple3": {
+    "b": 255,
+    "g": 119,
+    "r": 255
+},
+"NeonPurple4": {
+    "b": 255,
+    "g": 0,
+    "r": 255
+},
+"Not Black": {
+    "b": 28,
+    "g": 26,
+    "r": 26
+},
+"OnyxGradient1": {
+    "b": 52,
+    "g": 52,
+    "r": 52
+},
+"Orange Cheetah": {
+    "b": 74,
+    "g": 112,
+    "r": 161
+},
+"Orange Tiger": {
+    "b": 9,
+    "g": 62,
+    "r": 131
+},
+"Orange1": {
+    "b": 30,
+    "g": 145,
+    "r": 255
+},
+"Orange2": {
+    "b": 17,
+    "g": 121,
+    "r": 255
+},
+"Orange3": {
+    "b": 1,
+    "g": 107,
+    "r": 251
+},
+"Orange4": {
+    "b": 0,
+    "g": 74,
+    "r": 255
+},
+"Orangeish 1": {
+    "b": 17,
+    "g": 100,
+    "r": 210
+},
+"Orangeish 2": {
+    "b": 52,
+    "g": 140,
+    "r": 255
+},
+"Orangeish 3": {
+    "b": 114,
+    "g": 175,
+    "r": 255
+},
+"Orangeish 4": {
+    "b": 176,
+    "g": 210,
+    "r": 255
+},
+"OrangeYellow0": {
+    "b": 116,
+    "g": 222,
+    "r": 255
+},
+"OrangeYellow1": {
+    "b": 60,
+    "g": 210,
+    "r": 255
+},
+"OrangeYellow2": {
+    "b": 36,
+    "g": 202,
+    "r": 255
+},
+"OrangeYellow3": {
+    "b": 0,
+    "g": 191,
+    "r": 255
+},
+"OrangeYellow4": {
+    "b": 0,
+    "g": 171,
+    "r": 255
+},
+"Overcast But Nice": {
+    "b": 192,
+    "g": 166,
+    "r": 109
+},
+"Peep Pink": {
+    "b": 209,
+    "g": 163,
+    "r": 253
+},
+"Periwinkle1": {
+    "b": 255,
+    "g": 205,
+    "r": 181
+},
+"Periwinkle2": {
+    "b": 255,
+    "g": 176,
+    "r": 129
+},
+"Periwinkle3": {
+    "b": 255,
+    "g": 151,
+    "r": 111
+},
+"Periwinkle4": {
+    "b": 246,
+    "g": 122,
+    "r": 83
+},
+"Periwinkle5": {
+    "b": 228,
+    "g": 99,
+    "r": 57
+},
+"Periwinkle6": {
+    "b": 214,
+    "g": 95,
+    "r": 50
+},
+"Periwinkle7": {
+    "b": 178,
+    "g": 69,
+    "r": 27
+},
+"Pink Cheetah": {
+    "b": 117,
+    "g": 96,
+    "r": 177
+},
+"Pinky Brain": {
+    "b": 195,
+    "g": 135,
+    "r": 240
+},
+"Pinky Toe": {
+    "b": 141,
+    "g": 141,
+    "r": 251
+},
+"PlanetaryTurquoise3": {
+    "b": 255,
+    "g": 255,
+    "r": 0
+},
+"Powder Yeti": {
+    "b": 255,
+    "g": 239,
+    "r": 192
+},
+"Prehistoric Orange": {
+    "b": 62,
+    "g": 116,
+    "r": 226
+},
+"Pumpkin Head": {
+    "b": 43,
+    "g": 59,
+    "r": 127
+},
+"Purple Dinosaur": {
+    "b": 97,
+    "g": 41,
+    "r": 54
+},
+"Purple1": {
+    "b": 255,
+    "g": 210,
+    "r": 246
+},
+"Purple2": {
+    "b": 255,
+    "g": 189,
+    "r": 242
+},
+"Purple3": {
+    "b": 255,
+    "g": 141,
+    "r": 233
+},
+"Purple4": {
+    "b": 255,
+    "g": 97,
+    "r": 223
+},
+"Purple5": {
+    "b": 220,
+    "g": 90,
+    "r": 196
+},
+"Purple6": {
+    "b": 211,
+    "g": 49,
+    "r": 181
+},
+"Purple7": {
+    "b": 194,
+    "g": 34,
+    "r": 165
+},
+"Purple8": {
+    "b": 181,
+    "g": 25,
+    "r": 152
+},
+"Real Gold": {
+    "b": 21,
+    "g": 137,
+    "r": 206
+},
+"Red1": {
+    "b": 46,
+    "g": 46,
+    "r": 254
+},
+"Red2": {
+    "b": 28,
+    "g": 28,
+    "r": 254
+},
+"Red3": {
+    "b": 0,
+    "g": 0,
+    "r": 254
+},
+"Red4": {
+    "b": 0,
+    "g": 0,
+    "r": 224
+},
+"Red5": {
+    "b": 0,
+    "g": 0,
+    "r": 202
+},
+"RedOrange1": {
+    "b": 68,
+    "g": 99,
+    "r": 255
+},
+"RedOrange2": {
+    "b": 63,
+    "g": 83,
+    "r": 255
+},
+"RedOrange3": {
+    "b": 55,
+    "g": 70,
+    "r": 255
+},
+"RedOrange4": {
+    "b": 25,
+    "g": 48,
+    "r": 255
+},
+"RedOrange5": {
+    "b": 25,
+    "g": 38,
+    "r": 250
+},
+"RedPink1": {
+    "b": 105,
+    "g": 58,
+    "r": 255
+},
+"RedPink2": {
+    "b": 79,
+    "g": 23,
+    "r": 255
+},
+"RedPink3": {
+    "b": 66,
+    "g": 10,
+    "r": 237
+},
+"RedPink4": {
+    "b": 55,
+    "g": 0,
+    "r": 226
+},
+"RedPink5": {
+    "b": 46,
+    "g": 0,
+    "r": 191
+},
+"RedPink6": {
+    "b": 40,
+    "g": 2,
+    "r": 165
+},
+"Ripple Pink": {
+    "b": 160,
+    "g": 102,
+    "r": 221
+},
+"Ripples Peach Hair": {
+    "b": 105,
+    "g": 173,
+    "r": 255
+},
+"Royal Bunny Blue": {
+    "b": 247,
+    "g": 106,
+    "r": 56
+},
+"Royal Carrots": {
+    "b": 88,
+    "g": 135,
+    "r": 234
+},
+"Royal Garden Rose": {
+    "b": 207,
+    "g": 178,
+    "r": 255
+},
+"Royally Blue": {
+    "b": 135,
+    "g": 56,
+    "r": 29
+},
+"RunestoneGrey5": {
+    "b": 101,
+    "g": 104,
+    "r": 104
+},
+"RuneStoneGrey6": {
+    "b": 49,
+    "g": 49,
+    "r": 49
+},
+"Seafoam1": {
+    "b": 245,
+    "g": 255,
+    "r": 148
+},
+"Seafoam2": {
+    "b": 228,
+    "g": 255,
+    "r": 102
+},
+"Seafoam3": {
+    "b": 207,
+    "g": 239,
+    "r": 60
+},
+"Seafoam4": {
+    "b": 197,
+    "g": 236,
+    "r": 0
+},
+"Seafoam5": {
+    "b": 165,
+    "g": 215,
+    "r": 0
+},
+"Seafoam6": {
+    "b": 146,
+    "g": 194,
+    "r": 0
+},
+"Seafoam7": {
+    "b": 127,
+    "g": 177,
+    "r": 0
+},
+"Seafoam8": {
+    "b": 94,
+    "g": 134,
+    "r": 0
+},
+"Shiny Emeralds": {
+    "b": 87,
+    "g": 138,
+    "r": 25
+},
+"ShootingStarYellow0": {
+    "b": 186,
+    "g": 252,
+    "r": 253
+},
+"ShootingStarYellow3": {
+    "b": 70,
+    "g": 245,
+    "r": 255
+},
+"Ski Suit": {
+    "b": 255,
+    "g": 181,
+    "r": 236
+},
+"Skull Plum": {
+    "b": 144,
+    "g": 19,
+    "r": 83
+},
+"Slithering Swamp": {
+    "b": 24,
+    "g": 127,
+    "r": 89
+},
+"Slurp Juice": {
+    "b": 57,
+    "g": 191,
+    "r": 163
+},
+"Snake Tongue": {
+    "b": 131,
+    "g": 80,
+    "r": 240
+},
+"Snow Berry": {
+    "b": 223,
+    "g": 90,
+    "r": 160
+},
+"SnowWhite0": {
+    "b": 255,
+    "g": 255,
+    "r": 255
+},
+"SnowWhite1": {
+    "b": 255,
+    "g": 255,
+    "r": 255
+},
+"Space Melon": {
+    "b": 169,
+    "g": 58,
+    "r": 126
+},
+"SpacePink0": {
+    "b": 255,
+    "g": 169,
+    "r": 255
+},
+"Spooky Bone": {
+    "b": 237,
+    "g": 246,
+    "r": 248
+},
+"Spooky Masonry": {
+    "b": 112,
+    "g": 117,
+    "r": 97
+},
+"Stacys Eyes": {
+    "b": 236,
+    "g": 123,
+    "r": 0
+},
+"StacysEyes": {
+    "b": 236,
+    "g": 123,
+    "r": 0
+},
+"SteelBlue5": {
+    "b": 255,
+    "g": 159,
+    "r": 92
+},
+"StoneGrey1": {
+    "b": 183,
+    "g": 183,
+    "r": 183
+},
+"StoneGrey2": {
+    "b": 174,
+    "g": 174,
+    "r": 174
+},
+"StoneGrey6": {
+    "b": 54,
+    "g": 54,
+    "r": 54
+},
+"Strawberry Moo Cow": {
+    "b": 81,
+    "g": 41,
+    "r": 123
+},
+"Sunny Queen": {
+    "b": 53,
+    "g": 202,
+    "r": 246
+},
+"Super Bunny Blue 1": {
+    "b": 228,
+    "g": 184,
+    "r": 73
+},
+"Super Bunny Blue 2": {
+    "b": 217,
+    "g": 155,
+    "r": 0
+},
+"Super Bunny Blue 3": {
+    "b": 172,
+    "g": 122,
+    "r": 0
+},
+"Super Bunny Green 1": {
+    "b": 91,
+    "g": 190,
+    "r": 103
+},
+"Super Bunny Green 2": {
+    "b": 53,
+    "g": 175,
+    "r": 68
+},
+"Super Bunny Green 3": {
+    "b": 34,
+    "g": 146,
+    "r": 48
+},
+"Super Bunny Red 1": {
+    "b": 49,
+    "g": 65,
+    "r": 233
+},
+"Super Bunny Red 2": {
+    "b": 16,
+    "g": 35,
+    "r": 230
+},
+"Super Bunny Red 3": {
+    "b": 7,
+    "g": 23,
+    "r": 193
+},
+"Super Bunny Yellow 1": {
+    "b": 76,
+    "g": 221,
+    "r": 253
+},
+"Super Bunny Yellow 2": {
+    "b": 0,
+    "g": 207,
+    "r": 252
+},
+"Super Bunny Yellow 3": {
+    "b": 0,
+    "g": 169,
+    "r": 208
+},
+"Super Haunted": {
+    "b": 208,
+    "g": 254,
+    "r": 84
+},
+"SwampJuice0": {
+    "b": 96,
+    "g": 250,
+    "r": 127
+},
+"Thats Gum": {
+    "b": 131,
+    "g": 191,
+    "r": 57
+},
+"The Classiest Purple": {
+    "b": 127,
+    "g": 87,
+    "r": 97
+},
+"Throne Cushion": {
+    "b": 113,
+    "g": 44,
+    "r": 86
+},
+"Vampire Wine": {
+    "b": 41,
+    "g": 41,
+    "r": 108
+},
+"VanillaCream": {
+    "b": 224,
+    "g": 240,
+    "r": 255
+},
+"VaporwavePink5": {
+    "b": 174,
+    "g": 66,
+    "r": 236
+},
+"VaporwavePurple4": {
+    "b": 255,
+    "g": 90,
+    "r": 130
+},
+"VaporwavePurple5": {
+    "b": 255,
+    "g": 66,
+    "r": 108
+},
+"Vega Glow": {
+    "b": 215,
+    "g": 89,
+    "r": 198
+},
+"Vibing": {
+    "b": 139,
+    "g": 60,
+    "r": 79
+},
+"VoodooGreen5": {
+    "b": 72,
+    "g": 246,
+    "r": 66
+},
+"Vortron Guts": {
+    "b": 147,
+    "g": 52,
+    "r": 134
+},
+"Warm Night Sky": {
+    "b": 89,
+    "g": 39,
+    "r": 22
+},
+"Weremoon": {
+    "b": 93,
+    "g": 156,
+    "r": 253
+},
+"White": {
+    "b": 255,
+    "g": 255,
+    "r": 255
+},
+"White Cheetah": {
+    "b": 163,
+    "g": 163,
+    "r": 163
+},
+"White Tiger": {
+    "b": 131,
+    "g": 131,
+    "r": 131
+},
+"Wintersday Green": {
+    "b": 216,
+    "g": 227,
+    "r": 183
+},
+"Wolfy Fur": {
+    "b": 70,
+    "g": 88,
+    "r": 141
+},
+"XiclonHemispherePink1": {
+    "b": 131,
+    "g": 0,
+    "r": 255
+},
+"XirodiumGold5": {
+    "b": 77,
+    "g": 255,
+    "r": 253
+},
+"XirodiumGold7": {
+    "b": 0,
+    "g": 239,
+    "r": 234
+},
+"Yellow1": {
+    "b": 102,
+    "g": 238,
+    "r": 255
+},
+"Yellow2": {
+    "b": 64,
+    "g": 234,
+    "r": 255
+},
+"Yellow3": {
+    "b": 24,
+    "g": 229,
+    "r": 255
+},
+"Yellow4": {
+    "b": 0,
+    "g": 218,
+    "r": 255
+}
 };
 
 export default colorNames;

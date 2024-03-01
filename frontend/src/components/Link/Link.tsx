@@ -3,12 +3,10 @@ import { modalAtom, savedAtom } from "../../data/store";
 // import { localStorageToken } from "../../data/config";
 import SecondaryButton from "../DollEditor/SecondaryButton";
 import ApplyButton from "../DollEditor/ApplyButton";
-import { useRouter } from 'next/router';
 
 export default function Link({ className, to, children }: { className?: string; to: string; children?: any }) {
   const [modal, modalSet] = useAtom(modalAtom);
   const [saved, savedSet] = useAtom(savedAtom);
-  const router = useRouter();
 
   // prevent full page reload
   const onClick = (event: any) => {
@@ -23,9 +21,14 @@ export default function Link({ className, to, children }: { className?: string; 
     savedCheck();
   };
 
-  const changeURL = () => {
-    router.push(to);
-  };
+  function changeURL() {
+    // update url
+    window.history.pushState({}, "", to);
+
+    // communicate to Routes that URL has changed
+    const navEvent = new PopStateEvent("popstate");
+    window.dispatchEvent(navEvent);
+  }
 
   // Display unsavedChanges modal before changing page
   function savedCheck() {

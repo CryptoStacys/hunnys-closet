@@ -276,23 +276,6 @@ export default function DollEditor(props: {
 }
 
 
-  useEffect(() => {
-    const checkAndSwitchNetwork = async () => {
-      if (
-        chain?.id !== ETHEREUM_MAINNET_CHAIN_ID &&
-        typeof switchNetwork === "function"
-      ) {
-        try {
-          await switchNetwork(ETHEREUM_MAINNET_CHAIN_ID);
-        } catch (error) {
-          console.error("Error switching networks:", error);
-        }
-      }
-    };
-
-    checkAndSwitchNetwork();
-  }, [chain, switchNetwork]);
-
   async function save() {
     console.log("Save function initiated");
     setIsSaving(true);
@@ -740,16 +723,18 @@ export default function DollEditor(props: {
   }
 
   function getDollMetadata(id: number) {
-    // console.log("getDollMetadata", id);
+    console.log("getDollMetadata", id);
 
     return new Promise(async (resolve) => {
       fetch(
         // `${serverPath}/dolly/${id}`
         `https://closetservices.hunnysnft.com/wp-json/hunnys-closet/v1/getCloneData?tokenIds[]=${id}`
       )
+      
         .then((response) => response.json())
         .then((res) => {
           resolve(res);
+          console.log("UserAddress At DollEditor:", user?.address, res, user?.traits);
         })
         .catch((err) => {
           console.log("Error:", err.message);
