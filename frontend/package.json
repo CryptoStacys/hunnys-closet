@@ -23,7 +23,7 @@
     "framer-motion": "^7.5.4",
     "jotai": "^1.10.0",
     "motion": "^10.14.3",
-    "next": "^13.5.6",
+    "next": "13.5.2",
     "postcss-flexbugs-fixes": "^5.0.2",
     "postcss-preset-env": "^9.1.1",
     "pure-react-carousel": "^1.30.1",

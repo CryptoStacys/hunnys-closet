@@ -7,15 +7,22 @@ import dynamic from 'next/dynamic';
 
 export default function Dollys() {
   const [selected, setSelected] = useState<number | string>(-1); // Allow string for temporary ID
-  const [user, setUser] = useAtom(userAtom);
+  const [user] = useAtom(userAtom);
   const [connected] = useAtom(connectedAtom);
+
   const handleCreateNewDolly = () => {
     const tempId = `temp-${new Date().getTime()}`; // Generate a unique temporary ID
     setSelected(tempId);
   };
-{connected 
-  console.log("User Address on /dollys", user?.wallet)
-}
+
+  console.log("User Address on /dollys", user?.address);
+  console.log("Dolly count:", user?.dollyCount); // Just an example, replace with actual usage
+
+  // Ensure you're not trying to access dollys if user is null
+  if (!user) {
+    return <div>Loading...</div>; // or any other loading state representation
+  }
+
   const handleDollySaved = (newId: number) => {
     setSelected(newId); // Update with permanent ID once minted
   };
