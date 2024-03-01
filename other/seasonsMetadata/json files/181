@@ -1,0 +1,31 @@
+{
+    "name": "Mayor Kissy",
+    "description": "",
+    "image": "https://hunnysseasons.s3.us-east-2.amazonaws.com/181.png",
+    "animation_url": "https://seasons-unboxing.vercel.app/005",
+    "audio_url": "",
+    "interactive_url": "",
+    "external_link": "",
+    "attributes": [
+        {
+            "trait_type": "Month",
+            "value": "February "
+        },
+        {
+            "trait_type": "Generation",
+            "value": 3
+        },
+        {
+            "trait_type": "Rarity",
+            "value": "Royal Bunny"
+        },
+        {
+            "trait_type": "Season",
+            "value": "Kissy Town"
+        },
+        {
+            "trait_type": "Year",
+            "value": 2024
+        }
+    ]
+}

@@ -332,16 +332,14 @@ export default function ItemView(props: { selectedTrait: Trait; selectedTraitSet
   
 
   // convert hunnys color name to rgb values
-  function colorNameToRGB(name: string): string {
-    const colors: any = colorNames;
-    let newColor = "0,0,0";
-    try {
-      newColor = `rgba(${colors[name].r}, ${colors[name].g}, ${colors[name].b})`;
-    } catch (error) {
-      console.error(error);
-    }
-    return newColor;
+  function colorNameToURL(name: string): string {
+    // Replace spaces with '%20' for URL encoding
+    const encodedName = encodeURIComponent(name);
+    // Construct the URL based on the color name
+    const url = `https://closet.hunnys.io/layers_300x300_composite/Colors/ClothingAndHair/Solid/${encodedName}.jpg`;
+    return `url('${url}')`;
   }
+  
 
   
 
@@ -722,7 +720,7 @@ return (
                   )}
                   <div
                     style={{
-                      background: colorNameToRGB(color),
+                      background: colorNameToURL(color),
                     }}
                     className="w-full h-full rounded-lg"
                   ></div>
@@ -793,7 +791,7 @@ return (
           onClick={() => setColor(selectedColor, color)}
           className="w-full h-full rounded-lg cursor-pointer dyes" // Keep rounded-lg if you want rounded corners
           style={{
-            background: colorNameToRGB(color),
+            background: colorNameToURL(color),
           }}
         />
         <div
