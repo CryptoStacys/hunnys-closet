@@ -47,7 +47,8 @@
     {
       "name": "Accessory",
       "traits": [
-        { "name": "Mika Bunny Choker", "colors": 3, "rarity": "common", "tags": [] }
+        { "name": "Mika Bunny Choker", "colors": 3, "rarity": "common", "tags": [] },
+        { "name": "Carrot Earring", "colors": 2, "rarity": "common", "tags": ["earrings"] }
       ]
     },
     {
