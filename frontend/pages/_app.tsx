@@ -5,6 +5,7 @@ import { getDefaultWallets, RainbowKitProvider, connectorsForWallets } from '@ra
 import type { AppProps } from 'next/app';
 import App from "./index";
 import { configureChains, createConfig, WagmiConfig } from 'wagmi';
+import { WalletProvider } from '@coinbase/waas-sdk-web-react';
 import {
   goerli,
   mainnet,
@@ -115,6 +116,12 @@ function MyApp({ Component, pageProps }: AppProps) {
   }
 
   return (
+    <WalletProvider
+    collectAndReportMetrics
+    enableHostedBackups
+    projectId="8a1a0ed6-9736-419e-9989-5abf5f18ff57"
+    prod={false} // Set to true for production
+  >
     <WagmiConfig config={wagmiConfig}>
       <RainbowKitProvider coolMode chains={chains}>
       
@@ -123,6 +130,7 @@ function MyApp({ Component, pageProps }: AppProps) {
         <Analytics />
       </RainbowKitProvider>
     </WagmiConfig>
+    </WalletProvider>
   );
 }
 
