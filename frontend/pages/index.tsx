@@ -57,20 +57,32 @@ export default function App() {
       .catch((error) => {
         console.error('Error:', error);
       });
-        // Fetch user profile
-        const profileResponse = await fetch(`https://closetservices.hunnysnft.com/wp-json/hunnys-closet/v1/accounts?action=getProfile&wallet=${address}`);
-        if (!profileResponse.ok) throw new Error('Failed to fetch user profile.');
-        const { data: profileData } = await profileResponse.json();
-        console.log("Profile Data from Index:", profileData);
-        
-        // Combine data and update user atom
-        setUser({
-          ...profileData,
-          ...closetData,
-          traits: closetData.traits, // Assuming traits is the key you want from traitsData
-          dollyCount: closetData.dollys?.length || 0,
-          address: address
-        });
+      
+      // Fetch user profile
+      const profileResponse = await fetch(`https://closetservices.hunnysnft.com/wp-json/hunnys-closet/v1/accounts?action=getProfile&wallet=${address}`);
+      if (!profileResponse.ok) throw new Error('Failed to fetch user profile.');
+      const profileDataResponse = await profileResponse.json();
+      console.log("Profile Data from Index:", profileDataResponse);
+      
+      let parsedAchievements = {};
+      if (profileDataResponse.data.achievements && typeof profileDataResponse.data.achievements === 'string') {
+          try {
+            parsedAchievements = JSON.parse(profileDataResponse.data.achievements);
+          } catch (error) {
+            console.error("Error parsing achievements JSON:", error);
+            // Handle the error or set parsedAchievements to a default value if needed
+          }
+      }
+      
+      // Combine data and update user atom
+      setUser({
+        ...profileDataResponse.data, // Assuming profileDataResponse contains a 'data' key with user details
+        ...closetData,
+        traits: closetData.traits, // Assuming traits is the key you want from traitsData
+        dollyCount: closetData.dollys?.length || 0,
+        address: address,
+        achievements: parsedAchievements, // Use the parsed achievements
+      });
 
         setConnected(true);
       } catch (error) {

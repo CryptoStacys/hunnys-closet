@@ -2,38 +2,103 @@ import Link from "./../Link/Link";
 import { ConnectButton } from "@rainbow-me/rainbowkit";
 import { useAtom } from "jotai";
 import { Tooltip } from "react-tooltip";
-import React, { useState, useEffect } from "react";
-import { connectedAtom, dollEditorVisibleAtom } from "../../data/store";
+import React, { useState, useEffect, useCallback, useRef } from "react";
+import { connectedAtom, dollEditorVisibleAtom, userAtom } from "../../data/store";
 import { mode } from "../../data/config";
-
+import { useWalletContext } from "@coinbase/waas-sdk-web-react";
+import Login from "../Login/Login";
+import { useRouter } from 'next/router';
+import Image from 'next/image';
 type NavProps = {
   rewardStatus: string;
 };
 
 export default function Nav({ rewardStatus }: NavProps) {
-  const [connected] = useAtom(connectedAtom);
-  const [shouldWiggle, setShouldWiggle] = useState(true);
+  const [connected, setConnected] = useAtom(connectedAtom);
+  const [copySuccess, setCopySuccess] = useState('');
+  const [user, setUser] = useAtom(userAtom);
   const [dollEditorVisible] = useAtom(dollEditorVisibleAtom);
-    // This function returns the emoji based on reward status
-    const getEmojiForStatus = (status: string): string => {
-      type RewardStatus = "Bunny" | "Bunny Knight" | "Bunny Duke" | "Royal Bunny" | "None";
-      const statusMapping: Record<RewardStatus, string> = {
-          "Bunny": "🐰",
-          "Bunny Knight": "⚔️",
-          "Bunny Duke": "🏰",
-          "Royal Bunny": "👑",
-          "None": "",
-      };
-      return statusMapping[status as RewardStatus] || ""; // Default to wave if status is unknown
-  };
+  const {waas, error, user: waasUser, wallet, isLoggingIn, isCreatingWallet } =
+  useWalletContext();
+  const router = useRouter();
+  const [dropdownVisible, setDropdownVisible] = useState(false);
+  const dropdownRef = useRef<HTMLDivElement | null>(null);
+
   
-  
-    // To stop the wiggle effect after 3 seconds
-    useEffect(() => {
-      setTimeout(() => {
-        setShouldWiggle(false);
-      }, 15000);
-    }, []);
+  const logout = useCallback(async () => {
+    if (waas && waas.logout) {
+      await waas.logout();
+      setUser(null); // Reset global user state on logout
+      setConnected(false); // Indicate that the user is no longer connected
+      setDropdownVisible(false);
+      router.push("/"); // Redirect to the home page, adjust if your login page has a different route
+      console.log("Logout successful.");
+    }
+  }, [waas, setUser, setConnected, router]);
+
+  const handleAddressCopy = useCallback(() => {
+    if (user?.address) {
+      navigator.clipboard.writeText(user.address).then(() => {
+        setCopySuccess('Address Copied!');
+        setTimeout(() => setCopySuccess(''), 2000); // Reset message after 2 seconds
+      });
+    }
+  }, [user?.address]);
+
+  useEffect(() => {
+    function handleClickOutside(event: MouseEvent) {
+      if (dropdownRef.current && !dropdownRef.current.contains(event.target as Node)) {
+        setDropdownVisible(false);
+      }
+    }
+
+    // Bind the event listener only if the dropdown is visible
+    if (dropdownVisible) {
+      document.addEventListener("mousedown", handleClickOutside);
+    }
+    return () => {
+      // Unbind the event listener on clean up
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, [dropdownVisible]);
+
+  const renderWaasUserDropdown = () => (
+    <div className="relative" ref={dropdownRef}>
+      <button
+        className="flex items-center space-x-12 bg-white text-black font-bold px-4 py-2 rounded-xl"
+        onClick={() => setDropdownVisible(!dropdownVisible)}
+      >
+        {user?.profile_image_url ? (
+          <img src={user.profile_image_url} alt="Profile" width="24" height="24" className="rounded-full" />
+        ) : (
+          <img src="/heart.svg" alt="Default Profile" width="24" height="24" className="rounded-full" />
+        )}
+        <span className="mx-24 relative right-8">{user?.profile_name || 'Account'}</span>
+      </button>
+      {dropdownVisible && (
+        <div className="absolute font-bold right-0 mt-2 py-2 w-48 bg-white rounded-md shadow-xl z-20">
+          <a
+            className="block px-4 py-2 text-sm text-gray-700 hover:bg-[#EDEDED] cursor-default"
+            onClick={handleAddressCopy}
+          >
+           Account Address: {copySuccess || (user?.address ? `${user.address.substring(0, 6)}...${user.address.substring(user.address.length - 4)}` : 'No Address')}
+          </a>
+          <a
+            className="block px-4 py-2 text-sm text-gray-700 hover:bg-[#EDEDED] cursor-pointer"
+            onClick={logout}
+          >
+            Logout
+          </a>
+        </div>
+      )}
+    </div>
+  );
+
+    const renderConnectOrLogoutButton = () => {
+      {user?.wallet_type === 'waas' ? renderWaasUserDropdown() : (
+        <ConnectButton accountStatus={{smallScreen: 'avatar', largeScreen: 'full'}} showBalance={false} chainStatus="none" />
+      )}
+      }
 
   return (
     <nav className="top-2 fixed flex-center z-50 w-full box-border">
@@ -75,12 +140,7 @@ export default function Nav({ rewardStatus }: NavProps) {
                   Dollys
                 </Link>
               )}
-              <Link
-                to="/inventory"
-                className="link-btn navLinks text-[#fff] font-title uppercase hover:bg-[#ffd54b] transition inline-block text-2xl font-semibold font-content mx-[5px] sm:px-3 px-0 py-[6px] rounded-xl"
-              >
-                Inventory
-              </Link>
+              
               <a
                   href="https://buy.hunnys.io/polygon/collection/0x11bc733e719198e2b3746f6841d2818ca87af6da"
                   target="_blank"
@@ -89,24 +149,11 @@ export default function Nav({ rewardStatus }: NavProps) {
             </>
           )}
 
-          {mode === "dev" && (
-            <>
-              <div className="ml-[3px] hidden md:inline-block">
-                <ConnectButton accountStatus="address" showBalance={false} />
-              </div>
-              <div className="ml-[3px] md:hidden inline-block">
-                <ConnectButton accountStatus="address" showBalance={false} />
-              </div>
-            </>
-          )}
-
-          {mode === "prod" && (
-            <div className="ml-[3px] md:inline-block">
-              <ConnectButton accountStatus={{smallScreen: 'avatar',largeScreen: 'full',}} showBalance={false} chainStatus="none" />
-            </div>
-          )}
+        {user?.wallet_type === 'waas' ? renderWaasUserDropdown() : (
+        <ConnectButton accountStatus={{smallScreen: 'avatar', largeScreen: 'full'}} showBalance={false} chainStatus="none" />
+      )}
         </div>
       </div>
     </nav>
-  );
-}
+  )
+};

@@ -123,7 +123,7 @@ a {
   margin-bottom: 20px;
 }
 
-.event-header {
+.event-header, .level-header {
   display: flex;
   align-items: center;
 }
@@ -325,13 +325,30 @@ a {
 }
 
 .username {
-  font-size: 3em;
+  font-size: 2em;
   font-weight: bold;
   color: #333333;
   font-family: 'Luckiest Guy', sans-serif;
   text-transform: uppercase;
   text-align: left;
 }
+
+.enterName {
+  font-weight: 500;
+  padding: 6px;  
+  background-color: #EDEDED;
+  outline: none;
+  border-radius: 5px;
+  font-size: 1em;
+  color: #000;
+  font-family: 'Poppins', sans-serif;
+  text-align: left;
+}
+
+.enterName::placeholder {
+  color: black;
+}
+ 
  
 
 .hunnys-btn {

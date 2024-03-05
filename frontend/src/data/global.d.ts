@@ -17,6 +17,29 @@ export type Trait = {
 
 export type UUID = string;
 
+export type Achievement = {
+  id: string; // Unique identifier for each achievement
+  challenge: string;
+  description: string;
+  cupcakePoints: number;
+  reward?: string; // Made optional since some achievements might not have additional rewards
+  title?: string;
+  eligibilityCriteria?: (user: User) => boolean;
+}
+
+export type Levels = {
+  id: string;
+  levelsName: string;
+  description: string;
+  levelsReward1: string;
+  levelsReward2?: string;
+  levelsReward3?: string;
+  levelsReward4?: string;
+  levelsReward5?: string;
+  levelsReward6?: string;
+  title: string;
+}
+
 export type ApiResponse = {
   success: boolean;
   data: User;
@@ -38,7 +61,9 @@ export type User = {
   profile_name: string;
   profile_image_url: string;
   tier: string;
+  titles: string[];
   wallet_type: string;
+  token?: string;
   cupcake_points: number;
   level: number;
 };

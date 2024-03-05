@@ -3,6 +3,7 @@ import Image from "next/image";
 import { useAtom } from "jotai";
 import { userAtom } from "../../data/store"; // Adjust the import path as necessary
 import Card from '../Card/Card';
+import Event from '../Card/Events';
 import { customImageLoader } from '../../utils/imageLoader';
 import Link from "../Link/Link";
 import { ApiResponse, UUID, User } from "../../data/global";
@@ -26,7 +27,19 @@ const ProfileView = () => {
   const [saveError, setSaveError] = useState('');
   const provider = new ethers.providers.Web3Provider(window.ethereum as any);
   const [showTooltip, setShowTooltip] = useState(false);
-
+  const [availableTitles, setAvailableTitles] = useState<string[]>([]);
+  
+  useEffect(() => {
+    const titles = Object.values(user?.achievements || {}).reduce((acc: string[], achievement: any) => {
+      if (achievement.title && !acc.includes(achievement.title)) {
+        acc.push(achievement.title);
+      }
+      return acc;
+    }, []);
+  
+    setAvailableTitles(titles);
+  }, [user?.achievements]);
+  
   const handleFreeNFTClaim = async () => {
     // Assuming mintWithWeth is adapted for free claims
     await mintWithWeth(user?.wallet, '0', ethers.utils.parseUnits("0", "ether"), provider);
@@ -51,13 +64,16 @@ const ProfileView = () => {
       Body: selectedFile,
       ACL: "public-read",
     };
+
+    console.log("User UUID", user.UUID);
   
     try {
       const { Location } = await s3.upload(params).promise();
       return Location; // Return new image URL
     } catch (error) {
       console.error("Failed to upload image:", error);
-      return null; // Return null on failure
+      console.log(error); // Add more detailed logging
+      return null;
     }
   };
   
@@ -74,52 +90,75 @@ const ProfileView = () => {
     }
     // Make API call using the latest user state values for profile_name and profile_image_url
     try {
-        const response = await fetch(`https://closetservices.hunnysnft.com/wp-json/hunnys-closet/v1/accounts`, {
-            method: "POST",
-            headers: {
-                "Content-Type": "application/json",
-            },
-            body: JSON.stringify({
-                action: "updateProfile",
-                wallet: user.wallet,
-                profile_name: user.profile_name,
-                profile_image_url: user.profile_image_url,
-            }),
-        });
-        const data = await response.json();
-        if (data.success) {
-            setSaveSuccess(true);
-            // Optionally, refresh user data from server to reflect updates
-        } else {
-            throw new Error(data.message || "Failed to update profile.");
-        }
+      const profileImageUrl = await handleImageUpload(); // Assuming this function uploads the image and returns the URL
+      const response = await fetch(`https://closetservices.hunnysnft.com/wp-json/hunnys-closet/v1/accounts`, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          action: "updateProfile",
+          wallet: user.wallet,
+          profile_name: user.profile_name,
+          profile_image_url: profileImageUrl || user.profile_image_url, // Use new or existing URL
+          tier: user.tier, // Include the selected title
+        }),
+      });
+      const data = await response.json();
+      if (data.success) {
+        setSaveSuccess(true);
+      } else {
+        throw new Error(data.message || "Failed to update profile.");
+      }
     } catch (error) {
-        console.error("Error updating profile: ", error);
-        setSaveError('Failed to update profile. Please try again.');
+      console.error("Error updating profile:", error);
+      setSaveError('Failed to update profile. Please try again.');
     }
-};
+  };
 
 
-const handleSaveProfile = async () => {
-  console.log("Saving profile...");
-  let imageUrl = user?.profile_image_url; // Default to existing URL
+  const handleSaveProfile = async () => {
+    console.log("Saving profile...");
+    let newProfileImageUrl: string | null = null;
 
   if (selectedFile) {
     const uploadResult = await handleImageUpload();
-    if (uploadResult) imageUrl = uploadResult; // Update imageUrl if upload is successful
+    if (uploadResult) newProfileImageUrl = uploadResult;
   }
-
-  // Update user state with the new image URL
-  setUser((prevUser) => {
-    if (!prevUser) return null;
-    
-    return {
-      ...prevUser,
-      profile_image_url: imageUrl || prevUser.profile_image_url,
+  
+    // Prepare the data object for updating the profile
+    const profileData = {
+      action: "updateProfile",
+      wallet: user?.wallet ?? '', // Assuming wallet is always present in your user object
+      profile_name: user?.profile_name ?? '', // Use existing name if not changed
+      profile_image_url: newProfileImageUrl ?? user?.profile_image_url, // Use new or existing URL
+      tier: user?.tier, // Include the selected title or current tier
     };
-  });
-
-};
+  
+    // Call the updateProfile API
+    try {
+      const response = await fetch(`https://closetservices.hunnysnft.com/wp-json/hunnys-closet/v1/accounts`, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(profileData),
+      });
+      const data = await response.json();
+      if (data.success) {
+        setSaveSuccess(true);
+        // Update user state with new profile details
+        setUser(prevUser => {
+          return prevUser ? {
+            ...prevUser,
+            profile_image_url: newProfileImageUrl ?? prevUser.profile_image_url, // Update only if new image URL is provided
+            tier: profileData.tier ?? prevUser.tier, // Update tier if changed
+            // Include other properties as needed to match User type
+          } : null;
+        });
+      }
+    } catch (error) {
+      console.error("Error updating profile:", error);
+      setSaveError('Failed to update profile. Please try again.');
+    }
+  };
+  
 
 // useEffect to call updateProfile when user.profile_image_url changes
 useEffect(() => {
@@ -151,8 +190,18 @@ useEffect(() => {
         ) : (
         <>
             <input
+            type="file"
+            id="profile-image-upload"
+            onChange={(e) => setSelectedFile(e.target.files?.[0] || null)}
+            style={{ display: 'none' }}
+          />
+
+          <label htmlFor="profile-image-upload" className="bg-[#AA7AFA] hover:bg-[#7b2df8] transition ease-in-out delay-75 cursor-pointer text-white text-center font-bold py-2 px-4 rounded my-4">
+            Choose Profile Image
+          </label>
+            <input
             type="text"
-            className="bg-white font-poppins border-solid border-2 border-black"
+            className="bg-white enterName font-poppins border-solid border-2 border-black indent-2  mb-4"
             placeholder="Enter Your Name..."
             value={user?.profile_name}
             onChange={(e) => setUser(prevUser => {
@@ -161,26 +210,40 @@ useEffect(() => {
           })}
 
             />
-            <input
-            className="mt-2 mb-2 w-full"
-            type="file"
-            onChange={(e) => setSelectedFile(e.target.files?.[0] || null)}
-            />
-            <button className="bg-hunnys-yellow  text-hunnys-blue w-full font-title shadow-md rounded-full px-8 py-1 text-2xl hover:shadow-lg hover:scale-[1.02] transition-all" onClick={handleSaveProfile}>Save</button>
+            {
+              availableTitles.length > 0 && (
+                <select
+                  className="bg-white border-solid border-2 border-black mt-2 mb-2"
+                  value={user?.tier}
+                  onChange={(e) => setUser((prevUser) => prevUser ? { ...prevUser, tier: e.target.value } : null)}
+                  disabled={!isEditingName}
+                >
+                  {availableTitles.map((title, index) => (
+                    <option key={index} value={title}>
+                      {title}
+                    </option>
+                  ))}
+                </select>
+              )
+            }
+            <button className="bg-hunnys-yellow text-hunnys-blue w-full font-title shadow-md rounded-full px-8 py-1 text-2xl hover:shadow-lg hover:scale-[1.02] transition-all" onClick={handleSaveProfile}>Save</button>
+
             <div className="mt-8 m-auto"><SecondaryButton onClick={() => setIsEditingName(false)}>Cancel</SecondaryButton></div>
+            
+
         </>
         )}
         </div>}
         middleBlockContent={
-          <div className="flex flex-col justify-between h-full">
+          <div className="flex flex-col justify-between h-full w-[120%]">
             <div className="text-center">
-              <div className="text-2xl luckiest banner">
-                {user?.tier || "King Cupcake"}
+              <div className="text-xl luckiest banner">
+                {user?.tier || "Fresh Cupcake"}
               </div>
             </div>
             <div className="flex flex-col justify-center items-left">
-              <h1 className="font-bold text-purple-700 username bottom-4 relative">
-                {user?.profile_name || "Cupcake"}
+              <h1 className="font-bold text-purple-700 username bottom-4 relative leading-normal break-keep">
+                {user?.profile_name || "Welcome!"}
               </h1>
             </div>
             <div className="text-left">
@@ -211,10 +274,10 @@ useEffect(() => {
           </Tooltip></div>
 }
         footer={<>
-        <ProgressBar level={user?.level} cupcakePoints={user?.cupcake_points} /></>}        
+        <ProgressBar level={user?.level} cupcakePoints={user?.cupcake_points} />
+        <h1 className="luckiest m-auto">Cupcake Points: {user?.cupcake_points}</h1></>}        
       />
-        <div className="grid xs:grid-cols-1 lg:grid-cols-2 max-w-5xl m-auto gap-8">
-  <Card
+   <Card
     headerTitle="Introduction"
     leftBlockContent={<div><div className="mt-4">
       <Image
@@ -225,19 +288,19 @@ useEffect(() => {
       ></Image>
     </div></div>}
     middleBlockContent={<div><div className="mt-4">
-      <h1 className="text-left luckiest text-2xl justify-self-center">
+      <h1 className="text-left luckiest text-4xl justify-self-center">
         New here? Create your first Dolly!
       </h1>
     </div></div>}
     rightBlockContent={<Image className="rounded-xl" src={DollyPreviewProfilePage} alt={"GM Mug"} width={120} height={120}></Image>}
     footer={<><Link className="w-4/5 self-center" to="/dollys">
-        <button className="bg-hunnys-yellow py-2 w-full self-center text-hunnys-blue luckiest shadow-md rounded-full px-4 py-1 text-2xl hover:shadow-lg hover:scale-[1.02] transition-all">Create My Dolly</button>
+        <button className="bg-hunnys-yellow py-2 w-full self-center text-hunnys-blue luckiest shadow-md rounded-full px-4 text-2xl hover:shadow-lg hover:scale-[1.02] transition-all">Create My Dolly</button>
       </Link></>}
   />
   <Card
-    headerTitle="Dailies"
+    headerTitle="Dailys"
     leftBlockContent={<div className='bg-[#6510F2] rounded-xl luckiest text-2xl text-white p-4 text-center'>10<br></br><span className="text-xl">CUPCAKE POINTS</span></div>}
-    middleBlockContent={<h1 className="luckiest text-2xl text-left">Enjoy your free GM Mug!</h1>}
+    middleBlockContent={""}
     rightBlockContent={<Image className="rounded-xl" src={GMMug} alt={"GM Mug"} width={120} height={120}></Image>}
     footer={<FreeClaim
       tokenId="0"
@@ -249,7 +312,6 @@ useEffect(() => {
     />}
   />
 </div>
-    </div>
   );
 };
 export default ProfileView;

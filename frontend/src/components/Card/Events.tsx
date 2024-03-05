@@ -9,12 +9,9 @@ type EventProps = {
 
 {/* 
 HOW TO REUSE EASILY ON OTHER PAGES:
-<Card
+<Event
         headerTitle="HEADER TITLE"
-        leftBlockContent={<div>CONTENT LEFT</div>}
-        middleBlockContent={<div>CONTENT MIDDLE</div>}
-        rightBlockContent={<div>CONTENT RIGHT</div>}
-        footer={<></>}
+        event={<></>}
       />
 */}
 

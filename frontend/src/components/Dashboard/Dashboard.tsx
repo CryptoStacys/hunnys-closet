@@ -12,7 +12,6 @@ const Dashboard: React.FC = () => {
   const [currentView, setCurrentView] = useState<string>('profile');
   // Use userAtom if needed for conditional rendering or passing to components that still require it
   const [user] = useAtom(userAtom);
-  console.log("Hello?", user)
 
   const renderView = () => {
     switch (currentView) {

@@ -120,6 +120,7 @@ function MyApp({ Component, pageProps }: AppProps) {
     collectAndReportMetrics
     enableHostedBackups
     projectId="90840334-4797-45ff-bb86-6823701b4b3a"
+    autoCreateWallet={true}
     prod={false} // Set to true for production
   >
     <WagmiConfig config={wagmiConfig}>

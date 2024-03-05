@@ -1,10 +1,27 @@
-import React, { useState, useEffect } from 'react';
-import Image from "next/image";
-import { useWalletContext } from '@coinbase/waas-sdk-web-react';
-import { Loader } from "../Loader/Loader";
+// Login.tsx
 
+import { useConnectModal, RainbowKitProvider } from "@rainbow-me/rainbowkit";
+import { useEVMAddress, useFirstAddress, useWalletContext } from "@coinbase/waas-sdk-web-react";
+import { configureChains } from "wagmi";
+import { mainnet } from "wagmi/chains";
+import { alchemyProvider } from "wagmi/providers/alchemy";
+import { publicProvider } from "wagmi/providers/public";
+
+import { Loader } from "../Loader/Loader";
+import Image from "next/image";
+import { useState, useEffect, useCallback } from "react";
+import {
+  Address,
+  IProtocolFamily,
+  ProtocolFamily,
+} from "@coinbase/waas-sdk-web";
+import useWalletSession from "../../hooks/useWalletSession";
+import { User } from "../../data/global";
+import { useAtom } from "jotai";
+import { allTraitsAtom, connectedAtom, userAtom, userTraitsAtom } from "../../data/store";
+import { initializeUser } from "../../utils/userInitialization";
+type WalletAddress = Address<IProtocolFamily>;
 // Static images
-const loading = "/assets/img/loading.gif";
 const loadingImages = [
   "/assets/img/LoadingTip1.png",
   "/assets/img/LoadingTip2.png",
@@ -15,39 +32,191 @@ const loadingImages = [
 ];
 
 export default function Login() {
+  // rainbowkit modal
   const [mounted, setMounted] = useState(false);
-  const [loadingImage, setLoadingImage] = useState(loading);
-  const { waas, user, isCreatingWallet, wallet } = useWalletContext();
+  const [loadingImage, setLoadingImage] = useState(loadingImages[0]);
+  const [, setAddress] = useState("");
+  const [allTraits, setAllTraits] = useAtom(allTraitsAtom);
+  const [userTraits, setUserTraits] = useAtom(userTraitsAtom);
+  const [addresses, setAddresses] = useState<WalletAddress[]>([]);
+  const { openConnectModal } = useConnectModal();
+  const [connected, setConnected] = useAtom(connectedAtom);
+  const [user, setUser] = useAtom(userAtom);
+  const {waas, error, user: waasUser, wallet, isLoggingIn, isCreatingWallet } =
+  useWalletContext();
+  const address = useFirstAddress(wallet, ProtocolFamily.EVM);
+  useEffect(() => {
+    setMounted(true);
+    const randomIndex = Math.floor(Math.random() * loadingImages.length);
+    setLoadingImage(loadingImages[randomIndex]);
+  }, []);
 
+  const { chains } = configureChains(
+    [mainnet],
+    [
+      alchemyProvider({ apiKey: "fE6VhpMDQEapEp-KNNwNqrWL9-gHhNZD" }),
+      publicProvider(),
+    ]
+  );
 
   useEffect(() => {
     setMounted(true);
-    // Randomly select an image
-    const randomImage = loadingImages[Math.floor(Math.random() * loadingImages.length)];
-    setLoadingImage(randomImage);
   }, []);
 
-// Login the user.
-const handleLogin = async () => {
-  await waas?.login();
-}
+  useEffect(() => {
+    const initializeWallet = async () => {
+      // Check if `:waasUser` is defined to avoid trying to destructure or call methods on `undefined`.
+      if (!waasUser || isLoggingIn || isCreatingWallet || wallet) return;
+  
+      if (waasUser.hasWallet) {
+        console.log("User has a wallet, attempting to restore...");
+        // Ensure `restoreFromHostedBackup` is defined before calling it.
+        if (waasUser.restoreFromHostedBackup) {
+          await waasUser.restoreFromHostedBackup(/* optional passcode */);
+        } else {
+          console.error("restoreFromHostedBackup method is not available.");
+        }
+      } else {
+        console.log("Creating a new wallet for the user...");
+        // Ensure `create` is defined before calling it.
+        if (waasUser.create) {
+          await waasUser.create(/* optional passcode */);
+        } else {
+          console.error("create method is not available.");
+        }
+      }
+    };
+  
+    initializeWallet();
+  }, [waasUser, isLoggingIn, isCreatingWallet, wallet]);
 
-// Logout the user.
-const handleLogout = async () => {
-  await waas?.logout();
-}
+
+  useEffect(() => {
+    if (address) { // Ensure address is not undefined
+      // Update the user atom with the address and other user info
+      setUser((currentUser) => ({
+        ...currentUser, // Spread existing user data
+        wallet_type: "waas",
+        wallet: address.address, // Use the address property of the address object
+        address: address.address,
+        achievements: {},
+        dollyCount: 0,
+        UUID: currentUser?.UUID ? currentUser.UUID : "",
+        dollys: [],
+        colors: [],
+        traits: [],
+        skin_colors: [],
+        tokens: [],
+        titles: [],
+        hideSaveChangesModal: false,
+        profile_name: "",
+        profile_image_url: "",
+        tier: "Fresh Cupcake",
+        cupcake_points: 0,
+        level: 0,
+        token: "not_applicable",
+      }));
+    }
+  }, [address, setUser]);
+
+  useEffect(() => {
+    if (!wallet) {
+      console.log("Wallet not available yet.");
+      return;
+    }
+
+    const fetchAddresses = async () => {
+      try {
+        const allAddresses = await wallet.addresses.all();
+        console.log("Fetched addresses:", allAddresses);
+        setAddresses(allAddresses);
+      } catch (error) {
+        console.error("Failed to fetch addresses:", error);
+      }
+    };
+  
+    fetchAddresses();
+  }, [wallet]);
+
+  // Since Coinbase handles authentication, we don't need to fetch the auth token ourselves.
+  const login = useCallback(async () => {
+    console.log("Attempting to login...");
+    if (!waas || !waas.login) {
+      console.error("Waas instance or login method not available.");
+      return;
+    }
+    
+    try {
+      await waas.login();
+      console.log("Login successful.");
+  
+      // No need to manually update user here; rely on useEffect to react to changes
+    } catch (error) {
+      console.error("Login failed:", error);
+    }
+    
+  }, [waas]);
+  
+
+  const logout = useCallback(async () => {
+    if (waas && waas.logout) {
+      await waas.logout();
+      setUser(null); // Reset global user state on logout
+      console.log("Logout successful.");
+    }
+  }, [waas, setUser]);
+
+  
+  useEffect(() => {
+    if (address && waasUser) { // Make sure address and waasUser are defined
+        initializeUser(
+            address.address, // Assuming `address` contains the address string
+            setUser,
+            setAllTraits,
+            setUserTraits,
+            setConnected
+        ).catch(console.error); // Handle or log any errors
+    }
+    console.log("Initialization beginning...", address?.address, user)
+}, [address, waasUser, setUser, setAllTraits, setUserTraits, setConnected]);
+  
 
   return (
-    <div className="flex justify-center items-center w-full px-6 mx-auto">
-      <div className="relative rounded-3xl overflow-hidden max-w-[1250px] w-full h-[80vh] mx-auto flex items-center justify-center">
-        <Image className="rounded-3xl" src={loadingImage} alt="Loading" width={3000} height={1688} unoptimized />
-        
-        <div>
-    {!user &&  <button className='hunnys-btn bg-[#ffd54b] loginConnect uppercase !text-black text-4xl font-bold font-title tracking-wider px-14 py-3 rounded-md hover:cursor-pointer' onClick={handleLogin}>Login</button>}
-    {user && <p>User is logged in!</p>}
-    {wallet && <p>Wallet is loaded</p>}
-    {user && <button className='hunnys-btn bg-[#000] loginConnect uppercase !text-white text-4xl font-bold font-title tracking-wider px-14 py-3 rounded-md hover:cursor-pointer' onClick={handleLogout}>Logout</button>}
-  </div>
+    <div className="relative w-full h-[80vh]">
+      {/* Background Image */}
+      {loadingImage && (
+        <Image src={loadingImage} alt="Background" width={3000} height={1688} />
+      )}
+      {/* Overlay */}
+      <div className="absolute inset-0 flex items-center justify-center">
+        {/* Button Container */}
+        <div className="flex flex-col items-center space-y-4">
+          {error && <p>{error.message}</p>}
+          {!waasUser && (
+            <>
+              <button
+                onClick={login}
+                className="hunnys-btn bg-pink-400 exportKeys uppercase !text-black text-4xl font-bold font-title tracking-wider px-14 py-3 rounded-md hover:cursor-pointer"
+              >
+                Login/Create Wallet
+              </button>
+              <button
+                onClick={openConnectModal}
+                className="hunnys-btn bg-[#ffd54b] loginConnect uppercase !text-black text-4xl font-bold font-title tracking-wider px-14 py-3 rounded-md hover:cursor-pointer"
+              >
+                Connect with RainbowKit
+              </button>
+            </>
+          )}
+          {waasUser && (
+            <>
+              <h1 className="luckiest text-4xl text-white p-8 mt-24">
+                Loading...
+              </h1>
+              <Loader/>
+            </>
+          )}
+        </div>
       </div>
     </div>
   );
