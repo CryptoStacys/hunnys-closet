@@ -1761,7 +1761,24 @@
             }
         ],
         "metaPath": "https://hunnysclosetshop.s3.us-east-2.amazonaws.com/images/goodies/66"
-    }
+    },
+    [
+        {
+            "tokenId": 67,
+            "name": "Hottie",
+            "attributes": [
+                {
+                    "trait_type": "Hair Style",
+                    "value": "Hottie"
+                },
+                {
+                    "trait_type": "Eyes",
+                    "value": "Fired Up"
+                }
+            ],
+            "metaPath": "https://hunnysclosetshop.s3.us-east-2.amazonaws.com/images/goodies/67"
+        }
+    ]
 ]
 
 

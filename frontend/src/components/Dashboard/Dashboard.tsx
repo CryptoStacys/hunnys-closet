@@ -125,10 +125,10 @@ export default function Dashboard() {
       {/* <div className="relative max-w-[1160px] w-full mx-auto"> */}   
       <div className="grid lg:grid-cols-2 grid-cols-1  gap-2 mt-2 mb-2">
       <a rel="noreferrer" target="_blank" href="https://hunnys.io/membership-levels/">
-      <div className="dashboardHero"> <img src={"https://hunnys.io/wp-content/uploads/2024/03/Closet-Promo-Bunny-Club-March-2024.png"} alt="" /></div>
+      <div className="dashboardHero"> <img src={"https://hunnys.io/wp-content/uploads/2024/03/Bunny-Club-Promo-March-2024.png"} alt="" /></div>
       </a>
       <Link to="/dollys">
-      <div className="dashboardHero"> <img src={"https://hunnys.io/wp-content/uploads/2024/02/Untitled-design-57.png"} alt="" /></div>
+      <div className="dashboardHero"> <img src={"https://hunnys.io/wp-content/uploads/2024/03/Hunnys-Seasons-Kissy-Town-Promo.png"} alt="" /></div>
       </Link></div>
         
       

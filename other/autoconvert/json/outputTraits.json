@@ -1,37 +1,11 @@
 {
   "attributes": [
-    {"name": "Accessory", "traits": [
-        {"name": "Kissy Town Prince","colors": 5.0,"rarity": "Common","tags": ["companion"],"token_id": 180},
-        {"name": "Flutter Bomber","colors": 5.0,"rarity": "Epic","tags": [],"token_id": 181},
-        {"name": "Flutter Bomber Wings","colors": 2.0,"rarity": "Epic","tags": ["onBack"],"token_id": 181},
-        {"name": "Glowy Flutter Bomber","colors": 1.0,"rarity": "Epic","tags": [],"token_id": 182}
-    ]},
-
-    {"name": "Eyebrows", "traits": [
-        {"name": "Virginia Wolfy Straight","colors": 0.0,"rarity": "Common","tags": [],"token_id": 180}
-    ]},
-
-    {"name": "Frame", "traits": [
-        {"name": "Pretty Psychic Sting Lights","colors": 5.0,"rarity": "Legendary","tags": [],"token_id": 183},
-        {"name": "Flag Banner","colors": [],"rarity": "Common","tags": [],"token_id": 180},
-        {"name": "Hunnygram Delivery Critters","colors": 5.0,"rarity": "Epic","tags": [],"token_id": 181}
+    {"name": "Eyes", "traits": [
+        {"name": "Fired Up","colors": 1,"rarity": "Epic","tags": [],"token_id": 67}
     ]},
 
     {"name": "Hair Style", "traits": [
-        {"name": "Virginia Wolf","colors": 2.0,"rarity": "Common","tags": [],"token_id": 180}
-    ]},
-
-    {"name": "Hand", "traits": [
-        {"name": "Crystal Love Ball","colors": 5.0,"rarity": "Legendary","tags": ["skin"],"token_id": 183},
-        {"name": "Box Of Chocolates","colors": [],"rarity": "Common","tags": ["skin"],"token_id": 180},
-        {"name": "ChompZilla Boquet","colors": 5.0,"rarity": "Common","tags": ["skin"],"token_id": 180},
-        {"name": "I Heart U","colors": [],"rarity": "Common","tags": ["skin"],"token_id": 180},
-        {"name": "Kissy Town Singing Ring","colors": [],"rarity": "Common","tags": ["skin"],"token_id": 180},
-        {"name": "Pick Your Card","colors": [],"rarity": "Common","tags": ["skin"],"token_id": 180}
-    ]},
-
-    {"name": "Mouth", "traits": [
-        {"name": "Mayor Kissy","colors": 1.0,"rarity": "Epic","tags": [],"token_id": 181}
+        {"name": "Hottie","colors": 2,"rarity": "Epic","tags": [],"token_id": 67}
     ]}
   ]
 }

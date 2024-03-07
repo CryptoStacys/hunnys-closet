@@ -70,6 +70,7 @@
     {
       "name": "Eyes",
       "traits": [
+        {"name": "Fired Up","colors": 1,"rarity": "Epic","tags": [],"token_id": 67},
         {"name":"Anime Heart Eyes","colors":1,"rarity":"Common","tags":[],"token_id":62},
         {"name":"Bored Eyes","colors":1,"rarity":"Epic","tags":[],"token_id":1},
         {"name":"Closed Eyes","colors":0,"rarity":"Epic","tags":[],"token_id":5},
@@ -243,6 +244,7 @@
     {
       "name": "Hair Style",
       "traits": [
+        {"name": "Hottie","colors": 2,"rarity": "Epic","tags": [],"token_id": 67},
         {"name":"Messy Bored Hair","colors":1,"rarity":"Epic","parts":1,"tags":[],"token_id":1},
         {"name":"Piggy Hair","colors":1,"rarity":"Rare","parts":1,"tags":[],"token_id":3},
         {"name":"Cow Hair with Bangs","colors":1,"rarity":"Rare","parts":2,"tags":[],"token_id":2},
