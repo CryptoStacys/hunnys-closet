@@ -106,7 +106,7 @@ function MyApp({ Component, pageProps }: AppProps) {
     <WalletProvider
     collectAndReportMetrics
     enableHostedBackups
-    projectId="e55373bd-6fc9-4fb7-b1b7-4908df14cd53"
+    projectId="90840334-4797-45ff-bb86-6823701b4b3a"
     autoCreateWallet={true}
     prod={false} // Set to true for production
   >
