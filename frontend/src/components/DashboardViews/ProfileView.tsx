@@ -15,6 +15,7 @@ import { ethers } from "ethers";
 import FreeClaim from "../../components/Mint/FreeClaim"
 import Tooltip from '../Tooltip/Tooltip';
 import ProgressBar from '../Achievements/ProgressBar';
+import { calculateLevel, calculatePointsToNextLevel } from '../../utils/levelUtils';
 
 const ProfileView = () => {
   const [user, setUser] = useAtom(userAtom);
@@ -28,6 +29,28 @@ const ProfileView = () => {
   const provider = new ethers.providers.Web3Provider(window.ethereum as any);
   const [showTooltip, setShowTooltip] = useState(false);
   const [availableTitles, setAvailableTitles] = useState<string[]>([]);
+  const [birthdayMonth, setBirthdayMonth] = useState(user?.birthday_month || '');
+  const [birthdayDay, setBirthdayDay] = useState(user?.birthday_day || '');
+  const [twitterHandle, setTwitterHandle] = useState(user?.twitter_handle || '');
+  const [discordHandle, setDiscordHandle] = useState(user?.discord_handle || '');
+  const months = [
+    { value: '1', label: 'January' },
+    { value: '2', label: 'February' },
+    { value: '3', label: 'March' },
+    { value: '4', label: 'April' },
+    { value: '5', label: 'May' },
+    { value: '6', label: 'June' },
+    { value: '7', label: 'July' },
+    { value: '8', label: 'August' },
+    { value: '9', label: 'September' },
+    { value: '10', label: 'October' },
+    { value: '11', label: 'November' },
+    { value: '12', label: 'December' }
+  ];
+  const days = Array.from({ length: 31 }, (_, i) => i + 1);
+  const currentLevel = calculateLevel(user?.cupcake_points || 0);
+  const { nextLevelPoints, earnedPointsThisLevel, currentLevelPoints } = calculatePointsToNextLevel(currentLevel, user?.cupcake_points || 0);
+  
   
   useEffect(() => {
     const titles = Object.values(user?.achievements || {}).reduce((acc: string[], achievement: any) => {
@@ -131,6 +154,10 @@ const ProfileView = () => {
       profile_name: user?.profile_name ?? '', // Use existing name if not changed
       profile_image_url: newProfileImageUrl ?? user?.profile_image_url, // Use new or existing URL
       tier: user?.tier, // Include the selected title or current tier
+      birthday_month: birthdayMonth, 
+      birthday_day: birthdayDay, 
+      twitter_handle: twitterHandle, 
+      discord_handle: discordHandle 
     };
   
     // Call the updateProfile API
@@ -148,10 +175,15 @@ const ProfileView = () => {
           return prevUser ? {
             ...prevUser,
             profile_image_url: newProfileImageUrl ?? prevUser.profile_image_url, // Update only if new image URL is provided
-            tier: profileData.tier ?? prevUser.tier, // Update tier if changed
+            tier: profileData.tier ?? prevUser.tier, 
+            birthday_month: birthdayMonth, 
+            birthday_day: birthdayDay, 
+            twitter_handle: twitterHandle, 
+            discord_handle: discordHandle, 
             // Include other properties as needed to match User type
           } : null;
         });
+        setIsEditingName(false);
       }
     } catch (error) {
       console.error("Error updating profile:", error);
@@ -178,7 +210,7 @@ useEffect(() => {
       <Card
         headerTitle="Profile"
         leftBlockContent={
-        <div className="profile-image avatar flex flex-col">
+        <div className="profile-image avatar flex flex-col card-column w-[102%]">
           <Image onClick={() => setIsEditingName(true)} loader={customImageLoader} src={user?.profile_image_url || '/assets/img/choosePFP.png'} alt="Profile Avatar" width={300} height={300} className="rounded-xl cursor-pointer hover:opacity-60 transition ease-in-out delay-75" />
             
           {/* Success message */}
@@ -195,13 +227,13 @@ useEffect(() => {
             onChange={(e) => setSelectedFile(e.target.files?.[0] || null)}
             style={{ display: 'none' }}
           />
-
           <label htmlFor="profile-image-upload" className="bg-[#AA7AFA] hover:bg-[#7b2df8] transition ease-in-out delay-75 cursor-pointer text-white text-center font-bold py-2 px-4 rounded my-4">
             Choose Profile Image
           </label>
+      <h1 className="font-bold">Name:</h1>
             <input
             type="text"
-            className="bg-white enterName font-poppins border-solid border-2 border-black indent-2  mb-4"
+            className="searchBar indent-2 !bg-[#EDEDED] mt-2 mb-6"
             placeholder="Enter Your Name..."
             value={user?.profile_name}
             onChange={(e) => setUser(prevUser => {
@@ -212,20 +244,75 @@ useEffect(() => {
             />
             {
               availableTitles.length > 0 && (
-                <select
-                  className="bg-white border-solid border-2 border-black mt-2 mb-2"
-                  value={user?.tier}
-                  onChange={(e) => setUser((prevUser) => prevUser ? { ...prevUser, tier: e.target.value } : null)}
-                  disabled={!isEditingName}
-                >
-                  {availableTitles.map((title, index) => (
-                    <option key={index} value={title}>
-                      {title}
-                    </option>
-                  ))}
-                </select>
+                
+            <><h1 className="font-bold">Title:</h1><select
+                        className="sortDropdown p-2 !bg-[#EDEDED] mt-2 mb-6 shadow-lg"
+                        value={user?.tier}
+                        onChange={(e) => setUser((prevUser) => prevUser ? { ...prevUser, tier: e.target.value } : null)}
+                        disabled={!isEditingName}
+                      >
+                        {availableTitles.map((title, index) => (
+                          <option key={index} value={title}>
+                            {title}
+                          </option>
+                        ))}
+                      </select></>
               )
             }
+            {/* Birthday Month and Day Dropdowns */}
+      <h1 className="font-bold mb-2">Birthday:</h1>
+      <div className="flex flex-row justify-between">
+        <select
+          className="sortDropdown w-2/3 p-2 !bg-[#EDEDED] shadow-lg"
+          value={birthdayMonth}
+          onChange={(e) => setBirthdayMonth(e.target.value)}
+        >
+          <option value="">Month</option>
+          {/* Assuming you've defined the months array as shown previously */}
+          {months.map((month) => (
+            <option key={month.value} value={month.value}>
+              {month.label}
+            </option>
+          ))}
+        </select>
+        <select
+          className="sortDropdown p-2 !bg-[#EDEDED] shadow-lg"
+          value={birthdayDay}
+          onChange={(e) => setBirthdayDay(e.target.value)}
+        >
+          <option value="">Day</option>
+          {Array.from({ length: 31 }, (_, i) => (
+            <option key={i + 1} value={i + 1}>
+              {i + 1}
+            </option>
+          ))}
+        </select>
+      </div>
+
+      {/* Twitter Handle Input */}
+      <h1 className="font-bold mt-6">Social:</h1>
+      <div className="flex flex-row items-center mt-4 placeholder:text-hunnys-black">
+        <img src="/icons/XLogo.png" alt="Twitter" className="w-6 h-6 mr-2" />
+        <input
+          type="text"
+          className="searchBar indent-2 !bg-[#EDEDED]"
+          placeholder="X Handle"
+          value={twitterHandle}
+          onChange={(e) => setTwitterHandle(e.target.value)}
+        />
+      </div>
+
+      {/* Discord Handle Input */}
+      <div className="flex flex-row items-center mt-4 mb-4">
+        <img src="/icons/DiscordLogo.png" alt="Discord" className="w-6 h-6 mr-2" />
+        <input
+          type="text"
+          className="searchBar indent-2 !bg-[#EDEDED]"
+          placeholder="Discord Handle"
+          value={discordHandle}
+          onChange={(e) => setDiscordHandle(e.target.value)}
+        />
+      </div>
             <button className="bg-hunnys-yellow text-hunnys-blue w-full font-title shadow-md rounded-full px-8 py-1 text-2xl hover:shadow-lg hover:scale-[1.02] transition-all" onClick={handleSaveProfile}>Save</button>
 
             <div className="mt-8 m-auto"><SecondaryButton onClick={() => setIsEditingName(false)}>Cancel</SecondaryButton></div>
@@ -235,14 +322,14 @@ useEffect(() => {
         )}
         </div>}
         middleBlockContent={
-          <div className="flex flex-col justify-between h-full w-[120%]">
+          <div className="flex flex-col justify-between w-[120%] card-column card-column-fixed-height">
             <div className="text-center">
               <div className="text-xl luckiest banner">
                 {user?.tier || "Fresh Cupcake"}
               </div>
             </div>
             <div className="flex flex-col justify-center items-left">
-              <h1 className="font-bold text-purple-700 username bottom-4 relative leading-normal break-keep">
+              <h1 className="font-bold text-purple-700 username relative leading-normal break-keep">
                 {user?.profile_name || "Welcome!"}
               </h1>
             </div>
@@ -253,29 +340,39 @@ useEffect(() => {
             </div>
           </div>
         }
-        rightBlockContent={<div className="self-end">
-          <Tooltip
-            imageUrl="/assets/img/bunnyClubTooltipShadow.png" // The image you want to display in the tooltip
-            imageAlt="Bunny Club Description" // Alt text for the tooltip image
-            linkUrl="https://hunnys.io/bunnyclub"
-            className=""
-          >
+        rightBlockContent={
           <div className="self-end">
-          
-            <div>
+            {user?.bunny_club ? (
               <Image
-                src={"/icons/BunnyClubBadge.svg"}
-                alt={"Bunny Club Status"}
+                src="/assets/img/BunnyClubMemberLogo.png"
+                alt="Bunny Club Member"
                 width={120}
                 height={120}
               />
-            </div>
-        </div>
-          </Tooltip></div>
-}
+            ) : (
+              <Tooltip
+                imageUrl="/assets/img/bunnyClubTooltipShadow.png"
+                imageAlt="Join the Bunny Club"
+                linkUrl="https://hunnys.io/bunnyclub"
+                className=""
+              >
+                <Image
+                  src={"/icons/BunnyClubBadge.svg"}
+                  alt={"Bunny Club Status"}
+                  width={120}
+                  height={120}
+                />
+              </Tooltip>
+            )}
+          </div>
+        }
         footer={<>
-        <ProgressBar level={user?.level} cupcakePoints={user?.cupcake_points} />
-        <h1 className="luckiest m-auto">Cupcake Points: {user?.cupcake_points}</h1></>}        
+        <ProgressBar
+              level={currentLevel} // Use the calculated currentLevel
+              cupcakePoints={earnedPointsThisLevel} // Adjusted to show progress within the current level
+              maxPoints={nextLevelPoints - currentLevelPoints} // Show the range within the current level
+            />
+        <h1 className="luckiest m-auto">Cupcake Points: {user?.cupcake_points}/{nextLevelPoints}</h1></>}        
       />
    <Card
     headerTitle="Introduction"

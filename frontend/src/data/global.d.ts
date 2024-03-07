@@ -66,6 +66,11 @@ export type User = {
   token?: string;
   cupcake_points: number;
   level: number;
+  birthday_month?: string;
+  birthday_day?: string;
+  twitter_handle?: string;
+  discord_handle?: string;
+  bunny_club?: boolean;
 };
 
 type OwnedTraitsResponse = {

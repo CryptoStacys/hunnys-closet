@@ -3,14 +3,14 @@ import Card from "../Card/Card";
 import ProgressBar from "../Achievements/ProgressBar";
 import { useAtom } from "jotai";
 import { userAtom } from "../../data/store";
-import { Achievement } from "../../data/global";
 import AchievementsList from "../Achievements/AchievementsList";
-import Confetti from "react-confetti";
-import useSound from "use-sound";
 import LevelsList from "../Achievements/LevelsList";
+import { calculateLevel, calculatePointsToNextLevel } from '../../utils/levelUtils';
 
 const AchievementsView = () => {
   const [user] = useAtom(userAtom);
+  const currentLevel = calculateLevel(user?.cupcake_points || 0);
+  const { nextLevelPoints, earnedPointsThisLevel, currentLevelPoints } = calculatePointsToNextLevel(currentLevel, user?.cupcake_points || 0);
 
   return (
     <div>
@@ -22,11 +22,12 @@ const AchievementsView = () => {
         footer={
           <>
             <h1 className="luckiest w-[84%] self-center text-2xl justify-center relative bottom-4">
-              Cupcake Points: {user?.cupcake_points}
+            Cupcake Points: {user?.cupcake_points}/{nextLevelPoints}
             </h1>
             <ProgressBar
-              level={user?.level}
-              cupcakePoints={user?.cupcake_points}
+              level={currentLevel} // Use the calculated currentLevel
+              cupcakePoints={earnedPointsThisLevel} // Adjusted to show progress within the current level
+              maxPoints={nextLevelPoints - currentLevelPoints} // Show the range within the current level
             />
             <LevelsList />
           </>

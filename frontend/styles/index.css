@@ -110,6 +110,22 @@ a {
     padding: 0px 15px 10px 15px;
 }
 
+.card-flex-container {
+  display: flex;
+  justify-content: space-between; /* Adjust as needed for your layout */
+}
+
+.card-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; /* Align content to the top */
+  flex-grow: 1;
+}
+
+.card-column-fixed-height {
+  min-height: 300px; /* Example fixed height, adjust based on your content */
+}
+
 .profile-card {
   background: #FFFFFF; 
   border-radius: 15px;

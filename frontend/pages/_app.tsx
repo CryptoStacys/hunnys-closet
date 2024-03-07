@@ -19,7 +19,6 @@ import { Analytics } from '@vercel/analytics/react';
 // Use the Next.js Link component instead of your custom Link component for navigation
 import Link from 'next/link';
 
-
 // Declare gtag for TypeScript
 declare global {
   interface Window {
@@ -52,18 +51,6 @@ const { wallets } = getDefaultWallets({
   projectId,
   chains,
 });
-
-// Coinbase WaaS Token Provider Function
-const provideAuthToken = async () => {
-  try {
-    const response = await fetch("https://wallets.hunnysnft.com/auth", { method: 'POST' });
-    const data = await response.json();
-    return data.token; // Assuming the server responds with a JSON object that has a `token` field
-  } catch (error) {
-    console.error("Failed to fetch auth token:", error);
-    return ""; // Return an empty string or handle the error appropriately
-  }
-};
 
 
 const connectors = connectorsForWallets([
@@ -119,7 +106,7 @@ function MyApp({ Component, pageProps }: AppProps) {
     <WalletProvider
     collectAndReportMetrics
     enableHostedBackups
-    projectId="90840334-4797-45ff-bb86-6823701b4b3a"
+    projectId="e55373bd-6fc9-4fb7-b1b7-4908df14cd53"
     autoCreateWallet={true}
     prod={false} // Set to true for production
   >

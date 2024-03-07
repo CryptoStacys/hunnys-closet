@@ -3,28 +3,38 @@ import { ConnectButton } from "@rainbow-me/rainbowkit";
 import { useAtom } from "jotai";
 import { Tooltip } from "react-tooltip";
 import React, { useState, useEffect, useCallback, useRef } from "react";
-import { connectedAtom, dollEditorVisibleAtom, userAtom } from "../../data/store";
+import {
+  connectedAtom,
+  dollEditorVisibleAtom,
+  userAtom,
+} from "../../data/store";
 import { mode } from "../../data/config";
 import { useWalletContext } from "@coinbase/waas-sdk-web-react";
 import Login from "../Login/Login";
-import { useRouter } from 'next/router';
-import Image from 'next/image';
+import { useRouter } from "next/router";
+import Image from "next/image";
 type NavProps = {
   rewardStatus: string;
 };
 
 export default function Nav({ rewardStatus }: NavProps) {
   const [connected, setConnected] = useAtom(connectedAtom);
-  const [copySuccess, setCopySuccess] = useState('');
+  const [copySuccess, setCopySuccess] = useState("");
   const [user, setUser] = useAtom(userAtom);
   const [dollEditorVisible] = useAtom(dollEditorVisibleAtom);
-  const {waas, error, user: waasUser, wallet, isLoggingIn, isCreatingWallet } =
-  useWalletContext();
+  const {
+    waas,
+    error,
+    user: waasUser,
+    wallet,
+    isLoggingIn,
+    isCreatingWallet,
+  } = useWalletContext();
   const router = useRouter();
   const [dropdownVisible, setDropdownVisible] = useState(false);
   const dropdownRef = useRef<HTMLDivElement | null>(null);
+  const isLoggedIn = connected || user;
 
-  
   const logout = useCallback(async () => {
     if (waas && waas.logout) {
       await waas.logout();
@@ -39,15 +49,18 @@ export default function Nav({ rewardStatus }: NavProps) {
   const handleAddressCopy = useCallback(() => {
     if (user?.address) {
       navigator.clipboard.writeText(user.address).then(() => {
-        setCopySuccess('Address Copied!');
-        setTimeout(() => setCopySuccess(''), 2000); // Reset message after 2 seconds
+        setCopySuccess("Address Copied!");
+        setTimeout(() => setCopySuccess(""), 2000); // Reset message after 2 seconds
       });
     }
   }, [user?.address]);
 
   useEffect(() => {
     function handleClickOutside(event: MouseEvent) {
-      if (dropdownRef.current && !dropdownRef.current.contains(event.target as Node)) {
+      if (
+        dropdownRef.current &&
+        !dropdownRef.current.contains(event.target as Node)
+      ) {
         setDropdownVisible(false);
       }
     }
@@ -69,11 +82,25 @@ export default function Nav({ rewardStatus }: NavProps) {
         onClick={() => setDropdownVisible(!dropdownVisible)}
       >
         {user?.profile_image_url ? (
-          <img src={user.profile_image_url} alt="Profile" width="24" height="24" className="rounded-full" />
+          <img
+            src={user.profile_image_url}
+            alt="Profile"
+            width="24"
+            height="24"
+            className="rounded-full"
+          />
         ) : (
-          <img src="/heart.svg" alt="Default Profile" width="24" height="24" className="rounded-full" />
+          <img
+            src="/heart.svg"
+            alt="Default Profile"
+            width="24"
+            height="24"
+            className="rounded-full"
+          />
         )}
-        <span className="mx-24 relative right-8">{user?.profile_name || 'Account'}</span>
+        <span className="mx-24 relative right-8">
+          {user?.profile_name || "Account"}
+        </span>
       </button>
       {dropdownVisible && (
         <div className="absolute font-bold right-0 mt-2 py-2 w-48 bg-white rounded-md shadow-xl z-20">
@@ -81,7 +108,13 @@ export default function Nav({ rewardStatus }: NavProps) {
             className="block px-4 py-2 text-sm text-gray-700 hover:bg-[#EDEDED] cursor-default"
             onClick={handleAddressCopy}
           >
-           Account Address: {copySuccess || (user?.address ? `${user.address.substring(0, 6)}...${user.address.substring(user.address.length - 4)}` : 'No Address')}
+            Account Address:{" "}
+            {copySuccess ||
+              (user?.address
+                ? `${user.address.substring(0, 6)}...${user.address.substring(
+                    user.address.length - 4
+                  )}`
+                : "No Address")}
           </a>
           <a
             className="block px-4 py-2 text-sm text-gray-700 hover:bg-[#EDEDED] cursor-pointer"
@@ -94,45 +127,28 @@ export default function Nav({ rewardStatus }: NavProps) {
     </div>
   );
 
-    const renderConnectOrLogoutButton = () => {
-      {user?.wallet_type === 'waas' ? renderWaasUserDropdown() : (
-        <ConnectButton accountStatus={{smallScreen: 'avatar', largeScreen: 'full'}} showBalance={false} chainStatus="none" />
-      )}
-      }
-
   return (
     <nav className="top-2 fixed flex-center z-50 w-full box-border">
-      <div
-        // className="max-w-[1160px] px-2 mx-6 flex justify-between items-center w-full box-border py-[6px] shadow-md bg-[#6510F1] rounded-2xl"
-        className="max-w-[1250px] px-2 mx-6 flex justify-between items-center w-full box-border py-[6px] shadow-md bg-[#6510F1] rounded-2xl"
-        // style={{
-        //   backdropFilter: "blur(10px)",
-        // }}
-      >
+      <div className="max-w-[1250px] px-2 mx-6 flex justify-between items-center w-full box-border py-[6px] shadow-md bg-[#6510F1] rounded-2xl">
         <Link to="/" className="">
           <h1 className=" btn font-title text-md md:text-4xl leading-[1.2rem] flex-center md:leading-normal text-[#fff] ml-[10px]">
             {/* HUNNYS{" "} */}
-            <div className="mobile-hide">HUNNYS{" "}</div>
+            <div className="mobile-hide">HUNNYS </div>
             <svg
               className="sm:w-7 sm:h-7 sm:mx-1 w-10 h-10 mx-0 fill-hunnys-yellow"
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 1440 1440"
-              // style="fill: rgb(0, 0, 0);"
-              // original_string_length="787"
             >
-              <path
-                d="M1347,420.9v95.3c-2.4,18.2-4.6,36.4-7,54.6c-12,83.3-40.2,163.1-82.9,234.2 c-62.4,108.5-145.7,197.9-236.2,280.8C903.4,1190.3,778,1284.4,646,1367.1c-2.9-6.5-5.7-12.3-8.2-18.3 c-58.2-136.5-139.6-260.6-240.1-366c-52.5-55.6-106.5-109.7-158.8-165.5c-42.4-43.4-77.1-94.3-102.6-150.6 c-30.3-72.1-42.1-151.4-34.2-229.9c3.3-56.5,20.5-111,49.9-158.3c42.8-67.2,104.1-104.5,177.9-119.9c88.3-20.2,180.6-6.1,259.9,39.6 c46.3,25.6,85.5,63.5,113.9,109.9c3.9-7.5,7.5-14.5,11-21.5c24.9-51.9,57.8-99.1,97.4-139.5c58.2-59.3,138.6-87.8,218.8-77.3 c80.7,7.1,156.3,45,212.7,106.6c53.3,58.5,87.9,133.3,98.9,213.8C1343.8,400.7,1345.7,410.9,1347,420.9z"
-                // style="fill: rgb(255, 222, 89);"
-              />
+              <path d="M1347,420.9v95.3c-2.4,18.2-4.6,36.4-7,54.6c-12,83.3-40.2,163.1-82.9,234.2 c-62.4,108.5-145.7,197.9-236.2,280.8C903.4,1190.3,778,1284.4,646,1367.1c-2.9-6.5-5.7-12.3-8.2-18.3 c-58.2-136.5-139.6-260.6-240.1-366c-52.5-55.6-106.5-109.7-158.8-165.5c-42.4-43.4-77.1-94.3-102.6-150.6 c-30.3-72.1-42.1-151.4-34.2-229.9c3.3-56.5,20.5-111,49.9-158.3c42.8-67.2,104.1-104.5,177.9-119.9c88.3-20.2,180.6-6.1,259.9,39.6 c46.3,25.6,85.5,63.5,113.9,109.9c3.9-7.5,7.5-14.5,11-21.5c24.9-51.9,57.8-99.1,97.4-139.5c58.2-59.3,138.6-87.8,218.8-77.3 c80.7,7.1,156.3,45,212.7,106.6c53.3,58.5,87.9,133.3,98.9,213.8C1343.8,400.7,1345.7,410.9,1347,420.9z" />
             </svg>
             <div className="mobile-hide">CLOSET</div>
             {/* CLOSET */}
           </h1>
         </Link>
-        <div className="flex justify-between items-center rewardStatus">
-        {connected && (
+        <div className="flex justify-between items-center">
+          {connected && (
             <>
-             {!dollEditorVisible && (
+              {!dollEditorVisible && (
                 <Link
                   to="/dollys"
                   className="link-btn navLinks text-[#fff] font-title uppercase hover:bg-[#ffd54b] transition inline-block text-2xl font-semibold font-content mx-[5px] sm:px-3 px-0 py-[6px] rounded-xl"
@@ -142,18 +158,25 @@ export default function Nav({ rewardStatus }: NavProps) {
               )}
               
               <a
-                  href="https://buy.hunnys.io/polygon/collection/0x11bc733e719198e2b3746f6841d2818ca87af6da"
-                  target="_blank"
-                  className="link-btn navLinks text-hunnys-yellow font-title uppercase hover:bg-hunnys-light-purple transition inline-block text-2xl font-semibold font-content mx-[5px] sm:px-3 px-0 py-[6px] rounded-xl"
-              >Shop</a>
+                href="https://buy.hunnys.io/polygon/collection/0x11bc733e719198e2b3746f6841d2818ca87af6da"
+                target="_blank"
+                className="link-btn navLinks text-hunnys-yellow font-title uppercase hover:bg-hunnys-light-purple transition inline-block text-2xl font-semibold font-content mx-[5px] sm:px-3 px-0 py-[6px] rounded-xl"
+              >
+                Shop
+              </a>
             </>
           )}
-
-        {user?.wallet_type === 'waas' ? renderWaasUserDropdown() : (
-        <ConnectButton accountStatus={{smallScreen: 'avatar', largeScreen: 'full'}} showBalance={false} chainStatus="none" />
-      )}
-        </div>
+          {
+          user?.wallet_type === "waas" ? renderWaasUserDropdown() : connected && user && (
+            <ConnectButton
+              accountStatus={{ smallScreen: "avatar", largeScreen: "full" }}
+              showBalance={false}
+              chainStatus="none"
+            />
+          )
+        }
       </div>
-    </nav>
-  )
-};
+    </div>
+  </nav>
+  );
+}

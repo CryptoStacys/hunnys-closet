@@ -493,8 +493,8 @@ const renderNftData = () => {
       />
       <div className="bg-[#EDEDED]">
 <div className="align-center m-auto flex flex-row pl-1 font-poppins mt-16">
-  <h1 className="font-bold text-2xl flex-grow-[0.7]">Search Inventory</h1>
-  <div className="flex items-center">
+  <h1 className="font-bold text-2xl flex-grow-[0.9]">Search Inventory</h1>
+  <div className="flex items-center m-auto">
     <select
       className="sortDropdown shadow-lg mr-4 p-[7.5px]"
       onChange={handleSortChange}
@@ -512,7 +512,7 @@ const renderNftData = () => {
         placeholder="Search Inventory..."
         value={searchTerm}
         onChange={(e) => setSearchTerm(e.target.value)}
-        className="searchBar indent-2 w-[140%]"
+        className="searchBar indent-2 "
       />
       {searchTerm && (
         <button

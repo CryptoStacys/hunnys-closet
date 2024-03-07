@@ -182,30 +182,32 @@ export default function Login() {
   
 
   return (
-    <div className="relative w-full h-[80vh]">
+    <div className="flex justify-center items-center w-max-full px-6 mx-auto">
+    <div className="relative rounded-3xl overflow-hidden max-w-[1250px] w-full h-[80vh] mx-auto flex items-center justify-center">
       {/* Background Image */}
       {loadingImage && (
-        <Image src={loadingImage} alt="Background" width={3000} height={1688} />
+        <Image className="rounded-3xl" src={loadingImage} alt="Background" width={3000} height={1688} />
       )}
       {/* Overlay */}
       <div className="absolute inset-0 flex items-center justify-center">
         {/* Button Container */}
-        <div className="flex flex-col items-center space-y-4">
+        <div className="flex xs:flex-col md:flex-row items-center mt-40 space-y-4 md:space-y-0 md:space-x-4">
           {error && <p>{error.message}</p>}
           {!waasUser && (
             <>
+            <button
+                onClick={openConnectModal}
+                className="hunnys-btn bg-[#C9A9FF] !text-[#6510F2] xs:text-md xs:px-6 xs:py-3 lg:text-2xl font-bold tracking-wider px-14 py-6 rounded-full hover:cursor-pointer drop-shadow-2xl"
+              >
+                Connect Wallet
+              </button>
               <button
                 onClick={login}
-                className="hunnys-btn bg-pink-400 exportKeys uppercase !text-black text-4xl font-bold font-title tracking-wider px-14 py-3 rounded-md hover:cursor-pointer"
+                className="hunnys-btn bg-[#ffd54b] !text-[#6510F2] xs:text-md xs:px-6 xs:py-3 lg:text-2xl font-bold tracking-wider px-14 py-6 rounded-full hover:cursor-pointer drop-shadow-2xl"
               >
-                Login/Create Wallet
+                Sign-up / Login
               </button>
-              <button
-                onClick={openConnectModal}
-                className="hunnys-btn bg-[#ffd54b] loginConnect uppercase !text-black text-4xl font-bold font-title tracking-wider px-14 py-3 rounded-md hover:cursor-pointer"
-              >
-                Connect with RainbowKit
-              </button>
+              
             </>
           )}
           {waasUser && (
@@ -213,11 +215,18 @@ export default function Login() {
               <h1 className="luckiest text-4xl text-white p-8 mt-24">
                 Loading...
               </h1>
-              <Loader/>
             </>
           )}
+          {mounted && openConnectModal ? (
+          <div></div>
+        ) : (
+          <h1 className="luckiest text-4xl text-white p-8 mt-24">
+                Loading...
+              </h1>
+        )}
         </div>
       </div>
+    </div>
     </div>
   );
 }

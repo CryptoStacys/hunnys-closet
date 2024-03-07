@@ -21,6 +21,7 @@ import useSound from "use-sound";
         challenge: 'BDay Bun',
         description: 'Add your birthday to your Profile',
         cupcakePoints: 10,
+        eligibilityCriteria: (user: User) => !!user.birthday_day && !!user.birthday_month,
         },
     {
         id: '3',
@@ -90,6 +91,7 @@ import useSound from "use-sound";
         description: 'Own at least 1 Hunnys OG Collectible',
         cupcakePoints: 50,
         title: 'OG Hunny',
+        eligibilityCriteria: (user: User) => user.tokens.some(token => token.origin_name === "Hunnys OGs"),
         },
     {
         id: '12',
@@ -97,6 +99,7 @@ import useSound from "use-sound";
         description: 'Own at least 1 Stacys Collectible',
         cupcakePoints: 50,
         title: 'OG Cupcake',
+        eligibilityCriteria: (user: User) => user.tokens.some(token => token.origin_name === "Hunnys Stacys"),
         },
     {
         id: '13', // Assuming IDs are sequential and unique
@@ -195,7 +198,13 @@ import useSound from "use-sound";
     const [user, setUser] = useAtom(userAtom);
     const [showConfetti, setShowConfetti] = React.useState(false);
     const [playRewardSound] = useSound("/sounds/reward.wav");
-  
+    const calculateNewLevel = (cupcakePoints: number) => {
+      const pointsForLevels = [0, 100, 250, 450, 700, 1000, 1350, 1750, 2200, 2700, 3250, 3850, 4500, 5200, 5950, 6750, 7600, 8500, 9450, 10450, 11500];
+      let newLevel = pointsForLevels.findIndex((points, index) => cupcakePoints < points && index > 0) - 1;
+      return newLevel >= 0 ? newLevel : 0;
+    };
+    
+    
     const handleAchievementClaim = async (achievementId: string) => {
       // Find the achievement based on the ID
       const achievement = achievementsData.find(a => a.id === achievementId);
@@ -203,15 +212,19 @@ import useSound from "use-sound";
         console.error("Achievement not found");
         return;
     }
-
+    const newCupcakePoints = Number(user?.cupcake_points) + achievement.cupcakePoints;
+    const newLevel = calculateNewLevel(newCupcakePoints);
     // Check if the achievement is already claimed
     if (user?.achievements && user?.achievements[achievement.challenge]?.claimed) {
         console.log("Achievement already claimed");
         return; // Stop the function if the achievement is already claimed
     }
       playRewardSound();
-      setShowConfetti(true);
-      setTimeout(() => setShowConfetti(false), 8000);
+      const levelUpOccurred = newLevel > (user?.level ?? 0);
+if(levelUpOccurred) {
+  setShowConfetti(true);
+  setTimeout(() => setShowConfetti(false), 8000); // Adjust timing as needed
+}
   
       if (user?.wallet) {
         const profileData = {
@@ -281,20 +294,41 @@ import useSound from "use-sound";
         console.error("Missing user wallet.");
       }
     };
+
+    const sortedAchievements = achievementsData.sort((a, b) => {
+      // Default values in case user is null
+      const defaultClaimed = false;
+      const defaultEligible = false;
+    
+      // Check if user is null and assign default values or compute based on user's achievements and eligibility
+      const aClaimed = user ? user.achievements && user.achievements[a.challenge]?.claimed : defaultClaimed;
+      const bClaimed = user ? user.achievements && user.achievements[b.challenge]?.claimed : defaultClaimed;
+      const aEligible = user ? (a.eligibilityCriteria ? a.eligibilityCriteria(user) : defaultEligible) : defaultEligible;
+      const bEligible = user ? (b.eligibilityCriteria ? b.eligibilityCriteria(user) : defaultEligible) : defaultEligible;
+    
+      // Sorting logic remains the same
+      if (aClaimed && !bClaimed) return 1;
+      if (!aClaimed && bClaimed) return -1;
+      if (!aEligible && bEligible) return 1;
+      if (aEligible && !bEligible) return -1;
+    
+      return 0; // Default to original order for equivalent statuses
+    });
+    
   
     return (
       <div className="achievements-list">
-        {achievementsData.map((achievement) => (
-        <AchievementItem
-        key={achievement.id}
-        achievement={achievement}
-        onClaim={() => handleAchievementClaim(achievement.id)}
-        isClaimed={user?.achievements && user?.achievements[achievement.challenge]?.claimed}
-        // Ensure user is not null before checking eligibility, otherwise default to false
-        isEligible={user ? (achievement.eligibilityCriteria ? achievement.eligibilityCriteria(user) : false) : false}
-      />
-    ))}
-  </div>
+        {showConfetti && <Confetti />}
+        {sortedAchievements.map((achievement) => (
+          <AchievementItem
+            key={achievement.id}
+            achievement={achievement}
+            onClaim={() => handleAchievementClaim(achievement.id)}
+            isClaimed={user?.achievements && user?.achievements[achievement.challenge]?.claimed}
+            isEligible={user ? (achievement.eligibilityCriteria ? achievement.eligibilityCriteria(user) : false) : false}
+          />
+        ))}
+      </div>
     );
   };
   
