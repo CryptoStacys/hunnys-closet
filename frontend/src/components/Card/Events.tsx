@@ -17,7 +17,7 @@ HOW TO REUSE EASILY ON OTHER PAGES:
 
 const Event: React.FC<EventProps> = ({ headerTitle, event }) => {
   return (
-    <div className="bg-white pb-4 shadow-lg max-w-5xl mx-auto rounded-b-3xl">
+    <div className="bg-white pb-4 shadow-lg max-w-7xl mx-auto rounded-b-3xl">
       <div className="event-header justify-center bg-profile-header p-4 rounded-t-lg">
         <h1 className="text-2xl font-bold text-white font-poppins">{headerTitle}</h1>
       </div>

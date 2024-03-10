@@ -394,20 +394,6 @@ useEffect(() => {
         <button className="bg-hunnys-yellow py-2 w-full self-center text-hunnys-blue luckiest shadow-md rounded-full px-4 text-2xl hover:shadow-lg hover:scale-[1.02] transition-all">Create My Dolly</button>
       </Link></>}
   />
-  <Card
-    headerTitle="Dailys"
-    leftBlockContent={<div className='bg-[#6510F2] rounded-xl luckiest text-2xl text-white p-4 text-center'>10<br></br><span className="text-xl">CUPCAKE POINTS</span></div>}
-    middleBlockContent={""}
-    rightBlockContent={<Image className="rounded-xl" src={GMMug} alt={"GM Mug"} width={120} height={120}></Image>}
-    footer={<FreeClaim
-      tokenId="0"
-      onMintSuccess={() => console.log("NFT claimed successfully!")}
-      updateTraits={(userAddress) => console.log(`Traits updated for ${userAddress}`)}
-      userAddress={user?.wallet}
-      className="bg-hunnys-yellow hover:bg-hunnys-yellow self-center !text-hunnys-blue !w-4/5 luckiest shadow-md rounded-full px-4 py-1 text-2xl hover:shadow-lg hover:scale-[1.02] transition-all "
-      buttonText="Claim My Free Mug!"
-    />}
-  />
 </div>
   );
 };

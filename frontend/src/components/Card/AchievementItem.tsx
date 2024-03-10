@@ -1,6 +1,7 @@
 // AchievementItem.tsx
 import React from 'react';
 import { Achievement } from "../../data/global";
+import { Levels } from "../../data/global";
 
 interface AchievementItemProps {
   achievement: Achievement;
@@ -37,11 +38,15 @@ const AchievementItem: React.FC<AchievementItemProps> = ({ achievement, onClaim,
         {buttonLabel}
       </button>
         </div>
-        <div className='flex flex-col'>
-        {achievement.reward && <p>Reward: {achievement.reward}</p>}
-        </div>
+        <div></div>
         <div></div>
         <div className='flex flex-col'>
+        {achievement.achievementsReward1 && <><p>Reward: {achievement.achievementsReward1}</p><br></br></>}
+        {achievement.achievementsReward2 && <><p>Reward: {achievement.achievementsReward2}</p><br></br></>}
+        {achievement.achievementsReward3 && <><p>Reward: {achievement.achievementsReward3}</p><br></br></>}
+        {achievement.achievementsReward4 && <><p>Reward: {achievement.achievementsReward4}</p><br></br></>}
+        {achievement.achievementsReward5 && <><p>Reward: {achievement.achievementsReward5}</p><br></br></>}
+        {achievement.achievementsReward6 && <><p>Reward: {achievement.achievementsReward6}</p><br></br></>}
         {achievement.title && <p>Title: {achievement.title}</p>}
         </div>
         </div>

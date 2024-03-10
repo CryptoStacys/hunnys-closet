@@ -19,7 +19,7 @@ import { userAtom } from "../../data/store";
         levelsName: 'Bunny Queen Mikas Castle',
         title: 'Bunny Queens Helper',
         description: 'My bunny senses are telling me that we need a dash of magic from across each corner of our beautiful lands.\n\nTake this Bunny Backpack and BunComms Device, cutie! It has everything you need for your big adventure and will allow us to stay in touch. With a sprinkle in your step - go explore Bunny Kingdom, gathering items to help us open this chest! As thanks for helping, we can share whatever is inside! I bet it’s something truly amazing…',
-        levelsReward1: 'Bunny Ears Backpack ',
+        levelsReward1: 'Bunny Ears Backpack',
         },
     {
         id: '2',

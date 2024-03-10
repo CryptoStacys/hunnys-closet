@@ -119,10 +119,10 @@ export default function App() {
   }, [isConnected, router]);
 
   return (
-    <div className="pb-8 bg-[#EDEDED]">
+    <div className="pb-8 ">
       <Nav rewardStatus={''} />
       <Modal />
-      <div className="relative mt-[70px] z-30">
+      <div className="relative mt-[70px] bg-[#EDEDED] z-30">
         {!connected ? (
           <Login />
         ) : (

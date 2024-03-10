@@ -23,7 +23,7 @@ const EventsView = () => {
   }, []);
 
   return (
-    <div className="p-4 max-w-5xl mx-auto mt-[-80px]">
+    <div className="p-4 max-w-7xl mx-auto mt-[-80px]">
       {eventsData.map((item, index) => (
         <><div className="date text-center leading-8 ">{item[4]}</div><Event
           key={index}

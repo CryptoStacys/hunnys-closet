@@ -26,7 +26,8 @@ module.exports = {
       },
       fontFamily: {
         'luckiest': ['Luckiest Guy'],
-        'dmsans': ['DM Sans']
+        'dmsans': ['DM Sans'],
+        'poppins': ['Poppins']
       },
       screens: {
         'xl': '1300px',

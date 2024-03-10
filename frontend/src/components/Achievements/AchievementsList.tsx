@@ -107,6 +107,7 @@ import useSound from "use-sound";
         description: 'Collect enough Cupcake Points to reach Level 1',
         cupcakePoints: 10, // Assign points as you see fit
         title: 'Fresh Cupcake', // Title awarded for achieving this
+        achievementsReward1: 'ButterPuff',
         eligibilityCriteria: (user: User) => user.level >= 1, // Eligible if user has reached at least Level 1
         },
     {
@@ -115,6 +116,7 @@ import useSound from "use-sound";
         description: 'Collect enough Cupcake Points to reach Level 2',
         cupcakePoints: 10, // Assign points as you see fit
         title: 'Bunny Queens Helper', // Title awarded for achieving this
+        achievementsReward1: 'Bunny Ears Backpack',
         eligibilityCriteria: (user: User) => user.level >= 2, // Eligible if user has reached at least Level 1
         },
         
@@ -124,6 +126,7 @@ import useSound from "use-sound";
         description: 'Collect enough Cupcake Points to reach Level 3',
         cupcakePoints: 10, // Assign points as you see fit
         title: 'Bunny Bargainer', // Title awarded for achieving this
+        achievementsReward1: 'Picnic Basket full of Bunny Goodies',
         eligibilityCriteria: (user: User) => user.level >= 3, // Eligible if user has reached at least Level 1
         },
     {
@@ -132,6 +135,7 @@ import useSound from "use-sound";
         description: 'Collect enough Cupcake Points to reach Level 4',
         cupcakePoints: 10, // Assign points as you see fit
         title: 'Squirrel Whisperer', // Title awarded for achieving this
+        achievementsReward1: 'Secret Agent Squirrel Pal',
         eligibilityCriteria: (user: User) => user.level >= 4, // Eligible if user has reached at least Level 1
         },
     {
@@ -140,6 +144,7 @@ import useSound from "use-sound";
         description: 'Collect enough Cupcake Points to reach Level 5',
         cupcakePoints: 10, // Assign points as you see fit
         title: 'Moar Collector', // Title awarded for achieving this
+        achievementsReward1: 'Mr. Moar Frame',
         eligibilityCriteria: (user: User) => user.level >= 5, // Eligible if user has reached at least Level 1
         },
     {
@@ -148,6 +153,8 @@ import useSound from "use-sound";
         description: 'Collect enough Cupcake Points to reach Level 6',
         cupcakePoints: 10, // Assign points as you see fit
         title: 'So Hupe!', // Title awarded for achieving this
+        achievementsReward1: 'Hupe Scouts Heart Headband',
+        achievementsReward2: 'Hupe Scouts Badge',
         eligibilityCriteria: (user: User) => user.level >= 6, // Eligible if user has reached at least Level 1
         },
     {
@@ -156,6 +163,8 @@ import useSound from "use-sound";
         description: 'Collect enough Cupcake Points to reach Level 7',
         cupcakePoints: 10, // Assign points as you see fit
         title: 'Delicious Dreamer', // Title awarded for achieving this
+        achievementsReward1: 'Bottle of Dreamsicle Water',
+        achievementsReward2: 'Dreamsicle Dye',
         eligibilityCriteria: (user: User) => user.level >= 7, // Eligible if user has reached at least Level 1
         },
     {
@@ -164,6 +173,8 @@ import useSound from "use-sound";
         description: 'Collect enough Cupcake Points to reach Level 8',
         cupcakePoints: 10, // Assign points as you see fit
         title: 'Tater Tot', // Title awarded for achieving this
+        achievementsReward1: 'Farmer Gear Outfit',
+        achievementsReward2: 'Bag of Magic Potatoes',
         eligibilityCriteria: (user: User) => user.level >= 8, // Eligible if user has reached at least Level 1
         },
     {
@@ -172,6 +183,7 @@ import useSound from "use-sound";
         description: 'Collect enough Cupcake Points to reach Level 9',
         cupcakePoints: 10, // Assign points as you see fit
         title: 'Forest Friend', // Title awarded for achieving this
+        achievementsReward1: 'Roasting Carrots Over A Fire Background',
         eligibilityCriteria: (user: User) => user.level >= 9, // Eligible if user has reached at least Level 1
         },
     {
@@ -180,6 +192,8 @@ import useSound from "use-sound";
         description: 'Collect enough Cupcake Points to reach Level 10',
         cupcakePoints: 10, // Assign points as you see fit
         title: 'Dreamer', // Title awarded for achieving this
+        achievementsReward1: 'Snoozle',
+        achievementsReward2: 'Dreamy Dreamland Pajamas',
         eligibilityCriteria: (user: User) => user.level >= 10, // Eligible if user has reached at least Level 1
         },
         
@@ -189,6 +203,8 @@ import useSound from "use-sound";
         description: 'Collect enough Cupcake Points to reach Level 11',
         cupcakePoints: 50, // Assign points as you see fit
         title: 'Horny', // Title awarded for achieving this
+        achievementsReward1: 'Swampy Camo Outfit',
+        achievementsReward2: 'Baby Hornsworth',
         eligibilityCriteria: (user: User) => user.level >= 11, // Eligible if user has reached at least Level 1
         },
     // Add more achievements here

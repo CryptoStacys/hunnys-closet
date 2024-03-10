@@ -3,7 +3,7 @@ import ProfileButtons from "../ProfileButtons/ProfileButtons";
 import { userAtom } from "../../data/store";
 import ProfileView from '../DashboardViews/ProfileView'; 
 import AchievementsView from '../DashboardViews/AchievementsView'; 
-import InventoryView from "../DashboardViews/InventoryView";
+import InventoryView from "../DashboardViews/InventoryView/InventoryView";
 import NewsView from "../DashboardViews/NewsView";
 import EventsView from "../DashboardViews/EventsView";
 import { useAtom } from "jotai";
@@ -31,7 +31,7 @@ const Dashboard: React.FC = () => {
 
   return (
     <>
-      <div className="p-4 max-w-5xl mx-auto my-8">
+      <div className="p-4 max-w-7xl mx-auto my-8">
         <ProfileButtons setCurrentView={setCurrentView} currentView={currentView} />
       </div>
       {renderView()}

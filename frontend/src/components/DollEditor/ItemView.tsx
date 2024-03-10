@@ -813,7 +813,7 @@ return (
       
         {/* OTHER ITEMS */}            
         <div className="mb-12">
-        <div className="font-bold font-luckiest flex pl-1 mt-8 text-[#444] flex flex-row">
+        <div className="font-bold font-luckiest pl-1 mt-8 text-[#444] flex flex-row">
         <select className={`bg-white sortDropdown shadow-lg rounded-b-lg uppercase`} onChange={(e) => {
     setSortType(e.target.value);
     setCurrentPage(1); // Reset currentPage to 1

@@ -21,6 +21,8 @@ import { useAtom } from "jotai";
 import { allTraitsAtom, connectedAtom, userAtom, userTraitsAtom } from "../../data/store";
 import { initializeUser } from "../../utils/userInitialization";
 type WalletAddress = Address<IProtocolFamily>;
+
+const loginScreen = "/assets/img/DefaultClosetLoginScreen.png";
 // Static images
 const loadingImages = [
   "/assets/img/LoadingTip1.png",
@@ -182,51 +184,41 @@ export default function Login() {
   
 
   return (
-    <div className="flex justify-center items-center w-max-full px-6 mx-auto">
-    <div className="relative rounded-3xl overflow-hidden max-w-[1250px] w-full h-[80vh] mx-auto flex items-center justify-center">
+    <RainbowKitProvider chains={chains}>
+    <div className="flex justify-center items-center w-max-full px-6 mx-auto bg-cover bg-center" style={{backgroundColor: 'white', backgroundImage: `url('/assets/img/sparkle_bg.png')`}}>
+    <div className="relative rounded-3xl overflow-hidden max-w-[1250px] w-full h-[100%] mx-auto flex items-center justify-center">
       {/* Background Image */}
       {loadingImage && (
-        <Image className="rounded-3xl" src={loadingImage} alt="Background" width={3000} height={1688} />
+        <Image className="rounded-3xl" src={loginScreen} alt="Background" width={3000} height={1688} />
       )}
       {/* Overlay */}
       <div className="absolute inset-0 flex items-center justify-center">
         {/* Button Container */}
-        <div className="flex xs:flex-col md:flex-row items-center mt-40 space-y-4 md:space-y-0 md:space-x-4">
+        <div className="flex flex-row">
           {error && <p>{error.message}</p>}
-          {!waasUser && (
-            <>
-            <button
-                onClick={openConnectModal}
-                className="hunnys-btn bg-[#C9A9FF] !text-[#6510F2] xs:text-md xs:px-6 xs:py-3 lg:text-2xl font-bold tracking-wider px-14 py-6 rounded-full hover:cursor-pointer drop-shadow-2xl"
-              >
-                Connect Wallet
-              </button>
-              <button
-                onClick={login}
-                className="hunnys-btn bg-[#ffd54b] !text-[#6510F2] xs:text-md xs:px-6 xs:py-3 lg:text-2xl font-bold tracking-wider px-14 py-6 rounded-full hover:cursor-pointer drop-shadow-2xl"
-              >
-                Sign-up / Login
-              </button>
-              
-            </>
-          )}
+          {mounted && openConnectModal ? (
+          <button
+          onClick={openConnectModal}
+          className="hunnys-btn font-poppins login-button bg-[#C9A9FF] !text-[#6510F2] xs:text-md xs:px-2 xs:py-2 sm:px-4 sm:py-3 xs:mr-4 lg:text-2xl lg:px-6 lg:py-3 font-bold tracking-wider px-14 py-6 rounded-full hover:cursor-pointer drop-shadow-2xl"
+        >
+          Connect Wallet
+        </button>
+        ) : (
+          <div className="login-button text-4xl justify-center align-center items-center luckiest text-white">
+                Loading...
+              </div>
+        )}
           {waasUser && (
             <>
-              <h1 className="luckiest text-4xl text-white p-8 mt-24">
-                Loading...
+              <h1 className="login-button text-4xl justify-center align-center items-center luckiest text-white">
+              Loading...
               </h1>
             </>
           )}
-          {mounted && openConnectModal ? (
-          <div></div>
-        ) : (
-          <h1 className="luckiest text-4xl text-white p-8 mt-24">
-                Loading...
-              </h1>
-        )}
         </div>
       </div>
     </div>
     </div>
+    </RainbowKitProvider>
   );
 }

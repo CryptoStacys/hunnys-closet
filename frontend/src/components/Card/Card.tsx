@@ -23,7 +23,7 @@ HOW TO REUSE EASILY ON OTHER PAGES:
 
 const Card: React.FC<CardProps> = ({ headerTitle, leftBlockContent, middleBlockContent, rightBlockContent, footer }) => {
   return (
-    <div className="bg-white pb-4 shadow-lg max-w-5xl mx-auto my-8 rounded-b-3xl">
+    <div className="bg-white pb-4 shadow-lg max-w-7xl mx-auto my-8 rounded-b-3xl">
       <div className="profile-header justify-center bg-profile-header p-4 rounded-t-lg">
         <h1 className="text-2xl font-bold text-white font-poppins">{headerTitle}</h1>
       </div>

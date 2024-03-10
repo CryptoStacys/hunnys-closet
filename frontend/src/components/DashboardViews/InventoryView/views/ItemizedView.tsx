@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 import { useAtom } from "jotai";
-import { userAtom, allTraitsAtom, userTraitsAtom } from "../../data/store";
-import { Token, UserOwnedTraits } from "../../data/global";
-import Card from '../Card/Card';
-import Event from '../Card/Events';
+import { userAtom, allTraitsAtom, userTraitsAtom } from "../../../../data/store";
+import { Token, UserOwnedTraits } from "../../../../data/global";
+import Card from '../../../Card/Card';
+import Event from '../../../Card/Events';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Pagination, Navigation, Lazy } from 'swiper/modules';
 // Import Swiper styles
@@ -46,7 +46,7 @@ interface GroupedByTokenId {
   [tokenId: string]: NftItem[];
 }
 
-const InventoryView = () => {
+const ItemizedView = () => {
   const [user] = useAtom(userAtom);
   const [allTraits] = useAtom(allTraitsAtom);
   const [closetData] = useAtom(allTraitsAtom);
@@ -63,7 +63,8 @@ const InventoryView = () => {
   const [sortedNftData, setSortedNftData] = useState<any[]>([]);
   const [sortType, setSortType] = useState("default");
   const [selectedImage, setSelectedImage] = useState(null);
-  const ITEMS_PER_PAGE = 9;
+  const [gridSize, setGridSize] = useState('3x3'); // Default to 3x3 grid
+  const [itemsPerPage, setItemsPerPage] = useState(9); // Default to 9 items per page for 3x3 grid
   const rarityOrder = [
     "Common",
     "common",
@@ -86,13 +87,21 @@ const InventoryView = () => {
     any[]
   >([]);
   const [displayedNftData, setDisplayedNftData] = useState<any[]>([]);
-  const startIndex = (currentPage - 1) * ITEMS_PER_PAGE;
-  const endIndex = startIndex + ITEMS_PER_PAGE;
-  const [pageTotal, setPageTotal] = useState(Math.ceil(nftData.length / ITEMS_PER_PAGE));
+  const startIndex = (currentPage - 1) * itemsPerPage;
+  const endIndex = startIndex + itemsPerPage;
+  const [pageTotal, setPageTotal] = useState(Math.ceil(nftData.length / itemsPerPage));
   const [inventoryStats, setInventoryStats] = useState<{ [key: string]: { total: number; owned: number } }>({});
-  const indexOfLastItem = currentPage * ITEMS_PER_PAGE;
-  const indexOfFirstItem = indexOfLastItem - ITEMS_PER_PAGE;
-  
+  const indexOfLastItem = currentPage * itemsPerPage;
+  const indexOfFirstItem = indexOfLastItem - itemsPerPage;
+  const toggleGridSize = () => {
+    if (gridSize === '3x3') {
+      setGridSize('9x9');
+      setItemsPerPage(81); // Adjust for 9x9 grid
+    } else {
+      setGridSize('3x3');
+      setItemsPerPage(9); // Adjust back for 3x3 grid
+    }
+  };
   const currentItems = displayedNftData.slice(indexOfFirstItem, indexOfLastItem);
   useEffect(() => {
     // Log the current state of userAtom when Dashboard mounts or when user data changes
@@ -211,13 +220,13 @@ useEffect(() => {
 
   // Implement pagination
   const paginatedData = processedData.slice(
-    (currentPage - 1) * ITEMS_PER_PAGE,
-    currentPage * ITEMS_PER_PAGE
+    (currentPage - 1) * itemsPerPage,
+    currentPage * itemsPerPage
   );
 
   // Assuming you'll use this state to render the filtered, sorted, and paginated data
   setSortedAndFilteredNftData(paginatedData.map(entry => entry[1]).flat());
-}, [groupedNftData, searchTerm, sortType, currentPage, ITEMS_PER_PAGE]);
+}, [groupedNftData, searchTerm, sortType, currentPage, itemsPerPage]);
 
 
 const handleSortChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
@@ -297,7 +306,7 @@ const handleSortChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
     const totalTraitsStats = getStatsByOriginName(inventoryStats, "Hunnys Stacys" && "Hunnys Seasonal" && "Hunnys 10k" && "Hunnys OG" && "Default");
     return (
       <div className="inventory-grid-container bg-white text-white p-4">
-        <div className="grid grid-rows-2 grid-cols-3 gap-4">
+        <div className="grid grid-rows-2 grid-cols-3 gap-x-24 gap-y-12">
           <div className="stat-card luckiest">
             <p className="stat-title">Rank</p>
             <p className="stat-value">COMING SOON</p>
@@ -336,7 +345,7 @@ const handleSortChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
     );
   };
   
-  const applyFilterSortAndPaginate = () => {
+  useEffect(() => {
     // Filter based on search term
     let filteredAndGroupedData = Object.entries(groupedNftData).filter(
       ([_, items]) =>
@@ -389,21 +398,20 @@ case "NotOwned":
       }
 
    // Update pageTotal state
-  const filteredPageTotal = Math.ceil(filteredAndGroupedData.length / ITEMS_PER_PAGE);
-  setPageTotal(filteredPageTotal);
+   setPageTotal(Math.ceil(filteredAndGroupedData.length / itemsPerPage));
 
-  // Reset to the first page if the current page exceeds the new total pages
-  if (currentPage > filteredPageTotal) {
-    setCurrentPage(1);
-  }
-
-  // Adjust the setDisplayedNftData call to use paginated data
-  const paginatedGroups = filteredAndGroupedData.slice(
-    (currentPage - 1) * ITEMS_PER_PAGE,
-    currentPage * ITEMS_PER_PAGE
-  );
-  setDisplayedNftData(paginatedGroups);
-};
+   // Also adjust pagination slice according to the new itemsPerPage
+   const paginatedGroups = filteredAndGroupedData.slice(
+     (currentPage - 1) * itemsPerPage,
+     currentPage * itemsPerPage
+   );
+   setDisplayedNftData(paginatedGroups);
+ 
+   // Ensure current page is valid with new itemsPerPage
+   if (currentPage > pageTotal) {
+     setCurrentPage(1);
+   }
+ }, [itemsPerPage, currentPage, searchTerm, sortType, groupedNftData]);
 
 const isTokenOwned = (nftTrait: string, originName: string | Token[] | undefined) => {
   const key = `${nftTrait}_${originName}`;
@@ -412,11 +420,7 @@ const isTokenOwned = (nftTrait: string, originName: string | Token[] | undefined
   return owned; // Check if the trait is marked as owned
 
 };
-  useEffect(() => {
-    applyFilterSortAndPaginate();
-    console.log("Displayed NFT Data after sort/filter/paginate:", displayedNftData);
-}, [groupedNftData, searchTerm, sortType, currentPage, userTokens]);
-
+  
 
 const handleCollectClick = async (nft: { origin_name: string; }) => {
   if (nft.origin_name === 'Default') {
@@ -427,56 +431,58 @@ const handleCollectClick = async (nft: { origin_name: string; }) => {
 
 const renderNftData = () => {
   return displayedNftData.map(([tokenId, items], index) => {
-    // Extracting the button URL from the item data
     const buttonURL = items[0][10]; // Assuming button URL is in the 11th column (index 10)
-    const originName = items[0][9]; // Example: adjust based on your actual data structure
+    const originName = items[0][9]; // Assuming origin name is in the 10th column
     const [firstItem] = items;
     const nftImage = firstItem[1];
     const nftName = firstItem[3];
-    const nftTrait = firstItem[2];
-    const isOwned = isTokenOwned(nftTrait, originName); // Assuming origin name is at index 9
+    const isOwned = isTokenOwned(firstItem[2], originName); // Assuming the trait is in the 3rd column
+    
+    // Common card container
+    const cardClass = "border p-2 rounded-xl bg-white hover:shadow-lg transform transition duration-500 hover:scale-105 m-2 overflow-hidden";
+    const imageClass = "m-auto rounded-xl";
+    const titleClass = "text-xs font-bold mb-1 text-center";
     return (
-      <div
-        key={index}
-        className="border p-4 rounded-xl bg-white max-w-[250px] max-h-[600px] hover:shadow-lg transform transition duration-500 hover:scale-105 m-4 overflow-hidden"
-      >
-        <img src={nftImage} alt={`NFT ${tokenId}`} className="w-64 h-64 m-auto rounded-xl" />
-        <div className="pt-4">
-          <h1 className="text-sm font-bold mb-2">{nftName}</h1>
-          {/* Carousel for items */}
-          <Swiper
-            navigation={true}
-            pagination={{ clickable: true }}
-            spaceBetween={10}
-            slidesPerView={3}
-            onSlideChange={() => console.log('slide change')}
-            onSwiper={(swiper) => console.log(swiper)}
-          >
-            {items.map((item: any[], idx: React.Key | null | undefined) => (
-              <SwiperSlide key={idx} onClick={() => openLightbox(item[8])}>
-                <div className="text-center cursor-pointer">
-                  <img className="w-full h-auto max-h-24 mx-auto border-[#C6C6C6] border-2 rounded-xl" src={item[8]} alt={`Trait ${item[1]}`} />
-                  <p className="text-xs mt-1">{item[5]}: {item[2]}</p>
-                </div>
-              </SwiperSlide>
-            ))}
-          </Swiper>
+      <div key={index} className={`${cardClass} ${gridSize === '9x9' ? 'max-w-[100px] max-h-[150px]' : 'max-w-[250px] max-h-[600px]'}`}>
+        <img src={nftImage} alt={`NFT ${tokenId}`} className={`${imageClass} ${gridSize === '9x9' ? 'w-20 h-20' : 'w-64 h-64'}`} />
+        <div className="pt-1">
+          <h1 className={titleClass}>{nftName}</h1>
+          {/* Only render detailed content for 3x3 grid */}
+          {gridSize === '3x3' && (
+            <>
+              <Swiper
+                navigation={true}
+                pagination={{ clickable: true }}
+                spaceBetween={10}
+                slidesPerView={3}
+                onSlideChange={() => console.log('slide change')}
+                onSwiper={(swiper) => console.log(swiper)}
+              >
+                {items.map((item: any[], idx: React.Key | null | undefined) => (
+                  <SwiperSlide key={idx} onClick={() => openLightbox(item[8])}>
+                    <div className="text-center cursor-pointer">
+                      <img className="w-full h-auto max-h-24 mx-auto border-[#C6C6C6] border-2 rounded-xl" src={item[8]} alt={`Trait ${item[1]}`} />
+                      <p className="text-xs mt-1">{item[5]}: {item[2]}</p>
+                    </div>
+                  </SwiperSlide>
+                ))}
+              </Swiper>
+              {buttonURL !== 'NA' && (
+                <a href={buttonURL} target="_blank" rel="noreferrer" className="block mt-2 bg-[#6510F2] text-lg text-white font-bold px-2 py-1 rounded-full text-center hover:bg-opacity-80">
+                  VIEW
+                </a>
+              )}
+            </>
+          )}
+          {/* Simplified content for 9x9 grid */}
+          {gridSize === '9x9' && (
+            <>
+              {isOwned && (
+                <p className="text-xs text-center text-green-700 font-bold">Owned</p>
+              )}
+            </>
+          )}
         </div>
-        {/* Conditionally render the Collect button */}
-        {buttonURL !== 'NA' && (
-          <a
-            href={buttonURL}
-            target="_blank"
-            rel="noreferrer"
-            className="block mt-4 bg-[#6510F2] luckiest text-3xl text-white font-bold px-4 py-2 rounded-full text-center hover:bg-opacity-80"
-          >
-            VIEW
-          </a>
-        )}
-        {/* Optionally handle the case where the item is owned differently */}
-        {isOwned && (
-          <p className="mt-4 text-center text-green-700 font-bold">Owned</p>
-        )}
       </div>
     );
   });
@@ -484,17 +490,25 @@ const renderNftData = () => {
 
 
   return (
-    <div className="inventory-view p-4 max-w-5xl mx-auto my-8">
+    <div className="inventory-view p-4 max-w-7xl mx-auto my-8">
       <Event
-        headerTitle="Inventory"
+        headerTitle="Stats"
         event={<>
         <InventoryStatsGrid inventoryStats={inventoryStats} />
 </>}        
       />
       <div className="bg-[#EDEDED]">
 <div className="align-center m-auto flex flex-row pl-1 font-poppins mt-16">
-  <h1 className="font-bold text-2xl flex-grow-[0.9]">Search Inventory</h1>
+  <h1 className="font-bold text-2xl flex-grow-[0.9]">Search Items</h1>
   <div className="flex items-center m-auto">
+  <div className="toggle-grid-size mt-4 mb-4 flex justify-center">
+      <button
+      onClick={toggleGridSize}
+      className="toggle-grid-size-btn bg-[#AA7AFA] hover:bg-[#7b2df8] transition ease-in-out delay-75 text-white font-bold py-2 px-4 rounded mr-4"
+    >
+      Toggle Grid Size
+    </button>
+      </div>
     <select
       className="sortDropdown shadow-lg mr-4 p-[7.5px]"
       onChange={handleSortChange}
@@ -509,7 +523,7 @@ const renderNftData = () => {
     <div className="relative">
       <input
         type="text"
-        placeholder="Search Inventory..."
+        placeholder="Search..."
         value={searchTerm}
         onChange={(e) => setSearchTerm(e.target.value)}
         className="searchBar indent-2 "
@@ -528,7 +542,7 @@ const renderNftData = () => {
 </div>
 
       {/* NFT Display */}
-      <div className="grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-4">
+      <div className={`grid ${gridSize === '3x3' ? 'lg:grid-cols-3 gap-4' : 'lg:grid-cols-9'} md:grid-cols-2 sm:grid-cols-1 `}>
         {renderNftData()}
       </div>
       {selectedImage && (
@@ -593,4 +607,4 @@ NEXT
   );
 };
 
-export default InventoryView;
+export default ItemizedView;

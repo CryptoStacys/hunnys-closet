@@ -22,7 +22,12 @@ export type Achievement = {
   challenge: string;
   description: string;
   cupcakePoints: number;
-  reward?: string; // Made optional since some achievements might not have additional rewards
+  achievementsReward1?: string;
+  achievementsReward2?: string;
+  achievementsReward3?: string;
+  achievementsReward4?: string;
+  achievementsReward5?: string;
+  achievementsReward6?: string;
   title?: string;
   eligibilityCriteria?: (user: User) => boolean;
 }

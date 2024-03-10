@@ -8,6 +8,21 @@ Create / In your App.css file, you can use them as followed
   /* other formats include: 'woff2', 'truetype, 'opentype', 'embedded-opentype', and 'svg' */
 }
 @font-face {
+  font-family: "Poppins";
+  src: local("Poppins"), url("../public/assets/fonts/Poppins/Poppins-Regular.ttf") format("truetype");
+  /* other formats include: 'woff2', 'truetype, 'opentype', 'embedded-opentype', and 'svg' */
+}
+@font-face {
+  font-family: "Poppins";
+  src: local("Poppins"), url("../public/assets/fonts/Poppins/Poppins-Bold.ttf") format("truetype");
+  font-weight: bold;
+}
+@font-face {
+  font-family: "Poppins";
+  src: local("Poppins"), url("../public/assets/fonts/Poppins/Poppins-SemiBold.ttf") format("truetype");
+  font-weight: 300;
+}
+@font-face {
   font-family: "DM Sans";
   src: local("DM Sans"), url("../public/assets/fonts/DM_Sans/DMSans-Regular.ttf") format("truetype");
 }
@@ -384,6 +399,10 @@ a {
   color: #a26106;
 }
 
+.login-button {
+  margin-top: 350px;
+}
+
 .dashboardHero {
   background-size: cover;
   background-repeat: no-repeat;
@@ -432,7 +451,7 @@ a {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 1rem; /* 16px */
+  padding: 4rem;
   background-color: #EDEDED;
   border-radius: 0.5rem; /* 8px */
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
@@ -652,6 +671,12 @@ a {
     line-height: 12px;
     margin-bottom: 20px;
   }
+  
+  .login-button {
+    margin-top: 120px;
+    position: relative;
+    top: 50px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -694,6 +719,12 @@ a {
     .mobile-line-height{
       line-height: 01.3 !important;
     }
+
+    .login-button {
+      margin-top: 50px;
+      position: relative;
+      top: 50px;
+    }
   
 }
 
@@ -703,6 +734,10 @@ a {
   }
   .grid-item {
     height: 190px;
+  }
+  
+  .login-button {
+    margin-top: 100px;
   }
 }
 
@@ -720,6 +755,10 @@ a {
     font-size: 14px;
     line-height: 6px;
     margin-bottom: 50px;
+  }
+
+  .login-button {
+    margin-top: 50px;
   }
 
   .hideplz {
