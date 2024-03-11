@@ -69,13 +69,13 @@ export const eligibleTokenIds: EligibleToken[] = [
   { token_id: '56', price: ethers.utils.parseUnits("0.015", "ether"), origin_ids: [7, 9] },
   { token_id: '57', price: ethers.utils.parseUnits("0.015", "ether"), origin_ids: [7, 9] },
   { token_id: '58', price: ethers.utils.parseUnits("0.012", "ether"), origin_ids: [7, 9] },
-  { token_id: '63', price: ethers.utils.parseUnits("0.0017", "ether"), origin_ids: [7, 9] },
+  // ... more tokens
 ];
 
 // Add this function to make a request to your server for signing
 const requestSignature = async (userAddress: string, tokenId: string | number, mintPrice: ethers.BigNumber, nonce: number) => {
   try {
-    const response = await fetch('https://services.hunnysnft.com/signature', {
+    const response = await fetch('https://staging-hunnys-closet-2-548f5ed67a1b.herokuapp.com/signature', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({
