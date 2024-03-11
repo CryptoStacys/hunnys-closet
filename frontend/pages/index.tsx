@@ -49,6 +49,25 @@ export default function App() {
         console.error("Error fetching traits:", error);
     });
 
+    // Update Last Login Time
+    fetch(`https://closetservices.hunnysnft.com/wp-json/hunnys-closet/v1/accounts`, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({
+        action: 'login', // Assuming you want to update last login on every connect
+        wallet: address, // User's wallet address
+      }),
+    })
+    .then(response => response.json())
+    .then(data => {
+      console.log('Success:', data);
+    })
+    .catch((error) => {
+      console.error('Error:', error);
+    });
+
         // CACHEBUST https://closetservices.hunnysnft.com/wp-json/hunnys-closet/v1/verifyCloset?wallet=${address}&nocache=${new Date().getTime()}`
 
         fetch(`https://closetservices.hunnysnft.com/wp-json/hunnys-closet/v1/verifyCloset?wallet=${address}`)
