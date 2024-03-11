@@ -45,7 +45,7 @@ const Tooltip: React.FC<TooltipProps> = ({ children, imageUrl, imageAlt, linkUrl
         {showTooltip && (
           <div ref={tooltipRef} className="custom-tooltip " style={{ position: 'absolute', overflow: 'hidden' }}>
             <a href={linkUrl} target="_blank" rel="noopener noreferrer">
-            <img src={imageUrl} alt={imageAlt} width={width} height={height} />
+            <img className='drop-shadow-lg' src={imageUrl} alt={imageAlt} width={width} height={height} />
           </a>
           </div>
         )}

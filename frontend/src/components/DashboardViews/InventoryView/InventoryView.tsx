@@ -66,13 +66,13 @@ const InventoryView = () => {
   }>({});
   const [currentPage, setCurrentPage] = useState(1);
   const [collections, setCollections] = useState<string[]>([]);
-  const [selectedCollection, setSelectedCollection] = useState<string>('Bunny Basics');
+  const [selectedCollection, setSelectedCollection] = useState<string>('All Collections');
   const [searchTerm, setSearchTerm] = useState("");
   const [sortedNftData, setSortedNftData] = useState<any[]>([]);
   const [sortType, setSortType] = useState("Owned");
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
-  const [gridSize, setGridSize] = useState('3x3'); // Default to 3x3 grid
-  const [itemsPerPage, setItemsPerPage] = useState(9); // Default to 9 items per page for 3x3 grid
+  const [gridSize, setGridSize] = useState('4x3'); // Default to 4x3 grid
+  const [itemsPerPage, setItemsPerPage] = useState(12); // Default to 9 items per page for 4x3 grid
   const [viewMode, setViewMode] = useState('itemized');
   const rarityOrder = [
     "Common",
@@ -103,13 +103,14 @@ const InventoryView = () => {
   const indexOfLastItem = currentPage * itemsPerPage;
   const indexOfFirstItem = indexOfLastItem - itemsPerPage;
   const tokenIdToImageUrlMap: Record<string, string> = {};
-  const toggleGridSize = () => {
-    if (gridSize === '3x3') {
-      setGridSize('8x8');
+  const [attributes, setAttributes] = useState<string[]>([]);
+  const [selectedAttribute, setSelectedAttribute] = useState<string>('All Attributes');
+  const toggleGridSize = (size: React.SetStateAction<string>) => {
+    setGridSize(size);
+    if (size === '8x8') {
       setItemsPerPage(64); // Adjust for 8x8 grid
-    } else {
-      setGridSize('3x3');
-      setItemsPerPage(9); // Adjust back for 3x3 grid
+    } else if (size === '4x3') {
+      setItemsPerPage(12); // Adjust back for 4x3 grid
     }
   };
   useEffect(() => {
@@ -123,8 +124,13 @@ const InventoryView = () => {
     'Hunnys OG': 'Hunnys OG',
     'Hunnys Stacys': 'Hunnys Stacys',
     'Hunnys 10k': 'Hunnys 10k',
+    'Fame Lady Society': 'Fame Lady Society',
     'New Hunnys Closet Shop': 'Hunnys Closet Shop',
     'Hunnys Seasonal': 'Hunnys Seasons',
+  };
+  const collectionNameMapExtended = {
+    'all': 'All Collections', // Add this line to include "All Collections" option
+    ...collectionNameMap,
   };
   
   const currentItems = displayedNftData.slice(indexOfFirstItem, indexOfLastItem);
@@ -151,7 +157,12 @@ const InventoryView = () => {
           const groupedByTokenId: { [key: string]: any[] } = {};
           let collectionNames = Array.from(new Set(fetchedNftData.map((item: any[]) => item[9] as string))); // Assuming 10th column is originName
           collectionNames = collectionNames.map(name => collectionNameMap[name as keyof typeof collectionNameMap] || name);
-
+          const fetchedAttributes = new Set<string>();
+          fetchedNftData.forEach((item: any[]) => {
+            const attribute = item[5]; // Assuming 6th column is attribute
+            if (attribute) fetchedAttributes.add(attribute);
+          });
+          setAttributes(['All Attributes', ...Array.from(fetchedAttributes)]);
           setCollections(collectionNames as string[]);
           fetchedNftData.forEach((item: any[]) => {
             const originName = item[9] as string; // Assuming 10th column is originName
@@ -279,7 +290,7 @@ const handleCollectionChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
     setSelectedImage(null);
   };
 
- 
+  const originalCollectionName = reverseCollectionNameMap[selectedCollection] || selectedCollection;
 
   useEffect(() => {
     if (user && user.tokens) {
@@ -335,6 +346,14 @@ const handleCollectionChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
   const getStatsByOriginName = (inventoryStats: InventoryStats, originName: string) => {
     const stats = inventoryStats[originName];
     return stats ? { owned: stats.owned, total: stats.total } : { owned: 0, total: 0 }; // Return existing stats or default to zero
+  };
+
+  const calculateFontSize = (text: string | any[]) => {
+    if (gridSize === '8x8') {
+      // Simple example, adjust logic as needed
+      return Math.min(12, 100 / text.length * 2); // This is a simplistic formula; adjust it as per your design requirements.
+    }
+    return 16; // Default font size for other views or conditions
   };
 
   const InventoryStatsGrid = ({ inventoryStats }: { inventoryStats: InventoryStats }) => {
@@ -489,32 +508,28 @@ const renderItemizedData = () => {
     const isOwned = isTokenOwned(item[2], originName); // Adjust the call to match your ownership checking logic
     
     // Define card classes
-    const cardClass = "border p-2 rounded-xl bg-white hover:shadow-lg transform transition duration-500 hover:scale-105 m-2 overflow-hidden";
+    const cardClass = `${gridSize === '8x8' ? 'p-0' : 'p-2'} border p-2 rounded-xl bg-white hover:shadow-lg transform transition duration-500 hover:scale-105 m-2 overflow-hidden`;
     const imageClass = "m-auto rounded-xl";
     const titleClass = `${gridSize === '8x8' ? 'text-xs' : 'text-2xl'}  font-bold mb-2 mt-2 text-left luckiest`;
     return (
-      <div key={index} className={`${cardClass} ${isOwned ? '' : 'low-brightness'} ${gridSize === '8x8' ? 'max-w-[100px] max-h-[150px]' : 'px-4 max-w-[250px] max-h-[600px]'}`}>
+      <div key={index} className={`${cardClass} ${isOwned ? '' : 'low-brightness'} ${gridSize === '8x8' ? 'max-w-[100px] max-h-[150px]' : 'd-flex flex-column justify-content-between max-w-[250px] max-h-[600px]'}`}>
         {/* Owned/Not Owned indicator and NFT Image */}
-        {isOwned ? (
-            <><div className={`${gridSize === '3x3' ? 'm-4' : 'text-xs text-center mr-2 mb-2'} flex flex-row justify-end`}><p className="text-end font-poppins font-bold align-middle self-center mr-4 top-1 relative ">Owned</p><img src="/icons/Unlocked.png" alt={"Owned & Unlocked"} className={`${gridSize === '3x3' ? 'w-[10%]' : 'hidden'}`}></img></div></>
-          ) : (
-            <><div className={`${gridSize === '3x3' ? 'm-4' : 'text-xs text-center mr-2 mb-2'} flex flex-row justify-end`}><p className="text-end font-poppins font-bold align-middle self-center mr-4 top-1 relative ">Not Owned</p><img src="/icons/Locked.png" alt={"Unowned & Locked"} className={`${gridSize === '3x3' ? 'w-[10%]' : 'hidden'}`}></img></div></>
-          )}
-        <img src={itemImage} alt={`NFT ${nftName}`} className={`${imageClass} ${gridSize === '8x8' ? 'w-20 h-20' : 'w-64 h-64'}`} loading="lazy"/>
-        <div className="pt-1">
-          <h1 className={titleClass}>{itemName}</h1>
-          {/* VIEW button, conditional rendering based on 'buttonURL' */}
-          {buttonURL !== 'NA' && (
-            <a href={buttonURL} target="_blank" rel="noreferrer" className="block mt-2 bg-[#6510F2] text-lg text-white font-bold px-2 py-1 rounded-full text-center hover:bg-opacity-80">
-              VIEW
-            </a>
-          )}
-        </div>
-          {/* Only render detailed content for 3x3 grid */}
-          {gridSize === '3x3' && (
+
+        
+        
+          {/* Only render detailed content for 4x3 grid */}
+          {gridSize === '4x3' && (
             <>
-              
-                
+          {isOwned ? (
+          <><div className={`${gridSize === '4x3' ? 'm-4' : 'text-xs text-center mr-2 mb-2'} flex flex-row justify-end`}><p className={`${gridSize === '4x3' ? 'text-xl mr-4 text-end' : 'text-xs text-center'} font-poppins font-bold align-middle self-center top-1 relative `}>Owned</p><img src="/icons/Unlocked.png" alt={"Owned & Unlocked"} className={`${gridSize === '4x3' ? 'w-[10%]' : 'hidden'}`}></img></div></>
+          ) : (
+            <><div className={`${gridSize === '4x3' ? 'm-4' : 'text-xs text-center mr-2 mb-2'} flex flex-row justify-end`}><p className={`${gridSize === '4x3' ? 'text-xl mr-4 text-end' : 'text-xs text-center'} font-poppins font-bold align-middle self-center top-1 relative `}>Not Owned</p><img src="/icons/Locked.png" alt={"Unowned & Locked"} className={`${gridSize === '4x3' ? 'w-[10%]' : 'hidden'}`}></img></div></>
+        )}
+        <img src={itemImage} alt={`NFT ${nftName}`} className={`${imageClass}`} loading="lazy"/>
+              <div className="pt-1">
+        <h1 style={{ fontSize: `${Math.max(16, 32 - itemName.length * 0.5)}px` }} className={titleClass}>{itemName}</h1>
+
+        </div>
                     <div className="text-center cursor-pointer">
                       <img className="max-w-24 max-h-24 mx-auto border-[#C6C6C6] border-2 rounded-xl" src={parentNftImage} alt={`Trait ${nftName}`} />
                       <p className="text-xs mt-1">Origin: {originName}</p>
@@ -522,15 +537,20 @@ const renderItemizedData = () => {
               
             </>
           )}
+                    {/* VIEW button, conditional rendering based on 'buttonURL' */}
+                    {buttonURL !== 'NA' && (
+            <a href={buttonURL} target="_blank" rel="noreferrer" className="block mt-2 bg-[#6510F2] text-lg text-white font-bold px-2 py-1 rounded-full text-center hover:bg-opacity-80" style={{ marginTop: 'auto' }}>
+            VIEW
+          </a>
+          )}
           {/* Simplified content for 8x8 grid */}
           {gridSize === '8x8' && (
-            <>
-            <div className="text-center">
-              <p className="text-xs mt-1">{itemAttribute}</p>
-            </div>
-            </>
-          )}
+          <><img src={itemImage} alt={`NFT ${nftName}`} className={`${imageClass}`} loading="lazy" /><div className={`shadow-lg text-xs rounded-b-lg text-white bg-[#C9A9FF] w-full h-auto justify-center items-center break-words py-2 px-2 font-poppins font-bold`}>
+            {itemName}
+          </div></>
+        )}
         </div>
+        
     );
   });
 };
@@ -540,7 +560,7 @@ const renderCollectionData = () => {
   const originalCollectionName = reverseCollectionNameMap[selectedCollection] || selectedCollection;
 
   const filteredData: NftItem[] = nftData.filter(item => {
-    return item[9].toLowerCase().includes(originalCollectionName.toLowerCase()) && (
+    return selectedCollection === 'all' || item[9].toLowerCase().includes(originalCollectionName.toLowerCase()) && (
       item[0].toLowerCase().includes(searchTerm.toLowerCase()) ||
       item[2].toLowerCase().includes(searchTerm.toLowerCase()) ||
       item[3].toLowerCase().includes(searchTerm.toLowerCase()) ||
@@ -580,24 +600,26 @@ const renderCollectionData = () => {
     const isOwned = isTokenOwned(firstItem[2], originName);
 
     // Container classes
-    const cardClass = "border p-2 rounded-xl bg-white hover:shadow-lg transform transition duration-500 hover:scale-105 m-2 overflow-hidden";
+    const cardClass = `${gridSize === '8x8' ? 'p-0' : 'p-2'}  border  rounded-xl bg-white hover:shadow-lg transform transition duration-500 hover:scale-105 m-2 overflow-hidden`;
     const imageClass = "m-auto rounded-xl";
     const titleClass = `${gridSize === '8x8' ? 'text-xs' : 'text-2xl'}  font-bold mb-2 mt-2 text-left luckiest`;
 
 
     return (
       <div key={index} className={`${cardClass} ${isOwned ? '' : 'low-brightness'} ${gridSize === '8x8' ? 'max-w-[100px] max-h-[150px]' : 'max-w-[250px] max-h-[600px]'}`}>
-        {isOwned ? (
-            <><div className={`${gridSize === '3x3' ? 'm-4' : 'text-xs text-center mr-2 mb-2'} flex flex-row justify-end`}><p className={`${gridSize === '3x3' ? 'text-xl mr-4 text-end' : 'text-xs text-center'} font-poppins font-bold align-middle self-center top-1 relative `}>Owned</p><img src="/icons/Unlocked.png" alt={"Owned & Unlocked"} className={`${gridSize === '3x3' ? 'w-[10%]' : 'hidden'}`}></img></div></>
-          ) : (
-            <><div className={`${gridSize === '3x3' ? 'm-4' : 'text-xs text-center mr-2 mb-2'} flex flex-row justify-end`}><p className={`${gridSize === '3x3' ? 'text-xl mr-4 text-end' : 'text-xs text-center'} font-poppins font-bold align-middle self-center top-1 relative `}>Not Owned</p><img src="/icons/Locked.png" alt={"Unowned & Locked"} className={`${gridSize === '3x3' ? 'w-[10%]' : 'hidden'}`}></img></div></>
-          )}
-        <img src={nftImage} loading="lazy" alt={`NFT ${"tokenId"}`} className={`${imageClass} ${gridSize === '8x8' ? 'w-20 h-20' : 'w-64 h-64'}`} />
+        
+        
         <div className="pt-1">
-          <h1 className={titleClass}>{nftName}</h1>
-          {/* Only render detailed content for 3x3 grid */}
-          {gridSize === '3x3' && (
+          {/* Only render detailed content for 4x3 grid */}
+          {gridSize === '4x3' && (
             <>
+            {isOwned ? (
+            <><div className={`${gridSize === '4x3' ? 'm-4' : 'text-xs text-center mr-2 mb-2'} flex flex-row justify-end`}><p className={`${gridSize === '4x3' ? 'text-xl mr-4 text-end' : 'text-xs text-center'} font-poppins font-bold align-middle self-center top-1 relative `}>Owned</p><img src="/icons/Unlocked.png" alt={"Owned & Unlocked"} className={`${gridSize === '4x3' ? 'w-[10%]' : 'hidden'}`}></img></div></>
+          ) : (
+            <><div className={`${gridSize === '4x3' ? 'm-4' : 'text-xs text-center mr-2 mb-2'} flex flex-row justify-end`}><p className={`${gridSize === '4x3' ? 'text-xl mr-4 text-end' : 'text-xs text-center'} font-poppins font-bold align-middle self-center top-1 relative `}>Not Owned</p><img src="/icons/Locked.png" alt={"Unowned & Locked"} className={`${gridSize === '4x3' ? 'w-[10%]' : 'hidden'}`}></img></div></>
+          )}
+          <img src={nftImage} loading="lazy" alt={`NFT ${"tokenId"}`} className={`${imageClass} `} />
+          <h1 style={{ fontSize: `${Math.max(16, 32 - nftName.length * 0.5)}px` }} className={titleClass}>{nftName}</h1>
               <Swiper
                 pagination={{ clickable: true }}
                 spaceBetween={30}
@@ -623,108 +645,126 @@ const renderCollectionData = () => {
           )}
           {/* Simplified content for 8x8 grid */}
           {gridSize === '8x8' && (
-            <>
-            </>
-          )}
+          <><img src={nftImage} loading="lazy" alt={`NFT ${"tokenId"}`} className={`${imageClass} `} />
+              <div className={`shadow-lg text-xs rounded-b-lg text-white bg-[#C9A9FF] w-full h-auto justify-center items-center break-words py-2 px-2 font-poppins font-bold`} style={{ fontSize: `${calculateFontSize(nftName)}px` }}>
+                {nftName}
+              </div></>
+        )}
         </div>
       </div>
     );
   });
 };
 
-  return (
-    <div className="inventory-view p-4 max-w-7xl mx-auto my-8">
-      <Event
-        headerTitle="Stats"
-        event={<>
-        <InventoryStatsGrid inventoryStats={inventoryStats} />
-</>}        
-      />
-      <div className="bg-[#EDEDED]">
-<div className="align-center m-auto flex flex-row pl-1 font-poppins mt-16">
-  <h1 className="font-bold text-2xl flex-grow-[0.9]">Search Items</h1>
-  <div className="flex items-center m-auto">
-  <div className="toggle-grid-size mt-4 mb-4 flex justify-center">
-      <button
-      onClick={toggleGridSize}
-      className="toggle-grid-size-btn bg-[#AA7AFA] hover:bg-[#7b2df8] transition ease-in-out delay-75 text-white font-bold py-2 px-4 rounded mr-4"
+return (
+  <div className="inventory-view p-4 max-w-7xl mx-auto my-8">
+    <Event headerTitle="Stats" event={<InventoryStatsGrid inventoryStats={inventoryStats} />} />
+
+    {/* Top divider */}
+    <div className="border-t-2 border-gray-200 my-8"></div>
+
+    {/* Main content area */}
+    <div className="bg-[#FAFAFA] mt-4">
+    <div className="align-center mx-auto flex flex-row px-4 sm:px-8 xxl:px-16 justify-between items-center gap-4" style={{ maxWidth: "2560px" }}>
+        
+        {/* Left aligned items */}
+      <div className="flex items-center gap-4 flex-grow">
+          {/* View by Item/Collection buttons */}
+          <button
+            className={`view-toggle-btn ${viewMode === 'itemized' ? 'bg-[#6510F2]' : 'bg-[#ADADAD]'} hover:bg-[#7b2df8] transition ease-in-out delay-75 text-white font-bold py-2 px-4 rounded h-10`}
+            onClick={() => setViewMode('itemized')}
+          >
+            Item View
+          </button>
+          <button
+            className={`view-toggle-btn ${viewMode === 'collection' ? 'bg-[#6510F2]' : 'bg-[#ADADAD]'} hover:bg-[#7b2df8] transition ease-in-out delay-75 text-white font-bold py-2 px-4 rounded h-10`}
+            onClick={() => setViewMode('collection')}
+          >
+            Collection View
+          </button>
+
+          {/* Search bar */}
+          <div className="relative flex-grow">
+          <input
+          type="text"
+          placeholder="Search..."
+          value={searchTerm}
+          onChange={(e) => {
+            setSearchTerm(e.target.value);
+            setCurrentPage(1); // Reset the current page to 1 whenever the search term changes
+          }}
+          className="searchBar indent-2 shadow bg-white font-poppins font-bold rounded h-10 w-full" />
+        {searchTerm && (
+          <button
+          onClick={() => {
+            setSearchTerm('');
+            setCurrentPage(1); // Also reset the current page to 1 when clearing the search
+          }}
+            className="clear-search absolute right-2 top-1/2 transform -translate-y-1/2"
+            aria-label="Clear search"
+          >
+            <img src='/assets/clearSearchButton.png' alt='clearSearch' className="w-4 h-4" />
+          </button>
+            )}
+          </div>
+        </div>
+
+        {/* Right aligned items */}
+        <div className="flex items-center">
+  {/* Conditionally rendered dropdown based on viewMode */}
+  {viewMode === 'itemized' ? (
+    <select
+      className="sortDropdown shadow bg-white font-poppins font-bold rounded py-2 pl-3 pr-8 text-gray-700 leading-tight focus:outline-none focus:shadow-outline mr-4"
+      onChange={handleSortChange} // Assume this function handles sorting for itemized view
     >
-      Toggle Grid Size
-    </button>
-      </div>
-      <div className="view-toggle">
-        <button className="toggle-grid-size-btn bg-red-500 hover:bg-[#7b2df8] transition ease-in-out delay-75 text-white font-bold py-2 px-4 rounded mr-4" onClick={() => setViewMode('itemized')}>View by Items</button>
-        <button className="toggle-grid-size-btn bg-green-500 hover:bg-[#7b2df8] transition ease-in-out delay-75 text-white font-bold py-2 px-4 rounded mr-4" onClick={() => setViewMode('collection')}>View by Collection</button>
-      </div>
-      {viewMode === 'itemized' ? (
-    <><select
-                className="sortDropdown shadow-lg mr-4 p-[7.5px]"
-                onChange={handleSortChange}
-              >
-                <option value="default">Default Sort</option>
-                <option value="A-Z">A-Z</option>
-                <option value="Z-A">Z-A</option>
-                <option value="Owned">Sort by Owned</option>
-                <option value="NotOwned">Sort by Not Owned</option>
-                {/* Add other sort options here as needed */}
-              </select><div className="relative">
-                  <input
-                    type="text"
-                    placeholder="Search..."
-                    value={searchTerm}
-                    onChange={(e) => {
-                      setSearchTerm(e.target.value);
-                      setCurrentPage(1); // Reset the current page to 1 whenever the search term changes
-                    }}
-                    className="searchBar indent-2 " />
-                  {searchTerm && (
-                    <button
-                    onClick={() => {
-                      setSearchTerm('');
-                      setCurrentPage(1); // Also reset the current page to 1 when clearing the search
-                    }}
-                      className="clear-search absolute right-2 top-1/2 transform -translate-y-1/2"
-                      aria-label="Clear search"
-                    >
-                      <img src='/assets/clearSearchButton.png' alt='clearSearch' className="w-4" />
-                    </button>
-                  )}
-                </div></>
-    ) : (
-                <><select className="sortDropdown shadow-lg mr-4 p-[7.5px]" onChange={handleCollectionChange} value={selectedCollection}>
-                  {collections.map(collection => (
-                    <option key={collection} value={collection}>{collection}</option>
-                  ))}
-                </select><div className="relative">
-      <input
-        type="text"
-        placeholder="Search..."
-        value={searchTerm}
-        onChange={(e) => setSearchTerm(e.target.value)}
-        className="searchBar indent-2 "
-      />
-      {searchTerm && (
-        <button
-          onClick={() => setSearchTerm('')}
-          className="clear-search absolute right-2 top-1/2 transform -translate-y-1/2"
-          aria-label="Clear search"
-        >
-          <img src='/assets/clearSearchButton.png' alt='clearSearch' className="w-4" />
-        </button>
-      )}
-    </div></>
-    )}
+      <option value="Owned">Sort by Owned</option>
+      <option value="NotOwned">Sort by Not Owned</option>
+      <option value="A-Z">A-Z</option>
+      <option value="Z-A">Z-A</option>
+      {/* Additional sort options for itemized view */}
+    </select>
+  ) : (
+    <select
+      className="sortDropdown shadow bg-white font-poppins font-bold rounded py-2 pl-3 pr-8 text-gray-700 leading-tight focus:outline-none focus:shadow-outline mr-4"
+      onChange={handleCollectionChange} // Assume this function handles sorting/filtering for collection view
+    >
+      {/* Options for sorting/filtering collections */}
+       {/* This line adds the "All Collections" option */}
+  {Object.entries(collectionNameMapExtended).map(([value, name]) => (
+    <option key={value} value={value}>{name}</option>
+  ))}
+</select>
+  )}
+
+  {/* Grid toggles */}
+  <div className="bg-[#AA7AFA] rounded-lg">
+  <button
+    onClick={() => toggleGridSize('8x8')}
+    className={`grid-toggle-btn ${gridSize === '8x8' ? 'bg-[#7b2df8]' : 'bg-[#AA7AFA]'} hover:bg-[#7b2df8] transition ease-in-out delay-75 h-10 w-10 rounded-xl`}
+    aria-label="Condensed Grid"
+  >
+    <img src={'/icons/denseToggle.png'} alt="Condensed grid" className="w-6 h-6 m-auto" />
+  </button>
+  <button
+    onClick={() => toggleGridSize('4x3')}
+    className={`grid-toggle-btn ${gridSize === '4x3' ? 'bg-[#7b2df8]' : 'bg-[#AA7AFA]'} hover:bg-[#7b2df8] transition ease-in-out delay-75 h-10 w-10 rounded-xl`}
+    aria-label="Wide Grid"
+  >
+    <img src={'/icons/wideToggle.png'} alt="Wide grid" className="w-6 h-6 m-auto" />
+  </button>
   </div>
+</div>
+
 </div>
 
       {/* NFT Display */}
 {/* Conditional rendering based on viewMode */}
 {viewMode === 'itemized' ? (
-      <div className={`grid ${gridSize === '3x3' ? 'lg:grid-cols-3 gap-4' : 'lg:grid-cols-8'} justify-items-center md:grid-cols-2 sm:grid-cols-1`}>
+      <div className={`grid ${gridSize === '4x3' ? 'lg:grid-cols-4 gap-4' : 'lg:grid-cols-8'} justify-items-center md:grid-cols-2 sm:grid-cols-1`}>
         {renderItemizedData()}
       </div>
     ) : (
-      <div className={`grid ${gridSize === '3x3' ? 'lg:grid-cols-3 gap-4' : 'lg:grid-cols-8'} justify-items-center md:grid-cols-2 sm:grid-cols-1`}>
+      <div className={`grid ${gridSize === '4x3' ? 'lg:grid-cols-4 gap-4' : 'lg:grid-cols-8'} justify-items-center md:grid-cols-2 sm:grid-cols-1`}>
         {renderCollectionData()}
       </div>
     )}

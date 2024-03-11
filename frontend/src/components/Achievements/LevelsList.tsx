@@ -5,6 +5,17 @@ import { Levels, User } from "../../data/global";
 import Level from '../Card/Levels';
 import { useAtom } from "jotai";
 import { userAtom } from "../../data/store";
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Lazy, Navigation, Pagination } from 'swiper/modules';
+// import Swiper and modules styles
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
+// Import Swiper core and required modules
+import SwiperCore from 'swiper';
+// Install Swiper modules
+SwiperCore.use([Navigation]);
+
 
   const levelsData: Levels[] = [
     {
@@ -37,7 +48,7 @@ import { userAtom } from "../../data/store";
         },
     {
         id: '4',
-        levelsName: 'Level 4:\n\nMr Moars Hut',
+        levelsName: 'Level 4:\n\nMr. Moar\'s Hut',
         title: 'Moar Collector',
         description: 'What’s that you say, you want something more? You’re on the right track with Mr. Moar! Visiting his hut, there’s plenty to explore- he’s quite a character and loves to hoard! along the path of rainbow carrots there is a tiny hut -the  roof is soooo decorative, like nothing you’ve ever seen, a collection of all sorts of curiosities!. Mr. Moar! roams the Bunny Kingdom, glooping and glopping, humming his gloopy tune, leaving behind a scent of BBQ, you’ll need Mr.. Moar by your side as you go, leave an offering for or his hut and I’m sure he will say in his noodley voice “Let\'sssss goooo!”',
         levelsReward1: 'Mr. Moar Frame',
@@ -97,7 +108,9 @@ import { userAtom } from "../../data/store";
   const LevelsList = () => {
     const [user] = useAtom(userAtom);
     const [currentLevelId, setCurrentLevelId] = useState(user?.level.toString() || "0");
-  
+    const userLevelIndex = Math.min(user?.level ? parseInt(user.level.toString()) : 0, levelsData.length - 1);
+
+    const [swiperInstance, setSwiperInstance] = useState(null);
     const incrementLevel = () => {
       const newLevelId = Math.min(parseInt(currentLevelId) + 1, user?.level || 0).toString();
       setCurrentLevelId(newLevelId);
@@ -112,26 +125,23 @@ import { userAtom } from "../../data/store";
   
     return (
       <div className="levels-list">
-        {currentLevel && <Level levels={currentLevel} />}
         <h1 className="luckiest flex justify-center m-auto text-2xl">
-              Your Journey
             </h1>
-        <div className="navigation-buttons flex justify-around">
-          <button 
-            className={`bg-[#6510F2] rounded-xl luckiest text-white text-2xl p-4 ${currentLevelId === "0" ? "opacity-0" : "hover:bg-[#5500E0]"}`} 
-            onClick={decrementLevel} 
-            disabled={currentLevelId === "0"}
-          >
-            Level {parseInt(currentLevelId) - 1}
-          </button>
-          <button 
-            className={`bg-[#6510F2] rounded-xl luckiest text-white text-2xl p-4 ${parseInt(currentLevelId) >= (user?.level || 0) ? "opacity-50 cursor-not-allowed" : "hover:bg-[#5500E0]"}`} 
-            onClick={incrementLevel} 
-            disabled={parseInt(currentLevelId) >= (user?.level || 0)}
-          >
-            Level {parseInt(currentLevelId) + 1}
-          </button>
-        </div>
+            <Swiper
+        pagination={{ clickable: true }}
+        spaceBetween={10}
+        modules={[Pagination]}
+        className='mySwiper'
+      >
+        {levelsData.map((level, index) => (
+          <SwiperSlide key={index}>
+            <div className="level-container">
+              <Level levels={level} />
+              {/* You can also display level information here if Level component doesn't do it already */}
+            </div>
+          </SwiperSlide>
+        ))}
+      </Swiper>
       </div>
     );
   };

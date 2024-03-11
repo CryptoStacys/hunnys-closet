@@ -351,7 +351,7 @@ useEffect(() => {
               />
             ) : (
               <Tooltip
-                imageUrl="/assets/img/bunnyClubTooltipShadow.png"
+                imageUrl="/assets/img/joinBunnyClubTooltip_with_shadow.svg"
                 imageAlt="Join the Bunny Club"
                 linkUrl="https://hunnys.io/bunnyclub"
                 className=""

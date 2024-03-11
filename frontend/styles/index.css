@@ -170,6 +170,19 @@ a {
   height: 40px;
 }
 
+.grid-8x8 {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  gap: 5px; /* Adjust gap to your preference */
+}
+
+.grid-8x8 .card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* This ensures items are spaced out evenly */
+  height: 100px; /* Example fixed height, adjust as needed */
+  width: 100px; /* Example fixed width, adjust as needed */
+}
 
 .banner::before {
   content: '';
@@ -214,6 +227,7 @@ a {
 .swiper-pagination {
   position: static !important;
 }
+
 .achievementsBanner::before {
   content: '';
   position: absolute;
@@ -482,7 +496,7 @@ a {
 }
 
 .sortDropdown option {
-  background-color: #EDEDED;
+  background-color: #FFF;
   text-align: left;
 }
 

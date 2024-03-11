@@ -1,12 +1,52 @@
 {
   "attributes": [
+    {"name": "Accessory", "traits": [
+        {"name": "ButterPuff","colors": 5,"rarity": "Epic","tags": [],"token_id": 68},
+        {"name": "BunVenture Backpack","colors": 4,"rarity": "Common","tags": [],"token_id": 69},
+        {"name": "Secret Agent S","colors": 5,"rarity": "Uncommon","tags": ["companion"],"token_id": 71},
+        {"name": "Secret Agent Shades","colors": 2,"rarity": "Uncommon","tags": ["glasses"],"token_id": 71},
+        {"name": "Silly Mr. Moar","colors": 1,"rarity": "Mythic","tags": ["companion"],"token_id": 72},
+        {"name": "Snoozle","colors": 5,"rarity": "Epic","tags": "onBack","token_id": 77}
+    ]},
+
     {"name": "Background", "traits": [
-        {"name": "Hot Stuff Left","colors": 4,"rarity": "Common","tags": []},
-        {"name": "Hot Stuff Right","colors": 4,"rarity": "Common","tags": []},
-        {"name": "Sprinkle Hearts Scroll Left","colors": 5,"rarity": "Common","tags": []},
-        {"name": "Sprinkle Hearts Scroll Right","colors": 5,"rarity": "Common","tags": []},
-        {"name": "Candy Cloud Castle Left","colors": 5,"rarity": "Common","tags": []},
-        {"name": "Candy Cloud Castle Right","colors": 5,"rarity": "Common","tags": []}
+        {"name": "Hupe Scouts Background","colors": 0,"rarity": "Uncommon","tags": [],"token_id": 73},
+        {"name": "Best Buns Camp Out","colors": 5,"rarity": "Rare","tags": [],"token_id": 76}
+    ]},
+
+    {"name": "Dye", "traits": [
+        {"name": "Picnic Day Dye","colors": 0,"rarity": "Uncommon","tags": [],"token_id": 70},
+        {"name": "Dreamsicle Dye","colors": 0,"rarity": "Uncommon","tags": [],"token_id": 74}
+    ]},
+
+    {"name": "Frame", "traits": [
+        {"name": "Bunny Babe Basket","colors": 5,"rarity": "Uncommon","tags": [],"token_id": 70},
+        {"name": "Hupe Scouts Badge","colors": 0,"rarity": "Uncommon","tags": [],"token_id": 73}
+    ]},
+
+    {"name": "Hand", "traits": [
+        {"name": "Delicious Dreamwater","colors": 4,"rarity": "Uncommon","tags": ["skin"],"token_id": 74},
+        {"name": "Tater Tot Tiller","colors": 2,"rarity": "Rare","tags": ["skin"],"token_id": 75}
+    ]},
+
+    {"name": "Hat", "traits": [
+        {"name": "BunComms Device","colors": 3,"rarity": "Common","tags": [],"token_id": 69},
+        {"name": "Hupe Scouts Headband","colors": 4,"rarity": "Uncommon","tags": [],"token_id": 73},
+        {"name": "Baby Hornsworth","colors": 4,"rarity": "Legendary","tags": [],"token_id": 78}
+    ]},
+
+    {"name": "Mouth", "traits": [
+        {"name": "Curious Carrot Munch","colors": 3,"rarity": "Rare","tags": [],"token_id": 76}
+    ]},
+
+    {"name": "Outfit", "traits": [
+        {"name": "Honest Work Overalls","colors": 3,"rarity": "Rare","tags": [],"token_id": 75},
+        {"name": "Silky Dreams PJs","colors": 4,"rarity": "Epic","tags": [],"token_id": 77},
+        {"name": "Swampstress","colors": 5,"rarity": "Mythic","tags": [],"token_id": 78}
+    ]},
+
+    {"name": "Skin", "traits": [
+        {"name": "Gloopy Mr. Moar","colors": 0,"rarity": "Legendary","tags": [],"token_id": 72}
     ]}
   ]
 }
