@@ -21,7 +21,9 @@ export type Achievement = {
   id: string; // Unique identifier for each achievement
   challenge: string;
   description: string;
+  descriptionBullets?: string;
   cupcakePoints: number;
+  cupcakePointsReward?: string;
   achievementsReward1?: string;
   achievementsReward2?: string;
   achievementsReward3?: string;
@@ -33,6 +35,7 @@ export type Achievement = {
 }
 
 export type Levels = {
+  src?: string;
   id: string;
   levelsName: string;
   description: string;

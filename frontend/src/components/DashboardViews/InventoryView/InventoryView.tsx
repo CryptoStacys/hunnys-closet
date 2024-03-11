@@ -7,6 +7,8 @@ import Event from '../../Card/Events';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Pagination, Navigation, Lazy } from 'swiper/modules';
 
+import 'swiper/css/pagination';
+import 'swiper/css/navigation';
 // Import Swiper styles
 import 'swiper/css';
 // Import Swiper core and required modules
@@ -597,12 +599,11 @@ const renderCollectionData = () => {
           {gridSize === '3x3' && (
             <>
               <Swiper
-                navigation={true}
                 pagination={{ clickable: true }}
-                spaceBetween={10}
+                spaceBetween={30}
                 slidesPerView={3}
-                onSlideChange={() => console.log('slide change')}
-                onSwiper={(swiper) => console.log(swiper)}
+                modules={[Pagination]}
+                className='mySwiper'
               >
                 {items.map((item, idx) => (
                   <SwiperSlide key={idx} onClick={() => openLightbox(item[8])}>
@@ -671,11 +672,17 @@ const renderCollectionData = () => {
                     type="text"
                     placeholder="Search..."
                     value={searchTerm}
-                    onChange={(e) => setSearchTerm(e.target.value)}
+                    onChange={(e) => {
+                      setSearchTerm(e.target.value);
+                      setCurrentPage(1); // Reset the current page to 1 whenever the search term changes
+                    }}
                     className="searchBar indent-2 " />
                   {searchTerm && (
                     <button
-                      onClick={() => setSearchTerm('')}
+                    onClick={() => {
+                      setSearchTerm('');
+                      setCurrentPage(1); // Also reset the current page to 1 when clearing the search
+                    }}
                       className="clear-search absolute right-2 top-1/2 transform -translate-y-1/2"
                       aria-label="Clear search"
                     >

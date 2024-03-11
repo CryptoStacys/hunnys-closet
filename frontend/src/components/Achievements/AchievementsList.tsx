@@ -14,6 +14,7 @@ import useSound from "use-sound";
         challenge: 'Welcome to Hunnys Closet!',
         description: 'Set your Name & Profile Image',
         cupcakePoints: 10,
+        achievementsReward1: '/icons/Achievements/CupcakePoints.png',
         eligibilityCriteria: (user: User) => !!user.profile_name && !!user.profile_image_url,
         },
     {
@@ -21,6 +22,7 @@ import useSound from "use-sound";
         challenge: 'BDay Bun',
         description: 'Add your birthday to your Profile',
         cupcakePoints: 10,
+        achievementsReward1: '/icons/Achievements/CupcakePoints.png',
         eligibilityCriteria: (user: User) => !!user.birthday_day && !!user.birthday_month,
         },
     {
@@ -28,6 +30,7 @@ import useSound from "use-sound";
         challenge: 'Treasure Hunter',
         description: 'Claim free GM Mug Collectible from the Profile page',
         cupcakePoints: 10,
+        achievementsReward1: '/icons/Achievements/CupcakePoints.png',
         title: 'GM Fan',
         },
     {
@@ -35,6 +38,7 @@ import useSound from "use-sound";
         challenge: 'Welcome, Bunny',
         description: 'Own at least 1 Hunnys 10k Collectible',
         cupcakePoints: 10,
+        achievementsReward1: '/icons/Achievements/CupcakePoints.png',
         title: 'Bunny',
         eligibilityCriteria: (user: User) => user.tokens.some(token => token.origin_name === "Hunnys 10k"),
         },
@@ -43,6 +47,7 @@ import useSound from "use-sound";
         challenge: 'Welcome, Bunny Knight',
         description: 'Own at least 3 Hunnys 10k Collectibles',
         cupcakePoints: 25,
+        achievementsReward1: '/icons/Achievements/CupcakePoints.png',
         title: 'Bunny Knight',
         eligibilityCriteria: (user: User) => user.tokens.some(token => token.origin_name === "Hunnys 10k"),
         },
@@ -51,6 +56,7 @@ import useSound from "use-sound";
         challenge: 'Welcome, Bunny Duke',
         description: 'Own at least 7 Hunnys 10k Collectibles',
         cupcakePoints: 25,
+        achievementsReward1: '/icons/Achievements/CupcakePoints.png',
         title: 'Bunny Duke',
         eligibilityCriteria: (user: User) => user.tokens.some(token => token.origin_name === "Hunnys 10k"),
         },
@@ -59,6 +65,7 @@ import useSound from "use-sound";
         challenge: 'Welcome, Royal Bunny',
         description: 'Own at least 12 Hunnys 10k Collectibles',
         cupcakePoints: 25,
+        achievementsReward1: '/icons/Achievements/CupcakePoints.png',
         title: 'Royal Bunny',
         eligibilityCriteria: (user: User) => user.tokens.some(token => token.origin_name === "Hunnys 10k"),
         },
@@ -67,6 +74,7 @@ import useSound from "use-sound";
         challenge: 'Hunnys Lover',
         description: 'Own at least 30 Hunnys 10k Collectibles',
         cupcakePoints: 50,
+        achievementsReward1: '/icons/Achievements/CupcakePoints.png',
         title: 'Hunnys Lover',
         eligibilityCriteria: (user: User) => user.tokens.some(token => token.origin_name === "Hunnys 10k"),
         },
@@ -75,6 +83,7 @@ import useSound from "use-sound";
         challenge: 'Hunnys Hoarder',
         description: 'Own at least 50 Hunnys 10k Collectibles',
         cupcakePoints: 50,
+        achievementsReward1: '/icons/Achievements/CupcakePoints.png',
         title: 'Hunnys Hoarder',
         eligibilityCriteria: (user: User) => user.tokens.some(token => token.origin_name === "Hunnys 10k"),
         },
@@ -83,6 +92,7 @@ import useSound from "use-sound";
         challenge: 'Intergalactic Bunny',
         description: 'Own at least 100 Hunnys 10k Collectibles',
         cupcakePoints: 100,
+        achievementsReward1: '/icons/Achievements/CupcakePoints.png',
         title: 'Intergalactic Bunny',
         },
     {
@@ -90,14 +100,16 @@ import useSound from "use-sound";
         challenge: 'Dolly Historian',
         description: 'Own at least 1 Hunnys OG Collectible',
         cupcakePoints: 50,
+        achievementsReward1: '/icons/Achievements/CupcakePoints.png',
         title: 'OG Hunny',
         eligibilityCriteria: (user: User) => user.tokens.some(token => token.origin_name === "Hunnys OGs"),
-        },
+    },
     {
         id: '12',
         challenge: 'Super Stacys',
         description: 'Own at least 1 Stacys Collectible',
         cupcakePoints: 50,
+        achievementsReward1: '/icons/Achievements/CupcakePoints.png',
         title: 'OG Cupcake',
         eligibilityCriteria: (user: User) => user.tokens.some(token => token.origin_name === "Hunnys Stacys"),
         },
@@ -107,7 +119,7 @@ import useSound from "use-sound";
         description: 'Collect enough Cupcake Points to reach Level 1',
         cupcakePoints: 10, // Assign points as you see fit
         title: 'Fresh Cupcake', // Title awarded for achieving this
-        achievementsReward1: 'ButterPuff',
+        achievementsReward1: '/icons/Achievements/Level0/Reward1.png',
         eligibilityCriteria: (user: User) => user.level >= 1, // Eligible if user has reached at least Level 1
         },
     {
@@ -116,7 +128,7 @@ import useSound from "use-sound";
         description: 'Collect enough Cupcake Points to reach Level 2',
         cupcakePoints: 10, // Assign points as you see fit
         title: 'Bunny Queens Helper', // Title awarded for achieving this
-        achievementsReward1: 'Bunny Ears Backpack',
+        achievementsReward1: '/icons/Achievements/Level1/Reward1.png',
         eligibilityCriteria: (user: User) => user.level >= 2, // Eligible if user has reached at least Level 1
         },
         
@@ -126,7 +138,7 @@ import useSound from "use-sound";
         description: 'Collect enough Cupcake Points to reach Level 3',
         cupcakePoints: 10, // Assign points as you see fit
         title: 'Bunny Bargainer', // Title awarded for achieving this
-        achievementsReward1: 'Picnic Basket full of Bunny Goodies',
+        achievementsReward1: '/icons/Achievements/Level2/Reward1.png',
         eligibilityCriteria: (user: User) => user.level >= 3, // Eligible if user has reached at least Level 1
         },
     {
@@ -135,7 +147,7 @@ import useSound from "use-sound";
         description: 'Collect enough Cupcake Points to reach Level 4',
         cupcakePoints: 10, // Assign points as you see fit
         title: 'Squirrel Whisperer', // Title awarded for achieving this
-        achievementsReward1: 'Secret Agent Squirrel Pal',
+        achievementsReward1: '/icons/Achievements/Level3/Reward1.png',
         eligibilityCriteria: (user: User) => user.level >= 4, // Eligible if user has reached at least Level 1
         },
     {
@@ -144,7 +156,7 @@ import useSound from "use-sound";
         description: 'Collect enough Cupcake Points to reach Level 5',
         cupcakePoints: 10, // Assign points as you see fit
         title: 'Moar Collector', // Title awarded for achieving this
-        achievementsReward1: 'Mr. Moar Frame',
+        achievementsReward1: '/icons/Achievements/Level4/Reward1.png',
         eligibilityCriteria: (user: User) => user.level >= 5, // Eligible if user has reached at least Level 1
         },
     {
@@ -153,8 +165,9 @@ import useSound from "use-sound";
         description: 'Collect enough Cupcake Points to reach Level 6',
         cupcakePoints: 10, // Assign points as you see fit
         title: 'So Hupe!', // Title awarded for achieving this
-        achievementsReward1: 'Hupe Scouts Heart Headband',
-        achievementsReward2: 'Hupe Scouts Badge',
+        achievementsReward1: '/icons/Achievements/Level5/Reward1.png',
+        achievementsReward2: '/icons/Achievements/Level5/Reward2.png',
+        achievementsReward3: '/icons/Achievements/Level5/Reward3.png',
         eligibilityCriteria: (user: User) => user.level >= 6, // Eligible if user has reached at least Level 1
         },
     {
@@ -163,8 +176,8 @@ import useSound from "use-sound";
         description: 'Collect enough Cupcake Points to reach Level 7',
         cupcakePoints: 10, // Assign points as you see fit
         title: 'Delicious Dreamer', // Title awarded for achieving this
-        achievementsReward1: 'Bottle of Dreamsicle Water',
-        achievementsReward2: 'Dreamsicle Dye',
+        achievementsReward1: '/icons/Achievements/Level6/Reward1.png',
+        achievementsReward2: '/icons/Achievements/Level6/Reward2.png',
         eligibilityCriteria: (user: User) => user.level >= 7, // Eligible if user has reached at least Level 1
         },
     {
@@ -173,8 +186,8 @@ import useSound from "use-sound";
         description: 'Collect enough Cupcake Points to reach Level 8',
         cupcakePoints: 10, // Assign points as you see fit
         title: 'Tater Tot', // Title awarded for achieving this
-        achievementsReward1: 'Farmer Gear Outfit',
-        achievementsReward2: 'Bag of Magic Potatoes',
+        achievementsReward1: '/icons/Achievements/Level7/Reward1.png',
+        achievementsReward2: '/icons/Achievements/Level7/Reward2.png',
         eligibilityCriteria: (user: User) => user.level >= 8, // Eligible if user has reached at least Level 1
         },
     {
@@ -183,7 +196,7 @@ import useSound from "use-sound";
         description: 'Collect enough Cupcake Points to reach Level 9',
         cupcakePoints: 10, // Assign points as you see fit
         title: 'Forest Friend', // Title awarded for achieving this
-        achievementsReward1: 'Roasting Carrots Over A Fire Background',
+        achievementsReward1: '/icons/Achievements/Level8/Reward1.png',
         eligibilityCriteria: (user: User) => user.level >= 9, // Eligible if user has reached at least Level 1
         },
     {
@@ -192,8 +205,8 @@ import useSound from "use-sound";
         description: 'Collect enough Cupcake Points to reach Level 10',
         cupcakePoints: 10, // Assign points as you see fit
         title: 'Dreamer', // Title awarded for achieving this
-        achievementsReward1: 'Snoozle',
-        achievementsReward2: 'Dreamy Dreamland Pajamas',
+        achievementsReward1: '/icons/Achievements/Level9/Reward1.png',
+        achievementsReward2: '/icons/Achievements/Level9/Reward2.png',
         eligibilityCriteria: (user: User) => user.level >= 10, // Eligible if user has reached at least Level 1
         },
         
@@ -203,10 +216,24 @@ import useSound from "use-sound";
         description: 'Collect enough Cupcake Points to reach Level 11',
         cupcakePoints: 50, // Assign points as you see fit
         title: 'Horny', // Title awarded for achieving this
-        achievementsReward1: 'Swampy Camo Outfit',
-        achievementsReward2: 'Baby Hornsworth',
+        achievementsReward1: '/icons/Achievements/Level10/Reward1.png',
+        achievementsReward2: '/icons/Achievements/Level10/Reward2.png',
         eligibilityCriteria: (user: User) => user.level >= 11, // Eligible if user has reached at least Level 1
         },
+      {
+        id: '24',
+        challenge: 'Mad Hatter',
+        description: `Own the following hats in your collection:`,
+        descriptionBullets: `
+        * Big hat
+        * Cute beret
+        * Bunny ears
+        * Mouse ears`,
+        cupcakePoints: 50,
+        title: 'Mad Hatter',
+        achievementsReward1: '/icons/Achievements/CupcakePoints.png',
+        eligibilityCriteria: (user: User) => user.tokens.some(token => token.origin_name === "Hunnys OGs"),
+    },
     // Add more achievements here
   ];
 

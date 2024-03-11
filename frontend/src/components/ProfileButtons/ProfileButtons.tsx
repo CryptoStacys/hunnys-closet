@@ -30,19 +30,19 @@ interface ProfileButtonsProps {
         text: 'Profile',
       },
       {
-        view: 'events',
-        iconSrc: '/icons/Events.svg',
-        text: 'Events',
-      },
-      {
         view: 'inventory',
         iconSrc: '/icons/Inventory.svg',
         text: 'Inventory',
       },
       {
-        view: 'shop',
-        iconSrc: '/icons/Shop.svg',
-        text: 'Shop',
+        view: 'achievements',
+        iconSrc: '/icons/Achievements.svg',
+        text: 'Achievements',
+      },
+      {
+        view: 'events',
+        iconSrc: '/icons/Events.svg',
+        text: 'Events',
       },
       {
         view: 'news',
@@ -50,9 +50,9 @@ interface ProfileButtonsProps {
         text: 'News',
       },
       {
-        view: 'achievements',
-        iconSrc: '/icons/Achievements.svg',
-        text: 'Achievements',
+        view: 'shop',
+        iconSrc: '/icons/Shop.svg',
+        text: 'Shop',
       },
     ];
   

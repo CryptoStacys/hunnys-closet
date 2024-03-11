@@ -21,14 +21,15 @@ const AchievementsView = () => {
         rightBlockContent={""}
         footer={
           <>
-            <h1 className="luckiest w-[84%] self-center text-2xl justify-center relative bottom-4">
-            Cupcake Points: {user?.cupcake_points}/{nextLevelPoints}
-            </h1>
+            
             <ProgressBar
               level={currentLevel} // Use the calculated currentLevel
               cupcakePoints={earnedPointsThisLevel} // Adjusted to show progress within the current level
               maxPoints={nextLevelPoints - currentLevelPoints} // Show the range within the current level
             />
+            <h1 className="font-poppins font-bold uppercase text-center w-[84%] self-center text-2xl justify-center relative top-2 text-[#A4A4A4]">
+            Cupcake Points: {user?.cupcake_points}/{nextLevelPoints}
+            </h1>
             <LevelsList />
           </>
         }

@@ -344,10 +344,10 @@ useEffect(() => {
           <div className="self-end">
             {user?.bunny_club ? (
               <Image
-                src="/assets/img/BunnyClubMemberLogo.png"
+                src="/assets/img/BunnyClubMemberEmblem.png"
                 alt="Bunny Club Member"
-                width={120}
-                height={120}
+                width={240}
+                height={240}
               />
             ) : (
               <Tooltip
@@ -372,7 +372,7 @@ useEffect(() => {
               cupcakePoints={earnedPointsThisLevel} // Adjusted to show progress within the current level
               maxPoints={nextLevelPoints - currentLevelPoints} // Show the range within the current level
             />
-        <h1 className="luckiest m-auto">Cupcake Points: {user?.cupcake_points}/{nextLevelPoints}</h1></>}        
+        <h1 className="font-poppins font-bold uppercase text-center w-[84%] self-center text-2xl justify-center relative bottom-2 text-[#A4A4A4]">Cupcake Points: {user?.cupcake_points}/{nextLevelPoints}</h1></>}        
       />
    <Card
     headerTitle="Introduction"
