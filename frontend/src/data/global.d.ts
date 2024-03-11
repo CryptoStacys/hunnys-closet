@@ -23,6 +23,7 @@ export type User = {
   skin_colors: string[];
   tokens: Token[];
   hideSaveChangesModal: boolean;
+  wallet_type?: string;
 };
 
 type OwnedTraitsResponse = {
