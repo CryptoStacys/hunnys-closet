@@ -330,7 +330,7 @@ export default function DollEditor(props: {
     formData.append("token_id", newTokenId);
     formData.append("data", JSON.stringify({ token: token, name: "Your Dolly Name" }));
 
-    const response = await fetch(`https://closetapi.hunnysnft.com/wordpress/wp-json/hunnys-closet/v1/updateClone`, {
+    const response = await fetch(`https://closetservices.hunnysnft.com/wp-json/hunnys-closet/v1/updateClone`, {
       method: "POST",
       body: formData,
     });
@@ -453,7 +453,7 @@ export default function DollEditor(props: {
   }, [isMinted, user]);
 
   async function fetchMostRecentTokenId(address: string): Promise<string> {
-    const url = `https://closetapi.hunnysnft.com/wordpress/wp-json/hunnys-closet/v1/verifyCloset?wallet=${address}`;
+    const url = `https://closetservices.hunnysnft.com/wp-json/hunnys-closet/v1/verifyCloset?wallet=${address}`;
     try {
       const response = await fetch(url);
       const data = await response.json();
@@ -720,7 +720,7 @@ export default function DollEditor(props: {
     return new Promise(async (resolve) => {
       fetch(
         // `${serverPath}/dolly/${id}`
-        `https://closetapi.hunnysnft.com/wordpress/wp-json/hunnys-closet/v1/auth?wallet=${wallet}`
+        `https://closetservices.hunnysnft.com/wp-json/hunnys-closet/v1/auth?wallet=${wallet}`
       )
         .then((response) => response.json())
         .then((res) => {
@@ -738,7 +738,7 @@ export default function DollEditor(props: {
     return new Promise(async (resolve) => {
       fetch(
         // `${serverPath}/dolly/${id}`
-        `https://closetapi.hunnysnft.com/wordpress/wp-json/hunnys-closet/v1/getCloneData?tokenIds[]=${id}`
+        `https://closetservices.hunnysnft.com/wp-json/hunnys-closet/v1/getCloneData?tokenIds[]=${id}`
       )
         .then((response) => response.json())
         .then((res) => {

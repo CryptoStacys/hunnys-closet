@@ -34,7 +34,7 @@ export default function App() {
       //   isReconnected,
       // });
 
-      fetch(`https://closetapi.hunnysnft.com/wordpress/wp-json/hunnys-closet/v1/traits?wallet=${address}`)
+      fetch(`https://closetservices.hunnysnft.com/wp-json/hunnys-closet/v1/traits?wallet=${address}`)
     .then((res) => {
         if (!res.ok) {
             throw new Error(`API call failed with HTTP status ${res.status}`);
@@ -49,9 +49,9 @@ export default function App() {
         console.error("Error fetching traits:", error);
     });
 
-        // CACHEBUST https://closetapi.hunnysnft.com/wordpress/wp-json/hunnys-closet/v1/verifyCloset?wallet=${address}&nocache=${new Date().getTime()}`
+        // CACHEBUST https://closetservices.hunnysnft.com/wp-json/hunnys-closet/v1/verifyCloset?wallet=${address}&nocache=${new Date().getTime()}`
 
-        fetch(`https://closetapi.hunnysnft.com/wordpress/wp-json/hunnys-closet/v1/verifyCloset?wallet=${address}`)
+        fetch(`https://closetservices.hunnysnft.com/wp-json/hunnys-closet/v1/verifyCloset?wallet=${address}`)
     .then((res) => {
         if (!res.ok) {
             throw new Error(`API call failed with HTTP status ${res.status}`);
