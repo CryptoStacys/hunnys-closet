@@ -15,7 +15,7 @@ const AchievementsView = () => {
   return (
     <div>
       <Card
-        headerTitle="Progress"
+        headerTitle="Adventure Progress"
         leftBlockContent={""}
         middleBlockContent={""}
         rightBlockContent={""}
@@ -27,7 +27,7 @@ const AchievementsView = () => {
               cupcakePoints={earnedPointsThisLevel} // Adjusted to show progress within the current level
               maxPoints={nextLevelPoints - currentLevelPoints} // Show the range within the current level
             />
-            <h1 className="font-poppins font-bold uppercase text-center w-[84%] self-center text-2xl justify-center relative top-2 text-[#A4A4A4]">
+            <h1 className="font-poppins font-bold uppercase text-center w-[84%] self-center text-base justify-center relative top-2 text-[#A4A4A4]">
             Cupcake Points: {user?.cupcake_points}/{nextLevelPoints}
             </h1>
             <LevelsList />

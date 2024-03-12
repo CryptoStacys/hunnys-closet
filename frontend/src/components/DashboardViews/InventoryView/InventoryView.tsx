@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import axios from "axios";
 import { useAtom } from "jotai";
 import { userAtom, allTraitsAtom, userTraitsAtom } from "../../../data/store";
-import { Token, UserOwnedTraits } from "../../../data/global";
+import { Token, UserOwnedTraits, Trait } from "../../../data/global";
 import Event from '../../Card/Events';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Pagination, Navigation, Lazy } from 'swiper/modules';
@@ -52,12 +52,17 @@ type CollectionNameMap = {
   [key: string]: string;
 };
 
+type AttributeNameMap = {
+  [key: string]: string;
+};
+
 const InventoryView = () => {
   const [user] = useAtom(userAtom);
   const [allTraits] = useAtom(allTraitsAtom);
   const [closetData] = useAtom(allTraitsAtom);
   const [nftData, setNftData] = useState<Array<any>>([]);
   const [userTokens, setUserTokens] = useState<Token[]>([]);
+  const [allAvailableTraits, setAllAvailableTraits] = useState<Trait[]>([]);
   const groupedByOriginName: GroupedByOriginName = {};
   const groupedByTokenId: GroupedByTokenId = {};
   const [userOwnedTraits, setUserOwnedTraits] = useState<UserOwnedTraits>({});
@@ -132,6 +137,28 @@ const InventoryView = () => {
     'all': 'All Collections', // Add this line to include "All Collections" option
     ...collectionNameMap,
   };
+
+  const attributeNameMap: AttributeNameMap = {
+    'Accessory': 'Accessory',
+    'Background': 'Background',
+    'Bodysuit': 'Bodysuit',
+    'Eyebrows': 'Eyebrows',
+    'Eyes': 'Eyes',
+    'Face Sticker': 'Face Sticker',
+    'Frame': 'Frame',
+    'Hair Style': 'Hair Style',
+    'Hand': 'Hand',
+    'Hat': 'Hat',
+    'Mouth': 'Mouth',
+    'Outfit': 'Outfit',
+    'Skin': 'Skin',
+    'Tattoo': 'Tattoo',
+    'Undergarment': 'Undergarment',
+  };
+  const attributeNameMapExtended = {
+    'all': 'All Attributes', // Add this line to include "All Collections" option
+    ...attributeNameMap,
+  };
   
   const currentItems = displayedNftData.slice(indexOfFirstItem, indexOfLastItem);
   useEffect(() => {
@@ -144,6 +171,18 @@ const InventoryView = () => {
     Object.entries(collectionNameMap).map(([key, value]) => [value, key])
   );
   
+  const reverseAttributeNameMap = Object.fromEntries(
+    Object.entries(attributeNameMap).map(([key, value]) => [value, key])
+  );
+
+  useEffect(() => {
+    if (viewMode === 'itemized') {
+      setSortType('Owned');
+      setSelectedAttribute('all');
+      setCurrentPage(1);
+    }
+  }, [viewMode]);
+
   useEffect(() => {
     const fetchAndGroupData = async () => {
       try {
@@ -244,7 +283,7 @@ const InventoryView = () => {
     }
   }, [nftData, user, searchTerm, sortType, currentPage]);
 
-  
+
 
   // Handle sorting, filtering, and pagination
 useEffect(() => {
@@ -282,6 +321,11 @@ const handleCollectionChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
   setCurrentPage(1);
   };
 
+const handleAttributeChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
+  setSelectedAttribute(e.target.value);
+  setCurrentPage(1);
+  };
+
   const openLightbox = (imageSrc: string) => {
     setSelectedImage(imageSrc);
   };
@@ -291,7 +335,8 @@ const handleCollectionChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
   };
 
   const originalCollectionName = reverseCollectionNameMap[selectedCollection] || selectedCollection;
-
+  const originalAttributeName = reverseAttributeNameMap[selectedAttribute] || selectedAttribute;
+  
   useEffect(() => {
     if (user && user.tokens) {
       // First, categorize tokens by origin_name
@@ -356,12 +401,13 @@ const handleCollectionChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
     return 16; // Default font size for other views or conditions
   };
 
-  const InventoryStatsGrid = ({ inventoryStats }: { inventoryStats: InventoryStats }) => {
+  const InventoryStatsGrid = ({ inventoryStats, userOwnedTraits }: { inventoryStats: InventoryStats, userOwnedTraits: UserOwnedTraits }) => {
     const hunnysSeasonalStats = getStatsByOriginName(inventoryStats, "Hunnys Seasonal");
     const hunnys10kStats = getStatsByOriginName(inventoryStats, "Hunnys 10k");
     const hunnysOGStats = getStatsByOriginName(inventoryStats, "Hunnys OG");
     const hunnysStacysStats = getStatsByOriginName(inventoryStats, "Hunnys Stacys");
     const totalTraitsStats = getStatsByOriginName(inventoryStats, "Hunnys Stacys" && "Hunnys Seasonal" && "Hunnys 10k" && "Hunnys OG" && "Default");
+    const uniqueOwnedTraitsCount = Object.keys(userOwnedTraits).length;
     return (
       <div className="inventory-grid-container bg-white text-white p-4">
         <div className="grid grid-rows-2 grid-cols-3 gap-x-24 gap-y-12">
@@ -383,7 +429,7 @@ const handleCollectionChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
           </div>
           <div className="stat-card luckiest">
             <p className="stat-title">Owned Traits</p>
-            <p className="stat-value">{user?.traits.length}/{allTraits.traits.length}</p>
+            <p className="stat-value">{uniqueOwnedTraitsCount}/{allTraits.traits.length}</p>
           </div>
           <div className="stat-card luckiest">
             <p className="stat-title">Hunnys 10k</p>
@@ -416,13 +462,17 @@ const handleCollectionChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
         )
       : [...nftData];
   
+      if (selectedAttribute !== 'all') {
+        processedData = processedData.filter(item => item[5] === selectedAttribute);
+      }
+
     // Then sort processedData based on sortType.
     switch (sortType) {
       case "A-Z":
-        processedData.sort((a, b) => a[3].localeCompare(b[3]));
+        processedData.sort((a, b) => a[2].localeCompare(b[2]));
         break;
       case "Z-A":
-        processedData.sort((a, b) => b[3].localeCompare(a[3]));
+        processedData.sort((a, b) => b[2].localeCompare(a[2]));
         break;
       case "Owned":
         processedData.sort((a, b) => {
@@ -506,9 +556,20 @@ const renderItemizedData = () => {
     const parentNftImage = item[11]; // Name of the source token that unlocks the item(s)
     const originName = item[9]; // Origin name, used to check ownership
     const isOwned = isTokenOwned(item[2], originName); // Adjust the call to match your ownership checking logic
-    
+    const originalAttributeName = reverseAttributeNameMap[selectedAttribute] || selectedAttribute;
+
+  const filteredData: NftItem[] = nftData.filter(item => {
+    return selectedAttribute === 'all' || item[5].toLowerCase().includes(originalAttributeName.toLowerCase()) && (
+      item[0].toLowerCase().includes(searchTerm.toLowerCase()) ||
+      item[2].toLowerCase().includes(searchTerm.toLowerCase()) ||
+      item[3].toLowerCase().includes(searchTerm.toLowerCase()) ||
+      item[5].toLowerCase().includes(searchTerm.toLowerCase()) ||
+      item[7].toLowerCase().includes(searchTerm.toLowerCase()) ||
+      item[9].toLowerCase().includes(searchTerm.toLowerCase())
+    );
+  });
     // Define card classes
-    const cardClass = `${gridSize === '8x8' ? 'p-0' : 'p-2'} border p-2 rounded-xl bg-white hover:shadow-lg transform transition duration-500 hover:scale-105 m-2 overflow-hidden`;
+    const cardClass = `${gridSize === '8x8' ? 'p-0' : 'p-2'} border rounded-xl bg-white hover:shadow-lg transform transition duration-500 hover:scale-105 m-2 overflow-hidden`;
     const imageClass = "m-auto rounded-xl";
     const titleClass = `${gridSize === '8x8' ? 'text-xs' : 'text-2xl'}  font-bold mb-2 mt-2 text-left luckiest`;
     return (
@@ -532,17 +593,17 @@ const renderItemizedData = () => {
         </div>
                     <div className="text-center cursor-pointer">
                       <img className="max-w-24 max-h-24 mx-auto border-[#C6C6C6] border-2 rounded-xl" src={parentNftImage} alt={`Trait ${nftName}`} />
-                      <p className="text-xs mt-1">Origin: {originName}</p>
+                      <p className="text-xs mt-1">Origin: {nftName}</p>
                     </div>
-              
-            </>
-          )}
-                    {/* VIEW button, conditional rendering based on 'buttonURL' */}
-                    {buttonURL !== 'NA' && (
-            <a href={buttonURL} target="_blank" rel="noreferrer" className="block mt-2 bg-[#6510F2] text-lg text-white font-bold px-2 py-1 rounded-full text-center hover:bg-opacity-80" style={{ marginTop: 'auto' }}>
+              {/* VIEW button, conditional rendering based on 'buttonURL' */}
+              {buttonURL !== 'NA' && (
+            <a href={buttonURL} target="_blank" rel="noreferrer" className="block mt-2 bg-[#6510F2] text-lg text-white font-bold rounded-full text-center hover:bg-opacity-80" style={{ marginTop: 'auto' }}>
             VIEW
           </a>
           )}
+            </>
+          )}
+                    
           {/* Simplified content for 8x8 grid */}
           {gridSize === '8x8' && (
           <><img src={itemImage} alt={`NFT ${nftName}`} className={`${imageClass}`} loading="lazy" /><div className={`shadow-lg text-xs rounded-b-lg text-white bg-[#C9A9FF] w-full h-auto justify-center items-center break-words py-2 px-2 font-poppins font-bold`}>
@@ -569,6 +630,7 @@ const renderCollectionData = () => {
       item[9].toLowerCase().includes(searchTerm.toLowerCase())
     );
   });
+
 
   // Group items by their tokenId
   const groupedByTokenId: { [tokenId: string]: NftItem[] } = filteredData.reduce((acc, item) => {
@@ -622,7 +684,7 @@ const renderCollectionData = () => {
           <h1 style={{ fontSize: `${Math.max(16, 32 - nftName.length * 0.5)}px` }} className={titleClass}>{nftName}</h1>
               <Swiper
                 pagination={{ clickable: true }}
-                spaceBetween={30}
+                spaceBetween={10}
                 slidesPerView={3}
                 modules={[Pagination]}
                 className='mySwiper'
@@ -658,7 +720,7 @@ const renderCollectionData = () => {
 
 return (
   <div className="inventory-view p-4 max-w-7xl mx-auto my-8">
-    <Event headerTitle="Stats" event={<InventoryStatsGrid inventoryStats={inventoryStats} />} />
+    <Event headerTitle="Stats" event={<InventoryStatsGrid inventoryStats={inventoryStats} userOwnedTraits={userOwnedTraits} />} />
 
     {/* Top divider */}
     <div className="border-t-2 border-gray-200 my-8"></div>
@@ -678,7 +740,10 @@ return (
           </button>
           <button
             className={`view-toggle-btn ${viewMode === 'collection' ? 'bg-[#6510F2]' : 'bg-[#ADADAD]'} hover:bg-[#7b2df8] transition ease-in-out delay-75 text-white font-bold py-2 px-4 rounded h-10`}
-            onClick={() => setViewMode('collection')}
+            onClick={() => {
+              setViewMode('collection');
+              setSelectedCollection('all');
+          }}
           >
             Collection View
           </button>
@@ -724,16 +789,24 @@ return (
       {/* Additional sort options for itemized view */}
     </select>
   ) : (
-    <select
-      className="sortDropdown shadow bg-white font-poppins font-bold rounded py-2 pl-3 pr-8 text-gray-700 leading-tight focus:outline-none focus:shadow-outline mr-4"
-      onChange={handleCollectionChange} // Assume this function handles sorting/filtering for collection view
-    >
-      {/* Options for sorting/filtering collections */}
-       {/* This line adds the "All Collections" option */}
-  {Object.entries(collectionNameMapExtended).map(([value, name]) => (
-    <option key={value} value={value}>{name}</option>
-  ))}
-</select>
+    <><><select
+    className="sortDropdown shadow bg-white font-poppins font-bold rounded py-2 pl-3 pr-8 text-gray-700 leading-tight focus:outline-none focus:shadow-outline mr-4"
+    onChange={handleCollectionChange} // Assume this function handles sorting/filtering for collection view
+  >
+    {/* Options for sorting/filtering collections */}
+    {/* This line adds the "All Collections" option */}
+    {Object.entries(collectionNameMapExtended).map(([value, name]) => (
+      <option key={value} value={value}>{name}</option>
+    ))}
+  </select></>
+  <select
+    className="sortDropdown shadow bg-white font-poppins font-bold rounded py-2 pl-3 pr-8 text-gray-700 leading-tight focus:outline-none focus:shadow-outline mr-4"
+    onChange={handleCollectionChange} // Assume this function handles sorting/filtering for collection view
+  >
+      {Object.entries(attributeNameMapExtended).map(([value, name]) => (
+        <option key={value} value={value}>{name}</option>
+      ))}
+    </select></>
   )}
 
   {/* Grid toggles */}

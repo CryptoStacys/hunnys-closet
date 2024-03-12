@@ -99,6 +99,13 @@ const ProfileView = () => {
       return null;
     }
   };
+
+  const calculateFontSize = (nameLength: number) => {
+    if (nameLength <= 4) return 'text-5xl'; // Larger font size for very short names
+    if (nameLength <= 8) return 'text-4xl';
+    if (nameLength <= 12) return 'text-3xl';
+    return 'text-2xl'; // Smaller font size for longer names
+  };
   
   useEffect(() => {
     // Log the current state of userAtom when Dashboard mounts or when user data changes
@@ -235,11 +242,17 @@ useEffect(() => {
             type="text"
             className="searchBar indent-2 !bg-[#EDEDED] mt-2 mb-6"
             placeholder="Enter Your Name..."
+            maxLength={16}
             value={user?.profile_name}
-            onChange={(e) => setUser(prevUser => {
-              if (!prevUser) return null;
-              return { ...prevUser, profile_name: e.target.value };
-          })}
+            onChange={(e) => {
+              const newValue = e.target.value;
+              if (/^[\w\-\s]+$/i.test(newValue) || newValue === "") {
+                setUser((prevUser) => {
+                  if (!prevUser) return null;
+                  return { ...prevUser, profile_name: newValue };
+                });
+              }
+            }}
 
             />
             {
@@ -329,12 +342,12 @@ useEffect(() => {
               </div>
             </div>
             <div className="flex flex-col justify-center items-left">
-              <h1 className="font-bold text-purple-700 username relative leading-normal break-keep">
+              <h1 className={`font-bold text-purple-700 username relative leading-normal break-keep ${calculateFontSize(user?.profile_name.length || 0)}`}>
                 {user?.profile_name || "Welcome!"}
               </h1>
             </div>
             <div className="text-left">
-              <p className="text-[14px] leading-normal">
+              <p className="text-[16px] leading-normal">
                 It is so nice to see you! I can&apos;t wait to see what you create today. Don&apos;t forget to check out the recent news and events above for the latest happenings in the Bunny Kingdom!
               </p>
             </div>
@@ -346,8 +359,8 @@ useEffect(() => {
               <Image
                 src="/assets/img/BunnyClubMemberEmblem.png"
                 alt="Bunny Club Member"
-                width={240}
-                height={240}
+                width={180}
+                height={180}
               />
             ) : (
               <Tooltip
@@ -372,7 +385,7 @@ useEffect(() => {
               cupcakePoints={earnedPointsThisLevel} // Adjusted to show progress within the current level
               maxPoints={nextLevelPoints - currentLevelPoints} // Show the range within the current level
             />
-        <h1 className="font-poppins font-bold uppercase text-center w-[84%] self-center text-2xl justify-center relative bottom-2 text-[#A4A4A4]">Cupcake Points: {user?.cupcake_points}/{nextLevelPoints}</h1></>}        
+        <h1 className="font-poppins font-bold uppercase text-center w-[84%] self-center text-base justify-center relative bottom-2 text-[#A4A4A4]">Cupcake Points: {user?.cupcake_points}/{nextLevelPoints}</h1></>}        
       />
    <Card
     headerTitle="Introduction"
@@ -389,7 +402,7 @@ useEffect(() => {
         New here? Create your first Dolly!
       </h1>
     </div></div>}
-    rightBlockContent={<Image className="rounded-xl" src={DollyPreviewProfilePage} alt={"GM Mug"} width={120} height={120}></Image>}
+    rightBlockContent={<Image className="rounded-xl self-end" src={DollyPreviewProfilePage} alt={"GM Mug"} width={120} height={120}></Image>}
     footer={<><Link className="w-4/5 self-center" to="/dollys">
         <button className="bg-hunnys-yellow py-2 w-full self-center text-hunnys-blue luckiest shadow-md rounded-full px-4 text-2xl hover:shadow-lg hover:scale-[1.02] transition-all">Create My Dolly</button>
       </Link></>}

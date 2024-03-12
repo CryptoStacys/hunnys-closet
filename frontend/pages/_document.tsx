@@ -32,17 +32,6 @@ class MyDocument extends Document {
         <body>
           <Main />
           <NextScript />
-          {/* Adding the chatbase script */}
-          <script
-  dangerouslySetInnerHTML={{
-    __html: `
-      window.chatbaseConfig = {
-        chatbotId: "X0YcQ2m306g14blZMCQzS",
-      }
-    `,
-  }}
-/>
-<script src="https://www.chatbase.co/embed.min.js" id="X0YcQ2m306g14blZMCQzS" defer />
         </body>
       </Html>
     )

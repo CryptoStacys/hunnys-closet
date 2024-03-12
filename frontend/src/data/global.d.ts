@@ -13,6 +13,7 @@ export type Trait = {
   colors: any;
   rarity?: string;
   colorsApplied: string[];
+  img_url?: string;
 };
 
 export type UUID = string;
@@ -39,6 +40,10 @@ export type Levels = {
   id: string;
   levelsName: string;
   description: string;
+  description2?: string;
+  description3?: string;
+  description4?: string;
+  description5?: string;
   levelsReward1: string;
   levelsReward2?: string;
   levelsReward3?: string;

@@ -228,6 +228,9 @@ a {
   position: static !important;
 }
 
+.swiper-pagination-bullet-active {
+  background: #C9A9FF !important;
+}
 .achievementsBanner::before {
   content: '';
   position: absolute;
@@ -413,12 +416,12 @@ a {
 }
 
 .username {
-  font-size: 2em;
   font-weight: bold;
   color: #333333;
   font-family: 'Luckiest Guy', sans-serif;
   text-transform: uppercase;
   text-align: left;
+  margin-left: 10px;
 }
 
 .enterName {

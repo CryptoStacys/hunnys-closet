@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 import ProfileButtons from "../ProfileButtons/ProfileButtons";
 import { userAtom } from "../../data/store";
-import ProfileView from '../DashboardViews/ProfileView'; 
+import ProfileView from '../DashboardViews/ProfileView';
+import ShopView from '../DashboardViews/ShopView'; 
 import AchievementsView from '../DashboardViews/AchievementsView'; 
 import InventoryView from "../DashboardViews/InventoryView/InventoryView";
 import NewsView from "../DashboardViews/NewsView";
@@ -23,6 +24,8 @@ const Dashboard: React.FC = () => {
             return <NewsView />;
         case 'events':
             return <EventsView />;
+        case 'shop':
+            return <ShopView />;
         default:
             // Directly return ProfileView without props since it now accesses userAtom internally
             return <ProfileView />;

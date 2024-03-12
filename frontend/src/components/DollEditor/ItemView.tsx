@@ -884,7 +884,7 @@ return (
                   {trait.isEligibleForMinting ? (
         // Render image for eligible traits
         <img 
-          src="https://cdn.discordapp.com/attachments/1032105881447444491/1199073815544737852/Hunnys_Closet_Mockups_1.png?ex=65c13783&is=65aec283&hm=1c1b22ba3c46e7fcfe29b99a97ae67cbc3163de34876f4c9c8bbe9604c1e3029&" // Replace with actual image path
+          src="https://hunnys.io/wp-content/uploads/2024/02/Copy-of-Hunnys-Closet-Mockups-Website-1.png" // Replace with actual image path
           alt="Minting Eligible"
           className="absolute forSale right-2 top-4 shadow-xl"
         />
@@ -904,27 +904,6 @@ return (
                     <div style={{backgroundColor: '#a264f4'}} className={`shadow-lg rounded-b-lg text-white w-full h-auto justify-center items-center font-bold  py-2 px-2`}>{trait.name}</div>
 
                 </motion.button>
-                {/* Add the MintButton if the trait is eligible for minting 
-                
-                {trait.isEligibleForMinting && (
-                  <MintButton
-                    tokenId={trait.token_id}
-                    mintPrice={discountedPrice}
-                    onMintSuccess={() => handleMintSuccess(trait)}
-                    updateTraits={updateTraits}
-                    userAddress={user?.address}
-                    mintAction={async () => {
-                      if (user?.address && trait.token_id) {
-                        setCurrentMintedTrait(trait); // Set current minted trait
-                        await mintWithWeth(user.address, trait.token_id, discountedPrice, provider);
-                        handleMintSuccess(trait); // Call handleMintSuccess after successful mint
-                      } else {
-                        console.error("User address or token ID is undefined");
-                      }
-                    }}
-                    className={isDiscounted ? 'discounted-mint-btn' : 'test'}
-                  />
-                )}*/}
               </div>
             );
           })}
