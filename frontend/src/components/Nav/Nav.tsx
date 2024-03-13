@@ -1,5 +1,5 @@
 import Link from "./../Link/Link";
-import { ConnectButton } from "@rainbow-me/rainbowkit";
+import { ConnectButton, useAccountModal } from "@rainbow-me/rainbowkit";
 import { useAtom } from "jotai";
 import { Tooltip } from "react-tooltip";
 import React, { useState, useEffect, useCallback, useRef } from "react";
@@ -19,9 +19,13 @@ type NavProps = {
 
 export default function Nav({ rewardStatus }: NavProps) {
   const [connected, setConnected] = useAtom(connectedAtom);
+  const [selected, setSelected] = useState<number | string>(-1); // Allow string for temporary ID
   const [copySuccess, setCopySuccess] = useState("");
+  const { openAccountModal } = useAccountModal();
   const [user, setUser] = useAtom(userAtom);
-  const [dollEditorVisible] = useAtom(dollEditorVisibleAtom);
+  const [dollEditorVisible, setDollEditorVisible] = useAtom(
+    dollEditorVisibleAtom
+  );
   const {
     waas,
     error,
@@ -55,6 +59,10 @@ export default function Nav({ rewardStatus }: NavProps) {
     }
   }, [user?.address]);
 
+  const handleCreateDollyClick = () => {
+    // Make the DollEditor visible
+    setDollEditorVisible(true);
+  };
   useEffect(() => {
     function handleClickOutside(event: MouseEvent) {
       if (
@@ -104,6 +112,9 @@ export default function Nav({ rewardStatus }: NavProps) {
       </button>
       {dropdownVisible && (
         <div className="absolute font-bold right-0 mt-2 py-2 w-48 bg-white rounded-md shadow-xl z-20">
+          <Link to="/">
+            <p className="indent-2">Dashboard</p>
+            </Link>
           <a
             className="block px-4 py-2 text-sm text-gray-700 hover:bg-[#EDEDED] cursor-default"
             onClick={handleAddressCopy}
@@ -145,38 +156,63 @@ export default function Nav({ rewardStatus }: NavProps) {
             {/* CLOSET */}
           </h1>
         </Link>
-        <div className="flex justify-between items-center">
+        <div className="flex justify-between items-center gap-4">
+          {user?.wallet_type === "waas"
+            ? renderWaasUserDropdown()
+            : connected &&
+              user && (
+                <div className="relative" ref={dropdownRef}>
+      <button
+        className="flex items-center space-x-12 bg-white text-black font-bold px-4 py-2 rounded-xl"
+        onClick={() => setDropdownVisible(!dropdownVisible)}
+      >
+        {user?.profile_image_url ? (
+          <img
+            src={user.profile_image_url}
+            alt="Profile"
+            width="24"
+            height="24"
+            className="rounded-full"
+          />
+        ) : (
+          <img
+            src="/heart.svg"
+            alt="Default Profile"
+            width="24"
+            height="24"
+            className="rounded-full"
+          />
+        )}
+        <span className="mx-24 relative right-8 whitespace-nowrap">
+          {user?.profile_name || "Account"}
+        </span>
+      </button>
+      {dropdownVisible && (
+        <div className="absolute flex text-left flex-col font-bold right-0 mt-2 py-2 w-48 bg-white outline-none rounded-md shadow-xl z-20">
+          <Link to="/">
+            <p className="indent-2">Dashboard</p>
+            </Link>
+          {openAccountModal && (
+        <button className="self-start indent-2" onClick={openAccountModal} type="button">Logout</button>
+      )}
+        </div>
+      )}
+    </div>
+              )}
           {connected && (
             <>
-              {!dollEditorVisible && (
-                <Link
-                  to="/dollys"
-                  className="link-btn navLinks text-[#fff] font-title uppercase hover:bg-[#ffd54b] transition inline-block text-2xl font-semibold font-content mx-[5px] sm:px-3 px-0 py-[6px] rounded-xl"
+              <Link className="w-4/5 self-center" to="/dollys">
+                <button
+                  onClick={handleCreateDollyClick}
+                  className="bg-hunnys-yellow py-1 w-full self-center text-hunnys-blue luckiest shadow-md rounded-full px-4 text-2xl hover:shadow-lg hover:scale-[1.02] transition-all"
                 >
-                  Dollys
-                </Link>
-              )}
-              
-              <a
-                href="https://buy.hunnys.io/polygon/collection/0x11bc733e719198e2b3746f6841d2818ca87af6da"
-                target="_blank"
-                className="link-btn navLinks text-hunnys-yellow font-title uppercase hover:bg-hunnys-light-purple transition inline-block text-2xl font-semibold font-content mx-[5px] sm:px-3 px-0 py-[6px] rounded-xl"
-              >
-                Shop
-              </a>
+                  Create A Dolly
+                </button>
+              </Link>
             </>
           )}
-          {
-          user?.wallet_type === "waas" ? renderWaasUserDropdown() : connected && user && (
-            <ConnectButton
-              accountStatus={{ smallScreen: "avatar", largeScreen: "full" }}
-              showBalance={false}
-              chainStatus="none"
-            />
-          )
-        }
+        </div>
       </div>
-    </div>
-  </nav>
+    </nav>
   );
 }

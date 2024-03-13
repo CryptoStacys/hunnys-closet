@@ -7,6 +7,7 @@ import { useAtom } from "jotai";
 import { userAtom } from "../../data/store";
 import Confetti from "react-confetti";
 import useSound from "use-sound";
+import { calculateLevel } from '../../utils/levelUtils';
 
   const achievementsData: Achievement[] = [
     {
@@ -240,14 +241,7 @@ import useSound from "use-sound";
   const AchievementsList = () => {
     const [user, setUser] = useAtom(userAtom);
     const [showConfetti, setShowConfetti] = React.useState(false);
-    const [playRewardSound] = useSound("/sounds/reward.wav");
-    const calculateNewLevel = (cupcakePoints: number) => {
-      const pointsForLevels = [0, 100, 250, 450, 700, 1000, 1350, 1750, 2200, 2700, 3250, 3850, 4500, 5200, 5950, 6750, 7600, 8500, 9450, 10450, 11500];
-      let newLevel = pointsForLevels.findIndex((points, index) => cupcakePoints < points && index > 0) - 1;
-      return newLevel >= 0 ? newLevel : 0;
-    };
-    
-    
+    const [playRewardSound] = useSound("/sounds/reward.wav");    
     const handleAchievementClaim = async (achievementId: string) => {
       // Find the achievement based on the ID
       const achievement = achievementsData.find(a => a.id === achievementId);
@@ -256,7 +250,7 @@ import useSound from "use-sound";
         return;
     }
     const newCupcakePoints = Number(user?.cupcake_points) + achievement.cupcakePoints;
-    const newLevel = calculateNewLevel(newCupcakePoints);
+    const newLevel = calculateLevel(newCupcakePoints);
     // Check if the achievement is already claimed
     if (user?.achievements && user?.achievements[achievement.challenge]?.claimed) {
         console.log("Achievement already claimed");
@@ -264,10 +258,10 @@ import useSound from "use-sound";
     }
       playRewardSound();
       const levelUpOccurred = newLevel > (user?.level ?? 0);
-if(levelUpOccurred) {
-  setShowConfetti(true);
-  setTimeout(() => setShowConfetti(false), 8000); // Adjust timing as needed
-}
+      if(levelUpOccurred) {
+        setShowConfetti(true);
+        setTimeout(() => setShowConfetti(false), 8000); // Adjust timing as needed
+      }
   
       if (user?.wallet) {
         const profileData = {
@@ -294,9 +288,6 @@ if(levelUpOccurred) {
             // Update the userAtom directly with the new data
             setUser((prevUser) => {
               if (!prevUser) return null; // In case prevUser is null, just return null
-  
-              const newCupcakePoints = Number(prevUser.cupcake_points) + achievement.cupcakePoints;
-              const newLevel = Math.floor(newCupcakePoints / 100);
               const newAchievements = {
                 ...prevUser.achievements,
                 [achievement.challenge]: {
@@ -312,14 +303,7 @@ if(levelUpOccurred) {
                   ...prevUser,
                   cupcake_points: newCupcakePoints,
                   level: newLevel,
-                  achievements: {
-                    ...prevUser.achievements,
-                    [achievement.challenge]: {
-                      claimed: true,
-                      date_claimed: new Date().toISOString(),
-                      title: achievement.title,
-                    },
-                  },
+                  achievements: newAchievements,
                 };
               }
               return {

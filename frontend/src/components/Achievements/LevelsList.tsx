@@ -1,12 +1,13 @@
 // LevelsList.tsx
 
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Levels, User } from "../../data/global";
 import Level from '../Card/Levels';
 import { useAtom } from "jotai";
 import { userAtom } from "../../data/store";
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Lazy, Navigation, Pagination } from 'swiper/modules';
+import { Swiper as SwiperClass } from 'swiper';
+import { Lazy, Navigation, Pagination, Controller } from 'swiper/modules';
 // import Swiper and modules styles
 import 'swiper/css';
 import 'swiper/css/navigation';
@@ -14,7 +15,7 @@ import 'swiper/css/pagination';
 // Import Swiper core and required modules
 import SwiperCore from 'swiper';
 // Install Swiper modules
-SwiperCore.use([Navigation]);
+SwiperCore.use([Pagination, Controller]);
 
 
   const levelsData: Levels[] = [
@@ -111,9 +112,9 @@ SwiperCore.use([Navigation]);
   const LevelsList = () => {
     const [user] = useAtom(userAtom);
     const [currentLevelId, setCurrentLevelId] = useState(user?.level.toString() || "0");
-    const userLevelIndex = Math.min(user?.level ? parseInt(user.level.toString()) : 0, levelsData.length - 1);
+    const userLevelIndex = parseInt(currentLevelId, 10);
 
-    const [swiperInstance, setSwiperInstance] = useState(null);
+    const [swiperInstance, setSwiperInstance] = useState<SwiperClass | null>(null);
     const incrementLevel = () => {
       const newLevelId = Math.min(parseInt(currentLevelId) + 1, user?.level || 0).toString();
       setCurrentLevelId(newLevelId);
@@ -123,24 +124,44 @@ SwiperCore.use([Navigation]);
       const newLevelId = Math.max(0, parseInt(currentLevelId) - 1).toString();
       setCurrentLevelId(newLevelId);
     };
-  
+    const checkSlideChange = () => {
+      if (swiperInstance && user) {
+        const currentIndex = swiperInstance.activeIndex;
+        const maxIndex = user.level; // Assuming 'level' is 0 indexed
+        if (currentIndex > maxIndex) {
+          swiperInstance.slideTo(maxIndex);
+        }
+      }
+    };
     const currentLevel = levelsData.find(level => level.id === currentLevelId);
-  
+    const accessibleLevels = levelsData.slice(0, userLevelIndex + 1);
+
+    useEffect(() => {
+      if (swiperInstance) {
+        // Listen to slide change events
+        swiperInstance.on('slideChange', checkSlideChange);
+        
+        // Clean up event listener
+        return () => {
+          swiperInstance.off('slideChange', checkSlideChange);
+        };
+      }
+    }, [swiperInstance, user?.level]);
+
     return (
       <div className="levels-list">
-        <h1 className="luckiest flex justify-center m-auto text-2xl">
-            </h1>
-            <Swiper
+        <Swiper
+        onSwiper={setSwiperInstance}
+        initialSlide={user?.level || 0}
         pagination={{ clickable: true }}
         spaceBetween={10}
-        modules={[Pagination]}
+        modules={[Pagination, Controller]}
         className='mySwiper'
       >
-        {levelsData.map((level, index) => (
+        {levelsData.slice(0, user?.level + 1).map((level, index) => (
           <SwiperSlide key={index}>
             <div className="level-container">
               <Level levels={level} />
-              {/* You can also display level information here if Level component doesn't do it already */}
             </div>
           </SwiperSlide>
         ))}

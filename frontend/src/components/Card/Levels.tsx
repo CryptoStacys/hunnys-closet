@@ -18,10 +18,8 @@ interface LevelProps {
   levels: Levels;
 };
 
-
 const Level: React.FC<LevelProps> = ({ levels }) => {
  
-
 const rewards = [
   levels?.levelsReward1,
   levels?.levelsReward2,
@@ -51,8 +49,12 @@ return (
     {/* COLUMN 2 */}
     <div className="flex flex-col justify-between mx-8 my-4" style={{ flexBasis: '50%', flexGrow: 1 }}>
         <h1 className="text-4xl luckiest text-left lg:text-[40px]">{levels.levelsName}</h1>
-        <p className='font-poppins justify-start mt-4'>{levels.description}<br/></p>
-    </div>
+        <div className="description-container" style={{ maxHeight: '200px', overflowY: 'auto', paddingRight: '12px' }}>
+          {descriptions.map((desc, index) => (
+            <p key={index} className='font-poppins justify-start mt-4 mb-4'>{desc}</p>
+          ))}
+        </div>
+      </div>
 
     {/* Adjusted COLUMN 3 for Swiper */}
     <div className="flex flex-col justify-center items-center" style={{ flexBasis: '35%', flexGrow: 0, width: '100%' }}>

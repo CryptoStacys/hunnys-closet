@@ -78,7 +78,7 @@ export type User = {
   wallet_type: string;
   token?: string;
   cupcake_points: number;
-  level: number;
+  level: any;
   birthday_month?: string;
   birthday_day?: string;
   twitter_handle?: string;

@@ -295,7 +295,16 @@ export default function DollEditor(props: {
   try {
     let newTokenId = props.id?.toString() ?? null; // Existing token ID or null
 
+    if (isNewDolly && !isMinted && user && chain?.id !== ETHEREUM_MAINNET_CHAIN_ID) {
+      if (typeof switchNetwork === "function") {
+          await switchNetwork(ETHEREUM_MAINNET_CHAIN_ID);
+          console.log("Network switch successful. Proceeding with minting...");
+      } else {
+          throw new Error("Network switch function not available");
+      }
+    }
     if (isNewDolly && !isMinted && user) {
+
       console.log("Minting new dolly...");
       newTokenId = await mintAndFetchTokenId(user.address);
 

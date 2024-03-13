@@ -1,10 +1,10 @@
 import React from 'react';
+import Link from "../Link/Link";
 
 interface ButtonProps {
-  link: string;
   iconSrc: string;
   text: string;
-  onClick: () => void;
+  onClick?: () => void;
   isActive: boolean;
 }
 
@@ -28,6 +28,11 @@ interface ProfileButtonsProps {
         view: 'profile',
         iconSrc: '/icons/Profile.svg',
         text: 'Profile',
+      },
+      {
+        view: 'dollys',
+        iconSrc: '/icons/Dollys.svg',
+        text: 'Dollys',
       },
       {
         view: 'inventory',
@@ -58,20 +63,26 @@ interface ProfileButtonsProps {
   
     // No need for handleButtonClick, directly use setCurrentView in onClick
     return (
-      <>
-        <div className="grid md:grid-cols-6 xs:grid-cols-3 gap-4">
-          {buttonsData.map((button, index) => (
+      <div className="grid md:grid-cols-7 xs:grid-cols-3 gap-4">
+        {buttonsData.map((button, index) => (
+          button.view === 'dollys' ? (
+            <Link key={index} className="w-full" to="/dollys">
+              <button className="flex flex-col items-center justify-center space-y-2 w-full">
+                <img src={button.iconSrc} alt="Button Icon" className="rounded-full w-1/2 drop-shadow-2xl hover:bg-[#7b2df8] transition ease-in-out delay-75 bg-[#AA7AFA]" />
+                <span className="text-center text-sm text-black font-poppins font-bold">{button.text}</span>
+              </button>
+            </Link>
+          ) : (
             <ProfileButton
               key={index}
               iconSrc={button.iconSrc}
               text={button.text}
               onClick={() => setCurrentView(button.view)}
-              link={''}
-              isActive={currentView === button.view} // Pass isActive based on the current view
+              isActive={currentView === button.view}
             />
-          ))}
-        </div>
-      </>
+          )
+        ))}
+      </div>
     );
   };
 
