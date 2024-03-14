@@ -19,7 +19,7 @@ const Event: React.FC<EventProps> = ({ headerTitle, event }) => {
   return (
     <div className="bg-white pb-4 shadow-lg max-w-7xl mx-auto rounded-b-3xl">
       <div className="event-header justify-center bg-profile-header p-4 rounded-t-lg">
-        <h1 className="text-2xl font-bold text-white font-poppins">{headerTitle}</h1>
+        <h1 className="tn:text-2xl font-bold text-white font-poppins xs:text-right xs:text-xl">{headerTitle}</h1>
       </div>
       <div className="flex flex-col justify-center">{event}</div>
     </div>

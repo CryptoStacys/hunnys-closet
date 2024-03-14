@@ -292,13 +292,13 @@ const handleCollectionChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
     setCurrentPage(1);
     };
 
-  const openLightbox = (imageSrc: string) => {
-    setSelectedImage(imageSrc);
-  };
+  // const openLightbox = (imageSrc: string) => {
+  //   setSelectedImage(imageSrc);
+  // };
 
-  const closeLightbox = () => {
-    setSelectedImage(null);
-  };
+  // const closeLightbox = () => {
+  //   setSelectedImage(null);
+  // };
 
 
   const originalCollectionName = reverseCollectionNameMap[selectedCollection] || selectedCollection;
@@ -580,7 +580,7 @@ const renderCollectionData = () => {
                 className='mySwiper'
               >
                 {items.map((item, idx) => (
-                  <SwiperSlide key={idx} onClick={() => openLightbox(item[4])}>
+                  <SwiperSlide key={idx} >
                     <div className="text-center cursor-pointer">
                       <img className="w-full h-auto max-h-24 mx-auto border-[#C6C6C6] border-2 rounded-xl" src={item[4]} alt={`Trait ${item[4]}`} />
                       <p className="text-xs mt-1">{item[6]}: {item[5]}</p>
@@ -632,7 +632,7 @@ return (
 
     {/* Main content area */}
     <div className="bg-[#FAFAFA] mt-4">
-    <div className="align-center mx-auto flex flex-row px-4 sm:px-8 xxl:px-16 justify-between items-center gap-4" style={{ maxWidth: "2560px" }}>
+    <div className="align-center mx-auto flex xs:flex-col sm:flex-row xxl:px-16 justify-between items-center gap-4" style={{ maxWidth: "2560px" }}>
         
         {/* Left aligned items */}
       <div className="flex items-center gap-4 flex-grow">
@@ -651,12 +651,11 @@ return (
             className={`view-toggle-btn ${viewMode === 'collection' ? 'bg-[#6510F2]' : 'bg-[#ADADAD]'} hover:bg-[#7b2df8] transition ease-in-out delay-75 text-white font-bold py-2 px-4 rounded h-10`}
             onClick={() => {
                 setViewMode('collection');
-                setSelectedCollection('all');
-                setSelectedAttribute('all');
+                setSortType('NotOwned');
                 setCurrentPage(1);
             }}
           >
-            Collection View
+            Token View
           </button>
 
           {/* Search bar */}
@@ -690,7 +689,7 @@ return (
   {/* Conditionally rendered dropdown based on viewMode */}
   {viewMode === 'itemized' ? (
     <><select
-    className="sortDropdown shadow bg-white font-poppins font-bold rounded py-2 pl-3 pr-8 text-gray-700 leading-tight focus:outline-none focus:shadow-outline mr-4"
+    className="hidden sortDropdown shadow bg-white font-poppins font-bold rounded py-2 pl-3 pr-8 text-gray-700 leading-tight focus:outline-none focus:shadow-outline mr-4"
     onChange={handleSortChange} // Assume this function handles sorting for itemized view
 >
     <option value="NotOwned">Sort by...</option>
@@ -732,7 +731,7 @@ return (
       </div>
     )}
       {selectedImage && (
-        <div className="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center" onClick={closeLightbox}>
+        <div className="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center" >
           <img src={selectedImage} alt="Selected" className="max-w-full max-h-full" />
         </div>
       )}

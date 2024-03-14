@@ -193,7 +193,7 @@ export default function Nav({ rewardStatus }: NavProps) {
             <p className="indent-2">Dashboard</p>
             </Link>
           {openAccountModal && (
-        <button className="self-start indent-2" onClick={openAccountModal} type="button">Logout</button>
+        <button className="self-start indent-2 mt-4" onClick={openAccountModal} type="button">Logout</button>
       )}
         </div>
       )}

@@ -51,6 +51,7 @@ export type Levels = {
   levelsReward5?: string;
   levelsReward6?: string;
   title: string;
+  freeClaimTokenId?: number;
 }
 
 export type ApiResponse = {
@@ -61,6 +62,7 @@ export type ApiResponse = {
 
 export type User = {
   achievements?: any,
+  free_claim?: any,
   wallet: any;
   dollyCount: number;
   UUID: string;
@@ -83,12 +85,19 @@ export type User = {
   birthday_day?: string;
   twitter_handle?: string;
   discord_handle?: string;
-  bunny_club?: boolean;
+  bunny_club?: number;
 };
 
 type OwnedTraitsResponse = {
   traits: Trait[];
 };
+
+interface FreeClaimType {
+  claimed: boolean;
+  token_id: string;
+  date_claimed: string;
+  transaction_hash: string;
+}
 
 export type Dolly = {
   token_id: string;

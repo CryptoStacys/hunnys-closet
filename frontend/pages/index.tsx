@@ -73,7 +73,15 @@ export default function App() {
             // Handle the error or set parsedAchievements to a default value if needed
           }
       }
-      
+      let parsedFreeClaims = {};
+      if (profileDataResponse.data.free_claim && typeof profileDataResponse.data.free_claim === 'string') {
+          try {
+            parsedFreeClaims = JSON.parse(profileDataResponse.data.free_claim);
+          } catch (error) {
+            console.error("Error parsing achievements JSON:", error);
+            // Handle the error or set parsedAchievements to a default value if needed
+          }
+      }
       // Combine data and update user atom
       setUser({
         ...profileDataResponse.data, // Assuming profileDataResponse contains a 'data' key with user details
@@ -82,6 +90,7 @@ export default function App() {
         dollyCount: closetData.dollys?.length || 0,
         address: address,
         achievements: parsedAchievements, // Use the parsed achievements
+        free_claim: parsedFreeClaims,
       });
 
         setConnected(true);

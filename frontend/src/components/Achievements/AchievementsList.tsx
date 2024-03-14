@@ -1,7 +1,7 @@
 // AchievementsList.tsx
 
 import React from 'react';
-import { Achievement, User } from "../../data/global";
+import { Achievement, User, FreeClaimType } from "../../data/global";
 import AchievementItem from '../Card/AchievementItem';
 import { useAtom } from "jotai";
 import { userAtom } from "../../data/store";
@@ -9,7 +9,12 @@ import Confetti from "react-confetti";
 import useSound from "use-sound";
 import { calculateLevel } from '../../utils/levelUtils';
 
-  const achievementsData: Achievement[] = [
+  const AchievementsList = () => {
+    const [user, setUser] = useAtom(userAtom);
+    const [showConfetti, setShowConfetti] = React.useState(false);
+    const [playRewardSound] = useSound("/sounds/reward.wav");
+    const freeClaimsArray = Array.isArray(user?.free_claim) ? user?.free_claim : [];
+    const achievementsData: Achievement[] = [
     {
         id: '1',
         challenge: 'Welcome to Hunnys Closet!',
@@ -26,14 +31,15 @@ import { calculateLevel } from '../../utils/levelUtils';
         achievementsReward1: '/icons/Achievements/CupcakePoints.png',
         eligibilityCriteria: (user: User) => !!user.birthday_day && !!user.birthday_month,
         },
-    {
-        id: '3',
-        challenge: 'Treasure Hunter',
-        description: 'Claim free GM Mug Collectible from the Profile page',
-        cupcakePoints: 10,
-        achievementsReward1: '/icons/Achievements/CupcakePoints.png',
-        title: 'GM Fan',
-        },
+    // {
+    //     id: '3',
+    //     challenge: 'Treasure Hunter',
+    //     description: 'Claim free GM Mug Collectible from the Profile page',
+    //     cupcakePoints: 10,
+    //     achievementsReward1: '/icons/Achievements/CupcakePoints.png',
+    //     title: 'GM Fan',
+    //     eligibilityCriteria: (user: User) => freeClaimsArray?.some((freeClaim: FreeClaimType) => freeClaim.token_id === "0" && freeClaim.claimed),
+    //     },
     {
         id: '4',
         challenge: 'Welcome, Bunny',
@@ -41,17 +47,17 @@ import { calculateLevel } from '../../utils/levelUtils';
         cupcakePoints: 10,
         achievementsReward1: '/icons/Achievements/CupcakePoints.png',
         title: 'Bunny',
-        eligibilityCriteria: (user: User) => user.tokens.some(token => token.origin_name === "Hunnys 10k"),
+        eligibilityCriteria: (user: User) => user.tokens.filter(token => token.origin_name === "Hunnys 10k").length >= 1,
         },
-    {
-        id: '5',
-        challenge: 'Welcome, Bunny Knight',
-        description: 'Own at least 3 Hunnys 10k Collectibles',
-        cupcakePoints: 25,
-        achievementsReward1: '/icons/Achievements/CupcakePoints.png',
-        title: 'Bunny Knight',
-        eligibilityCriteria: (user: User) => user.tokens.some(token => token.origin_name === "Hunnys 10k"),
-        },
+     {
+         id: '5',
+         challenge: 'Welcome, Bunny Knight',
+         description: 'Own at least 3 Hunnys 10k Collectibles',
+         cupcakePoints: 25,
+         achievementsReward1: '/icons/Achievements/CupcakePoints.png',
+         title: 'Bunny Knight',
+         eligibilityCriteria: (user: User) => user.tokens.filter(token => token.origin_name === "Hunnys 10k").length >= 3,
+         },
     {
         id: '6',
         challenge: 'Welcome, Bunny Duke',
@@ -59,7 +65,7 @@ import { calculateLevel } from '../../utils/levelUtils';
         cupcakePoints: 25,
         achievementsReward1: '/icons/Achievements/CupcakePoints.png',
         title: 'Bunny Duke',
-        eligibilityCriteria: (user: User) => user.tokens.some(token => token.origin_name === "Hunnys 10k"),
+        eligibilityCriteria: (user: User) => user.tokens.filter(token => token.origin_name === "Hunnys 10k").length >= 7,
         },
     {
         id: '7',
@@ -68,7 +74,7 @@ import { calculateLevel } from '../../utils/levelUtils';
         cupcakePoints: 25,
         achievementsReward1: '/icons/Achievements/CupcakePoints.png',
         title: 'Royal Bunny',
-        eligibilityCriteria: (user: User) => user.tokens.some(token => token.origin_name === "Hunnys 10k"),
+        eligibilityCriteria: (user: User) => user.tokens.filter(token => token.origin_name === "Hunnys 10k").length >= 12,
         },
     {
         id: '8',
@@ -77,7 +83,7 @@ import { calculateLevel } from '../../utils/levelUtils';
         cupcakePoints: 50,
         achievementsReward1: '/icons/Achievements/CupcakePoints.png',
         title: 'Hunnys Lover',
-        eligibilityCriteria: (user: User) => user.tokens.some(token => token.origin_name === "Hunnys 10k"),
+        eligibilityCriteria: (user: User) => user.tokens.filter(token => token.origin_name === "Hunnys 10k").length >= 30,
         },
     {
         id: '9',
@@ -86,7 +92,7 @@ import { calculateLevel } from '../../utils/levelUtils';
         cupcakePoints: 50,
         achievementsReward1: '/icons/Achievements/CupcakePoints.png',
         title: 'Hunnys Hoarder',
-        eligibilityCriteria: (user: User) => user.tokens.some(token => token.origin_name === "Hunnys 10k"),
+        eligibilityCriteria: (user: User) => user.tokens.filter(token => token.origin_name === "Hunnys 10k").length >= 50,
         },
     {
         id: '10',
@@ -95,16 +101,17 @@ import { calculateLevel } from '../../utils/levelUtils';
         cupcakePoints: 100,
         achievementsReward1: '/icons/Achievements/CupcakePoints.png',
         title: 'Intergalactic Bunny',
+        eligibilityCriteria: (user: User) => user.tokens.filter(token => token.origin_name === "Hunnys 10k").length >= 100,
         },
-    {
-        id: '11',
-        challenge: 'Dolly Historian',
-        description: 'Own at least 1 Hunnys OG Collectible',
-        cupcakePoints: 50,
-        achievementsReward1: '/icons/Achievements/CupcakePoints.png',
-        title: 'OG Hunny',
-        eligibilityCriteria: (user: User) => user.tokens.some(token => token.origin_name === "Hunnys OGs"),
-    },
+    // {
+    //     id: '11',
+    //     challenge: 'Dolly Historian',
+    //     description: 'Own at least 1 Hunnys OG Collectible',
+    //     cupcakePoints: 50,
+    //     achievementsReward1: '/icons/Achievements/CupcakePoints.png',
+    //     title: 'OG Hunny',
+    //     eligibilityCriteria: (user: User) => user.tokens.some(token => token.origin_name === "Hunnys OGs"),
+    // },
     {
         id: '12',
         challenge: 'Super Stacys',
@@ -118,8 +125,8 @@ import { calculateLevel } from '../../utils/levelUtils';
         id: '13', // Assuming IDs are sequential and unique
         challenge: 'Reach Level 1',
         description: 'Collect enough Cupcake Points to reach Level 1',
-        cupcakePoints: 10, // Assign points as you see fit
-        title: 'Fresh Cupcake', // Title awarded for achieving this
+        cupcakePoints: 10, 
+        title: 'Fresh Cupcake', 
         achievementsReward1: '/icons/Achievements/Level0/Reward1.png',
         eligibilityCriteria: (user: User) => user.level >= 1, // Eligible if user has reached at least Level 1
         },
@@ -127,8 +134,8 @@ import { calculateLevel } from '../../utils/levelUtils';
         id: '14', // Assuming IDs are sequential and unique
         challenge: 'Reach Level 2',
         description: 'Collect enough Cupcake Points to reach Level 2',
-        cupcakePoints: 10, // Assign points as you see fit
-        title: 'Bunny Queens Helper', // Title awarded for achieving this
+        cupcakePoints: 10, 
+        title: 'Bunny Queens Helper', 
         achievementsReward1: '/icons/Achievements/Level1/Reward1.png',
         eligibilityCriteria: (user: User) => user.level >= 2, // Eligible if user has reached at least Level 1
         },
@@ -137,8 +144,8 @@ import { calculateLevel } from '../../utils/levelUtils';
         id: '15', // Assuming IDs are sequential and unique
         challenge: 'Reach Level 3',
         description: 'Collect enough Cupcake Points to reach Level 3',
-        cupcakePoints: 10, // Assign points as you see fit
-        title: 'Bunny Bargainer', // Title awarded for achieving this
+        cupcakePoints: 10, 
+        title: 'Bunny Bargainer', 
         achievementsReward1: '/icons/Achievements/Level2/Reward1.png',
         eligibilityCriteria: (user: User) => user.level >= 3, // Eligible if user has reached at least Level 1
         },
@@ -146,8 +153,8 @@ import { calculateLevel } from '../../utils/levelUtils';
         id: '16', // Assuming IDs are sequential and unique
         challenge: 'Reach Level 4',
         description: 'Collect enough Cupcake Points to reach Level 4',
-        cupcakePoints: 10, // Assign points as you see fit
-        title: 'Squirrel Whisperer', // Title awarded for achieving this
+        cupcakePoints: 10, 
+        title: 'Squirrel Whisperer', 
         achievementsReward1: '/icons/Achievements/Level3/Reward1.png',
         eligibilityCriteria: (user: User) => user.level >= 4, // Eligible if user has reached at least Level 1
         },
@@ -155,8 +162,8 @@ import { calculateLevel } from '../../utils/levelUtils';
         id: '17', // Assuming IDs are sequential and unique
         challenge: 'Reach Level 5',
         description: 'Collect enough Cupcake Points to reach Level 5',
-        cupcakePoints: 10, // Assign points as you see fit
-        title: 'Moar Collector', // Title awarded for achieving this
+        cupcakePoints: 10, 
+        title: 'Moar Collector', 
         achievementsReward1: '/icons/Achievements/Level4/Reward1.png',
         eligibilityCriteria: (user: User) => user.level >= 5, // Eligible if user has reached at least Level 1
         },
@@ -164,8 +171,8 @@ import { calculateLevel } from '../../utils/levelUtils';
         id: '18', // Assuming IDs are sequential and unique
         challenge: 'Reach Level 6',
         description: 'Collect enough Cupcake Points to reach Level 6',
-        cupcakePoints: 10, // Assign points as you see fit
-        title: 'So Hupe!', // Title awarded for achieving this
+        cupcakePoints: 10, 
+        title: 'So Hupe!', 
         achievementsReward1: '/icons/Achievements/Level5/Reward1.png',
         achievementsReward2: '/icons/Achievements/Level5/Reward2.png',
         achievementsReward3: '/icons/Achievements/Level5/Reward3.png',
@@ -175,8 +182,8 @@ import { calculateLevel } from '../../utils/levelUtils';
         id: '19', // Assuming IDs are sequential and unique
         challenge: 'Reach Level 7',
         description: 'Collect enough Cupcake Points to reach Level 7',
-        cupcakePoints: 10, // Assign points as you see fit
-        title: 'Delicious Dreamer', // Title awarded for achieving this
+        cupcakePoints: 10, 
+        title: 'Delicious Dreamer', 
         achievementsReward1: '/icons/Achievements/Level6/Reward1.png',
         achievementsReward2: '/icons/Achievements/Level6/Reward2.png',
         eligibilityCriteria: (user: User) => user.level >= 7, // Eligible if user has reached at least Level 1
@@ -185,8 +192,8 @@ import { calculateLevel } from '../../utils/levelUtils';
         id: '20', // Assuming IDs are sequential and unique
         challenge: 'Reach Level 8',
         description: 'Collect enough Cupcake Points to reach Level 8',
-        cupcakePoints: 10, // Assign points as you see fit
-        title: 'Tater Tot', // Title awarded for achieving this
+        cupcakePoints: 10, 
+        title: 'Tater Tot', 
         achievementsReward1: '/icons/Achievements/Level7/Reward1.png',
         achievementsReward2: '/icons/Achievements/Level7/Reward2.png',
         eligibilityCriteria: (user: User) => user.level >= 8, // Eligible if user has reached at least Level 1
@@ -195,8 +202,8 @@ import { calculateLevel } from '../../utils/levelUtils';
         id: '21', // Assuming IDs are sequential and unique
         challenge: 'Reach Level 9',
         description: 'Collect enough Cupcake Points to reach Level 9',
-        cupcakePoints: 10, // Assign points as you see fit
-        title: 'Forest Friend', // Title awarded for achieving this
+        cupcakePoints: 10, 
+        title: 'Forest Friend', 
         achievementsReward1: '/icons/Achievements/Level8/Reward1.png',
         eligibilityCriteria: (user: User) => user.level >= 9, // Eligible if user has reached at least Level 1
         },
@@ -204,8 +211,8 @@ import { calculateLevel } from '../../utils/levelUtils';
         id: '22', // Assuming IDs are sequential and unique
         challenge: 'Reach Level 10',
         description: 'Collect enough Cupcake Points to reach Level 10',
-        cupcakePoints: 10, // Assign points as you see fit
-        title: 'Dreamer', // Title awarded for achieving this
+        cupcakePoints: 10, 
+        title: 'Dreamer', 
         achievementsReward1: '/icons/Achievements/Level9/Reward1.png',
         achievementsReward2: '/icons/Achievements/Level9/Reward2.png',
         eligibilityCriteria: (user: User) => user.level >= 10, // Eligible if user has reached at least Level 1
@@ -215,33 +222,15 @@ import { calculateLevel } from '../../utils/levelUtils';
         id: '23', // Assuming IDs are sequential and unique
         challenge: 'Reach Level 11',
         description: 'Collect enough Cupcake Points to reach Level 11',
-        cupcakePoints: 50, // Assign points as you see fit
-        title: 'Horny', // Title awarded for achieving this
+        cupcakePoints: 50, 
+        title: 'Horny', 
         achievementsReward1: '/icons/Achievements/Level10/Reward1.png',
         achievementsReward2: '/icons/Achievements/Level10/Reward2.png',
         eligibilityCriteria: (user: User) => user.level >= 11, // Eligible if user has reached at least Level 1
         },
-      {
-        id: '24',
-        challenge: 'Mad Hatter',
-        description: `Own the following hats in your collection:`,
-        descriptionBullets: `
-        * Big hat
-        * Cute beret
-        * Bunny ears
-        * Mouse ears`,
-        cupcakePoints: 50,
-        title: 'Mad Hatter',
-        achievementsReward1: '/icons/Achievements/CupcakePoints.png',
-        eligibilityCriteria: (user: User) => user.tokens.some(token => token.origin_name === "Hunnys OGs"),
-    },
+      
     // Add more achievements here
   ];
-
-  const AchievementsList = () => {
-    const [user, setUser] = useAtom(userAtom);
-    const [showConfetti, setShowConfetti] = React.useState(false);
-    const [playRewardSound] = useSound("/sounds/reward.wav");    
     const handleAchievementClaim = async (achievementId: string) => {
       // Find the achievement based on the ID
       const achievement = achievementsData.find(a => a.id === achievementId);

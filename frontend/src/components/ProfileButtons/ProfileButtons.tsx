@@ -1,5 +1,17 @@
 import React from 'react';
 import Link from "../Link/Link";
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Lazy, Navigation, Pagination, Mousewheel } from 'swiper/modules';
+// import Swiper and modules styles
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
+// Import Swiper core and required modules
+import SwiperCore from 'swiper';
+import { useAtom } from 'jotai';
+import { userAtom } from '../../data/store';
+// Install Swiper modules
+SwiperCore.use([Navigation]);
 
 interface ButtonProps {
   iconSrc: string;
@@ -63,7 +75,7 @@ interface ProfileButtonsProps {
   
     // No need for handleButtonClick, directly use setCurrentView in onClick
     return (
-      <div className="grid md:grid-cols-7 xs:grid-cols-3 gap-4">
+      <div className="grid md:grid-cols-7 xs:grid-cols-4 gap-4">
         {buttonsData.map((button, index) => (
           button.view === 'dollys' ? (
             <Link key={index} className="w-full" to="/dollys">
