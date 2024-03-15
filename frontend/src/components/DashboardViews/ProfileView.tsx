@@ -4,6 +4,7 @@ import { useAtom } from "jotai";
 import { userAtom } from "../../data/store"; // Adjust the import path as necessary
 import Card from "../Card/Card";
 import ProfileCard from "../Card/ProfileCard";
+import CupcakePoints from "../Card/CupcakePoints";
 import Event from "../Card/Events";
 import { customImageLoader } from "../../utils/imageLoader";
 import Link from "../Link/Link";
@@ -85,7 +86,7 @@ const ProfileView = () => {
     (freeClaim: FreeClaimType) =>
       freeClaim.token_id === "0" && freeClaim.claimed
   );
-  const hasFirstDolly = user?.dollyCount === 0;
+  const hasFirstDolly = user?.dollyCount === 34;
   const bunnyClubMembers = [
     "0xa7758394D8f7fD23b0d9F13E02427B514687394B",
     "0x55Abdc04655d590a48BCd1B996115448b71b7a84",
@@ -513,46 +514,44 @@ const ProfileView = () => {
       />
       {hasFirstDolly ? (
         <Card
-          headerTitle="Introduction"
-          leftBlockContent={
-            <div>
-              <div className="mt-4">
-                <Image
-                  src={"/icons/Alert.svg"}
-                  alt={"Alert"}
-                  width={120}
-                  height={120}
-                ></Image>
-              </div>
+        headerTitle="Introduction"
+        leftBlockContent={
+          <div>
+            <div className="">
+              <Image
+                src={"/icons/Alert.svg"}
+                alt={"Alert"}
+                width={200}
+                height={200}
+                className="xs:m-auto md:m-0 xs:w-[20%] md:w-[100%] md:max-w-[200px]"
+              ></Image>
             </div>
+          </div>
           }
           middleBlockContent={
             <div>
-              <div className="mt-4">
-                <h1 className="text-left luckiest text-4xl justify-self-center">
-                  New here? Create your first Dolly!
-                </h1>
-              </div>
-            </div>
+             <h1 className='text-2xl lg:text-[32px] text-left luckiest'>
+          New here? Create your first Dolly!
+        </h1>
+        <p className='font-poppins text-base lg:text-lg my-2 paragraphText'>
+        Get ready to unleash your creativity and dress up your Dolly in the Hunnys Closet!
+        </p>
+          <Link className="w-4/5 self-center" to="/dollys">
+            <button className="bg-hunnys-yellow py-2 w-full self-center text-hunnys-blue luckiest shadow-md rounded-full px-4 text-2xl hover:shadow-lg hover:scale-[1.02] transition-all">
+              Create My Dolly
+            </button>
+          </Link></div>
           }
           rightBlockContent={
             <Image
               className="rounded-xl self-end"
               src={DollyPreviewProfilePage}
-              alt={"GM Mug"}
-              width={120}
-              height={120}
+              alt={"Dolly Preview"}
+              width={200}
+              height={200}
             ></Image>
           }
-          footer={
-            <>
-              <Link className="w-4/5 self-center" to="/dollys">
-                <button className="bg-hunnys-yellow py-2 w-full self-center text-hunnys-blue luckiest shadow-md rounded-full px-4 text-2xl hover:shadow-lg hover:scale-[1.02] transition-all">
-                  Create My Dolly
-                </button>
-              </Link>
-            </>
-          }
+          footer={""}
         />
       ) : (
         <div></div>
@@ -561,42 +560,51 @@ const ProfileView = () => {
       <Card
         headerTitle="Dailys"
         leftBlockContent={
-          <div className="bg-[#6510F2] self-center rounded-xl luckiest text-xl md:text-2xl text-white p-2 md:p-4 text-center xs:max-w-[250px] md:max-w-[100px]">
-            10
-            <br />
-            <span className="text-lg md:text-xl">CUPCAKE POINTS</span>
-          </div>
+          <div >
+          <CupcakePoints
+          points="10"
+          text="Cupcake Points"
+          /></div>
         }
-        middleBlockContent={""} // Assuming you might fill this in later
+        middleBlockContent={
+          <div>
+             <h1 className='text-2xl lg:text-[32px] text-left luckiest'>
+          Claim your free GM Mug!
+        </h1>
+        <p className='font-poppins text-base lg:text-lg my-2 paragraphText'>
+        Score your first free claim along with 10 Cupcake Points towards your Adventure Progress!
+        </p>
+          {claimedFreeMug ? (
+          <button
+            disabled
+            className="w-full self-center bg-[#2BC97E] text-black luckiest text-xl md:text-2xl opacity-40 font-bold py-2 px-4 rounded-full"
+          >
+            Completed
+          </button>
+        ) : (
+          <FreeClaim
+            tokenId="0"
+            onMintSuccess={() => console.log("NFT claimed successfully!")}
+            updateTraits={(userAddress) =>
+              console.log(`Traits updated for ${userAddress}`)
+            }
+            userAddress={user?.wallet}
+            className="bg-hunnys-yellow hover:bg-hunnys-yellow self-center !text-hunnys-blue !w-4/5 luckiest shadow-md rounded-full px-4 py-1 text-xl md:text-2xl hover:shadow-lg hover:scale-[1.02] transition-all"
+            buttonText="Claim My Free Mug!"
+          />
+        )}</div>} // Assuming you might fill this in later
         rightBlockContent={
+          <div className="flex flex-col w-full lg:w-auto mt-4 lg:mt-0">
           <Image
-            className="rounded-xl self-center md:self-end md:w-auto"
+            className="rounded-xl"
             src={GMMug}
             alt={"GM Mug"}
-            width={120}
-            height={120}
-          />
+            width={200}
+            height={200}
+          /></div>
         }
         footer={
-          claimedFreeMug ? (
-            <button
-              disabled
-              className="w-4/5 self-center bg-[#2BC97E] text-black luckiest text-xl md:text-2xl opacity-40 font-bold py-2 px-4 rounded-full"
-            >
-              Completed
-            </button>
-          ) : (
-            <FreeClaim
-              tokenId="0"
-              onMintSuccess={() => console.log("NFT claimed successfully!")}
-              updateTraits={(userAddress) =>
-                console.log(`Traits updated for ${userAddress}`)
-              }
-              userAddress={user?.wallet}
-              className="bg-hunnys-yellow hover:bg-hunnys-yellow self-center !text-hunnys-blue !w-4/5 luckiest shadow-md rounded-full px-4 py-1 text-xl md:text-2xl hover:shadow-lg hover:scale-[1.02] transition-all"
-              buttonText="Claim My Free Mug!"
-            />
-          )
+          ""
         }
       />
     </div>

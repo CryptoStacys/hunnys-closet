@@ -2,6 +2,7 @@
 import React, { useEffect, useRef } from "react";
 import { Achievement } from "../../data/global";
 import { Levels } from "../../data/global";
+import CupcakePoints from "../Card/CupcakePoints"
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Lazy, Navigation, Pagination } from "swiper/modules";
 // import Swiper and modules styles
@@ -89,17 +90,17 @@ const AchievementItem: React.FC<AchievementItemProps> = ({
   };
 
   return (
-    <div className="bg-[#EDEDED] flex flex-col md:flex-row justify-between items-stretch p-4 m-8 rounded-xl gap-4">
+    <div className="bg-[#EDEDED] flex flex-col md:flex-row justify-between xs:items-stretch md:items-center p-4 m-8 rounded-xl gap-4">
       {/* COLUMN 1 */}
       <div
         
-        className={`${isClaimed ? "opacity-20" : ""} bg-[#6510F2] rounded-[30px] font-luckiest text-white text-[48px] lg:text-[64px] flex flex-col justify-center items-center lg:w-auto px-2 py-4 lg:px-4 lg:py-8`}
+        className={`${isClaimed ? "opacity-20" : ""}`}
         style={{ flexBasis: "30%", flexGrow: 0 }}
         >
-        {achievement.cupcakePoints}
-        <span className="text-lg lg:text-2xl lg:mt-6 block mt-2">
-          CUPCAKE POINTS
-        </span>
+          <CupcakePoints
+          points={achievement.cupcakePoints}
+          text="CUPCAKE POINTS"
+          />
       </div>
 
       {/* COLUMN 2 */}

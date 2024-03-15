@@ -242,7 +242,8 @@ a {
   font-family: 'Luckiest Guy';
   white-space: nowrap;
   overflow: hidden;
-  top: 12px;
+  top: 24px;
+  z-index: 999;
   font-weight: 100;
   text-align: center;
   max-width: 500px; /* Adjust the width as needed */

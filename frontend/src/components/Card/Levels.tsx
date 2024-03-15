@@ -118,13 +118,13 @@ return (
           >
             {rewards.map((reward, index) => (
               <SwiperSlide key={index}>
-                <img className="max-w-full rounded-[30px]" src={`/icons/Achievements/Level${levels.id}/Reward1.png`} alt={`Level ${levels.id} Reward`} />
+                <img className="max-w-[200px] m-auto rounded-[30px]" src={`/icons/Achievements/Level${levels.id}/Reward1.png`} alt={`Level ${levels.id} Reward`} />
               </SwiperSlide>
             ))}
           </Swiper>
         ) : (
           rewards.map((reward, index) => (
-            <img key={index} className="max-w-full rounded-[30px]" src={`/icons/Achievements/Level${levels.id}/Reward1.png`} alt={`Level ${levels.id} Reward`} />
+            <img key={index} className="max-w-[200px] m-auto rounded-[30px]" src={`/icons/Achievements/Level${levels.id}/Reward1.png`} alt={`Level ${levels.id} Reward`} />
           ))
         )}
         {renderClaimButtonOrNextReward()}

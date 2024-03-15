@@ -35,6 +35,23 @@ export type Achievement = {
   eligibilityCriteria?: (user: User) => boolean;
 }
 
+export type Dailys = {
+  id: string; // Unique identifier for each achievement
+  challenge: string;
+  description: string;
+  descriptionBullets?: string;
+  cupcakePoints: number;
+  cupcakePointsReward?: string;
+  dailysReward1?: string;
+  dailysReward2?: string;
+  dailysReward3?: string;
+  dailysReward4?: string;
+  dailysReward5?: string;
+  dailysReward6?: string;
+  title?: string;
+  eligibilityCriteria?: (user: User) => boolean;
+}
+
 export type Levels = {
   src?: string;
   id: string;
@@ -65,6 +82,7 @@ export type User = {
   free_claim?: any,
   wallet: any;
   dollyCount: number;
+  dailys?: any,
   UUID: string;
   address: string;
   dollys: Dolly[];

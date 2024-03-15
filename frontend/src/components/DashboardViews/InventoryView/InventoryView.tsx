@@ -80,6 +80,7 @@ const InventoryView = () => {
   const [gridSize, setGridSize] = useState("4x3"); // Default to 4x3 grid
   const [itemsPerPage, setItemsPerPage] = useState(12); // Default to 9 items per page for 4x3 grid
   const [viewMode, setViewMode] = useState("itemized");
+  const [data, setData] = useState<NftItem[]>([]);
   const rarityOrder = [
     "Common",
     "common",
@@ -145,24 +146,24 @@ const InventoryView = () => {
   };
 
   const attributeNameMap: AttributeNameMap = {
-    Accessory: "Accessory",
-    Background: "Background",
-    Bodysuit: "Bodysuit",
-    Eyebrows: "Eyebrows",
-    Eyes: "Eyes",
-    "Face Sticker": "Face Sticker",
-    Frame: "Frame",
-    "Hair Style": "Hair Style",
-    Hand: "Hand",
-    Hat: "Hat",
-    Mouth: "Mouth",
-    Outfit: "Outfit",
-    Skin: "Skin",
-    Tattoo: "Tattoo",
-    Undergarment: "Undergarment",
+    'Accessory': 'Accessory',
+    'Background': 'Background',
+    'Bodysuit': 'Bodysuit',
+    'Eyebrows': 'Eyebrows',
+    'Eyes': 'Eyes',
+    'Face Sticker': 'Face Sticker',
+    'Frame': 'Frame',
+    'Hair Style': 'Hair Style',
+    'Hand': 'Hand',
+    'Hat': 'Hat',
+    'Mouth': 'Mouth',
+    'Outfit': 'Outfit',
+    'Skin': 'Skin',
+    'Tattoo': 'Tattoo',
+    'Undergarment': 'Undergarment',
   };
   const attributeNameMapExtended = {
-    all: "All Attributes", // Add this line to include "All Collections" option
+    'all': 'All Attributes', // Add this line to include "All Attributes" option
     ...attributeNameMap,
   };
 
@@ -182,14 +183,6 @@ const InventoryView = () => {
   const reverseAttributeNameMap = Object.fromEntries(
     Object.entries(attributeNameMap).map(([key, value]) => [value, key])
   );
-
-  useEffect(() => {
-    if (viewMode === "itemized") {
-      setSortType("Owned");
-      setSelectedAttribute("all");
-      setCurrentPage(1);
-    }
-  }, [viewMode]);
 
   useEffect(() => {
     const fetchAndGroupData = async () => {
@@ -351,6 +344,14 @@ const InventoryView = () => {
   //   setSelectedImage(null);
   // };
 
+  useEffect(() => {
+    if (viewMode === "itemized") {
+      setSortType("Owned");
+      setSelectedAttribute("all");
+      setCurrentPage(1);
+    }
+  }, [viewMode]);
+
   const originalCollectionName =
     reverseCollectionNameMap[selectedCollection] || selectedCollection;
   const originalAttributeName =
@@ -511,11 +512,6 @@ const InventoryView = () => {
         )
       : [...nftData];
 
-    if (selectedAttribute !== "all") {
-      processedData = processedData.filter(
-        (item) => item[5] === selectedAttribute
-      );
-    }
 
     // Then sort processedData based on sortType.
     switch (sortType) {
@@ -542,6 +538,11 @@ const InventoryView = () => {
       // Add any other sort cases here.
     }
 
+    if (selectedAttribute !== "all") {
+      processedData = processedData.filter(
+        (item) => item[5] === selectedAttribute
+      );
+    }
     // After sorting, paginate the processedData to set displayedNftData.
     const newDisplayedData = processedData.slice(
       (currentPage - 1) * itemsPerPage,
@@ -551,7 +552,7 @@ const InventoryView = () => {
 
     // Update pageTotal based on the total number of items after filtering but before pagination.
     setPageTotal(Math.ceil(processedData.length / itemsPerPage));
-  }, [nftData, currentPage, itemsPerPage, searchTerm, sortType, viewMode]);
+  }, [nftData, currentPage, itemsPerPage, searchTerm, sortType, viewMode, selectedAttribute]);
 
   const isTokenOwned = (
     nftTrait: string,
@@ -612,28 +613,22 @@ const InventoryView = () => {
       const parentNftImage = item[11]; // Name of the source token that unlocks the item(s)
       const originName = item[9]; // Origin name, used to check ownership
       const isOwned = isTokenOwned(item[2], originName); // Adjust the call to match your ownership checking logic
-      const originalAttributeName =
-        reverseAttributeNameMap[selectedAttribute] || selectedAttribute;
-
-      const filteredData: NftItem[] = nftData.filter((item) => {
-        return (
-          selectedAttribute === "all" ||
-          (item[5]
-            .toLowerCase()
-            .includes(originalAttributeName.toLowerCase()) &&
-            (item[0].toLowerCase().includes(searchTerm.toLowerCase()) ||
-              item[2].toLowerCase().includes(searchTerm.toLowerCase()) ||
-              item[3].toLowerCase().includes(searchTerm.toLowerCase()) ||
-              item[5].toLowerCase().includes(searchTerm.toLowerCase()) ||
-              item[7].toLowerCase().includes(searchTerm.toLowerCase()) ||
-              item[9].toLowerCase().includes(searchTerm.toLowerCase())))
+      const originalAttributeName = reverseAttributeNameMap[selectedAttribute] || selectedAttribute;
+    const filteredData: NftItem[] = nftData.filter(item => {
+        return selectedAttribute === 'all' || item[5].toLowerCase().includes(originalAttributeName.toLowerCase()) && (
+          item[0].toLowerCase().includes(searchTerm.toLowerCase()) ||
+          item[2].toLowerCase().includes(searchTerm.toLowerCase()) ||
+          item[3].toLowerCase().includes(searchTerm.toLowerCase()) ||
+          item[5].toLowerCase().includes(searchTerm.toLowerCase()) ||
+          item[7].toLowerCase().includes(searchTerm.toLowerCase()) ||
+          item[9].toLowerCase().includes(searchTerm.toLowerCase())
         );
       });
       // Define card classes
       const cardClass = `border rounded-xl bg-white hover:shadow-lg transform transition duration-500 hover:scale-105 m-2 overflow-hidden ${
         gridSize === "8x8"
           ? "p-0 max-w-xs min-h-64"
-          : "p-2 d-flex flex-column justify-between "
+          : "p-2 d-flex flex-column justify-between"
       }`;
       const imageClass = "m-auto rounded-xl";
       const titleClass = `${
@@ -749,7 +744,7 @@ const InventoryView = () => {
                 loading="lazy"
               />
               <div
-                className={`shadow-lg text-xs rounded-b-lg text-white bg-[#C9A9FF] w-full h-auto justify-center items-center break-words py-2 px-2 font-poppins font-bold`}
+                className={`shadow-lg text-xs rounded-b-lg text-white bg-[#C9A9FF] w-full h-auto justify-center items-center break-all break-words py-2 px-2 font-poppins font-bold`}
               >
                 {itemName}
               </div>
@@ -764,9 +759,13 @@ const InventoryView = () => {
     // Filter items based on selected collection and searchTerm
     const originalCollectionName =
       reverseCollectionNameMap[selectedCollection] || selectedCollection;
+      const originalAttributeName =
+      reverseAttributeNameMap[selectedAttribute] || selectedAttribute;
 
     const filteredData: NftItem[] = nftData.filter((item) => {
-      return (
+      const itemAttributeNormalized = item[5].toLowerCase(); // Normalize for case-insensitive comparison
+  const matchesAttribute = selectedAttribute === "all" || itemAttributeNormalized.includes(originalAttributeName.toLowerCase());
+      return matchesAttribute && (
         selectedCollection === "all" ||
         (item[9].toLowerCase().includes(originalCollectionName.toLowerCase()) &&
           (item[0].toLowerCase().includes(searchTerm.toLowerCase()) ||
@@ -812,7 +811,9 @@ const InventoryView = () => {
 
       // Container classes
       const cardClass = `border rounded-xl bg-white hover:shadow-lg transform transition duration-500 hover:scale-105 m-2 overflow-hidden ${
-        gridSize === "8x8" ? "p-0 max-w-xs min-h-64" : "p-2 d-flex flex-column justify-between"
+        gridSize === "8x8"
+          ? "p-0 max-w-xs min-h-64"
+          : "p-2 d-flex flex-column justify-between"
       }`;
       const imageClass = "m-auto rounded-xl max-w-full max-h-full"; // Added max-w-full and max-h-full for consistency
       const titleClass = `${
@@ -918,7 +919,7 @@ const InventoryView = () => {
                     <SwiperSlide key={idx}>
                       <div className="text-center cursor-pointer">
                         <img
-                          className="w-full h-auto max-h-24 mx-auto border-[#C6C6C6] border-2 rounded-xl"
+                          className="max-w-24 max-h-24 mx-auto border-[#C6C6C6] border-2 rounded-xl"
                           src={item[8]}
                           alt={`Trait ${item[8]}`}
                         />
@@ -1003,6 +1004,7 @@ const InventoryView = () => {
               onClick={() => {
                 setViewMode("collection");
                 setSelectedCollection("all");
+                setCurrentPage(1)
               }}
             >
               Token View
@@ -1043,7 +1045,7 @@ const InventoryView = () => {
           <div className="flex items-center">
             {/* Conditionally rendered dropdown based on viewMode */}
             {viewMode === "itemized" ? (
-              <select
+              <><select
                 className="sortDropdown shadow bg-white font-poppins font-bold rounded py-2 pl-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline mr-4"
                 onChange={handleSortChange} // Assume this function handles sorting for itemized view
               >
@@ -1052,7 +1054,18 @@ const InventoryView = () => {
                 <option value="A-Z">A-Z</option>
                 <option value="Z-A">Z-A</option>
                 {/* Additional sort options for itemized view */}
-              </select>
+              </select><select
+                className="sortDropdown shadow bg-white font-poppins font-bold rounded py-2 pl-3 pr-8 text-gray-700 leading-tight focus:outline-none focus:shadow-outline mr-4"
+                onChange={handleAttributeChange} // Assume this function handles sorting/filtering for collection view
+              >
+                  {Object.entries(attributeNameMapExtended).map(
+                    ([value, name]) => (
+                      <option key={value} value={value}>
+                        {name}
+                      </option>
+                    )
+                  )}
+                </select></>
             ) : (
               <>
                 <>
@@ -1072,7 +1085,7 @@ const InventoryView = () => {
                   </select>
                 </>
                 <select
-                  className="sortDropdown hidden shadow bg-white font-poppins font-bold rounded py-2 pl-3 pr-8 text-gray-700 leading-tight focus:outline-none focus:shadow-outline mr-4"
+                  className="sortDropdown shadow bg-white font-poppins font-bold rounded py-2 pl-3 pr-8 text-gray-700 leading-tight focus:outline-none focus:shadow-outline mr-4"
                   onChange={handleAttributeChange} // Assume this function handles sorting/filtering for collection view
                 >
                   {Object.entries(attributeNameMapExtended).map(
@@ -1124,8 +1137,8 @@ const InventoryView = () => {
           <div
             className={`grid ${
               gridSize === "4x3"
-                ? "grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4"
-                : "grid grid-cols-2 sm:grid-cols-4 md:grid-cols-6 lg:grid-cols-8 gap-4"
+                ? "break-words grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4"
+                : "break-words grid-cols-2 sm:grid-cols-4 md:grid-cols-6 lg:grid-cols-8 gap-4"
             } justify-items-center`}
           >
             {renderItemizedData()}
@@ -1134,8 +1147,8 @@ const InventoryView = () => {
           <div
             className={`grid ${
               gridSize === "4x3"
-                ? "grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4"
-                : "grid grid-cols-2 sm:grid-cols-4 md:grid-cols-8 gap-4"
+                ? "break-words grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4"
+                : "break-words grid-cols-2 sm:grid-cols-4 md:grid-cols-8 gap-4"
             } justify-items-center`}
           >
             {renderCollectionData()}
