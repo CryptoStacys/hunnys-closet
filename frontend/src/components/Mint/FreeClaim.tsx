@@ -78,7 +78,7 @@ const FreeClaim: React.FC<FreeClaimProps> = ({
       //@ts-ignore
         console.log("Transaction sent:", txReceipt.hash);
   
-      alert("Mint successful! Check the console for transaction hash.");
+      alert("Claim Successful!");
       onMintSuccess();
       //@ts-ignore
       updateTraits(userAddress);

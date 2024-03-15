@@ -12,7 +12,7 @@ import { calculateLevel } from '../../utils/levelUtils';
   const AchievementsList = () => {
     const [user, setUser] = useAtom(userAtom);
     const [showConfetti, setShowConfetti] = React.useState(false);
-    const [playRewardSound] = useSound("/sounds/reward.wav");
+    const [playRewardSound] = useSound("/sounds/reward2.mp3");
     const freeClaimsArray = Array.isArray(user?.free_claim) ? user?.free_claim : [];
     const achievementsData: Achievement[] = [
     {
@@ -31,15 +31,22 @@ import { calculateLevel } from '../../utils/levelUtils';
         achievementsReward1: '/icons/Achievements/CupcakePoints.png',
         eligibilityCriteria: (user: User) => !!user.birthday_day && !!user.birthday_month,
         },
-    // {
-    //     id: '3',
-    //     challenge: 'Treasure Hunter',
-    //     description: 'Claim free GM Mug Collectible from the Profile page',
-    //     cupcakePoints: 10,
-    //     achievementsReward1: '/icons/Achievements/CupcakePoints.png',
-    //     title: 'GM Fan',
-    //     eligibilityCriteria: (user: User) => freeClaimsArray?.some((freeClaim: FreeClaimType) => freeClaim.token_id === "0" && freeClaim.claimed),
-    //     },
+    {
+        id: '3',
+        challenge: 'Treasure Hunter',
+        description: 'Claim free GM Mug Collectible from the Profile page',
+        cupcakePoints: 10,
+        achievementsReward1: '/icons/Achievements/CupcakePoints.png',
+        title: 'GM Fan',
+        eligibilityCriteria: (user: User) => {
+          // Ensure freeClaimsArray is defined to avoid accidental undefined.
+          // If it's undefined or empty, straightforwardly return false.
+          if (!freeClaimsArray || freeClaimsArray.length === 0) return false;
+        
+          // Proceed with your original logic safely, now assured it'll return a boolean.
+          return freeClaimsArray.some((freeClaim: FreeClaimType) => freeClaim.token_id === "0" && freeClaim.claimed);
+        }
+        },
     {
         id: '4',
         challenge: 'Welcome, Bunny',

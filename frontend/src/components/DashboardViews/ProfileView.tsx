@@ -86,7 +86,7 @@ const ProfileView = () => {
     (freeClaim: FreeClaimType) =>
       freeClaim.token_id === "0" && freeClaim.claimed
   );
-  const hasFirstDolly = user?.dollyCount === 34;
+  const hasFirstDolly = user?.dollyCount === 0;
   const bunnyClubMembers = [
     "0xa7758394D8f7fD23b0d9F13E02427B514687394B",
     "0x55Abdc04655d590a48BCd1B996115448b71b7a84",

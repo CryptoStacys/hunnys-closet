@@ -564,10 +564,10 @@ const ShopView = () => {
                       mintPrice,
                       provider
                     );
-                    console.log("Mint successful!");
+                    console.log("Purchase successful!");
                     // Optionally, call onMintSuccess() here or handle success feedback
                   } catch (error) {
-                    console.error("Minting failed:", error);
+                    console.error("Purchase failed:", error);
                     // Handle error feedback
                   }
                 }}
