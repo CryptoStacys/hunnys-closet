@@ -456,13 +456,14 @@ const ProfileView = () => {
               </div>
             </div>
             <div className="flex flex-col justify-center xs:items-center tn:items-start">
-              <h1
-                className={`font-bold text-purple-700 username relative leading-normal break-keep ${calculateFontSize(
-                  user?.profile_name.length || 0
-                )}`}
-              >
-                {user?.profile_name || "Welcome!"}
-              </h1>
+            <h1
+  className={`font-bold text-purple-700 username relative leading-normal break-keep ${calculateFontSize(
+    user?.profile_name?.length || 0
+  )}`}
+>
+  {user?.profile_name || "Welcome!"}
+</h1>
+
             </div>
             <div className="flex flex-col text-left">
               <p className="text-[16px] leading-normal">
