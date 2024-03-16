@@ -94,7 +94,15 @@ import { Relayer } from "@openzeppelin/defender-relay-client";
         const relayer = new Relayer(credentials);
         const txResponse = await relayer.sendTransaction(req.body);
 
-        res.json(txResponse);
+        // Assuming txResponse contains a property 'hash' with the transaction hash
+        if (txResponse && txResponse.hash) {
+            // Send back the entire response, or customize as needed
+            res.json({ transactionHash: txResponse.hash });
+        } else {
+            // Handle unexpected response structure
+            console.error('Unexpected response structure from relayer:', txResponse);
+            res.status(500).json({ message: 'Unexpected response structure from relayer', details: txResponse });
+        }
     } catch (error) {
         console.error('Error forwarding request to relayer:', error);
         res.status(500).json({ message: 'Error forwarding request to relayer', details: error.message });
