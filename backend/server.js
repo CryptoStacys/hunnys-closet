@@ -27,6 +27,8 @@ import axios from "axios";
         "http://localhost:8081/wordpress",
         "https://hunnys.io",
         "https://testing.d35i3wnh0wry5j.amplifyapp.com",
+        "https://devhunnys.hunnysnft.com",
+        "https://staging-hunnys-closet-2-git-testaroo-rat-benetar-team.vercel.app"
       ],
     })
   );
