@@ -6,6 +6,7 @@ import SignatureService from "./src/signature.js";
 import express from "express";
 import cors from "cors";
 import axios from "axios";
+import { Relayer } from "@openzeppelin/defender-relay-client";
 
 (() => {
   "use-strict";
@@ -28,7 +29,7 @@ import axios from "axios";
         "https://hunnys.io",
         "https://testing.d35i3wnh0wry5j.amplifyapp.com",
         "https://devhunnys.hunnysnft.com",
-        "https://staging-hunnys-closet-2-git-testaroo-rat-benetar-team.vercel.app"
+        "https://staging-hunnys-closet-2-git-testaroo-rat-benetar-team.vercel.app",
       ],
     })
   );
@@ -84,23 +85,21 @@ import axios from "axios";
   app.use("/signature", SignatureService);
 
   app.post("/gasless", async (req, res) => {
-    const relayerUrl = 'https://api.defender.openzeppelin.com/txs';
-    const relayerApiKey = '9nvcqgREPR99qZnN9tPXsimrqARgATxk'; // Securely store and use your API key
-    const relayerApiSecret = '4TmDUwtfNDujJB1MPxnKEJDpUmWAQN7izdY8U2ptwsCzrFRC9XGxDx9ePWbSNhyT'; // Securely store and use your API secret
-  
+    const credentials = {
+        apiKey: '9nvcqgREPR99qZnN9tPXsimrqARgATxk', // Use environment variables for security
+        apiSecret: '4TmDUwtfNDujJB1MPxnKEJDpUmWAQN7izdY8U2ptwsCzrFRC9XGxDx9ePWbSNhyT',
+    };
+
     try {
-      const response = await axios.post(relayerUrl, req.body, {
-        headers: {
-          'Content-Type': 'application/json',
-          'Authorization': `Bearer ${relayerApiKey}:${relayerApiSecret}`, // Adjust the authorization header as needed
-        },
-      });
-      res.json(response.data);
+        const relayer = new Relayer(credentials);
+        const txResponse = await relayer.sendTransaction(req.body);
+
+        res.json(txResponse);
     } catch (error) {
-      console.error('Error forwarding request to relayer:', error);
-      res.status(500).json({ message: 'Error forwarding request to relayer', details: error.message });
+        console.error('Error forwarding request to relayer:', error);
+        res.status(500).json({ message: 'Error forwarding request to relayer', details: error.message });
     }
-  });
+});
 
   app.use((err, req, res, next) => {
     console.error(err.stack);
