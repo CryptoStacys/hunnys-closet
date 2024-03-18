@@ -439,6 +439,11 @@ const colorNames = {
     "g": 77,
     "r": 14
 },
+"Dreamsicle": {
+    "r": 255,
+    "g": 178,
+    "b": 117
+  },
 "Dried Leaf": {
     "b": 64,
     "g": 66,
@@ -1333,6 +1338,11 @@ const colorNames = {
     "b": 178,
     "g": 69,
     "r": 27
+},
+"Picnic Day": {
+    "r": 190,
+    "g": 112,
+    "b": 212
 },
 "Pink Cheetah": {
     "b": 117,

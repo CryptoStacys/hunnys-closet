@@ -15,6 +15,7 @@ module.exports = {
         "hunnys-relic": "#774A2D",
         "hunnys-light-blue": "#4b57ff",
         "hunnys-light-purple": "#9e63ff",
+        "profile-header": "#AA7AFA",
         "hunnys-yellow": "#ffd54b",
         "hunnys-orange": "#a26106",
         "hunnys-blue": "#700cf5",
@@ -25,7 +26,8 @@ module.exports = {
       },
       fontFamily: {
         'luckiest': ['Luckiest Guy'],
-        'dmsans': ['DM Sans']
+        'dmsans': ['DM Sans'],
+        'poppins': ['Poppins']
       },
       screens: {
         'xl': '1300px',
@@ -33,6 +35,7 @@ module.exports = {
         'lg': '950px',
         'md': '768px',
         'sm': '640px',
+        'tn': '480px',
         'xs': '320px'
       }
     },

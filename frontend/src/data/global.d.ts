@@ -5,6 +5,7 @@ export type Trait = {
   mintPrice?: ethers.BigNumber | null; // Updated to be optional
   id: number;
   origin_id: number;
+  origin_name?: string;
   name: string;
   attribute: string;
   tags?: string[];
@@ -12,10 +13,77 @@ export type Trait = {
   colors: any;
   rarity?: string;
   colorsApplied: string[];
+  img_url?: string;
+};
+
+export type UUID = string;
+
+export type Achievement = {
+  id: string; // Unique identifier for each achievement
+  challenge: string;
+  description: string;
+  descriptionBullets?: string;
+  cupcakePoints: number;
+  cupcakePointsReward?: string;
+  achievementsReward1?: string;
+  achievementsReward2?: string;
+  achievementsReward3?: string;
+  achievementsReward4?: string;
+  achievementsReward5?: string;
+  achievementsReward6?: string;
+  title?: string;
+  eligibilityCriteria?: (user: User) => boolean;
+}
+
+export type Dailys = {
+  id: string; // Unique identifier for each achievement
+  challenge: string;
+  description: string;
+  descriptionBullets?: string;
+  cupcakePoints: number;
+  cupcakePointsReward?: string;
+  dailysReward1?: string;
+  dailysReward2?: string;
+  dailysReward3?: string;
+  dailysReward4?: string;
+  dailysReward5?: string;
+  dailysReward6?: string;
+  title?: string;
+  eligibilityCriteria?: (user: User) => boolean;
+}
+
+export type Levels = {
+  src?: string;
+  id: string;
+  levelsName: string;
+  description: string;
+  description2?: string;
+  description3?: string;
+  description4?: string;
+  description5?: string;
+  levelsReward1: string;
+  levelsReward2?: string;
+  levelsReward3?: string;
+  levelsReward4?: string;
+  levelsReward5?: string;
+  levelsReward6?: string;
+  title: string;
+  freeClaimTokenId?: number;
+}
+
+export type ApiResponse = {
+  success: boolean;
+  data: User;
 };
 
 
 export type User = {
+  achievements?: any,
+  free_claim?: any,
+  wallet: any;
+  dollyCount: number;
+  dailys?: any,
+  UUID: string;
   address: string;
   dollys: Dolly[];
   colors: string[];
@@ -23,12 +91,31 @@ export type User = {
   skin_colors: string[];
   tokens: Token[];
   hideSaveChangesModal: boolean;
-  wallet_type?: string;
+  profile_name: string;
+  profile_image_url: string;
+  tier: string;
+  titles: string[];
+  wallet_type: string;
+  token?: string;
+  cupcake_points: number;
+  level: any;
+  birthday_month?: string;
+  birthday_day?: string;
+  twitter_handle?: string;
+  discord_handle?: string;
+  bunny_club?: number;
 };
 
 type OwnedTraitsResponse = {
   traits: Trait[];
 };
+
+interface FreeClaimType {
+  claimed: boolean;
+  token_id: string;
+  date_claimed: string;
+  transaction_hash: string;
+}
 
 export type Dolly = {
   token_id: string;
@@ -58,8 +145,13 @@ export type Color = {
   b: number;
 };
 
+type UserOwnedTraits = {
+  [key: string]: boolean;
+};
+
 export type Token = {
   trait_type: string;
+  isOwned?: boolean | any;
   name: string;
   colors?: Color[];
   layers?: number;

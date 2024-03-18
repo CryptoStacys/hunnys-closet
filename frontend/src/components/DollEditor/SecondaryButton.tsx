@@ -5,6 +5,7 @@ export default function SecondaryButton(props: {
   title?: string;  // Add a title prop
   children?: React.ReactNode;
   disableBtn?: boolean;
+  className?: string;
 }) {
   return (
     <div className="flex">

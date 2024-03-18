@@ -21,7 +21,7 @@ export default function DollEditorOptions(props: {
   currentTraits: Trait[];
   onAttributesUpdated: (updatedAttributes: Attribute[]) => void;
 }) {
-  const [user, userSet] = useAtom(userAtom);
+  const [user, setUser] = useAtom(userAtom);
   const [modal, modalSet] = useAtom(modalAtom);
   const [showSaveModalChecked, setShowSaveModalChecked] = useState(user!.hideSaveChangesModal);
   const [shouldWiggle, setShouldWiggle] = useState(true);
@@ -174,7 +174,7 @@ function applyColorHarmonization(dollyId: string) {
   function disableSHowModal() {
     user!.hideSaveChangesModal = !user!.hideSaveChangesModal;
     setShowSaveModalChecked(user!.hideSaveChangesModal);
-    userSet(user);
+    setUser(user);
   }
 
   
@@ -269,7 +269,7 @@ function applyColorHarmonization(dollyId: string) {
         <div className="flex-center">
             <div className={`flex-center gap-1`}>
                 {/* Color Harmonize Button */}
-                <SecondaryButton onClick={() => props.selectedDollyId !== null ? applyColorHarmonization(props.selectedDollyId.toString()) : console.error("Invalid ID for Color Harmonize")} title="...">
+                <SecondaryButton onClick={() => props.selectedDollyId !== null ? applyColorHarmonization(props.selectedDollyId.toString()) : console.error("Invalid ID for Color Harmonize")} title="Changes colors only. Not traits.">
                     <Icon type="rainbow" className={`w-[20px] h-[20px] ${shouldWiggle ? "wiggle" : ""} ml-[-5px] mr-[5px]`} />
                     <span className="">Color Harmonize</span>
                 </SecondaryButton>

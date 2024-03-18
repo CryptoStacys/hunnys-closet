@@ -5,6 +5,7 @@ import { getDefaultWallets, RainbowKitProvider, connectorsForWallets } from '@ra
 import type { AppProps } from 'next/app';
 import App from "./index";
 import { configureChains, createConfig, WagmiConfig } from 'wagmi';
+import { WalletProvider } from '@coinbase/waas-sdk-web-react';
 import {
   goerli,
   mainnet,
@@ -15,6 +16,8 @@ import { alchemyProvider } from "wagmi/providers/alchemy";
 import { useState, useEffect } from "react";
 import { useRouter } from 'next/router';
 import { Analytics } from '@vercel/analytics/react';
+// Use the Next.js Link component instead of your custom Link component for navigation
+import Link from 'next/link';
 
 // Declare gtag for TypeScript
 declare global {
@@ -49,6 +52,7 @@ const { wallets } = getDefaultWallets({
   chains,
 });
 
+
 const connectors = connectorsForWallets([
   ...wallets,
   {
@@ -69,6 +73,7 @@ const wagmiConfig = createConfig({
 });
 
 import { usePathname } from 'next/navigation';
+import { assert } from 'console';
 
 function MyApp({ Component, pageProps }: AppProps) {
   const pathname = usePathname();
@@ -76,9 +81,7 @@ function MyApp({ Component, pageProps }: AppProps) {
 
   useEffect(() => {
     const handleRouteChange = (url: string) => {
-      window.gtag('config', 'G-XBGDC7K6PM', {
-        page_path: url,
-      });
+      
     };
 
 
@@ -93,20 +96,29 @@ function MyApp({ Component, pageProps }: AppProps) {
   }, [checkRoute]);
 
   function checkRoute() {
-    const paths = ['/', '/inventory', '/dollys', '/help'];
+    const paths = ['/', '/inventory', '/dollys', '/help', '/profile'];
     if(!paths.includes(pathname)) {
       router.push('/');
     }
   }
 
   return (
+    <WalletProvider
+    collectAndReportMetrics
+    enableHostedBackups
+    projectId="e55373bd-6fc9-4fb7-b1b7-4908df14cd53"
+    autoCreateWallet={true}
+    prod={false} // Set to true for production
+  >
     <WagmiConfig config={wagmiConfig}>
       <RainbowKitProvider coolMode chains={chains}>
-        <App />
-        {/* <Component {...pageProps} */}
+      
+        <Component />
+        
         <Analytics />
       </RainbowKitProvider>
     </WagmiConfig>
+    </WalletProvider>
   );
 }
 

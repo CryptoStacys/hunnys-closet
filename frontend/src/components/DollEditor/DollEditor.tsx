@@ -80,7 +80,7 @@ export default function DollEditor(props: {
   onDollySaved?: (newId: number) => void;
 }) {
   const [allTraits] = useAtom(allTraitsAtom);
-  const [user, userSet] = useAtom(userAtom);
+  const [user, setUser] = useAtom(userAtom);
   const [saved, setSaved] = useAtom(savedAtom); // tracks if user saved dolly changes
   const [view, viewSet] = useState("grid");
   const [unsavedChanges, setUnsavedChanges] = useState(false);
@@ -281,7 +281,7 @@ export default function DollEditor(props: {
     setIsSaving(true);
     setErrorMessage(""); // Reset any previous error messages
 
-  const timeoutDuration = 10000; // 10 seconds
+  const timeoutDuration = 10000; // 20 seconds
   let timeoutReached = false;
 
     // Start a timeout to reset saving state if it takes too long
@@ -610,7 +610,7 @@ export default function DollEditor(props: {
     for (let i = 0; i < (user?.dollys || []).length; i++) {
       if (user && user?.dollys[i].token_id === id) {
         user.dollys[i].attributes = token;
-        userSet(user);
+        setUser(user);
         break;
       }
     }
@@ -733,16 +733,18 @@ export default function DollEditor(props: {
   }
 
   function getDollMetadata(id: number) {
-    // console.log("getDollMetadata", id);
+    console.log("getDollMetadata", id);
 
     return new Promise(async (resolve) => {
       fetch(
         // `${serverPath}/dolly/${id}`
         `https://closetservices.hunnysnft.com/wp-json/hunnys-closet/v1/getCloneData?tokenIds[]=${id}`
       )
+      
         .then((response) => response.json())
         .then((res) => {
           resolve(res);
+          console.log("UserAddress At DollEditor:", user?.address, res, user?.traits);
         })
         .catch((err) => {
           console.log("Error:", err.message);

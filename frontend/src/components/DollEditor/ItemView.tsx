@@ -815,8 +815,8 @@ return (
       
         {/* OTHER ITEMS */}            
         <div className="mb-12">
-        <div className="font-bold font-luckiest flex pl-1 mt-8 text-[#444] flex flex-row">
-        <select className={`bg-white sortDropdown shadow-lg rounded-b-lg uppercase`} onChange={(e) => {
+        <div className="font-bold font-poppins pl-1 mt-8 text-[#444] flex flex-row">
+        <select className={`bg-white sortDropdown shadow-lg rounded-b-lg`} onChange={(e) => {
     setSortType(e.target.value);
     setCurrentPage(1); // Reset currentPage to 1
   }}>
@@ -831,24 +831,31 @@ return (
               <option value="NotOwned">Sort by Not Owned</option>
             </select>
             <div className="search-bar">
-              <input
-                type="text"
-                placeholder="Search traits..."
-                value={searchTerm}
-                onChange={(e) => setSearchTerm(e.target.value)}
-                className="search-input ml-8 float-end bg-white searchBar indent-2 border-black"
-              />
-              {searchTerm && (
-                <button
-                
-                  onClick={() => setSearchTerm('')}
-                  className="clear-search clearSearch right-6 top-0.5 relative"
-                  aria-label="Clear search"
-                ><img src='/assets/clearSearchButton.png' alt='clearSearch' className="w-4">
-                 </img>
-                </button>
-              )}
-            </div>
+            <input
+              type="text"
+              placeholder="Search traits..."
+              value={searchTerm}
+              onChange={(e) => {
+                setSearchTerm(e.target.value);
+                setCurrentPage(1); // Reset the current page to 1 whenever the search term changes
+              }}
+              className="search-input ml-8 float-end bg-white searchBar indent-2 border-black"
+            />
+            {searchTerm && (
+              <button
+                onClick={() => {
+                  setSearchTerm('');
+                  setCurrentPage(1); // Also reset the current page to 1 when clearing the search
+                }}
+                className="clear-search clearSearch right-6 top-0.5 relative"
+                aria-label="Clear search"
+              >
+                <img src='/assets/clearSearchButton.png' alt='clearSearch' className="w-4">
+                </img>
+              </button>
+            )}
+          </div>
+
           </div>
           
 
@@ -899,27 +906,6 @@ return (
                     <div style={{backgroundColor: '#a264f4'}} className={`shadow-lg rounded-b-lg text-white w-full h-auto justify-center items-center font-bold  py-2 px-2`}>{trait.name}</div>
 
                 </motion.button>
-                {/* Add the MintButton if the trait is eligible for minting 
-                
-                {trait.isEligibleForMinting && (
-                  <MintButton
-                    tokenId={trait.token_id}
-                    mintPrice={discountedPrice}
-                    onMintSuccess={() => handleMintSuccess(trait)}
-                    updateTraits={updateTraits}
-                    userAddress={user?.address}
-                    mintAction={async () => {
-                      if (user?.address && trait.token_id) {
-                        setCurrentMintedTrait(trait); // Set current minted trait
-                        await mintWithWeth(user.address, trait.token_id, discountedPrice, provider);
-                        handleMintSuccess(trait); // Call handleMintSuccess after successful mint
-                      } else {
-                        console.error("User address or token ID is undefined");
-                      }
-                    }}
-                    className={isDiscounted ? 'discounted-mint-btn' : 'test'}
-                  />
-                )}*/}
               </div>
             );
           })}

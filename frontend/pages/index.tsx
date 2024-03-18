@@ -2,102 +2,108 @@ import { Route } from '../src/components/Router/Router';
 import { useAccount } from "wagmi";
 import { useAtom } from "jotai";
 import React, { useState, useEffect } from 'react';
-// import { useState, useEffect } from "react";
-// import { useRouter } from 'next/router'
-import { allTraitsAtom, userAtom, connectedAtom } from "../src/data/store";
+import { allTraitsAtom, userAtom, connectedAtom, userTraitsAtom } from "../src/data/store";
 import { attributes, localStorageToken } from "../src/data/config";
 import Dashboard from '../src/components/Dashboard/Dashboard';
 import Dollys from "./dollys";
 import Inventory from "./inventory";
 import Help from "./help";
-
 import Nav from "../src/components/Nav/Nav";
 import Login from "../src/components/Login/Login";
-// import Tokens from "../src/components/Tokens/Tokens";
 import Modal from "../src/components/Modal/Modal";
-
 import sparkleBg from "./../src/assets/img/sparkle_bg.png";
+import { useRouter } from 'next/router';
 
 export default function App() {
-  const [user, userSet] = useAtom(userAtom);
-  const [allTrais, allTraitsSet] = useAtom(allTraitsAtom);
-  const [connected, connectedSet] = useAtom(connectedAtom);
-  const [rewardStatus, setRewardStatus] = useState("");
+  const [user, setUser] = useAtom(userAtom);
+  const [allTraits, setAllTraits] = useAtom(allTraitsAtom);
+  const [userTraits, setUserTraits] = useAtom(userTraitsAtom);
+  const [connected, setConnected] = useAtom(connectedAtom);
+  const [dollyCount, setDollyCount] = useState("");
+  const router = useRouter();
 
-  // const paths = ['/', '/inventory', '/dollys', '/help'];
+  const { isConnected, address } = useAccount({
+    onConnect: async ({ address }) => {
+      try {
+        // Fetch traits
+        const traitsResponse = await fetch(`https://closetservices.hunnysnft.com/wp-json/hunnys-closet/v1/traits?wallet=${address}`);
+        if (!traitsResponse.ok) throw new Error('Failed to fetch traits.');
+        const traitsData = await traitsResponse.json();
+        console.log("Traits Data from Index:", traitsData);
+        setAllTraits(traitsData);
 
-  const account = useAccount({
-    onConnect({ address, connector, isReconnected }) {
-      // console.log("Connected. wagmi object", {
-      //   address,
-      //   connector,
-      //   isReconnected,
-      // });
+        // Fetch verifyCloset data
+        const closetResponse = await fetch(`https://closetservices.hunnysnft.com/wp-json/hunnys-closet/v1/verifyCloset?wallet=${address}`);
+        if (!closetResponse.ok) throw new Error('Failed to fetch closet data.');
+        const closetData = await closetResponse.json();
+        console.log("Closet Data from Index:", closetData);
+        setUserTraits(closetData)
 
-      fetch(`https://closetservices.hunnysnft.com/wp-json/hunnys-closet/v1/traits?wallet=${address}`)
-    .then((res) => {
-        if (!res.ok) {
-            throw new Error(`API call failed with HTTP status ${res.status}`);
-        }
-        return res.json();
-    })
-    .then((res) => {
-        allTraitsSet(res);
-        return res;
-    })
-    .catch((error) => {
-        console.error("Error fetching traits:", error);
-    });
+        // Update Last Login Time
+        fetch(`https://closetservices.hunnysnft.com/wp-json/hunnys-closet/v1/accounts`, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          action: 'login', // Assuming you want to update last login on every connect
+          wallet: address, // User's wallet address
+        }),
+      })
+      .then(response => response.json())
+      .then(data => {
+        console.log('Success:', data);
+      })
+      .catch((error) => {
+        console.error('Error:', error);
+      });
+      
+      // Fetch user profile
+      const profileResponse = await fetch(`https://closetservices.hunnysnft.com/wp-json/hunnys-closet/v1/accounts?action=getProfile&wallet=${address}`);
+      if (!profileResponse.ok) throw new Error('Failed to fetch user profile.');
+      const profileDataResponse = await profileResponse.json();
+      console.log("Profile Data from Index:", profileDataResponse);
+      
+      let parsedAchievements = {};
+      if (profileDataResponse.data.achievements && typeof profileDataResponse.data.achievements === 'string') {
+          try {
+            parsedAchievements = JSON.parse(profileDataResponse.data.achievements);
+          } catch (error) {
+            console.error("Error parsing achievements JSON:", error);
+            // Handle the error or set parsedAchievements to a default value if needed
+          }
+      }
+      let parsedFreeClaims = {};
+      if (profileDataResponse.data.free_claim && typeof profileDataResponse.data.free_claim === 'string') {
+          try {
+            parsedFreeClaims = JSON.parse(profileDataResponse.data.free_claim);
+          } catch (error) {
+            console.error("Error parsing achievements JSON:", error);
+            // Handle the error or set parsedAchievements to a default value if needed
+          }
+      }
+      // Combine data and update user atom
+      setUser({
+        ...profileDataResponse.data, // Assuming profileDataResponse contains a 'data' key with user details
+        ...closetData,
+        traits: closetData.traits, // Assuming traits is the key you want from traitsData
+        dollyCount: closetData.dollys?.length || 0,
+        address: address,
+        achievements: parsedAchievements, // Use the parsed achievements
+        free_claim: parsedFreeClaims,
+      });
 
-    // Update Last Login Time
-    fetch(`https://closetservices.hunnysnft.com/wp-json/hunnys-closet/v1/accounts`, {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify({
-        action: 'login', // Assuming you want to update last login on every connect
-        wallet: address, // User's wallet address
-      }),
-    })
-    .then(response => response.json())
-    .then(data => {
-      console.log('Success:', data);
-    })
-    .catch((error) => {
-      console.error('Error:', error);
-    });
-
-        // CACHEBUST https://closetservices.hunnysnft.com/wp-json/hunnys-closet/v1/verifyCloset?wallet=${address}&nocache=${new Date().getTime()}`
-
-        fetch(`https://closetservices.hunnysnft.com/wp-json/hunnys-closet/v1/verifyCloset?wallet=${address}`)
-    .then((res) => {
-        if (!res.ok) {
-            throw new Error(`API call failed with HTTP status ${res.status}`);
-        }
-        return res.json();
-    })
-    .then((res) => {
-          res.address = address;
-          console.log("Hunnys WP response:", res);
-          setRewardStatus(res.rewardStatus);
-          res.hideSaveChangesModal = false;
-          connectedSet(true);
-          userSet(res);
-          return res;})
-          .catch((error) => {
-              console.error("Error verifying closet:", error);
-          });
-
+        setConnected(true);
+      } catch (error) {
+        console.error(error);
+        setConnected(false);
+      }
     },
-    
-    onDisconnect() {
-      userSet(null);
-      connectedSet(false);
-      // MOVE TO HOME PAGE
-      window.history.pushState({}, "", "/");
-      const navEvent = new PopStateEvent("popstate");
-      window.dispatchEvent(navEvent);
+    onDisconnect: () => {
+      setUser(null); // Reset user state
+      setConnected(false); // Indicate that the user is no longer connected
+      // Redirect to home page
+      router.push("/");
     },
   });
 
@@ -115,16 +121,19 @@ export default function App() {
     }
   }
 
+  useEffect(() => {
+    if (!isConnected) {
+      // Redirect or handle the user not being connected
+    }
+  }, [isConnected, router]);
+
   return (
-    <div className="pb-8" style={{backgroundImage: `url(${sparkleBg.src})` }}>
-    {/* <div className="pb-8" style={{backgroundImage: `url(${sparkleBg})`, backgroundSize: '640px' }}> */}
-      <Nav rewardStatus={rewardStatus} />
+    <div className="pb-8 ">
+      <Nav rewardStatus={''} />
       <Modal />
       <div className="relative mt-[70px] z-30">
         {!connected ? (
-          <>
-            <Login />
-          </>
+          <Login />
         ) : (
           <> 
           <Route path="/">
@@ -136,9 +145,6 @@ export default function App() {
           {/* <Route path="/tokens">
             <Tokens />
           </Route> */}
-         <Route path="/inventory">
-            <Inventory />
-          </Route>
           <Route path="/help">
             <Help />
           </Route>

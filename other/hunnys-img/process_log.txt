@@ -41705,6 +41705,1460 @@ Resizing image: scriptImages\Frame\Sprinkle Hearts Scroll Right_L.png to 600x600
 Resized image saved: 800x800_png\Frame\Sprinkle Hearts Scroll Right_L.png
 Resized image saved: 600x600_png\Frame\Sprinkle Hearts Scroll Right_L.png
 Script started
+<<<<<<< HEAD
+Subfolders found: Accessory, Background, Bodysuit, Colors, Extras, Eyebrows, Eyes, Face Sticker, Finished, Frame, Hair Style, Hand, Hat, Mouth, Outfit, Piercing, Tattoo, Undergarment
+Files found: 85
+Resizing image: scriptImages\Accessory\BunVenture Backpack_C1.png to 800x800
+Resizing image: scriptImages\Accessory\BunVenture Backpack_C1.png to 600x600
+Processing image group: BunVenture Backpack
+Resized image saved: 800x800_png\Accessory\BunVenture Backpack_C1.png
+Resizing image: scriptImages\Accessory\BunVenture Backpack_C2.png to 800x800
+Resized image saved: 600x600_png\Accessory\BunVenture Backpack_C1.png
+Resizing image: scriptImages\Accessory\BunVenture Backpack_C2.png to 600x600
+Processing file: BunVenture Backpack_C1.png in subfolder: Accessory
+Processing file: BunVenture Backpack_C2.png in subfolder: Accessory
+Resized image saved: 600x600_png\Accessory\BunVenture Backpack_C2.png
+Resizing image: scriptImages\Accessory\BunVenture Backpack_C3.png to 600x600
+Resized image saved: 800x800_png\Accessory\BunVenture Backpack_C2.png
+Resizing image: scriptImages\Accessory\BunVenture Backpack_C3.png to 800x800
+Processing file: BunVenture Backpack_C3.png in subfolder: Accessory
+Processed and saved solid color: Dreamsicle Dye.png
+Processed and saved solid color: Dreamsicle Dye.png
+Resized image saved: 600x600_png\Accessory\BunVenture Backpack_C3.png
+Resizing image: scriptImages\Accessory\BunVenture Backpack_C4.png to 600x600
+Resized image saved: 800x800_png\Accessory\BunVenture Backpack_C3.png
+Resizing image: scriptImages\Accessory\BunVenture Backpack_C4.png to 800x800
+Processing file: BunVenture Backpack_C4.png in subfolder: Accessory
+Resized image saved: 600x600_png\Accessory\BunVenture Backpack_C4.png
+Resizing image: scriptImages\Accessory\BunVenture Backpack_L.png to 600x600
+Resized image saved: 800x800_png\Accessory\BunVenture Backpack_C4.png
+Resizing image: scriptImages\Accessory\BunVenture Backpack_L.png to 800x800
+Processing file: BunVenture Backpack_L.png in subfolder: Accessory
+Checking existence of PNG: compositeImages\Accessory\BunVenture Backpack.png
+Checking existence of JPG: 300x300_jpg\Accessory\BunVenture Backpack.jpg
+Files not found, processing: PNG - compositeImages\Accessory\BunVenture Backpack.png, JPG - 300x300_jpg\Accessory\BunVenture Backpack.jpg
+Processed and saved skin color trait: Gloopy Mr. Moar.png
+Saved: compositeImages\Accessory\BunVenture Backpack.png
+Resized image saved: 600x600_png\Accessory\BunVenture Backpack_L.png
+Resizing image: scriptImages\Accessory\ButterPuff_C1.png to 600x600
+Saved: 300x300_jpg\Accessory\BunVenture Backpack.jpg
+Processing image group: ButterPuff
+Processed skin color: Gloopy Mr. Moar.png
+Resized image saved: 800x800_png\Accessory\BunVenture Backpack_L.png
+Resizing image: scriptImages\Accessory\ButterPuff_C1.png to 800x800
+Processing file: ButterPuff_C1.png in subfolder: Accessory
+Resized image saved: 600x600_png\Accessory\ButterPuff_C1.png
+Resizing image: scriptImages\Accessory\ButterPuff_C2.png to 600x600
+Resized image saved: 800x800_png\Accessory\ButterPuff_C1.png
+Resizing image: scriptImages\Accessory\ButterPuff_C2.png to 800x800
+Processing file: ButterPuff_C2.png in subfolder: Accessory
+Resized image saved: 800x800_png\Accessory\ButterPuff_C2.png
+Resizing image: scriptImages\Accessory\ButterPuff_C3.png to 800x800
+Resized image saved: 600x600_png\Accessory\ButterPuff_C2.png
+Resizing image: scriptImages\Accessory\ButterPuff_C3.png to 600x600
+Processing file: ButterPuff_C3.png in subfolder: Accessory
+Processed and saved solid color: Picnic Day Dye.png
+Solid colors RGB values saved to colors.json
+Resized image saved: 800x800_png\Accessory\ButterPuff_C3.png
+Resizing image: scriptImages\Accessory\ButterPuff_C4.png to 800x800
+Processing file: ButterPuff_C4.png in subfolder: Accessory
+Resized image saved: 600x600_png\Accessory\ButterPuff_C3.png
+Resizing image: scriptImages\Accessory\ButterPuff_C4.png to 600x600
+Processed and saved solid color: Picnic Day Dye.png
+Solid colors RGB values saved to colors.json
+Resized image saved: 800x800_png\Accessory\ButterPuff_C4.png
+Resizing image: scriptImages\Accessory\ButterPuff_C5.png to 800x800
+Processing file: ButterPuff_C5.png in subfolder: Accessory
+Resized image saved: 600x600_png\Accessory\ButterPuff_C4.png
+Resizing image: scriptImages\Accessory\ButterPuff_C5.png to 600x600
+Resized image saved: 800x800_png\Accessory\ButterPuff_C5.png
+Resizing image: scriptImages\Accessory\ButterPuff_L.png to 800x800
+Resized image saved: 600x600_png\Accessory\ButterPuff_C5.png
+Resizing image: scriptImages\Accessory\ButterPuff_L.png to 600x600
+Processing file: ButterPuff_L.png in subfolder: Accessory
+Checking existence of PNG: compositeImages\Accessory\ButterPuff.png
+Checking existence of JPG: 300x300_jpg\Accessory\ButterPuff.jpg
+Files not found, processing: PNG - compositeImages\Accessory\ButterPuff.png, JPG - 300x300_jpg\Accessory\ButterPuff.jpg
+Saved: compositeImages\Accessory\ButterPuff.png
+Saved: 300x300_jpg\Accessory\ButterPuff.jpg
+Processing image group: Secret Agent Shades
+Resized image saved: 800x800_png\Accessory\ButterPuff_L.png
+Resizing image: scriptImages\Accessory\Secret Agent Shades_C1.png to 800x800
+Resized image saved: 600x600_png\Accessory\ButterPuff_L.png
+Resizing image: scriptImages\Accessory\Secret Agent Shades_C1.png to 600x600
+Processing file: Secret Agent Shades_C1.png in subfolder: Accessory
+Resized image saved: 600x600_png\Accessory\Secret Agent Shades_C1.png
+Resizing image: scriptImages\Accessory\Secret Agent Shades_C2.png to 600x600
+Resized image saved: 800x800_png\Accessory\Secret Agent Shades_C1.png
+Resizing image: scriptImages\Accessory\Secret Agent Shades_C2.png to 800x800
+Processing file: Secret Agent Shades_C2.png in subfolder: Accessory
+Resized image saved: 600x600_png\Accessory\Secret Agent Shades_C2.png
+Resizing image: scriptImages\Accessory\Secret Agent Shades_L.png to 600x600
+Resized image saved: 800x800_png\Accessory\Secret Agent Shades_C2.png
+Resizing image: scriptImages\Accessory\Secret Agent Shades_L.png to 800x800
+Processing file: Secret Agent Shades_L.png in subfolder: Accessory
+Checking existence of PNG: compositeImages\Accessory\Secret Agent Shades.png
+Checking existence of JPG: 300x300_jpg\Accessory\Secret Agent Shades.jpg
+Files not found, processing: PNG - compositeImages\Accessory\Secret Agent Shades.png, JPG - 300x300_jpg\Accessory\Secret Agent Shades.jpg
+Saved: compositeImages\Accessory\Secret Agent Shades.png
+Resized image saved: 600x600_png\Accessory\Secret Agent Shades_L.png
+Resizing image: scriptImages\Accessory\Secret Agent S_C1.png to 600x600
+Resized image saved: 800x800_png\Accessory\Secret Agent Shades_L.png
+Resizing image: scriptImages\Accessory\Secret Agent S_C1.png to 800x800
+Saved: 300x300_jpg\Accessory\Secret Agent Shades.jpg
+Processing image group: Secret Agent S
+Processing file: Secret Agent S_C1.png in subfolder: Accessory
+Resized image saved: 800x800_png\Accessory\Secret Agent S_C1.png
+Resizing image: scriptImages\Accessory\Secret Agent S_C2.png to 800x800
+Resized image saved: 600x600_png\Accessory\Secret Agent S_C1.png
+Resizing image: scriptImages\Accessory\Secret Agent S_C2.png to 600x600
+Processing file: Secret Agent S_C2.png in subfolder: Accessory
+Resized image saved: 800x800_png\Accessory\Secret Agent S_C2.png
+Resizing image: scriptImages\Accessory\Secret Agent S_C3.png to 800x800
+Processing file: Secret Agent S_C3.png in subfolder: Accessory
+Resized image saved: 600x600_png\Accessory\Secret Agent S_C2.png
+Resizing image: scriptImages\Accessory\Secret Agent S_C3.png to 600x600
+Resized image saved: 800x800_png\Accessory\Secret Agent S_C3.png
+Resizing image: scriptImages\Accessory\Secret Agent S_C4.png to 800x800
+Processing file: Secret Agent S_C4.png in subfolder: Accessory
+Resized image saved: 600x600_png\Accessory\Secret Agent S_C3.png
+Resizing image: scriptImages\Accessory\Secret Agent S_C4.png to 600x600
+Resized image saved: 800x800_png\Accessory\Secret Agent S_C4.png
+Resizing image: scriptImages\Accessory\Secret Agent S_C5.png to 800x800
+Processing file: Secret Agent S_C5.png in subfolder: Accessory
+Resized image saved: 600x600_png\Accessory\Secret Agent S_C4.png
+Resizing image: scriptImages\Accessory\Secret Agent S_C5.png to 600x600
+Resized image saved: 800x800_png\Accessory\Secret Agent S_C5.png
+Resizing image: scriptImages\Accessory\Secret Agent S_L.png to 800x800
+Resized image saved: 600x600_png\Accessory\Secret Agent S_C5.png
+Resizing image: scriptImages\Accessory\Secret Agent S_L.png to 600x600
+Processing file: Secret Agent S_L.png in subfolder: Accessory
+Checking existence of PNG: compositeImages\Accessory\Secret Agent S.png
+Checking existence of JPG: 300x300_jpg\Accessory\Secret Agent S.jpg
+Files not found, processing: PNG - compositeImages\Accessory\Secret Agent S.png, JPG - 300x300_jpg\Accessory\Secret Agent S.jpg
+Saved: compositeImages\Accessory\Secret Agent S.png
+Resized image saved: 800x800_png\Accessory\Secret Agent S_L.png
+Resizing image: scriptImages\Accessory\Silly Mr. Moar_C1.png to 800x800
+Resized image saved: 600x600_png\Accessory\Secret Agent S_L.png
+Resizing image: scriptImages\Accessory\Silly Mr. Moar_C1.png to 600x600
+Saved: 300x300_jpg\Accessory\Secret Agent S.jpg
+Processing image group: Silly Mr. Moar
+Processing file: Silly Mr. Moar_C1.png in subfolder: Accessory
+Resized image saved: 800x800_png\Accessory\Silly Mr. Moar_C1.png
+Resizing image: scriptImages\Accessory\Silly Mr. Moar_L.png to 800x800
+Resized image saved: 600x600_png\Accessory\Silly Mr. Moar_C1.png
+Resizing image: scriptImages\Accessory\Silly Mr. Moar_L.png to 600x600
+Processing file: Silly Mr. Moar_L.png in subfolder: Accessory
+Checking existence of PNG: compositeImages\Accessory\Silly Mr. Moar.png
+Checking existence of JPG: 300x300_jpg\Accessory\Silly Mr. Moar.jpg
+Files not found, processing: PNG - compositeImages\Accessory\Silly Mr. Moar.png, JPG - 300x300_jpg\Accessory\Silly Mr. Moar.jpg
+Saved: compositeImages\Accessory\Silly Mr. Moar.png
+Saved: 300x300_jpg\Accessory\Silly Mr. Moar.jpg
+Processing image group: Snoozle
+Resized image saved: 800x800_png\Accessory\Silly Mr. Moar_L.png
+Resizing image: scriptImages\Accessory\Snoozle_C1.png to 800x800
+Resized image saved: 600x600_png\Accessory\Silly Mr. Moar_L.png
+Resizing image: scriptImages\Accessory\Snoozle_C1.png to 600x600
+Processing file: Snoozle_C1.png in subfolder: Accessory
+Resized image saved: 600x600_png\Accessory\Snoozle_C1.png
+Resizing image: scriptImages\Accessory\Snoozle_C2.png to 600x600
+Resized image saved: 800x800_png\Accessory\Snoozle_C1.png
+Resizing image: scriptImages\Accessory\Snoozle_C2.png to 800x800
+Processing file: Snoozle_C2.png in subfolder: Accessory
+Resized image saved: 600x600_png\Accessory\Snoozle_C2.png
+Resizing image: scriptImages\Accessory\Snoozle_C3.png to 600x600
+Resized image saved: 800x800_png\Accessory\Snoozle_C2.png
+Resizing image: scriptImages\Accessory\Snoozle_C3.png to 800x800
+Processing file: Snoozle_C3.png in subfolder: Accessory
+Resized image saved: 600x600_png\Accessory\Snoozle_C3.png
+Resizing image: scriptImages\Accessory\Snoozle_C4.png to 600x600
+Processing file: Snoozle_C4.png in subfolder: Accessory
+Resized image saved: 800x800_png\Accessory\Snoozle_C3.png
+Resizing image: scriptImages\Accessory\Snoozle_C4.png to 800x800
+Resized image saved: 600x600_png\Accessory\Snoozle_C4.png
+Resizing image: scriptImages\Accessory\Snoozle_C5.png to 600x600
+Processing file: Snoozle_C5.png in subfolder: Accessory
+Resized image saved: 800x800_png\Accessory\Snoozle_C4.png
+Resizing image: scriptImages\Accessory\Snoozle_C5.png to 800x800
+Processing file: Snoozle_L.png in subfolder: Accessory
+Checking existence of PNG: compositeImages\Accessory\Snoozle.png
+Checking existence of JPG: 300x300_jpg\Accessory\Snoozle.jpg
+Files not found, processing: PNG - compositeImages\Accessory\Snoozle.png, JPG - 300x300_jpg\Accessory\Snoozle.jpg
+Resized image saved: 600x600_png\Accessory\Snoozle_C5.png
+Resizing image: scriptImages\Accessory\Snoozle_L.png to 600x600
+Resized image saved: 800x800_png\Accessory\Snoozle_C5.png
+Resizing image: scriptImages\Accessory\Snoozle_L.png to 800x800
+Saved: compositeImages\Accessory\Snoozle.png
+Saved: 300x300_jpg\Accessory\Snoozle.jpg
+Processing image group: Best Buns Camp Out
+Resized image saved: 600x600_png\Accessory\Snoozle_L.png
+Resizing image: scriptImages\Background\Best Buns Camp Out_C1.png to 600x600
+Resized image saved: 800x800_png\Accessory\Snoozle_L.png
+Resizing image: scriptImages\Background\Best Buns Camp Out_C1.png to 800x800
+Processing file: Best Buns Camp Out_C1.png in subfolder: Background
+Resized image saved: 600x600_png\Background\Best Buns Camp Out_C1.png
+Resizing image: scriptImages\Background\Best Buns Camp Out_C2.png to 600x600
+Resized image saved: 800x800_png\Background\Best Buns Camp Out_C1.png
+Resizing image: scriptImages\Background\Best Buns Camp Out_C2.png to 800x800
+Processing file: Best Buns Camp Out_C2.png in subfolder: Background
+Resized image saved: 600x600_png\Background\Best Buns Camp Out_C2.png
+Resizing image: scriptImages\Background\Best Buns Camp Out_C3.png to 600x600
+Resized image saved: 800x800_png\Background\Best Buns Camp Out_C2.png
+Resizing image: scriptImages\Background\Best Buns Camp Out_C3.png to 800x800
+Processing file: Best Buns Camp Out_C3.png in subfolder: Background
+Resized image saved: 600x600_png\Background\Best Buns Camp Out_C3.png
+Resizing image: scriptImages\Background\Best Buns Camp Out_C4.png to 600x600
+Resized image saved: 800x800_png\Background\Best Buns Camp Out_C3.png
+Resizing image: scriptImages\Background\Best Buns Camp Out_C4.png to 800x800
+Processing file: Best Buns Camp Out_C4.png in subfolder: Background
+Resized image saved: 600x600_png\Background\Best Buns Camp Out_C4.png
+Resizing image: scriptImages\Background\Best Buns Camp Out_C5.png to 600x600
+Resized image saved: 800x800_png\Background\Best Buns Camp Out_C4.png
+Resizing image: scriptImages\Background\Best Buns Camp Out_C5.png to 800x800
+Processing file: Best Buns Camp Out_C5.png in subfolder: Background
+Resized image saved: 600x600_png\Background\Best Buns Camp Out_C5.png
+Resizing image: scriptImages\Background\Best Buns Camp Out_L.png to 600x600
+Resized image saved: 800x800_png\Background\Best Buns Camp Out_C5.png
+Resizing image: scriptImages\Background\Best Buns Camp Out_L.png to 800x800
+Processing file: Best Buns Camp Out_L.png in subfolder: Background
+Checking existence of PNG: compositeImages\Background\Best Buns Camp Out.png
+Checking existence of JPG: 300x300_jpg\Background\Best Buns Camp Out.jpg
+Files not found, processing: PNG - compositeImages\Background\Best Buns Camp Out.png, JPG - 300x300_jpg\Background\Best Buns Camp Out.jpg
+Saved: compositeImages\Background\Best Buns Camp Out.png
+Resized image saved: 800x800_png\Background\Best Buns Camp Out_L.png
+Resizing image: scriptImages\Background\Hupe Scouts Background.png to 800x800
+Saved: 300x300_jpg\Background\Best Buns Camp Out.jpg
+Processing image group: Hupe Scouts Background.png
+Resized image saved: 600x600_png\Background\Best Buns Camp Out_L.png
+Resizing image: scriptImages\Background\Hupe Scouts Background.png to 600x600
+Processing file: Hupe Scouts Background.png in subfolder: Background
+Checking existence of PNG: compositeImages\Background\Hupe Scouts Background.png.png
+Checking existence of JPG: 300x300_jpg\Background\Hupe Scouts Background.png.jpg
+Files not found, processing: PNG - compositeImages\Background\Hupe Scouts Background.png.png, JPG - 300x300_jpg\Background\Hupe Scouts Background.png.jpg
+Saved: compositeImages\Background\Hupe Scouts Background.png.png
+Resized image saved: 800x800_png\Background\Hupe Scouts Background.png
+Resizing image: scriptImages\Frame\Bunny Babe Basket_C1.png to 800x800
+Resized image saved: 600x600_png\Background\Hupe Scouts Background.png
+Resizing image: scriptImages\Frame\Bunny Babe Basket_C1.png to 600x600
+Saved: 300x300_jpg\Background\Hupe Scouts Background.png.jpg
+Processing image group: Bunny Babe Basket
+Processing file: Bunny Babe Basket_C1.png in subfolder: Frame
+Resized image saved: 800x800_png\Frame\Bunny Babe Basket_C1.png
+Resizing image: scriptImages\Frame\Bunny Babe Basket_C2.png to 800x800
+Resized image saved: 600x600_png\Frame\Bunny Babe Basket_C1.png
+Resizing image: scriptImages\Frame\Bunny Babe Basket_C2.png to 600x600
+Processing file: Bunny Babe Basket_C2.png in subfolder: Frame
+Processing file: Bunny Babe Basket_C3.png in subfolder: Frame
+Resized image saved: 800x800_png\Frame\Bunny Babe Basket_C2.png
+Resizing image: scriptImages\Frame\Bunny Babe Basket_C3.png to 800x800
+Resized image saved: 600x600_png\Frame\Bunny Babe Basket_C2.png
+Resizing image: scriptImages\Frame\Bunny Babe Basket_C3.png to 600x600
+Resized image saved: 600x600_png\Frame\Bunny Babe Basket_C3.png
+Resizing image: scriptImages\Frame\Bunny Babe Basket_C4.png to 600x600
+Processing file: Bunny Babe Basket_C4.png in subfolder: Frame
+Resized image saved: 800x800_png\Frame\Bunny Babe Basket_C3.png
+Resizing image: scriptImages\Frame\Bunny Babe Basket_C4.png to 800x800
+Resized image saved: 600x600_png\Frame\Bunny Babe Basket_C4.png
+Resizing image: scriptImages\Frame\Bunny Babe Basket_C5.png to 600x600
+Processing file: Bunny Babe Basket_C5.png in subfolder: Frame
+Resized image saved: 800x800_png\Frame\Bunny Babe Basket_C4.png
+Resizing image: scriptImages\Frame\Bunny Babe Basket_C5.png to 800x800
+Resized image saved: 600x600_png\Frame\Bunny Babe Basket_C5.png
+Resizing image: scriptImages\Frame\Bunny Babe Basket_L.png to 600x600
+Processing file: Bunny Babe Basket_L.png in subfolder: Frame
+Checking existence of PNG: compositeImages\Frame\Bunny Babe Basket.png
+Checking existence of JPG: 300x300_jpg\Frame\Bunny Babe Basket.jpg
+Files not found, processing: PNG - compositeImages\Frame\Bunny Babe Basket.png, JPG - 300x300_jpg\Frame\Bunny Babe Basket.jpg
+Resized image saved: 800x800_png\Frame\Bunny Babe Basket_C5.png
+Resizing image: scriptImages\Frame\Bunny Babe Basket_L.png to 800x800
+Saved: compositeImages\Frame\Bunny Babe Basket.png
+Saved: 300x300_jpg\Frame\Bunny Babe Basket.jpg
+Processing image group: Hupe Scouts Badge.png
+Resized image saved: 600x600_png\Frame\Bunny Babe Basket_L.png
+Resizing image: scriptImages\Frame\Hupe Scouts Badge.png to 600x600
+Resized image saved: 800x800_png\Frame\Bunny Babe Basket_L.png
+Resizing image: scriptImages\Frame\Hupe Scouts Badge.png to 800x800
+Processing file: Hupe Scouts Badge.png in subfolder: Frame
+Checking existence of PNG: compositeImages\Frame\Hupe Scouts Badge.png.png
+Checking existence of JPG: 300x300_jpg\Frame\Hupe Scouts Badge.png.jpg
+Files not found, processing: PNG - compositeImages\Frame\Hupe Scouts Badge.png.png, JPG - 300x300_jpg\Frame\Hupe Scouts Badge.png.jpg
+Saved: compositeImages\Frame\Hupe Scouts Badge.png.png
+Resized image saved: 600x600_png\Frame\Hupe Scouts Badge.png
+Resizing image: scriptImages\Hand\Delicious Dreamwater_C1.png to 600x600
+Saved: 300x300_jpg\Frame\Hupe Scouts Badge.png.jpg
+Processing image group: Delicious Dreamwater
+Resized image saved: 800x800_png\Frame\Hupe Scouts Badge.png
+Resizing image: scriptImages\Hand\Delicious Dreamwater_C1.png to 800x800
+Processing file: Delicious Dreamwater_C1.png in subfolder: Hand
+Resized image saved: 600x600_png\Hand\Delicious Dreamwater_C1.png
+Resizing image: scriptImages\Hand\Delicious Dreamwater_C2.png to 600x600
+Resized image saved: 800x800_png\Hand\Delicious Dreamwater_C1.png
+Resizing image: scriptImages\Hand\Delicious Dreamwater_C2.png to 800x800
+Processing file: Delicious Dreamwater_C2.png in subfolder: Hand
+Resized image saved: 800x800_png\Hand\Delicious Dreamwater_C2.png
+Resizing image: scriptImages\Hand\Delicious Dreamwater_C3.png to 800x800
+Resized image saved: 600x600_png\Hand\Delicious Dreamwater_C2.png
+Resizing image: scriptImages\Hand\Delicious Dreamwater_C3.png to 600x600
+Processing file: Delicious Dreamwater_C3.png in subfolder: Hand
+Resized image saved: 800x800_png\Hand\Delicious Dreamwater_C3.png
+Resizing image: scriptImages\Hand\Delicious Dreamwater_C4.png to 800x800
+Processing file: Delicious Dreamwater_C4.png in subfolder: Hand
+Resized image saved: 600x600_png\Hand\Delicious Dreamwater_C3.png
+Resizing image: scriptImages\Hand\Delicious Dreamwater_C4.png to 600x600
+Resized image saved: 800x800_png\Hand\Delicious Dreamwater_C4.png
+Resizing image: scriptImages\Hand\Delicious Dreamwater_L.png to 800x800
+Resized image saved: 600x600_png\Hand\Delicious Dreamwater_C4.png
+Resizing image: scriptImages\Hand\Delicious Dreamwater_L.png to 600x600
+Processing file: Delicious Dreamwater_L.png in subfolder: Hand
+Resized image saved: 800x800_png\Hand\Delicious Dreamwater_L.png
+Resizing image: scriptImages\Hand\Delicious Dreamwater_S.png to 800x800
+Processing file: Delicious Dreamwater_S.png in subfolder: Hand
+Checking existence of PNG: compositeImages\Hand\Delicious Dreamwater.png
+Checking existence of JPG: 300x300_jpg\Hand\Delicious Dreamwater.jpg
+Files not found, processing: PNG - compositeImages\Hand\Delicious Dreamwater.png, JPG - 300x300_jpg\Hand\Delicious Dreamwater.jpg
+Resized image saved: 600x600_png\Hand\Delicious Dreamwater_L.png
+Resizing image: scriptImages\Hand\Delicious Dreamwater_S.png to 600x600
+Saved: compositeImages\Hand\Delicious Dreamwater.png
+Resized image saved: 600x600_png\Hand\Delicious Dreamwater_S.png
+Resizing image: scriptImages\Hand\Tater Tot Tiller_C1.png to 600x600
+Saved: 300x300_jpg\Hand\Delicious Dreamwater.jpg
+Processing image group: Tater Tot Tiller
+Resized image saved: 800x800_png\Hand\Delicious Dreamwater_S.png
+Resizing image: scriptImages\Hand\Tater Tot Tiller_C1.png to 800x800
+Processing file: Tater Tot Tiller_C1.png in subfolder: Hand
+Resized image saved: 600x600_png\Hand\Tater Tot Tiller_C1.png
+Resizing image: scriptImages\Hand\Tater Tot Tiller_C2.png to 600x600
+Resized image saved: 800x800_png\Hand\Tater Tot Tiller_C1.png
+Resizing image: scriptImages\Hand\Tater Tot Tiller_C2.png to 800x800
+Processing file: Tater Tot Tiller_C2.png in subfolder: Hand
+Resized image saved: 800x800_png\Hand\Tater Tot Tiller_C2.png
+Resizing image: scriptImages\Hand\Tater Tot Tiller_L.png to 800x800
+Resized image saved: 600x600_png\Hand\Tater Tot Tiller_C2.png
+Resizing image: scriptImages\Hand\Tater Tot Tiller_L.png to 600x600
+Processing file: Tater Tot Tiller_L.png in subfolder: Hand
+Resized image saved: 800x800_png\Hand\Tater Tot Tiller_L.png
+Resizing image: scriptImages\Hand\Tater Tot Tiller_S.png to 800x800
+Processing file: Tater Tot Tiller_S.png in subfolder: Hand
+Checking existence of PNG: compositeImages\Hand\Tater Tot Tiller.png
+Checking existence of JPG: 300x300_jpg\Hand\Tater Tot Tiller.jpg
+Files not found, processing: PNG - compositeImages\Hand\Tater Tot Tiller.png, JPG - 300x300_jpg\Hand\Tater Tot Tiller.jpg
+Resized image saved: 600x600_png\Hand\Tater Tot Tiller_L.png
+Resizing image: scriptImages\Hand\Tater Tot Tiller_S.png to 600x600
+Saved: compositeImages\Hand\Tater Tot Tiller.png
+Resized image saved: 800x800_png\Hand\Tater Tot Tiller_S.png
+Resizing image: scriptImages\Hat\Baby Hornsworth_C1.png to 800x800
+Saved: 300x300_jpg\Hand\Tater Tot Tiller.jpg
+Processing image group: Baby Hornsworth
+Resized image saved: 600x600_png\Hand\Tater Tot Tiller_S.png
+Resizing image: scriptImages\Hat\Baby Hornsworth_C1.png to 600x600
+Processing file: Baby Hornsworth_C1.png in subfolder: Hat
+Processing file: Baby Hornsworth_C1.png in Hat
+Resized image saved: 800x800_png\Hat\Baby Hornsworth_C1.png
+Resizing image: scriptImages\Hat\Baby Hornsworth_C2.png to 800x800
+Processing file: Baby Hornsworth_C2.png in Hat
+Resized image saved: 600x600_png\Hat\Baby Hornsworth_C1.png
+Resizing image: scriptImages\Hat\Baby Hornsworth_C2.png to 600x600
+Processing file: Baby Hornsworth_C3.png in Hat
+Resized image saved: 800x800_png\Hat\Baby Hornsworth_C2.png
+Resizing image: scriptImages\Hat\Baby Hornsworth_C3.png to 800x800
+Resized image saved: 600x600_png\Hat\Baby Hornsworth_C2.png
+Resizing image: scriptImages\Hat\Baby Hornsworth_C3.png to 600x600
+Processing file: Baby Hornsworth_C4.png in Hat
+Resized image saved: 800x800_png\Hat\Baby Hornsworth_C3.png
+Resizing image: scriptImages\Hat\Baby Hornsworth_C4.png to 800x800
+Resized image saved: 600x600_png\Hat\Baby Hornsworth_C3.png
+Resizing image: scriptImages\Hat\Baby Hornsworth_C4.png to 600x600
+Processing file: Baby Hornsworth_L.png in Hat
+Resized image saved: 800x800_png\Hat\Baby Hornsworth_C4.png
+Resizing image: scriptImages\Hat\Baby Hornsworth_L.png to 800x800
+Resized image saved: 600x600_png\Hat\Baby Hornsworth_C4.png
+Resizing image: scriptImages\Hat\Baby Hornsworth_L.png to 600x600
+Resized image saved: 600x600_png\Hat\Baby Hornsworth_L.png
+Resizing image: scriptImages\Hat\BunComms Device_C1.png to 600x600
+Resized image saved: 800x800_png\Hat\Baby Hornsworth_L.png
+Resizing image: scriptImages\Hat\BunComms Device_C1.png to 800x800
+Processing file: BunComms Device_C1.png in Hat
+Processing file: BunComms Device_C2.png in Hat
+Resized image saved: 800x800_png\Hat\BunComms Device_C1.png
+Resizing image: scriptImages\Hat\BunComms Device_C2.png to 800x800
+Resized image saved: 600x600_png\Hat\BunComms Device_C1.png
+Resizing image: scriptImages\Hat\BunComms Device_C2.png to 600x600
+Processing file: BunComms Device_C3.png in Hat
+Resized image saved: 600x600_png\Hat\BunComms Device_C2.png
+Resizing image: scriptImages\Hat\BunComms Device_C3.png to 600x600
+Resized image saved: 800x800_png\Hat\BunComms Device_C2.png
+Resizing image: scriptImages\Hat\BunComms Device_C3.png to 800x800
+Processing file: BunComms Device_L.png in Hat
+Resized image saved: 600x600_png\Hat\BunComms Device_C3.png
+Resizing image: scriptImages\Hat\BunComms Device_L.png to 600x600
+Resized image saved: 800x800_png\Hat\BunComms Device_C3.png
+Resizing image: scriptImages\Hat\BunComms Device_L.png to 800x800
+Processing file: Hupe Scouts Headband_C1.png in Hat
+Resized image saved: 600x600_png\Hat\BunComms Device_L.png
+Resizing image: scriptImages\Hat\Hupe Scouts Headband_C1.png to 600x600
+Resized image saved: 800x800_png\Hat\BunComms Device_L.png
+Resizing image: scriptImages\Hat\Hupe Scouts Headband_C1.png to 800x800
+Processing file: Hupe Scouts Headband_C2.png in Hat
+Resized image saved: 600x600_png\Hat\Hupe Scouts Headband_C1.png
+Resizing image: scriptImages\Hat\Hupe Scouts Headband_C2.png to 600x600
+Resized image saved: 800x800_png\Hat\Hupe Scouts Headband_C1.png
+Resizing image: scriptImages\Hat\Hupe Scouts Headband_C2.png to 800x800
+Processing file: Hupe Scouts Headband_C3.png in Hat
+Resized image saved: 600x600_png\Hat\Hupe Scouts Headband_C2.png
+Resizing image: scriptImages\Hat\Hupe Scouts Headband_C3.png to 600x600
+Resized image saved: 800x800_png\Hat\Hupe Scouts Headband_C2.png
+Resizing image: scriptImages\Hat\Hupe Scouts Headband_C3.png to 800x800
+Processing file: Hupe Scouts Headband_C4.png in Hat
+Resized image saved: 600x600_png\Hat\Hupe Scouts Headband_C3.png
+Resizing image: scriptImages\Hat\Hupe Scouts Headband_C4.png to 600x600
+Processing file: Hupe Scouts Headband_L.png in Hat
+Resized image saved: 800x800_png\Hat\Hupe Scouts Headband_C3.png
+Resizing image: scriptImages\Hat\Hupe Scouts Headband_C4.png to 800x800
+Resized image saved: 600x600_png\Hat\Hupe Scouts Headband_C4.png
+Resizing image: scriptImages\Hat\Hupe Scouts Headband_L.png to 600x600
+Resized image saved: 800x800_png\Hat\Hupe Scouts Headband_C4.png
+Resizing image: scriptImages\Hat\Hupe Scouts Headband_L.png to 800x800
+Resized image saved: 600x600_png\Hat\Hupe Scouts Headband_L.png
+Resizing image: scriptImages\Mouth\Curious Carrot Munch_C1.png to 600x600
+Resized image saved: 800x800_png\Hat\Hupe Scouts Headband_L.png
+Resizing image: scriptImages\Mouth\Curious Carrot Munch_C1.png to 800x800
+Processing file: Baby Hornsworth_C2.png in subfolder: Hat
+Processing file: Baby Hornsworth_C1.png in Hat
+Processing file: Baby Hornsworth_C2.png in Hat
+Resized image saved: 600x600_png\Mouth\Curious Carrot Munch_C1.png
+Resizing image: scriptImages\Mouth\Curious Carrot Munch_C2.png to 600x600
+Resized image saved: 800x800_png\Mouth\Curious Carrot Munch_C1.png
+Resizing image: scriptImages\Mouth\Curious Carrot Munch_C2.png to 800x800
+Processing file: Baby Hornsworth_C3.png in Hat
+Processing file: Baby Hornsworth_C4.png in Hat
+Resized image saved: 600x600_png\Mouth\Curious Carrot Munch_C2.png
+Resizing image: scriptImages\Mouth\Curious Carrot Munch_C3.png to 600x600
+Resized image saved: 800x800_png\Mouth\Curious Carrot Munch_C2.png
+Resizing image: scriptImages\Mouth\Curious Carrot Munch_C3.png to 800x800
+Processing file: Baby Hornsworth_L.png in Hat
+Resized image saved: 800x800_png\Mouth\Curious Carrot Munch_C3.png
+Resizing image: scriptImages\Mouth\Curious Carrot Munch_L.png to 800x800
+Resized image saved: 600x600_png\Mouth\Curious Carrot Munch_C3.png
+Resizing image: scriptImages\Mouth\Curious Carrot Munch_L.png to 600x600
+Processing file: BunComms Device_C1.png in Hat
+Processing file: BunComms Device_C2.png in Hat
+Resized image saved: 800x800_png\Mouth\Curious Carrot Munch_L.png
+Resizing image: scriptImages\Outfit\Honest Work Overalls_C1.png to 800x800
+Resized image saved: 600x600_png\Mouth\Curious Carrot Munch_L.png
+Resizing image: scriptImages\Outfit\Honest Work Overalls_C1.png to 600x600
+Processing file: BunComms Device_C3.png in Hat
+Processing file: BunComms Device_L.png in Hat
+Resized image saved: 800x800_png\Outfit\Honest Work Overalls_C1.png
+Resizing image: scriptImages\Outfit\Honest Work Overalls_C2.png to 800x800
+Resized image saved: 600x600_png\Outfit\Honest Work Overalls_C1.png
+Resizing image: scriptImages\Outfit\Honest Work Overalls_C2.png to 600x600
+Resized image saved: 800x800_png\Outfit\Honest Work Overalls_C2.png
+Resizing image: scriptImages\Outfit\Honest Work Overalls_C3.png to 800x800
+Resized image saved: 600x600_png\Outfit\Honest Work Overalls_C2.png
+Resizing image: scriptImages\Outfit\Honest Work Overalls_C3.png to 600x600
+Processing file: Hupe Scouts Headband_C1.png in Hat
+Processing file: Hupe Scouts Headband_C2.png in Hat
+Resized image saved: 600x600_png\Outfit\Honest Work Overalls_C3.png
+Resizing image: scriptImages\Outfit\Honest Work Overalls_L.png to 600x600
+Resized image saved: 800x800_png\Outfit\Honest Work Overalls_C3.png
+Resizing image: scriptImages\Outfit\Honest Work Overalls_L.png to 800x800
+Processing file: Hupe Scouts Headband_C3.png in Hat
+Processing file: Hupe Scouts Headband_C4.png in Hat
+Resized image saved: 600x600_png\Outfit\Honest Work Overalls_L.png
+Resizing image: scriptImages\Outfit\Silky Dreams PJs_C1.png to 600x600
+Resized image saved: 800x800_png\Outfit\Honest Work Overalls_L.png
+Resizing image: scriptImages\Outfit\Silky Dreams PJs_C1.png to 800x800
+Processing file: Hupe Scouts Headband_L.png in Hat
+Resized image saved: 800x800_png\Outfit\Silky Dreams PJs_C1.png
+Resizing image: scriptImages\Outfit\Silky Dreams PJs_C2.png to 800x800
+Resized image saved: 600x600_png\Outfit\Silky Dreams PJs_C1.png
+Resizing image: scriptImages\Outfit\Silky Dreams PJs_C2.png to 600x600
+Processing file: Baby Hornsworth_C3.png in subfolder: Hat
+Processing file: Baby Hornsworth_C1.png in Hat
+Resized image saved: 800x800_png\Outfit\Silky Dreams PJs_C2.png
+Resizing image: scriptImages\Outfit\Silky Dreams PJs_C3.png to 800x800
+Resized image saved: 600x600_png\Outfit\Silky Dreams PJs_C2.png
+Resizing image: scriptImages\Outfit\Silky Dreams PJs_C3.png to 600x600
+Processing file: Baby Hornsworth_C2.png in Hat
+Processing file: Baby Hornsworth_C3.png in Hat
+Resized image saved: 800x800_png\Outfit\Silky Dreams PJs_C3.png
+Resizing image: scriptImages\Outfit\Silky Dreams PJs_C4.png to 800x800
+Resized image saved: 600x600_png\Outfit\Silky Dreams PJs_C3.png
+Resizing image: scriptImages\Outfit\Silky Dreams PJs_C4.png to 600x600
+Processing file: Baby Hornsworth_C4.png in Hat
+Processing file: Baby Hornsworth_L.png in Hat
+Resized image saved: 800x800_png\Outfit\Silky Dreams PJs_C4.png
+Resizing image: scriptImages\Outfit\Silky Dreams PJs_S.png to 800x800
+Resized image saved: 600x600_png\Outfit\Silky Dreams PJs_C4.png
+Resizing image: scriptImages\Outfit\Silky Dreams PJs_S.png to 600x600
+Processing file: BunComms Device_C1.png in Hat
+Resized image saved: 800x800_png\Outfit\Silky Dreams PJs_S.png
+Resizing image: scriptImages\Outfit\Swampstress_C1.png to 800x800
+Resized image saved: 600x600_png\Outfit\Silky Dreams PJs_S.png
+Resizing image: scriptImages\Outfit\Swampstress_C1.png to 600x600
+Processing file: BunComms Device_C2.png in Hat
+Resized image saved: 600x600_png\Outfit\Swampstress_C1.png
+Resizing image: scriptImages\Outfit\Swampstress_C2.png to 600x600
+Processing file: BunComms Device_C3.png in Hat
+Resized image saved: 800x800_png\Outfit\Swampstress_C1.png
+Resizing image: scriptImages\Outfit\Swampstress_C2.png to 800x800
+Processing file: BunComms Device_L.png in Hat
+Resized image saved: 600x600_png\Outfit\Swampstress_C2.png
+Resizing image: scriptImages\Outfit\Swampstress_C3.png to 600x600
+Resized image saved: 800x800_png\Outfit\Swampstress_C2.png
+Resizing image: scriptImages\Outfit\Swampstress_C3.png to 800x800
+Resized image saved: 800x800_png\Outfit\Swampstress_C3.png
+Resizing image: scriptImages\Outfit\Swampstress_C4.png to 800x800
+Resized image saved: 600x600_png\Outfit\Swampstress_C3.png
+Resizing image: scriptImages\Outfit\Swampstress_C4.png to 600x600
+Processing file: Hupe Scouts Headband_C1.png in Hat
+Processing file: Hupe Scouts Headband_C2.png in Hat
+Processing file: Hupe Scouts Headband_C3.png in Hat
+Resized image saved: 800x800_png\Outfit\Swampstress_C4.png
+Resizing image: scriptImages\Outfit\Swampstress_C5.png to 800x800
+Resized image saved: 600x600_png\Outfit\Swampstress_C4.png
+Resizing image: scriptImages\Outfit\Swampstress_C5.png to 600x600
+Processing file: Hupe Scouts Headband_C4.png in Hat
+Processing file: Hupe Scouts Headband_L.png in Hat
+Resized image saved: 800x800_png\Outfit\Swampstress_C5.png
+Resizing image: scriptImages\Outfit\Swampstress_L.png to 800x800
+Resized image saved: 600x600_png\Outfit\Swampstress_C5.png
+Resizing image: scriptImages\Outfit\Swampstress_L.png to 600x600
+Resized image saved: 600x600_png\Outfit\Swampstress_L.png
+Resized image saved: 800x800_png\Outfit\Swampstress_L.png
+Processing file: Baby Hornsworth_C4.png in subfolder: Hat
+Processing file: Baby Hornsworth_C1.png in Hat
+Processing file: Baby Hornsworth_C2.png in Hat
+Processing file: Baby Hornsworth_C3.png in Hat
+Processing file: Baby Hornsworth_C4.png in Hat
+Processing file: Baby Hornsworth_L.png in Hat
+Processing file: BunComms Device_C1.png in Hat
+Processing file: BunComms Device_C2.png in Hat
+Processing file: BunComms Device_C3.png in Hat
+Processing file: BunComms Device_L.png in Hat
+Processing file: Hupe Scouts Headband_C1.png in Hat
+Processing file: Hupe Scouts Headband_C2.png in Hat
+Processing file: Hupe Scouts Headband_C3.png in Hat
+Processing file: Hupe Scouts Headband_C4.png in Hat
+Processing file: Hupe Scouts Headband_L.png in Hat
+Processing file: Baby Hornsworth_L.png in subfolder: Hat
+Processing file: Baby Hornsworth_C1.png in Hat
+Processing file: Baby Hornsworth_C2.png in Hat
+Processing file: Baby Hornsworth_C3.png in Hat
+Processing file: Baby Hornsworth_C4.png in Hat
+Processing file: Baby Hornsworth_L.png in Hat
+Processing file: BunComms Device_C1.png in Hat
+Processing file: BunComms Device_C2.png in Hat
+Processing file: BunComms Device_C3.png in Hat
+Processing file: BunComms Device_L.png in Hat
+Processing file: Hupe Scouts Headband_C1.png in Hat
+Processing file: Hupe Scouts Headband_C2.png in Hat
+Processing file: Hupe Scouts Headband_C3.png in Hat
+Processing file: Hupe Scouts Headband_C4.png in Hat
+Processing file: Hupe Scouts Headband_L.png in Hat
+Checking existence of PNG: compositeImages\Hat\Baby Hornsworth.png
+Checking existence of JPG: 300x300_jpg\Hat\Baby Hornsworth.jpg
+Skipping existing files: PNG - compositeImages\Hat\Baby Hornsworth.png, JPG - 300x300_jpg\Hat\Baby Hornsworth.jpg
+Processing image group: BunComms Device
+Processing file: BunComms Device_C1.png in subfolder: Hat
+Processing file: Baby Hornsworth_C1.png in Hat
+Processing file: Baby Hornsworth_C2.png in Hat
+Processing file: Baby Hornsworth_C3.png in Hat
+Processing file: Baby Hornsworth_C4.png in Hat
+Processing file: Baby Hornsworth_L.png in Hat
+Processing file: BunComms Device_C1.png in Hat
+Processing file: BunComms Device_C2.png in Hat
+Processing file: BunComms Device_C3.png in Hat
+Processing file: BunComms Device_L.png in Hat
+Processing file: Hupe Scouts Headband_C1.png in Hat
+Processing file: Hupe Scouts Headband_C2.png in Hat
+Processing file: Hupe Scouts Headband_C3.png in Hat
+Processing file: Hupe Scouts Headband_C4.png in Hat
+Processing file: Hupe Scouts Headband_L.png in Hat
+Processing file: BunComms Device_C2.png in subfolder: Hat
+Processing file: Baby Hornsworth_C1.png in Hat
+Processing file: Baby Hornsworth_C2.png in Hat
+Processing file: Baby Hornsworth_C3.png in Hat
+Processing file: Baby Hornsworth_C4.png in Hat
+Processing file: Baby Hornsworth_L.png in Hat
+Processing file: BunComms Device_C1.png in Hat
+Processing file: BunComms Device_C2.png in Hat
+Processing file: BunComms Device_C3.png in Hat
+Processing file: BunComms Device_L.png in Hat
+Processing file: Hupe Scouts Headband_C1.png in Hat
+Processing file: Hupe Scouts Headband_C2.png in Hat
+Processing file: Hupe Scouts Headband_C3.png in Hat
+Processing file: Hupe Scouts Headband_C4.png in Hat
+Processing file: Hupe Scouts Headband_L.png in Hat
+Processing file: BunComms Device_C3.png in subfolder: Hat
+Processing file: Baby Hornsworth_C1.png in Hat
+Processing file: Baby Hornsworth_C2.png in Hat
+Processing file: Baby Hornsworth_C3.png in Hat
+Processing file: Baby Hornsworth_C4.png in Hat
+Processing file: Baby Hornsworth_L.png in Hat
+Processing file: BunComms Device_C1.png in Hat
+Processing file: BunComms Device_C2.png in Hat
+Processing file: BunComms Device_C3.png in Hat
+Processing file: BunComms Device_L.png in Hat
+Processing file: Hupe Scouts Headband_C1.png in Hat
+Processing file: Hupe Scouts Headband_C2.png in Hat
+Processing file: Hupe Scouts Headband_C3.png in Hat
+Processing file: Hupe Scouts Headband_C4.png in Hat
+Processing file: Hupe Scouts Headband_L.png in Hat
+Processing file: BunComms Device_L.png in subfolder: Hat
+Processing file: Baby Hornsworth_C1.png in Hat
+Processing file: Baby Hornsworth_C2.png in Hat
+Processing file: Baby Hornsworth_C3.png in Hat
+Processing file: Baby Hornsworth_C4.png in Hat
+Processing file: Baby Hornsworth_L.png in Hat
+Processing file: BunComms Device_C1.png in Hat
+Processing file: BunComms Device_C2.png in Hat
+Processing file: BunComms Device_C3.png in Hat
+Processing file: BunComms Device_L.png in Hat
+Processing file: Hupe Scouts Headband_C1.png in Hat
+Processing file: Hupe Scouts Headband_C2.png in Hat
+Processing file: Hupe Scouts Headband_C3.png in Hat
+Processing file: Hupe Scouts Headband_C4.png in Hat
+Processing file: Hupe Scouts Headband_L.png in Hat
+Checking existence of PNG: compositeImages\Hat\BunComms Device.png
+Checking existence of JPG: 300x300_jpg\Hat\BunComms Device.jpg
+Skipping existing files: PNG - compositeImages\Hat\BunComms Device.png, JPG - 300x300_jpg\Hat\BunComms Device.jpg
+Processing image group: Hupe Scouts Headband
+Processing file: Hupe Scouts Headband_C1.png in subfolder: Hat
+Processing file: Baby Hornsworth_C1.png in Hat
+Processing file: Baby Hornsworth_C2.png in Hat
+Processing file: Baby Hornsworth_C3.png in Hat
+Processing file: Baby Hornsworth_C4.png in Hat
+Processing file: Baby Hornsworth_L.png in Hat
+Processing file: BunComms Device_C1.png in Hat
+Processing file: BunComms Device_C2.png in Hat
+Processing file: BunComms Device_C3.png in Hat
+Processing file: BunComms Device_L.png in Hat
+Processing file: Hupe Scouts Headband_C1.png in Hat
+Processing file: Hupe Scouts Headband_C2.png in Hat
+Processing file: Hupe Scouts Headband_C3.png in Hat
+Processing file: Hupe Scouts Headband_C4.png in Hat
+Processing file: Hupe Scouts Headband_L.png in Hat
+Processing file: Hupe Scouts Headband_C2.png in subfolder: Hat
+Processing file: Baby Hornsworth_C1.png in Hat
+Processing file: Baby Hornsworth_C2.png in Hat
+Processing file: Baby Hornsworth_C3.png in Hat
+Processing file: Baby Hornsworth_C4.png in Hat
+Processing file: Baby Hornsworth_L.png in Hat
+Processing file: BunComms Device_C1.png in Hat
+Processing file: BunComms Device_C2.png in Hat
+Processing file: BunComms Device_C3.png in Hat
+Processing file: BunComms Device_L.png in Hat
+Processing file: Hupe Scouts Headband_C1.png in Hat
+Processing file: Hupe Scouts Headband_C2.png in Hat
+Processing file: Hupe Scouts Headband_C3.png in Hat
+Processing file: Hupe Scouts Headband_C4.png in Hat
+Processing file: Hupe Scouts Headband_L.png in Hat
+Processing file: Hupe Scouts Headband_C3.png in subfolder: Hat
+Processing file: Baby Hornsworth_C1.png in Hat
+Processing file: Baby Hornsworth_C2.png in Hat
+Processing file: Baby Hornsworth_C3.png in Hat
+Processing file: Baby Hornsworth_C4.png in Hat
+Processing file: Baby Hornsworth_L.png in Hat
+Processing file: BunComms Device_C1.png in Hat
+Processing file: BunComms Device_C2.png in Hat
+Processing file: BunComms Device_C3.png in Hat
+Processing file: BunComms Device_L.png in Hat
+Processing file: Hupe Scouts Headband_C1.png in Hat
+Processing file: Hupe Scouts Headband_C2.png in Hat
+Processing file: Hupe Scouts Headband_C3.png in Hat
+Processing file: Hupe Scouts Headband_C4.png in Hat
+Processing file: Hupe Scouts Headband_L.png in Hat
+Processing file: Hupe Scouts Headband_C4.png in subfolder: Hat
+Processing file: Baby Hornsworth_C1.png in Hat
+Processing file: Baby Hornsworth_C2.png in Hat
+Processing file: Baby Hornsworth_C3.png in Hat
+Processing file: Baby Hornsworth_C4.png in Hat
+Processing file: Baby Hornsworth_L.png in Hat
+Processing file: BunComms Device_C1.png in Hat
+Processing file: BunComms Device_C2.png in Hat
+Processing file: BunComms Device_C3.png in Hat
+Processing file: BunComms Device_L.png in Hat
+Processing file: Hupe Scouts Headband_C1.png in Hat
+Processing file: Hupe Scouts Headband_C2.png in Hat
+Processing file: Hupe Scouts Headband_C3.png in Hat
+Processing file: Hupe Scouts Headband_C4.png in Hat
+Processing file: Hupe Scouts Headband_L.png in Hat
+Processing file: Hupe Scouts Headband_L.png in subfolder: Hat
+Processing file: Baby Hornsworth_C1.png in Hat
+Processing file: Baby Hornsworth_C2.png in Hat
+Processing file: Baby Hornsworth_C3.png in Hat
+Processing file: Baby Hornsworth_C4.png in Hat
+Processing file: Baby Hornsworth_L.png in Hat
+Processing file: BunComms Device_C1.png in Hat
+Processing file: BunComms Device_C2.png in Hat
+Processing file: BunComms Device_C3.png in Hat
+Processing file: BunComms Device_L.png in Hat
+Processing file: Hupe Scouts Headband_C1.png in Hat
+Processing file: Hupe Scouts Headband_C2.png in Hat
+Processing file: Hupe Scouts Headband_C3.png in Hat
+Processing file: Hupe Scouts Headband_C4.png in Hat
+Processing file: Hupe Scouts Headband_L.png in Hat
+Checking existence of PNG: compositeImages\Hat\Hupe Scouts Headband.png
+Checking existence of JPG: 300x300_jpg\Hat\Hupe Scouts Headband.jpg
+Skipping existing files: PNG - compositeImages\Hat\Hupe Scouts Headband.png, JPG - 300x300_jpg\Hat\Hupe Scouts Headband.jpg
+Processing image group: Curious Carrot Munch
+Processing file: Curious Carrot Munch_C1.png in subfolder: Mouth
+Processing file: Curious Carrot Munch_C2.png in subfolder: Mouth
+Processing file: Curious Carrot Munch_C3.png in subfolder: Mouth
+Processing file: Curious Carrot Munch_L.png in subfolder: Mouth
+Checking existence of PNG: compositeImages\Mouth\Curious Carrot Munch.png
+Checking existence of JPG: 300x300_jpg\Mouth\Curious Carrot Munch.jpg
+Files not found, processing: PNG - compositeImages\Mouth\Curious Carrot Munch.png, JPG - 300x300_jpg\Mouth\Curious Carrot Munch.jpg
+Saved: compositeImages\Mouth\Curious Carrot Munch.png
+Saved: 300x300_jpg\Mouth\Curious Carrot Munch.jpg
+Processing image group: Honest Work Overalls
+Processing file: Honest Work Overalls_C1.png in subfolder: Outfit
+Processing file: Honest Work Overalls_C2.png in subfolder: Outfit
+Processing file: Honest Work Overalls_C3.png in subfolder: Outfit
+Processing file: Honest Work Overalls_L.png in subfolder: Outfit
+Checking existence of PNG: compositeImages\Outfit\Honest Work Overalls.png
+Checking existence of JPG: 300x300_jpg\Outfit\Honest Work Overalls.jpg
+Files not found, processing: PNG - compositeImages\Outfit\Honest Work Overalls.png, JPG - 300x300_jpg\Outfit\Honest Work Overalls.jpg
+Saved: compositeImages\Outfit\Honest Work Overalls.png
+Saved: 300x300_jpg\Outfit\Honest Work Overalls.jpg
+Processing image group: Silky Dreams PJs
+Processing file: Silky Dreams PJs_C1.png in subfolder: Outfit
+Processing file: Silky Dreams PJs_C2.png in subfolder: Outfit
+Processing file: Silky Dreams PJs_C3.png in subfolder: Outfit
+Processing file: Silky Dreams PJs_C4.png in subfolder: Outfit
+Processing file: Silky Dreams PJs_S.png in subfolder: Outfit
+Checking existence of PNG: compositeImages\Outfit\Silky Dreams PJs.png
+Checking existence of JPG: 300x300_jpg\Outfit\Silky Dreams PJs.jpg
+Files not found, processing: PNG - compositeImages\Outfit\Silky Dreams PJs.png, JPG - 300x300_jpg\Outfit\Silky Dreams PJs.jpg
+Saved: compositeImages\Outfit\Silky Dreams PJs.png
+Saved: 300x300_jpg\Outfit\Silky Dreams PJs.jpg
+Processing image group: Swampstress
+Processing file: Swampstress_C1.png in subfolder: Outfit
+Processing file: Swampstress_C2.png in subfolder: Outfit
+Processing file: Swampstress_C3.png in subfolder: Outfit
+Processing file: Swampstress_C4.png in subfolder: Outfit
+Processing file: Swampstress_C5.png in subfolder: Outfit
+Processing file: Swampstress_L.png in subfolder: Outfit
+Checking existence of PNG: compositeImages\Outfit\Swampstress.png
+Checking existence of JPG: 300x300_jpg\Outfit\Swampstress.jpg
+Files not found, processing: PNG - compositeImages\Outfit\Swampstress.png, JPG - 300x300_jpg\Outfit\Swampstress.jpg
+Saved: compositeImages\Outfit\Swampstress.png
+Saved: 300x300_jpg\Outfit\Swampstress.jpg
+Script started
+Subfolders found: Accessory, Background, Bodysuit, Colors, Extras, Eyebrows, Eyes, Face Sticker, Finished, Frame, Hair Style, Hand, Hat, Mouth, Outfit, Piercing, Tattoo, Undergarment
+Files found: 91
+Skipping already processed solid color: Dreamsicle.png
+Skipping already processed solid color: Picnic Day.png
+Solid colors RGB values saved to colors.json
+Skipping existing file: 800x800_png\Accessory\BunVenture Backpack_C1.png
+Skipping existing file: 800x800_png\Accessory\BunVenture Backpack_C2.png
+Skipping existing file: 800x800_png\Accessory\BunVenture Backpack_C3.png
+Skipping existing file: 800x800_png\Accessory\BunVenture Backpack_C4.png
+Skipping existing file: 800x800_png\Accessory\BunVenture Backpack_L.png
+Resizing image: scriptImages\Accessory\BunVenture Backpack_Strap_Left_C1.png to 800x800
+Skipping existing file: 600x600_png\Accessory\BunVenture Backpack_C1.png
+Skipping existing file: 600x600_png\Accessory\BunVenture Backpack_C2.png
+Skipping existing file: 600x600_png\Accessory\BunVenture Backpack_C3.png
+Skipping existing file: 600x600_png\Accessory\BunVenture Backpack_C4.png
+Skipping existing file: 600x600_png\Accessory\BunVenture Backpack_L.png
+Resizing image: scriptImages\Accessory\BunVenture Backpack_Strap_Left_C1.png to 600x600
+Skipping already processed solid color: Dreamsicle.png
+Skipping already processed solid color: Picnic Day.png
+Solid colors RGB values saved to colors.json
+Processing image group: BunVenture Backpack
+Resized image saved: 800x800_png\Accessory\BunVenture Backpack_Strap_Left_C1.png
+Resizing image: scriptImages\Accessory\BunVenture Backpack_Strap_Left_C2.png to 800x800
+Resized image saved: 600x600_png\Accessory\BunVenture Backpack_Strap_Left_C1.png
+Resizing image: scriptImages\Accessory\BunVenture Backpack_Strap_Left_C2.png to 600x600
+Processing file: BunVenture Backpack_C1.png in subfolder: Accessory
+Processing file: BunVenture Backpack_C2.png in subfolder: Accessory
+Resized image saved: 800x800_png\Accessory\BunVenture Backpack_Strap_Left_C2.png
+Resizing image: scriptImages\Accessory\BunVenture Backpack_Strap_Left_L.png to 800x800
+Resized image saved: 600x600_png\Accessory\BunVenture Backpack_Strap_Left_C2.png
+Resizing image: scriptImages\Accessory\BunVenture Backpack_Strap_Left_L.png to 600x600
+Processing file: BunVenture Backpack_C3.png in subfolder: Accessory
+Processing file: BunVenture Backpack_C4.png in subfolder: Accessory
+Resized image saved: 600x600_png\Accessory\BunVenture Backpack_Strap_Left_L.png
+Resizing image: scriptImages\Accessory\BunVenture Backpack_Strap_Right_C1.png to 600x600
+Resized image saved: 800x800_png\Accessory\BunVenture Backpack_Strap_Left_L.png
+Resizing image: scriptImages\Accessory\BunVenture Backpack_Strap_Right_C1.png to 800x800
+Processing file: BunVenture Backpack_Strap_Left_C1.png in subfolder: Accessory
+Processed and saved skin color trait: Gloopy Mr. Moar.png
+Resized image saved: 600x600_png\Accessory\BunVenture Backpack_Strap_Right_C1.png
+Resizing image: scriptImages\Accessory\BunVenture Backpack_Strap_Right_C2.png to 600x600
+Processing file: BunVenture Backpack_Strap_Left_C2.png in subfolder: Accessory
+Resized image saved: 800x800_png\Accessory\BunVenture Backpack_Strap_Right_C1.png
+Resizing image: scriptImages\Accessory\BunVenture Backpack_Strap_Right_C2.png to 800x800
+Processing file: BunVenture Backpack_Strap_Right_C1.png in subfolder: Accessory
+Processed skin color: Gloopy Mr. Moar.png
+Resized image saved: 600x600_png\Accessory\BunVenture Backpack_Strap_Right_C2.png
+Resizing image: scriptImages\Accessory\BunVenture Backpack_Strap_Right_L.png to 600x600
+Resized image saved: 800x800_png\Accessory\BunVenture Backpack_Strap_Right_C2.png
+Resizing image: scriptImages\Accessory\BunVenture Backpack_Strap_Right_L.png to 800x800
+Processing file: BunVenture Backpack_Strap_Right_C2.png in subfolder: Accessory
+Resized image saved: 600x600_png\Accessory\BunVenture Backpack_Strap_Right_L.png
+Skipping existing file: 600x600_png\Accessory\ButterPuff_C1.png
+Skipping existing file: 600x600_png\Accessory\ButterPuff_C2.png
+Skipping existing file: 600x600_png\Accessory\ButterPuff_C3.png
+Skipping existing file: 600x600_png\Accessory\ButterPuff_C4.png
+Skipping existing file: 600x600_png\Accessory\ButterPuff_C5.png
+Skipping existing file: 600x600_png\Accessory\ButterPuff_L.png
+Skipping existing file: 600x600_png\Accessory\Secret Agent Shades_C1.png
+Skipping existing file: 600x600_png\Accessory\Secret Agent Shades_C2.png
+Skipping existing file: 600x600_png\Accessory\Secret Agent Shades_L.png
+Skipping existing file: 600x600_png\Accessory\Secret Agent S_C1.png
+Skipping existing file: 600x600_png\Accessory\Secret Agent S_C2.png
+Skipping existing file: 600x600_png\Accessory\Secret Agent S_C3.png
+Skipping existing file: 600x600_png\Accessory\Secret Agent S_C4.png
+Skipping existing file: 600x600_png\Accessory\Secret Agent S_C5.png
+Skipping existing file: 600x600_png\Accessory\Secret Agent S_L.png
+Skipping existing file: 600x600_png\Accessory\Silly Mr. Moar_C1.png
+Skipping existing file: 600x600_png\Accessory\Silly Mr. Moar_L.png
+Skipping existing file: 600x600_png\Accessory\Snoozle_C1.png
+Skipping existing file: 600x600_png\Accessory\Snoozle_C2.png
+Skipping existing file: 600x600_png\Accessory\Snoozle_C3.png
+Skipping existing file: 600x600_png\Accessory\Snoozle_C4.png
+Skipping existing file: 600x600_png\Accessory\Snoozle_C5.png
+Skipping existing file: 600x600_png\Accessory\Snoozle_L.png
+Skipping existing file: 600x600_png\Background\Best Buns Camp Out_C1.png
+Skipping existing file: 600x600_png\Background\Best Buns Camp Out_C2.png
+Skipping existing file: 600x600_png\Background\Best Buns Camp Out_C3.png
+Skipping existing file: 600x600_png\Background\Best Buns Camp Out_C4.png
+Skipping existing file: 600x600_png\Background\Best Buns Camp Out_C5.png
+Skipping existing file: 600x600_png\Background\Best Buns Camp Out_L.png
+Skipping existing file: 600x600_png\Background\Hupe Scouts Background.png
+Skipping existing file: 600x600_png\Frame\Bunny Babe Basket_C1.png
+Skipping existing file: 600x600_png\Frame\Bunny Babe Basket_C2.png
+Skipping existing file: 600x600_png\Frame\Bunny Babe Basket_C3.png
+Skipping existing file: 600x600_png\Frame\Bunny Babe Basket_C4.png
+Skipping existing file: 600x600_png\Frame\Bunny Babe Basket_C5.png
+Skipping existing file: 600x600_png\Frame\Bunny Babe Basket_L.png
+Skipping existing file: 600x600_png\Frame\Hupe Scouts Badge.png
+Skipping existing file: 600x600_png\Hand\Delicious Dreamwater_C1.png
+Skipping existing file: 600x600_png\Hand\Delicious Dreamwater_C2.png
+Skipping existing file: 600x600_png\Hand\Delicious Dreamwater_C3.png
+Skipping existing file: 600x600_png\Hand\Delicious Dreamwater_C4.png
+Skipping existing file: 600x600_png\Hand\Delicious Dreamwater_L.png
+Skipping existing file: 600x600_png\Hand\Delicious Dreamwater_S.png
+Skipping existing file: 600x600_png\Hand\Tater Tot Tiller_C1.png
+Skipping existing file: 600x600_png\Hand\Tater Tot Tiller_C2.png
+Skipping existing file: 600x600_png\Hand\Tater Tot Tiller_L.png
+Skipping existing file: 600x600_png\Hand\Tater Tot Tiller_S.png
+Skipping existing file: 600x600_png\Hat\Baby Hornsworth_C1.png
+Skipping existing file: 600x600_png\Hat\Baby Hornsworth_C2.png
+Skipping existing file: 600x600_png\Hat\Baby Hornsworth_C3.png
+Skipping existing file: 600x600_png\Hat\Baby Hornsworth_C4.png
+Skipping existing file: 600x600_png\Hat\Baby Hornsworth_L.png
+Skipping existing file: 600x600_png\Hat\BunComms Device_C1.png
+Skipping existing file: 600x600_png\Hat\BunComms Device_C2.png
+Skipping existing file: 600x600_png\Hat\BunComms Device_C3.png
+Skipping existing file: 600x600_png\Hat\BunComms Device_L.png
+Skipping existing file: 600x600_png\Hat\Hupe Scouts Headband_C1.png
+Skipping existing file: 600x600_png\Hat\Hupe Scouts Headband_C2.png
+Skipping existing file: 600x600_png\Hat\Hupe Scouts Headband_C3.png
+Skipping existing file: 600x600_png\Hat\Hupe Scouts Headband_C4.png
+Skipping existing file: 600x600_png\Hat\Hupe Scouts Headband_L.png
+Skipping existing file: 600x600_png\Mouth\Curious Carrot Munch_C1.png
+Skipping existing file: 600x600_png\Mouth\Curious Carrot Munch_C2.png
+Skipping existing file: 600x600_png\Mouth\Curious Carrot Munch_C3.png
+Skipping existing file: 600x600_png\Mouth\Curious Carrot Munch_L.png
+Skipping existing file: 600x600_png\Outfit\Honest Work Overalls_C1.png
+Skipping existing file: 600x600_png\Outfit\Honest Work Overalls_C2.png
+Skipping existing file: 600x600_png\Outfit\Honest Work Overalls_C3.png
+Skipping existing file: 600x600_png\Outfit\Honest Work Overalls_L.png
+Skipping existing file: 600x600_png\Outfit\Silky Dreams PJs_C1.png
+Skipping existing file: 600x600_png\Outfit\Silky Dreams PJs_C2.png
+Skipping existing file: 600x600_png\Outfit\Silky Dreams PJs_C3.png
+Skipping existing file: 600x600_png\Outfit\Silky Dreams PJs_C4.png
+Skipping existing file: 600x600_png\Outfit\Silky Dreams PJs_S.png
+Skipping existing file: 600x600_png\Outfit\Swampstress_C1.png
+Skipping existing file: 600x600_png\Outfit\Swampstress_C2.png
+Skipping existing file: 600x600_png\Outfit\Swampstress_C3.png
+Skipping existing file: 600x600_png\Outfit\Swampstress_C4.png
+Skipping existing file: 600x600_png\Outfit\Swampstress_C5.png
+Skipping existing file: 600x600_png\Outfit\Swampstress_L.png
+Processing file: BunVenture Backpack_L.png in subfolder: Accessory
+Resized image saved: 800x800_png\Accessory\BunVenture Backpack_Strap_Right_L.png
+Skipping existing file: 800x800_png\Accessory\ButterPuff_C1.png
+Skipping existing file: 800x800_png\Accessory\ButterPuff_C2.png
+Skipping existing file: 800x800_png\Accessory\ButterPuff_C3.png
+Skipping existing file: 800x800_png\Accessory\ButterPuff_C4.png
+Skipping existing file: 800x800_png\Accessory\ButterPuff_C5.png
+Skipping existing file: 800x800_png\Accessory\ButterPuff_L.png
+Skipping existing file: 800x800_png\Accessory\Secret Agent Shades_C1.png
+Skipping existing file: 800x800_png\Accessory\Secret Agent Shades_C2.png
+Skipping existing file: 800x800_png\Accessory\Secret Agent Shades_L.png
+Skipping existing file: 800x800_png\Accessory\Secret Agent S_C1.png
+Skipping existing file: 800x800_png\Accessory\Secret Agent S_C2.png
+Skipping existing file: 800x800_png\Accessory\Secret Agent S_C3.png
+Skipping existing file: 800x800_png\Accessory\Secret Agent S_C4.png
+Skipping existing file: 800x800_png\Accessory\Secret Agent S_C5.png
+Skipping existing file: 800x800_png\Accessory\Secret Agent S_L.png
+Skipping existing file: 800x800_png\Accessory\Silly Mr. Moar_C1.png
+Skipping existing file: 800x800_png\Accessory\Silly Mr. Moar_L.png
+Skipping existing file: 800x800_png\Accessory\Snoozle_C1.png
+Skipping existing file: 800x800_png\Accessory\Snoozle_C2.png
+Skipping existing file: 800x800_png\Accessory\Snoozle_C3.png
+Skipping existing file: 800x800_png\Accessory\Snoozle_C4.png
+Skipping existing file: 800x800_png\Accessory\Snoozle_C5.png
+Skipping existing file: 800x800_png\Accessory\Snoozle_L.png
+Skipping existing file: 800x800_png\Background\Best Buns Camp Out_C1.png
+Skipping existing file: 800x800_png\Background\Best Buns Camp Out_C2.png
+Skipping existing file: 800x800_png\Background\Best Buns Camp Out_C3.png
+Skipping existing file: 800x800_png\Background\Best Buns Camp Out_C4.png
+Skipping existing file: 800x800_png\Background\Best Buns Camp Out_C5.png
+Skipping existing file: 800x800_png\Background\Best Buns Camp Out_L.png
+Skipping existing file: 800x800_png\Background\Hupe Scouts Background.png
+Skipping existing file: 800x800_png\Frame\Bunny Babe Basket_C1.png
+Skipping existing file: 800x800_png\Frame\Bunny Babe Basket_C2.png
+Skipping existing file: 800x800_png\Frame\Bunny Babe Basket_C3.png
+Skipping existing file: 800x800_png\Frame\Bunny Babe Basket_C4.png
+Skipping existing file: 800x800_png\Frame\Bunny Babe Basket_C5.png
+Skipping existing file: 800x800_png\Frame\Bunny Babe Basket_L.png
+Skipping existing file: 800x800_png\Frame\Hupe Scouts Badge.png
+Skipping existing file: 800x800_png\Hand\Delicious Dreamwater_C1.png
+Skipping existing file: 800x800_png\Hand\Delicious Dreamwater_C2.png
+Skipping existing file: 800x800_png\Hand\Delicious Dreamwater_C3.png
+Skipping existing file: 800x800_png\Hand\Delicious Dreamwater_C4.png
+Skipping existing file: 800x800_png\Hand\Delicious Dreamwater_L.png
+Skipping existing file: 800x800_png\Hand\Delicious Dreamwater_S.png
+Skipping existing file: 800x800_png\Hand\Tater Tot Tiller_C1.png
+Skipping existing file: 800x800_png\Hand\Tater Tot Tiller_C2.png
+Skipping existing file: 800x800_png\Hand\Tater Tot Tiller_L.png
+Skipping existing file: 800x800_png\Hand\Tater Tot Tiller_S.png
+Skipping existing file: 800x800_png\Hat\Baby Hornsworth_C1.png
+Skipping existing file: 800x800_png\Hat\Baby Hornsworth_C2.png
+Skipping existing file: 800x800_png\Hat\Baby Hornsworth_C3.png
+Skipping existing file: 800x800_png\Hat\Baby Hornsworth_C4.png
+Skipping existing file: 800x800_png\Hat\Baby Hornsworth_L.png
+Skipping existing file: 800x800_png\Hat\BunComms Device_C1.png
+Skipping existing file: 800x800_png\Hat\BunComms Device_C2.png
+Skipping existing file: 800x800_png\Hat\BunComms Device_C3.png
+Skipping existing file: 800x800_png\Hat\BunComms Device_L.png
+Skipping existing file: 800x800_png\Hat\Hupe Scouts Headband_C1.png
+Skipping existing file: 800x800_png\Hat\Hupe Scouts Headband_C2.png
+Skipping existing file: 800x800_png\Hat\Hupe Scouts Headband_C3.png
+Skipping existing file: 800x800_png\Hat\Hupe Scouts Headband_C4.png
+Skipping existing file: 800x800_png\Hat\Hupe Scouts Headband_L.png
+Skipping existing file: 800x800_png\Mouth\Curious Carrot Munch_C1.png
+Skipping existing file: 800x800_png\Mouth\Curious Carrot Munch_C2.png
+Skipping existing file: 800x800_png\Mouth\Curious Carrot Munch_C3.png
+Skipping existing file: 800x800_png\Mouth\Curious Carrot Munch_L.png
+Skipping existing file: 800x800_png\Outfit\Honest Work Overalls_C1.png
+Skipping existing file: 800x800_png\Outfit\Honest Work Overalls_C2.png
+Skipping existing file: 800x800_png\Outfit\Honest Work Overalls_C3.png
+Skipping existing file: 800x800_png\Outfit\Honest Work Overalls_L.png
+Skipping existing file: 800x800_png\Outfit\Silky Dreams PJs_C1.png
+Skipping existing file: 800x800_png\Outfit\Silky Dreams PJs_C2.png
+Skipping existing file: 800x800_png\Outfit\Silky Dreams PJs_C3.png
+Skipping existing file: 800x800_png\Outfit\Silky Dreams PJs_C4.png
+Skipping existing file: 800x800_png\Outfit\Silky Dreams PJs_S.png
+Skipping existing file: 800x800_png\Outfit\Swampstress_C1.png
+Skipping existing file: 800x800_png\Outfit\Swampstress_C2.png
+Skipping existing file: 800x800_png\Outfit\Swampstress_C3.png
+Skipping existing file: 800x800_png\Outfit\Swampstress_C4.png
+Skipping existing file: 800x800_png\Outfit\Swampstress_C5.png
+Skipping existing file: 800x800_png\Outfit\Swampstress_L.png
+Processing file: BunVenture Backpack_Strap_Left_L.png in subfolder: Accessory
+Processing file: BunVenture Backpack_Strap_Right_L.png in subfolder: Accessory
+Checking existence of PNG: compositeImages\Accessory\BunVenture Backpack.png
+Checking existence of JPG: 300x300_jpg\Accessory\BunVenture Backpack.jpg
+Skipping existing files: PNG - compositeImages\Accessory\BunVenture Backpack.png, JPG - 300x300_jpg\Accessory\BunVenture Backpack.jpg
+Processing image group: ButterPuff
+Processing file: ButterPuff_C1.png in subfolder: Accessory
+Processing file: ButterPuff_C2.png in subfolder: Accessory
+Processing file: ButterPuff_C3.png in subfolder: Accessory
+Processing file: ButterPuff_C4.png in subfolder: Accessory
+Processing file: ButterPuff_C5.png in subfolder: Accessory
+Processing file: ButterPuff_L.png in subfolder: Accessory
+Checking existence of PNG: compositeImages\Accessory\ButterPuff.png
+Checking existence of JPG: 300x300_jpg\Accessory\ButterPuff.jpg
+Skipping existing files: PNG - compositeImages\Accessory\ButterPuff.png, JPG - 300x300_jpg\Accessory\ButterPuff.jpg
+Processing image group: Secret Agent Shades
+Processing file: Secret Agent Shades_C1.png in subfolder: Accessory
+Processing file: Secret Agent Shades_C2.png in subfolder: Accessory
+Processing file: Secret Agent Shades_L.png in subfolder: Accessory
+Checking existence of PNG: compositeImages\Accessory\Secret Agent Shades.png
+Checking existence of JPG: 300x300_jpg\Accessory\Secret Agent Shades.jpg
+Skipping existing files: PNG - compositeImages\Accessory\Secret Agent Shades.png, JPG - 300x300_jpg\Accessory\Secret Agent Shades.jpg
+Processing image group: Secret Agent S
+Processing file: Secret Agent S_C1.png in subfolder: Accessory
+Processing file: Secret Agent S_C2.png in subfolder: Accessory
+Processing file: Secret Agent S_C3.png in subfolder: Accessory
+Processing file: Secret Agent S_C4.png in subfolder: Accessory
+Processing file: Secret Agent S_C5.png in subfolder: Accessory
+Processing file: Secret Agent S_L.png in subfolder: Accessory
+Checking existence of PNG: compositeImages\Accessory\Secret Agent S.png
+Checking existence of JPG: 300x300_jpg\Accessory\Secret Agent S.jpg
+Skipping existing files: PNG - compositeImages\Accessory\Secret Agent S.png, JPG - 300x300_jpg\Accessory\Secret Agent S.jpg
+Processing image group: Silly Mr. Moar
+Processing file: Silly Mr. Moar_C1.png in subfolder: Accessory
+Processing file: Silly Mr. Moar_L.png in subfolder: Accessory
+Checking existence of PNG: compositeImages\Accessory\Silly Mr. Moar.png
+Checking existence of JPG: 300x300_jpg\Accessory\Silly Mr. Moar.jpg
+Skipping existing files: PNG - compositeImages\Accessory\Silly Mr. Moar.png, JPG - 300x300_jpg\Accessory\Silly Mr. Moar.jpg
+Processing image group: Snoozle
+Processing file: Snoozle_C1.png in subfolder: Accessory
+Processing file: Snoozle_C2.png in subfolder: Accessory
+Processing file: Snoozle_C3.png in subfolder: Accessory
+Processing file: Snoozle_C4.png in subfolder: Accessory
+Processing file: Snoozle_C5.png in subfolder: Accessory
+Processing file: Snoozle_L.png in subfolder: Accessory
+Checking existence of PNG: compositeImages\Accessory\Snoozle.png
+Checking existence of JPG: 300x300_jpg\Accessory\Snoozle.jpg
+Skipping existing files: PNG - compositeImages\Accessory\Snoozle.png, JPG - 300x300_jpg\Accessory\Snoozle.jpg
+Processing image group: Best Buns Camp Out
+Processing file: Best Buns Camp Out_C1.png in subfolder: Background
+Processing file: Best Buns Camp Out_C2.png in subfolder: Background
+Processing file: Best Buns Camp Out_C3.png in subfolder: Background
+Processing file: Best Buns Camp Out_C4.png in subfolder: Background
+Processing file: Best Buns Camp Out_C5.png in subfolder: Background
+Processing file: Best Buns Camp Out_L.png in subfolder: Background
+Checking existence of PNG: compositeImages\Background\Best Buns Camp Out.png
+Checking existence of JPG: 300x300_jpg\Background\Best Buns Camp Out.jpg
+Skipping existing files: PNG - compositeImages\Background\Best Buns Camp Out.png, JPG - 300x300_jpg\Background\Best Buns Camp Out.jpg
+Processing image group: Hupe Scouts Background.png
+Processing file: Hupe Scouts Background.png in subfolder: Background
+Checking existence of PNG: compositeImages\Background\Hupe Scouts Background.png.png
+Checking existence of JPG: 300x300_jpg\Background\Hupe Scouts Background.png.jpg
+Skipping existing files: PNG - compositeImages\Background\Hupe Scouts Background.png.png, JPG - 300x300_jpg\Background\Hupe Scouts Background.png.jpg
+Processing image group: Bunny Babe Basket
+Processing file: Bunny Babe Basket_C1.png in subfolder: Frame
+Processing file: Bunny Babe Basket_C2.png in subfolder: Frame
+Processing file: Bunny Babe Basket_C3.png in subfolder: Frame
+Processing file: Bunny Babe Basket_C4.png in subfolder: Frame
+Processing file: Bunny Babe Basket_C5.png in subfolder: Frame
+Processing file: Bunny Babe Basket_L.png in subfolder: Frame
+Checking existence of PNG: compositeImages\Frame\Bunny Babe Basket.png
+Checking existence of JPG: 300x300_jpg\Frame\Bunny Babe Basket.jpg
+Skipping existing files: PNG - compositeImages\Frame\Bunny Babe Basket.png, JPG - 300x300_jpg\Frame\Bunny Babe Basket.jpg
+Processing image group: Hupe Scouts Badge.png
+Processing file: Hupe Scouts Badge.png in subfolder: Frame
+Checking existence of PNG: compositeImages\Frame\Hupe Scouts Badge.png.png
+Checking existence of JPG: 300x300_jpg\Frame\Hupe Scouts Badge.png.jpg
+Skipping existing files: PNG - compositeImages\Frame\Hupe Scouts Badge.png.png, JPG - 300x300_jpg\Frame\Hupe Scouts Badge.png.jpg
+Processing image group: Delicious Dreamwater
+Processing file: Delicious Dreamwater_C1.png in subfolder: Hand
+Processing file: Delicious Dreamwater_C2.png in subfolder: Hand
+Processing file: Delicious Dreamwater_C3.png in subfolder: Hand
+Processing file: Delicious Dreamwater_C4.png in subfolder: Hand
+Processing file: Delicious Dreamwater_L.png in subfolder: Hand
+Processing file: Delicious Dreamwater_S.png in subfolder: Hand
+Checking existence of PNG: compositeImages\Hand\Delicious Dreamwater.png
+Checking existence of JPG: 300x300_jpg\Hand\Delicious Dreamwater.jpg
+Skipping existing files: PNG - compositeImages\Hand\Delicious Dreamwater.png, JPG - 300x300_jpg\Hand\Delicious Dreamwater.jpg
+Processing image group: Tater Tot Tiller
+Processing file: Tater Tot Tiller_C1.png in subfolder: Hand
+Processing file: Tater Tot Tiller_C2.png in subfolder: Hand
+Processing file: Tater Tot Tiller_L.png in subfolder: Hand
+Processing file: Tater Tot Tiller_S.png in subfolder: Hand
+Checking existence of PNG: compositeImages\Hand\Tater Tot Tiller.png
+Checking existence of JPG: 300x300_jpg\Hand\Tater Tot Tiller.jpg
+Skipping existing files: PNG - compositeImages\Hand\Tater Tot Tiller.png, JPG - 300x300_jpg\Hand\Tater Tot Tiller.jpg
+Processing image group: Baby Hornsworth
+Processing file: Baby Hornsworth_C1.png in subfolder: Hat
+Processing file: Baby Hornsworth_C1.png in Hat
+Processing file: Baby Hornsworth_C2.png in Hat
+Processing file: Baby Hornsworth_C3.png in Hat
+Processing file: Baby Hornsworth_C4.png in Hat
+Processing file: Baby Hornsworth_L.png in Hat
+Processing file: BunComms Device_C1.png in Hat
+Processing file: BunComms Device_C2.png in Hat
+Processing file: BunComms Device_C3.png in Hat
+Processing file: BunComms Device_L.png in Hat
+Processing file: Hupe Scouts Headband_C1.png in Hat
+Processing file: Hupe Scouts Headband_C2.png in Hat
+Processing file: Hupe Scouts Headband_C3.png in Hat
+Processing file: Hupe Scouts Headband_C4.png in Hat
+Processing file: Hupe Scouts Headband_L.png in Hat
+Processing file: Baby Hornsworth_C2.png in subfolder: Hat
+Processing file: Baby Hornsworth_C1.png in Hat
+Processing file: Baby Hornsworth_C2.png in Hat
+Processing file: Baby Hornsworth_C3.png in Hat
+Processing file: Baby Hornsworth_C4.png in Hat
+Processing file: Baby Hornsworth_L.png in Hat
+Processing file: BunComms Device_C1.png in Hat
+Processing file: BunComms Device_C2.png in Hat
+Processing file: BunComms Device_C3.png in Hat
+Processing file: BunComms Device_L.png in Hat
+Processing file: Hupe Scouts Headband_C1.png in Hat
+Processing file: Hupe Scouts Headband_C2.png in Hat
+Processing file: Hupe Scouts Headband_C3.png in Hat
+Processing file: Hupe Scouts Headband_C4.png in Hat
+Processing file: Hupe Scouts Headband_L.png in Hat
+Processing file: Baby Hornsworth_C3.png in subfolder: Hat
+Processing file: Baby Hornsworth_C1.png in Hat
+Processing file: Baby Hornsworth_C2.png in Hat
+Processing file: Baby Hornsworth_C3.png in Hat
+Processing file: Baby Hornsworth_C4.png in Hat
+Processing file: Baby Hornsworth_L.png in Hat
+Processing file: BunComms Device_C1.png in Hat
+Processing file: BunComms Device_C2.png in Hat
+Processing file: BunComms Device_C3.png in Hat
+Processing file: BunComms Device_L.png in Hat
+Processing file: Hupe Scouts Headband_C1.png in Hat
+Processing file: Hupe Scouts Headband_C2.png in Hat
+Processing file: Hupe Scouts Headband_C3.png in Hat
+Processing file: Hupe Scouts Headband_C4.png in Hat
+Processing file: Hupe Scouts Headband_L.png in Hat
+Processing file: Baby Hornsworth_C4.png in subfolder: Hat
+Processing file: Baby Hornsworth_C1.png in Hat
+Processing file: Baby Hornsworth_C2.png in Hat
+Processing file: Baby Hornsworth_C3.png in Hat
+Processing file: Baby Hornsworth_C4.png in Hat
+Processing file: Baby Hornsworth_L.png in Hat
+Processing file: BunComms Device_C1.png in Hat
+Processing file: BunComms Device_C2.png in Hat
+Processing file: BunComms Device_C3.png in Hat
+Processing file: BunComms Device_L.png in Hat
+Processing file: Hupe Scouts Headband_C1.png in Hat
+Processing file: Hupe Scouts Headband_C2.png in Hat
+Processing file: Hupe Scouts Headband_C3.png in Hat
+Processing file: Hupe Scouts Headband_C4.png in Hat
+Processing file: Hupe Scouts Headband_L.png in Hat
+Processing file: Baby Hornsworth_L.png in subfolder: Hat
+Processing file: Baby Hornsworth_C1.png in Hat
+Processing file: Baby Hornsworth_C2.png in Hat
+Processing file: Baby Hornsworth_C3.png in Hat
+Processing file: Baby Hornsworth_C4.png in Hat
+Processing file: Baby Hornsworth_L.png in Hat
+Processing file: BunComms Device_C1.png in Hat
+Processing file: BunComms Device_C2.png in Hat
+Processing file: BunComms Device_C3.png in Hat
+Processing file: BunComms Device_L.png in Hat
+Processing file: Hupe Scouts Headband_C1.png in Hat
+Processing file: Hupe Scouts Headband_C2.png in Hat
+Processing file: Hupe Scouts Headband_C3.png in Hat
+Processing file: Hupe Scouts Headband_C4.png in Hat
+Processing file: Hupe Scouts Headband_L.png in Hat
+Checking existence of PNG: compositeImages\Hat\Baby Hornsworth.png
+Checking existence of JPG: 300x300_jpg\Hat\Baby Hornsworth.jpg
+Skipping existing files: PNG - compositeImages\Hat\Baby Hornsworth.png, JPG - 300x300_jpg\Hat\Baby Hornsworth.jpg
+Processing image group: BunComms Device
+Processing file: BunComms Device_C1.png in subfolder: Hat
+Processing file: Baby Hornsworth_C1.png in Hat
+Processing file: Baby Hornsworth_C2.png in Hat
+Processing file: Baby Hornsworth_C3.png in Hat
+Processing file: Baby Hornsworth_C4.png in Hat
+Processing file: Baby Hornsworth_L.png in Hat
+Processing file: BunComms Device_C1.png in Hat
+Processing file: BunComms Device_C2.png in Hat
+Processing file: BunComms Device_C3.png in Hat
+Processing file: BunComms Device_L.png in Hat
+Processing file: Hupe Scouts Headband_C1.png in Hat
+Processing file: Hupe Scouts Headband_C2.png in Hat
+Processing file: Hupe Scouts Headband_C3.png in Hat
+Processing file: Hupe Scouts Headband_C4.png in Hat
+Processing file: Hupe Scouts Headband_L.png in Hat
+Processing file: BunComms Device_C2.png in subfolder: Hat
+Processing file: Baby Hornsworth_C1.png in Hat
+Processing file: Baby Hornsworth_C2.png in Hat
+Processing file: Baby Hornsworth_C3.png in Hat
+Processing file: Baby Hornsworth_C4.png in Hat
+Processing file: Baby Hornsworth_L.png in Hat
+Processing file: BunComms Device_C1.png in Hat
+Processing file: BunComms Device_C2.png in Hat
+Processing file: BunComms Device_C3.png in Hat
+Processing file: BunComms Device_L.png in Hat
+Processing file: Hupe Scouts Headband_C1.png in Hat
+Processing file: Hupe Scouts Headband_C2.png in Hat
+Processing file: Hupe Scouts Headband_C3.png in Hat
+Processing file: Hupe Scouts Headband_C4.png in Hat
+Processing file: Hupe Scouts Headband_L.png in Hat
+Processing file: BunComms Device_C3.png in subfolder: Hat
+Processing file: Baby Hornsworth_C1.png in Hat
+Processing file: Baby Hornsworth_C2.png in Hat
+Processing file: Baby Hornsworth_C3.png in Hat
+Processing file: Baby Hornsworth_C4.png in Hat
+Processing file: Baby Hornsworth_L.png in Hat
+Processing file: BunComms Device_C1.png in Hat
+Processing file: BunComms Device_C2.png in Hat
+Processing file: BunComms Device_C3.png in Hat
+Processing file: BunComms Device_L.png in Hat
+Processing file: Hupe Scouts Headband_C1.png in Hat
+Processing file: Hupe Scouts Headband_C2.png in Hat
+Processing file: Hupe Scouts Headband_C3.png in Hat
+Processing file: Hupe Scouts Headband_C4.png in Hat
+Processing file: Hupe Scouts Headband_L.png in Hat
+Processing file: BunComms Device_L.png in subfolder: Hat
+Processing file: Baby Hornsworth_C1.png in Hat
+Processing file: Baby Hornsworth_C2.png in Hat
+Processing file: Baby Hornsworth_C3.png in Hat
+Processing file: Baby Hornsworth_C4.png in Hat
+Processing file: Baby Hornsworth_L.png in Hat
+Processing file: BunComms Device_C1.png in Hat
+Processing file: BunComms Device_C2.png in Hat
+Processing file: BunComms Device_C3.png in Hat
+Processing file: BunComms Device_L.png in Hat
+Processing file: Hupe Scouts Headband_C1.png in Hat
+Processing file: Hupe Scouts Headband_C2.png in Hat
+Processing file: Hupe Scouts Headband_C3.png in Hat
+Processing file: Hupe Scouts Headband_C4.png in Hat
+Processing file: Hupe Scouts Headband_L.png in Hat
+Checking existence of PNG: compositeImages\Hat\BunComms Device.png
+Checking existence of JPG: 300x300_jpg\Hat\BunComms Device.jpg
+Skipping existing files: PNG - compositeImages\Hat\BunComms Device.png, JPG - 300x300_jpg\Hat\BunComms Device.jpg
+Processing image group: Hupe Scouts Headband
+Processing file: Hupe Scouts Headband_C1.png in subfolder: Hat
+Processing file: Baby Hornsworth_C1.png in Hat
+Processing file: Baby Hornsworth_C2.png in Hat
+Processing file: Baby Hornsworth_C3.png in Hat
+Processing file: Baby Hornsworth_C4.png in Hat
+Processing file: Baby Hornsworth_L.png in Hat
+Processing file: BunComms Device_C1.png in Hat
+Processing file: BunComms Device_C2.png in Hat
+Processing file: BunComms Device_C3.png in Hat
+Processing file: BunComms Device_L.png in Hat
+Processing file: Hupe Scouts Headband_C1.png in Hat
+Processing file: Hupe Scouts Headband_C2.png in Hat
+Processing file: Hupe Scouts Headband_C3.png in Hat
+Processing file: Hupe Scouts Headband_C4.png in Hat
+Processing file: Hupe Scouts Headband_L.png in Hat
+Processing file: Hupe Scouts Headband_C2.png in subfolder: Hat
+Processing file: Baby Hornsworth_C1.png in Hat
+Processing file: Baby Hornsworth_C2.png in Hat
+Processing file: Baby Hornsworth_C3.png in Hat
+Processing file: Baby Hornsworth_C4.png in Hat
+Processing file: Baby Hornsworth_L.png in Hat
+Processing file: BunComms Device_C1.png in Hat
+Processing file: BunComms Device_C2.png in Hat
+Processing file: BunComms Device_C3.png in Hat
+Processing file: BunComms Device_L.png in Hat
+Processing file: Hupe Scouts Headband_C1.png in Hat
+Processing file: Hupe Scouts Headband_C2.png in Hat
+Processing file: Hupe Scouts Headband_C3.png in Hat
+Processing file: Hupe Scouts Headband_C4.png in Hat
+Processing file: Hupe Scouts Headband_L.png in Hat
+Processing file: Hupe Scouts Headband_C3.png in subfolder: Hat
+Processing file: Baby Hornsworth_C1.png in Hat
+Processing file: Baby Hornsworth_C2.png in Hat
+Processing file: Baby Hornsworth_C3.png in Hat
+Processing file: Baby Hornsworth_C4.png in Hat
+Processing file: Baby Hornsworth_L.png in Hat
+Processing file: BunComms Device_C1.png in Hat
+Processing file: BunComms Device_C2.png in Hat
+Processing file: BunComms Device_C3.png in Hat
+Processing file: BunComms Device_L.png in Hat
+Processing file: Hupe Scouts Headband_C1.png in Hat
+Processing file: Hupe Scouts Headband_C2.png in Hat
+Processing file: Hupe Scouts Headband_C3.png in Hat
+Processing file: Hupe Scouts Headband_C4.png in Hat
+Processing file: Hupe Scouts Headband_L.png in Hat
+Processing file: Hupe Scouts Headband_C4.png in subfolder: Hat
+Processing file: Baby Hornsworth_C1.png in Hat
+Processing file: Baby Hornsworth_C2.png in Hat
+Processing file: Baby Hornsworth_C3.png in Hat
+Processing file: Baby Hornsworth_C4.png in Hat
+Processing file: Baby Hornsworth_L.png in Hat
+Processing file: BunComms Device_C1.png in Hat
+Processing file: BunComms Device_C2.png in Hat
+Processing file: BunComms Device_C3.png in Hat
+Processing file: BunComms Device_L.png in Hat
+Processing file: Hupe Scouts Headband_C1.png in Hat
+Processing file: Hupe Scouts Headband_C2.png in Hat
+Processing file: Hupe Scouts Headband_C3.png in Hat
+Processing file: Hupe Scouts Headband_C4.png in Hat
+Processing file: Hupe Scouts Headband_L.png in Hat
+Processing file: Hupe Scouts Headband_L.png in subfolder: Hat
+Processing file: Baby Hornsworth_C1.png in Hat
+Processing file: Baby Hornsworth_C2.png in Hat
+Processing file: Baby Hornsworth_C3.png in Hat
+Processing file: Baby Hornsworth_C4.png in Hat
+Processing file: Baby Hornsworth_L.png in Hat
+Processing file: BunComms Device_C1.png in Hat
+Processing file: BunComms Device_C2.png in Hat
+Processing file: BunComms Device_C3.png in Hat
+Processing file: BunComms Device_L.png in Hat
+Processing file: Hupe Scouts Headband_C1.png in Hat
+Processing file: Hupe Scouts Headband_C2.png in Hat
+Processing file: Hupe Scouts Headband_C3.png in Hat
+Processing file: Hupe Scouts Headband_C4.png in Hat
+Processing file: Hupe Scouts Headband_L.png in Hat
+Checking existence of PNG: compositeImages\Hat\Hupe Scouts Headband.png
+Checking existence of JPG: 300x300_jpg\Hat\Hupe Scouts Headband.jpg
+Skipping existing files: PNG - compositeImages\Hat\Hupe Scouts Headband.png, JPG - 300x300_jpg\Hat\Hupe Scouts Headband.jpg
+Processing image group: Curious Carrot Munch
+Processing file: Curious Carrot Munch_C1.png in subfolder: Mouth
+Processing file: Curious Carrot Munch_C2.png in subfolder: Mouth
+Processing file: Curious Carrot Munch_C3.png in subfolder: Mouth
+Processing file: Curious Carrot Munch_L.png in subfolder: Mouth
+Checking existence of PNG: compositeImages\Mouth\Curious Carrot Munch.png
+Checking existence of JPG: 300x300_jpg\Mouth\Curious Carrot Munch.jpg
+Skipping existing files: PNG - compositeImages\Mouth\Curious Carrot Munch.png, JPG - 300x300_jpg\Mouth\Curious Carrot Munch.jpg
+Processing image group: Honest Work Overalls
+Processing file: Honest Work Overalls_C1.png in subfolder: Outfit
+Processing file: Honest Work Overalls_C2.png in subfolder: Outfit
+Processing file: Honest Work Overalls_C3.png in subfolder: Outfit
+Processing file: Honest Work Overalls_L.png in subfolder: Outfit
+Checking existence of PNG: compositeImages\Outfit\Honest Work Overalls.png
+Checking existence of JPG: 300x300_jpg\Outfit\Honest Work Overalls.jpg
+Skipping existing files: PNG - compositeImages\Outfit\Honest Work Overalls.png, JPG - 300x300_jpg\Outfit\Honest Work Overalls.jpg
+Processing image group: Silky Dreams PJs
+Processing file: Silky Dreams PJs_C1.png in subfolder: Outfit
+Processing file: Silky Dreams PJs_C2.png in subfolder: Outfit
+Processing file: Silky Dreams PJs_C3.png in subfolder: Outfit
+Processing file: Silky Dreams PJs_C4.png in subfolder: Outfit
+Processing file: Silky Dreams PJs_S.png in subfolder: Outfit
+Checking existence of PNG: compositeImages\Outfit\Silky Dreams PJs.png
+Checking existence of JPG: 300x300_jpg\Outfit\Silky Dreams PJs.jpg
+Skipping existing files: PNG - compositeImages\Outfit\Silky Dreams PJs.png, JPG - 300x300_jpg\Outfit\Silky Dreams PJs.jpg
+Processing image group: Swampstress
+Processing file: Swampstress_C1.png in subfolder: Outfit
+Processing file: Swampstress_C2.png in subfolder: Outfit
+Processing file: Swampstress_C3.png in subfolder: Outfit
+Processing file: Swampstress_C4.png in subfolder: Outfit
+Processing file: Swampstress_C5.png in subfolder: Outfit
+Processing file: Swampstress_L.png in subfolder: Outfit
+Checking existence of PNG: compositeImages\Outfit\Swampstress.png
+Checking existence of JPG: 300x300_jpg\Outfit\Swampstress.jpg
+Skipping existing files: PNG - compositeImages\Outfit\Swampstress.png, JPG - 300x300_jpg\Outfit\Swampstress.jpg
+Script started
+Subfolders found: Accessory, Background, Bodysuit, Colors, Extras, Eyebrows, Eyes, Face Sticker, Finished, Frame, Hair Style, Hand, Hat, Mouth, Outfit, Piercing, Tattoo, Undergarment
+Files found: 3
+Solid colors RGB values saved to colors.json
+Resizing image: scriptImages\Accessory\BunVenture Backpack_Strap_C1.png to 800x800
+Resizing image: scriptImages\Accessory\BunVenture Backpack_Strap_C1.png to 600x600
+Solid colors RGB values saved to colors.json
+Processing image group: BunVenture Backpack
+Processing file: BunVenture Backpack_Strap_C1.png in subfolder: Accessory
+Resized image saved: 600x600_png\Accessory\BunVenture Backpack_Strap_C1.png
+Resizing image: scriptImages\Accessory\BunVenture Backpack_Strap_C2.png to 600x600
+Resized image saved: 800x800_png\Accessory\BunVenture Backpack_Strap_C1.png
+Resizing image: scriptImages\Accessory\BunVenture Backpack_Strap_C2.png to 800x800
+Processing file: BunVenture Backpack_Strap_C2.png in subfolder: Accessory
+Resized image saved: 600x600_png\Accessory\BunVenture Backpack_Strap_C2.png
+Resizing image: scriptImages\Accessory\BunVenture Backpack_Strap_L.png to 600x600
+Resized image saved: 800x800_png\Accessory\BunVenture Backpack_Strap_C2.png
+Resizing image: scriptImages\Accessory\BunVenture Backpack_Strap_L.png to 800x800
+Processing file: BunVenture Backpack_Strap_L.png in subfolder: Accessory
+Checking existence of PNG: compositeImages\Accessory\BunVenture Backpack.png
+Checking existence of JPG: 300x300_jpg\Accessory\BunVenture Backpack.jpg
+Skipping existing files: PNG - compositeImages\Accessory\BunVenture Backpack.png, JPG - 300x300_jpg\Accessory\BunVenture Backpack.jpg
+Resized image saved: 600x600_png\Accessory\BunVenture Backpack_Strap_L.png
+Resized image saved: 800x800_png\Accessory\BunVenture Backpack_Strap_L.png
+Script started
+Subfolders found: Accessory, Background, Bodysuit, Colors, Extras, Eyebrows, Eyes, Face Sticker, Finished, Frame, Hair Style, Hand, Hat, Mouth, Outfit, Piercing, Tattoo, Undergarment
+Files found: 3
+Solid colors RGB values saved to colors.json
+Resizing image: scriptImages\Accessory\AAAAAA_C1.png to 800x800
+Resizing image: scriptImages\Accessory\AAAAAA_C1.png to 600x600
+Solid colors RGB values saved to colors.json
+Processing image group: AAAAAA
+Resized image saved: 600x600_png\Accessory\AAAAAA_C1.png
+Resizing image: scriptImages\Accessory\AAAAAA_C2.png to 600x600
+Resized image saved: 800x800_png\Accessory\AAAAAA_C1.png
+Resizing image: scriptImages\Accessory\AAAAAA_C2.png to 800x800
+Processing file: AAAAAA_C1.png in subfolder: Accessory
+Processing file: AAAAAA_C2.png in subfolder: Accessory
+Resized image saved: 600x600_png\Accessory\AAAAAA_C2.png
+Resizing image: scriptImages\Accessory\AAAAAA_L.png to 600x600
+Resized image saved: 800x800_png\Accessory\AAAAAA_C2.png
+Resizing image: scriptImages\Accessory\AAAAAA_L.png to 800x800
+Processing file: AAAAAA_L.png in subfolder: Accessory
+Checking existence of PNG: compositeImages\Accessory\AAAAAA.png
+Checking existence of JPG: 300x300_jpg\Accessory\AAAAAA.jpg
+Files not found, processing: PNG - compositeImages\Accessory\AAAAAA.png, JPG - 300x300_jpg\Accessory\AAAAAA.jpg
+Saved: compositeImages\Accessory\AAAAAA.png
+Resized image saved: 600x600_png\Accessory\AAAAAA_L.png
+Resized image saved: 800x800_png\Accessory\AAAAAA_L.png
+Saved: 300x300_jpg\Accessory\AAAAAA.jpg
+Script started
+Subfolders found: Accessory, Background, Bodysuit, Colors, Extras, Eyebrows, Eyes, Face Sticker, Finished, Frame, Hair Style, Hand, Hat, Mouth, Outfit, Piercing, Tattoo, Undergarment
+Files found: 6
+Solid colors RGB values saved to colors.json
+Skipping existing file: 800x800_png\Accessory\AAAAAA_C1.png
+Skipping existing file: 800x800_png\Accessory\AAAAAA_C2.png
+Skipping existing file: 800x800_png\Accessory\AAAAAA_L.png
+Resizing image: scriptImages\Accessory\BBBBBB_C1.png to 800x800
+Skipping existing file: 600x600_png\Accessory\AAAAAA_C1.png
+Skipping existing file: 600x600_png\Accessory\AAAAAA_C2.png
+Skipping existing file: 600x600_png\Accessory\AAAAAA_L.png
+Resizing image: scriptImages\Accessory\BBBBBB_C1.png to 600x600
+Solid colors RGB values saved to colors.json
+Processing image group: AAAAAA
+Processing file: AAAAAA_C1.png in subfolder: Accessory
+Resized image saved: 600x600_png\Accessory\BBBBBB_C1.png
+Resizing image: scriptImages\Accessory\BBBBBB_C2.png to 600x600
+Resized image saved: 800x800_png\Accessory\BBBBBB_C1.png
+Resizing image: scriptImages\Accessory\BBBBBB_C2.png to 800x800
+Processing file: AAAAAA_C2.png in subfolder: Accessory
+Processing file: AAAAAA_L.png in subfolder: Accessory
+Checking existence of PNG: compositeImages\Accessory\AAAAAA.png
+Checking existence of JPG: 300x300_jpg\Accessory\AAAAAA.jpg
+Skipping existing files: PNG - compositeImages\Accessory\AAAAAA.png, JPG - 300x300_jpg\Accessory\AAAAAA.jpg
+Processing image group: BBBBBB
+Resized image saved: 800x800_png\Accessory\BBBBBB_C2.png
+Resizing image: scriptImages\Accessory\BBBBBB_L.png to 800x800
+Resized image saved: 600x600_png\Accessory\BBBBBB_C2.png
+Resizing image: scriptImages\Accessory\BBBBBB_L.png to 600x600
+Processing file: BBBBBB_C1.png in subfolder: Accessory
+Processing file: BBBBBB_C2.png in subfolder: Accessory
+Resized image saved: 600x600_png\Accessory\BBBBBB_L.png
+Resized image saved: 800x800_png\Accessory\BBBBBB_L.png
+Processing file: BBBBBB_L.png in subfolder: Accessory
+Checking existence of PNG: compositeImages\Accessory\BBBBBB.png
+Checking existence of JPG: 300x300_jpg\Accessory\BBBBBB.jpg
+Files not found, processing: PNG - compositeImages\Accessory\BBBBBB.png, JPG - 300x300_jpg\Accessory\BBBBBB.jpg
+Saved: compositeImages\Accessory\BBBBBB.png
+Saved: 300x300_jpg\Accessory\BBBBBB.jpg
+Script started
+Subfolders found: Accessory, Background, Bodysuit, Colors, Extras, Eyebrows, Eyes, Face Sticker, Finished, Frame, Hair Style, Hand, Hat, Mouth, Outfit, Piercing, Tattoo, Undergarment
+Files found: 6
+Solid colors RGB values saved to colors.json
+Skipping existing file: 800x800_png\Accessory\Snoozle_C1.png
+Skipping existing file: 800x800_png\Accessory\Snoozle_C2.png
+Skipping existing file: 800x800_png\Accessory\Snoozle_C3.png
+Skipping existing file: 800x800_png\Accessory\Snoozle_C4.png
+Skipping existing file: 800x800_png\Accessory\Snoozle_C5.png
+Skipping existing file: 800x800_png\Accessory\Snoozle_L.png
+Skipping existing file: 600x600_png\Accessory\Snoozle_C1.png
+Skipping existing file: 600x600_png\Accessory\Snoozle_C2.png
+Skipping existing file: 600x600_png\Accessory\Snoozle_C3.png
+Skipping existing file: 600x600_png\Accessory\Snoozle_C4.png
+Skipping existing file: 600x600_png\Accessory\Snoozle_C5.png
+Skipping existing file: 600x600_png\Accessory\Snoozle_L.png
+Solid colors RGB values saved to colors.json
+Processing image group: Snoozle
+Processing file: Snoozle_C1.png in subfolder: Accessory
+Processing file: Snoozle_C2.png in subfolder: Accessory
+Processing file: Snoozle_C3.png in subfolder: Accessory
+Processing file: Snoozle_C4.png in subfolder: Accessory
+Processing file: Snoozle_C5.png in subfolder: Accessory
+Processing file: Snoozle_L.png in subfolder: Accessory
+Checking existence of PNG: compositeImages\Accessory\Snoozle.png
+Checking existence of JPG: 300x300_jpg\Accessory\Snoozle.jpg
+Skipping existing files: PNG - compositeImages\Accessory\Snoozle.png, JPG - 300x300_jpg\Accessory\Snoozle.jpg
+Script started
+Subfolders found: Accessory, Background, Bodysuit, Colors, Extras, Eyebrows, Eyes, Face Sticker, Finished, Frame, Hair Style, Hand, Hat, Mouth, Outfit, Piercing, Tattoo, Undergarment
+Files found: 6
+Solid colors RGB values saved to colors.json
+Skipping existing file: 800x800_png\Accessory\Snoozle_C1.png
+Skipping existing file: 800x800_png\Accessory\Snoozle_C2.png
+Skipping existing file: 800x800_png\Accessory\Snoozle_C3.png
+Skipping existing file: 800x800_png\Accessory\Snoozle_C4.png
+Skipping existing file: 800x800_png\Accessory\Snoozle_C5.png
+Skipping existing file: 800x800_png\Accessory\Snoozle_L.png
+Skipping existing file: 600x600_png\Accessory\Snoozle_C1.png
+Skipping existing file: 600x600_png\Accessory\Snoozle_C2.png
+Skipping existing file: 600x600_png\Accessory\Snoozle_C3.png
+Skipping existing file: 600x600_png\Accessory\Snoozle_C4.png
+Skipping existing file: 600x600_png\Accessory\Snoozle_C5.png
+Skipping existing file: 600x600_png\Accessory\Snoozle_L.png
+Solid colors RGB values saved to colors.json
+Processing image group: Snoozle
+Processing file: Snoozle_C1.png in subfolder: Accessory
+Processing file: Snoozle_C2.png in subfolder: Accessory
+Processing file: Snoozle_C3.png in subfolder: Accessory
+Processing file: Snoozle_C4.png in subfolder: Accessory
+Processing file: Snoozle_C5.png in subfolder: Accessory
+Processing file: Snoozle_L.png in subfolder: Accessory
+Checking existence of PNG: compositeImages\Accessory\Snoozle.png
+Checking existence of JPG: 300x300_jpg\Accessory\Snoozle.jpg
+Files not found, processing: PNG - compositeImages\Accessory\Snoozle.png, JPG - 300x300_jpg\Accessory\Snoozle.jpg
+Saved: compositeImages\Accessory\Snoozle.png
+Saved: 300x300_jpg\Accessory\Snoozle.jpg
+=======
 Subfolders found: Accessory, Background, Bodysuit, Colors, Extras, Eyebrows, Eyes, Face Sticker, Finished, Frame, Hair Style, Hand, Mouth, Outfit, Piercing, Tattoo, Undergarment
 Files found: 54
 Resizing image: scriptImages\Eyebrows\90s Brows_L.png to 800x800
@@ -44115,3 +45569,4 @@ Processing file: Hottie_L.png in Hair Style
 Checking existence of PNG: compositeImages\Hair Style\Hottie.png
 Checking existence of JPG: 300x300_jpg\Hair Style\Hottie.jpg
 Skipping existing files: PNG - compositeImages\Hair Style\Hottie.png, JPG - 300x300_jpg\Hair Style\Hottie.jpg
+>>>>>>> master

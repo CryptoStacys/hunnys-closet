@@ -8,6 +8,21 @@ Create / In your App.css file, you can use them as followed
   /* other formats include: 'woff2', 'truetype, 'opentype', 'embedded-opentype', and 'svg' */
 }
 @font-face {
+  font-family: "Poppins";
+  src: local("Poppins"), url("../public/assets/fonts/Poppins/Poppins-Regular.ttf") format("truetype");
+  /* other formats include: 'woff2', 'truetype, 'opentype', 'embedded-opentype', and 'svg' */
+}
+@font-face {
+  font-family: "Poppins";
+  src: local("Poppins"), url("../public/assets/fonts/Poppins/Poppins-Bold.ttf") format("truetype");
+  font-weight: bold;
+}
+@font-face {
+  font-family: "Poppins";
+  src: local("Poppins"), url("../public/assets/fonts/Poppins/Poppins-SemiBold.ttf") format("truetype");
+  font-weight: 300;
+}
+@font-face {
   font-family: "DM Sans";
   src: local("DM Sans"), url("../public/assets/fonts/DM_Sans/DMSans-Regular.ttf") format("truetype");
 }
@@ -110,6 +125,343 @@ a {
     padding: 0px 15px 10px 15px;
 }
 
+.card-flex-container {
+  display: flex;
+  justify-content: space-between; /* Adjust as needed for your layout */
+}
+
+.card-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; /* Align content to the top */
+  flex-grow: 1;
+}
+
+.card-column-fixed-height {
+  min-height: 300px; /* Example fixed height, adjust based on your content */
+}
+
+.profile-card {
+  background: #FFFFFF; 
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+.the-achievements-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; /* Maintains space between columns */
+  align-items: start; /* Aligns items at the top */
+  gap: 1rem; /* Adjust based on your gap preference */
+  /* Other styles remain unchanged */
+}
+
+.profile-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.event-header, .level-header {
+  display: flex;
+  align-items: center;
+}
+
+.grid-8x8 {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  gap: 5px; /* Adjust gap to your preference */
+}
+
+.grid-8x8 .card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* This ensures items are spaced out evenly */
+  height: 100px; /* Example fixed height, adjust as needed */
+  width: 100px; /* Example fixed width, adjust as needed */
+}
+
+.swiper-pagination {
+  position: static !important;
+}
+
+.swiper-pagination-bullet-active {
+  background: #C9A9FF !important;
+}
+
+
+.banner {
+  position: relative;
+  background-color: #C9A9FF; /* Your chosen color */
+  padding: 10px 40px 16px 40px;
+  color: #6510F2; /* Text color */
+  font-size: 16px; /* Size of your text */
+  font-family: 'Luckiest Guy';
+  white-space: nowrap;
+  overflow: hidden;
+  top: 12px;
+  margin-bottom: 8px;
+  font-weight: 100;
+  text-align: center;
+  max-width: 500px; /* Adjust the width as needed */
+  min-width: 220px;
+  height: 40px;
+}
+
+.banner::before {
+  content: '';
+  position: absolute;
+  left: 0px;
+  top: 0;
+  border-bottom: 20px solid #C9A9FF;
+  border-top: 20px solid #C9A9FF;
+  border-left: 10px solid #FFFFFF;
+  width: 0;
+  height: 0;
+}
+
+.banner::after {
+  content: '';
+  position: absolute;
+  right: 0px;
+  bottom: 0;
+  border-bottom: 20px solid #C9A9FF;
+  border-top: 20px solid #C9A9FF;
+  border-right: 10px solid #FFFFFF;
+  width: 0;
+  height: 0;
+}
+
+.achievementsBanner {
+  position: relative;
+  background-color: #C9A9FF; /* Your chosen color */
+  padding: 12px 40px 16px 40px;
+  color: #6510F2; /* Text color */
+  font-size: 16px; /* Size of your text */
+  font-family: 'Luckiest Guy';
+  white-space: nowrap;
+  overflow: hidden;
+  top: 24px;
+  z-index: 999;
+  font-weight: 100;
+  text-align: center;
+  max-width: 500px; /* Adjust the width as needed */
+  min-width: 220px;
+  height: 40px;
+}
+
+.achievementsBanner::before {
+  content: '';
+  position: absolute;
+  left: 0px;
+  top: 0;
+  border-bottom: 20px solid #C9A9FF;
+  border-top: 20px solid #C9A9FF;
+  border-left: 10px solid #EDEDED;
+  width: 0;
+  height: 0;
+}
+
+.achievementsBanner::after {
+  content: '';
+  position: absolute;
+  right: 0px;
+  bottom: 0;
+  border-bottom: 20px solid #C9A9FF;
+  border-top: 20px solid #C9A9FF;
+  border-right: 10px solid #EDEDED;
+  width: 0;
+  height: 0;
+}
+
+.progress-bar-container {
+  display: flex;
+  align-items: center;
+  width: 90%;
+  margin: auto;
+}
+
+.level {
+  font-size: 2em;
+  position: relative;
+  left: 25px;
+  background-color: #6510F2;
+  margin-top: 10px;
+  padding-right: 1em;
+  padding-left: 1em;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  font-family: "Luckiest Guy";
+  color: white;
+  border-radius: 999px;
+  z-index: 20;
+}
+
+.date {
+  font-size: 2em;
+  background-color: #6510F2;
+  width: 4em;
+  height: 4em;
+  padding: 1em;
+  top: 80px;
+  right: 30px;
+  position: relative;
+  vertical-align: middle;
+  font-family: "Luckiest Guy";
+  color: white;
+  border-radius: 999px;
+}
+
+.progress-bar {
+  position: relative;
+  width: 100%;
+  height: 40px; /* Match your segment height */
+  background-color: #E0E0E0; /* Light grey background for unfilled segments */
+  border-radius: 20px;
+  overflow: hidden; /* Keep everything within the rounded corners */
+}
+
+/* ProgressBar.css */
+@keyframes fillAnimation {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+/* AchievementsView.css */
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-30px);
+  }
+  60% {
+    transform: translateY(-15px);
+  }
+}
+
+.achievement-unlocked {
+  animation: bounce 1s;
+}
+
+/* AchievementsView.css */
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.05);
+    opacity: 0.7;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.achievement-locked {
+  animation: pulse 2s infinite;
+}
+
+.progress-bar-fill {
+  height: 100%;
+  background-color: #FFDE59; /* Yellow color */
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  z-index: 5;
+  transition: width 3s ease-in-out; /* Smooth transition for width changes */
+}
+
+.progress-bar-segments {
+  display: flex;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 2; /* Ensure segments are above the filled portion */
+}
+
+.segment {
+  flex: 1;
+  border-left: 5px dashed #EEE; /* Adjust based on your background color for visibility */
+  background-color: transparent; /* Ensure the filled background can show through */
+  height: 100%; /* Ensure it fills the parent */
+  z-index: 2;
+}
+
+.segment.filled {
+  background-color: transparent; /* Yellow color */
+  border-left: 3px solid #FFDE59;
+  animation: fillAnimation 2s ease-in-out forwards;
+}
+
+.progress-bar-fill.animate {
+  animation: fillAnimation 3s ease-in-out forwards;
+}
+
+.progress-bar-fill.to-end {
+  animation: fillToEnd 3s ease-in-out forwards;
+}
+
+.progress-bar-fill.reset {
+  animation: none;
+  width: 0%; /* Instantly reset to 0% width */
+}
+
+@keyframes fillToEnd {
+  from { width: 0%; }
+  to { width: 100%; }
+}
+
+.luckiest {
+  font-family: 'Luckiest Guy', sans-serif;
+  font-weight: 100;
+  letter-spacing: .1px;
+  text-transform: uppercase;
+}
+
+.avatar {
+  overflow: hidden;
+  margin-right: 20px;
+}
+
+.username {
+  font-weight: bold;
+  color: #333333;
+  font-family: 'Luckiest Guy', sans-serif;
+  text-transform: uppercase;
+  text-align: left;
+  margin-left: 10px;
+}
+
+.enterName {
+  font-weight: 500;
+  padding: 6px;  
+  background-color: #EDEDED;
+  outline: none;
+  border-radius: 5px;
+  font-size: 1em;
+  color: #000;
+  font-family: 'Poppins', sans-serif;
+  text-align: left;
+}
+
+.enterName::placeholder {
+  color: black;
+}
+ 
+ 
+
 .hunnys-btn {
   display: flex;
   justify-content: center;
@@ -127,6 +479,10 @@ a {
   color: #a26106;
 }
 
+.login-button {
+  margin-top: 350px;
+}
+
 .dashboardHero {
   background-size: cover;
   background-repeat: no-repeat;
@@ -139,10 +495,75 @@ a {
   overflow: hidden;
 }
 
-.sortDropdown {
-  background-color: lightblue;
-  border: 2px solid black;
+.searchBar {
+  border-radius: 5px;
+  outline: none;
+  color: black !important;
+  background-color: #FFF;
+  text-align: left;
+  font-weight: 600;
+  padding: 6px;
 }
+
+.searchBar::placeholder {
+  color: black;
+}
+
+.sortDropdown {
+  background-color: #FFF;
+  border-radius: 5px;
+  color: black;
+  text-align: center;
+  font-weight: 600;
+  outline: none;
+}
+
+.sortDropdown option {
+  background-color: #FFF;
+  text-align: left;
+}
+
+
+.stat-card {
+  font-size: 1.5rem; /* 30px */
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 4rem;
+  background-color: #EDEDED;
+  border-radius: 0.5rem; /* 8px */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.stat-title {
+  text-align: center;
+  color: black;
+  margin-bottom: 16px;
+}
+
+.stat-value {
+  color: #AA7AFA;
+  font-size: 1.875rem;
+}
+.tooltip-container {
+  position: relative;
+  display: inline-block;
+  
+}
+
+.custom-tooltip {
+  position: absolute;
+  width: 200px;
+  max-width: 90vw; /* Prevents the tooltip from being wider than the viewport */
+  bottom: 50%;
+  left: 20;
+  transform: translateX(70%);
+  overflow-x: hidden;
+  z-index: 1;
+}
+
 
 .mint-btn {
   margin-top: 10px;
@@ -154,10 +575,9 @@ a {
   width: -webkit-fill-available;
 }
 
-.searchBar {
-  border: 2px solid black;
-  border-radius: 8px;
-  outline: none;
+
+.paragraphText {
+  font-size: 18px;
 }
 
 .modalDolly {
@@ -316,6 +736,16 @@ a {
 .badge {
   font-size: .9em;
 }
+.paragraphText {
+  font-size: 16px;
+}
+.stat-title {
+  line-height: 22px;
+}
+
+.stat-value {
+  line-height: 22px;
+}
 }
 
 @media (max-width: 900px){
@@ -332,6 +762,12 @@ a {
     font-size: 20px;
     line-height: 12px;
     margin-bottom: 20px;
+  }
+  
+  .login-button {
+    margin-top: 120px;
+    position: relative;
+    top: 50px;
   }
 }
 
@@ -356,7 +792,30 @@ a {
     display: none;
   }
 
-
+  .stat-card {
+    font-size: 1rem; /* 30px */
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    background-color: #EDEDED;
+    border-radius: 0.5rem; /* 8px */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .stat-title {
+    text-align: center;
+    color: black;
+    line-height: 12px;
+  }
+  
+  .stat-value {
+    color: #AA7AFA;
+    font-size: 1.3rem;
+    line-height: 22px;
+  }
 
   .mobie-hunnys-wrapper {
     position: absolute !important;
@@ -375,6 +834,12 @@ a {
     .mobile-line-height{
       line-height: 01.3 !important;
     }
+
+    .login-button {
+      margin-top: 50px;
+      position: relative;
+      top: 50px;
+    }
   
 }
 
@@ -385,6 +850,51 @@ a {
   .grid-item {
     height: 190px;
   }
+  
+  .login-button {
+    margin-top: 100px;
+  }
+
+  .paragraphText {
+    font-size: 12px;
+  }
+  
+  .banner {
+    position: relative;
+    background-color: #C9A9FF; /* Your chosen color */
+    padding: 10px 20px 16px 20px;
+    color: #6510F2; /* Text color */
+    font-size: 18px; /* Size of your text */
+    font-family: 'Luckiest Guy';
+    text-align: center;
+    max-width: 300px; /* Adjust the width as needed */
+    height: 40px;
+  }
+  
+  .banner::before {
+    content: '';
+    position: absolute;
+    left: 0px;
+    top: 0;
+    border-bottom: 20px solid #C9A9FF;
+    border-top: 20px solid #C9A9FF;
+    border-left: 10px solid #FFFFFF;
+    width: 0;
+    height: 0;
+  }
+  
+  .banner::after {
+    content: '';
+    position: absolute;
+    right: 0px;
+    bottom: 0;
+    border-bottom: 20px solid #C9A9FF;
+    border-top: 20px solid #C9A9FF;
+    border-right: 10px solid white;
+    width: 0;
+    height: 0;
+  }
+
 }
 
 @media (max-width: 700px) {
@@ -403,6 +913,10 @@ a {
     margin-bottom: 50px;
   }
 
+  .login-button {
+    margin-top: 50px;
+  }
+
   .hideplz {
     display: none;
   }
@@ -410,6 +924,15 @@ a {
     height: 160px;
   }
 
+  .date {
+    top: 40px;
+    right: 30px;
+    position: relative;
+    vertical-align: middle;
+    font-family: "Luckiest Guy";
+    color: white;
+    border-radius: 999px;
+  }
 }
 
 @media (max-width: 520px) {
@@ -480,6 +1003,10 @@ a {
   }
   .clearSearch {
     display: none;
+  }
+
+  .paragraphText {
+    font-family: 10px;
   }
 }
 

@@ -13,8 +13,8 @@ type MintButtonProps = {
   userAddress: string | undefined;
   mintAction: () => Promise<void>;
   className?: string; // Add this line
+  buttonText?: string;
 };
-
 
 const MintButton: React.FC<MintButtonProps> = ({
   tokenId,
@@ -23,6 +23,7 @@ const MintButton: React.FC<MintButtonProps> = ({
   updateTraits,
   userAddress,
   mintAction,
+  buttonText,
   className // Add this line
 }) => {
   const [isTransactionPending, setTransactionPending] = useState(false);
@@ -54,37 +55,45 @@ const MintButton: React.FC<MintButtonProps> = ({
       console.error("User is not connected to a wallet");
       return;
     }
-
+  
     if (currentChain?.id !== expectedChainId) {
       // Prompt the user to switch to the correct chain
       switchNetwork && switchNetwork(expectedChainId);
       return;
     }
-
+  
     if (!tokenId || !userAddress) {
       console.error("Token ID or user address is undefined");
       return;
     }
-
+  
     if (!mintPrice) {
       console.error("Mint price is undefined");
       alert("Mint price not available.");
       return;
     }
-
+  
     // Convert mintPrice to BigNumber if it's not already
-  let safeMintPrice = BigNumber.isBigNumber(mintPrice) ? mintPrice : BigNumber.from(mintPrice);
-
+    let safeMintPrice = BigNumber.isBigNumber(mintPrice) ? mintPrice : BigNumber.from(mintPrice);
+  
     setTransactionPending(true);
-
+  
     try {
       await mintAction();
-      onMintSuccess();
-      updateTraits(userAddress);
-      alert("Purchase successful!");
+      // If mintAction() completes without throwing, it's assumed successful.
+      onMintSuccess(); // This callback is now only called after a successful mintAction.
+      updateTraits(userAddress); // Same for updateTraits.
+      alert("Purchase successful!"); // And the success alert.
     } catch (error) {
       console.error("Purchase error:", error);
-      alert("Purchase failed.");
+      // The alert message can be adjusted to reflect the error received.
+      // This could be made more specific based on the error message.
+      if (error instanceof Error) {
+        alert(error.message || "Purchase failed."); // Show the error message if available
+      } else {
+        // If it's not an Error instance, fallback to a generic message
+        alert("Purchase failed due to an unexpected error.");
+      }
     } finally {
       setTransactionPending(false);
     }
@@ -110,7 +119,7 @@ return (
   className={`${baseButtonClass} ${additionalClasses}`}
   
 >
-  {isTransactionPending ? "Processing..." : (
+  {isTransactionPending ? "Processing..." : buttonText || (
     <>
       
       {mintPrice ? `Ξ ${formattedPrice}` : "Price Unavailable"}

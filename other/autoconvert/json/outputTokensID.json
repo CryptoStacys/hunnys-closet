@@ -1,15 +1,165 @@
 [
     {
-        "tokenId": 67,
-        "name": "Hottie",
+        "tokenId": 68,
+        "name": "Level 0",
         "attributes": [
             {
-                "trait_type": "Hair Style",
-                "value": "Hottie"
+                "trait_type": "Accessory",
+                "value": "ButterPuff"
+            }
+        ],
+        "metaPath": ""
+    },
+    {
+        "tokenId": 69,
+        "name": "Level 1",
+        "attributes": [
+            {
+                "trait_type": "Accessory",
+                "value": "BunVenture Backpack"
             },
             {
-                "trait_type": "Eyes",
-                "value": "Fired Up"
+                "trait_type": "Hat",
+                "value": "BunComms Device"
+            }
+        ],
+        "metaPath": ""
+    },
+    {
+        "tokenId": 78,
+        "name": "Level 10",
+        "attributes": [
+            {
+                "trait_type": "Outfit",
+                "value": "Swampstress"
+            },
+            {
+                "trait_type": "Hat",
+                "value": "Baby Hornsworth"
+            }
+        ],
+        "metaPath": ""
+    },
+    {
+        "tokenId": 70,
+        "name": "Level 2",
+        "attributes": [
+            {
+                "trait_type": "Frame",
+                "value": "Bunny Babe Basket"
+            },
+            {
+                "trait_type": "Dye",
+                "value": "Picnic Day Dye"
+            }
+        ],
+        "metaPath": ""
+    },
+    {
+        "tokenId": 71,
+        "name": "Level 3",
+        "attributes": [
+            {
+                "trait_type": "Accessory",
+                "value": "Secret Agent S"
+            },
+            {
+                "trait_type": "Accessory",
+                "value": "Secret Agent Shades"
+            }
+        ],
+        "metaPath": ""
+    },
+    {
+        "tokenId": 72,
+        "name": "Level 4",
+        "attributes": [
+            {
+                "trait_type": "Accessory",
+                "value": "Silly Mr. Moar"
+            },
+            {
+                "trait_type": "Skin",
+                "value": "Gloopy Mr. Moar"
+            }
+        ],
+        "metaPath": ""
+    },
+    {
+        "tokenId": 73,
+        "name": "Level 5",
+        "attributes": [
+            {
+                "trait_type": "Hat",
+                "value": "Hupe Scouts Headband"
+            },
+            {
+                "trait_type": "Background",
+                "value": "Hupe Scouts Background"
+            },
+            {
+                "trait_type": "Frame",
+                "value": "Hupe Scouts Badge"
+            }
+        ],
+        "metaPath": ""
+    },
+    {
+        "tokenId": 74,
+        "name": "Level 6",
+        "attributes": [
+            {
+                "trait_type": "Hand",
+                "value": "Delicious Dreamwater"
+            },
+            {
+                "trait_type": "Dye",
+                "value": "Dreamsicle Dye"
+            }
+        ],
+        "metaPath": ""
+    },
+    {
+        "tokenId": 75,
+        "name": "Level 7",
+        "attributes": [
+            {
+                "trait_type": "Outfit",
+                "value": "Honest Work Overalls"
+            },
+            {
+                "trait_type": "Hand",
+                "value": "Tater Tot Tiller"
+            }
+        ],
+        "metaPath": ""
+    },
+    {
+        "tokenId": 76,
+        "name": "Level 8",
+        "attributes": [
+            {
+                "trait_type": "Background",
+                "value": "Best Buns Camp Out"
+            },
+            {
+                "trait_type": "Mouth",
+                "value": "Curious Carrot Munch"
+            }
+        ],
+        "metaPath": ""
+    },
+    {
+        "tokenId": 77,
+        "name": "Level 9",
+        "attributes": [
+            {
+                "trait_type": "Accessory",
+                "value": "Snoozle"
+            },
+            {
+                "trait_type": "Outfit",
+                "value": "Silky Dreams PJs"
             }
         ],
         "metaPath": ""

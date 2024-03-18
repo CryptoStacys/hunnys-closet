@@ -642,7 +642,7 @@ export default function ItemView(props: { selectedTrait: Trait; selectedTraitSet
         </AnimatePresence>
         {/* OTHER ITEMS */}            
         <div className="mb-12">
-        <div className="font-bold font-luckiest flex pl-1 mt-8 text-[#444] flex flex-row">
+        <div className="font-bold font-luckiest pl-1 mt-8 text-[#444] flex flex-row">
         <select className={`bg-white sortDropdown shadow-lg rounded-b-lg`} onChange={(e) => setSortType(e.target.value)}>
               <option value="default">Default Sort</option>
               <option value="Rare to Common">Rare to Common</option>

@@ -9,13 +9,13 @@ import Image from "next/image";
 import { customImageLoader } from '../../utils/imageLoader';
 
 import ImageWithFallback from './ImageWithFallback';
+import Link from '../Link/Link';
 
 function DollGallery({ selectDoll }: any) {
     const [user] = useAtom(userAtom);
     const [currentPage, setCurrentPage] = useState(1);
     const DOLLYS_PER_PAGE = 12;  // Display 12 Dollys per page, adjust as needed
     const [sortedDollys, setSortedDollys] = useState<any[]>([]);
-
 
     useEffect(() => {
         setSortedDollys([...user!.dollys].sort((a: any, b: any) => a.token_id - b.token_id));
@@ -39,7 +39,14 @@ function DollGallery({ selectDoll }: any) {
     return (
         <div className="w-full flex-center">
             <div className="w-full max-w-[1250px] relative mx-6">
-                <div className="flex flex-wrap justify-between">
+                <div className="flex flex-col xs:items-center md:items-start ">
+                <Link to="/">
+        <button
+            className="bg-hunnys-blue xs:bottom-0 xs:right-4 md:right-0 xs:mt-8 md:mt-0 md:bottom-8 relative text-hunnys-yellow font-title shadow-md rounded-full px-8 py-1 text-4xl hover:shadow-lg hover:scale-[1.05] hover:rotate-[0.5deg] transition-all "
+          >
+            To Dashboard
+          </button>
+          </Link>
                     <h1 className="text-xl font-bold py-3 flex flex-wrap">
                         <div className="mr-3">Dress Up Your Dollys</div>
                         <Help {...{
