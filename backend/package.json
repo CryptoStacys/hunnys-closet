@@ -10,7 +10,9 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@openzeppelin/defender-relay-client": "^1.54.1",
     "aws-cli-js": "^2.2.3",
+    "axios": "^1.6.8",
     "canvas": "^2.11.2",
     "crypto-js": "^4.2.0",
     "ethereum-checksum-address": "^0.0.7",
