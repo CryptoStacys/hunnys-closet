@@ -39,7 +39,7 @@ const ProfileButton: React.FC<ButtonProps & { isMobileMenu?: boolean }> = ({ ico
           }`}
         />
       )}
-      <span className="text-center text-sm text-black font-poppins font-bold">
+      <span className="text-center text-sm text-black font-poppins font-bold xs:text-[24px] md:text-[12px] md:mb-0 xs:mb-6">
         {text}
       </span>
     </button>
@@ -142,8 +142,8 @@ const ProfileButtons: React.FC<{
       <div className={`hidden md:grid md:grid-cols-7 xs:grid-cols-4 gap-4`}>
         {buttonsData.map((button, index) =>
           button.view === "dollys" ? (
-            <Link key={index} className="w-full" to="/dollys">
-              <button className="flex flex-col items-center justify-center space-y-2 w-full">
+            <Link key={index} className="w-full " to="/dollys">
+              <button className="flex flex-col items-center justify-center space-y-2 w-full ">
                 <img
                   src={button.iconSrc}
                   alt="Button Icon"
@@ -175,11 +175,11 @@ const ProfileButtons: React.FC<{
         {buttonsData.map((button, index) =>
         
           button.view === "dollys" ? (
-            <div key={index} className="mb-2">
-            <Link key={index} className="w-full" to="/dollys">
+            <div key={index} className="xs:mb-8">
+            <Link key={index} className="w-full " to="/dollys">
               <button className="">
                 
-                <span className="text-center text-sm text-black font-poppins font-bold">
+                <span className="text-center text-sm text-black font-poppins font-bold text-[24px] ">
                   {button.text}
                 </span>
               </button>

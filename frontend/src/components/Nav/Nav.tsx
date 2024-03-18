@@ -2,6 +2,7 @@ import Link from "./../Link/Link";
 import { ConnectButton, useAccountModal } from "@rainbow-me/rainbowkit";
 import { useAtom } from "jotai";
 import { Tooltip } from "react-tooltip";
+import { currentViewAtom, setCurrentViewAtom } from '../../data/store';
 import React, { useState, useEffect, useCallback, useRef } from "react";
 import {
   connectedAtom,
@@ -21,7 +22,13 @@ export default function Nav({ rewardStatus }: NavProps) {
   const [connected, setConnected] = useAtom(connectedAtom);
   const [selected, setSelected] = useState<number | string>(-1); // Allow string for temporary ID
   const [copySuccess, setCopySuccess] = useState("");
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const { openAccountModal } = useAccountModal();
+  const [currentView, setCurrentView] = useAtom(currentViewAtom);
+  const [, triggerSetCurrentView] = useAtom(setCurrentViewAtom);
+  const handleChangeView = (newView: string) => {
+    setCurrentView(newView); // This should now pass TypeScript's type checking
+  };
   const [user, setUser] = useAtom(userAtom);
   const [dollEditorVisible, setDollEditorVisible] = useAtom(
     dollEditorVisibleAtom
@@ -38,6 +45,70 @@ export default function Nav({ rewardStatus }: NavProps) {
   const [dropdownVisible, setDropdownVisible] = useState(false);
   const dropdownRef = useRef<HTMLDivElement | null>(null);
   const isLoggedIn = connected || user;
+  interface ButtonProps {
+    iconSrc: string;
+    text: string;
+    onClick?: () => void;
+    isActive: boolean;
+  }
+  const ProfileButton: React.FC<ButtonProps & { isMobileMenu?: boolean }> = ({ iconSrc, text, onClick, isActive, isMobileMenu = false }) => {
+    return (
+      <button
+        onClick={onClick}
+        className="flex flex-col items-center justify-center space-y-2 profileButtons"
+      >
+        {!isMobileMenu && (
+          <img
+            src={iconSrc}
+            alt="Button Icon"
+            className={`rounded-full w-1/2 drop-shadow-2xl hover:bg-[#7b2df8] transition ease-in-out delay-75 ${
+              isActive ? "bg-[#6510F2]" : "bg-[#AA7AFA]"
+            }`}
+          />
+        )}
+        <span className="text-center text-sm text-black font-poppins font-bold">
+          {text}
+        </span>
+      </button>
+    );
+  };
+  const buttonsData = [
+    {
+      view: "profile",
+      iconSrc: "/icons/Profile.svg",
+      text: "Profile",
+    },
+    {
+      view: "dollys",
+      iconSrc: "/icons/Dollys.svg",
+      text: "Dollys",
+    },
+    {
+      view: "inventory",
+      iconSrc: "/icons/Inventory.svg",
+      text: "Inventory",
+    },
+    {
+      view: "achievements",
+      iconSrc: "/icons/Achievements.svg",
+      text: "Achievements",
+    },
+    {
+      view: "events",
+      iconSrc: "/icons/Events.svg",
+      text: "Events",
+    },
+    {
+      view: "news",
+      iconSrc: "/icons/News.svg",
+      text: "News",
+    },
+    {
+      view: "shop",
+      iconSrc: "/icons/Shop.svg",
+      text: "Shop",
+    },
+  ];
 
   const logout = useCallback(async () => {
     if (waas && waas.logout) {
@@ -188,10 +259,22 @@ export default function Nav({ rewardStatus }: NavProps) {
         </span>
       </button>
       {dropdownVisible && (
-        <div className="absolute flex text-left flex-col font-bold right-0 mt-2 py-2 w-48 bg-white outline-none rounded-md shadow-xl z-20">
+        <div className="absolute flex text-left flex-col font-bold left-0 mt-2 py-2 w-48 bg-white outline-none rounded-md shadow-xl z-20">
           <Link to="/">
             <p className="indent-2">Dashboard</p>
             </Link>
+        <a
+        className="block px-2 py-2 cursor-default"
+        onClick={handleAddressCopy}
+      >
+        Account Address:{" "}
+        {copySuccess ||
+          (user?.address
+            ? `${user.address.substring(0, 6)}...${user.address.substring(
+                user.address.length - 4
+              )}`
+            : "No Address")}
+      </a>
           {openAccountModal && (
         <button className="self-start indent-2 mt-4" onClick={openAccountModal} type="button">Logout</button>
       )}
@@ -209,6 +292,69 @@ export default function Nav({ rewardStatus }: NavProps) {
                   Create A Dolly
                 </button>
               </Link>
+              <div className="hidden" onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}>
+              <svg
+                width="40px"
+                height="40px"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M4 18L20 18"
+                  stroke="#FFFFFF"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                />
+                <path
+                  d="M4 12L20 12"
+                  stroke="#FFFFFF"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                />
+                <path
+                  d="M4 6L20 6"
+                  stroke="#FFFFFF"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                />
+              </svg>
+      </div>
+      {isMobileMenuOpen && (
+  <div className="absolute top-full left-0 w-full">
+    {buttonsData.map((button, index) =>
+        
+        button.view === "dollys" ? (
+          <div key={index} className="mb-2">
+          <Link key={index} className="w-full" to="/dollys">
+          <button
+          className="text-sm text-black font-poppins font-bold w-full"
+          onClick={() => {
+            triggerSetCurrentView(button.view); // Use the atom to change the view
+            setIsMobileMenuOpen(false); // Close the menu
+          }}
+        >
+          {button.text}
+        </button>
+          </Link></div>
+        ) : (
+          <div key={index} className="mb-2">
+          <ProfileButton
+          
+          key={index}
+          iconSrc={button.iconSrc}
+          text={button.text}
+          onClick={() => {
+            triggerSetCurrentView(button.view); // Use the atom to change the view
+            setIsMobileMenuOpen(false);
+          }}
+          isActive={currentView === button.view}
+          isMobileMenu={true}
+        /></div>
+        )
+      )}
+  </div>
+      )}
             </>
           )}
         </div>

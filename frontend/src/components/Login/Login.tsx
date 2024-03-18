@@ -22,7 +22,7 @@ import { allTraitsAtom, connectedAtom, userAtom, userTraitsAtom } from "../../da
 import { initializeUser } from "../../utils/userInitialization";
 type WalletAddress = Address<IProtocolFamily>;
 
-const loginScreen = "/assets/img/DefaultClosetLoginScreen.png";
+const loginScreen = "/assets/img/ClosetV2LoginImage.png";
 // Static images
 const loadingImages = [
   "/assets/img/LoadingTip1.png",

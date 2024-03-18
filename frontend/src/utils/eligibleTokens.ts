@@ -106,7 +106,10 @@ export const mintWithWeth = async (
     const signer = provider.getSigner();
     const wethContract = new ethers.Contract(WETH_ADDRESS, WETH_ABI, signer);
     const salesContract = new ethers.Contract(salesContractAddress, salesABI, signer);
-
+    const balance = await wethContract.balanceOf(userAddress);
+    if (balance.lt(mintPrice)) {
+      throw new Error("Insufficient WETH balance for minting.");
+    }
     // Check WETH allowance
     const allowance = await wethContract.allowance(userAddress, salesContractAddress);
     console.log(`Current allowance: ${allowance.toString()}`);
@@ -150,16 +153,22 @@ export const mintWithWeth = async (
       signature: signature
     };
     
-    console.log("Mint Request: ", mintRequest);
-    console.log("Final Mint Request:", mintRequest);
+    console.log("Purchase Request: ", mintRequest);
 
     // Minting process
     const mintTx = await salesContract.mintTokens(nftContractAddress, mintRequest);
     await mintTx.wait();
     return "Mint successful";
   } catch (error) {
-    console.error("Minting with WETH failed:", error);
-    throw error;
+    let errorMessage = "Purchase failed: ";
+    //@ts-ignore
+    if (error.message.includes("Insufficient WETH balance for minting.")) {
+      errorMessage += "You do not have enough WETH to complete this purchase.";
+    } else {
+      errorMessage += "An unexpected error occurred. Please try again.";
+    }
+    console.error(errorMessage, error);
+    throw new Error(errorMessage);
   }
 };
 

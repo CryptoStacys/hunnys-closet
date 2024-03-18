@@ -17,6 +17,7 @@ import { ethers } from "ethers";
 import FreeClaim from "../../components/Mint/FreeClaim";
 import Tooltip from "../Tooltip/Tooltip";
 import ProgressBar from "../Achievements/ProgressBar";
+import axios from "axios";
 import {
   calculateLevel,
   calculatePointsToNextLevel,
@@ -62,7 +63,22 @@ const ProfileView = () => {
   const currentLevel = calculateLevel(user?.cupcake_points || 0);
   const { nextLevelPoints, earnedPointsThisLevel, currentLevelPoints } =
     calculatePointsToNextLevel(currentLevel, user?.cupcake_points || 0);
+  const [newsData, setNewsData] = useState<Array<any>>([]);
+  const [recentNews, setRecentNews] = useState([]);
+  useEffect(() => {
+    const fetchNewsData = async () => {
+      try {
+        const url = "https://sheets.googleapis.com/v4/spreadsheets/17qLvWaFJBEb7RBgmXgvBd3uX_yeKbzL2NUid47DfyT0/values/A2:E370?key=AIzaSyAjknT53sMDEOdJ3YtCmjgP3VeSTvSGB3U";
+        const response = await axios.get(url);
+        setRecentNews(response.data.values.slice(0, 3));
+        
+      } catch (error) {
+        console.error("Error fetching data:", error);
+      }
+    };
 
+    fetchNewsData();
+  }, []);
   useEffect(() => {
     const titles = Object.values(user?.achievements || {}).reduce(
       (acc: string[], achievement: any) => {
@@ -135,8 +151,8 @@ const ProfileView = () => {
 
   // Configure AWS SDK
   AWS.config.update({
-    accessKeyId: process.env.NEXT_PUBLIC_AWS_ACCESS_KEY_ID as string,
-    secretAccessKey: process.env.NEXT_PUBLIC_AWS_SECRET_ACCESS_KEY as string,
+    accessKeyId: 'AKIAWFXRVD22RQT75KEL',
+    secretAccessKey: '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',
     region: "us-east-2",
   });
 
@@ -559,7 +575,7 @@ const ProfileView = () => {
       )}
       ;
       <Card
-        headerTitle="Dailys"
+        headerTitle="Welcome to Hunnys Closet!"
         leftBlockContent={
           <div >
           <CupcakePoints
@@ -608,6 +624,23 @@ const ProfileView = () => {
           ""
         }
       />
+      <Card
+        headerTitle="Recent News"
+        leftBlockContent={""}
+          middleBlockContent={""}
+          rightBlockContent={""
+          }
+          footer={recentNews.map((item, index) => (
+            <><div className="date text-center leading-8 xs:ml-4 tn:ml-16 xs:text-xl sm:text-3xl">{item[4]}</div>
+            <Event
+            key={index}
+            headerTitle={item[2]}
+            event={<><a href={item[1]}>
+              <img src={item[0]} alt="News" className="w-full" />
+            </a><p className="font-poppins text-xl text-center mt-8 mx-8">{item[3]}</p></>} /></>
+        ))}
+        />
+      
     </div>
   );
 };

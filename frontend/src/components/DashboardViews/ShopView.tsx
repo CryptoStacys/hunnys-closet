@@ -126,17 +126,55 @@ const ShopView = () => {
   const indexOfLastItem = currentPage * itemsPerPage;
   const indexOfFirstItem = indexOfLastItem - itemsPerPage;
   const tokenIdToImageUrlMap: Record<string, string> = {};
+  const bunnyClubMembers = ["0xa7758394D8f7fD23b0d9F13E02427B514687394B",
+  "0x55Abdc04655d590a48BCd1B996115448b71b7a84",
+  "0x4eE115d0708924B4d3a83e45A428B0e3cb4348e9",
+  "0x3a9a9b0a3148599dde1660476c6a47b1272247c6",
+  "0xe17d0ac3F7C498924d4920bf279C01536686e014",
+  "0x48a19c6B158491325E84c8837ED8Ba95A0403C13",
+  "0x9d9d3bca9ae1126244786089d81ba9b289970238",
+  "0x1975638d2dfdeee04d11adf6350187af9996dc7c",
+  "0x6c6cD01ebbd02254C5Db5263797E366511992d29",
+  "0x019Db3aA167aF3B91b6D72a05dD8437aaDd5225E",
+  "0x745461ae3ee10F26e314735b6AF8ee41cD313E2d",
+  "0x0DE9a66f0F9b714c5b987BDCb37A5E2EF1bDA67A",
+  "0x473e12B41bC13d3Ac98C4d06cD549Ba8a704dbf1",
+  "0xBcDa92fF0D83448ad2B65C7a59D62FE3A18bF95f",
+  "0x650d492E2F68A665a5dc029bc3f255FE5ec366Fc",
+  "0x0009C319862f623aCa7b210a905121612fBBDf22",
+  "0x7B710AD4c01038E62927cEBb2d5df68cF3463413",
+  "0xa5cC1E135C92a4DD1b32A328e1343eB4150461B6",
+  "0x5Cf422E9Ff1D79c98C479F8d4e8cbdC7B51E1550",
+  "0x78ae230336bb65B0023d78156708783402f303c2",
+  "0x8b5e18b1A4BfF36085604e94C9bdE2054C62d026",
+  "0xFb203c2E544d1D2D889900883b4bD538Bc914357",
+  "0x051f1F3920D196cc998D74A56978370b82432D25",
+  "0x7b511800A8d8E7DE24Dd19de3103081824b6f41D",
+  "0x1776727f3c60dD67B832F9E0614D7e028E32e063",
+  "0x247DBa0157DDD215d30d41A70411DbaFbFD6a0F9",
+  "0xDbC0019892E644Ad55756Ace79810305E8E4c31d",
+  "0xb62500D5a8b9629763d39a4D05784D6A47A72Ab1",
+  "0x16272E839A5C29A3Fa90E670Cb599d233b6943aC"]; // Replace with actual addresses
+  const bunnyClubDiscount = 20; // 10% discount
+  const isBunnyClubMember = bunnyClubMembers
+    .map((address) => address.toLowerCase())
+    .includes(user!.address.toLowerCase());
+  console.log(user?.address, isBunnyClubMember);
+  
+if (bunnyClubMembers.includes(user!.address)) {
+  console.log("Discount should be applied.");
+}
 
-  const collectionNameMap: CollectionNameMap = {
-    default: "Bunny Basics",
-    "Hunnys 10k All Holders": "Hunnys 10k All Holders",
-    "Hunnys OG": "Hunnys OG",
-    "Hunnys Stacys": "Hunnys Stacys",
-    "Hunnys 10k": "Hunnys 10k",
-    "Fame Lady Society": "Fame Lady Society",
-    "New Hunnys Closet Shop": "Hunnys Closet Shop",
-    "Hunnys Seasonal": "Hunnys Seasons",
-  };
+const collectionNameMap: CollectionNameMap = {
+  default: "Bunny Basics",
+  "Hunnys 10k All Holders": "Hunnys 10k All Holders",
+  "Hunnys OG": "Hunnys OG",
+  "Hunnys Stacys": "Hunnys Stacys",
+  "Hunnys 10k": "Hunnys 10k",
+  "Fame Lady Society": "Fame Lady Society",
+  "New Hunnys Closet Shop": "Hunnys Closet Shop",
+  "Hunnys Seasonal": "Hunnys Seasons",
+};
   const collectionNameMapExtended = {
     all: "All Collections", // Add this line to include "All Collections" option
     ...collectionNameMap,
@@ -464,10 +502,20 @@ const ShopView = () => {
   }, [groupedNftData, searchTerm, sortType, currentPage, itemsPerPage]);
 
   const renderItemizedData = () => {
+    const bunnyClubMembersLowercase = bunnyClubMembers.map(address => address.toLowerCase());
+  const userAddressLowercase = user?.address.toLowerCase();
     return displayedNftData.map((item, index) => {
+      
       const tokenId = item[0]; // Name of the source token that unlocks the item(s)
       const nftName = item[1]; // Name of the NFT
-      const mintPrice = ethers.utils.parseUnits(item[2].toString(), "ether");
+      let mintPrice = ethers.utils.parseUnits(item[2].toString(), "ether");
+      console.log(`Original mintPrice: ${ethers.utils.formatUnits(mintPrice, "ether")}`);
+      if (userAddressLowercase && bunnyClubMembersLowercase.includes(userAddressLowercase)) {
+        const discount = mintPrice.mul(bunnyClubDiscount).div(100);
+        mintPrice = mintPrice.sub(discount);
+        console.log(`Discounted mintPrice: ${ethers.utils.formatUnits(mintPrice, "ether")}`);
+      }
+  
       const formattedMintPrice = ethers.utils.formatUnits(mintPrice, "ether");
       const isEligibleForMinting = true;
       const parentNftImage = item[3]; // Name of the NFT
@@ -548,27 +596,20 @@ const ShopView = () => {
                 userAddress={user?.address}
                 mintAction={async () => {
                   if (!tokenId || !user?.address || !mintPrice) {
-                    console.error(
-                      "Missing tokenId, user address, or mintPrice"
-                    );
+                    console.error("Missing tokenId, user address, or mintPrice");
                     return;
                   }
                   try {
                     // Ensure provider is correctly instantiated
-                    const provider = new ethers.providers.Web3Provider(
-                      window.ethereum as any
-                    );
-                    await mintWithWeth(
-                      user.address,
-                      tokenId,
-                      mintPrice,
-                      provider
-                    );
+                    const provider = new ethers.providers.Web3Provider(window.ethereum as any);
+                    await mintWithWeth(user.address, tokenId, mintPrice, provider);
                     console.log("Purchase successful!");
-                    // Optionally, call onMintSuccess() here or handle success feedback
+                    // Since this log indicates success, ensure it's only reached if mintWithWeth succeeds
+                    // Optionally, call onMintSuccess() here or handle success feedback within this try block
                   } catch (error) {
                     console.error("Purchase failed:", error);
-                    // Handle error feedback
+                    // Handle error feedback, then re-throw the error to signal failure to the caller
+                    throw error; // This line is crucial for propagating the failure
                   }
                 }}
                 buttonText={`Ξ${formattedMintPrice}`}
@@ -581,6 +622,8 @@ const ShopView = () => {
   };
 
   const renderCollectionData = () => {
+    const bunnyClubMembersLowercase = bunnyClubMembers.map(address => address.toLowerCase());
+  const userAddressLowercase = user?.address.toLowerCase();
     // Filter items based on selected collection and searchTerm
     const originalAttributeName =
       reverseAttributeNameMap[selectedAttribute] || selectedAttribute;
@@ -624,11 +667,14 @@ const ShopView = () => {
       const firstItem = items[0];
       const nftImage = firstItem[3];
       const nftName = firstItem[1];
-      const tokenId = firstItem[0]; // Name of the source token that unlocks the item(s)
-      const mintPrice = ethers.utils.parseUnits(
-        firstItem[2].toString(),
-        "ether"
-      );
+      const tokenId = firstItem[0];
+      let mintPrice = ethers.utils.parseUnits(firstItem[2].toString(), "ether");
+      console.log(`Original mintPrice: ${ethers.utils.formatUnits(mintPrice, "ether")}`);
+      if (userAddressLowercase && bunnyClubMembersLowercase.includes(userAddressLowercase)) {
+        const discount = mintPrice.mul(bunnyClubDiscount).div(100);
+        mintPrice = mintPrice.sub(discount);
+        console.log(`Discounted mintPrice: ${ethers.utils.formatUnits(mintPrice, "ether")}`);
+      }
       const formattedMintPrice = ethers.utils.formatUnits(mintPrice, "ether");
       const isOwned = isTokenOwned(firstItem[5], originName);
 
@@ -737,18 +783,16 @@ const ShopView = () => {
 
   return (
     <div className="inventory-view p-4 max-w-7xl mx-auto my-8">
-      <Event
+     {/* <Event
         headerTitle="Welcome to The Closet Shop!"
         event={
           <h1 className="m-16 w-1/2 text-center self-center">
-            This feels like a good place for some very brief text, an image or
-            two explaining how the shop works, and a CB Pay button to allow
-            people to receive their crypto with fiat.
+            All Shop items are priced in Wrapped ETH on the Polygon network.
           </h1>
         }
       />
 
-      {/* Top divider */}
+       Top divider */}
       <div className="border-t-2 border-gray-200 my-8"></div>
 
       {/* Main content area */}
@@ -849,7 +893,7 @@ const ShopView = () => {
             ) : (
               <>
                 <select
-                  className="sortDropdown shadow bg-white font-poppins font-bold rounded py-2 pl-3 pr-8 text-gray-700 leading-tight focus:outline-none focus:shadow-outline mr-4"
+                  className="sortDropdown hidden shadow bg-white font-poppins font-bold rounded py-2 pl-3 pr-8 text-gray-700 leading-tight focus:outline-none focus:shadow-outline mr-4"
                   onChange={handleSortChange} // Assume this function handles sorting for itemized view
                 >
                   <option value="NotOwned">Sort by...</option>

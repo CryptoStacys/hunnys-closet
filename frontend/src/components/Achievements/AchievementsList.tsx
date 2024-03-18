@@ -221,7 +221,6 @@ import { calculateLevel } from '../../utils/levelUtils';
         cupcakePoints: 10, 
         title: 'Dreamer', 
         achievementsReward1: '/icons/Achievements/Level9/Reward1.png',
-        achievementsReward2: '/icons/Achievements/Level9/Reward2.png',
         eligibilityCriteria: (user: User) => user.level >= 10, // Eligible if user has reached at least Level 1
         },
         
