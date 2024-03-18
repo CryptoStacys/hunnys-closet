@@ -4,14 +4,19 @@ import closetABI from '../data/abi/HunnysCloset.json';
 import { closetAddress } from '../data/config';
 
 export async function mintNewDolly() {
+    const ETHEREUM_MAINNET_CHAIN_ID = 1; // Ethereum Mainnet
     // Ensure window.ethereum is available
     if (typeof window.ethereum !== 'undefined') {
+            const provider = new ethers.providers.Web3Provider(window.ethereum as any);
+            const { chainId } = await provider.getNetwork();
+        if (chainId !== ETHEREUM_MAINNET_CHAIN_ID) {
+            console.error("Not on Ethereum Mainnet.");
+            throw new Error("Please switch to Ethereum Mainnet to mint your Dolly.");
+        }
+
         try {
             // Request account access if needed
             await window.ethereum.request({ method: 'eth_requestAccounts' });
-
-            // Create a provider and signer
-            const provider = new ethers.providers.Web3Provider(window.ethereum as any);
             const signer = provider.getSigner();
 
             // Connect to the contract

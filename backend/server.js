@@ -1,4 +1,4 @@
-﻿﻿import UpdateTokens from "./src/update.js";
+import UpdateTokens from "./src/update.js";
 import DollysController from "./src/dollys.js";
 import CheckController from "./src/check.js";
 import TraitController from "./src/traits.js";

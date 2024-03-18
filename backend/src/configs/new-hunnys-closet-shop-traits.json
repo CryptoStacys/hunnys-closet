@@ -1,8 +1,48 @@
 {
   "attributes": [
     {
+      "name": "Accessory",
+      "traits": [
+        {"name":"ButterPuff","colors":5,"rarity":"Epic","tags":[],"token_id":68},
+        {"name":"BunVenture Backpack","colors":4,"rarity":"Common","tags":["backpack","ownStripes"],"token_id":69},
+        {"name":"Secret Agent S","colors":5,"rarity":"Uncommon","tags":["companion"],"token_id":71},
+        {"name":"Secret Agent Shades","colors":2,"rarity":"Uncommon","tags":["glasses"],"token_id":71},
+        {"name":"Silly Mr. Moar","colors":1,"rarity":"Mythic","tags":["companion"],"token_id":72},
+        {"name":"Snoozle","colors":5,"rarity":"Epic","tags":"onBack","token_id":77},
+        {"name":"Anime Heart Shades","colors":2,"rarity":"Common","tags":["glasses"],"token_id":62},
+        {"name":"Bubbly Love Wings","colors":1,"rarity":"Common","tags":["onBack"],"token_id":62},
+        {"name":"Ghost Hugicorn","colors":0,"rarity":"Common","tags":[],"token_id":62},
+        {"name":"Hawt Wings","colors":3,"rarity":"Common","tags":["onBack"],"token_id":62},
+        {"name":"Piggy Earring","colors":1,"rarity":"Rare","tags":["earrings"],"token_id":3},
+        {"name":"Cow Bell","colors":4,"rarity":"Rare","tags":[],"token_id":2},
+        {"name":"W33D Earrings","colors":1,"rarity":"Epic","tags":["earrings"],"token_id":4},
+        {"name":"Ghosty Studs","colors":1,"rarity":"common","tags":["earrings"],"token_id":12},
+        {"name":"Pumpkin Studs","colors":2,"rarity":"common","tags":["earrings"],"token_id":13},
+        {"name":"Cozy Scarf","colors":1,"rarity":"uncommon","tags":[],"token_id":22},
+        {"name":"Chiddar","colors":0,"rarity":"rare","tags":["companion"],"token_id":29},
+        {"name":"Ghost Trick or Treater","colors":4,"rarity":"epic","tags":["companion"],"token_id":35},
+        {"name":"Ocular Implant","colors":1,"rarity":"immortal","tags":[],"token_id":44},
+        {"name":"FLS Not Gucci Glasses (Shop)","colors":3,"rarity":"common","tags":["glasses"],"token_id":47},
+        {"name":"FLS Round Frame (Shop)","colors":3,"rarity":"common","tags":["glasses"],"token_id":47},
+        {"name":"FLS Round Glasses (Shop)","colors":1,"rarity":"common","tags":["glasses"],"token_id":47},
+        {"name":"FLS Sunglasses (Shop)","colors":2,"rarity":"common","tags":["glasses"],"token_id":47},
+        {"name":"Winter Solstice Dangle Earring","colors":3,"rarity":"Legendary","tags":["earrings"],"token_id":51}
+      ]
+    },
+    {
       "name": "Background",
       "traits": [
+        {"name":"SuperBowl LVIII","colors":4,"rarity":"Common","tags":[],"token_id":61},
+        {"name":"Hupe Scouts Background","colors":0,"rarity":"Uncommon","tags":[],"token_id":73},
+        {"name":"Best Buns Camp Out","colors":5,"rarity":"Rare","tags":[],"token_id":76},
+        {"name": "Bunny Club Connection","colors": 1.0,"rarity": "Mythic","tags": [],"token_id": 64},
+        {"name":"Candy Hearts","colors":4,"rarity":"Common","tags":[],"token_id":62},
+        {"name":"Broken Heart Left","colors":4,"rarity":"Common","tags":[],"token_id":62},
+        {"name":"Broken Heart Right","colors":4,"rarity":"Common","tags":[],"token_id":62},
+        {"name":"Hot Stuff Left","colors":4,"rarity":"Common","tags":[],"token_id":62},
+        {"name":"Hot Stuff Right","colors":4,"rarity":"Common","tags":[],"token_id":62},
+        {"name":"Candy Cloud Castle Left","colors":5,"rarity":"Common","tags":[],"token_id":62},
+        {"name":"Candy Cloud Castle Right","colors":5,"rarity":"Common","tags":[],"token_id":62},
         {"name":"W33D Trip","colors":4,"rarity":"Epic","tags":[],"token_id":4},
         {"name":"Skuzzys Sekret Space Zone 1","colors":0,"rarity":"Mythic","tags":[],"token_id":48},
         {"name":"Skuzzys Sekret Space Zone 2","colors":0,"rarity":"Mythic","tags":[],"token_id":48},
@@ -23,104 +63,6 @@
       ]
     },
     {
-      "name": "Hair Style",
-      "traits": [
-        {"name":"Messy Bored Hair","colors":1,"rarity":"Epic","parts":1,"tags":[],"token_id":1},
-        {"name":"Piggy Hair","colors":1,"rarity":"Rare","parts":1,"tags":[],"token_id":3},
-        {"name":"Cow Hair with Bangs","colors":1,"rarity":"Rare","parts":2,"tags":[],"token_id":2},
-        {"name":"Modern Bob","colors":1,"rarity":"Common","parts":1,"tags":[],"token_id":7},
-        {"name":"Long Gradient Hair","colors":2,"rarity":"Uncommon","parts":2,"tags":[],"token_id":6},
-        {"name":"W33D Bun","colors":4,"rarity":"Epic","parts":1,"tags":[],"token_id":4},
-        {"name":"BQ Server Pony","colors":2,"rarity":"common","parts":2,"tags":[],"token_id":11},
-        {"name":"Medusa Hair","colors":3,"rarity":"mythic","parts":1,"tags":[],"token_id":42},
-        {"name":"7s Style","colors":1,"rarity":"immortal","parts":1,"tags":[],"token_id":44},
-        {"name":"Drunkard Hair","colors":1,"rarity":"Epic","parts":2,"tags":[],"token_id":46},
-        {"name":"FLS Italy (Shop)","colors":1,"rarity":"common","parts":1,"tags":[],"token_id":47},
-        {"name":"FLS Office (Shop)","colors":1,"rarity":"common","parts":1,"tags":[],"token_id":47},
-        {"name":"FLS Pomp (Shop)","colors":1,"rarity":"common","parts":1,"tags":[],"token_id":47},
-        {"name":"FLS Straight (Shop)","colors":1,"rarity":"common","parts":2,"tags":[],"token_id":47},
-        {"name":"FLS Voluminous (Shop)","colors":1,"rarity":"common","parts":2,"tags":[],"token_id":47},
-        {"name":"Winter Solstice Curls","colors":2,"rarity":"Legendary","parts":2,"tags":[],"token_id":51},
-        {"name":"Trash Hair","colors":1,"rarity":"Legendary","parts":2,"tags":[],"token_id":56},
-        {"name":"Cozy Pigtails","colors":2,"rarity":"Mythic","parts":2,"tags":[],"token_id":58}
-      ]
-    },
-    {
-      "name": "Hand",
-      "traits": [
-        {"name":"Milk","colors":2,"rarity":"Rare","tags":["skin"],"token_id":2},
-        {"name":"GM Mug","colors":2,"rarity":"Common","tags":["skin"],"token_id":0},
-        {"name":"BQ Soda","colors":4,"rarity":"common","tags":["skin"],"token_id":11},
-        {"name":"BQ Large Fries","colors":4,"rarity":"common","tags":["skin"],"token_id":11},
-        {"name":"BQ Carrot Patty Burger","colors":5,"rarity":"common","tags":["skin"],"token_id":11},
-        {"name":"Pumpkin Spice Latte","colors":4,"rarity":"common","tags":["skin"],"token_id":19},
-        {"name":"Boo Mug","colors":3,"rarity":"uncommon","tags":["skin"],"token_id":25},
-        {"name":"Witch Cauldron Mug","colors":3,"rarity":"uncommon","tags":["skin"],"token_id":26},
-        {"name":"Jack o Bear Pail","colors":4,"rarity":"rare","tags":["skin"],"token_id":30},
-        {"name":"Beer","colors":2,"rarity":"epic","tags":["skin"],"token_id":46},
-        {"name":"Reindeer Mug","colors":4,"rarity":"Legendary","tags":["skin"],"token_id":49},
-        {"name":"XL Hot Cocoa","colors":4,"rarity":"Rare","tags":["skin"],"token_id":49},
-        {"name":"Christmas Tree Mug","colors":5,"rarity":"Uncommon","tags":["skin"],"token_id":49},
-        {"name":"Rancher Handbag","colors":4,"rarity":"Rare","tags":["skin"],"token_id":53},
-        {"name":"Sailor Babe Tote","colors":3,"rarity":"Uncommon","tags":["skin"],"token_id":54}
-      ]
-    },
-    {
-      "name": "Hat",
-      "traits": [
-        {"name":"Bored Fur Hat","colors":2,"rarity":"Epic","tags":["twoParts"],"token_id":1},
-        {"name":"Piggy Ears","colors":1,"rarity":"Rare","tags":["twoParts"],"token_id":3},
-        {"name":"Cow Ears","colors":4,"rarity":"Rare","tags":["twoParts"],"token_id":2},
-        {"name":"W33D Shades","colors":2,"rarity":"Epic","tags":[],"token_id":4},
-        {"name":"BQ Visor","colors":3,"rarity":"common","tags":[],"token_id":11},
-        {"name":"Baby Pumpkin","colors":3,"rarity":"uncommon","tags":[],"token_id":27},
-        {"name":"FLS Balaclava (Shop)","colors":1,"rarity":"common","tags":[],"token_id":47},
-        {"name":"FLS Snapback Cap (Shop)","colors":1,"rarity":"common","tags":[],"token_id":47},
-        {"name":"Winter Cap","colors":1,"rarity":"Rare","tags":[],"token_id":50},
-        {"name":"Winter Solstice Crown","colors":5,"rarity":"Legendary","tags":[],"token_id":51},
-        {"name":"Banana Peel","colors":3,"rarity":"Legendary","tags":[],"token_id":56},
-        {"name":"PomPom Toque","colors":2,"rarity":"Mythic","tags":[],"token_id":58}
-      ]
-    },
-    {
-      "name": "Outfit",
-      "traits": [
-        {"name":"Bored Hawaiian Shirt","colors":4,"rarity":"Epic","tags":[],"token_id":1},
-        {"name":"Piggy Frilly Top","colors":3,"rarity":"Rare","tags":[],"token_id":3},
-        {"name":"Cowbelle Crop","colors":3,"rarity":"Rare","tags":[],"token_id":2},
-        {"name":"W33DS Tie Dye Tee","colors":4,"rarity":"Epic","tags":[],"token_id":4},
-        {"name":"BQ Apron","colors":4,"rarity":"common","tags":[],"token_id":11},
-        {"name":"Lunar Fall Sweater","colors":3,"rarity":"common","tags":[],"token_id":20},
-        {"name":"Fancy Fall Harvest Sweater","colors":4,"rarity":"common","tags":[],"token_id":21},
-        {"name":"Squirrel Friend Sweater Vest","colors":3,"rarity":"uncommon","tags":[],"token_id":28},
-        {"name":"Plaid Fall Jacket","colors":4,"rarity":"rare","tags":[],"token_id":33},
-        {"name":"Borg Metallic Suit","colors":2,"rarity":"immortal","tags":[],"token_id":44},
-        {"name":"Drunkard Shirt","colors":1,"rarity":"Epic","tags":[],"token_id":46},
-        {"name":"Winter Vest","colors":4,"rarity":"Rare","tags":[],"token_id":50},
-        {"name":"Garbage Bag Dress","colors":1,"rarity":"Legendary","tags":[],"token_id":56},
-        {"name":"Flannel Shirt","colors":4,"rarity":"Mythic","tags":[],"token_id":58}
-      ]
-    },
-    {
-      "name": "Accessory",
-      "traits": [
-        {"name":"Piggy Earring","colors":1,"rarity":"Rare","tags":["earrings"],"token_id":3},
-        {"name":"Cow Bell","colors":4,"rarity":"Rare","tags":[],"token_id":2},
-        {"name":"W33D Earrings","colors":1,"rarity":"Epic","tags":["earrings"],"token_id":4},
-        {"name":"Ghosty Studs","colors":1,"rarity":"common","tags":["earrings"],"token_id":12},
-        {"name":"Pumpkin Studs","colors":2,"rarity":"common","tags":["earrings"],"token_id":13},
-        {"name":"Cozy Scarf","colors":1,"rarity":"uncommon","tags":[],"token_id":22},
-        {"name":"Chiddar","colors":0,"rarity":"rare","tags":["companion"],"token_id":29},
-        {"name":"Ghost Trick or Treater","colors":4,"rarity":"epic","tags":["companion"],"token_id":35},
-        {"name":"Ocular Implant","colors":1,"rarity":"immortal","tags":[],"token_id":44},
-        {"name":"FLS Not Gucci Glasses (Shop)","colors":3,"rarity":"common","tags":["glasses"],"token_id":47},
-        {"name":"FLS Round Frame (Shop)","colors":3,"rarity":"common","tags":["glasses"],"token_id":47},
-        {"name":"FLS Round Glasses (Shop)","colors":1,"rarity":"common","tags":["glasses"],"token_id":47},
-        {"name":"FLS Sunglasses (Shop)","colors":2,"rarity":"common","tags":["glasses"],"token_id":47},
-        {"name":"Winter Solstice Dangle Earring","colors":3,"rarity":"Legendary","tags":["earrings"],"token_id":51}
-      ]
-    },
-    {
       "name": "Bodysuit",
       "traits": [
         {"name":"Reaper Demon Hood","colors":5,"rarity":"Legendary","tags":[],"token_id":9},
@@ -133,6 +75,19 @@
     {
       "name": "Dye",
       "traits": [
+        {"name":"Picnic Day","colors":0,"rarity":"Uncommon","tags":[],"token_id":70},
+        {"name":"Dreamsicle","colors":0,"rarity":"Uncommon","tags":[],"token_id":74},
+        {"name":"Orange Tiger","colors":0,"rarity":"Epic","tags":[],"token_id":63},
+        {"name":"Neon Green Tiger","colors":0,"rarity":"Epic","tags":[],"token_id":63},
+        {"name":"White Tiger","colors":0,"rarity":"Epic","tags":[],"token_id":63},
+        {"name":"Neon Pink Tiger","colors":0,"rarity":"Epic","tags":[],"token_id":63},
+        {"name":"Orange Cheetah","colors":0,"rarity":"Epic","tags":[],"token_id":63},
+        {"name":"White Cheetah","colors":0,"rarity":"Epic","tags":[],"token_id":63},
+        {"name":"Pink Cheetah","colors":0,"rarity":"Epic","tags":[],"token_id":63},
+        {"name":"Neon Green Cheetah","colors":0,"rarity":"Epic","tags":[],"token_id":63},
+        {"name":"Moo Cow","colors":0,"rarity":"Epic","tags":[],"token_id":63},
+        {"name":"Strawberry Moo Cow","colors":0,"rarity":"Epic","tags":[],"token_id":63},
+        {"name":"Alien Moo Cow","colors":0,"rarity":"Epic","tags":[],"token_id":63},
         {"name":"Bored Pink 1","colors":0,"rarity":"Common","tags":[],"token_id":1},
         {"name":"Bored Pink 2","colors":0,"rarity":"Common","tags":[],"token_id":1},
         {"name":"Bored Pink 3","colors":0,"rarity":"Common","tags":[],"token_id":1},
@@ -195,6 +150,7 @@
     {
       "name": "Eyebrows",
       "traits": [
+        {"name":"Lovey Brows","colors":0,"rarity":"Common","tags":[],"token_id":62},
         {"name":"Grumpy","colors":0,"rarity":"Epic","tags":[],"token_id":5},
         {"name":"Surprised","colors":0,"rarity":"Epic","tags":[],"token_id":5},
         {"name":"Upbrows","colors":0,"rarity":"Epic","tags":[],"token_id":5},
@@ -207,6 +163,8 @@
     {
       "name": "Eyes",
       "traits": [
+        {"name": "Fired Up","colors": 1,"rarity": "Epic","tags": [],"token_id": 67},
+        {"name":"Anime Heart Eyes","colors":1,"rarity":"Common","tags":[],"token_id":62},
         {"name":"Bored Eyes","colors":1,"rarity":"Epic","tags":[],"token_id":1},
         {"name":"Closed Eyes","colors":0,"rarity":"Epic","tags":[],"token_id":5},
         {"name":"Shifty Eyes","colors":1,"rarity":"Epic","tags":[],"token_id":5},
@@ -219,6 +177,7 @@
     {
       "name": "Face Sticker",
       "traits": [
+        {"name":"Anime Blush","colors":1,"rarity":"Common","tags":[],"token_id":62},
         {"name":"W33D Sticker","colors":2,"rarity":"Epic","tags":[],"token_id":4},
         {"name":"Web","colors":1,"rarity":"common","tags":[],"token_id":14},
         {"name":"Batty","colors":1,"rarity":"common","tags":[],"token_id":15},
@@ -240,6 +199,12 @@
     {
       "name": "Frame",
       "traits": [
+        {"name":"Bunny Babe Basket","colors":5,"rarity":"Uncommon","tags":[],"token_id":70},
+        {"name":"Hupe Scouts Badge","colors":0,"rarity":"Uncommon","tags":[],"token_id":73},
+        {"name":"Thinking of U","colors":1,"rarity":"Common","tags":[],"token_id":62},
+        {"name":"Soft Sparkle Heart Frame","colors":4,"rarity":"Common","tags":[],"token_id":62},
+        {"name":"Sprinkle Hearts Scroll Left","colors":5,"rarity":"Common","tags":[],"token_id":62},
+        {"name":"Sprinkle Hearts Scroll Right","colors":5,"rarity":"Common","tags":[],"token_id":62},
         {"name":"Scary Trees","colors":2,"rarity":"uncommon","tags":["onBack"],"token_id":23},
         {"name":"Fall Pumpkins","colors":2,"rarity":"uncommon","tags":["onBack"],"token_id":24},
         {"name":"Flaunt Friday Banner (Shop)","colors":2,"rarity":"Common","tags":[],"token_id":47},
@@ -260,8 +225,83 @@
       ]
     },
     {
+      "name": "Hair Style",
+      "traits": [
+        {"name": "Hottie","colors": 2,"rarity": "Epic","tags": [],"token_id": 67},
+        {"name":"Messy Bored Hair","colors":1,"rarity":"Epic","parts":1,"tags":[],"token_id":1},
+        {"name":"Piggy Hair","colors":1,"rarity":"Rare","parts":1,"tags":[],"token_id":3},
+        {"name":"Cow Hair with Bangs","colors":1,"rarity":"Rare","parts":2,"tags":[],"token_id":2},
+        {"name":"Modern Bob","colors":1,"rarity":"Common","parts":1,"tags":[],"token_id":7},
+        {"name":"Long Gradient Hair","colors":2,"rarity":"Uncommon","parts":2,"tags":[],"token_id":6},
+        {"name":"W33D Bun","colors":4,"rarity":"Epic","parts":1,"tags":[],"token_id":4},
+        {"name":"BQ Server Pony","colors":2,"rarity":"common","parts":2,"tags":[],"token_id":11},
+        {"name":"Medusa Hair","colors":3,"rarity":"mythic","parts":1,"tags":[],"token_id":42},
+        {"name":"7s Style","colors":1,"rarity":"immortal","parts":1,"tags":[],"token_id":44},
+        {"name":"Drunkard Hair","colors":1,"rarity":"Epic","parts":2,"tags":[],"token_id":46},
+        {"name":"FLS Italy (Shop)","colors":1,"rarity":"common","parts":1,"tags":[],"token_id":47},
+        {"name":"FLS Office (Shop)","colors":1,"rarity":"common","parts":1,"tags":[],"token_id":47},
+        {"name":"FLS Pomp (Shop)","colors":1,"rarity":"common","parts":1,"tags":[],"token_id":47},
+        {"name":"FLS Straight (Shop)","colors":1,"rarity":"common","parts":2,"tags":[],"token_id":47},
+        {"name":"FLS Voluminous (Shop)","colors":1,"rarity":"common","parts":2,"tags":[],"token_id":47},
+        {"name":"Winter Solstice Curls","colors":2,"rarity":"Legendary","parts":2,"tags":[],"token_id":51},
+        {"name":"Trash Hair","colors":1,"rarity":"Legendary","parts":2,"tags":[],"token_id":56},
+        {"name":"Cozy Pigtails","colors":2,"rarity":"Mythic","parts":2,"tags":[],"token_id":58}
+      ]
+    },
+    {
+      "name": "Hand",
+      "traits": [
+        {"name":"Delicious Dreamwater","colors":4,"rarity":"Uncommon","tags":["skin"],"token_id":74},
+        {"name":"Tater Tot Tiller","colors":2,"rarity":"Rare","tags":["skin"],"token_id":75},
+        {"name": "LomBUNdi Trophy 2024","colors": 3.0,"rarity": "Mythic","tags": ["skin"],"token_id": 65},
+        {"name":"Heart Hands","colors":1,"rarity":"Common","tags":["skin"],"token_id":62},
+        {"name":"Holding Hands","colors":3,"rarity":"Common","tags":["skin"],"token_id":62},
+        {"name":"Macaron My Heart","colors":3,"rarity":"Common","tags":["skin"],"token_id":62},
+        {"name":"Milk","colors":2,"rarity":"Rare","tags":["skin"],"token_id":2},
+        {"name":"GM Mug","colors":2,"rarity":"Common","tags":["skin"],"token_id":0},
+        {"name":"BQ Soda","colors":4,"rarity":"common","tags":["skin"],"token_id":11},
+        {"name":"BQ Large Fries","colors":4,"rarity":"common","tags":["skin"],"token_id":11},
+        {"name":"BQ Carrot Patty Burger","colors":5,"rarity":"common","tags":["skin"],"token_id":11},
+        {"name":"Pumpkin Spice Latte","colors":4,"rarity":"common","tags":["skin"],"token_id":19},
+        {"name":"Boo Mug","colors":3,"rarity":"uncommon","tags":["skin"],"token_id":25},
+        {"name":"Witch Cauldron Mug","colors":3,"rarity":"uncommon","tags":["skin"],"token_id":26},
+        {"name":"Jack o Bear Pail","colors":4,"rarity":"rare","tags":["skin"],"token_id":30},
+        {"name":"Beer","colors":2,"rarity":"epic","tags":["skin"],"token_id":46},
+        {"name":"Reindeer Mug","colors":4,"rarity":"Legendary","tags":["skin"],"token_id":49},
+        {"name":"XL Hot Cocoa","colors":4,"rarity":"Rare","tags":["skin"],"token_id":49},
+        {"name":"Christmas Tree Mug","colors":5,"rarity":"Uncommon","tags":["skin"],"token_id":49},
+        {"name":"Rancher Handbag","colors":4,"rarity":"Rare","tags":["skin"],"token_id":53},
+        {"name":"Sailor Babe Tote","colors":3,"rarity":"Uncommon","tags":["skin"],"token_id":54}
+      ]
+    },
+    {
+      "name": "Hat",
+      "traits": [
+        {"name":"BunComms Device","colors":3,"rarity":"Common","tags":[],"token_id":69},
+        {"name":"Hupe Scouts Headband","colors":4,"rarity":"Uncommon","tags":[],"token_id":73},
+        {"name":"Baby Hornsworth","colors":4,"rarity":"Legendary","tags":[],"token_id":78},
+        {"name":"Cuddle Detectors","colors":3,"rarity":"Common","tags":[],"token_id":62},
+        {"name":"Cupid Rats Arrow","colors":3,"rarity":"Common","tags":[],"token_id":62},
+        {"name":"Football Helmet","colors":3,"rarity":"Common","tags":[],"token_id":61},
+        {"name":"Bored Fur Hat","colors":2,"rarity":"Epic","tags":["twoParts"],"token_id":1},
+        {"name":"Piggy Ears","colors":1,"rarity":"Rare","tags":["twoParts"],"token_id":3},
+        {"name":"Cow Ears","colors":4,"rarity":"Rare","tags":["twoParts"],"token_id":2},
+        {"name":"W33D Shades","colors":2,"rarity":"Epic","tags":[],"token_id":4},
+        {"name":"BQ Visor","colors":3,"rarity":"common","tags":[],"token_id":11},
+        {"name":"Baby Pumpkin","colors":3,"rarity":"uncommon","tags":[],"token_id":27},
+        {"name":"FLS Balaclava (Shop)","colors":1,"rarity":"common","tags":[],"token_id":47},
+        {"name":"FLS Snapback Cap (Shop)","colors":1,"rarity":"common","tags":[],"token_id":47},
+        {"name":"Winter Cap","colors":1,"rarity":"Rare","tags":[],"token_id":50},
+        {"name":"Winter Solstice Crown","colors":5,"rarity":"Legendary","tags":[],"token_id":51},
+        {"name":"Banana Peel","colors":3,"rarity":"Legendary","tags":[],"token_id":56},
+        {"name":"PomPom Toque","colors":2,"rarity":"Mythic","tags":[],"token_id":58}
+      ]
+    },
+    {
       "name": "Mouth",
       "traits": [
+        {"name":"Lovey Lips","colors":2,"rarity":"Common","tags":[],"token_id":62},
+        {"name":"Curious Carrot Munch","colors":3,"rarity":"Rare","tags":[],"token_id":76},
         {"name":"Bored Grin","colors":1,"rarity":"Epic","tags":[],"token_id":1},
         {"name":"Open Mouth","colors":2,"rarity":"Epic","tags":[],"token_id":5},
         {"name":"Frown","colors":1,"rarity":"Epic","tags":[],"token_id":5},
@@ -275,6 +315,32 @@
       ]
     },
     {
+      "name": "Outfit",
+      "traits": [
+        {"name":"Honest Work Overalls","colors":3,"rarity":"Rare","tags":[],"token_id":75},
+        {"name":"Silky Dreams PJs","colors":4,"rarity":"Epic","tags":[],"token_id":77},
+        {"name":"Swampstress","colors":5,"rarity":"Mythic","tags":[],"token_id":78},
+        {"name":"Candy Cutie Coveralls","colors":5,"rarity":"Common","tags":[],"token_id":62},
+        {"name":"49ers Jersey","colors":3,"rarity":"Common","tags":[],"token_id":61},
+        {"name":"Chiefs Jersey","colors":4,"rarity":"Common","tags":[],"token_id":61},
+        {"name":"Tay-Tay Jersey","colors":4,"rarity":"Common","tags":[],"token_id":61},
+        {"name":"Bored Hawaiian Shirt","colors":4,"rarity":"Epic","tags":[],"token_id":1},
+        {"name":"Piggy Frilly Top","colors":3,"rarity":"Rare","tags":[],"token_id":3},
+        {"name":"Cowbelle Crop","colors":3,"rarity":"Rare","tags":[],"token_id":2},
+        {"name":"W33DS Tie Dye Tee","colors":4,"rarity":"Epic","tags":[],"token_id":4},
+        {"name":"BQ Apron","colors":4,"rarity":"common","tags":[],"token_id":11},
+        {"name":"Lunar Fall Sweater","colors":3,"rarity":"common","tags":[],"token_id":20},
+        {"name":"Fancy Fall Harvest Sweater","colors":4,"rarity":"common","tags":[],"token_id":21},
+        {"name":"Squirrel Friend Sweater Vest","colors":3,"rarity":"uncommon","tags":[],"token_id":28},
+        {"name":"Plaid Fall Jacket","colors":4,"rarity":"rare","tags":[],"token_id":33},
+        {"name":"Borg Metallic Suit","colors":2,"rarity":"immortal","tags":[],"token_id":44},
+        {"name":"Drunkard Shirt","colors":1,"rarity":"Epic","tags":[],"token_id":46},
+        {"name":"Winter Vest","colors":4,"rarity":"Rare","tags":[],"token_id":50},
+        {"name":"Garbage Bag Dress","colors":1,"rarity":"Legendary","tags":[],"token_id":56},
+        {"name":"Flannel Shirt","colors":4,"rarity":"Mythic","tags":[],"token_id":58}
+      ]
+    },
+    {
       "name": "Piercing",
       "traits": [
         {"name":"Empty","colors":0,"rarity":"common","tags":[]}
@@ -283,6 +349,19 @@
     {
       "name": "Skin",
       "traits": [
+        {"name":"Gloopy Mr. Moar","colors":0,"rarity":"Legendary","tags":[],"token_id":72},
+        {"name":"Cupid Babe","colors":0,"rarity":"Common","tags":[],"token_id":62},
+        {"name":"Orange Tiger","colors":0,"rarity":"Epic","tags":[],"token_id":63},
+        {"name":"Neon Green Tiger","colors":0,"rarity":"Epic","tags":[],"token_id":63},
+        {"name":"White Tiger","colors":0,"rarity":"Epic","tags":[],"token_id":63},
+        {"name":"Neon Pink Tiger","colors":0,"rarity":"Epic","tags":[],"token_id":63},
+        {"name":"Orange Cheetah","colors":0,"rarity":"Epic","tags":[],"token_id":63},
+        {"name":"White Cheetah","colors":0,"rarity":"Epic","tags":[],"token_id":63},
+        {"name":"Pink Cheetah","colors":0,"rarity":"Epic","tags":[],"token_id":63},
+        {"name":"Neon Green Cheetah","colors":0,"rarity":"Epic","tags":[],"token_id":63},
+        {"name":"Moo Cow","colors":0,"rarity":"Epic","tags":[],"token_id":63},
+        {"name":"Strawberry Moo Cow","colors":0,"rarity":"Epic","tags":[],"token_id":63},
+        {"name":"Alien Moo Cow","colors":0,"rarity":"Epic","tags":[],"token_id":63},
         {"name":"Bored Pink Fur","colors":0,"rarity":"Legendary","tags":[],"token_id":1},
         {"name":"Blushy Babe","colors":0,"rarity":"Mythic","tags":[],"token_id":10},
         {"name":"Blushy Bombshell","colors":0,"rarity":"Mythic","tags":[],"token_id":10},
@@ -300,6 +379,19 @@
     {
       "name": "Tattoo",
       "traits": [
+        {"name": "Big Spoon","colors": 2.0,"rarity": "Rare","tags": [],"token_id": 66},
+        {"name": "Bunny Butt","colors": 2.0,"rarity": "Rare","tags": [],"token_id": 66},
+        {"name": "Floop Love","colors": 1.0,"rarity": "Rare","tags": [],"token_id": 66},
+        {"name": "Ghost Bunny Love","colors": 1.0,"rarity": "Rare","tags": [],"token_id": 66},
+        {"name": "Ghost Croc Love","colors": 1.0,"rarity": "Rare","tags": [],"token_id": 66},
+        {"name": "Ghost Kitty Love","colors": 1.0,"rarity": "Rare","tags": [],"token_id": 66},
+        {"name": "Horny Hornsworth","colors": 2.0,"rarity": "Rare","tags": [],"token_id": 66},
+        {"name": "Lil Spoon","colors": 2.0,"rarity": "Rare","tags": [],"token_id": 66},
+        {"name": "Moony BB","colors": 1.0,"rarity": "Rare","tags": [],"token_id": 66},
+        {"name": "Space Party","colors": 3.0,"rarity": "Rare","tags": [],"token_id": 66},
+        {"name": "Starry BB","colors": 1.0,"rarity": "Rare","tags": [],"token_id": 66},
+        {"name": "Sunny BB","colors": 2.0,"rarity": "Rare","tags": [],"token_id": 66},
+        {"name": "Taffy Rainbow","colors": 3.0,"rarity": "Rare","tags": [],"token_id": 66},
         {"name":"Witchy","colors":1,"rarity":"rare","tags":[],"token_id":32},
         {"name":"Cinnamon Roll Head","colors":3,"rarity":"rare","tags":[],"token_id":34},
         {"name":"FLS Barb Wire (Shop)","colors":0,"rarity":"common","tags":[],"token_id":47},

@@ -294,8 +294,9 @@ export default function DollEditor(props: {
 
   try {
     let newTokenId = props.id?.toString() ?? null; // Existing token ID or null
-
+    // Check if it's a new Dolly that requires minting and the user is on the wrong network
     if (isNewDolly && !isMinted && user && chain?.id !== ETHEREUM_MAINNET_CHAIN_ID) {
+      console.log("User is not on Ethereum Mainnet. Attempting to switch...");
       if (typeof switchNetwork === "function") {
           await switchNetwork(ETHEREUM_MAINNET_CHAIN_ID);
           console.log("Network switch successful. Proceeding with minting...");
@@ -310,7 +311,7 @@ export default function DollEditor(props: {
 
       if (!newTokenId) {
         console.error("Failed to mint new dolly");
-        setErrorMessage("Failed to mint. Please try again.");
+        setErrorMessage("Something went wrong. Please try again.");
         clearTimeout(timeoutId); // Ensure to clear timeout upon early exit
         return; // Early exit from function, as minting failed
       }

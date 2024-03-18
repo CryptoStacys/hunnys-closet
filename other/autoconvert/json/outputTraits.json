@@ -1,5 +1,6 @@
 {
   "attributes": [
+<<<<<<< HEAD
     {"name": "Accessory", "traits": [
         {"name": "ButterPuff","colors": 5,"rarity": "Epic","tags": [],"token_id": 68},
         {"name": "BunVenture Backpack","colors": 4,"rarity": "Common","tags": [],"token_id": 69},
@@ -47,6 +48,14 @@
 
     {"name": "Skin", "traits": [
         {"name": "Gloopy Mr. Moar","colors": 0,"rarity": "Legendary","tags": [],"token_id": 72}
+=======
+    {"name": "Eyes", "traits": [
+        {"name": "Fired Up","colors": 1,"rarity": "Epic","tags": [],"token_id": 67}
+    ]},
+
+    {"name": "Hair Style", "traits": [
+        {"name": "Hottie","colors": 2,"rarity": "Epic","tags": [],"token_id": 67}
+>>>>>>> master
     ]}
   ]
 }
