@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import Mint from "./Mint";
+import { useRouter } from 'next/router';
 import Render from "../Render/Render";
 import { motion } from "framer-motion";
 import { useAtom } from "jotai";
@@ -12,14 +13,19 @@ import ImageWithFallback from './ImageWithFallback';
 import Link from '../Link/Link';
 
 function DollGallery({ selectDoll }: any) {
+    const router = useRouter();
     const [user] = useAtom(userAtom);
     const [currentPage, setCurrentPage] = useState(1);
     const DOLLYS_PER_PAGE = 12;  // Display 12 Dollys per page, adjust as needed
     const [sortedDollys, setSortedDollys] = useState<any[]>([]);
 
     useEffect(() => {
-        setSortedDollys([...user!.dollys].sort((a: any, b: any) => a.token_id - b.token_id));
-    }, [user!.dollys]);
+        // Only attempt to sort and set sortedDollys if user and user.dollys exist
+        if (user && user.dollys) {
+            setSortedDollys([...user.dollys].sort((a: any, b: any) => a.token_id - b.token_id));
+        } else {
+        }
+    }, [user?.dollys, router]);
 
     const startIndex = (currentPage - 1) * DOLLYS_PER_PAGE;
     const endIndex = startIndex + DOLLYS_PER_PAGE;
@@ -55,7 +61,6 @@ function DollGallery({ selectDoll }: any) {
                             className: "",
                         }} />
                     </h1>
-                    <Mint />
                 </div>
                 <motion.div
                     initial="hidden"

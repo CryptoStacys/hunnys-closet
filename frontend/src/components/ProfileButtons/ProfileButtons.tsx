@@ -179,13 +179,13 @@ const ProfileButtons: React.FC<{
             <Link key={index} className="w-full " to="/dollys">
               <button className="">
                 
-                <span className="text-center text-sm text-black font-poppins font-bold text-[24px] ">
+                <span className="text-center xs:text-[24px] md:text-sm text-black font-poppins font-bold ">
                   {button.text}
                 </span>
               </button>
             </Link></div>
           ) : (
-            <div key={index} className="mb-2">
+            <div key={index} className="mb-2 ">
             <ProfileButton
             
             key={index}

@@ -158,6 +158,7 @@ const InventoryView = () => {
     'Hat': 'Hat',
     'Mouth': 'Mouth',
     'Outfit': 'Outfit',
+    'Piercing': 'Piercing',
     'Skin': 'Skin',
     'Tattoo': 'Tattoo',
     'Undergarment': 'Undergarment',

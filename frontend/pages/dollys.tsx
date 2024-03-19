@@ -1,14 +1,16 @@
 import DollGallery from "../src/components/DollGallery/DollGallery";
 import DollEditor from "../src/components/DollEditor/DollEditor";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { connectedAtom, userAtom } from "../src/data/store";
 import { useAtom } from "jotai";
 import dynamic from 'next/dynamic';
+import { useRouter } from 'next/router';
 
 export default function Dollys() {
   const [selected, setSelected] = useState<number | string>(-1); // Allow string for temporary ID
   const [user] = useAtom(userAtom);
   const [connected] = useAtom(connectedAtom);
+  const router = useRouter();
 
   const handleCreateNewDolly = () => {
     const tempId = `temp-${new Date().getTime()}`; // Generate a unique temporary ID
@@ -19,9 +21,11 @@ export default function Dollys() {
   console.log("Dolly count:", user?.dollyCount); // Just an example, replace with actual usage
 
   // Ensure you're not trying to access dollys if user is null
-  if (!user) {
-    return <div>Loading...</div>; // or any other loading state representation
-  }
+  useEffect(() => {
+    if (!user) {
+      router.push('/'); // Redirect to the homepage
+    }
+  }, [user, router]);
 
   const handleDollySaved = (newId: number) => {
     setSelected(newId); // Update with permanent ID once minted

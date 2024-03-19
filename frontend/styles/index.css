@@ -152,7 +152,7 @@ a {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between; /* Maintains space between columns */
-  align-items: start; /* Aligns items at the top */
+  align-items: flex-start; /* Aligns items at the top */
   gap: 1rem; /* Adjust based on your gap preference */
   /* Other styles remain unchanged */
 }

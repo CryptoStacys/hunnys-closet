@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { BigNumber } from 'ethers';
-import { useAccount, useNetwork } from 'wagmi';
+import { useAccount, useConfig, useSwitchChain } from "wagmi";
 import newHunnysClosetShopABI from '../../data/abi/new-hunnys-closet-shop-abi.json'; // Adjust the path as necessary
 import { Relayer, RelayerTransaction } from '@openzeppelin/defender-relay-client';
 import { ethers } from 'ethers'
@@ -29,8 +29,11 @@ const FreeClaim: React.FC<FreeClaimProps> = ({
   buttonText,
 }) => {
   const [isTransactionPending, setTransactionPending] = useState(false);
+  const { chain } = useAccount();
+  const { switchChain } = useSwitchChain();
   const { isConnected } = useAccount();
-  const { chain } = useNetwork();
+  const expectedChainId = 137; // Polygon Chain ID
+  const isCorrectNetwork = chain?.id === expectedChainId;
   const [user, setUser] = useAtom(userAtom);
   const nftContractAddress = "0x11bc733e719198e2b3746f6841d2818ca87af6da";
   const relayerAddress = "0x5C7E0dA70267937bC12a02c21fD1543f8A165Ba3";
