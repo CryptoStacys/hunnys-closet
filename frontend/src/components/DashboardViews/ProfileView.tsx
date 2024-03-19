@@ -631,13 +631,14 @@ const ProfileView = () => {
           rightBlockContent={""
           }
           footer={recentNews.map((item, index) => (
-            <><div className="date text-center leading-8 xs:ml-4 tn:ml-16 xs:text-xl sm:text-3xl">{item[4]}</div>
+            <div key={index}>
+            <div className="date text-center leading-8 xs:ml-4 tn:ml-16 xs:text-xl sm:text-3xl">{item[4]}</div>
             <Event
-            key={index}
             headerTitle={item[2]}
             event={<><a href={item[1]}>
               <img src={item[0]} alt="News" className="w-full" />
-            </a><p className="font-poppins text-xl text-center mt-8 mx-8">{item[3]}</p></>} /></>
+            </a><p className="font-poppins text-xl text-center mt-8 mx-8">{item[3]}</p></>} />
+            </div>
         ))}
         />
       
