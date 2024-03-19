@@ -20,6 +20,7 @@ import useWalletSession from "../../hooks/useWalletSession";
 import { User } from "../../data/global";
 import { useAtom } from "jotai";
 import { allTraitsAtom, connectedAtom, userAtom, userTraitsAtom } from "../../data/store";
+import { initializeUser } from "../../utils/userInitialization";
 type WalletAddress = Address<IProtocolFamily>;
 
 const loginScreen = "/assets/img/ClosetV2LoginImage.png";
@@ -162,6 +163,20 @@ export default function Login() {
   }, [waas, setUser]);
 
   
+  useEffect(() => {
+    if (address && waasUser) { // Make sure address and waasUser are defined
+        initializeUser(
+            address.address, // Assuming `address` contains the address string
+            setUser,
+            setAllTraits,
+            setUserTraits,
+            setConnected
+        ).catch(console.error); // Handle or log any errors
+    }
+    console.log("Initialization beginning...", address?.address, user)
+}, [address, waasUser, setUser, setAllTraits, setUserTraits, setConnected]);
+  
+
   return (
     <RainbowKitProvider>
     <div className="flex justify-center items-center w-max-full px-6 mx-auto bg-cover bg-center" style={{backgroundColor: 'white', backgroundImage: `url('/assets/img/sparkle_bg.png')`}}>
