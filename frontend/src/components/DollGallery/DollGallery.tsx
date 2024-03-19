@@ -55,7 +55,6 @@ function DollGallery({ selectDoll }: any) {
                             className: "",
                         }} />
                     </h1>
-                    <Mint />
                 </div>
                 <motion.div
                     initial="hidden"

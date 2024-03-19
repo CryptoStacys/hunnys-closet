@@ -1,7 +1,6 @@
 import { useState, useEffect, useRef, SetStateAction } from "react";
 // import { ethers } from "ethers";
 import { useAtom } from "jotai";
-import Mint from "../DollGallery/Mint";
 import {
   userAtom,
   modalAtom,
@@ -26,8 +25,7 @@ import { attributes, localStorageToken } from "../../data/config";
 import { Attribute, Trait } from "../../data/global";
 import { mintNewDolly } from "../../utils/mintDolly";
 import { ethers } from "ethers";
-import { useNetwork, useSwitchNetwork } from "wagmi";
-import { WriteContractResult, waitForTransaction } from "wagmi/actions";
+import { useAccount, useConfig, useSwitchChain } from "wagmi";
 
 // if token is missing attributes, just add empty trait there
 function formatToken(input: Trait[]) {
@@ -96,8 +94,8 @@ export default function DollEditor(props: {
   const [isMinted, setIsMinted] = useState(false);
   const ETHEREUM_MAINNET_CHAIN_ID = 1; // Ethereum Mainnet
   const prevIdRef = useRef(props.id);
-  const { chain } = useNetwork();
-  const { switchNetwork } = useSwitchNetwork();
+  const { chain } = useAccount();
+  const { switchChain } = useSwitchChain();
   const [, setDollEditorVisible] = useAtom(dollEditorVisibleAtom);
 
   useEffect(() => {
@@ -297,8 +295,8 @@ export default function DollEditor(props: {
     // Check if it's a new Dolly that requires minting and the user is on the wrong network
     if (isNewDolly && !isMinted && user && chain?.id !== ETHEREUM_MAINNET_CHAIN_ID) {
       console.log("User is not on Ethereum Mainnet. Attempting to switch...");
-      if (typeof switchNetwork === "function") {
-          await switchNetwork(ETHEREUM_MAINNET_CHAIN_ID);
+      if (typeof switchChain === "function") {
+          switchChain({ chainId: 1 });
           console.log("Network switch successful. Proceeding with minting...");
       } else {
           throw new Error("Network switch function not available");

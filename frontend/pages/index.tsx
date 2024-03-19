@@ -7,7 +7,6 @@ import { attributes, localStorageToken } from "../src/data/config";
 import Dashboard from '../src/components/Dashboard/Dashboard';
 import Dollys from "./dollys";
 import Inventory from "./inventory";
-import Help from "./help";
 import Nav from "../src/components/Nav/Nav";
 import Login from "../src/components/Login/Login";
 import Modal from "../src/components/Modal/Modal";
@@ -22,9 +21,11 @@ export default function App() {
   const [dollyCount, setDollyCount] = useState("");
   const router = useRouter();
 
-  const { isConnected, address } = useAccount({
-    onConnect: async ({ address }) => {
-      try {
+  const { isConnected, address } = useAccount();
+  useEffect(() => {
+    async function handleConnect() {
+      if (isConnected && address) {
+        try {
         // Fetch traits
         const traitsResponse = await fetch(`https://closetservices.hunnysnft.com/wp-json/hunnys-closet/v1/traits?wallet=${address}`);
         if (!traitsResponse.ok) throw new Error('Failed to fetch traits.');
@@ -82,6 +83,7 @@ export default function App() {
             // Handle the error or set parsedAchievements to a default value if needed
           }
       }
+      console.log("User connected:", address);
       // Combine data and update user atom
       setUser({
         ...profileDataResponse.data, // Assuming profileDataResponse contains a 'data' key with user details
@@ -95,17 +97,14 @@ export default function App() {
 
         setConnected(true);
       } catch (error) {
-        console.error(error);
+        console.error("Error handling connect:", error);
+        // Optionally, set connected to false if there's an error
         setConnected(false);
-      }
-    },
-    onDisconnect: () => {
-      setUser(null); // Reset user state
-      setConnected(false); // Indicate that the user is no longer connected
-      // Redirect to home page
-      router.push("/");
-    },
-  });
+      }}
+  };
+
+  handleConnect();
+}, [isConnected, address]);
 
   useEffect(() => {
     initializeLocalStorageForNewUsers();
@@ -123,9 +122,16 @@ export default function App() {
 
   useEffect(() => {
     if (!isConnected) {
-      // Redirect or handle the user not being connected
+      console.log("User disconnected or not yet connected");
+      setUser(null);
+      setConnected(false);
+      // Use a callback or check to navigate, to ensure it's the desired action
+      const navigateToLogin = () => {
+        router.push("/");
+      };
+      navigateToLogin();
     }
-  }, [isConnected, router]);
+  }, [isConnected]);
 
   return (
     <div className="pb-8 ">
@@ -145,9 +151,6 @@ export default function App() {
           {/* <Route path="/tokens">
             <Tokens />
           </Route> */}
-          <Route path="/help">
-            <Help />
-          </Route>
             
           </>
         )}

@@ -2,10 +2,11 @@
 
 import { useConnectModal, RainbowKitProvider } from "@rainbow-me/rainbowkit";
 import { useEVMAddress, useFirstAddress, useWalletContext } from "@coinbase/waas-sdk-web-react";
-import { configureChains } from "wagmi";
-import { mainnet } from "wagmi/chains";
-import { alchemyProvider } from "wagmi/providers/alchemy";
-import { publicProvider } from "wagmi/providers/public";
+import {
+  mainnet,
+  polygon,
+  base,
+} from 'wagmi/chains';
 
 import { Loader } from "../Loader/Loader";
 import Image from "next/image";
@@ -53,13 +54,6 @@ export default function Login() {
     setLoadingImage(loadingImages[randomIndex]);
   }, []);
 
-  const { chains } = configureChains(
-    [mainnet],
-    [
-      alchemyProvider({ apiKey: "fE6VhpMDQEapEp-KNNwNqrWL9-gHhNZD" }),
-      publicProvider(),
-    ]
-  );
 
   useEffect(() => {
     setMounted(true);
@@ -184,7 +178,7 @@ export default function Login() {
   
 
   return (
-    <RainbowKitProvider chains={chains}>
+    <RainbowKitProvider>
     <div className="flex justify-center items-center w-max-full px-6 mx-auto bg-cover bg-center" style={{backgroundColor: 'white', backgroundImage: `url('/assets/img/sparkle_bg.png')`}}>
     <div className="relative rounded-3xl overflow-hidden max-w-[1250px] w-full h-[100%] mx-auto flex items-center justify-center">
       {/* Background Image */}

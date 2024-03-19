@@ -1,23 +1,31 @@
-import '../styles/globals.css';
-import '@rainbow-me/rainbowkit/styles.css';
+import "../styles/globals.css";
+import "@rainbow-me/rainbowkit/styles.css";
 import "./../styles/index.css";
-import { getDefaultWallets, RainbowKitProvider, connectorsForWallets } from '@rainbow-me/rainbowkit';
-import type { AppProps } from 'next/app';
-import App from "./index";
-import { configureChains, createConfig, WagmiConfig } from 'wagmi';
-import { WalletProvider } from '@coinbase/waas-sdk-web-react';
 import {
-  goerli,
+  getDefaultConfig,
+  RainbowKitProvider,
+} from '@rainbow-me/rainbowkit';
+import type { AppProps } from "next/app";
+import App from "./index";
+import { useAccount, WagmiProvider } from 'wagmi';
+import { WalletProvider } from "@coinbase/waas-sdk-web-react";
+import { wagmiConfig } from '../src/utils/wagmiConfig'
+import {
   mainnet,
   polygon,
+  base,
 } from 'wagmi/chains';
-import { publicProvider } from 'wagmi/providers/public';
-import { alchemyProvider } from "wagmi/providers/alchemy";
+import {
+  QueryClientProvider,
+  QueryClient,
+} from "@tanstack/react-query";
 import { useState, useEffect } from "react";
-import { useRouter } from 'next/router';
-import { Analytics } from '@vercel/analytics/react';
+import { useRouter } from "next/router";
+import { Analytics } from "@vercel/analytics/react";
 // Use the Next.js Link component instead of your custom Link component for navigation
-import Link from 'next/link';
+import Link from "next/link";
+import { Account } from '../src/components/Wallet/account' 
+import { WalletOptions } from '../src/components/Wallet/wallet-options' 
 
 // Declare gtag for TypeScript
 declare global {
@@ -26,17 +34,13 @@ declare global {
   }
 }
 
-const { chains, publicClient, webSocketPublicClient } = configureChains(
-  [
-    mainnet,
-    polygon,
-    // goerli
-  ],
-  [
-    alchemyProvider({ apiKey: "mBdjgiEK6KpJxHUg0aRZWswBw8vRgXgh" }),
-    publicProvider()
-  ]
-);
+
+const queryClient = new QueryClient()
+function ConnectWallet() { 
+  const { isConnected } = useAccount() 
+  if (isConnected) return <Account /> 
+} 
+
 
 import {
   argentWallet,
@@ -44,50 +48,27 @@ import {
   ledgerWallet,
 } from "@rainbow-me/rainbowkit/wallets";
 
-const projectId = 'af873e966d19695d4979d906182d9751';
-
-const { wallets } = getDefaultWallets({
-  appName: 'Hunnys Dollys',
-  projectId,
-  chains,
+const config = getDefaultConfig({
+  appName: 'Hunnys Closet',
+  projectId: 'dc9e83a4ea618721d7c59c905af47837',
+  chains: [mainnet, polygon, base],
+  ssr: true, // If your dApp uses server side rendering (SSR)
 });
 
 
-const connectors = connectorsForWallets([
-  ...wallets,
-  {
-    groupName: 'Other',
-    wallets: [
-      argentWallet({ projectId, chains }),
-      trustWallet({ projectId, chains }),
-      ledgerWallet({ projectId, chains }),
-    ],
-  },
-]);
-
-const wagmiConfig = createConfig({
-  autoConnect: true,
-  connectors,
-  publicClient,
-  webSocketPublicClient,
-});
-
-import { usePathname } from 'next/navigation';
-import { assert } from 'console';
+import { usePathname } from "next/navigation";
+import { assert } from "console";
 
 function MyApp({ Component, pageProps }: AppProps) {
   const pathname = usePathname();
   const router = useRouter();
 
   useEffect(() => {
-    const handleRouteChange = (url: string) => {
-      
-    };
+    const handleRouteChange = (url: string) => {};
 
-
-    router.events.on('routeChangeComplete', handleRouteChange);
+    router.events.on("routeChangeComplete", handleRouteChange);
     return () => {
-      router.events.off('routeChangeComplete', handleRouteChange);
+      router.events.off("routeChangeComplete", handleRouteChange);
     };
   }, [router.events]);
 
@@ -96,28 +77,30 @@ function MyApp({ Component, pageProps }: AppProps) {
   }, [checkRoute]);
 
   function checkRoute() {
-    const paths = ['/', '/inventory', '/dollys', '/help', '/profile'];
-    if(!paths.includes(pathname)) {
-      router.push('/');
+    const paths = ["/", "/inventory", "/dollys", "/help", "/profile"];
+    if (!paths.includes(pathname)) {
+      router.push("/");
     }
   }
 
   return (
     <WalletProvider
-    collectAndReportMetrics
-    enableHostedBackups
-    projectId="e55373bd-6fc9-4fb7-b1b7-4908df14cd53"
-    autoCreateWallet={true}
-    prod={false} // Set to true for production
-  >
-    <WagmiConfig config={wagmiConfig}>
-      <RainbowKitProvider coolMode chains={chains}>
-      
-        <Component />
-        
-        <Analytics />
-      </RainbowKitProvider>
-    </WagmiConfig>
+      collectAndReportMetrics
+      enableHostedBackups
+      projectId="e55373bd-6fc9-4fb7-b1b7-4908df14cd53"
+      autoCreateWallet={true}
+      prod={false} // Set to true for production
+    >
+      <WagmiProvider config={config}>
+      <QueryClientProvider client={queryClient}> 
+      <ConnectWallet /> 
+        <RainbowKitProvider coolMode>
+          <Component />
+
+          <Analytics />
+        </RainbowKitProvider>
+        </QueryClientProvider> 
+      </WagmiProvider>
     </WalletProvider>
   );
 }
