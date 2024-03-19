@@ -87,9 +87,9 @@ function MyApp({ Component, pageProps }: AppProps) {
     <WalletProvider
       collectAndReportMetrics
       enableHostedBackups
-      projectId="e55373bd-6fc9-4fb7-b1b7-4908df14cd53"
+      projectId="86313968-8c02-42ef-91d1-c4e2d7458a0f"
       autoCreateWallet={true}
-      prod={false} // Set to true for production
+      prod={true} // Set to true for production
     >
       <WagmiProvider config={config}>
       <QueryClientProvider client={queryClient}> 
