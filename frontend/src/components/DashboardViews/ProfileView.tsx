@@ -154,13 +154,14 @@ const ProfileView = () => {
       provider,
     );
   };
-
-  // Configure AWS SDK
   AWS.config.update({
-    accessKeyId: "AKIAWFXRVD22RQT75KEL",
-    secretAccessKey: "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",
-    region: "us-east-2",
-  });
+    region: 'us-east-2',
+    apiVersion: 'latest',
+    credentials: {
+      accessKeyId: process.env.AWS_ACCESS_KEY_ID as string,
+      secretAccessKey: process.env.AWS_SECRET_ACCESS_KEY as string
+    }
+  })
 
   const handleImageUpload = async (): Promise<string | null> => {
     if (!selectedFile || !user?.UUID) return null;

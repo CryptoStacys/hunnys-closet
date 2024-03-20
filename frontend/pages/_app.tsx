@@ -78,7 +78,7 @@ function MyApp({ Component, pageProps }: AppProps) {
     <WalletProvider
       collectAndReportMetrics
       enableHostedBackups
-      projectId="90840334-4797-45ff-bb86-6823701b4b3a"
+      projectId={process.env.NEXT_PUBLIC_WAAS_PROJECT_ID_DEV}
       prod={false} // Set to true for production
     >
       <WagmiProvider config={config}>
