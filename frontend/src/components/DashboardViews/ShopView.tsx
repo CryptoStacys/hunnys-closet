@@ -610,7 +610,7 @@ const collectionNameMap: CollectionNameMap = {
                   try {
                     // Ensure provider is correctly instantiated
                     const provider = new ethers.providers.Web3Provider(window.ethereum as any);
-                    await mintWithWeth(user.address, tokenId, mintPrice, provider);
+                    await mintWithWeth(user.address, waasAddress, tokenId, mintPrice, provider);
                     console.log("Purchase successful!");
                     // Since this log indicates success, ensure it's only reached if mintWithWeth succeeds
                     // Optionally, call onMintSuccess() here or handle success feedback within this try block
@@ -767,6 +767,7 @@ const collectionNameMap: CollectionNameMap = {
                       );
                       await mintWithWeth(
                         user.address,
+                        waasAddress,
                         tokenId,
                         mintPrice,
                         provider

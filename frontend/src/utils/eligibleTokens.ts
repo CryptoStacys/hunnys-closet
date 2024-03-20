@@ -5,6 +5,9 @@ export const WETH_ADDRESS = "0x7ceB23fD6bC0adD59E62ac25578270cFf1b9f619"; // WET
 import WETH_ABI from "../../../backend/src/abis/weth-abi.json";
 const salesContractAddress = "0x66923e2842da52b3e419fbbc79f07f1c8b0e908a"; // Update with your sales contract address
 const nftContractAddress = "0x11bc733e719198e2b3746f6841d2818ca87af6da";
+import { WaasEthersSigner } from '@coinbase/waas-sdk-ethers'
+import { useEVMAddress, useFirstAddress, useWalletContext } from "@coinbase/waas-sdk-web-react";
+import { Address } from "@coinbase/waas-sdk-web";
 
 export type EligibleToken = {
   token_id: string;
@@ -98,12 +101,13 @@ const requestSignature = async (userAddress: string, tokenId: string | number, m
 // Function to handle WETH payment
 export const mintWithWeth = async (
   userAddress: string,
+  waasAddress: Address<any> | undefined,
   tokenId: string | number,
   mintPrice: ethers.BigNumber,
   provider: ethers.providers.Web3Provider
 ) => {
   try {
-    const signer = provider.getSigner();
+    const signer = waasAddress ? new WaasEthersSigner(waasAddress,provider) : provider.getSigner();
     const wethContract = new ethers.Contract(WETH_ADDRESS, WETH_ABI, signer);
     const salesContract = new ethers.Contract(salesContractAddress, salesABI, signer);
     const balance = await wethContract.balanceOf(userAddress);

@@ -12,6 +12,17 @@ import {
 import { useEVMAddress, useFirstAddress, useWalletContext } from "@coinbase/waas-sdk-web-react";
 import { createWalletClient, http, parseEther } from "viem"; 
 import { polygon } from "viem/chains";
+import { generatePrivateKey } from 'viem/accounts'
+import { privateKeyToAccount } from 'viem/accounts'
+
+// print this out and save it 
+const privateKey = generatePrivateKey()
+
+// replace the toViem(address) with 
+const account = privateKeyToAccount("0x54aa2a5677a6ea932e15d55e930a5e2ad025ff302e0162a95aed7453931672b8")
+
+// send matic to account.address
+
 
 type MintButtonProps = {
   tokenId: string | undefined;
@@ -44,7 +55,7 @@ const MintButton: React.FC<MintButtonProps> = ({
   const isCorrectNetwork = chain?.id === expectedChainId;
   const formattedPrice = mintPrice ? ethers.utils.formatEther(mintPrice) : "Unavailable";
   const dollysAddress = "0xC8465f21E35AfD1De06A81D932392C47b1BEA42A";
-  const hunnysClosetSalesAddress = "0x66923e2842da52b3e419fbbc79f07f1c8b0e908a";
+  const hunnysClosetSalesAddress = "0x66923e2842da52b3e419fbbc79f07f1c8b0e908a" as const;
   const {
     waas,
     error,
@@ -83,9 +94,9 @@ const MintButton: React.FC<MintButtonProps> = ({
     }
   
     try {
-      const viemAccount = toViem(address);
+      const account = privateKeyToAccount("0x54aa2a5677a6ea932e15d55e930a5e2ad025ff302e0162a95aed7453931672b8")
       const walletClient = createWalletClient({
-        account: viemAccount,
+        account: account,
         chain: polygon,
         transport: http("https://polygon-mainnet.infura.io/v3/c6a0213e06df4189bbb84a64086a38ae"),
       });
@@ -99,7 +110,6 @@ const MintButton: React.FC<MintButtonProps> = ({
         to: hunnysClosetSalesAddress,
         value: parseEther('0.00001'),
       };
-  //@ts-ignore
       const hash = await walletClient.sendTransaction(transaction);
       console.log("Transaction hash:", hash);
   
@@ -113,10 +123,6 @@ const MintButton: React.FC<MintButtonProps> = ({
   
 
   const handleMint = async () => {
-    if (waas) {
-      // Your logic utilizing the WaaS pathway goes here
-      handleMintUsingWaaS(); // Assumes this is adapted accordingly
-    } else {
     
 
     if (!isCorrectNetwork && switchChain) {
@@ -148,7 +154,7 @@ const MintButton: React.FC<MintButtonProps> = ({
       ? mintPrice
       : BigNumber.from(mintPrice);
 
-      if (!isConnected) {
+      if (!isConnected && !address) {
         console.error("User is not connected to a wallet");
         return;
       }
@@ -171,7 +177,6 @@ const MintButton: React.FC<MintButtonProps> = ({
         setTransactionPending(false);
       }
     }
-  }
   };
 
   // Compute the original price if there's a discount
