@@ -628,7 +628,7 @@ const InventoryView = () => {
       // Define card classes
       const cardClass = `border rounded-xl bg-white hover:shadow-lg transform transition duration-500 hover:scale-105 m-2 overflow-hidden ${
         gridSize === "8x8"
-          ? "p-0 max-w-xs min-h-64"
+          ? "p-0 max-w-xs min-h-32"
           : "p-2 d-flex flex-column justify-between"
       }`;
       const imageClass = "m-auto rounded-xl";
@@ -813,7 +813,7 @@ const InventoryView = () => {
       // Container classes
       const cardClass = `border rounded-xl bg-white hover:shadow-lg transform transition duration-500 hover:scale-105 m-2 overflow-hidden ${
         gridSize === "8x8"
-          ? "p-0 max-w-xs min-h-64"
+          ? "p-0 max-w-xs min-h-32"
           : "p-2 d-flex flex-column justify-between"
       }`;
       const imageClass = "m-auto rounded-xl max-w-full max-h-full"; // Added max-w-full and max-h-full for consistency
@@ -826,8 +826,8 @@ const InventoryView = () => {
           key={index}
           className={`${cardClass} ${isOwned ? "" : "low-brightness"} ${
             gridSize === "8x8"
-              ? "max-w-[250px] max-h-[450px]"
-              : "min-w-[100px] max-w-[200px] max-h-[600px]"
+              ? "max-w-[250px] max-h-[150px]"
+              : "min-w-[100px] max-w-[230px] max-h-[600px]"
           }`}
         >
           <div className="pt-1">
@@ -920,7 +920,7 @@ const InventoryView = () => {
                     <SwiperSlide key={idx}>
                       <div className="text-center cursor-pointer">
                         <img
-                          className="max-w-24 max-h-24 mx-auto border-[#C6C6C6] border-2 rounded-xl"
+                          className="max-w-16 max-h-16 mx-auto border-[#C6C6C6] border-2 rounded-xl"
                           src={item[8]}
                           alt={`Trait ${item[8]}`}
                         />
@@ -984,7 +984,7 @@ const InventoryView = () => {
       {/* Main content area */}
       <div className="bg-[#FAFAFA] mt-4">
         <div
-          className="align-center mx-auto flex xs:flex-col sm:flex-row xxl:px-16 justify-between items-center gap-4"
+          className="align-center mx-auto flex xs:flex-col md:flex-row xxl:px-16 justify-between items-center gap-4"
           style={{ maxWidth: "2560px" }}
         >
           {/* Left aligned items */}
@@ -1138,7 +1138,7 @@ const InventoryView = () => {
           <div
             className={`grid ${
               gridSize === "4x3"
-                ? "break-words grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4"
+                ? "break-words grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4"
                 : "break-words grid-cols-2 sm:grid-cols-4 md:grid-cols-6 lg:grid-cols-8 gap-4"
             } justify-items-center`}
           >
@@ -1148,7 +1148,7 @@ const InventoryView = () => {
           <div
             className={`grid ${
               gridSize === "4x3"
-                ? "break-words grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4"
+                ? "break-words grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4"
                 : "break-words grid-cols-2 sm:grid-cols-4 md:grid-cols-8 gap-4"
             } justify-items-center`}
           >

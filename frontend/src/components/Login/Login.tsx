@@ -48,12 +48,6 @@ export default function Login() {
   const {waas, error, user: waasUser, wallet, isLoggingIn, isCreatingWallet } =
   useWalletContext();
   const address = useFirstAddress(wallet, ProtocolFamily.EVM);
-  useEffect(() => {
-    setMounted(true);
-    const randomIndex = Math.floor(Math.random() * loadingImages.length);
-    setLoadingImage(loadingImages[randomIndex]);
-  }, []);
-
 
   useEffect(() => {
     setMounted(true);
@@ -154,14 +148,6 @@ export default function Login() {
   }, [waas]);
   
 
-  const logout = useCallback(async () => {
-    if (waas && waas.logout) {
-      await waas.logout();
-      setUser(null); // Reset global user state on logout
-      console.log("Logout successful.");
-    }
-  }, [waas, setUser]);
-
   
   useEffect(() => {
     if (address && waasUser) { // Make sure address and waasUser are defined
@@ -188,27 +174,39 @@ export default function Login() {
       {/* Overlay */}
       <div className="absolute inset-0 flex items-center justify-center">
         {/* Button Container */}
-        <div className="flex flex-row">
+        <div className="flex xs:flex-col md:flex-row items-center mt-40 space-y-4 md:space-y-0 md:space-x-4 font-poppins xs:text-sm">
           {error && <p>{error.message}</p>}
-          {mounted && openConnectModal ? (
-          <button
-          onClick={openConnectModal}
-          className="hunnys-btn font-poppins login-button bg-[#C9A9FF] !text-[#6510F2] xs:text-md xs:px-2 xs:py-2 sm:px-4 sm:py-3 xs:mr-4 lg:text-2xl lg:px-6 lg:py-3 font-bold tracking-wider px-14 py-6 rounded-full hover:cursor-pointer drop-shadow-2xl"
-        >
-          Connect Wallet
-        </button>
-        ) : (
-          <div className="login-button text-4xl justify-center align-center items-center luckiest text-white">
-                Loading...
-              </div>
-        )}
+          {!waasUser && (
+            <>
+            <button
+                onClick={openConnectModal}
+                className="hunnys-btn bg-[#C9A9FF] !text-[#6510F2] xs:text-md xs:px-6 xs:py-3 lg:text-2xl font-bold tracking-wider px-14 py-6 rounded-full hover:cursor-pointer drop-shadow-2xl"
+              >
+                Connect Wallet
+              </button>
+              <button
+                onClick={login}
+                className="hunnys-btn bg-[#ffd54b] !text-[#6510F2] xs:text-md xs:px-6 xs:py-3 lg:text-2xl font-bold tracking-wider px-14 py-6 rounded-full hover:cursor-pointer drop-shadow-2xl"
+              >
+                Sign-up / Login
+              </button>
+              
+            </>
+          )}
           {waasUser && (
             <>
-              <h1 className="login-button text-4xl justify-center align-center items-center luckiest text-white">
-              Loading...
+              <h1 className="luckiest text-4xl text-white p-8 mt-32">
+                Loading...
               </h1>
             </>
           )}
+          {mounted && openConnectModal ? (
+          <div></div>
+        ) : (
+          <h1 className="luckiest text-4xl text-white p-8 mt-32">
+                Loading...
+              </h1>
+        )}
         </div>
       </div>
     </div>

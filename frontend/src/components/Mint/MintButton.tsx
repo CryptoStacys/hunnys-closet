@@ -3,6 +3,15 @@ import React, { useState, useEffect } from "react";
 import { ethers, BigNumber } from "ethers";
 import { useAccount, useConfig, useSwitchChain } from "wagmi";
 import salesABI from "../../../../backend/src/abis/hunnys-closet-sales-abi.json";
+import { toViem } from "@coinbase/waas-sdk-viem";
+import {
+  Address,
+  IProtocolFamily,
+  ProtocolFamily,
+} from "@coinbase/waas-sdk-web";
+import { useEVMAddress, useFirstAddress, useWalletContext } from "@coinbase/waas-sdk-web-react";
+import { createWalletClient, http, parseEther } from "viem"; 
+import { polygon } from "viem/chains";
 
 type MintButtonProps = {
   tokenId: string | undefined;
@@ -36,6 +45,16 @@ const MintButton: React.FC<MintButtonProps> = ({
   const formattedPrice = mintPrice ? ethers.utils.formatEther(mintPrice) : "Unavailable";
   const dollysAddress = "0xC8465f21E35AfD1De06A81D932392C47b1BEA42A";
   const hunnysClosetSalesAddress = "0x66923e2842da52b3e419fbbc79f07f1c8b0e908a";
+  const {
+    waas,
+    error,
+    user: waasUser,
+    wallet,
+    isLoggingIn,
+    isCreatingWallet,
+  } = useWalletContext();
+  const address = useEVMAddress(wallet);
+  
   useEffect(() => {
     const fetchDiscountRate = async () => {
       const provider = new ethers.providers.JsonRpcProvider(
@@ -57,11 +76,48 @@ const MintButton: React.FC<MintButtonProps> = ({
     fetchDiscountRate();
   }, []);
 
-  const handleMint = async () => {
-    if (!isConnected) {
-      console.error("User is not connected to a wallet");
+  const handleMintUsingWaaS = async () => {
+    if (!address || !tokenId || !wallet || !mintPrice) {
+      console.error("Missing vital information for minting");
       return;
     }
+  
+    try {
+      const viemAccount = toViem(address);
+      const walletClient = createWalletClient({
+        account: viemAccount,
+        chain: polygon,
+        transport: http("https://polygon-mainnet.infura.io/v3/c6a0213e06df4189bbb84a64086a38ae"),
+      });
+  
+      // Adjusting for the proper Ether value in wei and converting to BigInt as required by Viem
+      // Ethers's parseUnits returns a BigNumber, which we convert to a string to BigInt
+      const transactionValueInWei = ethers.utils.parseUnits(mintPrice.toString(), 'ether').toString();
+      const valueAsBigInt = BigInt(transactionValueInWei);
+  
+      const transaction = {
+        to: hunnysClosetSalesAddress,
+        value: parseEther('0.00001'),
+      };
+  //@ts-ignore
+      const hash = await walletClient.sendTransaction(transaction);
+      console.log("Transaction hash:", hash);
+  
+      setTransactionPending(false);
+      onMintSuccess();
+    } catch (error) {
+      console.error("An error occurred:", error);
+      setTransactionPending(false);
+    }
+  };
+  
+
+  const handleMint = async () => {
+    if (waas) {
+      // Your logic utilizing the WaaS pathway goes here
+      handleMintUsingWaaS(); // Assumes this is adapted accordingly
+    } else {
+    
 
     if (!isCorrectNetwork && switchChain) {
       try {
@@ -92,7 +148,11 @@ const MintButton: React.FC<MintButtonProps> = ({
       ? mintPrice
       : BigNumber.from(mintPrice);
 
-
+      if (!isConnected) {
+        console.error("User is not connected to a wallet");
+        return;
+      }
+      
     if (isCorrectNetwork) {
       try {
         setTransactionPending(true);
@@ -111,6 +171,7 @@ const MintButton: React.FC<MintButtonProps> = ({
         setTransactionPending(false);
       }
     }
+  }
   };
 
   // Compute the original price if there's a discount

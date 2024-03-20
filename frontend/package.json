@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@coinbase/cbpay-js": "^2.1.0",
     "@coinbase/corekms": "https://api.developer.coinbase.com/waas/consumer/1994648a1fa8a282f1c3ca917a0379f1f79fbb06/corekms/corekms-0.1.12.tgz",
     "@coinbase/sandbox-rpc": "https://api.developer.coinbase.com/waas/consumer/1994648a1fa8a282f1c3ca917a0379f1f79fbb06/sandbox-rpc/sandbox-rpc-1.1.5.tgz",
     "@coinbase/waas-sdk-viem": "https://api.developer.coinbase.com/waas/consumer/1994648a1fa8a282f1c3ca917a0379f1f79fbb06/waas-sdk-viem/waas-sdk-viem-3.0.1.tgz",

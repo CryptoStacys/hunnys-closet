@@ -177,17 +177,17 @@ export default function Nav({ rewardStatus }: NavProps) {
             className="rounded-full"
           />
         )}
-        <span className="mx-24 relative right-8">
+        <span className="mx-24 relative right-8 whitespace-nowrap font-poppins">
           {user?.profile_name || "Account"}
         </span>
       </button>
       {dropdownVisible && (
-        <div className="absolute font-bold right-0 mt-2 py-2 w-48 bg-white rounded-md shadow-xl z-20">
+        <div className="font-poppins absolute font-bold  right-0 mt-2 py-2 w-48 bg-white rounded-md shadow-xl z-20">
           <Link to="/">
-            <p className="indent-2">Dashboard</p>
+            <p className="indent-2 hover:bg-[#EDEDED]">Dashboard</p>
             </Link>
           <a
-            className="block px-4 py-2 text-sm text-gray-700 hover:bg-[#EDEDED] cursor-default"
+            className="block px-2 py-2 font-poppins hover:bg-[#EDEDED] cursor-default"
             onClick={handleAddressCopy}
           >
             Account Address:{" "}
@@ -199,7 +199,7 @@ export default function Nav({ rewardStatus }: NavProps) {
                 : "No Address")}
           </a>
           <a
-            className="block px-4 py-2 text-sm text-gray-700 hover:bg-[#EDEDED] cursor-pointer"
+            className="block px-2 py-2 font-poppins hover:bg-[#EDEDED] cursor-pointer"
             onClick={logout}
           >
             Logout
@@ -303,20 +303,20 @@ export default function Nav({ rewardStatus }: NavProps) {
                 <path
                   d="M4 18L20 18"
                   stroke="#FFFFFF"
-                  stroke-width="2"
-                  stroke-linecap="round"
+                  strokeWidth="2"
+                  strokeLinecap="round"
                 />
                 <path
                   d="M4 12L20 12"
                   stroke="#FFFFFF"
-                  stroke-width="2"
-                  stroke-linecap="round"
+                  strokeWidth="2"
+                  strokeLinecap="round"
                 />
                 <path
                   d="M4 6L20 6"
                   stroke="#FFFFFF"
-                  stroke-width="2"
-                  stroke-linecap="round"
+                  strokeWidth="2"
+                  strokeLinecap="round"
                 />
               </svg>
       </div>

@@ -70,6 +70,16 @@ export async function initializeUser(address: string, setUser: (action: User | (
         }
       }
 
+      let parsedFreeClaims = {};
+      if (profileData.data.free_claim && typeof profileData.data.free_claim === 'string') {
+          try {
+            parsedFreeClaims = JSON.parse(profileData.data.free_claim);
+          } catch (error) {
+            console.error("Error parsing achievements JSON:", error);
+            // Handle the error or set parsedAchievements to a default value if needed
+          }
+      }
+
       // Combine data and update user atom
       setUser(prevUser => ({
         ...prevUser,
@@ -79,6 +89,7 @@ export async function initializeUser(address: string, setUser: (action: User | (
         dollyCount: closetData.dollys?.length || 0,
         address: address,
         achievements: parsedAchievements,
+        free_claim: parsedFreeClaims,
       }));
   
       setConnected(true);

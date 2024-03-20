@@ -10,7 +10,7 @@ import type { AppProps } from "next/app";
 import App from "./index";
 import { useAccount, WagmiProvider } from 'wagmi';
 import { WalletProvider } from "@coinbase/waas-sdk-web-react";
-import { wagmiConfig } from '../src/utils/wagmiConfig'
+import { config } from '../src/utils/wagmiConfig'
 import { 
   createConfig, 
   http 
@@ -30,7 +30,6 @@ import { Analytics } from "@vercel/analytics/react";
 // Use the Next.js Link component instead of your custom Link component for navigation
 import Link from "next/link";
 import { Account } from '../src/components/Wallet/account' 
-import { WalletOptions } from '../src/components/Wallet/wallet-options' 
 
 // Declare gtag for TypeScript
 declare global {
@@ -39,41 +38,6 @@ declare global {
   }
 }
 
-
-
-import {
-  argentWallet,
-  trustWallet,
-  ledgerWallet,
-  metaMaskWallet,
-  walletConnectWallet,
-  rainbowWallet,
-  injectedWallet,
-  coinbaseWallet
-} from "@rainbow-me/rainbowkit/wallets";
-
-const connectors = connectorsForWallets(
-  [
-    {
-      groupName: 'Recommended',
-      wallets: [coinbaseWallet, rainbowWallet, walletConnectWallet, ledgerWallet, metaMaskWallet, injectedWallet, trustWallet, argentWallet],
-    },
-  ],
-  {
-    appName: 'Hunnys Closet',
-    projectId: 'dc9e83a4ea618721d7c59c905af47837',
-  }
-);
-
-const config = createConfig({
-  chains: [mainnet, polygon],
-  ssr: true, // If your dApp uses server side rendering (SSR)
-  connectors,
-  transports: {
-    [mainnet.id]: http('https://mainnet.infura.io/v3/5239f83d36634330bd900f94158cf76e'),
-    [polygon.id]: http('https://polygon-mainnet.infura.io/v3/2540ef4e847c4dea838bacade9c4fcac'),
-  },
-})
 
 const queryClient = new QueryClient();
 
@@ -114,8 +78,8 @@ function MyApp({ Component, pageProps }: AppProps) {
     <WalletProvider
       collectAndReportMetrics
       enableHostedBackups
-      projectId="86313968-8c02-42ef-91d1-c4e2d7458a0f"
-      prod={true} // Set to true for production
+      projectId="e55373bd-6fc9-4fb7-b1b7-4908df14cd53"
+      prod={false} // Set to true for production
     >
       <WagmiProvider config={config}>
       <QueryClientProvider client={queryClient}> 

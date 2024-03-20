@@ -120,120 +120,124 @@ import { calculateLevel } from '../../utils/levelUtils';
     //     eligibilityCriteria: (user: User) => user.tokens.some(token => token.origin_name === "Hunnys OGs"),
     // },
     {
-        id: '12',
-        challenge: 'Super Stacys',
-        description: 'Own at least 1 Stacys Collectible',
-        cupcakePoints: 50,
-        achievementsReward1: '/icons/Achievements/CupcakePoints.png',
-        title: 'OG Cupcake',
-        eligibilityCriteria: (user: User) => user.tokens.some(token => token.origin_name === "Hunnys Stacys"),
-        },
-    {
-        id: '13', // Assuming IDs are sequential and unique
-        challenge: 'Reach Level 1',
-        description: 'Collect enough Cupcake Points to reach Level 1',
-        cupcakePoints: 10, 
-        title: 'Fresh Cupcake', 
-        achievementsReward1: '/icons/Achievements/Level0/Reward1.png',
-        eligibilityCriteria: (user: User) => user.level >= 1, // Eligible if user has reached at least Level 1
-        },
-    {
-        id: '14', // Assuming IDs are sequential and unique
-        challenge: 'Reach Level 2',
-        description: 'Collect enough Cupcake Points to reach Level 2',
-        cupcakePoints: 10, 
-        title: 'Bunny Queens Helper', 
-        achievementsReward1: '/icons/Achievements/Level1/Reward1.png',
-        eligibilityCriteria: (user: User) => user.level >= 2, // Eligible if user has reached at least Level 1
-        },
-        
-    {
-        id: '15', // Assuming IDs are sequential and unique
-        challenge: 'Reach Level 3',
-        description: 'Collect enough Cupcake Points to reach Level 3',
-        cupcakePoints: 10, 
-        title: 'Bunny Bargainer', 
-        achievementsReward1: '/icons/Achievements/Level2/Reward1.png',
-        eligibilityCriteria: (user: User) => user.level >= 3, // Eligible if user has reached at least Level 1
-        },
-    {
-        id: '16', // Assuming IDs are sequential and unique
-        challenge: 'Reach Level 4',
-        description: 'Collect enough Cupcake Points to reach Level 4',
-        cupcakePoints: 10, 
-        title: 'Squirrel Whisperer', 
-        achievementsReward1: '/icons/Achievements/Level3/Reward1.png',
-        eligibilityCriteria: (user: User) => user.level >= 4, // Eligible if user has reached at least Level 1
-        },
-    {
-        id: '17', // Assuming IDs are sequential and unique
-        challenge: 'Reach Level 5',
-        description: 'Collect enough Cupcake Points to reach Level 5',
-        cupcakePoints: 10, 
-        title: 'Moar Collector', 
-        achievementsReward1: '/icons/Achievements/Level4/Reward1.png',
-        eligibilityCriteria: (user: User) => user.level >= 5, // Eligible if user has reached at least Level 1
-        },
-    {
-        id: '18', // Assuming IDs are sequential and unique
-        challenge: 'Reach Level 6',
-        description: 'Collect enough Cupcake Points to reach Level 6',
-        cupcakePoints: 10, 
-        title: 'So Hupe!', 
-        achievementsReward1: '/icons/Achievements/Level5/Reward1.png',
-        achievementsReward2: '/icons/Achievements/Level5/Reward2.png',
-        achievementsReward3: '/icons/Achievements/Level5/Reward3.png',
-        eligibilityCriteria: (user: User) => user.level >= 6, // Eligible if user has reached at least Level 1
-        },
-    {
-        id: '19', // Assuming IDs are sequential and unique
-        challenge: 'Reach Level 7',
-        description: 'Collect enough Cupcake Points to reach Level 7',
-        cupcakePoints: 10, 
-        title: 'Delicious Dreamer', 
-        achievementsReward1: '/icons/Achievements/Level6/Reward1.png',
-        achievementsReward2: '/icons/Achievements/Level6/Reward2.png',
-        eligibilityCriteria: (user: User) => user.level >= 7, // Eligible if user has reached at least Level 1
-        },
-    {
-        id: '20', // Assuming IDs are sequential and unique
-        challenge: 'Reach Level 8',
-        description: 'Collect enough Cupcake Points to reach Level 8',
-        cupcakePoints: 10, 
-        title: 'Tater Tot', 
-        achievementsReward1: '/icons/Achievements/Level7/Reward1.png',
-        achievementsReward2: '/icons/Achievements/Level7/Reward2.png',
-        eligibilityCriteria: (user: User) => user.level >= 8, // Eligible if user has reached at least Level 1
-        },
-    {
-        id: '21', // Assuming IDs are sequential and unique
-        challenge: 'Reach Level 9',
-        description: 'Collect enough Cupcake Points to reach Level 9',
-        cupcakePoints: 10, 
-        title: 'Forest Friend', 
-        achievementsReward1: '/icons/Achievements/Level8/Reward1.png',
-        eligibilityCriteria: (user: User) => user.level >= 9, // Eligible if user has reached at least Level 1
-        },
-    {
-        id: '22', // Assuming IDs are sequential and unique
-        challenge: 'Reach Level 10',
-        description: 'Collect enough Cupcake Points to reach Level 10',
-        cupcakePoints: 10, 
-        title: 'Dreamer', 
-        achievementsReward1: '/icons/Achievements/Level9/Reward1.png',
-        eligibilityCriteria: (user: User) => user.level >= 10, // Eligible if user has reached at least Level 1
-        },
-        
-    {
-        id: '23', // Assuming IDs are sequential and unique
-        challenge: 'Reach Level 11',
-        description: 'Collect enough Cupcake Points to reach Level 11',
-        cupcakePoints: 50, 
-        title: 'Horny', 
-        achievementsReward1: '/icons/Achievements/Level10/Reward1.png',
-        achievementsReward2: '/icons/Achievements/Level10/Reward2.png',
-        eligibilityCriteria: (user: User) => user.level >= 11, // Eligible if user has reached at least Level 1
-        },
+      id: '12',
+      challenge: 'Super Stacys',
+      description: 'Own at least 1 Stacys Collectible',
+      cupcakePoints: 50,
+      achievementsReward1: '/icons/Achievements/CupcakePoints.png',
+      title: 'OG Cupcake',
+      eligibilityCriteria: (user: User) => user.tokens.some(token => token.origin_name === "Hunnys Stacys"),
+      },
+  {
+      id: '13', // Assuming IDs are sequential and unique
+      challenge: 'Reach Level 1',
+      description: 'Collect enough Cupcake Points to reach Level 1',
+      cupcakePoints: 10, 
+      title: 'Fresh Cupcake', 
+      achievementsReward1: '/icons/Achievements/Level0/Reward1.png',
+      eligibilityCriteria: (user: User) => user.level >= 1, // Eligible if user has reached at least Level 1
+      },
+  {
+      id: '14', // Assuming IDs are sequential and unique
+      challenge: 'Reach Level 2',
+      description: 'Collect enough Cupcake Points to reach Level 2',
+      cupcakePoints: 10, 
+      title: 'Bunny Queens Helper', 
+      achievementsReward1: '/icons/Achievements/Level1/Reward1.png',
+      achievementsReward2: '/icons/Achievements/Level1/Reward2.png',
+      eligibilityCriteria: (user: User) => user.level >= 2, // Eligible if user has reached at least Level 1
+      },
+      
+  {
+      id: '15', // Assuming IDs are sequential and unique
+      challenge: 'Reach Level 3',
+      description: 'Collect enough Cupcake Points to reach Level 3',
+      cupcakePoints: 10, 
+      title: 'Bunny Bargainer', 
+      achievementsReward1: '/icons/Achievements/Level2/Reward1.png',
+      eligibilityCriteria: (user: User) => user.level >= 3, // Eligible if user has reached at least Level 1
+      },
+  {
+      id: '16', // Assuming IDs are sequential and unique
+      challenge: 'Reach Level 4',
+      description: 'Collect enough Cupcake Points to reach Level 4',
+      cupcakePoints: 10, 
+      title: 'Squirrel Whisperer', 
+      achievementsReward1: '/icons/Achievements/Level3/Reward1.png',
+      achievementsReward2: '/icons/Achievements/Level3/Reward2.png',
+      eligibilityCriteria: (user: User) => user.level >= 4, // Eligible if user has reached at least Level 1
+      },
+  {
+      id: '17', // Assuming IDs are sequential and unique
+      challenge: 'Reach Level 5',
+      description: 'Collect enough Cupcake Points to reach Level 5',
+      cupcakePoints: 10, 
+      title: 'Moar Collector', 
+      achievementsReward1: '/icons/Achievements/Level4/Reward1.png',
+      achievementsReward2: '/icons/Achievements/Level4/Reward2.png',
+      eligibilityCriteria: (user: User) => user.level >= 5, // Eligible if user has reached at least Level 1
+      },
+  {
+      id: '18', // Assuming IDs are sequential and unique
+      challenge: 'Reach Level 6',
+      description: 'Collect enough Cupcake Points to reach Level 6',
+      cupcakePoints: 10, 
+      title: 'So Hupe!', 
+      achievementsReward1: '/icons/Achievements/Level5/Reward1.png',
+      achievementsReward2: '/icons/Achievements/Level5/Reward2.png',
+      achievementsReward3: '/icons/Achievements/Level5/Reward3.png',
+      eligibilityCriteria: (user: User) => user.level >= 6, // Eligible if user has reached at least Level 1
+      },
+  {
+      id: '19', // Assuming IDs are sequential and unique
+      challenge: 'Reach Level 7',
+      description: 'Collect enough Cupcake Points to reach Level 7',
+      cupcakePoints: 10, 
+      title: 'Delicious Dreamer', 
+      achievementsReward1: '/icons/Achievements/Level6/Reward1.png',
+      achievementsReward2: '/icons/Achievements/Level6/Reward2.png',
+      eligibilityCriteria: (user: User) => user.level >= 7, // Eligible if user has reached at least Level 1
+      },
+  {
+      id: '20', // Assuming IDs are sequential and unique
+      challenge: 'Reach Level 8',
+      description: 'Collect enough Cupcake Points to reach Level 8',
+      cupcakePoints: 10, 
+      title: 'Tater Tot', 
+      achievementsReward1: '/icons/Achievements/Level7/Reward1.png',
+      achievementsReward2: '/icons/Achievements/Level7/Reward2.png',
+      eligibilityCriteria: (user: User) => user.level >= 8, // Eligible if user has reached at least Level 1
+      },
+  {
+      id: '21', // Assuming IDs are sequential and unique
+      challenge: 'Reach Level 9',
+      description: 'Collect enough Cupcake Points to reach Level 9',
+      cupcakePoints: 10, 
+      title: 'Forest Friend', 
+      achievementsReward1: '/icons/Achievements/Level8/Reward1.png',
+      achievementsReward2: '/icons/Achievements/Level8/Reward2.png',
+      eligibilityCriteria: (user: User) => user.level >= 9, // Eligible if user has reached at least Level 1
+      },
+  {
+      id: '22', // Assuming IDs are sequential and unique
+      challenge: 'Reach Level 10',
+      description: 'Collect enough Cupcake Points to reach Level 10',
+      cupcakePoints: 10, 
+      title: 'Dreamer', 
+      achievementsReward1: '/icons/Achievements/Level9/Reward1.png',
+      eligibilityCriteria: (user: User) => user.level >= 10, // Eligible if user has reached at least Level 1
+      },
+      
+  {
+      id: '23', // Assuming IDs are sequential and unique
+      challenge: 'Reach Level 11',
+      description: 'Collect enough Cupcake Points to reach Level 11',
+      cupcakePoints: 50, 
+      title: 'Horny', 
+      achievementsReward1: '/icons/Achievements/Level10/Reward1.png',
+      achievementsReward2: '/icons/Achievements/Level10/Reward2.png',
+      eligibilityCriteria: (user: User) => user.level >= 11, // Eligible if user has reached at least Level 1
+      },
       
     // Add more achievements here
   ];

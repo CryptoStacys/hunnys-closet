@@ -20,7 +20,15 @@ import ItemView from "./ItemView";
 import DollEditorOptions from "./DollEditorOptions";
 import Icon from "../Icon/Icon";
 import { allTraitsAtom } from "../../data/store";
-
+import { toViem } from "@coinbase/waas-sdk-viem";
+import {
+  Address,
+  IProtocolFamily,
+  ProtocolFamily,
+} from "@coinbase/waas-sdk-web";
+import { useEVMAddress, useFirstAddress, useWalletContext } from "@coinbase/waas-sdk-web-react";
+import { createWalletClient, http, parseEther } from "viem"; 
+import { mainnet } from "viem/chains";
 import { attributes, localStorageToken } from "../../data/config";
 import { Attribute, Trait } from "../../data/global";
 import { mintNewDolly } from "../../utils/mintDolly";
@@ -97,7 +105,15 @@ export default function DollEditor(props: {
   const { chain } = useAccount();
   const { switchChain } = useSwitchChain();
   const [, setDollEditorVisible] = useAtom(dollEditorVisibleAtom);
-
+  const {
+    waas,
+    error,
+    user: waasUser,
+    wallet,
+    isLoggingIn,
+    isCreatingWallet,
+  } = useWalletContext();
+  const address = useEVMAddress(wallet);
   useEffect(() => {
     setDollEditorVisible(true);
     return () => setDollEditorVisible(false); // Reset on unmount
@@ -109,47 +125,6 @@ export default function DollEditor(props: {
     // If not set or explicitly set to 'false', show the intro modal
     return hideIntro !== "true";
   });
-
-  {
-    /* useEffect(() => {
-    if (showIntroModal) {
-      modalSet({
-        active: true,
-        title: "The Dressing Room 💛",
-        body: (
-          <div className="text-center p-6">
-            <h3 className="mb-4 font-luckiest text-2xl uppercase">Hey Cupcake! Are you ready to Unleash Your Creativity? 🥰</h3>
-            <img className="introModalMika mobile-hide" alt="Bunny Queen Mika" src="/assets/Hunnys_Dressup_Doll_Logo.gif"></img>
-            <p className="mt-4 font-luckiest text-xl text-left">HOW IT WORKS:</p>
-            <p className="mb-4 text-left">🌈 Here in The Dressing Room, you can give your Dolly endless makeovers, trying on all sorts of stylish outfits and accessories, highlighted by the most harmonious of colors.</p>
-            <p className="mb-4 text-left">✨ Different traits are unlocked based on collectibles you might own from within the Hunnys universe and beyond.</p>
-            <p className="mb-4 text-left">🎀 We have plenty for you to try for free, and even more for sale with the click of a button!</p>
-            <p className="mt-8 font-luckiest text-xl text-left">SAVING:</p>
-            <p className="mb-4 text-left">📸 Click the &lsquo;Download&lsquo; button at any point to take a snapshot of your Dolly to keep forever!</p>
-            <p className="mb-4 text-left">✅ Love the way you look? Click the &lsquo;Save&lsquo; button at the top to the page! Saving your Dolly&lsquo;s debut look as a digital collectible<span className="font-extrabold"> requires a small, one-time fee.</span></p>
-            <p className="mb-4 text-left">💋 But don&lsquo;t fret, sweetie — every saved makeover after that is 100% free, forever and ever.</p>
-            <p className="mb-4 mt-8 text-center">Have fun, Cupcake! And be sure to share with us afterwards and let us see how you look 💛</p>
-            <div className="mt-4">
-              <button 
-                onClick={() => modalSet({ active: false, title: "", body: <></> })}
-                className="bg-hunnys-blue text-hunnys-yellow w-full uppercase font-luckiest shadow-md rounded-full mt-4 px-3 py-1 xl:text-xl text-md hover:shadow-lg hover:scale-[1.02] transition-all"
-              >
-                Got It, Let&lsquo;s Start!
-              </button>
-              <label className="inline-flex items-center mt-3">
-              <input type="checkbox" className="form-checkbox h-5 w-5 text-gray-600" onChange={(e) => {
-                const shouldHide = e.target.checked;
-                localStorage.setItem('hideIntroModal', shouldHide ? 'true' : 'false');
-                setShowIntroModal(!shouldHide);
-              }}/><span className="ml-2 text-gray-700">Got it! Don&lsquo;t show this message again</span>
-            </label>
-            </div>
-          </div>
-        )
-      });
-    }
-  }, [showIntroModal]); */
-  }
 
   useEffect(() => {
     if (isNewDolly) {
@@ -531,14 +506,6 @@ export default function DollEditor(props: {
       // possibly by setting a default state or fetching necessary data
     }
   }, [selectedTrait]);
-
-  // Function to generate tweet URL
-  function generateTweetUrl(headline: any) {
-    const tweetText = encodeURIComponent(
-      `Just gave my Dolly from @HunnysNFT a makeover, and Bunny Queen Mika said '${headline}'! Unleash your creativity with me at https://closet.hunnys.io`
-    );
-    return `https://twitter.com/intent/tweet?text=${tweetText}`;
-  }
 
   function logDifferences(currentToken: Trait[], savedToken: Trait[]) {
     const stringifyTrait = (trait: Trait) =>

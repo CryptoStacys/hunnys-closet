@@ -68,10 +68,10 @@ const ProfileView = () => {
   useEffect(() => {
     const fetchNewsData = async () => {
       try {
-        const url = "https://sheets.googleapis.com/v4/spreadsheets/17qLvWaFJBEb7RBgmXgvBd3uX_yeKbzL2NUid47DfyT0/values/A2:E370?key=AIzaSyAjknT53sMDEOdJ3YtCmjgP3VeSTvSGB3U";
+        const url =
+          "https://sheets.googleapis.com/v4/spreadsheets/17qLvWaFJBEb7RBgmXgvBd3uX_yeKbzL2NUid47DfyT0/values/A2:E370?key=AIzaSyAjknT53sMDEOdJ3YtCmjgP3VeSTvSGB3U";
         const response = await axios.get(url);
         setRecentNews(response.data.values.slice(0, 3));
-        
       } catch (error) {
         console.error("Error fetching data:", error);
       }
@@ -151,8 +151,8 @@ const ProfileView = () => {
 
   // Configure AWS SDK
   AWS.config.update({
-    accessKeyId: 'AKIAWFXRVD22RQT75KEL',
-    secretAccessKey: '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',
+    accessKeyId: "AKIAWFXRVD22RQT75KEL",
+    secretAccessKey: "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",
     region: "us-east-2",
   });
 
@@ -298,7 +298,6 @@ const ProfileView = () => {
 
     updateProfileIfNeeded();
   }, [user?.profile_image_url, selectedFile]);
-
   return (
     <div>
       <ProfileCard
@@ -317,7 +316,9 @@ const ProfileView = () => {
 
             {/* Success message */}
             {saveSuccess && (
-              <div className="mt-4 text-center">Profile updated successfully!</div>
+              <div className="mt-4 text-center">
+                Profile updated successfully!
+              </div>
             )}
             {saveError && <div className="error mt-4">{saveError}</div>}
             {!isEditingName ? (
@@ -472,14 +473,13 @@ const ProfileView = () => {
               </div>
             </div>
             <div className="flex flex-col justify-center xs:items-center tn:items-start">
-            <h1
-  className={`font-bold text-purple-700 username relative leading-normal break-keep ${calculateFontSize(
-    user?.profile_name?.length || 0
-  )}`}
->
-  {user?.profile_name || "Welcome!"}
-</h1>
-
+              <h1
+                className={`font-bold text-purple-700 username relative leading-normal break-keep ${calculateFontSize(
+                  user?.profile_name?.length || 0
+                )}`}
+              >
+                {user?.profile_name || "Welcome!"}
+              </h1>
             </div>
             <div className="flex flex-col text-left">
               <p className="text-[16px] leading-normal">
@@ -531,33 +531,35 @@ const ProfileView = () => {
       />
       {hasFirstDolly ? (
         <Card
-        headerTitle="Introduction"
-        leftBlockContent={
-          <div>
-            <div className="">
-              <Image
-                src={"/icons/Alert.svg"}
-                alt={"Alert"}
-                width={200}
-                height={200}
-                className="xs:m-auto md:m-0 xs:w-[20%] md:w-[100%] md:max-w-[200px]"
-              ></Image>
+          headerTitle="Introduction"
+          leftBlockContent={
+            <div>
+              <div className="">
+                <Image
+                  src={"/icons/Alert.svg"}
+                  alt={"Alert"}
+                  width={200}
+                  height={200}
+                  className="xs:m-auto md:m-0 xs:w-[20%] md:w-[100%] md:max-w-[200px]"
+                ></Image>
+              </div>
             </div>
-          </div>
           }
           middleBlockContent={
             <div>
-             <h1 className='text-2xl lg:text-[32px] text-left luckiest'>
-          New here? Create your first Dolly!
-        </h1>
-        <p className='font-poppins text-base lg:text-lg my-2 paragraphText'>
-        Get ready to unleash your creativity and dress up your Dolly in the Hunnys Closet!
-        </p>
-          <Link className="w-4/5 self-center" to="/dollys">
-            <button className="bg-hunnys-yellow py-2 w-full self-center text-hunnys-blue luckiest shadow-md rounded-full px-4 text-2xl hover:shadow-lg hover:scale-[1.02] transition-all">
-              Create My Dolly
-            </button>
-          </Link></div>
+              <h1 className="text-2xl lg:text-[32px] text-left luckiest">
+                New here? Create your first Dolly!
+              </h1>
+              <p className="font-poppins text-base lg:text-lg my-2 paragraphText">
+                Get ready to unleash your creativity and dress up your Dolly in
+                the Hunnys Closet!
+              </p>
+              <Link className="w-4/5 self-center" to="/dollys">
+                <button className="bg-hunnys-yellow py-2 w-full self-center text-hunnys-blue luckiest shadow-md rounded-full px-4 text-2xl hover:shadow-lg hover:scale-[1.02] transition-all">
+                  Create My Dolly
+                </button>
+              </Link>
+            </div>
           }
           rightBlockContent={
             <Image
@@ -577,71 +579,79 @@ const ProfileView = () => {
       <Card
         headerTitle="Welcome to Hunnys Closet!"
         leftBlockContent={
-          <div >
-          <CupcakePoints
-          points="10"
-          text="Cupcake Points"
-          /></div>
+          <div>
+            <CupcakePoints points="10" text="Cupcake Points" />
+          </div>
         }
         middleBlockContent={
           <div>
-             <h1 className='text-2xl lg:text-[32px] text-left luckiest'>
-          Claim your free GM Mug!
-        </h1>
-        <p className='font-poppins text-base lg:text-lg my-2 paragraphText'>
-        Score your first free claim along with 10 Cupcake Points towards your Adventure Progress!
-        </p>
-          {claimedFreeMug ? (
-          <button
-            disabled
-            className="w-full self-center bg-[#2BC97E] text-black luckiest text-xl md:text-2xl opacity-40 font-bold py-2 px-4 rounded-full"
-          >
-            Completed
-          </button>
-        ) : (
-          <FreeClaim
-            tokenId="0"
-            onMintSuccess={() => console.log("NFT claimed successfully!")}
-            updateTraits={(userAddress) =>
-              console.log(`Traits updated for ${userAddress}`)
-            }
-            userAddress={user?.wallet}
-            className="bg-hunnys-yellow hover:bg-hunnys-yellow self-center !text-hunnys-blue !w-4/5 luckiest shadow-md rounded-full px-4 py-1 text-xl md:text-2xl hover:shadow-lg hover:scale-[1.02] transition-all"
-            buttonText="Claim My Free Mug!"
-          />
-        )}</div>} // Assuming you might fill this in later
+            <h1 className="text-2xl lg:text-[32px] text-left luckiest">
+              Claim your free GM Mug!
+            </h1>
+            <p className="font-poppins text-base lg:text-lg my-2 paragraphText">
+              Score your first free claim along with 10 Cupcake Points towards
+              your Adventure Progress!
+            </p>
+            {claimedFreeMug ? (
+              <button
+                disabled
+                className="w-full self-center bg-[#2BC97E] text-black luckiest text-xl md:text-2xl opacity-40 font-bold py-2 px-4 rounded-full"
+              >
+                Completed
+              </button>
+            ) : (
+              <FreeClaim
+                tokenId="0"
+                onMintSuccess={() => console.log("NFT claimed successfully!")}
+                updateTraits={(userAddress) =>
+                  console.log(`Traits updated for ${userAddress}`)
+                }
+                userAddress={user?.wallet}
+                className="bg-hunnys-yellow hover:bg-hunnys-yellow self-center !text-hunnys-blue !w-4/5 luckiest shadow-md rounded-full px-4 py-1 text-xl md:text-2xl hover:shadow-lg hover:scale-[1.02] transition-all"
+                buttonText="Claim My Free Mug!"
+              />
+            )}
+          </div>
+        } // Assuming you might fill this in later
         rightBlockContent={
           <div className="flex flex-col w-full lg:w-auto mt-4 lg:mt-0">
-          <Image
-            className="rounded-xl"
-            src={GMMug}
-            alt={"GM Mug"}
-            width={200}
-            height={200}
-          /></div>
+            <Image
+              className="rounded-xl"
+              src={GMMug}
+              alt={"GM Mug"}
+              width={200}
+              height={200}
+            />
+          </div>
         }
-        footer={
-          ""
-        }
+        footer={""}
       />
       <Card
         headerTitle="Recent News"
         leftBlockContent={""}
-          middleBlockContent={""}
-          rightBlockContent={""
-          }
-          footer={recentNews.map((item, index) => (
-            <div key={index}>
-            <div className="date text-center leading-8 xs:ml-4 tn:ml-16 xs:text-xl sm:text-3xl">{item[4]}</div>
-            <Event
-            headerTitle={item[2]}
-            event={<><a href={item[1]}>
-              <img src={item[0]} alt="News" className="w-full" />
-            </a><p className="font-poppins text-xl text-center mt-8 mx-8">{item[3]}</p></>} />
+        middleBlockContent={""}
+        rightBlockContent={""}
+        footer={recentNews.map((item, index) => (
+          <div key={index}>
+            <div className="date text-center leading-8 xs:ml-4 tn:ml-16 xs:text-xl sm:text-3xl">
+              {item[4]}
             </div>
+            <Event
+              headerTitle={item[2]}
+              event={
+                <>
+                  <a href={item[1]}>
+                    <img src={item[0]} alt="News" className="w-full" />
+                  </a>
+                  <p className="font-poppins text-xl text-center mt-8 mx-8">
+                    {item[3]}
+                  </p>
+                </>
+              }
+            />
+          </div>
         ))}
-        />
-      
+      />
     </div>
   );
 };

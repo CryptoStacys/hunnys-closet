@@ -6,10 +6,14 @@ import { Token, UserOwnedTraits, Trait } from "../../data/global";
 import Event from "../Card/Events";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination, Navigation, Lazy } from "swiper/modules";
+import CoinbaseButton from '../Wallet/CoinbaseButton';
 import MintButton from "../Mint/MintButton";
 import useUpdateTraits from "../../hooks/useUpdateTraits";
 import { eligibleTokenIds, mintWithWeth } from "../../utils/eligibleTokens";
+import { createWalletClient, http, parseEther } from "viem";
 import { fetchTraits } from "../../utils/traitUtils";
+import { toViem } from "@coinbase/waas-sdk-viem";
+import { polygon } from "viem/chains";
 
 import "swiper/css/pagination";
 import "swiper/css/navigation";
@@ -18,6 +22,8 @@ import "swiper/css";
 // Import Swiper core and required modules
 import SwiperCore from "swiper";
 import { ethers } from "ethers";
+import { useEVMAddress, useWalletContext } from "@coinbase/waas-sdk-web-react";
+import Card from "../Card/Card";
 // Install Swiper modules
 SwiperCore.use([Navigation]);
 
@@ -160,7 +166,13 @@ const ShopView = () => {
     .map((address) => address.toLowerCase())
     .includes(user!.address.toLowerCase());
   console.log(user?.address, isBunnyClubMember);
-  
+  const { wallet } = useWalletContext();
+  const waasAddress = useEVMAddress(wallet);
+  // const walletClient = createWalletClient({
+  //   account: toViem(waasAddress!), // Convert WaaS address to Viem account
+  //   chain: polygon, // Adjust this to match Polygon's configuration if Viem supports it
+  //   transport: http("https://polygon-mainnet.infura.io/v3/c6a0213e06df4189bbb84a64086a38ae"), // Replace with your RPC URL
+  // });
 if (bunnyClubMembers.includes(user!.address)) {
   console.log("Discount should be applied.");
 }
@@ -258,8 +270,6 @@ const collectionNameMap: CollectionNameMap = {
           if (!groupedByTokenId[tokenId]) groupedByTokenId[tokenId] = [];
           groupedByTokenId[tokenId].push(item);
         });
-        console.log("Fetched NFT Data:", fetchedNftData);
-        console.log("Grouped by Origin Name:", groupedByOriginName);
 
         setNftData(fetchedNftData);
         setGroupedNftData(groupedByOriginName);
@@ -509,11 +519,9 @@ const collectionNameMap: CollectionNameMap = {
       const tokenId = item[0]; // Name of the source token that unlocks the item(s)
       const nftName = item[1]; // Name of the NFT
       let mintPrice = ethers.utils.parseUnits(item[2].toString(), "ether");
-      console.log(`Original mintPrice: ${ethers.utils.formatUnits(mintPrice, "ether")}`);
       if (userAddressLowercase && bunnyClubMembersLowercase.includes(userAddressLowercase)) {
         const discount = mintPrice.mul(bunnyClubDiscount).div(100);
         mintPrice = mintPrice.sub(discount);
-        console.log(`Discounted mintPrice: ${ethers.utils.formatUnits(mintPrice, "ether")}`);
       }
   
       const formattedMintPrice = ethers.utils.formatUnits(mintPrice, "ether");
@@ -782,17 +790,34 @@ const collectionNameMap: CollectionNameMap = {
   };
 
   return (
-    <div className="inventory-view p-4 max-w-7xl mx-auto my-8">
-     {/* <Event
-        headerTitle="Welcome to The Closet Shop!"
-        event={
-          <h1 className="m-16 w-1/2 text-center self-center">
-            All Shop items are priced in Wrapped ETH on the Polygon network.
-          </h1>
-        }
-      />
+    <div className="inventory-view p-4 max-w-7xl mx-auto">
+      
+      
+     <Event
+        headerTitle="The Closet Shop"
+          event={
+            <div className="p-8">
+              <h1 className="text-2xl lg:text-[32px] text-left luckiest">
+                Welcome to The Hunnys Closet Shop!
+              </h1>
+              <p className="font-poppins text-base lg:text-lg my-2 paragraphText">
+                Browse items for your Dolly, all in one place. Buy any item in a set, get the whole set!
+              </p>
+              <>
+            <h1 className="text-lg self-start text-left font-poppins font-bold">
+                How to Buy:
+              </h1><p className="font-poppins text-base my-2 paragraphText md:text-lg">
+              Purchases here are made in Wrapped ETH on the Polygon Network.
+              <br />
+              Have a Coinbase account? Pick up exactly what you need right here to make shopping quicker & easier than ever before!
+            </p><div className="text-center self-center">
+                <CoinbaseButton destinationWalletAddress={user?.address || ''} />
+              </div></>
+            </div>
+          } 
+        />
 
-       Top divider */}
+       {/* Top divider */}
       <div className="border-t-2 border-gray-200 my-8"></div>
 
       {/* Main content area */}
