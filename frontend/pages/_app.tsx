@@ -13,8 +13,9 @@ import { WalletProvider } from "@coinbase/waas-sdk-web-react";
 import { wagmiConfig } from '../src/utils/wagmiConfig'
 import { 
   createConfig, 
-  http 
 } from '@wagmi/core'
+import { 
+  http } from 'viem';
 import {
   mainnet,
   polygon,
@@ -56,7 +57,7 @@ const connectors = connectorsForWallets(
   [
     {
       groupName: 'Recommended',
-      wallets: [coinbaseWallet, rainbowWallet, walletConnectWallet, ledgerWallet, metaMaskWallet, injectedWallet, trustWallet, argentWallet],
+      wallets: [coinbaseWallet, rainbowWallet, metaMaskWallet, walletConnectWallet, ledgerWallet, injectedWallet, trustWallet, argentWallet],
     },
   ],
   {
@@ -113,7 +114,6 @@ function MyApp({ Component, pageProps }: AppProps) {
   return (
       <WagmiProvider config={config}>
       <QueryClientProvider client={queryClient}> 
-      <ConnectWallet /> 
         <RainbowKitProvider coolMode>
           <Component />
 

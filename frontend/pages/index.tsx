@@ -26,82 +26,80 @@ export default function App() {
     async function handleConnect() {
       if (isConnected && address) {
         try {
-        // Fetch traits
-        const traitsResponse = await fetch(`https://closetservices.hunnysnft.com/wp-json/hunnys-closet/v1/traits?wallet=${address}`);
-        if (!traitsResponse.ok) throw new Error('Failed to fetch traits.');
-        const traitsData = await traitsResponse.json();
-        console.log("Traits Data from Index:", traitsData);
-        setAllTraits(traitsData);
-
-        // Fetch verifyCloset data
-        const closetResponse = await fetch(`https://closetservices.hunnysnft.com/wp-json/hunnys-closet/v1/verifyCloset?wallet=${address}`);
-        if (!closetResponse.ok) throw new Error('Failed to fetch closet data.');
-        const closetData = await closetResponse.json();
-        console.log("Closet Data from Index:", closetData);
-        setUserTraits(closetData)
-
-        // Update Last Login Time
-        fetch(`https://closetservices.hunnysnft.com/wp-json/hunnys-closet/v1/accounts`, {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({
-          action: 'login', // Assuming you want to update last login on every connect
-          wallet: address, // User's wallet address
-        }),
-      })
-      .then(response => response.json())
-      .then(data => {
-        console.log('Success:', data);
-      })
-      .catch((error) => {
-        console.error('Error:', error);
-      });
-      
-      // Fetch user profile
-      const profileResponse = await fetch(`https://closetservices.hunnysnft.com/wp-json/hunnys-closet/v1/accounts?action=getProfile&wallet=${address}`);
-      if (!profileResponse.ok) throw new Error('Failed to fetch user profile.');
-      const profileDataResponse = await profileResponse.json();
-      console.log("Profile Data from Index:", profileDataResponse);
-      
-      let parsedAchievements = {};
-      if (profileDataResponse.data.achievements && typeof profileDataResponse.data.achievements === 'string') {
-          try {
-            parsedAchievements = JSON.parse(profileDataResponse.data.achievements);
-          } catch (error) {
-            console.error("Error parsing achievements JSON:", error);
-            // Handle the error or set parsedAchievements to a default value if needed
+          // Fetch traits
+          const traitsResponse = await fetch(`https://closetservices.hunnysnft.com/wp-json/hunnys-closet/v1/traits?wallet=${address}`);
+          if (!traitsResponse.ok) throw new Error('Failed to fetch traits.');
+          const traitsData = await traitsResponse.json();
+          console.log("Traits Data from Index:", traitsData);
+          setAllTraits(traitsData);
+    
+          // Fetch verifyCloset data
+          const closetResponse = await fetch(`https://closetservices.hunnysnft.com/wp-json/hunnys-closet/v1/verifyCloset?wallet=${address}`);
+          if (!closetResponse.ok) throw new Error('Failed to fetch closet data.');
+          const closetData = await closetResponse.json();
+          console.log("Closet Data from Index:", closetData);
+          setUserTraits(closetData)
+    
+          // Update Last Login Time. Note: We now await the fetch call directly.
+          const loginResponse = await fetch(`https://closetservices.hunnysnft.com/wp-json/hunnys-closet/v1/accounts`, {
+            method: 'POST',
+            headers: {
+              'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({
+              action: 'login',
+              wallet: address,
+            }),
+          });
+          
+          if (!loginResponse.ok) {
+            throw new Error('Failed to update last login time.');
           }
-      }
-      let parsedFreeClaims = {};
-      if (profileDataResponse.data.free_claim && typeof profileDataResponse.data.free_claim === 'string') {
-          try {
-            parsedFreeClaims = JSON.parse(profileDataResponse.data.free_claim);
-          } catch (error) {
-            console.error("Error parsing achievements JSON:", error);
-            // Handle the error or set parsedAchievements to a default value if needed
+          
+          const loginData = await loginResponse.json();
+          console.log('Success:', loginData);
+    
+          // Fetch user profile
+          const profileResponse = await fetch(`https://closetservices.hunnysnft.com/wp-json/hunnys-closet/v1/accounts?action=getProfile&wallet=${address}`);
+          if (!profileResponse.ok) throw new Error('Failed to fetch user profile.');
+          const profileDataResponse = await profileResponse.json();
+          console.log("Profile Data from Index:", profileDataResponse);
+          
+          let parsedAchievements = {};
+          if (profileDataResponse.data.achievements && typeof profileDataResponse.data.achievements === 'string') {
+              try {
+                parsedAchievements = JSON.parse(profileDataResponse.data.achievements);
+              } catch (error) {
+                console.error("Error parsing achievements JSON:", error);
+              }
           }
+          let parsedFreeClaims = {};
+          if (profileDataResponse.data.free_claim && typeof profileDataResponse.data.free_claim === 'string') {
+              try {
+                parsedFreeClaims = JSON.parse(profileDataResponse.data.free_claim);
+              } catch (error) {
+                console.error("Error parsing achievements JSON:", error);
+              }
+          }
+          
+          // Combine data and update user atom
+          setUser({
+            ...profileDataResponse.data,
+            ...closetData,
+            traits: closetData.traits,
+            dollyCount: closetData.dollys?.length || 0,
+            address: address,
+            achievements: parsedAchievements,
+            free_claim: parsedFreeClaims,
+          });
+    
+          setConnected(true);
+        } catch (error) {
+          console.error("Error handling connect:", error);
+          setConnected(false);
+        }
       }
-      console.log("User connected:", address);
-      // Combine data and update user atom
-      setUser({
-        ...profileDataResponse.data, // Assuming profileDataResponse contains a 'data' key with user details
-        ...closetData,
-        traits: closetData.traits, // Assuming traits is the key you want from traitsData
-        dollyCount: closetData.dollys?.length || 0,
-        address: address,
-        achievements: parsedAchievements, // Use the parsed achievements
-        free_claim: parsedFreeClaims,
-      });
-
-        setConnected(true);
-      } catch (error) {
-        console.error("Error handling connect:", error);
-        // Optionally, set connected to false if there's an error
-        setConnected(false);
-      }}
-  };
+    }
 
   handleConnect();
 }, [isConnected, address]);
