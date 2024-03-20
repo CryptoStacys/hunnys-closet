@@ -109,24 +109,18 @@ return (
     style={{ flexBasis: "30%", flexGrow: 0 }}>
       {levels.title && <p className='achievementsBanner luckiest font-bold'>TITLE: {levels.title}</p>}
       <div className="w-full max-w-xs mt-4">
-        {rewards.length > 1 ? (
-          <Swiper
-            pagination={{ clickable: true }}
-            spaceBetween={30}
-            modules={[Pagination]}
-            className='mySwiper'
-          >
-            {rewards.map((reward, index) => (
-              <SwiperSlide key={index}>
-                <img className="max-w-[200px] m-auto rounded-[30px]" src={`/icons/Achievements/Level${levels.id}/Reward1.png`} alt={`Level ${levels.id} Reward`} />
-              </SwiperSlide>
-            ))}
-          </Swiper>
-        ) : (
-          rewards.map((reward, index) => (
-            <img key={index} className="max-w-[200px] m-auto rounded-[30px]" src={`/icons/Achievements/Level${levels.id}/Reward1.png`} alt={`Level ${levels.id} Reward`} />
-          ))
-        )}
+      <Swiper
+          pagination={{ clickable: true }}
+          spaceBetween={30}
+          modules={[Pagination]}
+          className='mySwiper'
+        >
+          {rewards.map((reward, index) => (
+            <SwiperSlide key={index}>
+              <img className="max-w-[200px] m-auto rounded-[30px]" src={`/icons/Achievements/Level${levels.id}/Reward${index + 1}.png`} alt={`Level ${levels.id} Reward ${index + 1}`} />
+            </SwiperSlide>
+          ))}
+        </Swiper>
         {renderClaimButtonOrNextReward()}
       </div>
     </div>

@@ -144,6 +144,7 @@ import { calculateLevel } from '../../utils/levelUtils';
         cupcakePoints: 10, 
         title: 'Bunny Queens Helper', 
         achievementsReward1: '/icons/Achievements/Level1/Reward1.png',
+        achievementsReward2: '/icons/Achievements/Level1/Reward2.png',
         eligibilityCriteria: (user: User) => user.level >= 2, // Eligible if user has reached at least Level 1
         },
         
@@ -163,6 +164,7 @@ import { calculateLevel } from '../../utils/levelUtils';
         cupcakePoints: 10, 
         title: 'Squirrel Whisperer', 
         achievementsReward1: '/icons/Achievements/Level3/Reward1.png',
+        achievementsReward2: '/icons/Achievements/Level3/Reward2.png',
         eligibilityCriteria: (user: User) => user.level >= 4, // Eligible if user has reached at least Level 1
         },
     {
@@ -172,6 +174,7 @@ import { calculateLevel } from '../../utils/levelUtils';
         cupcakePoints: 10, 
         title: 'Moar Collector', 
         achievementsReward1: '/icons/Achievements/Level4/Reward1.png',
+        achievementsReward2: '/icons/Achievements/Level4/Reward2.png',
         eligibilityCriteria: (user: User) => user.level >= 5, // Eligible if user has reached at least Level 1
         },
     {
@@ -212,6 +215,7 @@ import { calculateLevel } from '../../utils/levelUtils';
         cupcakePoints: 10, 
         title: 'Forest Friend', 
         achievementsReward1: '/icons/Achievements/Level8/Reward1.png',
+        achievementsReward2: '/icons/Achievements/Level8/Reward2.png',
         eligibilityCriteria: (user: User) => user.level >= 9, // Eligible if user has reached at least Level 1
         },
     {
