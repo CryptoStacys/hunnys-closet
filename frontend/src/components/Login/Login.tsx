@@ -19,7 +19,7 @@ import {
   IProtocolFamily,
   ProtocolFamily,
 } from "@coinbase/waas-sdk-web";
-import { wagmiConfig } from '../../utils/wagmiConfig'
+import { config } from '../../utils/wagmiConfig'
 import useWalletSession from "../../hooks/useWalletSession";
 import { User } from "../../data/global";
 import { useAtom } from "jotai";
@@ -75,20 +75,11 @@ export default function Login() {
       projectId: 'dc9e83a4ea618721d7c59c905af47837',
     }
   );
-  const config = createConfig({
-    chains: [mainnet, polygon],
-    ssr: true, // If your dApp uses server side rendering (SSR)
-    connectors,
-    transports: {
-      [mainnet.id]: http('https://mainnet.infura.io/v3/5239f83d36634330bd900f94158cf76e'),
-      [polygon.id]: http('https://polygon-mainnet.infura.io/v3/2540ef4e847c4dea838bacade9c4fcac'),
-    },
-  })
+  
   useEffect(() => {
     setMounted(true);
   }, []);
 
-  
 
   return (
     <div className="flex justify-center items-center w-max-full px-6 mx-auto bg-cover bg-center" style={{backgroundColor: 'white', backgroundImage: `url('/assets/img/sparkle_bg.png')`}}>

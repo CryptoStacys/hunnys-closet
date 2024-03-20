@@ -12,7 +12,7 @@ import Login from "../src/components/Login/Login";
 import Modal from "../src/components/Modal/Modal";
 import sparkleBg from "./../src/assets/img/sparkle_bg.png";
 import { useRouter } from 'next/router';
-import { wagmiConfig } from '../src/utils/wagmiConfig'
+import { config } from '../src/utils/wagmiConfig'
 import { useAccountEffect } from 'wagmi'
 
 export default function App() {

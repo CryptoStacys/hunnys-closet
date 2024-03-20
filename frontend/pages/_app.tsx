@@ -10,7 +10,7 @@ import type { AppProps } from "next/app";
 import App from "./index";
 import { useAccount, WagmiProvider } from 'wagmi';
 import { WalletProvider } from "@coinbase/waas-sdk-web-react";
-import { wagmiConfig } from '../src/utils/wagmiConfig'
+import { config } from '../src/utils/wagmiConfig'
 import { 
   createConfig, 
 } from '@wagmi/core'
@@ -40,8 +40,6 @@ declare global {
   }
 }
 
-
-
 import {
   argentWallet,
   trustWallet,
@@ -66,15 +64,6 @@ const connectors = connectorsForWallets(
   }
 );
 
-const config = createConfig({
-  chains: [mainnet, polygon],
-  ssr: true, // If your dApp uses server side rendering (SSR)
-  connectors,
-  transports: {
-    [mainnet.id]: http('https://mainnet.infura.io/v3/5239f83d36634330bd900f94158cf76e'),
-    [polygon.id]: http('https://polygon-mainnet.infura.io/v3/2540ef4e847c4dea838bacade9c4fcac'),
-  },
-})
 
 const queryClient = new QueryClient();
 
