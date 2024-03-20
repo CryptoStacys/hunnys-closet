@@ -12,6 +12,8 @@ import Login from "../src/components/Login/Login";
 import Modal from "../src/components/Modal/Modal";
 import sparkleBg from "./../src/assets/img/sparkle_bg.png";
 import { useRouter } from 'next/router';
+import { wagmiConfig } from '../src/utils/wagmiConfig'
+import { useAccountEffect } from 'wagmi'
 
 export default function App() {
   const [user, setUser] = useAtom(userAtom);
@@ -22,9 +24,9 @@ export default function App() {
   const router = useRouter();
 
   const { isConnected, address } = useAccount();
-  useEffect(() => {
-    async function handleConnect() {
-      if (isConnected && address) {
+
+    useAccountEffect({
+    async onConnect({address}){
         try {
           // Fetch traits
           const traitsResponse = await fetch(`https://closetservices.hunnysnft.com/wp-json/hunnys-closet/v1/traits?wallet=${address}`);
@@ -94,15 +96,22 @@ export default function App() {
           });
     
           setConnected(true);
+        
         } catch (error) {
           console.error("Error handling connect:", error);
           setConnected(false);
-        }
+        }},
+      onDisconnect() {
+        console.log("User disconnected or not yet connected");
+        setUser(null);
+        setConnected(false);
+        // Use a callback or check to navigate, to ensure it's the desired action
+        const navigateToLogin = () => {
+          router.push("/");
+        };
+        navigateToLogin();
       }
-    }
-
-  handleConnect();
-}, [isConnected, address]);
+    })
 
   useEffect(() => {
     initializeLocalStorageForNewUsers();
@@ -118,18 +127,7 @@ export default function App() {
     }
   }
 
-  useEffect(() => {
-    if (!isConnected) {
-      console.log("User disconnected or not yet connected");
-      setUser(null);
-      setConnected(false);
-      // Use a callback or check to navigate, to ensure it's the desired action
-      const navigateToLogin = () => {
-        router.push("/");
-      };
-      navigateToLogin();
-    }
-  }, [isConnected]);
+  
 
   return (
     <div className="pb-8 ">
@@ -155,4 +153,8 @@ export default function App() {
       </div>
     </div>
   );
+}
+
+function onDisconnect() {
+  throw new Error('Function not implemented.');
 }

@@ -1,14 +1,17 @@
 // Login.tsx
 
-import { useConnectModal, RainbowKitProvider } from "@rainbow-me/rainbowkit";
+import { useConnectModal, RainbowKitProvider, connectorsForWallets } from "@rainbow-me/rainbowkit";
 import { useEVMAddress, useFirstAddress, useWalletContext } from "@coinbase/waas-sdk-web-react";
 import {
   mainnet,
   polygon,
   base,
 } from 'wagmi/chains';
-
-import { Loader } from "../Loader/Loader";
+import { 
+  createConfig, 
+} from '@wagmi/core'
+import { 
+  http } from 'viem';
 import Image from "next/image";
 import { useState, useEffect, useCallback } from "react";
 import {
@@ -16,11 +19,22 @@ import {
   IProtocolFamily,
   ProtocolFamily,
 } from "@coinbase/waas-sdk-web";
+import { wagmiConfig } from '../../utils/wagmiConfig'
 import useWalletSession from "../../hooks/useWalletSession";
 import { User } from "../../data/global";
 import { useAtom } from "jotai";
 import { allTraitsAtom, connectedAtom, userAtom, userTraitsAtom } from "../../data/store";
 import { initializeUser } from "../../utils/userInitialization";
+import {
+  argentWallet,
+  trustWallet,
+  ledgerWallet,
+  metaMaskWallet,
+  walletConnectWallet,
+  rainbowWallet,
+  injectedWallet,
+  coinbaseWallet
+} from "@rainbow-me/rainbowkit/wallets";
 type WalletAddress = Address<IProtocolFamily>;
 
 const loginScreen = "/assets/img/ClosetV2LoginImage.png";
@@ -49,7 +63,27 @@ export default function Login() {
   useWalletContext();
   const address = useFirstAddress(wallet, ProtocolFamily.EVM);
 
-
+  const connectors = connectorsForWallets(
+    [
+      {
+        groupName: 'Recommended',
+        wallets: [coinbaseWallet, rainbowWallet, metaMaskWallet, walletConnectWallet, ledgerWallet, injectedWallet, trustWallet, argentWallet],
+      },
+    ],
+    {
+      appName: 'Hunnys Closet',
+      projectId: 'dc9e83a4ea618721d7c59c905af47837',
+    }
+  );
+  const config = createConfig({
+    chains: [mainnet, polygon],
+    ssr: true, // If your dApp uses server side rendering (SSR)
+    connectors,
+    transports: {
+      [mainnet.id]: http('https://mainnet.infura.io/v3/5239f83d36634330bd900f94158cf76e'),
+      [polygon.id]: http('https://polygon-mainnet.infura.io/v3/2540ef4e847c4dea838bacade9c4fcac'),
+    },
+  })
   useEffect(() => {
     setMounted(true);
   }, []);
@@ -57,7 +91,6 @@ export default function Login() {
   
 
   return (
-    <RainbowKitProvider>
     <div className="flex justify-center items-center w-max-full px-6 mx-auto bg-cover bg-center" style={{backgroundColor: 'white', backgroundImage: `url('/assets/img/sparkle_bg.png')`}}>
     <div className="relative rounded-3xl overflow-hidden max-w-[1250px] w-full h-[100%] mx-auto flex items-center justify-center">
       {/* Background Image */}
@@ -85,6 +118,5 @@ export default function Login() {
       </div>
     </div>
     </div>
-    </RainbowKitProvider>
   );
 }

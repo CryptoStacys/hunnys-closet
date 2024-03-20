@@ -53,7 +53,6 @@ useEffect(() => {
 
   setIsClaimed(claimedStatus === true);
 }, [user, levels.freeClaimTokenId]);
-console.log(user?.free_claim);
 
 const renderClaimButtonOrNextReward = () => {
   const currentLevelNumber = parseInt(user?.level || '0', 10);
