@@ -17,11 +17,13 @@ import { ethers } from "ethers";
 import FreeClaim from "../../components/Mint/FreeClaim";
 import Tooltip from "../Tooltip/Tooltip";
 import ProgressBar from "../Achievements/ProgressBar";
+import { Address } from "@coinbase/waas-sdk-web";
 import axios from "axios";
 import {
   calculateLevel,
   calculatePointsToNextLevel,
 } from "../../utils/levelUtils";
+import { useEVMAddress, useWalletContext } from "@coinbase/waas-sdk-web-react";
 
 const ProfileView = () => {
   const [user, setUser] = useAtom(userAtom);
@@ -34,6 +36,9 @@ const ProfileView = () => {
   const [saveError, setSaveError] = useState("");
   const provider = new ethers.providers.Web3Provider(window.ethereum as any);
   const [showTooltip, setShowTooltip] = useState(false);
+  
+  const { wallet } = useWalletContext();
+  const waasAddress = useEVMAddress(wallet);
   const [availableTitles, setAvailableTitles] = useState<string[]>([]);
   const [birthdayMonth, setBirthdayMonth] = useState(
     user?.birthday_month || ""
@@ -143,9 +148,10 @@ const ProfileView = () => {
     // Assuming mintWithWeth is adapted for free claims
     await mintWithWeth(
       user?.wallet,
+      waasAddress,
       "0",
       ethers.utils.parseUnits("0", "ether"),
-      provider
+      provider,
     );
   };
 
