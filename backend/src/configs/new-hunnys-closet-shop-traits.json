@@ -273,7 +273,7 @@
         {"name": "Pom Poms","colors": 4,"rarity": "Common","tags": ["skin"],"token_id": 85},
         {"name": "Shopping Bags","colors": 5,"rarity": "Common","tags": ["skin"],"token_id": 86},
         {"name": "Moon Guardian Scepter","colors": 4,"rarity": "Common","tags": [],"token_id": 93},
-        {"name": "Mr Pointy","colors": 3,"rarity": "Common","tags": [],"token_id": 95},
+        {"name": "Mr Pointy","colors": 3,"rarity": "Common","tags": ["skin"],"token_id": 95},
         {"name": "Excellent","colors": 1,"rarity": "Common","tags": ["skin"],"token_id": 96},
         {"name":"Delicious Dreamwater","colors":4,"rarity":"Uncommon","tags":["skin"],"token_id":74},
         {"name":"Tater Tot Tiller","colors":2,"rarity":"Rare","tags":["skin"],"token_id":75},
