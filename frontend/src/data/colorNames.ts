@@ -224,11 +224,21 @@ const colorNames = {
     "g": 54,
     "r": 0
 },
+"Blueberry Halftone": {
+  "r": 116,
+  "g": 106,
+  "b": 193
+},
 "Blueberry Mallow": {
     "b": 225,
     "g": 142,
     "r": 34
 },
+"Blue Screen Print": {
+    "r": 52,
+    "g": 93,
+    "b": 201
+  },
 "Bone Shadow": {
     "b": 153,
     "g": 157,
@@ -304,6 +314,11 @@ const colorNames = {
     "g": 98,
     "r": 174
 },
+"Burnt Orange Halftone": {
+    "r": 168,
+    "g": 102,
+    "b": 80
+  },
 "Burnt Sienna": {
     "b": 41,
     "g": 73,
@@ -484,6 +499,11 @@ const colorNames = {
     "g": 0,
     "r": 0
 },
+"Envy Green Halftone": {
+  "r": 60,
+  "g": 148,
+  "b": 123
+},
 "Evergreen Pine": {
     "b": 62,
     "g": 77,
@@ -513,6 +533,11 @@ const colorNames = {
     "b": 245,
     "g": 245,
     "r": 245
+},
+"Flamingo Halftone": {
+  "r": 176,
+  "g": 88,
+  "b": 131
 },
 "FLS Dark Brown": {
     "b": 15,
@@ -693,6 +718,11 @@ const colorNames = {
     "b": 80,
     "g": 203,
     "r": 23
+},
+"Green Screen Print": {
+  "r": 53,
+  "g": 203,
+  "b": 156
 },
 "Grey1": {
     "b": 224,
@@ -1164,6 +1194,11 @@ const colorNames = {
     "g": 138,
     "r": 190
 },
+"Mustard Halftone": {
+  "r": 146,
+  "g": 118,
+  "b": 54
+},
 "Nebula Sunset": {
     "b": 87,
     "g": 145,
@@ -1214,6 +1249,11 @@ const colorNames = {
     "g": 26,
     "r": 26
 },
+"Ocean Spray Halftone": {
+  "r": 70,
+  "g": 136,
+  "b": 160
+},
 "OnyxGradient1": {
     "b": 52,
     "g": 52,
@@ -1223,6 +1263,11 @@ const colorNames = {
     "b": 74,
     "g": 112,
     "r": 161
+},
+"Orange Screen Print": {
+  "r": 229,
+  "g": 142,
+  "b": 71
 },
 "Orange Tiger": {
     "b": 9,
@@ -1358,6 +1403,11 @@ const colorNames = {
     "b": 141,
     "g": 141,
     "r": 251
+},
+"Pink Screen Print": {
+  "r": 255,
+  "g": 25,
+  "b": 193
 },
 "PlanetaryTurquoise3": {
     "b": 255,
