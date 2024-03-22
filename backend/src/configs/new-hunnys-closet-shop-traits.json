@@ -268,7 +268,7 @@
       "name": "Hand",
       "traits": [
         {"name": "Slam Dunk","colors": 2,"rarity": "Common","tags": ["skin"],"token_id": 79},
-        {"name": "#1 Fan Trophy","colors": 5,"rarity": "Common","tags": ["skin"],"token_id": 81},
+        {"name": "Number 1 Fan Trophy","colors": 5,"rarity": "Common","tags": ["skin"],"token_id": 81},
         {"name": "Sword Hand","colors": 3,"rarity": "Common","tags": [],"token_id": 84},
         {"name": "Pom Poms","colors": 4,"rarity": "Common","tags": ["skin"],"token_id": 85},
         {"name": "Shopping Bags","colors": 5,"rarity": "Common","tags": ["skin"],"token_id": 86},
