@@ -304,7 +304,7 @@
         {"name": "Baller Bunny Band","colors": 4,"rarity": "Common","tags": [],"token_id": 79},
         {"name": "Bunny Emperor Laurels","colors": 2,"rarity": "Common","tags": [],"token_id": 83},
         {"name": "Ghosty Crown","colors": 2,"rarity": "Common","tags": [],"token_id": 88},
-        {"name": "Intergalactic Bunny Space Helmet","colors": 1,"rarity": "Common","tags": [],"token_id": 89},
+        {"name": "Intergalactic Bunny Space Helmet","colors": 0,"rarity": "Common","tags": [],"token_id": 89},
         {"name": "Mad Hatters Hat","colors": 4,"rarity": "Common","tags": [],"token_id": 90},
         {"name": "Royal Bunny Crown","colors": 5,"rarity": "Common","tags": [],"token_id": 92},
         {"name": "Sparkle Bunny Ears","colors": 3,"rarity": "Common","tags": [],"token_id": 94},
@@ -331,7 +331,7 @@
     {
       "name": "Mouth",
       "traits": [
-        {"name": "Resting Bun Face","colors": 2,"rarity": "Common","tags": [],"token_id": 91},
+        {"name": "Resting Bun Face","colors": 1,"rarity": "Common","tags": [],"token_id": 91},
         {"name":"Lovey Lips","colors":2,"rarity":"Common","tags":[],"token_id":62},
         {"name":"Curious Carrot Munch","colors":3,"rarity":"Rare","tags":[],"token_id":76},
         {"name":"Bored Grin","colors":1,"rarity":"Epic","tags":[],"token_id":1},
