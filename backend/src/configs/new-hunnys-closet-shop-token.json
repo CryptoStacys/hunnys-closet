@@ -1941,6 +1941,286 @@
           }
       ],
       "metaPath": "https://hunnysclosetshop.s3.us-east-2.amazonaws.com/images/goodies/78"
+  },
+  {
+      "tokenId": 79,
+      "name": "Bunny Baller Babe",
+      "attributes": [
+          {
+              "trait_type": "Outfit",
+              "value": "Baller Babe"
+          },
+          {
+              "trait_type": "Hat",
+              "value": "Baller Bunny Band"
+          },
+          {
+              "trait_type": "Accessory",
+              "value": "Ref Mc Blindy"
+          },
+          {
+              "trait_type": "Hand",
+              "value": "Slam Dunk"
+          }
+      ],
+      "metaPath": "https://hunnysclosetshop.s3.us-east-2.amazonaws.com/images/goodies/79"
+  },
+  {
+      "tokenId": 80,
+      "name": "Halftone Dye Pack 1",
+      "attributes": [
+          {
+              "trait_type": "Dye",
+              "value": "Blue Screen Print"
+          },
+          {
+              "trait_type": "Dye",
+              "value": "Blueberry Halftone"
+          },
+          {
+              "trait_type": "Dye",
+              "value": "Burnt Orange Halftone"
+          },
+          {
+              "trait_type": "Dye",
+              "value": "Envy Green Halftone"
+          },
+          {
+              "trait_type": "Dye",
+              "value": "Flamingo Halftone"
+          },
+          {
+              "trait_type": "Dye",
+              "value": "Green Screen Print"
+          },
+          {
+              "trait_type": "Dye",
+              "value": "Mustard Halftone"
+          },
+          {
+              "trait_type": "Dye",
+              "value": "Ocean Spray Halftone"
+          },
+          {
+              "trait_type": "Dye",
+              "value": "Orange Screen Print"
+          },
+          {
+              "trait_type": "Dye",
+              "value": "Pink Screen Print"
+          },
+          {
+              "trait_type": "Dye",
+              "value": "Yellow Screen Print"
+          }
+      ],
+      "metaPath": "https://hunnysclosetshop.s3.us-east-2.amazonaws.com/images/goodies/80"
+  },
+    {
+        "tokenId": 81,
+        "name": "#1 Fan",
+        "attributes": [
+            {
+                "trait_type": "Hand",
+                "value": "#1 Fan Trophy"
+            }
+        ],
+        "metaPath": "https://hunnysclosetshop.s3.us-east-2.amazonaws.com/images/goodies/81"
+    },
+    {
+        "tokenId": 82,
+        "name": "Bunny Duke",
+        "attributes": [
+            {
+                "trait_type": "Outfit",
+                "value": "Dukes Court Dress"
+            }
+        ],
+        "metaPath": "https://hunnysclosetshop.s3.us-east-2.amazonaws.com/images/goodies/82"
+    },
+    {
+        "tokenId": 83,
+        "name": "Bunny Emperor",
+        "attributes": [
+            {
+                "trait_type": "Hat",
+                "value": "Bunny Emperor Laurels"
+            },
+            {
+                "trait_type": "Outfit",
+                "value": "Bunny Emperor Toga"
+            }
+        ],
+        "metaPath": "https://hunnysclosetshop.s3.us-east-2.amazonaws.com/images/goodies/83"
+    },
+    {
+        "tokenId": 84,
+        "name": "Bunny Knight",
+        "attributes": [
+            {
+                "trait_type": "Hand",
+                "value": "Sword Hand"
+            }
+        ],
+        "metaPath": "https://hunnysclosetshop.s3.us-east-2.amazonaws.com/images/goodies/84"
+    },
+    {
+        "tokenId": 85,
+        "name": "Bunny U Cheer Squad",
+        "attributes": [
+            {
+                "trait_type": "Hand",
+                "value": "Pom Poms"
+            }
+        ],
+        "metaPath": "https://hunnysclosetshop.s3.us-east-2.amazonaws.com/images/goodies/85"
+    },
+    {
+        "tokenId": 86,
+        "name": "Crypto Cutie",
+        "attributes": [
+            {
+                "trait_type": "Hand",
+                "value": "Shopping Bags"
+            }
+        ],
+        "metaPath": "https://hunnysclosetshop.s3.us-east-2.amazonaws.com/images/goodies/86"
+    },
+    {
+        "tokenId": 87,
+        "name": "Dorothys Drag",
+        "attributes": [
+            {
+                "trait_type": "Frame",
+                "value": "Smoke Frame"
+            }
+        ],
+        "metaPath": "https://hunnysclosetshop.s3.us-east-2.amazonaws.com/images/goodies/87"
+    },
+    {
+        "tokenId": 88,
+        "name": "Ghostfren",
+        "attributes": [
+            {
+                "trait_type": "Hat",
+                "value": "Ghosty Crown"
+            }
+        ],
+        "metaPath": "https://hunnysclosetshop.s3.us-east-2.amazonaws.com/images/goodies/88"
+    },
+    {
+        "tokenId": 89,
+        "name": "Intergalactic Bunny",
+        "attributes": [
+            {
+                "trait_type": "Hat",
+                "value": "Intergalactic Bunny Space Helmet"
+            },
+            {
+                "trait_type": "Outfit",
+                "value": "Intergalactic Bunny Space Suit"
+            }
+        ],
+        "metaPath": "https://hunnysclosetshop.s3.us-east-2.amazonaws.com/images/goodies/89"
+    },
+    {
+        "tokenId": 90,
+        "name": "Mad Hatter",
+        "attributes": [
+            {
+                "trait_type": "Outfit",
+                "value": "Mad Hatters Coat"
+            },
+            {
+                "trait_type": "Hat",
+                "value": "Mad Hatters Hat"
+            }
+        ],
+        "metaPath": "https://hunnysclosetshop.s3.us-east-2.amazonaws.com/images/goodies/90"
+    },
+    {
+        "tokenId": 91,
+        "name": "Mika-tude",
+        "attributes": [
+            {
+                "trait_type": "Mouth",
+                "value": "Resting Bun Face"
+            }
+        ],
+        "metaPath": "https://hunnysclosetshop.s3.us-east-2.amazonaws.com/images/goodies/91"
+    },
+    {
+        "tokenId": 92,
+        "name": "Royal Bunny",
+        "attributes": [
+            {
+                "trait_type": "Hat",
+                "value": "Royal Bunny Crown"
+            }
+        ],
+        "metaPath": "https://hunnysclosetshop.s3.us-east-2.amazonaws.com/images/goodies/92"
+    },
+    {
+        "tokenId": 93,
+        "name": "Sailor Scout",
+        "attributes": [
+            {
+                "trait_type": "Hand",
+                "value": "Moon Guardian Scepter"
+            }
+        ],
+        "metaPath": "https://hunnysclosetshop.s3.us-east-2.amazonaws.com/images/goodies/93"
+    },
+    {
+        "tokenId": 94,
+        "name": "Super Sparkler",
+        "attributes": [
+            {
+                "trait_type": "Hat",
+                "value": "Sparkle Bunny Ears"
+            }
+        ],
+        "metaPath": "https://hunnysclosetshop.s3.us-east-2.amazonaws.com/images/goodies/94"
+    },
+    {
+        "tokenId": 95,
+        "name": "Vampire Slayer",
+        "attributes": [
+            {
+                "trait_type": "Hand",
+                "value": "Mr Pointy"
+            }
+        ],
+        "metaPath": "https://hunnysclosetshop.s3.us-east-2.amazonaws.com/images/goodies/95"
+    },
+    {
+        "tokenId": 96,
+        "name": "World Domination Bunny",
+        "attributes": [
+            {
+                "trait_type": "Hand",
+                "value": "Excellent"
+            },
+            {
+                "trait_type": "Accessory",
+                "value": "Fancy Mustache"
+            },
+            {
+                "trait_type": "Accessory",
+                "value": "Monocle"
+            }
+        ],
+        "metaPath": "https://hunnysclosetshop.s3.us-east-2.amazonaws.com/images/goodies/96"
+    },
+    {
+      "tokenId": 97,
+      "name": "SOON",
+      "attributes": [
+          {
+              "trait_type": "Accessory",
+              "value": "Soon Shades"
+          }
+      ],
+      "metaPath": "https://hunnysclosetshop.s3.us-east-2.amazonaws.com/images/goodies/97"
   }
-  ]
-  
+]
