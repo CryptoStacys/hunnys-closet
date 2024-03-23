@@ -151,8 +151,8 @@ const ProfileView = () => {
 
   // Configure AWS SDK
   AWS.config.update({
-    accessKeyId: "AKIAWFXRVD22RQT75KEL",
-    secretAccessKey: "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",
+    accessKeyId: "AKIAWFXRVD22QQIVJ4GO",
+    secretAccessKey: "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",
     region: "us-east-2",
   });
 
