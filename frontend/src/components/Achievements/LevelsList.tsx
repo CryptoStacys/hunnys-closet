@@ -66,7 +66,7 @@ SwiperCore.use([Pagination, Controller]);
         id: '5',
         levelsName: 'Level 5:\n\nHupe Scouts HQ',
         title: 'So Hupe!',
-        description: 'Feeling creative? You better be, open the doors of Hupe Scouts HQ with glee! In the heart of the land, where courage stands tall, the noble Hupe Scouts answer the call. With every task completed, a badge proudly earned, helping the kingdom, at every turn.They roam the realm, lending hands so kind, In every new deed, a new friend they find. Protectors of all, with joy and with laughter, The Hupe Scouts make every bunny’s heart flutter.',
+        description: 'Feeling creative? You better be, open the doors of Hupe Scouts HQ with glee! In the heart of the land, where courage stands tall, the noble Hupe Scouts answer the call. With every task completed, a badge proudly earned, helping the kingdom, at every turn. They roam the realm, lending hands so kind, In every new deed, a new friend they find. Protectors of all, with joy and with laughter, The Hupe Scouts make every bunny’s heart flutter.',
         levelsReward1: 'Hupe Scouts Heart Headband',
         levelsReward2: 'Hupe Scouts Badge',
         levelsReward3: 'Hupe Scouts Background',

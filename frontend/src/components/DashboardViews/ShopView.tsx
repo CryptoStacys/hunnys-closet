@@ -796,7 +796,7 @@ const collectionNameMap: CollectionNameMap = {
       <div className="border-t-2 border-gray-200 my-8"></div>
 
       {/* Main content area */}
-      <div className="bg-[#FAFAFA] mt-4">
+      <div className="bg-[#EDEDED] mt-4">
         <div
           className="align-center mx-auto flex xs:flex-col sm:flex-row xxl:px-16 justify-between items-center gap-4"
           style={{ maxWidth: "2560px" }}

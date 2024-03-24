@@ -106,7 +106,7 @@ return (
     {/* COLUMN 3 */}
     <div className="flex flex-col justify-center items-center p-4"
     style={{ flexBasis: "30%", flexGrow: 0 }}>
-      {levels.title && <p className='achievementsBanner luckiest font-bold'>TITLE: {levels.title}</p>}
+      {levels.title && <p className='levelsBanner luckiest font-bold'>TITLE: {levels.title}</p>}
       <div className="w-full max-w-xs mt-4">
       <Swiper
           pagination={{ clickable: true }}

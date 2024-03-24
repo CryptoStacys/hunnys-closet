@@ -2,7 +2,7 @@
 import React, { useEffect, useRef } from "react";
 import { Achievement } from "../../data/global";
 import { Levels } from "../../data/global";
-import CupcakePoints from "../Card/CupcakePoints"
+import CupcakePoints from "../Card/CupcakePoints";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Lazy, Navigation, Pagination } from "swiper/modules";
 // import Swiper and modules styles
@@ -11,14 +11,17 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 // Import Swiper core and required modules
 import SwiperCore from "swiper";
+import FreeClaim from "../Mint/FreeClaim";
 // Install Swiper modules
 SwiperCore.use([Navigation]);
 
 interface AchievementItemProps {
   achievement: Achievement;
-  onClaim: (achievementId: string) => void;
+  onClaim: (achievementId: string, freeClaimTokenId?: number) => void;
   isClaimed: boolean;
-  isEligible: boolean; // New prop to indicate eligibility
+  isEligible: boolean;
+  userAddress: string;
+  freeClaimTokenId?: number; // Add this line
 }
 
 const AchievementItem: React.FC<AchievementItemProps> = ({
@@ -26,6 +29,7 @@ const AchievementItem: React.FC<AchievementItemProps> = ({
   onClaim,
   isClaimed,
   isEligible,
+  userAddress,
 }) => {
   let buttonLabel = "CLAIM";
   let buttonStyle =
@@ -39,6 +43,8 @@ const AchievementItem: React.FC<AchievementItemProps> = ({
     buttonStyle =
       "bg-[#DBDBDB] hover:scale-100 text-[#AFAEAE] luckiest text-2xl"; // Not eligible
   }
+
+  const column2Classes = `flex flex-col w-full lg:w-auto xs:py-4 md:py-0 font-luckiest md:mx-8 lg:mx-0 ${achievement.title ? "justify-around" : "justify-between"}`;
 
   const rewards = [
     achievement.achievementsReward1,
@@ -90,47 +96,79 @@ const AchievementItem: React.FC<AchievementItemProps> = ({
   };
 
   return (
-    <div className="bg-[#EDEDED] flex flex-col md:flex-row justify-between xs:items-stretch md:items-center p-4 m-8 rounded-xl gap-4">
+    <div className="bg-[#EDEDED] flex flex-col md:flex-row justify-between items-stretch p-8 m-8 rounded-xl ">
       {/* COLUMN 1 */}
       <div
-        
-        className={`${isClaimed ? "opacity-20" : ""}`}
+        className={`${isClaimed ? "opacity-20" : ""}lg:ml-8 md:self-center`}
         style={{ flexBasis: "30%", flexGrow: 0 }}
-        >
-          <CupcakePoints
+      >
+        <CupcakePoints
           points={achievement.cupcakePoints}
           text="CUPCAKE POINTS"
-          />
+        />
       </div>
 
       {/* COLUMN 2 */}
-      <div className="flex flex-col justify-between w-full lg:w-auto py-4 lg:py-0 font-luckiest"
-      style={{ flexBasis: "40%", flexGrow: 0 }}>
-        <h1 className={`${isClaimed ? "opacity-40" : ""} text-2xl lg:text-[32px] text-left`}>
+      <div
+        className={column2Classes}
+        style={{ flexBasis: "40%", flexGrow: 0 }}
+      >
+        <h1
+          className={`${
+            isClaimed ? "opacity-40" : ""
+          } text-2xl md:text-[32px] text-left uppercase`}
+        >
           {achievement.challenge}
         </h1>
-        <p className={`${isClaimed ? "opacity-60" : ""} font-poppins text-base lg:text-lg my-2`}>
+        <p
+          className={`${
+            isClaimed ? "opacity-60" : ""
+          } font-poppins text-base md:text-lg my-2`}
+        >
           {achievement.description}
           {renderDescription(achievement.descriptionBullets)}
-        </p>
+        </p>{
+        isEligible && !isClaimed && achievement.freeClaimTokenId ? (
+          <FreeClaim
+            tokenId={achievement.freeClaimTokenId.toString()}
+            onMintSuccess={() => {
+              console.log("NFT claimed successfully!");
+              // Here, you'd also call onClaim to update the user's points, marking the achievement as claimed
+              onClaim(achievement.id, achievement.freeClaimTokenId);
+            }}
+            updateTraits={(userAddress) => console.log(`Traits updated for ${userAddress}`)}
+            userAddress={userAddress}
+            className='bg-hunnys-yellow !text-hunnys-blue w-full font-title shadow-md rounded-full px-8 py-2 text-2xl mt-4 hover:shadow-lg !hover:bg-hunnys-yellow transition-all'
+            buttonText={buttonLabel}
+          />
+        ) : (
         <button
-          className={`transition-all duration-500 ease-in-out transform ${buttonStyle} font-bold py-2 px-4 rounded-full`}
-          onClick={() => onClaim(achievement.id)}
-          disabled={!isEligible || isClaimed}
-        >
-          {buttonLabel}
-        </button>
+        className={`transition-all duration-500 ease-in-out transform ${buttonStyle} font-bold py-2 px-4 rounded-full`}
+        onClick={() => onClaim(achievement.id, achievement.freeClaimTokenId)}
+        disabled={!isEligible || isClaimed}
+      >
+        {buttonLabel}
+      </button>
+        )
+}
       </div>
 
       {/* COLUMN 3 */}
-      <div  className="flex flex-col justify-center items-center w-full lg:w-auto mt-4 lg:mt-0"
-      style={{ flexBasis: "30%", flexGrow: 0 }}>
+      <div
+        className="flex flex-col justify-around xs:items-center md:items-end w-full lg:w-auto m-auto "
+        style={{ flexBasis: "30%", flexGrow: 0 }}
+      >
         {achievement.title && (
-          <div className={`${isClaimed ? "opacity-60" : ""} achievementsBanner font-bold mb-4`}>
-            <span className="hidden">TITLE: </span>{achievement.title}
+          <div
+            className={`${
+              isClaimed ? "opacity-60" : ""
+            } achievementsBanner bannerText md:mr-[7px]`}
+          >
+            <span className="hidden">TITLE: </span>
+            {achievement.title}
           </div>
         )}
-        <div className="w-[200px]">
+        <div className="w-[200px] md:mr-8">
           {rewards.length > 1 ? (
             <Swiper
               pagination={{ clickable: true }}
@@ -141,7 +179,9 @@ const AchievementItem: React.FC<AchievementItemProps> = ({
               {rewards.map((reward, index) => (
                 <SwiperSlide key={index}>
                   <img
-                    className={`${isClaimed ? "opacity-20" : ""} w-full rounded-[30px]`}
+                    className={`${
+                      isClaimed ? "opacity-20" : ""
+                    } w-full rounded-[30px]`}
                     src={reward}
                     alt={`Reward ${index + 1}`}
                   />
@@ -152,7 +192,9 @@ const AchievementItem: React.FC<AchievementItemProps> = ({
             rewards.map((reward, index) => (
               <img
                 key={index}
-                className={`${isClaimed ? "opacity-20" : ""} w-full rounded-[30px]`}
+                className={`${
+                  isClaimed ? "opacity-20" : ""
+                } w-full rounded-[30px]`}
                 src={reward}
                 alt={`Reward ${index + 1}`}
               />
@@ -162,7 +204,6 @@ const AchievementItem: React.FC<AchievementItemProps> = ({
       </div>
     </div>
   );
-
 };
 
 export default AchievementItem;

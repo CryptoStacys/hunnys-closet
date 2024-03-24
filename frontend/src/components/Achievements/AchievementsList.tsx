@@ -39,11 +39,7 @@ import { calculateLevel } from '../../utils/levelUtils';
         achievementsReward1: '/icons/Achievements/CupcakePoints.png',
         title: 'GM Fan',
         eligibilityCriteria: (user: User) => {
-          // Ensure freeClaimsArray is defined to avoid accidental undefined.
-          // If it's undefined or empty, straightforwardly return false.
           if (!freeClaimsArray || freeClaimsArray.length === 0) return false;
-        
-          // Proceed with your original logic safely, now assured it'll return a boolean.
           return freeClaimsArray.some((freeClaim: FreeClaimType) => freeClaim.token_id === "0" && freeClaim.claimed);
         }
         },
@@ -56,69 +52,75 @@ import { calculateLevel } from '../../utils/levelUtils';
         title: 'Bunny',
         eligibilityCriteria: (user: User) => user.tokens.filter(token => token.origin_name === "Hunnys 10k").length >= 1,
         },
-    //  {
-    //      id: '5',
-    //      challenge: 'Welcome, Bunny Knight',
-    //      description: 'Own at least 3 Hunnys 10k Collectibles',
-    //      cupcakePoints: 25,
-    //      achievementsReward1: '/icons/Achievements/CupcakePoints.png',
-    //      title: 'Bunny Knight',
-    //      eligibilityCriteria: (user: User) => user.tokens.filter(token => token.origin_name === "Hunnys 10k").length >= 3,
-    //      },
-    // {
-    //     id: '6',
-    //     challenge: 'Welcome, Bunny Duke',
-    //     description: 'Own at least 7 Hunnys 10k Collectibles',
-    //     cupcakePoints: 25,
-    //     achievementsReward1: '/icons/Achievements/CupcakePoints.png',
-    //     title: 'Bunny Duke',
-    //     eligibilityCriteria: (user: User) => user.tokens.filter(token => token.origin_name === "Hunnys 10k").length >= 7,
-    //     },
-    // {
-    //     id: '7',
-    //     challenge: 'Welcome, Royal Bunny',
-    //     description: 'Own at least 12 Hunnys 10k Collectibles',
-    //     cupcakePoints: 25,
-    //     achievementsReward1: '/icons/Achievements/CupcakePoints.png',
-    //     title: 'Royal Bunny',
-    //     eligibilityCriteria: (user: User) => user.tokens.filter(token => token.origin_name === "Hunnys 10k").length >= 12,
-    //     },
-    // {
-    //     id: '8',
-    //     challenge: 'Hunnys Lover',
-    //     description: 'Own at least 30 Hunnys 10k Collectibles',
-    //     cupcakePoints: 50,
-    //     achievementsReward1: '/icons/Achievements/CupcakePoints.png',
-    //     title: 'Hunnys Lover',
-    //     eligibilityCriteria: (user: User) => user.tokens.filter(token => token.origin_name === "Hunnys 10k").length >= 30,
-    //     },
-    // {
-    //     id: '9',
-    //     challenge: 'Hunnys Hoarder',
-    //     description: 'Own at least 50 Hunnys 10k Collectibles',
-    //     cupcakePoints: 50,
-    //     achievementsReward1: '/icons/Achievements/CupcakePoints.png',
-    //     title: 'Hunnys Hoarder',
-    //     eligibilityCriteria: (user: User) => user.tokens.filter(token => token.origin_name === "Hunnys 10k").length >= 50,
-    //     },
-    // {
-    //     id: '10',
-    //     challenge: 'Intergalactic Bunny',
-    //     description: 'Own at least 100 Hunnys 10k Collectibles',
-    //     cupcakePoints: 100,
-    //     achievementsReward1: '/icons/Achievements/CupcakePoints.png',
-    //     title: 'Intergalactic Bunny',
-    //     eligibilityCriteria: (user: User) => user.tokens.filter(token => token.origin_name === "Hunnys 10k").length >= 100,
-    //     },
-    // {
-    //     id: '11',
-    //     challenge: 'Dolly Historian',
-    //     description: 'Own at least 1 Hunnys OG Collectible',
-    //     cupcakePoints: 50,
-    //     achievementsReward1: '/icons/Achievements/CupcakePoints.png',
-    //     title: 'OG Hunny',
-    //     eligibilityCriteria: (user: User) => user.tokens.some(token => token.origin_name === "Hunnys OGs"),
-    // },
+     {
+         id: '5',
+         challenge: 'Welcome, Bunny Knight',
+         description: 'Own at least 3 Hunnys 10k Collectibles',
+         cupcakePoints: 25,
+         freeClaimTokenId: 84,
+         achievementsReward1: '/icons/Achievements/84.png',
+         title: 'Bunny Knight',
+         eligibilityCriteria: (user: User) => user.tokens.filter(token => token.origin_name === "Hunnys 10k").length >= 3,
+         },
+    {
+        id: '6',
+        challenge: 'Welcome, Bunny Duke',
+        description: 'Own at least 7 Hunnys 10k Collectibles',
+        cupcakePoints: 25,
+        freeClaimTokenId: 82,
+        achievementsReward1: '/icons/Achievements/82.png',
+        title: 'Bunny Duke',
+        eligibilityCriteria: (user: User) => user.tokens.filter(token => token.origin_name === "Hunnys 10k").length >= 7,
+        },
+    {
+        id: '7',
+        challenge: 'Welcome, Royal Bunny',
+        description: 'Own at least 12 Hunnys 10k Collectibles',
+        cupcakePoints: 25,
+        freeClaimTokenId: 92,
+        achievementsReward1: '/icons/Achievements/92.png',
+        title: 'Royal Bunny',
+        eligibilityCriteria: (user: User) => user.tokens.filter(token => token.origin_name === "Hunnys 10k").length >= 12,
+        },
+    {
+        id: '8',
+        challenge: 'Welcome, Bunny Emperor',
+        description: 'Own at least 30 Hunnys 10k Collectibles',
+        cupcakePoints: 50,
+        freeClaimTokenId: 83,
+        achievementsReward1: '/icons/Achievements/83.png',
+        title: 'Bunny Emperor',
+        eligibilityCriteria: (user: User) => user.tokens.filter(token => token.origin_name === "Hunnys 10k").length >= 30,
+        },
+    {
+        id: '9',
+        challenge: 'Welcome, World Domination Bunny',
+        description: 'Own at least 50 Hunnys 10k Collectibles',
+        cupcakePoints: 50,
+        freeClaimTokenId: 96,
+        achievementsReward1: '/icons/Achievements/96.png',
+        title: 'World Dominator',
+        eligibilityCriteria: (user: User) => user.tokens.filter(token => token.origin_name === "Hunnys 10k").length >= 50,
+        },
+    {
+        id: '10',
+        challenge: 'Welcome, Intergalactic Bunny',
+        description: 'Own at least 100 Hunnys 10k Collectibles',
+        cupcakePoints: 100,
+        freeClaimTokenId: 89,
+        achievementsReward1: '/icons/Achievements/89.png',
+        title: 'Intergalactic Bunny',
+        eligibilityCriteria: (user: User) => user.tokens.filter(token => token.origin_name === "Hunnys 10k").length >= 100,
+        },
+    {
+        id: '11',
+        challenge: 'Dolly Historian',
+        description: 'Own at least 1 Hunnys OG Collectible',
+        cupcakePoints: 50,
+        achievementsReward1: '/icons/Achievements/CupcakePoints.png',
+        title: 'OG Hunny',
+        eligibilityCriteria: (user: User) => user.traits.some(token => token.origin_name === "Hunnys OG"),
+    },
     {
         id: '12',
         challenge: 'Super Stacys',
@@ -129,119 +131,214 @@ import { calculateLevel } from '../../utils/levelUtils';
         eligibilityCriteria: (user: User) => user.tokens.some(token => token.origin_name === "Hunnys Stacys"),
         },
     {
-        id: '13', // Assuming IDs are sequential and unique
+        id: '13', 
         challenge: 'Reach Level 1',
         description: 'Collect enough Cupcake Points to reach Level 1',
         cupcakePoints: 10, 
         title: 'Fresh Cupcake', 
-        achievementsReward1: '/icons/Achievements/Level0/Reward1.png',
+        achievementsReward1: '/icons/Achievements/CupcakePoints.png',
         eligibilityCriteria: (user: User) => user.level >= 1, // Eligible if user has reached at least Level 1
         },
     {
-        id: '14', // Assuming IDs are sequential and unique
+        id: '14', 
         challenge: 'Reach Level 2',
         description: 'Collect enough Cupcake Points to reach Level 2',
         cupcakePoints: 10, 
         title: 'Bunny Queens Helper', 
-        achievementsReward1: '/icons/Achievements/Level1/Reward1.png',
-        achievementsReward2: '/icons/Achievements/Level1/Reward2.png',
+        achievementsReward1: '/icons/Achievements/CupcakePoints.png',
         eligibilityCriteria: (user: User) => user.level >= 2, // Eligible if user has reached at least Level 1
         },
         
     {
-        id: '15', // Assuming IDs are sequential and unique
+        id: '15', 
         challenge: 'Reach Level 3',
         description: 'Collect enough Cupcake Points to reach Level 3',
         cupcakePoints: 10, 
         title: 'Bunny Bargainer', 
-        achievementsReward1: '/icons/Achievements/Level2/Reward1.png',
+        achievementsReward1: '/icons/Achievements/CupcakePoints.png',
         eligibilityCriteria: (user: User) => user.level >= 3, // Eligible if user has reached at least Level 1
         },
     {
-        id: '16', // Assuming IDs are sequential and unique
+        id: '16', 
         challenge: 'Reach Level 4',
         description: 'Collect enough Cupcake Points to reach Level 4',
         cupcakePoints: 10, 
         title: 'Squirrel Whisperer', 
-        achievementsReward1: '/icons/Achievements/Level3/Reward1.png',
-        achievementsReward2: '/icons/Achievements/Level3/Reward2.png',
+        achievementsReward1: '/icons/Achievements/CupcakePoints.png',
         eligibilityCriteria: (user: User) => user.level >= 4, // Eligible if user has reached at least Level 1
         },
     {
-        id: '17', // Assuming IDs are sequential and unique
+        id: '17', 
         challenge: 'Reach Level 5',
         description: 'Collect enough Cupcake Points to reach Level 5',
         cupcakePoints: 10, 
         title: 'Moar Collector', 
-        achievementsReward1: '/icons/Achievements/Level4/Reward1.png',
-        achievementsReward2: '/icons/Achievements/Level4/Reward2.png',
+        achievementsReward1: '/icons/Achievements/CupcakePoints.png',
         eligibilityCriteria: (user: User) => user.level >= 5, // Eligible if user has reached at least Level 1
         },
     {
-        id: '18', // Assuming IDs are sequential and unique
+        id: '18', 
         challenge: 'Reach Level 6',
         description: 'Collect enough Cupcake Points to reach Level 6',
         cupcakePoints: 10, 
         title: 'So Hupe!', 
-        achievementsReward1: '/icons/Achievements/Level5/Reward1.png',
-        achievementsReward2: '/icons/Achievements/Level5/Reward2.png',
-        achievementsReward3: '/icons/Achievements/Level5/Reward3.png',
+        achievementsReward1: '/icons/Achievements/CupcakePoints.png',
         eligibilityCriteria: (user: User) => user.level >= 6, // Eligible if user has reached at least Level 1
         },
     {
-        id: '19', // Assuming IDs are sequential and unique
+        id: '19', 
         challenge: 'Reach Level 7',
         description: 'Collect enough Cupcake Points to reach Level 7',
         cupcakePoints: 10, 
         title: 'Delicious Dreamer', 
-        achievementsReward1: '/icons/Achievements/Level6/Reward1.png',
-        achievementsReward2: '/icons/Achievements/Level6/Reward2.png',
+        achievementsReward1: '/icons/Achievements/CupcakePoints.png',
         eligibilityCriteria: (user: User) => user.level >= 7, // Eligible if user has reached at least Level 1
         },
     {
-        id: '20', // Assuming IDs are sequential and unique
+        id: '20', 
         challenge: 'Reach Level 8',
         description: 'Collect enough Cupcake Points to reach Level 8',
         cupcakePoints: 10, 
         title: 'Tater Tot', 
-        achievementsReward1: '/icons/Achievements/Level7/Reward1.png',
-        achievementsReward2: '/icons/Achievements/Level7/Reward2.png',
+        achievementsReward1: '/icons/Achievements/CupcakePoints.png',
         eligibilityCriteria: (user: User) => user.level >= 8, // Eligible if user has reached at least Level 1
         },
     {
-        id: '21', // Assuming IDs are sequential and unique
+        id: '21', 
         challenge: 'Reach Level 9',
         description: 'Collect enough Cupcake Points to reach Level 9',
         cupcakePoints: 10, 
         title: 'Forest Friend', 
-        achievementsReward1: '/icons/Achievements/Level8/Reward1.png',
-        achievementsReward2: '/icons/Achievements/Level8/Reward2.png',
+        achievementsReward1: '/icons/Achievements/CupcakePoints.png',
         eligibilityCriteria: (user: User) => user.level >= 9, // Eligible if user has reached at least Level 1
         },
     {
-        id: '22', // Assuming IDs are sequential and unique
+        id: '22', 
         challenge: 'Reach Level 10',
         description: 'Collect enough Cupcake Points to reach Level 10',
         cupcakePoints: 10, 
         title: 'Dreamer', 
-        achievementsReward1: '/icons/Achievements/Level9/Reward1.png',
+        achievementsReward1: '/icons/Achievements/CupcakePoints.png',
         eligibilityCriteria: (user: User) => user.level >= 10, // Eligible if user has reached at least Level 1
         },
-        
+   {
+      id: '23', 
+      challenge: 'Reach Level 11',
+      description: 'Collect enough Cupcake Points to reach Level 11',
+      cupcakePoints: 50, 
+      title: 'Horny', 
+      achievementsReward1: '/icons/Achievements/CupcakePoints.png',
+      eligibilityCriteria: (user: User) => user.level >= 11, // Eligible if user has reached at least Level 1
+      },
     {
-        id: '23', // Assuming IDs are sequential and unique
-        challenge: 'Reach Level 11',
-        description: 'Collect enough Cupcake Points to reach Level 11',
-        cupcakePoints: 50, 
-        title: 'Horny', 
-        achievementsReward1: '/icons/Achievements/Level10/Reward1.png',
-        achievementsReward2: '/icons/Achievements/Level10/Reward2.png',
-        eligibilityCriteria: (user: User) => user.level >= 11, // Eligible if user has reached at least Level 1
-        },
-      
+      id: '24',
+      challenge: 'Minty Fresh',
+      description: 'Mint a Dolly',
+      cupcakePoints: 10,
+      title: 'Minty Fresh', 
+      achievementsReward1: '/icons/Achievements/CupcakePoints.png',
+      eligibilityCriteria: (user: User) => user?.dollyCount > 0,
+      },
+    {
+      id: '25',
+      challenge: 'Vampire Slayer',
+      description: 'Own the Buffy the Slayer Seasons NFT',
+      cupcakePoints: 10,
+      title: 'Vampire Slayer',
+      freeClaimTokenId: 95,
+      achievementsReward1: '/icons/Achievements/95.png',
+      eligibilityCriteria: (user: User) => user.tokens.some(token => token.img_url?.includes("Buffy")),
+      },
+    {
+      id: '26',
+      challenge: 'Bunny U Cheer Squad',
+      description: 'Save a Dolly with the Bunny U Cheer Outfit',
+      cupcakePoints: 10,
+      freeClaimTokenId: 85,
+      title: 'Cheer Squad',
+      achievementsReward1: '/icons/Achievements/85.png',
+      eligibilityCriteria: (user: User) => user.dollys.some(dolly => 
+        dolly.attributes && dolly.attributes.some(attr => attr.name === "BunnyUCheerTop")
+      ),
+      },
+    {
+      id: '27',
+      challenge: 'Ghostfren',
+      description: 'Own this ghostly trio - Ghost Kitty Friend, Ghost Croc, Boo the Ghost Floop',
+      cupcakePoints: 50,
+      freeClaimTokenId: 88,
+      title: 'Ghostfren',
+      achievementsReward1: '/icons/Achievements/88.png',
+      eligibilityCriteria: (user: User) => {
+        const hasBooTheGhostFloop = user.traits.some(trait => trait.name === 'BooTheGhostFloop');
+        const hasGhostCrocFriend = user.traits.some(trait => trait.name === 'GhostCrocFriend');
+        const hasGhostKittyFriend = user.traits.some(trait => trait.name === 'GhostKittyFriend');
+        return hasBooTheGhostFloop && hasGhostCrocFriend && hasGhostKittyFriend;
+      },
+    },
+    {
+      id: '28',
+      challenge: 'Immortal',
+      description: 'Own a 1/1 Immortal Hunny',
+      cupcakePoints: 100,
+      title: 'Immortal',
+      achievementsReward1: '/icons/Achievements/CupcakePoints.png',
+      eligibilityCriteria: (user: User) => {
+        const has0 = user.tokens.some(token => token.token_id == 0 && token.origin_id == 1);
+        const has899 = user.tokens.some(token => token.token_id == 899 && token.origin_id == 1);
+        const has2118 = user.tokens.some(token => token.token_id == 2118 && token.origin_id == 1);
+        const has3507 = user.tokens.some(token => token.token_id == 3507 && token.origin_id == 1);
+        const has5039 = user.tokens.some(token => token.token_id == 5039 && token.origin_id == 1);
+        const has7262 = user.tokens.some(token => token.token_id == 7262 && token.origin_id == 1);
+        const has8833 = user.tokens.some(token => token.token_id == 8833 && token.origin_id == 1);
+        const has9437 = user.tokens.some(token => token.token_id == 9437 && token.origin_id == 1);
+        return has0 || has899 || has2118 || has3507 || has5039 || has7262 || has8833 || has9437;
+      },
+      },
+    {
+      id: '29',
+      challenge: 'Baby Collector',
+      description: 'Own 10 traits',
+      cupcakePoints: 10,
+      achievementsReward1: '/icons/Achievements/CupcakePoints.png',
+      eligibilityCriteria: (user: User) => user.traits.some(token => token.origin_name != "default") && (user.traits.length > 10)
+      },
+    {
+      id: '30',
+      challenge: 'Cool Collector',
+      description: 'Own 30 traits',
+      cupcakePoints: 25,
+      achievementsReward1: '/icons/Achievements/CupcakePoints.png',
+      eligibilityCriteria: (user: User) => user.traits.some(token => token.origin_name != "default") && (user.traits.length > 30)
+    },
+    {
+      id: '31',
+      challenge: 'Serious Collector',
+      description: 'Own 50 traits',
+      cupcakePoints: 50,
+      achievementsReward1: '/icons/Achievements/CupcakePoints.png',
+      eligibilityCriteria: (user: User) => user.traits.some(token => token.origin_name != "default") && (user.traits.length > 50)
+    },
+    {
+      id: '32',
+      challenge: 'Mega Collector',
+      description: 'Own 100 traits',
+      cupcakePoints: 50,
+      achievementsReward1: '/icons/Achievements/CupcakePoints.png',
+      eligibilityCriteria: (user: User) => user.traits.some(token => token.origin_name != "default") && (user.traits.length > 100)
+    },
+    {
+      id: '33',
+      challenge: 'Noobie Boobie',
+      description: 'Mint at least 3 Dollys',
+      cupcakePoints: 25,
+      title: 'Noobie Boobie', 
+      achievementsReward1: '/icons/Achievements/CupcakePoints.png',
+      eligibilityCriteria: (user: User) => user?.dollyCount > 2,
+      },
     // Add more achievements here
   ];
-    const handleAchievementClaim = async (achievementId: string) => {
+  const handleAchievementClaim = async (achievementId: string, freeClaimTokenId?: number) => {
       // Find the achievement based on the ID
       const achievement = achievementsData.find(a => a.id === achievementId);
     if (!achievement) {
@@ -352,6 +449,8 @@ import { calculateLevel } from '../../utils/levelUtils';
             onClaim={() => handleAchievementClaim(achievement.id)}
             isClaimed={user?.achievements && user?.achievements[achievement.challenge]?.claimed}
             isEligible={user ? (achievement.eligibilityCriteria ? achievement.eligibilityCriteria(user) : false) : false}
+            userAddress={user!.address}
+            freeClaimTokenId={achievement.freeClaimTokenId} // Add this line
           />
         ))}
       </div>

@@ -37,7 +37,7 @@ import {
 } from "@rainbow-me/rainbowkit/wallets";
 type WalletAddress = Address<IProtocolFamily>;
 
-const loginScreen = "/assets/img/maintenance.png";
+const loginScreen = "/assets/img/ClosetV2LoginImage.png";
 // Static images
 const loadingImages = [
   "/assets/img/LoadingTip1.png",

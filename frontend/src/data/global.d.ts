@@ -25,6 +25,7 @@ export type Achievement = {
   descriptionBullets?: string;
   cupcakePoints: number;
   cupcakePointsReward?: string;
+  achievementsCover?: string;
   achievementsReward1?: string;
   achievementsReward2?: string;
   achievementsReward3?: string;
@@ -33,6 +34,7 @@ export type Achievement = {
   achievementsReward6?: string;
   title?: string;
   eligibilityCriteria?: (user: User) => boolean;
+  freeClaimTokenId?: number;
 }
 
 export type Dailys = {
@@ -61,6 +63,7 @@ export type Levels = {
   description3?: string;
   description4?: string;
   description5?: string;
+  levelsCover?: string;
   levelsReward1: string;
   levelsReward2?: string;
   levelsReward3?: string;

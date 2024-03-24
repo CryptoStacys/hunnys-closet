@@ -177,7 +177,7 @@ const ProfileView = () => {
       if (uploadResponse.ok) {
         // The file has been uploaded. Construct the URL to the uploaded file
         // Assuming your S3 bucket is public and can directly serve files
-        const uploadedUrl = `https://${process.env.S3_BUCKET_NAME}.s3.amazonaws.com/${filePath}`;
+        const uploadedUrl = `https://hunnyscloset.s3.amazonaws.com/${filePath}`;
         return uploadedUrl; // Return the URL to the uploaded file
       } else {
         throw new Error('Upload failed');
@@ -198,6 +198,7 @@ const ProfileView = () => {
   useEffect(() => {
     // Log the current state of userAtom when Dashboard mounts or when user data changes
     console.log("Current user data in Profile:", user);
+    console.log("Bucket name from env:", process.env.S3_BUCKET_NAME);
   }, [user]);
 
   const updateProfile = async () => {
@@ -209,6 +210,7 @@ const ProfileView = () => {
     // Make API call using the latest user state values for profile_name and profile_image_url
     try {
       const profileImageUrl = await handleImageUpload(); // Assuming this function uploads the image and returns the URL
+      
       const response = await fetch(
         `https://closetservices.hunnysnft.com/wp-json/hunnys-closet/v1/accounts`,
         {
