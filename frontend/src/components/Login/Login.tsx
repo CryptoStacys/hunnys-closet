@@ -37,7 +37,7 @@ import {
 } from "@rainbow-me/rainbowkit/wallets";
 type WalletAddress = Address<IProtocolFamily>;
 
-const loginScreen = "/assets/img/ClosetV2LoginImage.png";
+const loginScreen = "/assets/img/maintenance.png";
 // Static images
 const loadingImages = [
   "/assets/img/LoadingTip1.png",
@@ -82,8 +82,8 @@ export default function Login() {
 
 
   return (
-    <div className="flex justify-center items-center w-max-full px-6 mx-auto bg-cover bg-center" style={{backgroundColor: 'white', backgroundImage: `url('/assets/img/sparkle_bg.png')`}}>
-    <div className="relative rounded-3xl overflow-hidden max-w-[1250px] w-full h-[100%] mx-auto flex items-center justify-center">
+    <div className="flex justify-center items-center w-max-full px-6 mx-auto bg-cover bg-center" style={{backgroundColor: '#EDEDED'}}>
+    <div className="relative rounded-3xl overflow-hidden max-w-[1250px] w-full h-full mx-auto flex items-center justify-center">
       {/* Background Image */}
       {loadingImage && (
         <Image className="rounded-3xl" src={loginScreen} alt="Background" width={3000} height={1688} />
