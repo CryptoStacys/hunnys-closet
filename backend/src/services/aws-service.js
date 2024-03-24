@@ -6,14 +6,14 @@ const fileType = '.png';
 
 const Options = awsCli.Options;
 const Aws = awsCli.Aws;
+
+const options = new Options();
+
+const aws = new Aws(options);
 aws.config.update({
     accessKeyId: process.env.AWS_ACCESS_KEY_ID,
     secretAccessKey: process.env.AWS_SECRET_ACCESS_KEY
 });
-const options = new Options();
-
-const aws = new Aws(options);
-
 const AwsService = {
     updateFiles: function (ids) {
         console.log("Starting updateFiles...");
