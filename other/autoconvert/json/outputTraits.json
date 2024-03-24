@@ -1,61 +1,61 @@
 {
   "attributes": [
-<<<<<<< HEAD
     {"name": "Accessory", "traits": [
-        {"name": "ButterPuff","colors": 5,"rarity": "Epic","tags": [],"token_id": 68},
-        {"name": "BunVenture Backpack","colors": 4,"rarity": "Common","tags": [],"token_id": 69},
-        {"name": "Secret Agent S","colors": 5,"rarity": "Uncommon","tags": ["companion"],"token_id": 71},
-        {"name": "Secret Agent Shades","colors": 2,"rarity": "Uncommon","tags": ["glasses"],"token_id": 71},
-        {"name": "Silly Mr. Moar","colors": 1,"rarity": "Mythic","tags": ["companion"],"token_id": 72},
-        {"name": "Snoozle","colors": 5,"rarity": "Epic","tags": "onBack","token_id": 77}
-    ]},
-
-    {"name": "Background", "traits": [
-        {"name": "Hupe Scouts Background","colors": 0,"rarity": "Uncommon","tags": [],"token_id": 73},
-        {"name": "Best Buns Camp Out","colors": 5,"rarity": "Rare","tags": [],"token_id": 76}
+        {"name": "Ref Mc Blindy","colors": 4,"rarity": "Common","tags": [],"token_id": 79},
+        {"name": "Soon Shades","colors": 2,"rarity": "Common","tags": ["glasses"],"token_id": 80},
+        {"name": "Fancy Mustache","colors": 0,"rarity": "Common","tags": [],"token_id": 96},
+        {"name": "Monocle","colors": 2,"rarity": "Common","tags": [],"token_id": 96}
     ]},
 
     {"name": "Dye", "traits": [
-        {"name": "Picnic Day Dye","colors": 0,"rarity": "Uncommon","tags": [],"token_id": 70},
-        {"name": "Dreamsicle Dye","colors": 0,"rarity": "Uncommon","tags": [],"token_id": 74}
+        {"name": "Blue Screen Print","colors": 0,"rarity": "Common","tags": [],"token_id": 80},
+        {"name": "Blueberry Halftone","colors": 0,"rarity": "Common","tags": [],"token_id": 80},
+        {"name": "Burnt Orange Halftone","colors": 0,"rarity": "Common","tags": [],"token_id": 80},
+        {"name": "Envy Green Halftone","colors": 0,"rarity": "Common","tags": [],"token_id": 80},
+        {"name": "Flamingo Halftone","colors": 0,"rarity": "Common","tags": [],"token_id": 80},
+        {"name": "Green Screen Print","colors": 0,"rarity": "Common","tags": [],"token_id": 80},
+        {"name": "Mustard Halftone","colors": 0,"rarity": "Common","tags": [],"token_id": 80},
+        {"name": "Ocean Spray Halftone","colors": 0,"rarity": "Common","tags": [],"token_id": 80},
+        {"name": "Orange Screen Print","colors": 0,"rarity": "Common","tags": [],"token_id": 80},
+        {"name": "Pink Screen Print","colors": 0,"rarity": "Common","tags": [],"token_id": 80},
+        {"name": "Yellow Screen Print","colors": 0,"rarity": "Common","tags": [],"token_id": 80}
     ]},
 
     {"name": "Frame", "traits": [
-        {"name": "Bunny Babe Basket","colors": 5,"rarity": "Uncommon","tags": [],"token_id": 70},
-        {"name": "Hupe Scouts Badge","colors": 0,"rarity": "Uncommon","tags": [],"token_id": 73}
+        {"name": "Smoke Frame","colors": 0,"rarity": "Common","tags": [],"token_id": 87}
     ]},
 
     {"name": "Hand", "traits": [
-        {"name": "Delicious Dreamwater","colors": 4,"rarity": "Uncommon","tags": ["skin"],"token_id": 74},
-        {"name": "Tater Tot Tiller","colors": 2,"rarity": "Rare","tags": ["skin"],"token_id": 75}
+        {"name": "Slam Dunk","colors": 2,"rarity": "Common","tags": ["skin"],"token_id": 79},
+        {"name": "#1 Fan Trophy","colors": 5,"rarity": "Common","tags": ["skin"],"token_id": 81},
+        {"name": "Sword Hand","colors": 3,"rarity": "Common","tags": [],"token_id": 84},
+        {"name": "Pom Poms","colors": 4,"rarity": "Common","tags": ["skin"],"token_id": 85},
+        {"name": "Shopping Bags","colors": 5,"rarity": "Common","tags": ["skin"],"token_id": 86},
+        {"name": "Moon Guardian Scepter","colors": 4,"rarity": "Common","tags": [],"token_id": 93},
+        {"name": "Mr Pointy","colors": 3,"rarity": "Common","tags": [],"token_id": 95},
+        {"name": "Excellent","colors": 1,"rarity": "Common","tags": ["skin"],"token_id": 96}
     ]},
 
     {"name": "Hat", "traits": [
-        {"name": "BunComms Device","colors": 3,"rarity": "Common","tags": [],"token_id": 69},
-        {"name": "Hupe Scouts Headband","colors": 4,"rarity": "Uncommon","tags": [],"token_id": 73},
-        {"name": "Baby Hornsworth","colors": 4,"rarity": "Legendary","tags": [],"token_id": 78}
+        {"name": "Baller Bunny Band","colors": 4,"rarity": "Common","tags": [],"token_id": 79},
+        {"name": "Bunny Emperor Laurels","colors": 2,"rarity": "Common","tags": [],"token_id": 83},
+        {"name": "Ghosty Crown","colors": 2,"rarity": "Common","tags": [],"token_id": 88},
+        {"name": "Intergalactic Bunny Space Helmet","colors": 1,"rarity": "Common","tags": [],"token_id": 89},
+        {"name": "Mad Hatters Hat","colors": 4,"rarity": "Common","tags": [],"token_id": 90},
+        {"name": "Royal Bunny Crown","colors": 5,"rarity": "Common","tags": [],"token_id": 92},
+        {"name": "Sparkle Bunny Ears","colors": 3,"rarity": "Common","tags": [],"token_id": 94}
     ]},
 
     {"name": "Mouth", "traits": [
-        {"name": "Curious Carrot Munch","colors": 3,"rarity": "Rare","tags": [],"token_id": 76}
+        {"name": "Resting Bun Face","colors": 2,"rarity": "Common","tags": [],"token_id": 91}
     ]},
 
     {"name": "Outfit", "traits": [
-        {"name": "Honest Work Overalls","colors": 3,"rarity": "Rare","tags": [],"token_id": 75},
-        {"name": "Silky Dreams PJs","colors": 4,"rarity": "Epic","tags": [],"token_id": 77},
-        {"name": "Swampstress","colors": 5,"rarity": "Mythic","tags": [],"token_id": 78}
-    ]},
-
-    {"name": "Skin", "traits": [
-        {"name": "Gloopy Mr. Moar","colors": 0,"rarity": "Legendary","tags": [],"token_id": 72}
-=======
-    {"name": "Eyes", "traits": [
-        {"name": "Fired Up","colors": 1,"rarity": "Epic","tags": [],"token_id": 67}
-    ]},
-
-    {"name": "Hair Style", "traits": [
-        {"name": "Hottie","colors": 2,"rarity": "Epic","tags": [],"token_id": 67}
->>>>>>> master
+        {"name": "Baller Babe","colors": 4,"rarity": "Common","tags": [],"token_id": 79},
+        {"name": "Dukes Court Dress","colors": 5,"rarity": "Common","tags": [],"token_id": 82},
+        {"name": "Bunny Emperor Toga","colors": 3,"rarity": "Common","tags": [],"token_id": 83},
+        {"name": "Intergalactic Bunny Space Suit","colors": 3,"rarity": "Common","tags": [],"token_id": 89},
+        {"name": "Mad Hatters Coat","colors": 4,"rarity": "Common","tags": [],"token_id": 90}
     ]}
   ]
 }

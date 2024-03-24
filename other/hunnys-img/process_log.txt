@@ -45570,3 +45570,1798 @@ Checking existence of PNG: compositeImages\Hair Style\Hottie.png
 Checking existence of JPG: 300x300_jpg\Hair Style\Hottie.jpg
 Skipping existing files: PNG - compositeImages\Hair Style\Hottie.png, JPG - 300x300_jpg\Hair Style\Hottie.jpg
 >>>>>>> master
+Script started
+Subfolders found: Accessory, Background, Bodysuit, Colors, Eyebrows, Eyes, Face Sticker, Frame, Hair Style, Hand, Hat, Mouth, Outfit, Piercing, Skin, Tattoo, Undergarment
+Files found: 104
+Resizing image: scriptImages\Accessory\Fancy Mustache_L.png to 800x800
+Resizing image: scriptImages\Accessory\Fancy Mustache_L.png to 600x600
+Processing image group: Fancy Mustache
+Resized image saved: 600x600_png\Accessory\Fancy Mustache_L.png
+Resizing image: scriptImages\Accessory\Monocle_C1.png to 600x600
+Resized image saved: 800x800_png\Accessory\Fancy Mustache_L.png
+Resizing image: scriptImages\Accessory\Monocle_C1.png to 800x800
+Processing file: Fancy Mustache_L.png in subfolder: Accessory
+Checking existence of PNG: compositeImages\Accessory\Fancy Mustache.png
+Checking existence of JPG: 300x300_jpg\Accessory\Fancy Mustache.jpg
+Files not found, processing: PNG - compositeImages\Accessory\Fancy Mustache.png, JPG - 300x300_jpg\Accessory\Fancy Mustache.jpg
+Saved: compositeImages\Accessory\Fancy Mustache.png
+Resized image saved: 800x800_png\Accessory\Monocle_C1.png
+Resizing image: scriptImages\Accessory\Monocle_C2.png to 800x800
+Resized image saved: 600x600_png\Accessory\Monocle_C1.png
+Resizing image: scriptImages\Accessory\Monocle_C2.png to 600x600
+Saved: 300x300_jpg\Accessory\Fancy Mustache.jpg
+Processing image group: Monocle
+Processing file: Monocle_C1.png in subfolder: Accessory
+Resized image saved: 800x800_png\Accessory\Monocle_C2.png
+Resizing image: scriptImages\Accessory\Monocle_L.png to 800x800
+Resized image saved: 600x600_png\Accessory\Monocle_C2.png
+Resizing image: scriptImages\Accessory\Monocle_L.png to 600x600
+Processing file: Monocle_C2.png in subfolder: Accessory
+Processing file: Monocle_L.png in subfolder: Accessory
+Checking existence of PNG: compositeImages\Accessory\Monocle.png
+Checking existence of JPG: 300x300_jpg\Accessory\Monocle.jpg
+Files not found, processing: PNG - compositeImages\Accessory\Monocle.png, JPG - 300x300_jpg\Accessory\Monocle.jpg
+Resized image saved: 600x600_png\Accessory\Monocle_L.png
+Resizing image: scriptImages\Accessory\Ref Mc Blindy_C1.png to 600x600
+Resized image saved: 800x800_png\Accessory\Monocle_L.png
+Resizing image: scriptImages\Accessory\Ref Mc Blindy_C1.png to 800x800
+Saved: compositeImages\Accessory\Monocle.png
+Saved: 300x300_jpg\Accessory\Monocle.jpg
+Processing image group: Ref Mc Blindy
+Resized image saved: 800x800_png\Accessory\Ref Mc Blindy_C1.png
+Resizing image: scriptImages\Accessory\Ref Mc Blindy_C2.png to 800x800
+Resized image saved: 600x600_png\Accessory\Ref Mc Blindy_C1.png
+Resizing image: scriptImages\Accessory\Ref Mc Blindy_C2.png to 600x600
+Processing file: Ref Mc Blindy_C1.png in subfolder: Accessory
+Processed and saved solid color: Blue Screen Print.png
+Processed and saved solid color: Blue Screen Print.png
+Resized image saved: 800x800_png\Accessory\Ref Mc Blindy_C2.png
+Resizing image: scriptImages\Accessory\Ref Mc Blindy_C3.png to 800x800
+Processing file: Ref Mc Blindy_C2.png in subfolder: Accessory
+Resized image saved: 600x600_png\Accessory\Ref Mc Blindy_C2.png
+Resizing image: scriptImages\Accessory\Ref Mc Blindy_C3.png to 600x600
+Processing file: Ref Mc Blindy_C3.png in subfolder: Accessory
+Resized image saved: 800x800_png\Accessory\Ref Mc Blindy_C3.png
+Resizing image: scriptImages\Accessory\Ref Mc Blindy_C4.png to 800x800
+Resized image saved: 600x600_png\Accessory\Ref Mc Blindy_C3.png
+Resizing image: scriptImages\Accessory\Ref Mc Blindy_C4.png to 600x600
+Processing file: Ref Mc Blindy_C4.png in subfolder: Accessory
+Resized image saved: 800x800_png\Accessory\Ref Mc Blindy_C4.png
+Resizing image: scriptImages\Accessory\Ref Mc Blindy_L.png to 800x800
+Processing file: Ref Mc Blindy_L.png in subfolder: Accessory
+Checking existence of PNG: compositeImages\Accessory\Ref Mc Blindy.png
+Checking existence of JPG: 300x300_jpg\Accessory\Ref Mc Blindy.jpg
+Files not found, processing: PNG - compositeImages\Accessory\Ref Mc Blindy.png, JPG - 300x300_jpg\Accessory\Ref Mc Blindy.jpg
+Resized image saved: 600x600_png\Accessory\Ref Mc Blindy_C4.png
+Resizing image: scriptImages\Accessory\Ref Mc Blindy_L.png to 600x600
+Saved: compositeImages\Accessory\Ref Mc Blindy.png
+Saved: 300x300_jpg\Accessory\Ref Mc Blindy.jpg
+Processing image group: Soonshades
+Resized image saved: 800x800_png\Accessory\Ref Mc Blindy_L.png
+Resizing image: scriptImages\Accessory\Soonshades_C1.png to 800x800
+Processed and saved solid color: Blueberry Halftone.png
+Resized image saved: 600x600_png\Accessory\Ref Mc Blindy_L.png
+Resizing image: scriptImages\Accessory\Soonshades_C1.png to 600x600
+Processed and saved solid color: Blueberry Halftone.png
+Processing file: Soonshades_C1.png in subfolder: Accessory
+Resized image saved: 800x800_png\Accessory\Soonshades_C1.png
+Resizing image: scriptImages\Accessory\Soonshades_C2.png to 800x800
+Processing file: Soonshades_C2.png in subfolder: Accessory
+Resized image saved: 600x600_png\Accessory\Soonshades_C1.png
+Resizing image: scriptImages\Accessory\Soonshades_C2.png to 600x600
+Processing file: Soonshades_L.png in subfolder: Accessory
+Checking existence of PNG: compositeImages\Accessory\Soonshades.png
+Checking existence of JPG: 300x300_jpg\Accessory\Soonshades.jpg
+Files not found, processing: PNG - compositeImages\Accessory\Soonshades.png, JPG - 300x300_jpg\Accessory\Soonshades.jpg
+Resized image saved: 800x800_png\Accessory\Soonshades_C2.png
+Resizing image: scriptImages\Accessory\Soonshades_L.png to 800x800
+Saved: compositeImages\Accessory\Soonshades.png
+Resized image saved: 600x600_png\Accessory\Soonshades_C2.png
+Resizing image: scriptImages\Accessory\Soonshades_L.png to 600x600
+Saved: 300x300_jpg\Accessory\Soonshades.jpg
+Processing image group: Yellow Screen Print.png
+Resized image saved: 800x800_png\Accessory\Soonshades_L.png
+Resizing image: scriptImages\Colors\Yellow Screen Print.png to 800x800
+Processed and saved solid color: Burnt Orange Halftone.png
+Resized image saved: 600x600_png\Accessory\Soonshades_L.png
+Resizing image: scriptImages\Colors\Yellow Screen Print.png to 600x600
+Processed and saved solid color: Burnt Orange Halftone.png
+Processing file: Yellow Screen Print.png in subfolder: Colors
+Checking existence of PNG: compositeImages\Colors\Yellow Screen Print.png.png
+Checking existence of JPG: 300x300_jpg\Colors\Yellow Screen Print.png.jpg
+Files not found, processing: PNG - compositeImages\Colors\Yellow Screen Print.png.png, JPG - 300x300_jpg\Colors\Yellow Screen Print.png.jpg
+Saved: compositeImages\Colors\Yellow Screen Print.png.png
+Saved: 300x300_jpg\Colors\Yellow Screen Print.png.jpg
+Processing image group: Smoke Frame
+Resized image saved: 800x800_png\Colors\Yellow Screen Print.png
+Resizing image: scriptImages\Frame\Smoke Frame_L.png to 800x800
+Resized image saved: 600x600_png\Colors\Yellow Screen Print.png
+Resizing image: scriptImages\Frame\Smoke Frame_L.png to 600x600
+Processing file: Smoke Frame_L.png in subfolder: Frame
+Checking existence of PNG: compositeImages\Frame\Smoke Frame.png
+Checking existence of JPG: 300x300_jpg\Frame\Smoke Frame.jpg
+Files not found, processing: PNG - compositeImages\Frame\Smoke Frame.png, JPG - 300x300_jpg\Frame\Smoke Frame.jpg
+Resized image saved: 800x800_png\Frame\Smoke Frame_L.png
+Resizing image: scriptImages\Hand\#1 Fan Trophy_C1.png to 800x800
+Saved: compositeImages\Frame\Smoke Frame.png
+Resized image saved: 600x600_png\Frame\Smoke Frame_L.png
+Resizing image: scriptImages\Hand\#1 Fan Trophy_C1.png to 600x600
+Saved: 300x300_jpg\Frame\Smoke Frame.jpg
+Processing image group: #1 Fan Trophy
+Processed and saved solid color: Envy Green Halftone.png
+Processing file: #1 Fan Trophy_C1.png in subfolder: Hand
+Resized image saved: 800x800_png\Hand\#1 Fan Trophy_C1.png
+Resizing image: scriptImages\Hand\#1 Fan Trophy_C2.png to 800x800
+Resized image saved: 600x600_png\Hand\#1 Fan Trophy_C1.png
+Resizing image: scriptImages\Hand\#1 Fan Trophy_C2.png to 600x600
+Processed and saved solid color: Envy Green Halftone.png
+Processing file: #1 Fan Trophy_C2.png in subfolder: Hand
+Resized image saved: 800x800_png\Hand\#1 Fan Trophy_C2.png
+Resizing image: scriptImages\Hand\#1 Fan Trophy_C3.png to 800x800
+Processing file: #1 Fan Trophy_C3.png in subfolder: Hand
+Resized image saved: 600x600_png\Hand\#1 Fan Trophy_C2.png
+Resizing image: scriptImages\Hand\#1 Fan Trophy_C3.png to 600x600
+Resized image saved: 800x800_png\Hand\#1 Fan Trophy_C3.png
+Resizing image: scriptImages\Hand\#1 Fan Trophy_C4.png to 800x800
+Processing file: #1 Fan Trophy_C4.png in subfolder: Hand
+Resized image saved: 600x600_png\Hand\#1 Fan Trophy_C3.png
+Resizing image: scriptImages\Hand\#1 Fan Trophy_C4.png to 600x600
+Processing file: #1 Fan Trophy_C5.png in subfolder: Hand
+Resized image saved: 800x800_png\Hand\#1 Fan Trophy_C4.png
+Resizing image: scriptImages\Hand\#1 Fan Trophy_C5.png to 800x800
+Processed and saved solid color: Flamingo Halftone.png
+Resized image saved: 600x600_png\Hand\#1 Fan Trophy_C4.png
+Resizing image: scriptImages\Hand\#1 Fan Trophy_C5.png to 600x600
+Processing file: #1 Fan Trophy_L.png in subfolder: Hand
+Processed and saved solid color: Flamingo Halftone.png
+Resized image saved: 800x800_png\Hand\#1 Fan Trophy_C5.png
+Resizing image: scriptImages\Hand\#1 Fan Trophy_L.png to 800x800
+Processing file: #1 Fan Trophy_S.png in subfolder: Hand
+Checking existence of PNG: compositeImages\Hand\#1 Fan Trophy.png
+Checking existence of JPG: 300x300_jpg\Hand\#1 Fan Trophy.jpg
+Files not found, processing: PNG - compositeImages\Hand\#1 Fan Trophy.png, JPG - 300x300_jpg\Hand\#1 Fan Trophy.jpg
+Resized image saved: 600x600_png\Hand\#1 Fan Trophy_C5.png
+Resizing image: scriptImages\Hand\#1 Fan Trophy_L.png to 600x600
+Saved: compositeImages\Hand\#1 Fan Trophy.png
+Resized image saved: 800x800_png\Hand\#1 Fan Trophy_L.png
+Resizing image: scriptImages\Hand\#1 Fan Trophy_S.png to 800x800
+Saved: 300x300_jpg\Hand\#1 Fan Trophy.jpg
+Processing image group: Excellent
+Resized image saved: 600x600_png\Hand\#1 Fan Trophy_L.png
+Resizing image: scriptImages\Hand\#1 Fan Trophy_S.png to 600x600
+Processing file: Excellent_C1.png in subfolder: Hand
+Resized image saved: 800x800_png\Hand\#1 Fan Trophy_S.png
+Resizing image: scriptImages\Hand\Excellent_C1.png to 800x800
+Processing file: Excellent_L.png in subfolder: Hand
+Resized image saved: 600x600_png\Hand\#1 Fan Trophy_S.png
+Resizing image: scriptImages\Hand\Excellent_C1.png to 600x600
+Resized image saved: 800x800_png\Hand\Excellent_C1.png
+Resizing image: scriptImages\Hand\Excellent_L.png to 800x800
+Processing file: Excellent_S.png in subfolder: Hand
+Checking existence of PNG: compositeImages\Hand\Excellent.png
+Checking existence of JPG: 300x300_jpg\Hand\Excellent.jpg
+Files not found, processing: PNG - compositeImages\Hand\Excellent.png, JPG - 300x300_jpg\Hand\Excellent.jpg
+Saved: compositeImages\Hand\Excellent.png
+Resized image saved: 600x600_png\Hand\Excellent_C1.png
+Resizing image: scriptImages\Hand\Excellent_L.png to 600x600
+Saved: 300x300_jpg\Hand\Excellent.jpg
+Processing image group: Moon Guardian Scepter
+Resized image saved: 800x800_png\Hand\Excellent_L.png
+Resizing image: scriptImages\Hand\Excellent_S.png to 800x800
+Processing file: Moon Guardian Scepter_C1.png in subfolder: Hand
+Resized image saved: 600x600_png\Hand\Excellent_L.png
+Resizing image: scriptImages\Hand\Excellent_S.png to 600x600
+Processed and saved solid color: Green Screen Print.png
+Resized image saved: 800x800_png\Hand\Excellent_S.png
+Resizing image: scriptImages\Hand\Moon Guardian Scepter_C1.png to 800x800
+Processed and saved solid color: Green Screen Print.png
+Processing file: Moon Guardian Scepter_C2.png in subfolder: Hand
+Resized image saved: 600x600_png\Hand\Excellent_S.png
+Resizing image: scriptImages\Hand\Moon Guardian Scepter_C1.png to 600x600
+Processing file: Moon Guardian Scepter_C3.png in subfolder: Hand
+Resized image saved: 800x800_png\Hand\Moon Guardian Scepter_C1.png
+Resizing image: scriptImages\Hand\Moon Guardian Scepter_C2.png to 800x800
+Processing file: Moon Guardian Scepter_C4.png in subfolder: Hand
+Resized image saved: 600x600_png\Hand\Moon Guardian Scepter_C1.png
+Resizing image: scriptImages\Hand\Moon Guardian Scepter_C2.png to 600x600
+Resized image saved: 800x800_png\Hand\Moon Guardian Scepter_C2.png
+Resizing image: scriptImages\Hand\Moon Guardian Scepter_C3.png to 800x800
+Processing file: Moon Guardian Scepter_L.png in subfolder: Hand
+Checking existence of PNG: compositeImages\Hand\Moon Guardian Scepter.png
+Checking existence of JPG: 300x300_jpg\Hand\Moon Guardian Scepter.jpg
+Files not found, processing: PNG - compositeImages\Hand\Moon Guardian Scepter.png, JPG - 300x300_jpg\Hand\Moon Guardian Scepter.jpg
+Saved: compositeImages\Hand\Moon Guardian Scepter.png
+Resized image saved: 600x600_png\Hand\Moon Guardian Scepter_C2.png
+Resizing image: scriptImages\Hand\Moon Guardian Scepter_C3.png to 600x600
+Saved: 300x300_jpg\Hand\Moon Guardian Scepter.jpg
+Processing image group: Mr Pointy
+Resized image saved: 800x800_png\Hand\Moon Guardian Scepter_C3.png
+Resizing image: scriptImages\Hand\Moon Guardian Scepter_C4.png to 800x800
+Processed and saved solid color: Mustard Halftone.png
+Processed and saved solid color: Mustard Halftone.png
+Processing file: Mr Pointy_C1.png in subfolder: Hand
+Resized image saved: 600x600_png\Hand\Moon Guardian Scepter_C3.png
+Resizing image: scriptImages\Hand\Moon Guardian Scepter_C4.png to 600x600
+Resized image saved: 800x800_png\Hand\Moon Guardian Scepter_C4.png
+Resizing image: scriptImages\Hand\Moon Guardian Scepter_L.png to 800x800
+Processing file: Mr Pointy_C2.png in subfolder: Hand
+Resized image saved: 600x600_png\Hand\Moon Guardian Scepter_C4.png
+Resizing image: scriptImages\Hand\Moon Guardian Scepter_L.png to 600x600
+Resized image saved: 800x800_png\Hand\Moon Guardian Scepter_L.png
+Resizing image: scriptImages\Hand\Mr Pointy_C1.png to 800x800
+Processing file: Mr Pointy_C3.png in subfolder: Hand
+Resized image saved: 800x800_png\Hand\Mr Pointy_C1.png
+Resizing image: scriptImages\Hand\Mr Pointy_C2.png to 800x800
+Resized image saved: 600x600_png\Hand\Moon Guardian Scepter_L.png
+Resizing image: scriptImages\Hand\Mr Pointy_C1.png to 600x600
+Processing file: Mr Pointy_L.png in subfolder: Hand
+Processed and saved solid color: Ocean Spray Halftone.png
+Processing file: Mr Pointy_S.png in subfolder: Hand
+Checking existence of PNG: compositeImages\Hand\Mr Pointy.png
+Checking existence of JPG: 300x300_jpg\Hand\Mr Pointy.jpg
+Files not found, processing: PNG - compositeImages\Hand\Mr Pointy.png, JPG - 300x300_jpg\Hand\Mr Pointy.jpg
+Processed and saved solid color: Ocean Spray Halftone.png
+Resized image saved: 600x600_png\Hand\Mr Pointy_C1.png
+Resizing image: scriptImages\Hand\Mr Pointy_C2.png to 600x600
+Resized image saved: 800x800_png\Hand\Mr Pointy_C2.png
+Resizing image: scriptImages\Hand\Mr Pointy_C3.png to 800x800
+Saved: compositeImages\Hand\Mr Pointy.png
+Saved: 300x300_jpg\Hand\Mr Pointy.jpg
+Processing image group: Pom Poms
+Resized image saved: 600x600_png\Hand\Mr Pointy_C2.png
+Resizing image: scriptImages\Hand\Mr Pointy_C3.png to 600x600
+Resized image saved: 800x800_png\Hand\Mr Pointy_C3.png
+Resizing image: scriptImages\Hand\Mr Pointy_L.png to 800x800
+Resized image saved: 600x600_png\Hand\Mr Pointy_C3.png
+Resizing image: scriptImages\Hand\Mr Pointy_L.png to 600x600
+Processing file: Pom Poms_C1.png in subfolder: Hand
+Resized image saved: 800x800_png\Hand\Mr Pointy_L.png
+Resizing image: scriptImages\Hand\Mr Pointy_S.png to 800x800
+Processing file: Pom Poms_C2.png in subfolder: Hand
+Resized image saved: 600x600_png\Hand\Mr Pointy_L.png
+Resizing image: scriptImages\Hand\Mr Pointy_S.png to 600x600
+Resized image saved: 800x800_png\Hand\Mr Pointy_S.png
+Resizing image: scriptImages\Hand\Pom Poms_C1.png to 800x800
+Processing file: Pom Poms_C3.png in subfolder: Hand
+Resized image saved: 600x600_png\Hand\Mr Pointy_S.png
+Resizing image: scriptImages\Hand\Pom Poms_C1.png to 600x600
+Resized image saved: 800x800_png\Hand\Pom Poms_C1.png
+Resizing image: scriptImages\Hand\Pom Poms_C2.png to 800x800
+Processing file: Pom Poms_C4.png in subfolder: Hand
+Processed and saved solid color: Orange Screen Print.png
+Resized image saved: 600x600_png\Hand\Pom Poms_C1.png
+Resizing image: scriptImages\Hand\Pom Poms_C2.png to 600x600
+Resized image saved: 800x800_png\Hand\Pom Poms_C2.png
+Resizing image: scriptImages\Hand\Pom Poms_C3.png to 800x800
+Processed and saved solid color: Orange Screen Print.png
+Processing file: Pom Poms_L.png in subfolder: Hand
+Resized image saved: 600x600_png\Hand\Pom Poms_C2.png
+Resizing image: scriptImages\Hand\Pom Poms_C3.png to 600x600
+Processing file: Pom Poms_S.png in subfolder: Hand
+Checking existence of PNG: compositeImages\Hand\Pom Poms.png
+Checking existence of JPG: 300x300_jpg\Hand\Pom Poms.jpg
+Files not found, processing: PNG - compositeImages\Hand\Pom Poms.png, JPG - 300x300_jpg\Hand\Pom Poms.jpg
+Resized image saved: 800x800_png\Hand\Pom Poms_C3.png
+Resizing image: scriptImages\Hand\Pom Poms_C4.png to 800x800
+Saved: compositeImages\Hand\Pom Poms.png
+Saved: 300x300_jpg\Hand\Pom Poms.jpg
+Processing image group: Shopping Bags
+Resized image saved: 600x600_png\Hand\Pom Poms_C3.png
+Resizing image: scriptImages\Hand\Pom Poms_C4.png to 600x600
+Resized image saved: 800x800_png\Hand\Pom Poms_C4.png
+Resizing image: scriptImages\Hand\Pom Poms_L.png to 800x800
+Processing file: Shopping Bags_C1.png in subfolder: Hand
+Resized image saved: 600x600_png\Hand\Pom Poms_C4.png
+Resizing image: scriptImages\Hand\Pom Poms_L.png to 600x600
+Resized image saved: 800x800_png\Hand\Pom Poms_L.png
+Resizing image: scriptImages\Hand\Pom Poms_S.png to 800x800
+Processing file: Shopping Bags_C2.png in subfolder: Hand
+Processed and saved solid color: Pink Screen Print.png
+Solid colors RGB values saved to colors.json
+Resized image saved: 600x600_png\Hand\Pom Poms_L.png
+Resizing image: scriptImages\Hand\Pom Poms_S.png to 600x600
+Resized image saved: 800x800_png\Hand\Pom Poms_S.png
+Resizing image: scriptImages\Hand\Shopping Bags_C1.png to 800x800
+Processing file: Shopping Bags_C3.png in subfolder: Hand
+Processed and saved solid color: Pink Screen Print.png
+Solid colors RGB values saved to colors.json
+Resized image saved: 600x600_png\Hand\Pom Poms_S.png
+Resizing image: scriptImages\Hand\Shopping Bags_C1.png to 600x600
+Resized image saved: 800x800_png\Hand\Shopping Bags_C1.png
+Resizing image: scriptImages\Hand\Shopping Bags_C2.png to 800x800
+Processing file: Shopping Bags_C4.png in subfolder: Hand
+Resized image saved: 600x600_png\Hand\Shopping Bags_C1.png
+Resizing image: scriptImages\Hand\Shopping Bags_C2.png to 600x600
+Resized image saved: 800x800_png\Hand\Shopping Bags_C2.png
+Resizing image: scriptImages\Hand\Shopping Bags_C3.png to 800x800
+Processing file: Shopping Bags_C5.png in subfolder: Hand
+Resized image saved: 600x600_png\Hand\Shopping Bags_C2.png
+Resizing image: scriptImages\Hand\Shopping Bags_C3.png to 600x600
+Processing file: Shopping Bags_L.png in subfolder: Hand
+Resized image saved: 800x800_png\Hand\Shopping Bags_C3.png
+Resizing image: scriptImages\Hand\Shopping Bags_C4.png to 800x800
+Resized image saved: 600x600_png\Hand\Shopping Bags_C3.png
+Resizing image: scriptImages\Hand\Shopping Bags_C4.png to 600x600
+Resized image saved: 800x800_png\Hand\Shopping Bags_C4.png
+Resizing image: scriptImages\Hand\Shopping Bags_C5.png to 800x800
+Processing file: Shopping Bags_S.png in subfolder: Hand
+Checking existence of PNG: compositeImages\Hand\Shopping Bags.png
+Checking existence of JPG: 300x300_jpg\Hand\Shopping Bags.jpg
+Files not found, processing: PNG - compositeImages\Hand\Shopping Bags.png, JPG - 300x300_jpg\Hand\Shopping Bags.jpg
+Saved: compositeImages\Hand\Shopping Bags.png
+Resized image saved: 600x600_png\Hand\Shopping Bags_C4.png
+Resizing image: scriptImages\Hand\Shopping Bags_C5.png to 600x600
+Saved: 300x300_jpg\Hand\Shopping Bags.jpg
+Processing image group: Slam Dunk
+Resized image saved: 800x800_png\Hand\Shopping Bags_C5.png
+Resizing image: scriptImages\Hand\Shopping Bags_L.png to 800x800
+Resized image saved: 600x600_png\Hand\Shopping Bags_C5.png
+Resizing image: scriptImages\Hand\Shopping Bags_L.png to 600x600
+Processing file: Slam Dunk_C1.png in subfolder: Hand
+Resized image saved: 800x800_png\Hand\Shopping Bags_L.png
+Resizing image: scriptImages\Hand\Shopping Bags_S.png to 800x800
+Processing file: Slam Dunk_C2.png in subfolder: Hand
+Resized image saved: 600x600_png\Hand\Shopping Bags_L.png
+Resizing image: scriptImages\Hand\Shopping Bags_S.png to 600x600
+Resized image saved: 800x800_png\Hand\Shopping Bags_S.png
+Resizing image: scriptImages\Hand\Slam Dunk_C1.png to 800x800
+Processing file: Slam Dunk_C3.png in subfolder: Hand
+Resized image saved: 600x600_png\Hand\Shopping Bags_S.png
+Resizing image: scriptImages\Hand\Slam Dunk_C1.png to 600x600
+Processing file: Slam Dunk_L.png in subfolder: Hand
+Checking existence of PNG: compositeImages\Hand\Slam Dunk.png
+Checking existence of JPG: 300x300_jpg\Hand\Slam Dunk.jpg
+Files not found, processing: PNG - compositeImages\Hand\Slam Dunk.png, JPG - 300x300_jpg\Hand\Slam Dunk.jpg
+Resized image saved: 800x800_png\Hand\Slam Dunk_C1.png
+Resizing image: scriptImages\Hand\Slam Dunk_C2.png to 800x800
+Saved: compositeImages\Hand\Slam Dunk.png
+Resized image saved: 600x600_png\Hand\Slam Dunk_C1.png
+Resizing image: scriptImages\Hand\Slam Dunk_C2.png to 600x600
+Saved: 300x300_jpg\Hand\Slam Dunk.jpg
+Processing image group: Baller Bunny Band
+Resized image saved: 800x800_png\Hand\Slam Dunk_C2.png
+Resizing image: scriptImages\Hand\Slam Dunk_C3.png to 800x800
+Processing file: Baller Bunny Band_C1.png in subfolder: Hat
+Processing file: Baller Bunny Band_C1.png in Hat
+Resized image saved: 600x600_png\Hand\Slam Dunk_C2.png
+Resizing image: scriptImages\Hand\Slam Dunk_C3.png to 600x600
+Resized image saved: 800x800_png\Hand\Slam Dunk_C3.png
+Resizing image: scriptImages\Hand\Slam Dunk_L.png to 800x800
+Processing file: Baller Bunny Band_C2.png in Hat
+Resized image saved: 600x600_png\Hand\Slam Dunk_C3.png
+Resizing image: scriptImages\Hand\Slam Dunk_L.png to 600x600
+Processing file: Baller Bunny Band_C3.png in Hat
+Resized image saved: 800x800_png\Hand\Slam Dunk_L.png
+Resizing image: scriptImages\Hat\Baller Bunny Band_C1.png to 800x800
+Resized image saved: 600x600_png\Hand\Slam Dunk_L.png
+Resizing image: scriptImages\Hat\Baller Bunny Band_C1.png to 600x600
+Processing file: Baller Bunny Band_C4.png in Hat
+Resized image saved: 800x800_png\Hat\Baller Bunny Band_C1.png
+Resizing image: scriptImages\Hat\Baller Bunny Band_C2.png to 800x800
+Resized image saved: 600x600_png\Hat\Baller Bunny Band_C1.png
+Resizing image: scriptImages\Hat\Baller Bunny Band_C2.png to 600x600
+Resized image saved: 800x800_png\Hat\Baller Bunny Band_C2.png
+Resizing image: scriptImages\Hat\Baller Bunny Band_C3.png to 800x800
+Processing file: Baller Bunny Band_L.png in Hat
+Resized image saved: 600x600_png\Hat\Baller Bunny Band_C2.png
+Resizing image: scriptImages\Hat\Baller Bunny Band_C3.png to 600x600
+Resized image saved: 800x800_png\Hat\Baller Bunny Band_C3.png
+Resizing image: scriptImages\Hat\Baller Bunny Band_C4.png to 800x800
+Processing file: Bunny Emperor Laurels_C1.png in Hat
+Resized image saved: 800x800_png\Hat\Baller Bunny Band_C4.png
+Resizing image: scriptImages\Hat\Baller Bunny Band_L.png to 800x800
+Resized image saved: 600x600_png\Hat\Baller Bunny Band_C3.png
+Resizing image: scriptImages\Hat\Baller Bunny Band_C4.png to 600x600
+Resized image saved: 800x800_png\Hat\Baller Bunny Band_L.png
+Resizing image: scriptImages\Hat\Bunny Emperor Laurels_C1.png to 800x800
+Processing file: Bunny Emperor Laurels_C2.png in Hat
+Resized image saved: 600x600_png\Hat\Baller Bunny Band_C4.png
+Resizing image: scriptImages\Hat\Baller Bunny Band_L.png to 600x600
+Resized image saved: 800x800_png\Hat\Bunny Emperor Laurels_C1.png
+Resizing image: scriptImages\Hat\Bunny Emperor Laurels_C2.png to 800x800
+Processing file: Bunny Emperor Laurels_L.png in Hat
+Resized image saved: 600x600_png\Hat\Baller Bunny Band_L.png
+Resizing image: scriptImages\Hat\Bunny Emperor Laurels_C1.png to 600x600
+Resized image saved: 800x800_png\Hat\Bunny Emperor Laurels_C2.png
+Resizing image: scriptImages\Hat\Bunny Emperor Laurels_L.png to 800x800
+Resized image saved: 600x600_png\Hat\Bunny Emperor Laurels_C1.png
+Resizing image: scriptImages\Hat\Bunny Emperor Laurels_C2.png to 600x600
+Processing file: Ghosty Crown_C1.png in Hat
+Resized image saved: 800x800_png\Hat\Bunny Emperor Laurels_L.png
+Resizing image: scriptImages\Hat\Ghosty Crown_C1.png to 800x800
+Resized image saved: 600x600_png\Hat\Bunny Emperor Laurels_C2.png
+Resizing image: scriptImages\Hat\Bunny Emperor Laurels_L.png to 600x600
+Processing file: Ghosty Crown_C2.png in Hat
+Processing file: Ghosty Crown_L.png in Hat
+Resized image saved: 800x800_png\Hat\Ghosty Crown_C1.png
+Resizing image: scriptImages\Hat\Ghosty Crown_C2.png to 800x800
+Resized image saved: 600x600_png\Hat\Bunny Emperor Laurels_L.png
+Resizing image: scriptImages\Hat\Ghosty Crown_C1.png to 600x600
+Resized image saved: 800x800_png\Hat\Ghosty Crown_C2.png
+Resizing image: scriptImages\Hat\Ghosty Crown_L.png to 800x800
+Resized image saved: 600x600_png\Hat\Ghosty Crown_C1.png
+Resizing image: scriptImages\Hat\Ghosty Crown_C2.png to 600x600
+Resized image saved: 800x800_png\Hat\Ghosty Crown_L.png
+Resizing image: scriptImages\Hat\Intergalactic Bunny Space Helmet_L.png to 800x800
+Processing file: Intergalactic Bunny Space Helmet_L.png in Hat
+Resized image saved: 600x600_png\Hat\Ghosty Crown_C2.png
+Resizing image: scriptImages\Hat\Ghosty Crown_L.png to 600x600
+Resized image saved: 600x600_png\Hat\Ghosty Crown_L.png
+Resizing image: scriptImages\Hat\Intergalactic Bunny Space Helmet_L.png to 600x600
+Resized image saved: 800x800_png\Hat\Intergalactic Bunny Space Helmet_L.png
+Resizing image: scriptImages\Hat\Intergalactic Bunny Space Suit_C1.png to 800x800
+Processing file: Intergalactic Bunny Space Suit_C1.png in Hat
+Resized image saved: 800x800_png\Hat\Intergalactic Bunny Space Suit_C1.png
+Resizing image: scriptImages\Hat\Intergalactic Bunny Space Suit_C2.png to 800x800
+Processing file: Intergalactic Bunny Space Suit_C2.png in Hat
+Resized image saved: 600x600_png\Hat\Intergalactic Bunny Space Helmet_L.png
+Resizing image: scriptImages\Hat\Intergalactic Bunny Space Suit_C1.png to 600x600
+Processing file: Intergalactic Bunny Space Suit_C3.png in Hat
+Resized image saved: 800x800_png\Hat\Intergalactic Bunny Space Suit_C2.png
+Resizing image: scriptImages\Hat\Intergalactic Bunny Space Suit_C3.png to 800x800
+Processing file: Intergalactic Bunny Space Suit_L.png in Hat
+Resized image saved: 600x600_png\Hat\Intergalactic Bunny Space Suit_C1.png
+Resizing image: scriptImages\Hat\Intergalactic Bunny Space Suit_C2.png to 600x600
+Resized image saved: 800x800_png\Hat\Intergalactic Bunny Space Suit_C3.png
+Resizing image: scriptImages\Hat\Intergalactic Bunny Space Suit_L.png to 800x800
+Resized image saved: 600x600_png\Hat\Intergalactic Bunny Space Suit_C2.png
+Resizing image: scriptImages\Hat\Intergalactic Bunny Space Suit_C3.png to 600x600
+Processing file: Mad Hatters Hat_C1.png in Hat
+Resized image saved: 600x600_png\Hat\Intergalactic Bunny Space Suit_C3.png
+Resizing image: scriptImages\Hat\Intergalactic Bunny Space Suit_L.png to 600x600
+Resized image saved: 800x800_png\Hat\Intergalactic Bunny Space Suit_L.png
+Resizing image: scriptImages\Hat\Mad Hatters Hat_C1.png to 800x800
+Processing file: Mad Hatters Hat_C2.png in Hat
+Resized image saved: 600x600_png\Hat\Intergalactic Bunny Space Suit_L.png
+Resizing image: scriptImages\Hat\Mad Hatters Hat_C1.png to 600x600
+Processing file: Mad Hatters Hat_C3.png in Hat
+Resized image saved: 800x800_png\Hat\Mad Hatters Hat_C1.png
+Resizing image: scriptImages\Hat\Mad Hatters Hat_C2.png to 800x800
+Resized image saved: 600x600_png\Hat\Mad Hatters Hat_C1.png
+Resizing image: scriptImages\Hat\Mad Hatters Hat_C2.png to 600x600
+Processing file: Mad Hatters Hat_C4.png in Hat
+Resized image saved: 800x800_png\Hat\Mad Hatters Hat_C2.png
+Resizing image: scriptImages\Hat\Mad Hatters Hat_C3.png to 800x800
+Resized image saved: 600x600_png\Hat\Mad Hatters Hat_C2.png
+Resizing image: scriptImages\Hat\Mad Hatters Hat_C3.png to 600x600
+Processing file: Mad Hatters Hat_L.png in Hat
+Resized image saved: 800x800_png\Hat\Mad Hatters Hat_C3.png
+Resizing image: scriptImages\Hat\Mad Hatters Hat_C4.png to 800x800
+Resized image saved: 600x600_png\Hat\Mad Hatters Hat_C3.png
+Resizing image: scriptImages\Hat\Mad Hatters Hat_C4.png to 600x600
+Resized image saved: 800x800_png\Hat\Mad Hatters Hat_C4.png
+Resizing image: scriptImages\Hat\Mad Hatters Hat_L.png to 800x800
+Resized image saved: 600x600_png\Hat\Mad Hatters Hat_C4.png
+Resizing image: scriptImages\Hat\Mad Hatters Hat_L.png to 600x600
+Resized image saved: 800x800_png\Hat\Mad Hatters Hat_L.png
+Resizing image: scriptImages\Hat\Royal Bunny Crown_C1.png to 800x800
+Processing file: Royal Bunny Crown_C1.png in Hat
+Processing file: Royal Bunny Crown_C2.png in Hat
+Resized image saved: 600x600_png\Hat\Mad Hatters Hat_L.png
+Resizing image: scriptImages\Hat\Royal Bunny Crown_C1.png to 600x600
+Resized image saved: 800x800_png\Hat\Royal Bunny Crown_C1.png
+Resizing image: scriptImages\Hat\Royal Bunny Crown_C2.png to 800x800
+Processing file: Royal Bunny Crown_C3.png in Hat
+Resized image saved: 600x600_png\Hat\Royal Bunny Crown_C1.png
+Resizing image: scriptImages\Hat\Royal Bunny Crown_C2.png to 600x600
+Resized image saved: 800x800_png\Hat\Royal Bunny Crown_C2.png
+Resizing image: scriptImages\Hat\Royal Bunny Crown_C3.png to 800x800
+Processing file: Royal Bunny Crown_C4.png in Hat
+Resized image saved: 600x600_png\Hat\Royal Bunny Crown_C2.png
+Resizing image: scriptImages\Hat\Royal Bunny Crown_C3.png to 600x600
+Resized image saved: 800x800_png\Hat\Royal Bunny Crown_C3.png
+Resizing image: scriptImages\Hat\Royal Bunny Crown_C4.png to 800x800
+Processing file: Royal Bunny Crown_C5.png in Hat
+Resized image saved: 600x600_png\Hat\Royal Bunny Crown_C3.png
+Resizing image: scriptImages\Hat\Royal Bunny Crown_C4.png to 600x600
+Resized image saved: 800x800_png\Hat\Royal Bunny Crown_C4.png
+Resizing image: scriptImages\Hat\Royal Bunny Crown_C5.png to 800x800
+Processing file: Royal Bunny Crown_L.png in Hat
+Resized image saved: 600x600_png\Hat\Royal Bunny Crown_C4.png
+Resizing image: scriptImages\Hat\Royal Bunny Crown_C5.png to 600x600
+Resized image saved: 800x800_png\Hat\Royal Bunny Crown_C5.png
+Resizing image: scriptImages\Hat\Royal Bunny Crown_L.png to 800x800
+Resized image saved: 600x600_png\Hat\Royal Bunny Crown_C5.png
+Resizing image: scriptImages\Hat\Royal Bunny Crown_L.png to 600x600
+Resized image saved: 800x800_png\Hat\Royal Bunny Crown_L.png
+Resizing image: scriptImages\Hat\Sparkle Bunny Ears_C1.png to 800x800
+Processing file: Sparkle Bunny Ears_C1.png in Hat
+Resized image saved: 600x600_png\Hat\Royal Bunny Crown_L.png
+Resizing image: scriptImages\Hat\Sparkle Bunny Ears_C1.png to 600x600
+Resized image saved: 800x800_png\Hat\Sparkle Bunny Ears_C1.png
+Resizing image: scriptImages\Hat\Sparkle Bunny Ears_C2.png to 800x800
+Processing file: Sparkle Bunny Ears_C2.png in Hat
+Processing file: Sparkle Bunny Ears_C3.png in Hat
+Resized image saved: 600x600_png\Hat\Sparkle Bunny Ears_C1.png
+Resizing image: scriptImages\Hat\Sparkle Bunny Ears_C2.png to 600x600
+Resized image saved: 800x800_png\Hat\Sparkle Bunny Ears_C2.png
+Resizing image: scriptImages\Hat\Sparkle Bunny Ears_C3.png to 800x800
+Processing file: Sparkle Bunny Ears_L.png in Hat
+Resized image saved: 800x800_png\Hat\Sparkle Bunny Ears_C3.png
+Resizing image: scriptImages\Hat\Sparkle Bunny Ears_L.png to 800x800
+Resized image saved: 600x600_png\Hat\Sparkle Bunny Ears_C2.png
+Resizing image: scriptImages\Hat\Sparkle Bunny Ears_C3.png to 600x600
+Resized image saved: 600x600_png\Hat\Sparkle Bunny Ears_C3.png
+Resizing image: scriptImages\Hat\Sparkle Bunny Ears_L.png to 600x600
+Resized image saved: 800x800_png\Hat\Sparkle Bunny Ears_L.png
+Resizing image: scriptImages\Mouth\Resting Bun Face_C1.png to 800x800
+Resized image saved: 800x800_png\Mouth\Resting Bun Face_C1.png
+Resizing image: scriptImages\Mouth\Resting Bun Face_L.png to 800x800
+Resized image saved: 600x600_png\Hat\Sparkle Bunny Ears_L.png
+Resizing image: scriptImages\Mouth\Resting Bun Face_C1.png to 600x600
+Processing file: Baller Bunny Band_C2.png in subfolder: Hat
+Processing file: Baller Bunny Band_C1.png in Hat
+Resized image saved: 800x800_png\Mouth\Resting Bun Face_L.png
+Resizing image: scriptImages\Outfit\Baller Babe_C1.png to 800x800
+Processing file: Baller Bunny Band_C2.png in Hat
+Resized image saved: 600x600_png\Mouth\Resting Bun Face_C1.png
+Resizing image: scriptImages\Mouth\Resting Bun Face_L.png to 600x600
+Processing file: Baller Bunny Band_C3.png in Hat
+Resized image saved: 800x800_png\Outfit\Baller Babe_C1.png
+Resizing image: scriptImages\Outfit\Baller Babe_C2.png to 800x800
+Processing file: Baller Bunny Band_C4.png in Hat
+Resized image saved: 600x600_png\Mouth\Resting Bun Face_L.png
+Resizing image: scriptImages\Outfit\Baller Babe_C1.png to 600x600
+Processing file: Baller Bunny Band_L.png in Hat
+Resized image saved: 800x800_png\Outfit\Baller Babe_C2.png
+Resizing image: scriptImages\Outfit\Baller Babe_C3.png to 800x800
+Resized image saved: 600x600_png\Outfit\Baller Babe_C1.png
+Resizing image: scriptImages\Outfit\Baller Babe_C2.png to 600x600
+Resized image saved: 800x800_png\Outfit\Baller Babe_C3.png
+Resizing image: scriptImages\Outfit\Baller Babe_C4.png to 800x800
+Processing file: Bunny Emperor Laurels_C1.png in Hat
+Resized image saved: 600x600_png\Outfit\Baller Babe_C2.png
+Resizing image: scriptImages\Outfit\Baller Babe_C3.png to 600x600
+Processing file: Bunny Emperor Laurels_C2.png in Hat
+Resized image saved: 800x800_png\Outfit\Baller Babe_C4.png
+Resizing image: scriptImages\Outfit\Baller Babe_L.png to 800x800
+Resized image saved: 600x600_png\Outfit\Baller Babe_C3.png
+Resizing image: scriptImages\Outfit\Baller Babe_C4.png to 600x600
+Processing file: Bunny Emperor Laurels_L.png in Hat
+Resized image saved: 600x600_png\Outfit\Baller Babe_C4.png
+Resizing image: scriptImages\Outfit\Baller Babe_L.png to 600x600
+Resized image saved: 800x800_png\Outfit\Baller Babe_L.png
+Resizing image: scriptImages\Outfit\Bunny Emperor Toga_C1.png to 800x800
+Processing file: Ghosty Crown_C1.png in Hat
+Resized image saved: 600x600_png\Outfit\Baller Babe_L.png
+Resizing image: scriptImages\Outfit\Bunny Emperor Toga_C1.png to 600x600
+Resized image saved: 800x800_png\Outfit\Bunny Emperor Toga_C1.png
+Resizing image: scriptImages\Outfit\Bunny Emperor Toga_C2.png to 800x800
+Processing file: Ghosty Crown_C2.png in Hat
+Processing file: Ghosty Crown_L.png in Hat
+Resized image saved: 600x600_png\Outfit\Bunny Emperor Toga_C1.png
+Resizing image: scriptImages\Outfit\Bunny Emperor Toga_C2.png to 600x600
+Resized image saved: 800x800_png\Outfit\Bunny Emperor Toga_C2.png
+Resizing image: scriptImages\Outfit\Bunny Emperor Toga_C3.png to 800x800
+Resized image saved: 600x600_png\Outfit\Bunny Emperor Toga_C2.png
+Resizing image: scriptImages\Outfit\Bunny Emperor Toga_C3.png to 600x600
+Processing file: Intergalactic Bunny Space Helmet_L.png in Hat
+Resized image saved: 800x800_png\Outfit\Bunny Emperor Toga_C3.png
+Resizing image: scriptImages\Outfit\Bunny Emperor Toga_L.png to 800x800
+Resized image saved: 600x600_png\Outfit\Bunny Emperor Toga_C3.png
+Resizing image: scriptImages\Outfit\Bunny Emperor Toga_L.png to 600x600
+Resized image saved: 800x800_png\Outfit\Bunny Emperor Toga_L.png
+Resizing image: scriptImages\Outfit\Dukes Court Dress_C1.png to 800x800
+Processing file: Intergalactic Bunny Space Suit_C1.png in Hat
+Resized image saved: 600x600_png\Outfit\Bunny Emperor Toga_L.png
+Resizing image: scriptImages\Outfit\Dukes Court Dress_C1.png to 600x600
+Processing file: Intergalactic Bunny Space Suit_C2.png in Hat
+Resized image saved: 800x800_png\Outfit\Dukes Court Dress_C1.png
+Resizing image: scriptImages\Outfit\Dukes Court Dress_C2.png to 800x800
+Processing file: Intergalactic Bunny Space Suit_C3.png in Hat
+Resized image saved: 600x600_png\Outfit\Dukes Court Dress_C1.png
+Resizing image: scriptImages\Outfit\Dukes Court Dress_C2.png to 600x600
+Processing file: Intergalactic Bunny Space Suit_L.png in Hat
+Resized image saved: 800x800_png\Outfit\Dukes Court Dress_C2.png
+Resizing image: scriptImages\Outfit\Dukes Court Dress_C3.png to 800x800
+Resized image saved: 600x600_png\Outfit\Dukes Court Dress_C2.png
+Resizing image: scriptImages\Outfit\Dukes Court Dress_C3.png to 600x600
+Processing file: Mad Hatters Hat_C1.png in Hat
+Resized image saved: 800x800_png\Outfit\Dukes Court Dress_C3.png
+Resizing image: scriptImages\Outfit\Dukes Court Dress_C4.png to 800x800
+Resized image saved: 600x600_png\Outfit\Dukes Court Dress_C3.png
+Resizing image: scriptImages\Outfit\Dukes Court Dress_C4.png to 600x600
+Processing file: Mad Hatters Hat_C2.png in Hat
+Processing file: Mad Hatters Hat_C3.png in Hat
+Resized image saved: 600x600_png\Outfit\Dukes Court Dress_C4.png
+Resizing image: scriptImages\Outfit\Dukes Court Dress_C5.png to 600x600
+Resized image saved: 800x800_png\Outfit\Dukes Court Dress_C4.png
+Resizing image: scriptImages\Outfit\Dukes Court Dress_C5.png to 800x800
+Processing file: Mad Hatters Hat_C4.png in Hat
+Processing file: Mad Hatters Hat_L.png in Hat
+Resized image saved: 600x600_png\Outfit\Dukes Court Dress_C5.png
+Resizing image: scriptImages\Outfit\Dukes Court Dress_L.png to 600x600
+Resized image saved: 800x800_png\Outfit\Dukes Court Dress_C5.png
+Resizing image: scriptImages\Outfit\Dukes Court Dress_L.png to 800x800
+Resized image saved: 800x800_png\Outfit\Dukes Court Dress_L.png
+Resizing image: scriptImages\Outfit\Mad Hatters Coat_C1.png to 800x800
+Processing file: Royal Bunny Crown_C1.png in Hat
+Resized image saved: 600x600_png\Outfit\Dukes Court Dress_L.png
+Resizing image: scriptImages\Outfit\Mad Hatters Coat_C1.png to 600x600
+Processing file: Royal Bunny Crown_C2.png in Hat
+Resized image saved: 800x800_png\Outfit\Mad Hatters Coat_C1.png
+Resizing image: scriptImages\Outfit\Mad Hatters Coat_C2.png to 800x800
+Resized image saved: 600x600_png\Outfit\Mad Hatters Coat_C1.png
+Resizing image: scriptImages\Outfit\Mad Hatters Coat_C2.png to 600x600
+Processing file: Royal Bunny Crown_C3.png in Hat
+Processing file: Royal Bunny Crown_C4.png in Hat
+Resized image saved: 800x800_png\Outfit\Mad Hatters Coat_C2.png
+Resizing image: scriptImages\Outfit\Mad Hatters Coat_C3.png to 800x800
+Processing file: Royal Bunny Crown_C5.png in Hat
+Resized image saved: 600x600_png\Outfit\Mad Hatters Coat_C2.png
+Resizing image: scriptImages\Outfit\Mad Hatters Coat_C3.png to 600x600
+Processing file: Royal Bunny Crown_L.png in Hat
+Resized image saved: 800x800_png\Outfit\Mad Hatters Coat_C3.png
+Resizing image: scriptImages\Outfit\Mad Hatters Coat_C4.png to 800x800
+Resized image saved: 600x600_png\Outfit\Mad Hatters Coat_C3.png
+Resizing image: scriptImages\Outfit\Mad Hatters Coat_C4.png to 600x600
+Resized image saved: 600x600_png\Outfit\Mad Hatters Coat_C4.png
+Resizing image: scriptImages\Outfit\Mad Hatters Coat_L.png to 600x600
+Processing file: Sparkle Bunny Ears_C1.png in Hat
+Resized image saved: 800x800_png\Outfit\Mad Hatters Coat_C4.png
+Resizing image: scriptImages\Outfit\Mad Hatters Coat_L.png to 800x800
+Processing file: Sparkle Bunny Ears_C2.png in Hat
+Resized image saved: 600x600_png\Outfit\Mad Hatters Coat_L.png
+Processing file: Sparkle Bunny Ears_C3.png in Hat
+Resized image saved: 800x800_png\Outfit\Mad Hatters Coat_L.png
+Processing file: Sparkle Bunny Ears_L.png in Hat
+Processing file: Baller Bunny Band_C3.png in subfolder: Hat
+Processing file: Baller Bunny Band_C1.png in Hat
+Processing file: Baller Bunny Band_C2.png in Hat
+Processing file: Baller Bunny Band_C3.png in Hat
+Processing file: Baller Bunny Band_C4.png in Hat
+Processing file: Baller Bunny Band_L.png in Hat
+Processing file: Bunny Emperor Laurels_C1.png in Hat
+Processing file: Bunny Emperor Laurels_C2.png in Hat
+Processing file: Bunny Emperor Laurels_L.png in Hat
+Processing file: Ghosty Crown_C1.png in Hat
+Processing file: Ghosty Crown_C2.png in Hat
+Processing file: Ghosty Crown_L.png in Hat
+Processing file: Intergalactic Bunny Space Helmet_L.png in Hat
+Processing file: Intergalactic Bunny Space Suit_C1.png in Hat
+Processing file: Intergalactic Bunny Space Suit_C2.png in Hat
+Processing file: Intergalactic Bunny Space Suit_C3.png in Hat
+Processing file: Intergalactic Bunny Space Suit_L.png in Hat
+Processing file: Mad Hatters Hat_C1.png in Hat
+Processing file: Mad Hatters Hat_C2.png in Hat
+Processing file: Mad Hatters Hat_C3.png in Hat
+Processing file: Mad Hatters Hat_C4.png in Hat
+Processing file: Mad Hatters Hat_L.png in Hat
+Processing file: Royal Bunny Crown_C1.png in Hat
+Processing file: Royal Bunny Crown_C2.png in Hat
+Processing file: Royal Bunny Crown_C3.png in Hat
+Processing file: Royal Bunny Crown_C4.png in Hat
+Processing file: Royal Bunny Crown_C5.png in Hat
+Processing file: Royal Bunny Crown_L.png in Hat
+Processing file: Sparkle Bunny Ears_C1.png in Hat
+Processing file: Sparkle Bunny Ears_C2.png in Hat
+Processing file: Sparkle Bunny Ears_C3.png in Hat
+Processing file: Sparkle Bunny Ears_L.png in Hat
+Processing file: Baller Bunny Band_C4.png in subfolder: Hat
+Processing file: Baller Bunny Band_C1.png in Hat
+Processing file: Baller Bunny Band_C2.png in Hat
+Processing file: Baller Bunny Band_C3.png in Hat
+Processing file: Baller Bunny Band_C4.png in Hat
+Processing file: Baller Bunny Band_L.png in Hat
+Processing file: Bunny Emperor Laurels_C1.png in Hat
+Processing file: Bunny Emperor Laurels_C2.png in Hat
+Processing file: Bunny Emperor Laurels_L.png in Hat
+Processing file: Ghosty Crown_C1.png in Hat
+Processing file: Ghosty Crown_C2.png in Hat
+Processing file: Ghosty Crown_L.png in Hat
+Processing file: Intergalactic Bunny Space Helmet_L.png in Hat
+Processing file: Intergalactic Bunny Space Suit_C1.png in Hat
+Processing file: Intergalactic Bunny Space Suit_C2.png in Hat
+Processing file: Intergalactic Bunny Space Suit_C3.png in Hat
+Processing file: Intergalactic Bunny Space Suit_L.png in Hat
+Processing file: Mad Hatters Hat_C1.png in Hat
+Processing file: Mad Hatters Hat_C2.png in Hat
+Processing file: Mad Hatters Hat_C3.png in Hat
+Processing file: Mad Hatters Hat_C4.png in Hat
+Processing file: Mad Hatters Hat_L.png in Hat
+Processing file: Royal Bunny Crown_C1.png in Hat
+Processing file: Royal Bunny Crown_C2.png in Hat
+Processing file: Royal Bunny Crown_C3.png in Hat
+Processing file: Royal Bunny Crown_C4.png in Hat
+Processing file: Royal Bunny Crown_C5.png in Hat
+Processing file: Royal Bunny Crown_L.png in Hat
+Processing file: Sparkle Bunny Ears_C1.png in Hat
+Processing file: Sparkle Bunny Ears_C2.png in Hat
+Processing file: Sparkle Bunny Ears_C3.png in Hat
+Processing file: Sparkle Bunny Ears_L.png in Hat
+Processing file: Baller Bunny Band_L.png in subfolder: Hat
+Processing file: Baller Bunny Band_C1.png in Hat
+Processing file: Baller Bunny Band_C2.png in Hat
+Processing file: Baller Bunny Band_C3.png in Hat
+Processing file: Baller Bunny Band_C4.png in Hat
+Processing file: Baller Bunny Band_L.png in Hat
+Processing file: Bunny Emperor Laurels_C1.png in Hat
+Processing file: Bunny Emperor Laurels_C2.png in Hat
+Processing file: Bunny Emperor Laurels_L.png in Hat
+Processing file: Ghosty Crown_C1.png in Hat
+Processing file: Ghosty Crown_C2.png in Hat
+Processing file: Ghosty Crown_L.png in Hat
+Processing file: Intergalactic Bunny Space Helmet_L.png in Hat
+Processing file: Intergalactic Bunny Space Suit_C1.png in Hat
+Processing file: Intergalactic Bunny Space Suit_C2.png in Hat
+Processing file: Intergalactic Bunny Space Suit_C3.png in Hat
+Processing file: Intergalactic Bunny Space Suit_L.png in Hat
+Processing file: Mad Hatters Hat_C1.png in Hat
+Processing file: Mad Hatters Hat_C2.png in Hat
+Processing file: Mad Hatters Hat_C3.png in Hat
+Processing file: Mad Hatters Hat_C4.png in Hat
+Processing file: Mad Hatters Hat_L.png in Hat
+Processing file: Royal Bunny Crown_C1.png in Hat
+Processing file: Royal Bunny Crown_C2.png in Hat
+Processing file: Royal Bunny Crown_C3.png in Hat
+Processing file: Royal Bunny Crown_C4.png in Hat
+Processing file: Royal Bunny Crown_C5.png in Hat
+Processing file: Royal Bunny Crown_L.png in Hat
+Processing file: Sparkle Bunny Ears_C1.png in Hat
+Processing file: Sparkle Bunny Ears_C2.png in Hat
+Processing file: Sparkle Bunny Ears_C3.png in Hat
+Processing file: Sparkle Bunny Ears_L.png in Hat
+Checking existence of PNG: compositeImages\Hat\Baller Bunny Band.png
+Checking existence of JPG: 300x300_jpg\Hat\Baller Bunny Band.jpg
+Skipping existing files: PNG - compositeImages\Hat\Baller Bunny Band.png, JPG - 300x300_jpg\Hat\Baller Bunny Band.jpg
+Processing image group: Bunny Emperor Laurels
+Processing file: Bunny Emperor Laurels_C1.png in subfolder: Hat
+Processing file: Baller Bunny Band_C1.png in Hat
+Processing file: Baller Bunny Band_C2.png in Hat
+Processing file: Baller Bunny Band_C3.png in Hat
+Processing file: Baller Bunny Band_C4.png in Hat
+Processing file: Baller Bunny Band_L.png in Hat
+Processing file: Bunny Emperor Laurels_C1.png in Hat
+Processing file: Bunny Emperor Laurels_C2.png in Hat
+Processing file: Bunny Emperor Laurels_L.png in Hat
+Processing file: Ghosty Crown_C1.png in Hat
+Processing file: Ghosty Crown_C2.png in Hat
+Processing file: Ghosty Crown_L.png in Hat
+Processing file: Intergalactic Bunny Space Helmet_L.png in Hat
+Processing file: Intergalactic Bunny Space Suit_C1.png in Hat
+Processing file: Intergalactic Bunny Space Suit_C2.png in Hat
+Processing file: Intergalactic Bunny Space Suit_C3.png in Hat
+Processing file: Intergalactic Bunny Space Suit_L.png in Hat
+Processing file: Mad Hatters Hat_C1.png in Hat
+Processing file: Mad Hatters Hat_C2.png in Hat
+Processing file: Mad Hatters Hat_C3.png in Hat
+Processing file: Mad Hatters Hat_C4.png in Hat
+Processing file: Mad Hatters Hat_L.png in Hat
+Processing file: Royal Bunny Crown_C1.png in Hat
+Processing file: Royal Bunny Crown_C2.png in Hat
+Processing file: Royal Bunny Crown_C3.png in Hat
+Processing file: Royal Bunny Crown_C4.png in Hat
+Processing file: Royal Bunny Crown_C5.png in Hat
+Processing file: Royal Bunny Crown_L.png in Hat
+Processing file: Sparkle Bunny Ears_C1.png in Hat
+Processing file: Sparkle Bunny Ears_C2.png in Hat
+Processing file: Sparkle Bunny Ears_C3.png in Hat
+Processing file: Sparkle Bunny Ears_L.png in Hat
+Processing file: Bunny Emperor Laurels_C2.png in subfolder: Hat
+Processing file: Baller Bunny Band_C1.png in Hat
+Processing file: Baller Bunny Band_C2.png in Hat
+Processing file: Baller Bunny Band_C3.png in Hat
+Processing file: Baller Bunny Band_C4.png in Hat
+Processing file: Baller Bunny Band_L.png in Hat
+Processing file: Bunny Emperor Laurels_C1.png in Hat
+Processing file: Bunny Emperor Laurels_C2.png in Hat
+Processing file: Bunny Emperor Laurels_L.png in Hat
+Processing file: Ghosty Crown_C1.png in Hat
+Processing file: Ghosty Crown_C2.png in Hat
+Processing file: Ghosty Crown_L.png in Hat
+Processing file: Intergalactic Bunny Space Helmet_L.png in Hat
+Processing file: Intergalactic Bunny Space Suit_C1.png in Hat
+Processing file: Intergalactic Bunny Space Suit_C2.png in Hat
+Processing file: Intergalactic Bunny Space Suit_C3.png in Hat
+Processing file: Intergalactic Bunny Space Suit_L.png in Hat
+Processing file: Mad Hatters Hat_C1.png in Hat
+Processing file: Mad Hatters Hat_C2.png in Hat
+Processing file: Mad Hatters Hat_C3.png in Hat
+Processing file: Mad Hatters Hat_C4.png in Hat
+Processing file: Mad Hatters Hat_L.png in Hat
+Processing file: Royal Bunny Crown_C1.png in Hat
+Processing file: Royal Bunny Crown_C2.png in Hat
+Processing file: Royal Bunny Crown_C3.png in Hat
+Processing file: Royal Bunny Crown_C4.png in Hat
+Processing file: Royal Bunny Crown_C5.png in Hat
+Processing file: Royal Bunny Crown_L.png in Hat
+Processing file: Sparkle Bunny Ears_C1.png in Hat
+Processing file: Sparkle Bunny Ears_C2.png in Hat
+Processing file: Sparkle Bunny Ears_C3.png in Hat
+Processing file: Sparkle Bunny Ears_L.png in Hat
+Processing file: Bunny Emperor Laurels_L.png in subfolder: Hat
+Processing file: Baller Bunny Band_C1.png in Hat
+Processing file: Baller Bunny Band_C2.png in Hat
+Processing file: Baller Bunny Band_C3.png in Hat
+Processing file: Baller Bunny Band_C4.png in Hat
+Processing file: Baller Bunny Band_L.png in Hat
+Processing file: Bunny Emperor Laurels_C1.png in Hat
+Processing file: Bunny Emperor Laurels_C2.png in Hat
+Processing file: Bunny Emperor Laurels_L.png in Hat
+Processing file: Ghosty Crown_C1.png in Hat
+Processing file: Ghosty Crown_C2.png in Hat
+Processing file: Ghosty Crown_L.png in Hat
+Processing file: Intergalactic Bunny Space Helmet_L.png in Hat
+Processing file: Intergalactic Bunny Space Suit_C1.png in Hat
+Processing file: Intergalactic Bunny Space Suit_C2.png in Hat
+Processing file: Intergalactic Bunny Space Suit_C3.png in Hat
+Processing file: Intergalactic Bunny Space Suit_L.png in Hat
+Processing file: Mad Hatters Hat_C1.png in Hat
+Processing file: Mad Hatters Hat_C2.png in Hat
+Processing file: Mad Hatters Hat_C3.png in Hat
+Processing file: Mad Hatters Hat_C4.png in Hat
+Processing file: Mad Hatters Hat_L.png in Hat
+Processing file: Royal Bunny Crown_C1.png in Hat
+Processing file: Royal Bunny Crown_C2.png in Hat
+Processing file: Royal Bunny Crown_C3.png in Hat
+Processing file: Royal Bunny Crown_C4.png in Hat
+Processing file: Royal Bunny Crown_C5.png in Hat
+Processing file: Royal Bunny Crown_L.png in Hat
+Processing file: Sparkle Bunny Ears_C1.png in Hat
+Processing file: Sparkle Bunny Ears_C2.png in Hat
+Processing file: Sparkle Bunny Ears_C3.png in Hat
+Processing file: Sparkle Bunny Ears_L.png in Hat
+Checking existence of PNG: compositeImages\Hat\Bunny Emperor Laurels.png
+Checking existence of JPG: 300x300_jpg\Hat\Bunny Emperor Laurels.jpg
+Skipping existing files: PNG - compositeImages\Hat\Bunny Emperor Laurels.png, JPG - 300x300_jpg\Hat\Bunny Emperor Laurels.jpg
+Processing image group: Ghosty Crown
+Processing file: Ghosty Crown_C1.png in subfolder: Hat
+Processing file: Baller Bunny Band_C1.png in Hat
+Processing file: Baller Bunny Band_C2.png in Hat
+Processing file: Baller Bunny Band_C3.png in Hat
+Processing file: Baller Bunny Band_C4.png in Hat
+Processing file: Baller Bunny Band_L.png in Hat
+Processing file: Bunny Emperor Laurels_C1.png in Hat
+Processing file: Bunny Emperor Laurels_C2.png in Hat
+Processing file: Bunny Emperor Laurels_L.png in Hat
+Processing file: Ghosty Crown_C1.png in Hat
+Processing file: Ghosty Crown_C2.png in Hat
+Processing file: Ghosty Crown_L.png in Hat
+Processing file: Intergalactic Bunny Space Helmet_L.png in Hat
+Processing file: Intergalactic Bunny Space Suit_C1.png in Hat
+Processing file: Intergalactic Bunny Space Suit_C2.png in Hat
+Processing file: Intergalactic Bunny Space Suit_C3.png in Hat
+Processing file: Intergalactic Bunny Space Suit_L.png in Hat
+Processing file: Mad Hatters Hat_C1.png in Hat
+Processing file: Mad Hatters Hat_C2.png in Hat
+Processing file: Mad Hatters Hat_C3.png in Hat
+Processing file: Mad Hatters Hat_C4.png in Hat
+Processing file: Mad Hatters Hat_L.png in Hat
+Processing file: Royal Bunny Crown_C1.png in Hat
+Processing file: Royal Bunny Crown_C2.png in Hat
+Processing file: Royal Bunny Crown_C3.png in Hat
+Processing file: Royal Bunny Crown_C4.png in Hat
+Processing file: Royal Bunny Crown_C5.png in Hat
+Processing file: Royal Bunny Crown_L.png in Hat
+Processing file: Sparkle Bunny Ears_C1.png in Hat
+Processing file: Sparkle Bunny Ears_C2.png in Hat
+Processing file: Sparkle Bunny Ears_C3.png in Hat
+Processing file: Sparkle Bunny Ears_L.png in Hat
+Processing file: Ghosty Crown_C2.png in subfolder: Hat
+Processing file: Baller Bunny Band_C1.png in Hat
+Processing file: Baller Bunny Band_C2.png in Hat
+Processing file: Baller Bunny Band_C3.png in Hat
+Processing file: Baller Bunny Band_C4.png in Hat
+Processing file: Baller Bunny Band_L.png in Hat
+Processing file: Bunny Emperor Laurels_C1.png in Hat
+Processing file: Bunny Emperor Laurels_C2.png in Hat
+Processing file: Bunny Emperor Laurels_L.png in Hat
+Processing file: Ghosty Crown_C1.png in Hat
+Processing file: Ghosty Crown_C2.png in Hat
+Processing file: Ghosty Crown_L.png in Hat
+Processing file: Intergalactic Bunny Space Helmet_L.png in Hat
+Processing file: Intergalactic Bunny Space Suit_C1.png in Hat
+Processing file: Intergalactic Bunny Space Suit_C2.png in Hat
+Processing file: Intergalactic Bunny Space Suit_C3.png in Hat
+Processing file: Intergalactic Bunny Space Suit_L.png in Hat
+Processing file: Mad Hatters Hat_C1.png in Hat
+Processing file: Mad Hatters Hat_C2.png in Hat
+Processing file: Mad Hatters Hat_C3.png in Hat
+Processing file: Mad Hatters Hat_C4.png in Hat
+Processing file: Mad Hatters Hat_L.png in Hat
+Processing file: Royal Bunny Crown_C1.png in Hat
+Processing file: Royal Bunny Crown_C2.png in Hat
+Processing file: Royal Bunny Crown_C3.png in Hat
+Processing file: Royal Bunny Crown_C4.png in Hat
+Processing file: Royal Bunny Crown_C5.png in Hat
+Processing file: Royal Bunny Crown_L.png in Hat
+Processing file: Sparkle Bunny Ears_C1.png in Hat
+Processing file: Sparkle Bunny Ears_C2.png in Hat
+Processing file: Sparkle Bunny Ears_C3.png in Hat
+Processing file: Sparkle Bunny Ears_L.png in Hat
+Processing file: Ghosty Crown_L.png in subfolder: Hat
+Processing file: Baller Bunny Band_C1.png in Hat
+Processing file: Baller Bunny Band_C2.png in Hat
+Processing file: Baller Bunny Band_C3.png in Hat
+Processing file: Baller Bunny Band_C4.png in Hat
+Processing file: Baller Bunny Band_L.png in Hat
+Processing file: Bunny Emperor Laurels_C1.png in Hat
+Processing file: Bunny Emperor Laurels_C2.png in Hat
+Processing file: Bunny Emperor Laurels_L.png in Hat
+Processing file: Ghosty Crown_C1.png in Hat
+Processing file: Ghosty Crown_C2.png in Hat
+Processing file: Ghosty Crown_L.png in Hat
+Processing file: Intergalactic Bunny Space Helmet_L.png in Hat
+Processing file: Intergalactic Bunny Space Suit_C1.png in Hat
+Processing file: Intergalactic Bunny Space Suit_C2.png in Hat
+Processing file: Intergalactic Bunny Space Suit_C3.png in Hat
+Processing file: Intergalactic Bunny Space Suit_L.png in Hat
+Processing file: Mad Hatters Hat_C1.png in Hat
+Processing file: Mad Hatters Hat_C2.png in Hat
+Processing file: Mad Hatters Hat_C3.png in Hat
+Processing file: Mad Hatters Hat_C4.png in Hat
+Processing file: Mad Hatters Hat_L.png in Hat
+Processing file: Royal Bunny Crown_C1.png in Hat
+Processing file: Royal Bunny Crown_C2.png in Hat
+Processing file: Royal Bunny Crown_C3.png in Hat
+Processing file: Royal Bunny Crown_C4.png in Hat
+Processing file: Royal Bunny Crown_C5.png in Hat
+Processing file: Royal Bunny Crown_L.png in Hat
+Processing file: Sparkle Bunny Ears_C1.png in Hat
+Processing file: Sparkle Bunny Ears_C2.png in Hat
+Processing file: Sparkle Bunny Ears_C3.png in Hat
+Processing file: Sparkle Bunny Ears_L.png in Hat
+Checking existence of PNG: compositeImages\Hat\Ghosty Crown.png
+Checking existence of JPG: 300x300_jpg\Hat\Ghosty Crown.jpg
+Skipping existing files: PNG - compositeImages\Hat\Ghosty Crown.png, JPG - 300x300_jpg\Hat\Ghosty Crown.jpg
+Processing image group: Intergalactic Bunny Space Helmet
+Processing file: Intergalactic Bunny Space Helmet_L.png in subfolder: Hat
+Processing file: Baller Bunny Band_C1.png in Hat
+Processing file: Baller Bunny Band_C2.png in Hat
+Processing file: Baller Bunny Band_C3.png in Hat
+Processing file: Baller Bunny Band_C4.png in Hat
+Processing file: Baller Bunny Band_L.png in Hat
+Processing file: Bunny Emperor Laurels_C1.png in Hat
+Processing file: Bunny Emperor Laurels_C2.png in Hat
+Processing file: Bunny Emperor Laurels_L.png in Hat
+Processing file: Ghosty Crown_C1.png in Hat
+Processing file: Ghosty Crown_C2.png in Hat
+Processing file: Ghosty Crown_L.png in Hat
+Processing file: Intergalactic Bunny Space Helmet_L.png in Hat
+Processing file: Intergalactic Bunny Space Suit_C1.png in Hat
+Processing file: Intergalactic Bunny Space Suit_C2.png in Hat
+Processing file: Intergalactic Bunny Space Suit_C3.png in Hat
+Processing file: Intergalactic Bunny Space Suit_L.png in Hat
+Processing file: Mad Hatters Hat_C1.png in Hat
+Processing file: Mad Hatters Hat_C2.png in Hat
+Processing file: Mad Hatters Hat_C3.png in Hat
+Processing file: Mad Hatters Hat_C4.png in Hat
+Processing file: Mad Hatters Hat_L.png in Hat
+Processing file: Royal Bunny Crown_C1.png in Hat
+Processing file: Royal Bunny Crown_C2.png in Hat
+Processing file: Royal Bunny Crown_C3.png in Hat
+Processing file: Royal Bunny Crown_C4.png in Hat
+Processing file: Royal Bunny Crown_C5.png in Hat
+Processing file: Royal Bunny Crown_L.png in Hat
+Processing file: Sparkle Bunny Ears_C1.png in Hat
+Processing file: Sparkle Bunny Ears_C2.png in Hat
+Processing file: Sparkle Bunny Ears_C3.png in Hat
+Processing file: Sparkle Bunny Ears_L.png in Hat
+Checking existence of PNG: compositeImages\Hat\Intergalactic Bunny Space Helmet.png
+Checking existence of JPG: 300x300_jpg\Hat\Intergalactic Bunny Space Helmet.jpg
+Skipping existing files: PNG - compositeImages\Hat\Intergalactic Bunny Space Helmet.png, JPG - 300x300_jpg\Hat\Intergalactic Bunny Space Helmet.jpg
+Processing image group: Intergalactic Bunny Space Suit
+Processing file: Intergalactic Bunny Space Suit_C1.png in subfolder: Hat
+Processing file: Baller Bunny Band_C1.png in Hat
+Processing file: Baller Bunny Band_C2.png in Hat
+Processing file: Baller Bunny Band_C3.png in Hat
+Processing file: Baller Bunny Band_C4.png in Hat
+Processing file: Baller Bunny Band_L.png in Hat
+Processing file: Bunny Emperor Laurels_C1.png in Hat
+Processing file: Bunny Emperor Laurels_C2.png in Hat
+Processing file: Bunny Emperor Laurels_L.png in Hat
+Processing file: Ghosty Crown_C1.png in Hat
+Processing file: Ghosty Crown_C2.png in Hat
+Processing file: Ghosty Crown_L.png in Hat
+Processing file: Intergalactic Bunny Space Helmet_L.png in Hat
+Processing file: Intergalactic Bunny Space Suit_C1.png in Hat
+Processing file: Intergalactic Bunny Space Suit_C2.png in Hat
+Processing file: Intergalactic Bunny Space Suit_C3.png in Hat
+Processing file: Intergalactic Bunny Space Suit_L.png in Hat
+Processing file: Mad Hatters Hat_C1.png in Hat
+Processing file: Mad Hatters Hat_C2.png in Hat
+Processing file: Mad Hatters Hat_C3.png in Hat
+Processing file: Mad Hatters Hat_C4.png in Hat
+Processing file: Mad Hatters Hat_L.png in Hat
+Processing file: Royal Bunny Crown_C1.png in Hat
+Processing file: Royal Bunny Crown_C2.png in Hat
+Processing file: Royal Bunny Crown_C3.png in Hat
+Processing file: Royal Bunny Crown_C4.png in Hat
+Processing file: Royal Bunny Crown_C5.png in Hat
+Processing file: Royal Bunny Crown_L.png in Hat
+Processing file: Sparkle Bunny Ears_C1.png in Hat
+Processing file: Sparkle Bunny Ears_C2.png in Hat
+Processing file: Sparkle Bunny Ears_C3.png in Hat
+Processing file: Sparkle Bunny Ears_L.png in Hat
+Processing file: Intergalactic Bunny Space Suit_C2.png in subfolder: Hat
+Processing file: Baller Bunny Band_C1.png in Hat
+Processing file: Baller Bunny Band_C2.png in Hat
+Processing file: Baller Bunny Band_C3.png in Hat
+Processing file: Baller Bunny Band_C4.png in Hat
+Processing file: Baller Bunny Band_L.png in Hat
+Processing file: Bunny Emperor Laurels_C1.png in Hat
+Processing file: Bunny Emperor Laurels_C2.png in Hat
+Processing file: Bunny Emperor Laurels_L.png in Hat
+Processing file: Ghosty Crown_C1.png in Hat
+Processing file: Ghosty Crown_C2.png in Hat
+Processing file: Ghosty Crown_L.png in Hat
+Processing file: Intergalactic Bunny Space Helmet_L.png in Hat
+Processing file: Intergalactic Bunny Space Suit_C1.png in Hat
+Processing file: Intergalactic Bunny Space Suit_C2.png in Hat
+Processing file: Intergalactic Bunny Space Suit_C3.png in Hat
+Processing file: Intergalactic Bunny Space Suit_L.png in Hat
+Processing file: Mad Hatters Hat_C1.png in Hat
+Processing file: Mad Hatters Hat_C2.png in Hat
+Processing file: Mad Hatters Hat_C3.png in Hat
+Processing file: Mad Hatters Hat_C4.png in Hat
+Processing file: Mad Hatters Hat_L.png in Hat
+Processing file: Royal Bunny Crown_C1.png in Hat
+Processing file: Royal Bunny Crown_C2.png in Hat
+Processing file: Royal Bunny Crown_C3.png in Hat
+Processing file: Royal Bunny Crown_C4.png in Hat
+Processing file: Royal Bunny Crown_C5.png in Hat
+Processing file: Royal Bunny Crown_L.png in Hat
+Processing file: Sparkle Bunny Ears_C1.png in Hat
+Processing file: Sparkle Bunny Ears_C2.png in Hat
+Processing file: Sparkle Bunny Ears_C3.png in Hat
+Processing file: Sparkle Bunny Ears_L.png in Hat
+Processing file: Intergalactic Bunny Space Suit_C3.png in subfolder: Hat
+Processing file: Baller Bunny Band_C1.png in Hat
+Processing file: Baller Bunny Band_C2.png in Hat
+Processing file: Baller Bunny Band_C3.png in Hat
+Processing file: Baller Bunny Band_C4.png in Hat
+Processing file: Baller Bunny Band_L.png in Hat
+Processing file: Bunny Emperor Laurels_C1.png in Hat
+Processing file: Bunny Emperor Laurels_C2.png in Hat
+Processing file: Bunny Emperor Laurels_L.png in Hat
+Processing file: Ghosty Crown_C1.png in Hat
+Processing file: Ghosty Crown_C2.png in Hat
+Processing file: Ghosty Crown_L.png in Hat
+Processing file: Intergalactic Bunny Space Helmet_L.png in Hat
+Processing file: Intergalactic Bunny Space Suit_C1.png in Hat
+Processing file: Intergalactic Bunny Space Suit_C2.png in Hat
+Processing file: Intergalactic Bunny Space Suit_C3.png in Hat
+Processing file: Intergalactic Bunny Space Suit_L.png in Hat
+Processing file: Mad Hatters Hat_C1.png in Hat
+Processing file: Mad Hatters Hat_C2.png in Hat
+Processing file: Mad Hatters Hat_C3.png in Hat
+Processing file: Mad Hatters Hat_C4.png in Hat
+Processing file: Mad Hatters Hat_L.png in Hat
+Processing file: Royal Bunny Crown_C1.png in Hat
+Processing file: Royal Bunny Crown_C2.png in Hat
+Processing file: Royal Bunny Crown_C3.png in Hat
+Processing file: Royal Bunny Crown_C4.png in Hat
+Processing file: Royal Bunny Crown_C5.png in Hat
+Processing file: Royal Bunny Crown_L.png in Hat
+Processing file: Sparkle Bunny Ears_C1.png in Hat
+Processing file: Sparkle Bunny Ears_C2.png in Hat
+Processing file: Sparkle Bunny Ears_C3.png in Hat
+Processing file: Sparkle Bunny Ears_L.png in Hat
+Processing file: Intergalactic Bunny Space Suit_L.png in subfolder: Hat
+Processing file: Baller Bunny Band_C1.png in Hat
+Processing file: Baller Bunny Band_C2.png in Hat
+Processing file: Baller Bunny Band_C3.png in Hat
+Processing file: Baller Bunny Band_C4.png in Hat
+Processing file: Baller Bunny Band_L.png in Hat
+Processing file: Bunny Emperor Laurels_C1.png in Hat
+Processing file: Bunny Emperor Laurels_C2.png in Hat
+Processing file: Bunny Emperor Laurels_L.png in Hat
+Processing file: Ghosty Crown_C1.png in Hat
+Processing file: Ghosty Crown_C2.png in Hat
+Processing file: Ghosty Crown_L.png in Hat
+Processing file: Intergalactic Bunny Space Helmet_L.png in Hat
+Processing file: Intergalactic Bunny Space Suit_C1.png in Hat
+Processing file: Intergalactic Bunny Space Suit_C2.png in Hat
+Processing file: Intergalactic Bunny Space Suit_C3.png in Hat
+Processing file: Intergalactic Bunny Space Suit_L.png in Hat
+Processing file: Mad Hatters Hat_C1.png in Hat
+Processing file: Mad Hatters Hat_C2.png in Hat
+Processing file: Mad Hatters Hat_C3.png in Hat
+Processing file: Mad Hatters Hat_C4.png in Hat
+Processing file: Mad Hatters Hat_L.png in Hat
+Processing file: Royal Bunny Crown_C1.png in Hat
+Processing file: Royal Bunny Crown_C2.png in Hat
+Processing file: Royal Bunny Crown_C3.png in Hat
+Processing file: Royal Bunny Crown_C4.png in Hat
+Processing file: Royal Bunny Crown_C5.png in Hat
+Processing file: Royal Bunny Crown_L.png in Hat
+Processing file: Sparkle Bunny Ears_C1.png in Hat
+Processing file: Sparkle Bunny Ears_C2.png in Hat
+Processing file: Sparkle Bunny Ears_C3.png in Hat
+Processing file: Sparkle Bunny Ears_L.png in Hat
+Checking existence of PNG: compositeImages\Hat\Intergalactic Bunny Space Suit.png
+Checking existence of JPG: 300x300_jpg\Hat\Intergalactic Bunny Space Suit.jpg
+Skipping existing files: PNG - compositeImages\Hat\Intergalactic Bunny Space Suit.png, JPG - 300x300_jpg\Hat\Intergalactic Bunny Space Suit.jpg
+Processing image group: Mad Hatters Hat
+Processing file: Mad Hatters Hat_C1.png in subfolder: Hat
+Processing file: Baller Bunny Band_C1.png in Hat
+Processing file: Baller Bunny Band_C2.png in Hat
+Processing file: Baller Bunny Band_C3.png in Hat
+Processing file: Baller Bunny Band_C4.png in Hat
+Processing file: Baller Bunny Band_L.png in Hat
+Processing file: Bunny Emperor Laurels_C1.png in Hat
+Processing file: Bunny Emperor Laurels_C2.png in Hat
+Processing file: Bunny Emperor Laurels_L.png in Hat
+Processing file: Ghosty Crown_C1.png in Hat
+Processing file: Ghosty Crown_C2.png in Hat
+Processing file: Ghosty Crown_L.png in Hat
+Processing file: Intergalactic Bunny Space Helmet_L.png in Hat
+Processing file: Intergalactic Bunny Space Suit_C1.png in Hat
+Processing file: Intergalactic Bunny Space Suit_C2.png in Hat
+Processing file: Intergalactic Bunny Space Suit_C3.png in Hat
+Processing file: Intergalactic Bunny Space Suit_L.png in Hat
+Processing file: Mad Hatters Hat_C1.png in Hat
+Processing file: Mad Hatters Hat_C2.png in Hat
+Processing file: Mad Hatters Hat_C3.png in Hat
+Processing file: Mad Hatters Hat_C4.png in Hat
+Processing file: Mad Hatters Hat_L.png in Hat
+Processing file: Royal Bunny Crown_C1.png in Hat
+Processing file: Royal Bunny Crown_C2.png in Hat
+Processing file: Royal Bunny Crown_C3.png in Hat
+Processing file: Royal Bunny Crown_C4.png in Hat
+Processing file: Royal Bunny Crown_C5.png in Hat
+Processing file: Royal Bunny Crown_L.png in Hat
+Processing file: Sparkle Bunny Ears_C1.png in Hat
+Processing file: Sparkle Bunny Ears_C2.png in Hat
+Processing file: Sparkle Bunny Ears_C3.png in Hat
+Processing file: Sparkle Bunny Ears_L.png in Hat
+Processing file: Mad Hatters Hat_C2.png in subfolder: Hat
+Processing file: Baller Bunny Band_C1.png in Hat
+Processing file: Baller Bunny Band_C2.png in Hat
+Processing file: Baller Bunny Band_C3.png in Hat
+Processing file: Baller Bunny Band_C4.png in Hat
+Processing file: Baller Bunny Band_L.png in Hat
+Processing file: Bunny Emperor Laurels_C1.png in Hat
+Processing file: Bunny Emperor Laurels_C2.png in Hat
+Processing file: Bunny Emperor Laurels_L.png in Hat
+Processing file: Ghosty Crown_C1.png in Hat
+Processing file: Ghosty Crown_C2.png in Hat
+Processing file: Ghosty Crown_L.png in Hat
+Processing file: Intergalactic Bunny Space Helmet_L.png in Hat
+Processing file: Intergalactic Bunny Space Suit_C1.png in Hat
+Processing file: Intergalactic Bunny Space Suit_C2.png in Hat
+Processing file: Intergalactic Bunny Space Suit_C3.png in Hat
+Processing file: Intergalactic Bunny Space Suit_L.png in Hat
+Processing file: Mad Hatters Hat_C1.png in Hat
+Processing file: Mad Hatters Hat_C2.png in Hat
+Processing file: Mad Hatters Hat_C3.png in Hat
+Processing file: Mad Hatters Hat_C4.png in Hat
+Processing file: Mad Hatters Hat_L.png in Hat
+Processing file: Royal Bunny Crown_C1.png in Hat
+Processing file: Royal Bunny Crown_C2.png in Hat
+Processing file: Royal Bunny Crown_C3.png in Hat
+Processing file: Royal Bunny Crown_C4.png in Hat
+Processing file: Royal Bunny Crown_C5.png in Hat
+Processing file: Royal Bunny Crown_L.png in Hat
+Processing file: Sparkle Bunny Ears_C1.png in Hat
+Processing file: Sparkle Bunny Ears_C2.png in Hat
+Processing file: Sparkle Bunny Ears_C3.png in Hat
+Processing file: Sparkle Bunny Ears_L.png in Hat
+Processing file: Mad Hatters Hat_C3.png in subfolder: Hat
+Processing file: Baller Bunny Band_C1.png in Hat
+Processing file: Baller Bunny Band_C2.png in Hat
+Processing file: Baller Bunny Band_C3.png in Hat
+Processing file: Baller Bunny Band_C4.png in Hat
+Processing file: Baller Bunny Band_L.png in Hat
+Processing file: Bunny Emperor Laurels_C1.png in Hat
+Processing file: Bunny Emperor Laurels_C2.png in Hat
+Processing file: Bunny Emperor Laurels_L.png in Hat
+Processing file: Ghosty Crown_C1.png in Hat
+Processing file: Ghosty Crown_C2.png in Hat
+Processing file: Ghosty Crown_L.png in Hat
+Processing file: Intergalactic Bunny Space Helmet_L.png in Hat
+Processing file: Intergalactic Bunny Space Suit_C1.png in Hat
+Processing file: Intergalactic Bunny Space Suit_C2.png in Hat
+Processing file: Intergalactic Bunny Space Suit_C3.png in Hat
+Processing file: Intergalactic Bunny Space Suit_L.png in Hat
+Processing file: Mad Hatters Hat_C1.png in Hat
+Processing file: Mad Hatters Hat_C2.png in Hat
+Processing file: Mad Hatters Hat_C3.png in Hat
+Processing file: Mad Hatters Hat_C4.png in Hat
+Processing file: Mad Hatters Hat_L.png in Hat
+Processing file: Royal Bunny Crown_C1.png in Hat
+Processing file: Royal Bunny Crown_C2.png in Hat
+Processing file: Royal Bunny Crown_C3.png in Hat
+Processing file: Royal Bunny Crown_C4.png in Hat
+Processing file: Royal Bunny Crown_C5.png in Hat
+Processing file: Royal Bunny Crown_L.png in Hat
+Processing file: Sparkle Bunny Ears_C1.png in Hat
+Processing file: Sparkle Bunny Ears_C2.png in Hat
+Processing file: Sparkle Bunny Ears_C3.png in Hat
+Processing file: Sparkle Bunny Ears_L.png in Hat
+Processing file: Mad Hatters Hat_C4.png in subfolder: Hat
+Processing file: Baller Bunny Band_C1.png in Hat
+Processing file: Baller Bunny Band_C2.png in Hat
+Processing file: Baller Bunny Band_C3.png in Hat
+Processing file: Baller Bunny Band_C4.png in Hat
+Processing file: Baller Bunny Band_L.png in Hat
+Processing file: Bunny Emperor Laurels_C1.png in Hat
+Processing file: Bunny Emperor Laurels_C2.png in Hat
+Processing file: Bunny Emperor Laurels_L.png in Hat
+Processing file: Ghosty Crown_C1.png in Hat
+Processing file: Ghosty Crown_C2.png in Hat
+Processing file: Ghosty Crown_L.png in Hat
+Processing file: Intergalactic Bunny Space Helmet_L.png in Hat
+Processing file: Intergalactic Bunny Space Suit_C1.png in Hat
+Processing file: Intergalactic Bunny Space Suit_C2.png in Hat
+Processing file: Intergalactic Bunny Space Suit_C3.png in Hat
+Processing file: Intergalactic Bunny Space Suit_L.png in Hat
+Processing file: Mad Hatters Hat_C1.png in Hat
+Processing file: Mad Hatters Hat_C2.png in Hat
+Processing file: Mad Hatters Hat_C3.png in Hat
+Processing file: Mad Hatters Hat_C4.png in Hat
+Processing file: Mad Hatters Hat_L.png in Hat
+Processing file: Royal Bunny Crown_C1.png in Hat
+Processing file: Royal Bunny Crown_C2.png in Hat
+Processing file: Royal Bunny Crown_C3.png in Hat
+Processing file: Royal Bunny Crown_C4.png in Hat
+Processing file: Royal Bunny Crown_C5.png in Hat
+Processing file: Royal Bunny Crown_L.png in Hat
+Processing file: Sparkle Bunny Ears_C1.png in Hat
+Processing file: Sparkle Bunny Ears_C2.png in Hat
+Processing file: Sparkle Bunny Ears_C3.png in Hat
+Processing file: Sparkle Bunny Ears_L.png in Hat
+Processing file: Mad Hatters Hat_L.png in subfolder: Hat
+Processing file: Baller Bunny Band_C1.png in Hat
+Processing file: Baller Bunny Band_C2.png in Hat
+Processing file: Baller Bunny Band_C3.png in Hat
+Processing file: Baller Bunny Band_C4.png in Hat
+Processing file: Baller Bunny Band_L.png in Hat
+Processing file: Bunny Emperor Laurels_C1.png in Hat
+Processing file: Bunny Emperor Laurels_C2.png in Hat
+Processing file: Bunny Emperor Laurels_L.png in Hat
+Processing file: Ghosty Crown_C1.png in Hat
+Processing file: Ghosty Crown_C2.png in Hat
+Processing file: Ghosty Crown_L.png in Hat
+Processing file: Intergalactic Bunny Space Helmet_L.png in Hat
+Processing file: Intergalactic Bunny Space Suit_C1.png in Hat
+Processing file: Intergalactic Bunny Space Suit_C2.png in Hat
+Processing file: Intergalactic Bunny Space Suit_C3.png in Hat
+Processing file: Intergalactic Bunny Space Suit_L.png in Hat
+Processing file: Mad Hatters Hat_C1.png in Hat
+Processing file: Mad Hatters Hat_C2.png in Hat
+Processing file: Mad Hatters Hat_C3.png in Hat
+Processing file: Mad Hatters Hat_C4.png in Hat
+Processing file: Mad Hatters Hat_L.png in Hat
+Processing file: Royal Bunny Crown_C1.png in Hat
+Processing file: Royal Bunny Crown_C2.png in Hat
+Processing file: Royal Bunny Crown_C3.png in Hat
+Processing file: Royal Bunny Crown_C4.png in Hat
+Processing file: Royal Bunny Crown_C5.png in Hat
+Processing file: Royal Bunny Crown_L.png in Hat
+Processing file: Sparkle Bunny Ears_C1.png in Hat
+Processing file: Sparkle Bunny Ears_C2.png in Hat
+Processing file: Sparkle Bunny Ears_C3.png in Hat
+Processing file: Sparkle Bunny Ears_L.png in Hat
+Checking existence of PNG: compositeImages\Hat\Mad Hatters Hat.png
+Checking existence of JPG: 300x300_jpg\Hat\Mad Hatters Hat.jpg
+Skipping existing files: PNG - compositeImages\Hat\Mad Hatters Hat.png, JPG - 300x300_jpg\Hat\Mad Hatters Hat.jpg
+Processing image group: Royal Bunny Crown
+Processing file: Royal Bunny Crown_C1.png in subfolder: Hat
+Processing file: Baller Bunny Band_C1.png in Hat
+Processing file: Baller Bunny Band_C2.png in Hat
+Processing file: Baller Bunny Band_C3.png in Hat
+Processing file: Baller Bunny Band_C4.png in Hat
+Processing file: Baller Bunny Band_L.png in Hat
+Processing file: Bunny Emperor Laurels_C1.png in Hat
+Processing file: Bunny Emperor Laurels_C2.png in Hat
+Processing file: Bunny Emperor Laurels_L.png in Hat
+Processing file: Ghosty Crown_C1.png in Hat
+Processing file: Ghosty Crown_C2.png in Hat
+Processing file: Ghosty Crown_L.png in Hat
+Processing file: Intergalactic Bunny Space Helmet_L.png in Hat
+Processing file: Intergalactic Bunny Space Suit_C1.png in Hat
+Processing file: Intergalactic Bunny Space Suit_C2.png in Hat
+Processing file: Intergalactic Bunny Space Suit_C3.png in Hat
+Processing file: Intergalactic Bunny Space Suit_L.png in Hat
+Processing file: Mad Hatters Hat_C1.png in Hat
+Processing file: Mad Hatters Hat_C2.png in Hat
+Processing file: Mad Hatters Hat_C3.png in Hat
+Processing file: Mad Hatters Hat_C4.png in Hat
+Processing file: Mad Hatters Hat_L.png in Hat
+Processing file: Royal Bunny Crown_C1.png in Hat
+Processing file: Royal Bunny Crown_C2.png in Hat
+Processing file: Royal Bunny Crown_C3.png in Hat
+Processing file: Royal Bunny Crown_C4.png in Hat
+Processing file: Royal Bunny Crown_C5.png in Hat
+Processing file: Royal Bunny Crown_L.png in Hat
+Processing file: Sparkle Bunny Ears_C1.png in Hat
+Processing file: Sparkle Bunny Ears_C2.png in Hat
+Processing file: Sparkle Bunny Ears_C3.png in Hat
+Processing file: Sparkle Bunny Ears_L.png in Hat
+Processing file: Royal Bunny Crown_C2.png in subfolder: Hat
+Processing file: Baller Bunny Band_C1.png in Hat
+Processing file: Baller Bunny Band_C2.png in Hat
+Processing file: Baller Bunny Band_C3.png in Hat
+Processing file: Baller Bunny Band_C4.png in Hat
+Processing file: Baller Bunny Band_L.png in Hat
+Processing file: Bunny Emperor Laurels_C1.png in Hat
+Processing file: Bunny Emperor Laurels_C2.png in Hat
+Processing file: Bunny Emperor Laurels_L.png in Hat
+Processing file: Ghosty Crown_C1.png in Hat
+Processing file: Ghosty Crown_C2.png in Hat
+Processing file: Ghosty Crown_L.png in Hat
+Processing file: Intergalactic Bunny Space Helmet_L.png in Hat
+Processing file: Intergalactic Bunny Space Suit_C1.png in Hat
+Processing file: Intergalactic Bunny Space Suit_C2.png in Hat
+Processing file: Intergalactic Bunny Space Suit_C3.png in Hat
+Processing file: Intergalactic Bunny Space Suit_L.png in Hat
+Processing file: Mad Hatters Hat_C1.png in Hat
+Processing file: Mad Hatters Hat_C2.png in Hat
+Processing file: Mad Hatters Hat_C3.png in Hat
+Processing file: Mad Hatters Hat_C4.png in Hat
+Processing file: Mad Hatters Hat_L.png in Hat
+Processing file: Royal Bunny Crown_C1.png in Hat
+Processing file: Royal Bunny Crown_C2.png in Hat
+Processing file: Royal Bunny Crown_C3.png in Hat
+Processing file: Royal Bunny Crown_C4.png in Hat
+Processing file: Royal Bunny Crown_C5.png in Hat
+Processing file: Royal Bunny Crown_L.png in Hat
+Processing file: Sparkle Bunny Ears_C1.png in Hat
+Processing file: Sparkle Bunny Ears_C2.png in Hat
+Processing file: Sparkle Bunny Ears_C3.png in Hat
+Processing file: Sparkle Bunny Ears_L.png in Hat
+Processing file: Royal Bunny Crown_C3.png in subfolder: Hat
+Processing file: Baller Bunny Band_C1.png in Hat
+Processing file: Baller Bunny Band_C2.png in Hat
+Processing file: Baller Bunny Band_C3.png in Hat
+Processing file: Baller Bunny Band_C4.png in Hat
+Processing file: Baller Bunny Band_L.png in Hat
+Processing file: Bunny Emperor Laurels_C1.png in Hat
+Processing file: Bunny Emperor Laurels_C2.png in Hat
+Processing file: Bunny Emperor Laurels_L.png in Hat
+Processing file: Ghosty Crown_C1.png in Hat
+Processing file: Ghosty Crown_C2.png in Hat
+Processing file: Ghosty Crown_L.png in Hat
+Processing file: Intergalactic Bunny Space Helmet_L.png in Hat
+Processing file: Intergalactic Bunny Space Suit_C1.png in Hat
+Processing file: Intergalactic Bunny Space Suit_C2.png in Hat
+Processing file: Intergalactic Bunny Space Suit_C3.png in Hat
+Processing file: Intergalactic Bunny Space Suit_L.png in Hat
+Processing file: Mad Hatters Hat_C1.png in Hat
+Processing file: Mad Hatters Hat_C2.png in Hat
+Processing file: Mad Hatters Hat_C3.png in Hat
+Processing file: Mad Hatters Hat_C4.png in Hat
+Processing file: Mad Hatters Hat_L.png in Hat
+Processing file: Royal Bunny Crown_C1.png in Hat
+Processing file: Royal Bunny Crown_C2.png in Hat
+Processing file: Royal Bunny Crown_C3.png in Hat
+Processing file: Royal Bunny Crown_C4.png in Hat
+Processing file: Royal Bunny Crown_C5.png in Hat
+Processing file: Royal Bunny Crown_L.png in Hat
+Processing file: Sparkle Bunny Ears_C1.png in Hat
+Processing file: Sparkle Bunny Ears_C2.png in Hat
+Processing file: Sparkle Bunny Ears_C3.png in Hat
+Processing file: Sparkle Bunny Ears_L.png in Hat
+Processing file: Royal Bunny Crown_C4.png in subfolder: Hat
+Processing file: Baller Bunny Band_C1.png in Hat
+Processing file: Baller Bunny Band_C2.png in Hat
+Processing file: Baller Bunny Band_C3.png in Hat
+Processing file: Baller Bunny Band_C4.png in Hat
+Processing file: Baller Bunny Band_L.png in Hat
+Processing file: Bunny Emperor Laurels_C1.png in Hat
+Processing file: Bunny Emperor Laurels_C2.png in Hat
+Processing file: Bunny Emperor Laurels_L.png in Hat
+Processing file: Ghosty Crown_C1.png in Hat
+Processing file: Ghosty Crown_C2.png in Hat
+Processing file: Ghosty Crown_L.png in Hat
+Processing file: Intergalactic Bunny Space Helmet_L.png in Hat
+Processing file: Intergalactic Bunny Space Suit_C1.png in Hat
+Processing file: Intergalactic Bunny Space Suit_C2.png in Hat
+Processing file: Intergalactic Bunny Space Suit_C3.png in Hat
+Processing file: Intergalactic Bunny Space Suit_L.png in Hat
+Processing file: Mad Hatters Hat_C1.png in Hat
+Processing file: Mad Hatters Hat_C2.png in Hat
+Processing file: Mad Hatters Hat_C3.png in Hat
+Processing file: Mad Hatters Hat_C4.png in Hat
+Processing file: Mad Hatters Hat_L.png in Hat
+Processing file: Royal Bunny Crown_C1.png in Hat
+Processing file: Royal Bunny Crown_C2.png in Hat
+Processing file: Royal Bunny Crown_C3.png in Hat
+Processing file: Royal Bunny Crown_C4.png in Hat
+Processing file: Royal Bunny Crown_C5.png in Hat
+Processing file: Royal Bunny Crown_L.png in Hat
+Processing file: Sparkle Bunny Ears_C1.png in Hat
+Processing file: Sparkle Bunny Ears_C2.png in Hat
+Processing file: Sparkle Bunny Ears_C3.png in Hat
+Processing file: Sparkle Bunny Ears_L.png in Hat
+Processing file: Royal Bunny Crown_C5.png in subfolder: Hat
+Processing file: Baller Bunny Band_C1.png in Hat
+Processing file: Baller Bunny Band_C2.png in Hat
+Processing file: Baller Bunny Band_C3.png in Hat
+Processing file: Baller Bunny Band_C4.png in Hat
+Processing file: Baller Bunny Band_L.png in Hat
+Processing file: Bunny Emperor Laurels_C1.png in Hat
+Processing file: Bunny Emperor Laurels_C2.png in Hat
+Processing file: Bunny Emperor Laurels_L.png in Hat
+Processing file: Ghosty Crown_C1.png in Hat
+Processing file: Ghosty Crown_C2.png in Hat
+Processing file: Ghosty Crown_L.png in Hat
+Processing file: Intergalactic Bunny Space Helmet_L.png in Hat
+Processing file: Intergalactic Bunny Space Suit_C1.png in Hat
+Processing file: Intergalactic Bunny Space Suit_C2.png in Hat
+Processing file: Intergalactic Bunny Space Suit_C3.png in Hat
+Processing file: Intergalactic Bunny Space Suit_L.png in Hat
+Processing file: Mad Hatters Hat_C1.png in Hat
+Processing file: Mad Hatters Hat_C2.png in Hat
+Processing file: Mad Hatters Hat_C3.png in Hat
+Processing file: Mad Hatters Hat_C4.png in Hat
+Processing file: Mad Hatters Hat_L.png in Hat
+Processing file: Royal Bunny Crown_C1.png in Hat
+Processing file: Royal Bunny Crown_C2.png in Hat
+Processing file: Royal Bunny Crown_C3.png in Hat
+Processing file: Royal Bunny Crown_C4.png in Hat
+Processing file: Royal Bunny Crown_C5.png in Hat
+Processing file: Royal Bunny Crown_L.png in Hat
+Processing file: Sparkle Bunny Ears_C1.png in Hat
+Processing file: Sparkle Bunny Ears_C2.png in Hat
+Processing file: Sparkle Bunny Ears_C3.png in Hat
+Processing file: Sparkle Bunny Ears_L.png in Hat
+Processing file: Royal Bunny Crown_L.png in subfolder: Hat
+Processing file: Baller Bunny Band_C1.png in Hat
+Processing file: Baller Bunny Band_C2.png in Hat
+Processing file: Baller Bunny Band_C3.png in Hat
+Processing file: Baller Bunny Band_C4.png in Hat
+Processing file: Baller Bunny Band_L.png in Hat
+Processing file: Bunny Emperor Laurels_C1.png in Hat
+Processing file: Bunny Emperor Laurels_C2.png in Hat
+Processing file: Bunny Emperor Laurels_L.png in Hat
+Processing file: Ghosty Crown_C1.png in Hat
+Processing file: Ghosty Crown_C2.png in Hat
+Processing file: Ghosty Crown_L.png in Hat
+Processing file: Intergalactic Bunny Space Helmet_L.png in Hat
+Processing file: Intergalactic Bunny Space Suit_C1.png in Hat
+Processing file: Intergalactic Bunny Space Suit_C2.png in Hat
+Processing file: Intergalactic Bunny Space Suit_C3.png in Hat
+Processing file: Intergalactic Bunny Space Suit_L.png in Hat
+Processing file: Mad Hatters Hat_C1.png in Hat
+Processing file: Mad Hatters Hat_C2.png in Hat
+Processing file: Mad Hatters Hat_C3.png in Hat
+Processing file: Mad Hatters Hat_C4.png in Hat
+Processing file: Mad Hatters Hat_L.png in Hat
+Processing file: Royal Bunny Crown_C1.png in Hat
+Processing file: Royal Bunny Crown_C2.png in Hat
+Processing file: Royal Bunny Crown_C3.png in Hat
+Processing file: Royal Bunny Crown_C4.png in Hat
+Processing file: Royal Bunny Crown_C5.png in Hat
+Processing file: Royal Bunny Crown_L.png in Hat
+Processing file: Sparkle Bunny Ears_C1.png in Hat
+Processing file: Sparkle Bunny Ears_C2.png in Hat
+Processing file: Sparkle Bunny Ears_C3.png in Hat
+Processing file: Sparkle Bunny Ears_L.png in Hat
+Checking existence of PNG: compositeImages\Hat\Royal Bunny Crown.png
+Checking existence of JPG: 300x300_jpg\Hat\Royal Bunny Crown.jpg
+Skipping existing files: PNG - compositeImages\Hat\Royal Bunny Crown.png, JPG - 300x300_jpg\Hat\Royal Bunny Crown.jpg
+Processing image group: Sparkle Bunny Ears
+Processing file: Sparkle Bunny Ears_C1.png in subfolder: Hat
+Processing file: Baller Bunny Band_C1.png in Hat
+Processing file: Baller Bunny Band_C2.png in Hat
+Processing file: Baller Bunny Band_C3.png in Hat
+Processing file: Baller Bunny Band_C4.png in Hat
+Processing file: Baller Bunny Band_L.png in Hat
+Processing file: Bunny Emperor Laurels_C1.png in Hat
+Processing file: Bunny Emperor Laurels_C2.png in Hat
+Processing file: Bunny Emperor Laurels_L.png in Hat
+Processing file: Ghosty Crown_C1.png in Hat
+Processing file: Ghosty Crown_C2.png in Hat
+Processing file: Ghosty Crown_L.png in Hat
+Processing file: Intergalactic Bunny Space Helmet_L.png in Hat
+Processing file: Intergalactic Bunny Space Suit_C1.png in Hat
+Processing file: Intergalactic Bunny Space Suit_C2.png in Hat
+Processing file: Intergalactic Bunny Space Suit_C3.png in Hat
+Processing file: Intergalactic Bunny Space Suit_L.png in Hat
+Processing file: Mad Hatters Hat_C1.png in Hat
+Processing file: Mad Hatters Hat_C2.png in Hat
+Processing file: Mad Hatters Hat_C3.png in Hat
+Processing file: Mad Hatters Hat_C4.png in Hat
+Processing file: Mad Hatters Hat_L.png in Hat
+Processing file: Royal Bunny Crown_C1.png in Hat
+Processing file: Royal Bunny Crown_C2.png in Hat
+Processing file: Royal Bunny Crown_C3.png in Hat
+Processing file: Royal Bunny Crown_C4.png in Hat
+Processing file: Royal Bunny Crown_C5.png in Hat
+Processing file: Royal Bunny Crown_L.png in Hat
+Processing file: Sparkle Bunny Ears_C1.png in Hat
+Processing file: Sparkle Bunny Ears_C2.png in Hat
+Processing file: Sparkle Bunny Ears_C3.png in Hat
+Processing file: Sparkle Bunny Ears_L.png in Hat
+Processing file: Sparkle Bunny Ears_C2.png in subfolder: Hat
+Processing file: Baller Bunny Band_C1.png in Hat
+Processing file: Baller Bunny Band_C2.png in Hat
+Processing file: Baller Bunny Band_C3.png in Hat
+Processing file: Baller Bunny Band_C4.png in Hat
+Processing file: Baller Bunny Band_L.png in Hat
+Processing file: Bunny Emperor Laurels_C1.png in Hat
+Processing file: Bunny Emperor Laurels_C2.png in Hat
+Processing file: Bunny Emperor Laurels_L.png in Hat
+Processing file: Ghosty Crown_C1.png in Hat
+Processing file: Ghosty Crown_C2.png in Hat
+Processing file: Ghosty Crown_L.png in Hat
+Processing file: Intergalactic Bunny Space Helmet_L.png in Hat
+Processing file: Intergalactic Bunny Space Suit_C1.png in Hat
+Processing file: Intergalactic Bunny Space Suit_C2.png in Hat
+Processing file: Intergalactic Bunny Space Suit_C3.png in Hat
+Processing file: Intergalactic Bunny Space Suit_L.png in Hat
+Processing file: Mad Hatters Hat_C1.png in Hat
+Processing file: Mad Hatters Hat_C2.png in Hat
+Processing file: Mad Hatters Hat_C3.png in Hat
+Processing file: Mad Hatters Hat_C4.png in Hat
+Processing file: Mad Hatters Hat_L.png in Hat
+Processing file: Royal Bunny Crown_C1.png in Hat
+Processing file: Royal Bunny Crown_C2.png in Hat
+Processing file: Royal Bunny Crown_C3.png in Hat
+Processing file: Royal Bunny Crown_C4.png in Hat
+Processing file: Royal Bunny Crown_C5.png in Hat
+Processing file: Royal Bunny Crown_L.png in Hat
+Processing file: Sparkle Bunny Ears_C1.png in Hat
+Processing file: Sparkle Bunny Ears_C2.png in Hat
+Processing file: Sparkle Bunny Ears_C3.png in Hat
+Processing file: Sparkle Bunny Ears_L.png in Hat
+Processing file: Sparkle Bunny Ears_C3.png in subfolder: Hat
+Processing file: Baller Bunny Band_C1.png in Hat
+Processing file: Baller Bunny Band_C2.png in Hat
+Processing file: Baller Bunny Band_C3.png in Hat
+Processing file: Baller Bunny Band_C4.png in Hat
+Processing file: Baller Bunny Band_L.png in Hat
+Processing file: Bunny Emperor Laurels_C1.png in Hat
+Processing file: Bunny Emperor Laurels_C2.png in Hat
+Processing file: Bunny Emperor Laurels_L.png in Hat
+Processing file: Ghosty Crown_C1.png in Hat
+Processing file: Ghosty Crown_C2.png in Hat
+Processing file: Ghosty Crown_L.png in Hat
+Processing file: Intergalactic Bunny Space Helmet_L.png in Hat
+Processing file: Intergalactic Bunny Space Suit_C1.png in Hat
+Processing file: Intergalactic Bunny Space Suit_C2.png in Hat
+Processing file: Intergalactic Bunny Space Suit_C3.png in Hat
+Processing file: Intergalactic Bunny Space Suit_L.png in Hat
+Processing file: Mad Hatters Hat_C1.png in Hat
+Processing file: Mad Hatters Hat_C2.png in Hat
+Processing file: Mad Hatters Hat_C3.png in Hat
+Processing file: Mad Hatters Hat_C4.png in Hat
+Processing file: Mad Hatters Hat_L.png in Hat
+Processing file: Royal Bunny Crown_C1.png in Hat
+Processing file: Royal Bunny Crown_C2.png in Hat
+Processing file: Royal Bunny Crown_C3.png in Hat
+Processing file: Royal Bunny Crown_C4.png in Hat
+Processing file: Royal Bunny Crown_C5.png in Hat
+Processing file: Royal Bunny Crown_L.png in Hat
+Processing file: Sparkle Bunny Ears_C1.png in Hat
+Processing file: Sparkle Bunny Ears_C2.png in Hat
+Processing file: Sparkle Bunny Ears_C3.png in Hat
+Processing file: Sparkle Bunny Ears_L.png in Hat
+Processing file: Sparkle Bunny Ears_L.png in subfolder: Hat
+Processing file: Baller Bunny Band_C1.png in Hat
+Processing file: Baller Bunny Band_C2.png in Hat
+Processing file: Baller Bunny Band_C3.png in Hat
+Processing file: Baller Bunny Band_C4.png in Hat
+Processing file: Baller Bunny Band_L.png in Hat
+Processing file: Bunny Emperor Laurels_C1.png in Hat
+Processing file: Bunny Emperor Laurels_C2.png in Hat
+Processing file: Bunny Emperor Laurels_L.png in Hat
+Processing file: Ghosty Crown_C1.png in Hat
+Processing file: Ghosty Crown_C2.png in Hat
+Processing file: Ghosty Crown_L.png in Hat
+Processing file: Intergalactic Bunny Space Helmet_L.png in Hat
+Processing file: Intergalactic Bunny Space Suit_C1.png in Hat
+Processing file: Intergalactic Bunny Space Suit_C2.png in Hat
+Processing file: Intergalactic Bunny Space Suit_C3.png in Hat
+Processing file: Intergalactic Bunny Space Suit_L.png in Hat
+Processing file: Mad Hatters Hat_C1.png in Hat
+Processing file: Mad Hatters Hat_C2.png in Hat
+Processing file: Mad Hatters Hat_C3.png in Hat
+Processing file: Mad Hatters Hat_C4.png in Hat
+Processing file: Mad Hatters Hat_L.png in Hat
+Processing file: Royal Bunny Crown_C1.png in Hat
+Processing file: Royal Bunny Crown_C2.png in Hat
+Processing file: Royal Bunny Crown_C3.png in Hat
+Processing file: Royal Bunny Crown_C4.png in Hat
+Processing file: Royal Bunny Crown_C5.png in Hat
+Processing file: Royal Bunny Crown_L.png in Hat
+Processing file: Sparkle Bunny Ears_C1.png in Hat
+Processing file: Sparkle Bunny Ears_C2.png in Hat
+Processing file: Sparkle Bunny Ears_C3.png in Hat
+Processing file: Sparkle Bunny Ears_L.png in Hat
+Checking existence of PNG: compositeImages\Hat\Sparkle Bunny Ears.png
+Checking existence of JPG: 300x300_jpg\Hat\Sparkle Bunny Ears.jpg
+Skipping existing files: PNG - compositeImages\Hat\Sparkle Bunny Ears.png, JPG - 300x300_jpg\Hat\Sparkle Bunny Ears.jpg
+Processing image group: Resting Bun Face
+Processing file: Resting Bun Face_C1.png in subfolder: Mouth
+Processing file: Resting Bun Face_L.png in subfolder: Mouth
+Checking existence of PNG: compositeImages\Mouth\Resting Bun Face.png
+Checking existence of JPG: 300x300_jpg\Mouth\Resting Bun Face.jpg
+Files not found, processing: PNG - compositeImages\Mouth\Resting Bun Face.png, JPG - 300x300_jpg\Mouth\Resting Bun Face.jpg
+Saved: compositeImages\Mouth\Resting Bun Face.png
+Saved: 300x300_jpg\Mouth\Resting Bun Face.jpg
+Processing image group: Baller Babe
+Processing file: Baller Babe_C1.png in subfolder: Outfit
+Processing file: Baller Babe_C2.png in subfolder: Outfit
+Processing file: Baller Babe_C3.png in subfolder: Outfit
+Processing file: Baller Babe_C4.png in subfolder: Outfit
+Processing file: Baller Babe_L.png in subfolder: Outfit
+Checking existence of PNG: compositeImages\Outfit\Baller Babe.png
+Checking existence of JPG: 300x300_jpg\Outfit\Baller Babe.jpg
+Files not found, processing: PNG - compositeImages\Outfit\Baller Babe.png, JPG - 300x300_jpg\Outfit\Baller Babe.jpg
+Saved: compositeImages\Outfit\Baller Babe.png
+Saved: 300x300_jpg\Outfit\Baller Babe.jpg
+Processing image group: Bunny Emperor Toga
+Processing file: Bunny Emperor Toga_C1.png in subfolder: Outfit
+Processing file: Bunny Emperor Toga_C2.png in subfolder: Outfit
+Processing file: Bunny Emperor Toga_C3.png in subfolder: Outfit
+Processing file: Bunny Emperor Toga_L.png in subfolder: Outfit
+Checking existence of PNG: compositeImages\Outfit\Bunny Emperor Toga.png
+Checking existence of JPG: 300x300_jpg\Outfit\Bunny Emperor Toga.jpg
+Files not found, processing: PNG - compositeImages\Outfit\Bunny Emperor Toga.png, JPG - 300x300_jpg\Outfit\Bunny Emperor Toga.jpg
+Saved: compositeImages\Outfit\Bunny Emperor Toga.png
+Saved: 300x300_jpg\Outfit\Bunny Emperor Toga.jpg
+Processing image group: Dukes Court Dress
+Processing file: Dukes Court Dress_C1.png in subfolder: Outfit
+Processing file: Dukes Court Dress_C2.png in subfolder: Outfit
+Processing file: Dukes Court Dress_C3.png in subfolder: Outfit
+Processing file: Dukes Court Dress_C4.png in subfolder: Outfit
+Processing file: Dukes Court Dress_C5.png in subfolder: Outfit
+Processing file: Dukes Court Dress_L.png in subfolder: Outfit
+Checking existence of PNG: compositeImages\Outfit\Dukes Court Dress.png
+Checking existence of JPG: 300x300_jpg\Outfit\Dukes Court Dress.jpg
+Files not found, processing: PNG - compositeImages\Outfit\Dukes Court Dress.png, JPG - 300x300_jpg\Outfit\Dukes Court Dress.jpg
+Saved: compositeImages\Outfit\Dukes Court Dress.png
+Saved: 300x300_jpg\Outfit\Dukes Court Dress.jpg
+Processing image group: Mad Hatters Coat
+Processing file: Mad Hatters Coat_C1.png in subfolder: Outfit
+Processing file: Mad Hatters Coat_C2.png in subfolder: Outfit
+Processing file: Mad Hatters Coat_C3.png in subfolder: Outfit
+Processing file: Mad Hatters Coat_C4.png in subfolder: Outfit
+Processing file: Mad Hatters Coat_L.png in subfolder: Outfit
+Checking existence of PNG: compositeImages\Outfit\Mad Hatters Coat.png
+Checking existence of JPG: 300x300_jpg\Outfit\Mad Hatters Coat.jpg
+Files not found, processing: PNG - compositeImages\Outfit\Mad Hatters Coat.png, JPG - 300x300_jpg\Outfit\Mad Hatters Coat.jpg
+Saved: compositeImages\Outfit\Mad Hatters Coat.png
+Saved: 300x300_jpg\Outfit\Mad Hatters Coat.jpg
+Script started
+Subfolders found: Accessory, Background, Bodysuit, Colors, Eyebrows, Eyes, Face Sticker, Frame, Hair Style, Hand, Hat, Mouth, Outfit, Piercing, Skin, Tattoo, Undergarment
+Files found: 8
+Solid colors RGB values saved to colors.json
+Resizing image: scriptImages\Hand\Slam Dunk_C1.png to 800x800
+Resizing image: scriptImages\Hand\Slam Dunk_C1.png to 600x600
+Solid colors RGB values saved to colors.json
+Processing image group: Slam Dunk
+Resized image saved: 800x800_png\Hand\Slam Dunk_C1.png
+Resizing image: scriptImages\Hand\Slam Dunk_C2.png to 800x800
+Resized image saved: 600x600_png\Hand\Slam Dunk_C1.png
+Resizing image: scriptImages\Hand\Slam Dunk_C2.png to 600x600
+Processing file: Slam Dunk_C1.png in subfolder: Hand
+Resized image saved: 800x800_png\Hand\Slam Dunk_C2.png
+Resizing image: scriptImages\Hand\Slam Dunk_L.png to 800x800
+Resized image saved: 600x600_png\Hand\Slam Dunk_C2.png
+Resizing image: scriptImages\Hand\Slam Dunk_L.png to 600x600
+Processing file: Slam Dunk_C2.png in subfolder: Hand
+Resized image saved: 800x800_png\Hand\Slam Dunk_L.png
+Resizing image: scriptImages\Hand\Slam Dunk_S.png to 800x800
+Processing file: Slam Dunk_L.png in subfolder: Hand
+Resized image saved: 600x600_png\Hand\Slam Dunk_L.png
+Resizing image: scriptImages\Hand\Slam Dunk_S.png to 600x600
+Processing file: Slam Dunk_S.png in subfolder: Hand
+Checking existence of PNG: compositeImages\Hand\Slam Dunk.png
+Checking existence of JPG: 300x300_jpg\Hand\Slam Dunk.jpg
+Files not found, processing: PNG - compositeImages\Hand\Slam Dunk.png, JPG - 300x300_jpg\Hand\Slam Dunk.jpg
+Resized image saved: 800x800_png\Hand\Slam Dunk_S.png
+Resizing image: scriptImages\Hand\Sword Hand_C1.png to 800x800
+Saved: compositeImages\Hand\Slam Dunk.png
+Resized image saved: 600x600_png\Hand\Slam Dunk_S.png
+Resizing image: scriptImages\Hand\Sword Hand_C1.png to 600x600
+Saved: 300x300_jpg\Hand\Slam Dunk.jpg
+Processing image group: Sword Hand
+Processing file: Sword Hand_C1.png in subfolder: Hand
+Resized image saved: 800x800_png\Hand\Sword Hand_C1.png
+Resizing image: scriptImages\Hand\Sword Hand_C2.png to 800x800
+Resized image saved: 600x600_png\Hand\Sword Hand_C1.png
+Resizing image: scriptImages\Hand\Sword Hand_C2.png to 600x600
+Processing file: Sword Hand_C2.png in subfolder: Hand
+Resized image saved: 800x800_png\Hand\Sword Hand_C2.png
+Resizing image: scriptImages\Hand\Sword Hand_L.png to 800x800
+Resized image saved: 600x600_png\Hand\Sword Hand_C2.png
+Resizing image: scriptImages\Hand\Sword Hand_L.png to 600x600
+Processing file: Sword Hand_L.png in subfolder: Hand
+Resized image saved: 600x600_png\Hand\Sword Hand_L.png
+Resizing image: scriptImages\Hand\Sword Hand_S.png to 600x600
+Resized image saved: 800x800_png\Hand\Sword Hand_L.png
+Resizing image: scriptImages\Hand\Sword Hand_S.png to 800x800
+Processing file: Sword Hand_S.png in subfolder: Hand
+Checking existence of PNG: compositeImages\Hand\Sword Hand.png
+Checking existence of JPG: 300x300_jpg\Hand\Sword Hand.jpg
+Files not found, processing: PNG - compositeImages\Hand\Sword Hand.png, JPG - 300x300_jpg\Hand\Sword Hand.jpg
+Saved: compositeImages\Hand\Sword Hand.png
+Resized image saved: 600x600_png\Hand\Sword Hand_S.png
+Saved: 300x300_jpg\Hand\Sword Hand.jpg
+Resized image saved: 800x800_png\Hand\Sword Hand_S.png
+Script started
+Subfolders found: Accessory, Background, Bodysuit, Colors, Eyebrows, Eyes, Face Sticker, Frame, Hair Style, Hand, Hat, Mouth, Outfit, Piercing, Skin, Tattoo, Undergarment
+Files found: 4
+Solid colors RGB values saved to colors.json
+Resizing image: scriptImages\Hand\Sword Hand_C1.png to 800x800
+Resizing image: scriptImages\Hand\Sword Hand_C1.png to 600x600
+Solid colors RGB values saved to colors.json
+Processing image group: Sword Hand
+Processing file: Sword Hand_C1.png in subfolder: Hand
+Resized image saved: 600x600_png\Hand\Sword Hand_C1.png
+Resizing image: scriptImages\Hand\Sword Hand_C2.png to 600x600
+Resized image saved: 800x800_png\Hand\Sword Hand_C1.png
+Resizing image: scriptImages\Hand\Sword Hand_C2.png to 800x800
+Processing file: Sword Hand_C2.png in subfolder: Hand
+Resized image saved: 800x800_png\Hand\Sword Hand_C2.png
+Resizing image: scriptImages\Hand\Sword Hand_C3.png to 800x800
+Resized image saved: 600x600_png\Hand\Sword Hand_C2.png
+Resizing image: scriptImages\Hand\Sword Hand_C3.png to 600x600
+Processing file: Sword Hand_C3.png in subfolder: Hand
+Resized image saved: 800x800_png\Hand\Sword Hand_C3.png
+Resizing image: scriptImages\Hand\Sword Hand_L.png to 800x800
+Resized image saved: 600x600_png\Hand\Sword Hand_C3.png
+Resizing image: scriptImages\Hand\Sword Hand_L.png to 600x600
+Processing file: Sword Hand_L.png in subfolder: Hand
+Checking existence of PNG: compositeImages\Hand\Sword Hand.png
+Checking existence of JPG: 300x300_jpg\Hand\Sword Hand.jpg
+Files not found, processing: PNG - compositeImages\Hand\Sword Hand.png, JPG - 300x300_jpg\Hand\Sword Hand.jpg
+Saved: compositeImages\Hand\Sword Hand.png
+Saved: 300x300_jpg\Hand\Sword Hand.jpg
+Resized image saved: 800x800_png\Hand\Sword Hand_L.png
+Resized image saved: 600x600_png\Hand\Sword Hand_L.png
+Script started
+Subfolders found: Accessory, Background, Bodysuit, Colors, Eyebrows, Eyes, Face Sticker, Frame, Hair Style, Hand, Hat, Mouth, Outfit, Piercing, Skin, Tattoo, Undergarment
+Files found: 4
+Solid colors RGB values saved to colors.json
+Resizing image: scriptImages\Outfit\Intergalactic Bunny Space Suit_C1.png to 800x800
+Resizing image: scriptImages\Outfit\Intergalactic Bunny Space Suit_C1.png to 600x600
+Solid colors RGB values saved to colors.json
+Processing image group: Intergalactic Bunny Space Suit
+Processing file: Intergalactic Bunny Space Suit_C1.png in subfolder: Outfit
+Resized image saved: 600x600_png\Outfit\Intergalactic Bunny Space Suit_C1.png
+Resizing image: scriptImages\Outfit\Intergalactic Bunny Space Suit_C2.png to 600x600
+Resized image saved: 800x800_png\Outfit\Intergalactic Bunny Space Suit_C1.png
+Resizing image: scriptImages\Outfit\Intergalactic Bunny Space Suit_C2.png to 800x800
+Processing file: Intergalactic Bunny Space Suit_C2.png in subfolder: Outfit
+Resized image saved: 600x600_png\Outfit\Intergalactic Bunny Space Suit_C2.png
+Resizing image: scriptImages\Outfit\Intergalactic Bunny Space Suit_C3.png to 600x600
+Processing file: Intergalactic Bunny Space Suit_C3.png in subfolder: Outfit
+Resized image saved: 800x800_png\Outfit\Intergalactic Bunny Space Suit_C2.png
+Resizing image: scriptImages\Outfit\Intergalactic Bunny Space Suit_C3.png to 800x800
+Resized image saved: 600x600_png\Outfit\Intergalactic Bunny Space Suit_C3.png
+Resizing image: scriptImages\Outfit\Intergalactic Bunny Space Suit_L.png to 600x600
+Processing file: Intergalactic Bunny Space Suit_L.png in subfolder: Outfit
+Checking existence of PNG: compositeImages\Outfit\Intergalactic Bunny Space Suit.png
+Checking existence of JPG: 300x300_jpg\Outfit\Intergalactic Bunny Space Suit.jpg
+Files not found, processing: PNG - compositeImages\Outfit\Intergalactic Bunny Space Suit.png, JPG - 300x300_jpg\Outfit\Intergalactic Bunny Space Suit.jpg
+Resized image saved: 800x800_png\Outfit\Intergalactic Bunny Space Suit_C3.png
+Resizing image: scriptImages\Outfit\Intergalactic Bunny Space Suit_L.png to 800x800
+Saved: compositeImages\Outfit\Intergalactic Bunny Space Suit.png
+Saved: 300x300_jpg\Outfit\Intergalactic Bunny Space Suit.jpg
+Resized image saved: 600x600_png\Outfit\Intergalactic Bunny Space Suit_L.png
+Resized image saved: 800x800_png\Outfit\Intergalactic Bunny Space Suit_L.png
+Script started
+Subfolders found: Accessory, Background, Bodysuit, Colors, Eyebrows, Eyes, Face Sticker, Frame, Hair Style, Hand, Hat, Mouth, Outfit, Piercing, Skin, Tattoo, Undergarment
+Files found: 7
+Solid colors RGB values saved to colors.json
+Skipping existing file: 800x800_png\Hand\#1 Fan Trophy_C1.png
+Skipping existing file: 800x800_png\Hand\#1 Fan Trophy_C2.png
+Skipping existing file: 800x800_png\Hand\#1 Fan Trophy_C3.png
+Skipping existing file: 800x800_png\Hand\#1 Fan Trophy_C4.png
+Skipping existing file: 800x800_png\Hand\#1 Fan Trophy_C5.png
+Skipping existing file: 800x800_png\Hand\#1 Fan Trophy_L.png
+Skipping existing file: 800x800_png\Hand\#1 Fan Trophy_S.png
+Skipping existing file: 600x600_png\Hand\#1 Fan Trophy_C1.png
+Skipping existing file: 600x600_png\Hand\#1 Fan Trophy_C2.png
+Skipping existing file: 600x600_png\Hand\#1 Fan Trophy_C3.png
+Skipping existing file: 600x600_png\Hand\#1 Fan Trophy_C4.png
+Skipping existing file: 600x600_png\Hand\#1 Fan Trophy_C5.png
+Skipping existing file: 600x600_png\Hand\#1 Fan Trophy_L.png
+Skipping existing file: 600x600_png\Hand\#1 Fan Trophy_S.png
+Solid colors RGB values saved to colors.json
+Processing image group: #1 Fan Trophy
+Processing file: #1 Fan Trophy_C1.png in subfolder: Hand
+Processing file: #1 Fan Trophy_C2.png in subfolder: Hand
+Processing file: #1 Fan Trophy_C3.png in subfolder: Hand
+Processing file: #1 Fan Trophy_C4.png in subfolder: Hand
+Processing file: #1 Fan Trophy_C5.png in subfolder: Hand
+Processing file: #1 Fan Trophy_L.png in subfolder: Hand
+Processing file: #1 Fan Trophy_S.png in subfolder: Hand
+Checking existence of PNG: compositeImages\Hand\#1 Fan Trophy.png
+Checking existence of JPG: 300x300_jpg\Hand\#1 Fan Trophy.jpg
+Skipping existing files: PNG - compositeImages\Hand\#1 Fan Trophy.png, JPG - 300x300_jpg\Hand\#1 Fan Trophy.jpg

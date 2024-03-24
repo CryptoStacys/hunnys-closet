@@ -1,0 +1,15 @@
+{
+  "name": "Halftone Dye Pack 1",
+  "description": "\n\n\n\nOwning this unlocks the following set of items in the Hunnys Closet:\n\nDye: Blue Screen Print\n\nDye: Blueberry Halftone\n\nDye: Burnt Orange Halftone\n\nDye: Envy Green Halftone\n\nDye: Flamingo Halftone\n\nDye: Green Screen Print\n\nDye: Mustard Halftone\n\nDye: Ocean Spray Halftone\n\nDye: Orange Screen Print\n\nDye: Pink Screen Print\n\nDye: Yellow Screen Print\n\n\n\nAll pieces purchased within this Hunnys Closet Shop collection will immediately unlock the specified item(s) for use in the [Hunnys Closet](https://closet.hunnys.io).\n\n\n\nAs long as you currently hold this token in the same wallet that you are connected with when using the [Hunnys Closet](https://closet.hunnys.io), it will automatically be available for use - enjoy!\n\n",
+  "image": "https://hunnysclosetshop.s3.us-east-2.amazonaws.com/images/goodies/80.png",
+  "external_url": "",
+  "background_color": "",
+  "attributes": [
+    { "trait_type": "Type", "value": "Set" },
+    { "trait_type": "Type", "value": "Dyes" },
+    { "trait_type": "Special", "value": "Hunnys Closet Adventure" }
+  ],
+  "supply": "500",
+  "customImage": "",
+  "customAnimationUrl": ""
+}

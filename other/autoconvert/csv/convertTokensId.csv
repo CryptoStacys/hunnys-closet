@@ -1,23 +1,38 @@
 name,trait_type,value,tokenId
-Level 0,Accessory,ButterPuff,https://buy.hunnys.io/polygon/asset/0x11bc733e719198e2b3746f6841d2818ca87af6da:68
-Level 1,Accessory,BunVenture Backpack,https://buy.hunnys.io/polygon/asset/0x11bc733e719198e2b3746f6841d2818ca87af6da:69
-Level 1,Hat,BunComms Device,https://buy.hunnys.io/polygon/asset/0x11bc733e719198e2b3746f6841d2818ca87af6da:69
-Level 2,Frame,Bunny Babe Basket,https://buy.hunnys.io/polygon/asset/0x11bc733e719198e2b3746f6841d2818ca87af6da:70
-Level 2,Dye,Picnic Day Dye,https://buy.hunnys.io/polygon/asset/0x11bc733e719198e2b3746f6841d2818ca87af6da:70
-Level 3,Accessory,Secret Agent S,https://buy.hunnys.io/polygon/asset/0x11bc733e719198e2b3746f6841d2818ca87af6da:71
-Level 3,Accessory,Secret Agent Shades,https://buy.hunnys.io/polygon/asset/0x11bc733e719198e2b3746f6841d2818ca87af6da:71
-Level 4,Accessory,Silly Mr. Moar,https://buy.hunnys.io/polygon/asset/0x11bc733e719198e2b3746f6841d2818ca87af6da:72
-Level 4,Skin,Gloopy Mr. Moar,https://buy.hunnys.io/polygon/asset/0x11bc733e719198e2b3746f6841d2818ca87af6da:72
-Level 5,Hat,Hupe Scouts Headband,https://buy.hunnys.io/polygon/asset/0x11bc733e719198e2b3746f6841d2818ca87af6da:73
-Level 5,Background,Hupe Scouts Background,https://buy.hunnys.io/polygon/asset/0x11bc733e719198e2b3746f6841d2818ca87af6da:73
-Level 5,Frame,Hupe Scouts Badge,https://buy.hunnys.io/polygon/asset/0x11bc733e719198e2b3746f6841d2818ca87af6da:73
-Level 6,Hand,Delicious Dreamwater,https://buy.hunnys.io/polygon/asset/0x11bc733e719198e2b3746f6841d2818ca87af6da:74
-Level 6,Dye,Dreamsicle Dye,https://buy.hunnys.io/polygon/asset/0x11bc733e719198e2b3746f6841d2818ca87af6da:74
-Level 7,Outfit,Honest Work Overalls,https://buy.hunnys.io/polygon/asset/0x11bc733e719198e2b3746f6841d2818ca87af6da:75
-Level 7,Hand,Tater Tot Tiller,https://buy.hunnys.io/polygon/asset/0x11bc733e719198e2b3746f6841d2818ca87af6da:75
-Level 8,Background,Best Buns Camp Out,https://buy.hunnys.io/polygon/asset/0x11bc733e719198e2b3746f6841d2818ca87af6da:76
-Level 8,Mouth,Curious Carrot Munch,https://buy.hunnys.io/polygon/asset/0x11bc733e719198e2b3746f6841d2818ca87af6da:76
-Level 9,Accessory,Snoozle,https://buy.hunnys.io/polygon/asset/0x11bc733e719198e2b3746f6841d2818ca87af6da:77
-Level 9,Outfit,Silky Dreams PJs,https://buy.hunnys.io/polygon/asset/0x11bc733e719198e2b3746f6841d2818ca87af6da:77
-Level 10,Outfit,Swampstress,https://buy.hunnys.io/polygon/asset/0x11bc733e719198e2b3746f6841d2818ca87af6da:78
-Level 10,Hat,Baby Hornsworth,https://buy.hunnys.io/polygon/asset/0x11bc733e719198e2b3746f6841d2818ca87af6da:78
+Bunny Baller Babe,Outfit,Baller Babe,https://buy.hunnys.io/polygon/asset/0x11bc733e719198e2b3746f6841d2818ca87af6da:79
+Bunny Baller Babe,Hat,Baller Bunny Band,https://buy.hunnys.io/polygon/asset/0x11bc733e719198e2b3746f6841d2818ca87af6da:79
+Bunny Baller Babe,Accessory,Ref Mc Blindy,https://buy.hunnys.io/polygon/asset/0x11bc733e719198e2b3746f6841d2818ca87af6da:79
+Bunny Baller Babe,Hand,Slam Dunk,https://buy.hunnys.io/polygon/asset/0x11bc733e719198e2b3746f6841d2818ca87af6da:79
+Halftone Dye Pack 1,Dye,Blue Screen Print,https://buy.hunnys.io/polygon/asset/0x11bc733e719198e2b3746f6841d2818ca87af6da:80
+Halftone Dye Pack 1,Dye,Blueberry Halftone,https://buy.hunnys.io/polygon/asset/0x11bc733e719198e2b3746f6841d2818ca87af6da:80
+Halftone Dye Pack 1,Dye,Burnt Orange Halftone,https://buy.hunnys.io/polygon/asset/0x11bc733e719198e2b3746f6841d2818ca87af6da:80
+Halftone Dye Pack 1,Dye,Envy Green Halftone,https://buy.hunnys.io/polygon/asset/0x11bc733e719198e2b3746f6841d2818ca87af6da:80
+Halftone Dye Pack 1,Dye,Flamingo Halftone,https://buy.hunnys.io/polygon/asset/0x11bc733e719198e2b3746f6841d2818ca87af6da:80
+Halftone Dye Pack 1,Dye,Green Screen Print,https://buy.hunnys.io/polygon/asset/0x11bc733e719198e2b3746f6841d2818ca87af6da:80
+Halftone Dye Pack 1,Dye,Mustard Halftone,https://buy.hunnys.io/polygon/asset/0x11bc733e719198e2b3746f6841d2818ca87af6da:80
+Halftone Dye Pack 1,Dye,Ocean Spray Halftone,https://buy.hunnys.io/polygon/asset/0x11bc733e719198e2b3746f6841d2818ca87af6da:80
+Halftone Dye Pack 1,Dye,Orange Screen Print,https://buy.hunnys.io/polygon/asset/0x11bc733e719198e2b3746f6841d2818ca87af6da:80
+Halftone Dye Pack 1,Dye,Pink Screen Print,https://buy.hunnys.io/polygon/asset/0x11bc733e719198e2b3746f6841d2818ca87af6da:80
+Halftone Dye Pack 1,Dye,Yellow Screen Print,https://buy.hunnys.io/polygon/asset/0x11bc733e719198e2b3746f6841d2818ca87af6da:80
+Halftone Dye Pack 1,Accessory,Soon Shades,https://buy.hunnys.io/polygon/asset/0x11bc733e719198e2b3746f6841d2818ca87af6da:80
+#1 Fan,Hand,#1 Fan Trophy,https://buy.hunnys.io/polygon/asset/0x11bc733e719198e2b3746f6841d2818ca87af6da:81
+Bunny Duke,Outfit,Dukes Court Dress,https://buy.hunnys.io/polygon/asset/0x11bc733e719198e2b3746f6841d2818ca87af6da:82
+Bunny Emperor,Hat,Bunny Emperor Laurels,https://buy.hunnys.io/polygon/asset/0x11bc733e719198e2b3746f6841d2818ca87af6da:83
+Bunny Emperor,Outfit,Bunny Emperor Toga,https://buy.hunnys.io/polygon/asset/0x11bc733e719198e2b3746f6841d2818ca87af6da:83
+Bunny Knight,Hand,Sword Hand,https://buy.hunnys.io/polygon/asset/0x11bc733e719198e2b3746f6841d2818ca87af6da:84
+Bunny U Cheer Squad,Hand,Pom Poms,https://buy.hunnys.io/polygon/asset/0x11bc733e719198e2b3746f6841d2818ca87af6da:85
+Crypto Cutie,Hand,Shopping Bags,https://buy.hunnys.io/polygon/asset/0x11bc733e719198e2b3746f6841d2818ca87af6da:86
+Dorothys Drag,Frame,Smoke Frame,https://buy.hunnys.io/polygon/asset/0x11bc733e719198e2b3746f6841d2818ca87af6da:87
+Ghostfren,Hat,Ghosty Crown,https://buy.hunnys.io/polygon/asset/0x11bc733e719198e2b3746f6841d2818ca87af6da:88
+Intergalactic Bunny,Hat,Intergalactic Bunny Space Helmet,https://buy.hunnys.io/polygon/asset/0x11bc733e719198e2b3746f6841d2818ca87af6da:89
+Intergalactic Bunny,Outfit,Intergalactic Bunny Space Suit,https://buy.hunnys.io/polygon/asset/0x11bc733e719198e2b3746f6841d2818ca87af6da:89
+Mad Hatter,Outfit,Mad Hatters Coat,https://buy.hunnys.io/polygon/asset/0x11bc733e719198e2b3746f6841d2818ca87af6da:90
+Mad Hatter,Hat,Mad Hatters Hat,https://buy.hunnys.io/polygon/asset/0x11bc733e719198e2b3746f6841d2818ca87af6da:90
+Mika-tude,Mouth,Resting Bun Face,https://buy.hunnys.io/polygon/asset/0x11bc733e719198e2b3746f6841d2818ca87af6da:91
+Royal Bunny,Hat,Royal Bunny Crown,https://buy.hunnys.io/polygon/asset/0x11bc733e719198e2b3746f6841d2818ca87af6da:92
+Sailor Scout,Hand,Moon Guardian Scepter,https://buy.hunnys.io/polygon/asset/0x11bc733e719198e2b3746f6841d2818ca87af6da:93
+Super Sparkler,Hat,Sparkle Bunny Ears,https://buy.hunnys.io/polygon/asset/0x11bc733e719198e2b3746f6841d2818ca87af6da:94
+Vampire Slayer,Hand,Mr Pointy,https://buy.hunnys.io/polygon/asset/0x11bc733e719198e2b3746f6841d2818ca87af6da:95
+World Domination Bunny,Hand,Excellent,https://buy.hunnys.io/polygon/asset/0x11bc733e719198e2b3746f6841d2818ca87af6da:96
+World Domination Bunny,Accessory,Fancy Mustache,https://buy.hunnys.io/polygon/asset/0x11bc733e719198e2b3746f6841d2818ca87af6da:96
+World Domination Bunny,Accessory,Monocle,https://buy.hunnys.io/polygon/asset/0x11bc733e719198e2b3746f6841d2818ca87af6da:96

@@ -1,165 +1,274 @@
 [
     {
-        "tokenId": 68,
-        "name": "Level 0",
-        "attributes": [
-            {
-                "trait_type": "Accessory",
-                "value": "ButterPuff"
-            }
-        ],
-        "metaPath": ""
-    },
-    {
-        "tokenId": 69,
-        "name": "Level 1",
-        "attributes": [
-            {
-                "trait_type": "Accessory",
-                "value": "BunVenture Backpack"
-            },
-            {
-                "trait_type": "Hat",
-                "value": "BunComms Device"
-            }
-        ],
-        "metaPath": ""
-    },
-    {
-        "tokenId": 78,
-        "name": "Level 10",
-        "attributes": [
-            {
-                "trait_type": "Outfit",
-                "value": "Swampstress"
-            },
-            {
-                "trait_type": "Hat",
-                "value": "Baby Hornsworth"
-            }
-        ],
-        "metaPath": ""
-    },
-    {
-        "tokenId": 70,
-        "name": "Level 2",
-        "attributes": [
-            {
-                "trait_type": "Frame",
-                "value": "Bunny Babe Basket"
-            },
-            {
-                "trait_type": "Dye",
-                "value": "Picnic Day Dye"
-            }
-        ],
-        "metaPath": ""
-    },
-    {
-        "tokenId": 71,
-        "name": "Level 3",
-        "attributes": [
-            {
-                "trait_type": "Accessory",
-                "value": "Secret Agent S"
-            },
-            {
-                "trait_type": "Accessory",
-                "value": "Secret Agent Shades"
-            }
-        ],
-        "metaPath": ""
-    },
-    {
-        "tokenId": 72,
-        "name": "Level 4",
-        "attributes": [
-            {
-                "trait_type": "Accessory",
-                "value": "Silly Mr. Moar"
-            },
-            {
-                "trait_type": "Skin",
-                "value": "Gloopy Mr. Moar"
-            }
-        ],
-        "metaPath": ""
-    },
-    {
-        "tokenId": 73,
-        "name": "Level 5",
-        "attributes": [
-            {
-                "trait_type": "Hat",
-                "value": "Hupe Scouts Headband"
-            },
-            {
-                "trait_type": "Background",
-                "value": "Hupe Scouts Background"
-            },
-            {
-                "trait_type": "Frame",
-                "value": "Hupe Scouts Badge"
-            }
-        ],
-        "metaPath": ""
-    },
-    {
-        "tokenId": 74,
-        "name": "Level 6",
+        "tokenId": 81,
+        "name": "#1 Fan",
         "attributes": [
             {
                 "trait_type": "Hand",
-                "value": "Delicious Dreamwater"
-            },
-            {
-                "trait_type": "Dye",
-                "value": "Dreamsicle Dye"
+                "value": "#1 Fan Trophy"
             }
         ],
         "metaPath": ""
     },
     {
-        "tokenId": 75,
-        "name": "Level 7",
+        "tokenId": 79,
+        "name": "Bunny Baller Babe",
         "attributes": [
             {
                 "trait_type": "Outfit",
-                "value": "Honest Work Overalls"
+                "value": "Baller Babe"
+            },
+            {
+                "trait_type": "Hat",
+                "value": "Baller Bunny Band"
+            },
+            {
+                "trait_type": "Accessory",
+                "value": "Ref Mc Blindy"
             },
             {
                 "trait_type": "Hand",
-                "value": "Tater Tot Tiller"
+                "value": "Slam Dunk"
             }
         ],
         "metaPath": ""
     },
     {
-        "tokenId": 76,
-        "name": "Level 8",
+        "tokenId": 82,
+        "name": "Bunny Duke",
         "attributes": [
             {
-                "trait_type": "Background",
-                "value": "Best Buns Camp Out"
+                "trait_type": "Outfit",
+                "value": "Dukes Court Dress"
+            }
+        ],
+        "metaPath": ""
+    },
+    {
+        "tokenId": 83,
+        "name": "Bunny Emperor",
+        "attributes": [
+            {
+                "trait_type": "Hat",
+                "value": "Bunny Emperor Laurels"
             },
+            {
+                "trait_type": "Outfit",
+                "value": "Bunny Emperor Toga"
+            }
+        ],
+        "metaPath": ""
+    },
+    {
+        "tokenId": 84,
+        "name": "Bunny Knight",
+        "attributes": [
+            {
+                "trait_type": "Hand",
+                "value": "Sword Hand"
+            }
+        ],
+        "metaPath": ""
+    },
+    {
+        "tokenId": 85,
+        "name": "Bunny U Cheer Squad",
+        "attributes": [
+            {
+                "trait_type": "Hand",
+                "value": "Pom Poms"
+            }
+        ],
+        "metaPath": ""
+    },
+    {
+        "tokenId": 86,
+        "name": "Crypto Cutie",
+        "attributes": [
+            {
+                "trait_type": "Hand",
+                "value": "Shopping Bags"
+            }
+        ],
+        "metaPath": ""
+    },
+    {
+        "tokenId": 87,
+        "name": "Dorothys Drag",
+        "attributes": [
+            {
+                "trait_type": "Frame",
+                "value": "Smoke Frame"
+            }
+        ],
+        "metaPath": ""
+    },
+    {
+        "tokenId": 88,
+        "name": "Ghostfren",
+        "attributes": [
+            {
+                "trait_type": "Hat",
+                "value": "Ghosty Crown"
+            }
+        ],
+        "metaPath": ""
+    },
+    {
+        "tokenId": 80,
+        "name": "Halftone Dye Pack 1",
+        "attributes": [
+            {
+                "trait_type": "Dye",
+                "value": "Blue Screen Print"
+            },
+            {
+                "trait_type": "Dye",
+                "value": "Blueberry Halftone"
+            },
+            {
+                "trait_type": "Dye",
+                "value": "Burnt Orange Halftone"
+            },
+            {
+                "trait_type": "Dye",
+                "value": "Envy Green Halftone"
+            },
+            {
+                "trait_type": "Dye",
+                "value": "Flamingo Halftone"
+            },
+            {
+                "trait_type": "Dye",
+                "value": "Green Screen Print"
+            },
+            {
+                "trait_type": "Dye",
+                "value": "Mustard Halftone"
+            },
+            {
+                "trait_type": "Dye",
+                "value": "Ocean Spray Halftone"
+            },
+            {
+                "trait_type": "Dye",
+                "value": "Orange Screen Print"
+            },
+            {
+                "trait_type": "Dye",
+                "value": "Pink Screen Print"
+            },
+            {
+                "trait_type": "Dye",
+                "value": "Yellow Screen Print"
+            },
+            {
+                "trait_type": "Accessory",
+                "value": "Soon Shades"
+            }
+        ],
+        "metaPath": ""
+    },
+    {
+        "tokenId": 89,
+        "name": "Intergalactic Bunny",
+        "attributes": [
+            {
+                "trait_type": "Hat",
+                "value": "Intergalactic Bunny Space Helmet"
+            },
+            {
+                "trait_type": "Outfit",
+                "value": "Intergalactic Bunny Space Suit"
+            }
+        ],
+        "metaPath": ""
+    },
+    {
+        "tokenId": 90,
+        "name": "Mad Hatter",
+        "attributes": [
+            {
+                "trait_type": "Outfit",
+                "value": "Mad Hatters Coat"
+            },
+            {
+                "trait_type": "Hat",
+                "value": "Mad Hatters Hat"
+            }
+        ],
+        "metaPath": ""
+    },
+    {
+        "tokenId": 91,
+        "name": "Mika-tude",
+        "attributes": [
             {
                 "trait_type": "Mouth",
-                "value": "Curious Carrot Munch"
+                "value": "Resting Bun Face"
             }
         ],
         "metaPath": ""
     },
     {
-        "tokenId": 77,
-        "name": "Level 9",
+        "tokenId": 92,
+        "name": "Royal Bunny",
         "attributes": [
             {
-                "trait_type": "Accessory",
-                "value": "Snoozle"
+                "trait_type": "Hat",
+                "value": "Royal Bunny Crown"
+            }
+        ],
+        "metaPath": ""
+    },
+    {
+        "tokenId": 93,
+        "name": "Sailor Scout",
+        "attributes": [
+            {
+                "trait_type": "Hand",
+                "value": "Moon Guardian Scepter"
+            }
+        ],
+        "metaPath": ""
+    },
+    {
+        "tokenId": 94,
+        "name": "Super Sparkler",
+        "attributes": [
+            {
+                "trait_type": "Hat",
+                "value": "Sparkle Bunny Ears"
+            }
+        ],
+        "metaPath": ""
+    },
+    {
+        "tokenId": 95,
+        "name": "Vampire Slayer",
+        "attributes": [
+            {
+                "trait_type": "Hand",
+                "value": "Mr Pointy"
+            }
+        ],
+        "metaPath": ""
+    },
+    {
+        "tokenId": 96,
+        "name": "World Domination Bunny",
+        "attributes": [
+            {
+                "trait_type": "Hand",
+                "value": "Excellent"
             },
             {
-                "trait_type": "Outfit",
-                "value": "Silky Dreams PJs"
+                "trait_type": "Accessory",
+                "value": "Fancy Mustache"
+            },
+            {
+                "trait_type": "Accessory",
+                "value": "Monocle"
             }
         ],
         "metaPath": ""
