@@ -1,22 +1,16 @@
 import awsCli from 'aws-cli-js';
-
+aws.config.update({
+    accessKeyId: process.env.AWS_ACCESS_KEY_ID,
+    secretAccessKey: process.env.AWS_SECRET_ACCESS_KEY
+});
 const from = "data/";
 const to = "s3://hunnyscloset/dollys/";
 const fileType = '.png';
-const cred = {
-    "Credentials": {
-        "AccessKeyId": "AKIAWFXRVD22QQIVJ4GO",
-        "SecretAccessKey": "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"
-    }
-}
 
 const Options = awsCli.Options;
 const Aws = awsCli.Aws;
 
-const options = new Options(
-    /* accessKey    */ cred.Credentials.AccessKeyId,
-    /* secretKey    */ cred.Credentials.SecretAccessKey
-);
+const options = new Options();
 
 const aws = new Aws(options);
 
