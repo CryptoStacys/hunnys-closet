@@ -5,18 +5,16 @@ const to = "s3://hunnyscloset/dollys/";
 const fileType = '.png';
 const cred = {
     "Credentials": {
-        "AccessKeyId": "AKIAWFXRVD22QQIVJ4GO",
-        "SecretAccessKey": "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"
+        "AccessKeyId": "AKIAWFXRVD227KHSL6OU",
+        "SecretAccessKey": "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"
     }
 }
 
 const Options = awsCli.Options;
 const Aws = awsCli.Aws;
 
-const options = new Options(
-    /* accessKey    */ cred.Credentials.AccessKeyId,
-    /* secretKey    */ cred.Credentials.SecretAccessKey
-);
+const options = new Options();
+
 
 const aws = new Aws(options);
 
