@@ -47365,3 +47365,1553 @@ Processing file: #1 Fan Trophy_S.png in subfolder: Hand
 Checking existence of PNG: compositeImages\Hand\#1 Fan Trophy.png
 Checking existence of JPG: 300x300_jpg\Hand\#1 Fan Trophy.jpg
 Skipping existing files: PNG - compositeImages\Hand\#1 Fan Trophy.png, JPG - 300x300_jpg\Hand\#1 Fan Trophy.jpg
+Script started
+Subfolders found: Accessory, Background, Bodysuit, Colors, Eyebrows, Eyes, Face Sticker, Frame, Hair Style, Hand, Hat, Mouth, Outfit, Piercing, Skin, Tattoo, Undergarment
+Files found: 81
+Solid colors RGB values saved to colors.json
+Resizing image: scriptImages\Accessory\MetaVixen Bling_C1.png to 800x800
+Resizing image: scriptImages\Accessory\MetaVixen Bling_C1.png to 600x600
+Solid colors RGB values saved to colors.json
+Processing image group: MetaVixen Bling
+Processing file: MetaVixen Bling_C1.png in subfolder: Accessory
+Resized image saved: 600x600_png\Accessory\MetaVixen Bling_C1.png
+Resizing image: scriptImages\Accessory\MetaVixen Bling_L.png to 600x600
+Resized image saved: 800x800_png\Accessory\MetaVixen Bling_C1.png
+Resizing image: scriptImages\Accessory\MetaVixen Bling_L.png to 800x800
+Processing file: MetaVixen Bling_L.png in subfolder: Accessory
+Checking existence of PNG: compositeImages\Accessory\MetaVixen Bling.png
+Checking existence of JPG: 300x300_jpg\Accessory\MetaVixen Bling.jpg
+Files not found, processing: PNG - compositeImages\Accessory\MetaVixen Bling.png, JPG - 300x300_jpg\Accessory\MetaVixen Bling.jpg
+Resized image saved: 600x600_png\Accessory\MetaVixen Bling_L.png
+Resizing image: scriptImages\Accessory\MetaVixen Bone Dangle_C1.png to 600x600
+Resized image saved: 800x800_png\Accessory\MetaVixen Bling_L.png
+Resizing image: scriptImages\Accessory\MetaVixen Bone Dangle_C1.png to 800x800
+Saved: compositeImages\Accessory\MetaVixen Bling.png
+Saved: 300x300_jpg\Accessory\MetaVixen Bling.jpg
+Processing image group: MetaVixen Bone Dangle
+Resized image saved: 600x600_png\Accessory\MetaVixen Bone Dangle_C1.png
+Resizing image: scriptImages\Accessory\MetaVixen Bone Dangle_L.png to 600x600
+Processing file: MetaVixen Bone Dangle_C1.png in subfolder: Accessory
+Resized image saved: 800x800_png\Accessory\MetaVixen Bone Dangle_C1.png
+Resizing image: scriptImages\Accessory\MetaVixen Bone Dangle_L.png to 800x800
+Processing file: MetaVixen Bone Dangle_L.png in subfolder: Accessory
+Checking existence of PNG: compositeImages\Accessory\MetaVixen Bone Dangle.png
+Checking existence of JPG: 300x300_jpg\Accessory\MetaVixen Bone Dangle.jpg
+Files not found, processing: PNG - compositeImages\Accessory\MetaVixen Bone Dangle.png, JPG - 300x300_jpg\Accessory\MetaVixen Bone Dangle.jpg
+Saved: compositeImages\Accessory\MetaVixen Bone Dangle.png
+Resized image saved: 600x600_png\Accessory\MetaVixen Bone Dangle_L.png
+Resizing image: scriptImages\Accessory\MetaVixen Necklettuce_C1.png to 600x600
+Resized image saved: 800x800_png\Accessory\MetaVixen Bone Dangle_L.png
+Resizing image: scriptImages\Accessory\MetaVixen Necklettuce_C1.png to 800x800
+Saved: 300x300_jpg\Accessory\MetaVixen Bone Dangle.jpg
+Processing image group: MetaVixen Necklettuce
+Processing file: MetaVixen Necklettuce_C1.png in subfolder: Accessory
+Resized image saved: 800x800_png\Accessory\MetaVixen Necklettuce_C1.png
+Resizing image: scriptImages\Accessory\MetaVixen Necklettuce_C2.png to 800x800
+Resized image saved: 600x600_png\Accessory\MetaVixen Necklettuce_C1.png
+Resizing image: scriptImages\Accessory\MetaVixen Necklettuce_C2.png to 600x600
+Processing file: MetaVixen Necklettuce_C2.png in subfolder: Accessory
+Resized image saved: 800x800_png\Accessory\MetaVixen Necklettuce_C2.png
+Resizing image: scriptImages\Accessory\MetaVixen Necklettuce_L.png to 800x800
+Resized image saved: 600x600_png\Accessory\MetaVixen Necklettuce_C2.png
+Resizing image: scriptImages\Accessory\MetaVixen Necklettuce_L.png to 600x600
+Processing file: MetaVixen Necklettuce_L.png in subfolder: Accessory
+Checking existence of PNG: compositeImages\Accessory\MetaVixen Necklettuce.png
+Checking existence of JPG: 300x300_jpg\Accessory\MetaVixen Necklettuce.jpg
+Files not found, processing: PNG - compositeImages\Accessory\MetaVixen Necklettuce.png, JPG - 300x300_jpg\Accessory\MetaVixen Necklettuce.jpg
+Saved: compositeImages\Accessory\MetaVixen Necklettuce.png
+Resized image saved: 800x800_png\Accessory\MetaVixen Necklettuce_L.png
+Resizing image: scriptImages\Background\MetaVixen Crystal_L.png to 800x800
+Saved: 300x300_jpg\Accessory\MetaVixen Necklettuce.jpg
+Processing image group: MetaVixen Crystal
+Resized image saved: 600x600_png\Accessory\MetaVixen Necklettuce_L.png
+Resizing image: scriptImages\Background\MetaVixen Crystal_L.png to 600x600
+Processing file: MetaVixen Crystal_L.png in subfolder: Background
+Checking existence of PNG: compositeImages\Background\MetaVixen Crystal.png
+Checking existence of JPG: 300x300_jpg\Background\MetaVixen Crystal.jpg
+Files not found, processing: PNG - compositeImages\Background\MetaVixen Crystal.png, JPG - 300x300_jpg\Background\MetaVixen Crystal.jpg
+Saved: compositeImages\Background\MetaVixen Crystal.png
+Resized image saved: 600x600_png\Background\MetaVixen Crystal_L.png
+Resizing image: scriptImages\Background\MetaVixen Flower_L.png to 600x600
+Resized image saved: 800x800_png\Background\MetaVixen Crystal_L.png
+Resizing image: scriptImages\Background\MetaVixen Flower_L.png to 800x800
+Saved: 300x300_jpg\Background\MetaVixen Crystal.jpg
+Processing image group: MetaVixen Flower
+Processing file: MetaVixen Flower_L.png in subfolder: Background
+Checking existence of PNG: compositeImages\Background\MetaVixen Flower.png
+Checking existence of JPG: 300x300_jpg\Background\MetaVixen Flower.jpg
+Files not found, processing: PNG - compositeImages\Background\MetaVixen Flower.png, JPG - 300x300_jpg\Background\MetaVixen Flower.jpg
+Resized image saved: 600x600_png\Background\MetaVixen Flower_L.png
+Resizing image: scriptImages\Background\MetaVixen Roses_L.png to 600x600
+Saved: compositeImages\Background\MetaVixen Flower.png
+Resized image saved: 800x800_png\Background\MetaVixen Flower_L.png
+Resizing image: scriptImages\Background\MetaVixen Roses_L.png to 800x800
+Saved: 300x300_jpg\Background\MetaVixen Flower.jpg
+Processing image group: MetaVixen Roses
+Processing file: MetaVixen Roses_L.png in subfolder: Background
+Checking existence of PNG: compositeImages\Background\MetaVixen Roses.png
+Checking existence of JPG: 300x300_jpg\Background\MetaVixen Roses.jpg
+Files not found, processing: PNG - compositeImages\Background\MetaVixen Roses.png, JPG - 300x300_jpg\Background\MetaVixen Roses.jpg
+Resized image saved: 600x600_png\Background\MetaVixen Roses_L.png
+Resizing image: scriptImages\Background\MetaVixen Seaside_L.png to 600x600
+Saved: compositeImages\Background\MetaVixen Roses.png
+Resized image saved: 800x800_png\Background\MetaVixen Roses_L.png
+Resizing image: scriptImages\Background\MetaVixen Seaside_L.png to 800x800
+Saved: 300x300_jpg\Background\MetaVixen Roses.jpg
+Processing image group: MetaVixen Seaside
+Processing file: MetaVixen Seaside_L.png in subfolder: Background
+Checking existence of PNG: compositeImages\Background\MetaVixen Seaside.png
+Checking existence of JPG: 300x300_jpg\Background\MetaVixen Seaside.jpg
+Files not found, processing: PNG - compositeImages\Background\MetaVixen Seaside.png, JPG - 300x300_jpg\Background\MetaVixen Seaside.jpg
+Resized image saved: 600x600_png\Background\MetaVixen Seaside_L.png
+Resizing image: scriptImages\Background\MetaVixen Storm_L.png to 600x600
+Resized image saved: 800x800_png\Background\MetaVixen Seaside_L.png
+Resizing image: scriptImages\Background\MetaVixen Storm_L.png to 800x800
+Saved: compositeImages\Background\MetaVixen Seaside.png
+Saved: 300x300_jpg\Background\MetaVixen Seaside.jpg
+Processing image group: MetaVixen Storm
+Processing file: MetaVixen Storm_L.png in subfolder: Background
+Checking existence of PNG: compositeImages\Background\MetaVixen Storm.png
+Checking existence of JPG: 300x300_jpg\Background\MetaVixen Storm.jpg
+Files not found, processing: PNG - compositeImages\Background\MetaVixen Storm.png, JPG - 300x300_jpg\Background\MetaVixen Storm.jpg
+Resized image saved: 600x600_png\Background\MetaVixen Storm_L.png
+Resizing image: scriptImages\Background\MetaVixen Swoosh_C1.png to 600x600
+Saved: compositeImages\Background\MetaVixen Storm.png
+Resized image saved: 800x800_png\Background\MetaVixen Storm_L.png
+Resizing image: scriptImages\Background\MetaVixen Swoosh_C1.png to 800x800
+Saved: 300x300_jpg\Background\MetaVixen Storm.jpg
+Processing image group: MetaVixen Swoosh
+Resized image saved: 800x800_png\Background\MetaVixen Swoosh_C1.png
+Resizing image: scriptImages\Background\MetaVixen Swoosh_C2.png to 800x800
+Resized image saved: 600x600_png\Background\MetaVixen Swoosh_C1.png
+Resizing image: scriptImages\Background\MetaVixen Swoosh_C2.png to 600x600
+Processing file: MetaVixen Swoosh_C1.png in subfolder: Background
+Processing file: MetaVixen Swoosh_C2.png in subfolder: Background
+Resized image saved: 800x800_png\Background\MetaVixen Swoosh_C2.png
+Resizing image: scriptImages\Background\MetaVixen Swoosh_L.png to 800x800
+Resized image saved: 600x600_png\Background\MetaVixen Swoosh_C2.png
+Resizing image: scriptImages\Background\MetaVixen Swoosh_L.png to 600x600
+Processing file: MetaVixen Swoosh_L.png in subfolder: Background
+Checking existence of PNG: compositeImages\Background\MetaVixen Swoosh.png
+Checking existence of JPG: 300x300_jpg\Background\MetaVixen Swoosh.jpg
+Files not found, processing: PNG - compositeImages\Background\MetaVixen Swoosh.png, JPG - 300x300_jpg\Background\MetaVixen Swoosh.jpg
+Saved: compositeImages\Background\MetaVixen Swoosh.png
+Resized image saved: 600x600_png\Background\MetaVixen Swoosh_L.png
+Resizing image: scriptImages\Eyebrows\MetaVixen High Brow_L.png to 600x600
+Resized image saved: 800x800_png\Background\MetaVixen Swoosh_L.png
+Resizing image: scriptImages\Eyebrows\MetaVixen High Brow_L.png to 800x800
+Saved: 300x300_jpg\Background\MetaVixen Swoosh.jpg
+Processing image group: MetaVixen High Brow
+Processing file: MetaVixen High Brow_L.png in subfolder: Eyebrows
+Checking existence of PNG: compositeImages\Eyebrows\MetaVixen High Brow.png
+Checking existence of JPG: 300x300_jpg\Eyebrows\MetaVixen High Brow.jpg
+Files not found, processing: PNG - compositeImages\Eyebrows\MetaVixen High Brow.png, JPG - 300x300_jpg\Eyebrows\MetaVixen High Brow.jpg
+Saved: compositeImages\Eyebrows\MetaVixen High Brow.png
+Resized image saved: 800x800_png\Eyebrows\MetaVixen High Brow_L.png
+Resizing image: scriptImages\Eyes\MetaVixen Eyes Left_C1.png to 800x800
+Resized image saved: 600x600_png\Eyebrows\MetaVixen High Brow_L.png
+Resizing image: scriptImages\Eyes\MetaVixen Eyes Left_C1.png to 600x600
+Saved: 300x300_jpg\Eyebrows\MetaVixen High Brow.jpg
+Processing image group: MetaVixen Eyes Left
+Processing file: MetaVixen Eyes Left_C1.png in subfolder: Eyes
+Resized image saved: 600x600_png\Eyes\MetaVixen Eyes Left_C1.png
+Resizing image: scriptImages\Eyes\MetaVixen Eyes Left_L.png to 600x600
+Resized image saved: 800x800_png\Eyes\MetaVixen Eyes Left_C1.png
+Resizing image: scriptImages\Eyes\MetaVixen Eyes Left_L.png to 800x800
+Resized image saved: 800x800_png\Eyes\MetaVixen Eyes Left_L.png
+Resizing image: scriptImages\Eyes\MetaVixen Eyes Right_C1.png to 800x800
+Resized image saved: 600x600_png\Eyes\MetaVixen Eyes Left_L.png
+Resizing image: scriptImages\Eyes\MetaVixen Eyes Right_C1.png to 600x600
+Processing file: MetaVixen Eyes Left_L.png in subfolder: Eyes
+Resized image saved: 600x600_png\Eyes\MetaVixen Eyes Right_C1.png
+Resizing image: scriptImages\Eyes\MetaVixen Eyes Right_L.png to 600x600
+Resized image saved: 800x800_png\Eyes\MetaVixen Eyes Right_C1.png
+Resizing image: scriptImages\Eyes\MetaVixen Eyes Right_L.png to 800x800
+Checking existence of PNG: compositeImages\Eyes\MetaVixen Eyes Left.png
+Checking existence of JPG: 300x300_jpg\Eyes\MetaVixen Eyes Left.jpg
+Files not found, processing: PNG - compositeImages\Eyes\MetaVixen Eyes Left.png, JPG - 300x300_jpg\Eyes\MetaVixen Eyes Left.jpg
+Processing image group: MetaVixen Eyes Right
+Resized image saved: 800x800_png\Eyes\MetaVixen Eyes Right_L.png
+Resizing image: scriptImages\Frame\MetaVixen Logo_C1.png to 800x800
+Resized image saved: 600x600_png\Eyes\MetaVixen Eyes Right_L.png
+Resizing image: scriptImages\Frame\MetaVixen Logo_C1.png to 600x600
+Processing file: MetaVixen Eyes Right_C1.png in subfolder: Eyes
+Resized image saved: 800x800_png\Frame\MetaVixen Logo_C1.png
+Resizing image: scriptImages\Frame\MetaVixen Logo_L.png to 800x800
+Resized image saved: 600x600_png\Frame\MetaVixen Logo_C1.png
+Resizing image: scriptImages\Frame\MetaVixen Logo_L.png to 600x600
+Resized image saved: 800x800_png\Frame\MetaVixen Logo_L.png
+Resizing image: scriptImages\Hair Style\MetaVixen Classic Constellation_Back_C1.png.png to 800x800
+Resized image saved: 600x600_png\Frame\MetaVixen Logo_L.png
+Resizing image: scriptImages\Hair Style\MetaVixen Classic Constellation_Back_C1.png.png to 600x600
+Processing file: MetaVixen Eyes Right_L.png in subfolder: Eyes
+Resized image saved: 600x600_png\Hair Style\MetaVixen Classic Constellation_Back_C1.png.png
+Resizing image: scriptImages\Hair Style\MetaVixen Classic Constellation_Back_C2.png to 600x600
+Resized image saved: 800x800_png\Hair Style\MetaVixen Classic Constellation_Back_C1.png.png
+Resizing image: scriptImages\Hair Style\MetaVixen Classic Constellation_Back_C2.png to 800x800
+Checking existence of PNG: compositeImages\Eyes\MetaVixen Eyes Right.png
+Checking existence of JPG: 300x300_jpg\Eyes\MetaVixen Eyes Right.jpg
+Files not found, processing: PNG - compositeImages\Eyes\MetaVixen Eyes Right.png, JPG - 300x300_jpg\Eyes\MetaVixen Eyes Right.jpg
+Processing image group: MetaVixen Logo
+Processing file: MetaVixen Logo_C1.png in subfolder: Frame
+Resized image saved: 600x600_png\Hair Style\MetaVixen Classic Constellation_Back_C2.png
+Resizing image: scriptImages\Hair Style\MetaVixen Classic Constellation_Back_L.png to 600x600
+Resized image saved: 800x800_png\Hair Style\MetaVixen Classic Constellation_Back_C2.png
+Resizing image: scriptImages\Hair Style\MetaVixen Classic Constellation_Back_L.png to 800x800
+Processing file: MetaVixen Logo_L.png in subfolder: Frame
+Checking existence of PNG: compositeImages\Frame\MetaVixen Logo.png
+Checking existence of JPG: 300x300_jpg\Frame\MetaVixen Logo.jpg
+Files not found, processing: PNG - compositeImages\Frame\MetaVixen Logo.png, JPG - 300x300_jpg\Frame\MetaVixen Logo.jpg
+Saved: compositeImages\Frame\MetaVixen Logo.png
+Saved: 300x300_jpg\Frame\MetaVixen Logo.jpg
+Processing image group: MetaVixen Classic Constellation_Back
+Resized image saved: 600x600_png\Hair Style\MetaVixen Classic Constellation_Back_L.png
+Resizing image: scriptImages\Hair Style\MetaVixen Classic Constellation_Front_C1.png to 600x600
+Resized image saved: 800x800_png\Hair Style\MetaVixen Classic Constellation_Back_L.png
+Resizing image: scriptImages\Hair Style\MetaVixen Classic Constellation_Front_C1.png to 800x800
+Processing file: MetaVixen Classic Constellation_Back_C1.png.png in subfolder: Hair Style
+Processing file: MetaVixen Classic Constellation_Back_C1.png.png in Hair Style
+Processing file: MetaVixen Classic Constellation_Back_C2.png in Hair Style
+Resized image saved: 800x800_png\Hair Style\MetaVixen Classic Constellation_Front_C1.png
+Resizing image: scriptImages\Hair Style\MetaVixen Classic Constellation_Front_C2.png to 800x800
+Resized image saved: 600x600_png\Hair Style\MetaVixen Classic Constellation_Front_C1.png
+Resizing image: scriptImages\Hair Style\MetaVixen Classic Constellation_Front_C2.png to 600x600
+Processing file: MetaVixen Classic Constellation_Back_L.png in Hair Style
+Processing file: MetaVixen Classic Constellation_Front_C1.png in Hair Style
+Resized image saved: 800x800_png\Hair Style\MetaVixen Classic Constellation_Front_C2.png
+Resizing image: scriptImages\Hair Style\MetaVixen Classic Constellation_Front_L.png.png to 800x800
+Processing file: MetaVixen Classic Constellation_Front_C2.png in Hair Style
+Resized image saved: 600x600_png\Hair Style\MetaVixen Classic Constellation_Front_C2.png
+Resizing image: scriptImages\Hair Style\MetaVixen Classic Constellation_Front_L.png.png to 600x600
+Processing file: MetaVixen Classic Constellation_Front_L.png.png in Hair Style
+Resized image saved: 800x800_png\Hair Style\MetaVixen Classic Constellation_Front_L.png.png
+Resizing image: scriptImages\Hair Style\MetaVixen Constellation_L.png to 800x800
+Resized image saved: 600x600_png\Hair Style\MetaVixen Classic Constellation_Front_L.png.png
+Resizing image: scriptImages\Hair Style\MetaVixen Constellation_L.png to 600x600
+Processing file: MetaVixen Constellation_L.png in Hair Style
+Resized image saved: 800x800_png\Hair Style\MetaVixen Constellation_L.png
+Resizing image: scriptImages\Hair Style\MetaVixen Cute Alien Buns Front_C2.png to 800x800
+Resized image saved: 600x600_png\Hair Style\MetaVixen Constellation_L.png
+Resizing image: scriptImages\Hair Style\MetaVixen Cute Alien Buns Front_C2.png to 600x600
+Processing file: MetaVixen Cute Alien Buns Front_C2.png in Hair Style
+Resized image saved: 600x600_png\Hair Style\MetaVixen Cute Alien Buns Front_C2.png
+Resizing image: scriptImages\Hair Style\MetaVixen Cute Alien Buns_Back_C1.png to 600x600
+Resized image saved: 800x800_png\Hair Style\MetaVixen Cute Alien Buns Front_C2.png
+Resizing image: scriptImages\Hair Style\MetaVixen Cute Alien Buns_Back_C1.png to 800x800
+Resized image saved: 600x600_png\Hair Style\MetaVixen Cute Alien Buns_Back_C1.png
+Resizing image: scriptImages\Hair Style\MetaVixen Cute Alien Buns_Back_C3.png to 600x600
+Processing file: MetaVixen Cute Alien Buns_Back_C1.png in Hair Style
+Resized image saved: 800x800_png\Hair Style\MetaVixen Cute Alien Buns_Back_C1.png
+Resizing image: scriptImages\Hair Style\MetaVixen Cute Alien Buns_Back_C3.png to 800x800
+Processing file: MetaVixen Cute Alien Buns_Back_C3.png in Hair Style
+Resized image saved: 600x600_png\Hair Style\MetaVixen Cute Alien Buns_Back_C3.png
+Resizing image: scriptImages\Hair Style\MetaVixen Cute Alien Buns_Back_L.png to 600x600
+Resized image saved: 800x800_png\Hair Style\MetaVixen Cute Alien Buns_Back_C3.png
+Resizing image: scriptImages\Hair Style\MetaVixen Cute Alien Buns_Back_L.png to 800x800
+Processing file: MetaVixen Cute Alien Buns_Back_L.png in Hair Style
+Processing file: MetaVixen Cute Alien Buns_Front_C2.png in Hair Style
+Resized image saved: 800x800_png\Hair Style\MetaVixen Cute Alien Buns_Back_L.png
+Resizing image: scriptImages\Hair Style\MetaVixen Cute Alien Buns_Front_C2.png to 800x800
+Resized image saved: 600x600_png\Hair Style\MetaVixen Cute Alien Buns_Back_L.png
+Resizing image: scriptImages\Hair Style\MetaVixen Cute Alien Buns_Front_C2.png to 600x600
+Processing file: MetaVixen Cute Alien Buns_Front_C3.png in Hair Style
+Processing file: MetaVixen Cute Alien Buns_Front_L.png in Hair Style
+Resized image saved: 800x800_png\Hair Style\MetaVixen Cute Alien Buns_Front_C2.png
+Resizing image: scriptImages\Hair Style\MetaVixen Cute Alien Buns_Front_C3.png to 800x800
+Resized image saved: 600x600_png\Hair Style\MetaVixen Cute Alien Buns_Front_C2.png
+Resizing image: scriptImages\Hair Style\MetaVixen Cute Alien Buns_Front_C3.png to 600x600
+Resized image saved: 800x800_png\Hair Style\MetaVixen Cute Alien Buns_Front_C3.png
+Resizing image: scriptImages\Hair Style\MetaVixen Cute Alien Buns_Front_L.png to 800x800
+Resized image saved: 600x600_png\Hair Style\MetaVixen Cute Alien Buns_Front_C3.png
+Resizing image: scriptImages\Hair Style\MetaVixen Cute Alien Buns_Front_L.png to 600x600
+Resized image saved: 800x800_png\Hair Style\MetaVixen Cute Alien Buns_Front_L.png
+Resizing image: scriptImages\Hand\MetaVixen Tasty Taco_C1.png to 800x800
+Resized image saved: 600x600_png\Hair Style\MetaVixen Cute Alien Buns_Front_L.png
+Resizing image: scriptImages\Hand\MetaVixen Tasty Taco_C1.png to 600x600
+Processing file: MetaVixen Classic Constellation_Back_C2.png in subfolder: Hair Style
+Processing file: MetaVixen Classic Constellation_Back_C1.png.png in Hair Style
+Processing file: MetaVixen Classic Constellation_Back_C2.png in Hair Style
+Resized image saved: 600x600_png\Hand\MetaVixen Tasty Taco_C1.png
+Resizing image: scriptImages\Hand\MetaVixen Tasty Taco_C2.png to 600x600
+Resized image saved: 800x800_png\Hand\MetaVixen Tasty Taco_C1.png
+Resizing image: scriptImages\Hand\MetaVixen Tasty Taco_C2.png to 800x800
+Processing file: MetaVixen Classic Constellation_Back_L.png in Hair Style
+Processing file: MetaVixen Classic Constellation_Front_C1.png in Hair Style
+Resized image saved: 600x600_png\Hand\MetaVixen Tasty Taco_C2.png
+Resizing image: scriptImages\Hand\MetaVixen Tasty Taco_C3.png to 600x600
+Resized image saved: 800x800_png\Hand\MetaVixen Tasty Taco_C2.png
+Resizing image: scriptImages\Hand\MetaVixen Tasty Taco_C3.png to 800x800
+Processing file: MetaVixen Classic Constellation_Front_C2.png in Hair Style
+Processing file: MetaVixen Classic Constellation_Front_L.png.png in Hair Style
+Resized image saved: 600x600_png\Hand\MetaVixen Tasty Taco_C3.png
+Resizing image: scriptImages\Hand\MetaVixen Tasty Taco_C4.png to 600x600
+Resized image saved: 800x800_png\Hand\MetaVixen Tasty Taco_C3.png
+Resizing image: scriptImages\Hand\MetaVixen Tasty Taco_C4.png to 800x800
+Processing file: MetaVixen Constellation_L.png in Hair Style
+Resized image saved: 800x800_png\Hand\MetaVixen Tasty Taco_C4.png
+Resizing image: scriptImages\Hand\MetaVixen Tasty Taco_L.png to 800x800
+Resized image saved: 600x600_png\Hand\MetaVixen Tasty Taco_C4.png
+Resizing image: scriptImages\Hand\MetaVixen Tasty Taco_L.png to 600x600
+Resized image saved: 600x600_png\Hand\MetaVixen Tasty Taco_L.png
+Resizing image: scriptImages\Hand\MetaVixen Tasty Taco_S.png to 600x600
+Processing file: MetaVixen Cute Alien Buns Front_C2.png in Hair Style
+Resized image saved: 800x800_png\Hand\MetaVixen Tasty Taco_L.png
+Resizing image: scriptImages\Hand\MetaVixen Tasty Taco_S.png to 800x800
+Resized image saved: 600x600_png\Hand\MetaVixen Tasty Taco_S.png
+Resizing image: scriptImages\Hat\MetaVixen Baby Its Cold Outside_Back_C2.png to 600x600
+Resized image saved: 800x800_png\Hand\MetaVixen Tasty Taco_S.png
+Resizing image: scriptImages\Hat\MetaVixen Baby Its Cold Outside_Back_C2.png to 800x800
+Processing file: MetaVixen Cute Alien Buns_Back_C1.png in Hair Style
+Processing file: MetaVixen Cute Alien Buns_Back_C3.png in Hair Style
+Resized image saved: 800x800_png\Hat\MetaVixen Baby Its Cold Outside_Back_C2.png
+Resizing image: scriptImages\Hat\MetaVixen Baby Its Cold Outside_Back_C3.png to 800x800
+Resized image saved: 600x600_png\Hat\MetaVixen Baby Its Cold Outside_Back_C2.png
+Resizing image: scriptImages\Hat\MetaVixen Baby Its Cold Outside_Back_C3.png to 600x600
+Processing file: MetaVixen Cute Alien Buns_Back_L.png in Hair Style
+Processing file: MetaVixen Cute Alien Buns_Front_C2.png in Hair Style
+Resized image saved: 600x600_png\Hat\MetaVixen Baby Its Cold Outside_Back_C3.png
+Resizing image: scriptImages\Hat\MetaVixen Baby Its Cold Outside_Back_L.png to 600x600
+Resized image saved: 800x800_png\Hat\MetaVixen Baby Its Cold Outside_Back_C3.png
+Resizing image: scriptImages\Hat\MetaVixen Baby Its Cold Outside_Back_L.png to 800x800
+Processing file: MetaVixen Cute Alien Buns_Front_C3.png in Hair Style
+Processing file: MetaVixen Cute Alien Buns_Front_L.png in Hair Style
+Resized image saved: 600x600_png\Hat\MetaVixen Baby Its Cold Outside_Back_L.png
+Resizing image: scriptImages\Hat\MetaVixen Baby Its Cold Outside_Front_C1.png to 600x600
+Resized image saved: 800x800_png\Hat\MetaVixen Baby Its Cold Outside_Back_L.png
+Resizing image: scriptImages\Hat\MetaVixen Baby Its Cold Outside_Front_C1.png to 800x800
+Resized image saved: 600x600_png\Hat\MetaVixen Baby Its Cold Outside_Front_C1.png
+Resizing image: scriptImages\Hat\MetaVixen Baby Its Cold Outside_Front_C2.png to 600x600
+Resized image saved: 800x800_png\Hat\MetaVixen Baby Its Cold Outside_Front_C1.png
+Resizing image: scriptImages\Hat\MetaVixen Baby Its Cold Outside_Front_C2.png to 800x800
+Processing file: MetaVixen Classic Constellation_Back_L.png in subfolder: Hair Style
+Processing file: MetaVixen Classic Constellation_Back_C1.png.png in Hair Style
+Processing file: MetaVixen Classic Constellation_Back_C2.png in Hair Style
+Resized image saved: 600x600_png\Hat\MetaVixen Baby Its Cold Outside_Front_C2.png
+Resizing image: scriptImages\Hat\MetaVixen Baby Its Cold Outside_Front_C3.png to 600x600
+Resized image saved: 800x800_png\Hat\MetaVixen Baby Its Cold Outside_Front_C2.png
+Resizing image: scriptImages\Hat\MetaVixen Baby Its Cold Outside_Front_C3.png to 800x800
+Processing file: MetaVixen Classic Constellation_Back_L.png in Hair Style
+Processing file: MetaVixen Classic Constellation_Front_C1.png in Hair Style
+Resized image saved: 600x600_png\Hat\MetaVixen Baby Its Cold Outside_Front_C3.png
+Resizing image: scriptImages\Hat\MetaVixen Baby Its Cold Outside_Front_L.png to 600x600
+Resized image saved: 800x800_png\Hat\MetaVixen Baby Its Cold Outside_Front_C3.png
+Resizing image: scriptImages\Hat\MetaVixen Baby Its Cold Outside_Front_L.png to 800x800
+Processing file: MetaVixen Classic Constellation_Front_C2.png in Hair Style
+Processing file: MetaVixen Classic Constellation_Front_L.png.png in Hair Style
+Resized image saved: 600x600_png\Hat\MetaVixen Baby Its Cold Outside_Front_L.png
+Resizing image: scriptImages\Hat\MetaVixen Polycrown_C1.png to 600x600
+Resized image saved: 800x800_png\Hat\MetaVixen Baby Its Cold Outside_Front_L.png
+Resizing image: scriptImages\Hat\MetaVixen Polycrown_C1.png to 800x800
+Processing file: MetaVixen Constellation_L.png in Hair Style
+Resized image saved: 600x600_png\Hat\MetaVixen Polycrown_C1.png
+Resizing image: scriptImages\Hat\MetaVixen Polycrown_C2.png to 600x600
+Resized image saved: 800x800_png\Hat\MetaVixen Polycrown_C1.png
+Resizing image: scriptImages\Hat\MetaVixen Polycrown_C2.png to 800x800
+Resized image saved: 800x800_png\Hat\MetaVixen Polycrown_C2.png
+Resizing image: scriptImages\Hat\MetaVixen Polycrown_C3.png to 800x800
+Resized image saved: 600x600_png\Hat\MetaVixen Polycrown_C2.png
+Resizing image: scriptImages\Hat\MetaVixen Polycrown_C3.png to 600x600
+Processing file: MetaVixen Cute Alien Buns Front_C2.png in Hair Style
+Resized image saved: 600x600_png\Hat\MetaVixen Polycrown_C3.png
+Resizing image: scriptImages\Hat\MetaVixen Polycrown_C4.png to 600x600
+Resized image saved: 800x800_png\Hat\MetaVixen Polycrown_C3.png
+Resizing image: scriptImages\Hat\MetaVixen Polycrown_C4.png to 800x800
+Processing file: MetaVixen Cute Alien Buns_Back_C1.png in Hair Style
+Resized image saved: 800x800_png\Hat\MetaVixen Polycrown_C4.png
+Resizing image: scriptImages\Hat\MetaVixen Polycrown_L.png to 800x800
+Resized image saved: 600x600_png\Hat\MetaVixen Polycrown_C4.png
+Resizing image: scriptImages\Hat\MetaVixen Polycrown_L.png to 600x600
+Processing file: MetaVixen Cute Alien Buns_Back_C3.png in Hair Style
+Processing file: MetaVixen Cute Alien Buns_Back_L.png in Hair Style
+Resized image saved: 800x800_png\Hat\MetaVixen Polycrown_L.png
+Resizing image: scriptImages\Hat\MetaVixen Rose Crown_C1.png to 800x800
+Resized image saved: 600x600_png\Hat\MetaVixen Polycrown_L.png
+Resizing image: scriptImages\Hat\MetaVixen Rose Crown_C1.png to 600x600
+Processing file: MetaVixen Cute Alien Buns_Front_C2.png in Hair Style
+Processing file: MetaVixen Cute Alien Buns_Front_C3.png in Hair Style
+Resized image saved: 600x600_png\Hat\MetaVixen Rose Crown_C1.png
+Resizing image: scriptImages\Hat\MetaVixen Rose Crown_C2.png to 600x600
+Processing file: MetaVixen Cute Alien Buns_Front_L.png in Hair Style
+Resized image saved: 800x800_png\Hat\MetaVixen Rose Crown_C1.png
+Resizing image: scriptImages\Hat\MetaVixen Rose Crown_C2.png to 800x800
+Resized image saved: 600x600_png\Hat\MetaVixen Rose Crown_C2.png
+Resizing image: scriptImages\Hat\MetaVixen Rose Crown_L.png to 600x600
+Resized image saved: 800x800_png\Hat\MetaVixen Rose Crown_C2.png
+Resizing image: scriptImages\Hat\MetaVixen Rose Crown_L.png to 800x800
+Checking existence of PNG: compositeImages\Hair Style\MetaVixen Classic Constellation_Back.png
+Checking existence of JPG: 300x300_jpg\Hair Style\MetaVixen Classic Constellation_Back.jpg
+Files not found, processing: PNG - compositeImages\Hair Style\MetaVixen Classic Constellation_Back.png, JPG - 300x300_jpg\Hair Style\MetaVixen Classic Constellation_Back.jpg
+Processing image group: MetaVixen Classic Constellation_Front
+Resized image saved: 600x600_png\Hat\MetaVixen Rose Crown_L.png
+Resizing image: scriptImages\Hat\MetaVixen Skull Crown_C1.png to 600x600
+Resized image saved: 800x800_png\Hat\MetaVixen Rose Crown_L.png
+Resizing image: scriptImages\Hat\MetaVixen Skull Crown_C1.png to 800x800
+Processing file: MetaVixen Classic Constellation_Front_C1.png in subfolder: Hair Style
+Processing file: MetaVixen Classic Constellation_Back_C1.png.png in Hair Style
+Processing file: MetaVixen Classic Constellation_Back_C2.png in Hair Style
+Resized image saved: 800x800_png\Hat\MetaVixen Skull Crown_C1.png
+Resizing image: scriptImages\Hat\MetaVixen Skull Crown_L.png to 800x800
+Resized image saved: 600x600_png\Hat\MetaVixen Skull Crown_C1.png
+Resizing image: scriptImages\Hat\MetaVixen Skull Crown_L.png to 600x600
+Processing file: MetaVixen Classic Constellation_Back_L.png in Hair Style
+Processing file: MetaVixen Classic Constellation_Front_C1.png in Hair Style
+Resized image saved: 600x600_png\Hat\MetaVixen Skull Crown_L.png
+Resizing image: scriptImages\Hat\MetaVixen SnapBack Babe_C1.png to 600x600
+Resized image saved: 800x800_png\Hat\MetaVixen Skull Crown_L.png
+Resizing image: scriptImages\Hat\MetaVixen SnapBack Babe_C1.png to 800x800
+Processing file: MetaVixen Classic Constellation_Front_C2.png in Hair Style
+Resized image saved: 800x800_png\Hat\MetaVixen SnapBack Babe_C1.png
+Resizing image: scriptImages\Hat\MetaVixen SnapBack Babe_C2.png to 800x800
+Processing file: MetaVixen Classic Constellation_Front_L.png.png in Hair Style
+Resized image saved: 600x600_png\Hat\MetaVixen SnapBack Babe_C1.png
+Resizing image: scriptImages\Hat\MetaVixen SnapBack Babe_C2.png to 600x600
+Resized image saved: 800x800_png\Hat\MetaVixen SnapBack Babe_C2.png
+Resizing image: scriptImages\Hat\MetaVixen SnapBack Babe_L.png to 800x800
+Resized image saved: 600x600_png\Hat\MetaVixen SnapBack Babe_C2.png
+Resizing image: scriptImages\Hat\MetaVixen SnapBack Babe_L.png to 600x600
+Processing file: MetaVixen Constellation_L.png in Hair Style
+Resized image saved: 600x600_png\Hat\MetaVixen SnapBack Babe_L.png
+Resizing image: scriptImages\Mouth\MetaVixen Grin_C1.png to 600x600
+Resized image saved: 800x800_png\Hat\MetaVixen SnapBack Babe_L.png
+Resizing image: scriptImages\Mouth\MetaVixen Grin_C1.png to 800x800
+Resized image saved: 600x600_png\Mouth\MetaVixen Grin_C1.png
+Resizing image: scriptImages\Mouth\MetaVixen Grin_L.png to 600x600
+Processing file: MetaVixen Cute Alien Buns Front_C2.png in Hair Style
+Resized image saved: 800x800_png\Mouth\MetaVixen Grin_C1.png
+Resizing image: scriptImages\Mouth\MetaVixen Grin_L.png to 800x800
+Resized image saved: 600x600_png\Mouth\MetaVixen Grin_L.png
+Resizing image: scriptImages\Outfit\MetaVixen Bone Armor_C1.png to 600x600
+Resized image saved: 800x800_png\Mouth\MetaVixen Grin_L.png
+Resizing image: scriptImages\Outfit\MetaVixen Bone Armor_C1.png to 800x800
+Processing file: MetaVixen Cute Alien Buns_Back_C1.png in Hair Style
+Resized image saved: 600x600_png\Outfit\MetaVixen Bone Armor_C1.png
+Resizing image: scriptImages\Outfit\MetaVixen Bone Armor_C2.png to 600x600
+Processing file: MetaVixen Cute Alien Buns_Back_C3.png in Hair Style
+Resized image saved: 800x800_png\Outfit\MetaVixen Bone Armor_C1.png
+Resizing image: scriptImages\Outfit\MetaVixen Bone Armor_C2.png to 800x800
+Processing file: MetaVixen Cute Alien Buns_Back_L.png in Hair Style
+Resized image saved: 600x600_png\Outfit\MetaVixen Bone Armor_C2.png
+Resizing image: scriptImages\Outfit\MetaVixen Bone Armor_C3.png to 600x600
+Resized image saved: 800x800_png\Outfit\MetaVixen Bone Armor_C2.png
+Resizing image: scriptImages\Outfit\MetaVixen Bone Armor_C3.png to 800x800
+Processing file: MetaVixen Cute Alien Buns_Front_C2.png in Hair Style
+Processing file: MetaVixen Cute Alien Buns_Front_C3.png in Hair Style
+Resized image saved: 600x600_png\Outfit\MetaVixen Bone Armor_C3.png
+Resizing image: scriptImages\Outfit\MetaVixen Bone Armor_C4.png to 600x600
+Resized image saved: 800x800_png\Outfit\MetaVixen Bone Armor_C3.png
+Resizing image: scriptImages\Outfit\MetaVixen Bone Armor_C4.png to 800x800
+Processing file: MetaVixen Cute Alien Buns_Front_L.png in Hair Style
+Resized image saved: 800x800_png\Outfit\MetaVixen Bone Armor_C4.png
+Resizing image: scriptImages\Outfit\MetaVixen Bone Armor_C5.png to 800x800
+Resized image saved: 600x600_png\Outfit\MetaVixen Bone Armor_C4.png
+Resizing image: scriptImages\Outfit\MetaVixen Bone Armor_C5.png to 600x600
+Resized image saved: 600x600_png\Outfit\MetaVixen Bone Armor_C5.png
+Resizing image: scriptImages\Outfit\MetaVixen Bone Armor_L.png to 600x600
+Resized image saved: 800x800_png\Outfit\MetaVixen Bone Armor_C5.png
+Resizing image: scriptImages\Outfit\MetaVixen Bone Armor_L.png to 800x800
+Processing file: MetaVixen Classic Constellation_Front_C2.png in subfolder: Hair Style
+Processing file: MetaVixen Classic Constellation_Back_C1.png.png in Hair Style
+Processing file: MetaVixen Classic Constellation_Back_C2.png in Hair Style
+Resized image saved: 600x600_png\Outfit\MetaVixen Bone Armor_L.png
+Resizing image: scriptImages\Outfit\MetaVixen Heartless Top_C1.png to 600x600
+Resized image saved: 800x800_png\Outfit\MetaVixen Bone Armor_L.png
+Resizing image: scriptImages\Outfit\MetaVixen Heartless Top_C1.png to 800x800
+Processing file: MetaVixen Classic Constellation_Back_L.png in Hair Style
+Processing file: MetaVixen Classic Constellation_Front_C1.png in Hair Style
+Resized image saved: 800x800_png\Outfit\MetaVixen Heartless Top_C1.png
+Resizing image: scriptImages\Outfit\MetaVixen Heartless Top_C2.png to 800x800
+Resized image saved: 600x600_png\Outfit\MetaVixen Heartless Top_C1.png
+Resizing image: scriptImages\Outfit\MetaVixen Heartless Top_C2.png to 600x600
+Processing file: MetaVixen Classic Constellation_Front_C2.png in Hair Style
+Resized image saved: 600x600_png\Outfit\MetaVixen Heartless Top_C2.png
+Resizing image: scriptImages\Outfit\MetaVixen Heartless Top_L.png to 600x600
+Processing file: MetaVixen Classic Constellation_Front_L.png.png in Hair Style
+Resized image saved: 800x800_png\Outfit\MetaVixen Heartless Top_C2.png
+Resizing image: scriptImages\Outfit\MetaVixen Heartless Top_L.png to 800x800
+Resized image saved: 600x600_png\Outfit\MetaVixen Heartless Top_L.png
+Resizing image: scriptImages\Undergarment\MetaVixen Nacho Chips_C1.png to 600x600
+Resized image saved: 800x800_png\Outfit\MetaVixen Heartless Top_L.png
+Resizing image: scriptImages\Undergarment\MetaVixen Nacho Chips_C1.png to 800x800
+Processing file: MetaVixen Constellation_L.png in Hair Style
+Resized image saved: 600x600_png\Undergarment\MetaVixen Nacho Chips_C1.png
+Resizing image: scriptImages\Undergarment\MetaVixen Nacho Chips_L.png to 600x600
+Resized image saved: 800x800_png\Undergarment\MetaVixen Nacho Chips_C1.png
+Resizing image: scriptImages\Undergarment\MetaVixen Nacho Chips_L.png to 800x800
+Processing file: MetaVixen Cute Alien Buns Front_C2.png in Hair Style
+Resized image saved: 600x600_png\Undergarment\MetaVixen Nacho Chips_L.png
+Resizing image: scriptImages\Undergarment\MetaVixen Smell The Roses_C1.png to 600x600
+Resized image saved: 800x800_png\Undergarment\MetaVixen Nacho Chips_L.png
+Resizing image: scriptImages\Undergarment\MetaVixen Smell The Roses_C1.png to 800x800
+Resized image saved: 800x800_png\Undergarment\MetaVixen Smell The Roses_C1.png
+Resizing image: scriptImages\Undergarment\MetaVixen Smell The Roses_C2.png to 800x800
+Resized image saved: 600x600_png\Undergarment\MetaVixen Smell The Roses_C1.png
+Resizing image: scriptImages\Undergarment\MetaVixen Smell The Roses_C2.png to 600x600
+Processing file: MetaVixen Cute Alien Buns_Back_C1.png in Hair Style
+Processing file: MetaVixen Cute Alien Buns_Back_C3.png in Hair Style
+Resized image saved: 800x800_png\Undergarment\MetaVixen Smell The Roses_C2.png
+Resizing image: scriptImages\Undergarment\MetaVixen Smell The Roses_L.png to 800x800
+Processing file: MetaVixen Cute Alien Buns_Back_L.png in Hair Style
+Resized image saved: 600x600_png\Undergarment\MetaVixen Smell The Roses_C2.png
+Resizing image: scriptImages\Undergarment\MetaVixen Smell The Roses_L.png to 600x600
+Processing file: MetaVixen Cute Alien Buns_Front_C2.png in Hair Style
+Resized image saved: 800x800_png\Undergarment\MetaVixen Smell The Roses_L.png
+Resizing image: scriptImages\Undergarment\MetaVixen Starfishies_C1.png to 800x800
+Resized image saved: 600x600_png\Undergarment\MetaVixen Smell The Roses_L.png
+Resizing image: scriptImages\Undergarment\MetaVixen Starfishies_C1.png to 600x600
+Processing file: MetaVixen Cute Alien Buns_Front_C3.png in Hair Style
+Processing file: MetaVixen Cute Alien Buns_Front_L.png in Hair Style
+Resized image saved: 600x600_png\Undergarment\MetaVixen Starfishies_C1.png
+Resizing image: scriptImages\Undergarment\MetaVixen Starfishies_C2.png to 600x600
+Resized image saved: 800x800_png\Undergarment\MetaVixen Starfishies_C1.png
+Resizing image: scriptImages\Undergarment\MetaVixen Starfishies_C2.png to 800x800
+Resized image saved: 800x800_png\Undergarment\MetaVixen Starfishies_C2.png
+Resizing image: scriptImages\Undergarment\MetaVixen Starfishies_L.png to 800x800
+Resized image saved: 600x600_png\Undergarment\MetaVixen Starfishies_C2.png
+Resizing image: scriptImages\Undergarment\MetaVixen Starfishies_L.png to 600x600
+Processing file: MetaVixen Classic Constellation_Front_L.png.png in subfolder: Hair Style
+Processing file: MetaVixen Classic Constellation_Back_C1.png.png in Hair Style
+Resized image saved: 600x600_png\Undergarment\MetaVixen Starfishies_L.png
+Resized image saved: 800x800_png\Undergarment\MetaVixen Starfishies_L.png
+Processing file: MetaVixen Classic Constellation_Back_C2.png in Hair Style
+Processing file: MetaVixen Classic Constellation_Back_L.png in Hair Style
+Processing file: MetaVixen Classic Constellation_Front_C1.png in Hair Style
+Processing file: MetaVixen Classic Constellation_Front_C2.png in Hair Style
+Processing file: MetaVixen Classic Constellation_Front_L.png.png in Hair Style
+Processing file: MetaVixen Constellation_L.png in Hair Style
+Processing file: MetaVixen Cute Alien Buns Front_C2.png in Hair Style
+Processing file: MetaVixen Cute Alien Buns_Back_C1.png in Hair Style
+Processing file: MetaVixen Cute Alien Buns_Back_C3.png in Hair Style
+Processing file: MetaVixen Cute Alien Buns_Back_L.png in Hair Style
+Processing file: MetaVixen Cute Alien Buns_Front_C2.png in Hair Style
+Processing file: MetaVixen Cute Alien Buns_Front_C3.png in Hair Style
+Processing file: MetaVixen Cute Alien Buns_Front_L.png in Hair Style
+Checking existence of PNG: compositeImages\Hair Style\MetaVixen Classic Constellation_Front.png
+Checking existence of JPG: 300x300_jpg\Hair Style\MetaVixen Classic Constellation_Front.jpg
+Files not found, processing: PNG - compositeImages\Hair Style\MetaVixen Classic Constellation_Front.png, JPG - 300x300_jpg\Hair Style\MetaVixen Classic Constellation_Front.jpg
+Processing image group: MetaVixen Constellation
+Processing file: MetaVixen Constellation_L.png in subfolder: Hair Style
+Processing file: MetaVixen Classic Constellation_Back_C1.png.png in Hair Style
+Processing file: MetaVixen Classic Constellation_Back_C2.png in Hair Style
+Processing file: MetaVixen Classic Constellation_Back_L.png in Hair Style
+Processing file: MetaVixen Classic Constellation_Front_C1.png in Hair Style
+Processing file: MetaVixen Classic Constellation_Front_C2.png in Hair Style
+Processing file: MetaVixen Classic Constellation_Front_L.png.png in Hair Style
+Processing file: MetaVixen Constellation_L.png in Hair Style
+Processing file: MetaVixen Cute Alien Buns Front_C2.png in Hair Style
+Processing file: MetaVixen Cute Alien Buns_Back_C1.png in Hair Style
+Processing file: MetaVixen Cute Alien Buns_Back_C3.png in Hair Style
+Processing file: MetaVixen Cute Alien Buns_Back_L.png in Hair Style
+Processing file: MetaVixen Cute Alien Buns_Front_C2.png in Hair Style
+Processing file: MetaVixen Cute Alien Buns_Front_C3.png in Hair Style
+Processing file: MetaVixen Cute Alien Buns_Front_L.png in Hair Style
+Checking existence of PNG: compositeImages\Hair Style\MetaVixen Constellation.png
+Checking existence of JPG: 300x300_jpg\Hair Style\MetaVixen Constellation.jpg
+Skipping existing files: PNG - compositeImages\Hair Style\MetaVixen Constellation.png, JPG - 300x300_jpg\Hair Style\MetaVixen Constellation.jpg
+Processing image group: MetaVixen Cute Alien Buns Front
+Processing file: MetaVixen Cute Alien Buns Front_C2.png in subfolder: Hair Style
+Processing file: MetaVixen Classic Constellation_Back_C1.png.png in Hair Style
+Processing file: MetaVixen Classic Constellation_Back_C2.png in Hair Style
+Processing file: MetaVixen Classic Constellation_Back_L.png in Hair Style
+Processing file: MetaVixen Classic Constellation_Front_C1.png in Hair Style
+Processing file: MetaVixen Classic Constellation_Front_C2.png in Hair Style
+Processing file: MetaVixen Classic Constellation_Front_L.png.png in Hair Style
+Processing file: MetaVixen Constellation_L.png in Hair Style
+Processing file: MetaVixen Cute Alien Buns Front_C2.png in Hair Style
+Processing file: MetaVixen Cute Alien Buns_Back_C1.png in Hair Style
+Processing file: MetaVixen Cute Alien Buns_Back_C3.png in Hair Style
+Processing file: MetaVixen Cute Alien Buns_Back_L.png in Hair Style
+Processing file: MetaVixen Cute Alien Buns_Front_C2.png in Hair Style
+Processing file: MetaVixen Cute Alien Buns_Front_C3.png in Hair Style
+Processing file: MetaVixen Cute Alien Buns_Front_L.png in Hair Style
+Checking existence of PNG: compositeImages\Hair Style\MetaVixen Cute Alien Buns Front.png
+Checking existence of JPG: 300x300_jpg\Hair Style\MetaVixen Cute Alien Buns Front.jpg
+Skipping existing files: PNG - compositeImages\Hair Style\MetaVixen Cute Alien Buns Front.png, JPG - 300x300_jpg\Hair Style\MetaVixen Cute Alien Buns Front.jpg
+Processing image group: MetaVixen Cute Alien Buns_Back
+Processing file: MetaVixen Cute Alien Buns_Back_C1.png in subfolder: Hair Style
+Processing file: MetaVixen Classic Constellation_Back_C1.png.png in Hair Style
+Processing file: MetaVixen Classic Constellation_Back_C2.png in Hair Style
+Processing file: MetaVixen Classic Constellation_Back_L.png in Hair Style
+Processing file: MetaVixen Classic Constellation_Front_C1.png in Hair Style
+Processing file: MetaVixen Classic Constellation_Front_C2.png in Hair Style
+Processing file: MetaVixen Classic Constellation_Front_L.png.png in Hair Style
+Processing file: MetaVixen Constellation_L.png in Hair Style
+Processing file: MetaVixen Cute Alien Buns Front_C2.png in Hair Style
+Processing file: MetaVixen Cute Alien Buns_Back_C1.png in Hair Style
+Processing file: MetaVixen Cute Alien Buns_Back_C3.png in Hair Style
+Processing file: MetaVixen Cute Alien Buns_Back_L.png in Hair Style
+Processing file: MetaVixen Cute Alien Buns_Front_C2.png in Hair Style
+Processing file: MetaVixen Cute Alien Buns_Front_C3.png in Hair Style
+Processing file: MetaVixen Cute Alien Buns_Front_L.png in Hair Style
+Processing file: MetaVixen Cute Alien Buns_Back_C3.png in subfolder: Hair Style
+Processing file: MetaVixen Classic Constellation_Back_C1.png.png in Hair Style
+Processing file: MetaVixen Classic Constellation_Back_C2.png in Hair Style
+Processing file: MetaVixen Classic Constellation_Back_L.png in Hair Style
+Processing file: MetaVixen Classic Constellation_Front_C1.png in Hair Style
+Processing file: MetaVixen Classic Constellation_Front_C2.png in Hair Style
+Processing file: MetaVixen Classic Constellation_Front_L.png.png in Hair Style
+Processing file: MetaVixen Constellation_L.png in Hair Style
+Processing file: MetaVixen Cute Alien Buns Front_C2.png in Hair Style
+Processing file: MetaVixen Cute Alien Buns_Back_C1.png in Hair Style
+Processing file: MetaVixen Cute Alien Buns_Back_C3.png in Hair Style
+Processing file: MetaVixen Cute Alien Buns_Back_L.png in Hair Style
+Processing file: MetaVixen Cute Alien Buns_Front_C2.png in Hair Style
+Processing file: MetaVixen Cute Alien Buns_Front_C3.png in Hair Style
+Processing file: MetaVixen Cute Alien Buns_Front_L.png in Hair Style
+Processing file: MetaVixen Cute Alien Buns_Back_L.png in subfolder: Hair Style
+Processing file: MetaVixen Classic Constellation_Back_C1.png.png in Hair Style
+Processing file: MetaVixen Classic Constellation_Back_C2.png in Hair Style
+Processing file: MetaVixen Classic Constellation_Back_L.png in Hair Style
+Processing file: MetaVixen Classic Constellation_Front_C1.png in Hair Style
+Processing file: MetaVixen Classic Constellation_Front_C2.png in Hair Style
+Processing file: MetaVixen Classic Constellation_Front_L.png.png in Hair Style
+Processing file: MetaVixen Constellation_L.png in Hair Style
+Processing file: MetaVixen Cute Alien Buns Front_C2.png in Hair Style
+Processing file: MetaVixen Cute Alien Buns_Back_C1.png in Hair Style
+Processing file: MetaVixen Cute Alien Buns_Back_C3.png in Hair Style
+Processing file: MetaVixen Cute Alien Buns_Back_L.png in Hair Style
+Processing file: MetaVixen Cute Alien Buns_Front_C2.png in Hair Style
+Processing file: MetaVixen Cute Alien Buns_Front_C3.png in Hair Style
+Processing file: MetaVixen Cute Alien Buns_Front_L.png in Hair Style
+Checking existence of PNG: compositeImages\Hair Style\MetaVixen Cute Alien Buns_Back.png
+Checking existence of JPG: 300x300_jpg\Hair Style\MetaVixen Cute Alien Buns_Back.jpg
+Files not found, processing: PNG - compositeImages\Hair Style\MetaVixen Cute Alien Buns_Back.png, JPG - 300x300_jpg\Hair Style\MetaVixen Cute Alien Buns_Back.jpg
+Processing image group: MetaVixen Cute Alien Buns_Front
+Processing file: MetaVixen Cute Alien Buns_Front_C2.png in subfolder: Hair Style
+Processing file: MetaVixen Classic Constellation_Back_C1.png.png in Hair Style
+Processing file: MetaVixen Classic Constellation_Back_C2.png in Hair Style
+Processing file: MetaVixen Classic Constellation_Back_L.png in Hair Style
+Processing file: MetaVixen Classic Constellation_Front_C1.png in Hair Style
+Processing file: MetaVixen Classic Constellation_Front_C2.png in Hair Style
+Processing file: MetaVixen Classic Constellation_Front_L.png.png in Hair Style
+Processing file: MetaVixen Constellation_L.png in Hair Style
+Processing file: MetaVixen Cute Alien Buns Front_C2.png in Hair Style
+Processing file: MetaVixen Cute Alien Buns_Back_C1.png in Hair Style
+Processing file: MetaVixen Cute Alien Buns_Back_C3.png in Hair Style
+Processing file: MetaVixen Cute Alien Buns_Back_L.png in Hair Style
+Processing file: MetaVixen Cute Alien Buns_Front_C2.png in Hair Style
+Processing file: MetaVixen Cute Alien Buns_Front_C3.png in Hair Style
+Processing file: MetaVixen Cute Alien Buns_Front_L.png in Hair Style
+Processing file: MetaVixen Cute Alien Buns_Front_C3.png in subfolder: Hair Style
+Processing file: MetaVixen Classic Constellation_Back_C1.png.png in Hair Style
+Processing file: MetaVixen Classic Constellation_Back_C2.png in Hair Style
+Processing file: MetaVixen Classic Constellation_Back_L.png in Hair Style
+Processing file: MetaVixen Classic Constellation_Front_C1.png in Hair Style
+Processing file: MetaVixen Classic Constellation_Front_C2.png in Hair Style
+Processing file: MetaVixen Classic Constellation_Front_L.png.png in Hair Style
+Processing file: MetaVixen Constellation_L.png in Hair Style
+Processing file: MetaVixen Cute Alien Buns Front_C2.png in Hair Style
+Processing file: MetaVixen Cute Alien Buns_Back_C1.png in Hair Style
+Processing file: MetaVixen Cute Alien Buns_Back_C3.png in Hair Style
+Processing file: MetaVixen Cute Alien Buns_Back_L.png in Hair Style
+Processing file: MetaVixen Cute Alien Buns_Front_C2.png in Hair Style
+Processing file: MetaVixen Cute Alien Buns_Front_C3.png in Hair Style
+Processing file: MetaVixen Cute Alien Buns_Front_L.png in Hair Style
+Processing file: MetaVixen Cute Alien Buns_Front_L.png in subfolder: Hair Style
+Processing file: MetaVixen Classic Constellation_Back_C1.png.png in Hair Style
+Processing file: MetaVixen Classic Constellation_Back_C2.png in Hair Style
+Processing file: MetaVixen Classic Constellation_Back_L.png in Hair Style
+Processing file: MetaVixen Classic Constellation_Front_C1.png in Hair Style
+Processing file: MetaVixen Classic Constellation_Front_C2.png in Hair Style
+Processing file: MetaVixen Classic Constellation_Front_L.png.png in Hair Style
+Processing file: MetaVixen Constellation_L.png in Hair Style
+Processing file: MetaVixen Cute Alien Buns Front_C2.png in Hair Style
+Processing file: MetaVixen Cute Alien Buns_Back_C1.png in Hair Style
+Processing file: MetaVixen Cute Alien Buns_Back_C3.png in Hair Style
+Processing file: MetaVixen Cute Alien Buns_Back_L.png in Hair Style
+Processing file: MetaVixen Cute Alien Buns_Front_C2.png in Hair Style
+Processing file: MetaVixen Cute Alien Buns_Front_C3.png in Hair Style
+Processing file: MetaVixen Cute Alien Buns_Front_L.png in Hair Style
+Checking existence of PNG: compositeImages\Hair Style\MetaVixen Cute Alien Buns_Front.png
+Checking existence of JPG: 300x300_jpg\Hair Style\MetaVixen Cute Alien Buns_Front.jpg
+Files not found, processing: PNG - compositeImages\Hair Style\MetaVixen Cute Alien Buns_Front.png, JPG - 300x300_jpg\Hair Style\MetaVixen Cute Alien Buns_Front.jpg
+Processing image group: MetaVixen Tasty Taco
+Processing file: MetaVixen Tasty Taco_C1.png in subfolder: Hand
+Processing file: MetaVixen Tasty Taco_C2.png in subfolder: Hand
+Processing file: MetaVixen Tasty Taco_C3.png in subfolder: Hand
+Processing file: MetaVixen Tasty Taco_C4.png in subfolder: Hand
+Processing file: MetaVixen Tasty Taco_L.png in subfolder: Hand
+Processing file: MetaVixen Tasty Taco_S.png in subfolder: Hand
+Checking existence of PNG: compositeImages\Hand\MetaVixen Tasty Taco.png
+Checking existence of JPG: 300x300_jpg\Hand\MetaVixen Tasty Taco.jpg
+Files not found, processing: PNG - compositeImages\Hand\MetaVixen Tasty Taco.png, JPG - 300x300_jpg\Hand\MetaVixen Tasty Taco.jpg
+Saved: compositeImages\Hand\MetaVixen Tasty Taco.png
+Saved: 300x300_jpg\Hand\MetaVixen Tasty Taco.jpg
+Processing image group: MetaVixen Baby Its Cold Outside_Back
+Processing file: MetaVixen Baby Its Cold Outside_Back_C2.png in subfolder: Hat
+Processing file: MetaVixen Baby Its Cold Outside_Back_C2.png in Hat
+Processing file: MetaVixen Baby Its Cold Outside_Back_C3.png in Hat
+Processing file: MetaVixen Baby Its Cold Outside_Back_L.png in Hat
+Processing file: MetaVixen Baby Its Cold Outside_Front_C1.png in Hat
+Processing file: MetaVixen Baby Its Cold Outside_Front_C2.png in Hat
+Processing file: MetaVixen Baby Its Cold Outside_Front_C3.png in Hat
+Processing file: MetaVixen Baby Its Cold Outside_Front_L.png in Hat
+Processing file: MetaVixen Polycrown_C1.png in Hat
+Processing file: MetaVixen Polycrown_C2.png in Hat
+Processing file: MetaVixen Polycrown_C3.png in Hat
+Processing file: MetaVixen Polycrown_C4.png in Hat
+Processing file: MetaVixen Polycrown_L.png in Hat
+Processing file: MetaVixen Rose Crown_C1.png in Hat
+Processing file: MetaVixen Rose Crown_C2.png in Hat
+Processing file: MetaVixen Rose Crown_L.png in Hat
+Processing file: MetaVixen Skull Crown_C1.png in Hat
+Processing file: MetaVixen Skull Crown_L.png in Hat
+Processing file: MetaVixen SnapBack Babe_C1.png in Hat
+Processing file: MetaVixen SnapBack Babe_C2.png in Hat
+Processing file: MetaVixen SnapBack Babe_L.png in Hat
+Processing file: MetaVixen Baby Its Cold Outside_Back_C3.png in subfolder: Hat
+Processing file: MetaVixen Baby Its Cold Outside_Back_C2.png in Hat
+Processing file: MetaVixen Baby Its Cold Outside_Back_C3.png in Hat
+Processing file: MetaVixen Baby Its Cold Outside_Back_L.png in Hat
+Processing file: MetaVixen Baby Its Cold Outside_Front_C1.png in Hat
+Processing file: MetaVixen Baby Its Cold Outside_Front_C2.png in Hat
+Processing file: MetaVixen Baby Its Cold Outside_Front_C3.png in Hat
+Processing file: MetaVixen Baby Its Cold Outside_Front_L.png in Hat
+Processing file: MetaVixen Polycrown_C1.png in Hat
+Processing file: MetaVixen Polycrown_C2.png in Hat
+Processing file: MetaVixen Polycrown_C3.png in Hat
+Processing file: MetaVixen Polycrown_C4.png in Hat
+Processing file: MetaVixen Polycrown_L.png in Hat
+Processing file: MetaVixen Rose Crown_C1.png in Hat
+Processing file: MetaVixen Rose Crown_C2.png in Hat
+Processing file: MetaVixen Rose Crown_L.png in Hat
+Processing file: MetaVixen Skull Crown_C1.png in Hat
+Processing file: MetaVixen Skull Crown_L.png in Hat
+Processing file: MetaVixen SnapBack Babe_C1.png in Hat
+Processing file: MetaVixen SnapBack Babe_C2.png in Hat
+Processing file: MetaVixen SnapBack Babe_L.png in Hat
+Processing file: MetaVixen Baby Its Cold Outside_Back_L.png in subfolder: Hat
+Processing file: MetaVixen Baby Its Cold Outside_Back_C2.png in Hat
+Processing file: MetaVixen Baby Its Cold Outside_Back_C3.png in Hat
+Processing file: MetaVixen Baby Its Cold Outside_Back_L.png in Hat
+Processing file: MetaVixen Baby Its Cold Outside_Front_C1.png in Hat
+Processing file: MetaVixen Baby Its Cold Outside_Front_C2.png in Hat
+Processing file: MetaVixen Baby Its Cold Outside_Front_C3.png in Hat
+Processing file: MetaVixen Baby Its Cold Outside_Front_L.png in Hat
+Processing file: MetaVixen Polycrown_C1.png in Hat
+Processing file: MetaVixen Polycrown_C2.png in Hat
+Processing file: MetaVixen Polycrown_C3.png in Hat
+Processing file: MetaVixen Polycrown_C4.png in Hat
+Processing file: MetaVixen Polycrown_L.png in Hat
+Processing file: MetaVixen Rose Crown_C1.png in Hat
+Processing file: MetaVixen Rose Crown_C2.png in Hat
+Processing file: MetaVixen Rose Crown_L.png in Hat
+Processing file: MetaVixen Skull Crown_C1.png in Hat
+Processing file: MetaVixen Skull Crown_L.png in Hat
+Processing file: MetaVixen SnapBack Babe_C1.png in Hat
+Processing file: MetaVixen SnapBack Babe_C2.png in Hat
+Processing file: MetaVixen SnapBack Babe_L.png in Hat
+Checking existence of PNG: compositeImages\Hat\MetaVixen Baby Its Cold Outside_Back.png
+Checking existence of JPG: 300x300_jpg\Hat\MetaVixen Baby Its Cold Outside_Back.jpg
+Files not found, processing: PNG - compositeImages\Hat\MetaVixen Baby Its Cold Outside_Back.png, JPG - 300x300_jpg\Hat\MetaVixen Baby Its Cold Outside_Back.jpg
+Processing image group: MetaVixen Baby Its Cold Outside_Front
+Processing file: MetaVixen Baby Its Cold Outside_Front_C1.png in subfolder: Hat
+Processing file: MetaVixen Baby Its Cold Outside_Back_C2.png in Hat
+Processing file: MetaVixen Baby Its Cold Outside_Back_C3.png in Hat
+Processing file: MetaVixen Baby Its Cold Outside_Back_L.png in Hat
+Processing file: MetaVixen Baby Its Cold Outside_Front_C1.png in Hat
+Processing file: MetaVixen Baby Its Cold Outside_Front_C2.png in Hat
+Processing file: MetaVixen Baby Its Cold Outside_Front_C3.png in Hat
+Processing file: MetaVixen Baby Its Cold Outside_Front_L.png in Hat
+Processing file: MetaVixen Polycrown_C1.png in Hat
+Processing file: MetaVixen Polycrown_C2.png in Hat
+Processing file: MetaVixen Polycrown_C3.png in Hat
+Processing file: MetaVixen Polycrown_C4.png in Hat
+Processing file: MetaVixen Polycrown_L.png in Hat
+Processing file: MetaVixen Rose Crown_C1.png in Hat
+Processing file: MetaVixen Rose Crown_C2.png in Hat
+Processing file: MetaVixen Rose Crown_L.png in Hat
+Processing file: MetaVixen Skull Crown_C1.png in Hat
+Processing file: MetaVixen Skull Crown_L.png in Hat
+Processing file: MetaVixen SnapBack Babe_C1.png in Hat
+Processing file: MetaVixen SnapBack Babe_C2.png in Hat
+Processing file: MetaVixen SnapBack Babe_L.png in Hat
+Processing file: MetaVixen Baby Its Cold Outside_Front_C2.png in subfolder: Hat
+Processing file: MetaVixen Baby Its Cold Outside_Back_C2.png in Hat
+Processing file: MetaVixen Baby Its Cold Outside_Back_C3.png in Hat
+Processing file: MetaVixen Baby Its Cold Outside_Back_L.png in Hat
+Processing file: MetaVixen Baby Its Cold Outside_Front_C1.png in Hat
+Processing file: MetaVixen Baby Its Cold Outside_Front_C2.png in Hat
+Processing file: MetaVixen Baby Its Cold Outside_Front_C3.png in Hat
+Processing file: MetaVixen Baby Its Cold Outside_Front_L.png in Hat
+Processing file: MetaVixen Polycrown_C1.png in Hat
+Processing file: MetaVixen Polycrown_C2.png in Hat
+Processing file: MetaVixen Polycrown_C3.png in Hat
+Processing file: MetaVixen Polycrown_C4.png in Hat
+Processing file: MetaVixen Polycrown_L.png in Hat
+Processing file: MetaVixen Rose Crown_C1.png in Hat
+Processing file: MetaVixen Rose Crown_C2.png in Hat
+Processing file: MetaVixen Rose Crown_L.png in Hat
+Processing file: MetaVixen Skull Crown_C1.png in Hat
+Processing file: MetaVixen Skull Crown_L.png in Hat
+Processing file: MetaVixen SnapBack Babe_C1.png in Hat
+Processing file: MetaVixen SnapBack Babe_C2.png in Hat
+Processing file: MetaVixen SnapBack Babe_L.png in Hat
+Processing file: MetaVixen Baby Its Cold Outside_Front_C3.png in subfolder: Hat
+Processing file: MetaVixen Baby Its Cold Outside_Back_C2.png in Hat
+Processing file: MetaVixen Baby Its Cold Outside_Back_C3.png in Hat
+Processing file: MetaVixen Baby Its Cold Outside_Back_L.png in Hat
+Processing file: MetaVixen Baby Its Cold Outside_Front_C1.png in Hat
+Processing file: MetaVixen Baby Its Cold Outside_Front_C2.png in Hat
+Processing file: MetaVixen Baby Its Cold Outside_Front_C3.png in Hat
+Processing file: MetaVixen Baby Its Cold Outside_Front_L.png in Hat
+Processing file: MetaVixen Polycrown_C1.png in Hat
+Processing file: MetaVixen Polycrown_C2.png in Hat
+Processing file: MetaVixen Polycrown_C3.png in Hat
+Processing file: MetaVixen Polycrown_C4.png in Hat
+Processing file: MetaVixen Polycrown_L.png in Hat
+Processing file: MetaVixen Rose Crown_C1.png in Hat
+Processing file: MetaVixen Rose Crown_C2.png in Hat
+Processing file: MetaVixen Rose Crown_L.png in Hat
+Processing file: MetaVixen Skull Crown_C1.png in Hat
+Processing file: MetaVixen Skull Crown_L.png in Hat
+Processing file: MetaVixen SnapBack Babe_C1.png in Hat
+Processing file: MetaVixen SnapBack Babe_C2.png in Hat
+Processing file: MetaVixen SnapBack Babe_L.png in Hat
+Processing file: MetaVixen Baby Its Cold Outside_Front_L.png in subfolder: Hat
+Processing file: MetaVixen Baby Its Cold Outside_Back_C2.png in Hat
+Processing file: MetaVixen Baby Its Cold Outside_Back_C3.png in Hat
+Processing file: MetaVixen Baby Its Cold Outside_Back_L.png in Hat
+Processing file: MetaVixen Baby Its Cold Outside_Front_C1.png in Hat
+Processing file: MetaVixen Baby Its Cold Outside_Front_C2.png in Hat
+Processing file: MetaVixen Baby Its Cold Outside_Front_C3.png in Hat
+Processing file: MetaVixen Baby Its Cold Outside_Front_L.png in Hat
+Processing file: MetaVixen Polycrown_C1.png in Hat
+Processing file: MetaVixen Polycrown_C2.png in Hat
+Processing file: MetaVixen Polycrown_C3.png in Hat
+Processing file: MetaVixen Polycrown_C4.png in Hat
+Processing file: MetaVixen Polycrown_L.png in Hat
+Processing file: MetaVixen Rose Crown_C1.png in Hat
+Processing file: MetaVixen Rose Crown_C2.png in Hat
+Processing file: MetaVixen Rose Crown_L.png in Hat
+Processing file: MetaVixen Skull Crown_C1.png in Hat
+Processing file: MetaVixen Skull Crown_L.png in Hat
+Processing file: MetaVixen SnapBack Babe_C1.png in Hat
+Processing file: MetaVixen SnapBack Babe_C2.png in Hat
+Processing file: MetaVixen SnapBack Babe_L.png in Hat
+Checking existence of PNG: compositeImages\Hat\MetaVixen Baby Its Cold Outside_Front.png
+Checking existence of JPG: 300x300_jpg\Hat\MetaVixen Baby Its Cold Outside_Front.jpg
+Files not found, processing: PNG - compositeImages\Hat\MetaVixen Baby Its Cold Outside_Front.png, JPG - 300x300_jpg\Hat\MetaVixen Baby Its Cold Outside_Front.jpg
+Processing image group: MetaVixen Polycrown
+Processing file: MetaVixen Polycrown_C1.png in subfolder: Hat
+Processing file: MetaVixen Baby Its Cold Outside_Back_C2.png in Hat
+Processing file: MetaVixen Baby Its Cold Outside_Back_C3.png in Hat
+Processing file: MetaVixen Baby Its Cold Outside_Back_L.png in Hat
+Processing file: MetaVixen Baby Its Cold Outside_Front_C1.png in Hat
+Processing file: MetaVixen Baby Its Cold Outside_Front_C2.png in Hat
+Processing file: MetaVixen Baby Its Cold Outside_Front_C3.png in Hat
+Processing file: MetaVixen Baby Its Cold Outside_Front_L.png in Hat
+Processing file: MetaVixen Polycrown_C1.png in Hat
+Processing file: MetaVixen Polycrown_C2.png in Hat
+Processing file: MetaVixen Polycrown_C3.png in Hat
+Processing file: MetaVixen Polycrown_C4.png in Hat
+Processing file: MetaVixen Polycrown_L.png in Hat
+Processing file: MetaVixen Rose Crown_C1.png in Hat
+Processing file: MetaVixen Rose Crown_C2.png in Hat
+Processing file: MetaVixen Rose Crown_L.png in Hat
+Processing file: MetaVixen Skull Crown_C1.png in Hat
+Processing file: MetaVixen Skull Crown_L.png in Hat
+Processing file: MetaVixen SnapBack Babe_C1.png in Hat
+Processing file: MetaVixen SnapBack Babe_C2.png in Hat
+Processing file: MetaVixen SnapBack Babe_L.png in Hat
+Processing file: MetaVixen Polycrown_C2.png in subfolder: Hat
+Processing file: MetaVixen Baby Its Cold Outside_Back_C2.png in Hat
+Processing file: MetaVixen Baby Its Cold Outside_Back_C3.png in Hat
+Processing file: MetaVixen Baby Its Cold Outside_Back_L.png in Hat
+Processing file: MetaVixen Baby Its Cold Outside_Front_C1.png in Hat
+Processing file: MetaVixen Baby Its Cold Outside_Front_C2.png in Hat
+Processing file: MetaVixen Baby Its Cold Outside_Front_C3.png in Hat
+Processing file: MetaVixen Baby Its Cold Outside_Front_L.png in Hat
+Processing file: MetaVixen Polycrown_C1.png in Hat
+Processing file: MetaVixen Polycrown_C2.png in Hat
+Processing file: MetaVixen Polycrown_C3.png in Hat
+Processing file: MetaVixen Polycrown_C4.png in Hat
+Processing file: MetaVixen Polycrown_L.png in Hat
+Processing file: MetaVixen Rose Crown_C1.png in Hat
+Processing file: MetaVixen Rose Crown_C2.png in Hat
+Processing file: MetaVixen Rose Crown_L.png in Hat
+Processing file: MetaVixen Skull Crown_C1.png in Hat
+Processing file: MetaVixen Skull Crown_L.png in Hat
+Processing file: MetaVixen SnapBack Babe_C1.png in Hat
+Processing file: MetaVixen SnapBack Babe_C2.png in Hat
+Processing file: MetaVixen SnapBack Babe_L.png in Hat
+Processing file: MetaVixen Polycrown_C3.png in subfolder: Hat
+Processing file: MetaVixen Baby Its Cold Outside_Back_C2.png in Hat
+Processing file: MetaVixen Baby Its Cold Outside_Back_C3.png in Hat
+Processing file: MetaVixen Baby Its Cold Outside_Back_L.png in Hat
+Processing file: MetaVixen Baby Its Cold Outside_Front_C1.png in Hat
+Processing file: MetaVixen Baby Its Cold Outside_Front_C2.png in Hat
+Processing file: MetaVixen Baby Its Cold Outside_Front_C3.png in Hat
+Processing file: MetaVixen Baby Its Cold Outside_Front_L.png in Hat
+Processing file: MetaVixen Polycrown_C1.png in Hat
+Processing file: MetaVixen Polycrown_C2.png in Hat
+Processing file: MetaVixen Polycrown_C3.png in Hat
+Processing file: MetaVixen Polycrown_C4.png in Hat
+Processing file: MetaVixen Polycrown_L.png in Hat
+Processing file: MetaVixen Rose Crown_C1.png in Hat
+Processing file: MetaVixen Rose Crown_C2.png in Hat
+Processing file: MetaVixen Rose Crown_L.png in Hat
+Processing file: MetaVixen Skull Crown_C1.png in Hat
+Processing file: MetaVixen Skull Crown_L.png in Hat
+Processing file: MetaVixen SnapBack Babe_C1.png in Hat
+Processing file: MetaVixen SnapBack Babe_C2.png in Hat
+Processing file: MetaVixen SnapBack Babe_L.png in Hat
+Processing file: MetaVixen Polycrown_C4.png in subfolder: Hat
+Processing file: MetaVixen Baby Its Cold Outside_Back_C2.png in Hat
+Processing file: MetaVixen Baby Its Cold Outside_Back_C3.png in Hat
+Processing file: MetaVixen Baby Its Cold Outside_Back_L.png in Hat
+Processing file: MetaVixen Baby Its Cold Outside_Front_C1.png in Hat
+Processing file: MetaVixen Baby Its Cold Outside_Front_C2.png in Hat
+Processing file: MetaVixen Baby Its Cold Outside_Front_C3.png in Hat
+Processing file: MetaVixen Baby Its Cold Outside_Front_L.png in Hat
+Processing file: MetaVixen Polycrown_C1.png in Hat
+Processing file: MetaVixen Polycrown_C2.png in Hat
+Processing file: MetaVixen Polycrown_C3.png in Hat
+Processing file: MetaVixen Polycrown_C4.png in Hat
+Processing file: MetaVixen Polycrown_L.png in Hat
+Processing file: MetaVixen Rose Crown_C1.png in Hat
+Processing file: MetaVixen Rose Crown_C2.png in Hat
+Processing file: MetaVixen Rose Crown_L.png in Hat
+Processing file: MetaVixen Skull Crown_C1.png in Hat
+Processing file: MetaVixen Skull Crown_L.png in Hat
+Processing file: MetaVixen SnapBack Babe_C1.png in Hat
+Processing file: MetaVixen SnapBack Babe_C2.png in Hat
+Processing file: MetaVixen SnapBack Babe_L.png in Hat
+Processing file: MetaVixen Polycrown_L.png in subfolder: Hat
+Processing file: MetaVixen Baby Its Cold Outside_Back_C2.png in Hat
+Processing file: MetaVixen Baby Its Cold Outside_Back_C3.png in Hat
+Processing file: MetaVixen Baby Its Cold Outside_Back_L.png in Hat
+Processing file: MetaVixen Baby Its Cold Outside_Front_C1.png in Hat
+Processing file: MetaVixen Baby Its Cold Outside_Front_C2.png in Hat
+Processing file: MetaVixen Baby Its Cold Outside_Front_C3.png in Hat
+Processing file: MetaVixen Baby Its Cold Outside_Front_L.png in Hat
+Processing file: MetaVixen Polycrown_C1.png in Hat
+Processing file: MetaVixen Polycrown_C2.png in Hat
+Processing file: MetaVixen Polycrown_C3.png in Hat
+Processing file: MetaVixen Polycrown_C4.png in Hat
+Processing file: MetaVixen Polycrown_L.png in Hat
+Processing file: MetaVixen Rose Crown_C1.png in Hat
+Processing file: MetaVixen Rose Crown_C2.png in Hat
+Processing file: MetaVixen Rose Crown_L.png in Hat
+Processing file: MetaVixen Skull Crown_C1.png in Hat
+Processing file: MetaVixen Skull Crown_L.png in Hat
+Processing file: MetaVixen SnapBack Babe_C1.png in Hat
+Processing file: MetaVixen SnapBack Babe_C2.png in Hat
+Processing file: MetaVixen SnapBack Babe_L.png in Hat
+Checking existence of PNG: compositeImages\Hat\MetaVixen Polycrown.png
+Checking existence of JPG: 300x300_jpg\Hat\MetaVixen Polycrown.jpg
+Skipping existing files: PNG - compositeImages\Hat\MetaVixen Polycrown.png, JPG - 300x300_jpg\Hat\MetaVixen Polycrown.jpg
+Processing image group: MetaVixen Rose Crown
+Processing file: MetaVixen Rose Crown_C1.png in subfolder: Hat
+Processing file: MetaVixen Baby Its Cold Outside_Back_C2.png in Hat
+Processing file: MetaVixen Baby Its Cold Outside_Back_C3.png in Hat
+Processing file: MetaVixen Baby Its Cold Outside_Back_L.png in Hat
+Processing file: MetaVixen Baby Its Cold Outside_Front_C1.png in Hat
+Processing file: MetaVixen Baby Its Cold Outside_Front_C2.png in Hat
+Processing file: MetaVixen Baby Its Cold Outside_Front_C3.png in Hat
+Processing file: MetaVixen Baby Its Cold Outside_Front_L.png in Hat
+Processing file: MetaVixen Polycrown_C1.png in Hat
+Processing file: MetaVixen Polycrown_C2.png in Hat
+Processing file: MetaVixen Polycrown_C3.png in Hat
+Processing file: MetaVixen Polycrown_C4.png in Hat
+Processing file: MetaVixen Polycrown_L.png in Hat
+Processing file: MetaVixen Rose Crown_C1.png in Hat
+Processing file: MetaVixen Rose Crown_C2.png in Hat
+Processing file: MetaVixen Rose Crown_L.png in Hat
+Processing file: MetaVixen Skull Crown_C1.png in Hat
+Processing file: MetaVixen Skull Crown_L.png in Hat
+Processing file: MetaVixen SnapBack Babe_C1.png in Hat
+Processing file: MetaVixen SnapBack Babe_C2.png in Hat
+Processing file: MetaVixen SnapBack Babe_L.png in Hat
+Processing file: MetaVixen Rose Crown_C2.png in subfolder: Hat
+Processing file: MetaVixen Baby Its Cold Outside_Back_C2.png in Hat
+Processing file: MetaVixen Baby Its Cold Outside_Back_C3.png in Hat
+Processing file: MetaVixen Baby Its Cold Outside_Back_L.png in Hat
+Processing file: MetaVixen Baby Its Cold Outside_Front_C1.png in Hat
+Processing file: MetaVixen Baby Its Cold Outside_Front_C2.png in Hat
+Processing file: MetaVixen Baby Its Cold Outside_Front_C3.png in Hat
+Processing file: MetaVixen Baby Its Cold Outside_Front_L.png in Hat
+Processing file: MetaVixen Polycrown_C1.png in Hat
+Processing file: MetaVixen Polycrown_C2.png in Hat
+Processing file: MetaVixen Polycrown_C3.png in Hat
+Processing file: MetaVixen Polycrown_C4.png in Hat
+Processing file: MetaVixen Polycrown_L.png in Hat
+Processing file: MetaVixen Rose Crown_C1.png in Hat
+Processing file: MetaVixen Rose Crown_C2.png in Hat
+Processing file: MetaVixen Rose Crown_L.png in Hat
+Processing file: MetaVixen Skull Crown_C1.png in Hat
+Processing file: MetaVixen Skull Crown_L.png in Hat
+Processing file: MetaVixen SnapBack Babe_C1.png in Hat
+Processing file: MetaVixen SnapBack Babe_C2.png in Hat
+Processing file: MetaVixen SnapBack Babe_L.png in Hat
+Processing file: MetaVixen Rose Crown_L.png in subfolder: Hat
+Processing file: MetaVixen Baby Its Cold Outside_Back_C2.png in Hat
+Processing file: MetaVixen Baby Its Cold Outside_Back_C3.png in Hat
+Processing file: MetaVixen Baby Its Cold Outside_Back_L.png in Hat
+Processing file: MetaVixen Baby Its Cold Outside_Front_C1.png in Hat
+Processing file: MetaVixen Baby Its Cold Outside_Front_C2.png in Hat
+Processing file: MetaVixen Baby Its Cold Outside_Front_C3.png in Hat
+Processing file: MetaVixen Baby Its Cold Outside_Front_L.png in Hat
+Processing file: MetaVixen Polycrown_C1.png in Hat
+Processing file: MetaVixen Polycrown_C2.png in Hat
+Processing file: MetaVixen Polycrown_C3.png in Hat
+Processing file: MetaVixen Polycrown_C4.png in Hat
+Processing file: MetaVixen Polycrown_L.png in Hat
+Processing file: MetaVixen Rose Crown_C1.png in Hat
+Processing file: MetaVixen Rose Crown_C2.png in Hat
+Processing file: MetaVixen Rose Crown_L.png in Hat
+Processing file: MetaVixen Skull Crown_C1.png in Hat
+Processing file: MetaVixen Skull Crown_L.png in Hat
+Processing file: MetaVixen SnapBack Babe_C1.png in Hat
+Processing file: MetaVixen SnapBack Babe_C2.png in Hat
+Processing file: MetaVixen SnapBack Babe_L.png in Hat
+Checking existence of PNG: compositeImages\Hat\MetaVixen Rose Crown.png
+Checking existence of JPG: 300x300_jpg\Hat\MetaVixen Rose Crown.jpg
+Skipping existing files: PNG - compositeImages\Hat\MetaVixen Rose Crown.png, JPG - 300x300_jpg\Hat\MetaVixen Rose Crown.jpg
+Processing image group: MetaVixen Skull Crown
+Processing file: MetaVixen Skull Crown_C1.png in subfolder: Hat
+Processing file: MetaVixen Baby Its Cold Outside_Back_C2.png in Hat
+Processing file: MetaVixen Baby Its Cold Outside_Back_C3.png in Hat
+Processing file: MetaVixen Baby Its Cold Outside_Back_L.png in Hat
+Processing file: MetaVixen Baby Its Cold Outside_Front_C1.png in Hat
+Processing file: MetaVixen Baby Its Cold Outside_Front_C2.png in Hat
+Processing file: MetaVixen Baby Its Cold Outside_Front_C3.png in Hat
+Processing file: MetaVixen Baby Its Cold Outside_Front_L.png in Hat
+Processing file: MetaVixen Polycrown_C1.png in Hat
+Processing file: MetaVixen Polycrown_C2.png in Hat
+Processing file: MetaVixen Polycrown_C3.png in Hat
+Processing file: MetaVixen Polycrown_C4.png in Hat
+Processing file: MetaVixen Polycrown_L.png in Hat
+Processing file: MetaVixen Rose Crown_C1.png in Hat
+Processing file: MetaVixen Rose Crown_C2.png in Hat
+Processing file: MetaVixen Rose Crown_L.png in Hat
+Processing file: MetaVixen Skull Crown_C1.png in Hat
+Processing file: MetaVixen Skull Crown_L.png in Hat
+Processing file: MetaVixen SnapBack Babe_C1.png in Hat
+Processing file: MetaVixen SnapBack Babe_C2.png in Hat
+Processing file: MetaVixen SnapBack Babe_L.png in Hat
+Processing file: MetaVixen Skull Crown_L.png in subfolder: Hat
+Processing file: MetaVixen Baby Its Cold Outside_Back_C2.png in Hat
+Processing file: MetaVixen Baby Its Cold Outside_Back_C3.png in Hat
+Processing file: MetaVixen Baby Its Cold Outside_Back_L.png in Hat
+Processing file: MetaVixen Baby Its Cold Outside_Front_C1.png in Hat
+Processing file: MetaVixen Baby Its Cold Outside_Front_C2.png in Hat
+Processing file: MetaVixen Baby Its Cold Outside_Front_C3.png in Hat
+Processing file: MetaVixen Baby Its Cold Outside_Front_L.png in Hat
+Processing file: MetaVixen Polycrown_C1.png in Hat
+Processing file: MetaVixen Polycrown_C2.png in Hat
+Processing file: MetaVixen Polycrown_C3.png in Hat
+Processing file: MetaVixen Polycrown_C4.png in Hat
+Processing file: MetaVixen Polycrown_L.png in Hat
+Processing file: MetaVixen Rose Crown_C1.png in Hat
+Processing file: MetaVixen Rose Crown_C2.png in Hat
+Processing file: MetaVixen Rose Crown_L.png in Hat
+Processing file: MetaVixen Skull Crown_C1.png in Hat
+Processing file: MetaVixen Skull Crown_L.png in Hat
+Processing file: MetaVixen SnapBack Babe_C1.png in Hat
+Processing file: MetaVixen SnapBack Babe_C2.png in Hat
+Processing file: MetaVixen SnapBack Babe_L.png in Hat
+Checking existence of PNG: compositeImages\Hat\MetaVixen Skull Crown.png
+Checking existence of JPG: 300x300_jpg\Hat\MetaVixen Skull Crown.jpg
+Skipping existing files: PNG - compositeImages\Hat\MetaVixen Skull Crown.png, JPG - 300x300_jpg\Hat\MetaVixen Skull Crown.jpg
+Processing image group: MetaVixen SnapBack Babe
+Processing file: MetaVixen SnapBack Babe_C1.png in subfolder: Hat
+Processing file: MetaVixen Baby Its Cold Outside_Back_C2.png in Hat
+Processing file: MetaVixen Baby Its Cold Outside_Back_C3.png in Hat
+Processing file: MetaVixen Baby Its Cold Outside_Back_L.png in Hat
+Processing file: MetaVixen Baby Its Cold Outside_Front_C1.png in Hat
+Processing file: MetaVixen Baby Its Cold Outside_Front_C2.png in Hat
+Processing file: MetaVixen Baby Its Cold Outside_Front_C3.png in Hat
+Processing file: MetaVixen Baby Its Cold Outside_Front_L.png in Hat
+Processing file: MetaVixen Polycrown_C1.png in Hat
+Processing file: MetaVixen Polycrown_C2.png in Hat
+Processing file: MetaVixen Polycrown_C3.png in Hat
+Processing file: MetaVixen Polycrown_C4.png in Hat
+Processing file: MetaVixen Polycrown_L.png in Hat
+Processing file: MetaVixen Rose Crown_C1.png in Hat
+Processing file: MetaVixen Rose Crown_C2.png in Hat
+Processing file: MetaVixen Rose Crown_L.png in Hat
+Processing file: MetaVixen Skull Crown_C1.png in Hat
+Processing file: MetaVixen Skull Crown_L.png in Hat
+Processing file: MetaVixen SnapBack Babe_C1.png in Hat
+Processing file: MetaVixen SnapBack Babe_C2.png in Hat
+Processing file: MetaVixen SnapBack Babe_L.png in Hat
+Processing file: MetaVixen SnapBack Babe_C2.png in subfolder: Hat
+Processing file: MetaVixen Baby Its Cold Outside_Back_C2.png in Hat
+Processing file: MetaVixen Baby Its Cold Outside_Back_C3.png in Hat
+Processing file: MetaVixen Baby Its Cold Outside_Back_L.png in Hat
+Processing file: MetaVixen Baby Its Cold Outside_Front_C1.png in Hat
+Processing file: MetaVixen Baby Its Cold Outside_Front_C2.png in Hat
+Processing file: MetaVixen Baby Its Cold Outside_Front_C3.png in Hat
+Processing file: MetaVixen Baby Its Cold Outside_Front_L.png in Hat
+Processing file: MetaVixen Polycrown_C1.png in Hat
+Processing file: MetaVixen Polycrown_C2.png in Hat
+Processing file: MetaVixen Polycrown_C3.png in Hat
+Processing file: MetaVixen Polycrown_C4.png in Hat
+Processing file: MetaVixen Polycrown_L.png in Hat
+Processing file: MetaVixen Rose Crown_C1.png in Hat
+Processing file: MetaVixen Rose Crown_C2.png in Hat
+Processing file: MetaVixen Rose Crown_L.png in Hat
+Processing file: MetaVixen Skull Crown_C1.png in Hat
+Processing file: MetaVixen Skull Crown_L.png in Hat
+Processing file: MetaVixen SnapBack Babe_C1.png in Hat
+Processing file: MetaVixen SnapBack Babe_C2.png in Hat
+Processing file: MetaVixen SnapBack Babe_L.png in Hat
+Processing file: MetaVixen SnapBack Babe_L.png in subfolder: Hat
+Processing file: MetaVixen Baby Its Cold Outside_Back_C2.png in Hat
+Processing file: MetaVixen Baby Its Cold Outside_Back_C3.png in Hat
+Processing file: MetaVixen Baby Its Cold Outside_Back_L.png in Hat
+Processing file: MetaVixen Baby Its Cold Outside_Front_C1.png in Hat
+Processing file: MetaVixen Baby Its Cold Outside_Front_C2.png in Hat
+Processing file: MetaVixen Baby Its Cold Outside_Front_C3.png in Hat
+Processing file: MetaVixen Baby Its Cold Outside_Front_L.png in Hat
+Processing file: MetaVixen Polycrown_C1.png in Hat
+Processing file: MetaVixen Polycrown_C2.png in Hat
+Processing file: MetaVixen Polycrown_C3.png in Hat
+Processing file: MetaVixen Polycrown_C4.png in Hat
+Processing file: MetaVixen Polycrown_L.png in Hat
+Processing file: MetaVixen Rose Crown_C1.png in Hat
+Processing file: MetaVixen Rose Crown_C2.png in Hat
+Processing file: MetaVixen Rose Crown_L.png in Hat
+Processing file: MetaVixen Skull Crown_C1.png in Hat
+Processing file: MetaVixen Skull Crown_L.png in Hat
+Processing file: MetaVixen SnapBack Babe_C1.png in Hat
+Processing file: MetaVixen SnapBack Babe_C2.png in Hat
+Processing file: MetaVixen SnapBack Babe_L.png in Hat
+Checking existence of PNG: compositeImages\Hat\MetaVixen SnapBack Babe.png
+Checking existence of JPG: 300x300_jpg\Hat\MetaVixen SnapBack Babe.jpg
+Skipping existing files: PNG - compositeImages\Hat\MetaVixen SnapBack Babe.png, JPG - 300x300_jpg\Hat\MetaVixen SnapBack Babe.jpg
+Processing image group: MetaVixen Grin
+Processing file: MetaVixen Grin_C1.png in subfolder: Mouth
+Processing file: MetaVixen Grin_L.png in subfolder: Mouth
+Checking existence of PNG: compositeImages\Mouth\MetaVixen Grin.png
+Checking existence of JPG: 300x300_jpg\Mouth\MetaVixen Grin.jpg
+Files not found, processing: PNG - compositeImages\Mouth\MetaVixen Grin.png, JPG - 300x300_jpg\Mouth\MetaVixen Grin.jpg
+Saved: compositeImages\Mouth\MetaVixen Grin.png
+Saved: 300x300_jpg\Mouth\MetaVixen Grin.jpg
+Processing image group: MetaVixen Bone Armor
+Processing file: MetaVixen Bone Armor_C1.png in subfolder: Outfit
+Processing file: MetaVixen Bone Armor_C2.png in subfolder: Outfit
+Processing file: MetaVixen Bone Armor_C3.png in subfolder: Outfit
+Processing file: MetaVixen Bone Armor_C4.png in subfolder: Outfit
+Processing file: MetaVixen Bone Armor_C5.png in subfolder: Outfit
+Processing file: MetaVixen Bone Armor_L.png in subfolder: Outfit
+Checking existence of PNG: compositeImages\Outfit\MetaVixen Bone Armor.png
+Checking existence of JPG: 300x300_jpg\Outfit\MetaVixen Bone Armor.jpg
+Files not found, processing: PNG - compositeImages\Outfit\MetaVixen Bone Armor.png, JPG - 300x300_jpg\Outfit\MetaVixen Bone Armor.jpg
+Saved: compositeImages\Outfit\MetaVixen Bone Armor.png
+Saved: 300x300_jpg\Outfit\MetaVixen Bone Armor.jpg
+Processing image group: MetaVixen Heartless Top
+Processing file: MetaVixen Heartless Top_C1.png in subfolder: Outfit
+Processing file: MetaVixen Heartless Top_C2.png in subfolder: Outfit
+Processing file: MetaVixen Heartless Top_L.png in subfolder: Outfit
+Checking existence of PNG: compositeImages\Outfit\MetaVixen Heartless Top.png
+Checking existence of JPG: 300x300_jpg\Outfit\MetaVixen Heartless Top.jpg
+Files not found, processing: PNG - compositeImages\Outfit\MetaVixen Heartless Top.png, JPG - 300x300_jpg\Outfit\MetaVixen Heartless Top.jpg
+Saved: compositeImages\Outfit\MetaVixen Heartless Top.png
+Saved: 300x300_jpg\Outfit\MetaVixen Heartless Top.jpg
+Processing image group: MetaVixen Nacho Chips
+Processing file: MetaVixen Nacho Chips_C1.png in subfolder: Undergarment
+Processing file: MetaVixen Nacho Chips_L.png in subfolder: Undergarment
+Checking existence of PNG: compositeImages\Undergarment\MetaVixen Nacho Chips.png
+Checking existence of JPG: 300x300_jpg\Undergarment\MetaVixen Nacho Chips.jpg
+Files not found, processing: PNG - compositeImages\Undergarment\MetaVixen Nacho Chips.png, JPG - 300x300_jpg\Undergarment\MetaVixen Nacho Chips.jpg
+Saved: compositeImages\Undergarment\MetaVixen Nacho Chips.png
+Saved: 300x300_jpg\Undergarment\MetaVixen Nacho Chips.jpg
+Processing image group: MetaVixen Smell The Roses
+Processing file: MetaVixen Smell The Roses_C1.png in subfolder: Undergarment
+Processing file: MetaVixen Smell The Roses_C2.png in subfolder: Undergarment
+Processing file: MetaVixen Smell The Roses_L.png in subfolder: Undergarment
+Checking existence of PNG: compositeImages\Undergarment\MetaVixen Smell The Roses.png
+Checking existence of JPG: 300x300_jpg\Undergarment\MetaVixen Smell The Roses.jpg
+Files not found, processing: PNG - compositeImages\Undergarment\MetaVixen Smell The Roses.png, JPG - 300x300_jpg\Undergarment\MetaVixen Smell The Roses.jpg
+Saved: compositeImages\Undergarment\MetaVixen Smell The Roses.png
+Saved: 300x300_jpg\Undergarment\MetaVixen Smell The Roses.jpg
+Processing image group: MetaVixen Starfishies
+Processing file: MetaVixen Starfishies_C1.png in subfolder: Undergarment
+Processing file: MetaVixen Starfishies_C2.png in subfolder: Undergarment
+Processing file: MetaVixen Starfishies_L.png in subfolder: Undergarment
+Checking existence of PNG: compositeImages\Undergarment\MetaVixen Starfishies.png
+Checking existence of JPG: 300x300_jpg\Undergarment\MetaVixen Starfishies.jpg
+Files not found, processing: PNG - compositeImages\Undergarment\MetaVixen Starfishies.png, JPG - 300x300_jpg\Undergarment\MetaVixen Starfishies.jpg
+Saved: compositeImages\Undergarment\MetaVixen Starfishies.png
+Saved: 300x300_jpg\Undergarment\MetaVixen Starfishies.jpg
+Script started
+Subfolders found: Accessory, Background, Bodysuit, Colors, Eyebrows, Eyes, Face Sticker, Frame, Hair Style, Hand, Hat, Mouth, Outfit, Piercing, Skin, Tattoo, Undergarment
+Files found: 15
+Solid colors RGB values saved to colors.json
+Skipping existing file: 800x800_png\Eyebrows\MetaVixen High Brow_L.png
+Resizing image: scriptImages\Hair Style\MetaVixen Classic Constellation_Back_C1.png to 800x800
+Skipping existing file: 600x600_png\Eyebrows\MetaVixen High Brow_L.png
+Resizing image: scriptImages\Hair Style\MetaVixen Classic Constellation_Back_C1.png to 600x600
+Solid colors RGB values saved to colors.json
+Processing image group: MetaVixen High Brow
+Processing file: MetaVixen High Brow_L.png in subfolder: Eyebrows
+Checking existence of PNG: compositeImages\Eyebrows\MetaVixen High Brow.png
+Checking existence of JPG: 300x300_jpg\Eyebrows\MetaVixen High Brow.jpg
+Skipping existing files: PNG - compositeImages\Eyebrows\MetaVixen High Brow.png, JPG - 300x300_jpg\Eyebrows\MetaVixen High Brow.jpg
+Processing image group: MetaVixen Classic Constellation_Back
+Resized image saved: 600x600_png\Hair Style\MetaVixen Classic Constellation_Back_C1.png
+Resizing image: scriptImages\Hair Style\MetaVixen Classic Constellation_Back_C2.png to 600x600
+Resized image saved: 800x800_png\Hair Style\MetaVixen Classic Constellation_Back_C1.png
+Resizing image: scriptImages\Hair Style\MetaVixen Classic Constellation_Back_C2.png to 800x800
+Processing file: MetaVixen Classic Constellation_Back_C1.png in subfolder: Hair Style
+Processing file: MetaVixen Classic Constellation_Back_C1.png in Hair Style
+Processing file: MetaVixen Classic Constellation_Back_C2.png in Hair Style
+Resized image saved: 800x800_png\Hair Style\MetaVixen Classic Constellation_Back_C2.png
+Resizing image: scriptImages\Hair Style\MetaVixen Classic Constellation_Back_L.png to 800x800
+Resized image saved: 600x600_png\Hair Style\MetaVixen Classic Constellation_Back_C2.png
+Resizing image: scriptImages\Hair Style\MetaVixen Classic Constellation_Back_L.png to 600x600
+Processing file: MetaVixen Classic Constellation_Back_L.png in Hair Style
+Processing file: MetaVixen Classic Constellation_Front_C1.png in Hair Style
+Resized image saved: 800x800_png\Hair Style\MetaVixen Classic Constellation_Back_L.png
+Resizing image: scriptImages\Hair Style\MetaVixen Classic Constellation_Front_C1.png to 800x800
+Resized image saved: 600x600_png\Hair Style\MetaVixen Classic Constellation_Back_L.png
+Resizing image: scriptImages\Hair Style\MetaVixen Classic Constellation_Front_C1.png to 600x600
+Processing file: MetaVixen Classic Constellation_Front_C2.png in Hair Style
+Resized image saved: 600x600_png\Hair Style\MetaVixen Classic Constellation_Front_C1.png
+Resizing image: scriptImages\Hair Style\MetaVixen Classic Constellation_Front_C2.png to 600x600
+Resized image saved: 800x800_png\Hair Style\MetaVixen Classic Constellation_Front_C1.png
+Resizing image: scriptImages\Hair Style\MetaVixen Classic Constellation_Front_C2.png to 800x800
+Processing file: MetaVixen Classic Constellation_Front_L.png in Hair Style
+Resized image saved: 600x600_png\Hair Style\MetaVixen Classic Constellation_Front_C2.png
+Resizing image: scriptImages\Hair Style\MetaVixen Classic Constellation_Front_L.png to 600x600
+Resized image saved: 800x800_png\Hair Style\MetaVixen Classic Constellation_Front_C2.png
+Resizing image: scriptImages\Hair Style\MetaVixen Classic Constellation_Front_L.png to 800x800
+Processing file: MetaVixen Cute Alien Buns_Back_C1.png in Hair Style
+Resized image saved: 600x600_png\Hair Style\MetaVixen Classic Constellation_Front_L.png
+Resizing image: scriptImages\Hair Style\MetaVixen Cute Alien Buns_Back_C1.png to 600x600
+Resized image saved: 800x800_png\Hair Style\MetaVixen Classic Constellation_Front_L.png
+Resizing image: scriptImages\Hair Style\MetaVixen Cute Alien Buns_Back_C1.png to 800x800
+Processing file: MetaVixen Cute Alien Buns_Back_C3.png in Hair Style
+Resized image saved: 600x600_png\Hair Style\MetaVixen Cute Alien Buns_Back_C1.png
+Resizing image: scriptImages\Hair Style\MetaVixen Cute Alien Buns_Back_C3.png to 600x600
+Processing file: MetaVixen Cute Alien Buns_Back_L.png in Hair Style
+Resized image saved: 800x800_png\Hair Style\MetaVixen Cute Alien Buns_Back_C1.png
+Resizing image: scriptImages\Hair Style\MetaVixen Cute Alien Buns_Back_C3.png to 800x800
+Resized image saved: 600x600_png\Hair Style\MetaVixen Cute Alien Buns_Back_C3.png
+Resizing image: scriptImages\Hair Style\MetaVixen Cute Alien Buns_Back_L.png to 600x600
+Processing file: MetaVixen Cute Alien Buns_Front_C1.png in Hair Style
+Resized image saved: 800x800_png\Hair Style\MetaVixen Cute Alien Buns_Back_C3.png
+Resizing image: scriptImages\Hair Style\MetaVixen Cute Alien Buns_Back_L.png to 800x800
+Resized image saved: 600x600_png\Hair Style\MetaVixen Cute Alien Buns_Back_L.png
+Resizing image: scriptImages\Hair Style\MetaVixen Cute Alien Buns_Front_C1.png to 600x600
+Resized image saved: 800x800_png\Hair Style\MetaVixen Cute Alien Buns_Back_L.png
+Resizing image: scriptImages\Hair Style\MetaVixen Cute Alien Buns_Front_C1.png to 800x800
+Processing file: MetaVixen Cute Alien Buns_Front_C2.png in Hair Style
+Resized image saved: 600x600_png\Hair Style\MetaVixen Cute Alien Buns_Front_C1.png
+Resizing image: scriptImages\Hair Style\MetaVixen Cute Alien Buns_Front_C2.png to 600x600
+Processing file: MetaVixen Cute Alien Buns_Front_C3.png in Hair Style
+Resized image saved: 800x800_png\Hair Style\MetaVixen Cute Alien Buns_Front_C1.png
+Resizing image: scriptImages\Hair Style\MetaVixen Cute Alien Buns_Front_C2.png to 800x800
+Resized image saved: 600x600_png\Hair Style\MetaVixen Cute Alien Buns_Front_C2.png
+Resizing image: scriptImages\Hair Style\MetaVixen Cute Alien Buns_Front_C3.png to 600x600
+Processing file: MetaVixen Cute Alien Buns_Front_L.png in Hair Style
+Resized image saved: 800x800_png\Hair Style\MetaVixen Cute Alien Buns_Front_C2.png
+Resizing image: scriptImages\Hair Style\MetaVixen Cute Alien Buns_Front_C3.png to 800x800
+Resized image saved: 600x600_png\Hair Style\MetaVixen Cute Alien Buns_Front_C3.png
+Resizing image: scriptImages\Hair Style\MetaVixen Cute Alien Buns_Front_L.png to 600x600
+Resized image saved: 800x800_png\Hair Style\MetaVixen Cute Alien Buns_Front_C3.png
+Resizing image: scriptImages\Hair Style\MetaVixen Cute Alien Buns_Front_L.png to 800x800
+Resized image saved: 600x600_png\Hair Style\MetaVixen Cute Alien Buns_Front_L.png
+Resizing image: scriptImages\Skin\MetaVixen Constellation.png to 600x600
+Resized image saved: 800x800_png\Hair Style\MetaVixen Cute Alien Buns_Front_L.png
+Resizing image: scriptImages\Skin\MetaVixen Constellation.png to 800x800
+Processing file: MetaVixen Classic Constellation_Back_C2.png in subfolder: Hair Style
+Processing file: MetaVixen Classic Constellation_Back_C1.png in Hair Style
+Processing file: MetaVixen Classic Constellation_Back_C2.png in Hair Style
+Resized image saved: 600x600_png\Skin\MetaVixen Constellation.png
+Processing file: MetaVixen Classic Constellation_Back_L.png in Hair Style
+Resized image saved: 800x800_png\Skin\MetaVixen Constellation.png
+Processing file: MetaVixen Classic Constellation_Front_C1.png in Hair Style
+Processing file: MetaVixen Classic Constellation_Front_C2.png in Hair Style
+Processing file: MetaVixen Classic Constellation_Front_L.png in Hair Style
+Processing file: MetaVixen Cute Alien Buns_Back_C1.png in Hair Style
+Processing file: MetaVixen Cute Alien Buns_Back_C3.png in Hair Style
+Processing file: MetaVixen Cute Alien Buns_Back_L.png in Hair Style
+Processing file: MetaVixen Cute Alien Buns_Front_C1.png in Hair Style
+Processing file: MetaVixen Cute Alien Buns_Front_C2.png in Hair Style
+Processing file: MetaVixen Cute Alien Buns_Front_C3.png in Hair Style
+Processing file: MetaVixen Cute Alien Buns_Front_L.png in Hair Style
+Processing file: MetaVixen Classic Constellation_Back_L.png in subfolder: Hair Style
+Processing file: MetaVixen Classic Constellation_Back_C1.png in Hair Style
+Processing file: MetaVixen Classic Constellation_Back_C2.png in Hair Style
+Processing file: MetaVixen Classic Constellation_Back_L.png in Hair Style
+Processing file: MetaVixen Classic Constellation_Front_C1.png in Hair Style
+Processing file: MetaVixen Classic Constellation_Front_C2.png in Hair Style
+Processing file: MetaVixen Classic Constellation_Front_L.png in Hair Style
+Processing file: MetaVixen Cute Alien Buns_Back_C1.png in Hair Style
+Processing file: MetaVixen Cute Alien Buns_Back_C3.png in Hair Style
+Processing file: MetaVixen Cute Alien Buns_Back_L.png in Hair Style
+Processing file: MetaVixen Cute Alien Buns_Front_C1.png in Hair Style
+Processing file: MetaVixen Cute Alien Buns_Front_C2.png in Hair Style
+Processing file: MetaVixen Cute Alien Buns_Front_C3.png in Hair Style
+Processing file: MetaVixen Cute Alien Buns_Front_L.png in Hair Style
+Checking existence of PNG: compositeImages\Hair Style\MetaVixen Classic Constellation_Back.png
+Checking existence of JPG: 300x300_jpg\Hair Style\MetaVixen Classic Constellation_Back.jpg
+Files not found, processing: PNG - compositeImages\Hair Style\MetaVixen Classic Constellation_Back.png, JPG - 300x300_jpg\Hair Style\MetaVixen Classic Constellation_Back.jpg
+Processing image group: MetaVixen Classic Constellation_Front
+Processing file: MetaVixen Classic Constellation_Front_C1.png in subfolder: Hair Style
+Processing file: MetaVixen Classic Constellation_Back_C1.png in Hair Style
+Processing file: MetaVixen Classic Constellation_Back_C2.png in Hair Style
+Processing file: MetaVixen Classic Constellation_Back_L.png in Hair Style
+Processing file: MetaVixen Classic Constellation_Front_C1.png in Hair Style
+Processing file: MetaVixen Classic Constellation_Front_C2.png in Hair Style
+Processing file: MetaVixen Classic Constellation_Front_L.png in Hair Style
+Processing file: MetaVixen Cute Alien Buns_Back_C1.png in Hair Style
+Processing file: MetaVixen Cute Alien Buns_Back_C3.png in Hair Style
+Processing file: MetaVixen Cute Alien Buns_Back_L.png in Hair Style
+Processing file: MetaVixen Cute Alien Buns_Front_C1.png in Hair Style
+Processing file: MetaVixen Cute Alien Buns_Front_C2.png in Hair Style
+Processing file: MetaVixen Cute Alien Buns_Front_C3.png in Hair Style
+Processing file: MetaVixen Cute Alien Buns_Front_L.png in Hair Style
+Processing file: MetaVixen Classic Constellation_Front_C2.png in subfolder: Hair Style
+Processing file: MetaVixen Classic Constellation_Back_C1.png in Hair Style
+Processing file: MetaVixen Classic Constellation_Back_C2.png in Hair Style
+Processing file: MetaVixen Classic Constellation_Back_L.png in Hair Style
+Processing file: MetaVixen Classic Constellation_Front_C1.png in Hair Style
+Processing file: MetaVixen Classic Constellation_Front_C2.png in Hair Style
+Processing file: MetaVixen Classic Constellation_Front_L.png in Hair Style
+Processing file: MetaVixen Cute Alien Buns_Back_C1.png in Hair Style
+Processing file: MetaVixen Cute Alien Buns_Back_C3.png in Hair Style
+Processing file: MetaVixen Cute Alien Buns_Back_L.png in Hair Style
+Processing file: MetaVixen Cute Alien Buns_Front_C1.png in Hair Style
+Processing file: MetaVixen Cute Alien Buns_Front_C2.png in Hair Style
+Processing file: MetaVixen Cute Alien Buns_Front_C3.png in Hair Style
+Processing file: MetaVixen Cute Alien Buns_Front_L.png in Hair Style
+Processing file: MetaVixen Classic Constellation_Front_L.png in subfolder: Hair Style
+Processing file: MetaVixen Classic Constellation_Back_C1.png in Hair Style
+Processing file: MetaVixen Classic Constellation_Back_C2.png in Hair Style
+Processing file: MetaVixen Classic Constellation_Back_L.png in Hair Style
+Processing file: MetaVixen Classic Constellation_Front_C1.png in Hair Style
+Processing file: MetaVixen Classic Constellation_Front_C2.png in Hair Style
+Processing file: MetaVixen Classic Constellation_Front_L.png in Hair Style
+Processing file: MetaVixen Cute Alien Buns_Back_C1.png in Hair Style
+Processing file: MetaVixen Cute Alien Buns_Back_C3.png in Hair Style
+Processing file: MetaVixen Cute Alien Buns_Back_L.png in Hair Style
+Processing file: MetaVixen Cute Alien Buns_Front_C1.png in Hair Style
+Processing file: MetaVixen Cute Alien Buns_Front_C2.png in Hair Style
+Processing file: MetaVixen Cute Alien Buns_Front_C3.png in Hair Style
+Processing file: MetaVixen Cute Alien Buns_Front_L.png in Hair Style
+Checking existence of PNG: compositeImages\Hair Style\MetaVixen Classic Constellation_Front.png
+Checking existence of JPG: 300x300_jpg\Hair Style\MetaVixen Classic Constellation_Front.jpg
+Files not found, processing: PNG - compositeImages\Hair Style\MetaVixen Classic Constellation_Front.png, JPG - 300x300_jpg\Hair Style\MetaVixen Classic Constellation_Front.jpg
+Processing image group: MetaVixen Cute Alien Buns_Back
+Processing file: MetaVixen Cute Alien Buns_Back_C1.png in subfolder: Hair Style
+Processing file: MetaVixen Classic Constellation_Back_C1.png in Hair Style
+Processing file: MetaVixen Classic Constellation_Back_C2.png in Hair Style
+Processing file: MetaVixen Classic Constellation_Back_L.png in Hair Style
+Processing file: MetaVixen Classic Constellation_Front_C1.png in Hair Style
+Processing file: MetaVixen Classic Constellation_Front_C2.png in Hair Style
+Processing file: MetaVixen Classic Constellation_Front_L.png in Hair Style
+Processing file: MetaVixen Cute Alien Buns_Back_C1.png in Hair Style
+Processing file: MetaVixen Cute Alien Buns_Back_C3.png in Hair Style
+Processing file: MetaVixen Cute Alien Buns_Back_L.png in Hair Style
+Processing file: MetaVixen Cute Alien Buns_Front_C1.png in Hair Style
+Processing file: MetaVixen Cute Alien Buns_Front_C2.png in Hair Style
+Processing file: MetaVixen Cute Alien Buns_Front_C3.png in Hair Style
+Processing file: MetaVixen Cute Alien Buns_Front_L.png in Hair Style
+Processing file: MetaVixen Cute Alien Buns_Back_C3.png in subfolder: Hair Style
+Processing file: MetaVixen Classic Constellation_Back_C1.png in Hair Style
+Processing file: MetaVixen Classic Constellation_Back_C2.png in Hair Style
+Processing file: MetaVixen Classic Constellation_Back_L.png in Hair Style
+Processing file: MetaVixen Classic Constellation_Front_C1.png in Hair Style
+Processing file: MetaVixen Classic Constellation_Front_C2.png in Hair Style
+Processing file: MetaVixen Classic Constellation_Front_L.png in Hair Style
+Processing file: MetaVixen Cute Alien Buns_Back_C1.png in Hair Style
+Processing file: MetaVixen Cute Alien Buns_Back_C3.png in Hair Style
+Processing file: MetaVixen Cute Alien Buns_Back_L.png in Hair Style
+Processing file: MetaVixen Cute Alien Buns_Front_C1.png in Hair Style
+Processing file: MetaVixen Cute Alien Buns_Front_C2.png in Hair Style
+Processing file: MetaVixen Cute Alien Buns_Front_C3.png in Hair Style
+Processing file: MetaVixen Cute Alien Buns_Front_L.png in Hair Style
+Processing file: MetaVixen Cute Alien Buns_Back_L.png in subfolder: Hair Style
+Processing file: MetaVixen Classic Constellation_Back_C1.png in Hair Style
+Processing file: MetaVixen Classic Constellation_Back_C2.png in Hair Style
+Processing file: MetaVixen Classic Constellation_Back_L.png in Hair Style
+Processing file: MetaVixen Classic Constellation_Front_C1.png in Hair Style
+Processing file: MetaVixen Classic Constellation_Front_C2.png in Hair Style
+Processing file: MetaVixen Classic Constellation_Front_L.png in Hair Style
+Processing file: MetaVixen Cute Alien Buns_Back_C1.png in Hair Style
+Processing file: MetaVixen Cute Alien Buns_Back_C3.png in Hair Style
+Processing file: MetaVixen Cute Alien Buns_Back_L.png in Hair Style
+Processing file: MetaVixen Cute Alien Buns_Front_C1.png in Hair Style
+Processing file: MetaVixen Cute Alien Buns_Front_C2.png in Hair Style
+Processing file: MetaVixen Cute Alien Buns_Front_C3.png in Hair Style
+Processing file: MetaVixen Cute Alien Buns_Front_L.png in Hair Style
+Checking existence of PNG: compositeImages\Hair Style\MetaVixen Cute Alien Buns_Back.png
+Checking existence of JPG: 300x300_jpg\Hair Style\MetaVixen Cute Alien Buns_Back.jpg
+Files not found, processing: PNG - compositeImages\Hair Style\MetaVixen Cute Alien Buns_Back.png, JPG - 300x300_jpg\Hair Style\MetaVixen Cute Alien Buns_Back.jpg
+Processing image group: MetaVixen Cute Alien Buns_Front
+Processing file: MetaVixen Cute Alien Buns_Front_C1.png in subfolder: Hair Style
+Processing file: MetaVixen Classic Constellation_Back_C1.png in Hair Style
+Processing file: MetaVixen Classic Constellation_Back_C2.png in Hair Style
+Processing file: MetaVixen Classic Constellation_Back_L.png in Hair Style
+Processing file: MetaVixen Classic Constellation_Front_C1.png in Hair Style
+Processing file: MetaVixen Classic Constellation_Front_C2.png in Hair Style
+Processing file: MetaVixen Classic Constellation_Front_L.png in Hair Style
+Processing file: MetaVixen Cute Alien Buns_Back_C1.png in Hair Style
+Processing file: MetaVixen Cute Alien Buns_Back_C3.png in Hair Style
+Processing file: MetaVixen Cute Alien Buns_Back_L.png in Hair Style
+Processing file: MetaVixen Cute Alien Buns_Front_C1.png in Hair Style
+Processing file: MetaVixen Cute Alien Buns_Front_C2.png in Hair Style
+Processing file: MetaVixen Cute Alien Buns_Front_C3.png in Hair Style
+Processing file: MetaVixen Cute Alien Buns_Front_L.png in Hair Style
+Processing file: MetaVixen Cute Alien Buns_Front_C2.png in subfolder: Hair Style
+Processing file: MetaVixen Classic Constellation_Back_C1.png in Hair Style
+Processing file: MetaVixen Classic Constellation_Back_C2.png in Hair Style
+Processing file: MetaVixen Classic Constellation_Back_L.png in Hair Style
+Processing file: MetaVixen Classic Constellation_Front_C1.png in Hair Style
+Processing file: MetaVixen Classic Constellation_Front_C2.png in Hair Style
+Processing file: MetaVixen Classic Constellation_Front_L.png in Hair Style
+Processing file: MetaVixen Cute Alien Buns_Back_C1.png in Hair Style
+Processing file: MetaVixen Cute Alien Buns_Back_C3.png in Hair Style
+Processing file: MetaVixen Cute Alien Buns_Back_L.png in Hair Style
+Processing file: MetaVixen Cute Alien Buns_Front_C1.png in Hair Style
+Processing file: MetaVixen Cute Alien Buns_Front_C2.png in Hair Style
+Processing file: MetaVixen Cute Alien Buns_Front_C3.png in Hair Style
+Processing file: MetaVixen Cute Alien Buns_Front_L.png in Hair Style
+Processing file: MetaVixen Cute Alien Buns_Front_C3.png in subfolder: Hair Style
+Processing file: MetaVixen Classic Constellation_Back_C1.png in Hair Style
+Processing file: MetaVixen Classic Constellation_Back_C2.png in Hair Style
+Processing file: MetaVixen Classic Constellation_Back_L.png in Hair Style
+Processing file: MetaVixen Classic Constellation_Front_C1.png in Hair Style
+Processing file: MetaVixen Classic Constellation_Front_C2.png in Hair Style
+Processing file: MetaVixen Classic Constellation_Front_L.png in Hair Style
+Processing file: MetaVixen Cute Alien Buns_Back_C1.png in Hair Style
+Processing file: MetaVixen Cute Alien Buns_Back_C3.png in Hair Style
+Processing file: MetaVixen Cute Alien Buns_Back_L.png in Hair Style
+Processing file: MetaVixen Cute Alien Buns_Front_C1.png in Hair Style
+Processing file: MetaVixen Cute Alien Buns_Front_C2.png in Hair Style
+Processing file: MetaVixen Cute Alien Buns_Front_C3.png in Hair Style
+Processing file: MetaVixen Cute Alien Buns_Front_L.png in Hair Style
+Processing file: MetaVixen Cute Alien Buns_Front_L.png in subfolder: Hair Style
+Processing file: MetaVixen Classic Constellation_Back_C1.png in Hair Style
+Processing file: MetaVixen Classic Constellation_Back_C2.png in Hair Style
+Processing file: MetaVixen Classic Constellation_Back_L.png in Hair Style
+Processing file: MetaVixen Classic Constellation_Front_C1.png in Hair Style
+Processing file: MetaVixen Classic Constellation_Front_C2.png in Hair Style
+Processing file: MetaVixen Classic Constellation_Front_L.png in Hair Style
+Processing file: MetaVixen Cute Alien Buns_Back_C1.png in Hair Style
+Processing file: MetaVixen Cute Alien Buns_Back_C3.png in Hair Style
+Processing file: MetaVixen Cute Alien Buns_Back_L.png in Hair Style
+Processing file: MetaVixen Cute Alien Buns_Front_C1.png in Hair Style
+Processing file: MetaVixen Cute Alien Buns_Front_C2.png in Hair Style
+Processing file: MetaVixen Cute Alien Buns_Front_C3.png in Hair Style
+Processing file: MetaVixen Cute Alien Buns_Front_L.png in Hair Style
+Checking existence of PNG: compositeImages\Hair Style\MetaVixen Cute Alien Buns_Front.png
+Checking existence of JPG: 300x300_jpg\Hair Style\MetaVixen Cute Alien Buns_Front.jpg
+Files not found, processing: PNG - compositeImages\Hair Style\MetaVixen Cute Alien Buns_Front.png, JPG - 300x300_jpg\Hair Style\MetaVixen Cute Alien Buns_Front.jpg
+Processing image group: MetaVixen Constellation.png
+Processing file: MetaVixen Constellation.png in subfolder: Skin
+Checking existence of PNG: compositeImages\Skin\MetaVixen Constellation.png.png
+Checking existence of JPG: 300x300_jpg\Skin\MetaVixen Constellation.png.jpg
+Files not found, processing: PNG - compositeImages\Skin\MetaVixen Constellation.png.png, JPG - 300x300_jpg\Skin\MetaVixen Constellation.png.jpg
+Saved: compositeImages\Skin\MetaVixen Constellation.png.png
+Saved: 300x300_jpg\Skin\MetaVixen Constellation.png.jpg
+Script started
+Subfolders found: Accessory, Background, Bodysuit, Colors, Eyebrows, Eyes, Face Sticker, Frame, Hair Style, Hand, Hat, Mouth, Outfit, Piercing, Skin, Tattoo, Undergarment
+Files found: 2
+Solid colors RGB values saved to colors.json
+Skipping existing file: 800x800_png\Eyebrows\MetaVixen High Brow_L.png
+Skipping existing file: 800x800_png\Skin\MetaVixen Constellation.png
+Skipping existing file: 600x600_png\Eyebrows\MetaVixen High Brow_L.png
+Skipping existing file: 600x600_png\Skin\MetaVixen Constellation.png
+Solid colors RGB values saved to colors.json
+Processing image group: MetaVixen High Brow
+Processing file: MetaVixen High Brow_L.png in subfolder: Eyebrows
+Checking existence of PNG: compositeImages\Eyebrows\MetaVixen High Brow.png
+Checking existence of JPG: 300x300_jpg\Eyebrows\MetaVixen High Brow.jpg
+Skipping existing files: PNG - compositeImages\Eyebrows\MetaVixen High Brow.png, JPG - 300x300_jpg\Eyebrows\MetaVixen High Brow.jpg
+Processing image group: MetaVixen Constellation.png
+Processing file: MetaVixen Constellation.png in subfolder: Skin
+Checking existence of PNG: compositeImages\Skin\MetaVixen Constellation.png.png
+Checking existence of JPG: 300x300_jpg\Skin\MetaVixen Constellation.png.jpg
+Skipping existing files: PNG - compositeImages\Skin\MetaVixen Constellation.png.png, JPG - 300x300_jpg\Skin\MetaVixen Constellation.png.jpg
+Processed and saved skin color trait: MetaVixen Constellation.png
+Processed skin color: MetaVixen Constellation.png
+Script started
+Subfolders found: Accessory, Background, Bodysuit, Colors, Eyebrows, Eyes, Face Sticker, Frame, Hair Style, Hand, Hat, Mouth, Outfit, Piercing, Skin, Tattoo, Undergarment
+Files found: 7
+Solid colors RGB values saved to colors.json
+Skipping existing file: 800x800_png\Eyebrows\MetaVixen High Brow_L.png
+Resizing image: scriptImages\Hair Style\MetaVixen Classic Constellation_Back_C1.png to 800x800
+Skipping existing file: 600x600_png\Eyebrows\MetaVixen High Brow_L.png
+Resizing image: scriptImages\Hair Style\MetaVixen Classic Constellation_Back_C1.png to 600x600
+Solid colors RGB values saved to colors.json
+Processing image group: MetaVixen High Brow
+Processing file: MetaVixen High Brow_L.png in subfolder: Eyebrows
+Checking existence of PNG: compositeImages\Eyebrows\MetaVixen High Brow.png
+Checking existence of JPG: 300x300_jpg\Eyebrows\MetaVixen High Brow.jpg
+Skipping existing files: PNG - compositeImages\Eyebrows\MetaVixen High Brow.png, JPG - 300x300_jpg\Eyebrows\MetaVixen High Brow.jpg
+Processing image group: MetaVixen Classic Constellation_Back
+Resized image saved: 600x600_png\Hair Style\MetaVixen Classic Constellation_Back_C1.png
+Resizing image: scriptImages\Hair Style\MetaVixen Classic Constellation_Back_C2.png to 600x600
+Resized image saved: 800x800_png\Hair Style\MetaVixen Classic Constellation_Back_C1.png
+Resizing image: scriptImages\Hair Style\MetaVixen Classic Constellation_Back_C2.png to 800x800
+Processing file: MetaVixen Classic Constellation_Back_C1.png in subfolder: Hair Style
+Processing file: MetaVixen Classic Constellation_Back_C1.png in Hair Style
+Processing file: MetaVixen Classic Constellation_Back_C2.png in Hair Style
+Resized image saved: 800x800_png\Hair Style\MetaVixen Classic Constellation_Back_C2.png
+Resizing image: scriptImages\Hair Style\MetaVixen Classic Constellation_Back_L.png to 800x800
+Resized image saved: 600x600_png\Hair Style\MetaVixen Classic Constellation_Back_C2.png
+Resizing image: scriptImages\Hair Style\MetaVixen Classic Constellation_Back_L.png to 600x600
+Processing file: MetaVixen Classic Constellation_Back_L.png in Hair Style
+Processing file: MetaVixen Classic Constellation_Front_C1.png in Hair Style
+Resized image saved: 800x800_png\Hair Style\MetaVixen Classic Constellation_Back_L.png
+Resizing image: scriptImages\Hair Style\MetaVixen Classic Constellation_Front_C1.png to 800x800
+Resized image saved: 600x600_png\Hair Style\MetaVixen Classic Constellation_Back_L.png
+Resizing image: scriptImages\Hair Style\MetaVixen Classic Constellation_Front_C1.png to 600x600
+Processing file: MetaVixen Classic Constellation_Front_C2.png in Hair Style
+Resized image saved: 800x800_png\Hair Style\MetaVixen Classic Constellation_Front_C1.png
+Resizing image: scriptImages\Hair Style\MetaVixen Classic Constellation_Front_C2.png to 800x800
+Resized image saved: 600x600_png\Hair Style\MetaVixen Classic Constellation_Front_C1.png
+Resizing image: scriptImages\Hair Style\MetaVixen Classic Constellation_Front_C2.png to 600x600
+Processing file: MetaVixen Classic Constellation_Front_L.png in Hair Style
+Resized image saved: 800x800_png\Hair Style\MetaVixen Classic Constellation_Front_C2.png
+Resizing image: scriptImages\Hair Style\MetaVixen Classic Constellation_Front_L.png to 800x800
+Resized image saved: 600x600_png\Hair Style\MetaVixen Classic Constellation_Front_C2.png
+Resizing image: scriptImages\Hair Style\MetaVixen Classic Constellation_Front_L.png to 600x600
+Resized image saved: 800x800_png\Hair Style\MetaVixen Classic Constellation_Front_L.png
+Resized image saved: 600x600_png\Hair Style\MetaVixen Classic Constellation_Front_L.png
+Processing file: MetaVixen Classic Constellation_Back_C2.png in subfolder: Hair Style
+Processing file: MetaVixen Classic Constellation_Back_C1.png in Hair Style
+Processing file: MetaVixen Classic Constellation_Back_C2.png in Hair Style
+Processing file: MetaVixen Classic Constellation_Back_L.png in Hair Style
+Processing file: MetaVixen Classic Constellation_Front_C1.png in Hair Style
+Processing file: MetaVixen Classic Constellation_Front_C2.png in Hair Style
+Processing file: MetaVixen Classic Constellation_Front_L.png in Hair Style
+Processing file: MetaVixen Classic Constellation_Back_L.png in subfolder: Hair Style
+Processing file: MetaVixen Classic Constellation_Back_C1.png in Hair Style
+Processing file: MetaVixen Classic Constellation_Back_C2.png in Hair Style
+Processing file: MetaVixen Classic Constellation_Back_L.png in Hair Style
+Processing file: MetaVixen Classic Constellation_Front_C1.png in Hair Style
+Processing file: MetaVixen Classic Constellation_Front_C2.png in Hair Style
+Processing file: MetaVixen Classic Constellation_Front_L.png in Hair Style
+Checking existence of PNG: compositeImages\Hair Style\MetaVixen Classic Constellation_Back.png
+Checking existence of JPG: 300x300_jpg\Hair Style\MetaVixen Classic Constellation_Back.jpg
+Files not found, processing: PNG - compositeImages\Hair Style\MetaVixen Classic Constellation_Back.png, JPG - 300x300_jpg\Hair Style\MetaVixen Classic Constellation_Back.jpg
+Processing image group: MetaVixen Classic Constellation_Front
+Processing file: MetaVixen Classic Constellation_Front_C1.png in subfolder: Hair Style
+Processing file: MetaVixen Classic Constellation_Back_C1.png in Hair Style
+Processing file: MetaVixen Classic Constellation_Back_C2.png in Hair Style
+Processing file: MetaVixen Classic Constellation_Back_L.png in Hair Style
+Processing file: MetaVixen Classic Constellation_Front_C1.png in Hair Style
+Processing file: MetaVixen Classic Constellation_Front_C2.png in Hair Style
+Processing file: MetaVixen Classic Constellation_Front_L.png in Hair Style
+Processing file: MetaVixen Classic Constellation_Front_C2.png in subfolder: Hair Style
+Processing file: MetaVixen Classic Constellation_Back_C1.png in Hair Style
+Processing file: MetaVixen Classic Constellation_Back_C2.png in Hair Style
+Processing file: MetaVixen Classic Constellation_Back_L.png in Hair Style
+Processing file: MetaVixen Classic Constellation_Front_C1.png in Hair Style
+Processing file: MetaVixen Classic Constellation_Front_C2.png in Hair Style
+Processing file: MetaVixen Classic Constellation_Front_L.png in Hair Style
+Processing file: MetaVixen Classic Constellation_Front_L.png in subfolder: Hair Style
+Processing file: MetaVixen Classic Constellation_Back_C1.png in Hair Style
+Processing file: MetaVixen Classic Constellation_Back_C2.png in Hair Style
+Processing file: MetaVixen Classic Constellation_Back_L.png in Hair Style
+Processing file: MetaVixen Classic Constellation_Front_C1.png in Hair Style
+Processing file: MetaVixen Classic Constellation_Front_C2.png in Hair Style
+Processing file: MetaVixen Classic Constellation_Front_L.png in Hair Style
+Checking existence of PNG: compositeImages\Hair Style\MetaVixen Classic Constellation_Front.png
+Checking existence of JPG: 300x300_jpg\Hair Style\MetaVixen Classic Constellation_Front.jpg
+Files not found, processing: PNG - compositeImages\Hair Style\MetaVixen Classic Constellation_Front.png, JPG - 300x300_jpg\Hair Style\MetaVixen Classic Constellation_Front.jpg

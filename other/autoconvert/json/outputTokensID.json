@@ -1,274 +1,115 @@
 [
     {
-        "tokenId": 81,
-        "name": "#1 Fan",
+        "tokenId": 98,
+        "name": "MetaVixen Pack",
         "attributes": [
             {
-                "trait_type": "Hand",
-                "value": "#1 Fan Trophy"
-            }
-        ],
-        "metaPath": ""
-    },
-    {
-        "tokenId": 79,
-        "name": "Bunny Baller Babe",
-        "attributes": [
-            {
-                "trait_type": "Outfit",
-                "value": "Baller Babe"
-            },
-            {
-                "trait_type": "Hat",
-                "value": "Baller Bunny Band"
+                "trait_type": "Undergarment",
+                "value": "MetaVixen Nacho Chips"
             },
             {
                 "trait_type": "Accessory",
-                "value": "Ref Mc Blindy"
+                "value": "MetaVixen Necklettuce"
             },
             {
                 "trait_type": "Hand",
-                "value": "Slam Dunk"
-            }
-        ],
-        "metaPath": ""
-    },
-    {
-        "tokenId": 82,
-        "name": "Bunny Duke",
-        "attributes": [
-            {
-                "trait_type": "Outfit",
-                "value": "Dukes Court Dress"
-            }
-        ],
-        "metaPath": ""
-    },
-    {
-        "tokenId": 83,
-        "name": "Bunny Emperor",
-        "attributes": [
-            {
-                "trait_type": "Hat",
-                "value": "Bunny Emperor Laurels"
-            },
-            {
-                "trait_type": "Outfit",
-                "value": "Bunny Emperor Toga"
-            }
-        ],
-        "metaPath": ""
-    },
-    {
-        "tokenId": 84,
-        "name": "Bunny Knight",
-        "attributes": [
-            {
-                "trait_type": "Hand",
-                "value": "Sword Hand"
-            }
-        ],
-        "metaPath": ""
-    },
-    {
-        "tokenId": 85,
-        "name": "Bunny U Cheer Squad",
-        "attributes": [
-            {
-                "trait_type": "Hand",
-                "value": "Pom Poms"
-            }
-        ],
-        "metaPath": ""
-    },
-    {
-        "tokenId": 86,
-        "name": "Crypto Cutie",
-        "attributes": [
-            {
-                "trait_type": "Hand",
-                "value": "Shopping Bags"
-            }
-        ],
-        "metaPath": ""
-    },
-    {
-        "tokenId": 87,
-        "name": "Dorothys Drag",
-        "attributes": [
-            {
-                "trait_type": "Frame",
-                "value": "Smoke Frame"
-            }
-        ],
-        "metaPath": ""
-    },
-    {
-        "tokenId": 88,
-        "name": "Ghostfren",
-        "attributes": [
-            {
-                "trait_type": "Hat",
-                "value": "Ghosty Crown"
-            }
-        ],
-        "metaPath": ""
-    },
-    {
-        "tokenId": 80,
-        "name": "Halftone Dye Pack 1",
-        "attributes": [
-            {
-                "trait_type": "Dye",
-                "value": "Blue Screen Print"
-            },
-            {
-                "trait_type": "Dye",
-                "value": "Blueberry Halftone"
-            },
-            {
-                "trait_type": "Dye",
-                "value": "Burnt Orange Halftone"
-            },
-            {
-                "trait_type": "Dye",
-                "value": "Envy Green Halftone"
-            },
-            {
-                "trait_type": "Dye",
-                "value": "Flamingo Halftone"
-            },
-            {
-                "trait_type": "Dye",
-                "value": "Green Screen Print"
-            },
-            {
-                "trait_type": "Dye",
-                "value": "Mustard Halftone"
-            },
-            {
-                "trait_type": "Dye",
-                "value": "Ocean Spray Halftone"
-            },
-            {
-                "trait_type": "Dye",
-                "value": "Orange Screen Print"
-            },
-            {
-                "trait_type": "Dye",
-                "value": "Pink Screen Print"
-            },
-            {
-                "trait_type": "Dye",
-                "value": "Yellow Screen Print"
+                "value": "MetaVixen Tasty Taco"
             },
             {
                 "trait_type": "Accessory",
-                "value": "Soon Shades"
-            }
-        ],
-        "metaPath": ""
-    },
-    {
-        "tokenId": 89,
-        "name": "Intergalactic Bunny",
-        "attributes": [
-            {
-                "trait_type": "Hat",
-                "value": "Intergalactic Bunny Space Helmet"
+                "value": "MetaVixen Bling"
             },
             {
                 "trait_type": "Outfit",
-                "value": "Intergalactic Bunny Space Suit"
-            }
-        ],
-        "metaPath": ""
-    },
-    {
-        "tokenId": 90,
-        "name": "Mad Hatter",
-        "attributes": [
-            {
-                "trait_type": "Outfit",
-                "value": "Mad Hatters Coat"
+                "value": "MetaVixen Bone Armor"
             },
             {
                 "trait_type": "Hat",
-                "value": "Mad Hatters Hat"
-            }
-        ],
-        "metaPath": ""
-    },
-    {
-        "tokenId": 91,
-        "name": "Mika-tude",
-        "attributes": [
+                "value": "MetaVixen Skull Crown"
+            },
+            {
+                "trait_type": "Eyes",
+                "value": "MetaVixen Eyes"
+            },
+            {
+                "trait_type": "Undergarment",
+                "value": "MetaVixen Starfishies"
+            },
+            {
+                "trait_type": "Hair Style",
+                "value": "MetaVixen Cute Alien Buns"
+            },
+            {
+                "trait_type": "Hat",
+                "value": "MetaVixen Rose Crown"
+            },
             {
                 "trait_type": "Mouth",
-                "value": "Resting Bun Face"
-            }
-        ],
-        "metaPath": ""
-    },
-    {
-        "tokenId": 92,
-        "name": "Royal Bunny",
-        "attributes": [
+                "value": "MetaVixen Grin"
+            },
             {
-                "trait_type": "Hat",
-                "value": "Royal Bunny Crown"
-            }
-        ],
-        "metaPath": ""
-    },
-    {
-        "tokenId": 93,
-        "name": "Sailor Scout",
-        "attributes": [
-            {
-                "trait_type": "Hand",
-                "value": "Moon Guardian Scepter"
-            }
-        ],
-        "metaPath": ""
-    },
-    {
-        "tokenId": 94,
-        "name": "Super Sparkler",
-        "attributes": [
-            {
-                "trait_type": "Hat",
-                "value": "Sparkle Bunny Ears"
-            }
-        ],
-        "metaPath": ""
-    },
-    {
-        "tokenId": 95,
-        "name": "Vampire Slayer",
-        "attributes": [
-            {
-                "trait_type": "Hand",
-                "value": "Mr Pointy"
-            }
-        ],
-        "metaPath": ""
-    },
-    {
-        "tokenId": 96,
-        "name": "World Domination Bunny",
-        "attributes": [
-            {
-                "trait_type": "Hand",
-                "value": "Excellent"
+                "trait_type": "Background",
+                "value": "MetaVixen Swoosh"
             },
             {
                 "trait_type": "Accessory",
-                "value": "Fancy Mustache"
+                "value": "MetaVixen Bone Dangle"
             },
             {
-                "trait_type": "Accessory",
-                "value": "Monocle"
+                "trait_type": "Hat",
+                "value": "MetaVixen SnapBack Babe"
+            },
+            {
+                "trait_type": "Outfit",
+                "value": "MetaVixen Heartless Top"
+            },
+            {
+                "trait_type": "Skin",
+                "value": "MetaVixen Constellation"
+            },
+            {
+                "trait_type": "Eyebrows",
+                "value": "MetaVixen High Brow"
+            },
+            {
+                "trait_type": "Undergarment",
+                "value": "MetaVixen Smell The Roses"
+            },
+            {
+                "trait_type": "Hat",
+                "value": "MetaVixen Baby Its Cold Outside"
+            },
+            {
+                "trait_type": "Hat",
+                "value": "MetaVixen Polycrown"
+            },
+            {
+                "trait_type": "Hair Style",
+                "value": "MetaVixen Classic Constellation"
+            },
+            {
+                "trait_type": "Frame",
+                "value": "MetaVixen Logo"
+            },
+            {
+                "trait_type": "Background",
+                "value": "MetaVixen Seaside"
+            },
+            {
+                "trait_type": "Background",
+                "value": "MetaVixen Roses"
+            },
+            {
+                "trait_type": "Background",
+                "value": "MetaVixen Storm"
+            },
+            {
+                "trait_type": "Background",
+                "value": "MetaVixen Flower"
+            },
+            {
+                "trait_type": "Background",
+                "value": "MetaVixen Crystal"
             }
         ],
         "metaPath": ""

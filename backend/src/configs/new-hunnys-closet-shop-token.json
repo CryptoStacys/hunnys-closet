@@ -2222,5 +2222,120 @@
           }
       ],
       "metaPath": "https://hunnysclosetshop.s3.us-east-2.amazonaws.com/images/goodies/97"
-  }
+  },
+  {
+    "tokenId": 98,
+    "name": "MetaVixen Pack",
+    "attributes": [
+        {
+            "trait_type": "Undergarment",
+            "value": "MetaVixen Nacho Chips"
+        },
+        {
+            "trait_type": "Accessory",
+            "value": "MetaVixen Necklettuce"
+        },
+        {
+            "trait_type": "Hand",
+            "value": "MetaVixen Tasty Taco"
+        },
+        {
+            "trait_type": "Accessory",
+            "value": "MetaVixen Bling"
+        },
+        {
+            "trait_type": "Outfit",
+            "value": "MetaVixen Bone Armor"
+        },
+        {
+            "trait_type": "Hat",
+            "value": "MetaVixen Skull Crown"
+        },
+        {
+            "trait_type": "Eyes",
+            "value": "MetaVixen Eyes"
+        },
+        {
+            "trait_type": "Undergarment",
+            "value": "MetaVixen Starfishies"
+        },
+        {
+            "trait_type": "Hair Style",
+            "value": "MetaVixen Cute Alien Buns"
+        },
+        {
+            "trait_type": "Hat",
+            "value": "MetaVixen Rose Crown"
+        },
+        {
+            "trait_type": "Mouth",
+            "value": "MetaVixen Grin"
+        },
+        {
+            "trait_type": "Background",
+            "value": "MetaVixen Swoosh"
+        },
+        {
+            "trait_type": "Accessory",
+            "value": "MetaVixen Bone Dangle"
+        },
+        {
+            "trait_type": "Hat",
+            "value": "MetaVixen SnapBack Babe"
+        },
+        {
+            "trait_type": "Outfit",
+            "value": "MetaVixen Heartless Top"
+        },
+        {
+            "trait_type": "Skin",
+            "value": "MetaVixen Constellation"
+        },
+        {
+            "trait_type": "Eyebrows",
+            "value": "MetaVixen High Brow"
+        },
+        {
+            "trait_type": "Undergarment",
+            "value": "MetaVixen Smell The Roses"
+        },
+        {
+            "trait_type": "Hat",
+            "value": "MetaVixen Baby Its Cold Outside"
+        },
+        {
+            "trait_type": "Hat",
+            "value": "MetaVixen Polycrown"
+        },
+        {
+            "trait_type": "Hair Style",
+            "value": "MetaVixen Classic Constellation"
+        },
+        {
+            "trait_type": "Frame",
+            "value": "MetaVixen Logo"
+        },
+        {
+            "trait_type": "Background",
+            "value": "MetaVixen Seaside"
+        },
+        {
+            "trait_type": "Background",
+            "value": "MetaVixen Roses"
+        },
+        {
+            "trait_type": "Background",
+            "value": "MetaVixen Storm"
+        },
+        {
+            "trait_type": "Background",
+            "value": "MetaVixen Flower"
+        },
+        {
+            "trait_type": "Background",
+            "value": "MetaVixen Crystal"
+        }
+    ],
+    "metaPath": "https://hunnysclosetshop.s3.us-east-2.amazonaws.com/images/goodies/98"
+}
 ]

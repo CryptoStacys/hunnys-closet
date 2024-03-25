@@ -1,61 +1,66 @@
 {
   "attributes": [
     {"name": "Accessory", "traits": [
-        {"name": "Ref Mc Blindy","colors": 4,"rarity": "Common","tags": [],"token_id": 79},
-        {"name": "Soon Shades","colors": 2,"rarity": "Common","tags": ["glasses"],"token_id": 80},
-        {"name": "Fancy Mustache","colors": 0,"rarity": "Common","tags": [],"token_id": 96},
-        {"name": "Monocle","colors": 2,"rarity": "Common","tags": [],"token_id": 96}
+        {"name": "MetaVixen Bling","colors": 1,"rarity": "Common","tags": [],"token_id": 98},
+        {"name": "MetaVixen Bone Dangle","colors": 1,"rarity": "Common","tags": [],"token_id": 98},
+        {"name": "MetaVixen Necklettuce","colors": 2,"rarity": "Common","tags": [],"token_id": 98}
     ]},
 
-    {"name": "Dye", "traits": [
-        {"name": "Blue Screen Print","colors": 0,"rarity": "Common","tags": [],"token_id": 80},
-        {"name": "Blueberry Halftone","colors": 0,"rarity": "Common","tags": [],"token_id": 80},
-        {"name": "Burnt Orange Halftone","colors": 0,"rarity": "Common","tags": [],"token_id": 80},
-        {"name": "Envy Green Halftone","colors": 0,"rarity": "Common","tags": [],"token_id": 80},
-        {"name": "Flamingo Halftone","colors": 0,"rarity": "Common","tags": [],"token_id": 80},
-        {"name": "Green Screen Print","colors": 0,"rarity": "Common","tags": [],"token_id": 80},
-        {"name": "Mustard Halftone","colors": 0,"rarity": "Common","tags": [],"token_id": 80},
-        {"name": "Ocean Spray Halftone","colors": 0,"rarity": "Common","tags": [],"token_id": 80},
-        {"name": "Orange Screen Print","colors": 0,"rarity": "Common","tags": [],"token_id": 80},
-        {"name": "Pink Screen Print","colors": 0,"rarity": "Common","tags": [],"token_id": 80},
-        {"name": "Yellow Screen Print","colors": 0,"rarity": "Common","tags": [],"token_id": 80}
+    {"name": "Background", "traits": [
+        {"name": "MetaVixen Crystal","colors": 0,"rarity": "Common","tags": [],"token_id": 98},
+        {"name": "MetaVixen Flower","colors": 0,"rarity": "Common","tags": [],"token_id": 98},
+        {"name": "MetaVixen Roses","colors": 0,"rarity": "Common","tags": [],"token_id": 98},
+        {"name": "MetaVixen Seaside","colors": 0,"rarity": "Common","tags": [],"token_id": 98},
+        {"name": "MetaVixen Storm","colors": 0,"rarity": "Common","tags": [],"token_id": 98},
+        {"name": "MetaVixen Swoosh","colors": 2,"rarity": "Common","tags": [],"token_id": 98}
+    ]},
+
+    {"name": "Eyebrows", "traits": [
+        {"name": "MetaVixen High Brow","colors": 0,"rarity": "Common","tags": [],"token_id": 98}
+    ]},
+
+    {"name": "Eyes", "traits": [
+        {"name": "MetaVixen Eyes","colors": 1,"rarity": "Common","tags": [],"token_id": 98}
     ]},
 
     {"name": "Frame", "traits": [
-        {"name": "Smoke Frame","colors": 0,"rarity": "Common","tags": [],"token_id": 87}
+        {"name": "MetaVixen Logo","colors": 1,"rarity": "Common","tags": [],"token_id": 98}
+    ]},
+
+    {"name": "Hair Style", "traits": [
+        {"name": "MetaVixen Classic Constellation","colors": 2,"rarity": "Common","parts":1,"tags": [],"token_id": 98},
+        {"name": "MetaVixen Cute Alien Buns","colors": 3,"rarity": "Common","parts":2,"tags": [],"token_id": 98}
     ]},
 
     {"name": "Hand", "traits": [
-        {"name": "Slam Dunk","colors": 2,"rarity": "Common","tags": ["skin"],"token_id": 79},
-        {"name": "#1 Fan Trophy","colors": 5,"rarity": "Common","tags": ["skin"],"token_id": 81},
-        {"name": "Sword Hand","colors": 3,"rarity": "Common","tags": [],"token_id": 84},
-        {"name": "Pom Poms","colors": 4,"rarity": "Common","tags": ["skin"],"token_id": 85},
-        {"name": "Shopping Bags","colors": 5,"rarity": "Common","tags": ["skin"],"token_id": 86},
-        {"name": "Moon Guardian Scepter","colors": 4,"rarity": "Common","tags": [],"token_id": 93},
-        {"name": "Mr Pointy","colors": 3,"rarity": "Common","tags": [],"token_id": 95},
-        {"name": "Excellent","colors": 1,"rarity": "Common","tags": ["skin"],"token_id": 96}
+        {"name": "MetaVixen Tasty Taco","colors": 4,"rarity": "Common","tags": ["skin"],"token_id": 98}
     ]},
 
     {"name": "Hat", "traits": [
-        {"name": "Baller Bunny Band","colors": 4,"rarity": "Common","tags": [],"token_id": 79},
-        {"name": "Bunny Emperor Laurels","colors": 2,"rarity": "Common","tags": [],"token_id": 83},
-        {"name": "Ghosty Crown","colors": 2,"rarity": "Common","tags": [],"token_id": 88},
-        {"name": "Intergalactic Bunny Space Helmet","colors": 1,"rarity": "Common","tags": [],"token_id": 89},
-        {"name": "Mad Hatters Hat","colors": 4,"rarity": "Common","tags": [],"token_id": 90},
-        {"name": "Royal Bunny Crown","colors": 5,"rarity": "Common","tags": [],"token_id": 92},
-        {"name": "Sparkle Bunny Ears","colors": 3,"rarity": "Common","tags": [],"token_id": 94}
+        {"name": "MetaVixen Baby Its Cold Outside","colors": 3,"rarity": "Common","tags": ["twoParts"],"token_id": 98},
+        {"name": "MetaVixen Polycrown","colors": 4,"rarity": "Common","tags": [],"token_id": 98},
+        {"name": "MetaVixen Rose Crown","colors": 2,"rarity": "Common","tags": [],"token_id": 98},
+        {"name": "MetaVixen Skull Crown","colors": 1,"rarity": "Common","tags": [],"token_id": 98},
+        {"name": "MetaVixen SnapBack Babe","colors": 2,"rarity": "Common","tags": [],"token_id": 98}
     ]},
 
     {"name": "Mouth", "traits": [
-        {"name": "Resting Bun Face","colors": 2,"rarity": "Common","tags": [],"token_id": 91}
+        {"name": "MetaVixen Grin","colors": 1,"rarity": "Common","tags": [],"token_id": 98}
     ]},
 
     {"name": "Outfit", "traits": [
-        {"name": "Baller Babe","colors": 4,"rarity": "Common","tags": [],"token_id": 79},
-        {"name": "Dukes Court Dress","colors": 5,"rarity": "Common","tags": [],"token_id": 82},
-        {"name": "Bunny Emperor Toga","colors": 3,"rarity": "Common","tags": [],"token_id": 83},
-        {"name": "Intergalactic Bunny Space Suit","colors": 3,"rarity": "Common","tags": [],"token_id": 89},
-        {"name": "Mad Hatters Coat","colors": 4,"rarity": "Common","tags": [],"token_id": 90}
+        {"name": "MetaVixen Bone Armor","colors": 5,"rarity": "Common","tags": [],"token_id": 98},
+        {"name": "MetaVixen Heartless Top","colors": 2,"rarity": "Common","tags": [],"token_id": 98}
+    ]},
+
+    {"name": "Skin", "traits": [
+        {"name": "MetaVixen Constellation","colors": 0,"rarity": "Common","tags": [],"token_id": 98}
+    ]},
+
+    {"name": "Undergarment", "traits": [
+        {"name": "MetaVixen Nacho Chips","colors": 1,"rarity": "Common","tags": [],"token_id": 98},
+        {"name": "MetaVixen Smell The Roses","colors": 2,"rarity": "Common","tags": [],"token_id": 98},
+        {"name": "MetaVixen Starfishies","colors": 2,"rarity": "Common","tags": [],"token_id": 98}
     ]}
   ]
 }
