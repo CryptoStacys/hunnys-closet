@@ -255,7 +255,7 @@
     {
       "name": "Hair Style",
       "traits": [
-        {"name": "MetaVixen Classic Constellation","colors": 2,"rarity": "Common","parts":1,"tags": [],"token_id": 98},
+        {"name": "MetaVixen Classic Constellation","colors": 2,"rarity": "Common","parts":2,"tags": [],"token_id": 98},
         {"name": "MetaVixen Cute Alien Buns","colors": 3,"rarity": "Common","parts":2,"tags": [],"token_id": 98},
         {"name": "Hottie","colors": 2,"rarity": "Epic","tags": [],"token_id": 67},
         {"name":"Messy Bored Hair","colors":1,"rarity":"Epic","parts":1,"tags":[],"token_id":1},
