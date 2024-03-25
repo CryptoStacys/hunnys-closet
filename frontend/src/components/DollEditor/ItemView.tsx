@@ -59,7 +59,8 @@ export default function ItemView(props: { selectedTrait: Trait; selectedTraitSet
   const SPECIAL_WALLET_ADDRESSES = [
   '0xB179Ec3179f20452710dc544FCd1486b8e7be4C0', // Hypebunny.eth
   '0x18875D28714cf2f434909a42585BaF5d42a93c68',  // Rat dev wallet
-  '0x55Abdc04655d590a48BCd1B996115448b71b7a84' // Stacys
+  '0x55Abdc04655d590a48BCd1B996115448b71b7a84', // Stacys
+  '0x776fE6e45e3d6435FB9728BB8803E7775880555F' // Skuzzy
   ];
 
   const bunnyClubMembers = ["0xa7758394D8f7fD23b0d9F13E02427B514687394B",
