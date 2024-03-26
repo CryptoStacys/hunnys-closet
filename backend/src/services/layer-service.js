@@ -74,6 +74,19 @@ const LayerService = {
         if ((!bodysuit || bodysuit.name === "Empty") && (!hat || hat.name !== "FLS Balaclava" || hat.name !== "FLS Balaclava (Shop)") && hairstyle && hairstyle.parts > 1) {
             layers = LayerService.addLayer(layers, hairstyle, '_Back');
         }
+
+        // UNDERGARMENT
+        if ((!outfit || outfit.name === "Empty") && (!bodysuit || bodysuit.name === "Empty")) {
+            if (!undergarment || undergarment.name === "Empty") {
+                undergarment.name = "Frilly Bra";
+                undergarment.colors = 1;
+                undergarment.origin_id = 0;
+                undergarment.colorsApplied = ["HunnysPurple1"];
+            }
+    
+            layers = LayerService.addLayer(layers, undergarment);
+
+        }
     
         // BACKPACK TWOSIDES BACK (ACCESSORY)
         if (accessory && accessory.tags.includes("backpack") && accessory.tags.includes("twoSides")) {
@@ -229,19 +242,6 @@ const LayerService = {
         // ACCESSORY - GLASSES
         if (accessory && accessory.tags.includes('glasses')) {
             layers = LayerService.addLayer(layers, accessory);
-        }
-
-        // UNDERGARMENT
-        if ((!outfit || outfit.name === "Empty") && (!bodysuit || bodysuit.name === "Empty")) {
-            if (!undergarment || undergarment.name === "Empty") {
-                undergarment.name = "Frilly Bra";
-                undergarment.colors = 1;
-                undergarment.origin_id = 0;
-                undergarment.colorsApplied = ["HunnysPurple1"];
-            }
-    
-            layers = LayerService.addLayer(layers, undergarment);
-
         }
     
         // HAND

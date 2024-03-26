@@ -347,6 +347,10 @@ export default function ItemView(props: { selectedTrait: Trait; selectedTraitSet
       case 9:
         result = `https://buy.hunnys.io/polygon/asset/0x11bc733e719198e2b3746f6841d2818ca87af6da:${trait.token_id || ''}`;
         break;
+      //Metavixens
+      case 10:
+        result = `https://opensea.io/collection/metavixens`;
+        break;
       default:
         result = `#`;
         break;

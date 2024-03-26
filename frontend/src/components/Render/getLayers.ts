@@ -179,6 +179,18 @@ export async function getLayers(token: any): Promise<Layer[]> {
         layers = addLayer(layers, hairstyle, '_Back');
     }
 
+    // UNDERGARMENT
+    if ((!outfit || outfit.name === "Empty") && (!bodysuit || bodysuit.name === "Empty")) {
+        if (!undergarment || undergarment.name === "Empty") {
+            undergarment.name = "Frilly Bra";
+            undergarment.colors = 1;
+            undergarment.origin_id = 0;
+            undergarment.colorsApplied = ["HunnysPurple1"];
+        }
+
+        layers = addLayer(layers, undergarment);
+    }
+
     // BACKPACK TWOSIDES BACK (ACCESSORY)
     if (accessory && accessory.tags.includes("backpack") && accessory.tags.includes("twoSides")) {
         layers = addLayer(layers, accessory, '_Back');
@@ -329,18 +341,6 @@ export async function getLayers(token: any): Promise<Layer[]> {
     if (accessory && accessory.tags.includes('glasses')) {
         layers = addLayer(layers, accessory);
     }
-
-        // UNDERGARMENT
-        if ((!outfit || outfit.name === "Empty") && (!bodysuit || bodysuit.name === "Empty")) {
-            if (!undergarment || undergarment.name === "Empty") {
-                undergarment.name = "Frilly Bra";
-                undergarment.colors = 1;
-                undergarment.origin_id = 0;
-                undergarment.colorsApplied = ["HunnysPurple1"];
-            }
-    
-            layers = addLayer(layers, undergarment);
-        }
 
     // HAND
     if (hand && !hand.tags.includes("onBack")) {

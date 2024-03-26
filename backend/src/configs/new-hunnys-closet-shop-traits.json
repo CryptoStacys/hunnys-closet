@@ -3,9 +3,9 @@
     {
       "name": "Accessory",
       "traits": [
-        {"name": "MetaVixen Bling","colors": 1,"rarity": "Common","tags": [],"token_id": 98},
+        {"name": "MetaVixen Bling","colors": 1,"rarity": "Common","tags": ["onBody"],"token_id": 98},
         {"name": "MetaVixen Bone Dangle","colors": 1,"rarity": "Common","tags": ["earrings"],"token_id": 98},
-        {"name": "MetaVixen Necklettuce","colors": 2,"rarity": "Common","tags": [],"token_id": 98},
+        {"name": "MetaVixen Necklettuce","colors": 2,"rarity": "Common","tags": ["onBody"],"token_id": 98},
         {"name": "Soon Shades","colors": 2,"rarity": "Common","tags": ["glasses"],"token_id": 97},
         {"name": "Ref Mc Blindy","colors": 4,"rarity": "Common","tags": [],"token_id": 79},
         {"name": "Fancy Mustache","colors": 0,"rarity": "Common","tags": [],"token_id": 96},

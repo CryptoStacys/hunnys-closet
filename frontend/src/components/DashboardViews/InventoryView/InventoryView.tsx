@@ -139,6 +139,7 @@ const InventoryView = () => {
     "Fame Lady Society": "Fame Lady Society",
     "New Hunnys Closet Shop": "Hunnys Closet Shop",
     "Hunnys Seasonal": "Hunnys Seasons",
+    "MetaVixens": "MetaVixens",
   };
   const collectionNameMapExtended = {
     all: "All Collections", // Add this line to include "All Collections" option
@@ -816,7 +817,7 @@ const InventoryView = () => {
           ? "p-0 max-w-xs min-h-64"
           : "p-2 d-flex flex-column justify-between"
       }`;
-      const imageClass = "m-auto rounded-xl max-w-full max-h-full"; // Added max-w-full and max-h-full for consistency
+      const imageClass = "m-auto rounded-xl"; // Added max-w-full and max-h-full for consistency
       const titleClass = `${
         gridSize === "8x8" ? "text-sm" : "text-lg"
       } luckiest mb-2 mt-2 text-left`;
@@ -826,8 +827,8 @@ const InventoryView = () => {
           key={index}
           className={`${cardClass} ${isOwned ? "" : "low-brightness"} ${
             gridSize === "8x8"
-              ? "max-w-[250px] max-h-[450px]"
-              : "min-w-[100px] max-w-[200px] max-h-[600px]"
+              ? "max-w-[250px] max-h-[150px]"
+              : "xs:min-w-[120px] xs:max-w-[250px] md:max-w-[180px] "
           }`}
         >
           <div className="pt-1">
@@ -920,7 +921,7 @@ const InventoryView = () => {
                     <SwiperSlide key={idx}>
                       <div className="text-center cursor-pointer">
                         <img
-                          className="max-w-24 max-h-24 mx-auto border-[#C6C6C6] border-2 rounded-xl"
+                          className="mx-auto border-[#C6C6C6] border-2 rounded-xl"
                           src={item[8]}
                           alt={`Trait ${item[8]}`}
                         />

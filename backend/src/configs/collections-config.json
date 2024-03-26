@@ -106,6 +106,17 @@
             "hasStaticMetaPath": false,
             "meta_url" : "",
             "chain": "polygon"
+        },
+        {
+            "name": "Metavixens",
+            "originID" : 10,
+            "contract" : "0xe1c7be9a91bb376acbb7c205f1f733a3468153b4",
+            "tokenConfigPath": "metavixens-token.json",
+            "traitsConfigPath": "metavixens-traits.json",
+            "idMapping": false,
+            "hasStaticMetaPath": true,
+            "meta_url" : "https://hunnys.s3.us-east-2.amazonaws.com/data/",
+            "chain": "polygon"
         }
     ]
 }
