@@ -83,8 +83,11 @@ const ChainService = {
             let web3 = new Web3(infuraUrl);
             let contract = new web3.eth.Contract(abi, contractAddr);
             let tokens;
-    
-            if (originID === 8 || 10) { // 8 = Fame Lady Society, 10 = MetaVixens
+
+            if (originID === 8) { // 8 = Fame Lady Society
+                let balance = await contract.methods.balanceOf(wallet).call();
+                tokens = balance > 0 ? [1] : [];
+            } else if (originID === 10) { // 10 = MetaVixens
                 let balance = await contract.methods.balanceOf(wallet).call();
                 tokens = balance > 0 ? [1] : [];
             } else {
