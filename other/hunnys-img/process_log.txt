@@ -48959,3 +48959,104 @@ Checking existence of JPG: 300x300_jpg\Eyes\MetaVixen Eyes_Right.jpg
 Files not found, processing: PNG - compositeImages\Eyes\MetaVixen Eyes_Right.png, JPG - 300x300_jpg\Eyes\MetaVixen Eyes_Right.jpg
 Saved: compositeImages\Eyes\MetaVixen Eyes_Right.png
 Saved: 300x300_jpg\Eyes\MetaVixen Eyes_Right.jpg
+Script started
+Subfolders found: Accessory, Background, Bodysuit, Colors, Eyebrows, Eyes, Face Sticker, Frame, Hair Style, Hand, Hat, Mouth, Outfit, Piercing, Skin, Tattoo, Undergarment
+Files found: 10
+Solid colors RGB values saved to colors.json
+Skipping existing file: 800x800_png\Eyes\MetaVixen Eyes_Left_C1.png
+Skipping existing file: 800x800_png\Eyes\MetaVixen Eyes_Left_L.png
+Skipping existing file: 800x800_png\Eyes\MetaVixen Eyes_Right_C1.png
+Skipping existing file: 800x800_png\Eyes\MetaVixen Eyes_Right_L.png
+Resizing image: scriptImages\Hair Style\MetaVixen Classic Constellation_Back_C1.png to 800x800
+Skipping existing file: 600x600_png\Eyes\MetaVixen Eyes_Left_C1.png
+Skipping existing file: 600x600_png\Eyes\MetaVixen Eyes_Left_L.png
+Skipping existing file: 600x600_png\Eyes\MetaVixen Eyes_Right_C1.png
+Skipping existing file: 600x600_png\Eyes\MetaVixen Eyes_Right_L.png
+Resizing image: scriptImages\Hair Style\MetaVixen Classic Constellation_Back_C1.png to 600x600
+Solid colors RGB values saved to colors.json
+Processing image group: MetaVixen Eyes
+Resized image saved: 600x600_png\Hair Style\MetaVixen Classic Constellation_Back_C1.png
+Resizing image: scriptImages\Hair Style\MetaVixen Classic Constellation_Back_C2.png to 600x600
+Resized image saved: 800x800_png\Hair Style\MetaVixen Classic Constellation_Back_C1.png
+Resizing image: scriptImages\Hair Style\MetaVixen Classic Constellation_Back_C2.png to 800x800
+Processing file: MetaVixen Eyes_Left_C1.png in subfolder: Eyes
+Resized image saved: 600x600_png\Hair Style\MetaVixen Classic Constellation_Back_C2.png
+Resizing image: scriptImages\Hair Style\MetaVixen Classic Constellation_Back_L.png to 600x600
+Resized image saved: 800x800_png\Hair Style\MetaVixen Classic Constellation_Back_C2.png
+Resizing image: scriptImages\Hair Style\MetaVixen Classic Constellation_Back_L.png to 800x800
+Resized image saved: 600x600_png\Hair Style\MetaVixen Classic Constellation_Back_L.png
+Resizing image: scriptImages\Hair Style\MetaVixen Classic Constellation_Front_C1.png to 600x600
+Resized image saved: 800x800_png\Hair Style\MetaVixen Classic Constellation_Back_L.png
+Resizing image: scriptImages\Hair Style\MetaVixen Classic Constellation_Front_C1.png to 800x800
+Processing file: MetaVixen Eyes_Left_L.png in subfolder: Eyes
+Resized image saved: 600x600_png\Hair Style\MetaVixen Classic Constellation_Front_C1.png
+Resizing image: scriptImages\Hair Style\MetaVixen Classic Constellation_Front_C2.png to 600x600
+Resized image saved: 800x800_png\Hair Style\MetaVixen Classic Constellation_Front_C1.png
+Resizing image: scriptImages\Hair Style\MetaVixen Classic Constellation_Front_C2.png to 800x800
+Resized image saved: 800x800_png\Hair Style\MetaVixen Classic Constellation_Front_C2.png
+Resizing image: scriptImages\Hair Style\MetaVixen Classic Constellation_Front_L.png to 800x800
+Resized image saved: 600x600_png\Hair Style\MetaVixen Classic Constellation_Front_C2.png
+Resizing image: scriptImages\Hair Style\MetaVixen Classic Constellation_Front_L.png to 600x600
+Checking existence of PNG: compositeImages\Eyes\MetaVixen Eyes.png
+Checking existence of JPG: 300x300_jpg\Eyes\MetaVixen Eyes.jpg
+Skipping existing files: PNG - compositeImages\Eyes\MetaVixen Eyes.png, JPG - 300x300_jpg\Eyes\MetaVixen Eyes.jpg
+Processing image group: MetaVixen Eyes_Right
+Processing file: MetaVixen Eyes_Right_C1.png in subfolder: Eyes
+Resized image saved: 600x600_png\Hair Style\MetaVixen Classic Constellation_Front_L.png
+Resized image saved: 800x800_png\Hair Style\MetaVixen Classic Constellation_Front_L.png
+Processing file: MetaVixen Eyes_Right_L.png in subfolder: Eyes
+Checking existence of PNG: compositeImages\Eyes\MetaVixen Eyes_Right.png
+Checking existence of JPG: 300x300_jpg\Eyes\MetaVixen Eyes_Right.jpg
+Files not found, processing: PNG - compositeImages\Eyes\MetaVixen Eyes_Right.png, JPG - 300x300_jpg\Eyes\MetaVixen Eyes_Right.jpg
+Saved: compositeImages\Eyes\MetaVixen Eyes_Right.png
+Saved: 300x300_jpg\Eyes\MetaVixen Eyes_Right.jpg
+Processing image group: MetaVixen Classic Constellation_Back
+Processing file: MetaVixen Classic Constellation_Back_C1.png in subfolder: Hair Style
+Processing file: MetaVixen Classic Constellation_Back_C1.png in Hair Style
+Processing file: MetaVixen Classic Constellation_Back_C2.png in Hair Style
+Processing file: MetaVixen Classic Constellation_Back_L.png in Hair Style
+Processing file: MetaVixen Classic Constellation_Front_C1.png in Hair Style
+Processing file: MetaVixen Classic Constellation_Front_C2.png in Hair Style
+Processing file: MetaVixen Classic Constellation_Front_L.png in Hair Style
+Processing file: MetaVixen Classic Constellation_Back_C2.png in subfolder: Hair Style
+Processing file: MetaVixen Classic Constellation_Back_C1.png in Hair Style
+Processing file: MetaVixen Classic Constellation_Back_C2.png in Hair Style
+Processing file: MetaVixen Classic Constellation_Back_L.png in Hair Style
+Processing file: MetaVixen Classic Constellation_Front_C1.png in Hair Style
+Processing file: MetaVixen Classic Constellation_Front_C2.png in Hair Style
+Processing file: MetaVixen Classic Constellation_Front_L.png in Hair Style
+Processing file: MetaVixen Classic Constellation_Back_L.png in subfolder: Hair Style
+Processing file: MetaVixen Classic Constellation_Back_C1.png in Hair Style
+Processing file: MetaVixen Classic Constellation_Back_C2.png in Hair Style
+Processing file: MetaVixen Classic Constellation_Back_L.png in Hair Style
+Processing file: MetaVixen Classic Constellation_Front_C1.png in Hair Style
+Processing file: MetaVixen Classic Constellation_Front_C2.png in Hair Style
+Processing file: MetaVixen Classic Constellation_Front_L.png in Hair Style
+Checking existence of PNG: compositeImages\Hair Style\MetaVixen Classic Constellation_Back.png
+Checking existence of JPG: 300x300_jpg\Hair Style\MetaVixen Classic Constellation_Back.jpg
+Files not found, processing: PNG - compositeImages\Hair Style\MetaVixen Classic Constellation_Back.png, JPG - 300x300_jpg\Hair Style\MetaVixen Classic Constellation_Back.jpg
+Processing image group: MetaVixen Classic Constellation_Front
+Processing file: MetaVixen Classic Constellation_Front_C1.png in subfolder: Hair Style
+Processing file: MetaVixen Classic Constellation_Back_C1.png in Hair Style
+Processing file: MetaVixen Classic Constellation_Back_C2.png in Hair Style
+Processing file: MetaVixen Classic Constellation_Back_L.png in Hair Style
+Processing file: MetaVixen Classic Constellation_Front_C1.png in Hair Style
+Processing file: MetaVixen Classic Constellation_Front_C2.png in Hair Style
+Processing file: MetaVixen Classic Constellation_Front_L.png in Hair Style
+Processing file: MetaVixen Classic Constellation_Front_C2.png in subfolder: Hair Style
+Processing file: MetaVixen Classic Constellation_Back_C1.png in Hair Style
+Processing file: MetaVixen Classic Constellation_Back_C2.png in Hair Style
+Processing file: MetaVixen Classic Constellation_Back_L.png in Hair Style
+Processing file: MetaVixen Classic Constellation_Front_C1.png in Hair Style
+Processing file: MetaVixen Classic Constellation_Front_C2.png in Hair Style
+Processing file: MetaVixen Classic Constellation_Front_L.png in Hair Style
+Processing file: MetaVixen Classic Constellation_Front_L.png in subfolder: Hair Style
+Processing file: MetaVixen Classic Constellation_Back_C1.png in Hair Style
+Processing file: MetaVixen Classic Constellation_Back_C2.png in Hair Style
+Processing file: MetaVixen Classic Constellation_Back_L.png in Hair Style
+Processing file: MetaVixen Classic Constellation_Front_C1.png in Hair Style
+Processing file: MetaVixen Classic Constellation_Front_C2.png in Hair Style
+Processing file: MetaVixen Classic Constellation_Front_L.png in Hair Style
+Checking existence of PNG: compositeImages\Hair Style\MetaVixen Classic Constellation_Front.png
+Checking existence of JPG: 300x300_jpg\Hair Style\MetaVixen Classic Constellation_Front.jpg
+Files not found, processing: PNG - compositeImages\Hair Style\MetaVixen Classic Constellation_Front.png, JPG - 300x300_jpg\Hair Style\MetaVixen Classic Constellation_Front.jpg
