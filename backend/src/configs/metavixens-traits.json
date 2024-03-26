@@ -7,12 +7,17 @@
     ]},
 
     {"name": "Background", "traits": [
+        {"name": "MetaVixen Constellation","colors": 0,"rarity": "Common","tags": []},
         {"name": "MetaVixen Crystal","colors": 0,"rarity": "Common","tags": []},
         {"name": "MetaVixen Flower","colors": 0,"rarity": "Common","tags": []},
         {"name": "MetaVixen Roses","colors": 0,"rarity": "Common","tags": []},
         {"name": "MetaVixen Seaside","colors": 0,"rarity": "Common","tags": []},
         {"name": "MetaVixen Storm","colors": 0,"rarity": "Common","tags": []},
         {"name": "MetaVixen Swoosh","colors": 2,"rarity": "Common","tags": []}
+    ]},
+
+    {"name": "Dye", "traits": [
+        {"name": "MetaVixen Constellation","colors": 0,"rarity": "Common","tags": []}
     ]},
 
     {"name": "Eyebrows", "traits": [
