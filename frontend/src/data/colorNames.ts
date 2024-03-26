@@ -1079,6 +1079,11 @@ const colorNames = {
     "g": 121,
     "r": 232
 },
+"MetaVixen Constellation": {
+    "b": 97,
+    "g": 41,
+    "r": 54
+},
 "Mika Eyes Blue": {
     "b": 211,
     "g": 89,

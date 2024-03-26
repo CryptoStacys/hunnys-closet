@@ -39,6 +39,7 @@
     {
       "name": "Background",
       "traits": [
+        {"name": "MetaVixen Constellation","colors": 0,"rarity": "Common","tags": [],"token_id": 98},
         {"name": "MetaVixen Crystal","colors": 0,"rarity": "Common","tags": [],"token_id": 98},
         {"name": "MetaVixen Flower","colors": 0,"rarity": "Common","tags": [],"token_id": 98},
         {"name": "MetaVixen Roses","colors": 0,"rarity": "Common","tags": [],"token_id": 98},
@@ -88,6 +89,7 @@
     {
       "name": "Dye",
       "traits": [
+        {"name": "MetaVixen Constellation","colors": 0,"rarity": "Common","tags": [],"token_id": 98},
         {"name": "Blue Screen Print","colors": 0,"rarity": "Common","tags": [],"token_id": 80},
         {"name": "Blueberry Halftone","colors": 0,"rarity": "Common","tags": [],"token_id": 80},
         {"name": "Burnt Orange Halftone","colors": 0,"rarity": "Common","tags": [],"token_id": 80},

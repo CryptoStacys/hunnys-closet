@@ -226,6 +226,7 @@ const colorGroups = {
     "Lonely Forest Purple",
     "MagicalPurple5",
     "MagicalPurple6",
+    "MetaVixen Constellation",
     "Moth Wings",
     "NeonPurple3",
     "NeonPurple4",
