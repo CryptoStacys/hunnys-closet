@@ -629,8 +629,8 @@ const InventoryView = () => {
       // Define card classes
       const cardClass = `border rounded-xl bg-white hover:shadow-lg transform transition duration-500 hover:scale-105 m-2 overflow-hidden ${
         gridSize === "8x8"
-          ? "p-0 max-w-xs min-h-64"
-          : "p-2 d-flex flex-column justify-between"
+              ? "max-w-[100px] max-h-[150px]"
+              : "max-w-[250px] max-h-[600px]"
       }`;
       const imageClass = "m-auto rounded-xl";
       const titleClass = `${
@@ -812,26 +812,24 @@ const InventoryView = () => {
       const isOwned = isTokenOwned(firstItem[2], originName);
 
       // Container classes
-      const cardClass = `border rounded-xl bg-white hover:shadow-lg transform transition duration-500 hover:scale-105 m-2 overflow-hidden ${
-        gridSize === "8x8"
-          ? "p-0 max-w-xs min-h-64"
-          : "p-2 d-flex flex-column justify-between"
-      }`;
-      const imageClass = "m-auto rounded-xl"; // Added max-w-full and max-h-full for consistency
+      const cardClass = `${
+        gridSize === "8x8" ? "p-0" : "p-2"
+      }  border  rounded-xl bg-white hover:shadow-lg transform transition duration-500 hover:scale-105 m-2 overflow-hidden`;
+      const imageClass = "m-auto rounded-xl";
       const titleClass = `${
-        gridSize === "8x8" ? "text-sm" : "text-lg"
-      } luckiest mb-2 mt-2 text-left`;
+        gridSize === "8x8" ? "text-xs" : "text-2xl"
+      }  font-bold mb-2 mt-2 text-left luckiest`;
 
       return (
         <div
           key={index}
-          className={`${cardClass} ${isOwned ? "" : "low-brightness"} ${
+          className={`${cardClass} ${
             gridSize === "8x8"
-              ? "max-w-[250px] max-h-[150px]"
-              : "xs:min-w-[120px] xs:max-w-[250px] md:max-w-[180px] "
+              ? "max-w-[75px] max-h-[150px]"
+              : "max-w-[250px] max-h-[600px]"
           }`}
         >
-          <div className="pt-1">
+          <div className="">
             {/* Only render detailed content for 4x3 grid */}
             {gridSize === "4x3" && (
               <>
@@ -907,21 +905,15 @@ const InventoryView = () => {
                 <Swiper
                   pagination={{ clickable: true }}
                   spaceBetween={10}
-                  slidesPerView={2} // Default to 2 slides per view for smaller screens
-                  breakpoints={{
-                    // When window width is >= 768px (md breakpoint in Tailwind CSS)
-                    832: {
-                      slidesPerView: 3, // Display 3 slides per view on md screens and above
-                    },
-                  }}
+                  slidesPerView={3} // Default to 3 slides per view for smaller screens
                   modules={[Pagination]}
-                  className="mySwiper"
+                  className="mySwiper gap-4"
                 >
                   {items.map((item, idx) => (
                     <SwiperSlide key={idx}>
                       <div className="text-center cursor-pointer">
                         <img
-                          className="mx-auto border-[#C6C6C6] border-2 rounded-xl"
+                          className="mx-auto border-[#C6C6C6] border-2 rounded-xl max-w-20 gap-4"
                           src={item[8]}
                           alt={`Trait ${item[8]}`}
                         />
@@ -1140,7 +1132,7 @@ const InventoryView = () => {
             className={`grid ${
               gridSize === "4x3"
                 ? "break-words grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4"
-                : "break-words grid-cols-2 sm:grid-cols-4 md:grid-cols-6 lg:grid-cols-8 gap-4"
+                : "break-words grid-cols-4 sm:grid-cols-4 md:grid-cols-6 lg:grid-cols-8 gap-4"
             } justify-items-center`}
           >
             {renderItemizedData()}
@@ -1150,7 +1142,7 @@ const InventoryView = () => {
             className={`grid ${
               gridSize === "4x3"
                 ? "break-words grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4"
-                : "break-words grid-cols-2 sm:grid-cols-4 md:grid-cols-8 gap-4"
+                : "break-words grid-cols-4 sm:grid-cols-4 md:grid-cols-6 lg:grid-cols-8 gap-4"
             } justify-items-center`}
           >
             {renderCollectionData()}
