@@ -30,6 +30,8 @@ import { Relayer } from "@openzeppelin/defender-relay-client";
         "https://testing.d35i3wnh0wry5j.amplifyapp.com",
         "https://devhunnys.hunnysnft.com",
         "https://staging-hunnys-closet-2-git-testaroo-rat-benetar-team.vercel.app",
+        "https://closetservices.hunnysnft.com/",
+        "https://closetservices.hunnysnft.com/wp-json/hunnys-closet/v1/"
       ],
     })
   );

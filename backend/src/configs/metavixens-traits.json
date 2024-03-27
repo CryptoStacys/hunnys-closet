@@ -1,9 +1,9 @@
 {
   "attributes": [
     {"name": "Accessory", "traits": [
-        {"name": "MetaVixen Bling","colors": 1,"rarity": "Common","tags": ["onBody"]},
+        {"name": "MetaVixen Bling","colors": 1,"rarity": "Common","tags": []},
         {"name": "MetaVixen Bone Dangle","colors": 1,"rarity": "Common","tags": ["earrings"]},
-        {"name": "MetaVixen Necklettuce","colors": 2,"rarity": "Common","tags": ["onBody"]}
+        {"name": "MetaVixen Necklettuce","colors": 2,"rarity": "Common","tags": []}
     ]},
 
     {"name": "Background", "traits": [
