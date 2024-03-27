@@ -154,6 +154,7 @@ const ShopView = () => {
   "0x247DBa0157DDD215d30d41A70411DbaFbFD6a0F9",
   "0xDbC0019892E644Ad55756Ace79810305E8E4c31d",
   "0xb62500D5a8b9629763d39a4D05784D6A47A72Ab1",
+  "0xce05070e7afa163a029f87bde875084769729943",
   "0x16272E839A5C29A3Fa90E670Cb599d233b6943aC"]; // Replace with actual addresses
   const bunnyClubDiscount = 20; // 10% discount
   const isBunnyClubMember = bunnyClubMembers
