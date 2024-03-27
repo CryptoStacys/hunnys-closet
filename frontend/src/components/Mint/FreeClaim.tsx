@@ -39,10 +39,6 @@ const FreeClaim: React.FC<FreeClaimProps> = ({
   const nftContractAddress = "0x11bc733e719198e2b3746f6841d2818ca87af6da";
   const relayerAddress = "0x5C7E0dA70267937bC12a02c21fD1543f8A165Ba3";
 
-  // produce an ERC-191 signed message.
-  
-  
-
   const handleFreeClaim = async () => {
     setTransactionPending(true);
     console.log("Address Type:", typeof userAddress);

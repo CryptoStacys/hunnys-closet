@@ -14,15 +14,7 @@ import { createWalletClient, http, parseEther } from "viem";
 import { polygon } from "viem/chains";
 import { generatePrivateKey } from 'viem/accounts'
 import { privateKeyToAccount } from 'viem/accounts'
-
-// print this out and save it 
-const privateKey = generatePrivateKey()
-
-// replace the toViem(address) with 
-const account = privateKeyToAccount("0x54aa2a5677a6ea932e15d55e930a5e2ad025ff302e0162a95aed7453931672b8")
-
-// send matic to account.address
-
+import { mintWithWeth } from "../../utils/eligibleTokens";
 
 type MintButtonProps = {
   tokenId: string | undefined;
@@ -87,43 +79,13 @@ const MintButton: React.FC<MintButtonProps> = ({
     fetchDiscountRate();
   }, []);
 
-  const handleMintUsingWaaS = async () => {
-    if (!address || !tokenId || !wallet || !mintPrice) {
-      console.error("Missing vital information for minting");
-      return;
-    }
-  
-    try {
-      const account = privateKeyToAccount("0x54aa2a5677a6ea932e15d55e930a5e2ad025ff302e0162a95aed7453931672b8")
-      const walletClient = createWalletClient({
-        account: account,
-        chain: polygon,
-        transport: http("https://polygon-mainnet.infura.io/v3/c6a0213e06df4189bbb84a64086a38ae"),
-      });
-  
-      // Adjusting for the proper Ether value in wei and converting to BigInt as required by Viem
-      // Ethers's parseUnits returns a BigNumber, which we convert to a string to BigInt
-      const transactionValueInWei = ethers.utils.parseUnits(mintPrice.toString(), 'ether').toString();
-      const valueAsBigInt = BigInt(transactionValueInWei);
-  
-      const transaction = {
-        to: hunnysClosetSalesAddress,
-        value: parseEther('0.00001'),
-      };
-      const hash = await walletClient.sendTransaction(transaction);
-      console.log("Transaction hash:", hash);
-  
-      setTransactionPending(false);
-      onMintSuccess();
-    } catch (error) {
-      console.error("An error occurred:", error);
-      setTransactionPending(false);
-    }
-  };
-  
 
   const handleMint = async () => {
-    
+
+    if (!tokenId || !userAddress) {
+      console.error("Token ID or user address is undefined");
+      return;
+    }
 
     if (!isCorrectNetwork && switchChain) {
       try {
@@ -138,17 +100,19 @@ const MintButton: React.FC<MintButtonProps> = ({
       }
     }
 
-    if (!tokenId || !userAddress) {
-      console.error("Token ID or user address is undefined");
-      return;
-    }
-
     if (!mintPrice) {
       console.error("Mint price is undefined");
       alert("Mint price not available.");
       return;
     }
+    const provider = new ethers.providers.Web3Provider(
+      window.ethereum as any
+    );
+    
+    if (address) {
 
+    return await mintWithWeth(userAddress!, address, tokenId!, mintPrice!, provider)
+    }
     // Convert mintPrice to BigNumber if it's not already
     let safeMintPrice = BigNumber.isBigNumber(mintPrice)
       ? mintPrice

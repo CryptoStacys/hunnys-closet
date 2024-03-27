@@ -154,36 +154,41 @@ const ProfileView = () => {
       provider,
     );
   };
-  AWS.config.update({
-    region: 'us-east-2',
-    apiVersion: 'latest',
-    credentials: {
-      accessKeyId: process.env.AWS_ACCESS_KEY_ID as string,
-      secretAccessKey: process.env.AWS_SECRET_ACCESS_KEY as string
-    }
-  })
 
   const handleImageUpload = async (): Promise<string | null> => {
     if (!selectedFile || !user?.UUID) return null;
-
-    const s3 = new AWS.S3();
-    const fileName = "Profile.png";
-    const filePath = `accounts/${user.UUID}/${fileName}`;
-    const params = {
-      Bucket: "hunnyscloset",
-      Key: filePath,
-      Body: selectedFile,
-      ACL: "public-read",
-    };
-
-    console.log("User UUID", user.UUID);
-
+  
+    // Call your API to get a pre-signed URL and the filePath
     try {
-      const { Location } = await s3.upload(params).promise();
-      return Location; // Return new image URL
+      const response = await fetch('/api/getPresignedUrl', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          uuid: user.UUID, // Send user UUID to generate the correct path
+          fileName: 'Profile.png', // Optional, if you want to specify the file name
+        }),
+      });
+  
+      const { url, filePath } = await response.json();
+  
+      // Now use the pre-signed URL to upload the file to S3
+      const uploadResponse = await fetch(url, {
+        method: 'PUT',
+        body: selectedFile,
+      });
+  
+      if (uploadResponse.ok) {
+        // The file has been uploaded. Construct the URL to the uploaded file
+        // Assuming your S3 bucket is public and can directly serve files
+        const uploadedUrl = `https://hunnyscloset.s3.amazonaws.com/${filePath}`;
+        return uploadedUrl; // Return the URL to the uploaded file
+      } else {
+        throw new Error('Upload failed');
+      }
     } catch (error) {
-      console.error("Failed to upload image:", error);
-      console.log(error); // Add more detailed logging
+      console.error('Failed to upload image:', error);
       return null;
     }
   };

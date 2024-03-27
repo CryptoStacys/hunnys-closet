@@ -564,6 +564,78 @@ a {
   z-index: 1;
 }
 
+.modalBackdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1050; /* High z-index to ensure it's on top */
+}
+
+.modalContent {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  width: 90%;
+  max-width: 600px;
+  text-align: center;
+  position: relative;
+}
+
+.closeModal {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  border: none;
+  background: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.transactionVisual img {
+  max-width: 100px;
+  border-radius: 50%;
+  margin: auto;
+  display: block;
+}
+
+.costDetails {
+  background-color: #f2f4f8; /* Soft background for costs */
+  margin: 20px 0;
+  padding: 10px;
+  border-radius: 4px;
+}
+
+.amount {
+  font-weight: bold;
+}
+
+.actionButtons button {
+  padding: 10px 20px;
+  margin: 10px;
+  border: none;
+  color: white;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.confirmBtn {
+  background-color: #4caf50; /* Green for confirm */
+}
+
+.cancelBtn {
+  background-color: #f44336; /* Red for cancel */
+}
+
+.description {
+  margin: 20px 0;
+}
+
 
 .mint-btn {
   margin-top: 10px;
