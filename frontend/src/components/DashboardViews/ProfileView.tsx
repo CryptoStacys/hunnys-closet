@@ -136,6 +136,8 @@ const ProfileView = () => {
     "0xb85b346c305300291af065f8337e8ad6a6659ee3",
     "0xa5cC1E135C92a4DD1b32A328e1343eB4150461B6",
     "0xce05070e7afa163a029f87bde875084769729943",
+    "0x973Ee618BFd3fb0e49c8A1a0CA2e2E6Aeb930aF3",
+    "0x44b54f249a9ac0dff4e0d512c0c585b70ac47c30",
   ];
 
   const isBunnyClubMember = bunnyClubMembers
