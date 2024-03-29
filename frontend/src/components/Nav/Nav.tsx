@@ -177,17 +177,17 @@ export default function Nav({ rewardStatus }: NavProps) {
             className="rounded-full"
           />
         )}
-        <span className="mx-24 relative right-8">
+        <span className="mx-24 relative right-8 whitespace-nowrap">
           {user?.profile_name || "Account"}
         </span>
       </button>
       {dropdownVisible && (
-        <div className="absolute font-bold right-0 mt-2 py-2 w-48 bg-white rounded-md shadow-xl z-20">
+        <div className="absolute flex text-left flex-col font-bold left-0 mt-2 py-2 w-48 bg-white outline-none rounded-md shadow-xl z-20">
           <Link to="/">
             <p className="indent-2">Dashboard</p>
             </Link>
           <a
-            className="block px-4 py-2 text-sm text-gray-700 hover:bg-[#EDEDED] cursor-default"
+            className="block px-2 py-2 cursor-pointer"
             onClick={handleAddressCopy}
           >
             Account Address:{" "}
@@ -199,7 +199,7 @@ export default function Nav({ rewardStatus }: NavProps) {
                 : "No Address")}
           </a>
           <a
-            className="block px-4 py-2 text-sm text-gray-700 hover:bg-[#EDEDED] cursor-pointer"
+            className="self-start indent-2 mt-4 cursor-pointer"
             onClick={logout}
           >
             Logout
