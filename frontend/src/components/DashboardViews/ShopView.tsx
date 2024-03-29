@@ -854,21 +854,21 @@ const collectionNameMap: CollectionNameMap = {
   };
 
   return (
-    <div className="inventory-view p-4 max-w-7xl mx-auto my-8">
-     
-      <div className="border-t-2 border-gray-200 my-8"></div>
-      <div>
+    <div className="inventory-view p-4 max-w-7xl mx-auto">
+      
 
-        {/* Your WaaS Transaction Modal */}
-        {isModalVisible && selectedNFT && (
-          <WaasTransactionModal
-            isVisible={isModalVisible}
-            onClose={() => setIsModalVisible(false)}
-            transactionDetails={selectedNFT}
-            onConfirm={handleConfirmTransaction}
-          />
-        )}
-        </div>
+    <div>
+
+      {/* Your WaaS Transaction Modal */}
+      {isModalVisible && selectedNFT && (
+        <WaasTransactionModal
+          isVisible={isModalVisible}
+          onClose={() => setIsModalVisible(false)}
+          transactionDetails={selectedNFT}
+          onConfirm={handleConfirmTransaction}
+        />
+      )}
+    </div>
 
         {/* Main content area */}
         <div className="bg-[#FAFAFA] mt-4">
