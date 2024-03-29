@@ -3,7 +3,7 @@ import { Attribute, Trait } from "../../data/global";
 import Icon from "../Icon/Icon";
 import { useAtom } from "jotai";
 import { userAtom, modalAtom, savedAtom } from "../../data/store";
-
+import CoinbaseButtonEth from "../Wallet/CoinbaseButtonEth";
 import ApplyButton from "./ApplyButton";
 import SecondaryButton from "./SecondaryButton";
 import { attributes } from "../../data/config";

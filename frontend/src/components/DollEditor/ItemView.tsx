@@ -734,11 +734,9 @@ export default function ItemView(props: {
                     updateTraits={updateTraits}
                     userAddress={user?.address}
                     mintAction={async () => {
-                      if (
-                        user?.address &&
+                      if (user?.address &&
                         props.selectedTrait.token_id &&
-                        discountedPrice
-                      ) {
+                        discountedPrice) {
                         setCurrentMintedTrait(props.selectedTrait); // Set current minted trait
                         await mintWithWeth(
                           user.address,
@@ -753,9 +751,10 @@ export default function ItemView(props: {
                           "User address or token ID is undefined, or discountedPrice is not available"
                         );
                       }
-                    }}
-                    className={isDiscounted ? "discounted-mint-btn" : "test"}
-                  />
+                    } }
+                    className={isDiscounted ? "discounted-mint-btn" : "test"} itemName={""} itemImage={""} showModal={function (modalProps: { tokenId: string; mintPrice: string; itemName: string; itemImage: string; totalCost: string; headline: string; description: string; gasFees: string; image: string | undefined; onConfirm?: (() => void) | undefined; }): void {
+                      throw new Error("Function not implemented.");
+                    } }                  />
                 </div>
               )}
               {/* INFO */}

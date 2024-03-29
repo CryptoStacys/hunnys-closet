@@ -2,11 +2,11 @@ import React, { useEffect, useRef, useState } from 'react';
 import type { CBPayInstanceType, InitOnRampParams } from '@coinbase/cbpay-js';
 import { initOnRamp } from '@coinbase/cbpay-js';
 
-interface CoinbaseButtonProps {
+interface CoinbaseButtonPolygonProps {
   destinationWalletAddress: string;
 }
 
-const CoinbaseButton: React.FC<CoinbaseButtonProps> = ({ destinationWalletAddress }) => {
+const CoinbaseButtonPolygon: React.FC<CoinbaseButtonPolygonProps> = ({ destinationWalletAddress }) => {
   const [isReady, setIsReady] = useState(false);
   const [onrampInstance, setOnrampInstance] = useState<CBPayInstanceType | undefined>();
 
@@ -19,7 +19,7 @@ const CoinbaseButton: React.FC<CoinbaseButtonProps> = ({ destinationWalletAddres
           address: destinationWalletAddress,
           blockchains: ['polygon'],
         }],
-        presetCryptoAmount: 0.005, // Specify preset crypto amount here
+        presetCryptoAmount: 0.01, // Specify preset crypto amount here
       },
       onSuccess: () => {
         console.log('success');
@@ -54,4 +54,4 @@ const CoinbaseButton: React.FC<CoinbaseButtonProps> = ({ destinationWalletAddres
   );
 };
 
-export default CoinbaseButton;
+export default CoinbaseButtonPolygon;

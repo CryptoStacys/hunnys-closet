@@ -7,6 +7,7 @@ import {
   polygon,
   base,
 } from 'wagmi/chains';
+import { useAccount } from 'wagmi';
 
 import { Loader } from "../Loader/Loader";
 import Image from "next/image";
@@ -45,6 +46,9 @@ export default function Login() {
   const { openConnectModal } = useConnectModal();
   const [connected, setConnected] = useAtom(connectedAtom);
   const [user, setUser] = useAtom(userAtom);
+  const { isConnected } = useAccount();
+  const [rainbowKitModalOpen, setRainbowKitModalOpen] = useState(false);
+  const [isLoginInProgress, setIsLoginInProgress] = useState(false);
   const {waas, error, user: waasUser, wallet, isLoggingIn, isCreatingWallet } =
   useWalletContext();
   const address = useFirstAddress(wallet, ProtocolFamily.EVM);
@@ -53,34 +57,72 @@ export default function Login() {
     setMounted(true);
   }, []);
 
+  
+
   useEffect(() => {
     const initializeWallet = async () => {
-      // Check if `:waasUser` is defined to avoid trying to destructure or call methods on `undefined`.
-      if (!waasUser || isLoggingIn || isCreatingWallet || wallet) return;
+      // Early return if waasUser is not defined or if the wallet is already set
+      if (!waasUser || wallet) return;
   
-      if (waasUser.hasWallet) {
-        console.log("User has a wallet, attempting to restore...");
-        // Ensure `restoreFromHostedBackup` is defined before calling it.
-        if (waasUser.restoreFromHostedBackup) {
-          await waasUser.restoreFromHostedBackup(/* optional passcode */);
-        } else {
-          console.error("restoreFromHostedBackup method is not available.");
+      try {
+        if (isLoggingIn || isCreatingWallet) {
+          // Logic to handle waiting for login or wallet creation to complete
+          return;
         }
-      } else {
-        console.log("Creating a new wallet for the user...");
-        // Ensure `create` is defined before calling it.
-        if (waasUser.create) {
-          await waasUser.create(/* optional passcode */);
+  
+        if (waasUser.hasWallet) {
+          console.log("User has a wallet, attempting to restore...");
+  
+          // Check for the existence of the restoreFromHostedBackup method
+          if (typeof waasUser.restoreFromHostedBackup === "function") {
+            await waasUser.restoreFromHostedBackup(); // Call the method if it exists
+          } else {
+            console.warn("restoreFromHostedBackup method is not available.");
+            // Handle the case where restoreFromHostedBackup is unavailable
+          }
         } else {
-          console.error("create method is not available.");
+          console.log("Creating a new wallet for the user...");
+  
+          // Similarly, check for the existence of the create method
+          if (typeof waasUser.create === "function") {
+            await waasUser.create(); // Call the method if it exists
+          } else {
+            console.warn("create method is not available.");
+            // Handle the case where create is unavailable
+          }
         }
+      } catch (error) {
+        console.error("Error during wallet initialization:", error);
+        // Handle any errors that occur during the initialization process
       }
     };
   
     initializeWallet();
   }, [waasUser, isLoggingIn, isCreatingWallet, wallet]);
+  
+  useEffect(() => {
+    setIsLoginInProgress(Boolean(isLoggingIn || isCreatingWallet || (waasUser && !wallet) || rainbowKitModalOpen));
+  }, [isLoggingIn, isCreatingWallet, waasUser, wallet, rainbowKitModalOpen]);
+  
+  const handleOpenConnectModal = () => {
+    setRainbowKitModalOpen(true);
+    openConnectModal!();
 
+  };
 
+  useEffect(() => {
+    setTimeout(() => {
+      // Only reset the modal state if the user has not connected their wallet
+      if (!isConnected) {
+        setRainbowKitModalOpen(false);
+        setIsLoginInProgress(false); // Reset login progress state
+      }
+    }, 8000); // Adjust the delay as needed
+    if (isConnected) {
+      setIsLoginInProgress(true)
+    }
+  })
+  console.log(rainbowKitModalOpen)
   useEffect(() => {
     if (address) { // Ensure address is not undefined
       // Update the user atom with the address and other user info
@@ -137,12 +179,13 @@ export default function Login() {
     }
     
     try {
+      setIsLoginInProgress(true); // Indicate that login is in progress
       await waas.login();
       console.log("Login successful.");
-  
-      // No need to manually update user here; rely on useEffect to react to changes
     } catch (error) {
       console.error("Login failed:", error);
+    } finally {
+      setIsLoginInProgress(false); // Reset login progress state on completion or error
     }
     
   }, [waas]);
@@ -174,38 +217,32 @@ export default function Login() {
       {/* Overlay */}
       <div className="absolute inset-0 flex items-center justify-center">
         {/* Button Container */}
-        <div className="flex xs:flex-col md:flex-row items-center mt-40 space-y-4 md:space-y-0 md:space-x-4 font-poppins xs:text-sm">
+        <div className="flex xs:flex-col md:flex-row items-center xs:mt-[150px] tn:mt-[200px] sm:mt-[250px] md:mt-[300px] space-y-4 md:space-y-0 md:space-x-4 font-poppins xs:text-sm">
           {error && <p>{error.message}</p>}
-          {!waasUser && (
-            <>
-            <button
-                onClick={openConnectModal}
-                className="hunnys-btn bg-[#C9A9FF] !text-[#6510F2] xs:text-md xs:px-6 xs:py-3 lg:text-2xl font-bold tracking-wider px-14 py-6 rounded-full hover:cursor-pointer drop-shadow-2xl"
-              >
-                Connect Wallet
-              </button>
-              <button
-                onClick={login}
-                className="hunnys-btn bg-[#ffd54b] !text-[#6510F2] xs:text-md xs:px-6 xs:py-3 lg:text-2xl font-bold tracking-wider px-14 py-6 rounded-full hover:cursor-pointer drop-shadow-2xl"
-              >
-                Sign-up / Login
-              </button>
-              
-            </>
-          )}
-          {waasUser && (
-            <>
-              <h1 className="luckiest text-4xl text-white p-8 mt-32">
-                Loading...
-              </h1>
-            </>
-          )}
-          {mounted && openConnectModal ? (
-          <div></div>
-        ) : (
+          {!isLoginInProgress && (
+          <>
+            {!waasUser && (
+              <>
+                <button
+                  onClick={handleOpenConnectModal}
+                  className="hunnys-btn bg-[#C9A9FF] !text-[#6510F2] xs:text-[10px] xs:px-4 xs:py-1 sm:px-6 sm:py-3 md:text-2xl font-bold tracking-wider px-14 py-6 rounded-full hover:cursor-pointer drop-shadow-2xl"
+                >
+                  Connect Wallet
+                </button>
+                <button
+                  onClick={login}
+                  className="hunnys-btn bg-[#ffd54b] !text-[#6510F2] xs:text-[10px] xs:px-4 xs:py-1 sm:px-6 sm:py-3 md:text-2xl font-bold tracking-wider px-14 py-6 rounded-full hover:cursor-pointer drop-shadow-2xl"
+                >
+                  Sign-up / Login
+                </button>
+              </>
+            )}
+          </>
+        )}
+        {isLoginInProgress && (
           <h1 className="luckiest text-4xl text-white p-8 mt-32">
-                Loading...
-              </h1>
+            Loading...
+          </h1>
         )}
         </div>
       </div>

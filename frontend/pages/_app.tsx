@@ -79,7 +79,7 @@ function MyApp({ Component, pageProps }: AppProps) {
       collectAndReportMetrics
       enableHostedBackups
       projectId={process.env.NEXT_PUBLIC_WAAS_PROJECT_ID_STAGING}
-      prod={false} // Set to true for production
+      prod={true} // Set to true for production
     >
       <WagmiProvider config={config}>
       <QueryClientProvider client={queryClient}> 

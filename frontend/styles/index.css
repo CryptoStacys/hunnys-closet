@@ -565,11 +565,11 @@ a {
 }
 
 .modalBackdrop {
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   width: 100%;
-  height: 100vh;
+  height: 100%;
   background-color: rgba(0, 0, 0, 0.5);
   display: flex;
   justify-content: center;
@@ -585,6 +585,7 @@ a {
   max-width: 600px;
   text-align: center;
   position: relative;
+  
 }
 
 .closeModal {
@@ -615,17 +616,26 @@ a {
   font-weight: bold;
 }
 
-.actionButtons button {
-  padding: 10px 20px;
-  margin: 10px;
-  border: none;
-  color: white;
-  cursor: pointer;
-  border-radius: 4px;
-}
 
 .confirmBtn {
   background-color: #4caf50; /* Green for confirm */
+}
+
+.confirmBtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  white-space: nowrap;
+  box-sizing: border-box;
+  font-weight: 700;
+  transition: all 1.5s cubic-bezier(0.075, 0.82, 0.165, 1), color 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  color: #a26106;
 }
 
 .cancelBtn {
@@ -636,6 +646,22 @@ a {
   margin: 20px 0;
 }
 
+.feedback-message {
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 5px;
+  text-align: center;
+  color: #000;
+  font-family: 'Poppins';
+  font-weight: 600;
+}
+
+.feedback-message {
+  transition: opacity 5s ease-out;
+}
+.feedback-message.fade-out {
+  opacity: 0;
+}
 
 .mint-btn {
   margin-top: 10px;
