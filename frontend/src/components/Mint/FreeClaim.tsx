@@ -10,12 +10,13 @@ import { createWalletClient, http, parseEther, custom } from "viem";
 import { useAtom } from "jotai";
 import { userAtom, connectedAtom } from "../../data/store"; // Adjust the import path as necessary
 import { User } from "../../data/global";
+import { getAddress } from 'viem'
 
 type FreeClaimProps = {
   tokenId: any;
   onMintSuccess: () => void;
   updateTraits: (userAddress: string) => void;
-  userAddress: string | undefined;
+  userAddress: any | string;
   className?: string;
   buttonText?: string;
 };
@@ -38,34 +39,44 @@ const FreeClaim: React.FC<FreeClaimProps> = ({
   const nftContractAddress = "0x11bc733e719198e2b3746f6841d2818ca87af6da";
   const relayerAddress = "0x5C7E0dA70267937bC12a02c21fD1543f8A165Ba3";
 
-  // produce an ERC-191 signed message.
-  
-
-
   const handleFreeClaim = async () => {
     setTransactionPending(true);
+    console.log("Address Type:", typeof userAddress);
     try {
       const contract = new ethers.Contract(nftContractAddress, newHunnysClosetShopABI, ethers.getDefaultProvider());
       const txData = contract.interface.encodeFunctionData("mint", [userAddress, tokenId, 1, "0x"]);
   
       // Determine if the user is using a WaaS wallet or a traditional wallet
       if (user?.wallet_type === "waas") {
-        if (!userAddress) {
-          console.error("User address is undefined for WaaS wallet.");
+        if (!userAddress || !ethers.utils.isAddress(userAddress)) {
+          console.error("Invalid or missing user address.");
           return;
         }
-        const viemAccount = toViem(userAddress as any); // Casting userAddress to the expected type
-        const walletClient = createWalletClient({
-          account: viemAccount,
-          chain: polygon,
-          transport: http("https://polygon-mainnet.infura.io/v3/c6a0213e06df4189bbb84a64086a38ae"),
-        });
-        // Send transaction with WaaS wallet
-        const txReceipt = await walletClient.sendTransaction({
+        console.log("About to convert to Viem account with address:", userAddress);
+        const viemAccount = getAddress(userAddress, polygon.id); // Adjust based on your getAddress function
+        console.log("Viem account conversion successful:", viemAccount);
+      
+        // Assuming viemAccount or another variable holds the correct transaction data for WaaS
+        const waasTransactionData = {
           to: nftContractAddress,
-          data: txData as any, // Casting txData to the expected type
-          value: parseEther("0"),
+          data: txData,
+          gasLimit: "100000", // Adjust as necessary for WaaS transactions
+          // Include any additional data required by your backend for WaaS transactions
+        };
+      
+        // Send the transaction data to your /gasless endpoint for WaaS wallets
+        const response = await fetch('https://staging-hunnys-closet-2-548f5ed67a1b.herokuapp.com/gasless', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(waasTransactionData),
         });
+      
+        if (!response.ok) {
+          throw new Error('Network response was not ok');
+        }
+      
+        const txReceipt = await response.json();
+        console.log("Transaction sent via /gasless endpoint for WaaS wallet:", txReceipt.transactionHash);
       } else {
         // Prepare the transaction data
         const transactionData = {

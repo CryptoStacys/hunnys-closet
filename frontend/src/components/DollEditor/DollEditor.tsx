@@ -1,4 +1,4 @@
-import { useState, useEffect, useRef, SetStateAction } from "react";
+import { useState, useEffect, useRef, SetStateAction, useMemo } from "react";
 // import { ethers } from "ethers";
 import { useAtom } from "jotai";
 import {
@@ -7,6 +7,7 @@ import {
   savedAtom,
   dollEditorVisibleAtom,
 } from "../../data/store";
+import HunnysClosetABI from '../../data/abi/HunnysCloset.json';
 import { useSignMessage } from "wagmi";
 import ApplyButton from "./ApplyButton";
 import SecondaryButton from "./SecondaryButton";
@@ -19,13 +20,23 @@ import CardView from "./CardView";
 import ItemView from "./ItemView";
 import DollEditorOptions from "./DollEditorOptions";
 import Icon from "../Icon/Icon";
+import CoinbaseButtonEth from "../Wallet/CoinbaseButtonEth";
 import { allTraitsAtom } from "../../data/store";
-
+import {
+  useEVMAddress,
+  useFirstAddress,
+  useWalletContext,
+} from "@coinbase/waas-sdk-web-react";
 import { attributes, localStorageToken } from "../../data/config";
 import { Attribute, Trait } from "../../data/global";
 import { mintNewDolly } from "../../utils/mintDolly";
+import { mintWaasDolly } from "../../utils/mintWaasDolly";
 import { ethers } from "ethers";
 import { useAccount, useConfig, useSwitchChain } from "wagmi";
+import { toViem } from "@coinbase/waas-sdk-viem";
+import { createWalletClient, http } from "viem";
+import { mainnet } from "viem/chains";
+import { Wallet } from "@coinbase/waas-sdk-web";
 
 // if token is missing attributes, just add empty trait there
 function formatToken(input: Trait[]) {
@@ -97,141 +108,141 @@ export default function DollEditor(props: {
   const { chain } = useAccount();
   const { switchChain } = useSwitchChain();
   const [, setDollEditorVisible] = useAtom(dollEditorVisibleAtom);
-
+  const {
+    waas,
+    error,
+    user: waasUser,
+    wallet,
+    isLoggingIn,
+    isCreatingWallet,
+  } = useWalletContext();
+  const address = useEVMAddress(wallet);
   useEffect(() => {
     setDollEditorVisible(true);
     return () => setDollEditorVisible(false); // Reset on unmount
   }, [setDollEditorVisible]);
-
-  const [showIntroModal, setShowIntroModal] = useState<boolean>(() => {
-    // Retrieve the user's preference from localStorage
-    const hideIntro = localStorage.getItem("hideIntroModal");
-    // If not set or explicitly set to 'false', show the intro modal
-    return hideIntro !== "true";
-  });
-
-  {
-    /* useEffect(() => {
-    if (showIntroModal) {
-      modalSet({
-        active: true,
-        title: "The Dressing Room 💛",
-        body: (
-          <div className="text-center p-6">
-            <h3 className="mb-4 font-luckiest text-2xl uppercase">Hey Cupcake! Are you ready to Unleash Your Creativity? 🥰</h3>
-            <img className="introModalMika mobile-hide" alt="Bunny Queen Mika" src="/assets/Hunnys_Dressup_Doll_Logo.gif"></img>
-            <p className="mt-4 font-luckiest text-xl text-left">HOW IT WORKS:</p>
-            <p className="mb-4 text-left">🌈 Here in The Dressing Room, you can give your Dolly endless makeovers, trying on all sorts of stylish outfits and accessories, highlighted by the most harmonious of colors.</p>
-            <p className="mb-4 text-left">✨ Different traits are unlocked based on collectibles you might own from within the Hunnys universe and beyond.</p>
-            <p className="mb-4 text-left">🎀 We have plenty for you to try for free, and even more for sale with the click of a button!</p>
-            <p className="mt-8 font-luckiest text-xl text-left">SAVING:</p>
-            <p className="mb-4 text-left">📸 Click the &lsquo;Download&lsquo; button at any point to take a snapshot of your Dolly to keep forever!</p>
-            <p className="mb-4 text-left">✅ Love the way you look? Click the &lsquo;Save&lsquo; button at the top to the page! Saving your Dolly&lsquo;s debut look as a digital collectible<span className="font-extrabold"> requires a small, one-time fee.</span></p>
-            <p className="mb-4 text-left">💋 But don&lsquo;t fret, sweetie — every saved makeover after that is 100% free, forever and ever.</p>
-            <p className="mb-4 mt-8 text-center">Have fun, Cupcake! And be sure to share with us afterwards and let us see how you look 💛</p>
-            <div className="mt-4">
-              <button 
-                onClick={() => modalSet({ active: false, title: "", body: <></> })}
-                className="bg-hunnys-blue text-hunnys-yellow w-full uppercase font-luckiest shadow-md rounded-full mt-4 px-3 py-1 xl:text-xl text-md hover:shadow-lg hover:scale-[1.02] transition-all"
-              >
-                Got It, Let&lsquo;s Start!
-              </button>
-              <label className="inline-flex items-center mt-3">
-              <input type="checkbox" className="form-checkbox h-5 w-5 text-gray-600" onChange={(e) => {
-                const shouldHide = e.target.checked;
-                localStorage.setItem('hideIntroModal', shouldHide ? 'true' : 'false');
-                setShowIntroModal(!shouldHide);
-              }}/><span className="ml-2 text-gray-700">Got it! Don&lsquo;t show this message again</span>
-            </label>
-            </div>
-          </div>
-        )
+  
+  const evmAddress = useEVMAddress(wallet);
+  
+  const walletClient = useMemo(() => {
+    if (evmAddress) {
+      return createWalletClient({
+        account: toViem(evmAddress),
+        chain: mainnet,
+        transport: http("https://mainnet.infura.io/v3/5239f83d36634330bd900f94158cf76e")
       });
     }
-  }, [showIntroModal]); */
-  }
+  }, [evmAddress]);
+  
 
   useEffect(() => {
     if (isNewDolly) {
       console.log("Initializing new Dolly...");
-  
+
       // Define traits to never select and attributes that should not be 'Empty'
       const noSelect = ["Frame", "Bodysuit", "Hand", "Tattoo", "Hat"];
       const noEmpty = ["Mouth", "Skin", "Eyebrows", "Eyes", "Hair Style"];
-  
+
       // Default brand colors configuration
       const brandColors = {
         1: ["HunnysPurple4"],
         2: ["HunnysPurple4", "HunnysYellow4"],
         3: ["HunnysPurple4", "HunnysYellow4", "HunnysPurple2"],
         4: ["HunnysPurple4", "HunnysYellow4", "HunnysPurple2", "HunnysYellow2"],
-        5: ["HunnysPurple4", "HunnysYellow4", "HunnysPurple2", "HunnysYellow2", "HunnysPurple6"],
+        5: [
+          "HunnysPurple4",
+          "HunnysYellow4",
+          "HunnysPurple2",
+          "HunnysYellow2",
+          "HunnysPurple6",
+        ],
       };
-  
+
       // Map over each attribute to determine its trait
-      const defaultAttributes: Attribute[] = attributes.map(attr => {
+      const defaultAttributes: Attribute[] = attributes.map((attr) => {
         // Filter traits from Origin ID 0 for the attribute
-        let defaultTraits = allTraits.traits.filter(trait => trait.origin_id === 0 && trait.attribute === attr);
-  
+        let defaultTraits = allTraits.traits.filter(
+          (trait) => trait.origin_id === 0 && trait.attribute === attr
+        );
+
         // If the attribute is in the noSelect list, use 'Empty', otherwise select a random trait
-        let randomTrait = noSelect.includes(attr) ? {
-          isEligibleForMinting: [],
-          name: "Empty",
-          colorsApplied: [],
-          baseColor: ["HunnysPurple1"],
-          attribute: attr,
-          tags: [],
-          colors: [],
-          rarity: "common",
-          origin_id: 0,
-          isOwned: false,
-          id: 0,
-          token_id: "",
-        } : defaultTraits.length > 0 ? defaultTraits[Math.floor(Math.random() * defaultTraits.length)] : {
-          isEligibleForMinting: [],
-          name: "Empty",
-          colorsApplied: [],
-          baseColor: ["HunnysPurple1"],
-          attribute: attr,
-          tags: [],
-          colors: [],
-          rarity: "common",
-          origin_id: 0,
-          isOwned: false,
-          id: 0,
-          token_id: "",
-        };
-  
+        let randomTrait = noSelect.includes(attr)
+          ? {
+              isEligibleForMinting: [],
+              name: "Empty",
+              colorsApplied: [],
+              baseColor: ["HunnysPurple1"],
+              attribute: attr,
+              tags: [],
+              colors: [],
+              rarity: "common",
+              origin_id: 0,
+              isOwned: false,
+              id: 0,
+              token_id: "",
+            }
+          : defaultTraits.length > 0
+          ? defaultTraits[Math.floor(Math.random() * defaultTraits.length)]
+          : {
+              isEligibleForMinting: [],
+              name: "Empty",
+              colorsApplied: [],
+              baseColor: ["HunnysPurple1"],
+              attribute: attr,
+              tags: [],
+              colors: [],
+              rarity: "common",
+              origin_id: 0,
+              isOwned: false,
+              id: 0,
+              token_id: "",
+            };
+
         // Exclude 'Empty' for specific attributes
-        if (noEmpty.includes(attr) && randomTrait.name === "Empty" && defaultTraits.length > 1) {
-          const nonEmptyTraits = defaultTraits.filter(trait => trait.name !== "Empty");
-          randomTrait = nonEmptyTraits[Math.floor(Math.random() * nonEmptyTraits.length)];
+        if (
+          noEmpty.includes(attr) &&
+          randomTrait.name === "Empty" &&
+          defaultTraits.length > 1
+        ) {
+          const nonEmptyTraits = defaultTraits.filter(
+            (trait) => trait.name !== "Empty"
+          );
+          randomTrait =
+            nonEmptyTraits[Math.floor(Math.random() * nonEmptyTraits.length)];
         }
-  
+
         // Determine colors to apply based on the trait's color requirement
-        const colorsToApply = brandColors[randomTrait.colors as keyof typeof brandColors] || [];
-        const baseColor = colorsToApply.length > 0 ? colorsToApply[0] : ["HunnysPurple1"];
-        return { 
-          ...randomTrait, 
-          colorsApplied: colorsToApply, 
+        const colorsToApply =
+          brandColors[randomTrait.colors as keyof typeof brandColors] || [];
+        const baseColor =
+          colorsToApply.length > 0 ? colorsToApply[0] : ["HunnysPurple1"];
+        return {
+          ...randomTrait,
+          colorsApplied: colorsToApply,
           baseColor: baseColor,
           token_id: "none",
-          rarity: randomTrait.rarity || "common", 
-      } as Attribute;
+          rarity: randomTrait.rarity || "common",
+        } as Attribute;
       });
-  
+
       console.log("Default attributes for new Dolly:", defaultAttributes);
       tokenSet(defaultAttributes);
       const existingToken = localStorage.getItem(localStorageToken);
       if (!existingToken) {
         // Since there's no existing token, save the default attributes to localStorage.
         // This simulates a change, making the "Save" button enabled.
-        localStorage.setItem(localStorageToken, JSON.stringify(defaultAttributes));
-  
+        localStorage.setItem(
+          localStorageToken,
+          JSON.stringify(defaultAttributes)
+        );
+
         // Additionally, set unsavedChanges to true to enable the "Save" button programmatically.
         setUnsavedChanges(true);
-      }
-      else if (existingToken && props.id && existingToken !== JSON.stringify(defaultAttributes)) {
+      } else if (
+        existingToken &&
+        props.id &&
+        existingToken !== JSON.stringify(defaultAttributes)
+      ) {
         setUnsavedChanges(true);
       }
     } else {
@@ -239,22 +250,57 @@ export default function DollEditor(props: {
       load();
     }
   }, [isNewDolly, props.id, allTraits]);
-   // Ensure allTraits is included in the dependency array if it's fetched or updated externally
-  
+  // Ensure allTraits is included in the dependency array if it's fetched or updated externally
 
   interface User {
     address: string;
     signer?: ethers.Signer; // Assuming you're using ethers.js and signer might be optional
   }
-
+  const ApplyButtonWithProps = () => {
+    // It checks if both walletClient and evmAddress are defined.
+    // Adjust the condition based on your need and handling for undefined values.
+    
+    const waasDisabled = saved || isSaving || !evmAddress || !walletClient;
+  
+    const handleClick = () => {
+      if (evmAddress && walletClient) {
+        save(walletClient, evmAddress.address);
+      } else {
+        console.error("EVM address or wallet client is missing.");
+      }
+    };
+    if (evmAddress && walletClient) {
+    return <ApplyButton
+      disableBtn={waasDisabled}
+      onClick={handleClick}
+      text={setSavingText()}
+    />;
+    } else {return <ApplyButton
+            disableBtn={saved || isSaving}
+            onClick={save}
+            text={setSavingText()}
+          />}
+  };
   // Updated to use the new mintDolly function with transaction confirmation
-  async function mintAndFetchTokenId(userAddress: string): Promise<string | null> {
-    console.log("Starting mintAndFetchTokenId");
+  async function mintAndFetchTokenId(
+    userAddress: string
+  ): Promise<string | null> {
+    console.log("Starting mintAndFetchTokenId"); // No changes here
     try {
-      const { hash } = await mintNewDolly(); // Initiates the minting transaction and waits for the hash
-      console.log("MintDolly called, transaction hash received:", hash);
+      let hash = ""; // No changes here
 
-      // No need to wait again for transaction confirmation as mintDolly already waits for it.
+      // Check that both `wallet` and `evmAddress` are not undefined
+      if (wallet && evmAddress) {
+        console.log("Minting with WaaS Dolly...");
+        const response = await mintWaasDolly(wallet, evmAddress);
+        // hash = response.hash;
+      } else {
+        console.log("Minting with non-WaaS Dolly...");
+        const response = await mintNewDolly();
+        hash = response.hash;
+      }
+
+      console.log("MintDolly called, transaction hash received:", hash);
       console.log("Transaction confirmed, fetching most recent token ID...");
 
       const fetchedTokenId = await fetchMostRecentTokenId(userAddress);
@@ -271,101 +317,232 @@ export default function DollEditor(props: {
       console.error("Error in mintAndFetchTokenId:", error);
       return null;
     }
-}
+  }
 
+  async function getSignatureViem(walletClient: any, walletAddress: string) {
+    try {
+      // Fetch the message or token to sign
+      let signatureToken = await requestSignatureToken(walletAddress);
+      if (!signatureToken || !signatureToken.authToken) {
+        throw new Error("Failed to fetch the signature token.");
+      }
+  
+      // Sign the fetched token/message
+      const signature = await walletClient.signMessage({ message: signatureToken.authToken });
+      console.log("Signature generated with Viem:", signature);
+      return signature;
+    } catch (error) {
+      console.error("Error generating signature with Viem:", error);
+      throw error;
+    }
+  }
 
-  async function save() {
+  async function save(walletClient: any, evmAddress: string) {
     console.log("Save function initiated");
     setIsSaving(true);
     setErrorMessage(""); // Reset any previous error messages
-
-  const timeoutDuration = 10000; // 20 seconds
-  let timeoutReached = false;
-
+  
+    const timeoutDuration = 10000; // 10 seconds
+    let timeoutReached = false;
+  
     // Start a timeout to reset saving state if it takes too long
-  const timeoutId = setTimeout(() => {
-    console.log("Timeout reached, resetting save state.");
-    timeoutReached = true;
-    setIsSaving(false);
-    setErrorMessage("");
-  }, timeoutDuration);
-
-  try {
-    let newTokenId = props.id?.toString() ?? null; // Existing token ID or null
-    // Check if it's a new Dolly that requires minting and the user is on the wrong network
-    if (isNewDolly && !isMinted && user && chain?.id !== ETHEREUM_MAINNET_CHAIN_ID) {
-      console.log("User is not on Ethereum Mainnet. Attempting to switch...");
-      if (typeof switchChain === "function") {
+    const timeoutId = setTimeout(() => {
+      console.log("Timeout reached, resetting save state.");
+      timeoutReached = true;
+      setIsSaving(false);
+      setErrorMessage("");
+    }, timeoutDuration);
+  
+    // Function to handle the actual saving logic
+    const proceedWithSave = async (newTokenId: string | null) => {
+      try {
+        // Ensure newTokenId is not null before proceeding
+        if (!newTokenId) throw new Error("Token ID is null");
+        
+        // Generating signature for Update
+        const formData = new FormData();
+        formData.append("wallet", user!.address);
+        const signature = await getSignatureViem(walletClient, evmAddress);
+        formData.append("signature", signature);
+        formData.append("token_id", newTokenId);
+        formData.append("data", JSON.stringify({ token: token, name: "Your Dolly Name" }));
+  
+        const response = await fetch(
+          `https://closetservices.hunnysnft.com/wp-json/hunnys-closet/v1/updateClone`,
+          {
+            method: "POST",
+            body: formData,
+          }
+        );
+  
+        if (!response.ok) throw new Error("Error saving Dolly details");
+  
+        const data = await response.json();
+        console.log("Save successful", data);
+        triggerSuccessModal(data);
+        setSaved(true); // Reflect the Dolly is now saved
+        props.onDollySaved?.(parseInt(newTokenId, 10));
+  
+        // Operation successful, clear the timeout
+        clearTimeout(timeoutId);
+        setIsSaving(false);
+        console.log("Save operation completed successfully.");
+      } catch (error) {
+        console.error("Save Error:", error);
+        setErrorMessage("Creation successful! You may now save your Dolly.");
+        if (!timeoutReached) {
+          clearTimeout(timeoutId);
+          setIsSaving(false); // Ensure to reset saving state on error
+        }
+      }
+    };
+  
+    // Display confirmation modal before minting for a new Dolly
+    if (isNewDolly && !isMinted && user && user.address) {
+      modalSet({
+        active: true,
+        title: "Confirm Dolly Creation",
+        body: (
+          <div>
+            <p>Hi, Cupcake, your Dolly is looking gorgeous!</p><br></br>
+            <p>Please know that creating your Dolly on the Ethereum network requires a one-time transaction fee.</p><br></br>
+            <p>All future saving & updating is completely free. Do you want to proceed?</p>
+            <button
+              onClick={async () => {
+                modalSet({ active: false, title: "", body: <></> }); // Close the modal
+                const newTokenId = await mintAndFetchTokenId(user.address);
+                if (newTokenId) {
+                  setIsMinted(true); // Mark as minted
+                  proceedWithSave(newTokenId); // Continue with the save process
+                } else {
+                  setErrorMessage("Creation failed, insufficient funds.");
+                  setIsSaving(false); // Reset saving state on error
+                }
+              }}
+              className="mt-8 bg-hunnys-yellow py-1 w-full self-center text-hunnys-blue luckiest shadow-md rounded-full px-4 text-2xl hover:shadow-lg hover:scale-[1.02] transition-all"
+            >
+              Create my Dolly
+            </button>
+            <button
+              onClick={async () => {
+                modalSet({ active: false, title: "", body: <></> }); // Close the modal
+                setIsSaving(false)
+              }}
+              className="font-poppins font-bold self-center m-auto flex mt-8"
+            >
+              Not just yet
+            </button>
+              <div className="border-t-2 border-gray-200 my-8"></div>
+              <p className="text-center font-poppins">Add funds with</p>
+            <div className="text-center self-center m-auto flex mt-8 justify-center">
+              
+              <CoinbaseButtonEth
+                destinationWalletAddress={user?.address || ""}
+              />
+            </div>
+          </div>
+        ),
+      });
+      return; // Stop further execution until user confirms
+    }
+  
+    // For an existing Dolly or after minting has been confirmed, proceed with save
+    proceedWithSave(props.id?.toString() ?? null);
+  
+    
+      if (!evmAddress && user && user.address && user.wallet_type != "waas") {
+    try {
+      let newTokenId = props.id?.toString() ?? null; // Existing token ID or null
+      
+      // Check if it's a new Dolly that requires minting and the user is on the wrong network
+      if (
+        isNewDolly &&
+        !isMinted &&
+        user &&
+        chain?.id !== ETHEREUM_MAINNET_CHAIN_ID
+      ) {
+        console.log("User is not on Ethereum Mainnet. Attempting to switch...");
+        if (typeof switchChain === "function") {
           switchChain({ chainId: 1 });
           console.log("Network switch successful. Proceeding with minting...");
-      } else {
+        } else {
           throw new Error("Network switch function not available");
+        }
       }
-    }
-    if (isNewDolly && !isMinted && user) {
+      if (isNewDolly && !isMinted && user) {
+        console.log("Minting new dolly...");
+        newTokenId = await mintAndFetchTokenId(user.address);
 
-      console.log("Minting new dolly...");
-      newTokenId = await mintAndFetchTokenId(user.address);
+        if (!newTokenId) {
+          console.error("Failed to mint new dolly");
+          setErrorMessage("Something went wrong. Please try again.");
+          clearTimeout(timeoutId); // Ensure to clear timeout upon early exit
+          return; // Early exit from function, as minting failed
+        }
 
-      if (!newTokenId) {
-        console.error("Failed to mint new dolly");
-        setErrorMessage("Something went wrong. Please try again.");
-        clearTimeout(timeoutId); // Ensure to clear timeout upon early exit
-        return; // Early exit from function, as minting failed
+        setIsMinted(true);
       }
 
-      setIsMinted(true);
-    }
+      
 
-    if (!user || !newTokenId) {
-      throw new Error("User information missing or new token ID not available");
-    }
+      if (!user || !newTokenId) {
+        throw new Error(
+          "User information missing or new token ID not available"
+        );
+      }
 
-    const formData = new FormData();
-    formData.append("wallet", user.address);
-    const signature = await getSignature(user.address) as string;
-    formData.append("signature", signature);
-    formData.append("token_id", newTokenId);
-    formData.append("data", JSON.stringify({ token: token, name: "Your Dolly Name" }));
+      const formData = new FormData();
+      formData.append("wallet", user.address);
+      const signature = (await getSignature(user.address)) as string;
+      formData.append("signature", signature);
+      formData.append("token_id", newTokenId);
+      formData.append(
+        "data",
+        JSON.stringify({ token: token, name: "Your Dolly Name" })
+      );
 
-    const response = await fetch(`https://closetservices.hunnysnft.com/wp-json/hunnys-closet/v1/updateClone`, {
-      method: "POST",
-      body: formData,
-    });
+      const response = await fetch(
+        `https://closetservices.hunnysnft.com/wp-json/hunnys-closet/v1/updateClone`,
+        {
+          method: "POST",
+          body: formData,
+        }
+      );
 
-    if (!response.ok) {
-      throw new Error("Error saving Dolly details");
-    }
+      if (!response.ok) {
+        throw new Error("Error saving Dolly details");
+      }
 
-    const data = await response.json();
-    console.log("Save successful", data);
-    triggerSuccessModal(data);
-    setSaved(true); // Reflect the Dolly is now saved
-    if (typeof newTokenId === "number") {
-      props.onDollySaved?.(newTokenId);
-    }
+      const data = await response.json();
+      console.log("Save successful", data);
+      triggerSuccessModal(data);
+      setSaved(true); // Reflect the Dolly is now saved
+      if (typeof newTokenId === "number") {
+        props.onDollySaved?.(newTokenId);
+      }
 
-    // Operation successful, clear the timeout
-    clearTimeout(timeoutId);
-    if (!timeoutReached) {
-      setIsSaving(false);
-      console.log("Save operation completed successfully.");
-    }
-  } catch (error) {
-    console.error("Save Error:", error);
-    setErrorMessage("Failed to save Dolly. Please try again.");
-    if (!timeoutReached) {
+      // Operation successful, clear the timeout
       clearTimeout(timeoutId);
-      setIsSaving(false); // Ensure to reset saving state on error
-    }
-  } finally {
-    if (!timeoutReached) {
-      clearTimeout(timeoutId); // Ensure to clear timeout if finally block is reached
-      setIsSaving(false); // Ensure to reset saving state when operation is complete
-      console.log("Save operation completed.");
+      if (!timeoutReached) {
+        setIsSaving(false);
+        console.log("Save operation completed successfully.");
+      }
+    } catch (error) {
+      console.error("Save Error:", error);
+      setErrorMessage("Failed to save Dolly. Please try again.");
+      if (!timeoutReached) {
+        clearTimeout(timeoutId);
+        setIsSaving(false); // Ensure to reset saving state on error
+      }
+    } finally {
+      if (!timeoutReached) {
+        clearTimeout(timeoutId); // Ensure to clear timeout if finally block is reached
+        setIsSaving(false); // Ensure to reset saving state when operation is complete
+        console.log("Save operation completed.");
+      }
     }
   }
-}
+  }
   function triggerSuccessModal(data: any) {
     // Modal logic for success message
     const newHeadline = getRandomHeadline();
@@ -451,19 +628,24 @@ export default function DollEditor(props: {
   }, [isMinted, user]);
 
   async function fetchMostRecentTokenId(address: string): Promise<string> {
-    const url = `https://closetservices.hunnysnft.com/wp-json/hunnys-closet/v1/verifyCloset?wallet=${address}`;
-    try {
-      const response = await fetch(url);
-      const data = await response.json();
-      // Assuming the most recent Dolly is the last one in the array
-      const mostRecentDolly = data.dollys[data.dollys.length - 1];
-      const mostRecentTokenId = mostRecentDolly.token_id;
-      return mostRecentTokenId; // Return the token ID as a string
-    } catch (error) {
-      console.error("Error fetching the most recent token ID:", error);
-      throw error; // Rethrow the error to be caught in the save function
-    }
+    const provider = new ethers.providers.JsonRpcProvider("https://mainnet.infura.io/v3/5239f83d36634330bd900f94158cf76e");
+  const contract = new ethers.Contract(
+    "0xC8465f21E35AfD1De06A81D932392C47b1BEA42A",
+    HunnysClosetABI,
+    provider
+  );
+
+  try {
+    const totalSupply = await contract.totalSupply();
+    // Assuming totalSupply returns the count of tokens and IDs are 0-indexed
+    const mostRecentTokenId = totalSupply.toString();
+    console.log("Most recent token ID:", mostRecentTokenId);
+    return mostRecentTokenId;
+  } catch (error) {
+    console.error("Error fetching the most recent token ID:", error);
+    throw error;
   }
+}
   function getRandomHeadline() {
     const headlines = [
       "Omg, you look incredible!",
@@ -513,11 +695,6 @@ export default function DollEditor(props: {
     return headlines[randomIndex];
   }
 
-  function setRandomHeadline() {
-    const headline = getRandomHeadline();
-    setSelectedHeadline(headline); // Store the selected headline in state
-    return headline;
-  }
 
   useEffect(() => {
     console.log("Initial token state:", JSON.stringify(token));
@@ -532,13 +709,6 @@ export default function DollEditor(props: {
     }
   }, [selectedTrait]);
 
-  // Function to generate tweet URL
-  function generateTweetUrl(headline: any) {
-    const tweetText = encodeURIComponent(
-      `Just gave my Dolly from @HunnysNFT a makeover, and Bunny Queen Mika said '${headline}'! Unleash your creativity with me at https://closet.hunnys.io`
-    );
-    return `https://twitter.com/intent/tweet?text=${tweetText}`;
-  }
 
   function logDifferences(currentToken: Trait[], savedToken: Trait[]) {
     const stringifyTrait = (trait: Trait) =>
@@ -566,6 +736,7 @@ export default function DollEditor(props: {
       }
     });
   }
+
 
   function downloadDollyImage(dataURL: string) {
     const link = document.createElement("a");
@@ -604,30 +775,29 @@ export default function DollEditor(props: {
     window.open(discordUrl, "_blank");
   }
 
-  function updateUserToken(token: any, id: any) {
-    for (let i = 0; i < (user?.dollys || []).length; i++) {
-      if (user && user?.dollys[i].token_id === id) {
-        user.dollys[i].attributes = token;
-        setUser(user);
-        break;
-      }
-    }
-  }
 
-  
   async function load() {
     // Check if transitioning from a temporary to a non-temporary ID
     const prevId = prevIdRef.current ? prevIdRef.current.toString() : "";
     const currentId = props.id ? props.id.toString() : "";
 
     // Check if transitioning from a temporary to a non-temporary ID
-    if (prevId.includes("temp-") && !currentId.includes("temp-") && currentId !== "") {
-      console.log("ID updated from temporary to non-temporary, avoiding reload");
+    if (
+      prevId.includes("temp-") &&
+      !currentId.includes("temp-") &&
+      currentId !== ""
+    ) {
+      console.log(
+        "ID updated from temporary to non-temporary, avoiding reload"
+      );
       return;
     }
-  
+
     // Existing logic remains unchanged
-    if (props.id === null || (typeof props.id === "string" && props.id.includes("temp-"))) {
+    if (
+      props.id === null ||
+      (typeof props.id === "string" && props.id.includes("temp-"))
+    ) {
       // Initialize with default attributes for a new Dolly
     } else if (typeof props.id === "string" || typeof props.id === "number") {
       const numericId = parseInt(props.id.toString(), 10);
@@ -647,7 +817,7 @@ export default function DollEditor(props: {
     } else {
       console.error("Unhandled ID type:", props.id);
     }
-  
+
     // Update the previous ID ref at the end of the load function
     prevIdRef.current = props.id;
   }
@@ -714,21 +884,20 @@ export default function DollEditor(props: {
     });
   }
 
-  function requestSignatureToken(wallet: string) {
-    return new Promise(async (resolve) => {
-      fetch(
-        // `${serverPath}/dolly/${id}`
-        `https://closetservices.hunnysnft.com/wp-json/hunnys-closet/v1/auth?wallet=${wallet}`
-      )
-        .then((response) => response.json())
-        .then((res) => {
-          resolve(res);
-        })
-        .catch((err) => {
-          console.log("Error:", err.message);
-        });
-    });
+  async function requestSignatureToken(walletAddress: string) {
+    try {
+      const response = await fetch(`https://closetservices.hunnysnft.com/wp-json/hunnys-closet/v1/auth?wallet=${walletAddress}`);
+      if (!response.ok) {
+        throw new Error('Failed to fetch signature token.');
+      }
+      const data = await response.json();
+      return data;
+    } catch (error) {
+      console.error("Error fetching signature token:", error);
+      throw error;
+    }
   }
+  
 
   function getDollMetadata(id: number) {
     console.log("getDollMetadata", id);
@@ -738,11 +907,15 @@ export default function DollEditor(props: {
         // `${serverPath}/dolly/${id}`
         `https://closetservices.hunnysnft.com/wp-json/hunnys-closet/v1/getCloneData?tokenIds[]=${id}`
       )
-      
         .then((response) => response.json())
         .then((res) => {
           resolve(res);
-          console.log("UserAddress At DollEditor:", user?.address, res, user?.traits);
+          console.log(
+            "UserAddress At DollEditor:",
+            user?.address,
+            res,
+            user?.traits
+          );
         })
         .catch((err) => {
           console.log("Error:", err.message);
@@ -789,14 +962,13 @@ export default function DollEditor(props: {
       {/* BUTTONS */}
       <div className="flex justify-between gap-2 bg-white px-3 py-2 shadow-md mb-6 rounded-lg mobile-line-height">
         <BackButton onClick={unselectDolly} text="Change Dolly" />
-        <div className="flex">
+        <div className="flex items-center">
           {errorMessage && (
             <p
               className="font-dmsans font-thin self-center"
               dangerouslySetInnerHTML={{ __html: errorMessage }}
             ></p>
           )}
-
           <SecondaryButton onClick={load}>
             <Icon
               type="reset"
@@ -804,11 +976,7 @@ export default function DollEditor(props: {
             />
             Reset All Changes
           </SecondaryButton>
-          <ApplyButton
-            disableBtn={saved || isSaving}
-            onClick={save}
-            text={setSavingText()}
-          />
+          <ApplyButtonWithProps />
         </div>
       </div>
 

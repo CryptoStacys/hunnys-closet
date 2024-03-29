@@ -17,11 +17,13 @@ import { ethers } from "ethers";
 import FreeClaim from "../../components/Mint/FreeClaim";
 import Tooltip from "../Tooltip/Tooltip";
 import ProgressBar from "../Achievements/ProgressBar";
+import { Address } from "@coinbase/waas-sdk-web";
 import axios from "axios";
 import {
   calculateLevel,
   calculatePointsToNextLevel,
 } from "../../utils/levelUtils";
+import { useEVMAddress, useWalletContext } from "@coinbase/waas-sdk-web-react";
 
 const ProfileView = () => {
   const [user, setUser] = useAtom(userAtom);
@@ -33,6 +35,8 @@ const ProfileView = () => {
   const DollyPreviewProfilePage = "/assets/img/DollyPreviewProfilePage.gif";
   const [saveError, setSaveError] = useState("");
   const [showTooltip, setShowTooltip] = useState(false);
+  const { wallet } = useWalletContext();
+  const waasAddress = useEVMAddress(wallet);
   const [availableTitles, setAvailableTitles] = useState<string[]>([]);
   const [birthdayMonth, setBirthdayMonth] = useState(
     user?.birthday_month || ""
@@ -150,53 +154,50 @@ const ProfileView = () => {
         return new ethers.providers.Web3Provider(window.ethereum as any);
       } else {
         // Fall back to a default provider (e.g., ethers.js default provider or Infura)
-        console.log('MetaMask is not installed, using fallback provider.');
+        console.log("MetaMask is not installed, using fallback provider.");
         return ethers.getDefaultProvider();
       }
     } catch (error) {
-      console.error('Failed to initialize the Web3 provider:', error);
+      console.error("Failed to initialize the Web3 provider:", error);
       return null;
     }
   };
-  
-  // Use this function to get your provider
   const provider = getWeb3Provider();
-
 
   const handleImageUpload = async (): Promise<string | null> => {
     if (!selectedFile || !user?.UUID) return null;
-  
+
     // Call your API to get a pre-signed URL and the filePath
     try {
-      const response = await fetch('/api/getPresignedUrl', {
-        method: 'POST',
+      const response = await fetch("/api/getPresignedUrl", {
+        method: "POST",
         headers: {
-          'Content-Type': 'application/json',
+          "Content-Type": "application/json",
         },
         body: JSON.stringify({
           uuid: user.UUID, // Send user UUID to generate the correct path
-          fileName: 'Profile.png', // Optional, if you want to specify the file name
+          fileName: "Profile.png", // Optional, if you want to specify the file name
         }),
       });
-  
+
       const { url, filePath } = await response.json();
-  
+
       // Now use the pre-signed URL to upload the file to S3
       const uploadResponse = await fetch(url, {
-        method: 'PUT',
+        method: "PUT",
         body: selectedFile,
       });
-  
+
       if (uploadResponse.ok) {
         // The file has been uploaded. Construct the URL to the uploaded file
         // Assuming your S3 bucket is public and can directly serve files
         const uploadedUrl = `https://hunnyscloset.s3.amazonaws.com/${filePath}`;
         return uploadedUrl; // Return the URL to the uploaded file
       } else {
-        throw new Error('Upload failed');
+        throw new Error("Upload failed");
       }
     } catch (error) {
-      console.error('Failed to upload image:', error);
+      console.error("Failed to upload image:", error);
       return null;
     }
   };
@@ -223,7 +224,7 @@ const ProfileView = () => {
     // Make API call using the latest user state values for profile_name and profile_image_url
     try {
       const profileImageUrl = await handleImageUpload(); // Assuming this function uploads the image and returns the URL
-      
+
       const response = await fetch(
         `https://closetservices.hunnysnft.com/wp-json/hunnys-closet/v1/accounts`,
         {
@@ -321,7 +322,7 @@ const ProfileView = () => {
     updateProfileIfNeeded();
   }, [user?.profile_image_url, selectedFile]);
 
-  console.log(provider)
+  console.log(provider);
   return (
     <div>
       <ProfileCard

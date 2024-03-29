@@ -6,13 +6,10 @@ import { allTraitsAtom, userAtom, connectedAtom, userTraitsAtom } from "../src/d
 import { attributes, localStorageToken } from "../src/data/config";
 import Dashboard from '../src/components/Dashboard/Dashboard';
 import Dollys from "./dollys";
-import Inventory from "./inventory";
 import Nav from "../src/components/Nav/Nav";
 import Login from "../src/components/Login/Login";
 import Modal from "../src/components/Modal/Modal";
-import sparkleBg from "./../src/assets/img/sparkle_bg.png";
 import { useRouter } from 'next/router';
-import { config } from '../src/utils/wagmiConfig'
 import { useAccountEffect } from 'wagmi'
 
 export default function App() {
@@ -20,7 +17,6 @@ export default function App() {
   const [allTraits, setAllTraits] = useAtom(allTraitsAtom);
   const [userTraits, setUserTraits] = useAtom(userTraitsAtom);
   const [connected, setConnected] = useAtom(connectedAtom);
-  const [dollyCount, setDollyCount] = useState("");
   const router = useRouter();
 
   const { isConnected, address } = useAccount();
@@ -127,8 +123,6 @@ export default function App() {
     }
   }
 
-  
-
   return (
     <div className="pb-8 ">
       <Nav rewardStatus={''} />
@@ -144,10 +138,6 @@ export default function App() {
           <Route path="/dollys">
             <Dollys />
           </Route>
-          {/* <Route path="/tokens">
-            <Tokens />
-          </Route> */}
-            
           </>
         )}
       </div>

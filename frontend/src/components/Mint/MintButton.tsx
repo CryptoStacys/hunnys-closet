@@ -3,28 +3,60 @@ import React, { useState, useEffect } from "react";
 import { ethers, BigNumber } from "ethers";
 import { useAccount, useConfig, useSwitchChain } from "wagmi";
 import salesABI from "../../../../backend/src/abis/hunnys-closet-sales-abi.json";
+import { toViem } from "@coinbase/waas-sdk-viem";
+import {
+  Address,
+  IProtocolFamily,
+  ProtocolFamily,
+} from "@coinbase/waas-sdk-web";
+import { useEVMAddress, useFirstAddress, useWalletContext } from "@coinbase/waas-sdk-web-react";
+import { createWalletClient, http, parseEther } from "viem"; 
+import { polygon } from "viem/chains";
+import { generatePrivateKey } from 'viem/accounts'
+import { privateKeyToAccount } from 'viem/accounts'
+import { mintWithWeth } from "../../utils/eligibleTokens";
 
+type ModalProps = {
+  tokenId: string;
+  mintPrice: string; // BigNumber converted to string for simplicity, adjust accordingly
+  itemName: string;
+  itemImage: string;
+  // Since you're passing these in showModal call, they should be defined here
+  totalCost: string;
+  headline: string;
+  description: string;
+  gasFees: string;
+  image: string | undefined;
+  // Inclusion of onConfirm if actions are expected to be passed as well
+  onConfirm?: () => void;
+};
 type MintButtonProps = {
   tokenId: string | undefined;
   mintPrice?: BigNumber;
   isEligibleForMinting?: boolean | string[];
+  itemName: string; // Assume itemName is passed as a prop for modal use
+  itemImage: string; // Assume itemImage is passed as a prop for modal use
   onMintSuccess: () => void;
   updateTraits: (userAddress: string) => void;
   userAddress: string | undefined;
   mintAction: () => Promise<void>;
   className?: string; // Add this line
   buttonText?: string;
+  showModal: (modalProps: ModalProps) => void;
 };
 
 const MintButton: React.FC<MintButtonProps> = ({
   tokenId,
   mintPrice,
+  itemName,
+  itemImage,
   onMintSuccess,
   updateTraits,
   userAddress,
   mintAction,
   buttonText,
-  className, // Add this line
+  showModal,
+  className, 
 }) => {
   const [isTransactionPending, setTransactionPending] = useState(false);
   const [discountRate, setDiscountRate] = useState(0);
@@ -34,8 +66,16 @@ const MintButton: React.FC<MintButtonProps> = ({
   const expectedChainId = 137; // Polygon Chain ID
   const isCorrectNetwork = chain?.id === expectedChainId;
   const formattedPrice = mintPrice ? ethers.utils.formatEther(mintPrice) : "Unavailable";
-  const dollysAddress = "0xC8465f21E35AfD1De06A81D932392C47b1BEA42A";
-  const hunnysClosetSalesAddress = "0x66923e2842da52b3e419fbbc79f07f1c8b0e908a";
+  const hunnysClosetSalesAddress = "0x66923e2842da52b3e419fbbc79f07f1c8b0e908a" as const;
+  const {
+    waas,
+    error,
+    user: waasUser,
+    wallet,
+    isLoggingIn,
+    isCreatingWallet,
+  } = useWalletContext();
+  const address = useEVMAddress(wallet);
   useEffect(() => {
     const fetchDiscountRate = async () => {
       const provider = new ethers.providers.JsonRpcProvider(
@@ -58,59 +98,73 @@ const MintButton: React.FC<MintButtonProps> = ({
   }, []);
 
   const handleMint = async () => {
-    if (!isConnected) {
+    
+    const provider = new ethers.providers.Web3Provider(
+      window.ethereum as any
+    );
+
+    if (!isConnected && !address) {
       console.error("User is not connected to a wallet");
       return;
     }
+    if (!tokenId || !userAddress) {
+      console.error("Token ID or user address is undefined");
+      return;
+    }
+    if (!mintPrice) {
+      console.error("Mint price is undefined");
+      alert("Mint price not available.");
+      return;
+    }
+    
+    const transactionDetails = {
+      totalCost: formattedPrice,
+      headline: `Purchase: ${itemName}`,
+      description: 'Confirm your transaction to transfer this cute NFT into your realm!',
+      image: itemImage,
+      gasFees: '1',
+    };
+    // Trigger the modal with transaction details
+    showModal({
+      ...transactionDetails,
+      onConfirm: () => performMintAction(),
+      tokenId: "",
+      mintPrice: "",
+      itemName: "",
+      itemImage: ""
+    });
 
+    const performMintAction = async () => {
     if (!isCorrectNetwork && switchChain) {
       try {
-        await switchChain({ chainId: expectedChainId });
+        switchChain({ chainId: expectedChainId });
         console.log("Successfully requested chain switch.");
-        // You might need to wait for the network switch to complete before continuing.
-        // This could be done by listening to some event or re-checking the current network after a delay.
-      } catch (error) {
+        } catch (error) {
         console.error("Failed to switch chain:", error);
         alert("Please switch to the Polygon network in your wallet.");
         return;
       }
     }
 
-    if (!tokenId || !userAddress) {
-      console.error("Token ID or user address is undefined");
-      return;
+    setTransactionPending(true);
+    if (address) {
+      return await mintWithWeth(userAddress!, address, tokenId!, mintPrice!, provider)
+      }  
+    try {
+      await mintAction();
+      onMintSuccess();
+      updateTraits(userAddress!);
+      alert("Purchase successful!");
+    } catch (error) {
+      console.error("Purchase error:", error);
+      if (error instanceof Error) {
+      alert(error.message || "Purchase failed.");
+      } 
+    } finally {
+      setTransactionPending(false);
     }
-
-    if (!mintPrice) {
-      console.error("Mint price is undefined");
-      alert("Mint price not available.");
-      return;
-    }
-
-    // Convert mintPrice to BigNumber if it's not already
-    let safeMintPrice = BigNumber.isBigNumber(mintPrice)
-      ? mintPrice
-      : BigNumber.from(mintPrice);
-
-
-    if (isCorrectNetwork) {
-      try {
-        setTransactionPending(true);
-        await mintAction();
-        onMintSuccess();
-        updateTraits(userAddress);
-        alert("Purchase successful!");
-      } catch (error) {
-        console.error("Purchase error:", error);
-        if (error instanceof Error) {
-          alert(error.message || "Purchase failed.");
-        } else {
-          alert("Purchase failed due to an unexpected error.");
-        }
-      } finally {
-        setTransactionPending(false);
-      }
-    }
+    
+  };
   };
 
   // Compute the original price if there's a discount

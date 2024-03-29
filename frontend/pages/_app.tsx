@@ -75,14 +75,13 @@ function MyApp({ Component, pageProps }: AppProps) {
   }
 
   return (
-    
-      <WagmiProvider config={config}>
-        <WalletProvider
+    <WalletProvider
       collectAndReportMetrics
       enableHostedBackups
       projectId={process.env.NEXT_PUBLIC_WAAS_PROJECT_ID_DEV}
       prod={false} // Set to true for production
     >
+      <WagmiProvider config={config}>
       <QueryClientProvider client={queryClient}> 
       <ConnectWallet /> 
         <RainbowKitProvider coolMode>
@@ -90,8 +89,8 @@ function MyApp({ Component, pageProps }: AppProps) {
           <Analytics />
         </RainbowKitProvider>
         </QueryClientProvider> 
-    </WalletProvider>
       </WagmiProvider>
+    </WalletProvider>
   );
 }
 
