@@ -13,9 +13,8 @@ import { WalletProvider } from "@coinbase/waas-sdk-web-react";
 import { config } from '../src/utils/wagmiConfig'
 import { 
   createConfig, 
+  http 
 } from '@wagmi/core'
-import { 
-  http } from 'viem';
 import {
   mainnet,
   polygon,
@@ -31,7 +30,6 @@ import { Analytics } from "@vercel/analytics/react";
 // Use the Next.js Link component instead of your custom Link component for navigation
 import Link from "next/link";
 import { Account } from '../src/components/Wallet/account' 
-import { WalletOptions } from '../src/components/Wallet/wallet-options' 
 
 // Declare gtag for TypeScript
 declare global {
@@ -39,30 +37,6 @@ declare global {
     gtag: any;
   }
 }
-
-import {
-  argentWallet,
-  trustWallet,
-  ledgerWallet,
-  metaMaskWallet,
-  walletConnectWallet,
-  rainbowWallet,
-  injectedWallet,
-  coinbaseWallet
-} from "@rainbow-me/rainbowkit/wallets";
-
-const connectors = connectorsForWallets(
-  [
-    {
-      groupName: 'Recommended',
-      wallets: [coinbaseWallet, rainbowWallet, metaMaskWallet, walletConnectWallet, ledgerWallet, injectedWallet, trustWallet, argentWallet],
-    },
-  ],
-  {
-    appName: 'Hunnys Closet',
-    projectId: 'dc9e83a4ea618721d7c59c905af47837',
-  }
-);
 
 
 const queryClient = new QueryClient();
@@ -101,14 +75,22 @@ function MyApp({ Component, pageProps }: AppProps) {
   }
 
   return (
+    
       <WagmiProvider config={config}>
+        <WalletProvider
+      collectAndReportMetrics
+      enableHostedBackups
+      projectId={process.env.NEXT_PUBLIC_WAAS_PROJECT_ID_DEV}
+      prod={false} // Set to true for production
+    >
       <QueryClientProvider client={queryClient}> 
+      <ConnectWallet /> 
         <RainbowKitProvider coolMode>
           <Component />
-
           <Analytics />
         </RainbowKitProvider>
         </QueryClientProvider> 
+    </WalletProvider>
       </WagmiProvider>
   );
 }

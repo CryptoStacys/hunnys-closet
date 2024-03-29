@@ -32,7 +32,6 @@ const ProfileView = () => {
   const GMMug = "/assets/img/GMMug.png";
   const DollyPreviewProfilePage = "/assets/img/DollyPreviewProfilePage.gif";
   const [saveError, setSaveError] = useState("");
-  const provider = new ethers.providers.Web3Provider(window.ethereum as any);
   const [showTooltip, setShowTooltip] = useState(false);
   const [availableTitles, setAvailableTitles] = useState<string[]>([]);
   const [birthdayMonth, setBirthdayMonth] = useState(
@@ -144,15 +143,25 @@ const ProfileView = () => {
     .map((address) => address.toLowerCase())
     .includes(user!.address.toLowerCase());
   console.log(user?.address, isBunnyClubMember);
-  const handleFreeNFTClaim = async () => {
-    // Assuming mintWithWeth is adapted for free claims
-    await mintWithWeth(
-      user?.wallet,
-      "0",
-      ethers.utils.parseUnits("0", "ether"),
-      provider
-    );
+  const getWeb3Provider = () => {
+    try {
+      // Attempt to use MetaMask's provider if available
+      if (window.ethereum) {
+        return new ethers.providers.Web3Provider(window.ethereum as any);
+      } else {
+        // Fall back to a default provider (e.g., ethers.js default provider or Infura)
+        console.log('MetaMask is not installed, using fallback provider.');
+        return ethers.getDefaultProvider();
+      }
+    } catch (error) {
+      console.error('Failed to initialize the Web3 provider:', error);
+      return null;
+    }
   };
+  
+  // Use this function to get your provider
+  const provider = getWeb3Provider();
+
 
   const handleImageUpload = async (): Promise<string | null> => {
     if (!selectedFile || !user?.UUID) return null;
@@ -312,6 +321,7 @@ const ProfileView = () => {
     updateProfileIfNeeded();
   }, [user?.profile_image_url, selectedFile]);
 
+  console.log(provider)
   return (
     <div>
       <ProfileCard
