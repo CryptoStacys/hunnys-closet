@@ -3004,5 +3004,77 @@
             }
         ],
         "metaPath": "https://hunnysseasons.s3.us-east-2.amazonaws.com/183"
+    },
+    {
+        "tokenId": 184,
+        "name": "007",
+        "attributes": [
+            {
+                "trait_type": "Hand",
+                "value": "MetaVixen Ipad Drawing"
+            }
+        ],
+        "metaPath": "https://hunnysseasons.s3.us-east-2.amazonaws.com/184"
+    },
+    {
+        "tokenId": 185,
+        "name": "008",
+        "attributes": [
+            {
+                "trait_type": "Accessory",
+                "value": "OctoBot"
+            },
+            {
+                "trait_type": "Frame",
+                "value": "Lab Experiment"
+            },
+            {
+                "trait_type": "Background",
+                "value": "Lab Goo"
+            }
+        ],
+        "metaPath": "https://hunnysseasons.s3.us-east-2.amazonaws.com/185"
+    },
+    {
+        "tokenId": 186,
+        "name": "008V",
+        "attributes": [
+            {
+                "trait_type": "Accessory",
+                "value": "OctoBot"
+            },
+            {
+                "trait_type": "Frame",
+                "value": "Lab Experiment"
+            },
+            {
+                "trait_type": "Background",
+                "value": "Lab Goo"
+            },
+            {
+                "trait_type": "Accessory",
+                "value": "Glowy OctoBot"
+            }
+        ],
+        "metaPath": "https://hunnysseasons.s3.us-east-2.amazonaws.com/186"
+    },
+    {
+        "tokenId": 187,
+        "name": "009",
+        "attributes": [
+            {
+                "trait_type": "Accessory",
+                "value": "Bee Bear"
+            },
+            {
+                "trait_type": "Frame",
+                "value": "Pretty Tulips"
+            },
+            {
+                "trait_type": "Outfit",
+                "value": "Shiny Ombre Halter"
+            }
+        ],
+        "metaPath": "https://hunnysseasons.s3.us-east-2.amazonaws.com/187"
     }
 ]
