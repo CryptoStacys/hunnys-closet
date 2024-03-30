@@ -3,10 +3,10 @@
     {
       "name": "Accessory",
       "traits": [
-        {"name": "OctoBot","colors": 3,"rarity": "Epic","tags": [],"token_id": 185},
-        {"name": "Glowy OctoBot","colors": 1,"rarity": "Relic","tags": [],"token_id": 186},
-        {"name": "OctoBot","colors": 3,"rarity": "Epic","tags": [],"token_id": 186},
-        {"name": "Bee Bear","colors": 2,"rarity": "Legendary","tags": [],"token_id": 187},
+        {"name": "OctoBot","colors": 3,"rarity": "Epic","tags": ["companion"],"token_id": 185},
+        {"name": "Glowy OctoBot","colors": 1,"rarity": "Relic","tags": ["companion"],"token_id": 186},
+        {"name": "OctoBot","colors": 3,"rarity": "Epic","tags": ["companion"],"token_id": 186},
+        {"name": "Bee Bear","colors": 2,"rarity": "Legendary","tags": ["companion"],"token_id": 187},
         {"name":"Kissy Town Prince","colors":5,"rarity":"Common","tags":["companion"],"token_id":180},
         {"name":"Flutter Bomber","colors":5,"rarity":"Epic","tags":["companion"],"token_id":181},
         {"name":"Flutter Bomber Wings","colors":2,"rarity":"Epic","tags":["onBack"],"token_id":181},
