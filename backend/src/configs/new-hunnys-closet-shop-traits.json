@@ -467,6 +467,7 @@
     {
       "name": "Undergarment",
       "traits": [
+        {"name": "Censored","colors": 0,"rarity": "Common","tags": [],"token_id": 99},
         {"name": "MetaVixen Nacho Chips","colors": 1,"rarity": "Common","tags": [],"token_id": 98},
         {"name": "MetaVixen Smell The Roses","colors": 2,"rarity": "Common","tags": [],"token_id": 98},
         {"name": "MetaVixen Starfishies","colors": 2,"rarity": "Common","tags": [],"token_id": 98},

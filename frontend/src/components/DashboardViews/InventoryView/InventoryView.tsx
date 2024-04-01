@@ -474,7 +474,7 @@ const InventoryView = () => {
           </div>
           <div className="stat-card luckiest">
             <p className="stat-title">Hunnys Seasons</p>
-            <p className="stat-value">{hunnysSeasonalStats.total}/179</p>
+            <p className="stat-value">{hunnysSeasonalStats.total}/183</p>
           </div>
           <div className="stat-card luckiest">
             <p className="stat-title">Owned Traits</p>

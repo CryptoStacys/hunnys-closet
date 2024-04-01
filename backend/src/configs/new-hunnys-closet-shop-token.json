@@ -2345,5 +2345,16 @@
         }
     ],
     "metaPath": "https://hunnysclosetshop.s3.us-east-2.amazonaws.com/images/goodies/98"
+},
+{
+  "tokenId": 99,
+  "name": "Censored",
+  "attributes": [
+      {
+          "trait_type": "Undergarment",
+          "value": "Censored"
+      }
+  ],
+  "metaPath": "https://hunnysclosetshop.s3.us-east-2.amazonaws.com/images/goodies/97"
 }
 ]
