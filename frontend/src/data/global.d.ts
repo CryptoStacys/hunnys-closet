@@ -16,6 +16,17 @@ export type Trait = {
   img_url?: string;
 };
 
+export type NftItem = {
+  id: string;
+  image: string;
+  name: string;
+  attribute?: string;
+  parentImage?: string;
+  parentName?: string;
+  isOwned?: boolean;
+  buttonURL?: string;
+};
+
 export type UUID = string;
 
 export type Achievement = {

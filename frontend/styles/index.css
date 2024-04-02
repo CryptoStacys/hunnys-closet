@@ -182,14 +182,40 @@ a {
   width: 100px; /* Example fixed width, adjust as needed */
 }
 
-.swiper-pagination {
-  position: static !important;
+.inventory-swiper .swiper-pagination {
+  position: absolute !important;
+  bottom:-4px !important;
+  z-index: 9999;
+}
+
+
+.inventory-swiper .swiper-pagination-bullets {
+  position: absolute !important;
+  bottom:-24px !important;
+  margin-bottom: 24px;
+  z-index: 9999;
+}
+
+.shop-swiper .swiper-pagination {
+  position: absolute !important;
+  bottom:-4px !important;
+  z-index: 9999;
+}
+
+.shop-swiper .swiper-pagination-bullets {
+  position: absolute !important;
+  bottom:-24px !important;
+  margin-bottom: 24px;
+  z-index: 9999;
 }
 
 .swiper-pagination-bullet-active {
   background: #C9A9FF !important;
 }
 
+.swiper-pagination {
+  position: static !important;
+}
 
 .banner {
   position: relative;
@@ -285,7 +311,6 @@ a {
   font-family: 'Luckiest Guy';
   white-space: nowrap;
   overflow: hidden;
-  top: 12px;
   z-index: 999;
   font-weight: 100;
   text-align: center;
@@ -483,7 +508,6 @@ a {
   font-family: 'Luckiest Guy', sans-serif;
   text-transform: uppercase;
   text-align: left;
-  margin-left: 10px;
 }
 
 .enterName {
@@ -698,7 +722,7 @@ a {
   max-width: 90vw; /* Prevents the tooltip from being wider than the viewport */
   bottom: 50%;
   left: 20;
-  transform: translateX(70%);
+  transform: translateX(-50%);
   overflow-x: hidden;
   z-index: 1;
 }
@@ -964,6 +988,11 @@ a {
 
   .mikagif {
     display:none;
+  }
+
+  .achievementsBanner {
+    position: relative;
+    top: 12px;
   }
 
   .synthwave {width: 100%;

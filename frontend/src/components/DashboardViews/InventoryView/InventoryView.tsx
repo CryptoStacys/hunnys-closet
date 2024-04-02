@@ -5,7 +5,8 @@ import { userAtom, allTraitsAtom, userTraitsAtom } from "../../../data/store";
 import { Token, UserOwnedTraits, Trait } from "../../../data/global";
 import Event from "../../Card/Events";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Pagination, Navigation, Lazy } from "swiper/modules";
+import { Pagination, Navigation, Lazy, Grid } from "swiper/modules";
+import GridComponent from "./views/Grid";
 
 import "swiper/css/pagination";
 import "swiper/css/navigation";
@@ -459,7 +460,7 @@ const InventoryView = () => {
     const uniqueOwnedTraitsCount = Object.keys(userOwnedTraits).length;
     return (
       <div className="inventory-grid-container bg-white text-white p-4">
-        <div className="grid grid-rows-2 grid-cols-3 xs:gap-x-8 md:gap-x-12 lg:gap-x-16 gap-y-12">
+        <div className="grid grid-rows-2 grid-cols-3 gap-4">
           <div className="stat-card luckiest">
             <p className="stat-title">Rank</p>
             <p className="stat-value">COMING SOON</p>
@@ -627,22 +628,22 @@ const InventoryView = () => {
         );
       });
       // Define card classes
-      const cardClass = `border rounded-xl bg-white hover:shadow-lg transform transition duration-500 hover:scale-105 m-2 overflow-hidden ${
-        gridSize === "8x8"
-              ? "max-w-[100px] max-h-[150px]"
-              : "max-w-[250px] max-h-[600px]"
+      const cardClass = `${
+        gridSize === "8x8" ? "p-0 flex flex-col justify-between h-full" : "p-2 flex flex-col justify-between h-full"
+      } border bg-white rounded-xl hover:shadow-lg transform transition duration-500 hover:scale-105 mt-2 overflow-hidden ${
+        gridSize === "8x8" ? "max-w-[200px] max-h-[250px]" : "max-w-[250px] max-h-[800px]"
       }`;
       const imageClass = "m-auto rounded-xl";
       const titleClass = `${
-        gridSize === "8x8" ? "text-sm" : "text-lg"
-      } luckiest mb-2 mt-2 text-left`;
+        gridSize === "8x8" ? "text-xs" : "text-2xl"
+      }  font-bold m-[2px] text-left luckiest`;
       return (
         <div
           key={index}
           className={`${cardClass} ${isOwned ? "" : "low-brightness"}`}
         >
           {/* Owned/Not Owned indicator and NFT Image */}
-
+          <div className="flex flex-col justify-between h-full">
           {/* Only render detailed content for 4x3 grid */}
           {gridSize === "4x3" && (
             <>
@@ -671,6 +672,7 @@ const InventoryView = () => {
                     ></img>
                   </div>
                 </>
+                
               ) : (
                 <>
                   <div
@@ -721,18 +723,17 @@ const InventoryView = () => {
                 />
                 <p className="text-xs mt-1">Origin: {nftName}</p>
               </div>
-              {/* VIEW button, conditional rendering based on 'buttonURL' */}
-              {buttonURL !== "NA" && (
-                <a
-                  href={buttonURL}
-                  target="_blank"
-                  rel="noreferrer"
-                  className="block mt-2 bg-[#6510F2] text-lg text-white font-bold rounded-full text-center hover:bg-opacity-80"
-                  style={{ marginTop: "auto" }}
-                >
-                  VIEW
-                </a>
-              )}
+            {/* VIEW button, conditional rendering based on 'buttonURL' */}
+         {buttonURL !== "NA" && (
+          <a
+            href={buttonURL}
+            target="_blank"
+            rel="noreferrer"
+            className="block bg-[#6510F2] text-lg text-white font-bold px-2 py-1 rounded-full text-center hover:bg-opacity-80 self-center mt-4 w-full"
+          >
+            VIEW
+          </a>
+        )}
             </>
           )}
 
@@ -746,12 +747,14 @@ const InventoryView = () => {
                 loading="lazy"
               />
               <div
-                className={`shadow-lg text-xs rounded-b-lg text-white bg-[#C9A9FF] w-full h-auto justify-center items-center break-all break-words py-2 px-2 font-poppins font-bold`}
+                className={`shadow-lg text-xs rounded-b-lg text-white bg-[#C9A9FF] w-full h-auto justify-center items-center break-words py-2 px-2 font-poppins font-bold`}
               >
                 {itemName}
               </div>
             </>
           )}
+        </div>
+         
         </div>
       );
     });
@@ -813,23 +816,22 @@ const InventoryView = () => {
 
       // Container classes
       const cardClass = `${
-        gridSize === "8x8" ? "p-0" : "p-2"
-      }  border  rounded-xl bg-white hover:shadow-lg transform transition duration-500 hover:scale-105 m-2 overflow-hidden`;
+        gridSize === "8x8" ? "p-0 flex flex-col justify-between h-full" : "p-2 flex flex-col justify-between h-full"
+      } border rounded-xl hover:shadow-lg transform transition duration-500 hover:scale-105 mt-2 overflow-hidden ${
+        gridSize === "8x8" ? "max-w-[200px] max-h-[250px] bg-[#EDEDED]" : "max-w-[250px] max-h-[800px] bg-white"
+      }`;
       const imageClass = "m-auto rounded-xl";
       const titleClass = `${
         gridSize === "8x8" ? "text-xs" : "text-2xl"
-      }  font-bold mb-2 mt-2 text-left luckiest`;
+      }  font-bold m-[2px] text-left luckiest`;
 
       return (
         <div
           key={index}
-          className={`${cardClass} ${
-            gridSize === "8x8"
-              ? "max-w-[75px] max-h-[150px]"
-              : "max-w-[250px] max-h-[600px]"
-          }`}
+          className={`${cardClass} ${isOwned ? "" : "low-brightness"}`}
         >
-          <div className="">
+          
+          <div className="flex flex-col justify-between h-full inventory-swiper">
             {/* Only render detailed content for 4x3 grid */}
             {gridSize === "4x3" && (
               <>
@@ -888,6 +890,7 @@ const InventoryView = () => {
                     </div>
                   </>
                 )}
+                <div className="bg-white rounded-xl inventory-swiper">
                 <img
                   src={nftImage}
                   loading="lazy"
@@ -902,12 +905,17 @@ const InventoryView = () => {
                 >
                   {nftName}
                 </h1>
+                </div>
                 <Swiper
                   pagination={{ clickable: true }}
                   spaceBetween={10}
                   slidesPerView={3} // Default to 3 slides per view for smaller screens
-                  modules={[Pagination]}
-                  className="mySwiper gap-4"
+                  grid={{
+                    rows: 1,
+                    fill: "row",
+                  }}
+                  modules={[Pagination, Grid]}
+                  className="mySwiper w-full max-w-[250px] h-full"
                 >
                   {items.map((item, idx) => (
                     <SwiperSlide key={idx}>
@@ -917,7 +925,7 @@ const InventoryView = () => {
                           src={item[8]}
                           alt={`Trait ${item[8]}`}
                         />
-                        <p className="text-xs mt-1">
+                        <p className="text-xs mt-1 mb-12">
                           {item[5]}: {item[2]}
                         </p>
                       </div>
@@ -939,26 +947,28 @@ const InventoryView = () => {
             {/* Simplified content for 8x8 grid */}
             {gridSize === "8x8" && (
               <>
-                <img
-                  src={nftImage}
-                  loading="lazy"
-                  alt={`NFT ${"tokenId"}`}
-                  className={`${imageClass} `}
-                />
-                <div
-                  className={`shadow-lg text-xs rounded-b-lg text-white bg-[#C9A9FF] w-full h-auto justify-center items-center break-words py-2 px-2 font-poppins font-bold`}
-                  style={{ fontSize: `${calculateFontSize(nftName)}px` }}
-                >
+                <div className="bg-white rounded-xl"> {/* Wrapper with white background */}
+      <img
+        src={nftImage}
+        loading="lazy"
+        alt={`NFT ${nftName}`}
+        className={`${imageClass}`}
+      />
+      <div
+                className={`shadow-lg text-xs rounded-b-lg text-white bg-[#C9A9FF] w-full h-auto justify-center items-center break-words py-2 px-2 font-poppins font-bold`}
+              >
                   {nftName}
+                </div>
                 </div>
               </>
             )}
+            
           </div>
         </div>
       );
     });
   };
-
+  
   return (
     <div className="inventory-view p-4 max-w-7xl mx-auto my-8">
       <Event
@@ -1131,9 +1141,9 @@ const InventoryView = () => {
           <div
             className={`grid ${
               gridSize === "4x3"
-                ? "break-words grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4"
-                : "break-words grid-cols-4 sm:grid-cols-4 md:grid-cols-6 lg:grid-cols-8 gap-4"
-            } justify-items-center`}
+                ? "break-words grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8"
+                : "break-words grid-cols-4 sm:grid-cols-4 md:grid-cols-6 lg:grid-cols-8 gap-8"
+            } xs:justify-items-center md:justify-between`}
           >
             {renderItemizedData()}
           </div>
@@ -1141,9 +1151,9 @@ const InventoryView = () => {
           <div
             className={`grid ${
               gridSize === "4x3"
-                ? "break-words grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4"
-                : "break-words grid-cols-4 sm:grid-cols-4 md:grid-cols-6 lg:grid-cols-8 gap-4"
-            } justify-items-center`}
+                ? "break-words grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8"
+                : "break-words grid-cols-4 sm:grid-cols-4 md:grid-cols-6 lg:grid-cols-8 gap-8"
+            } xs:justify-items-center md:justify-between`}
           >
             {renderCollectionData()}
           </div>

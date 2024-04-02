@@ -42,6 +42,7 @@ SwiperCore.use([Pagination, Controller]);
         title: 'Bunny Bargainer',
         description: 'Watch your step, this place may look small but it’s bustling with delight wall to wall, Here you’ll be whisked away by the sights, scents and sounds. Every item here has a story to be found! Goods from every corner of the bunny lands, traded here in friendly hands. Find yourself some of the freshest treats to keep you on your Bunny feet!',
         levelsReward1: 'Bunny Babe Basket',
+        levelsReward2: 'Picnic Day',
         freeClaimTokenId: 70,
         },
     {
@@ -123,7 +124,7 @@ SwiperCore.use([Pagination, Controller]);
   const LevelsList = () => {
     const [user] = useAtom(userAtom);
     const [currentLevelId, setCurrentLevelId] = useState(user?.level.toString() || "0");
-    const userLevelIndex = parseInt(currentLevelId, 10);
+    const userLevelIndex = user ? parseInt(user.level, 10) : 0;
 
     const [swiperInstance, setSwiperInstance] = useState<SwiperClass | null>(null);
     const incrementLevel = () => {
@@ -159,12 +160,31 @@ SwiperCore.use([Pagination, Controller]);
       }
     }, [swiperInstance, user?.level]);
 
+    useEffect(() => {
+      if (swiperInstance) {
+          // Prevent dragging beyond the current level by disabling touch movement if it's not within allowed levels.
+          swiperInstance.allowTouchMove = userLevelIndex >= swiperInstance.activeIndex;
+          
+          // Update Swiper instance to apply the changes.
+          swiperInstance.update();
+      }
+  }, [swiperInstance, userLevelIndex]);
+
     return (
       <div className="levels-list">
-        <Swiper
+      <Swiper
         onSwiper={setSwiperInstance}
-        initialSlide={user?.level || 0}
-        pagination={{ clickable: true }}
+        initialSlide={userLevelIndex}
+        allowTouchMove={false}
+        allowSlideNext={userLevelIndex >= (user?.level || 0)}
+        pagination={{
+          clickable: true,
+          // Dynamically render pagination bullets only for accessible levels
+          renderBullet: (index, className) => {
+              return index <= userLevelIndex ? `<span class="${className}"></span>` : '';
+          }
+      }}
+
         spaceBetween={10}
         modules={[Pagination, Controller]}
         className='mySwiper'

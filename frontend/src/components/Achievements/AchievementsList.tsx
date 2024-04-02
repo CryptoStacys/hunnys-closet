@@ -8,6 +8,7 @@ import { userAtom } from "../../data/store";
 import Confetti from "react-confetti";
 import useSound from "use-sound";
 import { calculateLevel } from '../../utils/levelUtils';
+import { achievements } from '../../utils/achievements';
 
   const AchievementsList = () => {
     const [user, setUser] = useAtom(userAtom);
@@ -59,6 +60,7 @@ import { calculateLevel } from '../../utils/levelUtils';
          cupcakePoints: 25,
          freeClaimTokenId: 84,
          achievementsReward1: '/icons/Achievements/84.png',
+         achievementsReward2: '/icons/Achievements/Achievements/5/1.png',
          title: 'Bunny Knight',
          eligibilityCriteria: (user: User) => user.tokens.filter(token => token.origin_name === "Hunnys 10k").length >= 3,
          },
@@ -69,6 +71,7 @@ import { calculateLevel } from '../../utils/levelUtils';
         cupcakePoints: 25,
         freeClaimTokenId: 82,
         achievementsReward1: '/icons/Achievements/82.png',
+        achievementsReward2: '/icons/Achievements/Achievements/6/1.png',
         title: 'Bunny Duke',
         eligibilityCriteria: (user: User) => user.tokens.filter(token => token.origin_name === "Hunnys 10k").length >= 7,
         },
@@ -79,6 +82,7 @@ import { calculateLevel } from '../../utils/levelUtils';
         cupcakePoints: 25,
         freeClaimTokenId: 92,
         achievementsReward1: '/icons/Achievements/92.png',
+        achievementsReward2: '/icons/Achievements/Achievements/7/1.png',
         title: 'Royal Bunny',
         eligibilityCriteria: (user: User) => user.tokens.filter(token => token.origin_name === "Hunnys 10k").length >= 12,
         },
@@ -89,6 +93,8 @@ import { calculateLevel } from '../../utils/levelUtils';
         cupcakePoints: 50,
         freeClaimTokenId: 83,
         achievementsReward1: '/icons/Achievements/83.png',
+        achievementsReward2: '/icons/Achievements/Achievements/8/1.png',
+        achievementsReward3: '/icons/Achievements/Achievements/8/2.png',
         title: 'Bunny Emperor',
         eligibilityCriteria: (user: User) => user.tokens.filter(token => token.origin_name === "Hunnys 10k").length >= 30,
         },
@@ -99,6 +105,9 @@ import { calculateLevel } from '../../utils/levelUtils';
         cupcakePoints: 50,
         freeClaimTokenId: 96,
         achievementsReward1: '/icons/Achievements/96.png',
+        achievementsReward2: '/icons/Achievements/Achievements/9/1.png',
+        achievementsReward3: '/icons/Achievements/Achievements/9/2.png',
+        achievementsReward4: '/icons/Achievements/Achievements/9/3.png',
         title: 'World Dominator',
         eligibilityCriteria: (user: User) => user.tokens.filter(token => token.origin_name === "Hunnys 10k").length >= 50,
         },
@@ -109,6 +118,7 @@ import { calculateLevel } from '../../utils/levelUtils';
         cupcakePoints: 100,
         freeClaimTokenId: 89,
         achievementsReward1: '/icons/Achievements/89.png',
+        achievementsReward2: '/icons/Achievements/Achievements/10/1.png',
         title: 'Intergalactic Bunny',
         eligibilityCriteria: (user: User) => user.tokens.filter(token => token.origin_name === "Hunnys 10k").length >= 100,
         },
@@ -247,6 +257,7 @@ import { calculateLevel } from '../../utils/levelUtils';
       title: 'Vampire Slayer',
       freeClaimTokenId: 95,
       achievementsReward1: '/icons/Achievements/95.png',
+      achievementsReward2: '/icons/Achievements/Achievements/25/1.png',
       eligibilityCriteria: (user: User) => user.tokens.some(token => token.img_url?.includes("Buffy")),
       },
     {
@@ -257,6 +268,7 @@ import { calculateLevel } from '../../utils/levelUtils';
       freeClaimTokenId: 85,
       title: 'Cheer Squad',
       achievementsReward1: '/icons/Achievements/85.png',
+      achievementsReward2: '/icons/Achievements/Achievements/26/1.png',
       eligibilityCriteria: (user: User) => user.dollys.some(dolly => 
         dolly.attributes && dolly.attributes.some(attr => attr.name === "BunnyUCheerTop")
       ),
@@ -269,6 +281,7 @@ import { calculateLevel } from '../../utils/levelUtils';
       freeClaimTokenId: 88,
       title: 'Ghostfren',
       achievementsReward1: '/icons/Achievements/88.png',
+      achievementsReward2: '/icons/Achievements/Achievements/27/1.png',
       eligibilityCriteria: (user: User) => {
         const hasBooTheGhostFloop = user.traits.some(trait => trait.name === 'BooTheGhostFloop');
         const hasGhostCrocFriend = user.traits.some(trait => trait.name === 'GhostCrocFriend');
@@ -348,6 +361,7 @@ import { calculateLevel } from '../../utils/levelUtils';
     // },
     // Add more achievements here
   ];
+  
   const handleAchievementClaim = async (achievementId: string, freeClaimTokenId?: number) => {
       // Find the achievement based on the ID
       const achievement = achievementsData.find(a => a.id === achievementId);

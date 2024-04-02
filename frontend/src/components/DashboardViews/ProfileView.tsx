@@ -204,8 +204,8 @@ const ProfileView = () => {
 
   const calculateFontSize = (nameLength: number) => {
     if (nameLength <= 4) return "text-5xl"; // Larger font size for very short names
-    if (nameLength <= 8) return "text-4xl";
-    if (nameLength <= 12) return "text-3xl";
+    if (nameLength <= 8) return "text-4xl mt-4";
+    if (nameLength <= 12) return "text-3xl mt-4";
     return "text-2xl"; // Smaller font size for longer names
   };
 
@@ -516,7 +516,7 @@ const ProfileView = () => {
           </div>
         }
         rightBlockContent={
-          <div className="xs:self-start sm:self-center hideplz">
+          <div className="xs:self-start sm:self-end hideplz">
             {isBunnyClubMember ? (
               <Image
                 src="/assets/img/BunnyClubMemberEmblem.png"
@@ -600,12 +600,16 @@ const ProfileView = () => {
       ) : (
         <div></div>
       )}
-      ;
+      {claimedFreeMug ? (
+        
+        <div></div>
+        
+      ) : (
       <Card
         headerTitle="Welcome to Hunnys Closet!"
         leftBlockContent={
-          <div>
-            <CupcakePoints points="10" text="Cupcake Points" />
+          <div className="md:h-[200px]">
+            <CupcakePoints points="10" text="Cupcake Points" className={""} />
           </div>
         }
         middleBlockContent={
@@ -632,7 +636,7 @@ const ProfileView = () => {
                   console.log(`Traits updated for ${userAddress}`)
                 }
                 userAddress={user?.wallet}
-                className="bg-hunnys-yellow hover:bg-hunnys-yellow self-center !text-hunnys-blue !w-4/5 luckiest shadow-md rounded-full px-4 py-1 text-xl md:text-2xl hover:shadow-lg hover:scale-[1.02] transition-all"
+                className="bg-hunnys-yellow py-2 w-full self-center text-hunnys-blue luckiest shadow-md rounded-full px-4 text-2xl hover:shadow-lg hover:scale-[1.02] transition-all"
                 buttonText="Claim My Free Mug!"
               />
             )}
@@ -651,12 +655,12 @@ const ProfileView = () => {
         }
         footer={""}
       />
-      <Card
-        headerTitle="Recent News"
-        leftBlockContent={""}
-        middleBlockContent={""}
-        rightBlockContent={""}
-        footer={recentNews.map((item, index) => (
+      )}
+      <div className="border-t-2 border-gray-200 my-8"></div>
+      
+      <h1 className="luckiest text-center text-4xl">RECENT NEWS</h1>
+      <div className="px-8 mx-auto max-w-7xl mt-[-40px]">
+      {recentNews.map((item, index) => (
           <div key={index}>
             <div className="date text-center leading-8 xs:ml-4 tn:ml-16 xs:text-xl sm:text-3xl">
               {item[4]}
@@ -676,7 +680,7 @@ const ProfileView = () => {
             />
           </div>
         ))}
-      />
+    </div>
     </div>
   );
 };

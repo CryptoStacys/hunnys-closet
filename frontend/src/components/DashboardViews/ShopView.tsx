@@ -5,7 +5,7 @@ import { userAtom, allTraitsAtom, userTraitsAtom } from "../../data/store";
 import { Token, UserOwnedTraits, Trait } from "../../data/global";
 import Event from "../Card/Events";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Pagination, Navigation, Lazy } from "swiper/modules";
+import { Pagination, Navigation, Lazy, Grid } from "swiper/modules";
 import MintButton from "../Mint/MintButton";
 import useUpdateTraits from "../../hooks/useUpdateTraits";
 import { eligibleTokenIds, mintWithWeth } from "../../utils/eligibleTokens";
@@ -625,6 +625,7 @@ const collectionNameMap: CollectionNameMap = {
               : "d-flex flex-column justify-content-between max-w-[250px] max-h-[600px]"
           }`}
         >
+        <div className="flex flex-col justify-between h-full inventory-swiper">
           {gridSize === "4x3" && (
             <>
               <img
@@ -676,6 +677,7 @@ const collectionNameMap: CollectionNameMap = {
                 } }              />
             </>
           )}
+        </div>
         </div>
       );
     });
@@ -783,7 +785,7 @@ const collectionNameMap: CollectionNameMap = {
               : "max-w-[250px] max-h-[600px]"
           }`}
         >
-          <div className="pt-1">
+          <div className="flex flex-col justify-between h-full shop-swiper">
             {/* Only render detailed content for 4x3 grid */}
             {gridSize === "4x3" && (
               <>
@@ -804,19 +806,23 @@ const collectionNameMap: CollectionNameMap = {
                 <Swiper
                   pagination={{ clickable: true }}
                   spaceBetween={10}
-                  slidesPerView={3}
-                  modules={[Pagination]}
-                  className="mySwiper"
+                  slidesPerView={3} // Default to 3 slides per view for smaller screens
+                  grid={{
+                    rows: 1,
+                    fill: "row",
+                  }}
+                  modules={[Pagination, Grid]}
+                  className="mySwiper w-full max-w-[250px] h-full"
                 >
                   {items.map((item, idx) => (
                     <SwiperSlide key={idx}>
                       <div className="text-center cursor-pointer">
                         <img
-                          className="w-full h-auto max-h-24 mx-auto border-[#C6C6C6] border-2 rounded-xl"
+                          className="mx-auto border-[#C6C6C6] border-2 rounded-xl max-w-20 gap-4"
                           src={item[4]}
                           alt={`Trait ${item[4]}`}
                         />
-                        <p className="text-xs mt-1">
+                        <p className="text-xs mt-1 mb-16">
                           {item[6]}: {item[5]}
                         </p>
                       </div>
@@ -871,7 +877,7 @@ const collectionNameMap: CollectionNameMap = {
     </div>
 
         {/* Main content area */}
-        <div className="bg-[#FAFAFA] mt-4">
+        <div className="bg-[#EDEDED] mt-4">
         {feedbackMessage.message && (
             <div className={`feedback-message ${feedbackMessage.type === 'success' ? 'success-class' : 'error-class'}`}>
               {feedbackMessage.message}
