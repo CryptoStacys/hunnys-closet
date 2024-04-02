@@ -336,16 +336,16 @@ import { calculateLevel } from '../../utils/levelUtils';
       achievementsReward1: '/icons/Achievements/CupcakePoints.png',
       eligibilityCriteria: (user: User) => user?.dollyCount > 2,
     },
-    {
-      id: '34',
-      challenge: 'Censored',
-      description: 'Censor Yourself! But just for today.',
-      cupcakePoints: 50,
-      freeClaimTokenId: 99,
-      title: 'Censored', 
-      achievementsReward1: '/icons/Achievements/99.png',
-      eligibilityCriteria: (user: User) => user?.dollyCount > -1,
-    },
+    // {
+    //   id: '34',
+    //   challenge: 'Censored',
+    //   description: 'Censor Yourself! But just for today.',
+    //   cupcakePoints: 50,
+    //   freeClaimTokenId: 99,
+    //   title: 'Censored', 
+    //   achievementsReward1: '/icons/Achievements/99.png',
+    //   eligibilityCriteria: (user: User) => user?.dollyCount > -1,
+    // },
     // Add more achievements here
   ];
   const handleAchievementClaim = async (achievementId: string, freeClaimTokenId?: number) => {
