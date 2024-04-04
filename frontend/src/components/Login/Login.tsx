@@ -208,7 +208,7 @@ export default function Login() {
 
   return (
     <RainbowKitProvider>
-    <div className="flex justify-center items-center w-max-full px-6 mx-auto bg-cover bg-center" style={{backgroundColor: '#EDEDED', backgroundImage: `url('/assets/img/sparkle_bg.png')`}}>
+    <div className="flex justify-center items-center w-max-full px-6 mx-auto bg-cover bg-center" style={{backgroundColor: '#EDEDED'}}>
     <div className="relative rounded-3xl overflow-hidden max-w-[1250px] w-full h-[100%] mx-auto flex items-center justify-center">
       {/* Background Image */}
       {loadingImage && (

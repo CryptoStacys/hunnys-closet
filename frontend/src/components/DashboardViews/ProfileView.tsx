@@ -232,6 +232,7 @@ const ProfileView = () => {
     if (nameLength <= 4) return "text-5xl"; // Larger font size for very short names
     if (nameLength <= 8) return "text-4xl mt-4";
     if (nameLength <= 12) return "text-3xl mt-4";
+    if (nameLength <= 16) return "text-2xl mt-4";
     return "text-2xl"; // Smaller font size for longer names
   };
 
@@ -683,10 +684,9 @@ const ProfileView = () => {
         footer={""}
       />
       )}
-      <div className="border-t-2 border-gray-200 my-8"></div>
       
-      <h1 className="luckiest text-center text-4xl">RECENT NEWS</h1>
-      <div className="px-8 mx-auto max-w-7xl mt-[-40px]">
+      <div className="mt-32"><h1 className="luckiest text-center text-[64px] leading-normal mx-8">RECENT NEWS</h1></div>
+      <div className="px-8 mx-auto max-w-7xl md:mt-[-40px]">
       {recentNews.map((item, index) => (
           <div key={index}>
             <div className="date text-center leading-8 xs:ml-4 tn:ml-16 xs:text-xl sm:text-3xl">

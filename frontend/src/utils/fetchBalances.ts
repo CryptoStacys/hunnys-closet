@@ -1,7 +1,6 @@
 // src/utils/fetchBalances.ts
 import { ethers } from "ethers";
 
-import React, { useState, useEffect, useCallback, useRef } from "react";
 const ethProvider = new ethers.providers.JsonRpcProvider("https://mainnet.infura.io/v3/5239f83d36634330bd900f94158cf76e");
 const polygonProvider = new ethers.providers.JsonRpcProvider("https://polygon-mainnet.infura.io/v3/2540ef4e847c4dea838bacade9c4fcac");
 
@@ -10,15 +9,20 @@ const WETHAbi = ["function balanceOf(address owner) view returns (uint256)"];
 
 export const fetchBalances = async (userAddress: string) => {
     if (!userAddress) {
-        return { ethBalance: "", polygonBalance: "" };
+        return { ethBalance: "0.0000", polygonBalance: "0.0000" };
     }
 
     const ethBalance = await ethProvider.getBalance(userAddress);
     const wethContract = new ethers.Contract(WETHContractAddress, WETHAbi, polygonProvider);
     const polygonBalance = await wethContract.balanceOf(userAddress);
 
+    // Use parseFloat to convert the string to a float and then toFixed to format it
+    const formattedEthBalance = parseFloat(ethers.utils.formatEther(ethBalance)).toFixed(4);
+    const formattedPolygonBalance = parseFloat(ethers.utils.formatEther(polygonBalance)).toFixed(4);
+
     return {
-        ethBalance: ethers.utils.formatEther(ethBalance),
-        polygonBalance: ethers.utils.formatEther(polygonBalance),
+        ethBalance: formattedEthBalance,
+        polygonBalance: formattedPolygonBalance,
     };
 };
+

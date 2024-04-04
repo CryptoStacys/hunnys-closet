@@ -213,37 +213,66 @@ export default function Nav({ rewardStatus }: NavProps) {
             <p className="indent-2">Dashboard</p>
           </Link>
           <a
-            className="block px-2 py-2 cursor-pointer"
+            className="block px-2 py-2 cursor-default"
             onClick={handleAddressCopy}
           >
             Account Address:{" "}
-            {copySuccess ||
-              (user?.address
-                ? `${user.address.substring(0, 6)}...${user.address.substring(
-                    user.address.length - 4
-                  )}`
-                : "No Address")}
-            <Image
-              src={"/icons/clickToCopy.svg"}
-              alt={"Click To Copy"}
-              width={40}
-              height={40}
-              className=""
-            ></Image>
+            <div className="flex flex-row">
+              {copySuccess ||
+                (user?.address
+                  ? `${user.address.substring(
+                      0,
+                      6
+                    )}...${user.address.substring(
+                      user.address.length - 4
+                    )}`
+                  : "No Address")}
+              <Image
+                src={"/icons/clickToCopy.svg"}
+                alt={"Click To Copy"}
+                width={20}
+                height={20}
+                className="ml-2"
+              ></Image>
+            </div>
           </a>
-          <div className="flex items-center justify-between px-2 py-2">
-            <img src="/icons/eth.svg" alt="ETH" width="24" height="24" />
-            <span>Ξ{ethBalance.substring(0, 6)}</span>
-            <Tooltip content="Ethereum Mainnet Balance">
-              <img src="/icons/info.svg" alt="Info" width="16" height="16" />
-            </Tooltip>
+          <div className="flex px-2 py-2">
+            <img
+              src="/icons/eth.svg"
+              alt="ETH"
+              width="24"
+              height="24"
+            />
+            <span className="ml-2 mr-6">Ξ{ethBalance.substring(0, 6)}</span>
+            <Help
+              {...{
+                title: "What is this?",
+                body: "This is your balance on the Ethereum Network!\n \nYou can use this to create your Dolly and save it in your digital wallet.\n\n Remember, this is simply a one-time fee for saving your Dolly. Afterwards, you can continue to save & update your Dolly for free, forever!\n\n ",
+                className: "",
+                footer: <div className="flex flex-col justify-center m-auto items-center font-bold">Need to purchase more?<br></br><br></br><CoinbaseButtonEth
+                destinationWalletAddress={user?.address || ""}
+              /></div>
+            }}
+            />
           </div>
-          <div className="flex items-center justify-between px-2 py-2">
-            <img src="/icons/weth.svg" alt="WETH" width="24" height="24" />
-            <span>Ξ{polygonBalance.substring(0, 6)}</span>
-            <Tooltip content="Wrapped Ethereum on Polygon Network">
-              <img src="/icons/info.svg" alt="Info" width="16" height="16" />
-            </Tooltip>
+          <div className="flex items-center px-2 py-2">
+            <img
+              src="/icons/weth.svg"
+              alt="WETH"
+              width="24"
+              height="24"
+            />
+            <span className="ml-2 mr-6">Ξ{polygonBalance.substring(0, 6)}</span>
+            <Help
+              {...{
+                title: "What is this?",
+                body: "This is your balance on the Polygon Network!\n \nYou can use this to purchase items inside of the Hunnys Closet Shop tab! All items purchased are saved right inside of your digital wallet and are for use for your Dolly.\n\n\n\n ",
+                className: "",
+                footer: <div className="flex flex-col justify-center m-auto items-center font-bold">Need to purchase more?<br></br><br></br><CoinbaseButtonPolygon
+                destinationWalletAddress={user?.address || ""}
+              /></div>
+            }}
+            />
           </div>
           <a
             className="self-start indent-2 mt-4 cursor-pointer"
