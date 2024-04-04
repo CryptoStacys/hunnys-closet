@@ -787,10 +787,10 @@ export default function ItemView(props: {
         {getColors().length > 0 && (
           <>
             <div className="font-bold text-gray-600 mt-6 mb-1">
-              <div className="font-bold text-gray-600 text-xl mt-6 p-4 mb-1">
+              <div className="font-bold text-gray-600 text-xl mt-2 mb-1">
                 Select your dyes
               </div>
-              <div className="grid p-8 grid-cols-2 sm:grid-cols-4 md:grid-cols-4 gap-3">
+              <div className="grid grid-cols-2 sm:grid-cols-4 md:grid-cols-4 gap-3">
                 {getColors().map((color, index) => (
                   <motion.button
                     initial={{ scale: 1, rotate: "0deg" }}

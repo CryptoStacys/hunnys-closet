@@ -1,8 +1,9 @@
-import { BigNumber } from "ethers";
-import React, { useEffect, useRef } from 'react';
+import { BigNumber, ethers } from "ethers";
+import React, { useState, useEffect, useCallback, useRef } from "react";
 import CoinbaseButtonPolygon from "../Wallet/CoinbaseButtonPolygon";
 import { useAtom } from "jotai";
 import { userAtom } from "../../data/store";
+import { fetchBalances } from "../../utils/fetchBalances";
 
 type WaasTransactionModalProps = {
   isVisible: boolean;
@@ -29,6 +30,26 @@ const WaasTransactionModal: React.FC<WaasTransactionModalProps> = ({
 }) => {
   const [user] = useAtom(userAtom);
   const modalRef = useRef<HTMLDivElement>(null);
+  const [polygonBalance, setPolygonBalance] = useState("");
+  const [isButtonDisabled, setIsButtonDisabled] = useState(false);
+
+useEffect(() => {
+    const updateBalances = async () => {
+      if (user?.address) {
+        const { polygonBalance } = await fetchBalances(user.address);
+        setPolygonBalance(polygonBalance);
+
+        // Convert totalCost and polygonBalance to BigNumber for comparison
+        const totalCostBigNumber = ethers.utils.parseEther(transactionDetails.totalCost);
+        const polygonBalanceBigNumber = ethers.utils.parseEther(polygonBalance);
+
+        // Update button disabled state based on balance sufficiency
+        setIsButtonDisabled(polygonBalanceBigNumber.lt(totalCostBigNumber));
+      }
+    };
+
+    updateBalances();
+  }, [user?.address, transactionDetails.totalCost]);
 
   useEffect(() => {
     if (isVisible && modalRef.current) {
@@ -61,13 +82,14 @@ const WaasTransactionModal: React.FC<WaasTransactionModalProps> = ({
         <div className="costDetails">
           <p>
             Cost:{" "}
-            <span className="amount">{transactionDetails.totalCost} ETH</span>
+            <span className="amount">Ξ{transactionDetails.totalCost}</span>
           </p>
         </div>
         <div className="actionButtons">
-          <button
-            className="bg-hunnys-yellow py-1 w-full self-center text-hunnys-blue luckiest shadow-md rounded-full px-4 text-2xl hover:shadow-lg hover:scale-[1.02] transition-all"
+        <button
+            className={`bg-hunnys-yellow py-1 w-full self-center text-hunnys-blue luckiest shadow-md rounded-full px-4 text-2xl hover:shadow-lg hover:scale-[1.02] transition-all ${isButtonDisabled ? 'opacity-50 cursor-not-allowed' : ''}`}
             onClick={onConfirm}
+            disabled={isButtonDisabled} // Disable based on balance check
           >
             CONFIRM PURCHASE
           </button>
@@ -75,6 +97,12 @@ const WaasTransactionModal: React.FC<WaasTransactionModalProps> = ({
             Cancel
           </button>
               <div className="border-t-2 border-gray-200 my-8"></div>
+              <div className="costDetails">
+        <p>
+            Current Balance:{" "}
+            <span className="amount">Ξ{polygonBalance.substring(0, 6)}</span>
+          </p>
+        </div>
           <div className="text-center self-center mt-8 font-thin">
             <p>Add funds with</p>
           <CoinbaseButtonPolygon

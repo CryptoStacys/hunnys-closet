@@ -2,8 +2,9 @@ import Link from "./../Link/Link";
 import { ConnectButton, useAccountModal } from "@rainbow-me/rainbowkit";
 import { useAtom } from "jotai";
 import { Tooltip } from "react-tooltip";
-import { currentViewAtom, setCurrentViewAtom } from '../../data/store';
+import { currentViewAtom, setCurrentViewAtom } from "../../data/store";
 import React, { useState, useEffect, useCallback, useRef } from "react";
+import { ethers } from "ethers";
 import {
   connectedAtom,
   dollEditorVisibleAtom,
@@ -14,6 +15,10 @@ import { useWalletContext } from "@coinbase/waas-sdk-web-react";
 import Login from "../Login/Login";
 import { useRouter } from "next/router";
 import Image from "next/image";
+import Help from "../Help/Help";
+import CoinbaseButtonEth from "../Wallet/CoinbaseButtonEth";
+import CoinbaseButtonPolygon from "../Wallet/CoinbaseButtonPolygon";
+import { fetchBalances } from "../../utils/fetchBalances";
 type NavProps = {
   rewardStatus: string;
 };
@@ -26,6 +31,8 @@ export default function Nav({ rewardStatus }: NavProps) {
   const { openAccountModal } = useAccountModal();
   const [currentView, setCurrentView] = useAtom(currentViewAtom);
   const [, triggerSetCurrentView] = useAtom(setCurrentViewAtom);
+  const [ethBalance, setEthBalance] = useState("");
+  const [polygonBalance, setPolygonBalance] = useState("");
   const handleChangeView = (newView: string) => {
     setCurrentView(newView); // This should now pass TypeScript's type checking
   };
@@ -51,7 +58,26 @@ export default function Nav({ rewardStatus }: NavProps) {
     onClick?: () => void;
     isActive: boolean;
   }
-  const ProfileButton: React.FC<ButtonProps & { isMobileMenu?: boolean }> = ({ iconSrc, text, onClick, isActive, isMobileMenu = false }) => {
+
+  useEffect(() => {
+    const updateBalances = async () => {
+        if (user?.address) {
+            const { ethBalance, polygonBalance } = await fetchBalances(user.address);
+            setEthBalance(ethBalance);
+            setPolygonBalance(polygonBalance);
+        }
+    };
+    
+    updateBalances();
+}, [user?.address]);
+
+  const ProfileButton: React.FC<ButtonProps & { isMobileMenu?: boolean }> = ({
+    iconSrc,
+    text,
+    onClick,
+    isActive,
+    isMobileMenu = false,
+  }) => {
     return (
       <button
         onClick={onClick}
@@ -185,7 +211,7 @@ export default function Nav({ rewardStatus }: NavProps) {
         <div className="absolute flex text-left flex-col font-bold left-0 mt-2 py-2 w-48 bg-white outline-none rounded-md shadow-xl z-20">
           <Link to="/">
             <p className="indent-2">Dashboard</p>
-            </Link>
+          </Link>
           <a
             className="block px-2 py-2 cursor-pointer"
             onClick={handleAddressCopy}
@@ -197,7 +223,28 @@ export default function Nav({ rewardStatus }: NavProps) {
                     user.address.length - 4
                   )}`
                 : "No Address")}
+            <Image
+              src={"/icons/clickToCopy.svg"}
+              alt={"Click To Copy"}
+              width={40}
+              height={40}
+              className=""
+            ></Image>
           </a>
+          <div className="flex items-center justify-between px-2 py-2">
+            <img src="/icons/eth.svg" alt="ETH" width="24" height="24" />
+            <span>Ξ{ethBalance.substring(0, 6)}</span>
+            <Tooltip content="Ethereum Mainnet Balance">
+              <img src="/icons/info.svg" alt="Info" width="16" height="16" />
+            </Tooltip>
+          </div>
+          <div className="flex items-center justify-between px-2 py-2">
+            <img src="/icons/weth.svg" alt="WETH" width="24" height="24" />
+            <span>Ξ{polygonBalance.substring(0, 6)}</span>
+            <Tooltip content="Wrapped Ethereum on Polygon Network">
+              <img src="/icons/info.svg" alt="Info" width="16" height="16" />
+            </Tooltip>
+          </div>
           <a
             className="self-start indent-2 mt-4 cursor-pointer"
             onClick={logout}
@@ -233,54 +280,110 @@ export default function Nav({ rewardStatus }: NavProps) {
             : connected &&
               user && (
                 <div className="relative" ref={dropdownRef}>
-      <button
-        className="flex items-center space-x-12 bg-white text-black font-bold px-4 py-2 rounded-xl"
-        onClick={() => setDropdownVisible(!dropdownVisible)}
-      >
-        {user?.profile_image_url ? (
-          <img
-            src={user.profile_image_url}
-            alt="Profile"
-            width="24"
-            height="24"
-            className="rounded-full"
-          />
-        ) : (
-          <img
-            src="/heart.svg"
-            alt="Default Profile"
-            width="24"
-            height="24"
-            className="rounded-full"
-          />
-        )}
-        <span className="mx-24 relative right-8 whitespace-nowrap">
-          {user?.profile_name || "Account"}
-        </span>
-      </button>
-      {dropdownVisible && (
-        <div className="absolute flex text-left flex-col font-bold left-0 mt-2 py-2 w-48 bg-white outline-none rounded-md shadow-xl z-20">
-          <Link to="/">
-            <p className="indent-2">Dashboard</p>
-            </Link>
-        <a
-        className="block px-2 py-2 cursor-default"
-        onClick={handleAddressCopy}
-      >
-        Account Address:{" "}
-        {copySuccess ||
-          (user?.address
-            ? `${user.address.substring(0, 6)}...${user.address.substring(
-                user.address.length - 4
-              )}`
-            : "No Address")}
-      </a>
-          {openAccountModal && (
-        <button className="self-start indent-2 mt-4" onClick={openAccountModal} type="button">Logout</button>
-      )}
-        </div>
-      )}
-    </div>
+                  <button
+                    className="flex items-center space-x-12 bg-white text-black font-bold px-4 py-2 rounded-xl"
+                    onClick={() => setDropdownVisible(!dropdownVisible)}
+                  >
+                    {user?.profile_image_url ? (
+                      <img
+                        src={user.profile_image_url}
+                        alt="Profile"
+                        width="24"
+                        height="24"
+                        className="rounded-full"
+                      />
+                    ) : (
+                      <img
+                        src="/heart.svg"
+                        alt="Default Profile"
+                        width="24"
+                        height="24"
+                        className="rounded-full"
+                      />
+                    )}
+                    <span className="mx-24 relative right-8 whitespace-nowrap">
+                      {user?.profile_name || "Account"}
+                    </span>
+                  </button>
+                  {dropdownVisible && (
+                    <div className="absolute flex text-left flex-col font-bold left-0 mt-2 py-2 w-48 bg-white outline-none rounded-md shadow-xl z-20">
+                      <Link to="/">
+                        <p className="indent-2">Dashboard</p>
+                      </Link>
+                      <a
+                        className="block px-2 py-2 cursor-default"
+                        onClick={handleAddressCopy}
+                      >
+                        Account Address:{" "}
+                        <div className="flex flex-row">
+                          {copySuccess ||
+                            (user?.address
+                              ? `${user.address.substring(
+                                  0,
+                                  6
+                                )}...${user.address.substring(
+                                  user.address.length - 4
+                                )}`
+                              : "No Address")}
+                          <Image
+                            src={"/icons/clickToCopy.svg"}
+                            alt={"Click To Copy"}
+                            width={20}
+                            height={20}
+                            className="ml-2"
+                          ></Image>
+                        </div>
+                      </a>
+                      <div className="flex px-2 py-2">
+                        <img
+                          src="/icons/eth.svg"
+                          alt="ETH"
+                          width="24"
+                          height="24"
+                        />
+                        <span className="ml-2 mr-6">Ξ{ethBalance.substring(0, 6)}</span>
+                        <Help
+                          {...{
+                            title: "What is this?",
+                            body: "This is your balance on the Ethereum Network!\n \nYou can use this to create your Dolly and save it in your digital wallet.\n\n Remember, this is simply a one-time fee for saving your Dolly. Afterwards, you can continue to save & update your Dolly for free, forever!\n\n ",
+                            className: "",
+                            footer: <div className="flex flex-col justify-center m-auto items-center font-bold">Need to purchase more?<br></br><br></br><CoinbaseButtonEth
+                            destinationWalletAddress={user?.address || ""}
+                          /></div>
+                        }}
+                        />
+                      </div>
+                      <div className="flex items-center px-2 py-2">
+                        <img
+                          src="/icons/weth.svg"
+                          alt="WETH"
+                          width="24"
+                          height="24"
+                        />
+                        <span className="ml-2 mr-6">Ξ{polygonBalance.substring(0, 6)}</span>
+                        <Help
+                          {...{
+                            title: "What is this?",
+                            body: "This is your balance on the Polygon Network!\n \nYou can use this to purchase items inside of the Hunnys Closet Shop tab! All items purchased are saved right inside of your digital wallet and are for use for your Dolly.\n\n\n\n ",
+                            className: "",
+                            footer: <div className="flex flex-col justify-center m-auto items-center font-bold">Need to purchase more?<br></br><br></br><CoinbaseButtonPolygon
+                            destinationWalletAddress={user?.address || ""}
+                          /></div>
+                        }}
+                        />
+                      </div>
+                      {openAccountModal && (
+                        <button
+                          className="self-start indent-2 mt-4"
+                          onClick={openAccountModal}
+                          type="button"
+                        >
+                          Logout
+                        </button>
+                      )}
+                    </div>
+                  )}
+                </div>
               )}
           {connected && (
             <>
@@ -292,69 +395,72 @@ export default function Nav({ rewardStatus }: NavProps) {
                   Create A Dolly
                 </button>
               </Link>
-              <div className="hidden" onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}>
-              <svg
-                width="40px"
-                height="40px"
-                viewBox="0 0 24 24"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
+              <div
+                className="hidden"
+                onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
               >
-                <path
-                  d="M4 18L20 18"
-                  stroke="#FFFFFF"
-                  strokeWidth="2"
-                  strokeLinecap="round"
-                />
-                <path
-                  d="M4 12L20 12"
-                  stroke="#FFFFFF"
-                  strokeWidth="2"
-                  strokeLinecap="round"
-                />
-                <path
-                  d="M4 6L20 6"
-                  stroke="#FFFFFF"
-                  strokeWidth="2"
-                  strokeLinecap="round"
-                />
-              </svg>
-      </div>
-      {isMobileMenuOpen && (
-  <div className="absolute top-full left-0 w-full">
-    {buttonsData.map((button, index) =>
-        
-        button.view === "dollys" ? (
-          <div key={index} className="mb-2">
-          <Link key={index} className="w-full" to="/dollys">
-          <button
-          className="text-sm text-black font-poppins font-bold w-full"
-          onClick={() => {
-            triggerSetCurrentView(button.view); // Use the atom to change the view
-            setIsMobileMenuOpen(false); // Close the menu
-          }}
-        >
-          {button.text}
-        </button>
-          </Link></div>
-        ) : (
-          <div key={index} className="mb-2">
-          <ProfileButton
-          
-          key={index}
-          iconSrc={button.iconSrc}
-          text={button.text}
-          onClick={() => {
-            triggerSetCurrentView(button.view); // Use the atom to change the view
-            setIsMobileMenuOpen(false);
-          }}
-          isActive={currentView === button.view}
-          isMobileMenu={true}
-        /></div>
-        )
-      )}
-  </div>
-      )}
+                <svg
+                  width="40px"
+                  height="40px"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M4 18L20 18"
+                    stroke="#FFFFFF"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                  />
+                  <path
+                    d="M4 12L20 12"
+                    stroke="#FFFFFF"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                  />
+                  <path
+                    d="M4 6L20 6"
+                    stroke="#FFFFFF"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                  />
+                </svg>
+              </div>
+              {isMobileMenuOpen && (
+                <div className="absolute top-full left-0 w-full">
+                  {buttonsData.map((button, index) =>
+                    button.view === "dollys" ? (
+                      <div key={index} className="mb-2">
+                        <Link key={index} className="w-full" to="/dollys">
+                          <button
+                            className="text-sm text-black font-poppins font-bold w-full"
+                            onClick={() => {
+                              triggerSetCurrentView(button.view); // Use the atom to change the view
+                              setIsMobileMenuOpen(false); // Close the menu
+                            }}
+                          >
+                            {button.text}
+                          </button>
+                        </Link>
+                      </div>
+                    ) : (
+                      <div key={index} className="mb-2">
+                        <ProfileButton
+                          key={index}
+                          iconSrc={button.iconSrc}
+                          text={button.text}
+                          onClick={() => {
+                            triggerSetCurrentView(button.view); // Use the atom to change the view
+                            setIsMobileMenuOpen(false);
+                          }}
+                          isActive={currentView === button.view}
+                          isMobileMenu={true}
+                        />
+                      </div>
+                    )
+                  )}
+                </div>
+              )}
             </>
           )}
         </div>

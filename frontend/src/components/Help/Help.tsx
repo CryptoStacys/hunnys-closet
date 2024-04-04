@@ -2,10 +2,10 @@ import { useAtom } from "jotai";
 import { motion } from "framer-motion";
 import { modalAtom } from "../../data/store";
 
-export default function Help(props: { displayText?: string; className?: string; title: string; body: string }) {
+export default function Help(props: { displayText?: string; className?: string; title: string; body: string, footer?: React.ReactNode }) {
   const [modal, modalSet] = useAtom(modalAtom);
   function openModal() {
-    modalSet({ active: true, title: props.title, body: props.body });
+    modalSet({ active: true, title: props.title, body: props.body, footer: props.footer });
   }
   return (
     <motion.button

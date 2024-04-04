@@ -987,7 +987,7 @@ const InventoryView = () => {
       {/* Main content area */}
       <div className="bg-[#EDEDED] mt-4">
         <div
-          className="align-center mx-auto flex xs:flex-col sm:flex-row xxl:px-16 justify-between items-center gap-4"
+          className="align-center mx-auto flex xs:flex-col md:flex-row xxl:px-16 justify-between items-center gap-4"
           style={{ maxWidth: "2560px" }}
         >
           {/* Left aligned items */}

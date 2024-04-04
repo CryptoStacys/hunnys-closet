@@ -1,6 +1,6 @@
 import { atom } from "jotai";
 import { ReactNode } from "react";
-import { Trait, User } from "./global";
+import { ModalState, Trait, User } from "./global";
 
 // Stores most important app data of the current user
 export const userAtom = atom<User | null>(null);
@@ -29,7 +29,7 @@ export const connectedAtom = atom(false);
 // Stores data for global modal popups
 let content: ReactNode;
 
-export const modalAtom = atom({
+export const modalAtom = atom<ModalState>({
   active: false,
   title: "Title",
   body: content,

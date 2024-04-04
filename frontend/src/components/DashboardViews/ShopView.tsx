@@ -610,7 +610,7 @@ const collectionNameMap: CollectionNameMap = {
       // Define card classes
       const cardClass = `${
         gridSize === "8x8" ? "p-0" : "p-2"
-      } border p-2 rounded-xl bg-white hover:shadow-lg transform transition duration-500 hover:scale-105 m-2 overflow-hidden`;
+      } border rounded-xl bg-white hover:shadow-lg transform transition duration-500 hover:scale-105 mt-2 overflow-hidden`;
       const imageClass = "m-auto rounded-xl";
       const titleClass = `${
         gridSize === "8x8" ? "text-xs" : "text-2xl"
@@ -884,7 +884,7 @@ const collectionNameMap: CollectionNameMap = {
             </div>
           )}
         <div
-          className="align-center mx-auto flex xs:flex-col sm:flex-row xxl:px-16 justify-between items-center gap-4"
+          className="align-center mx-auto flex xs:flex-col md:flex-row xxl:px-16 justify-between items-center gap-4"
           style={{ maxWidth: "2560px" }}
         >
           {/* Left aligned items */}
@@ -900,7 +900,8 @@ const collectionNameMap: CollectionNameMap = {
                 setCurrentPage(1);
               }}
             >
-              Item View
+              <span className="md:hidden">Item</span> {/* Visible on xs, hidden on sm and above */}
+              <span className="hidden md:inline">Item View</span> {/* Hidden on xs, visible on sm and above */}
             </button>
             <button
               className={`view-toggle-btn ${
@@ -912,11 +913,12 @@ const collectionNameMap: CollectionNameMap = {
                 setCurrentPage(1);
               }}
             >
-              Token View
+              <span className="md:hidden">Token</span> {/* Visible on xs, hidden on sm and above */}
+              <span className="hidden md:inline">Token View</span> {/* Hidden on xs, visible on sm and above */}
             </button>
 
             {/* Search bar */}
-            <div className="relative flex-grow">
+            <div className="relative flex-grow md:flex-grow-0 md:basis-1/2">
               <input
                 type="text"
                 placeholder="Search..."
@@ -947,12 +949,12 @@ const collectionNameMap: CollectionNameMap = {
           </div>
 
           {/* Right aligned items */}
-          <div className="flex items-center">
+          <div className="flex items-center gap-4">
             {/* Conditionally rendered dropdown based on viewMode */}
             {viewMode === "itemized" ? (
               <>
                 <select
-                  className="sortDropdown shadow bg-white font-poppins font-bold rounded py-2 pl-3 pr-8 text-gray-700 leading-tight focus:outline-none focus:shadow-outline mr-4"
+                  className="sortDropdown shadow bg-white font-poppins font-bold rounded py-2 pl-3 pr-8 text-gray-700 leading-tight focus:outline-none focus:shadow-outline "
                   onChange={handleSortChange} // Assume this function handles sorting for itemized view
                 >
                   <option value="NotOwned">Sort by...</option>
@@ -1012,15 +1014,15 @@ const collectionNameMap: CollectionNameMap = {
         {viewMode === "itemized" ? (
           <div
             className={`grid ${
-              gridSize === "4x3" ? "lg:grid-cols-4 gap-4" : "lg:grid-cols-8"
-            } justify-items-center md:grid-cols-2 sm:grid-cols-1`}
+              gridSize === "4x3" ? "md:grid-cols-4 " : "lg:grid-cols-8"
+            } justify-items-center xs:grid-cols-2`}
           >
             {renderItemizedData()}
           </div>
         ) : (
           <div
             className={`grid ${
-              gridSize === "4x3" ? "lg:grid-cols-4 gap-4" : "lg:grid-cols-8"
+              gridSize === "4x3" ? "lg:grid-cols-4 " : "lg:grid-cols-8"
             } justify-items-center md:grid-cols-2 sm:grid-cols-1`}
           >
             {renderCollectionData()}

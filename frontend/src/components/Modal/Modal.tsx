@@ -40,7 +40,7 @@ export default function Modal (props: any) {
                 <Icon type="close" className="h-[28px] w-[28px]" />
               </button>
             </div>
-            <div style={{whiteSpace: "pre-line"}} className="p-4">{modal.body}</div>
+            <div style={{whiteSpace: "pre-line"}} className="p-4">{modal.body}{modal.footer && <><hr className="my-4" />{modal.footer}</>}</div>
           </motion.div>
         </div>
       )}

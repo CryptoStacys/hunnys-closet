@@ -136,6 +136,13 @@ export type Dolly = {
   attributes: Attribute[];
 };
 
+export type ModalState = {
+  active: boolean;
+  title: string;
+  body: React.ReactNode;
+  footer?: React.ReactNode; // Optional footer property
+};
+
 export type Attribute = {
   name: string;
   rarity: string;

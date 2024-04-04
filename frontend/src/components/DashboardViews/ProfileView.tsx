@@ -28,8 +28,11 @@ import { useEVMAddress, useWalletContext } from "@coinbase/waas-sdk-web-react";
 const ProfileView = () => {
   const [user, setUser] = useAtom(userAtom);
   const [selectedFile, setSelectedFile] = useState<File | null>(null);
+  const [imagePreviewUrl, setImagePreviewUrl] = useState<string | null>(null);
+  const [initialUserData, setInitialUserData] = useState<typeof user | null>(null);
   const [isEditingName, setIsEditingName] = useState(false);
   const [saveSuccess, setSaveSuccess] = useState(false);
+  
   const banner = "/assets/img/ProfileBanner.png";
   const GMMug = "/assets/img/GMMug.png";
   const DollyPreviewProfilePage = "/assets/img/DollyPreviewProfilePage.gif";
@@ -69,6 +72,10 @@ const ProfileView = () => {
   const [newsData, setNewsData] = useState<Array<any>>([]);
   const [recentNews, setRecentNews] = useState([]);
   useEffect(() => {
+    setInitialUserData(user);
+  }, []);
+
+  useEffect(() => {
     const fetchNewsData = async () => {
       try {
         const url =
@@ -82,6 +89,25 @@ const ProfileView = () => {
 
     fetchNewsData();
   }, []);
+
+  const handleFileChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+    const file = event.target.files?.[0] || null;
+    setSelectedFile(file);
+    if (file) {
+      setImagePreviewUrl(URL.createObjectURL(file));
+    }
+  };
+
+  // Revert user state and clear selectedFile on cancel
+  const handleCancel = () => {
+    setUser(initialUserData);
+    setSelectedFile(null);
+    setImagePreviewUrl(initialUserData?.profile_image_url as string);
+    setBirthdayMonth(initialUserData?.birthday_month as string);
+    setBirthdayDay(initialUserData?.birthday_day as string);
+    setTwitterHandle(initialUserData?.twitter_handle as string);
+    setDiscordHandle(initialUserData?.discord_handle as string);
+  };
 
   useEffect(() => {
     const titles = Object.values(user?.achievements || {}).reduce(
@@ -254,10 +280,14 @@ const ProfileView = () => {
   const handleSaveProfile = async () => {
     console.log("Saving profile...");
     let newProfileImageUrl: string | null = null;
-
+  
     if (selectedFile) {
-      const uploadResult = await handleImageUpload();
-      if (uploadResult) newProfileImageUrl = uploadResult;
+      newProfileImageUrl = await handleImageUpload(); // Ensure this is the only call
+      if (!newProfileImageUrl) {
+        console.error("Failed to upload new profile image.");
+        setSaveError("Failed to upload new profile image.");
+        return; // Exit if the upload fails
+      }
     }
 
     // Prepare the data object for updating the profile
@@ -310,68 +340,62 @@ const ProfileView = () => {
     }
   };
 
-  // useEffect to call updateProfile when user.profile_image_url changes
-  useEffect(() => {
-    const updateProfileIfNeeded = async () => {
-      // Check if the image URL or any other relevant part of the user object was updated
-      if (user?.profile_image_url && selectedFile) {
-        await updateProfile();
-      }
-    };
-
-    updateProfileIfNeeded();
-  }, [user?.profile_image_url, selectedFile]);
-
   console.log(provider);
   return (
     <div>
       <ProfileCard
-        headerTitle="Profile"
-        leftBlockContent={
-          <div className="profile-image avatar grid grid-cols-3 card-column w-[102%]">
-            <Image
-              onClick={() => setIsEditingName(true)}
-              loader={customImageLoader}
-              src={user?.profile_image_url || "/assets/img/choosePFP.png"}
-              alt="Profile Avatar"
-              width={300}
-              height={300}
-              className="rounded-xl self-center cursor-pointer hover:opacity-60 transition ease-in-out delay-75 w-[200px] h-[200px] lg:w-[300px] lg:h-[300px] object-cover"
-            />
+      headerTitle="Profile"
+      leftBlockContent={
+        <div className="profile-image avatar grid grid-cols-3 card-column w-[102%]">
+          <Image
+            onClick={() => setIsEditingName(true)}
+            loader={customImageLoader}
+            src={imagePreviewUrl || user?.profile_image_url || "/assets/img/choosePFP.png"}
+            alt="Profile Avatar"
+            width={300}
+            height={300}
+            className="rounded-xl self-center cursor-pointer hover:opacity-60 transition ease-in-out delay-75 w-[200px] h-[200px] lg:w-[300px] lg:h-[300px] object-cover"
+          />
 
-            {/* Success message */}
-            {saveSuccess && (
-              <div className="mt-4 text-center">
-                Profile updated successfully!
-              </div>
-            )}
-            {saveError && <div className="error mt-4">{saveError}</div>}
-            {!isEditingName ? (
-              <>
-                <Image
-                  onClick={() => setIsEditingName(true)}
-                  loader={customImageLoader}
-                  src="/assets/img/editProfile.png"
-                  alt="Profile Avatar"
-                  width={151}
-                  height={35}
-                  className="rounded-xl cursor-pointer mt-4 self-center hover:opacity-60 transition ease-in-out delay-75"
-                />
-              </>
-            ) : (
-              <>
-                <input
-                  type="file"
-                  id="profile-image-upload"
-                  onChange={(e) => setSelectedFile(e.target.files?.[0] || null)}
-                  style={{ display: "none" }}
-                />
-                <label
-                  htmlFor="profile-image-upload"
-                  className="bg-[#AA7AFA] hover:bg-[#7b2df8] transition ease-in-out delay-75 cursor-pointer text-white text-center font-bold py-2 px-4 rounded my-4"
-                >
-                  Choose Profile Image
-                </label>
+          {/* Success message */}
+          {saveSuccess && (
+            <div className="mt-4 text-center">
+              Profile updated successfully!
+            </div>
+          )}
+          {saveError && <div className="error mt-4">{saveError}</div>}
+          {!isEditingName ? (
+            <>
+              <Image
+                onClick={() => setIsEditingName(true)}
+                loader={customImageLoader}
+                src="/assets/img/editProfile.png"
+                alt="Edit Profile"
+                width={151}
+                height={35}
+                className="rounded-xl cursor-pointer mt-4 self-center hover:opacity-60 transition ease-in-out delay-75"
+              />
+            </>
+          ) : (
+            <>
+              <input
+                type="file"
+                id="profile-image-upload"
+                onChange={(e) => {
+                  const file = e.target.files?.[0] || null;
+                  setSelectedFile(file);
+                  if (file) {
+                    setImagePreviewUrl(URL.createObjectURL(file));
+                  }
+                }}
+                style={{ display: "none" }}
+              />
+              <label
+                htmlFor="profile-image-upload"
+                className="bg-[#AA7AFA] hover:bg-[#7b2df8] transition ease-in-out delay-75 cursor-pointer text-white text-center font-bold py-2 px-4 rounded my-4"
+              >
+                Choose Profile Image
+              </label>
                 <h1 className="font-bold">Name:</h1>
                 <input
                   type="text"
@@ -482,9 +506,12 @@ const ProfileView = () => {
                 </button>
 
                 <div className="mt-8 m-auto">
-                  <SecondaryButton onClick={() => setIsEditingName(false)}>
-                    Cancel
-                  </SecondaryButton>
+                <SecondaryButton onClick={() => {
+                  handleCancel(); // Assuming handleCancel is implemented to reset form and image preview
+                  setIsEditingName(false);
+                }}>
+                  Cancel
+                </SecondaryButton>
                 </div>
               </>
             )}
