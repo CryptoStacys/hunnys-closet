@@ -355,6 +355,7 @@ export default function DollEditor(props: {
   
     // Function to handle the actual saving logic
     const proceedWithSave = async (newTokenId: string | null) => {
+      if (user && user.wallet_type === "waas") {
       try {
         // Ensure newTokenId is not null before proceeding
         if (!newTokenId) throw new Error("Token ID is null");
@@ -396,6 +397,7 @@ export default function DollEditor(props: {
         }
       }
     };
+  };
   
     // Display confirmation modal before minting for a new Dolly
     if (isNewDolly && !isMinted && user && user.address) {
