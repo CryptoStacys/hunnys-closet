@@ -1,8 +1,10 @@
+//src/components/Nav.tsx
+
 import Link from "./../Link/Link";
 import { ConnectButton, useAccountModal } from "@rainbow-me/rainbowkit";
 import { useAtom } from "jotai";
 import { Tooltip } from "react-tooltip";
-import { currentViewAtom, setCurrentViewAtom } from "../../data/store";
+import { activeDollyComponentAtom, currentViewAtom, setCurrentViewAtom } from "../../data/store";
 import React, { useState, useEffect, useCallback, useRef } from "react";
 import { ethers } from "ethers";
 import {
@@ -10,9 +12,7 @@ import {
   dollEditorVisibleAtom,
   userAtom,
 } from "../../data/store";
-import { mode } from "../../data/config";
 import { useWalletContext } from "@coinbase/waas-sdk-web-react";
-import Login from "../Login/Login";
 import { useRouter } from "next/router";
 import Image from "next/image";
 import Help from "../Help/Help";
@@ -30,12 +30,9 @@ export default function Nav({ rewardStatus }: NavProps) {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const { openAccountModal } = useAccountModal();
   const [currentView, setCurrentView] = useAtom(currentViewAtom);
-  const [, triggerSetCurrentView] = useAtom(setCurrentViewAtom);
   const [ethBalance, setEthBalance] = useState("");
   const [polygonBalance, setPolygonBalance] = useState("");
-  const handleChangeView = (newView: string) => {
-    setCurrentView(newView); // This should now pass TypeScript's type checking
-  };
+  const [activeDollyComponent] = useAtom(activeDollyComponentAtom);
   const [user, setUser] = useAtom(userAtom);
   const [dollEditorVisible, setDollEditorVisible] = useAtom(
     dollEditorVisibleAtom
@@ -105,11 +102,6 @@ export default function Nav({ rewardStatus }: NavProps) {
       text: "Profile",
     },
     {
-      view: "dollys",
-      iconSrc: "/icons/Dollys.svg",
-      text: "Dollys",
-    },
-    {
       view: "inventory",
       iconSrc: "/icons/Inventory.svg",
       text: "Inventory",
@@ -134,8 +126,13 @@ export default function Nav({ rewardStatus }: NavProps) {
       iconSrc: "/icons/Shop.svg",
       text: "Shop",
     },
+    {
+      view: "dollys",
+      iconSrc: "/icons/Dollys.svg",
+      text: "Create A Dolly",
+    },
   ];
-
+console.log("From Nav:", currentView)
   const logout = useCallback(async () => {
     if (waas && waas.logout) {
       await waas.logout();
@@ -160,6 +157,18 @@ export default function Nav({ rewardStatus }: NavProps) {
     // Make the DollEditor visible
     setDollEditorVisible(true);
   };
+  const handleMobileMenuClick = (view: string) => {
+    setIsMobileMenuOpen(false); // Always close the mobile menu
+  
+    if (router.pathname === '/') {
+      // Directly change the hash when already on the dashboard and switching views
+      window.location.hash = view;
+    } else {
+      // Use the Link component for navigating between / and /dollys or from /dollys to a dashboard view
+      // This part is handled by the conditional rendering logic below
+    }
+  };
+  
   useEffect(() => {
     function handleClickOutside(event: MouseEvent) {
       if (
@@ -288,18 +297,18 @@ export default function Nav({ rewardStatus }: NavProps) {
   return (
     <nav className="top-2 fixed flex-center z-50 w-full box-border">
       <div className="max-w-[1250px] px-2 mx-6 flex justify-between items-center w-full box-border py-[6px] shadow-md bg-[#6510F1] rounded-2xl">
-        <Link to="/" className="">
-          <h1 className=" btn font-title text-md md:text-4xl leading-[1.2rem] flex-center md:leading-normal text-[#fff] ml-[10px]">
+        <Link to="/" className="" onClick={() => setCurrentView('profile')}>
+          <h1 className=" btn font-title five:text-4xl xs:text-xl tn:text-2xl leading-[1.2rem] flex-center md:leading-normal text-[#fff] ml-[10px]">
             {/* HUNNYS{" "} */}
-            <div className="mobile-hide">HUNNYS </div>
+            <div className="xs:hidden xtn:inline">HUNNYS </div>
             <svg
-              className="sm:w-7 sm:h-7 sm:mx-1 w-10 h-10 mx-0 fill-hunnys-yellow"
+              className="xs:w-7 xs:h-7 sm:mx-1 mx-0 fill-hunnys-yellow"
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 1440 1440"
             >
               <path d="M1347,420.9v95.3c-2.4,18.2-4.6,36.4-7,54.6c-12,83.3-40.2,163.1-82.9,234.2 c-62.4,108.5-145.7,197.9-236.2,280.8C903.4,1190.3,778,1284.4,646,1367.1c-2.9-6.5-5.7-12.3-8.2-18.3 c-58.2-136.5-139.6-260.6-240.1-366c-52.5-55.6-106.5-109.7-158.8-165.5c-42.4-43.4-77.1-94.3-102.6-150.6 c-30.3-72.1-42.1-151.4-34.2-229.9c3.3-56.5,20.5-111,49.9-158.3c42.8-67.2,104.1-104.5,177.9-119.9c88.3-20.2,180.6-6.1,259.9,39.6 c46.3,25.6,85.5,63.5,113.9,109.9c3.9-7.5,7.5-14.5,11-21.5c24.9-51.9,57.8-99.1,97.4-139.5c58.2-59.3,138.6-87.8,218.8-77.3 c80.7,7.1,156.3,45,212.7,106.6c53.3,58.5,87.9,133.3,98.9,213.8C1343.8,400.7,1345.7,410.9,1347,420.9z" />
             </svg>
-            <div className="mobile-hide">CLOSET</div>
+            <div className="xs:hidden xtn:inline">CLOSET</div>
             {/* CLOSET */}
           </h1>
         </Link>
@@ -416,16 +425,19 @@ export default function Nav({ rewardStatus }: NavProps) {
               )}
           {connected && (
             <>
-              <Link className="w-4/5 self-center" to="/dollys">
+              <Link className="w-4/5 self-center xs:hidden md:inline" to="/dollys">
                 <button
-                  onClick={handleCreateDollyClick}
+                  onClick={() => {
+                    handleCreateDollyClick();
+                    setCurrentView('');
+                  }}
                   className="bg-hunnys-yellow py-1 w-full self-center text-hunnys-blue luckiest shadow-md rounded-full px-4 text-2xl hover:shadow-lg hover:scale-[1.02] transition-all"
                 >
                   Create A Dolly
                 </button>
               </Link>
               <div
-                className="hidden"
+                className="md:hidden"
                 onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
               >
                 <svg
@@ -456,44 +468,41 @@ export default function Nav({ rewardStatus }: NavProps) {
                 </svg>
               </div>
               {isMobileMenuOpen && (
-                <div className="absolute top-full left-0 w-full">
-                  {buttonsData.map((button, index) =>
-                    button.view === "dollys" ? (
-                      <div key={index} className="mb-2">
-                        <Link key={index} className="w-full" to="/dollys">
-                          <button
-                            className="text-sm text-black font-poppins font-bold w-full"
-                            onClick={() => {
-                              triggerSetCurrentView(button.view); // Use the atom to change the view
-                              setIsMobileMenuOpen(false); // Close the menu
-                            }}
-                          >
-                            {button.text}
-                          </button>
+              <div className="absolute top-full left-0 w-full bg-white rounded-b-md shadow-lg text-center">
+                {currentView === 'dollys' ? (
+                  // When on /dollys, show only the Dashboard option
+                  <div className="my-2">
+                    <Link to="/" className="w-full text-4xl text-black luckiest" onClick={() => {setIsMobileMenuOpen(false); setCurrentView('profile');}}>
+                      <p className="indent-2">Back to Dashboard</p>
+                    </Link>
+                  </div>
+                ) : (
+                  // Otherwise, show the full list of options
+                  buttonsData.map((button, index) => (
+                    <div key={index} className="my-6">
+                      {button.view === "dollys" ? (
+                        // Use Link for navigating to /dollys
+                        <Link className="bg-hunnys-yellow py-2 w-full self-center text-hunnys-blue luckiest shadow-md rounded-full px-4 text-2xl hover:shadow-lg hover:scale-[1.02] transition-all" to="/dollys"
+                        onClick={() => {setIsMobileMenuOpen(false); 
+                          setCurrentView('dollys');}}>
+                          {button.text}
                         </Link>
-                      </div>
-                    ) : (
-                      <div key={index} className="mb-2">
-                        <ProfileButton
-                          key={index}
-                          iconSrc={button.iconSrc}
-                          text={button.text}
-                          onClick={() => {
-                            triggerSetCurrentView(button.view); // Use the atom to change the view
-                            setIsMobileMenuOpen(false);
-                          }}
-                          isActive={currentView === button.view}
-                          isMobileMenu={true}
-                        />
-                      </div>
-                    )
+                      ) : (
+                        // Directly handle hash change without using Link when already on the dashboard
+                        <button className="w-full text-4xl text-black luckiest" onClick={() => handleMobileMenuClick(button.view)}>
+                          {button.text}
+                        </button>
+                      )}
+                    </div>
+                    ))
                   )}
                 </div>
               )}
-            </>
-          )}
-        </div>
-      </div>
-    </nav>
-  );
+
+        </>
+      )}
+    </div>
+  </div>
+</nav>
+);
 }

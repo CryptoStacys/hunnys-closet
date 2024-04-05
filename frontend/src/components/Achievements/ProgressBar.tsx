@@ -33,8 +33,8 @@ const ProgressBar: React.FC<ProgressBarProps> = ({ level, cupcakePoints, maxPoin
   return (
     <div className='flex flex-col'>
       
-<div className='flex self-end xs:mr-8 md:mr-12 lg:mr-16 xs:mt-[-60px] md:mt-[-32px]'>
-      <img src="/icons/Achievements/TreasureChest.png"></img>
+<div className='flex self-end xs:mr-0 sm:mr-6 md:mr-12 lg:mr-16 xs:top-4 relative xs:mt-[-60px] md:mt-[-32px]'>
+      <img className='xs:w-[60%] sm:w-[80%]' src="/icons/Achievements/TreasureChest.png"></img>
     </div>
     <div className="progress-bar-container">
     

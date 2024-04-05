@@ -15,6 +15,7 @@ export const setCurrentViewAtom = atom(
 );
 
 export const dollEditorVisibleAtom = atom(false);
+export const activeDollyComponentAtom = atom<'gallery' | 'editor' | null>(null);
 export const allTraitsAtom = atom<{ traits: Trait[]; colors: string[]; skin_colors: string[] }>({
   traits: [],
   colors: [],

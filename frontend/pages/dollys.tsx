@@ -1,7 +1,7 @@
 import DollGallery from "../src/components/DollGallery/DollGallery";
 import DollEditor from "../src/components/DollEditor/DollEditor";
 import { useEffect, useState } from "react";
-import { connectedAtom, userAtom } from "../src/data/store";
+import { activeDollyComponentAtom, connectedAtom, userAtom } from "../src/data/store";
 import { useAtom } from "jotai";
 import dynamic from 'next/dynamic';
 import { useRouter } from 'next/router';
@@ -11,7 +11,12 @@ export default function Dollys() {
   const [user] = useAtom(userAtom);
   const [connected] = useAtom(connectedAtom);
   const router = useRouter();
+  const [activeDollyComponent, setActiveDollyComponent] = useAtom(activeDollyComponentAtom);
 
+  useEffect(() => {
+    setActiveDollyComponent(selected === -1 ? 'gallery' : 'editor');
+  }, [selected, setActiveDollyComponent]);
+  
   const handleCreateNewDolly = () => {
     const tempId = `temp-${new Date().getTime()}`; // Generate a unique temporary ID
     setSelected(tempId);
@@ -19,7 +24,7 @@ export default function Dollys() {
 
   console.log("User Address on /dollys", user?.address);
   console.log("Dolly count:", user?.dollyCount); // Just an example, replace with actual usage
-
+  console.log("Active Dolly Component:", activeDollyComponent)
   // Ensure you're not trying to access dollys if user is null
   useEffect(() => {
     if (!user) {

@@ -4,7 +4,7 @@ import { useRouter } from "next/router";
 import Render from "../Render/Render";
 import { motion } from "framer-motion";
 import { useAtom } from "jotai";
-import { userAtom } from "../../data/store";
+import { currentViewAtom, userAtom } from "../../data/store";
 import Help from "../Help/Help";
 import Image from "next/image";
 import { customImageLoader } from "../../utils/imageLoader";
@@ -15,6 +15,7 @@ import Link from "../Link/Link";
 function DollGallery({ selectDoll }: any) {
   const router = useRouter();
   const [user] = useAtom(userAtom);
+  const [currentView, setCurrentView] = useAtom(currentViewAtom);
   const [currentPage, setCurrentPage] = useState(1);
   const DOLLYS_PER_PAGE = 12; // Display 12 Dollys per page, adjust as needed
   const [sortedDollys, setSortedDollys] = useState<any[]>([]);
@@ -52,7 +53,7 @@ function DollGallery({ selectDoll }: any) {
       <div className="w-full max-w-[1250px] relative mx-6">
         <div className="flex flex-col xs:items-center md:items-start ">
           <Link to="/">
-            <button className="bg-hunnys-blue xs:bottom-0 xs:right-10 md:right-0 xs:mt-8 md:mt-0 md:bottom-8 relative text-hunnys-yellow font-title shadow-md rounded-full xs:w-[120%] px-8 py-1 text-4xl hover:shadow-lg hover:scale-[1.05] hover:rotate-[0.5deg] transition-all ">
+            <button onClick={() => setCurrentView('profile')} className="bg-hunnys-blue xs:bottom-0 xs:right-10 md:right-0 xs:mt-8 md:mt-0 md:bottom-8 relative text-hunnys-yellow font-title shadow-md rounded-full xs:w-[120%] px-8 py-1 text-4xl hover:shadow-lg hover:scale-[1.05] hover:rotate-[0.5deg] transition-all ">
               To Dashboard
             </button>
           </Link>

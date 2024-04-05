@@ -1,34 +1,53 @@
+//src/components/Link/Link.tsx
+
 import { useAtom } from "jotai";
 import { modalAtom, savedAtom } from "../../data/store";
-// import { localStorageToken } from "../../data/config";
+import { useRouter } from 'next/router';
 import SecondaryButton from "../DollEditor/SecondaryButton";
 import ApplyButton from "../DollEditor/ApplyButton";
 
-export default function Link({ className, to, children }: { className?: string; to: string; children?: any }) {
+interface LinkProps {
+  className?: string;
+  to: string;
+  children?: React.ReactNode;
+  onClick?: () => void; // Add an optional onClick prop
+}
+
+export default function Link({ className, to, children, onClick }: LinkProps) {
   const [modal, modalSet] = useAtom(modalAtom);
   const [saved, savedSet] = useAtom(savedAtom);
+  const router = useRouter();
 
   // prevent full page reload
-  const onClick = (event: any) => {
+  const handleClick = (event: React.MouseEvent<HTMLAnchorElement, MouseEvent>) => {
     // if ctrl or meta key are held on click, allow default behavior of opening link in new tab
     if (event.metaKey || event.ctrlKey) {
       return;
     }
 
-    // prevent full page reload
-    event.preventDefault();
+    event.preventDefault(); // Prevent full page reload
+
+    if (onClick) {
+      onClick(); // Call the passed onClick handler if any
+    }
 
     savedCheck();
   };
 
-  function changeURL() {
-    // update url
-    window.history.pushState({}, "", to);
-
-    // communicate to Routes that URL has changed
-    const navEvent = new PopStateEvent("popstate");
-    window.dispatchEvent(navEvent);
-  }
+const changeURL = () => {
+    if (to.startsWith("/#") && router.pathname !== '/') {
+      // If intending to navigate to a hash while on /dollys, adjust to navigate to / with the hash
+      const newPath = `/${to}`;
+      router.push(newPath);
+      console.log("Click A from Link")
+    } else {
+      // Normal navigation or hash navigation while on /
+      window.history.pushState({}, "", to);
+      const navEvent = new PopStateEvent("popstate");
+      window.dispatchEvent(navEvent);
+      console.log("Click B from Link")
+    }
+  };
 
   // Display unsavedChanges modal before changing page
   function savedCheck() {
@@ -65,7 +84,7 @@ export default function Link({ className, to, children }: { className?: string; 
   }
 
   return (
-    <a className={className} href={to} onClick={onClick}>
+    <a className={className} href={to} onClick={handleClick}>
       {children}
     </a>
   );

@@ -1,6 +1,8 @@
-import React, { useState } from "react";
+//src/components/Dashboard.tsx
+
+import React, { useEffect, useState } from "react";
 import ProfileButtons from "../ProfileButtons/ProfileButtons";
-import { userAtom } from "../../data/store";
+import { currentViewAtom, userAtom } from "../../data/store";
 import ProfileView from '../DashboardViews/ProfileView';
 import ShopView from '../DashboardViews/ShopView'; 
 import AchievementsView from '../DashboardViews/AchievementsView'; 
@@ -10,10 +12,20 @@ import EventsView from "../DashboardViews/EventsView";
 import { useAtom } from "jotai";
 
 const Dashboard: React.FC = () => {
-  const [currentView, setCurrentView] = useState<string>('profile');
-  // Use userAtom if needed for conditional rendering or passing to components that still require it
+  const [currentView, setCurrentView] = useAtom(currentViewAtom);
   const [user] = useAtom(userAtom);
 
+  useEffect(() => {
+    const onHashChange = () => {
+      const newView = window.location.hash.replace('#', '');
+      setCurrentView(newView);
+    };
+
+    window.addEventListener('hashchange', onHashChange);
+
+    return () => window.removeEventListener('hashchange', onHashChange);
+  }, []);
+console.log("Current View", currentView)
   const renderView = () => {
     switch (currentView) {
         case 'achievements':
@@ -27,14 +39,13 @@ const Dashboard: React.FC = () => {
         case 'shop':
             return <ShopView />;
         default:
-            // Directly return ProfileView without props since it now accesses userAtom internally
             return <ProfileView />;
     }
   };
 
   return (
     <>
-      <div className="p-4 max-w-7xl mx-auto my-8">
+      <div className="xs:p-0 xs:mb-24 md:p-4 max-w-7xl mx-auto md:my-8">
         <ProfileButtons setCurrentView={setCurrentView} currentView={currentView} />
       </div>
       {renderView()}

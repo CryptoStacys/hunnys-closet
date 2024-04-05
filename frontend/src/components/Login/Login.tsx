@@ -24,7 +24,7 @@ import { allTraitsAtom, connectedAtom, userAtom, userTraitsAtom } from "../../da
 import { initializeUser } from "../../utils/userInitialization";
 type WalletAddress = Address<IProtocolFamily>;
 
-const loginScreen = "/assets/img/ClosetV2LoginImage.png";
+const loginScreen = "/assets/img/Login.png";
 // Static images
 const loadingImages = [
   "/assets/img/LoadingTip1.png",
@@ -217,7 +217,7 @@ export default function Login() {
       {/* Overlay */}
       <div className="absolute inset-0 flex items-center justify-center">
         {/* Button Container */}
-        <div className="flex xs:flex-col md:flex-row items-center xs:mt-[150px] tn:mt-[200px] sm:mt-[250px] md:mt-[300px] space-y-4 md:space-y-0 md:space-x-4 font-poppins xs:text-sm">
+        <div className="flex flex-col items-center xs:mt-[100px] xtn:mt-[150px] tn:mt-[200px] sm:mt-[200px] md:mt-[300px] lg:mt-[400px] xs:space-y-4 md:space-y-6 lg:space-y-8 font-poppins xs:text-sm">
           {error && <p>{error.message}</p>}
           {!isLoginInProgress && (
           <>
@@ -225,13 +225,13 @@ export default function Login() {
               <>
                 <button
                   onClick={handleOpenConnectModal}
-                  className="hunnys-btn bg-[#C9A9FF] !text-[#6510F2] xs:text-[10px] xs:px-4 xs:py-1 sm:px-6 sm:py-3 md:text-2xl font-bold tracking-wider px-14 py-6 rounded-full hover:cursor-pointer drop-shadow-2xl"
+                  className="hunnys-btn bg-[#C9A9FF] !text-[#6510F2] xs:text-[10px] xtn:text-[14px] xs:px-4 xs:py-1 xtn:py-2 sm:px-6 sm:py-3 big:px-8 big:py-4 md:text-2xl big:text-4xl font-bold tracking-wider px-14 py-6 rounded-full hover:cursor-pointer drop-shadow-2xl"
                 >
                   Connect Wallet
                 </button>
                 <button
                   onClick={login}
-                  className="hunnys-btn bg-[#ffd54b] !text-[#6510F2] xs:text-[10px] xs:px-4 xs:py-1 sm:px-6 sm:py-3 md:text-2xl font-bold tracking-wider px-14 py-6 rounded-full hover:cursor-pointer drop-shadow-2xl"
+                  className="hunnys-btn bg-[#ffd54b] !text-[#6510F2] xs:text-[10px] xtn:text-[14px] xs:px-4 xs:py-1 xtn:py-2 sm:px-6 sm:py-3 big:px-8 big:py-4 md:text-2xl big:text-4xl font-bold tracking-wider px-14 py-6 rounded-full hover:cursor-pointer drop-shadow-2xl"
                 >
                   Sign-up / Login
                 </button>

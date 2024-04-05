@@ -1150,9 +1150,6 @@ a {
 }
 
 @media (max-width: 420px) {
-  .fill-hunnys-yellow {
-    display: none;
-  }
   .loginConnect {
     font-size: 12px;
     margin-left: 20px;

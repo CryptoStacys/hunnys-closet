@@ -32,11 +32,14 @@ module.exports = {
       screens: {
         'xl': '1300px',
         'big': '1100px',
+        'large': '1080px',
         'lg': '950px',
         'big': '900px',
         'md': '768px',
         'sm': '640px',
+        'five': '540px',
         'tn': '480px',
+        'xtn': '400px',
         'xs': '320px'
       }
     },

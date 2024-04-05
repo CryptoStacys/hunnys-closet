@@ -9,7 +9,7 @@ import "swiper/css/pagination";
 // Import Swiper core and required modules
 import SwiperCore from "swiper";
 import { useAtom } from "jotai";
-import { userAtom } from "../../data/store";
+import { userAtom, currentViewAtom, setCurrentViewAtom } from "../../data/store";
 // Install Swiper modules
 SwiperCore.use([Navigation]);
 
@@ -20,24 +20,11 @@ interface ButtonProps {
   isActive: boolean;
 }
 
-interface ProfileButtonsProps {
-  children?: React.ReactNode; // Now it can accept children props
-}
-
 const ProfileButton: React.FC<ButtonProps & { isMobileMenu?: boolean }> = ({ iconSrc, text, onClick, isActive, isMobileMenu = false }) => {
   return (
-    <button
-      onClick={onClick}
-      className="flex flex-col items-center justify-center space-y-2 profileButtons"
-    >
+    <button onClick={onClick} className="flex flex-col items-center justify-center space-y-2 profileButtons">
       {!isMobileMenu && (
-        <img
-          src={iconSrc}
-          alt="Button Icon"
-          className={`rounded-full w-1/2 drop-shadow-2xl hover:bg-[#7b2df8] transition ease-in-out delay-75 ${
-            isActive ? "bg-[#6510F2]" : "bg-[#AA7AFA]"
-          }`}
-        />
+        <img src={iconSrc} alt="Button Icon" className={`rounded-full w-1/2 drop-shadow-2xl hover:bg-[#7b2df8] transition ease-in-out delay-75 ${isActive ? "bg-[#6510F2]" : "bg-[#AA7AFA]"}`} />
       )}
       <span className="text-center text-sm text-black font-poppins font-bold xs:text-[24px] md:text-[12px] md:mb-0 xs:mb-6">
         {text}
@@ -46,26 +33,27 @@ const ProfileButton: React.FC<ButtonProps & { isMobileMenu?: boolean }> = ({ ico
   );
 };
 
-const ProfileButtons: React.FC<{
+interface ProfileButtonsProps {
   setCurrentView: (view: string) => void;
   currentView: string;
-}> = ({ setCurrentView, currentView }) => {
+}
+
+const ProfileButtons: React.FC<ProfileButtonsProps> = ({ setCurrentView, currentView }) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const menuRef = useRef<HTMLDivElement | null>(null); 
+  const menuRef = useRef<HTMLDivElement | null>(null);
+
   useEffect(() => {
-    function handleClickOutside(event: { target: any; }) {
-      if (menuRef.current && !menuRef.current.contains(event.target)) {
+    function handleClickOutside(event: MouseEvent) {
+      if (menuRef.current && !menuRef.current.contains(event.target as Node)) {
         setIsMenuOpen(false);
       }
     }
   
-    // Bind the event listener
     document.addEventListener("mousedown", handleClickOutside);
     return () => {
-      // Unbind the event listener on clean up
       document.removeEventListener("mousedown", handleClickOutside);
     };
-  }, [menuRef]);
+  }, []);
   
   // Adjust buttonsData to include a view name instead of link
   const buttonsData = [
@@ -105,11 +93,19 @@ const ProfileButtons: React.FC<{
       text: "Shop",
     },
   ];
+  
+  const handleButtonClick = (view: string) => {
+    // Update the URL hash. This also triggers hashchange event which your Dashboard listens to.
+    window.location.hash = view;
+
+    // Optionally, you might still want to call setCurrentView if you're using it for something else
+    setCurrentView(view);
+  };
 
   // No need for handleButtonClick, directly use setCurrentView in onClick
   return (
     <>
-      <button className="md:hidden" onClick={() => setIsMenuOpen(!isMenuOpen)}>
+      <button className="hidden" onClick={() => setIsMenuOpen(!isMenuOpen)}>
         {/* Hamburger Icon */}
         <svg
           width="40px"
@@ -159,16 +155,16 @@ const ProfileButtons: React.FC<{
               key={index}
               iconSrc={button.iconSrc}
               text={button.text}
-              onClick={() => setCurrentView(button.view)}
+              onClick={() => handleButtonClick(button.view)}
               isActive={currentView === button.view}
             />
           )
         )}
       </div>
       <div
-        className={`absolute md:hidden ${
+        className={`absolute hidden ${
           isMenuOpen ? "block" : "hidden"
-        } bg-white shadow-lg rounded-lg p-4 z-50`}
+        } bg-white shadow-lg rounded-lg p-4 z-50 hidden`}
         ref={menuRef}
       >
         {/* Dropdown menu for mobile */}
@@ -192,7 +188,7 @@ const ProfileButtons: React.FC<{
             iconSrc={button.iconSrc}
             text={button.text}
             onClick={() => {
-              setCurrentView(button.view);
+              handleButtonClick(button.view);
               setIsMenuOpen(false);
             }}
             isActive={currentView === button.view}
