@@ -233,7 +233,7 @@
     {
       "name": "Hair Style",
       "traits": [
-        {"name":"Partly Cloudy","colors":4,"rarity":"Common","parts":2,"tags":[],"token_id":109},
+        {"name":"Partly Cloudy","colors":3,"rarity":"Common","parts":2,"tags":[],"token_id":109},
         {"name":"MetaVixen Classic Constellation","colors":2,"rarity":"Common","parts":2,"tags":[],"token_id":98},
         {"name":"MetaVixen Cute Alien Buns","colors":3,"rarity":"Common","parts":2,"tags":[],"token_id":98},
         {"name":"Hottie","colors":2,"rarity":"Epic","tags":[],"token_id":67},
@@ -260,7 +260,7 @@
     {
       "name": "Hand",
       "traits": [
-        {"name":"Crypto Defender Shield","colors":5,"rarity":"Common","tags":["skin"],"token_id":106},
+        {"name":"Crypto Defender Shield","colors":4,"rarity":"Common","tags":["skin"],"token_id":106},
         {"name":"Hardware Wallet","colors":3,"rarity":"Common","tags":["skin"],"token_id":110},
         {"name":"WEN Bunny","colors":4,"rarity":"Common","tags":["skin"],"token_id":110},
         {"name":"MetaVixen Tasty Taco","colors":4,"rarity":"Common","tags":["skin"],"token_id":98},
@@ -298,7 +298,7 @@
     {
       "name": "Hat",
       "traits": [
-        {"name":"Crypto Defender Helm","colors":3,"rarity":"Common","tags":[],"token_id":107},
+        {"name":"Crypto Defender Helm","colors":3,"rarity":"Common","tags":["twoParts"],"token_id":107},
         {"name":"Cuddle Bunny","colors":3,"rarity":"Common","tags":[],"token_id":109},
         {"name":"MetaVixen Baby Its Cold Outside","colors":3,"rarity":"Common","tags":["twoParts"],"token_id":98},
         {"name":"MetaVixen Polycrown","colors":4,"rarity":"Common","tags":[],"token_id":98},
@@ -338,7 +338,7 @@
         {"name":"Crypto Defender Armor","colors":3,"rarity":"Common","tags":[],"token_id":108},
         {"name":"Hellooo Cupcakes","colors":4,"rarity":"Common","tags":[],"token_id":109},
         {"name":"Bitcoin","colors":2,"rarity":"Common","tags":[],"token_id":110},
-        {"name":"DigiByteJohnny","colors":3,"rarity":"Common","tags":[],"token_id":110},
+        {"name":"DigiByte Johnny","colors":3,"rarity":"Common","tags":[],"token_id":110},
         {"name":"ETH Maxi","colors":2,"rarity":"Common","tags":[],"token_id":110},
         {"name":"Polygon","colors":2,"rarity":"Common","tags":[],"token_id":110},
         {"name":"Wax Tee","colors":2,"rarity":"Common","tags":[],"token_id":110},
