@@ -260,7 +260,7 @@
     {
       "name": "Hand",
       "traits": [
-        {"name":"Crypto Defender Shield","colors":4,"rarity":"Common","tags":[],"token_id":106},
+        {"name":"Crypto Defender Shield","colors":5,"rarity":"Common","tags":[],"token_id":106},
         {"name":"Hardware Wallet","colors":3,"rarity":"Common","tags":["skin"],"token_id":110},
         {"name":"WEN Bunny","colors":4,"rarity":"Common","tags":["skin"],"token_id":110},
         {"name":"MetaVixen Tasty Taco","colors":4,"rarity":"Common","tags":["skin"],"token_id":98},
