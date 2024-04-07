@@ -1,115 +1,274 @@
 [
     {
-        "tokenId": 98,
-        "name": "MetaVixen Pack",
+        "tokenId": 100,
+        "name": "Achievement",
         "attributes": [
             {
-                "trait_type": "Undergarment",
-                "value": "MetaVixen Nacho Chips"
+                "trait_type": "Frame",
+                "value": "Bunny"
+            }
+        ],
+        "metaPath": ""
+    },
+    {
+        "tokenId": 101,
+        "name": "Achievement",
+        "attributes": [
+            {
+                "trait_type": "Frame",
+                "value": "Bunny Club"
+            }
+        ],
+        "metaPath": ""
+    },
+    {
+        "tokenId": 102,
+        "name": "Achievement",
+        "attributes": [
+            {
+                "trait_type": "Frame",
+                "value": "Bunny Relic"
+            }
+        ],
+        "metaPath": ""
+    },
+    {
+        "tokenId": 103,
+        "name": "Achievement",
+        "attributes": [
+            {
+                "trait_type": "Frame",
+                "value": "Godly Bunny"
+            }
+        ],
+        "metaPath": ""
+    },
+    {
+        "tokenId": 77,
+        "name": "Achievement",
+        "attributes": [
+            {
+                "trait_type": "Frame",
+                "value": "Snoozles"
+            }
+        ],
+        "metaPath": ""
+    },
+    {
+        "tokenId": 82,
+        "name": "Achievement",
+        "attributes": [
+            {
+                "trait_type": "Frame",
+                "value": "Bunny Duke"
+            }
+        ],
+        "metaPath": ""
+    },
+    {
+        "tokenId": 83,
+        "name": "Achievement",
+        "attributes": [
+            {
+                "trait_type": "Frame",
+                "value": "Bunny Emperor"
+            }
+        ],
+        "metaPath": ""
+    },
+    {
+        "tokenId": 84,
+        "name": "Achievement",
+        "attributes": [
+            {
+                "trait_type": "Frame",
+                "value": "Bunny Knight"
+            }
+        ],
+        "metaPath": ""
+    },
+    {
+        "tokenId": 89,
+        "name": "Achievement",
+        "attributes": [
+            {
+                "trait_type": "Frame",
+                "value": "Intergalactic Bunny Lord"
+            }
+        ],
+        "metaPath": ""
+    },
+    {
+        "tokenId": 92,
+        "name": "Achievement",
+        "attributes": [
+            {
+                "trait_type": "Frame",
+                "value": "Royal Bunny"
+            }
+        ],
+        "metaPath": ""
+    },
+    {
+        "tokenId": 96,
+        "name": "Achievement",
+        "attributes": [
+            {
+                "trait_type": "Frame",
+                "value": "World Domination Bunny"
+            }
+        ],
+        "metaPath": ""
+    },
+    {
+        "tokenId": 104,
+        "name": "Bunny Day 2024 Stream Special",
+        "attributes": [
+            {
+                "trait_type": "Background",
+                "value": "Jelly Buns"
             },
             {
-                "trait_type": "Accessory",
-                "value": "MetaVixen Necklettuce"
-            },
+                "trait_type": "Dye",
+                "value": "Bunny Day Delight"
+            }
+        ],
+        "metaPath": ""
+    },
+    {
+        "tokenId": 105,
+        "name": "Crypto Defender i",
+        "attributes": [
+            {
+                "trait_type": "Dye",
+                "value": "Crypto Defender Blue"
+            }
+        ],
+        "metaPath": ""
+    },
+    {
+        "tokenId": 106,
+        "name": "Crypto Defender ii",
+        "attributes": [
             {
                 "trait_type": "Hand",
-                "value": "MetaVixen Tasty Taco"
-            },
+                "value": "Crypto Defender Shield"
+            }
+        ],
+        "metaPath": ""
+    },
+    {
+        "tokenId": 107,
+        "name": "Crypto Defender iii",
+        "attributes": [
             {
-                "trait_type": "Accessory",
-                "value": "MetaVixen Bling"
-            },
+                "trait_type": "Hat",
+                "value": "Crypto Defender Helm"
+            }
+        ],
+        "metaPath": ""
+    },
+    {
+        "tokenId": 108,
+        "name": "Crypto Defender iv",
+        "attributes": [
             {
                 "trait_type": "Outfit",
-                "value": "MetaVixen Bone Armor"
+                "value": "Crypto Defender Armor"
+            }
+        ],
+        "metaPath": ""
+    },
+    {
+        "tokenId": 109,
+        "name": "Cuddle Bunny Pack 2024",
+        "attributes": [
+            {
+                "trait_type": "Hair Style",
+                "value": "Partly Cloudy"
             },
             {
                 "trait_type": "Hat",
-                "value": "MetaVixen Skull Crown"
+                "value": "Cuddle Bunny"
+            },
+            {
+                "trait_type": "Outfit",
+                "value": "Hellooo Cupcakes"
+            }
+        ],
+        "metaPath": ""
+    },
+    {
+        "tokenId": 110,
+        "name": "Degen Set",
+        "attributes": [
+            {
+                "trait_type": "Accessory",
+                "value": "Blockchain"
+            },
+            {
+                "trait_type": "Accessory",
+                "value": "Deal With It"
+            },
+            {
+                "trait_type": "Accessory",
+                "value": "Doge"
+            },
+            {
+                "trait_type": "Accessory",
+                "value": "Pepe"
+            },
+            {
+                "trait_type": "Background",
+                "value": "Bullish"
+            },
+            {
+                "trait_type": "Background",
+                "value": "Buy The Dip"
             },
             {
                 "trait_type": "Eyes",
-                "value": "MetaVixen Eyes"
-            },
-            {
-                "trait_type": "Undergarment",
-                "value": "MetaVixen Starfishies"
-            },
-            {
-                "trait_type": "Hair Style",
-                "value": "MetaVixen Cute Alien Buns"
-            },
-            {
-                "trait_type": "Hat",
-                "value": "MetaVixen Rose Crown"
-            },
-            {
-                "trait_type": "Mouth",
-                "value": "MetaVixen Grin"
-            },
-            {
-                "trait_type": "Background",
-                "value": "MetaVixen Swoosh"
-            },
-            {
-                "trait_type": "Accessory",
-                "value": "MetaVixen Bone Dangle"
-            },
-            {
-                "trait_type": "Hat",
-                "value": "MetaVixen SnapBack Babe"
-            },
-            {
-                "trait_type": "Outfit",
-                "value": "MetaVixen Heartless Top"
-            },
-            {
-                "trait_type": "Skin",
-                "value": "MetaVixen Constellation"
-            },
-            {
-                "trait_type": "Eyebrows",
-                "value": "MetaVixen High Brow"
-            },
-            {
-                "trait_type": "Undergarment",
-                "value": "MetaVixen Smell The Roses"
-            },
-            {
-                "trait_type": "Hat",
-                "value": "MetaVixen Baby Its Cold Outside"
-            },
-            {
-                "trait_type": "Hat",
-                "value": "MetaVixen Polycrown"
-            },
-            {
-                "trait_type": "Hair Style",
-                "value": "MetaVixen Classic Constellation"
+                "value": "Seeing Green"
             },
             {
                 "trait_type": "Frame",
-                "value": "MetaVixen Logo"
+                "value": "Higher"
             },
             {
-                "trait_type": "Background",
-                "value": "MetaVixen Seaside"
+                "trait_type": "Frame",
+                "value": "Lambungini"
             },
             {
-                "trait_type": "Background",
-                "value": "MetaVixen Roses"
+                "trait_type": "Hand",
+                "value": "Hardware Wallet"
             },
             {
-                "trait_type": "Background",
-                "value": "MetaVixen Storm"
+                "trait_type": "Hand",
+                "value": "WEN Bunny"
             },
             {
-                "trait_type": "Background",
-                "value": "MetaVixen Flower"
+                "trait_type": "Outfit",
+                "value": "Bitcoin"
             },
             {
-                "trait_type": "Background",
-                "value": "MetaVixen Crystal"
+                "trait_type": "Outfit",
+                "value": "DigiByteJohnny"
+            },
+            {
+                "trait_type": "Outfit",
+                "value": "ETH Maxi"
+            },
+            {
+                "trait_type": "Outfit",
+                "value": "Polygon"
+            },
+            {
+                "trait_type": "Outfit",
+                "value": "Wax Tee"
+            },
+            {
+                "trait_type": "Skin",
+                "value": "Glitch"
             }
         ],
         "metaPath": ""

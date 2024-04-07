@@ -299,6 +299,11 @@ const colorNames = {
     "g": 55,
     "r": 0
 },
+"Bunny Day Delight": {
+    "r": 230,
+    "g": 174,
+    "b": 195
+},
 "Bunny Queen Blush": {
     "b": 222,
     "g": 204,
@@ -403,6 +408,11 @@ const colorNames = {
     "b": 215,
     "g": 223,
     "r": 206
+},
+"Crypto Defender Blue": {
+    "r": 0,
+    "g": 82,
+    "b": 255
 },
 "Cute Crater": {
     "b": 220,

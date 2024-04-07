@@ -1,18 +1,70 @@
 {
   "attributes": [
     {"name": "Accessory", "traits": [
+        {"name": "Blockchain","colors": 1,"rarity": "Common","tags": NaN,"token_id": 110},
+        {"name": "Deal With It","colors": 0,"rarity": "Common","tags": "Glasses","token_id": 110},
+        {"name": "Doge","colors": 2,"rarity": "Common","tags": NaN,"token_id": 110},
+        {"name": "Pepe","colors": 2,"rarity": "Common","tags": NaN,"token_id": 110}
     ]},
 
     {"name": "Background", "traits": [
+        {"name": "Jelly Buns","colors": 0,"rarity": "Common","tags": NaN,"token_id": 104},
+        {"name": "Bullish","colors": 3,"rarity": "Common","tags": NaN,"token_id": 110},
+        {"name": "Buy The Dip","colors": 3,"rarity": "Common","tags": NaN,"token_id": 110}
+    ]},
+
+    {"name": "Dye", "traits": [
+        {"name": "Bunny Day Delight","colors": 0,"rarity": "Common","tags": NaN,"token_id": 104},
+        {"name": "Crypto Defender Blue","colors": 0,"rarity": "Common","tags": NaN,"token_id": 105}
+    ]},
+
+    {"name": "Eyes", "traits": [
+        {"name": "Seeing Green","colors": 1,"rarity": "Common","tags": NaN,"token_id": 110}
     ]},
 
     {"name": "Frame", "traits": [
+        {"name": "Bunny","colors": 3,"rarity": "Common","tags": NaN,"token_id": 100},
+        {"name": "Bunny Club","colors": 4,"rarity": "Common","tags": NaN,"token_id": 101},
+        {"name": "Bunny Duke","colors": 3,"rarity": "Common","tags": NaN,"token_id": 102},
+        {"name": "Bunny Emperor","colors": 4,"rarity": "Common","tags": NaN,"token_id": 103},
+        {"name": "Bunny Knight","colors": 4,"rarity": "Common","tags": NaN,"token_id": 110},
+        {"name": "Bunny Relic","colors": 3,"rarity": "Common","tags": NaN,"token_id": 110},
+        {"name": "Godly Bunny","colors": 3,"rarity": "Common","tags": NaN,"token_id": 77},
+        {"name": "Intergalactic Bunny Lord","colors": 4,"rarity": "Common","tags": NaN,"token_id": 82},
+        {"name": "Royal Bunny","colors": 4,"rarity": "Common","tags": NaN,"token_id": 83},
+        {"name": "Snoozles","colors": 5,"rarity": "Common","tags": NaN,"token_id": 84},
+        {"name": "World Domination Bunny","colors": 3,"rarity": "Common","tags": NaN,"token_id": 89},
+        {"name": "Higher","colors": 1,"rarity": "Common","tags": NaN,"token_id": 92},
+        {"name": "Lambungini","colors": 3,"rarity": "Common","tags": NaN,"token_id": 96}
+    ]},
+
+    {"name": "Hair Style", "traits": [
+        {"name": "Partly Cloudy","colors": 4,"rarity": "Common","tags": "Parts 2","token_id": 109}
     ]},
 
     {"name": "Hand", "traits": [
+        {"name": "Crypto Defender Shield","colors": 5,"rarity": "Common","tags": NaN,"token_id": 106},
+        {"name": "Hardware Wallet","colors": 3,"rarity": "Common","tags": "skin","token_id": 110},
+        {"name": "WEN Bunny","colors": 4,"rarity": "Common","tags": "skin","token_id": 110}
+    ]},
+
+    {"name": "Hat", "traits": [
+        {"name": "Crypto Defender Helm","colors": 3,"rarity": "Common","tags": NaN,"token_id": 107},
+        {"name": "Cuddle Bunny","colors": 3,"rarity": "Common","tags": NaN,"token_id": 109}
     ]},
 
     {"name": "Outfit", "traits": [
+        {"name": "Crypto Defender Armor","colors": 3,"rarity": "Common","tags": NaN,"token_id": 108},
+        {"name": "Hellooo Cupcakes","colors": 4,"rarity": "Common","tags": NaN,"token_id": 109},
+        {"name": "Bitcoin","colors": 2,"rarity": "Common","tags": NaN,"token_id": 110},
+        {"name": "DigiByteJohnny","colors": 3,"rarity": "Common","tags": NaN,"token_id": 110},
+        {"name": "ETH Maxi","colors": 2,"rarity": "Common","tags": NaN,"token_id": 110},
+        {"name": "Polygon","colors": 2,"rarity": "Common","tags": NaN,"token_id": 110},
+        {"name": "Wax Tee","colors": 2,"rarity": "Common","tags": NaN,"token_id": 110}
+    ]},
+
+    {"name": "Skin", "traits": [
+        {"name": "Glitch","colors": 0,"rarity": "Common","tags": NaN,"token_id": 110}
     ]}
   ]
 }
