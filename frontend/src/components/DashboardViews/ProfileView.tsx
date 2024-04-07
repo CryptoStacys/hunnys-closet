@@ -110,16 +110,19 @@ const ProfileView = () => {
   };
 
   useEffect(() => {
-    const titles = Object.values(user?.achievements || {}).reduce(
-      (acc: string[], achievement: any) => {
-        if (achievement.title && !acc.includes(achievement.title)) {
-          acc.push(achievement.title);
-        }
-        return acc;
-      },
-      []
-    );
-
+    const freshCupcakeTitle = "Fresh Cupcake"; // Define the default title
+    let titles = Object.values(user?.achievements || {}).reduce((acc: string[], achievement: any) => {
+      if (achievement.title && !acc.includes(achievement.title)) {
+        acc.push(achievement.title);
+      }
+      return acc;
+    }, []);
+  
+    // Ensure "Fresh Cupcake" is always an option and avoid duplicates
+    if (!titles.includes(freshCupcakeTitle)) {
+      titles = [freshCupcakeTitle, ...titles];
+    }
+  
     setAvailableTitles(titles);
   }, [user?.achievements]);
 
@@ -414,7 +417,7 @@ const ProfileView = () => {
                     }
                   }}
                 />
-                {availableTitles.length > 0 && (
+                {availableTitles.length > 1 && (
                   <>
                     <h1 className="font-bold">Title:</h1>
                     <select

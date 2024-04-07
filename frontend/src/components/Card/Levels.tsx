@@ -58,7 +58,7 @@ const renderClaimButtonOrNextReward = () => {
   const currentLevelNumber = parseInt(user?.level || '0', 10);
   const freeClaimLevelNumber = parseInt(levels.id, 10);
   // Check if user's current level is above the level number required for the free claim
-  const isEligibleToClaim = currentLevelNumber > freeClaimLevelNumber;
+  const isEligibleToClaim = freeClaimLevelNumber === 0 || currentLevelNumber > freeClaimLevelNumber;
 
   if (levels.freeClaimTokenId !== undefined) {
     if (!isClaimed && isEligibleToClaim) {
