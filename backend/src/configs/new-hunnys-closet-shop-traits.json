@@ -5,7 +5,7 @@
       "traits": [
         {"name":"Blockchain","colors":1,"rarity":"Common","tags":[],"token_id":110},
         {"name":"Deal With It","colors":0,"rarity":"Common","tags":["glasses"],"token_id":110},
-        {"name":"Doge","colors":2,"rarity":"Common","tags":["companion"],"token_id":110},
+        {"name":"Doge","colors":3,"rarity":"Common","tags":["companion"],"token_id":110},
         {"name":"Pepe","colors":3,"rarity":"Common","tags":["companion"],"token_id":110},
         {"name":"MetaVixen Bling","colors":1,"rarity":"Common","tags":[],"token_id":98},
         {"name":"MetaVixen Bone Dangle","colors":1,"rarity":"Common","tags":["earrings"],"token_id":98},
