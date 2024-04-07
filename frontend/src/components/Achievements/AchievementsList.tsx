@@ -359,6 +359,18 @@ import { achievements } from '../../utils/achievements';
     //   achievementsReward1: '/icons/Achievements/99.png',
     //   eligibilityCriteria: (user: User) => user?.dollyCount > -1,
     // },
+    {
+      id: '35',
+      challenge: 'Happy Bunny Day!',
+      description: 'Bunny Day 2024 - the official Hunnys Holiday! Here are some sweet treats to help you celebrate!',
+      cupcakePoints: 25,
+      title: 'Bunny Day Attendee',
+      freeClaimTokenId: 104,
+      achievementsReward1: '/icons/Achievements/104.png',
+      achievementsReward2: '/icons/Achievements/Achievements/35/1.png',
+      achievementsReward3: '/icons/Achievements/Achievements/35/2.png',
+      eligibilityCriteria: (user: User) => user?.dollyCount > -1,
+    },
     // Add more achievements here
   ];
   
