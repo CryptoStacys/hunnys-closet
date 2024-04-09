@@ -93,6 +93,19 @@ export async function initializeUser(
       }
     }
 
+    let parsedLinksClicked = {};
+    if (
+      profileData.data.parsedLinksClicked &&
+      typeof profileData.data.parsedLinksClicked === "string"
+    ) {
+      try {
+        parsedFreeClaims = JSON.parse(profileData.data.parsedLinksClicked);
+      } catch (error) {
+        console.error("Error parsing achievements JSON:", error);
+        // Handle the error or set parsedAchievements to a default value if needed
+      }
+    }
+
     // Combine data and update user atom
     setUser((prevUser) => ({
       ...prevUser,
@@ -103,6 +116,7 @@ export async function initializeUser(
       address: address,
       achievements: parsedAchievements,
       free_claim: parsedFreeClaims,
+      linksClicked: parsedLinksClicked,
     }));
 
     setConnected(true);

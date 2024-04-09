@@ -1,11 +1,14 @@
 {
-  "name": "DEGEN SET",
-  "description": "\n\nOwning this unlocks the following set of items in the Hunnys Closet:\n\nHair Style: Partly Cloudy\n\nHat: Cuddle Bunny\n\nOutfit: Hellooo Cupcakes\n\n\n\nAll pieces purchased within this Hunnys Closet Shop collection will immediately unlock the specified item(s) for use in the [Hunnys Closet](https://closet.hunnys.io).\n\n\n\nAs long as you currently hold this token in the same wallet that you are connected with when using the [Hunnys Closet](https://closet.hunnys.io), it will automatically be available for use - enjoy!\n\n",
-  "image": "https://hunnysclosetshop.s3.us-east-2.amazonaws.com/images/goodies/110.png",
+  "name": "Degen Pack",
+  "description": "Higher? Yes plz!\n\nHop in Buns, we are going on a meta-venture! This pack is a gateway to dressing up your Dollys with an array of digital assets, each fueled by chiops, late nights, and way too many volt energy drinks.\n\nLet the degen spirit waft you away to the allure of the world of crypto. What are you waiting for, anon? Make your Dollys the most trend-setting PFP on the blockchain adorned with items for bullish and bearish times. Hodl for haute couture and buy the dip while peering from your Lambungini in style, everybunny will be jelly. LFG, and get ready to GM in style!\n\n\n\nOwning this unlocks the following set of items in the Hunnys Closet:\n\nAccessory: Blockchain\n\nAccessory: Deal With It\n\nAccessory: Doge\n\nAccessory: Pepe\n\nBackground: Bullish\n\nBackground: Buy The Dip\n\nEyes: Seeing Green\n\nFrame: Higher\n\nFrame: Lambungini\n\nHand: Hardware Wallet\n\nHand: WEN Bunny\n\nOutfit: Bitcoin\n\nOutfit: DigiByte Johnny\n\nOutfit: ETH Maxi\n\nOutfit: Polygon\n\nOutfit: Wax Tee\n\nSkin: Glitch\n\n\n\n\n\nAll pieces purchased within this Hunnys Closet Shop collection will immediately unlock the specified item(s) for use in the [Hunnys Closet](https://closet.hunnys.io).\n\n\n\nAs long as you currently hold this token in the same wallet that you are connected with when using the [Hunnys Closet](https://closet.hunnys.io), it will automatically be available for use - enjoy!\n\n",
+  "image": "https://hunnysclosetshop.s3.us-east-2.amazonaws.com/images/goodies/110.gif",
   "external_url": "",
   "background_color": "",
   "attributes": [
-    { "trait_type": "Type", "value": "Set" }
+    {
+      "trait_type": "Type",
+      "value": "Set"
+    }
   ],
   "supply": "500",
   "customImage": "",

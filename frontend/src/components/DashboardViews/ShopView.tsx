@@ -108,7 +108,18 @@ const ShopView = () => {
     description: string;
     image?: string;
   } | null>(null);
-  const handleNFTSelect = (nftDetails: React.SetStateAction<{ totalCost: string; attribute?: string; gasFees?: string | undefined; mintPrice: BigNumber; tokenId: string; headline: string; description: string; image?: string | undefined; } | null>) => {
+  const handleNFTSelect = (
+    nftDetails: React.SetStateAction<{
+      totalCost: string;
+      attribute?: string;
+      gasFees?: string | undefined;
+      mintPrice: BigNumber;
+      tokenId: string;
+      headline: string;
+      description: string;
+      image?: string | undefined;
+    } | null>
+  ) => {
     setSelectedNFT(nftDetails);
     setIsModalVisible(true);
   };
@@ -134,7 +145,10 @@ const ShopView = () => {
     any[]
   >([]);
   const [displayedNftData, setDisplayedNftData] = useState<any[]>([]);
-  const [feedbackMessage, setFeedbackMessage] = useState({ type: '', message: '' });
+  const [feedbackMessage, setFeedbackMessage] = useState({
+    type: "",
+    message: "",
+  });
   const startIndex = (currentPage - 1) * itemsPerPage;
   const endIndex = startIndex + itemsPerPage;
   const [pageTotal, setPageTotal] = useState(
@@ -146,36 +160,38 @@ const ShopView = () => {
   const indexOfLastItem = currentPage * itemsPerPage;
   const indexOfFirstItem = indexOfLastItem - itemsPerPage;
   const tokenIdToImageUrlMap: Record<string, string> = {};
-  const bunnyClubMembers = ["0xa7758394D8f7fD23b0d9F13E02427B514687394B",
-  "0x55Abdc04655d590a48BCd1B996115448b71b7a84",
-  "0x4eE115d0708924B4d3a83e45A428B0e3cb4348e9",
-  "0x3a9a9b0a3148599dde1660476c6a47b1272247c6",
-  "0xe17d0ac3F7C498924d4920bf279C01536686e014",
-  "0x48a19c6B158491325E84c8837ED8Ba95A0403C13",
-  "0x9d9d3bca9ae1126244786089d81ba9b289970238",
-  "0x1975638d2dfdeee04d11adf6350187af9996dc7c",
-  "0x6c6cD01ebbd02254C5Db5263797E366511992d29",
-  "0x019Db3aA167aF3B91b6D72a05dD8437aaDd5225E",
-  "0x745461ae3ee10F26e314735b6AF8ee41cD313E2d",
-  "0x0DE9a66f0F9b714c5b987BDCb37A5E2EF1bDA67A",
-  "0x473e12B41bC13d3Ac98C4d06cD549Ba8a704dbf1",
-  "0xBcDa92fF0D83448ad2B65C7a59D62FE3A18bF95f",
-  "0x650d492E2F68A665a5dc029bc3f255FE5ec366Fc",
-  "0x0009C319862f623aCa7b210a905121612fBBDf22",
-  "0x7B710AD4c01038E62927cEBb2d5df68cF3463413",
-  "0xa5cC1E135C92a4DD1b32A328e1343eB4150461B6",
-  "0x5Cf422E9Ff1D79c98C479F8d4e8cbdC7B51E1550",
-  "0x78ae230336bb65B0023d78156708783402f303c2",
-  "0x8b5e18b1A4BfF36085604e94C9bdE2054C62d026",
-  "0xFb203c2E544d1D2D889900883b4bD538Bc914357",
-  "0x051f1F3920D196cc998D74A56978370b82432D25",
-  "0x7b511800A8d8E7DE24Dd19de3103081824b6f41D",
-  "0x1776727f3c60dD67B832F9E0614D7e028E32e063",
-  "0x247DBa0157DDD215d30d41A70411DbaFbFD6a0F9",
-  "0xDbC0019892E644Ad55756Ace79810305E8E4c31d",
-  "0xb62500D5a8b9629763d39a4D05784D6A47A72Ab1",
-  "0xce05070e7afa163a029f87bde875084769729943",
-  "0x16272E839A5C29A3Fa90E670Cb599d233b6943aC"]; // Replace with actual addresses
+  const bunnyClubMembers = [
+    "0xa7758394D8f7fD23b0d9F13E02427B514687394B",
+    "0x55Abdc04655d590a48BCd1B996115448b71b7a84",
+    "0x4eE115d0708924B4d3a83e45A428B0e3cb4348e9",
+    "0x3a9a9b0a3148599dde1660476c6a47b1272247c6",
+    "0xe17d0ac3F7C498924d4920bf279C01536686e014",
+    "0x48a19c6B158491325E84c8837ED8Ba95A0403C13",
+    "0x9d9d3bca9ae1126244786089d81ba9b289970238",
+    "0x1975638d2dfdeee04d11adf6350187af9996dc7c",
+    "0x6c6cD01ebbd02254C5Db5263797E366511992d29",
+    "0x019Db3aA167aF3B91b6D72a05dD8437aaDd5225E",
+    "0x745461ae3ee10F26e314735b6AF8ee41cD313E2d",
+    "0x0DE9a66f0F9b714c5b987BDCb37A5E2EF1bDA67A",
+    "0x473e12B41bC13d3Ac98C4d06cD549Ba8a704dbf1",
+    "0xBcDa92fF0D83448ad2B65C7a59D62FE3A18bF95f",
+    "0x650d492E2F68A665a5dc029bc3f255FE5ec366Fc",
+    "0x0009C319862f623aCa7b210a905121612fBBDf22",
+    "0x7B710AD4c01038E62927cEBb2d5df68cF3463413",
+    "0xa5cC1E135C92a4DD1b32A328e1343eB4150461B6",
+    "0x5Cf422E9Ff1D79c98C479F8d4e8cbdC7B51E1550",
+    "0x78ae230336bb65B0023d78156708783402f303c2",
+    "0x8b5e18b1A4BfF36085604e94C9bdE2054C62d026",
+    "0xFb203c2E544d1D2D889900883b4bD538Bc914357",
+    "0x051f1F3920D196cc998D74A56978370b82432D25",
+    "0x7b511800A8d8E7DE24Dd19de3103081824b6f41D",
+    "0x1776727f3c60dD67B832F9E0614D7e028E32e063",
+    "0x247DBa0157DDD215d30d41A70411DbaFbFD6a0F9",
+    "0xDbC0019892E644Ad55756Ace79810305E8E4c31d",
+    "0xb62500D5a8b9629763d39a4D05784D6A47A72Ab1",
+    "0xce05070e7afa163a029f87bde875084769729943",
+    "0x16272E839A5C29A3Fa90E670Cb599d233b6943aC",
+  ]; // Replace with actual addresses
   const bunnyClubDiscount = 20; // 10% discount
   const isBunnyClubMember = bunnyClubMembers
     .map((address) => address.toLowerCase())
@@ -199,19 +215,19 @@ const ShopView = () => {
 
   const handleConfirmTransaction = async () => {
     console.log("Processing transaction...");
-    
+
     // Check if selectedNFT is not null before proceeding
     if (selectedNFT !== null) {
       const { tokenId, mintPrice } = selectedNFT; // Assuming these exist based on your type definition
       // You mentioned userAddress, but it seems it's not a part of selectedNFT. You may need to get it from elsewhere.
       const userAddress = user?.address; // Assuming 'user' is defined in your component's state/context
-  
+
       // Make sure userAddress is also defined
       if (!userAddress) {
         console.error("User address is undefined");
         return;
       }
-  
+
       // Now you can safely use tokenId, mintPrice, and userAddress
       // Ensure your performMint function or equivalent logic is ready to be called here
       try {
@@ -227,19 +243,19 @@ const ShopView = () => {
     } else {
       console.error("No NFT selected");
     }
-  
+
     handleCloseModal();
   };
-const collectionNameMap: CollectionNameMap = {
-  default: "Bunny Basics",
-  "Hunnys 10k All Holders": "Hunnys 10k All Holders",
-  "Hunnys OG": "Hunnys OG",
-  "Hunnys Stacys": "Hunnys Stacys",
-  "Hunnys 10k": "Hunnys 10k",
-  "Fame Lady Society": "Fame Lady Society",
-  "New Hunnys Closet Shop": "Hunnys Closet Shop",
-  "Hunnys Seasonal": "Hunnys Seasons",
-};
+  const collectionNameMap: CollectionNameMap = {
+    default: "Bunny Basics",
+    "Hunnys 10k All Holders": "Hunnys 10k All Holders",
+    "Hunnys OG": "Hunnys OG",
+    "Hunnys Stacys": "Hunnys Stacys",
+    "Hunnys 10k": "Hunnys 10k",
+    "Fame Lady Society": "Fame Lady Society",
+    "New Hunnys Closet Shop": "Hunnys Closet Shop",
+    "Hunnys Seasonal": "Hunnys Seasons",
+  };
   const collectionNameMapExtended = {
     all: "All Collections", // Add this line to include "All Collections" option
     ...collectionNameMap,
@@ -284,11 +300,40 @@ const collectionNameMap: CollectionNameMap = {
     Object.entries(attributeNameMap).map(([key, value]) => [value, key])
   );
 
+  const fetchEthPrice = async () => {
+    try {
+      // Update this URL to point to your backend service
+      const response = await axios.get('https://staging-hunnys-closet-2-548f5ed67a1b.herokuapp.com/getEthPrices');
+      const ethPriceInUsd = response.data.ethPriceInUsd;
+      return ethPriceInUsd;
+    } catch (error) {
+      console.error("Failed to fetch ETH price from backend:", error);
+      return null;
+    }
+  };
+
+  const [ethPrice, setEthPrice] = useState<number | null>(null);
+
+  useEffect(() => {
+    const fetchPriceAndSetState = async () => {
+      const fetchedPrice = await fetchEthPrice();
+
+      setEthPrice(fetchedPrice);
+    };
+
+    fetchPriceAndSetState();
+  }, []);
+
   useEffect(() => {
     const fetchAndGroupData = async () => {
+      const ethPriceInUsd = await fetchEthPrice(); // Fetch the current ETH price in USD
+
+      if (!ethPriceInUsd) {
+        throw new Error("Failed to fetch ETH price");
+      }
       try {
         const url =
-          "https://sheets.googleapis.com/v4/spreadsheets/1JGFS4_mgk3tFH5ScghkOsHCgbO7vnL3vZnm30YYPNLM/values/A2:H262?key=AIzaSyAjknT53sMDEOdJ3YtCmjgP3VeSTvSGB3U";
+          "https://sheets.googleapis.com/v4/spreadsheets/1JGFS4_mgk3tFH5ScghkOsHCgbO7vnL3vZnm30YYPNLM/values/A2:I262?key=AIzaSyAjknT53sMDEOdJ3YtCmjgP3VeSTvSGB3U";
         const response = await axios.get(url);
         const fetchedNftData = response.data.values;
 
@@ -567,6 +612,21 @@ const collectionNameMap: CollectionNameMap = {
   }, [groupedNftData, searchTerm, sortType, currentPage, itemsPerPage]);
 
   const renderItemizedData = () => {
+    if (!ethPrice) {
+      console.error("ETH price not available");
+
+      return; // Optionally, you can return a loading indicator here
+    }
+
+    console.log("ETH Price:", ethPrice);
+
+    const ethPriceInUsd = ethPrice; // Fetch the current ETH price in USD
+
+    if (!ethPriceInUsd) {
+      console.error("Failed to fetch ETH price");
+
+      return;
+    }
     const bunnyClubMembersLowercase = bunnyClubMembers.map((address) =>
       address.toLowerCase()
     );
@@ -574,7 +634,21 @@ const collectionNameMap: CollectionNameMap = {
     return displayedNftData.map((item, index) => {
       const tokenId = item[0]; // Name of the source token that unlocks the item(s)
       const nftName = item[1]; // Name of the NFT
-      let mintPrice = ethers.utils.parseUnits(item[2].toString(), "ether");
+      const usdPrice = item[8]; // Name of the NFT
+      let mintPrice;
+      if (usdPrice) {
+        const usdPriceNum = parseFloat(usdPrice);
+        const ethEquivalentPrice = usdPriceNum / ethPrice; // Convert USD price to ETH
+        const ethEquivalentPriceStr = ethEquivalentPrice.toFixed(5);
+        mintPrice = ethers.utils.parseUnits(ethEquivalentPriceStr, "ether");
+      } else {
+        // Fall back to the specified price in ETH marked in Column C (index[2])
+        mintPrice = ethers.utils.parseUnits(item[2].toString(), "ether");
+      }
+    
+      console.log(
+        `MintPrice: ${ethers.utils.formatUnits(mintPrice, "ether")} ETH`
+      );
       if (
         userAddressLowercase &&
         bunnyClubMembersLowercase.includes(userAddressLowercase)
@@ -625,80 +699,115 @@ const collectionNameMap: CollectionNameMap = {
               : "d-flex flex-column justify-content-between max-w-[250px] max-h-[600px]"
           }`}
         >
-        <div className="flex flex-col justify-between h-full inventory-swiper">
-          {gridSize === "4x3" && (
-            <>
-              <img
-                src={itemImage}
-                alt={`NFT ${nftName}`}
-                className={imageClass}
-                loading="lazy"
-              />
-              <div className="pt-1">
-                <h1
-                  style={{
-                    fontSize: `${Math.max(16, 32 - itemName.length * 0.5)}px`,
-                  }}
-                  className={titleClass}
-                >
-                  {itemName}
-                </h1>
-              </div>
-              <div className="text-center cursor-pointer">
+          <div className="flex flex-col justify-between h-full inventory-swiper">
+            {gridSize === "4x3" && (
+              <>
                 <img
-                  className="max-w-24 max-h-24 mx-auto border-[#C6C6C6] border-2 rounded-xl"
-                  src={parentNftImage}
-                  alt={`Trait ${nftName}`}
+                  src={itemImage}
+                  alt={`NFT ${nftName}`}
+                  className={imageClass}
+                  loading="lazy"
                 />
-                <p className="text-xs mt-1">Origin: {nftName}</p>
-              </div>
+                <div className="pt-1">
+                  <h1
+                    style={{
+                      fontSize: `${Math.max(16, 32 - itemName.length * 0.5)}px`,
+                    }}
+                    className={titleClass}
+                  >
+                    {itemName}
+                  </h1>
+                </div>
+                <div className="text-center cursor-pointer">
+                  <img
+                    className="max-w-24 max-h-24 mx-auto border-[#C6C6C6] border-2 rounded-xl"
+                    src={parentNftImage}
+                    alt={`Trait ${nftName}`}
+                  />
+                  <p className="text-xs mt-1">Origin: {nftName}</p>
+                </div>
 
-              <MintButton
-                tokenId={tokenId.toString()}
-                mintPrice={mintPrice}
-                showModal={() => handleNFTSelect({
-                  tokenId: tokenId.toString(),
-                  mintPrice: mintPrice,
-                  totalCost: formattedMintPrice,
-                  headline: itemName,
-                  attribute: attribute,
-                  description: "Your delightful description here",
-                  gasFees: 'To be dynamically calculated.',
-                  image: itemImage
-                })}
-                isEligibleForMinting={isEligibleForMinting}
-                onMintSuccess={() => console.log("Mint successful!")}
-                updateTraits={(userAddress) => console.log(`Update traits for ${userAddress}`)}
-                userAddress={user?.address}
-                buttonText={`Ξ${formattedMintPrice}`}
-                itemName={""}
-                itemImage={""} mintAction={function (): Promise<void> {
-                  throw new Error("Function not implemented.");
-                } }              />
-            </>
-          )}
-        </div>
+                <MintButton
+                  tokenId={tokenId.toString()}
+                  mintPrice={mintPrice}
+                  showModal={() =>
+                    handleNFTSelect({
+                      tokenId: tokenId.toString(),
+                      mintPrice: mintPrice,
+                      totalCost: formattedMintPrice,
+                      headline: itemName,
+                      attribute: attribute,
+                      description: "Your delightful description here",
+                      gasFees: "To be dynamically calculated.",
+                      image: itemImage,
+                    })
+                  }
+                  isEligibleForMinting={isEligibleForMinting}
+                  onMintSuccess={() => console.log("Mint successful!")}
+                  updateTraits={(userAddress) =>
+                    console.log(`Update traits for ${userAddress}`)
+                  }
+                  userAddress={user?.address}
+                  buttonText={`Ξ${formattedMintPrice}`}
+                  itemName={""}
+                  itemImage={""}
+                  mintAction={function (): Promise<void> {
+                    throw new Error("Function not implemented.");
+                  }}
+                />
+              </>
+            )}
+          </div>
         </div>
       );
     });
   };
-  async function performMint(userAddress: any, tokenId: string | number, mintPrice: BigNumber, provider: ethers.providers.Web3Provider) {
+  async function performMint(
+    userAddress: any,
+    tokenId: string | number,
+    mintPrice: BigNumber,
+    provider: ethers.providers.Web3Provider
+  ) {
     try {
-      await mintWithWeth(user!.address, waasAddress, tokenId, mintPrice, provider);
+      await mintWithWeth(
+        user!.address,
+        waasAddress,
+        tokenId,
+        mintPrice,
+        provider
+      );
       console.log("Purchase successful!");
-      setFeedbackMessage({ type: 'success', message: 'Purchase successful!' });
-      setTimeout(() => setFeedbackMessage({ type: '', message: '' }), 5000);
+      setFeedbackMessage({ type: "success", message: "Purchase successful!" });
+      setTimeout(() => setFeedbackMessage({ type: "", message: "" }), 5000);
       // Handle success (e.g., calling onMintSuccess, updating UI state)
     } catch (error) {
       console.error("Purchase failed:", error as string);
-      setFeedbackMessage({ type: 'error', message: 'Purchase failed: Insufficient balance'});
-      setTimeout(() => setFeedbackMessage({ type: '', message: '' }), 5000);
+      setFeedbackMessage({
+        type: "error",
+        message: "Purchase failed: Insufficient balance",
+      });
+      setTimeout(() => setFeedbackMessage({ type: "", message: "" }), 5000);
       // Handle failure (e.g., showing error message)
       throw error;
     }
   }
 
   const renderCollectionData = () => {
+    if (!ethPrice) {
+      console.error("ETH price not available");
+
+      return; // Optionally, you can return a loading indicator here
+    }
+
+    console.log("ETH Price:", ethPrice);
+
+    const ethPriceInUsd = ethPrice; // Fetch the current ETH price in USD
+
+    if (!ethPriceInUsd) {
+      console.error("Failed to fetch ETH price");
+
+      return;
+    }
     const bunnyClubMembersLowercase = bunnyClubMembers.map((address) =>
       address.toLowerCase()
     );
@@ -728,13 +837,9 @@ const collectionNameMap: CollectionNameMap = {
         return acc;
       }, {});
 
-    // Sort grouped items by "Owned" status before slicing for pagination
+    // Adjust the sorting logic to sort by token ID, descending
     const sortedGroupedItems = Object.entries(groupedByTokenId).sort(
-      ([tokenIdA, itemsA], [tokenIdB, itemsB]) => {
-        const isOwnedANum = isTokenOwned(itemsA[0][2], itemsA[0][7]) ? 1 : 0; // Convert boolean to number
-        const isOwnedBNum = isTokenOwned(itemsB[0][2], itemsB[0][7]) ? 1 : 0; // Convert boolean to number
-        return isOwnedANum - isOwnedBNum; // Sort such that owned items come first
-      }
+      ([tokenIdA], [tokenIdB]) => parseInt(tokenIdB) - parseInt(tokenIdA)
     );
 
     const paginatedTokenIds = sortedGroupedItems.slice(startIndex, endIndex);
@@ -747,7 +852,22 @@ const collectionNameMap: CollectionNameMap = {
       const nftImage = firstItem[3];
       const nftName = firstItem[1];
       const tokenId = firstItem[0];
-      let mintPrice = ethers.utils.parseUnits(firstItem[2].toString(), "ether");
+      const usdPrice = firstItem[8];
+      let mintPrice;
+      // Check if there's a USD value in place
+      if (usdPrice) {
+        const usdPriceNum = parseFloat(usdPrice);
+        const ethEquivalentPrice = usdPriceNum / ethPrice; // Convert USD price to ETH
+        const ethEquivalentPriceStr = ethEquivalentPrice.toFixed(5);
+        mintPrice = ethers.utils.parseUnits(ethEquivalentPriceStr, "ether");
+      } else {
+        // Fall back to the specified price in ETH marked in Column C (index[2])
+        mintPrice = ethers.utils.parseUnits(firstItem[2].toString(), "ether");
+      }
+
+      console.log(
+        `MintPrice: ${ethers.utils.formatUnits(mintPrice, "ether")} ETH`
+      );
       console.log(
         `Original mintPrice: ${ethers.utils.formatUnits(mintPrice, "ether")}`
       );
@@ -830,26 +950,32 @@ const collectionNameMap: CollectionNameMap = {
                   ))}
                 </Swiper>
                 <MintButton
-                tokenId={tokenId.toString()}
-                mintPrice={mintPrice}
-                showModal={() => handleNFTSelect({
-                  tokenId: tokenId.toString(),
-                  mintPrice: mintPrice,
-                  totalCost: formattedMintPrice,
-                  headline: nftName,
-                  description: "Your delightful description here",
-                  gasFees: 'To be dynamically calculated.',
-                  image: nftImage
-                })}
-                isEligibleForMinting={isEligibleForMinting}
-                onMintSuccess={() => console.log("Mint successful!")}
-                updateTraits={(userAddress) => console.log(`Update traits for ${userAddress}`)}
-                userAddress={user?.address}
-                buttonText={`Ξ${formattedMintPrice}`}
-                itemName={""}
-                itemImage={""} mintAction={function (): Promise<void> {
-                  throw new Error("Function not implemented.");
-                } }              />
+                  tokenId={tokenId.toString()}
+                  mintPrice={mintPrice}
+                  showModal={() =>
+                    handleNFTSelect({
+                      tokenId: tokenId.toString(),
+                      mintPrice: mintPrice,
+                      totalCost: formattedMintPrice,
+                      headline: nftName,
+                      description: "Your delightful description here",
+                      gasFees: "To be dynamically calculated.",
+                      image: nftImage,
+                    })
+                  }
+                  isEligibleForMinting={isEligibleForMinting}
+                  onMintSuccess={() => console.log("Mint successful!")}
+                  updateTraits={(userAddress) =>
+                    console.log(`Update traits for ${userAddress}`)
+                  }
+                  userAddress={user?.address}
+                  buttonText={`Ξ${formattedMintPrice}`}
+                  itemName={""}
+                  itemImage={""}
+                  mintAction={function (): Promise<void> {
+                    throw new Error("Function not implemented.");
+                  }}
+                />
               </>
             )}
             {/* Simplified content for 8x8 grid */}
@@ -861,28 +987,31 @@ const collectionNameMap: CollectionNameMap = {
 
   return (
     <div className="inventory-view p-4 max-w-7xl mx-auto">
-      
+      <div>
+        {/* Your WaaS Transaction Modal */}
+        {isModalVisible && selectedNFT && (
+          <WaasTransactionModal
+            isVisible={isModalVisible}
+            onClose={() => setIsModalVisible(false)}
+            transactionDetails={selectedNFT}
+            onConfirm={handleConfirmTransaction}
+          />
+        )}
+      </div>
 
-    <div>
-
-      {/* Your WaaS Transaction Modal */}
-      {isModalVisible && selectedNFT && (
-        <WaasTransactionModal
-          isVisible={isModalVisible}
-          onClose={() => setIsModalVisible(false)}
-          transactionDetails={selectedNFT}
-          onConfirm={handleConfirmTransaction}
-        />
-      )}
-    </div>
-
-        {/* Main content area */}
-        <div className="bg-[#EDEDED] mt-4">
+      {/* Main content area */}
+      <div className="bg-[#EDEDED] mt-4">
         {feedbackMessage.message && (
-            <div className={`feedback-message ${feedbackMessage.type === 'success' ? 'success-class' : 'error-class'}`}>
-              {feedbackMessage.message}
-            </div>
-          )}
+          <div
+            className={`feedback-message ${
+              feedbackMessage.type === "success"
+                ? "success-class"
+                : "error-class"
+            }`}
+          >
+            {feedbackMessage.message}
+          </div>
+        )}
         <div
           className="align-center mx-auto flex xs:flex-col md:flex-row xxl:px-16 justify-between items-center gap-4"
           style={{ maxWidth: "2560px" }}
@@ -900,8 +1029,10 @@ const collectionNameMap: CollectionNameMap = {
                 setCurrentPage(1);
               }}
             >
-              <span className="md:hidden">Item</span> {/* Visible on xs, hidden on sm and above */}
-              <span className="hidden md:inline">Item View</span> {/* Hidden on xs, visible on sm and above */}
+              <span className="md:hidden">Item</span>{" "}
+              {/* Visible on xs, hidden on sm and above */}
+              <span className="hidden md:inline">Item View</span>{" "}
+              {/* Hidden on xs, visible on sm and above */}
             </button>
             <button
               className={`view-toggle-btn ${
@@ -913,8 +1044,10 @@ const collectionNameMap: CollectionNameMap = {
                 setCurrentPage(1);
               }}
             >
-              <span className="md:hidden">Token</span> {/* Visible on xs, hidden on sm and above */}
-              <span className="hidden md:inline">Token View</span> {/* Hidden on xs, visible on sm and above */}
+              <span className="md:hidden">Token</span>{" "}
+              {/* Visible on xs, hidden on sm and above */}
+              <span className="hidden md:inline">Token View</span>{" "}
+              {/* Hidden on xs, visible on sm and above */}
             </button>
 
             {/* Search bar */}

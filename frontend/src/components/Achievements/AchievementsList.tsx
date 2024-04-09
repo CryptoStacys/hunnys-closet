@@ -1,7 +1,7 @@
 // AchievementsList.tsx
 
 import React from 'react';
-import { Achievement, User, FreeClaimType } from "../../data/global";
+import { Achievement, User, FreeClaimType, LinkClick } from "../../data/global";
 import AchievementItem from '../Card/AchievementItem';
 import { useAtom } from "jotai";
 import { userAtom } from "../../data/store";
@@ -10,11 +10,32 @@ import useSound from "use-sound";
 import { calculateLevel } from '../../utils/levelUtils';
 import { achievements } from '../../utils/achievements';
 
+// Examples of Achievement eligibilityCriteria:
+// Saved Dolly with specific color:
+    // eligibilityCriteria: (user) => user.dollys.some(dolly => 
+    //   dolly.attributes && dolly.attributes.some(attr => 
+    //     attr.colorsApplied && attr.colorsApplied.includes('Crypto Defender Blue')
+    //   )
+    // ),
+// Number of Dollys:
+    // eligibilityCriteria: (user: User) => user?.dollyCount > 0,
+// Has specific user data:
+    // eligibilityCriteria: (user: User) => !!user.profile_name && !!user.profile_image_url,
+// Has claimed a specific token:
+    // eligibilityCriteria: (user: User) => {
+    //   if (!freeClaimsArray || freeClaimsArray.length === 0) return false;
+    //   return freeClaimsArray.some((freeClaim: FreeClaimType) => freeClaim.token_id === "0" && freeClaim.claimed);
+    // }
+
+
+
   const AchievementsList = () => {
     const [user, setUser] = useAtom(userAtom);
     const [showConfetti, setShowConfetti] = React.useState(false);
     const [playRewardSound] = useSound("/sounds/reward2.mp3");
     const freeClaimsArray = Array.isArray(user?.free_claim) ? user?.free_claim : [];
+    const linksClickedArray = Array.isArray(user?.linksClicked) ? user?.linksClicked : [];
+    const achievementsArray = Array.isArray(user?.achievements) ? user?.achievements : [];
     const achievementsData: Achievement[] = [
     {
         id: '1',
@@ -371,8 +392,66 @@ import { achievements } from '../../utils/achievements';
     //   achievementsReward3: '/icons/Achievements/Achievements/35/2.png',
     //   eligibilityCriteria: (user: User) => user?.dollyCount > -1,
     // },
+    
+    {
+      id: '36',
+      challenge: 'Crypto Defender i',
+      description: 'Login to the Hunnys Closet during the Coinbase Embedded Wallet Launch',
+      freeClaimTokenId: 105,
+      cupcakePoints: 10,
+      achievementsReward1: '/icons/Achievements/105.png',
+      achievementsReward2: '/icons/Achievements/Achievements/36/1.png',
+      eligibilityCriteria: (user: User) => user?.dollyCount > -1,
+    },
+    {
+      id: '37',
+      challenge: 'Crypto Defender ii',
+      description: 'Read about Coinbase Embedded Wallets',
+      callToAction: 'https://www.coinbase.com/blog/evolving-wallets-to-bring-a-billion-users-onchain',
+      freeClaimTokenId: 106,
+      cupcakePoints: 25,
+      achievementsReward1: '/icons/Achievements/106.png',
+      achievementsReward2: '/icons/Achievements/Achievements/37/1.png',
+      eligibilityCriteria: (user: User) => {
+        if (!linksClickedArray || linksClickedArray.length === 0) return false;
+        return linksClickedArray.some((linksClicked: LinkClick) => linksClicked.trackId === "Crypto Defender ii");
+      }
+    },
+    {
+      id: '38',
+      challenge: 'Crypto Defender iii',
+      description: 'Save a dolly with the Crypto Defender Blue dye',
+      freeClaimTokenId: 107,
+      cupcakePoints: 25,
+      achievementsReward1: '/icons/Achievements/107.png',
+      achievementsReward2: '/icons/Achievements/Achievements/38/1.png',
+      eligibilityCriteria: (user) => user.dollys.some(dolly => 
+        dolly.attributes && dolly.attributes.some(attr => 
+          attr.colorsApplied && attr.colorsApplied.includes('Crypto Defender Blue')
+        )
+      ),
+    },
+    {
+      id: '39',
+      challenge: 'Crypto Defender iv',
+      description: 'Complete Crypto Defender i, ii and iii achievements',
+      freeClaimTokenId: 108,
+      cupcakePoints: 50,
+      title: 'Crypto Defender', 
+      achievementsReward1: '/icons/Achievements/108.png',
+      achievementsReward2: '/icons/Achievements/Achievements/39/1.png',
+      eligibilityCriteria: (user: User) => {
+        // Directly access the 'claimed' property of each required achievement
+        const completedCD1 = user.achievements['Crypto Defender i']?.claimed;
+        const completedCD2 = user.achievements['Crypto Defender ii']?.claimed;
+        const completedCD3 = user.achievements['Crypto Defender iii']?.claimed;
+        // Only return true if all required achievements have been claimed
+        return completedCD1 && completedCD2 && completedCD3;
+      }
+    },
     // Add more achievements here
   ];
+  
   
   const handleAchievementClaim = async (achievementId: string, freeClaimTokenId?: number) => {
       // Find the achievement based on the ID

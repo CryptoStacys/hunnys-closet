@@ -43,6 +43,7 @@ export type Achievement = {
   achievementsReward4?: string;
   achievementsReward5?: string;
   achievementsReward6?: string;
+  callToAction?: string;
   title?: string;
   eligibilityCriteria?: (user: User) => boolean;
   freeClaimTokenId?: number;
@@ -118,6 +119,14 @@ export type User = {
   twitter_handle?: string;
   discord_handle?: string;
   bunny_club?: number;
+  linksClicked?: any,
+};
+
+export type LinkClick = {
+  url: string;
+  eventId: string;
+  trackId: string;
+  clickedAt: string;
 };
 
 type OwnedTraitsResponse = {

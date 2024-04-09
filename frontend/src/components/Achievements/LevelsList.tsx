@@ -123,19 +123,10 @@ SwiperCore.use([Pagination, Controller]);
   
   const LevelsList = () => {
     const [user] = useAtom(userAtom);
-    const [currentLevelId, setCurrentLevelId] = useState(user?.level.toString() || "0");
     const userLevelIndex = user ? parseInt(user.level, 10) : 0;
 
     const [swiperInstance, setSwiperInstance] = useState<SwiperClass | null>(null);
-    const incrementLevel = () => {
-      const newLevelId = Math.min(parseInt(currentLevelId) + 1, user?.level || 0).toString();
-      setCurrentLevelId(newLevelId);
-    };
   
-    const decrementLevel = () => {
-      const newLevelId = Math.max(0, parseInt(currentLevelId) - 1).toString();
-      setCurrentLevelId(newLevelId);
-    };
     const checkSlideChange = () => {
       if (swiperInstance && user) {
         const currentIndex = swiperInstance.activeIndex;
@@ -145,8 +136,6 @@ SwiperCore.use([Pagination, Controller]);
         }
       }
     };
-    const currentLevel = levelsData.find(level => level.id === currentLevelId);
-    const accessibleLevels = levelsData.slice(0, userLevelIndex + 1);
 
     useEffect(() => {
       if (swiperInstance) {

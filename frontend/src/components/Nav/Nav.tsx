@@ -4,7 +4,11 @@ import Link from "./../Link/Link";
 import { ConnectButton, useAccountModal } from "@rainbow-me/rainbowkit";
 import { useAtom } from "jotai";
 import { Tooltip } from "react-tooltip";
-import { activeDollyComponentAtom, currentViewAtom, setCurrentViewAtom } from "../../data/store";
+import {
+  activeDollyComponentAtom,
+  currentViewAtom,
+  setCurrentViewAtom,
+} from "../../data/store";
 import React, { useState, useEffect, useCallback, useRef } from "react";
 import { ethers } from "ethers";
 import {
@@ -19,6 +23,8 @@ import Help from "../Help/Help";
 import CoinbaseButtonEth from "../Wallet/CoinbaseButtonEth";
 import CoinbaseButtonPolygon from "../Wallet/CoinbaseButtonPolygon";
 import { fetchBalances } from "../../utils/fetchBalances";
+import { trackLinkClick } from "../../utils/tracking";
+import { User } from "../../data/global";
 type NavProps = {
   rewardStatus: string;
 };
@@ -58,15 +64,17 @@ export default function Nav({ rewardStatus }: NavProps) {
 
   useEffect(() => {
     const updateBalances = async () => {
-        if (user?.address) {
-            const { ethBalance, polygonBalance } = await fetchBalances(user.address);
-            setEthBalance(ethBalance);
-            setPolygonBalance(polygonBalance);
-        }
+      if (user?.address) {
+        const { ethBalance, polygonBalance } = await fetchBalances(
+          user.address
+        );
+        setEthBalance(ethBalance);
+        setPolygonBalance(polygonBalance);
+      }
     };
-    
+
     updateBalances();
-}, [user?.address]);
+  }, [user?.address]);
 
   const ProfileButton: React.FC<ButtonProps & { isMobileMenu?: boolean }> = ({
     iconSrc,
@@ -132,7 +140,7 @@ export default function Nav({ rewardStatus }: NavProps) {
       text: "Create A Dolly",
     },
   ];
-console.log("From Nav:", currentView)
+  console.log("From Nav:", currentView);
   const logout = useCallback(async () => {
     if (waas && waas.logout) {
       await waas.logout();
@@ -153,7 +161,6 @@ console.log("From Nav:", currentView)
     }
   }, [user?.address]);
 
-  
   const bunnyClubMembers = [
     "0xa7758394D8f7fD23b0d9F13E02427B514687394B",
     "0x55Abdc04655d590a48BCd1B996115448b71b7a84",
@@ -192,14 +199,14 @@ console.log("From Nav:", currentView)
 
   // Existing code above...
 
-// Adjusted check for isBunnyClubMember to ensure user is connected and has an address
-const isBunnyClubMember = user?.address
-? bunnyClubMembers
-    .map((address) => address.toLowerCase())
-    .includes(user.address.toLowerCase())
-: false;
+  // Adjusted check for isBunnyClubMember to ensure user is connected and has an address
+  const isBunnyClubMember = user?.address
+    ? bunnyClubMembers
+        .map((address) => address.toLowerCase())
+        .includes(user.address.toLowerCase())
+    : false;
 
-// Existing code below...
+  // Existing code below...
 
   console.log(user?.address, isBunnyClubMember);
 
@@ -209,8 +216,8 @@ const isBunnyClubMember = user?.address
   };
   const handleMobileMenuClick = (view: string) => {
     setIsMobileMenuOpen(false); // Always close the mobile menu
-  
-    if (router.pathname === '/') {
+
+    if (router.pathname === "/") {
       // Directly change the hash when already on the dashboard and switching views
       window.location.hash = view;
     } else {
@@ -218,7 +225,7 @@ const isBunnyClubMember = user?.address
       // This part is handled by the conditional rendering logic below
     }
   };
-  
+
   useEffect(() => {
     function handleClickOutside(event: MouseEvent) {
       if (
@@ -268,7 +275,7 @@ const isBunnyClubMember = user?.address
       </button>
       {dropdownVisible && (
         <div className="absolute flex text-left flex-col font-bold left-0 mt-2 py-2 w-48 bg-white outline-none rounded-md shadow-xl z-20">
-          <Link to="/">
+          <Link to="/" onClick={() => setDropdownVisible(!dropdownVisible)}>
             <p className="indent-2">Dashboard</p>
           </Link>
           <a
@@ -279,10 +286,7 @@ const isBunnyClubMember = user?.address
             <div className="flex flex-row">
               {copySuccess ||
                 (user?.address
-                  ? `${user.address.substring(
-                      0,
-                      6
-                    )}...${user.address.substring(
+                  ? `${user.address.substring(0, 6)}...${user.address.substring(
                       user.address.length - 4
                     )}`
                   : "No Address")}
@@ -296,41 +300,43 @@ const isBunnyClubMember = user?.address
             </div>
           </a>
           <div className="flex px-2 py-2">
-            <img
-              src="/icons/eth.svg"
-              alt="ETH"
-              width="24"
-              height="24"
-            />
+            <img src="/icons/eth.svg" alt="ETH" width="24" height="24" />
             <span className="ml-2 mr-6">Ξ{ethBalance.substring(0, 6)}</span>
             <Help
               {...{
                 title: "What is this?",
                 body: "This is your balance on the Ethereum Network!\n \nYou can use this to create your Dolly and save it in your digital wallet.\n\n Remember, this is simply a one-time fee for saving your Dolly. Afterwards, you can continue to save & update your Dolly for free, forever!\n\n ",
                 className: "",
-                footer: <div className="flex flex-col justify-center m-auto items-center font-bold">Need to purchase more?<br></br><br></br><CoinbaseButtonEth
-                destinationWalletAddress={user?.address || ""}
-              /></div>
-            }}
+                footer: (
+                  <div className="flex flex-col justify-center m-auto items-center font-bold">
+                    Need to purchase more?<br></br>
+                    <br></br>
+                    <CoinbaseButtonEth
+                      destinationWalletAddress={user?.address || ""}
+                    />
+                  </div>
+                ),
+              }}
             />
           </div>
           <div className="flex items-center px-2 py-2">
-            <img
-              src="/icons/weth.svg"
-              alt="WETH"
-              width="24"
-              height="24"
-            />
+            <img src="/icons/weth.svg" alt="WETH" width="24" height="24" />
             <span className="ml-2 mr-6">Ξ{polygonBalance.substring(0, 6)}</span>
             <Help
               {...{
                 title: "What is this?",
                 body: "This is your balance on the Polygon Network!\n \nYou can use this to purchase items inside of the Hunnys Closet Shop tab! All items purchased are saved right inside of your digital wallet and are for use for your Dolly.\n\n\n\n ",
                 className: "",
-                footer: <div className="flex flex-col justify-center m-auto items-center font-bold">Need to purchase more?<br></br><br></br><CoinbaseButtonPolygon
-                destinationWalletAddress={user?.address || ""}
-              /></div>
-            }}
+                footer: (
+                  <div className="flex flex-col justify-center m-auto items-center font-bold">
+                    Need to purchase more?<br></br>
+                    <br></br>
+                    <CoinbaseButtonPolygon
+                      destinationWalletAddress={user?.address || ""}
+                    />
+                  </div>
+                ),
+              }}
             />
           </div>
           <a
@@ -347,22 +353,22 @@ const isBunnyClubMember = user?.address
   return (
     <nav className="top-2 fixed flex-center z-50 w-full box-border">
       <div className="max-w-[1250px] px-2 mx-6 flex justify-between items-center w-full box-border py-[6px] shadow-md bg-[#6510F1] rounded-2xl">
-      <div className="flex justify-between items-center gap-4">
-        <Link to="/" className="" onClick={() => setCurrentView('profile')}>
-          <h1 className=" btn font-title lg:text-3xl large:text-4xl md:text-2xl xs:text-xl tn:text-2xl leading-[1.2rem] flex-center md:leading-normal text-[#fff] ml-[10px]">
-            {/* HUNNYS{" "} */}
-            <div className="xs:hidden sm:inline">HUNNYS </div>
-            <svg
-              className="xs:w-7 xs:h-7 sm:mx-1 mx-0 fill-hunnys-yellow"
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 1440 1440"
-            >
-              <path d="M1347,420.9v95.3c-2.4,18.2-4.6,36.4-7,54.6c-12,83.3-40.2,163.1-82.9,234.2 c-62.4,108.5-145.7,197.9-236.2,280.8C903.4,1190.3,778,1284.4,646,1367.1c-2.9-6.5-5.7-12.3-8.2-18.3 c-58.2-136.5-139.6-260.6-240.1-366c-52.5-55.6-106.5-109.7-158.8-165.5c-42.4-43.4-77.1-94.3-102.6-150.6 c-30.3-72.1-42.1-151.4-34.2-229.9c3.3-56.5,20.5-111,49.9-158.3c42.8-67.2,104.1-104.5,177.9-119.9c88.3-20.2,180.6-6.1,259.9,39.6 c46.3,25.6,85.5,63.5,113.9,109.9c3.9-7.5,7.5-14.5,11-21.5c24.9-51.9,57.8-99.1,97.4-139.5c58.2-59.3,138.6-87.8,218.8-77.3 c80.7,7.1,156.3,45,212.7,106.6c53.3,58.5,87.9,133.3,98.9,213.8C1343.8,400.7,1345.7,410.9,1347,420.9z" />
-            </svg>
-            <div className="xs:hidden sm:inline">CLOSET</div>
-            {/* CLOSET */}
-          </h1>
-        </Link>
+        <div className="flex justify-between items-center gap-4">
+          <Link to="/" className="" onClick={() => setCurrentView("profile")}>
+            <h1 className=" btn font-title lg:text-3xl large:text-4xl md:text-2xl xs:text-xl tn:text-2xl leading-[1.2rem] flex-center md:leading-normal text-[#fff] ml-[10px]">
+              {/* HUNNYS{" "} */}
+              <div className="xs:hidden sm:inline">HUNNYS </div>
+              <svg
+                className="xs:w-7 xs:h-7 sm:mx-1 mx-0 fill-hunnys-yellow"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 1440 1440"
+              >
+                <path d="M1347,420.9v95.3c-2.4,18.2-4.6,36.4-7,54.6c-12,83.3-40.2,163.1-82.9,234.2 c-62.4,108.5-145.7,197.9-236.2,280.8C903.4,1190.3,778,1284.4,646,1367.1c-2.9-6.5-5.7-12.3-8.2-18.3 c-58.2-136.5-139.6-260.6-240.1-366c-52.5-55.6-106.5-109.7-158.8-165.5c-42.4-43.4-77.1-94.3-102.6-150.6 c-30.3-72.1-42.1-151.4-34.2-229.9c3.3-56.5,20.5-111,49.9-158.3c42.8-67.2,104.1-104.5,177.9-119.9c88.3-20.2,180.6-6.1,259.9,39.6 c46.3,25.6,85.5,63.5,113.9,109.9c3.9-7.5,7.5-14.5,11-21.5c24.9-51.9,57.8-99.1,97.4-139.5c58.2-59.3,138.6-87.8,218.8-77.3 c80.7,7.1,156.3,45,212.7,106.6c53.3,58.5,87.9,133.3,98.9,213.8C1343.8,400.7,1345.7,410.9,1347,420.9z" />
+              </svg>
+              <div className="xs:hidden sm:inline">CLOSET</div>
+              {/* CLOSET */}
+            </h1>
+          </Link>
         </div>
         <div className="flex justify-between items-center gap-4">
           {user?.wallet_type === "waas"
@@ -397,7 +403,10 @@ const isBunnyClubMember = user?.address
                   </button>
                   {dropdownVisible && (
                     <div className="absolute flex text-left flex-col font-bold left-0 mt-2 py-2 w-48 bg-white outline-none rounded-md shadow-xl z-20">
-                      <Link to="/">
+                      <Link
+                        to="/"
+                        onClick={() => setDropdownVisible(!dropdownVisible)}
+                      >
                         <p className="indent-2">Dashboard</p>
                       </Link>
                       <a
@@ -431,16 +440,24 @@ const isBunnyClubMember = user?.address
                           width="24"
                           height="24"
                         />
-                        <span className="ml-2 mr-6">Ξ{ethBalance.substring(0, 6)}</span>
+                        <span className="ml-2 mr-6">
+                          Ξ{ethBalance.substring(0, 6)}
+                        </span>
                         <Help
                           {...{
                             title: "What is this?",
                             body: "This is your balance on the Ethereum Network!\n \nYou can use this to create your Dolly and save it in your digital wallet.\n\n Remember, this is simply a one-time fee for saving your Dolly. Afterwards, you can continue to save & update your Dolly for free, forever!\n\n ",
                             className: "",
-                            footer: <div className="flex flex-col justify-center m-auto items-center font-bold">Need to purchase more?<br></br><br></br><CoinbaseButtonEth
-                            destinationWalletAddress={user?.address || ""}
-                          /></div>
-                        }}
+                            footer: (
+                              <div className="flex flex-col justify-center m-auto items-center font-bold">
+                                Need to purchase more?<br></br>
+                                <br></br>
+                                <CoinbaseButtonEth
+                                  destinationWalletAddress={user?.address || ""}
+                                />
+                              </div>
+                            ),
+                          }}
                         />
                       </div>
                       <div className="flex items-center px-2 py-2">
@@ -450,16 +467,24 @@ const isBunnyClubMember = user?.address
                           width="24"
                           height="24"
                         />
-                        <span className="ml-2 mr-6">Ξ{polygonBalance.substring(0, 6)}</span>
+                        <span className="ml-2 mr-6">
+                          Ξ{polygonBalance.substring(0, 6)}
+                        </span>
                         <Help
                           {...{
                             title: "What is this?",
                             body: "This is your balance on the Polygon Network!\n \nYou can use this to purchase items inside of the Hunnys Closet Shop tab! All items purchased are saved right inside of your digital wallet and are for use for your Dolly.\n\n\n\n ",
                             className: "",
-                            footer: <div className="flex flex-col justify-center m-auto items-center font-bold">Need to purchase more?<br></br><br></br><CoinbaseButtonPolygon
-                            destinationWalletAddress={user?.address || ""}
-                          /></div>
-                        }}
+                            footer: (
+                              <div className="flex flex-col justify-center m-auto items-center font-bold">
+                                Need to purchase more?<br></br>
+                                <br></br>
+                                <CoinbaseButtonPolygon
+                                  destinationWalletAddress={user?.address || ""}
+                                />
+                              </div>
+                            ),
+                          }}
                         />
                       </div>
                       {openAccountModal && (
@@ -477,50 +502,73 @@ const isBunnyClubMember = user?.address
               )}
           {connected && (
             <>
-              <Link className="w-4/5 self-center xs:hidden md:inline" to="/dollys">
+              <Link
+                className="w-4/5 self-center xs:hidden md:inline"
+                to="/dollys"
+                trackId="createDolly"
+              >
                 <button
                   onClick={() => {
                     handleCreateDollyClick();
-                    setCurrentView('');
+                    setCurrentView("");
                   }}
                   className="bg-hunnys-yellow py-1 w-full self-center text-hunnys-blue luckiest shadow-md rounded-full md:px-0 text-2xl hover:shadow-lg hover:scale-[1.02] transition-all"
                 >
                   Create A Dolly
                 </button>
               </Link>
-              <a href="https://discord.gg/hunnys" target="_blank" rel="noreferrer">
-          <Image
-            src={"/icons/NavDiscord.svg"}
-            alt={"Hunnys Discord"}
-            width={50}
-            height={50}
-            className="cursor-pointer xs:hidden md:inline"
-          /></a><a href="https://x.com/hunnysnft" target="_blank" rel="noreferrer">
-          <Image
-            src={"/icons/NavX.svg"}
-            alt={"Hunnys X"}
-            width={38}
-            height={38}
-            className="cursor-pointer xs:hidden md:inline"
-          /></a>
-              {connected && isBunnyClubMember ? (
-              <Image
-                src="/icons/BunnyClubNavOn.svg"
-                alt="Bunny Club Member"
-                width={45}
-                height={45}
-                className="xs:hidden md:inline"
-              />
-            ) : (
-              <a href="https://hunnys.io/bunnyclub" target="_blank" rel="noreferrer">
+              <a
+                href="https://discord.gg/hunnys"
+                target="_blank"
+                rel="noreferrer"
+                onClick={() => trackLinkClick("viewDiscord", user!, "https://discord.gg/hunnys")}
+              >
                 <Image
-                  src={"/icons/BunnyClubNavOff.svg"}
-                  alt={"Bunny Club Status"}
-                  width={70}
-                  height={70}
+                  src={"/icons/NavDiscord.svg"}
+                  alt={"Hunnys Discord"}
+                  width={50}
+                  height={50}
                   className="cursor-pointer xs:hidden md:inline"
-                /></a>
-            )}
+                />
+              </a>
+              <a
+                href="https://x.com/hunnysnft"
+                target="_blank"
+                rel="noreferrer"
+                onClick={() => trackLinkClick("viewX", user!, "https://x.com/hunnysnft")}
+              >
+                <Image
+                  src={"/icons/NavX.svg"}
+                  alt={"Hunnys X"}
+                  width={38}
+                  height={38}
+                  className="cursor-pointer xs:hidden md:inline"
+                />
+              </a>
+              {connected && isBunnyClubMember ? (
+                <Image
+                  src="/icons/BunnyClubNavOn.svg"
+                  alt="Bunny Club Member"
+                  width={45}
+                  height={45}
+                  className="xs:hidden md:inline"
+                />
+              ) : (
+                <a
+                  href="https://hunnys.io/bunnyclub"
+                  target="_blank"
+                  rel="noreferrer"
+                  onClick={() => trackLinkClick("viewBunnyClub", user!)}
+                >
+                  <Image
+                    src={"/icons/BunnyClubNavOff.svg"}
+                    alt={"Bunny Club Status"}
+                    width={70}
+                    height={70}
+                    className="cursor-pointer xs:hidden md:inline"
+                  />
+                </a>
+              )}
               <div
                 className="md:hidden"
                 onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
@@ -553,41 +601,55 @@ const isBunnyClubMember = user?.address
                 </svg>
               </div>
               {isMobileMenuOpen && (
-              <div className="absolute top-full left-0 w-full bg-white rounded-b-md shadow-lg text-center">
-                {currentView === 'dollys' ? (
-                  // When on /dollys, show only the Dashboard option
-                  <div className="my-2">
-                    <Link to="/" className="w-full text-4xl text-black luckiest" onClick={() => {setIsMobileMenuOpen(false); setCurrentView('profile');}}>
-                      <p className="indent-2">Back to Dashboard</p>
-                    </Link>
-                  </div>
-                ) : (
-                  // Otherwise, show the full list of options
-                  buttonsData.map((button, index) => (
-                    <div key={index} className="my-6">
-                      {button.view === "dollys" ? (
-                        // Use Link for navigating to /dollys
-                        <Link className="bg-hunnys-yellow py-2 w-full self-center text-hunnys-blue luckiest shadow-md rounded-full px-4 text-2xl hover:shadow-lg hover:scale-[1.02] transition-all" to="/dollys"
-                        onClick={() => {setIsMobileMenuOpen(false); 
-                          setCurrentView('dollys');}}>
-                          {button.text}
-                        </Link>
-                      ) : (
-                        // Directly handle hash change without using Link when already on the dashboard
-                        <button className="w-full text-4xl text-black luckiest" onClick={() => handleMobileMenuClick(button.view)}>
-                          {button.text}
-                        </button>
-                      )}
+                <div className="absolute top-full left-0 w-full bg-white rounded-b-md shadow-lg text-center">
+                  {currentView === "dollys" ? (
+                    // When on /dollys, show only the Dashboard option
+                    <div className="my-2">
+                      <Link
+                        to="/"
+                        className="w-full text-4xl text-black luckiest"
+                        onClick={() => {
+                          setIsMobileMenuOpen(false);
+                          setCurrentView("profile");
+                        }}
+                      >
+                        <p className="indent-2">Back to Dashboard</p>
+                      </Link>
                     </div>
+                  ) : (
+                    // Otherwise, show the full list of options
+                    buttonsData.map((button, index) => (
+                      <div key={index} className="my-6">
+                        {button.view === "dollys" ? (
+                          // Use Link for navigating to /dollys
+                          <Link
+                            className="bg-hunnys-yellow py-2 w-full self-center text-hunnys-blue luckiest shadow-md rounded-full px-4 text-2xl hover:shadow-lg hover:scale-[1.02] transition-all"
+                            to="/dollys"
+                            onClick={() => {
+                              setIsMobileMenuOpen(false);
+                              setCurrentView("dollys");
+                            }}
+                          >
+                            {button.text}
+                          </Link>
+                        ) : (
+                          // Directly handle hash change without using Link when already on the dashboard
+                          <button
+                            className="w-full text-4xl text-black luckiest"
+                            onClick={() => handleMobileMenuClick(button.view)}
+                          >
+                            {button.text}
+                          </button>
+                        )}
+                      </div>
                     ))
                   )}
                 </div>
               )}
-
-        </>
-      )}
-    </div>
-  </div>
-</nav>
-);
+            </>
+          )}
+        </div>
+      </div>
+    </nav>
+  );
 }

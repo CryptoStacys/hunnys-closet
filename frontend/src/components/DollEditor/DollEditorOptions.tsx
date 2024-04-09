@@ -23,7 +23,9 @@ export default function DollEditorOptions(props: {
 }) {
   const [user, setUser] = useAtom(userAtom);
   const [modal, modalSet] = useAtom(modalAtom);
-  const [showSaveModalChecked, setShowSaveModalChecked] = useState(user!.hideSaveChangesModal);
+  const [showSaveModalChecked, setShowSaveModalChecked] = useState(
+    user!.hideSaveChangesModal
+  );
   const [shouldWiggle, setShouldWiggle] = useState(true);
 
   function getColorsAvailable() {
@@ -37,7 +39,9 @@ export default function DollEditorOptions(props: {
     let result: any;
     let rolledPercent = randomNumber(0, 100);
     if (traits.length > 1 && rolledPercent <= selectPercent) {
-      let filteredTraits = traits.filter((trait: Trait) => trait.name !== "Empty");
+      let filteredTraits = traits.filter(
+        (trait: Trait) => trait.name !== "Empty"
+      );
       result = filteredTraits[randomNumber(0, filteredTraits.length - 1)];
     } else {
       result = traits.find((ele: Trait) => {
@@ -48,52 +52,57 @@ export default function DollEditorOptions(props: {
     return result;
   }
 
-  
-
   // Function to generate a set of harmonious colors
-function generateHarmoniousColors() {
-  const ownedColors = getColorsAvailable();
-  let harmoniousColors = [];
+  function generateHarmoniousColors() {
+    const ownedColors = getColorsAvailable();
+    let harmoniousColors = [];
 
-  for (let i = 0; i < 5; i++) {
-    // Always select a random color from the owned colors list
-    harmoniousColors.push(ownedColors[randomNumber(0, ownedColors.length - 1)]);
+    for (let i = 0; i < 5; i++) {
+      // Always select a random color from the owned colors list
+      harmoniousColors.push(
+        ownedColors[randomNumber(0, ownedColors.length - 1)]
+      );
+    }
+
+    return harmoniousColors;
   }
 
-  return harmoniousColors;
-}
+  function applyColorHarmonization(dollyId: string) {
+    console.log("Starting applyColorHarmonization for Dolly ID: ", dollyId);
 
-function applyColorHarmonization(dollyId: string) {
-  console.log("Starting applyColorHarmonization for Dolly ID: ", dollyId);
-
-  if (!user) {
-      console.error("User object is null. Cannot proceed with color harmonization.");
+    if (!user) {
+      console.error(
+        "User object is null. Cannot proceed with color harmonization."
+      );
       return;
-  }
+    }
 
-  let harmoniousColors = generateHarmoniousColors();
-  console.log("Generated Harmonious Colors: ", harmoniousColors);
+    let harmoniousColors = generateHarmoniousColors();
+    console.log("Generated Harmonious Colors: ", harmoniousColors);
 
-  // Assuming that props.currentTraits always reflect the current state of traits
-  let currentTraits = props.currentTraits || [];
+    // Assuming that props.currentTraits always reflect the current state of traits
+    let currentTraits = props.currentTraits || [];
 
-  const updatedAttributes = currentTraits.map(trait => {
+    const updatedAttributes = currentTraits.map((trait) => {
       // Check if trait is not empty and has colorsApplied array
-      if (trait.name !== "Empty" && Array.isArray(trait.colorsApplied) && trait.colorsApplied.length > 0) {
-          const updatedColorsApplied = trait.colorsApplied.map((color, index) => 
-              harmoniousColors[index % harmoniousColors.length]);
-          return { ...trait, colorsApplied: updatedColorsApplied };
+      if (
+        trait.name !== "Empty" &&
+        Array.isArray(trait.colorsApplied) &&
+        trait.colorsApplied.length > 0
+      ) {
+        const updatedColorsApplied = trait.colorsApplied.map(
+          (color, index) => harmoniousColors[index % harmoniousColors.length]
+        );
+        return { ...trait, colorsApplied: updatedColorsApplied };
       }
       return trait;
-  });
+    });
 
-  //@ts-ignore
-  props.onAttributesUpdated(updatedAttributes);
+    //@ts-ignore
+    props.onAttributesUpdated(updatedAttributes);
 
-  console.log("Finished applyColorHarmonization for Dolly ID: ", dollyId);
-}
-
-
+    console.log("Finished applyColorHarmonization for Dolly ID: ", dollyId);
+  }
 
   function randomTrait(traits: Trait[]) {
     // do include empty traits
@@ -124,13 +133,15 @@ function applyColorHarmonization(dollyId: string) {
 
       // If the color isn't already saved, just randomize from the owned color list
       if (storedColor === null) {
-        trait.colorsApplied[i] = ownedColors[randomNumber(0, ownedColors.length - 1)];
+        trait.colorsApplied[i] =
+          ownedColors[randomNumber(0, ownedColors.length - 1)];
       } else {
         // If there is a color saved, check if it's part of the owned color list
         if (ownedColors.includes(storedColor)) {
           trait.colorsApplied[i] = storedColor;
         } else {
-          trait.colorsApplied[i] = ownedColors[randomNumber(0, ownedColors.length - 1)];
+          trait.colorsApplied[i] =
+            ownedColors[randomNumber(0, ownedColors.length - 1)];
         }
       }
     }
@@ -155,13 +166,17 @@ function applyColorHarmonization(dollyId: string) {
     // pick one trait per attribute type
     const newToken = attributes.map((attribute) => {
       // Filter only selected attribute
-      let filteredTraits = traits.filter((trait: Trait) => trait.attribute === attribute);
+      let filteredTraits = traits.filter(
+        (trait: Trait) => trait.attribute === attribute
+      );
 
       // List of attributes that should not get an Empty trait when randomizing because it looks weird
       const noEmpty = ["Mouth", "Skin", "Eyebrows", "Eyes", "Hair Style"];
       if (noEmpty.includes(attribute)) {
         // console.log("attr test filter", attribute);
-        filteredTraits = filteredTraits.filter((trait: Trait) => trait.name !== "Empty");
+        filteredTraits = filteredTraits.filter(
+          (trait: Trait) => trait.name !== "Empty"
+        );
       }
       // if (attributes.includes)
       // console.log("filteredTraits: ", filteredTraits, attribute);
@@ -177,34 +192,35 @@ function applyColorHarmonization(dollyId: string) {
     setUser(user);
   }
 
-  
-
   function unequipAll() {
-    if(!user!.hideSaveChangesModal) {
+    if (!user!.hideSaveChangesModal) {
       modalSet({
         active: true,
         title: "Unequip All",
         body: (
           <>
             <div className="mb-3 px-2">
-              Do you realy want to unequip all Traits? 
-              All traits get set to Empty,
+              Do you realy want to unequip all Traits? All traits get set to
+              Empty,
               <br /> do you still want to proceed?
-              <br /> 
+              <br />
               <label>
                 <input
                   type="checkbox"
                   defaultChecked={showSaveModalChecked}
                   onChange={(e) => {
                     disableSHowModal();
-                }}
+                  }}
                 />
                 Do not show again.
               </label>
-              
             </div>
             <div className="grid grid-cols-2">
-              <SecondaryButton onClick={() => modalSet({ active: false, title: "", body: <></> })}>
+              <SecondaryButton
+                onClick={() =>
+                  modalSet({ active: false, title: "", body: <></> })
+                }
+              >
                 No, take me back
               </SecondaryButton>
               <ApplyButton
@@ -240,9 +256,7 @@ function applyColorHarmonization(dollyId: string) {
           })
       );
       props.tokenSet(newToken);
-      
     }
-    
   }
 
   // To stop the wiggle effect after 3 seconds
@@ -254,25 +268,50 @@ function applyColorHarmonization(dollyId: string) {
 
   return (
     <div className="bg-white rounded-lg mb-3 shadow-lg py-2 px-3 flex justify-between">
-        <div className="grid grid-cols-1 sm:grid-cols-2">
-            {/* Unequip All Button */}
-            <SecondaryButton onClick={unequipAll} title="Unequip All. Removes all applied traits.">
-                <Icon type="unequip" className="w-[20px] h-[20px] fill-[#888] pt-[1px] pb-[4px] ml-[-5px] mr-[5px] xs:m-auto" />
-                <span className="m-auto xs:hidden big:block">Unequip all</span>
-            </SecondaryButton>
-            {/* Randomize All Button */}
-            <SecondaryButton onClick={randomizeAll} title="Randomize All. Randomizes all possible traits.">
-                <Icon type="dice" className="w-[26px] h-[26px] fill-[#888] pt-[2px] pb-[3px] ml-[-5px] mr-[3px] xs:m-auto" />
-                <span className="m-auto xs:hidden big:block">Randomize all</span>
-            </SecondaryButton>
-        </div>
-        <div className="flex-center">
-            <div className={`flex-center gap-1`}>
-                {/* Color Harmonize Button */}
-                <SecondaryButton onClick={() => props.selectedDollyId !== null ? applyColorHarmonization(props.selectedDollyId.toString()) : console.error("Invalid ID for Color Harmonize")} title="Changes colors only. Not traits.">
-                    <Icon type="rainbow" className={`w-[20px] h-[20px] ${shouldWiggle ? "wiggle" : ""} ml-[-5px] mr-[5px]`} />
-                    <span className="">Color Harmonize</span>
-                </SecondaryButton>
+      <div className="grid grid-cols-1 sm:grid-cols-2">
+        {/* Unequip All Button */}
+        <SecondaryButton
+          onClick={unequipAll}
+          title="Unequip All. Removes all applied traits."
+        >
+          <Icon
+            type="unequip"
+            className="w-[20px] h-[20px] fill-[#888] pt-[1px] pb-[4px] ml-[-5px] mr-[5px] xs:m-auto"
+          />
+          <span className="m-auto xs:hidden big:block">Unequip all</span>
+        </SecondaryButton>
+        {/* Randomize All Button */}
+        <SecondaryButton
+          onClick={randomizeAll}
+          title="Randomize All. Randomizes all possible traits."
+        >
+          <Icon
+            type="dice"
+            className="w-[26px] h-[26px] fill-[#888] pt-[2px] pb-[3px] ml-[-5px] mr-[3px] xs:m-auto"
+          />
+          <span className="m-auto xs:hidden big:block">Randomize all</span>
+        </SecondaryButton>
+      </div>
+      <div className="flex-center">
+        <div className={`flex-center gap-1`}>
+          {/* Color Harmonize Button */}
+          <SecondaryButton
+            onClick={() =>
+              props.selectedDollyId !== null
+                ? applyColorHarmonization(props.selectedDollyId.toString())
+                : console.error("Invalid ID for Color Harmonize")
+            }
+            trackId="colorHarmonize"
+            title="Changes colors only. Not traits."
+          >
+            <Icon
+              type="rainbow"
+              className={`w-[20px] h-[20px] ${
+                shouldWiggle ? "wiggle" : ""
+              } ml-[-5px] mr-[5px]`}
+            />
+            <span className="">Color Harmonize</span>
+          </SecondaryButton>
           {["list", "card", "grid"].map((x, index) => (
             <motion.button
               initial={{ scale: 1.0 }}
@@ -284,7 +323,10 @@ function applyColorHarmonization(dollyId: string) {
                 background: props.view === x ? "#6510f1" : "#ddd",
               }}
             >
-              <Icon type={x} className="h-8 w-8 fill-transparent stroke-[#fff]" />
+              <Icon
+                type={x}
+                className="h-8 w-8 fill-transparent stroke-[#fff]"
+              />
             </motion.button>
           ))}
         </div>

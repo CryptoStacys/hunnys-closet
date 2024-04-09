@@ -1,13 +1,16 @@
 import React, { useEffect, useState } from "react";
 import Image from "next/image";
 import { useAtom } from "jotai";
-import { userAtom } from "../../data/store"; // Adjust the import path as necessary
+import { userAtom, currentViewAtom } from "../../data/store"; // Adjust the import path as necessary
 import Card from "../Card/Card";
+import PromoCard from "../Card/PromoCard";
 import ProfileCard from "../Card/ProfileCard";
 import CupcakePoints from "../Card/CupcakePoints";
+import PromoBlocks from "../Card/PromoBlocks";
 import Event from "../Card/Events";
 import { customImageLoader } from "../../utils/imageLoader";
 import Link from "../Link/Link";
+import { useRouter } from "next/router";
 import { ApiResponse, UUID, User, FreeClaimType } from "../../data/global";
 import AWS from "aws-sdk";
 import SecondaryButton from "../DollEditor/SecondaryButton";
@@ -17,6 +20,15 @@ import { ethers } from "ethers";
 import FreeClaim from "../../components/Mint/FreeClaim";
 import Tooltip from "../Tooltip/Tooltip";
 import ProgressBar from "../Achievements/ProgressBar";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Grid, Lazy, Navigation, Pagination } from "swiper/modules";
+// import Swiper and modules styles
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
+// Import Swiper core and required modules
+import SwiperCore from "swiper";
+SwiperCore.use([Navigation]);
 import { Address } from "@coinbase/waas-sdk-web";
 import axios from "axios";
 import {
@@ -24,17 +36,32 @@ import {
   calculatePointsToNextLevel,
 } from "../../utils/levelUtils";
 import { useEVMAddress, useWalletContext } from "@coinbase/waas-sdk-web-react";
+import { trackLinkClick } from "../../utils/tracking";
 
 const ProfileView = () => {
   const [user, setUser] = useAtom(userAtom);
   const [selectedFile, setSelectedFile] = useState<File | null>(null);
   const [imagePreviewUrl, setImagePreviewUrl] = useState<string | null>(null);
-  const [initialUserData, setInitialUserData] = useState<typeof user | null>(null);
+  const [initialUserData, setInitialUserData] = useState<typeof user | null>(
+    null
+  );
   const [isEditingName, setIsEditingName] = useState(false);
   const [saveSuccess, setSaveSuccess] = useState(false);
-  
+  const [currentView, setCurrentView] = useAtom(currentViewAtom);
+
+  const router = useRouter();
   const banner = "/assets/img/ProfileBanner.png";
   const GMMug = "/assets/img/GMMug.png";
+  const degenSale = "/icons/degenSale.png";
+  const newAchievements = "/icons/newAchievements.png";
+  const threeMonthBC = "/icons/3MonthBC.png";
+  const sixMonthBC = "/icons/6MonthBC.png";
+  const twelveMonthBC = "/icons/12MonthBC.png";
+  const CD1 = "/icons/Achievements/Achievements/36/1.png";
+  const CD2 = "/icons/Achievements/Achievements/37/1.png";
+  const CD3 = "/icons/Achievements/Achievements/38/1.png";
+  const CD4 = "/icons/Achievements/Achievements/39/1.png";
+  const degenPack = "/assets/img/degenPack.gif";
   const DollyPreviewProfilePage = "/assets/img/DollyPreviewProfilePage.gif";
   const [saveError, setSaveError] = useState("");
   const [showTooltip, setShowTooltip] = useState(false);
@@ -71,6 +98,15 @@ const ProfileView = () => {
     calculatePointsToNextLevel(currentLevel, user?.cupcake_points || 0);
   const [newsData, setNewsData] = useState<Array<any>>([]);
   const [recentNews, setRecentNews] = useState([]);
+  const navigationClick = (view: string) => {
+    if (router.pathname === "/") {
+      // Directly change the hash when already on the dashboard and switching views
+      window.location.hash = view;
+    } else {
+      // Use the Link component for navigating between / and /dollys or from /dollys to a dashboard view
+      // This part is handled by the conditional rendering logic below
+    }
+  };
   useEffect(() => {
     setInitialUserData(user);
   }, []);
@@ -111,18 +147,21 @@ const ProfileView = () => {
 
   useEffect(() => {
     const freshCupcakeTitle = "Fresh Cupcake"; // Define the default title
-    let titles = Object.values(user?.achievements || {}).reduce((acc: string[], achievement: any) => {
-      if (achievement.title && !acc.includes(achievement.title)) {
-        acc.push(achievement.title);
-      }
-      return acc;
-    }, []);
-  
+    let titles = Object.values(user?.achievements || {}).reduce(
+      (acc: string[], achievement: any) => {
+        if (achievement.title && !acc.includes(achievement.title)) {
+          acc.push(achievement.title);
+        }
+        return acc;
+      },
+      []
+    );
+
     // Ensure "Fresh Cupcake" is always an option and avoid duplicates
     if (!titles.includes(freshCupcakeTitle)) {
       titles = [freshCupcakeTitle, ...titles];
     }
-  
+
     setAvailableTitles(titles);
   }, [user?.achievements]);
 
@@ -284,7 +323,7 @@ const ProfileView = () => {
   const handleSaveProfile = async () => {
     console.log("Saving profile...");
     let newProfileImageUrl: string | null = null;
-  
+
     if (selectedFile) {
       newProfileImageUrl = await handleImageUpload(); // Ensure this is the only call
       if (!newProfileImageUrl) {
@@ -348,58 +387,62 @@ const ProfileView = () => {
   return (
     <div>
       <ProfileCard
-      headerTitle="Profile"
-      leftBlockContent={
-        <div className="profile-image avatar grid grid-cols-3 card-column w-[102%]">
-          <Image
-            onClick={() => setIsEditingName(true)}
-            loader={customImageLoader}
-            src={imagePreviewUrl || user?.profile_image_url || "/assets/img/choosePFP.png"}
-            alt="Profile Avatar"
-            width={300}
-            height={300}
-            className="rounded-xl self-center cursor-pointer hover:opacity-60 transition ease-in-out delay-75 w-[200px] h-[200px] lg:w-[300px] lg:h-[300px] object-cover"
-          />
+        headerTitle="Profile"
+        leftBlockContent={
+          <div className="profile-image avatar grid grid-cols-3 card-column w-[102%]">
+            <Image
+              onClick={() => setIsEditingName(true)}
+              loader={customImageLoader}
+              src={
+                imagePreviewUrl ||
+                user?.profile_image_url ||
+                "/assets/img/choosePFP.png"
+              }
+              alt="Profile Avatar"
+              width={300}
+              height={300}
+              className="rounded-xl self-center cursor-pointer hover:opacity-60 transition ease-in-out delay-75 w-[200px] h-[200px] lg:w-[300px] lg:h-[300px] object-cover"
+            />
 
-          {/* Success message */}
-          {saveSuccess && (
-            <div className="mt-4 text-center">
-              Profile updated successfully!
-            </div>
-          )}
-          {saveError && <div className="error mt-4">{saveError}</div>}
-          {!isEditingName ? (
-            <>
-              <Image
-                onClick={() => setIsEditingName(true)}
-                loader={customImageLoader}
-                src="/assets/img/editProfile.png"
-                alt="Edit Profile"
-                width={151}
-                height={35}
-                className="rounded-xl cursor-pointer mt-4 self-center hover:opacity-60 transition ease-in-out delay-75"
-              />
-            </>
-          ) : (
-            <>
-              <input
-                type="file"
-                id="profile-image-upload"
-                onChange={(e) => {
-                  const file = e.target.files?.[0] || null;
-                  setSelectedFile(file);
-                  if (file) {
-                    setImagePreviewUrl(URL.createObjectURL(file));
-                  }
-                }}
-                style={{ display: "none" }}
-              />
-              <label
-                htmlFor="profile-image-upload"
-                className="bg-[#AA7AFA] hover:bg-[#7b2df8] transition ease-in-out delay-75 cursor-pointer text-white text-center font-bold py-2 px-4 rounded my-4"
-              >
-                Choose Profile Image
-              </label>
+            {/* Success message */}
+            {saveSuccess && (
+              <div className="mt-4 text-center">
+                Profile updated successfully!
+              </div>
+            )}
+            {saveError && <div className="error mt-4">{saveError}</div>}
+            {!isEditingName ? (
+              <>
+                <Image
+                  onClick={() => setIsEditingName(true)}
+                  loader={customImageLoader}
+                  src="/assets/img/editProfile.png"
+                  alt="Edit Profile"
+                  width={151}
+                  height={35}
+                  className="rounded-xl cursor-pointer mt-4 self-center hover:opacity-60 transition ease-in-out delay-75"
+                />
+              </>
+            ) : (
+              <>
+                <input
+                  type="file"
+                  id="profile-image-upload"
+                  onChange={(e) => {
+                    const file = e.target.files?.[0] || null;
+                    setSelectedFile(file);
+                    if (file) {
+                      setImagePreviewUrl(URL.createObjectURL(file));
+                    }
+                  }}
+                  style={{ display: "none" }}
+                />
+                <label
+                  htmlFor="profile-image-upload"
+                  className="bg-[#AA7AFA] hover:bg-[#7b2df8] transition ease-in-out delay-75 cursor-pointer text-white text-center font-bold py-2 px-4 rounded my-4"
+                >
+                  Choose Profile Image
+                </label>
                 <h1 className="font-bold">Name:</h1>
                 <input
                   type="text"
@@ -510,12 +553,14 @@ const ProfileView = () => {
                 </button>
 
                 <div className="mt-8 m-auto">
-                <SecondaryButton onClick={() => {
-                  handleCancel(); // Assuming handleCancel is implemented to reset form and image preview
-                  setIsEditingName(false);
-                }}>
-                  Cancel
-                </SecondaryButton>
+                  <SecondaryButton
+                    onClick={() => {
+                      handleCancel(); // Assuming handleCancel is implemented to reset form and image preview
+                      setIsEditingName(false);
+                    }}
+                  >
+                    Cancel
+                  </SecondaryButton>
                 </div>
               </>
             )}
@@ -631,66 +676,288 @@ const ProfileView = () => {
       ) : (
         <div></div>
       )}
-      {claimedFreeMug ? (
-        
-        <div></div>
-        
-      ) : (
-      <Card
-        headerTitle="Welcome to Hunnys Closet!"
+      <PromoCard
+        headerTitle="Join the Bunny Club - now with new payment options!"
         leftBlockContent={
-          <div className="md:h-[200px]">
-            <CupcakePoints points="10" text="Cupcake Points" className={""} />
-          </div>
+          <Image
+          className="rounded-xl xs:self-center md:self-start"
+          src={threeMonthBC}
+          alt={"Bunny Club"}
+          width={200}
+          height={200}
+        ></Image>
         }
         middleBlockContent={
-          <div>
-            <h1 className="text-2xl lg:text-[32px] text-left luckiest">
-              Claim your free GM Mug!
-            </h1>
-            <p className="font-poppins text-base lg:text-lg my-2 paragraphText">
-              Score your first free claim along with 10 Cupcake Points towards
-              your Adventure Progress!
-            </p>
-            {claimedFreeMug ? (
-              <button
-                disabled
-                className="w-full self-center bg-[#2BC97E] text-black luckiest text-xl md:text-2xl opacity-40 font-bold py-2 px-4 rounded-full"
-              >
-                Completed
-              </button>
-            ) : (
-              <FreeClaim
-                tokenId="0"
-                onMintSuccess={() => console.log("NFT claimed successfully!")}
-                updateTraits={(userAddress) =>
-                  console.log(`Traits updated for ${userAddress}`)
-                }
-                userAddress={user?.wallet}
-                className="bg-hunnys-yellow py-2 w-full self-center text-hunnys-blue luckiest shadow-md rounded-full px-4 text-2xl hover:shadow-lg hover:scale-[1.02] transition-all"
-                buttonText="Claim My Free Mug!"
-              />
-            )}
-          </div>
+          <Image
+          className="rounded-xl xs:self-center md:self-center"
+          src={sixMonthBC}
+          alt={"Bunny Club"}
+          width={200}
+          height={200}
+        ></Image>
         } // Assuming you might fill this in later
         rightBlockContent={
-          <div className="flex flex-col w-full lg:w-auto mt-4 lg:mt-0">
+          <Image
+          className="rounded-xl xs:self-center md:self-end"
+          src={twelveMonthBC}
+          alt={"Bunny Club"}
+          width={200}
+          height={200}
+        ></Image>
+        }
+        footer={
+          <div>
+            <h1 className="luckiest text-center text-2xl mx-8">
+              The most fun way to expand your wardrobe with The Hunnys Closet:
+              Digital Dressup Dolls!
+            </h1>
+            <br></br>
+            <div className="flex justify-start ml-24">
+              <p className="font-poppins text-left xs:text-lg md:text-xl">
+                <ul className="list-disc">
+                  <li>Recieve all Closet Shop drops monthly</li>
+                  <li>Access to members-only drops</li>
+                  <li>Bunny Club Discord Role</li>
+                  <li>Monthly Bunny Club Seasons NFT & Item Set</li>
+                  <li>Bunny Club Marina Seasons NFT & Item Set</li>
+                  <li>Eligible for spontaneous raffles & giveaways</li>
+                  <li>20% off all Hunnys Closet Shop Items</li>
+                </ul>
+              </p>
+            </div>
+            <br></br>
+            <br></br>
+            <br></br>
+            <Link
+              className="w-4/5 self-center"
+              to="/#shop"
+              trackId="bunnyClubJoin"
+              onClick={() => {
+                navigationClick;
+                setCurrentView("shop");
+              }}
+            >
+              <div className="text-center">
+                <button className="bg-hunnys-yellow py-2 mb-8 w-4/5 self-center justify-center text-hunnys-blue luckiest shadow-md rounded-full px-4 text-2xl hover:shadow-lg hover:scale-[1.02] transition-all">
+                  Join the Club
+                </button>
+              </div>
+            </Link>
+            <p className="font-poppins text-center xs:text-lg md:text-xl">
+              Memberships above paid in ETH. Want to pay with PayPal / Credit
+              Card? <br></br>
+              <br></br>
+              <a
+                className="underline"
+                target="_blank"
+                href="https://hunnys.io/bunnyclub"
+                onClick={() =>
+                  trackLinkClick(
+                    "bunnyClubFiat",
+                    user!,
+                    "https://hunnys.io/bunnyclub"
+                  )
+                }
+              >
+                Visit our home page for more payment options!
+              </a>
+            </p>
+          </div>
+        }
+      />
+      <PromoCard
+        headerTitle="Shop the 17 New Degen Items!"
+        leftBlockContent={
+          <div className="md:h-[200px] self-center">
             <Image
               className="rounded-xl"
-              src={GMMug}
-              alt={"GM Mug"}
+              src={degenPack}
+              alt={"Degen Pack"}
               width={200}
               height={200}
             />
           </div>
         }
-        footer={""}
+        middleBlockContent={
+          <>
+            <h1 className="text-2xl lg:text-[32px] text-left luckiest">
+              Go full Degen with{" "}
+              <span className="text-hunnys-blue">17 new items</span>!
+            </h1>
+            <p className="font-poppins text-base lg:text-lg my-2 paragraphText">
+              Pepe, Doge, and even your very own Lambungini!
+            </p>
+            <br></br>
+            <br></br>
+            <br></br>
+            <Link
+              className="w-4/5 self-center"
+              to="/#shop"
+              trackId="degenSet"
+              onClick={() => {
+                navigationClick;
+                setCurrentView("shop");
+              }}
+            >
+              <div className="text-center">
+                <button className="bg-hunnys-yellow py-2 w-full self-center justify-center text-hunnys-blue luckiest shadow-md rounded-full px-4 text-2xl hover:shadow-lg hover:scale-[1.02] transition-all">
+                  Buy Now
+                </button>
+              </div>
+            </Link>
+          </>
+        } // Assuming you might fill this in later
+        rightBlockContent={
+          <div className="md:h-[200px] self-center">
+            <Image
+              className="rounded-xl"
+              src={degenSale}
+              alt={"Degen Sale"}
+              width={200}
+              height={200}
+            />
+          </div>
+        }
+        footer={
+          <div>
+            <div className="flex justify-start ml-24"></div>
+          </div>
+        }
       />
+      <PromoCard
+        headerTitle="New Crypto Defender Achievements: Claim your Freebies!"
+        leftBlockContent={
+          <div className="md:h-[220px] self-center profile-swiper">
+            <Swiper
+              pagination={{ clickable: true }}
+              spaceBetween={10}
+              slidesPerView={1} // Default to 3 slides per view for smaller screens
+              grid={{
+                rows: 1,
+                fill: "row",
+              }}
+              modules={[Pagination, Grid]}
+              className="mySwiper w-full max-w-[220px] h-[220px] rounded-[30px]"
+            >
+              <SwiperSlide>
+                <img src={CD1}></img>
+              </SwiperSlide>
+              <SwiperSlide>
+                <img src={CD2}></img>
+              </SwiperSlide>
+              <SwiperSlide>
+                <img src={CD3}></img>
+              </SwiperSlide>
+              <SwiperSlide>
+                <img src={CD4}></img>
+              </SwiperSlide>
+            </Swiper>
+          </div>
+        }
+        middleBlockContent={
+          <><h1 className="text-2xl lg:text-[32px] text-left luckiest">
+            Look for the four{" "}
+            <span className="text-hunnys-blue">Crypto Defender</span>{" "}
+            Achievements to complete the set!
+          </h1>
+          <p className="font-poppins text-base lg:text-lg my-2 paragraphText">
+              Available for a very limited time. Will you defend Crypto with us?
+            </p><Link
+            className="w-4/5 self-center"
+            to="/#achievements"
+            trackId="cryptoDefenderAchievements"
+            onClick={() => {
+              navigationClick;
+              setCurrentView("achievements");
+            } }
+          >
+              <div className="text-center">
+                <button className="bg-hunnys-yellow py-2 w-full self-center justify-center text-hunnys-blue luckiest shadow-md rounded-full px-4 text-2xl hover:shadow-lg hover:scale-[1.02] transition-all">
+                  View Now
+                </button>
+              </div>
+            </Link></>
+        } // Assuming you might fill this in later
+        rightBlockContent={
+          <div className="md:h-[220px] self-center">
+            <Image
+              className="rounded-xl"
+              src={newAchievements}
+              alt={"New Achievements"}
+              width={220}
+              height={220}
+            />
+          </div>
+        }
+        footer={
+          <div>
+            
+          </div>
+        }
+      />
+
+      {claimedFreeMug ? (
+        <div></div>
+      ) : (
+        <Card
+          headerTitle="Welcome to Hunnys Closet!"
+          leftBlockContent={
+            <div className="md:h-[200px]">
+              <CupcakePoints points="10" text="Cupcake Points" className={""} />
+            </div>
+          }
+          middleBlockContent={
+            <div>
+              <h1 className="text-2xl lg:text-[32px] text-left luckiest">
+                Claim your free GM Mug!
+              </h1>
+              <p className="font-poppins text-base lg:text-lg my-2 paragraphText">
+                Score your first free claim along with 10 Cupcake Points towards
+                your Adventure Progress!
+              </p>
+              {claimedFreeMug ? (
+                <button
+                  disabled
+                  className="w-full self-center bg-[#2BC97E] text-black luckiest text-xl md:text-2xl opacity-40 font-bold py-2 px-4 rounded-full"
+                >
+                  Completed
+                </button>
+              ) : (
+                <FreeClaim
+                  tokenId="0"
+                  onMintSuccess={() => console.log("NFT claimed successfully!")}
+                  updateTraits={(userAddress) =>
+                    console.log(`Traits updated for ${userAddress}`)
+                  }
+                  userAddress={user?.wallet}
+                  className="bg-hunnys-yellow py-2 w-full self-center text-hunnys-blue luckiest shadow-md rounded-full px-4 text-2xl hover:shadow-lg hover:scale-[1.02] transition-all"
+                  buttonText="Claim My Free Mug!"
+                />
+              )}
+            </div>
+          } // Assuming you might fill this in later
+          rightBlockContent={
+            <div className="flex flex-col w-full lg:w-auto mt-4 lg:mt-0">
+              <Image
+                className="rounded-xl"
+                src={GMMug}
+                alt={"GM Mug"}
+                width={200}
+                height={200}
+              />
+            </div>
+          }
+          footer={""}
+        />
       )}
-      
-      <div className="mt-32"><h1 className="luckiest text-center text-[64px] leading-normal mx-8">RECENT NEWS</h1></div>
+
+      <div className="mt-32">
+        <h1 className="luckiest text-center text-[64px] leading-normal mx-8">
+          RECENT NEWS
+        </h1>
+      </div>
       <div className="px-8 mx-auto max-w-7xl md:mt-[-40px]">
-      {recentNews.map((item, index) => (
+        {recentNews.map((item, index) => (
           <div key={index}>
             <div className="date text-center leading-8 xs:ml-4 tn:ml-16 xs:text-xl sm:text-3xl">
               {item[4]}
@@ -710,7 +977,7 @@ const ProfileView = () => {
             />
           </div>
         ))}
-    </div>
+      </div>
     </div>
   );
 };

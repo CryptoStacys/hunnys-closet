@@ -1,0 +1,20 @@
+{
+  "name": "Bunny Club - 3 Month Subscription",
+  "description": "Welcome to Bunny Club! The most fun way to expand your wardrobe with the Hunnys Closet.\n\nThis membership begins upon minting.\n\n\n\nOwning this unlocks the following benefits for you within the Hunnys Community:\n\nRecieve all Closet Shop drops monthly\n\nAccess to members-only drops\n\nBunny Club Discord Role\n\nMonthly Bunny Club Seasons NFT & Item Set\n\nBunny Club Marina Seasons NFT & Item Set\n\nEligible for spontaneous raffles & giveaways\n\n20% off all Hunnys Closet Shop Items\n\nAnd more!\n\n\n\nAny subsequent items received as a result of holding this token during its active membership can be used in the [Hunnys Closet](https://closet.hunnys.io).\n\n\n\n",
+  "image": "https://hunnysclosetshop.s3.us-east-2.amazonaws.com/images/goodies/111.png",
+  "external_url": "",
+  "background_color": "",
+  "attributes": [
+    {
+      "trait_type": "Type",
+      "value": "Single Item"
+    },
+    {
+      "trait_type": "Special",
+      "value": "Bunny Club"
+    }
+  ],
+  "supply": "500",
+  "customImage": "",
+  "customAnimationUrl": ""
+}

@@ -1,31 +1,40 @@
 //src/components/Link/Link.tsx
 
 import { useAtom } from "jotai";
-import { modalAtom, savedAtom } from "../../data/store";
+import { userAtom, modalAtom, savedAtom } from "../../data/store";
 import { useRouter } from 'next/router';
 import SecondaryButton from "../DollEditor/SecondaryButton";
 import ApplyButton from "../DollEditor/ApplyButton";
+import { trackLinkClick } from '../../utils/tracking';
+import { User } from "../../data/global";
 
 interface LinkProps {
   className?: string;
-  to: string;
+  to?: string;
   children?: React.ReactNode;
   onClick?: () => void; // Add an optional onClick prop
+  trackId?: string;
 }
 
-export default function Link({ className, to, children, onClick }: LinkProps) {
+export default function Link({ className, to, children, onClick, trackId}: LinkProps) {
+  const [user] = useAtom(userAtom);
   const [modal, modalSet] = useAtom(modalAtom);
   const [saved, savedSet] = useAtom(savedAtom);
   const router = useRouter();
 
   // prevent full page reload
-  const handleClick = (event: React.MouseEvent<HTMLAnchorElement, MouseEvent>) => {
+  const handleClick = async (event: React.MouseEvent<HTMLAnchorElement, MouseEvent>) => {
     // if ctrl or meta key are held on click, allow default behavior of opening link in new tab
     if (event.metaKey || event.ctrlKey) {
       return;
     }
 
     event.preventDefault(); // Prevent full page reload
+
+    if (trackId && user) {
+      await trackLinkClick(trackId, user, to); // Note: `to` is now passed for URL tracking
+    }
+
 
     if (onClick) {
       onClick(); // Call the passed onClick handler if any
@@ -35,7 +44,7 @@ export default function Link({ className, to, children, onClick }: LinkProps) {
   };
 
 const changeURL = () => {
-    if (to.startsWith("/#") && router.pathname !== '/') {
+    if (to?.startsWith("/#") && router.pathname !== '/') {
       // If intending to navigate to a hash while on /dollys, adjust to navigate to / with the hash
       const newPath = `/${to}`;
       router.push(newPath);

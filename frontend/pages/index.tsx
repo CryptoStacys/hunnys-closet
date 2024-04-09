@@ -79,6 +79,14 @@ export default function App() {
                 console.error("Error parsing achievements JSON:", error);
               }
           }
+          let parsedLinksClicked = {};
+          if (profileDataResponse.data.linksClicked && typeof profileDataResponse.data.linksClicked === 'string') {
+              try {
+                parsedLinksClicked = JSON.parse(profileDataResponse.data.linksClicked);
+              } catch (error) {
+                console.error("Error parsing achievements JSON:", error);
+              }
+          }
           
           // Combine data and update user atom
           setUser({
@@ -89,6 +97,7 @@ export default function App() {
             address: address,
             achievements: parsedAchievements,
             free_claim: parsedFreeClaims,
+            linksClicked: parsedLinksClicked,
           });
     
           setConnected(true);
