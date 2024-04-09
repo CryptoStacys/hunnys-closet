@@ -406,7 +406,7 @@ import { achievements } from '../../utils/achievements';
     {
       id: '37',
       challenge: 'Crypto Defender ii',
-      description: 'Read about Coinbase Embedded Wallets',
+      description: 'Read about Coinbase Embedded Wallets. Note: you may need to refresh the page upon returning in order to claim this achievement.',
       callToAction: 'https://www.coinbase.com/blog/evolving-wallets-to-bring-a-billion-users-onchain',
       freeClaimTokenId: 106,
       cupcakePoints: 25,
