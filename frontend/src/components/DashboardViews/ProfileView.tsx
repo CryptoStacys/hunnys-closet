@@ -54,9 +54,9 @@ const ProfileView = () => {
   const GMMug = "/assets/img/GMMug.png";
   const degenSale = "/icons/degenSale.png";
   const newAchievements = "/icons/newAchievements.png";
-  const threeMonthBC = "/icons/3MonthBC.png";
-  const sixMonthBC = "/icons/6MonthBC.png";
-  const twelveMonthBC = "/icons/12MonthBC.png";
+  const threeMonthBC = "/icons/3monthBC.png";
+  const sixMonthBC = "/icons/6monthBC.png";
+  const twelveMonthBC = "/icons/12monthBC.png";
   const CD1 = "/icons/Achievements/Achievements/36/1.png";
   const CD2 = "/icons/Achievements/Achievements/37/1.png";
   const CD3 = "/icons/Achievements/Achievements/38/1.png";
