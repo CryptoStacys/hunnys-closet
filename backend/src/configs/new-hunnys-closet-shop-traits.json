@@ -260,7 +260,7 @@
     {
       "name": "Hand",
       "traits": [
-        {"name":"Crypto Defender Shield","colors":5,"rarity":"Common","tags":[],"token_id":106},
+        {"name":"Crypto Defender Shield","colors":5,"rarity":"Common","tags":[],"token_id":108},
         {"name":"Hardware Wallet","colors":3,"rarity":"Common","tags":["skin"],"token_id":110},
         {"name":"WEN Bunny","colors":4,"rarity":"Common","tags":["skin"],"token_id":110},
         {"name":"MetaVixen Tasty Taco","colors":4,"rarity":"Common","tags":["skin"],"token_id":98},
@@ -298,7 +298,7 @@
     {
       "name": "Hat",
       "traits": [
-        {"name":"Crypto Defender Helm","colors":3,"rarity":"Common","tags":["twoParts"],"token_id":107},
+        {"name":"Crypto Defender Helm","colors":3,"rarity":"Common","tags":["twoParts"],"token_id":106},
         {"name":"Cuddle Bunny","colors":3,"rarity":"Common","tags":[],"token_id":109},
         {"name":"MetaVixen Baby Its Cold Outside","colors":3,"rarity":"Common","tags":["twoParts"],"token_id":98},
         {"name":"MetaVixen Polycrown","colors":4,"rarity":"Common","tags":[],"token_id":98},
@@ -335,7 +335,7 @@
     {
       "name": "Outfit",
       "traits": [
-        {"name":"Crypto Defender Armor","colors":3,"rarity":"Common","tags":[],"token_id":108},
+        {"name":"Crypto Defender Armor","colors":3,"rarity":"Common","tags":[],"token_id":107},
         {"name":"Hellooo Cupcakes","colors":4,"rarity":"Common","tags":[],"token_id":109},
         {"name":"Bitcoin","colors":2,"rarity":"Common","tags":[],"token_id":110},
         {"name":"DigiByte Johnny","colors":3,"rarity":"Common","tags":[],"token_id":110},

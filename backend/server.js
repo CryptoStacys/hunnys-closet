@@ -3,6 +3,7 @@ import DollysController from "./src/dollys.js";
 import CheckController from "./src/check.js";
 import TraitController from "./src/traits.js";
 import SignatureService from "./src/signature.js";
+import GetEthPricesService from "./src/getEthPrices.js";
 import express from "express";
 import cors from "cors";
 import axios from "axios";
@@ -85,6 +86,8 @@ import { Relayer } from "@openzeppelin/defender-relay-client";
   });
 
   app.use("/signature", SignatureService);
+
+  app.use("/getEthPrices", GetEthPricesService);
 
   app.post("/gasless", async (req, res) => {
     const credentials = {

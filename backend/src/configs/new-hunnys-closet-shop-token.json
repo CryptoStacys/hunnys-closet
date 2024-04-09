@@ -2455,8 +2455,8 @@
   "name": "Crypto Defender ii",
   "attributes": [
       {
-          "trait_type": "Hand",
-          "value": "Crypto Defender Shield"
+          "trait_type": "Hat",
+          "value": "Crypto Defender Helm"
       }
   ],
   "metaPath": "https://hunnysclosetshop.s3.us-east-2.amazonaws.com/images/goodies/106"
@@ -2466,8 +2466,8 @@
   "name": "Crypto Defender iii",
   "attributes": [
       {
-          "trait_type": "Hat",
-          "value": "Crypto Defender Helm"
+          "trait_type": "Outfit",
+          "value": "Crypto Defender Armor"
       }
   ],
   "metaPath": "https://hunnysclosetshop.s3.us-east-2.amazonaws.com/images/goodies/107"
@@ -2477,8 +2477,8 @@
   "name": "Crypto Defender iv",
   "attributes": [
       {
-          "trait_type": "Outfit",
-          "value": "Crypto Defender Armor"
+          "trait_type": "Hand",
+          "value": "Crypto Defender Shield"
       }
   ],
   "metaPath": "https://hunnysclosetshop.s3.us-east-2.amazonaws.com/images/goodies/108"
@@ -2504,7 +2504,7 @@
 },
 {
   "tokenId": 110,
-  "name": "Degen Set",
+  "name": "Degen Pack",
   "attributes": [
       {
           "trait_type": "Accessory",
