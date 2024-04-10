@@ -11,6 +11,7 @@ import { randomNumber } from "../../utils/randomNumber";
 import { motion } from "framer-motion";
 import { localStorageKey } from "../../data/config";
 import { log } from "console";
+import { trackLinkClick } from "../../utils/tracking";
 
 export default function DollEditorOptions(props: {
   view: any;
@@ -69,7 +70,7 @@ export default function DollEditorOptions(props: {
 
   function applyColorHarmonization(dollyId: string) {
     console.log("Starting applyColorHarmonization for Dolly ID: ", dollyId);
-
+    trackLinkClick("colorHarmonize", user!, "internal")
     if (!user) {
       console.error(
         "User object is null. Cannot proceed with color harmonization."
@@ -295,13 +296,13 @@ export default function DollEditorOptions(props: {
       <div className="flex-center">
         <div className={`flex-center gap-1`}>
           {/* Color Harmonize Button */}
+          
           <SecondaryButton
             onClick={() =>
               props.selectedDollyId !== null
                 ? applyColorHarmonization(props.selectedDollyId.toString())
                 : console.error("Invalid ID for Color Harmonize")
             }
-            trackId="colorHarmonize"
             title="Changes colors only. Not traits."
           >
             <Icon

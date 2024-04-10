@@ -125,7 +125,8 @@ export default function DollEditor(props: {
   const evmAddress = useEVMAddress(wallet);
   
   const walletClient = useMemo(() => {
-    if (evmAddress) {
+    if (user && user.wallet_type === "waas" && evmAddress) {
+      console.log("Created walletClient")
       return createWalletClient({
         account: toViem(evmAddress),
         chain: mainnet,
@@ -401,6 +402,21 @@ export default function DollEditor(props: {
   
     // Display confirmation modal before minting for a new Dolly
     if (isNewDolly && !isMinted && user && user.address) {
+      // Check if it's a new Dolly that requires minting and the user is on the wrong network
+      if (
+        isNewDolly &&
+        !isMinted &&
+        user &&
+        chain?.id !== ETHEREUM_MAINNET_CHAIN_ID
+      ) {
+        console.log("User is not on Ethereum Mainnet. Attempting to switch...");
+        if (typeof switchChain === "function") {
+          switchChain({ chainId: 1 });
+          console.log("Network switch successful. Proceeding with minting...");
+        } else {
+          throw new Error("Network switch function not available");
+        }
+      }
       modalSet({
         active: true,
         title: "Confirm Dolly Creation",
@@ -456,21 +472,7 @@ export default function DollEditor(props: {
     try {
       let newTokenId = props.id?.toString() ?? null; // Existing token ID or null
       
-      // Check if it's a new Dolly that requires minting and the user is on the wrong network
-      if (
-        isNewDolly &&
-        !isMinted &&
-        user &&
-        chain?.id !== ETHEREUM_MAINNET_CHAIN_ID
-      ) {
-        console.log("User is not on Ethereum Mainnet. Attempting to switch...");
-        if (typeof switchChain === "function") {
-          switchChain({ chainId: 1 });
-          console.log("Network switch successful. Proceeding with minting...");
-        } else {
-          throw new Error("Network switch function not available");
-        }
-      }
+
       if (isNewDolly && !isMinted && user) {
         console.log("Minting new dolly...");
         newTokenId = await mintAndFetchTokenId(user.address);
@@ -545,6 +547,7 @@ export default function DollEditor(props: {
     }
   }
   }
+  
   function triggerSuccessModal(data: any) {
     // Modal logic for success message
     const newHeadline = getRandomHeadline();
@@ -640,7 +643,7 @@ export default function DollEditor(props: {
   try {
     const totalSupply = await contract.totalSupply();
     // Assuming totalSupply returns the count of tokens and IDs are 0-indexed
-    const mostRecentTokenId = totalSupply.toString();
+    const mostRecentTokenId = totalSupply.sub(1).toString();
     console.log("Most recent token ID:", mostRecentTokenId);
     return mostRecentTokenId;
   } catch (error) {

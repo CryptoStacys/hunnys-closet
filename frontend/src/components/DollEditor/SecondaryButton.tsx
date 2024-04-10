@@ -16,11 +16,22 @@ export default function SecondaryButton({ onClick, title, children, disableBtn, 
   const [user] = useAtom(userAtom); // Use the userAtom to access the current user's state
 
   const handleClick: React.MouseEventHandler<HTMLDivElement> = async (event) => {
+    event.preventDefault(); // Prevent default if needed based on your use case
+  
+    // Ensure user and trackId are not null/undefined before attempting to track
     if (trackId && user) {
-      await trackLinkClick(trackId, user); // Perform the tracking
+      try {
+        // Perform the tracking and ensure URL is handled properly
+        await trackLinkClick(trackId, user, "internal"); // Adjust URL handling based on your needs
+        console.log(`Tracking performed for: ${trackId}`);
+      } catch (error) {
+        console.error('Error performing tracking:', error);
+      }
     }
+  
+    // Proceed with original onClick handler if provided
     if (onClick) {
-      onClick(event); // Then proceed with the original onClick handler
+      onClick(event);
     }
   };
 
