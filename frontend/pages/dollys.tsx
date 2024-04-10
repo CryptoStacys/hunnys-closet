@@ -25,13 +25,7 @@ export default function Dollys() {
   console.log("User Address on /dollys", user?.address);
   console.log("Dolly count:", user?.dollyCount); // Just an example, replace with actual usage
   console.log("Active Dolly Component:", activeDollyComponent)
-  // Ensure you're not trying to access dollys if user is null
-  useEffect(() => {
-    if (!user) {
-      router.push('/'); // Redirect to the homepage
-    }
-  }, [user, router]);
-
+  
   const handleDollySaved = (newId: number) => {
     setSelected(newId); // Update with permanent ID once minted
   };
