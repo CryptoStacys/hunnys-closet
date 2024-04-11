@@ -39,7 +39,7 @@ const Testimonials = () => {
       {testimonials.map(({ name, testimonial, image }, index) => (
         <div key={index} className="border rounded-xl bg-white hover:shadow-lg transition-transform duration-500 hover:scale-105 m-4 overflow-hidden flex flex-col items-center p-4">
           <img src={image} alt={name} className="w-24 h-24 rounded-full object-cover mb-4" />
-          <blockquote className="italic text-center">"{testimonial}"</blockquote>
+          <blockquote className="italic text-center">&quot;{testimonial}&quot;</blockquote>
           <p className="font-bold mt-2">- {name}</p>
         </div>
       ))}
