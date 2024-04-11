@@ -92,6 +92,11 @@ const ProfileButtons: React.FC<ProfileButtonsProps> = ({ setCurrentView, current
       iconSrc: "/icons/Shop.svg",
       text: "Shop",
     },
+    // {
+    //   view: "gallery",
+    //   iconSrc: "/icons/Gallery.svg",
+    //   text: "Gallery",
+    // },
   ];
   
   const handleButtonClick = (view: string) => {

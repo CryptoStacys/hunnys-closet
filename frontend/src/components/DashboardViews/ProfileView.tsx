@@ -38,8 +38,23 @@ import {
 import { useEVMAddress, useWalletContext } from "@coinbase/waas-sdk-web-react";
 import { trackLinkClick } from "../../utils/tracking";
 
+const checkNFTOwnership = async (userAddress: any, provider: ethers.providers.Provider | ethers.Signer | undefined) => {
+  const contractAddress = "0x95c1ab4c5ba7f583abb211239d3dd1beae806a11";
+  const erc721ABI = ["function balanceOf(address owner) external view returns (uint256)"];
+  const contract = new ethers.Contract(contractAddress, erc721ABI, provider);
+
+  try {
+    const balance = await contract.balanceOf(userAddress);
+    return balance.gt(0); // Returns true if the balance is greater than 0
+  } catch (error) {
+    console.error("Error checking NFT ownership:", error);
+    return false;
+  }
+};
+
 const ProfileView = () => {
   const [user, setUser] = useAtom(userAtom);
+  const [isMember, setIsMember] = useState(false);
   const [selectedFile, setSelectedFile] = useState<File | null>(null);
   const [imagePreviewUrl, setImagePreviewUrl] = useState<string | null>(null);
   const [initialUserData, setInitialUserData] = useState<typeof user | null>(
@@ -175,7 +190,11 @@ const ProfileView = () => {
       freeClaim.token_id === "0" && freeClaim.claimed
   );
   const hasFirstDolly = user?.dollyCount === 0;
-  const bunnyClubMembers = [
+
+  
+  useEffect(() => {
+    const checkMembership = async () => {
+      const bunnyClubMembers = [
     "0xa7758394D8f7fD23b0d9F13E02427B514687394B",
     "0x55Abdc04655d590a48BCd1B996115448b71b7a84",
     "0x4eE115d0708924B4d3a83e45A428B0e3cb4348e9",
@@ -212,9 +231,20 @@ const ProfileView = () => {
   ];
 
   const isBunnyClubMember = bunnyClubMembers
-    .map((address) => address.toLowerCase())
-    .includes(user!.address.toLowerCase());
-  console.log(user?.address, isBunnyClubMember);
+  .map((address) => address.toLowerCase())
+  .includes(user!.address.toLowerCase());
+
+const provider = new ethers.providers.JsonRpcProvider("https://base-mainnet.g.alchemy.com/v2/Y9AirihU_kvzbWDOO7RPs68bSH5DtFTG");
+const ownsNFT = await checkNFTOwnership(user!.address, provider);
+
+setIsMember(isBunnyClubMember || ownsNFT);
+};
+
+if (user?.address) {
+checkMembership();
+}
+}, [user]);
+
   const getWeb3Provider = () => {
     try {
       // Attempt to use MetaMask's provider if available
@@ -593,7 +623,7 @@ const ProfileView = () => {
         }
         rightBlockContent={
           <div className="xs:self-start sm:self-end hideplz">
-            {isBunnyClubMember ? (
+            {isMember ? (
               <Image
                 src="/assets/img/BunnyClubMemberEmblem.png"
                 alt="Bunny Club Member"
@@ -604,7 +634,7 @@ const ProfileView = () => {
               <Tooltip
                 imageUrl="/assets/img/joinBunnyClubTooltip_with_shadow.svg"
                 imageAlt="Join the Bunny Club"
-                linkUrl="https://hunnys.io/bunnyclub"
+                linkUrl="https://closet.hunnys.io/#bunnyclub"
                 className=""
               >
                 <Image
@@ -708,33 +738,16 @@ const ProfileView = () => {
         footer={
           <div>
             <h1 className="luckiest text-center text-2xl mx-8">
-              The most fun way to expand your wardrobe with The Hunnys Closet:
-              Digital Dressup Dolls!
+              The most fun way to expand your wardrobe with Hunnys Closet!
             </h1>
-            <br></br>
-            <div className="flex justify-start ml-24">
-              <p className="font-poppins text-left xs:text-lg md:text-xl">
-                <ul className="list-disc">
-                  <li>Recieve all Closet Shop drops monthly</li>
-                  <li>Access to members-only drops</li>
-                  <li>Bunny Club Discord Role</li>
-                  <li>Monthly Bunny Club Seasons NFT & Item Set</li>
-                  <li>Bunny Club Marina Seasons NFT & Item Set</li>
-                  <li>Eligible for spontaneous raffles & giveaways</li>
-                  <li>20% off all Hunnys Closet Shop Items</li>
-                </ul>
-              </p>
-            </div>
-            <br></br>
-            <br></br>
             <br></br>
             <Link
               className="w-4/5 self-center"
-              to="/#shop"
+              to="/#bunnyclub"
               trackId="bunnyClubJoin"
               onClick={() => {
                 navigationClick;
-                setCurrentView("shop");
+                setCurrentView("bunnyclub");
               }}
             >
               <div className="text-center">

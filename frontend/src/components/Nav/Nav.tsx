@@ -22,6 +22,7 @@ import Image from "next/image";
 import Help from "../Help/Help";
 import CoinbaseButtonEth from "../Wallet/CoinbaseButtonEth";
 import CoinbaseButtonPolygon from "../Wallet/CoinbaseButtonPolygon";
+import CoinbaseButtonBase from "../Wallet/CoinbaseButtonBase";
 import { fetchBalances } from "../../utils/fetchBalances";
 import { trackLinkClick } from "../../utils/tracking";
 import { User } from "../../data/global";
@@ -31,6 +32,7 @@ type NavProps = {
 
 export default function Nav({ rewardStatus }: NavProps) {
   const [connected, setConnected] = useAtom(connectedAtom);
+  const [isMember, setIsMember] = useState(false);
   const [selected, setSelected] = useState<number | string>(-1); // Allow string for temporary ID
   const [copySuccess, setCopySuccess] = useState("");
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -38,6 +40,7 @@ export default function Nav({ rewardStatus }: NavProps) {
   const [currentView, setCurrentView] = useAtom(currentViewAtom);
   const [ethBalance, setEthBalance] = useState("");
   const [polygonBalance, setPolygonBalance] = useState("");
+  const [baseBalance, setBaseBalance] = useState("");
   const [activeDollyComponent] = useAtom(activeDollyComponentAtom);
   const [user, setUser] = useAtom(userAtom);
   const [dollEditorVisible, setDollEditorVisible] = useAtom(
@@ -65,11 +68,12 @@ export default function Nav({ rewardStatus }: NavProps) {
   useEffect(() => {
     const updateBalances = async () => {
       if (user?.address) {
-        const { ethBalance, polygonBalance } = await fetchBalances(
+        const { ethBalance, polygonBalance, baseBalance } = await fetchBalances(
           user.address
         );
         setEthBalance(ethBalance);
         setPolygonBalance(polygonBalance);
+        setBaseBalance(baseBalance);
       }
     };
 
@@ -135,6 +139,11 @@ export default function Nav({ rewardStatus }: NavProps) {
       text: "Shop",
     },
     {
+      view: "bunnyclub",
+      iconSrc: "/icons/BunnyClub.svg",
+      text: "Bunny Club",
+    },
+    {
       view: "dollys",
       iconSrc: "/icons/Dollys.svg",
       text: "Create A Dolly",
@@ -161,7 +170,23 @@ export default function Nav({ rewardStatus }: NavProps) {
     }
   }, [user?.address]);
 
-  const bunnyClubMembers = [
+  const checkNFTOwnership = async (userAddress: any, provider: ethers.providers.Provider | ethers.Signer | undefined) => {
+    const contractAddress = "0x95c1ab4c5ba7f583abb211239d3dd1beae806a11";
+    const erc721ABI = ["function balanceOf(address owner) external view returns (uint256)"];
+    const contract = new ethers.Contract(contractAddress, erc721ABI, provider);
+  
+    try {
+      const balance = await contract.balanceOf(userAddress);
+      return balance.gt(0); // Returns true if the balance is greater than 0
+    } catch (error) {
+      console.error("Error checking NFT ownership:", error);
+      return false;
+    }
+  };
+
+  useEffect(() => {
+    const checkMembership = async () => {
+      const bunnyClubMembers = [
     "0xa7758394D8f7fD23b0d9F13E02427B514687394B",
     "0x55Abdc04655d590a48BCd1B996115448b71b7a84",
     "0x4eE115d0708924B4d3a83e45A428B0e3cb4348e9",
@@ -197,18 +222,20 @@ export default function Nav({ rewardStatus }: NavProps) {
     "0x44b54f249a9ac0dff4e0d512c0c585b70ac47c30",
   ];
 
-  // Existing code above...
+  const isBunnyClubMember = bunnyClubMembers
+  .map((address) => address.toLowerCase())
+  .includes(user!.address.toLowerCase());
 
-  // Adjusted check for isBunnyClubMember to ensure user is connected and has an address
-  const isBunnyClubMember = user?.address
-    ? bunnyClubMembers
-        .map((address) => address.toLowerCase())
-        .includes(user.address.toLowerCase())
-    : false;
+const provider = new ethers.providers.JsonRpcProvider("https://base-mainnet.g.alchemy.com/v2/Y9AirihU_kvzbWDOO7RPs68bSH5DtFTG");
+const ownsNFT = await checkNFTOwnership(user!.address, provider);
 
-  // Existing code below...
+setIsMember(isBunnyClubMember || ownsNFT);
+};
 
-  console.log(user?.address, isBunnyClubMember);
+if (user?.address) {
+checkMembership();
+}
+}, [user]);
 
   const handleCreateDollyClick = () => {
     // Make the DollEditor visible
@@ -305,7 +332,7 @@ export default function Nav({ rewardStatus }: NavProps) {
             <Help
               {...{
                 title: "What is this?",
-                body: "This is your balance on the Ethereum Network!\n \nYou can use this to create your Dolly and save it in your digital wallet.\n\n Remember, this is simply a one-time fee for saving your Dolly. Afterwards, you can continue to save & update your Dolly for free, forever!\n\n ",
+                body: "This is your balance on the Ethereum Network!\n \nYou can use this to create your Dolly and save it in your digital wallet.\n\n Remember, this is simply a one-time fee for saving your Dolly. Afterwards, you can continue to save & update your Dolly for free, forever!",
                 className: "",
                 footer: (
                   <div className="flex flex-col justify-center m-auto items-center font-bold">
@@ -325,7 +352,7 @@ export default function Nav({ rewardStatus }: NavProps) {
             <Help
               {...{
                 title: "What is this?",
-                body: "This is your balance on the Polygon Network!\n \nYou can use this to purchase items inside of the Hunnys Closet Shop tab! All items purchased are saved right inside of your digital wallet and are for use for your Dolly.\n\n\n\n ",
+                body: "This is your balance on the Polygon Network!\n \nYou can use this to purchase items inside of the Hunnys Closet Shop tab! All items purchased are saved right inside of your digital wallet and are for use for your Dolly.",
                 className: "",
                 footer: (
                   <div className="flex flex-col justify-center m-auto items-center font-bold">
@@ -335,6 +362,40 @@ export default function Nav({ rewardStatus }: NavProps) {
                       destinationWalletAddress={user?.address || ""}
                     />
                   </div>
+                ),
+              }}
+            />
+          </div>
+          <div className="flex px-2 py-2">
+            <img src="/icons/base.png" alt="ETH" width="24" height="24" />
+            <span className="ml-2 mr-6">Ξ{baseBalance.substring(0, 6)}</span>
+            <Help
+              {...{
+                title: "What is this?",
+                body: "This is your balance on the Base Network!\n\nYou can use this to join the Hunnys Bunny Club!",
+                className: "",
+                footer: (
+                  <><div className="flex flex-col justify-center m-auto items-center font-bold">
+                    <Link
+                      className="w-4/5 self-center"
+                      to="/#bunnyclub"
+                      trackId="bunnyClubJoin"
+                      onClick={() => {
+                        setCurrentView("bunnyclub");
+                      }}
+                    >
+                      <div className="text-center">
+                        <button className="bg-hunnys-yellow py-2 mb-8 w-4/5 self-center justify-center text-hunnys-blue luckiest shadow-md rounded-full px-4 text-2xl hover:shadow-lg hover:scale-[1.02] transition-all">
+                          Join the Club
+                        </button>
+                      </div>
+                    </Link>
+                  </div><div className="flex flex-col justify-center m-auto items-center font-bold">
+                      Need to purchase more?<br></br>
+                      <br></br>
+                      <CoinbaseButtonBase
+                        destinationWalletAddress={user?.address || ""} />
+                    </div></>
                 ),
               }}
             />
@@ -446,7 +507,7 @@ export default function Nav({ rewardStatus }: NavProps) {
                         <Help
                           {...{
                             title: "What is this?",
-                            body: "This is your balance on the Ethereum Network!\n \nYou can use this to create your Dolly and save it in your digital wallet.\n\n Remember, this is simply a one-time fee for saving your Dolly. Afterwards, you can continue to save & update your Dolly for free, forever!\n\n ",
+                            body: "This is your balance on the Ethereum Network!\n \nYou can use this to create your Dolly and save it in your digital wallet.\n\n Remember, this is simply a one-time fee for saving your Dolly. Afterwards, you can continue to save & update your Dolly for free, forever!",
                             className: "",
                             footer: (
                               <div className="flex flex-col justify-center m-auto items-center font-bold">
@@ -473,7 +534,7 @@ export default function Nav({ rewardStatus }: NavProps) {
                         <Help
                           {...{
                             title: "What is this?",
-                            body: "This is your balance on the Polygon Network!\n \nYou can use this to purchase items inside of the Hunnys Closet Shop tab! All items purchased are saved right inside of your digital wallet and are for use for your Dolly.\n\n\n\n ",
+                            body: "This is your balance on the Polygon Network!\n \nYou can use this to purchase items inside of the Hunnys Closet Shop tab! All items purchased are saved right inside of your digital wallet and are for use for your Dolly.",
                             className: "",
                             footer: (
                               <div className="flex flex-col justify-center m-auto items-center font-bold">
@@ -487,6 +548,40 @@ export default function Nav({ rewardStatus }: NavProps) {
                           }}
                         />
                       </div>
+                      <div className="flex px-2 py-2">
+            <img src="/icons/base.png" alt="ETH" width="24" height="24" />
+            <span className="ml-2 mr-6">Ξ{baseBalance.substring(0, 6)}</span>
+            <Help
+              {...{
+                title: "What is this?",
+                body: "This is your balance on the Base Network!\n\nYou can use this to join the Hunnys Bunny Club!",
+                className: "",
+                footer: (
+                  <><div className="flex flex-col justify-center m-auto items-center font-bold">
+                    <Link
+                      className="w-4/5 self-center"
+                      to="/#bunnyclub"
+                      trackId="bunnyClubJoin"
+                      onClick={() => {
+                        setCurrentView("bunnyclub");
+                      }}
+                    >
+                      <div className="text-center">
+                        <button className="bg-hunnys-yellow py-2 mb-8 w-4/5 self-center justify-center text-hunnys-blue luckiest shadow-md rounded-full px-4 text-2xl hover:shadow-lg hover:scale-[1.02] transition-all">
+                          Join the Club
+                        </button>
+                      </div>
+                    </Link>
+                  </div><div className="flex flex-col justify-center m-auto items-center font-bold">
+                      Need to purchase more?<br></br>
+                      <br></br>
+                      <CoinbaseButtonBase
+                        destinationWalletAddress={user?.address || ""} />
+                    </div></>
+                ),
+              }}
+            />
+          </div>
                       {openAccountModal && (
                         <button
                           className="self-start indent-2 mt-4"
@@ -545,19 +640,22 @@ export default function Nav({ rewardStatus }: NavProps) {
                   className="cursor-pointer xs:hidden md:inline"
                 />
               </a>
-              {connected && isBunnyClubMember ? (
+              {connected && isMember ? (
+                <a
+                href="https://closet.hunnys.io/#bunnyclub"
+                onClick={() => trackLinkClick("viewBunnyClubExistingMember", user!)}
+              >
                 <Image
                   src="/icons/BunnyClubNavOn.svg"
                   alt="Bunny Club Member"
-                  width={45}
-                  height={45}
+                  width={70}
+                  height={70}
                   className="xs:hidden md:inline"
                 />
+                </a>
               ) : (
                 <a
-                  href="https://hunnys.io/bunnyclub"
-                  target="_blank"
-                  rel="noreferrer"
+                  href="https://closet.hunnys.io/#bunnyclub"
                   onClick={() => trackLinkClick("viewBunnyClub", user!)}
                 >
                   <Image

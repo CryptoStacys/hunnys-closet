@@ -28,7 +28,7 @@ const connectors = connectorsForWallets(
 );
 
 export const config = createConfig({
-  chains: [mainnet, polygon],
+  chains: [mainnet, polygon, base],
   ssr: true, // If your dApp uses server side rendering (SSR)
   multiInjectedProviderDiscovery: true,
   connectors,
@@ -41,5 +41,9 @@ export const config = createConfig({
       console.log("🔮 Using HTTP transport for Polygon");
       return http('https://polygon-mainnet.infura.io/v3/2540ef4e847c4dea838bacade9c4fcac');
     })(),
+    [base.id]: (() => {
+      console.log("Using HTTP transport for Base");
+      return http("https://base-mainnet.g.alchemy.com/v2/Y9AirihU_kvzbWDOO7RPs68bSH5DtFTG");
+      })(),
   },
 })
