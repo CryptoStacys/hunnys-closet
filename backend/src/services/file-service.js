@@ -1,88 +1,81 @@
-// let ApiService = require('./api-service.js');
-// let LayerService = require('./layer-service.js');
-// let FabricService = require('./fabric-service.js');
-// const fs = require("fs");
-
 import ApiService from "./api-service.js";
 import LayerService from "./layer-service.js";
 import FabricService from "./fabric-service.js";
-import fs from "fs";
-
-import path from 'path';
-import { fileURLToPath } from 'url';
+import fs from "fs/promises"; // Use promise-based fs module
 
 const FileService = {
-    createFiles: function (cloneData) {
+    async createFiles(cloneData) {
         console.log("Starting createFiles...");
-        return new Promise(async function (resolve) {
-            await FileService.createImageFile(cloneData);
-            await FileService.createMetadataFile(cloneData);
+        try {
+            await this.createImageFile(cloneData);
+            await this.createMetadataFile(cloneData);
             console.log("Finished createFiles for token_id:", cloneData.token_id);
-            resolve('Success');
-        })
+            return 'Success';
+        } catch (error) {
+            console.error("Error in createFiles:", error);
+            throw error;  // Ensure errors are not swallowed
+        }
     },
-    createImageFile: function (cloneData) {
+
+    async createImageFile(cloneData) {
         console.log("Starting createImageFile for token_id:", cloneData.token_id);
-        return new Promise(async function (resolve) {
-            let layers = LayerService.createLayers(cloneData.attributes);
-            let loadedImages = await ApiService.loadAllImages(layers);
-            let newImageBaseString = await FabricService.createImage(loadedImages);
+        try {
+            const layers = LayerService.createLayers(cloneData.attributes);
+            const loadedImages = await ApiService.loadAllImages(layers);
+            const newImageBaseString = await FabricService.createImage(loadedImages);
 
-            await FileService.saveImage(cloneData.token_id, newImageBaseString);
-
+            await this.saveImage(cloneData.token_id, newImageBaseString);
             console.log('Image created id: ', cloneData.token_id);
-            
-            resolve();
-        })
+        } catch (error) {
+            console.error("Error in createImageFile:", error);
+            throw error;
+        }
     },
-    createMetadataFile: function (cloneData) {
+
+    async createMetadataFile(cloneData) {
         console.log("Starting createMetadataFile for token_id:", cloneData.token_id);
-        return new Promise(async function (resolve) {
-            let attributes = [];
+        try {
+            const attributes = cloneData.attributes.map(attr => ({
+                trait_type: attr.attribute,
+                value: attr.name
+            }));
 
-            for (let i = 0; i < cloneData.attributes.length; i++) {
-                attributes.push({
-                    trait_type: cloneData.attributes[i].attribute,
-                    value: cloneData.attributes[i].name
-                });
-            }
-
-            let result = {
-                name: 'Hunnys Dollys #' + cloneData.token_id,
+            const result = {
+                name: `Hunnys Dollys #${cloneData.token_id}`,
                 description: 'Hunnys Dollys',
-                image: 'https://hunnyscloset.s3.us-east-2.amazonaws.com/dollys/' + cloneData.token_id + '.png',
-                attributes: attributes
-            }
+                image: `https://hunnyscloset.s3.us-east-2.amazonaws.com/dollys/${cloneData.token_id}.png`,
+                attributes
+            };
 
-            await FileService.saveMetadata(cloneData.token_id, result);
+            await this.saveMetadata(cloneData.token_id, result);
             console.log('Metadata created for token_id: ', cloneData.token_id);
-
-            resolve();
-        })
+        } catch (error) {
+            console.error("Error in createMetadataFile:", error);
+            throw error;
+        }
     },
-    saveImage: function (id, baseString) {
+
+    async saveImage(id, baseString) {
         console.log("Starting saveImage for id:", id);
-        
-        return new Promise(function (resolve) {
-            fs.writeFile('data/img/' + id + '.png', baseString, "base64", function () {
-                console.log('Image saved id:', id);
-                resolve();
-            });
-        })
+        try {
+            await fs.writeFile(`data/img/${id}.png`, baseString, "base64");
+            console.log('Image saved id:', id);
+        } catch (error) {
+            console.error("Error saving image:", error);
+            throw error;
+        }
     },
-    saveMetadata: function (id, item) {
+
+    async saveMetadata(id, item) {
         console.log("Starting saveMetadata for id:", id);
-
-        const __filename = fileURLToPath(import.meta.url);
-        console.log("Current directory:", __filename);
-
-        return new Promise(function (resolve) {
-            fs.writeFile('data/metadata/' + id, JSON.stringify(item), {}, function () {
-                console.log('Metadata saved id:', id);
-                resolve();
-            });
-        })
-    },
+        try {
+            await fs.writeFile(`data/metadata/${id}`, JSON.stringify(item));
+            console.log('Metadata saved id:', id);
+        } catch (error) {
+            console.error("Error saving metadata:", error);
+            throw error;
+        }
+    }
 };
 
 export default FileService;
