@@ -706,7 +706,7 @@ checkMembership();
       ) : (
         <div></div>
       )}
-      <PromoCard
+      {!isMember && <PromoCard
         headerTitle="Join the Bunny Club - now with new payment options!"
         leftBlockContent={
           <Image
@@ -777,138 +777,7 @@ checkMembership();
             </p>
           </div>
         }
-      />
-      <PromoCard
-        headerTitle="Shop the 17 New Degen Items!"
-        leftBlockContent={
-          <div className="md:h-[200px] self-center">
-            <Image
-              className="rounded-xl"
-              src={degenPack}
-              alt={"Degen Pack"}
-              width={200}
-              height={200}
-            />
-          </div>
-        }
-        middleBlockContent={
-          <>
-            <h1 className="text-2xl lg:text-[32px] text-left luckiest">
-              Go full Degen with{" "}
-              <span className="text-hunnys-blue">17 new items</span>!
-            </h1>
-            <p className="font-poppins text-base lg:text-lg my-2 paragraphText">
-              Pepe, Doge, and even your very own Lambungini!
-            </p>
-            <br></br>
-            <br></br>
-            <br></br>
-            <Link
-              className="w-4/5 self-center"
-              to="/#shop"
-              trackId="degenSet"
-              onClick={() => {
-                navigationClick;
-                setCurrentView("shop");
-              }}
-            >
-              <div className="text-center">
-                <button className="bg-hunnys-yellow py-2 w-full self-center justify-center text-hunnys-blue luckiest shadow-md rounded-full px-4 text-2xl hover:shadow-lg hover:scale-[1.02] transition-all">
-                  Buy Now
-                </button>
-              </div>
-            </Link>
-          </>
-        } // Assuming you might fill this in later
-        rightBlockContent={
-          <div className="md:h-[200px] self-center">
-            <Image
-              className="rounded-xl"
-              src={degenSale}
-              alt={"Degen Sale"}
-              width={200}
-              height={200}
-            />
-          </div>
-        }
-        footer={
-          <div>
-            <div className="flex justify-start ml-24"></div>
-          </div>
-        }
-      />
-      <PromoCard
-        headerTitle="New Crypto Defender Achievements: Claim your Freebies!"
-        leftBlockContent={
-          <div className="md:h-[220px] self-center profile-swiper">
-            <Swiper
-              pagination={{ clickable: true }}
-              spaceBetween={10}
-              slidesPerView={1} // Default to 3 slides per view for smaller screens
-              grid={{
-                rows: 1,
-                fill: "row",
-              }}
-              modules={[Pagination, Grid]}
-              className="mySwiper w-full max-w-[220px] h-[220px] rounded-[30px]"
-            >
-              <SwiperSlide>
-                <img src={CD1}></img>
-              </SwiperSlide>
-              <SwiperSlide>
-                <img src={CD2}></img>
-              </SwiperSlide>
-              <SwiperSlide>
-                <img src={CD3}></img>
-              </SwiperSlide>
-              <SwiperSlide>
-                <img src={CD4}></img>
-              </SwiperSlide>
-            </Swiper>
-          </div>
-        }
-        middleBlockContent={
-          <><h1 className="text-2xl lg:text-[32px] text-left luckiest">
-            Look for the four{" "}
-            <span className="text-hunnys-blue">Crypto Defender</span>{" "}
-            Achievements to complete the set!
-          </h1>
-          <p className="font-poppins text-base lg:text-lg my-2 paragraphText">
-              Available for a very limited time. Will you defend Crypto with us?
-            </p><Link
-            className="w-4/5 self-center"
-            to="/#achievements"
-            trackId="cryptoDefenderAchievements"
-            onClick={() => {
-              navigationClick;
-              setCurrentView("achievements");
-            } }
-          >
-              <div className="text-center">
-                <button className="bg-hunnys-yellow py-2 w-full self-center justify-center text-hunnys-blue luckiest shadow-md rounded-full px-4 text-2xl hover:shadow-lg hover:scale-[1.02] transition-all">
-                  View Now
-                </button>
-              </div>
-            </Link></>
-        } // Assuming you might fill this in later
-        rightBlockContent={
-          <div className="md:h-[220px] self-center">
-            <Image
-              className="rounded-xl"
-              src={newAchievements}
-              alt={"New Achievements"}
-              width={220}
-              height={220}
-            />
-          </div>
-        }
-        footer={
-          <div>
-            
-          </div>
-        }
-      />
-
+      />}
       {claimedFreeMug ? (
         <div></div>
       ) : (

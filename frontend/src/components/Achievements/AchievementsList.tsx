@@ -26,6 +26,40 @@ import { achievements } from '../../utils/achievements';
     //   if (!freeClaimsArray || freeClaimsArray.length === 0) return false;
     //   return freeClaimsArray.some((freeClaim: FreeClaimType) => freeClaim.token_id === "0" && freeClaim.claimed);
     // }
+// Has claimed a given prior achievement/set of achievements:
+    // {
+    //   id: '39',
+    //   challenge: 'Crypto Defender iv',
+    //   description: 'Complete Crypto Defender i, ii and iii achievements',
+    //   freeClaimTokenId: 108,
+    //   cupcakePoints: 50,
+    //   title: 'Crypto Defender', 
+    //   achievementsReward1: '/icons/Achievements/108.png',
+    //   achievementsReward2: '/icons/Achievements/Achievements/39/1.png',
+    //   eligibilityCriteria: (user: User) => {
+    //     // Directly access the 'claimed' property of each required achievement
+    //     const completedCD1 = user.achievements['Crypto Defender i']?.claimed;
+    //     const completedCD2 = user.achievements['Crypto Defender ii']?.claimed;
+    //     const completedCD3 = user.achievements['Crypto Defender iii']?.claimed;
+    //     // Only return true if all required achievements have been claimed
+    //     return completedCD1 && completedCD2 && completedCD3;
+    //   }
+    // },
+// Clicked a given Link/Button:
+    // {
+    //   id: '37',
+    //   challenge: 'Crypto Defender ii',
+    //   description: 'Read about Coinbase Embedded Wallets. Note: you may need to refresh the page upon returning in order to claim this achievement.',
+    //   callToAction: 'https://www.coinbase.com/blog/evolving-wallets-to-bring-a-billion-users-onchain',
+    //   freeClaimTokenId: 106,
+    //   cupcakePoints: 25,
+    //   achievementsReward1: '/icons/Achievements/106.png',
+    //   achievementsReward2: '/icons/Achievements/Achievements/37/1.png',
+    //   eligibilityCriteria: (user: User) => {
+    //     if (!linksClickedArray || linksClickedArray.length === 0) return false;
+    //     return linksClickedArray.some((linksClicked: LinkClick) => linksClicked.trackId === "Crypto Defender ii");
+    //   }
+    // },
 
 
 
@@ -391,64 +425,124 @@ import { achievements } from '../../utils/achievements';
     //   achievementsReward2: '/icons/Achievements/Achievements/35/1.png',
     //   achievementsReward3: '/icons/Achievements/Achievements/35/2.png',
     //   eligibilityCriteria: (user: User) => user?.dollyCount > -1,
-    // },
+    // // },
     
+    // {
+    //   id: '36',
+    //   challenge: 'Crypto Defender i',
+    //   description: 'Login to the Hunnys Closet during the Coinbase Embedded Wallet Launch',
+    //   freeClaimTokenId: 105,
+    //   cupcakePoints: 10,
+    //   achievementsReward1: '/icons/Achievements/105.png',
+    //   achievementsReward2: '/icons/Achievements/Achievements/36/1.png',
+    //   eligibilityCriteria: (user: User) => user?.dollyCount > -1,
+    // },
+    // {
+    //   id: '37',
+    //   challenge: 'Crypto Defender ii',
+    //   description: 'Read about Coinbase Embedded Wallets. Note: you may need to refresh the page upon returning in order to claim this achievement.',
+    //   callToAction: 'https://www.coinbase.com/blog/evolving-wallets-to-bring-a-billion-users-onchain',
+    //   freeClaimTokenId: 106,
+    //   cupcakePoints: 25,
+    //   achievementsReward1: '/icons/Achievements/106.png',
+    //   achievementsReward2: '/icons/Achievements/Achievements/37/1.png',
+    //   eligibilityCriteria: (user: User) => {
+    //     if (!linksClickedArray || linksClickedArray.length === 0) return false;
+    //     return linksClickedArray.some((linksClicked: LinkClick) => linksClicked.trackId === "Crypto Defender ii");
+    //   }
+    // },
+    // {
+    //   id: '38',
+    //   challenge: 'Crypto Defender iii',
+    //   description: 'Save a dolly with the Crypto Defender Blue dye',
+    //   freeClaimTokenId: 107,
+    //   cupcakePoints: 25,
+    //   achievementsReward1: '/icons/Achievements/107.png',
+    //   achievementsReward2: '/icons/Achievements/Achievements/38/1.png',
+    //   eligibilityCriteria: (user) => user.dollys.some(dolly => 
+    //     dolly.attributes && dolly.attributes.some(attr => 
+    //       attr.colorsApplied && attr.colorsApplied.includes('Crypto Defender Blue')
+    //     )
+    //   ),
+    // },
+    // {
+    //   id: '39',
+    //   challenge: 'Crypto Defender iv',
+    //   description: 'Complete Crypto Defender i, ii and iii achievements',
+    //   freeClaimTokenId: 108,
+    //   cupcakePoints: 50,
+    //   title: 'Crypto Defender', 
+    //   achievementsReward1: '/icons/Achievements/108.png',
+    //   achievementsReward2: '/icons/Achievements/Achievements/39/1.png',
+    //   eligibilityCriteria: (user: User) => {
+    //     // Directly access the 'claimed' property of each required achievement
+    //     const completedCD1 = user.achievements['Crypto Defender i']?.claimed;
+    //     const completedCD2 = user.achievements['Crypto Defender ii']?.claimed;
+    //     const completedCD3 = user.achievements['Crypto Defender iii']?.claimed;
+    //     // Only return true if all required achievements have been claimed
+    //     return completedCD1 && completedCD2 && completedCD3;
+    //   }
+    // },
     {
-      id: '36',
-      challenge: 'Crypto Defender i',
-      description: 'Login to the Hunnys Closet during the Coinbase Embedded Wallet Launch',
-      freeClaimTokenId: 105,
+      id: '40',
+      challenge: 'Hupe Harmony',
+      description: 'Use the Color Harmony button to update any Dolly with a new lewk',
       cupcakePoints: 10,
-      achievementsReward1: '/icons/Achievements/105.png',
-      achievementsReward2: '/icons/Achievements/Achievements/36/1.png',
-      eligibilityCriteria: (user: User) => user?.dollyCount > -1,
+      freeClaimTokenId: 80,
+      achievementsReward1: '/icons/Achievements/80.png',
+      achievementsReward2: '/icons/Achievements/Achievements/40/1.png',
+      eligibilityCriteria: (user) => user.linksClicked.some((link: { trackId: string; }) => link.trackId === 'colorHarmonize')
     },
     {
-      id: '37',
-      challenge: 'Crypto Defender ii',
-      description: 'Read about Coinbase Embedded Wallets. Note: you may need to refresh the page upon returning in order to claim this achievement.',
-      callToAction: 'https://www.coinbase.com/blog/evolving-wallets-to-bring-a-billion-users-onchain',
-      freeClaimTokenId: 106,
+      id: '41',
+      challenge: 'Dorothys Drag',
+      description: 'Own the cigarette trait.',
+      cupcakePoints: 10,
+      freeClaimTokenId: 87,
+      achievementsReward1: '/icons/Achievements/87.png',
+      achievementsReward2: '/icons/Achievements/Achievements/41/1.png',
+      eligibilityCriteria: (user) => user.traits.some(trait => trait.name === 'Cigarette')
+    },
+    {
+      id: '42',
+      challenge: 'Mika-tude',
+      description: 'Show off your best Resting Bun Face Dolly using Mika Pout, GrumpyFrown, or KindaMad mouth.',
       cupcakePoints: 25,
-      achievementsReward1: '/icons/Achievements/106.png',
-      achievementsReward2: '/icons/Achievements/Achievements/37/1.png',
-      eligibilityCriteria: (user: User) => {
-        if (!linksClickedArray || linksClickedArray.length === 0) return false;
-        return linksClickedArray.some((linksClicked: LinkClick) => linksClicked.trackId === "Crypto Defender ii");
-      }
+      title: 'Has RBF',
+      freeClaimTokenId: 91,
+      achievementsReward1: '/icons/Achievements/91.png',
+      achievementsReward2: '/icons/Achievements/Achievements/42/1.png',
+    eligibilityCriteria: (user) => user.dollys.some(dolly => dolly.attributes && dolly.attributes.some(attr => attr.name === 'Mika Pout')) || user.dollys.some(dolly => dolly.attributes && dolly.attributes.some(attr => attr.name === 'GrumpyFrown')) || user.dollys.some(dolly => dolly.attributes && dolly.attributes.some(attr => attr.name === 'KindaMad'))
     },
     {
-      id: '38',
-      challenge: 'Crypto Defender iii',
-      description: 'Save a dolly with the Crypto Defender Blue dye',
-      freeClaimTokenId: 107,
-      cupcakePoints: 25,
-      achievementsReward1: '/icons/Achievements/107.png',
-      achievementsReward2: '/icons/Achievements/Achievements/38/1.png',
-      eligibilityCriteria: (user) => user.dollys.some(dolly => 
-        dolly.attributes && dolly.attributes.some(attr => 
-          attr.colorsApplied && attr.colorsApplied.includes('Crypto Defender Blue')
-        )
-      ),
-    },
-    {
-      id: '39',
-      challenge: 'Crypto Defender iv',
-      description: 'Complete Crypto Defender i, ii and iii achievements',
-      freeClaimTokenId: 108,
+      id: '43',
+      challenge: 'Mad Hatter',
+      description: 'Own at least 50 different Hats!',
       cupcakePoints: 50,
-      title: 'Crypto Defender', 
-      achievementsReward1: '/icons/Achievements/108.png',
-      achievementsReward2: '/icons/Achievements/Achievements/39/1.png',
-      eligibilityCriteria: (user: User) => {
-        // Directly access the 'claimed' property of each required achievement
-        const completedCD1 = user.achievements['Crypto Defender i']?.claimed;
-        const completedCD2 = user.achievements['Crypto Defender ii']?.claimed;
-        const completedCD3 = user.achievements['Crypto Defender iii']?.claimed;
-        // Only return true if all required achievements have been claimed
-        return completedCD1 && completedCD2 && completedCD3;
-      }
+      title: 'Mad Hatter',
+      freeClaimTokenId: 90,
+      achievementsReward1: '/icons/Achievements/90.png',
+      achievementsReward2: '/icons/Achievements/Achievements/43/1.png',
+      achievementsReward3: '/icons/Achievements/Achievements/43/2.png',
+    eligibilityCriteria: (user) => user.traits.filter(trait => trait.attribute === 'Hat').length >= 50
     },
+    {
+      id: '44',
+      challenge: 'Number One Fan',
+      description: 'Own a Hunnys OG, Hunnys 10k, Stacys AND Hunnys Seasons NFT',
+      cupcakePoints: 50,
+      title: '#1 Fan',
+      freeClaimTokenId: 81,
+      achievementsReward1: '/icons/Achievements/81.png',
+      achievementsReward2: '/icons/Achievements/Achievements/44/1.png',
+      eligibilityCriteria: (user: User) => {
+      const hasStacys = user.tokens.some(token => token.origin_name === "Hunnys Stacys");
+      const hasOG = user.traits.some(token => token.origin_name === "Hunnys OG");
+      const has10k = user.tokens.some(token => token.origin_name === "Hunnys Seasonal");
+      const hasSeasons = user.tokens.some(token => token.origin_name === "Hunnys 10k");
+      return hasStacys && hasOG && has10k && hasSeasons;
+      }
+      },
     // Add more achievements here
   ];
   
