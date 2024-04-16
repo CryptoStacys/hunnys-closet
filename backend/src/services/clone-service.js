@@ -2,8 +2,8 @@ import ApiService from './api-service.js';
 
 const CloneService = {
     getCloneData: async function (tokenIds) {
-        const BATCH_SIZE = 150;  
-        const DELAY_BETWEEN_BATCHES = 1000;  
+        const BATCH_SIZE = 100;  
+        const DELAY_BETWEEN_BATCHES = 200;  
         const RETRY_LIMIT = 3; // Number of retries
 
         const sleep = (ms) => new Promise(resolve => setTimeout(resolve, ms));
