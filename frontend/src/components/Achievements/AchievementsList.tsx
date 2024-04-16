@@ -491,8 +491,15 @@ import { achievements } from '../../utils/achievements';
       freeClaimTokenId: 80,
       achievementsReward1: '/icons/Achievements/80.png',
       achievementsReward2: '/icons/Achievements/Achievements/40/1.png',
-      eligibilityCriteria: (user) => user.linksClicked.some((link: { trackId: string; }) => link.trackId === 'colorHarmonize')
+      
+        //     if (!linksClickedArray || linksClickedArray.length === 0) return false;
+        //     return linksClickedArray.some((linksClicked: LinkClick) => linksClicked.trackId === "Crypto Defender ii");
+        //   }
+      eligibilityCriteria: (user: User) => {
+        if (!linksClickedArray || linksClickedArray.length === 0) return false;
+        return linksClickedArray.some((linksClicked: LinkClick) => linksClicked.trackId === "colorHarmonize");
     },
+  },
     {
       id: '41',
       challenge: 'Dorothys Drag',
