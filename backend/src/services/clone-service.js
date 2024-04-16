@@ -31,6 +31,8 @@ const CloneService = {
                     const currentRetryCount = retries.get(tokenId) || 0;
                     retries.set(tokenId, currentRetryCount + 1);
 
+                    console.log(`Error for token ${tokenId}: ${result.reason.message}`); // Log the error message
+
                     if (currentRetryCount < RETRY_LIMIT) {
                         batch.push(tokenId); // Add failed token for retry
                         console.log(`Retrying token ${tokenId}, attempt ${currentRetryCount + 1}`);
@@ -58,3 +60,4 @@ const CloneService = {
 };
 
 export default CloneService;
+

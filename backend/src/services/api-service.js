@@ -2,13 +2,23 @@ import fetch from "node-fetch";
 
 const ApiService = {
   getDataById: function (tokenId) {
-    return new Promise(function (resolve) {
+    return new Promise(function (resolve, reject) {
       fetch(
         `https://closetservices.hunnysnft.com/wp-json/hunnys-closet/v1/getCloneData?tokenIds[]=${tokenId}`,
         { method: "GET" }
       )
-        .then((response) => resolve(response.json()))
-        .catch((err) => console.error(err));
+      .then(response => {
+        if (response.ok) { // Check if the response was successful
+          return response.json();
+        } else { // If not successful, throw an error
+          throw new Error(`Failed to fetch data for token ${tokenId}: Status ${response.status}`);
+        }
+      })
+      .then(data => resolve(data)) // Resolve with the data if successful
+      .catch(error => {
+        console.error(`Error fetching data for token ${tokenId}:`, error.message);
+        reject(error); // Reject the promise with the error
+      });
     });
   },
   loadAllImages: function (layers) {
