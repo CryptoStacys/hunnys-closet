@@ -103,7 +103,7 @@ const ApiService = {
         "data",
         JSON.stringify({
           token: newToken.attributes,
-          name: "", // TODO naming the token
+          name: dollyName, // TODO naming the token
         })
       );
 

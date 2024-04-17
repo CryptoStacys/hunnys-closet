@@ -39,14 +39,14 @@ const FileService = {
                 trait_type: attr.attribute,
                 value: attr.name
             }));
-
+    
             const result = {
-                name: `Hunnys Dollys #${cloneData.token_id}`,
+                name: cloneData.name || `Hunnys Dollys #${cloneData.token_id}`, // Use the custom name or default to the existing format
                 description: 'Hunnys Dollys',
                 image: `https://hunnyscloset.s3.us-east-2.amazonaws.com/dollys/${cloneData.token_id}.png`,
                 attributes
             };
-
+    
             await this.saveMetadata(cloneData.token_id, result);
             console.log('Metadata created for token_id: ', cloneData.token_id);
         } catch (error) {
@@ -54,6 +54,7 @@ const FileService = {
             throw error;
         }
     },
+    
 
     async saveImage(id, baseString) {
         console.log("Starting saveImage for id:", id);
