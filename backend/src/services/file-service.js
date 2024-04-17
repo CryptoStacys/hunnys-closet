@@ -44,11 +44,13 @@ const FileService = {
                 name: cloneData.name || `Hunnys Dollys #${cloneData.token_id}`, // Use the custom name or default to the existing format
                 description: 'Hunnys Dollys',
                 image: `https://hunnyscloset.s3.us-east-2.amazonaws.com/dollys/${cloneData.token_id}.png`,
-                attributes
+                attributes: cloneData.attributes.map(attr => ({
+                    trait_type: attr.attribute,
+                    value: attr.name
+                }))
             };
-    
             await this.saveMetadata(cloneData.token_id, result);
-            console.log('Metadata created for token_id: ', cloneData.token_id);
+            console.log('Metadata created for token_id: ', cloneData.token_id, ' with Name: ', cloneData.name);
         } catch (error) {
             console.error("Error in createMetadataFile:", error);
             throw error;
