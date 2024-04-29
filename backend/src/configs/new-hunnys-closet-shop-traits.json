@@ -204,8 +204,8 @@
       "name": "Hair Style",
       "traits": [
         {"name":"Kumo Hine Buns","colors":1,"rarity":"Common","parts":2,"tags":[],"token_id":111},
-        {"name":"Sunday Bunday","colors":1,"rarity":"Common","tags":[],"token_id":113},
-        {"name":"Mika Pony","colors":1,"rarity":"Common","tags":[],"token_id":113},
+        {"name":"Sunday Bunday","colors":1,"rarity":"Common","parts":2,"tags":[],"token_id":113},
+        {"name":"Mika Pony","colors":1,"rarity":"Common","parts":2,"tags":[],"token_id":113},
         {"name":"Partly Cloudy","colors":3,"rarity":"Common","parts":2,"tags":[],"token_id":109},
         {"name":"MetaVixen Classic Constellation","colors":2,"rarity":"Common","parts":2,"tags":[],"token_id":98},
         {"name":"MetaVixen Cute Alien Buns","colors":3,"rarity":"Common","parts":2,"tags":[],"token_id":98},
