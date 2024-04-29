@@ -4,7 +4,7 @@
       "name": "Accessory",
       "traits": [
         {"name":"Cloud Bunny","colors":1,"rarity":"Common","tags":[],"token_id":111},
-        {"name":"Ratty B Bling","colors":1,"rarity":"Common","tags":"onBody","token_id":112},
+        {"name":"Ratty B Bling","colors":1,"rarity":"Common","tags":[],"token_id":112},
         {"name":"Blockchain","colors":1,"rarity":"Common","tags":[],"token_id":110},
         {"name":"Deal With It","colors":0,"rarity":"Common","tags":["glasses"],"token_id":110},
         {"name":"Doge","colors":3,"rarity":"Common","tags":["companion"],"token_id":110},
