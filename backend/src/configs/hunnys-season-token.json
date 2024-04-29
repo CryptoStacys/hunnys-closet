@@ -2545,15 +2545,15 @@
     },
     {
         "tokenId": 170,
-        "name": "Jökla Jólakötturinn",
+        "name": "J\u00f6kla J\u00f3lak\u00f6tturinn",
         "attributes": [
             {
                 "trait_type": "Background",
-                "value": "Jólakötturinn Night"
+                "value": "J\u00f3lak\u00f6tturinn Night"
             },
             {
                 "trait_type": "Hat",
-                "value": "Jólakötturinn Ears"
+                "value": "J\u00f3lak\u00f6tturinn Ears"
             },
             {
                 "trait_type": "Accessory",

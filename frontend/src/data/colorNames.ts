@@ -384,6 +384,11 @@ const colorNames = {
     "g": 226,
     "r": 212
 },
+"Cloud Watcher": {
+    "r": 85,
+    "g": 193,
+    "b": 245
+},
 "Coffee with Cream": {
     "b": 151,
     "g": 182,
@@ -1653,6 +1658,11 @@ const colorNames = {
     "b": 94,
     "g": 134,
     "r": 0
+},
+"Sherbert": {
+    "r": 210,
+    "g": 191,
+    "b": 204
 },
 "Shiny Emeralds": {
     "b": 87,

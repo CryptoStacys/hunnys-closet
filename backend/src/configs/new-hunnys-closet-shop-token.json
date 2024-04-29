@@ -2576,5 +2576,86 @@
       }
   ],
   "metaPath": "https://hunnysclosetshop.s3.us-east-2.amazonaws.com/images/goodies/110"
-}
+},
+{
+  "tokenId": 111,
+  "name": "Sky High Pack",
+  "attributes": [
+      {
+          "trait_type": "Face Sticker",
+          "value": "Rainbow Makeup"
+      },
+      {
+          "trait_type": "Accessory",
+          "value": "Cloud Bunny"
+      },
+      {
+          "trait_type": "Skin",
+          "value": "Sherbert"
+      },
+      {
+          "trait_type": "Skin",
+          "value": "Cloud Watcher"
+      },
+      {
+          "trait_type": "Dye",
+          "value": "Sherbert"
+      },
+      {
+          "trait_type": "Dye",
+          "value": "Cloud Watcher"
+      },
+      {
+          "trait_type": "Background",
+          "value": "Delicate Clouds"
+      },
+      {
+          "trait_type": "Hair Style",
+          "value": "Kumo Hine Buns"
+      }
+  ],
+  "metaPath": "https://hunnysclosetshop.s3.us-east-2.amazonaws.com/images/goodies/111"
+},
+  {
+      "tokenId": 112,
+      "name": "Gamer Ratty Bling",
+      "attributes": [
+          {
+              "trait_type": "Hand",
+              "value": "Vicroy Gamer"
+          },
+          {
+              "trait_type": "Accessory",
+              "value": "Ratty B Bling"
+          }
+      ],
+      "metaPath": "https://hunnysclosetshop.s3.us-east-2.amazonaws.com/images/goodies/112"
+  },
+  {
+      "tokenId": 113,
+      "name": "Team Cupcake Pack",
+      "attributes": [
+          {
+              "trait_type": "Outfit",
+              "value": "Team Cupcake"
+          },
+          {
+              "trait_type": "Hand",
+              "value": "Yummy Cupcake"
+          },
+          {
+              "trait_type": "Hair Style",
+              "value": "Sunday Bunday"
+          },
+          {
+              "trait_type": "Hair Style",
+              "value": "Mika Pony"
+          },
+          {
+              "trait_type": "Face Sticker",
+              "value": "Bun Bun"
+          }
+      ],
+      "metaPath": "https://hunnysclosetshop.s3.us-east-2.amazonaws.com/images/goodies/113"
+  }
 ]
