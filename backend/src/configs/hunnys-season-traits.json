@@ -3,7 +3,7 @@
     {
       "name": "Accessory",
       "traits": [
-        {"name":"Greedy Deer","colors":1,"rarity":"Legendary","tags":[],"token_id":192},
+        {"name":"Greedy Deer","colors":1,"rarity":"Legendary","tags":["companion"],"token_id":192},
         {"name":"OctoBot","colors":3,"rarity":"Epic","tags":["companion"],"token_id":185},
         {"name":"Glowy OctoBot","colors":1,"rarity":"Relic","tags":["companion"],"token_id":186},
         {"name":"OctoBot","colors":3,"rarity":"Epic","tags":["companion"],"token_id":186},
