@@ -51071,3 +51071,525 @@ Checking existence of JPG: 300x300_jpg\Outfit\Team Cupcake.jpg
 Files not found, processing: PNG - compositeImages\Outfit\Team Cupcake.png, JPG - 300x300_jpg\Outfit\Team Cupcake.jpg
 Saved: compositeImages\Outfit\Team Cupcake.png
 Saved: 300x300_jpg\Outfit\Team Cupcake.jpg
+Script started
+Subfolders found: Accessory, Background, Bodysuit, Colors, Eyebrows, Eyes, Face Sticker, Frame, Hair Style, Hand, Hat, Mouth, Outfit, Piercing, Skin, Tattoo, Undergarment
+Files found: 67
+Skipping already processed solid color: Cloud Watcher.png
+Skipping already processed solid color: Sherbert.png
+Solid colors RGB values saved to colors.json
+Skipping existing file: 800x800_png\Accessory\Cloud Bunny_C1.png
+Skipping existing file: 800x800_png\Accessory\Cloud Bunny_L.png
+Resizing image: scriptImages\Accessory\Greedy Deer_C1.png to 800x800
+Skipping existing file: 600x600_png\Accessory\Cloud Bunny_C1.png
+Skipping existing file: 600x600_png\Accessory\Cloud Bunny_L.png
+Resizing image: scriptImages\Accessory\Greedy Deer_C1.png to 600x600
+Skipping already processed solid color: Cloud Watcher.png
+Skipping already processed solid color: Sherbert.png
+Solid colors RGB values saved to colors.json
+Processing image group: Cloud Bunny
+Resized image saved: 600x600_png\Accessory\Greedy Deer_C1.png
+Resizing image: scriptImages\Accessory\Greedy Deer_L.png to 600x600
+Resized image saved: 800x800_png\Accessory\Greedy Deer_C1.png
+Resizing image: scriptImages\Accessory\Greedy Deer_L.png to 800x800
+Processing file: Cloud Bunny_C1.png in subfolder: Accessory
+Resized image saved: 600x600_png\Accessory\Greedy Deer_L.png
+Skipping existing file: 600x600_png\Accessory\Ratty B Bling_C1.png
+Skipping existing file: 600x600_png\Accessory\Ratty B Bling_L.png
+Resizing image: scriptImages\Background\Belitrix The Borkny Babe.png to 600x600
+Resized image saved: 800x800_png\Accessory\Greedy Deer_L.png
+Skipping existing file: 800x800_png\Accessory\Ratty B Bling_C1.png
+Skipping existing file: 800x800_png\Accessory\Ratty B Bling_L.png
+Resizing image: scriptImages\Background\Belitrix The Borkny Babe.png to 800x800
+Processing file: Cloud Bunny_L.png in subfolder: Accessory
+Checking existence of PNG: compositeImages\Accessory\Cloud Bunny.png
+Checking existence of JPG: 300x300_jpg\Accessory\Cloud Bunny.jpg
+Skipping existing files: PNG - compositeImages\Accessory\Cloud Bunny.png, JPG - 300x300_jpg\Accessory\Cloud Bunny.jpg
+Processing image group: Greedy Deer
+Processing file: Greedy Deer_C1.png in subfolder: Accessory
+Processed and saved skin color trait: Cloud Watcher.png
+Processing file: Greedy Deer_L.png in subfolder: Accessory
+Checking existence of PNG: compositeImages\Accessory\Greedy Deer.png
+Checking existence of JPG: 300x300_jpg\Accessory\Greedy Deer.jpg
+Files not found, processing: PNG - compositeImages\Accessory\Greedy Deer.png, JPG - 300x300_jpg\Accessory\Greedy Deer.jpg
+Saved: compositeImages\Accessory\Greedy Deer.png
+Processed skin color: Cloud Watcher.png
+Resized image saved: 800x800_png\Background\Belitrix The Borkny Babe.png
+Skipping existing file: 800x800_png\Background\Delicate Clouds_L.png
+Resizing image: scriptImages\Background\Japanese Convenience Store_L.png to 800x800
+Resized image saved: 600x600_png\Background\Belitrix The Borkny Babe.png
+Skipping existing file: 600x600_png\Background\Delicate Clouds_L.png
+Resizing image: scriptImages\Background\Japanese Convenience Store_L.png to 600x600
+Saved: 300x300_jpg\Accessory\Greedy Deer.jpg
+Processing image group: Ratty B Bling
+Resized image saved: 600x600_png\Background\Japanese Convenience Store_L.png
+Resizing image: scriptImages\Background\Monkey Park_L.png to 600x600
+Resized image saved: 800x800_png\Background\Japanese Convenience Store_L.png
+Resizing image: scriptImages\Background\Monkey Park_L.png to 800x800
+Processing file: Ratty B Bling_C1.png in subfolder: Accessory
+Processing file: Ratty B Bling_L.png in subfolder: Accessory
+Checking existence of PNG: compositeImages\Accessory\Ratty B Bling.png
+Checking existence of JPG: 300x300_jpg\Accessory\Ratty B Bling.jpg
+Skipping existing files: PNG - compositeImages\Accessory\Ratty B Bling.png, JPG - 300x300_jpg\Accessory\Ratty B Bling.jpg
+Processing image group: Belitrix The Borkny Babe.png
+Resized image saved: 800x800_png\Background\Monkey Park_L.png
+Resizing image: scriptImages\Background\Nara_L.png to 800x800
+Resized image saved: 600x600_png\Background\Monkey Park_L.png
+Resizing image: scriptImages\Background\Nara_L.png to 600x600
+Processed and saved skin color trait: Sherbert.png
+Processing file: Belitrix The Borkny Babe.png in subfolder: Background
+Checking existence of PNG: compositeImages\Background\Belitrix The Borkny Babe.png.png
+Checking existence of JPG: 300x300_jpg\Background\Belitrix The Borkny Babe.png.jpg
+Files not found, processing: PNG - compositeImages\Background\Belitrix The Borkny Babe.png.png, JPG - 300x300_jpg\Background\Belitrix The Borkny Babe.png.jpg
+Saved: compositeImages\Background\Belitrix The Borkny Babe.png.png
+Processed skin color: Sherbert.png
+Saved: 300x300_jpg\Background\Belitrix The Borkny Babe.png.jpg
+Processing image group: Delicate Clouds
+Resized image saved: 600x600_png\Background\Nara_L.png
+Resizing image: scriptImages\Background\Piggy Cafe_C1.png to 600x600
+Resized image saved: 800x800_png\Background\Nara_L.png
+Resizing image: scriptImages\Background\Piggy Cafe_C1.png to 800x800
+Resized image saved: 600x600_png\Background\Piggy Cafe_C1.png
+Resizing image: scriptImages\Background\Piggy Cafe_C2.png to 600x600
+Resized image saved: 800x800_png\Background\Piggy Cafe_C1.png
+Resizing image: scriptImages\Background\Piggy Cafe_C2.png to 800x800
+Processing file: Delicate Clouds_L.png in subfolder: Background
+Checking existence of PNG: compositeImages\Background\Delicate Clouds.png
+Checking existence of JPG: 300x300_jpg\Background\Delicate Clouds.jpg
+Skipping existing files: PNG - compositeImages\Background\Delicate Clouds.png, JPG - 300x300_jpg\Background\Delicate Clouds.jpg
+Processing image group: Japanese Convenience Store
+Resized image saved: 800x800_png\Background\Piggy Cafe_C2.png
+Resizing image: scriptImages\Background\Piggy Cafe_C3.png to 800x800
+Resized image saved: 600x600_png\Background\Piggy Cafe_C2.png
+Resizing image: scriptImages\Background\Piggy Cafe_C3.png to 600x600
+Processing file: Japanese Convenience Store_L.png in subfolder: Background
+Checking existence of PNG: compositeImages\Background\Japanese Convenience Store.png
+Checking existence of JPG: 300x300_jpg\Background\Japanese Convenience Store.jpg
+Files not found, processing: PNG - compositeImages\Background\Japanese Convenience Store.png, JPG - 300x300_jpg\Background\Japanese Convenience Store.jpg
+Saved: compositeImages\Background\Japanese Convenience Store.png
+Resized image saved: 600x600_png\Background\Piggy Cafe_C3.png
+Resizing image: scriptImages\Background\Piggy Cafe_C4.png to 600x600
+Resized image saved: 800x800_png\Background\Piggy Cafe_C3.png
+Resizing image: scriptImages\Background\Piggy Cafe_C4.png to 800x800
+Saved: 300x300_jpg\Background\Japanese Convenience Store.jpg
+Processing image group: Monkey Park
+Processing file: Monkey Park_L.png in subfolder: Background
+Checking existence of PNG: compositeImages\Background\Monkey Park.png
+Checking existence of JPG: 300x300_jpg\Background\Monkey Park.jpg
+Files not found, processing: PNG - compositeImages\Background\Monkey Park.png, JPG - 300x300_jpg\Background\Monkey Park.jpg
+Saved: compositeImages\Background\Monkey Park.png
+Resized image saved: 600x600_png\Background\Piggy Cafe_C4.png
+Resizing image: scriptImages\Background\Piggy Cafe_C5.png to 600x600
+Resized image saved: 800x800_png\Background\Piggy Cafe_C4.png
+Resizing image: scriptImages\Background\Piggy Cafe_C5.png to 800x800
+Saved: 300x300_jpg\Background\Monkey Park.jpg
+Processing image group: Nara
+Processing file: Nara_L.png in subfolder: Background
+Checking existence of PNG: compositeImages\Background\Nara.png
+Checking existence of JPG: 300x300_jpg\Background\Nara.jpg
+Files not found, processing: PNG - compositeImages\Background\Nara.png, JPG - 300x300_jpg\Background\Nara.jpg
+Saved: compositeImages\Background\Nara.png
+Resized image saved: 800x800_png\Background\Piggy Cafe_C5.png
+Resizing image: scriptImages\Background\Piggy Cafe_L.png to 800x800
+Resized image saved: 600x600_png\Background\Piggy Cafe_C5.png
+Resizing image: scriptImages\Background\Piggy Cafe_L.png to 600x600
+Saved: 300x300_jpg\Background\Nara.jpg
+Processing image group: Piggy Cafe
+Processing file: Piggy Cafe_C1.png in subfolder: Background
+Processing file: Piggy Cafe_C2.png in subfolder: Background
+Resized image saved: 600x600_png\Background\Piggy Cafe_L.png
+Resizing image: scriptImages\Background\Xyclon_C1.png to 600x600
+Processing file: Piggy Cafe_C3.png in subfolder: Background
+Resized image saved: 800x800_png\Background\Piggy Cafe_L.png
+Resizing image: scriptImages\Background\Xyclon_C1.png to 800x800
+Processing file: Piggy Cafe_C4.png in subfolder: Background
+Resized image saved: 600x600_png\Background\Xyclon_C1.png
+Resizing image: scriptImages\Background\Xyclon_C2.png to 600x600
+Processing file: Piggy Cafe_C5.png in subfolder: Background
+Resized image saved: 800x800_png\Background\Xyclon_C1.png
+Resizing image: scriptImages\Background\Xyclon_C2.png to 800x800
+Processing file: Piggy Cafe_L.png in subfolder: Background
+Checking existence of PNG: compositeImages\Background\Piggy Cafe.png
+Checking existence of JPG: 300x300_jpg\Background\Piggy Cafe.jpg
+Files not found, processing: PNG - compositeImages\Background\Piggy Cafe.png, JPG - 300x300_jpg\Background\Piggy Cafe.jpg
+Resized image saved: 600x600_png\Background\Xyclon_C2.png
+Resizing image: scriptImages\Background\Xyclon_C3.png to 600x600
+Resized image saved: 800x800_png\Background\Xyclon_C2.png
+Resizing image: scriptImages\Background\Xyclon_C3.png to 800x800
+Saved: compositeImages\Background\Piggy Cafe.png
+Saved: 300x300_jpg\Background\Piggy Cafe.jpg
+Processing image group: Xyclon
+Resized image saved: 800x800_png\Background\Xyclon_C3.png
+Resizing image: scriptImages\Background\Xyclon_C4.png to 800x800
+Processing file: Xyclon_C1.png in subfolder: Background
+Resized image saved: 600x600_png\Background\Xyclon_C3.png
+Resizing image: scriptImages\Background\Xyclon_C4.png to 600x600
+Processing file: Xyclon_C2.png in subfolder: Background
+Resized image saved: 800x800_png\Background\Xyclon_C4.png
+Resizing image: scriptImages\Background\Xyclon_C5.png to 800x800
+Resized image saved: 600x600_png\Background\Xyclon_C4.png
+Resizing image: scriptImages\Background\Xyclon_C5.png to 600x600
+Processing file: Xyclon_C3.png in subfolder: Background
+Processing file: Xyclon_C4.png in subfolder: Background
+Resized image saved: 800x800_png\Background\Xyclon_C5.png
+Resizing image: scriptImages\Background\Xyclon_L.png to 800x800
+Resized image saved: 600x600_png\Background\Xyclon_C5.png
+Resizing image: scriptImages\Background\Xyclon_L.png to 600x600
+Processing file: Xyclon_C5.png in subfolder: Background
+Resized image saved: 600x600_png\Background\Xyclon_L.png
+Skipping existing file: 600x600_png\Face Sticker\Bun Bun_C1.png
+Skipping existing file: 600x600_png\Face Sticker\Bun Bun_L.png
+Skipping existing file: 600x600_png\Face Sticker\Rainbow Makeup_L.png
+Resizing image: scriptImages\Frame\Borknys_C1.png to 600x600
+Processing file: Xyclon_L.png in subfolder: Background
+Checking existence of PNG: compositeImages\Background\Xyclon.png
+Checking existence of JPG: 300x300_jpg\Background\Xyclon.jpg
+Files not found, processing: PNG - compositeImages\Background\Xyclon.png, JPG - 300x300_jpg\Background\Xyclon.jpg
+Resized image saved: 800x800_png\Background\Xyclon_L.png
+Skipping existing file: 800x800_png\Face Sticker\Bun Bun_C1.png
+Skipping existing file: 800x800_png\Face Sticker\Bun Bun_L.png
+Skipping existing file: 800x800_png\Face Sticker\Rainbow Makeup_L.png
+Resizing image: scriptImages\Frame\Borknys_C1.png to 800x800
+Saved: compositeImages\Background\Xyclon.png
+Saved: 300x300_jpg\Background\Xyclon.jpg
+Processing image group: Bun Bun
+Resized image saved: 600x600_png\Frame\Borknys_C1.png
+Resizing image: scriptImages\Frame\Borknys_C2.png to 600x600
+Resized image saved: 800x800_png\Frame\Borknys_C1.png
+Resizing image: scriptImages\Frame\Borknys_C2.png to 800x800
+Processing file: Bun Bun_C1.png in subfolder: Face Sticker
+Resized image saved: 800x800_png\Frame\Borknys_C2.png
+Resizing image: scriptImages\Frame\Borknys_C3.png to 800x800
+Resized image saved: 600x600_png\Frame\Borknys_C2.png
+Resizing image: scriptImages\Frame\Borknys_C3.png to 600x600
+Processing file: Bun Bun_L.png in subfolder: Face Sticker
+Checking existence of PNG: compositeImages\Face Sticker\Bun Bun.png
+Checking existence of JPG: 300x300_jpg\Face Sticker\Bun Bun.jpg
+Skipping existing files: PNG - compositeImages\Face Sticker\Bun Bun.png, JPG - 300x300_jpg\Face Sticker\Bun Bun.jpg
+Processing image group: Rainbow Makeup
+Resized image saved: 800x800_png\Frame\Borknys_C3.png
+Resizing image: scriptImages\Frame\Borknys_L.png to 800x800
+Resized image saved: 600x600_png\Frame\Borknys_C3.png
+Resizing image: scriptImages\Frame\Borknys_L.png to 600x600
+Processing file: Rainbow Makeup_L.png in subfolder: Face Sticker
+Checking existence of PNG: compositeImages\Face Sticker\Rainbow Makeup.png
+Checking existence of JPG: 300x300_jpg\Face Sticker\Rainbow Makeup.jpg
+Skipping existing files: PNG - compositeImages\Face Sticker\Rainbow Makeup.png, JPG - 300x300_jpg\Face Sticker\Rainbow Makeup.jpg
+Processing image group: Borknys
+Processing file: Borknys_C1.png in subfolder: Frame
+Resized image saved: 800x800_png\Frame\Borknys_L.png
+Skipping existing file: 800x800_png\Hair Style\Kumo Hine Buns_Back_C1.png
+Skipping existing file: 800x800_png\Hair Style\Kumo Hine Buns_Back_L.png
+Skipping existing file: 800x800_png\Hair Style\Kumo Hine Buns_Front_C1.png
+Skipping existing file: 800x800_png\Hair Style\Kumo Hine Buns_Front_L.png
+Skipping existing file: 800x800_png\Hair Style\Mika Pony_Back_C1.png
+Skipping existing file: 800x800_png\Hair Style\Mika Pony_Back_L.png
+Skipping existing file: 800x800_png\Hair Style\Mika Pony_Front_C1.png
+Skipping existing file: 800x800_png\Hair Style\Mika Pony_Front_L.png
+Skipping existing file: 800x800_png\Hair Style\Sunday Bunday_Back_C1.png
+Skipping existing file: 800x800_png\Hair Style\Sunday Bunday_Back_L.png
+Skipping existing file: 800x800_png\Hair Style\Sunday Bunday_Front_C1.png
+Skipping existing file: 800x800_png\Hair Style\Sunday Bunday_Front_L.png
+Resizing image: scriptImages\Hand\Queen Piggy_C1.png to 800x800
+Resized image saved: 600x600_png\Frame\Borknys_L.png
+Skipping existing file: 600x600_png\Hair Style\Kumo Hine Buns_Back_C1.png
+Skipping existing file: 600x600_png\Hair Style\Kumo Hine Buns_Back_L.png
+Skipping existing file: 600x600_png\Hair Style\Kumo Hine Buns_Front_C1.png
+Skipping existing file: 600x600_png\Hair Style\Kumo Hine Buns_Front_L.png
+Skipping existing file: 600x600_png\Hair Style\Mika Pony_Back_C1.png
+Skipping existing file: 600x600_png\Hair Style\Mika Pony_Back_L.png
+Skipping existing file: 600x600_png\Hair Style\Mika Pony_Front_C1.png
+Skipping existing file: 600x600_png\Hair Style\Mika Pony_Front_L.png
+Skipping existing file: 600x600_png\Hair Style\Sunday Bunday_Back_C1.png
+Skipping existing file: 600x600_png\Hair Style\Sunday Bunday_Back_L.png
+Skipping existing file: 600x600_png\Hair Style\Sunday Bunday_Front_C1.png
+Skipping existing file: 600x600_png\Hair Style\Sunday Bunday_Front_L.png
+Resizing image: scriptImages\Hand\Queen Piggy_C1.png to 600x600
+Processing file: Borknys_C2.png in subfolder: Frame
+Resized image saved: 800x800_png\Hand\Queen Piggy_C1.png
+Resizing image: scriptImages\Hand\Queen Piggy_C2.png to 800x800
+Resized image saved: 600x600_png\Hand\Queen Piggy_C1.png
+Resizing image: scriptImages\Hand\Queen Piggy_C2.png to 600x600
+Processing file: Borknys_C3.png in subfolder: Frame
+Processing file: Borknys_L.png in subfolder: Frame
+Checking existence of PNG: compositeImages\Frame\Borknys.png
+Checking existence of JPG: 300x300_jpg\Frame\Borknys.jpg
+Files not found, processing: PNG - compositeImages\Frame\Borknys.png, JPG - 300x300_jpg\Frame\Borknys.jpg
+Resized image saved: 800x800_png\Hand\Queen Piggy_C2.png
+Resizing image: scriptImages\Hand\Queen Piggy_C3.png to 800x800
+Resized image saved: 600x600_png\Hand\Queen Piggy_C2.png
+Resizing image: scriptImages\Hand\Queen Piggy_C3.png to 600x600
+Saved: compositeImages\Frame\Borknys.png
+Saved: 300x300_jpg\Frame\Borknys.jpg
+Processing image group: Kumo Hine Buns_Back
+Resized image saved: 600x600_png\Hand\Queen Piggy_C3.png
+Resizing image: scriptImages\Hand\Queen Piggy_L.png to 600x600
+Resized image saved: 800x800_png\Hand\Queen Piggy_C3.png
+Resizing image: scriptImages\Hand\Queen Piggy_L.png to 800x800
+Processing file: Kumo Hine Buns_Back_C1.png in subfolder: Hair Style
+Processing file: Kumo Hine Buns_Back_C1.png in Hair Style
+Processing file: Kumo Hine Buns_Back_L.png in Hair Style
+Resized image saved: 600x600_png\Hand\Queen Piggy_L.png
+Resizing image: scriptImages\Hand\Queen Piggy_S.png to 600x600
+Resized image saved: 800x800_png\Hand\Queen Piggy_L.png
+Resizing image: scriptImages\Hand\Queen Piggy_S.png to 800x800
+Processing file: Kumo Hine Buns_Front_C1.png in Hair Style
+Resized image saved: 800x800_png\Hand\Queen Piggy_S.png
+Skipping existing file: 800x800_png\Hand\Vicroy Gamer_C1.png
+Skipping existing file: 800x800_png\Hand\Vicroy Gamer_C2.png
+Skipping existing file: 800x800_png\Hand\Vicroy Gamer_C3.png
+Skipping existing file: 800x800_png\Hand\Vicroy Gamer_C4.png
+Skipping existing file: 800x800_png\Hand\Vicroy Gamer_C5.png
+Skipping existing file: 800x800_png\Hand\Vicroy Gamer_L.png
+Skipping existing file: 800x800_png\Hand\Vicroy Gamer_S.png
+Skipping existing file: 800x800_png\Hand\Yummy Cupcake_C1.png
+Skipping existing file: 800x800_png\Hand\Yummy Cupcake_C2.png
+Skipping existing file: 800x800_png\Hand\Yummy Cupcake_C3.png
+Skipping existing file: 800x800_png\Hand\Yummy Cupcake_C4.png
+Skipping existing file: 800x800_png\Hand\Yummy Cupcake_C5.png
+Skipping existing file: 800x800_png\Hand\Yummy Cupcake_L.png
+Skipping existing file: 800x800_png\Hand\Yummy Cupcake_S.png
+Skipping existing file: 800x800_png\Outfit\Team Cupcake_C1.png
+Skipping existing file: 800x800_png\Outfit\Team Cupcake_C2.png
+Skipping existing file: 800x800_png\Outfit\Team Cupcake_C3.png
+Skipping existing file: 800x800_png\Outfit\Team Cupcake_C4.png
+Skipping existing file: 800x800_png\Outfit\Team Cupcake_C5.png
+Skipping existing file: 800x800_png\Outfit\Team Cupcake_L.png
+Resized image saved: 600x600_png\Hand\Queen Piggy_S.png
+Skipping existing file: 600x600_png\Hand\Vicroy Gamer_C1.png
+Skipping existing file: 600x600_png\Hand\Vicroy Gamer_C2.png
+Skipping existing file: 600x600_png\Hand\Vicroy Gamer_C3.png
+Skipping existing file: 600x600_png\Hand\Vicroy Gamer_C4.png
+Skipping existing file: 600x600_png\Hand\Vicroy Gamer_C5.png
+Skipping existing file: 600x600_png\Hand\Vicroy Gamer_L.png
+Skipping existing file: 600x600_png\Hand\Vicroy Gamer_S.png
+Skipping existing file: 600x600_png\Hand\Yummy Cupcake_C1.png
+Skipping existing file: 600x600_png\Hand\Yummy Cupcake_C2.png
+Skipping existing file: 600x600_png\Hand\Yummy Cupcake_C3.png
+Skipping existing file: 600x600_png\Hand\Yummy Cupcake_C4.png
+Skipping existing file: 600x600_png\Hand\Yummy Cupcake_C5.png
+Skipping existing file: 600x600_png\Hand\Yummy Cupcake_L.png
+Skipping existing file: 600x600_png\Hand\Yummy Cupcake_S.png
+Skipping existing file: 600x600_png\Outfit\Team Cupcake_C1.png
+Skipping existing file: 600x600_png\Outfit\Team Cupcake_C2.png
+Skipping existing file: 600x600_png\Outfit\Team Cupcake_C3.png
+Skipping existing file: 600x600_png\Outfit\Team Cupcake_C4.png
+Skipping existing file: 600x600_png\Outfit\Team Cupcake_C5.png
+Skipping existing file: 600x600_png\Outfit\Team Cupcake_L.png
+Processing file: Kumo Hine Buns_Front_L.png in Hair Style
+Processing file: Mika Pony_Back_C1.png in Hair Style
+Processing file: Mika Pony_Back_L.png in Hair Style
+Processing file: Mika Pony_Front_C1.png in Hair Style
+Processing file: Mika Pony_Front_L.png in Hair Style
+Processing file: Sunday Bunday_Back_C1.png in Hair Style
+Processing file: Sunday Bunday_Back_L.png in Hair Style
+Processing file: Sunday Bunday_Front_C1.png in Hair Style
+Processing file: Sunday Bunday_Front_L.png in Hair Style
+Processing file: Kumo Hine Buns_Back_L.png in subfolder: Hair Style
+Processing file: Kumo Hine Buns_Back_C1.png in Hair Style
+Processing file: Kumo Hine Buns_Back_L.png in Hair Style
+Processing file: Kumo Hine Buns_Front_C1.png in Hair Style
+Processing file: Kumo Hine Buns_Front_L.png in Hair Style
+Processing file: Mika Pony_Back_C1.png in Hair Style
+Processing file: Mika Pony_Back_L.png in Hair Style
+Processing file: Mika Pony_Front_C1.png in Hair Style
+Processing file: Mika Pony_Front_L.png in Hair Style
+Processing file: Sunday Bunday_Back_C1.png in Hair Style
+Processing file: Sunday Bunday_Back_L.png in Hair Style
+Processing file: Sunday Bunday_Front_C1.png in Hair Style
+Processing file: Sunday Bunday_Front_L.png in Hair Style
+Checking existence of PNG: compositeImages\Hair Style\Kumo Hine Buns_Back.png
+Checking existence of JPG: 300x300_jpg\Hair Style\Kumo Hine Buns_Back.jpg
+Files not found, processing: PNG - compositeImages\Hair Style\Kumo Hine Buns_Back.png, JPG - 300x300_jpg\Hair Style\Kumo Hine Buns_Back.jpg
+Processing image group: Kumo Hine Buns_Front
+Processing file: Kumo Hine Buns_Front_C1.png in subfolder: Hair Style
+Processing file: Kumo Hine Buns_Back_C1.png in Hair Style
+Processing file: Kumo Hine Buns_Back_L.png in Hair Style
+Processing file: Kumo Hine Buns_Front_C1.png in Hair Style
+Processing file: Kumo Hine Buns_Front_L.png in Hair Style
+Processing file: Mika Pony_Back_C1.png in Hair Style
+Processing file: Mika Pony_Back_L.png in Hair Style
+Processing file: Mika Pony_Front_C1.png in Hair Style
+Processing file: Mika Pony_Front_L.png in Hair Style
+Processing file: Sunday Bunday_Back_C1.png in Hair Style
+Processing file: Sunday Bunday_Back_L.png in Hair Style
+Processing file: Sunday Bunday_Front_C1.png in Hair Style
+Processing file: Sunday Bunday_Front_L.png in Hair Style
+Processing file: Kumo Hine Buns_Front_L.png in subfolder: Hair Style
+Processing file: Kumo Hine Buns_Back_C1.png in Hair Style
+Processing file: Kumo Hine Buns_Back_L.png in Hair Style
+Processing file: Kumo Hine Buns_Front_C1.png in Hair Style
+Processing file: Kumo Hine Buns_Front_L.png in Hair Style
+Processing file: Mika Pony_Back_C1.png in Hair Style
+Processing file: Mika Pony_Back_L.png in Hair Style
+Processing file: Mika Pony_Front_C1.png in Hair Style
+Processing file: Mika Pony_Front_L.png in Hair Style
+Processing file: Sunday Bunday_Back_C1.png in Hair Style
+Processing file: Sunday Bunday_Back_L.png in Hair Style
+Processing file: Sunday Bunday_Front_C1.png in Hair Style
+Processing file: Sunday Bunday_Front_L.png in Hair Style
+Checking existence of PNG: compositeImages\Hair Style\Kumo Hine Buns_Front.png
+Checking existence of JPG: 300x300_jpg\Hair Style\Kumo Hine Buns_Front.jpg
+Files not found, processing: PNG - compositeImages\Hair Style\Kumo Hine Buns_Front.png, JPG - 300x300_jpg\Hair Style\Kumo Hine Buns_Front.jpg
+Processing image group: Mika Pony_Back
+Processing file: Mika Pony_Back_C1.png in subfolder: Hair Style
+Processing file: Kumo Hine Buns_Back_C1.png in Hair Style
+Processing file: Kumo Hine Buns_Back_L.png in Hair Style
+Processing file: Kumo Hine Buns_Front_C1.png in Hair Style
+Processing file: Kumo Hine Buns_Front_L.png in Hair Style
+Processing file: Mika Pony_Back_C1.png in Hair Style
+Processing file: Mika Pony_Back_L.png in Hair Style
+Processing file: Mika Pony_Front_C1.png in Hair Style
+Processing file: Mika Pony_Front_L.png in Hair Style
+Processing file: Sunday Bunday_Back_C1.png in Hair Style
+Processing file: Sunday Bunday_Back_L.png in Hair Style
+Processing file: Sunday Bunday_Front_C1.png in Hair Style
+Processing file: Sunday Bunday_Front_L.png in Hair Style
+Processing file: Mika Pony_Back_L.png in subfolder: Hair Style
+Processing file: Kumo Hine Buns_Back_C1.png in Hair Style
+Processing file: Kumo Hine Buns_Back_L.png in Hair Style
+Processing file: Kumo Hine Buns_Front_C1.png in Hair Style
+Processing file: Kumo Hine Buns_Front_L.png in Hair Style
+Processing file: Mika Pony_Back_C1.png in Hair Style
+Processing file: Mika Pony_Back_L.png in Hair Style
+Processing file: Mika Pony_Front_C1.png in Hair Style
+Processing file: Mika Pony_Front_L.png in Hair Style
+Processing file: Sunday Bunday_Back_C1.png in Hair Style
+Processing file: Sunday Bunday_Back_L.png in Hair Style
+Processing file: Sunday Bunday_Front_C1.png in Hair Style
+Processing file: Sunday Bunday_Front_L.png in Hair Style
+Checking existence of PNG: compositeImages\Hair Style\Mika Pony_Back.png
+Checking existence of JPG: 300x300_jpg\Hair Style\Mika Pony_Back.jpg
+Files not found, processing: PNG - compositeImages\Hair Style\Mika Pony_Back.png, JPG - 300x300_jpg\Hair Style\Mika Pony_Back.jpg
+Processing image group: Mika Pony_Front
+Processing file: Mika Pony_Front_C1.png in subfolder: Hair Style
+Processing file: Kumo Hine Buns_Back_C1.png in Hair Style
+Processing file: Kumo Hine Buns_Back_L.png in Hair Style
+Processing file: Kumo Hine Buns_Front_C1.png in Hair Style
+Processing file: Kumo Hine Buns_Front_L.png in Hair Style
+Processing file: Mika Pony_Back_C1.png in Hair Style
+Processing file: Mika Pony_Back_L.png in Hair Style
+Processing file: Mika Pony_Front_C1.png in Hair Style
+Processing file: Mika Pony_Front_L.png in Hair Style
+Processing file: Sunday Bunday_Back_C1.png in Hair Style
+Processing file: Sunday Bunday_Back_L.png in Hair Style
+Processing file: Sunday Bunday_Front_C1.png in Hair Style
+Processing file: Sunday Bunday_Front_L.png in Hair Style
+Processing file: Mika Pony_Front_L.png in subfolder: Hair Style
+Processing file: Kumo Hine Buns_Back_C1.png in Hair Style
+Processing file: Kumo Hine Buns_Back_L.png in Hair Style
+Processing file: Kumo Hine Buns_Front_C1.png in Hair Style
+Processing file: Kumo Hine Buns_Front_L.png in Hair Style
+Processing file: Mika Pony_Back_C1.png in Hair Style
+Processing file: Mika Pony_Back_L.png in Hair Style
+Processing file: Mika Pony_Front_C1.png in Hair Style
+Processing file: Mika Pony_Front_L.png in Hair Style
+Processing file: Sunday Bunday_Back_C1.png in Hair Style
+Processing file: Sunday Bunday_Back_L.png in Hair Style
+Processing file: Sunday Bunday_Front_C1.png in Hair Style
+Processing file: Sunday Bunday_Front_L.png in Hair Style
+Checking existence of PNG: compositeImages\Hair Style\Mika Pony_Front.png
+Checking existence of JPG: 300x300_jpg\Hair Style\Mika Pony_Front.jpg
+Files not found, processing: PNG - compositeImages\Hair Style\Mika Pony_Front.png, JPG - 300x300_jpg\Hair Style\Mika Pony_Front.jpg
+Processing image group: Sunday Bunday_Back
+Processing file: Sunday Bunday_Back_C1.png in subfolder: Hair Style
+Processing file: Kumo Hine Buns_Back_C1.png in Hair Style
+Processing file: Kumo Hine Buns_Back_L.png in Hair Style
+Processing file: Kumo Hine Buns_Front_C1.png in Hair Style
+Processing file: Kumo Hine Buns_Front_L.png in Hair Style
+Processing file: Mika Pony_Back_C1.png in Hair Style
+Processing file: Mika Pony_Back_L.png in Hair Style
+Processing file: Mika Pony_Front_C1.png in Hair Style
+Processing file: Mika Pony_Front_L.png in Hair Style
+Processing file: Sunday Bunday_Back_C1.png in Hair Style
+Processing file: Sunday Bunday_Back_L.png in Hair Style
+Processing file: Sunday Bunday_Front_C1.png in Hair Style
+Processing file: Sunday Bunday_Front_L.png in Hair Style
+Processing file: Sunday Bunday_Back_L.png in subfolder: Hair Style
+Processing file: Kumo Hine Buns_Back_C1.png in Hair Style
+Processing file: Kumo Hine Buns_Back_L.png in Hair Style
+Processing file: Kumo Hine Buns_Front_C1.png in Hair Style
+Processing file: Kumo Hine Buns_Front_L.png in Hair Style
+Processing file: Mika Pony_Back_C1.png in Hair Style
+Processing file: Mika Pony_Back_L.png in Hair Style
+Processing file: Mika Pony_Front_C1.png in Hair Style
+Processing file: Mika Pony_Front_L.png in Hair Style
+Processing file: Sunday Bunday_Back_C1.png in Hair Style
+Processing file: Sunday Bunday_Back_L.png in Hair Style
+Processing file: Sunday Bunday_Front_C1.png in Hair Style
+Processing file: Sunday Bunday_Front_L.png in Hair Style
+Checking existence of PNG: compositeImages\Hair Style\Sunday Bunday_Back.png
+Checking existence of JPG: 300x300_jpg\Hair Style\Sunday Bunday_Back.jpg
+Files not found, processing: PNG - compositeImages\Hair Style\Sunday Bunday_Back.png, JPG - 300x300_jpg\Hair Style\Sunday Bunday_Back.jpg
+Processing image group: Sunday Bunday_Front
+Processing file: Sunday Bunday_Front_C1.png in subfolder: Hair Style
+Processing file: Kumo Hine Buns_Back_C1.png in Hair Style
+Processing file: Kumo Hine Buns_Back_L.png in Hair Style
+Processing file: Kumo Hine Buns_Front_C1.png in Hair Style
+Processing file: Kumo Hine Buns_Front_L.png in Hair Style
+Processing file: Mika Pony_Back_C1.png in Hair Style
+Processing file: Mika Pony_Back_L.png in Hair Style
+Processing file: Mika Pony_Front_C1.png in Hair Style
+Processing file: Mika Pony_Front_L.png in Hair Style
+Processing file: Sunday Bunday_Back_C1.png in Hair Style
+Processing file: Sunday Bunday_Back_L.png in Hair Style
+Processing file: Sunday Bunday_Front_C1.png in Hair Style
+Processing file: Sunday Bunday_Front_L.png in Hair Style
+Processing file: Sunday Bunday_Front_L.png in subfolder: Hair Style
+Processing file: Kumo Hine Buns_Back_C1.png in Hair Style
+Processing file: Kumo Hine Buns_Back_L.png in Hair Style
+Processing file: Kumo Hine Buns_Front_C1.png in Hair Style
+Processing file: Kumo Hine Buns_Front_L.png in Hair Style
+Processing file: Mika Pony_Back_C1.png in Hair Style
+Processing file: Mika Pony_Back_L.png in Hair Style
+Processing file: Mika Pony_Front_C1.png in Hair Style
+Processing file: Mika Pony_Front_L.png in Hair Style
+Processing file: Sunday Bunday_Back_C1.png in Hair Style
+Processing file: Sunday Bunday_Back_L.png in Hair Style
+Processing file: Sunday Bunday_Front_C1.png in Hair Style
+Processing file: Sunday Bunday_Front_L.png in Hair Style
+Checking existence of PNG: compositeImages\Hair Style\Sunday Bunday_Front.png
+Checking existence of JPG: 300x300_jpg\Hair Style\Sunday Bunday_Front.jpg
+Files not found, processing: PNG - compositeImages\Hair Style\Sunday Bunday_Front.png, JPG - 300x300_jpg\Hair Style\Sunday Bunday_Front.jpg
+Processing image group: Queen Piggy
+Processing file: Queen Piggy_C1.png in subfolder: Hand
+Processing file: Queen Piggy_C2.png in subfolder: Hand
+Processing file: Queen Piggy_C3.png in subfolder: Hand
+Processing file: Queen Piggy_L.png in subfolder: Hand
+Processing file: Queen Piggy_S.png in subfolder: Hand
+Checking existence of PNG: compositeImages\Hand\Queen Piggy.png
+Checking existence of JPG: 300x300_jpg\Hand\Queen Piggy.jpg
+Files not found, processing: PNG - compositeImages\Hand\Queen Piggy.png, JPG - 300x300_jpg\Hand\Queen Piggy.jpg
+Saved: compositeImages\Hand\Queen Piggy.png
+Saved: 300x300_jpg\Hand\Queen Piggy.jpg
+Processing image group: Vicroy Gamer
+Processing file: Vicroy Gamer_C1.png in subfolder: Hand
+Processing file: Vicroy Gamer_C2.png in subfolder: Hand
+Processing file: Vicroy Gamer_C3.png in subfolder: Hand
+Processing file: Vicroy Gamer_C4.png in subfolder: Hand
+Processing file: Vicroy Gamer_C5.png in subfolder: Hand
+Processing file: Vicroy Gamer_L.png in subfolder: Hand
+Processing file: Vicroy Gamer_S.png in subfolder: Hand
+Checking existence of PNG: compositeImages\Hand\Vicroy Gamer.png
+Checking existence of JPG: 300x300_jpg\Hand\Vicroy Gamer.jpg
+Skipping existing files: PNG - compositeImages\Hand\Vicroy Gamer.png, JPG - 300x300_jpg\Hand\Vicroy Gamer.jpg
+Processing image group: Yummy Cupcake
+Processing file: Yummy Cupcake_C1.png in subfolder: Hand
+Processing file: Yummy Cupcake_C2.png in subfolder: Hand
+Processing file: Yummy Cupcake_C3.png in subfolder: Hand
+Processing file: Yummy Cupcake_C4.png in subfolder: Hand
+Processing file: Yummy Cupcake_C5.png in subfolder: Hand
+Processing file: Yummy Cupcake_L.png in subfolder: Hand
+Processing file: Yummy Cupcake_S.png in subfolder: Hand
+Checking existence of PNG: compositeImages\Hand\Yummy Cupcake.png
+Checking existence of JPG: 300x300_jpg\Hand\Yummy Cupcake.jpg
+Skipping existing files: PNG - compositeImages\Hand\Yummy Cupcake.png, JPG - 300x300_jpg\Hand\Yummy Cupcake.jpg
+Processing image group: Team Cupcake
+Processing file: Team Cupcake_C1.png in subfolder: Outfit
+Processing file: Team Cupcake_C2.png in subfolder: Outfit
+Processing file: Team Cupcake_C3.png in subfolder: Outfit
+Processing file: Team Cupcake_C4.png in subfolder: Outfit
+Processing file: Team Cupcake_C5.png in subfolder: Outfit
+Processing file: Team Cupcake_L.png in subfolder: Outfit
+Checking existence of PNG: compositeImages\Outfit\Team Cupcake.png
+Checking existence of JPG: 300x300_jpg\Outfit\Team Cupcake.jpg
+Skipping existing files: PNG - compositeImages\Outfit\Team Cupcake.png, JPG - 300x300_jpg\Outfit\Team Cupcake.jpg

@@ -1,17 +1,13 @@
 {
-  "name": "Bunny Club - 6 Month Subscription",
-  "description": "Welcome to Bunny Club! The most fun way to expand your wardrobe with the Hunnys Closet.\n\nThis membership begins upon minting.\n\n\n\nOwning this unlocks the following benefits for you within the Hunnys Community:\n\nRecieve all Closet Shop drops monthly\n\nAccess to members-only drops\n\nBunny Club Discord Role\n\nMonthly Bunny Club Seasons NFT & Item Set\n\nBunny Club Marina Seasons NFT & Item Set\n\nEligible for spontaneous raffles & giveaways\n\n20% off all Hunnys Closet Shop Items\n\nAnd more!\n\n\n\nAny subsequent items received as a result of holding this token during its active membership can be used in the [Hunnys Closet](https://closet.hunnys.io).\n\n\n\n",
-  "image": "https://hunnysclosetshop.s3.us-east-2.amazonaws.com/images/goodies/112.png",
+  "name": "Gamer Ratty Bling",
+  "description": "Bling bling babe, we’ve got that block of big cheese. This set is to celebrate a Vicroy, it’s the month of the 2 year Hunnyversary of Ratty B! Get your Dollys gamer face on and prepare to get bopped, because once they play the Vicroy Gamer they will probably never stop! Get hupe, and prepare to hit em with the 1,2 and watch out for banana peels they can cause you to look a fool! Don’t pass us this fun set for your Dollys to feel 1337! In the world of gaming they will reign supreme!\n\n\n\nOwning this unlocks the following set of items in the Hunnys Closet:\n\nAccessory: Ratty B Bling\n\nHand: Vicroy Gamer\n\n\n\n\n\nAll pieces purchased within this Hunnys Closet Shop collection will immediately unlock the specified item(s) for use in the [Hunnys Closet](https://closet.hunnys.io).\n\n\n\nAs long as you currently hold this token in the same wallet that you are connected with when using the [Hunnys Closet](https://closet.hunnys.io), it will automatically be available for use - enjoy!\n\n",
+  "image": "https://hunnysclosetshop.s3.us-east-2.amazonaws.com/images/goodies/115.png",
   "external_url": "",
   "background_color": "",
   "attributes": [
     {
       "trait_type": "Type",
-      "value": "Single Item"
-    },
-    {
-      "trait_type": "Special",
-      "value": "Bunny Club"
+      "value": "Set"
     }
   ],
   "supply": "500",

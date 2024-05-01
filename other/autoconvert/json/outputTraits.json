@@ -1,42 +1,23 @@
 {
   "attributes": [
     {"name": "Accessory", "traits": [
-        {"name": "Cloud Bunny","colors": 1,"rarity": "Common","tags": [],"token_id": 111},
-        {"name": "Ratty B Bling","colors": 1,"rarity": "Common","tags": "necklace","token_id": 112}
+        {"name": "Greedy Deer","colors": 1,"rarity": "Legendary","tags": [],"token_id": 192}
     ]},
 
     {"name": "Background", "traits": [
-        {"name": "Delicate Clouds","colors": 0,"rarity": "Common","tags": [],"token_id": 111}
+        {"name": "Xyclon","colors": 5,"rarity": "Epic","tags": [],"token_id": 188},
+        {"name": "Piggy Cafe","colors": 5,"rarity": "Common","tags": [],"token_id": 189},
+        {"name": "Japanese Convenience Store","colors": 0,"rarity": "Epic","tags": [],"token_id": 190},
+        {"name": "Monkey Park","colors": 0,"rarity": "Epic","tags": [],"token_id": 191},
+        {"name": "Nara","colors": 0,"rarity": "Legendary","tags": [],"token_id": 192}
     ]},
 
-    {"name": "Dye", "traits": [
-        {"name": "Sherbert","colors": 0,"rarity": "Common","tags": [],"token_id": 111},
-        {"name": "Cloud Watcher","colors": 0,"rarity": "Common","tags": [],"token_id": 111}
-    ]},
-
-    {"name": "Face Sticker", "traits": [
-        {"name": "Rainbow Makeup","colors": 0,"rarity": "Common","tags": [],"token_id": 111},
-        {"name": "Bun Bun","colors": 1,"rarity": "Common","tags": [],"token_id": 113}
-    ]},
-
-    {"name": "Hair Style", "traits": [
-        {"name": "Kumo Hine Buns","colors": 1,"rarity": "Common", "parts": 2, "tags": [],"token_id": 111},
-        {"name": "Sunday Bunday","colors": 1,"rarity": "Common","tags": [],"token_id": 113},
-        {"name": "Mika Pony","colors": 1,"rarity": "Common","tags": [],"token_id": 113}
+    {"name": "Frame", "traits": [
+        {"name": "Borknys","colors": 3,"rarity": "Epic","tags": [],"token_id": 188}
     ]},
 
     {"name": "Hand", "traits": [
-        {"name": "Vicroy Gamer","colors": 5,"rarity": "Common","tags": "skin","token_id": 112},
-        {"name": "Yummy Cupcake","colors": 5,"rarity": "Common","tags": "skin","token_id": 113}
-    ]},
-
-    {"name": "Outfit", "traits": [
-        {"name": "Team Cupcake","colors": 4,"rarity": "Common","tags": [],"token_id": 113}
-    ]},
-
-    {"name": "Skin", "traits": [
-        {"name": "Sherbert","colors": 0,"rarity": "Common","tags": [],"token_id": 111},
-        {"name": "Cloud Watcher","colors": 0,"rarity": "Common","tags": [],"token_id": 111}
+        {"name": "Queen Piggy","colors": 3,"rarity": "Common","tags": "skin","token_id": 189}
     ]}
   ]
 }

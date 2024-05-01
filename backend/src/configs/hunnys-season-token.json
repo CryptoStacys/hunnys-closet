@@ -3076,5 +3076,73 @@
             }
         ],
         "metaPath": "https://hunnysseasons.s3.us-east-2.amazonaws.com/187"
+    },
+    {
+        "tokenId": 188,
+        "name": "Belitrix The Borkny Babe",
+        "attributes": [
+            {
+                "trait_type": "Background",
+                "value": "Xyclon"
+            },
+            {
+                "trait_type": "Frame",
+                "value": "Borknys"
+            }
+        ],
+        "metaPath": "https://hunnysseasons.s3.us-east-2.amazonaws.com/188"
+    },
+    {
+        "tokenId": 189,
+        "name": "Mae The MiPig Girl",
+        "attributes": [
+            {
+                "trait_type": "Background",
+                "value": "Piggy Cafe"
+            },
+            {
+                "trait_type": "Hand",
+                "value": "Queen Piggy"
+            }
+        ],
+        "metaPath": "https://hunnysseasons.s3.us-east-2.amazonaws.com/189"
+    },
+    {
+        "tokenId": 190,
+        "name": "Lina The Lawson Girl",
+        "attributes": [
+            {
+                "trait_type": "Background",
+                "value": "Japanese Convenience Store"
+            }
+        ],
+        "metaPath": "https://hunnysseasons.s3.us-east-2.amazonaws.com/190"
+    },
+    
+    {
+        "tokenId": 191,
+        "name": "Misaki The Monkey Park Girl",
+        "attributes": [
+            {
+                "trait_type": "Background",
+                "value": "Monkey Park"
+            }
+        ],
+        "metaPath": "https://hunnysseasons.s3.us-east-2.amazonaws.com/191"
+    },
+    {
+        "tokenId": 192,
+        "name": "Sammy The Deer Park Girl",
+        "attributes": [
+            {
+                "trait_type": "Background",
+                "value": "Nara"
+            },
+            {
+                "trait_type": "Accessory",
+                "value": "Greedy Deer"
+            }
+        ],
+        "metaPath": "https://hunnysseasons.s3.us-east-2.amazonaws.com/192"
     }
 ]
