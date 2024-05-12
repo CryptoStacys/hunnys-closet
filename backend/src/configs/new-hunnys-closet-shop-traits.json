@@ -109,10 +109,10 @@
     {
       "name": "Hand",
       "traits": [
-        {"name":"FU","colors":1,"rarity":"Epic","tags":"skin","token_id":114},
-        {"name":"FU MORE","colors":1,"rarity":"Epic","tags":"skin","token_id":114},
-        {"name":"Vicroy Gamer","colors":5,"rarity":"Common","tags":"skin","token_id":112},
-        {"name":"Yummy Cupcake","colors":5,"rarity":"Common","tags":"skin","token_id":113},
+        {"name":"FU","colors":1,"rarity":"Epic","tags":["skin"],"token_id":114},
+        {"name":"FU MORE","colors":1,"rarity":"Epic","tags":["skin"],"token_id":114},
+        {"name":"Vicroy Gamer","colors":5,"rarity":"Common","tags":["skin"],"token_id":112},
+        {"name":"Yummy Cupcake","colors":5,"rarity":"Common","tags":["skin"],"token_id":113},
         {"name":"Crypto Defender Shield","colors":5,"rarity":"Common","tags":[],"token_id":108},
         {"name":"Hardware Wallet","colors":3,"rarity":"Common","tags":["skin"],"token_id":110},
         {"name":"WEN Bunny","colors":4,"rarity":"Common","tags":["skin"],"token_id":110},
@@ -151,7 +151,7 @@
     {
       "name": "Hat",
       "traits": [
-        {"name":"Batty Headband","colors":4,"rarity":"Epic","tags":[],"token_id":114},
+        {"name":"Batty Headband","colors":4,"rarity":"Epic","tags":["twoParts"],"token_id":114},
         {"name":"Crypto Defender Helm","colors":3,"rarity":"Common","tags":["twoParts"],"token_id":106},
         {"name":"Cuddle Bunny","colors":3,"rarity":"Common","tags":[],"token_id":109},
         {"name":"MetaVixen Baby Its Cold Outside","colors":3,"rarity":"Common","tags":["twoParts"],"token_id":98},
@@ -209,7 +209,7 @@
     {
       "name": "Outfit",
       "traits": [
-        {"name":"Big Tiddy Goth GF","colors":3,"rarity":"Epic","tags":"skin","token_id":114},
+        {"name":"Big Tiddy Goth GF","colors":3,"rarity":"Epic","tags":["skin"],"token_id":114},
         {"name":"Keyhole Goth GF Halter","colors":3,"rarity":"Epic","tags":[],"token_id":114},
         {"name":"Team Cupcake","colors":4,"rarity":"Common","tags":[],"token_id":113},
         {"name":"Crypto Defender Armor","colors":3,"rarity":"Common","tags":[],"token_id":107},
