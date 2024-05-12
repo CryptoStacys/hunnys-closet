@@ -1,23 +1,38 @@
 {
   "attributes": [
     {"name": "Accessory", "traits": [
-        {"name": "Greedy Deer","colors": 1,"rarity": "Legendary","tags": [],"token_id": 192}
+        {"name": "Cross Earrings","colors": 1,"rarity": "Epic","tags": NaN,"token_id": 114},
+        {"name": "Spiky Choker","colors": 2,"rarity": "Epic","tags": NaN,"token_id": 114}
     ]},
 
-    {"name": "Background", "traits": [
-        {"name": "Xyclon","colors": 5,"rarity": "Epic","tags": [],"token_id": 188},
-        {"name": "Piggy Cafe","colors": 5,"rarity": "Common","tags": [],"token_id": 189},
-        {"name": "Japanese Convenience Store","colors": 0,"rarity": "Epic","tags": [],"token_id": 190},
-        {"name": "Monkey Park","colors": 0,"rarity": "Epic","tags": [],"token_id": 191},
-        {"name": "Nara","colors": 0,"rarity": "Legendary","tags": [],"token_id": 192}
+    {"name": "Eyebrows", "traits": [
+        {"name": "Thin Goth","colors": 0,"rarity": "Epic","tags": NaN,"token_id": 114}
     ]},
 
-    {"name": "Frame", "traits": [
-        {"name": "Borknys","colors": 3,"rarity": "Epic","tags": [],"token_id": 188}
+    {"name": "Eyes", "traits": [
+        {"name": "Goth GF Eyeliner","colors": 2,"rarity": "Epic","tags": NaN,"token_id": 114}
+    ]},
+
+    {"name": "Hair Style", "traits": [
+        {"name": "Batty Bangs","colors": 1,"rarity": "Epic","tags": "Front and back","token_id": 114}
     ]},
 
     {"name": "Hand", "traits": [
-        {"name": "Queen Piggy","colors": 3,"rarity": "Common","tags": "skin","token_id": 189}
+        {"name": "FU","colors": 1,"rarity": "Epic","tags": "skin","token_id": 114},
+        {"name": "FU MORE","colors": 1,"rarity": "Epic","tags": "skin","token_id": 114}
+    ]},
+
+    {"name": "Hat", "traits": [
+        {"name": "Batty Headband","colors": 4,"rarity": "Epic","tags": "Front and back","token_id": 114}
+    ]},
+
+    {"name": "Mouth", "traits": [
+        {"name": "Goth Lipgloss","colors": 0,"rarity": "Epic","tags": NaN,"token_id": 114}
+    ]},
+
+    {"name": "Outfit", "traits": [
+        {"name": "Big Tiddy Goth GF","colors": 3,"rarity": "Epic","tags": "skin","token_id": 114},
+        {"name": "Keyhole Goth GF Halter","colors": 3,"rarity": "Epic","tags": NaN,"token_id": 114}
     ]}
   ]
 }

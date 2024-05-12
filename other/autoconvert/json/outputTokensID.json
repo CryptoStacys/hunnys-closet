@@ -1,67 +1,51 @@
 [
     {
-        "tokenId": 188,
-        "name": "Belitrix The Borkny Babe",
+        "tokenId": 114,
+        "name": "Goth GF Pack",
         "attributes": [
             {
-                "trait_type": "Background",
-                "value": "Xyclon"
+                "trait_type": "Batty Bangs",
+                "value": "Hair Style"
             },
             {
-                "trait_type": "Frame",
-                "value": "Borknys"
-            }
-        ],
-        "metaPath": ""
-    },
-    {
-        "tokenId": 190,
-        "name": "Lina The Lawson Girl",
-        "attributes": [
-            {
-                "trait_type": "Background",
-                "value": "Japanese Convenience Store"
-            }
-        ],
-        "metaPath": ""
-    },
-    {
-        "tokenId": 189,
-        "name": "Mae The MiPig Girl",
-        "attributes": [
-            {
-                "trait_type": "Background",
-                "value": "Piggy Cafe"
+                "trait_type": "Batty Headband",
+                "value": "Hat"
             },
             {
-                "trait_type": "Hand",
-                "value": "Queen Piggy"
-            }
-        ],
-        "metaPath": ""
-    },
-    {
-        "tokenId": 191,
-        "name": "Misaki The Monkey Park Girl",
-        "attributes": [
-            {
-                "trait_type": "Background",
-                "value": "Monkey Park"
-            }
-        ],
-        "metaPath": ""
-    },
-    {
-        "tokenId": 192,
-        "name": "Sammy The Deer Park Girl",
-        "attributes": [
-            {
-                "trait_type": "Background",
-                "value": "Nara"
+                "trait_type": "Big Tiddy Goth GF",
+                "value": "Outfit"
             },
             {
-                "trait_type": "Accessory",
-                "value": "Greedy Deer"
+                "trait_type": "Cross Earrings",
+                "value": "Accessory"
+            },
+            {
+                "trait_type": "FU",
+                "value": "Hand"
+            },
+            {
+                "trait_type": "FU MORE",
+                "value": "Hand"
+            },
+            {
+                "trait_type": "Goth GF Eyeliner",
+                "value": "Eyes"
+            },
+            {
+                "trait_type": "Goth Lipgloss",
+                "value": "Mouth"
+            },
+            {
+                "trait_type": "Keyhole Goth GF Halter",
+                "value": "Outfit"
+            },
+            {
+                "trait_type": "Spiky Choker",
+                "value": "Accessory"
+            },
+            {
+                "trait_type": "Thin Goth",
+                "value": "Eyebrows"
             }
         ],
         "metaPath": ""

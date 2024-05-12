@@ -187,7 +187,8 @@
         {"name":"Coco the Smugblush","colors":3,"rarity":"Common","tags":["companion"]},
         {"name":"Cupcake Backpack","colors":5,"rarity":"Common","tags":["backpack","ownStripes"]},
         {"name":"Power of Jadestone","colors":2,"rarity":"Common","tags":[]},
-        {"name":"Sparkly Wings","colors":4,"rarity":"Common","tags":["onBack"]}
+        {"name":"Sparkly Wings","colors":4,"rarity":"Common","tags":["onBack"]},
+        {"name":"Beaker","colors":3,"rarity":"Common","tags":["companion"]}
       ]
     },
     {
