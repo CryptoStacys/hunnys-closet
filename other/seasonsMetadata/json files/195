@@ -1,0 +1,31 @@
+{
+    "name": "Roxy the Roller Rat",
+    "description": "Roxy the Roller Rat, the arena\u2019s rebellious rogue, skates circles around her opponents  She wields a \"Cheesy Boomerang\" that slices through the air, returning to her hand with pinpoint accuracy. Her mechanical rat sidekick is a ticking time bomb, literally\u2014launching explosive surprises that keep enemies on their toes. Roxy is always ready to deliver a thrilling and explosive performance in the ring! She\u2019s also a huge fan of SkuzzRat if you couldn\u2019t tell.",
+    "image": "https://hunnysseasons.s3.us-east-2.amazonaws.com/195.png",
+    "animation_url": "",
+    "audio_url": "",
+    "interactive_url": "",
+    "external_link": "",
+    "attributes": [
+        {
+            "trait_type": "Month",
+            "value": "May"
+        },
+        {
+            "trait_type": "Generation",
+            "value": 3
+        },
+        {
+            "trait_type": "Rarity",
+            "value": "Royal Bunny"
+        },
+        {
+            "trait_type": "Season",
+            "value": "Bunny Fighter"
+        },
+        {
+            "trait_type": "Year",
+            "value": 2024
+        }
+    ]
+}
