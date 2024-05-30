@@ -1,0 +1,16 @@
+{
+  "name": "Goth GF Pack",
+  "description": "Owning this unlocks the following set of items in the Hunnys Closet:\n\nHand: FU\n\nHand: FU MORE\n\nAccessory: Cross Earrings\n\nOutfit: Big Tiddy Goth GF\n\nHat: Batty Headband\n\nHair Style: Batty Bangs\n\nEyebrows: Thin Goth\n\nOutfit: Keyhole Goth GF Halter\n\nAccessory: Spiky Choker\n\nMouth: Goth Lipgloss\n\nEyes: Goth GF Eyeliner\n\n\n\nAll pieces purchased within this Hunnys Closet Shop collection will immediately unlock the specified item(s) for use in the [Hunnys Closet](https://closet.hunnys.io).\n\n\n\nAs long as you currently hold this token in the same wallet that you are connected with when using the [Hunnys Closet](https://closet.hunnys.io), it will automatically be available for use - enjoy!\n\n",
+  "image": "https://hunnysclosetshop.s3.us-east-2.amazonaws.com/images/goodies/114.png",
+  "external_url": "",
+  "background_color": "",
+  "attributes": [
+    {
+      "trait_type": "Type",
+      "value": "Set"
+    }
+  ],
+  "supply": "500",
+  "customImage": "",
+  "customAnimationUrl": ""
+}

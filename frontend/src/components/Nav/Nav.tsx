@@ -372,25 +372,10 @@ checkMembership();
             <Help
               {...{
                 title: "What is this?",
-                body: "This is your balance on the Base Network!\n\nYou can use this to join the Hunnys Bunny Club!",
+                body: "This is your ETH balance on the Base Network!",
                 className: "",
                 footer: (
                   <><div className="flex flex-col justify-center m-auto items-center font-bold">
-                    <Link
-                      className="w-4/5 self-center"
-                      to="/#bunnyclub"
-                      trackId="bunnyClubJoin"
-                      onClick={() => {
-                        setCurrentView("bunnyclub");
-                      }}
-                    >
-                      <div className="text-center">
-                        <button className="bg-hunnys-yellow py-2 mb-8 w-4/5 self-center justify-center text-hunnys-blue luckiest shadow-md rounded-full px-4 text-2xl hover:shadow-lg hover:scale-[1.02] transition-all">
-                          Join the Club
-                        </button>
-                      </div>
-                    </Link>
-                  </div><div className="flex flex-col justify-center m-auto items-center font-bold">
                       Need to purchase more?<br></br>
                       <br></br>
                       <CoinbaseButtonBase
@@ -554,25 +539,10 @@ checkMembership();
             <Help
               {...{
                 title: "What is this?",
-                body: "This is your balance on the Base Network!\n\nYou can use this to join the Hunnys Bunny Club!",
+                body: "This is your balance on the Base Network!",
                 className: "",
                 footer: (
                   <><div className="flex flex-col justify-center m-auto items-center font-bold">
-                    <Link
-                      className="w-4/5 self-center"
-                      to="/#bunnyclub"
-                      trackId="bunnyClubJoin"
-                      onClick={() => {
-                        setCurrentView("bunnyclub");
-                      }}
-                    >
-                      <div className="text-center">
-                        <button className="bg-hunnys-yellow py-2 mb-8 w-4/5 self-center justify-center text-hunnys-blue luckiest shadow-md rounded-full px-4 text-2xl hover:shadow-lg hover:scale-[1.02] transition-all">
-                          Join the Club
-                        </button>
-                      </div>
-                    </Link>
-                  </div><div className="flex flex-col justify-center m-auto items-center font-bold">
                       Need to purchase more?<br></br>
                       <br></br>
                       <CoinbaseButtonBase
@@ -642,7 +612,8 @@ checkMembership();
               </a>
               {connected && isMember ? (
                 <a
-                href="https://closet.hunnys.io/#bunnyclub"
+                href="https://hunnys.io/bunnyclub"
+                target="_blank"
                 onClick={() => trackLinkClick("viewBunnyClubExistingMember", user!)}
               >
                 <Image
@@ -655,7 +626,8 @@ checkMembership();
                 </a>
               ) : (
                 <a
-                  href="https://closet.hunnys.io/#bunnyclub"
+                  href="https://hunnys.io/bunnyclub"
+                  target="_blank"
                   onClick={() => trackLinkClick("viewBunnyClub", user!)}
                 >
                   <Image

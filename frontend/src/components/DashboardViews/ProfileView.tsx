@@ -634,7 +634,7 @@ checkMembership();
               <Tooltip
                 imageUrl="/assets/img/joinBunnyClubTooltip_with_shadow.svg"
                 imageAlt="Join the Bunny Club"
-                linkUrl="https://closet.hunnys.io/#bunnyclub"
+                linkUrl="https://hunnys.io/bunnyclub"
                 className=""
               >
                 <Image
@@ -706,78 +706,6 @@ checkMembership();
       ) : (
         <div></div>
       )}
-      {!isMember && <PromoCard
-        headerTitle="Join the Bunny Club - now with new payment options!"
-        leftBlockContent={
-          <Image
-          className="rounded-xl xs:self-center md:self-start"
-          src={threeMonthBC}
-          alt={"Bunny Club"}
-          width={200}
-          height={200}
-        ></Image>
-        }
-        middleBlockContent={
-          <Image
-          className="rounded-xl xs:self-center md:self-center"
-          src={sixMonthBC}
-          alt={"Bunny Club"}
-          width={200}
-          height={200}
-        ></Image>
-        } // Assuming you might fill this in later
-        rightBlockContent={
-          <Image
-          className="rounded-xl xs:self-center md:self-end"
-          src={twelveMonthBC}
-          alt={"Bunny Club"}
-          width={200}
-          height={200}
-        ></Image>
-        }
-        footer={
-          <div>
-            <h1 className="luckiest text-center text-2xl mx-8">
-              The most fun way to expand your wardrobe with Hunnys Closet!
-            </h1>
-            <br></br>
-            <Link
-              className="w-4/5 self-center"
-              to="/#bunnyclub"
-              trackId="bunnyClubJoin"
-              onClick={() => {
-                navigationClick;
-                setCurrentView("bunnyclub");
-              }}
-            >
-              <div className="text-center">
-                <button className="bg-hunnys-yellow py-2 mb-8 w-4/5 self-center justify-center text-hunnys-blue luckiest shadow-md rounded-full px-4 text-2xl hover:shadow-lg hover:scale-[1.02] transition-all">
-                  Join the Club
-                </button>
-              </div>
-            </Link>
-            <p className="font-poppins text-center xs:text-lg md:text-xl">
-              Memberships above paid in ETH. Want to pay with PayPal / Credit
-              Card? <br></br>
-              <br></br>
-              <a
-                className="underline"
-                target="_blank"
-                href="https://hunnys.io/bunnyclub"
-                onClick={() =>
-                  trackLinkClick(
-                    "bunnyClubFiat",
-                    user!,
-                    "https://hunnys.io/bunnyclub"
-                  )
-                }
-              >
-                Visit our home page for more payment options!
-              </a>
-            </p>
-          </div>
-        }
-      />}
       {claimedFreeMug ? (
         <div></div>
       ) : (

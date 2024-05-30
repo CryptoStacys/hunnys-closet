@@ -145,6 +145,12 @@ const LayerService = {
     
         // OUTFIT
         if ((!bodysuit || bodysuit.name === "Empty") && outfit) {
+            if (outfit.tags.includes("skin")) {
+                layers.push({
+                    pattern: `Colors/SkinColors/Old/${skin.name}`,
+                    src: `Outfit/${outfit.name}_S`,
+                });
+            }
             layers = LayerService.addLayer(layers, outfit);
         }
         
@@ -175,6 +181,11 @@ const LayerService = {
                 }
                 layers.push({ src: `Accessory/BackpackStraps/BackpackStrap_Left_L` });
             }
+        }
+    
+        // EYE RIGHT
+        if (eyes) {
+            layers = LayerService.addLayer(layers, eyes, '_Right');
         }
     
         // HAIR (FRONT / DEFAULT)
@@ -227,11 +238,6 @@ const LayerService = {
         // PIERCING (SEPTUM)
         if (piercing && piercing.name === "SeptumPiercing" || "Septum Ring") {
             layers = LayerService.addLayer(layers, piercing);
-        }
-    
-        // EYE RIGHT
-        if (eyes) {
-            layers = LayerService.addLayer(layers, eyes, '_Right');
         }
     
         // Special handling for Football Helmet to place it above Eyes and Mouth

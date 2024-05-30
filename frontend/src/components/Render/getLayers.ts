@@ -181,6 +181,7 @@ export async function getLayers(token: any): Promise<Layer[]> {
 
     // UNDERGARMENT
     if ((!outfit || outfit.name === "Empty") && (!bodysuit || bodysuit.name === "Empty")) {
+        
         if (!undergarment || undergarment.name === "Empty") {
             undergarment.name = "Frilly Bra";
             undergarment.colors = 1;
@@ -248,6 +249,13 @@ export async function getLayers(token: any): Promise<Layer[]> {
 
     // OUTFIT
     if ((!bodysuit || bodysuit.name === "Empty") && outfit) {
+        if (outfit.tags.includes("skin")) {
+            layers.push({
+                pattern: `Colors/SkinColors/Old/${skin.name}`,
+                src: `Outfit/${outfit.name}_S`,
+            });
+        }
+
         layers = addLayer(layers, outfit);
     }
     
@@ -278,6 +286,11 @@ export async function getLayers(token: any): Promise<Layer[]> {
             }
             layers.push({ src: `Accessory/BackpackStraps/BackpackStrap_Left_L` });
         }
+    }
+
+    // EYE RIGHT
+    if (eyes) {
+        layers = addLayer(layers, eyes, '_Right');
     }
 
     // HAIR (FRONT / DEFAULT)
@@ -325,11 +338,6 @@ export async function getLayers(token: any): Promise<Layer[]> {
     // PIERCING (SEPTUM)
     if (piercing && piercing.name === "SeptumPiercing" || "Septum Ring") {
         layers = addLayer(layers, piercing);
-    }
-
-    // EYE RIGHT
-    if (eyes) {
-        layers = addLayer(layers, eyes, '_Right');
     }
 
     // Special handling for Football Helmet to place it above Eyes and Mouth

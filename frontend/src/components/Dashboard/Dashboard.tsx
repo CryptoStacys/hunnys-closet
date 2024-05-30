@@ -10,8 +10,6 @@ import InventoryView from "../DashboardViews/InventoryView/InventoryView";
 import NewsView from "../DashboardViews/NewsView";
 import EventsView from "../DashboardViews/EventsView";
 import { useAtom } from "jotai";
-// import GalleryView from "../DashboardViews/GalleryView";
-import BunnyClubView from "../DashboardViews/BunnyClubView";
 
 const Dashboard: React.FC = () => {
   const [currentView, setCurrentView] = useAtom(currentViewAtom);
@@ -42,8 +40,8 @@ console.log("Current View", currentView)
             return <ShopView />;
         // case 'gallery':
         //     return <GalleryView />;
-        case 'bunnyclub':
-            return <BunnyClubView />;
+        // case 'bunnyclub':
+        //     return <BunnyClubView />;
         default:
             return <ProfileView />;
     }
