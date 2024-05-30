@@ -2662,51 +2662,107 @@
     "tokenId": 114,
     "name": "Goth GF Pack",
     "attributes": [
-        {
-            "trait_type": "Batty Bangs",
-            "value": "Hair Style"
-        },
-        {
-            "trait_type": "Batty Headband",
-            "value": "Hat"
-        },
-        {
-            "trait_type": "Big Tiddy Goth GF",
-            "value": "Outfit"
-        },
-        {
-            "trait_type": "Cross Earrings",
-            "value": "Accessory"
-        },
-        {
-            "trait_type": "FU",
-            "value": "Hand"
-        },
-        {
-            "trait_type": "FU MORE",
-            "value": "Hand"
-        },
-        {
-            "trait_type": "Goth GF Eyeliner",
-            "value": "Eyes"
-        },
-        {
-            "trait_type": "Goth Lipgloss",
-            "value": "Mouth"
-        },
-        {
-            "trait_type": "Keyhole Goth GF Halter",
-            "value": "Outfit"
-        },
-        {
-            "trait_type": "Spiky Choker",
-            "value": "Accessory"
-        },
-        {
-            "trait_type": "Thin Goth",
-            "value": "Eyebrows"
-        }
+      {
+        "trait_type": "Hair Style",
+        "value": "Batty Bangs"
+      },
+      {
+        "trait_type": "Hat",
+        "value": "Batty Headband"
+      },
+      {
+        "trait_type": "Outfit",
+        "value": "Big Tiddy Goth GF"
+      },
+      {
+        "trait_type": "Accessory",
+        "value": "Cross Earrings"
+      },
+      {
+        "trait_type": "Hand",
+        "value": "FU"
+      },
+      {
+        "trait_type": "Hand",
+        "value": "FU MORE"
+      },
+      {
+        "trait_type": "Eyes",
+        "value": "Goth GF Eyeliner"
+      },
+      {
+        "trait_type": "Mouth",
+        "value": "Goth Lipgloss"
+      },
+      {
+        "trait_type": "Outfit",
+        "value": "Keyhole Goth GF Halter"
+      },
+      {
+        "trait_type": "Accessory",
+        "value": "Spiky Choker"
+      },
+      {
+        "trait_type": "Eyebrows",
+        "value": "Thin Goth"
+      }
     ],
     "metaPath": "https://hunnysclosetshop.s3.us-east-2.amazonaws.com/images/goodies/114"
+  },
+{
+  "tokenId": 115,
+  "name": "Seasons Showdown 2024",
+  "attributes": [
+      {
+          "trait_type": "Hand",
+          "value": "Loser"
+      },
+      {
+          "trait_type": "Eyebrows",
+          "value": "Ugly Cry Brows"
+      },
+      {
+          "trait_type": "Mouth",
+          "value": "Ugly Cry Mouth"
+      },
+      {
+          "trait_type": "Eyes",
+          "value": "Ugly Crying"
+      }
+  ],
+  "metaPath": "https://hunnysclosetshop.s3.us-east-2.amazonaws.com/images/goodies/115"
+},
+  {
+    "tokenId": 116,
+    "name": "Seasons Showdown 2024 - 1st Place Winner Holders",
+    "attributes": [
+        {
+            "trait_type": "Skin",
+            "value": "Gold"
+        }
+    ],
+    "metaPath": "https://hunnysclosetshop.s3.us-east-2.amazonaws.com/images/goodies/116"
+},
+{
+    "tokenId": 117,
+    "name": "Seasons Showdown 2024 - 2nd Place Winner Holders",
+    "attributes": [
+        {
+            "trait_type": "Skin",
+            "value": "Silver"
+        }
+    ],
+    "metaPath": "https://hunnysclosetshop.s3.us-east-2.amazonaws.com/images/goodies/117"
+},
+{
+    "tokenId": 118,
+    "name": "Seasons Showdown 2024 - 3rd Place Winner Holders",
+    "attributes": [
+        {
+            "trait_type": "Skin",
+            "value": "Bronze"
+        }
+    ],
+    "metaPath": "https://hunnysclosetshop.s3.us-east-2.amazonaws.com/images/goodies/118"
 }
 ]

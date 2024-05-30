@@ -1,6 +1,141 @@
 {
   "attributes": [
     {
+      "name": "Eyebrows",
+      "traits": [
+        {"name":"Ugly Cry Brows","colors":1,"rarity":"Common","tags":[],"token_id":115},
+        {"name":"Thin Goth","colors":0,"rarity":"Epic","tags":[],"token_id":114},
+        {"name":"MetaVixen High Brow","colors":0,"rarity":"Common","tags":[],"token_id":98},
+        {"name":"Lovey Brows","colors":0,"rarity":"Common","tags":[],"token_id":62},
+        {"name":"Grumpy","colors":0,"rarity":"Epic","tags":[],"token_id":5},
+        {"name":"Surprised","colors":0,"rarity":"Epic","tags":[],"token_id":5},
+        {"name":"Upbrows","colors":0,"rarity":"Epic","tags":[],"token_id":5},
+        {"name":"Straight Brows","colors":0,"rarity":"Epic","tags":[],"token_id":5},
+        {"name":"Cringe Brow","colors":0,"rarity":"Epic","tags":[],"token_id":5},
+        {"name":"W33D Brows","colors":1,"rarity":"Epic","tags":[],"token_id":4},
+        {"name":"Heavy Brow","colors":0,"rarity":"Epic","tags":[],"token_id":46}
+      ]
+    },
+    {
+      "name": "Eyes",
+      "traits": [
+        {"name":"Ugly Crying","colors":2,"rarity":"Common","tags":[],"token_id":115},
+        {"name":"Goth GF Eyeliner","colors":2,"rarity":"Epic","tags":[],"token_id":114},
+        {"name":"Seeing Green","colors":1,"rarity":"Common","tags":[],"token_id":110},
+        {"name":"MetaVixen Eyes","colors":1,"rarity":"Common","tags":[],"token_id":98},
+        {"name":"Fired Up","colors":1,"rarity":"Epic","tags":[],"token_id":67},
+        {"name":"Anime Heart Eyes","colors":1,"rarity":"Common","tags":[],"token_id":62},
+        {"name":"Bored Eyes","colors":1,"rarity":"Epic","tags":[],"token_id":1},
+        {"name":"Closed Eyes","colors":0,"rarity":"Epic","tags":[],"token_id":5},
+        {"name":"Shifty Eyes","colors":1,"rarity":"Epic","tags":[],"token_id":5},
+        {"name":"Eye Roll","colors":1,"rarity":"Epic","tags":[],"token_id":5},
+        {"name":"Cringe Eye","colors":1,"rarity":"Epic","tags":[],"token_id":5},
+        {"name":"Drunkard Gaze","colors":1,"rarity":"Epic","tags":[],"token_id":46},
+        {"name":"FLS Laser (Shop)","colors":2,"rarity":"common","tags":["onTop"],"token_id":47}
+      ]
+    },
+    {
+      "name": "Hand",
+      "traits": [
+        {"name":"Loser","colors":1,"rarity":"Common","tags":["skin"],"token_id":115},
+        {"name":"FU","colors":1,"rarity":"Epic","tags":["skin"],"token_id":114},
+        {"name":"FU MORE","colors":1,"rarity":"Epic","tags":["skin"],"token_id":114},
+        {"name":"Vicroy Gamer","colors":5,"rarity":"Common","tags":["skin"],"token_id":112},
+        {"name":"Yummy Cupcake","colors":5,"rarity":"Common","tags":["skin"],"token_id":113},
+        {"name":"Crypto Defender Shield","colors":5,"rarity":"Common","tags":[],"token_id":108},
+        {"name":"Hardware Wallet","colors":3,"rarity":"Common","tags":["skin"],"token_id":110},
+        {"name":"WEN Bunny","colors":4,"rarity":"Common","tags":["skin"],"token_id":110},
+        {"name":"MetaVixen Tasty Taco","colors":4,"rarity":"Common","tags":["skin"],"token_id":98},
+        {"name":"Slam Dunk","colors":2,"rarity":"Common","tags":["skin"],"token_id":79},
+        {"name":"Number 1 Fan Trophy","colors":5,"rarity":"Common","tags":["skin"],"token_id":81},
+        {"name":"Sword Hand","colors":3,"rarity":"Common","tags":[],"token_id":84},
+        {"name":"Pom Poms","colors":4,"rarity":"Common","tags":["skin"],"token_id":85},
+        {"name":"Shopping Bags","colors":5,"rarity":"Common","tags":["skin"],"token_id":86},
+        {"name":"Moon Guardian Scepter","colors":4,"rarity":"Common","tags":[],"token_id":93},
+        {"name":"Mr Pointy","colors":3,"rarity":"Common","tags":["skin"],"token_id":95},
+        {"name":"Excellent","colors":1,"rarity":"Common","tags":["skin"],"token_id":96},
+        {"name":"Delicious Dreamwater","colors":4,"rarity":"Uncommon","tags":["skin"],"token_id":74},
+        {"name":"Tater Tot Tiller","colors":2,"rarity":"Rare","tags":["skin"],"token_id":75},
+        {"name":"LomBUNdi Trophy 2024","colors":3.0,"rarity":"Mythic","tags":["skin"],"token_id":65},
+        {"name":"Heart Hands","colors":1,"rarity":"Common","tags":["skin"],"token_id":62},
+        {"name":"Holding Hands","colors":3,"rarity":"Common","tags":["skin"],"token_id":62},
+        {"name":"Macaron My Heart","colors":3,"rarity":"Common","tags":["skin"],"token_id":62},
+        {"name":"Milk","colors":2,"rarity":"Rare","tags":["skin"],"token_id":2},
+        {"name":"GM Mug","colors":2,"rarity":"Common","tags":["skin"],"token_id":0},
+        {"name":"BQ Soda","colors":4,"rarity":"common","tags":["skin"],"token_id":11},
+        {"name":"BQ Large Fries","colors":4,"rarity":"common","tags":["skin"],"token_id":11},
+        {"name":"BQ Carrot Patty Burger","colors":5,"rarity":"common","tags":["skin"],"token_id":11},
+        {"name":"Pumpkin Spice Latte","colors":4,"rarity":"common","tags":["skin"],"token_id":19},
+        {"name":"Boo Mug","colors":3,"rarity":"uncommon","tags":["skin"],"token_id":25},
+        {"name":"Witch Cauldron Mug","colors":3,"rarity":"uncommon","tags":["skin"],"token_id":26},
+        {"name":"Jack o Bear Pail","colors":4,"rarity":"rare","tags":["skin"],"token_id":30},
+        {"name":"Beer","colors":2,"rarity":"epic","tags":["skin"],"token_id":46},
+        {"name":"Reindeer Mug","colors":4,"rarity":"Legendary","tags":["skin"],"token_id":49},
+        {"name":"XL Hot Cocoa","colors":4,"rarity":"Rare","tags":["skin"],"token_id":49},
+        {"name":"Christmas Tree Mug","colors":5,"rarity":"Uncommon","tags":["skin"],"token_id":49},
+        {"name":"Rancher Handbag","colors":4,"rarity":"Rare","tags":["skin"],"token_id":53},
+        {"name":"Sailor Babe Tote","colors":3,"rarity":"Uncommon","tags":["skin"],"token_id":54}
+      ]
+    },
+    {
+      "name": "Mouth",
+      "traits": [
+        {"name":"Ugly Cry Mouth","colors":2,"rarity":"Common","tags":[],"token_id":115},
+        {"name":"Goth Lipgloss","colors":0,"rarity":"Epic","tags":[],"token_id":114},
+        {"name":"MetaVixen Grin","colors":1,"rarity":"Common","tags":[],"token_id":98},
+        {"name":"Resting Bun Face","colors":1,"rarity":"Common","tags":[],"token_id":91},
+        {"name":"Lovey Lips","colors":2,"rarity":"Common","tags":[],"token_id":62},
+        {"name":"Curious Carrot Munch","colors":3,"rarity":"Rare","tags":[],"token_id":76},
+        {"name":"Bored Grin","colors":1,"rarity":"Epic","tags":[],"token_id":1},
+        {"name":"Open Mouth","colors":2,"rarity":"Epic","tags":[],"token_id":5},
+        {"name":"Frown","colors":1,"rarity":"Epic","tags":[],"token_id":5},
+        {"name":"Thin Lips","colors":1,"rarity":"Epic","tags":[],"token_id":5},
+        {"name":"Cringe","colors":1,"rarity":"Epic","tags":[],"token_id":5},
+        {"name":"W33D Hang","colors":3,"rarity":"Epic","tags":[],"token_id":4},
+        {"name":"W33D Straight","colors":3,"rarity":"Epic","tags":[],"token_id":4},
+        {"name":"Drunkard Buckteeth","colors":1,"rarity":"Epic","tags":[],"token_id":46},
+        {"name":"FLS Molly (Shop)","colors":3,"rarity":"common","tags":[],"token_id":47},
+        {"name":"FLS Tongue (Shop)","colors":2,"rarity":"common","tags":[],"token_id":47}
+      ]
+    },
+    {
+      "name": "Skin",
+      "traits": [
+        {"name":"Gold","colors":0,"rarity":"Common","tags":[],"token_id":116},
+        {"name":"Silver","colors":0,"rarity":"Common","tags":[],"token_id":117},
+        {"name":"Bronze","colors":0,"rarity":"Common","tags":[],"token_id":118},
+        {"name":"Sherbert","colors":0,"rarity":"Common","tags":[],"token_id":111},
+        {"name":"Cloud Watcher","colors":0,"rarity":"Common","tags":[],"token_id":111},
+        {"name":"Glitch","colors":0,"rarity":"Common","tags":[],"token_id":110},
+        {"name":"MetaVixen Constellation","colors":0,"rarity":"Common","tags":[],"token_id":98},
+        {"name":"Gloopy Mr. Moar","colors":0,"rarity":"Legendary","tags":[],"token_id":72},
+        {"name":"Cupid Babe","colors":0,"rarity":"Common","tags":[],"token_id":62},
+        {"name":"Orange Tiger","colors":0,"rarity":"Epic","tags":[],"token_id":63},
+        {"name":"Neon Green Tiger","colors":0,"rarity":"Epic","tags":[],"token_id":63},
+        {"name":"White Tiger","colors":0,"rarity":"Epic","tags":[],"token_id":63},
+        {"name":"Neon Pink Tiger","colors":0,"rarity":"Epic","tags":[],"token_id":63},
+        {"name":"Orange Cheetah","colors":0,"rarity":"Epic","tags":[],"token_id":63},
+        {"name":"White Cheetah","colors":0,"rarity":"Epic","tags":[],"token_id":63},
+        {"name":"Pink Cheetah","colors":0,"rarity":"Epic","tags":[],"token_id":63},
+        {"name":"Neon Green Cheetah","colors":0,"rarity":"Epic","tags":[],"token_id":63},
+        {"name":"Moo Cow","colors":0,"rarity":"Epic","tags":[],"token_id":63},
+        {"name":"Strawberry Moo Cow","colors":0,"rarity":"Epic","tags":[],"token_id":63},
+        {"name":"Alien Moo Cow","colors":0,"rarity":"Epic","tags":[],"token_id":63},
+        {"name":"Bored Pink Fur","colors":0,"rarity":"Legendary","tags":[],"token_id":1},
+        {"name":"Blushy Babe","colors":0,"rarity":"Mythic","tags":[],"token_id":10},
+        {"name":"Blushy Bombshell","colors":0,"rarity":"Mythic","tags":[],"token_id":10},
+        {"name":"Candy Cloud Sparkles","colors":0,"rarity":"Mythic","tags":[],"token_id":10},
+        {"name":"Crater Cutie","colors":0,"rarity":"Mythic","tags":[],"token_id":10},
+        {"name":"Darknova Demon","colors":0,"rarity":"Mythic","tags":[],"token_id":10},
+        {"name":"Skuzzy Sprinkle Cake","colors":0,"rarity":"Mythic","tags":[],"token_id":10},
+        {"name":"Velvety Night Nibbler","colors":0,"rarity":"Mythic","tags":[],"token_id":10},
+        {"name":"Gorgon Skin","colors":0,"rarity":"rare","tags":[],"token_id":31},
+        {"name":"Spectral Skin","colors":0,"rarity":"epic","tags":[],"token_id":37},
+        {"name":"That Yellow Cartoon Skin","colors":0,"rarity":"epic","tags":[],"token_id":46},
+        {"name":"FLS Beige (Shop)","colors":0,"rarity":"Common","tags":[],"token_id":47}
+      ]
+    },
+    {
       "name": "Accessory",
       "traits": [
         {"name":"Cross Earrings","colors":1,"rarity":"Epic","tags":["earrings"],"token_id":114},
@@ -44,38 +179,6 @@
       ]
     },
     {
-      "name": "Eyebrows",
-      "traits": [
-        {"name":"Thin Goth","colors":0,"rarity":"Epic","tags":[],"token_id":114},
-        {"name":"MetaVixen High Brow","colors":0,"rarity":"Common","tags":[],"token_id":98},
-        {"name":"Lovey Brows","colors":0,"rarity":"Common","tags":[],"token_id":62},
-        {"name":"Grumpy","colors":0,"rarity":"Epic","tags":[],"token_id":5},
-        {"name":"Surprised","colors":0,"rarity":"Epic","tags":[],"token_id":5},
-        {"name":"Upbrows","colors":0,"rarity":"Epic","tags":[],"token_id":5},
-        {"name":"Straight Brows","colors":0,"rarity":"Epic","tags":[],"token_id":5},
-        {"name":"Cringe Brow","colors":0,"rarity":"Epic","tags":[],"token_id":5},
-        {"name":"W33D Brows","colors":1,"rarity":"Epic","tags":[],"token_id":4},
-        {"name":"Heavy Brow","colors":0,"rarity":"Epic","tags":[],"token_id":46}
-      ]
-    },
-    {
-      "name": "Eyes",
-      "traits": [
-        {"name":"Goth GF Eyeliner","colors":2,"rarity":"Epic","tags":[],"token_id":114},
-        {"name":"Seeing Green","colors":1,"rarity":"Common","tags":[],"token_id":110},
-        {"name":"MetaVixen Eyes","colors":1,"rarity":"Common","tags":[],"token_id":98},
-        {"name":"Fired Up","colors":1,"rarity":"Epic","tags":[],"token_id":67},
-        {"name":"Anime Heart Eyes","colors":1,"rarity":"Common","tags":[],"token_id":62},
-        {"name":"Bored Eyes","colors":1,"rarity":"Epic","tags":[],"token_id":1},
-        {"name":"Closed Eyes","colors":0,"rarity":"Epic","tags":[],"token_id":5},
-        {"name":"Shifty Eyes","colors":1,"rarity":"Epic","tags":[],"token_id":5},
-        {"name":"Eye Roll","colors":1,"rarity":"Epic","tags":[],"token_id":5},
-        {"name":"Cringe Eye","colors":1,"rarity":"Epic","tags":[],"token_id":5},
-        {"name":"Drunkard Gaze","colors":1,"rarity":"Epic","tags":[],"token_id":46},
-        {"name":"FLS Laser (Shop)","colors":2,"rarity":"common","tags":["onTop"],"token_id":47}
-      ]
-    },
-    {
       "name": "Hair Style",
       "traits": [
         {"name":"Batty Bangs","colors":1,"rarity":"Epic","parts":2,"tags":[],"token_id":114},
@@ -104,48 +207,6 @@
         {"name":"Winter Solstice Curls","colors":2,"rarity":"Legendary","parts":2,"tags":[],"token_id":51},
         {"name":"Trash Hair","colors":1,"rarity":"Legendary","parts":2,"tags":[],"token_id":56},
         {"name":"Cozy Pigtails","colors":2,"rarity":"Mythic","parts":2,"tags":[],"token_id":58}
-      ]
-    },
-    {
-      "name": "Hand",
-      "traits": [
-        {"name":"FU","colors":1,"rarity":"Epic","tags":["skin"],"token_id":114},
-        {"name":"FU MORE","colors":1,"rarity":"Epic","tags":["skin"],"token_id":114},
-        {"name":"Vicroy Gamer","colors":5,"rarity":"Common","tags":["skin"],"token_id":112},
-        {"name":"Yummy Cupcake","colors":5,"rarity":"Common","tags":["skin"],"token_id":113},
-        {"name":"Crypto Defender Shield","colors":5,"rarity":"Common","tags":[],"token_id":108},
-        {"name":"Hardware Wallet","colors":3,"rarity":"Common","tags":["skin"],"token_id":110},
-        {"name":"WEN Bunny","colors":4,"rarity":"Common","tags":["skin"],"token_id":110},
-        {"name":"MetaVixen Tasty Taco","colors":4,"rarity":"Common","tags":["skin"],"token_id":98},
-        {"name":"Slam Dunk","colors":2,"rarity":"Common","tags":["skin"],"token_id":79},
-        {"name":"Number 1 Fan Trophy","colors":5,"rarity":"Common","tags":["skin"],"token_id":81},
-        {"name":"Sword Hand","colors":3,"rarity":"Common","tags":[],"token_id":84},
-        {"name":"Pom Poms","colors":4,"rarity":"Common","tags":["skin"],"token_id":85},
-        {"name":"Shopping Bags","colors":5,"rarity":"Common","tags":["skin"],"token_id":86},
-        {"name":"Moon Guardian Scepter","colors":4,"rarity":"Common","tags":[],"token_id":93},
-        {"name":"Mr Pointy","colors":3,"rarity":"Common","tags":["skin"],"token_id":95},
-        {"name":"Excellent","colors":1,"rarity":"Common","tags":["skin"],"token_id":96},
-        {"name":"Delicious Dreamwater","colors":4,"rarity":"Uncommon","tags":["skin"],"token_id":74},
-        {"name":"Tater Tot Tiller","colors":2,"rarity":"Rare","tags":["skin"],"token_id":75},
-        {"name":"LomBUNdi Trophy 2024","colors":3.0,"rarity":"Mythic","tags":["skin"],"token_id":65},
-        {"name":"Heart Hands","colors":1,"rarity":"Common","tags":["skin"],"token_id":62},
-        {"name":"Holding Hands","colors":3,"rarity":"Common","tags":["skin"],"token_id":62},
-        {"name":"Macaron My Heart","colors":3,"rarity":"Common","tags":["skin"],"token_id":62},
-        {"name":"Milk","colors":2,"rarity":"Rare","tags":["skin"],"token_id":2},
-        {"name":"GM Mug","colors":2,"rarity":"Common","tags":["skin"],"token_id":0},
-        {"name":"BQ Soda","colors":4,"rarity":"common","tags":["skin"],"token_id":11},
-        {"name":"BQ Large Fries","colors":4,"rarity":"common","tags":["skin"],"token_id":11},
-        {"name":"BQ Carrot Patty Burger","colors":5,"rarity":"common","tags":["skin"],"token_id":11},
-        {"name":"Pumpkin Spice Latte","colors":4,"rarity":"common","tags":["skin"],"token_id":19},
-        {"name":"Boo Mug","colors":3,"rarity":"uncommon","tags":["skin"],"token_id":25},
-        {"name":"Witch Cauldron Mug","colors":3,"rarity":"uncommon","tags":["skin"],"token_id":26},
-        {"name":"Jack o Bear Pail","colors":4,"rarity":"rare","tags":["skin"],"token_id":30},
-        {"name":"Beer","colors":2,"rarity":"epic","tags":["skin"],"token_id":46},
-        {"name":"Reindeer Mug","colors":4,"rarity":"Legendary","tags":["skin"],"token_id":49},
-        {"name":"XL Hot Cocoa","colors":4,"rarity":"Rare","tags":["skin"],"token_id":49},
-        {"name":"Christmas Tree Mug","colors":5,"rarity":"Uncommon","tags":["skin"],"token_id":49},
-        {"name":"Rancher Handbag","colors":4,"rarity":"Rare","tags":["skin"],"token_id":53},
-        {"name":"Sailor Babe Tote","colors":3,"rarity":"Uncommon","tags":["skin"],"token_id":54}
       ]
     },
     {
@@ -184,26 +245,6 @@
         {"name":"Winter Solstice Crown","colors":5,"rarity":"Legendary","tags":[],"token_id":51},
         {"name":"Banana Peel","colors":3,"rarity":"Legendary","tags":[],"token_id":56},
         {"name":"PomPom Toque","colors":2,"rarity":"Mythic","tags":[],"token_id":58}
-      ]
-    },
-    {
-      "name": "Mouth",
-      "traits": [
-        {"name":"Goth Lipgloss","colors":0,"rarity":"Epic","tags":[],"token_id":114},
-        {"name":"MetaVixen Grin","colors":1,"rarity":"Common","tags":[],"token_id":98},
-        {"name":"Resting Bun Face","colors":1,"rarity":"Common","tags":[],"token_id":91},
-        {"name":"Lovey Lips","colors":2,"rarity":"Common","tags":[],"token_id":62},
-        {"name":"Curious Carrot Munch","colors":3,"rarity":"Rare","tags":[],"token_id":76},
-        {"name":"Bored Grin","colors":1,"rarity":"Epic","tags":[],"token_id":1},
-        {"name":"Open Mouth","colors":2,"rarity":"Epic","tags":[],"token_id":5},
-        {"name":"Frown","colors":1,"rarity":"Epic","tags":[],"token_id":5},
-        {"name":"Thin Lips","colors":1,"rarity":"Epic","tags":[],"token_id":5},
-        {"name":"Cringe","colors":1,"rarity":"Epic","tags":[],"token_id":5},
-        {"name":"W33D Hang","colors":3,"rarity":"Epic","tags":[],"token_id":4},
-        {"name":"W33D Straight","colors":3,"rarity":"Epic","tags":[],"token_id":4},
-        {"name":"Drunkard Buckteeth","colors":1,"rarity":"Epic","tags":[],"token_id":46},
-        {"name":"FLS Molly (Shop)","colors":3,"rarity":"common","tags":[],"token_id":47},
-        {"name":"FLS Tongue (Shop)","colors":2,"rarity":"common","tags":[],"token_id":47}
       ]
     },
     {
@@ -406,40 +447,6 @@
         {"name":"FLS Morgenshtern (Shop)","colors":0,"rarity":"common","tags":[],"token_id":47},
         {"name":"Winter Solstice Eyeshadow","colors":0,"rarity":"Legendary","tags":[],"token_id":51},
         {"name":"Dirty Face","colors":1,"rarity":"Legendary","tags":[],"token_id":56}
-      ]
-    },
-    {
-      "name": "Skin",
-      "traits": [
-        {"name":"Sherbert","colors":0,"rarity":"Common","tags":[],"token_id":111},
-        {"name":"Cloud Watcher","colors":0,"rarity":"Common","tags":[],"token_id":111},
-        {"name":"Glitch","colors":0,"rarity":"Common","tags":[],"token_id":110},
-        {"name":"MetaVixen Constellation","colors":0,"rarity":"Common","tags":[],"token_id":98},
-        {"name":"Gloopy Mr. Moar","colors":0,"rarity":"Legendary","tags":[],"token_id":72},
-        {"name":"Cupid Babe","colors":0,"rarity":"Common","tags":[],"token_id":62},
-        {"name":"Orange Tiger","colors":0,"rarity":"Epic","tags":[],"token_id":63},
-        {"name":"Neon Green Tiger","colors":0,"rarity":"Epic","tags":[],"token_id":63},
-        {"name":"White Tiger","colors":0,"rarity":"Epic","tags":[],"token_id":63},
-        {"name":"Neon Pink Tiger","colors":0,"rarity":"Epic","tags":[],"token_id":63},
-        {"name":"Orange Cheetah","colors":0,"rarity":"Epic","tags":[],"token_id":63},
-        {"name":"White Cheetah","colors":0,"rarity":"Epic","tags":[],"token_id":63},
-        {"name":"Pink Cheetah","colors":0,"rarity":"Epic","tags":[],"token_id":63},
-        {"name":"Neon Green Cheetah","colors":0,"rarity":"Epic","tags":[],"token_id":63},
-        {"name":"Moo Cow","colors":0,"rarity":"Epic","tags":[],"token_id":63},
-        {"name":"Strawberry Moo Cow","colors":0,"rarity":"Epic","tags":[],"token_id":63},
-        {"name":"Alien Moo Cow","colors":0,"rarity":"Epic","tags":[],"token_id":63},
-        {"name":"Bored Pink Fur","colors":0,"rarity":"Legendary","tags":[],"token_id":1},
-        {"name":"Blushy Babe","colors":0,"rarity":"Mythic","tags":[],"token_id":10},
-        {"name":"Blushy Bombshell","colors":0,"rarity":"Mythic","tags":[],"token_id":10},
-        {"name":"Candy Cloud Sparkles","colors":0,"rarity":"Mythic","tags":[],"token_id":10},
-        {"name":"Crater Cutie","colors":0,"rarity":"Mythic","tags":[],"token_id":10},
-        {"name":"Darknova Demon","colors":0,"rarity":"Mythic","tags":[],"token_id":10},
-        {"name":"Skuzzy Sprinkle Cake","colors":0,"rarity":"Mythic","tags":[],"token_id":10},
-        {"name":"Velvety Night Nibbler","colors":0,"rarity":"Mythic","tags":[],"token_id":10},
-        {"name":"Gorgon Skin","colors":0,"rarity":"rare","tags":[],"token_id":31},
-        {"name":"Spectral Skin","colors":0,"rarity":"epic","tags":[],"token_id":37},
-        {"name":"That Yellow Cartoon Skin","colors":0,"rarity":"epic","tags":[],"token_id":46},
-        {"name":"FLS Beige (Shop)","colors":0,"rarity":"Common","tags":[],"token_id":47}
       ]
     },
     {

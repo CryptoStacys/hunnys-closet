@@ -3144,5 +3144,65 @@
             }
         ],
         "metaPath": "https://hunnysseasons.s3.us-east-2.amazonaws.com/192"
+    },
+    {
+        "tokenId": 194,
+        "name": "Mothra the Enchantress",
+        "attributes": [
+            {
+                "trait_type": "Background",
+                "value": "Mothra Mist"
+            },
+            {
+                "trait_type": "Outfit",
+                "value": "Mothras Fluffy Jacket"
+            }
+        ],
+        "metaPath": "https://hunnysseasons.s3.us-east-2.amazonaws.com/194"
+    },
+    {
+        "tokenId": 195,
+        "name": "Roxy the Roller Rat",
+        "attributes": [
+            {
+                "trait_type": "Background",
+                "value": "Moon Cheese"
+            },
+            {
+                "trait_type": "Accessory",
+                "value": "Rat Tail"
+            }
+        ],
+        "metaPath": "https://hunnysseasons.s3.us-east-2.amazonaws.com/195"
+    },
+    {
+        "tokenId": 196,
+        "name": "Sandy the Squirrel Scout",
+        "attributes": [
+            {
+                "trait_type": "Background",
+                "value": "Sandy Forest"
+            },
+            {
+                "trait_type": "Skin",
+                "value": "Sandy Tan"
+            }
+        ],
+        "metaPath": "https://hunnysseasons.s3.us-east-2.amazonaws.com/196"
+    },
+    {
+        "tokenId": 197,
+        "name": "Sabre the Savage",
+        "attributes": [
+            {
+                "trait_type": "Background",
+                "value": "Sabre Strike"
+            },
+            {
+                "trait_type": "Face Sticker",
+                "value": "Sabre Scar"
+            }
+        ],
+        "metaPath": "https://hunnysseasons.s3.us-east-2.amazonaws.com/197"
     }
 ]

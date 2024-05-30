@@ -1,38 +1,26 @@
 {
   "attributes": [
     {"name": "Accessory", "traits": [
-        {"name": "Cross Earrings","colors": 1,"rarity": "Epic","tags": NaN,"token_id": 114},
-        {"name": "Spiky Choker","colors": 2,"rarity": "Epic","tags": NaN,"token_id": 114}
+        {"name": "Rat Tail","colors": 1,"rarity": "Epic","tags": [],"token_id": 195}
     ]},
 
-    {"name": "Eyebrows", "traits": [
-        {"name": "Thin Goth","colors": 0,"rarity": "Epic","tags": NaN,"token_id": 114}
+    {"name": "Background", "traits": [
+        {"name": "Mothra Mist","colors": 0,"rarity": "Common","tags": [],"token_id": 194},
+        {"name": "Moon Cheese","colors": 0,"rarity": "Epic","tags": [],"token_id": 195},
+        {"name": "Sandy Forest","colors": 0,"rarity": "Relic","tags": [],"token_id": 196},
+        {"name": "Sabre Strike","colors": 0,"rarity": "Legendary","tags": [],"token_id": 197}
     ]},
 
-    {"name": "Eyes", "traits": [
-        {"name": "Goth GF Eyeliner","colors": 2,"rarity": "Epic","tags": NaN,"token_id": 114}
-    ]},
-
-    {"name": "Hair Style", "traits": [
-        {"name": "Batty Bangs","colors": 1,"rarity": "Epic","tags": "Front and back","token_id": 114}
-    ]},
-
-    {"name": "Hand", "traits": [
-        {"name": "FU","colors": 1,"rarity": "Epic","tags": "skin","token_id": 114},
-        {"name": "FU MORE","colors": 1,"rarity": "Epic","tags": "skin","token_id": 114}
-    ]},
-
-    {"name": "Hat", "traits": [
-        {"name": "Batty Headband","colors": 4,"rarity": "Epic","tags": "Front and back","token_id": 114}
-    ]},
-
-    {"name": "Mouth", "traits": [
-        {"name": "Goth Lipgloss","colors": 0,"rarity": "Epic","tags": NaN,"token_id": 114}
+    {"name": "Face Sticker", "traits": [
+        {"name": "Sabre Scar","colors": 0,"rarity": "Legendary","tags": [],"token_id": 197}
     ]},
 
     {"name": "Outfit", "traits": [
-        {"name": "Big Tiddy Goth GF","colors": 3,"rarity": "Epic","tags": "skin","token_id": 114},
-        {"name": "Keyhole Goth GF Halter","colors": 3,"rarity": "Epic","tags": NaN,"token_id": 114}
+        {"name": "Mothras Fluffy Jacket","colors": 3,"rarity": "Common","tags": [],"token_id": 194}
+    ]},
+
+    {"name": "Skin", "traits": [
+        {"name": "Sandy Tan","colors": 0,"rarity": "Relic","tags": [],"token_id": 196}
     ]}
   ]
 }

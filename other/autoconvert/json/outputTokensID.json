@@ -1,51 +1,60 @@
 [
     {
-        "tokenId": 114,
-        "name": "Goth GF Pack",
+        "tokenId": 194,
+        "name": "Mothra the Enchantress",
         "attributes": [
             {
-                "trait_type": "Batty Bangs",
-                "value": "Hair Style"
+                "trait_type": "Background",
+                "value": "Mothra Mist"
             },
             {
-                "trait_type": "Batty Headband",
-                "value": "Hat"
+                "trait_type": "Outfit",
+                "value": "Mothras Fluffy Jacket"
+            }
+        ],
+        "metaPath": ""
+    },
+    {
+        "tokenId": 195,
+        "name": "Roxy the Roller Rat",
+        "attributes": [
+            {
+                "trait_type": "Background",
+                "value": "Moon Cheese"
             },
             {
-                "trait_type": "Big Tiddy Goth GF",
-                "value": "Outfit"
+                "trait_type": "Accessory",
+                "value": "Rat Tail"
+            }
+        ],
+        "metaPath": ""
+    },
+    {
+        "tokenId": 197,
+        "name": "Sabre the Savage",
+        "attributes": [
+            {
+                "trait_type": "Background",
+                "value": "Sabre Strike"
             },
             {
-                "trait_type": "Cross Earrings",
-                "value": "Accessory"
+                "trait_type": "Face Sticker",
+                "value": "Sabre Scar"
+            }
+        ],
+        "metaPath": ""
+    },
+    {
+        "tokenId": 196,
+        "name": "Sandy the Squirrel Scout",
+        "attributes": [
+            {
+                "trait_type": "Background",
+                "value": "Sandy Forest"
             },
             {
-                "trait_type": "FU",
-                "value": "Hand"
-            },
-            {
-                "trait_type": "FU MORE",
-                "value": "Hand"
-            },
-            {
-                "trait_type": "Goth GF Eyeliner",
-                "value": "Eyes"
-            },
-            {
-                "trait_type": "Goth Lipgloss",
-                "value": "Mouth"
-            },
-            {
-                "trait_type": "Keyhole Goth GF Halter",
-                "value": "Outfit"
-            },
-            {
-                "trait_type": "Spiky Choker",
-                "value": "Accessory"
-            },
-            {
-                "trait_type": "Thin Goth",
-                "value": "Eyebrows"
+                "trait_type": "Skin",
+                "value": "Sandy Tan"
             }
         ],
         "metaPath": ""
