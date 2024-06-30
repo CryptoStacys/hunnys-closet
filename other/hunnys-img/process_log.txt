@@ -52364,3 +52364,334 @@ Checking existence of JPG: 300x300_jpg\Outfit\Mothras Fluffy Jacket.jpg
 Files not found, processing: PNG - compositeImages\Outfit\Mothras Fluffy Jacket.png, JPG - 300x300_jpg\Outfit\Mothras Fluffy Jacket.jpg
 Saved: compositeImages\Outfit\Mothras Fluffy Jacket.png
 Saved: 300x300_jpg\Outfit\Mothras Fluffy Jacket.jpg
+Script started
+Subfolders found: Accessory, Background, Bodysuit, Colors, Eyebrows, Eyes, Face Sticker, Frame, Hair Style, Hand, Hat, Mouth, Outfit, Piercing, Skin, Tattoo, Undergarment
+Files found: 36
+Solid colors RGB values saved to colors.json
+Resizing image: scriptImages\Accessory\Happy Dog_C1.png to 800x800
+Resizing image: scriptImages\Accessory\Happy Dog_C1.png to 600x600
+Solid colors RGB values saved to colors.json
+Processing image group: Happy Dog
+Processing file: Happy Dog_C1.png in subfolder: Accessory
+Resized image saved: 800x800_png\Accessory\Happy Dog_C1.png
+Resizing image: scriptImages\Accessory\Happy Dog_C2.png to 800x800
+Resized image saved: 600x600_png\Accessory\Happy Dog_C1.png
+Resizing image: scriptImages\Accessory\Happy Dog_C2.png to 600x600
+Processing file: Happy Dog_C2.png in subfolder: Accessory
+Resized image saved: 600x600_png\Accessory\Happy Dog_C2.png
+Resizing image: scriptImages\Accessory\Happy Dog_C3.png to 600x600
+Resized image saved: 800x800_png\Accessory\Happy Dog_C2.png
+Resizing image: scriptImages\Accessory\Happy Dog_C3.png to 800x800
+Processing file: Happy Dog_C3.png in subfolder: Accessory
+Resized image saved: 600x600_png\Accessory\Happy Dog_C3.png
+Resizing image: scriptImages\Accessory\Happy Dog_C4.png to 600x600
+Processing file: Happy Dog_C4.png in subfolder: Accessory
+Resized image saved: 800x800_png\Accessory\Happy Dog_C3.png
+Resizing image: scriptImages\Accessory\Happy Dog_C4.png to 800x800
+Resized image saved: 600x600_png\Accessory\Happy Dog_C4.png
+Resizing image: scriptImages\Accessory\Happy Dog_L.png to 600x600
+Processing file: Happy Dog_L.png in subfolder: Accessory
+Checking existence of PNG: compositeImages\Accessory\Happy Dog.png
+Checking existence of JPG: 300x300_jpg\Accessory\Happy Dog.jpg
+Files not found, processing: PNG - compositeImages\Accessory\Happy Dog.png, JPG - 300x300_jpg\Accessory\Happy Dog.jpg
+Resized image saved: 800x800_png\Accessory\Happy Dog_C4.png
+Resizing image: scriptImages\Accessory\Happy Dog_L.png to 800x800
+Saved: compositeImages\Accessory\Happy Dog.png
+Saved: 300x300_jpg\Accessory\Happy Dog.jpg
+Processing image group: Dramatic Brows
+Resized image saved: 600x600_png\Accessory\Happy Dog_L.png
+Resizing image: scriptImages\Eyebrows\Dramatic Brows_L.png to 600x600
+Resized image saved: 800x800_png\Accessory\Happy Dog_L.png
+Resizing image: scriptImages\Eyebrows\Dramatic Brows_L.png to 800x800
+Processing file: Dramatic Brows_L.png in subfolder: Eyebrows
+Checking existence of PNG: compositeImages\Eyebrows\Dramatic Brows.png
+Checking existence of JPG: 300x300_jpg\Eyebrows\Dramatic Brows.jpg
+Files not found, processing: PNG - compositeImages\Eyebrows\Dramatic Brows.png, JPG - 300x300_jpg\Eyebrows\Dramatic Brows.jpg
+Saved: compositeImages\Eyebrows\Dramatic Brows.png
+Resized image saved: 600x600_png\Eyebrows\Dramatic Brows_L.png
+Resizing image: scriptImages\Face Sticker\Summer Freckles_C1.png to 600x600
+Saved: 300x300_jpg\Eyebrows\Dramatic Brows.jpg
+Processing image group: Summer Freckles
+Resized image saved: 800x800_png\Eyebrows\Dramatic Brows_L.png
+Resizing image: scriptImages\Face Sticker\Summer Freckles_C1.png to 800x800
+Processing file: Summer Freckles_C1.png in subfolder: Face Sticker
+Resized image saved: 600x600_png\Face Sticker\Summer Freckles_C1.png
+Resizing image: scriptImages\Face Sticker\Summer Freckles_L.png to 600x600
+Processing file: Summer Freckles_L.png in subfolder: Face Sticker
+Checking existence of PNG: compositeImages\Face Sticker\Summer Freckles.png
+Checking existence of JPG: 300x300_jpg\Face Sticker\Summer Freckles.jpg
+Files not found, processing: PNG - compositeImages\Face Sticker\Summer Freckles.png, JPG - 300x300_jpg\Face Sticker\Summer Freckles.jpg
+Resized image saved: 800x800_png\Face Sticker\Summer Freckles_C1.png
+Resizing image: scriptImages\Face Sticker\Summer Freckles_L.png to 800x800
+Saved: compositeImages\Face Sticker\Summer Freckles.png
+Resized image saved: 600x600_png\Face Sticker\Summer Freckles_L.png
+Resizing image: scriptImages\Face Sticker\Too Much Sun_C1.png to 600x600
+Saved: 300x300_jpg\Face Sticker\Summer Freckles.jpg
+Processing image group: Too Much Sun
+Processing file: Too Much Sun_C1.png in subfolder: Face Sticker
+Resized image saved: 800x800_png\Face Sticker\Summer Freckles_L.png
+Resizing image: scriptImages\Face Sticker\Too Much Sun_C1.png to 800x800
+Resized image saved: 600x600_png\Face Sticker\Too Much Sun_C1.png
+Resizing image: scriptImages\Face Sticker\Too Much Sun_L.png to 600x600
+Processing file: Too Much Sun_L.png in subfolder: Face Sticker
+Checking existence of PNG: compositeImages\Face Sticker\Too Much Sun.png
+Checking existence of JPG: 300x300_jpg\Face Sticker\Too Much Sun.jpg
+Files not found, processing: PNG - compositeImages\Face Sticker\Too Much Sun.png, JPG - 300x300_jpg\Face Sticker\Too Much Sun.jpg
+Resized image saved: 800x800_png\Face Sticker\Too Much Sun_C1.png
+Resizing image: scriptImages\Face Sticker\Too Much Sun_L.png to 800x800
+Resized image saved: 600x600_png\Face Sticker\Too Much Sun_L.png
+Resizing image: scriptImages\Frame\Baby Bird Plant_C1.png to 600x600
+Saved: compositeImages\Face Sticker\Too Much Sun.png
+Saved: 300x300_jpg\Face Sticker\Too Much Sun.jpg
+Processing image group: Baby Bird Plant
+Resized image saved: 800x800_png\Face Sticker\Too Much Sun_L.png
+Resizing image: scriptImages\Frame\Baby Bird Plant_C1.png to 800x800
+Resized image saved: 600x600_png\Frame\Baby Bird Plant_C1.png
+Resizing image: scriptImages\Frame\Baby Bird Plant_C2.png to 600x600
+Processing file: Baby Bird Plant_C1.png in subfolder: Frame
+Processing file: Baby Bird Plant_C2.png in subfolder: Frame
+Resized image saved: 800x800_png\Frame\Baby Bird Plant_C1.png
+Resizing image: scriptImages\Frame\Baby Bird Plant_C2.png to 800x800
+Resized image saved: 600x600_png\Frame\Baby Bird Plant_C2.png
+Resizing image: scriptImages\Frame\Baby Bird Plant_C3.png to 600x600
+Resized image saved: 800x800_png\Frame\Baby Bird Plant_C2.png
+Resizing image: scriptImages\Frame\Baby Bird Plant_C3.png to 800x800
+Processing file: Baby Bird Plant_C3.png in subfolder: Frame
+Resized image saved: 600x600_png\Frame\Baby Bird Plant_C3.png
+Resizing image: scriptImages\Frame\Baby Bird Plant_L.png to 600x600
+Processing file: Baby Bird Plant_L.png in subfolder: Frame
+Checking existence of PNG: compositeImages\Frame\Baby Bird Plant.png
+Checking existence of JPG: 300x300_jpg\Frame\Baby Bird Plant.jpg
+Files not found, processing: PNG - compositeImages\Frame\Baby Bird Plant.png, JPG - 300x300_jpg\Frame\Baby Bird Plant.jpg
+Resized image saved: 800x800_png\Frame\Baby Bird Plant_C3.png
+Resizing image: scriptImages\Frame\Baby Bird Plant_L.png to 800x800
+Saved: compositeImages\Frame\Baby Bird Plant.png
+Resized image saved: 600x600_png\Frame\Baby Bird Plant_L.png
+Resizing image: scriptImages\Hand\Icecream Cone_C1.png to 600x600
+Saved: 300x300_jpg\Frame\Baby Bird Plant.jpg
+Processing image group: Icecream Cone
+Resized image saved: 800x800_png\Frame\Baby Bird Plant_L.png
+Resizing image: scriptImages\Hand\Icecream Cone_C1.png to 800x800
+Processing file: Icecream Cone_C1.png in subfolder: Hand
+Resized image saved: 600x600_png\Hand\Icecream Cone_C1.png
+Resizing image: scriptImages\Hand\Icecream Cone_C2.png to 600x600
+Processing file: Icecream Cone_C2.png in subfolder: Hand
+Resized image saved: 800x800_png\Hand\Icecream Cone_C1.png
+Resizing image: scriptImages\Hand\Icecream Cone_C2.png to 800x800
+Resized image saved: 600x600_png\Hand\Icecream Cone_C2.png
+Resizing image: scriptImages\Hand\Icecream Cone_C3.png to 600x600
+Resized image saved: 800x800_png\Hand\Icecream Cone_C2.png
+Resizing image: scriptImages\Hand\Icecream Cone_C3.png to 800x800
+Processing file: Icecream Cone_C3.png in subfolder: Hand
+Resized image saved: 600x600_png\Hand\Icecream Cone_C3.png
+Resizing image: scriptImages\Hand\Icecream Cone_L.png to 600x600
+Resized image saved: 800x800_png\Hand\Icecream Cone_C3.png
+Resizing image: scriptImages\Hand\Icecream Cone_L.png to 800x800
+Processing file: Icecream Cone_L.png in subfolder: Hand
+Resized image saved: 600x600_png\Hand\Icecream Cone_L.png
+Resizing image: scriptImages\Hand\Icecream Cone_S.png to 600x600
+Resized image saved: 800x800_png\Hand\Icecream Cone_L.png
+Resizing image: scriptImages\Hand\Icecream Cone_S.png to 800x800
+Processing file: Icecream Cone_S.png in subfolder: Hand
+Checking existence of PNG: compositeImages\Hand\Icecream Cone.png
+Checking existence of JPG: 300x300_jpg\Hand\Icecream Cone.jpg
+Files not found, processing: PNG - compositeImages\Hand\Icecream Cone.png, JPG - 300x300_jpg\Hand\Icecream Cone.jpg
+Resized image saved: 600x600_png\Hand\Icecream Cone_S.png
+Resizing image: scriptImages\Hand\Weiner_C1.png to 600x600
+Saved: compositeImages\Hand\Icecream Cone.png
+Saved: 300x300_jpg\Hand\Icecream Cone.jpg
+Processing image group: Weiner
+Resized image saved: 800x800_png\Hand\Icecream Cone_S.png
+Resizing image: scriptImages\Hand\Weiner_C1.png to 800x800
+Processing file: Weiner_C1.png in subfolder: Hand
+Resized image saved: 600x600_png\Hand\Weiner_C1.png
+Resizing image: scriptImages\Hand\Weiner_C2.png to 600x600
+Processing file: Weiner_C2.png in subfolder: Hand
+Resized image saved: 800x800_png\Hand\Weiner_C1.png
+Resizing image: scriptImages\Hand\Weiner_C2.png to 800x800
+Resized image saved: 600x600_png\Hand\Weiner_C2.png
+Resizing image: scriptImages\Hand\Weiner_C3.png to 600x600
+Processing file: Weiner_C3.png in subfolder: Hand
+Resized image saved: 800x800_png\Hand\Weiner_C2.png
+Resizing image: scriptImages\Hand\Weiner_C3.png to 800x800
+Resized image saved: 600x600_png\Hand\Weiner_C3.png
+Resizing image: scriptImages\Hand\Weiner_L.png to 600x600
+Processing file: Weiner_L.png in subfolder: Hand
+Resized image saved: 800x800_png\Hand\Weiner_C3.png
+Resizing image: scriptImages\Hand\Weiner_L.png to 800x800
+Resized image saved: 600x600_png\Hand\Weiner_L.png
+Resizing image: scriptImages\Hand\Weiner_S.png to 600x600
+Processing file: Weiner_S.png in subfolder: Hand
+Checking existence of PNG: compositeImages\Hand\Weiner.png
+Checking existence of JPG: 300x300_jpg\Hand\Weiner.jpg
+Files not found, processing: PNG - compositeImages\Hand\Weiner.png, JPG - 300x300_jpg\Hand\Weiner.jpg
+Resized image saved: 800x800_png\Hand\Weiner_L.png
+Resizing image: scriptImages\Hand\Weiner_S.png to 800x800
+Resized image saved: 600x600_png\Hand\Weiner_S.png
+Resizing image: scriptImages\Mouth\Summer Smile_C1.png to 600x600
+Saved: compositeImages\Hand\Weiner.png
+Saved: 300x300_jpg\Hand\Weiner.jpg
+Processing image group: Summer Smile
+Resized image saved: 800x800_png\Hand\Weiner_S.png
+Resizing image: scriptImages\Mouth\Summer Smile_C1.png to 800x800
+Resized image saved: 600x600_png\Mouth\Summer Smile_C1.png
+Resizing image: scriptImages\Mouth\Summer Smile_L.png to 600x600
+Processing file: Summer Smile_C1.png in subfolder: Mouth
+Resized image saved: 800x800_png\Mouth\Summer Smile_C1.png
+Resizing image: scriptImages\Mouth\Summer Smile_L.png to 800x800
+Processing file: Summer Smile_L.png in subfolder: Mouth
+Checking existence of PNG: compositeImages\Mouth\Summer Smile.png
+Checking existence of JPG: 300x300_jpg\Mouth\Summer Smile.jpg
+Files not found, processing: PNG - compositeImages\Mouth\Summer Smile.png, JPG - 300x300_jpg\Mouth\Summer Smile.jpg
+Resized image saved: 600x600_png\Mouth\Summer Smile_L.png
+Resizing image: scriptImages\Outfit\Flower Child Halter_C1.png to 600x600
+Saved: compositeImages\Mouth\Summer Smile.png
+Resized image saved: 800x800_png\Mouth\Summer Smile_L.png
+Resizing image: scriptImages\Outfit\Flower Child Halter_C1.png to 800x800
+Saved: 300x300_jpg\Mouth\Summer Smile.jpg
+Processing image group: Flower Child Halter
+Resized image saved: 600x600_png\Outfit\Flower Child Halter_C1.png
+Resizing image: scriptImages\Outfit\Flower Child Halter_C2.png to 600x600
+Processing file: Flower Child Halter_C1.png in subfolder: Outfit
+Resized image saved: 800x800_png\Outfit\Flower Child Halter_C1.png
+Resizing image: scriptImages\Outfit\Flower Child Halter_C2.png to 800x800
+Processing file: Flower Child Halter_C2.png in subfolder: Outfit
+Resized image saved: 600x600_png\Outfit\Flower Child Halter_C2.png
+Resizing image: scriptImages\Outfit\Flower Child Halter_C3.png to 600x600
+Resized image saved: 800x800_png\Outfit\Flower Child Halter_C2.png
+Resizing image: scriptImages\Outfit\Flower Child Halter_C3.png to 800x800
+Processing file: Flower Child Halter_C3.png in subfolder: Outfit
+Resized image saved: 600x600_png\Outfit\Flower Child Halter_C3.png
+Resizing image: scriptImages\Outfit\Flower Child Halter_L.png to 600x600
+Processing file: Flower Child Halter_L.png in subfolder: Outfit
+Checking existence of PNG: compositeImages\Outfit\Flower Child Halter.png
+Checking existence of JPG: 300x300_jpg\Outfit\Flower Child Halter.jpg
+Files not found, processing: PNG - compositeImages\Outfit\Flower Child Halter.png, JPG - 300x300_jpg\Outfit\Flower Child Halter.jpg
+Resized image saved: 800x800_png\Outfit\Flower Child Halter_C3.png
+Resizing image: scriptImages\Outfit\Flower Child Halter_L.png to 800x800
+Saved: compositeImages\Outfit\Flower Child Halter.png
+Saved: 300x300_jpg\Outfit\Flower Child Halter.jpg
+Processing image group: Teeny Weeny Bikini
+Resized image saved: 600x600_png\Outfit\Flower Child Halter_L.png
+Resizing image: scriptImages\Outfit\Teeny Weeny Bikini_C1.png to 600x600
+Resized image saved: 800x800_png\Outfit\Flower Child Halter_L.png
+Resizing image: scriptImages\Outfit\Teeny Weeny Bikini_C1.png to 800x800
+Processing file: Teeny Weeny Bikini_C1.png in subfolder: Outfit
+Resized image saved: 800x800_png\Outfit\Teeny Weeny Bikini_C1.png
+Resizing image: scriptImages\Outfit\Teeny Weeny Bikini_C2.png to 800x800
+Resized image saved: 600x600_png\Outfit\Teeny Weeny Bikini_C1.png
+Resizing image: scriptImages\Outfit\Teeny Weeny Bikini_C2.png to 600x600
+Processing file: Teeny Weeny Bikini_C2.png in subfolder: Outfit
+Resized image saved: 600x600_png\Outfit\Teeny Weeny Bikini_C2.png
+Resizing image: scriptImages\Outfit\Teeny Weeny Bikini_L.png to 600x600
+Resized image saved: 800x800_png\Outfit\Teeny Weeny Bikini_C2.png
+Resizing image: scriptImages\Outfit\Teeny Weeny Bikini_L.png to 800x800
+Processing file: Teeny Weeny Bikini_L.png in subfolder: Outfit
+Checking existence of PNG: compositeImages\Outfit\Teeny Weeny Bikini.png
+Checking existence of JPG: 300x300_jpg\Outfit\Teeny Weeny Bikini.jpg
+Files not found, processing: PNG - compositeImages\Outfit\Teeny Weeny Bikini.png, JPG - 300x300_jpg\Outfit\Teeny Weeny Bikini.jpg
+Saved: compositeImages\Outfit\Teeny Weeny Bikini.png
+Resized image saved: 600x600_png\Outfit\Teeny Weeny Bikini_L.png
+Resizing image: scriptImages\Outfit\Tennis Polo_C1.png to 600x600
+Saved: 300x300_jpg\Outfit\Teeny Weeny Bikini.jpg
+Processing image group: Tennis Polo
+Resized image saved: 800x800_png\Outfit\Teeny Weeny Bikini_L.png
+Resizing image: scriptImages\Outfit\Tennis Polo_C1.png to 800x800
+Processing file: Tennis Polo_C1.png in subfolder: Outfit
+Resized image saved: 800x800_png\Outfit\Tennis Polo_C1.png
+Resizing image: scriptImages\Outfit\Tennis Polo_C2.png to 800x800
+Resized image saved: 600x600_png\Outfit\Tennis Polo_C1.png
+Resizing image: scriptImages\Outfit\Tennis Polo_C2.png to 600x600
+Processing file: Tennis Polo_C2.png in subfolder: Outfit
+Resized image saved: 800x800_png\Outfit\Tennis Polo_C2.png
+Resizing image: scriptImages\Outfit\Tennis Polo_L.png to 800x800
+Resized image saved: 600x600_png\Outfit\Tennis Polo_C2.png
+Resizing image: scriptImages\Outfit\Tennis Polo_L.png to 600x600
+Processing file: Tennis Polo_L.png in subfolder: Outfit
+Checking existence of PNG: compositeImages\Outfit\Tennis Polo.png
+Checking existence of JPG: 300x300_jpg\Outfit\Tennis Polo.jpg
+Files not found, processing: PNG - compositeImages\Outfit\Tennis Polo.png, JPG - 300x300_jpg\Outfit\Tennis Polo.jpg
+Saved: compositeImages\Outfit\Tennis Polo.png
+Resized image saved: 800x800_png\Outfit\Tennis Polo_L.png
+Saved: 300x300_jpg\Outfit\Tennis Polo.jpg
+Resized image saved: 600x600_png\Outfit\Tennis Polo_L.png
+Script started
+Subfolders found: Accessory, Background, Bodysuit, Colors, Eyebrows, Eyes, Face Sticker, Frame, Hair Style, Hand, Hat, Mouth, Outfit, Piercing, Skin, Tattoo, Undergarment
+Files found: 11
+Solid colors RGB values saved to colors.json
+Resizing image: scriptImages\Accessory\Fairy Wings_C1.png to 800x800
+Resizing image: scriptImages\Accessory\Fairy Wings_C1.png to 600x600
+Solid colors RGB values saved to colors.json
+Processing image group: Fairy Wings
+Processing file: Fairy Wings_C1.png in subfolder: Accessory
+Resized image saved: 600x600_png\Accessory\Fairy Wings_C1.png
+Resizing image: scriptImages\Accessory\Fairy Wings_C2.png to 600x600
+Resized image saved: 800x800_png\Accessory\Fairy Wings_C1.png
+Resizing image: scriptImages\Accessory\Fairy Wings_C2.png to 800x800
+Processing file: Fairy Wings_C2.png in subfolder: Accessory
+Resized image saved: 600x600_png\Accessory\Fairy Wings_C2.png
+Resizing image: scriptImages\Accessory\Fairy Wings_L.png to 600x600
+Resized image saved: 800x800_png\Accessory\Fairy Wings_C2.png
+Resizing image: scriptImages\Accessory\Fairy Wings_L.png to 800x800
+Processing file: Fairy Wings_L.png in subfolder: Accessory
+Checking existence of PNG: compositeImages\Accessory\Fairy Wings.png
+Checking existence of JPG: 300x300_jpg\Accessory\Fairy Wings.jpg
+Files not found, processing: PNG - compositeImages\Accessory\Fairy Wings.png, JPG - 300x300_jpg\Accessory\Fairy Wings.jpg
+Saved: compositeImages\Accessory\Fairy Wings.png
+Resized image saved: 600x600_png\Accessory\Fairy Wings_L.png
+Resizing image: scriptImages\Frame\Shroomy_C1.png to 600x600
+Resized image saved: 800x800_png\Accessory\Fairy Wings_L.png
+Resizing image: scriptImages\Frame\Shroomy_C1.png to 800x800
+Saved: 300x300_jpg\Accessory\Fairy Wings.jpg
+Processing image group: Shroomy
+Processing file: Shroomy_C1.png in subfolder: Frame
+Resized image saved: 600x600_png\Frame\Shroomy_C1.png
+Resizing image: scriptImages\Frame\Shroomy_C2.png to 600x600
+Resized image saved: 800x800_png\Frame\Shroomy_C1.png
+Resizing image: scriptImages\Frame\Shroomy_C2.png to 800x800
+Processing file: Shroomy_C2.png in subfolder: Frame
+Resized image saved: 600x600_png\Frame\Shroomy_C2.png
+Resizing image: scriptImages\Frame\Shroomy_C3.png to 600x600
+Resized image saved: 800x800_png\Frame\Shroomy_C2.png
+Resizing image: scriptImages\Frame\Shroomy_C3.png to 800x800
+Processing file: Shroomy_C3.png in subfolder: Frame
+Resized image saved: 600x600_png\Frame\Shroomy_C3.png
+Resizing image: scriptImages\Frame\Shroomy_C4.png to 600x600
+Resized image saved: 800x800_png\Frame\Shroomy_C3.png
+Resizing image: scriptImages\Frame\Shroomy_C4.png to 800x800
+Processing file: Shroomy_C4.png in subfolder: Frame
+Resized image saved: 600x600_png\Frame\Shroomy_C4.png
+Resizing image: scriptImages\Frame\Shroomy_C5.png to 600x600
+Resized image saved: 800x800_png\Frame\Shroomy_C4.png
+Resizing image: scriptImages\Frame\Shroomy_C5.png to 800x800
+Processing file: Shroomy_C5.png in subfolder: Frame
+Resized image saved: 600x600_png\Frame\Shroomy_C5.png
+Resizing image: scriptImages\Frame\Shroomy_L.png to 600x600
+Resized image saved: 800x800_png\Frame\Shroomy_C5.png
+Resizing image: scriptImages\Frame\Shroomy_L.png to 800x800
+Processing file: Shroomy_L.png in subfolder: Frame
+Checking existence of PNG: compositeImages\Frame\Shroomy.png
+Checking existence of JPG: 300x300_jpg\Frame\Shroomy.jpg
+Files not found, processing: PNG - compositeImages\Frame\Shroomy.png, JPG - 300x300_jpg\Frame\Shroomy.jpg
+Saved: compositeImages\Frame\Shroomy.png
+Resized image saved: 600x600_png\Frame\Shroomy_L.png
+Resizing image: scriptImages\Hat\Lil Sprouty_C1.png to 600x600
+Resized image saved: 800x800_png\Frame\Shroomy_L.png
+Resizing image: scriptImages\Hat\Lil Sprouty_C1.png to 800x800
+Saved: 300x300_jpg\Frame\Shroomy.jpg
+Processing image group: Lil Sprouty
+Processing file: Lil Sprouty_C1.png in subfolder: Hat
+Processing file: Lil Sprouty_C1.png in Hat
+Resized image saved: 600x600_png\Hat\Lil Sprouty_C1.png
+Resizing image: scriptImages\Hat\Lil Sprouty_L.png to 600x600
+Resized image saved: 800x800_png\Hat\Lil Sprouty_C1.png
+Resizing image: scriptImages\Hat\Lil Sprouty_L.png to 800x800
+Processing file: Lil Sprouty_L.png in Hat
+Resized image saved: 800x800_png\Hat\Lil Sprouty_L.png
+Resized image saved: 600x600_png\Hat\Lil Sprouty_L.png
+Processing file: Lil Sprouty_L.png in subfolder: Hat
+Processing file: Lil Sprouty_C1.png in Hat
+Processing file: Lil Sprouty_L.png in Hat
+Checking existence of PNG: compositeImages\Hat\Lil Sprouty.png
+Checking existence of JPG: 300x300_jpg\Hat\Lil Sprouty.jpg
+Skipping existing files: PNG - compositeImages\Hat\Lil Sprouty.png, JPG - 300x300_jpg\Hat\Lil Sprouty.jpg

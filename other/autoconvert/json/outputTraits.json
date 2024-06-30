@@ -1,26 +1,40 @@
 {
   "attributes": [
     {"name": "Accessory", "traits": [
-        {"name": "Rat Tail","colors": 1,"rarity": "Epic","tags": [],"token_id": 195}
+        {"name": "Fairy Wings","colors": 2,"rarity": "Common","tags": ["onBack"],"token_id": 121},
+        {"name": "Happy Dog","colors": 4,"rarity": "Legendary","tags": ["companion"],"token_id": 123}
     ]},
 
-    {"name": "Background", "traits": [
-        {"name": "Mothra Mist","colors": 0,"rarity": "Common","tags": [],"token_id": 194},
-        {"name": "Moon Cheese","colors": 0,"rarity": "Epic","tags": [],"token_id": 195},
-        {"name": "Sandy Forest","colors": 0,"rarity": "Relic","tags": [],"token_id": 196},
-        {"name": "Sabre Strike","colors": 0,"rarity": "Legendary","tags": [],"token_id": 197}
+    {"name": "Eyebrows", "traits": [
+        {"name": "Dramatic Brows","colors": 0,"rarity": "Epic","tags": [""],"token_id": 120}
     ]},
 
     {"name": "Face Sticker", "traits": [
-        {"name": "Sabre Scar","colors": 0,"rarity": "Legendary","tags": [],"token_id": 197}
+        {"name": "Summer Freckles","colors": 1,"rarity": "Rare","tags": [""],"token_id": 122},
+        {"name": "Too Much Sun","colors": 1,"rarity": "Rare","tags": [""],"token_id": 122}
+    ]},
+
+    {"name": "Frame", "traits": [
+        {"name": "Baby Bird Plant","colors": 3,"rarity": "Legendary","tags": [""],"token_id": 119},
+        {"name": "Shroomy","colors": 5,"rarity": "Common","tags": [""],"token_id": 121}
+    ]},
+
+    {"name": "Hand", "traits": [
+        {"name": "Icecream Cone","colors": 3,"rarity": "Rare","tags": ["skin"],"token_id": 122}
+    ]},
+
+    {"name": "Hat", "traits": [
+        {"name": "Lil Sprouty","colors": 1,"rarity": "Common","tags": [""],"token_id": 121}
+    ]},
+
+    {"name": "Mouth", "traits": [
+        {"name": "Summer Smile","colors": 1,"rarity": "Rare","tags": [""],"token_id": 122}
     ]},
 
     {"name": "Outfit", "traits": [
-        {"name": "Mothras Fluffy Jacket","colors": 3,"rarity": "Common","tags": [],"token_id": 194}
-    ]},
-
-    {"name": "Skin", "traits": [
-        {"name": "Sandy Tan","colors": 0,"rarity": "Relic","tags": [],"token_id": 196}
+        {"name": "Flower Child Halter","colors": 3,"rarity": "Rare","tags": [""],"token_id": 122},
+        {"name": "Teeny Weeny Bikini","colors": 2,"rarity": "Rare","tags": [""],"token_id": 122},
+        {"name": "Tennis Polo","colors": 2,"rarity": "Rare","tags": [""],"token_id": 122}
     ]}
   ]
 }

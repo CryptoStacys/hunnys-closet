@@ -3204,5 +3204,16 @@
             }
         ],
         "metaPath": "https://hunnysseasons.s3.us-east-2.amazonaws.com/197"
+    },
+    {
+        "tokenId": 198,
+        "name": "Dominic the Doggy Guardian",
+        "attributes": [
+            {
+                "trait_type": "Hand",
+                "value": "Weiner"
+            }
+        ],
+        "metaPath": "https://hunnysseasons.s3.us-east-2.amazonaws.com/198"
     }
 ]

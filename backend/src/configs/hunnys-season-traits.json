@@ -261,6 +261,7 @@
     {
       "name": "Hand",
       "traits": [
+        {"name":"Weiner","colors":3,"rarity":"Epic","tags":"skin","token_id":198},
         {"name":"Queen Piggy","colors":3,"rarity":"Common","tags":"skin","token_id":189},
         {"name":"MetaVixen Ipad Drawing","colors":4,"rarity":"Common","tags":["skin"],"token_id":184},
         {"name":"Crystal Love Ball","colors":5,"rarity":"Legendary","tags":["skin"],"token_id":183},

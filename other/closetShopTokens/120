@@ -1,0 +1,16 @@
+{
+  "name": "Dramatic Brows Single Item",
+  "description": "Owning this unlocks the following item in the Hunnys Closet:\n\nEyebrows: Dramatic Brows\n\n\n\nAll pieces purchased within this Hunnys Closet Shop collection will immediately unlock the specified item(s) for use in the [Hunnys Closet](https://closet.hunnys.io).\n\n\n\nAs long as you currently hold this token in the same wallet that you are connected with when using the [Hunnys Closet](https://closet.hunnys.io), it will automatically be available for use - enjoy!\n\n",
+  "image": "https://hunnysclosetshop.s3.us-east-2.amazonaws.com/images/goodies/120.png",
+  "external_url": "",
+  "background_color": "",
+  "attributes": [
+    {
+      "trait_type": "Type",
+      "value": "Single Item"
+    }
+  ],
+  "supply": "500",
+  "customImage": "",
+  "customAnimationUrl": ""
+}
