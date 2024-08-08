@@ -108,7 +108,7 @@ const ChainService = {
             let web3 = new Web3(infuraUrl);
             let contract = new web3.eth.Contract(abi, contractAddr);
 
-            for (let i = 0; i < 200; i++) {
+            for (let i = 0; i < 300; i++) {
                 walletArray.push(wallet);
                 ids.push(i);
             }
