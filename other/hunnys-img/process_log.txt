@@ -52695,3 +52695,546 @@ Processing file: Lil Sprouty_L.png in Hat
 Checking existence of PNG: compositeImages\Hat\Lil Sprouty.png
 Checking existence of JPG: 300x300_jpg\Hat\Lil Sprouty.jpg
 Skipping existing files: PNG - compositeImages\Hat\Lil Sprouty.png, JPG - 300x300_jpg\Hat\Lil Sprouty.jpg
+Script started
+Subfolders found: Accessory, Background, Bodysuit, Colors, Eyebrows, Eyes, Face Sticker, Frame, Hair Style, Hand, Hat, Mouth, Outfit, Piercing, Skin, Tattoo, Undergarment
+Files found: 59
+Skipping existing file: 800x800_png/Accessory/Fairy Wings_C1.png
+Skipping existing file: 800x800_png/Accessory/Fairy Wings_C2.png
+Skipping existing file: 800x800_png/Accessory/Fairy Wings_L.png
+Resizing image: scriptImages/Background/American Flag_C1.png to 800x800
+Skipping existing file: 600x600_png/Accessory/Fairy Wings_C1.png
+Skipping existing file: 600x600_png/Accessory/Fairy Wings_C2.png
+Skipping existing file: 600x600_png/Accessory/Fairy Wings_L.png
+Resizing image: scriptImages/Background/American Flag_C1.png to 600x600
+Script started
+Subfolders found: Accessory, Background, Bodysuit, Colors, Eyebrows, Eyes, Face Sticker, Frame, Hair Style, Hand, Hat, Mouth, Outfit, Piercing, Skin, Tattoo, Undergarment
+Files found: 59
+Skipping existing file: 800x800_png/Accessory/Fairy Wings_C1.png
+Skipping existing file: 800x800_png/Accessory/Fairy Wings_C2.png
+Skipping existing file: 800x800_png/Accessory/Fairy Wings_L.png
+Resizing image: scriptImages/Background/American Flag_C1.png to 800x800
+Skipping existing file: 600x600_png/Accessory/Fairy Wings_C1.png
+Skipping existing file: 600x600_png/Accessory/Fairy Wings_C2.png
+Skipping existing file: 600x600_png/Accessory/Fairy Wings_L.png
+Resizing image: scriptImages/Background/American Flag_C1.png to 600x600
+Script started
+Subfolders found: Accessory, Background, Bodysuit, Colors, Eyebrows, Eyes, Face Sticker, Frame, Hair Style, Hand, Hat, Mouth, Outfit, Piercing, Skin, Tattoo, Undergarment
+Files found: 59
+Skipping existing file: 800x800_png/Accessory/Fairy Wings_C1.png
+Skipping existing file: 800x800_png/Accessory/Fairy Wings_C2.png
+Skipping existing file: 800x800_png/Accessory/Fairy Wings_L.png
+Resizing image: scriptImages/Background/American Flag_C1.png to 800x800
+Skipping existing file: 600x600_png/Accessory/Fairy Wings_C1.png
+Skipping existing file: 600x600_png/Accessory/Fairy Wings_C2.png
+Skipping existing file: 600x600_png/Accessory/Fairy Wings_L.png
+Resizing image: scriptImages/Background/American Flag_C1.png to 600x600
+Processing image group: Fairy Wings
+Resized image saved: 800x800_png/Background/American Flag_C1.png
+Resizing image: scriptImages/Background/American Flag_L.png to 800x800
+Resized image saved: 600x600_png/Background/American Flag_C1.png
+Resizing image: scriptImages/Background/American Flag_L.png to 600x600
+Processing file: Fairy Wings_C1.png in subfolder: Accessory
+Processing file: Fairy Wings_C2.png in subfolder: Accessory
+Resized image saved: 800x800_png/Background/American Flag_L.png
+Resizing image: scriptImages/Background/Gone Fishin_C1.png to 800x800
+Resized image saved: 600x600_png/Background/American Flag_L.png
+Resizing image: scriptImages/Background/Gone Fishin_C1.png to 600x600
+Processing file: Fairy Wings_L.png in subfolder: Accessory
+Checking existence of PNG: compositeImages/Accessory/Fairy Wings.png
+Checking existence of JPG: 300x300_jpg/Accessory/Fairy Wings.jpg
+Skipping existing files: PNG - compositeImages/Accessory/Fairy Wings.png, JPG - 300x300_jpg/Accessory/Fairy Wings.jpg
+Processing image group: American Flag
+Processed and saved solid color: Ocean.png
+Resized image saved: 600x600_png/Background/Gone Fishin_C1.png
+Resizing image: scriptImages/Background/Gone Fishin_C2.png to 600x600
+Resized image saved: 800x800_png/Background/Gone Fishin_C1.png
+Resizing image: scriptImages/Background/Gone Fishin_C2.png to 800x800
+Processing file: American Flag_C1.png in subfolder: Background
+Processed and saved solid color: Ocean.png
+Resized image saved: 600x600_png/Background/Gone Fishin_C2.png
+Resizing image: scriptImages/Background/Gone Fishin_C3.png to 600x600
+Resized image saved: 800x800_png/Background/Gone Fishin_C2.png
+Resizing image: scriptImages/Background/Gone Fishin_C3.png to 800x800
+Processing file: American Flag_L.png in subfolder: Background
+Checking existence of PNG: compositeImages/Background/American Flag.png
+Checking existence of JPG: 300x300_jpg/Background/American Flag.jpg
+Files not found, processing: PNG - compositeImages/Background/American Flag.png, JPG - 300x300_jpg/Background/American Flag.jpg
+Saved: compositeImages/Background/American Flag.png
+Saved: 300x300_jpg/Background/American Flag.jpg
+Processing image group: Gone Fishin
+Resized image saved: 800x800_png/Background/Gone Fishin_C3.png
+Resizing image: scriptImages/Background/Gone Fishin_C4.png to 800x800
+Resized image saved: 600x600_png/Background/Gone Fishin_C3.png
+Resizing image: scriptImages/Background/Gone Fishin_C4.png to 600x600
+Processed and saved solid color: Summer Blueberry 1.png
+Processing file: Gone Fishin_C1.png in subfolder: Background
+Processed and saved solid color: Summer Blueberry 1.png
+Resized image saved: 800x800_png/Background/Gone Fishin_C4.png
+Resizing image: scriptImages/Background/Gone Fishin_L.png to 800x800
+Processing file: Gone Fishin_C2.png in subfolder: Background
+Resized image saved: 600x600_png/Background/Gone Fishin_C4.png
+Resizing image: scriptImages/Background/Gone Fishin_L.png to 600x600
+Processing file: Gone Fishin_C3.png in subfolder: Background
+Resized image saved: 800x800_png/Background/Gone Fishin_L.png
+Resizing image: scriptImages/Background/Ocean_L.png to 800x800
+Resized image saved: 600x600_png/Background/Gone Fishin_L.png
+Resizing image: scriptImages/Background/Ocean_L.png to 600x600
+Processing file: Gone Fishin_C4.png in subfolder: Background
+Processing file: Gone Fishin_L.png in subfolder: Background
+Checking existence of PNG: compositeImages/Background/Gone Fishin.png
+Checking existence of JPG: 300x300_jpg/Background/Gone Fishin.jpg
+Files not found, processing: PNG - compositeImages/Background/Gone Fishin.png, JPG - 300x300_jpg/Background/Gone Fishin.jpg
+Processed and saved solid color: Summer Blueberry 2.png
+Saved: compositeImages/Background/Gone Fishin.png
+Resized image saved: 800x800_png/Background/Ocean_L.png
+Resizing image: scriptImages/Background/Sea_L.png to 800x800
+Processed and saved solid color: Summer Blueberry 2.png
+Saved: 300x300_jpg/Background/Gone Fishin.jpg
+Processing image group: Ocean
+Resized image saved: 600x600_png/Background/Ocean_L.png
+Resizing image: scriptImages/Background/Sea_L.png to 600x600
+Processing file: Ocean_L.png in subfolder: Background
+Checking existence of PNG: compositeImages/Background/Ocean.png
+Checking existence of JPG: 300x300_jpg/Background/Ocean.jpg
+Files not found, processing: PNG - compositeImages/Background/Ocean.png, JPG - 300x300_jpg/Background/Ocean.jpg
+Saved: compositeImages/Background/Ocean.png
+Resized image saved: 800x800_png/Background/Sea_L.png
+Resizing image: scriptImages/Background/Summer Blueberry 1_L.png to 800x800
+Saved: 300x300_jpg/Background/Ocean.jpg
+Processing image group: Sea
+Resized image saved: 600x600_png/Background/Sea_L.png
+Resizing image: scriptImages/Background/Summer Blueberry 1_L.png to 600x600
+Processed and saved solid color: Summer Elderberry 1 .png
+Processed and saved solid color: Summer Elderberry 1 .png
+Resized image saved: 800x800_png/Background/Summer Blueberry 1_L.png
+Resizing image: scriptImages/Background/Summer Blueberry 2_L.png to 800x800
+Resized image saved: 600x600_png/Background/Summer Blueberry 1_L.png
+Resizing image: scriptImages/Background/Summer Blueberry 2_L.png to 600x600
+Processing file: Sea_L.png in subfolder: Background
+Checking existence of PNG: compositeImages/Background/Sea.png
+Checking existence of JPG: 300x300_jpg/Background/Sea.jpg
+Files not found, processing: PNG - compositeImages/Background/Sea.png, JPG - 300x300_jpg/Background/Sea.jpg
+Saved: compositeImages/Background/Sea.png
+Resized image saved: 800x800_png/Background/Summer Blueberry 2_L.png
+Resizing image: scriptImages/Background/Summer Elderberry 1 _L.png to 800x800
+Saved: 300x300_jpg/Background/Sea.jpg
+Processing image group: Summer Blueberry 1
+Resized image saved: 600x600_png/Background/Summer Blueberry 2_L.png
+Resizing image: scriptImages/Background/Summer Elderberry 1 _L.png to 600x600
+Processing file: Summer Blueberry 1_L.png in subfolder: Background
+Checking existence of PNG: compositeImages/Background/Summer Blueberry 1.png
+Checking existence of JPG: 300x300_jpg/Background/Summer Blueberry 1.jpg
+Files not found, processing: PNG - compositeImages/Background/Summer Blueberry 1.png, JPG - 300x300_jpg/Background/Summer Blueberry 1.jpg
+Processed and saved solid color: Summer Elderberry 2.png
+Processed and saved solid color: Summer Elderberry 2.png
+Saved: compositeImages/Background/Summer Blueberry 1.png
+Resized image saved: 600x600_png/Background/Summer Elderberry 1 _L.png
+Resizing image: scriptImages/Background/Summer Elderberry 2_L.png to 600x600
+Resized image saved: 800x800_png/Background/Summer Elderberry 1 _L.png
+Resizing image: scriptImages/Background/Summer Elderberry 2_L.png to 800x800
+Saved: 300x300_jpg/Background/Summer Blueberry 1.jpg
+Processing image group: Summer Blueberry 2
+Processing file: Summer Blueberry 2_L.png in subfolder: Background
+Checking existence of PNG: compositeImages/Background/Summer Blueberry 2.png
+Checking existence of JPG: 300x300_jpg/Background/Summer Blueberry 2.jpg
+Files not found, processing: PNG - compositeImages/Background/Summer Blueberry 2.png, JPG - 300x300_jpg/Background/Summer Blueberry 2.jpg
+Resized image saved: 600x600_png/Background/Summer Elderberry 2_L.png
+Resizing image: scriptImages/Background/Summer Gooseberry 1_L.png to 600x600
+Resized image saved: 800x800_png/Background/Summer Elderberry 2_L.png
+Resizing image: scriptImages/Background/Summer Gooseberry 1_L.png to 800x800
+Saved: compositeImages/Background/Summer Blueberry 2.png
+Saved: 300x300_jpg/Background/Summer Blueberry 2.jpg
+Processing image group: Summer Elderberry 1 
+Processed and saved solid color: Summer Gooseberry 1.png
+Processed and saved solid color: Summer Gooseberry 1.png
+Resized image saved: 600x600_png/Background/Summer Gooseberry 1_L.png
+Resizing image: scriptImages/Background/Summer Gooseberry 2_L.png to 600x600
+Resized image saved: 800x800_png/Background/Summer Gooseberry 1_L.png
+Resizing image: scriptImages/Background/Summer Gooseberry 2_L.png to 800x800
+Processing file: Summer Elderberry 1 _L.png in subfolder: Background
+Checking existence of PNG: compositeImages/Background/Summer Elderberry 1 .png
+Checking existence of JPG: 300x300_jpg/Background/Summer Elderberry 1 .jpg
+Files not found, processing: PNG - compositeImages/Background/Summer Elderberry 1 .png, JPG - 300x300_jpg/Background/Summer Elderberry 1 .jpg
+Saved: compositeImages/Background/Summer Elderberry 1 .png
+Saved: 300x300_jpg/Background/Summer Elderberry 1 .jpg
+Processing image group: Summer Elderberry 2
+Resized image saved: 600x600_png/Background/Summer Gooseberry 2_L.png
+Resizing image: scriptImages/Colors/.DS_Store to 600x600
+Resized image saved: 800x800_png/Background/Summer Gooseberry 2_L.png
+Resizing image: scriptImages/Colors/.DS_Store to 800x800
+Processing file: Summer Elderberry 2_L.png in subfolder: Background
+Checking existence of PNG: compositeImages/Background/Summer Elderberry 2.png
+Checking existence of JPG: 300x300_jpg/Background/Summer Elderberry 2.jpg
+Files not found, processing: PNG - compositeImages/Background/Summer Elderberry 2.png, JPG - 300x300_jpg/Background/Summer Elderberry 2.jpg
+Error resizing image: scriptImages/Colors/.DS_Store: Error: Could not find MIME for Buffer <null>
+Skipping existing file: 800x800_png/Frame/Shroomy_C1.png
+Skipping existing file: 800x800_png/Frame/Shroomy_C2.png
+Skipping existing file: 800x800_png/Frame/Shroomy_C3.png
+Skipping existing file: 800x800_png/Frame/Shroomy_C4.png
+Skipping existing file: 800x800_png/Frame/Shroomy_C5.png
+Skipping existing file: 800x800_png/Frame/Shroomy_L.png
+Resizing image: scriptImages/Hair Style/Ferz Hairz_C1.png to 800x800
+Error resizing image: scriptImages/Colors/.DS_Store: Error: Could not find MIME for Buffer <null>
+Skipping existing file: 600x600_png/Frame/Shroomy_C1.png
+Skipping existing file: 600x600_png/Frame/Shroomy_C2.png
+Skipping existing file: 600x600_png/Frame/Shroomy_C3.png
+Skipping existing file: 600x600_png/Frame/Shroomy_C4.png
+Skipping existing file: 600x600_png/Frame/Shroomy_C5.png
+Skipping existing file: 600x600_png/Frame/Shroomy_L.png
+Resizing image: scriptImages/Hair Style/Ferz Hairz_C1.png to 600x600
+Saved: compositeImages/Background/Summer Elderberry 2.png
+Saved: 300x300_jpg/Background/Summer Elderberry 2.jpg
+Processing image group: Summer Gooseberry 1
+Processed and saved solid color: Summer Gooseberry 2.png
+Solid colors RGB values saved to colors.json
+Processed and saved solid color: Summer Gooseberry 2.png
+Solid colors RGB values saved to colors.json
+Resized image saved: 800x800_png/Hair Style/Ferz Hairz_C1.png
+Resizing image: scriptImages/Hair Style/Ferz Hairz_L.png to 800x800
+Resized image saved: 600x600_png/Hair Style/Ferz Hairz_C1.png
+Resizing image: scriptImages/Hair Style/Ferz Hairz_L.png to 600x600
+Processing file: Summer Gooseberry 1_L.png in subfolder: Background
+Checking existence of PNG: compositeImages/Background/Summer Gooseberry 1.png
+Checking existence of JPG: 300x300_jpg/Background/Summer Gooseberry 1.jpg
+Files not found, processing: PNG - compositeImages/Background/Summer Gooseberry 1.png, JPG - 300x300_jpg/Background/Summer Gooseberry 1.jpg
+Saved: compositeImages/Background/Summer Gooseberry 1.png
+Resized image saved: 800x800_png/Hair Style/Ferz Hairz_L.png
+Resizing image: scriptImages/Hair Style/Fishy Tails_Back_C1.png to 800x800
+Resized image saved: 600x600_png/Hair Style/Ferz Hairz_L.png
+Resizing image: scriptImages/Hair Style/Fishy Tails_Back_C1.png to 600x600
+Saved: 300x300_jpg/Background/Summer Gooseberry 1.jpg
+Processing image group: Summer Gooseberry 2
+Processing file: Summer Gooseberry 2_L.png in subfolder: Background
+Checking existence of PNG: compositeImages/Background/Summer Gooseberry 2.png
+Checking existence of JPG: 300x300_jpg/Background/Summer Gooseberry 2.jpg
+Files not found, processing: PNG - compositeImages/Background/Summer Gooseberry 2.png, JPG - 300x300_jpg/Background/Summer Gooseberry 2.jpg
+Saved: compositeImages/Background/Summer Gooseberry 2.png
+Resized image saved: 800x800_png/Hair Style/Fishy Tails_Back_C1.png
+Resizing image: scriptImages/Hair Style/Fishy Tails_Back_C2.png to 800x800
+Resized image saved: 600x600_png/Hair Style/Fishy Tails_Back_C1.png
+Resizing image: scriptImages/Hair Style/Fishy Tails_Back_C2.png to 600x600
+Saved: 300x300_jpg/Background/Summer Gooseberry 2.jpg
+Processing image group: .DS
+Error processing file .DS_Store in subfolder Colors: Error: Could not find MIME for Buffer <null>
+Checking existence of PNG: compositeImages/Colors/.DS.png
+Checking existence of JPG: 300x300_jpg/Colors/.DS.jpg
+Files not found, processing: PNG - compositeImages/Colors/.DS.png, JPG - 300x300_jpg/Colors/.DS.jpg
+Processing image group: Shroomy
+Resized image saved: 800x800_png/Hair Style/Fishy Tails_Back_C2.png
+Resizing image: scriptImages/Hair Style/Fishy Tails_Back_L.png to 800x800
+Resized image saved: 600x600_png/Hair Style/Fishy Tails_Back_C2.png
+Resizing image: scriptImages/Hair Style/Fishy Tails_Back_L.png to 600x600
+Processing file: Shroomy_C1.png in subfolder: Frame
+Resized image saved: 800x800_png/Hair Style/Fishy Tails_Back_L.png
+Resizing image: scriptImages/Hair Style/Fishy Tails_Front_C1.png to 800x800
+Processing file: Shroomy_C2.png in subfolder: Frame
+Resized image saved: 600x600_png/Hair Style/Fishy Tails_Back_L.png
+Resizing image: scriptImages/Hair Style/Fishy Tails_Front_C1.png to 600x600
+Processing file: Shroomy_C3.png in subfolder: Frame
+Resized image saved: 800x800_png/Hair Style/Fishy Tails_Front_C1.png
+Resizing image: scriptImages/Hair Style/Fishy Tails_Front_C2.png to 800x800
+Resized image saved: 600x600_png/Hair Style/Fishy Tails_Front_C1.png
+Resizing image: scriptImages/Hair Style/Fishy Tails_Front_C2.png to 600x600
+Processing file: Shroomy_C4.png in subfolder: Frame
+Resized image saved: 600x600_png/Hair Style/Fishy Tails_Front_C2.png
+Resizing image: scriptImages/Hair Style/Fishy Tails_Front_L.png to 600x600
+Resized image saved: 800x800_png/Hair Style/Fishy Tails_Front_C2.png
+Resizing image: scriptImages/Hair Style/Fishy Tails_Front_L.png to 800x800
+Processing file: Shroomy_C5.png in subfolder: Frame
+Resized image saved: 600x600_png/Hair Style/Fishy Tails_Front_L.png
+Resizing image: scriptImages/Hand/Fish Feeding Pole_C1.png to 600x600
+Resized image saved: 800x800_png/Hair Style/Fishy Tails_Front_L.png
+Resizing image: scriptImages/Hand/Fish Feeding Pole_C1.png to 800x800
+Processing file: Shroomy_L.png in subfolder: Frame
+Checking existence of PNG: compositeImages/Frame/Shroomy.png
+Checking existence of JPG: 300x300_jpg/Frame/Shroomy.jpg
+Skipping existing files: PNG - compositeImages/Frame/Shroomy.png, JPG - 300x300_jpg/Frame/Shroomy.jpg
+Processing image group: Ferz Hairz
+Processing file: Ferz Hairz_C1.png in subfolder: Hair Style
+Processing file: Ferz Hairz_C1.png in Hair Style
+Resized image saved: 600x600_png/Hand/Fish Feeding Pole_C1.png
+Resizing image: scriptImages/Hand/Fish Feeding Pole_C2.png to 600x600
+Resized image saved: 800x800_png/Hand/Fish Feeding Pole_C1.png
+Resizing image: scriptImages/Hand/Fish Feeding Pole_C2.png to 800x800
+Processing file: Ferz Hairz_L.png in Hair Style
+Resized image saved: 600x600_png/Hand/Fish Feeding Pole_C2.png
+Resizing image: scriptImages/Hand/Fish Feeding Pole_C3.png to 600x600
+Resized image saved: 800x800_png/Hand/Fish Feeding Pole_C2.png
+Resizing image: scriptImages/Hand/Fish Feeding Pole_C3.png to 800x800
+Processing file: Fishy Tails_Back_C1.png in Hair Style
+Resized image saved: 600x600_png/Hand/Fish Feeding Pole_C3.png
+Resizing image: scriptImages/Hand/Fish Feeding Pole_C4.png to 600x600
+Resized image saved: 800x800_png/Hand/Fish Feeding Pole_C3.png
+Resizing image: scriptImages/Hand/Fish Feeding Pole_C4.png to 800x800
+Processing file: Fishy Tails_Back_C2.png in Hair Style
+Resized image saved: 600x600_png/Hand/Fish Feeding Pole_C4.png
+Resizing image: scriptImages/Hand/Fish Feeding Pole_L.png to 600x600
+Resized image saved: 800x800_png/Hand/Fish Feeding Pole_C4.png
+Resizing image: scriptImages/Hand/Fish Feeding Pole_L.png to 800x800
+Processing file: Fishy Tails_Back_L.png in Hair Style
+Processing file: Fishy Tails_Front_C1.png in Hair Style
+Resized image saved: 600x600_png/Hand/Fish Feeding Pole_L.png
+Resizing image: scriptImages/Hand/Fish Feeding Pole_S.png to 600x600
+Resized image saved: 800x800_png/Hand/Fish Feeding Pole_L.png
+Resizing image: scriptImages/Hand/Fish Feeding Pole_S.png to 800x800
+Processing file: Fishy Tails_Front_C2.png in Hair Style
+Processing file: Fishy Tails_Front_L.png in Hair Style
+Resized image saved: 600x600_png/Hand/Fish Feeding Pole_S.png
+Resizing image: scriptImages/Hand/Friendly Fish Bean_C1.png to 600x600
+Resized image saved: 800x800_png/Hand/Fish Feeding Pole_S.png
+Resizing image: scriptImages/Hand/Friendly Fish Bean_C1.png to 800x800
+Resized image saved: 600x600_png/Hand/Friendly Fish Bean_C1.png
+Resizing image: scriptImages/Hand/Friendly Fish Bean_C2.png to 600x600
+Resized image saved: 800x800_png/Hand/Friendly Fish Bean_C1.png
+Resizing image: scriptImages/Hand/Friendly Fish Bean_C2.png to 800x800
+Processing file: Ferz Hairz_L.png in subfolder: Hair Style
+Processing file: Ferz Hairz_C1.png in Hair Style
+Processing file: Ferz Hairz_L.png in Hair Style
+Resized image saved: 600x600_png/Hand/Friendly Fish Bean_C2.png
+Resizing image: scriptImages/Hand/Friendly Fish Bean_C3.png to 600x600
+Resized image saved: 800x800_png/Hand/Friendly Fish Bean_C2.png
+Resizing image: scriptImages/Hand/Friendly Fish Bean_C3.png to 800x800
+Resized image saved: 600x600_png/Hand/Friendly Fish Bean_C3.png
+Resizing image: scriptImages/Hand/Friendly Fish Bean_C4.png to 600x600
+Resized image saved: 800x800_png/Hand/Friendly Fish Bean_C3.png
+Resizing image: scriptImages/Hand/Friendly Fish Bean_C4.png to 800x800
+Processing file: Fishy Tails_Back_C1.png in Hair Style
+Resized image saved: 600x600_png/Hand/Friendly Fish Bean_C4.png
+Resizing image: scriptImages/Hand/Friendly Fish Bean_L.png to 600x600
+Processing file: Fishy Tails_Back_C2.png in Hair Style
+Resized image saved: 800x800_png/Hand/Friendly Fish Bean_C4.png
+Resizing image: scriptImages/Hand/Friendly Fish Bean_L.png to 800x800
+Processing file: Fishy Tails_Back_L.png in Hair Style
+Processing file: Fishy Tails_Front_C1.png in Hair Style
+Resized image saved: 600x600_png/Hand/Friendly Fish Bean_L.png
+Resizing image: scriptImages/Hand/Friendly Fish Bean_S.png to 600x600
+Resized image saved: 800x800_png/Hand/Friendly Fish Bean_L.png
+Resizing image: scriptImages/Hand/Friendly Fish Bean_S.png to 800x800
+Processing file: Fishy Tails_Front_C2.png in Hair Style
+Resized image saved: 600x600_png/Hand/Friendly Fish Bean_S.png
+Resizing image: scriptImages/Hat/Fish Feeding Hat_C1.png to 600x600
+Processing file: Fishy Tails_Front_L.png in Hair Style
+Resized image saved: 800x800_png/Hand/Friendly Fish Bean_S.png
+Resizing image: scriptImages/Hat/Fish Feeding Hat_C1.png to 800x800
+Resized image saved: 600x600_png/Hat/Fish Feeding Hat_C1.png
+Resizing image: scriptImages/Hat/Fish Feeding Hat_C2.png to 600x600
+Resized image saved: 800x800_png/Hat/Fish Feeding Hat_C1.png
+Resizing image: scriptImages/Hat/Fish Feeding Hat_C2.png to 800x800
+Checking existence of PNG: compositeImages/Hair Style/Ferz Hairz.png
+Checking existence of JPG: 300x300_jpg/Hair Style/Ferz Hairz.jpg
+Skipping existing files: PNG - compositeImages/Hair Style/Ferz Hairz.png, JPG - 300x300_jpg/Hair Style/Ferz Hairz.jpg
+Processing image group: Fishy Tails_Back
+Processing file: Fishy Tails_Back_C1.png in subfolder: Hair Style
+Processing file: Ferz Hairz_C1.png in Hair Style
+Resized image saved: 600x600_png/Hat/Fish Feeding Hat_C2.png
+Resizing image: scriptImages/Hat/Fish Feeding Hat_C3.png to 600x600
+Processing file: Ferz Hairz_L.png in Hair Style
+Resized image saved: 800x800_png/Hat/Fish Feeding Hat_C2.png
+Resizing image: scriptImages/Hat/Fish Feeding Hat_C3.png to 800x800
+Resized image saved: 600x600_png/Hat/Fish Feeding Hat_C3.png
+Resizing image: scriptImages/Hat/Fish Feeding Hat_C4.png to 600x600
+Resized image saved: 800x800_png/Hat/Fish Feeding Hat_C3.png
+Resizing image: scriptImages/Hat/Fish Feeding Hat_C4.png to 800x800
+Processing file: Fishy Tails_Back_C1.png in Hair Style
+Resized image saved: 600x600_png/Hat/Fish Feeding Hat_C4.png
+Resizing image: scriptImages/Hat/Fish Feeding Hat_L.png to 600x600
+Processing file: Fishy Tails_Back_C2.png in Hair Style
+Resized image saved: 800x800_png/Hat/Fish Feeding Hat_C4.png
+Resizing image: scriptImages/Hat/Fish Feeding Hat_L.png to 800x800
+Processing file: Fishy Tails_Back_L.png in Hair Style
+Resized image saved: 600x600_png/Hat/Fish Feeding Hat_L.png
+Skipping existing file: 600x600_png/Hat/Lil Sprouty_C1.png
+Skipping existing file: 600x600_png/Hat/Lil Sprouty_L.png
+Resizing image: scriptImages/Outfit/Kissy Fishy Waders_C1.png to 600x600
+Processing file: Fishy Tails_Front_C1.png in Hair Style
+Resized image saved: 800x800_png/Hat/Fish Feeding Hat_L.png
+Skipping existing file: 800x800_png/Hat/Lil Sprouty_C1.png
+Skipping existing file: 800x800_png/Hat/Lil Sprouty_L.png
+Resizing image: scriptImages/Outfit/Kissy Fishy Waders_C1.png to 800x800
+Processing file: Fishy Tails_Front_C2.png in Hair Style
+Processing file: Fishy Tails_Front_L.png in Hair Style
+Resized image saved: 600x600_png/Outfit/Kissy Fishy Waders_C1.png
+Resizing image: scriptImages/Outfit/Kissy Fishy Waders_C2.png to 600x600
+Resized image saved: 800x800_png/Outfit/Kissy Fishy Waders_C1.png
+Resizing image: scriptImages/Outfit/Kissy Fishy Waders_C2.png to 800x800
+Resized image saved: 600x600_png/Outfit/Kissy Fishy Waders_C2.png
+Resizing image: scriptImages/Outfit/Kissy Fishy Waders_C3.png to 600x600
+Resized image saved: 800x800_png/Outfit/Kissy Fishy Waders_C2.png
+Resizing image: scriptImages/Outfit/Kissy Fishy Waders_C3.png to 800x800
+Processing file: Fishy Tails_Back_C2.png in subfolder: Hair Style
+Processing file: Ferz Hairz_C1.png in Hair Style
+Processing file: Ferz Hairz_L.png in Hair Style
+Resized image saved: 600x600_png/Outfit/Kissy Fishy Waders_C3.png
+Resizing image: scriptImages/Outfit/Kissy Fishy Waders_L.png to 600x600
+Resized image saved: 800x800_png/Outfit/Kissy Fishy Waders_C3.png
+Resizing image: scriptImages/Outfit/Kissy Fishy Waders_L.png to 800x800
+Resized image saved: 600x600_png/Outfit/Kissy Fishy Waders_L.png
+Resizing image: scriptImages/Outfit/Presidential Suit_C1.png to 600x600
+Processing file: Fishy Tails_Back_C1.png in Hair Style
+Resized image saved: 800x800_png/Outfit/Kissy Fishy Waders_L.png
+Resizing image: scriptImages/Outfit/Presidential Suit_C1.png to 800x800
+Processing file: Fishy Tails_Back_C2.png in Hair Style
+Resized image saved: 600x600_png/Outfit/Presidential Suit_C1.png
+Resizing image: scriptImages/Outfit/Presidential Suit_C2.png to 600x600
+Processing file: Fishy Tails_Back_L.png in Hair Style
+Resized image saved: 800x800_png/Outfit/Presidential Suit_C1.png
+Resizing image: scriptImages/Outfit/Presidential Suit_C2.png to 800x800
+Processing file: Fishy Tails_Front_C1.png in Hair Style
+Processing file: Fishy Tails_Front_C2.png in Hair Style
+Resized image saved: 800x800_png/Outfit/Presidential Suit_C2.png
+Resizing image: scriptImages/Outfit/Presidential Suit_L.png to 800x800
+Resized image saved: 600x600_png/Outfit/Presidential Suit_C2.png
+Resizing image: scriptImages/Outfit/Presidential Suit_L.png to 600x600
+Processing file: Fishy Tails_Front_L.png in Hair Style
+Resized image saved: 800x800_png/Outfit/Presidential Suit_L.png
+Resized image saved: 600x600_png/Outfit/Presidential Suit_L.png
+Processing file: Fishy Tails_Back_L.png in subfolder: Hair Style
+Processing file: Ferz Hairz_C1.png in Hair Style
+Processing file: Ferz Hairz_L.png in Hair Style
+Processing file: Fishy Tails_Back_C1.png in Hair Style
+Processing file: Fishy Tails_Back_C2.png in Hair Style
+Processing file: Fishy Tails_Back_L.png in Hair Style
+Processing file: Fishy Tails_Front_C1.png in Hair Style
+Processing file: Fishy Tails_Front_C2.png in Hair Style
+Processing file: Fishy Tails_Front_L.png in Hair Style
+Checking existence of PNG: compositeImages/Hair Style/Fishy Tails_Back.png
+Checking existence of JPG: 300x300_jpg/Hair Style/Fishy Tails_Back.jpg
+Files not found, processing: PNG - compositeImages/Hair Style/Fishy Tails_Back.png, JPG - 300x300_jpg/Hair Style/Fishy Tails_Back.jpg
+Processing image group: Fishy Tails_Front
+Processing file: Fishy Tails_Front_C1.png in subfolder: Hair Style
+Processing file: Ferz Hairz_C1.png in Hair Style
+Processing file: Ferz Hairz_L.png in Hair Style
+Processing file: Fishy Tails_Back_C1.png in Hair Style
+Processing file: Fishy Tails_Back_C2.png in Hair Style
+Processing file: Fishy Tails_Back_L.png in Hair Style
+Processing file: Fishy Tails_Front_C1.png in Hair Style
+Processing file: Fishy Tails_Front_C2.png in Hair Style
+Processing file: Fishy Tails_Front_L.png in Hair Style
+Processing file: Fishy Tails_Front_C2.png in subfolder: Hair Style
+Processing file: Ferz Hairz_C1.png in Hair Style
+Processing file: Ferz Hairz_L.png in Hair Style
+Processing file: Fishy Tails_Back_C1.png in Hair Style
+Processing file: Fishy Tails_Back_C2.png in Hair Style
+Processing file: Fishy Tails_Back_L.png in Hair Style
+Processing file: Fishy Tails_Front_C1.png in Hair Style
+Processing file: Fishy Tails_Front_C2.png in Hair Style
+Processing file: Fishy Tails_Front_L.png in Hair Style
+Processing file: Fishy Tails_Front_L.png in subfolder: Hair Style
+Processing file: Ferz Hairz_C1.png in Hair Style
+Processing file: Ferz Hairz_L.png in Hair Style
+Processing file: Fishy Tails_Back_C1.png in Hair Style
+Processing file: Fishy Tails_Back_C2.png in Hair Style
+Processing file: Fishy Tails_Back_L.png in Hair Style
+Processing file: Fishy Tails_Front_C1.png in Hair Style
+Processing file: Fishy Tails_Front_C2.png in Hair Style
+Processing file: Fishy Tails_Front_L.png in Hair Style
+Checking existence of PNG: compositeImages/Hair Style/Fishy Tails_Front.png
+Checking existence of JPG: 300x300_jpg/Hair Style/Fishy Tails_Front.jpg
+Files not found, processing: PNG - compositeImages/Hair Style/Fishy Tails_Front.png, JPG - 300x300_jpg/Hair Style/Fishy Tails_Front.jpg
+Processing image group: Fish Feeding Pole
+Processing file: Fish Feeding Pole_C1.png in subfolder: Hand
+Processing file: Fish Feeding Pole_C2.png in subfolder: Hand
+Processing file: Fish Feeding Pole_C3.png in subfolder: Hand
+Processing file: Fish Feeding Pole_C4.png in subfolder: Hand
+Processing file: Fish Feeding Pole_L.png in subfolder: Hand
+Processing file: Fish Feeding Pole_S.png in subfolder: Hand
+Checking existence of PNG: compositeImages/Hand/Fish Feeding Pole.png
+Checking existence of JPG: 300x300_jpg/Hand/Fish Feeding Pole.jpg
+Files not found, processing: PNG - compositeImages/Hand/Fish Feeding Pole.png, JPG - 300x300_jpg/Hand/Fish Feeding Pole.jpg
+Saved: compositeImages/Hand/Fish Feeding Pole.png
+Saved: 300x300_jpg/Hand/Fish Feeding Pole.jpg
+Processing image group: Friendly Fish Bean
+Processing file: Friendly Fish Bean_C1.png in subfolder: Hand
+Processing file: Friendly Fish Bean_C2.png in subfolder: Hand
+Processing file: Friendly Fish Bean_C3.png in subfolder: Hand
+Processing file: Friendly Fish Bean_C4.png in subfolder: Hand
+Processing file: Friendly Fish Bean_L.png in subfolder: Hand
+Processing file: Friendly Fish Bean_S.png in subfolder: Hand
+Checking existence of PNG: compositeImages/Hand/Friendly Fish Bean.png
+Checking existence of JPG: 300x300_jpg/Hand/Friendly Fish Bean.jpg
+Files not found, processing: PNG - compositeImages/Hand/Friendly Fish Bean.png, JPG - 300x300_jpg/Hand/Friendly Fish Bean.jpg
+Saved: compositeImages/Hand/Friendly Fish Bean.png
+Saved: 300x300_jpg/Hand/Friendly Fish Bean.jpg
+Processing image group: Fish Feeding Hat
+Processing file: Fish Feeding Hat_C1.png in subfolder: Hat
+Processing file: Fish Feeding Hat_C1.png in Hat
+Processing file: Fish Feeding Hat_C2.png in Hat
+Processing file: Fish Feeding Hat_C3.png in Hat
+Processing file: Fish Feeding Hat_C4.png in Hat
+Processing file: Fish Feeding Hat_L.png in Hat
+Processing file: Lil Sprouty_C1.png in Hat
+Processing file: Lil Sprouty_L.png in Hat
+Processing file: Fish Feeding Hat_C2.png in subfolder: Hat
+Processing file: Fish Feeding Hat_C1.png in Hat
+Processing file: Fish Feeding Hat_C2.png in Hat
+Processing file: Fish Feeding Hat_C3.png in Hat
+Processing file: Fish Feeding Hat_C4.png in Hat
+Processing file: Fish Feeding Hat_L.png in Hat
+Processing file: Lil Sprouty_C1.png in Hat
+Processing file: Lil Sprouty_L.png in Hat
+Processing file: Fish Feeding Hat_C3.png in subfolder: Hat
+Processing file: Fish Feeding Hat_C1.png in Hat
+Processing file: Fish Feeding Hat_C2.png in Hat
+Processing file: Fish Feeding Hat_C3.png in Hat
+Processing file: Fish Feeding Hat_C4.png in Hat
+Processing file: Fish Feeding Hat_L.png in Hat
+Processing file: Lil Sprouty_C1.png in Hat
+Processing file: Lil Sprouty_L.png in Hat
+Processing file: Fish Feeding Hat_C4.png in subfolder: Hat
+Processing file: Fish Feeding Hat_C1.png in Hat
+Processing file: Fish Feeding Hat_C2.png in Hat
+Processing file: Fish Feeding Hat_C3.png in Hat
+Processing file: Fish Feeding Hat_C4.png in Hat
+Processing file: Fish Feeding Hat_L.png in Hat
+Processing file: Lil Sprouty_C1.png in Hat
+Processing file: Lil Sprouty_L.png in Hat
+Processing file: Fish Feeding Hat_L.png in subfolder: Hat
+Processing file: Fish Feeding Hat_C1.png in Hat
+Processing file: Fish Feeding Hat_C2.png in Hat
+Processing file: Fish Feeding Hat_C3.png in Hat
+Processing file: Fish Feeding Hat_C4.png in Hat
+Processing file: Fish Feeding Hat_L.png in Hat
+Processing file: Lil Sprouty_C1.png in Hat
+Processing file: Lil Sprouty_L.png in Hat
+Checking existence of PNG: compositeImages/Hat/Fish Feeding Hat.png
+Checking existence of JPG: 300x300_jpg/Hat/Fish Feeding Hat.jpg
+Skipping existing files: PNG - compositeImages/Hat/Fish Feeding Hat.png, JPG - 300x300_jpg/Hat/Fish Feeding Hat.jpg
+Processing image group: Lil Sprouty
+Processing file: Lil Sprouty_C1.png in subfolder: Hat
+Processing file: Fish Feeding Hat_C1.png in Hat
+Processing file: Fish Feeding Hat_C2.png in Hat
+Processing file: Fish Feeding Hat_C3.png in Hat
+Processing file: Fish Feeding Hat_C4.png in Hat
+Processing file: Fish Feeding Hat_L.png in Hat
+Processing file: Lil Sprouty_C1.png in Hat
+Processing file: Lil Sprouty_L.png in Hat
+Processing file: Lil Sprouty_L.png in subfolder: Hat
+Processing file: Fish Feeding Hat_C1.png in Hat
+Processing file: Fish Feeding Hat_C2.png in Hat
+Processing file: Fish Feeding Hat_C3.png in Hat
+Processing file: Fish Feeding Hat_C4.png in Hat
+Processing file: Fish Feeding Hat_L.png in Hat
+Processing file: Lil Sprouty_C1.png in Hat
+Processing file: Lil Sprouty_L.png in Hat
+Checking existence of PNG: compositeImages/Hat/Lil Sprouty.png
+Checking existence of JPG: 300x300_jpg/Hat/Lil Sprouty.jpg
+Skipping existing files: PNG - compositeImages/Hat/Lil Sprouty.png, JPG - 300x300_jpg/Hat/Lil Sprouty.jpg
+Processing image group: Kissy Fishy Waders
+Processing file: Kissy Fishy Waders_C1.png in subfolder: Outfit
+Processing file: Kissy Fishy Waders_C2.png in subfolder: Outfit
+Processing file: Kissy Fishy Waders_C3.png in subfolder: Outfit
+Processing file: Kissy Fishy Waders_L.png in subfolder: Outfit
+Checking existence of PNG: compositeImages/Outfit/Kissy Fishy Waders.png
+Checking existence of JPG: 300x300_jpg/Outfit/Kissy Fishy Waders.jpg
+Files not found, processing: PNG - compositeImages/Outfit/Kissy Fishy Waders.png, JPG - 300x300_jpg/Outfit/Kissy Fishy Waders.jpg
+Saved: compositeImages/Outfit/Kissy Fishy Waders.png
+Saved: 300x300_jpg/Outfit/Kissy Fishy Waders.jpg
+Processing image group: Presidential Suit
+Processing file: Presidential Suit_C1.png in subfolder: Outfit
+Processing file: Presidential Suit_C2.png in subfolder: Outfit
+Processing file: Presidential Suit_L.png in subfolder: Outfit
+Checking existence of PNG: compositeImages/Outfit/Presidential Suit.png
+Checking existence of JPG: 300x300_jpg/Outfit/Presidential Suit.jpg
+Files not found, processing: PNG - compositeImages/Outfit/Presidential Suit.png, JPG - 300x300_jpg/Outfit/Presidential Suit.jpg
+Saved: compositeImages/Outfit/Presidential Suit.png
+Saved: 300x300_jpg/Outfit/Presidential Suit.jpg

@@ -1269,6 +1269,11 @@ const colorNames = {
     "g": 26,
     "r": 26
 },
+"Ocean": {
+    "r": 119,
+    "g": 213,
+    "b": 249
+},
 "Ocean Spray Halftone": {
   "r": 70,
   "g": 136,
@@ -1619,6 +1624,12 @@ const colorNames = {
     "g": 49,
     "r": 49
 },
+
+"Sea": {
+    "r": 106,
+    "g": 226,
+    "b": 211
+},
 "Seafoam1": {
     "b": 245,
     "g": 255,
@@ -1774,6 +1785,36 @@ const colorNames = {
     "g": 41,
     "r": 123
 },
+"Summer Blueberry 1": {
+    "r": 40,
+    "g": 149,
+    "b": 180
+},
+"Summer Blueberry 2": {
+    "r": 78,
+    "g": 171,
+    "b": 198
+},
+"Summer Elderberry 1": {
+    "r": 143,
+    "g": 72,
+    "b": 146
+},
+"Summer Elderberry 2": {
+    "r": 166,
+    "g": 79,
+    "b": 151
+},
+"Summer Gooseberry 1": {
+    "r": 178,
+    "g": 50,
+    "b": 60
+},
+"Summer Gooseberry 2": {
+    "r": 224,
+    "g": 87,
+    "b": 98
+},  
 "Sunny Queen": {
     "b": 53,
     "g": 202,

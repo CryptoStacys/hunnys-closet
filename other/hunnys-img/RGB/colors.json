@@ -1,1 +1,37 @@
-{}
+{
+  "Ocean": {
+    "r": 119,
+    "g": 213,
+    "b": 249
+  },
+  "Summer Blueberry 1": {
+    "r": 40,
+    "g": 149,
+    "b": 180
+  },
+  "Summer Blueberry 2": {
+    "r": 78,
+    "g": 171,
+    "b": 198
+  },
+  "Summer Elderberry 1 ": {
+    "r": 143,
+    "g": 72,
+    "b": 146
+  },
+  "Summer Elderberry 2": {
+    "r": 166,
+    "g": 79,
+    "b": 151
+  },
+  "Summer Gooseberry 1": {
+    "r": 178,
+    "g": 50,
+    "b": 60
+  },
+  "Summer Gooseberry 2": {
+    "r": 224,
+    "g": 87,
+    "b": 98
+  }
+}
