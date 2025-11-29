@@ -8,14 +8,10 @@ dotenv.config();
 
 const app = express();
 
-// CORS configuration
+// CORS configuration - Allow all origins in development
 app.use(
   cors({
-    origin: [
-      "http://localhost:3000",
-      "http://localhost",
-      "https://staging-hunnys-closet-2.vercel.app",
-    ],
+    origin: true, // Allow all origins
     credentials: true,
   })
 );
