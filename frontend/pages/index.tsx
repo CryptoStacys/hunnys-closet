@@ -4,7 +4,7 @@ import React, { useEffect } from 'react';
 import { userAtom, connectedAtom } from "../src/data/store";
 import { localStorageToken } from "../src/data/config";
 import Dashboard from '../src/components/Dashboard/Dashboard';
-import Dollys from "./dollys";
+// import Dollys from "./dollys"; // Temporarily disabled - needs blockchain removal
 import Nav from "../src/components/Nav/Nav";
 import Login from "../src/components/Login/Login";
 import Modal from "../src/components/Modal/Modal";
@@ -76,9 +76,7 @@ export default function App() {
           <Route path="/">
             <Dashboard />
           </Route>
-          <Route path="/dollys">
-            <Dollys />
-          </Route>
+          {/* Doll Editor temporarily disabled - needs blockchain removal */}
           </>
         )}
       </div>
