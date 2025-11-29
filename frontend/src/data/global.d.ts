@@ -93,33 +93,32 @@ export type ApiResponse = {
 
 
 export type User = {
-  achievements?: any,
-  free_claim?: any,
-  wallet: any;
-  dollyCount: number;
-  dailys?: any,
-  UUID: string;
-  address: string;
-  dollys: Dolly[];
-  colors: string[];
-  traits: any[];
-  skin_colors: string[];
-  tokens: Token[];
-  hideSaveChangesModal: boolean;
-  profile_name: string;
-  profile_image_url: string;
-  tier: string;
-  titles: string[];
-  wallet_type: string;
+  id?: number;
+  email?: string;
+  username?: string;
+  achievements?: any;
+  free_claim?: any;
+  dollyCount?: number;
+  dailys?: any;
+  dollys?: Dolly[];
+  colors?: string[];
+  traits?: any[];
+  skin_colors?: string[];
+  tokens?: Token[];
+  hideSaveChangesModal?: boolean;
+  profile_name?: string;
+  profile_image_url?: string;
+  tier?: string;
+  titles?: string[];
   token?: string;
-  cupcake_points: number;
-  level: any;
+  cupcake_points?: number;
+  level?: any;
   birthday_month?: string;
   birthday_day?: string;
   twitter_handle?: string;
   discord_handle?: string;
   bunny_club?: number;
-  linksClicked?: any,
+  linksClicked?: any;
 };
 
 export type LinkClick = {

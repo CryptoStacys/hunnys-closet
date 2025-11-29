@@ -1,135 +1,67 @@
 import { Route } from '../src/components/Router/Router';
-import { useAccount } from "wagmi";
 import { useAtom } from "jotai";
-import React, { useState, useEffect } from 'react';
-import { allTraitsAtom, userAtom, connectedAtom, userTraitsAtom } from "../src/data/store";
-import { attributes, localStorageToken } from "../src/data/config";
+import React, { useEffect } from 'react';
+import { userAtom, connectedAtom } from "../src/data/store";
+import { localStorageToken } from "../src/data/config";
 import Dashboard from '../src/components/Dashboard/Dashboard';
 import Dollys from "./dollys";
 import Nav from "../src/components/Nav/Nav";
 import Login from "../src/components/Login/Login";
 import Modal from "../src/components/Modal/Modal";
-import { useRouter } from 'next/router';
-import { useAccountEffect } from 'wagmi'
+import { useAuth } from '../src/hooks/useAuth';
 
 export default function App() {
   const [user, setUser] = useAtom(userAtom);
-  const [allTraits, setAllTraits] = useAtom(allTraitsAtom);
-  const [userTraits, setUserTraits] = useAtom(userTraitsAtom);
   const [connected, setConnected] = useAtom(connectedAtom);
-  const router = useRouter();
+  const { user: authUser, isAuthenticated, loading } = useAuth();
 
-  const { isConnected, address } = useAccount();
-
-    useAccountEffect({
-    async onConnect({address}){
-        try {
-          // Fetch traits
-          const traitsResponse = await fetch(`https://closetservices.hunnysnft.com/wp-json/hunnys-closet/v1/traits?wallet=${address}`);
-          if (!traitsResponse.ok) throw new Error('Failed to fetch traits.');
-          const traitsData = await traitsResponse.json();
-          console.log("Traits Data from Index:", traitsData);
-          setAllTraits(traitsData);
-    
-          // Fetch verifyCloset data
-          const closetResponse = await fetch(`https://closetservices.hunnysnft.com/wp-json/hunnys-closet/v1/verifyCloset?wallet=${address}`);
-          if (!closetResponse.ok) throw new Error('Failed to fetch closet data.');
-          const closetData = await closetResponse.json();
-          console.log("Closet Data from Index:", closetData);
-          setUserTraits(closetData)
-    
-          // Update Last Login Time. Note: We now await the fetch call directly.
-          const loginResponse = await fetch(`https://closetservices.hunnysnft.com/wp-json/hunnys-closet/v1/accounts`, {
-            method: 'POST',
-            headers: {
-              'Content-Type': 'application/json',
-            },
-            body: JSON.stringify({
-              action: 'login',
-              wallet: address,
-            }),
-          });
-          
-          if (!loginResponse.ok) {
-            throw new Error('Failed to update last login time.');
-          }
-          
-          const loginData = await loginResponse.json();
-          console.log('Success:', loginData);
-    
-          // Fetch user profile
-          const profileResponse = await fetch(`https://closetservices.hunnysnft.com/wp-json/hunnys-closet/v1/accounts?action=getProfile&wallet=${address}`);
-          if (!profileResponse.ok) throw new Error('Failed to fetch user profile.');
-          const profileDataResponse = await profileResponse.json();
-          console.log("Profile Data from Index:", profileDataResponse);
-          
-          let parsedAchievements = {};
-          if (profileDataResponse.data.achievements && typeof profileDataResponse.data.achievements === 'string') {
-              try {
-                parsedAchievements = JSON.parse(profileDataResponse.data.achievements);
-              } catch (error) {
-                console.error("Error parsing achievements JSON:", error);
-              }
-          }
-          let parsedFreeClaims = {};
-          if (profileDataResponse.data.free_claim && typeof profileDataResponse.data.free_claim === 'string') {
-              try {
-                parsedFreeClaims = JSON.parse(profileDataResponse.data.free_claim);
-              } catch (error) {
-                console.error("Error parsing achievements JSON:", error);
-              }
-          }
-          let parsedLinksClicked = {};
-          if (profileDataResponse.data.linksClicked && typeof profileDataResponse.data.linksClicked === 'string') {
-              try {
-                parsedLinksClicked = JSON.parse(profileDataResponse.data.linksClicked);
-              } catch (error) {
-                console.error("Error parsing achievements JSON:", error);
-              }
-          }
-          
-          // Combine data and update user atom
-          setUser({
-            ...profileDataResponse.data,
-            ...closetData,
-            traits: closetData.traits,
-            dollyCount: closetData.dollys?.length || 0,
-            address: address,
-            achievements: parsedAchievements,
-            free_claim: parsedFreeClaims,
-            linksClicked: parsedLinksClicked,
-          });
-    
-          setConnected(true);
-        
-        } catch (error) {
-          console.error("Error handling connect:", error);
-          setConnected(false);
-        }},
-      onDisconnect() {
-        console.log("User disconnected or not yet connected");
-        setUser(null);
-        setConnected(false);
-        // Use a callback or check to navigate, to ensure it's the desired action
-        const navigateToLogin = () => {
-          router.push("/");
-        };
-        navigateToLogin();
-      }
-    })
+  // Sync auth user with jotai user atom
+  useEffect(() => {
+    if (isAuthenticated && authUser) {
+      setUser({
+        id: authUser.id,
+        email: authUser.email,
+        username: authUser.username,
+        profile_name: authUser.profile_name || authUser.username,
+        profile_image_url: authUser.profile_image_url || '',
+        achievements: authUser.achievements || {},
+        tier: authUser.tier || 'Fresh Cupcake',
+        titles: authUser.titles || [],
+        cupcake_points: authUser.cupcake_points || 0,
+        level: authUser.level || 1,
+        dollys: [],
+        dollyCount: 0,
+        tokens: [],
+        traits: [],
+        colors: [],
+        skin_colors: [],
+      });
+      setConnected(true);
+    } else {
+      setUser(null);
+      setConnected(false);
+    }
+  }, [authUser, isAuthenticated, setUser, setConnected]);
 
   useEffect(() => {
     initializeLocalStorageForNewUsers();
-  }, []); // Empty dependency array ensures this runs once on mount.
+  }, []);
 
   function initializeLocalStorageForNewUsers() {
     const existingToken = localStorage.getItem(localStorageToken);
     if (!existingToken) {
-      // Define a default, empty array or an array with default traits.
-      const defaultTraits: never[] = []; // Adjust based on what constitutes an "empty" dolly.
+      const defaultTraits: never[] = [];
       localStorage.setItem(localStorageToken, JSON.stringify(defaultTraits));
       console.log("Initialized local storage with default dolly traits.");
     }
+  }
+
+  if (loading) {
+    return (
+      <div className="flex items-center justify-center min-h-screen">
+        <div className="text-2xl text-pink-600">Loading...</div>
+      </div>
+    );
   }
 
   return (
@@ -137,10 +69,10 @@ export default function App() {
       <Nav rewardStatus={''} />
       <Modal />
       <div className="relative mt-[70px] z-30">
-        {!connected ? (
+        {!isAuthenticated ? (
           <Login />
         ) : (
-          <> 
+          <>
           <Route path="/">
             <Dashboard />
           </Route>
@@ -152,8 +84,4 @@ export default function App() {
       </div>
     </div>
   );
-}
-
-function onDisconnect() {
-  throw new Error('Function not implemented.');
 }
