@@ -2,7 +2,6 @@ import express from "express";
 import cors from "cors";
 import dotenv from "dotenv";
 import authRouter from "./src/auth.js";
-import db from "./src/database.js";
 
 // Load environment variables
 dotenv.config();
@@ -49,5 +48,5 @@ app.use((err, req, res, next) => {
 // Start server
 app.listen(port, () => {
   console.log(`Server listening on port ${port}`);
-  console.log(`Database initialized at: ${db.name}`);
+  console.log(`Database: Using JSON file storage at backend/data/users.json`);
 });

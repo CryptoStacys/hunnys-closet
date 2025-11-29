@@ -1,7 +1,7 @@
 import express from 'express';
 import bcrypt from 'bcrypt';
 import jwt from 'jsonwebtoken';
-import db from './database.js';
+import * as db from './simple-database.js';
 
 const router = express.Router();
 
@@ -24,25 +24,18 @@ router.post('/register', async (req, res) => {
     }
 
     // Check if user already exists
-    const existingUser = db.prepare('SELECT * FROM users WHERE email = ? OR username = ?').get(email, username);
-    if (existingUser) {
+    const existingEmail = db.findUserByEmail(email);
+    const existingUsername = db.findUserByUsername(username);
+    if (existingEmail || existingUsername) {
       return res.status(400).json({ error: 'Email or username already exists' });
     }
 
     // Hash password
     const passwordHash = await bcrypt.hash(password, SALT_ROUNDS);
 
-    // Insert user
-    const result = db.prepare(
-      'INSERT INTO users (email, username, password_hash, profile_name) VALUES (?, ?, ?, ?)'
-    ).run(email, username, passwordHash, username);
-
+    // Create user
+    const result = db.createUser(email, username, passwordHash, username);
     const userId = result.lastInsertRowid;
-
-    // Create user data entry
-    db.prepare(
-      'INSERT INTO user_data (user_id) VALUES (?)'
-    ).run(userId);
 
     // Generate JWT token
     const token = jwt.sign({ userId, email, username }, JWT_SECRET, { expiresIn: '7d' });
@@ -74,7 +67,7 @@ router.post('/login', async (req, res) => {
     }
 
     // Find user
-    const user = db.prepare('SELECT * FROM users WHERE email = ?').get(email);
+    const user = db.findUserByEmail(email);
     if (!user) {
       return res.status(401).json({ error: 'Invalid email or password' });
     }
@@ -112,12 +105,7 @@ router.post('/login', async (req, res) => {
 // Get current user profile
 router.get('/me', verifyToken, (req, res) => {
   try {
-    const user = db.prepare(`
-      SELECT u.*, ud.achievements, ud.tier, ud.titles, ud.cupcake_points, ud.level, ud.custom_data
-      FROM users u
-      LEFT JOIN user_data ud ON u.id = ud.user_id
-      WHERE u.id = ?
-    `).get(req.userId);
+    const user = db.findUserById(req.userId);
 
     if (!user) {
       return res.status(404).json({ error: 'User not found' });
@@ -125,11 +113,6 @@ router.get('/me', verifyToken, (req, res) => {
 
     // Remove password hash from response
     delete user.password_hash;
-
-    // Parse JSON fields
-    user.achievements = JSON.parse(user.achievements || '{}');
-    user.titles = JSON.parse(user.titles || '[]');
-    user.custom_data = JSON.parse(user.custom_data || '{}');
 
     res.json({ user });
   } catch (error) {
@@ -143,27 +126,21 @@ router.put('/profile', verifyToken, (req, res) => {
   try {
     const { profile_name, profile_image_url } = req.body;
 
-    const updates = [];
-    const values = [];
+    const updates = {};
 
     if (profile_name !== undefined) {
-      updates.push('profile_name = ?');
-      values.push(profile_name);
+      updates.profile_name = profile_name;
     }
 
     if (profile_image_url !== undefined) {
-      updates.push('profile_image_url = ?');
-      values.push(profile_image_url);
+      updates.profile_image_url = profile_image_url;
     }
 
-    if (updates.length === 0) {
+    if (Object.keys(updates).length === 0) {
       return res.status(400).json({ error: 'No fields to update' });
     }
 
-    updates.push('updated_at = CURRENT_TIMESTAMP');
-    values.push(req.userId);
-
-    db.prepare(`UPDATE users SET ${updates.join(', ')} WHERE id = ?`).run(...values);
+    db.updateUserProfile(req.userId, updates);
 
     res.json({ message: 'Profile updated successfully' });
   } catch (error) {
